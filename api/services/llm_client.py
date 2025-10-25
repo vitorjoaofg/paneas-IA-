@@ -16,7 +16,7 @@ MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
 }
 
 
-def _resolve_endpoint(target: LLMTarget) -> str:
+def resolve_endpoint(target: LLMTarget) -> str:
     if target == LLMTarget.FP16:
         return f"http://{_settings.llm_fp16_host}:{_settings.llm_fp16_port}"
     return f"http://{_settings.llm_int4_host}:{_settings.llm_int4_port}"
@@ -32,7 +32,7 @@ def resolve_model_path(model_name: Optional[str], target: LLMTarget) -> str:
 
 async def chat_completion(payload: Dict[str, Any], target: LLMTarget) -> Dict[str, Any]:
     client = await get_http_client()
-    endpoint = _resolve_endpoint(target)
+    endpoint = resolve_endpoint(target)
     original_model = payload.get("model")
     payload["model"] = resolve_model_path(original_model, target)
 

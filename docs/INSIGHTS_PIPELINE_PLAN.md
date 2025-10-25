@@ -26,11 +26,24 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando
 2. **Insight Worker** (Celery/async worker dedicado): lê lote, calcula heurísticas, chama LLM, valida saída (regex/score), grava no storage (Postgres/Redis).
 3. **Emitter**: publica no WS existente um novo evento.
 
+### Estado Atual (Out/2025)
+- Collector incorporado em `InsightSession` com buffer deslizante e mascaramento de PII.
+- Fila assíncrona interna (`asyncio.Queue`) no API Gateway limita jobs simultâneos (tamanho configurável, padrão 200) e aciona até 2 workers concorrentes.
+- Cada worker reusa `services.llm_client.chat_completion` com timeout implícito do HTTPX, reaproveitando o roteamento Qwen FP16/AWQ.
+- Após publicar `event: insight`, a sessão reavalia automaticamente se há contexto extra acumulado para novo disparo sem depender de novo áudio.
+- Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) envia o job para workers dedicados (`stack-celery-worker`) mantendo backpressure e respeitando `insights.generate` queue.
+
 ## Observabilidade E Controle
-- Métricas: tempo transcrição→insight, taxa de acerto (feedback do operador), volume por tenant, erros do LLM.
+- Métricas: tempo transcrição→insight, taxa de acerto (feedback do operador), volume por tenant, erros do LLM, além dos novos gauges/histogramas (`insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`).
 - Circuit breaker: limitar insights a 1/20s por sessão + max 5 simultâneos por tenant.
 - Log estruturado com `conversation_id` e `insight_type`.
 - Dashboards recomendados: painel LLM (latência, tokens/s), painel ASR streaming (`asr_stream_*`), health `api/v1/health` com destaque para alias `llm_int4` opcional.
+
+## Teste De Carga
+- Script `scripts/loadtest/asr_insight_stress.py` gera N sessões WebSocket com áudio real, valida `event=final` e `event=insight` e mede latências.
+- Targets: `make loadtest-insights` (50 sessões por padrão, configurável com `SESSIONS`, `RAMP`, `AUDIO`) e `make loadtest-insights-max` (500 sessões, utiliza o target anterior com predefinições pesadas).
+- Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`.
+- Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, além de consumo de GPU/CPU e métricas do ASR.
 
 ## Próximos Passos
 1. Definir esquema de fila e storage temporário.

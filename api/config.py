@@ -77,6 +77,12 @@ class Settings(BaseSettings):
     smoke_test_audio: str = Field(default="/test-data/audio/sample_10s.wav")
     smoke_test_pdf: str = Field(default="/test-data/documents/sample_5pages.pdf")
 
+    insight_queue_maxsize: int = Field(default=200, alias="INSIGHT_QUEUE_MAXSIZE")
+    insight_worker_concurrency: int = Field(default=2, alias="INSIGHT_WORKER_CONCURRENCY")
+    insight_use_celery: bool = Field(default=False, alias="INSIGHT_USE_CELERY")
+    insight_celery_timeout_sec: float = Field(default=15.0, alias="INSIGHT_CELERY_TIMEOUT_SEC")
+    insight_celery_queue: str = Field(default="insights", alias="INSIGHT_CELERY_QUEUE")
+
     @field_validator("api_tokens", mode="before")
     @classmethod
     def _parse_api_tokens(cls, value):

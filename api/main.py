@@ -10,6 +10,7 @@ from middleware.request_id import RequestIDMiddleware
 from routers import align, analytics, asr, asr_stream, health, llm, ocr, tts
 from services.http_client import close_http_client
 from services.redis_client import close_redis
+from services.insight_manager import insight_manager
 from telemetry.logging import configure_logging
 from telemetry.tracing import configure_tracing
 
@@ -44,7 +45,13 @@ app.include_router(llm.router)
 app.include_router(analytics.router)
 
 
+@app.on_event("startup")
+async def startup_event() -> None:
+    await insight_manager.startup()
+
+
 @app.on_event("shutdown")
 async def shutdown_event() -> None:
+    await insight_manager.shutdown()
     await close_http_client()
     await close_redis()

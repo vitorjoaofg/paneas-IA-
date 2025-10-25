@@ -1,4 +1,4 @@
-.PHONY: help bootstrap up down restart logs clean test smoke-test smoke-test-stream load-test load-test-locust logs-api logs-asr logs-llm shell stats health gpu-stats
+.PHONY: help bootstrap up down restart logs clean test smoke-test smoke-test-stream load-test load-test-locust loadtest-insights loadtest-insights-max logs-api logs-asr logs-llm shell stats health gpu-stats
 
 help:
 	@echo "AI Stack Platform - Available Commands:"
@@ -11,6 +11,8 @@ help:
 	@echo "  make smoke-test   - Run smoke tests"
 	@echo "  make smoke-test-stream - Run streaming ASR smoke test"
 	@echo "  make load-test    - Run k6 load tests"
+	@echo "  make loadtest-insights     - Run async load test (default 50 sessions)"
+	@echo "  make loadtest-insights-max - Run async load test (500 sessions, heavy)"
 	@echo "  make clean        - Clean volumes and data"
 	@echo "  make shell        - Open shell in API container"
 	@echo ""
@@ -63,6 +65,28 @@ load-test:
 load-test-locust:
 	@echo "Starting Locust..."
 	locust -f scripts/locust/mixed_pipeline.py --host=http://localhost:8000
+
+loadtest-insights:
+	@API_TOKEN=$${API_TOKEN:-token_abc123}; \
+	SESS=$${SESSIONS:-50}; \
+	RAMP_SECS=$${RAMP:-30}; \
+	AUDIO_FILE=$${AUDIO:-test-data/audio/sample_stream.wav}; \
+	CHUNK=$${CHUNK_MS:-600}; \
+	echo "Sessions=$$SESS Ramp=$$RAMP_SECS Audio=$$AUDIO_FILE ChunkMS=$$CHUNK"; \
+	python3 scripts/loadtest/asr_insight_stress.py \
+		--sessions $$SESS \
+		--ramp $$RAMP_SECS \
+		--audio $$AUDIO_FILE \
+		--chunk-ms $$CHUNK \
+		--token $$API_TOKEN \
+		--expect-insight
+
+loadtest-insights-max:
+	@SESS_MAX=$${SESSIONS:-500}; \
+	RAMP_MAX=$${RAMP:-120}; \
+	AUDIO_MAX=$${AUDIO:-test-data/audio/sample_stream.wav}; \
+	CHUNK_MAX=$${CHUNK_MS:-600}; \
+	make loadtest-insights SESSIONS=$$SESS_MAX RAMP=$$RAMP_MAX AUDIO=$$AUDIO_MAX CHUNK_MS=$$CHUNK_MAX
 
 clean:
 	@echo "Cleaning up..."

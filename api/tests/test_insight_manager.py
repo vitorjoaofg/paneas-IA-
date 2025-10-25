@@ -19,9 +19,10 @@ async def test_insight_manager_triggers_after_threshold():
             ]
         }
 
-    config = InsightConfig(min_tokens=6, min_interval_sec=0.0, retain_tokens=3)
+    config = InsightConfig(min_tokens=6, min_interval_sec=0.0, retain_tokens=3, worker_concurrency=1, queue_maxsize=10)
     manager = InsightManager(config=config, llm_callable=fake_llm)
 
+    await manager.startup()
     await manager.register_session("session-1", fake_send)
 
     await manager.handle_transcript("session-1", "Cliente relatou problema na fatura.")
@@ -38,3 +39,4 @@ async def test_insight_manager_triggers_after_threshold():
     assert insight["event"] == "insight"
     assert "Resumo breve" in insight["text"]
     await manager.close_session("session-1")
+    await manager.shutdown()
