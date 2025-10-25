@@ -1,7 +1,8 @@
+import json
 from functools import lru_cache
 from typing import List
 
-from pydantic import AnyHttpUrl, Field
+from pydantic import AnyHttpUrl, Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -75,6 +76,26 @@ class Settings(BaseSettings):
 
     smoke_test_audio: str = Field(default="/test-data/audio/sample_10s.wav")
     smoke_test_pdf: str = Field(default="/test-data/documents/sample_5pages.pdf")
+
+    @field_validator("api_tokens", mode="before")
+    @classmethod
+    def _parse_api_tokens(cls, value):
+        if value in (None, "", [], ()):
+            return []
+        if isinstance(value, list):
+            return value
+        if isinstance(value, str):
+            stripped = value.strip()
+            if not stripped:
+                return []
+            try:
+                parsed = json.loads(stripped)
+                if isinstance(parsed, list):
+                    return parsed
+            except json.JSONDecodeError:
+                pass
+            return [token.strip() for token in stripped.split(",") if token.strip()]
+        return value
 
 
 @lru_cache(maxsize=1)

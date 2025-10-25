@@ -73,6 +73,7 @@ Respostas típicas:
 {"event":"partial","is_final":false,"text":"Olá, obrigado por ligar","segments":[{"start":0.0,"end":2.1,"text":"Olá, obrigado por ligar"}]}
 {"event":"final","is_final":true,"text":"Olá, obrigado por ligar para a central.","segments":[{"start":0.0,"end":2.6,"text":"Olá, obrigado por ligar para a central."}]}
 {"event":"session_ended","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
+{"event":"insight","type":"live_summary","text":"Cliente solicita renegociação. Reforce condições especiais.","confidence":0.7,"model":"qwen2.5-14b-instruct-awq"}
 ```
 
 Para um cliente completo em Python, consulte `scripts/streaming/asr_stream_client.py`.

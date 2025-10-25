@@ -20,7 +20,7 @@ from typing import AsyncGenerator, Optional, Tuple
 import numpy as np
 import soundfile as sf
 import websockets
-from websockets.exceptions import ConnectionClosedOK
+from websockets.exceptions import ConnectionClosedError, ConnectionClosedOK
 
 
 def load_audio(path: Path, target_sr: int = 16000) -> Tuple[np.ndarray, int]:
@@ -89,16 +89,25 @@ async def stream_audio(
                     print("<<", message)
             except ConnectionClosedOK:
                 pass
+            except ConnectionClosedError:
+                pass
 
         reader_task = asyncio.create_task(reader())
 
-        async for chunk in chunk_audio(pcm16, sample_rate, chunk_ms):
-            if chunk.size == 0:
-                continue
-            payload = base64.b64encode(chunk.tobytes()).decode("ascii")
-            await ws.send(json.dumps({"event": "audio", "chunk": payload}))
-
-        await ws.send(json.dumps({"event": "stop"}))
+        try:
+            async for chunk in chunk_audio(pcm16, sample_rate, chunk_ms):
+                if chunk.size == 0:
+                    continue
+                payload = base64.b64encode(chunk.tobytes()).decode("ascii")
+                try:
+                    await ws.send(json.dumps({"event": "audio", "chunk": payload}))
+                except ConnectionClosedError:
+                    break
+        finally:
+            try:
+                await ws.send(json.dumps({"event": "stop"}))
+            except ConnectionClosedError:
+                pass
         await reader_task
 
 

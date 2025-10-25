@@ -3,7 +3,7 @@ import contextlib
 import inspect
 import json
 import uuid
-from typing import Optional
+from typing import Optional, Dict, Any
 
 import websockets
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, status
@@ -13,6 +13,7 @@ from websockets.exceptions import ConnectionClosed
 
 from config import get_settings
 from utils.pii_masking import PIIMasker
+from services.insight_manager import insight_manager
 
 router = APIRouter(prefix="/api/v1", tags=["asr-stream"])
 settings = get_settings()
@@ -27,6 +28,10 @@ STREAM_BYTES = Counter(
     "asr_stream_message_bytes_total",
     "Total WebSocket payload bytes relayed",
     ["direction"],
+)
+STREAM_INSIGHTS = Counter(
+    "asr_stream_insights_total",
+    "Total streaming insights emitted",
 )
 
 def _extract_token(websocket: WebSocket) -> Optional[str]:
@@ -60,33 +65,59 @@ async def _relay_client_to_asr(client_ws: WebSocket, upstream_ws: websockets.Web
 
 
 async def _relay_asr_to_client(client_ws: WebSocket, upstream_ws: websockets.WebSocketClientProtocol) -> None:
+    session_id: Optional[str] = None
+    session_registered = False
     try:
         async for message in upstream_ws:
             if isinstance(message, bytes):
                 await client_ws.send_bytes(message)
                 STREAM_MESSAGES.labels(direction="to_client").inc()
                 STREAM_BYTES.labels(direction="to_client").inc(len(message))
-            else:
-                try:
-                    payload = json.loads(message)
-                except json.JSONDecodeError:
-                    await client_ws.send_text(message)
-                    STREAM_MESSAGES.labels(direction="to_client").inc()
-                    STREAM_BYTES.labels(direction="to_client").inc(len(message))
-                    continue
+                continue
 
-                if payload.get("event") in {"partial", "final"}:
-                    payload["text"] = PIIMasker.mask_text(payload.get("text", ""))
-                    for segment in payload.get("segments", []):
-                        if "text" in segment:
-                            segment["text"] = PIIMasker.mask_text(segment["text"])
-                encoded = json.dumps(payload)
-                await client_ws.send_text(encoded)
+            try:
+                payload = json.loads(message)
+            except json.JSONDecodeError:
+                await client_ws.send_text(message)
                 STREAM_MESSAGES.labels(direction="to_client").inc()
-                STREAM_BYTES.labels(direction="to_client").inc(len(encoded))
+                STREAM_BYTES.labels(direction="to_client").inc(len(message))
+                continue
+
+            event = payload.get("event")
+
+            if event == "ready":
+                session_id = payload.get("session_id")
+
+            if payload.get("event") in {"partial", "final"}:
+                payload["text"] = PIIMasker.mask_text(payload.get("text", ""))
+                for segment in payload.get("segments", []):
+                    if "text" in segment:
+                        segment["text"] = PIIMasker.mask_text(segment["text"])
+
+            if event == "session_started" and session_id and not session_registered:
+                async def send_insight(data: Dict[str, Any]) -> None:
+                    STREAM_INSIGHTS.inc()
+                    await client_ws.send_text(json.dumps(data))
+
+                await insight_manager.register_session(session_id, send_insight)
+                session_registered = True
+            elif event in {"partial", "final"} and session_id and session_registered:
+                await insight_manager.handle_transcript(session_id, payload.get("text", ""))
+            elif event == "session_ended" and session_id and session_registered:
+                await insight_manager.handle_transcript(session_id, payload.get("text", ""))
+                await insight_manager.close_session(session_id)
+                session_registered = False
+
+            encoded = json.dumps(payload)
+            await client_ws.send_text(encoded)
+            STREAM_MESSAGES.labels(direction="to_client").inc()
+            STREAM_BYTES.labels(direction="to_client").inc(len(encoded))
     except ConnectionClosed:
         if client_ws.client_state != WebSocketState.DISCONNECTED:
             await client_ws.close(code=status.WS_1011_INTERNAL_ERROR)
+    finally:
+        if session_registered and session_id:
+            await insight_manager.close_session(session_id)
 
 
 @router.websocket("/asr/stream")
