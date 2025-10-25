@@ -149,12 +149,14 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
   -H "Authorization: Bearer token_abc123" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "llama-3.1-8b-instruct",
+    "model": "qwen2.5-14b-instruct",
     "messages": [
       {"role": "user", "content": "Olá!"}
     ]
   }'
 ```
+
+> ℹ️  O alias `qwen2.5-14b-instruct-awq` hoje aponta para o mesmo servidor FP16. Ative o perfil opcional (`docker compose --profile int4 up -d llm-int4`) quando a variante quantizada estiver disponível.
 
 ### TTS
 

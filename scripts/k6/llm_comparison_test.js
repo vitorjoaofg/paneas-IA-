@@ -61,11 +61,11 @@ function callLLM(model) {
 }
 
 export function testFP16() {
-  const latency = callLLM('llama-3.1-8b-instruct');
+  const latency = callLLM('qwen2.5-14b-instruct');
   fp16Latency.add(latency);
 }
 
 export function testINT4() {
-  const latency = callLLM('llama-3.1-8b-instruct-int4');
+  const latency = callLLM('qwen2.5-14b-instruct-awq');
   int4Latency.add(latency);
 }

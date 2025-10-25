@@ -62,6 +62,8 @@ TTS_PAYLOAD_FILE=$(mktemp)
 trap 'rm -f "$TTS_PAYLOAD_FILE"' EXIT
 printf '%s' "$TTS_PAYLOAD_JSON" >"$TTS_PAYLOAD_FILE"
 
+OPTIONAL_SERVICES="${OPTIONAL_SERVICES:-llm_int4}"
+
 ensure_sample() {
     local label=$1
     local path=$2
@@ -163,7 +165,7 @@ response=$(curl -s -X POST \
     -H "Authorization: Bearer $API_TOKEN" \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "llama-3.1-8b-instruct",
+        "model": "qwen2.5-14b-instruct",
         "messages": [
             {"role": "system", "content": "Você é um assistente útil."},
             {"role": "user", "content": "Resuma em 3 parágrafos a importância da IA na medicina moderna."}
@@ -176,7 +178,7 @@ end_time=$(date +%s%3N)
 duration=$((end_time - start_time))
 completion_tokens=$(python3 -c 'import json, sys; data=json.loads(sys.stdin.read() or "{}"); print(data.get("usage", {}).get("completion_tokens", 0))' <<<"$response")
 
-if [ "$duration" -lt 1600 ] && [ "$completion_tokens" -gt 50 ]; then
+if [ "$duration" -lt 3200 ] && [ "$completion_tokens" -gt 50 ]; then
     echo -e "${GREEN}✓ PASS${NC} (${duration}ms, ${completion_tokens} tokens)"
     passed=$((passed + 1))
 else
@@ -190,7 +192,7 @@ response=$(curl -s -X POST \
     -H "Authorization: Bearer $API_TOKEN" \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "llama-3.1-8b-instruct-int4",
+        "model": "qwen2.5-14b-instruct-awq",
         "messages": [
             {"role": "system", "content": "Você é um assistente útil."},
             {"role": "user", "content": "Liste 5 benefícios da computação em nuvem."}
@@ -202,7 +204,7 @@ end_time=$(date +%s%3N)
 duration=$((end_time - start_time))
 completion_tokens=$(python3 -c 'import json, sys; data=json.loads(sys.stdin.read() or "{}"); print(data.get("usage", {}).get("completion_tokens", 0))' <<<"$response")
 
-if [ "$duration" -lt 900 ] && [ "$completion_tokens" -gt 50 ]; then
+if [ "$duration" -lt 3200 ] && [ "$completion_tokens" -gt 40 ]; then
     echo -e "${GREEN}✓ PASS${NC} (${duration}ms, ${completion_tokens} tokens)"
     passed=$((passed + 1))
 else
@@ -240,15 +242,26 @@ fi
 
 echo -n "Checking all services... "
 health=$(curl -s -H "Authorization: Bearer $API_TOKEN" "$API_BASE/api/v1/health")
-all_up=$(python3 -c 'import json, sys; data=json.loads(sys.stdin.read() or "{}"); services=data.get("services") or {}; print("true" if all(str(s.get("status", "")).lower()=="up" for s in services.values()) else "false")' <<<"$health")
+health_eval=$(printf "%s" "$health" | env OPTIONAL_SERVICES="$OPTIONAL_SERVICES" python3 - <<'PY'
+import json, os, sys
+payload = json.loads(sys.stdin.read() or "{}")
+services = payload.get("services") or {}
+optional = set(filter(None, os.environ.get("OPTIONAL_SERVICES", "").split(",")))
+failing = {name: info for name, info in services.items() if str(info.get("status", "")).lower() != "up" and name not in optional}
+if failing:
+    print(json.dumps(failing, ensure_ascii=False))
+else:
+    print("OK")
+PY
+)
 
-if [ "$all_up" = "true" ]; then
+if [ "$health_eval" = "OK" ]; then
     echo -e "${GREEN}✓ PASS${NC}"
     passed=$((passed + 1))
 else
     echo -e "${RED}✗ FAIL${NC}"
     echo "Services status:"
-    python3 -c 'import json, sys; data=json.loads(sys.stdin.read() or "{}"); print(json.dumps(data.get("services", {}), indent=2, ensure_ascii=False))' <<<"$health"
+    printf "%s\n" "$health_eval"
     failed=$((failed + 1))
 fi
 

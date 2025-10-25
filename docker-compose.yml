@@ -181,10 +181,10 @@ services:
     gpus:
       - device_ids: ['2', '3']
     command: >
-      --model /models/llama/fp16
+      --model /models/qwen2_5/fp16
       --dtype float16
       --tensor-parallel-size 2
-      --gpu-memory-utilization 0.92
+      --gpu-memory-utilization 0.88
       --max-num-seqs 16
       --max-model-len 3200
       --max-num-batched-tokens 3200
@@ -216,27 +216,29 @@ services:
       - stack-network
 
   llm-int4:
+    profiles:
+      - int4
     build: ./llm
     container_name: stack-llm-int4
     restart: unless-stopped
     runtime: nvidia
-    shm_size: "4gb"
+    shm_size: "8gb"
     gpus:
-      - device_ids: ['2', '3']
+      - device_ids: ['2']
     command: >
-      --model /models/llama/int4-awq
+      --model /models/qwen2_5/int4-awq
       --quantization awq
-      --tensor-parallel-size 2
-      --gpu-memory-utilization 0.90
-      --max-num-seqs 24
+      --tensor-parallel-size 1
+      --gpu-memory-utilization 0.85
+      --max-num-seqs 16
       --max-model-len 3200
       --max-num-batched-tokens 3200
       --disable-log-requests
       --host 0.0.0.0
       --port 8002
     environment:
-      - CUDA_VISIBLE_DEVICES=0,1
-      - NVIDIA_VISIBLE_DEVICES=2,3
+      - CUDA_VISIBLE_DEVICES=0
+      - NVIDIA_VISIBLE_DEVICES=2
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
       - VLLM_SAMPLING_BACKEND=torch
       - VLLM_DISABLE_FLASH_INFER=1
@@ -248,7 +250,7 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['2', '3']
+              device_ids: ['2']
               capabilities: [gpu]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8002/health"]

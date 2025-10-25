@@ -21,7 +21,7 @@ echo "=== AI Stack Models Bootstrap ==="
 echo "Target directory: $MODELS_DIR"
 echo ""
 
-mkdir -p "$MODELS_DIR"/{whisper,pyannote,llama,xtts,paddleocr,embeddings}
+mkdir -p "$MODELS_DIR"/{whisper,pyannote,llama,qwen2_5,xtts,paddleocr,embeddings}
 mkdir -p "$MODELS_DIR"/manifests/licenses
 
 model_exists() {
@@ -170,14 +170,14 @@ if [ -d "$MODELS_DIR" ]; then
 fi
 
 echo ""
-echo "[1/8] Checking Whisper large-v3..."
+echo "[1/10] Checking Whisper large-v3..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3" "Whisper large-v3"; then
     echo "Downloading Whisper large-v3..."
     hf_download_public Systran/faster-whisper-large-v3 "$MODELS_DIR/whisper/large-v3"
 fi
 
 echo ""
-echo "[2/8] Checking Whisper large-v3-turbo..."
+echo "[2/10] Checking Whisper large-v3-turbo..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo"; then
     echo "Downloading Whisper large-v3-turbo..."
     hf_download_public_any "$MODELS_DIR/whisper/large-v3-turbo" \
@@ -186,7 +186,7 @@ if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo";
 fi
 
 echo ""
-echo "[3/8] Checking Pyannote models..."
+echo "[3/10] Checking Pyannote models..."
 if [ -z "${HF_TOKEN:-}" ]; then
     echo "WARNING: HF_TOKEN not set. Skipping Pyannote models (required for diarization)."
     echo "To enable diarization, set HF_TOKEN and re-run this script."
@@ -203,14 +203,14 @@ else
 fi
 
 echo ""
-echo "[4/8] Checking LLaMA-3.1-8B-Instruct FP16..."
+echo "[4/10] Checking LLaMA-3.1-8B-Instruct FP16..."
 if ! model_exists "$MODELS_DIR/llama/fp16" "LLaMA-3.1-8B FP16"; then
     echo "Downloading LLaMA-3.1-8B-Instruct FP16..."
     hf_download_public meta-llama/Meta-Llama-3.1-8B-Instruct "$MODELS_DIR/llama/fp16"
 fi
 
 echo ""
-echo "[5/8] Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
+echo "[5/10] Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
 if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
     echo "Downloading LLaMA-3.1-8B-Instruct INT4/AWQ..."
     hf_download_public_any "$MODELS_DIR/llama/int4-awq" \
@@ -219,14 +219,28 @@ if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
 fi
 
 echo ""
-echo "[6/8] Checking XTTS-v2..."
+echo "[6/10] Checking Qwen2.5-14B-Instruct FP16..."
+if ! model_exists "$MODELS_DIR/qwen2_5/fp16" "Qwen2.5-14B-Instruct FP16"; then
+    echo "Downloading Qwen2.5-14B-Instruct FP16..."
+    hf_download_public Qwen/Qwen2.5-14B-Instruct "$MODELS_DIR/qwen2_5/fp16"
+fi
+
+echo ""
+echo "[7/10] Checking Qwen2.5-14B-Instruct INT4/AWQ..."
+if ! model_exists "$MODELS_DIR/qwen2_5/int4-awq" "Qwen2.5-14B-Instruct INT4/AWQ"; then
+    echo "Downloading Qwen2.5-14B-Instruct INT4/AWQ..."
+    hf_download_public Qwen/Qwen2.5-14B-Instruct-AWQ "$MODELS_DIR/qwen2_5/int4-awq"
+fi
+
+echo ""
+echo "[8/10] Checking XTTS-v2..."
 if ! model_exists "$MODELS_DIR/xtts" "XTTS-v2"; then
     echo "Downloading XTTS-v2..."
     hf_download_public coqui/XTTS-v2 "$MODELS_DIR/xtts"
 fi
 
 echo ""
-echo "[7/8] Checking PaddleOCR models..."
+echo "[9/10] Checking PaddleOCR models..."
 mkdir -p "$MODELS_DIR/paddleocr"/{det,rec,cls,onnx,engines}
 
 if ! model_exists "$MODELS_DIR/paddleocr/det" "PaddleOCR Detection"; then
@@ -254,7 +268,7 @@ if ! model_exists "$MODELS_DIR/paddleocr/cls" "PaddleOCR Classification"; then
 fi
 
 echo ""
-echo "[8/8] Checking BGE-M3 embeddings..."
+echo "[10/10] Checking BGE-M3 embeddings..."
 if ! model_exists "$MODELS_DIR/embeddings/bge-m3" "BGE-M3"; then
     echo "Downloading BGE-M3 embeddings..."
     hf_download_public BAAI/bge-m3 "$MODELS_DIR/embeddings/bge-m3"
@@ -270,6 +284,8 @@ declare -A EXPECTED_MODELS=(
     ["pyannote-segmentation"]="$MODELS_DIR/pyannote/segmentation-3.0"
     ["llama-fp16"]="$MODELS_DIR/llama/fp16"
     ["llama-int4"]="$MODELS_DIR/llama/int4-awq"
+    ["qwen2_5-fp16"]="$MODELS_DIR/qwen2_5/fp16"
+    ["qwen2_5-int4"]="$MODELS_DIR/qwen2_5/int4-awq"
     ["xtts"]="$MODELS_DIR/xtts"
     ["paddleocr-det"]="$MODELS_DIR/paddleocr/det"
     ["paddleocr-rec"]="$MODELS_DIR/paddleocr/rec"
@@ -358,6 +374,18 @@ cat > "$MANIFEST_FILE" <<MANIFEST_EOF
       "size_gb": 4.8,
       "license": "Llama 3.1 Community License",
       "status": "$([ -d "$MODELS_DIR/llama/int4-awq" ] && echo "present" || echo "missing")"
+    },
+    "qwen2_5_fp16": {
+      "path": "qwen2_5/fp16",
+      "size_gb": 30.0,
+      "license": "Tongyi Qianwen License 2.0",
+      "status": "$([ -d "$MODELS_DIR/qwen2_5/fp16" ] && echo "present" || echo "missing")"
+    },
+    "qwen2_5_int4": {
+      "path": "qwen2_5/int4-awq",
+      "size_gb": 11.0,
+      "license": "Tongyi Qianwen License 2.0",
+      "status": "$([ -d "$MODELS_DIR/qwen2_5/int4-awq" ] && echo "present" || echo "missing")"
     },
     "xtts": {
       "path": "xtts",

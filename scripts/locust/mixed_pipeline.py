@@ -110,8 +110,8 @@ class AIPipelineUser(HttpUser):
 
         payload = {
             "model": random.choice([
-                "llama-3.1-8b-instruct",
-                "llama-3.1-8b-instruct-int4",
+                "qwen2.5-14b-instruct",
+                "qwen2.5-14b-instruct-awq",
             ]),
             "messages": [
                 {"role": "system", "content": "Você é um assistente útil."},

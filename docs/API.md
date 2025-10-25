@@ -154,14 +154,19 @@ Content-Type: audio/wav
 ## Chat Completions
 `POST /api/v1/chat/completions`
 
-Compatível com o formato OpenAI; o roteador interno escolhe FP16 ou INT4 com base no contexto.
+Compatível com o formato OpenAI; o roteador interno escolhe FP16 ou INT4 com base no contexto, mas você pode forçar o modelo passando `qwen2.5-14b-instruct` (FP16) ou `qwen2.5-14b-instruct-awq` (INT4).
+
+Modelos disponíveis:
+- `qwen2.5-14b-instruct` (alta qualidade, FP16, GPUs 2-3)
+- `qwen2.5-14b-instruct-awq` (alias temporário que usa o servidor FP16; para ativar o serviço quantizado, subir o profile `int4`)
+- `llama-3.1-8b-instruct*` (apelidos legados que redirecionam para o Qwen2.5 correspondente)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/chat/completions \
   -H "Authorization: Bearer $API_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-        "model": "llama-3.1-8b-instruct",
+        "model": "qwen2.5-14b-instruct",
         "messages": [{"role": "user", "content": "Resuma em uma frase o objetivo da plataforma."}],
         "max_tokens": 128,
         "quality_priority": "balanced"
@@ -171,7 +176,7 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
 ```json
 {
   "id": "chatcmpl-1f84f7c0f0a14e18",
-  "model": "llama-3.1-8b-instruct",
+  "model": "qwen2.5-14b-instruct",
   "choices": [
     {
       "index": 0,

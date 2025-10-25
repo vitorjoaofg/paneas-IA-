@@ -5,8 +5,8 @@ from fastapi import APIRouter
 
 from config import get_settings
 from schemas.llm import ChatRequest, ChatResponse, ChatChoice, ChatMessage, UsageMetrics
-from services.llm_client import chat_completion
-from services.llm_router import LLMRouter, LLMTarget
+from services.llm_client import MODEL_REGISTRY, chat_completion
+from services.llm_router import LLMRouter, LLMRoutingDecision, LLMTarget
 
 router = APIRouter(prefix="/api/v1", tags=["llm"])
 settings = get_settings()
@@ -17,11 +17,15 @@ router_engine = LLMRouter(strategy=settings.llm_routing_strategy)
 async def create_chat_completion(payload: ChatRequest):
     prompt_tokens = sum(len(msg.content.split()) for msg in payload.messages)
     context_length = prompt_tokens + payload.max_tokens
-    decision = router_engine.route(
-        prompt_tokens=prompt_tokens,
-        context_length=context_length,
-        quality_priority=payload.quality_priority,
-    )
+    if payload.model in MODEL_REGISTRY:
+        forced_target = MODEL_REGISTRY[payload.model]["target"]
+        decision = LLMRoutingDecision(target=forced_target, reason="requested_model")
+    else:
+        decision = router_engine.route(
+            prompt_tokens=prompt_tokens,
+            context_length=context_length,
+            quality_priority=payload.quality_priority,
+        )
 
     target_model = LLMTarget.FP16 if decision.target == LLMTarget.FP16 else LLMTarget.INT4
 

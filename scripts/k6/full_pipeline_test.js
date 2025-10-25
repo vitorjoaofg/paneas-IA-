@@ -74,7 +74,7 @@ export default function () {
 
     group('llm', () => {
       const payload = JSON.stringify({
-        model: 'llama-3.1-8b-instruct',
+        model: 'qwen2.5-14b-instruct',
         messages: [
           { role: 'system', content: 'Você é um assistente útil.' },
           { role: 'user', content: 'Crie o resumo da transcrição e destaque 3 tópicos.' },

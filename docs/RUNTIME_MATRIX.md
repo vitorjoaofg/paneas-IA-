@@ -23,6 +23,7 @@ Resumo das versões, modelos e requisitos do cluster da AI Stack Platform.
 | Alinhamento | Whisper large-v3-turbo | Idem ASR | `/srv/models/whisper/large-v3-turbo` |
 | Diarização | Speaker-Diarization 3.1, Segmentation 3.0 | `pyannote/*` (precisa `HF_TOKEN`) | `/srv/models/pyannote/*` |
 | LLM | LLaMA-3.1-8B Instruct FP16 + AWQ | `meta-llama/...`, `TheBloke/...AWQ` | `/srv/models/llama/{fp16,int4-awq}` |
+| LLM (alta simultaneidade) | Qwen2.5-14B Instruct FP16 (+ alias AWQ) | `Qwen/Qwen2.5-14B-Instruct*` | `/srv/models/qwen2_5/{fp16,int4-awq}` |
 | TTS | Coqui XTTS-v2 | `coqui/XTTS-v2` | `/srv/models/xtts` |
 | OCR | PP-OCRv4 det/rec/cls + engines | `PaddlePaddle/*` | `/srv/models/paddleocr/{det,rec,cls,engines}` |
 | Embeddings | BGE-M3 | `BAAI/bge-m3` | `/srv/models/embeddings/bge-m3` |
@@ -31,7 +32,7 @@ Resumo das versões, modelos e requisitos do cluster da AI Stack Platform.
 - **API (`api/`)**: FastAPI 0.110.1 + Celery 5.3.6 + Redis 5.0.4; configuração em `config.py`.
 - **ASR & Align (`asr/`, `align/`)**: Faster-Whisper 1.2.0, CTranslate2 4.1.0, Torchaudio 2.2.2, cuDNN 8.9.7.
 - **Diarização (`diar/`)**: Pyannote.audio 3.1.1; cache em `/srv/data/embeddings_cache`; requer `HF_TOKEN`.
-- **LLM (`llm/`)**: vLLM 0.4.2 (patch rope), torchvision 0.18.0; `shm_size=4gb`, GPUs 2-3.
+- **LLM (`llm/`)**: vLLM 0.4.2 (patch rope), torchvision 0.18.0; `shm_size=4gb`, GPUs 2-3. Instâncias padrão servem Qwen2.5-14B FP16 (alias `*-awq` aponta temporariamente para FP16). Serviço quantizado pode ser iniciado sob demanda com `docker compose --profile int4 up -d llm-int4`. LLaMA-3.1-8B continua disponível para downloads complementares ou treinamento.
 - **OCR (`ocr/`)**: PaddleOCR 2.7.3, PaddlePaddle GPU 2.5.1, ONNX Runtime GPU 1.17.1, TensorRT.
 - **TTS (`tts/`)**: Coqui TTS 0.22.0, Transformers 4.39.3, MinIO 7.2.4 (`/srv/data/voices`).
 - **Analytics (`analytics/`)**: Librosa 0.10.1, Celery 5.3.6; modelos em modo leitura.
