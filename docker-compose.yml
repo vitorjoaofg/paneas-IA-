@@ -1,0 +1,582 @@
+version: '3.9'
+
+services:
+  api:
+    build: ./api
+    container_name: stack-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - LOG_LEVEL=info
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4318
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - REDIS_HOST=redis
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+    volumes:
+      - type: bind
+        source: /srv/models
+        target: /models
+        read_only: false
+      - /srv/data:/data
+    depends_on:
+      - postgres
+      - redis
+      - minio
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - stack-network
+
+  asr:
+    build: ./asr
+    container_name: stack-asr
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['0']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - COMPUTE_TYPE=float16
+      - MODEL_NAME=whisper/large-v3-turbo
+      - MODELS_DIR=/models
+      - DIAR_SERVICE_URL=http://diar:9003/diarize
+      - NVIDIA_VISIBLE_DEVICES=0
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  tts:
+    build: ./tts
+    container_name: stack-tts
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['0']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - MODELS_DIR=/models/xtts
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+      - VOICES_DIR=/voices
+      - NVIDIA_VISIBLE_DEVICES=0
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+      - /srv/data/voices:/voices
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9001/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  align:
+    build: ./align
+    container_name: stack-align
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - MODEL_NAME=whisper/large-v3-turbo
+      - MODELS_DIR=/models
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+      - DIAR_SERVICE_URL=http://diar:9003/diarize
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9002/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  diar:
+    build: ./diar
+    container_name: stack-diar
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - HF_TOKEN=${HF_TOKEN}
+      - EMBEDDINGS_CACHE=/cache/embeddings
+      - HF_HOME=/cache/hf
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+      - /srv/data/embeddings_cache:/cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9003/health"]
+      interval: 20s
+      timeout: 15s
+      retries: 3
+    networks:
+      - stack-network
+
+  llm-fp16:
+    build: ./llm
+    container_name: stack-llm-fp16
+    restart: unless-stopped
+    runtime: nvidia
+    shm_size: "4gb"
+    gpus:
+      - device_ids: ['2', '3']
+    command: >
+      --model /models/llama/fp16
+      --dtype float16
+      --tensor-parallel-size 2
+      --gpu-memory-utilization 0.92
+      --max-num-seqs 16
+      --max-model-len 3200
+      --max-num-batched-tokens 3200
+      --disable-log-requests
+      --host 0.0.0.0
+      --port 8001
+    environment:
+      - CUDA_VISIBLE_DEVICES=0,1
+      - NVIDIA_VISIBLE_DEVICES=2,3
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - VLLM_SAMPLING_BACKEND=torch
+      - VLLM_DISABLE_FLASH_INFER=1
+      - FLASHINFER_FORCE_DISABLE=1
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2', '3']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 20s
+      timeout: 15s
+      retries: 3
+    networks:
+      - stack-network
+
+  llm-int4:
+    build: ./llm
+    container_name: stack-llm-int4
+    restart: unless-stopped
+    runtime: nvidia
+    shm_size: "4gb"
+    gpus:
+      - device_ids: ['2', '3']
+    command: >
+      --model /models/llama/int4-awq
+      --quantization awq
+      --tensor-parallel-size 2
+      --gpu-memory-utilization 0.90
+      --max-num-seqs 24
+      --max-model-len 3200
+      --max-num-batched-tokens 3200
+      --disable-log-requests
+      --host 0.0.0.0
+      --port 8002
+    environment:
+      - CUDA_VISIBLE_DEVICES=0,1
+      - NVIDIA_VISIBLE_DEVICES=2,3
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - VLLM_SAMPLING_BACKEND=torch
+      - VLLM_DISABLE_FLASH_INFER=1
+      - FLASHINFER_FORCE_DISABLE=1
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2', '3']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 20s
+      timeout: 15s
+      retries: 3
+    networks:
+      - stack-network
+
+  ocr:
+    build: ./ocr
+    container_name: stack-ocr
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['2']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - USE_TENSORRT=true
+      - FALLBACK_TO_CPU=true
+      - MODELS_DIR=/models
+      - NVIDIA_VISIBLE_DEVICES=2
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9004/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  analytics:
+    build: ./analytics
+    container_name: stack-analytics
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - CELERY_BROKER=redis://redis:6379/0
+      - CELERY_BACKEND=redis://redis:6379/1
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB_CELERY=1
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+      - /srv/data:/data
+    depends_on:
+      - redis
+      - postgres
+    networks:
+      - stack-network
+
+  celery-worker:
+    build: ./api
+    container_name: stack-celery-worker
+    restart: unless-stopped
+    command: celery -A celery_app worker --loglevel=info --concurrency=4
+    environment:
+      - CELERY_BROKER=redis://redis:6379/0
+      - CELERY_BACKEND=redis://redis:6379/1
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+    volumes:
+      - /srv/models:/models:ro
+      - /srv/data:/data
+    depends_on:
+      - redis
+      - postgres
+    networks:
+      - stack-network
+
+  celery-beat:
+    build: ./api
+    container_name: stack-celery-beat
+    restart: unless-stopped
+    command: celery -A celery_app beat --loglevel=info
+    environment:
+      - CELERY_BROKER=redis://redis:6379/0
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SECURE=false
+    depends_on:
+      - redis
+    networks:
+      - stack-network
+
+  flower:
+    image: mher/flower:2.0
+    container_name: stack-flower
+    restart: unless-stopped
+    command: celery --broker=redis://redis:6379/0 flower --address=0.0.0.0 --port=5555
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+    networks:
+      - stack-network
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: stack-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=aistack
+      - POSTGRES_USER=aistack
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - /var/lib/postgresql/data:/var/lib/postgresql/data
+      - ./infra/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aistack"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - stack-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: stack-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 4gb --maxmemory-policy allkeys-lru
+    volumes:
+      - /srv/data/redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - stack-network
+
+  minio:
+    image: minio/minio:latest
+    container_name: stack-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+    volumes:
+      - /srv/minio:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.95.0
+    container_name: stack-otel-collector
+    restart: unless-stopped
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ./infra/otel/otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+    networks:
+      - stack-network
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: stack-prometheus
+    restart: unless-stopped
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+    volumes:
+      - ./infra/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./infra/prometheus/alerts.yml:/etc/prometheus/alerts.yml
+      - /srv/data/prometheus:/prometheus
+    ports:
+      - "9090:9090"
+    networks:
+      - stack-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: stack-grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - ./infra/grafana/provisioning:/etc/grafana/provisioning
+      - /srv/data/grafana:/var/lib/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+    networks:
+      - stack-network
+
+  loki:
+    image: grafana/loki:2.8.4
+    container_name: stack-loki
+    restart: unless-stopped
+    user: "0"
+    command:
+      - -config.file=/etc/loki/local-config.yaml
+      - -config.expand-env=true
+    volumes:
+      - ./infra/loki/loki-config.yaml:/etc/loki/local-config.yaml
+      - /srv/data/loki:/loki
+    ports:
+      - "3100:3100"
+    networks:
+      - stack-network
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: stack-promtail
+    restart: unless-stopped
+    command: -config.file=/etc/promtail/config.yaml
+    volumes:
+      - ./infra/promtail/promtail-config.yaml:/etc/promtail/config.yaml
+      - /var/log:/var/log:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+    networks:
+      - stack-network
+
+  tempo:
+    image: grafana/tempo:latest
+    container_name: stack-tempo
+    restart: unless-stopped
+    user: "0"
+    command: [ "-config.file=/etc/tempo.yaml" ]
+    volumes:
+      - ./infra/tempo/tempo-config.yaml:/etc/tempo.yaml
+      - /srv/data/tempo:/var/tempo
+    ports:
+      - "3200:3200"
+    networks:
+      - stack-network
+
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: stack-alertmanager
+    restart: unless-stopped
+    command:
+      - '--config.file=/etc/alertmanager/config.yml'
+      - '--storage.path=/alertmanager'
+    volumes:
+      - ./infra/alertmanager/alertmanager.yml:/etc/alertmanager/config.yml
+      - /srv/data/alertmanager:/alertmanager
+    ports:
+      - "9093:9093"
+    networks:
+      - stack-network
+
+  dcgm-exporter:
+    image: nvcr.io/nvidia/k8s/dcgm-exporter:3.3.5-3.4.0-ubuntu22.04
+    container_name: stack-dcgm-exporter
+    restart: unless-stopped
+    environment:
+      - DCGM_EXPORTER_LISTEN=:9400
+      - DCGM_EXPORTER_KUBERNETES=false
+    ports:
+      - "9400:9400"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0', '1', '2', '3']
+              capabilities: [gpu]
+    networks:
+      - stack-network
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: stack-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - /srv/data/caddy:/data
+      - /srv/data/caddy/config:/config
+    depends_on:
+      - api
+      - grafana
+      - flower
+    networks:
+      - stack-network
+
+networks:
+  stack-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16

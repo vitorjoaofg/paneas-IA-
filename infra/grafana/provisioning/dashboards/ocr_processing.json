@@ -1,0 +1,42 @@
+{
+  "title": "OCR Processing",
+  "uid": "ocr-processing",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Páginas por Minuto",
+      "targets": [
+        {
+          "expr": "sum(rate(ocr_pages_processed_total[1m]))",
+          "legendFormat": "Pages/min"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "Tempo Médio por Página",
+      "targets": [
+        {
+          "expr": "avg(ocr_page_latency_ms)",
+          "legendFormat": "Latency"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+    },
+    {
+      "type": "timeseries",
+      "title": "Confiança Média",
+      "targets": [
+        {
+          "expr": "avg(ocr_block_confidence)",
+          "legendFormat": "Confidence"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+    }
+  ],
+  "time": {"from": "now-6h", "to": "now"}
+}

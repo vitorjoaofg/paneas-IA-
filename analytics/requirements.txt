@@ -1,0 +1,9 @@
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+numpy==1.26.4
+librosa==0.10.1
+pydantic==2.6.4
+celery==5.3.6
+redis==5.0.4
+minio==7.2.4
+av==12.1.0

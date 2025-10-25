@@ -1,0 +1,76 @@
+{
+    admin off
+    auto_https disable_redirects
+}
+
+:80 {
+    log {
+        output file /var/log/caddy/access.log
+        format json
+    }
+
+    @cors_preflight {
+        method OPTIONS
+    }
+
+    handle @cors_preflight {
+        header Access-Control-Allow-Origin "*"
+        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        header Access-Control-Allow-Headers "Authorization, Content-Type"
+        respond 204
+    }
+
+    handle /api/* {
+        @authorized {
+            header Authorization "Bearer *"
+        }
+
+        handle @authorized {
+            reverse_proxy api:8000 {
+                header_up X-Real-IP {remote_host}
+                header_up X-Forwarded-For {remote_host}
+                health_uri /api/v1/health
+                health_interval 10s
+            }
+        }
+
+        handle {
+            respond "Unauthorized" 401
+        }
+    }
+
+    handle /metrics {
+        basicauth {
+            admin $2a$14$hashed_password
+        }
+        reverse_proxy api:8000
+    }
+
+    handle /grafana/* {
+        uri strip_prefix /grafana
+        reverse_proxy grafana:3000
+    }
+
+    handle /flower/* {
+        @internal_only {
+            remote_ip 172.28.0.0/16 10.0.0.0/8 192.168.0.0/16
+        }
+
+        handle @internal_only {
+            uri strip_prefix /flower
+            reverse_proxy flower:5555
+        }
+
+        handle {
+            respond "Forbidden" 403
+        }
+    }
+
+    handle /health {
+        reverse_proxy api:8000
+    }
+
+    handle {
+        respond "Not Found" 404
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "ASR & TTS Pipeline",
+  "uid": "asr-tts-pipeline",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "ASR Latência",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(asr_request_latency_bucket[5m])) by (le))",
+          "legendFormat": "ASR p95"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "RTF (Real Time Factor)",
+      "targets": [
+        {
+          "expr": "avg(asr_real_time_factor)",
+          "legendFormat": "RTF"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+    },
+    {
+      "type": "timeseries",
+      "title": "Cache de Vozeiro",
+      "targets": [
+        {
+          "expr": "rate(tts_voice_cache_hits_total[5m]) / (rate(tts_voice_cache_hits_total[5m]) + rate(tts_voice_cache_misses_total[5m]))",
+          "legendFormat": "Hit Rate"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+    }
+  ],
+  "time": {"from": "now-6h", "to": "now"}
+}

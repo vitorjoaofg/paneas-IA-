@@ -1,0 +1,7 @@
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+TTS==0.22.0
+av==12.1.0
+soundfile==0.12.1
+minio==7.2.4
+transformers==4.39.3

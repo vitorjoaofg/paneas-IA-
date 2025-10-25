@@ -1,0 +1,54 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - /etc/prometheus/alerts.yml
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['prometheus:9090']
+
+  - job_name: api
+    static_configs:
+      - targets: ['api:8000']
+    metrics_path: /metrics
+
+  - job_name: llm-fp16
+    static_configs:
+      - targets: ['llm-fp16:8001']
+    metrics_path: /metrics
+
+  - job_name: llm-int4
+    static_configs:
+      - targets: ['llm-int4:8002']
+    metrics_path: /metrics
+
+  - job_name: celery
+    static_configs:
+      - targets: ['flower:5555']
+
+  - job_name: redis
+    static_configs:
+      - targets: ['redis:6379']
+
+  - job_name: postgres
+    static_configs:
+      - targets: ['postgres:9187']
+
+  - job_name: node_exporter
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  - job_name: cadvisor
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  - job_name: dcgm
+    static_configs:
+      - targets: ['dcgm-exporter:9400']
+
+  - job_name: otel-collector
+    static_configs:
+      - targets: ['otel-collector:8889']

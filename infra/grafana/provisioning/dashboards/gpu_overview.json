@@ -1,0 +1,42 @@
+{
+  "title": "GPU Overview",
+  "uid": "gpu-overview",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "GPU Utilization",
+      "targets": [
+        {
+          "expr": "avg(DCGM_FI_DEV_GPU_UTIL) by (gpu)",
+          "legendFormat": "GPU {{gpu}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "GPU Memory Used",
+      "targets": [
+        {
+          "expr": "avg(DCGM_FI_DEV_FB_USED) by (gpu)",
+          "legendFormat": "GPU {{gpu}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+    },
+    {
+      "type": "timeseries",
+      "title": "Temperature",
+      "targets": [
+        {
+          "expr": "avg(DCGM_FI_DEV_GPU_TEMP) by (gpu)",
+          "legendFormat": "GPU {{gpu}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+    }
+  ],
+  "time": {"from": "now-6h", "to": "now"}
+}

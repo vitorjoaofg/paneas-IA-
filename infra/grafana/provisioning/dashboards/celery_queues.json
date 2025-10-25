@@ -1,0 +1,42 @@
+{
+  "title": "Celery Queues",
+  "uid": "celery-queues",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Tarefas em Fila",
+      "targets": [
+        {
+          "expr": "avg(celery_queue_length) by (queue)",
+          "legendFormat": "{{queue}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "Duração Média das Tarefas",
+      "targets": [
+        {
+          "expr": "avg(celery_task_duration_seconds) by (queue)",
+          "legendFormat": "{{queue}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+    },
+    {
+      "type": "timeseries",
+      "title": "Taxa de Sucesso",
+      "targets": [
+        {
+          "expr": "rate(celery_task_success_total[5m])",
+          "legendFormat": "Sucesso"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+    }
+  ],
+  "time": {"from": "now-6h", "to": "now"}
+}

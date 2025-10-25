@@ -1,0 +1,29 @@
+groups:
+  - name: ai-stack-alerts
+    rules:
+      - alert: HighApiErrorRate
+        expr: sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m])) > 0.02
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: Alta taxa de erros 5xx na API
+          description: Mais de 2% das requisições resultaram em 5xx nos últimos 5 minutos.
+
+      - alert: GpuUtilizationSustained
+        expr: avg_over_time(DCGM_FI_DEV_GPU_UTIL[5m]) > 95
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: Utilização de GPU acima de 95%
+          description: Verificar se há jobs mal balanceados ou bloqueios de fila.
+
+      - alert: LlmQueueDepthHigh
+        expr: llm_queue_depth > 50
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: Fila de requisições LLM alta
+          description: Avaliar escalonamento de instâncias INT4/FP16 ou throttling.
