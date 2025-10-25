@@ -49,6 +49,34 @@ curl -X POST http://localhost:8000/api/v1/asr \
 }
 ```
 
+## ASR Streaming (WebSocket)
+`WS /api/v1/asr/stream`
+
+Fluxo:
+
+1. Conecte-se com header `Authorization: Bearer <token>` ou query `?token=`.
+2. Envie `{"event":"start","sample_rate":16000,"encoding":"pcm16","language":"pt"}`.
+3. Envie múltiplos `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
+4. Finalize com `{"event":"stop"}` para receber a transcrição final.
+
+Exemplo:
+
+```bash
+wscat -c "ws://localhost:8000/api/v1/asr/stream?token=$API_TOKEN"
+```
+
+Respostas típicas:
+
+```json
+{"event":"ready","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
+{"event":"session_started","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
+{"event":"partial","is_final":false,"text":"Olá, obrigado por ligar","segments":[{"start":0.0,"end":2.1,"text":"Olá, obrigado por ligar"}]}
+{"event":"final","is_final":true,"text":"Olá, obrigado por ligar para a central.","segments":[{"start":0.0,"end":2.6,"text":"Olá, obrigado por ligar para a central."}]}
+{"event":"session_ended","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
+```
+
+Para um cliente completo em Python, consulte `scripts/streaming/asr_stream_client.py`.
+
 ## Align & Diarize
 `POST /api/v1/align_diarize`
 

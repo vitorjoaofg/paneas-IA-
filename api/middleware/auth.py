@@ -8,7 +8,7 @@ from config import get_settings
 
 _settings = get_settings()
 
-EXCLUDED_PATHS = {"/api/v1/health", "/metrics"}
+EXCLUDED_PATHS = {"/api/v1/health", "/metrics", "/api/v1/asr/stream"}
 
 
 class AuthMiddleware(BaseHTTPMiddleware):

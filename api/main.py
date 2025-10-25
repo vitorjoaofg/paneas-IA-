@@ -7,7 +7,7 @@ from middleware.auth import AuthMiddleware
 from middleware.logging import LoggingMiddleware
 from middleware.rate_limit import RateLimitMiddleware
 from middleware.request_id import RequestIDMiddleware
-from routers import align, analytics, asr, health, llm, ocr, tts
+from routers import align, analytics, asr, asr_stream, health, llm, ocr, tts
 from services.http_client import close_http_client
 from services.redis_client import close_redis
 from telemetry.logging import configure_logging
@@ -36,6 +36,7 @@ instrumentator.instrument(app).expose(app, include_in_schema=False)
 
 app.include_router(health.router)
 app.include_router(asr.router)
+app.include_router(asr_stream.router)
 app.include_router(align.router)
 app.include_router(ocr.router)
 app.include_router(tts.router)

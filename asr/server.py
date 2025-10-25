@@ -1,14 +1,18 @@
+import asyncio
+import base64
 import io
+import json
 import os
 import tempfile
 import time
 import uuid
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 import soundfile as sf
-from fastapi import FastAPI, File, Form, UploadFile
+from fastapi import FastAPI, File, Form, UploadFile, WebSocket, WebSocketDisconnect
+from starlette.websockets import WebSocketState
 from faster_whisper import WhisperModel
 from httpx import Client
 
@@ -164,6 +168,64 @@ def load_audio(contents: bytes) -> tuple[np.ndarray, int]:
 service = ASRService(model_name=DEFAULT_MODEL, compute_type=COMPUTE_TYPE)
 
 
+def decode_audio_chunk(chunk_b64: str, encoding: str) -> np.ndarray:
+    if encoding.lower() != "pcm16":
+        raise ValueError(f"Unsupported encoding: {encoding}")
+    raw = base64.b64decode(chunk_b64)
+    audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    return audio
+
+
+class StreamingSession:
+    def __init__(
+        self,
+        request_id: str,
+        sample_rate: int,
+        options: Dict[str, Any],
+        min_slice_seconds: float = 1.5,
+    ) -> None:
+        self.request_id = request_id
+        self.sample_rate = sample_rate
+        self.options = options
+        self.min_slice_seconds = min_slice_seconds
+        self._chunks: List[np.ndarray] = []
+        self._last_processed_samples = 0
+        self._last_text = ""
+
+    def append_chunk(self, chunk: np.ndarray) -> None:
+        if chunk.size == 0:
+            return
+        self._chunks.append(chunk)
+
+    def total_samples(self) -> int:
+        return sum(chunk.shape[0] for chunk in self._chunks)
+
+    def total_duration(self) -> float:
+        if self.sample_rate == 0:
+            return 0.0
+        return self.total_samples() / float(self.sample_rate)
+
+    def should_transcribe(self) -> bool:
+        if not self._chunks:
+            return False
+        delta_samples = self.total_samples() - self._last_processed_samples
+        return (delta_samples / float(self.sample_rate)) >= self.min_slice_seconds
+
+    def build_buffer(self) -> Tuple[np.ndarray, int]:
+        if not self._chunks:
+            return np.empty(0, dtype=np.float32), self.sample_rate
+        buffer = np.concatenate(self._chunks, axis=0)
+        return buffer, self.sample_rate
+
+    def mark_processed(self, samples: int, text: str) -> None:
+        self._last_processed_samples = samples
+        self._last_text = text
+
+    @property
+    def last_text(self) -> str:
+        return self._last_text
+
+
 @app.get("/health")
 async def health() -> Dict[str, Any]:
     return {"status": "up", "model": service.model_name, "compute_type": service.compute_type}
@@ -198,3 +260,154 @@ async def transcribe(  # noqa: PLR0913
         options["request_id"] = request_id
     result = service.transcribe(audio, sample_rate, options)
     return result
+
+
+async def _run_transcription(
+    session: StreamingSession, force: bool = False
+) -> Optional[Tuple[Dict[str, Any], str]]:
+    if not force and not session.should_transcribe():
+        return None
+
+    audio, sample_rate = session.build_buffer()
+    if audio.size == 0:
+        return None
+
+    options = {**session.options, "request_id": session.request_id}
+    previous_text = session.last_text
+    loop = asyncio.get_running_loop()
+    result: Dict[str, Any] = await loop.run_in_executor(
+        None, service.transcribe, audio, sample_rate, options
+    )
+    session.mark_processed(audio.shape[0], result.get("text", ""))
+    return result, previous_text
+
+
+@app.websocket("/stream")
+async def stream(websocket: WebSocket) -> None:
+    await websocket.accept()
+    session_id = str(uuid.uuid4())
+    await websocket.send_json({"event": "ready", "session_id": session_id})
+
+    try:
+        message = await websocket.receive_json()
+    except WebSocketDisconnect:
+        return
+    except json.JSONDecodeError:
+        await websocket.send_json({"event": "error", "message": "Invalid JSON payload"})
+        await websocket.close(code=1003)
+        return
+
+    if message.get("event") != "start":
+        await websocket.send_json({"event": "error", "message": "Expected start event"})
+        await websocket.close(code=4400)
+        return
+
+    sample_rate = int(message.get("sample_rate", 16000))
+    encoding = message.get("encoding", "pcm16")
+    language = message.get("language", "auto")
+    model = message.get("model", DEFAULT_MODEL)
+    beam_size = int(message.get("beam_size", 5))
+    vad_filter = bool(message.get("vad_filter", True))
+    vad_threshold = float(message.get("vad_threshold", 0.5))
+
+    options = {
+        "language": language,
+        "model": model,
+        "beam_size": beam_size,
+        "vad_filter": vad_filter,
+        "vad_threshold": vad_threshold,
+        "enable_alignment": bool(message.get("enable_alignment", False)),
+        "enable_diarization": bool(message.get("enable_diarization", False)),
+        "compute_type": message.get("compute_type", COMPUTE_TYPE),
+    }
+
+    session = StreamingSession(
+        request_id=session_id,
+        sample_rate=sample_rate,
+        options=options,
+        min_slice_seconds=float(message.get("emit_interval_sec", 1.5)),
+    )
+
+    await websocket.send_json({"event": "session_started", "session_id": session_id})
+
+    client_disconnected = False
+    try:
+        while True:
+            try:
+                payload = await websocket.receive_json()
+            except json.JSONDecodeError:
+                await websocket.send_json({"event": "error", "message": "Invalid JSON payload"})
+                continue
+            except WebSocketDisconnect:
+                client_disconnected = True
+                break
+
+            event = payload.get("event")
+            if event == "audio":
+                chunk_b64 = payload.get("chunk")
+                if not chunk_b64:
+                    await websocket.send_json({"event": "error", "message": "Missing chunk data"})
+                    continue
+                try:
+                    chunk = decode_audio_chunk(chunk_b64, encoding)
+                except ValueError as exc:
+                    await websocket.send_json({"event": "error", "message": str(exc)})
+                    continue
+
+                session.append_chunk(chunk)
+                result = await _run_transcription(session)
+                if result:
+                    partial, previous_text = result
+                    if partial.get("text") != previous_text:
+                        try:
+                            await websocket.send_json(
+                                {
+                                    "event": "partial",
+                                    "is_final": False,
+                                    "request_id": session_id,
+                                    "text": partial.get("text", ""),
+                                    "segments": partial.get("segments", []),
+                                    "metadata": partial.get("metadata", {}),
+                                }
+                            )
+                        except WebSocketDisconnect:
+                            client_disconnected = True
+                            break
+
+            elif event == "stop":
+                final_result = await _run_transcription(session, force=True)
+                if final_result:
+                    final_payload, _ = final_result
+                    try:
+                        await websocket.send_json(
+                            {
+                                "event": "final",
+                                "is_final": True,
+                                "request_id": session_id,
+                                "text": final_payload.get("text", ""),
+                                "segments": final_payload.get("segments", []),
+                                "metadata": final_payload.get("metadata", {}),
+                            }
+                        )
+                    except WebSocketDisconnect:
+                        client_disconnected = True
+                if not client_disconnected:
+                    try:
+                        await websocket.send_json({"event": "session_ended", "session_id": session_id})
+                    except WebSocketDisconnect:
+                        client_disconnected = True
+                if not client_disconnected:
+                    try:
+                        await websocket.close()
+                    except (WebSocketDisconnect, RuntimeError):
+                        client_disconnected = True
+                return
+            else:
+                await websocket.send_json({"event": "error", "message": f"Unknown event: {event}"})
+
+    finally:
+        if not client_disconnected and websocket.client_state != WebSocketState.DISCONNECTED:
+            try:
+                await websocket.close()
+            except (WebSocketDisconnect, RuntimeError):
+                pass

@@ -1,4 +1,4 @@
-.PHONY: help bootstrap up down restart logs clean test smoke-test load-test load-test-locust logs-api logs-asr logs-llm shell stats health gpu-stats
+.PHONY: help bootstrap up down restart logs clean test smoke-test smoke-test-stream load-test load-test-locust logs-api logs-asr logs-llm shell stats health gpu-stats
 
 help:
 	@echo "AI Stack Platform - Available Commands:"
@@ -9,6 +9,7 @@ help:
 	@echo "  make restart      - Restart all services"
 	@echo "  make logs         - Follow logs from all services"
 	@echo "  make smoke-test   - Run smoke tests"
+	@echo "  make smoke-test-stream - Run streaming ASR smoke test"
 	@echo "  make load-test    - Run k6 load tests"
 	@echo "  make clean        - Clean volumes and data"
 	@echo "  make shell        - Open shell in API container"
@@ -49,6 +50,10 @@ logs-llm:
 smoke-test:
 	chmod +x scripts/smoke_tests.sh
 	./scripts/smoke_tests.sh
+
+smoke-test-stream:
+	chmod +x scripts/smoke_tests_streaming.sh
+	./scripts/smoke_tests_streaming.sh
 
 load-test:
 	@echo "Running k6 load tests..."
