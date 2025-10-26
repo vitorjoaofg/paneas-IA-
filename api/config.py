@@ -51,8 +51,8 @@ class Settings(BaseSettings):
 
     asr_host: str = Field(default="asr", alias="ASR_HOST")
     asr_port: int = Field(default=9000, alias="ASR_PORT")
-    asr_default_model: str = Field(default="large-v3-turbo", alias="ASR_DEFAULT_MODEL")
-    asr_compute_type: str = Field(default="fp16", alias="ASR_COMPUTE_TYPE")
+    asr_default_model: str = Field(default="whisper/medium", alias="ASR_DEFAULT_MODEL")
+    asr_compute_type: str = Field(default="int8_float16", alias="ASR_COMPUTE_TYPE")
 
     tts_host: str = Field(default="tts", alias="TTS_HOST")
     tts_port: int = Field(default=9001, alias="TTS_PORT")

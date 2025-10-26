@@ -60,7 +60,7 @@ async def _relay_client_to_asr(client_ws: WebSocket, upstream_ws: websockets.Web
             elif message["type"] == "websocket.disconnect":
                 await upstream_ws.close()
                 break
-    except WebSocketDisconnect:
+    except (WebSocketDisconnect, ConnectionClosed):
         await upstream_ws.close()
 
 
@@ -97,7 +97,10 @@ async def _relay_asr_to_client(client_ws: WebSocket, upstream_ws: websockets.Web
             if event == "session_started" and session_id and not session_registered:
                 async def send_insight(data: Dict[str, Any]) -> None:
                     STREAM_INSIGHTS.inc()
-                    await client_ws.send_text(json.dumps(data))
+                    try:
+                        await client_ws.send_text(json.dumps(data))
+                    except WebSocketDisconnect:
+                        pass
 
                 await insight_manager.register_session(session_id, send_insight)
                 session_registered = True
@@ -109,7 +112,10 @@ async def _relay_asr_to_client(client_ws: WebSocket, upstream_ws: websockets.Web
                 session_registered = False
 
             encoded = json.dumps(payload)
-            await client_ws.send_text(encoded)
+            try:
+                await client_ws.send_text(encoded)
+            except WebSocketDisconnect:
+                break
             STREAM_MESSAGES.labels(direction="to_client").inc()
             STREAM_BYTES.labels(direction="to_client").inc(len(encoded))
     except ConnectionClosed:
@@ -134,7 +140,11 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
     upstream_uri = f"ws://{settings.asr_host}:{settings.asr_port}/stream"
     upstream_headers = {"X-Request-Relay": "api-gateway", "X-Relay-Session": str(uuid.uuid4())}
     try:
-        connect_kwargs = {}
+        connect_kwargs = {
+            "ping_interval": None,
+            "ping_timeout": None,
+            "max_queue": 1,
+        }
         param = "additional_headers" if "additional_headers" in inspect.signature(websockets.connect).parameters else "extra_headers"
         connect_kwargs[param] = upstream_headers
         async with websockets.connect(upstream_uri, **connect_kwargs) as upstream_ws:
@@ -155,7 +165,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
         pass
     except Exception as exc:  # noqa: BLE001
         if websocket.client_state != WebSocketState.DISCONNECTED:
-            await websocket.send_json({"event": "error", "message": str(exc)})
+            with contextlib.suppress(RuntimeError, WebSocketDisconnect):
+                await websocket.send_json({"event": "error", "message": str(exc)})
             await websocket.close(code=status.WS_1011_INTERNAL_ERROR)
     finally:
         ACTIVE_SESSIONS.dec()

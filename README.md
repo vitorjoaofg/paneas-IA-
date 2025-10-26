@@ -4,7 +4,7 @@ Plataforma completa de IA on-premises com ASR, Diarização, OCR, LLM e TTS otim
 
 ## Características
 
-- **ASR**: Faster-Whisper large-v3 e large-v3-turbo (GPU0)
+- **ASR**: Faster-Whisper medium (INT8/FP16) e large-v3-turbo opcional (GPU0)
 - **Diarização**: Pyannote 3.x com cache de embeddings (GPU1)
 - **Alinhamento**: WhisperX word-level alignment (GPU1)
 - **LLM**: LLaMA-3.1-8B (FP16 e INT4/AWQ) com vLLM (GPU2-3)
@@ -60,10 +60,13 @@ Saída esperada:
 ✓ Whisper large-v3 already exists at /srv/models/whisper/large-v3
 
 [2/8] Checking Whisper large-v3-turbo...
-✗ Whisper large-v3-turbo not found, will download...
-Downloading Whisper large-v3-turbo...
+✓ Whisper large-v3-turbo already exists at /srv/models/whisper/large-v3-turbo
 
-[3/8] Checking Pyannote models...
+[3/8] Checking Whisper medium (INT8-capable)...
+✗ Whisper medium not found, will download...
+Downloading Whisper medium...
+
+[4/8] Checking Pyannote models...
 ✓ Pyannote Diarization 3.1 already exists at /srv/models/pyannote/speaker-diarization-3.1
 
 ...
@@ -71,6 +74,7 @@ Downloading Whisper large-v3-turbo...
 === Verifying model integrity ===
 ✓ OK: whisper-large-v3
 ✓ OK: whisper-large-v3-turbo
+✓ OK: whisper-medium
 ✓ OK: pyannote-diarization
 ✓ OK: llama-fp16
 ✓ OK: llama-int4
@@ -82,6 +86,7 @@ Downloading Whisper large-v3-turbo...
 Summary:
 whisper-large-v3: present
 whisper-large-v3-turbo: present
+whisper-medium: present
 pyannote-diarization: present
 llama-fp16: present
 llama-int4: present
@@ -120,7 +125,7 @@ curl -X POST http://localhost:8000/api/v1/asr \
   -H "Authorization: Bearer token_abc123" \
   -F "file=@audio.wav" \
   -F "language=pt" \
-  -F "model=large-v3-turbo"
+  -F "model=whisper/medium"
 ```
 
 ### ASR com Diarização

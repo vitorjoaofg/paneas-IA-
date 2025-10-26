@@ -27,6 +27,10 @@ curl -H "Authorization: Bearer $API_TOKEN" \
 
 Entrada: upload `multipart/form-data` com `file=@audio.wav` e parâmetros opcionais (`language`, `model`, `enable_diarization`, `enable_alignment`, `compute_type`, `vad_filter`, `vad_threshold`, `beam_size`).
 
+Modelos suportados:
+- `whisper/medium` (padrão, executa em INT8/FP16 híbrido)
+- `whisper/large-v3-turbo` (alta fidelidade; exige FP16 e mais GPU)
+
 ```bash
 curl -X POST http://localhost:8000/api/v1/asr \
   -H "Authorization: Bearer $API_TOKEN" \
@@ -45,7 +49,7 @@ curl -X POST http://localhost:8000/api/v1/asr \
   "segments": [
     {"start": 0.0, "end": 4.8, "text": "olá mundo", "speaker": "SPEAKER_00"}
   ],
-  "metadata": {"model": "large-v3-turbo", "compute_type": "fp16", "gpu_id": 0}
+  "metadata": {"model": "whisper/medium", "compute_type": "int8_float16", "gpu_id": 0}
 }
 ```
 
@@ -56,6 +60,7 @@ Fluxo:
 
 1. Conecte-se com header `Authorization: Bearer <token>` ou query `?token=`.
 2. Envie `{"event":"start","sample_rate":16000,"encoding":"pcm16","language":"pt"}`.
+   - Opcionalmente sobrescreva `"model":"whisper/large-v3-turbo"` e `"compute_type":"fp16"` quando for necessário mais fidelidade.
 3. Envie múltiplos `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
 4. Finalize com `{"event":"stop"}` para receber a transcrição final.
 
@@ -65,7 +70,7 @@ Exemplo:
 wscat -c "ws://localhost:8000/api/v1/asr/stream?token=$API_TOKEN"
 ```
 
-Respostas típicas:
+Respostas típicas (parciais incluem o histórico completo da chamada):
 
 ```json
 {"event":"ready","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}

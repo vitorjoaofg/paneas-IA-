@@ -12,10 +12,10 @@ router = APIRouter(prefix="/api/v1", tags=["asr"])
 
 def build_request(
     language: str = Form("auto"),
-    model: str = Form("large-v3-turbo"),
+    model: str = Form("whisper/medium"),
     enable_diarization: bool = Form(False),
     enable_alignment: bool = Form(False),
-    compute_type: str = Form("fp16"),
+    compute_type: str = Form("int8_float16"),
     vad_filter: bool = Form(True),
     vad_threshold: float = Form(0.5),
     beam_size: int = Form(5),

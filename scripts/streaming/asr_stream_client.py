@@ -20,7 +20,7 @@ from typing import AsyncGenerator, Optional, Tuple
 import numpy as np
 import soundfile as sf
 import websockets
-from websockets.exceptions import ConnectionClosedError, ConnectionClosedOK
+from websockets.exceptions import ConnectionClosed
 
 
 def load_audio(path: Path, target_sr: int = 16000) -> Tuple[np.ndarray, int]:
@@ -56,6 +56,8 @@ async def stream_audio(
     audio_path: Path,
     language: str,
     chunk_ms: int,
+    model: str,
+    compute_type: Optional[str],
 ) -> None:
     pcm16, sample_rate = load_audio(audio_path)
     ws_url = url
@@ -71,25 +73,24 @@ async def stream_audio(
         connect_kwargs[param] = headers
 
     async with websockets.connect(ws_url, **connect_kwargs) as ws:
-        await ws.send(
-            json.dumps(
-                {
-                    "event": "start",
-                    "language": language,
-                    "sample_rate": sample_rate,
-                    "encoding": "pcm16",
-                    "emit_interval_sec": chunk_ms / 1000.0,
-                }
-            )
-        )
+        start_payload = {
+            "event": "start",
+            "language": language,
+            "sample_rate": sample_rate,
+            "encoding": "pcm16",
+            "emit_interval_sec": chunk_ms / 1000.0,
+            "model": model,
+        }
+        if compute_type:
+            start_payload["compute_type"] = compute_type
+
+        await ws.send(json.dumps(start_payload))
 
         async def reader() -> None:
             try:
                 async for message in ws:
                     print("<<", message)
-            except ConnectionClosedOK:
-                pass
-            except ConnectionClosedError:
+            except ConnectionClosed:
                 pass
 
         reader_task = asyncio.create_task(reader())
@@ -101,12 +102,12 @@ async def stream_audio(
                 payload = base64.b64encode(chunk.tobytes()).decode("ascii")
                 try:
                     await ws.send(json.dumps({"event": "audio", "chunk": payload}))
-                except ConnectionClosedError:
+                except ConnectionClosed:
                     break
         finally:
             try:
                 await ws.send(json.dumps({"event": "stop"}))
-            except ConnectionClosedError:
+            except ConnectionClosed:
                 pass
         await reader_task
 
@@ -118,13 +119,15 @@ def main() -> None:
     parser.add_argument("--file", default="test-data/audio/sample_10s.wav", help="Arquivo de áudio de entrada.")
     parser.add_argument("--language", default="pt", help="Idioma esperado.")
     parser.add_argument("--chunk-ms", type=int, default=800, help="Tamanho do chunk em milissegundos.")
+    parser.add_argument("--model", default="whisper/medium", help="Modelo Whisper a ser utilizado.")
+    parser.add_argument("--compute-type", help="Tipo de compute do modelo (ex.: fp16, int8_float16).")
     args = parser.parse_args()
 
     audio_path = Path(args.file)
     if not audio_path.exists():
         raise SystemExit(f"Arquivo não encontrado: {audio_path}")
 
-    asyncio.run(stream_audio(args.url, args.token, audio_path, args.language, args.chunk_ms))
+    asyncio.run(stream_audio(args.url, args.token, audio_path, args.language, args.chunk_ms, args.model, args.compute_type))
 
 
 if __name__ == "__main__":

@@ -22,12 +22,12 @@ import statistics
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 import soundfile as sf
 import websockets
-from websockets.exceptions import ConnectionClosedError, ConnectionClosedOK
+from websockets.exceptions import ConnectionClosed
 
 
 def load_audio(path: Path, target_sr: int = 16000) -> Tuple[np.ndarray, int]:
@@ -90,6 +90,8 @@ async def run_session(
     chunks: List[bytes],
     chunk_ms: int,
     language: str,
+    model: str,
+    compute_type: Optional[str],
     realtime: bool,
     expect_insight: bool,
     require_final: bool,
@@ -101,7 +103,9 @@ async def run_session(
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    connect_kwargs = {"extra_headers": headers} if headers else {}
+    connect_kwargs: Dict[str, Any] = {"ping_interval": None, "ping_timeout": None}
+    if headers:
+        connect_kwargs["extra_headers"] = headers
     result = SessionResult(index=idx, session_id=None, started_at=time.time())
 
     try:
@@ -110,17 +114,18 @@ async def run_session(
                 # Maintain parity with existing client: allow either header or query param.
                 pass
 
-            await ws.send(
-                json.dumps(
-                    {
-                        "event": "start",
-                        "language": language,
-                        "sample_rate": 16000,
-                        "encoding": "pcm16",
-                        "emit_interval_sec": chunk_ms / 1000.0,
-                    }
-                )
-            )
+            start_payload: Dict[str, Any] = {
+                "event": "start",
+                "language": language,
+                "sample_rate": 16000,
+                "encoding": "pcm16",
+                "emit_interval_sec": chunk_ms / 1000.0,
+                "model": model,
+            }
+            if compute_type:
+                start_payload["compute_type"] = compute_type
+
+            await ws.send(json.dumps(start_payload))
 
             receiver = asyncio.create_task(_receiver(ws, result, expect_insight))
             sender = asyncio.create_task(
@@ -136,10 +141,9 @@ async def run_session(
                 task.cancel()
             if expect_insight and result.insight_at is None:
                 result.error = result.error or "missing_insight"
-    except ConnectionClosedOK:
-        pass
-    except ConnectionClosedError as exc:
-        result.error = f"connection_closed:{exc.code}"
+    except ConnectionClosed as exc:
+        if getattr(exc, "code", None) is not None:
+            result.error = f"connection_closed:{exc.code}"
     except Exception as exc:  # noqa: BLE001
         result.error = f"error:{exc.__class__.__name__}:{exc}"
     finally:
@@ -159,13 +163,13 @@ async def _sender(ws: websockets.WebSocketClientProtocol, chunks: List[bytes], c
         payload = base64.b64encode(raw).decode("ascii")
         try:
             await ws.send(json.dumps({"event": "audio", "chunk": payload}))
-        except ConnectionClosedError:
+        except ConnectionClosed:
             return
         if realtime:
             await asyncio.sleep(chunk_ms / 1000.0)
     try:
         await ws.send(json.dumps({"event": "stop"}))
-    except ConnectionClosedError:
+    except ConnectionClosed:
         pass
 
 
@@ -189,10 +193,9 @@ async def _receiver(ws: websockets.WebSocketClientProtocol, result: SessionResul
             elif event == "error":
                 result.error = payload.get("message") or "error_event"
             result.events.append({"event": event or "unknown", "timestamp": str(now)})
-    except ConnectionClosedOK:
-        pass
-    except ConnectionClosedError as exc:
-        result.error = f"receiver_closed:{exc.code}"
+    except ConnectionClosed as exc:
+        if hasattr(exc, "code"):
+            result.error = result.error or f"receiver_closed:{exc.code}"
 
 
 def summarize(results: List[SessionResult]) -> Dict[str, float]:
@@ -244,6 +247,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ramp", type=float, default=10.0, help="Seconds to ramp up all sessions.")
     parser.add_argument("--chunk-ms", type=int, default=600, help="Chunk size in milliseconds.")
     parser.add_argument("--language", default="pt", help="Language hint.")
+    parser.add_argument("--model", default="whisper/medium", help="ASR model (e.g., whisper/medium, whisper/large-v3-turbo).")
+    parser.add_argument("--compute-type", help="Optional compute type (e.g., fp16, int8_float16).")
     parser.add_argument("--realtime", action="store_true", help="Stream audio in real time (default sends as fast as possible).")
     parser.add_argument("--expect-insight", action="store_true", help="Fail sessions missing insight events.")
     parser.add_argument("--require-final", action="store_true", help="Fail sessions missing final transcription event.")
@@ -283,6 +288,8 @@ async def main_async(args: argparse.Namespace) -> None:
                     chunks=chunks,
                     chunk_ms=args.chunk_ms,
                     language=args.language,
+                    model=args.model,
+                    compute_type=args.compute_type,
                     realtime=args.realtime,
                     expect_insight=args.expect_insight,
                     require_final=args.require_final,

@@ -44,7 +44,7 @@ export default function () {
       const payload = {
         file: http.file(audio, 'conversation.wav', 'audio/wav'),
         language: 'pt',
-        model: 'large-v3-turbo',
+        model: 'whisper/medium',
         enable_diarization: 'true',
         enable_alignment: 'true',
       };

@@ -170,14 +170,14 @@ if [ -d "$MODELS_DIR" ]; then
 fi
 
 echo ""
-echo "[1/10] Checking Whisper large-v3..."
+echo "[1/11] Checking Whisper large-v3..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3" "Whisper large-v3"; then
     echo "Downloading Whisper large-v3..."
     hf_download_public Systran/faster-whisper-large-v3 "$MODELS_DIR/whisper/large-v3"
 fi
 
 echo ""
-echo "[2/10] Checking Whisper large-v3-turbo..."
+echo "[2/11] Checking Whisper large-v3-turbo..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo"; then
     echo "Downloading Whisper large-v3-turbo..."
     hf_download_public_any "$MODELS_DIR/whisper/large-v3-turbo" \
@@ -186,7 +186,14 @@ if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo";
 fi
 
 echo ""
-echo "[3/10] Checking Pyannote models..."
+echo "[3/11] Checking Whisper medium (INT8-capable)..."
+if ! model_exists "$MODELS_DIR/whisper/medium" "Whisper medium"; then
+    echo "Downloading Whisper medium..."
+    hf_download_public Systran/faster-whisper-medium "$MODELS_DIR/whisper/medium"
+fi
+
+echo ""
+echo "[4/11] Checking Pyannote models..."
 if [ -z "${HF_TOKEN:-}" ]; then
     echo "WARNING: HF_TOKEN not set. Skipping Pyannote models (required for diarization)."
     echo "To enable diarization, set HF_TOKEN and re-run this script."
@@ -203,14 +210,14 @@ else
 fi
 
 echo ""
-echo "[4/10] Checking LLaMA-3.1-8B-Instruct FP16..."
+echo "[5/11] Checking LLaMA-3.1-8B-Instruct FP16..."
 if ! model_exists "$MODELS_DIR/llama/fp16" "LLaMA-3.1-8B FP16"; then
     echo "Downloading LLaMA-3.1-8B-Instruct FP16..."
     hf_download_public meta-llama/Meta-Llama-3.1-8B-Instruct "$MODELS_DIR/llama/fp16"
 fi
 
 echo ""
-echo "[5/10] Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
+echo "[6/11] Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
 if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
     echo "Downloading LLaMA-3.1-8B-Instruct INT4/AWQ..."
     hf_download_public_any "$MODELS_DIR/llama/int4-awq" \
@@ -219,28 +226,28 @@ if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
 fi
 
 echo ""
-echo "[6/10] Checking Qwen2.5-14B-Instruct FP16..."
+echo "[7/11] Checking Qwen2.5-14B-Instruct FP16..."
 if ! model_exists "$MODELS_DIR/qwen2_5/fp16" "Qwen2.5-14B-Instruct FP16"; then
     echo "Downloading Qwen2.5-14B-Instruct FP16..."
     hf_download_public Qwen/Qwen2.5-14B-Instruct "$MODELS_DIR/qwen2_5/fp16"
 fi
 
 echo ""
-echo "[7/10] Checking Qwen2.5-14B-Instruct INT4/AWQ..."
+echo "[8/11] Checking Qwen2.5-14B-Instruct INT4/AWQ..."
 if ! model_exists "$MODELS_DIR/qwen2_5/int4-awq" "Qwen2.5-14B-Instruct INT4/AWQ"; then
     echo "Downloading Qwen2.5-14B-Instruct INT4/AWQ..."
     hf_download_public Qwen/Qwen2.5-14B-Instruct-AWQ "$MODELS_DIR/qwen2_5/int4-awq"
 fi
 
 echo ""
-echo "[8/10] Checking XTTS-v2..."
+echo "[9/11] Checking XTTS-v2..."
 if ! model_exists "$MODELS_DIR/xtts" "XTTS-v2"; then
     echo "Downloading XTTS-v2..."
     hf_download_public coqui/XTTS-v2 "$MODELS_DIR/xtts"
 fi
 
 echo ""
-echo "[9/10] Checking PaddleOCR models..."
+echo "[10/11] Checking PaddleOCR models..."
 mkdir -p "$MODELS_DIR/paddleocr"/{det,rec,cls,onnx,engines}
 
 if ! model_exists "$MODELS_DIR/paddleocr/det" "PaddleOCR Detection"; then
@@ -268,7 +275,7 @@ if ! model_exists "$MODELS_DIR/paddleocr/cls" "PaddleOCR Classification"; then
 fi
 
 echo ""
-echo "[10/10] Checking BGE-M3 embeddings..."
+echo "[11/11] Checking BGE-M3 embeddings..."
 if ! model_exists "$MODELS_DIR/embeddings/bge-m3" "BGE-M3"; then
     echo "Downloading BGE-M3 embeddings..."
     hf_download_public BAAI/bge-m3 "$MODELS_DIR/embeddings/bge-m3"
@@ -280,6 +287,7 @@ echo "=== Verifying model integrity ==="
 declare -A EXPECTED_MODELS=(
     ["whisper-large-v3"]="$MODELS_DIR/whisper/large-v3"
     ["whisper-large-v3-turbo"]="$MODELS_DIR/whisper/large-v3-turbo"
+    ["whisper-medium"]="$MODELS_DIR/whisper/medium"
     ["pyannote-diarization"]="$MODELS_DIR/pyannote/speaker-diarization-3.1"
     ["pyannote-segmentation"]="$MODELS_DIR/pyannote/segmentation-3.0"
     ["llama-fp16"]="$MODELS_DIR/llama/fp16"

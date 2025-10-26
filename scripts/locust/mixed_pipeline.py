@@ -21,7 +21,7 @@ class AIPipelineUser(HttpUser):
             files = {"file": (audio_file.name, f, "audio/wav")}
             data = {
                 "language": "pt",
-                "model": "large-v3-turbo",
+                "model": "whisper/medium",
                 "enable_diarization": False,
             }
 

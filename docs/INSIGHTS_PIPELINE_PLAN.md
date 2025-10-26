@@ -32,6 +32,8 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando
 - Cada worker reusa `services.llm_client.chat_completion` com timeout implícito do HTTPX, reaproveitando o roteamento Qwen FP16/AWQ.
 - Após publicar `event: insight`, a sessão reavalia automaticamente se há contexto extra acumulado para novo disparo sem depender de novo áudio.
 - Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) envia o job para workers dedicados (`stack-celery-worker`) mantendo backpressure e respeitando `insights.generate` queue.
+- Pipeline de ASR streaming agora mantém janelas incrementais (contexto deslizante de ~2,5 s), processa apenas o delta de áudio e aceita parametrização de modelo/compute por sessão (`whisper/medium` como padrão `int8_float16`; `whisper/large-v3-turbo` para alta fidelidade em FP16).
+- Sessões longas (~38 min) estabelecidas: 10 canais simultâneos completam sem falhas; 20 canais alcançam 95% de sucesso com latência ~15 min por chamada (restante expira por timeout do cliente — ajustar thresholds antes de subir a carga).
 
 ## Observabilidade E Controle
 - Métricas: tempo transcrição→insight, taxa de acerto (feedback do operador), volume por tenant, erros do LLM, além dos novos gauges/histogramas (`insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`).
@@ -43,7 +45,8 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando
 - Script `scripts/loadtest/asr_insight_stress.py` gera N sessões WebSocket com áudio real, valida `event=final` e `event=insight` e mede latências.
 - Targets: `make loadtest-insights` (50 sessões por padrão, configurável com `SESSIONS`, `RAMP`, `AUDIO`) e `make loadtest-insights-max` (500 sessões, utiliza o target anterior com predefinições pesadas).
 - Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`.
-- Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, além de consumo de GPU/CPU e métricas do ASR.
+- Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, latência média do ASR (`processing_time_ms`) e utilização de GPU/CPU.
+- Referência atual: `python3 scripts/loadtest/asr_insight_stress.py --sessions 10 --model whisper/medium --compute-type int8_float16` → sucesso 10/10 (latência p95 ~8 min); `--sessions 20` requer timeout ≥ 900 s e ainda gera 1/20 expirado — priorizar otimizações antes de aumentar o fanout.
 
 ## Próximos Passos
 1. Definir esquema de fila e storage temporário.

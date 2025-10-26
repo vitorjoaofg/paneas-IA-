@@ -30,7 +30,7 @@ export default function () {
   const payload = {
     file: http.file(audio, 'sample.wav'),
     language: 'pt',
-    model: 'large-v3-turbo',
+    model: 'whisper/medium',
     enable_diarization: false,
     enable_alignment: false,
   };

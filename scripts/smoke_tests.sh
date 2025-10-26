@@ -120,7 +120,8 @@ response=$(curl -s -X POST \
     -H "Authorization: Bearer $API_TOKEN" \
     -F "file=@$ASR_SAMPLE" \
     -F "language=pt" \
-    -F "model=large-v3-turbo" \
+    -F "model=whisper/medium" \
+    -F "compute_type=int8_float16" \
     "$API_BASE/api/v1/asr")
 end_time=$(date +%s%3N)
 duration=$((end_time - start_time))
@@ -224,6 +225,8 @@ run_test "ASR with Diarization" \
     bash -c 'curl -s -f -X POST \
         -H "Authorization: Bearer '"$API_TOKEN"'" \
         -F "file=@'"$DIAR_SAMPLE"'" \
+        -F "model=whisper/large-v3-turbo" \
+        -F "compute_type=float16" \
         -F "enable_diarization=true" \
         '"$API_BASE"'/api/v1/asr \
         | python3 -c "import json,sys; data=json.load(sys.stdin); sys.exit(0 if \"segments\" in data else 1)"'
