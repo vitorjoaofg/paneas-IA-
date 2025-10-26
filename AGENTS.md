@@ -19,7 +19,7 @@ Keep contributions consistent across all service tiers.
 
 ## Coding Style & Naming Conventions
 - Python code follows PEP 8 with 4-space indents, explicit type hints, and `snake_case` modules; mirror router names between `api/routers/` and `api/schemas/`.
-- Keep configuration in `config.py` via `pydantic-settings`; document new environment keys em `.env.example`. Para o ASR em lotes, priorize `BATCH_WINDOW_SEC`, `MAX_BATCH_WINDOW_SEC`, `MAX_BUFFER_SEC`, além de `DEFAULT_MODEL_*` e `MODEL_POOL_SPECS`. Para insights em tempo real, use `INSIGHT_MIN_TOKENS`, `INSIGHT_MIN_INTERVAL_SEC`, `INSIGHT_WORKER_CONCURRENCY` e `INSIGHT_FLUSH_TIMEOUT` para ajustar prontidão e throughput.
+- Keep configuration in `config.py` via `pydantic-settings`; document new environment keys em `.env.example`. Para o ASR em lotes, priorize `BATCH_WINDOW_SEC`, `MAX_BATCH_WINDOW_SEC`, `MAX_BUFFER_SEC`, além de `DEFAULT_MODEL_*` e `MODEL_POOL_SPECS`. Para insights/LLM, padronize o modelo `paneas-v1` (`qwen2.5-14b` INT4) controlando `INSIGHT_MIN_TOKENS`, `INSIGHT_MIN_INTERVAL_SEC`, `INSIGHT_WORKER_CONCURRENCY` e `INSIGHT_FLUSH_TIMEOUT`.
 - Shell scripts under `scripts/` should be POSIX-friendly, `set -euo pipefail`, and log actionable status lines.
 
 ## Testing Guidelines

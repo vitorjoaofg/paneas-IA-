@@ -170,7 +170,7 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
 - `make logs-asr` exibe os logs do balanceador; use `docker compose logs asr-worker-gpuX` para investigar um worker específico.
 - O gateway de API acrescenta automaticamente `session_affinity=<uuid>` ao conectar com o balanceador; clientes que se conectarem diretamente ao `stack-asr` devem enviar esse parâmetro para manter a sessão no mesmo worker.
 
-> ℹ️  O alias `qwen2.5-14b-instruct-awq` aponta para o serviço INT4 (`llm-int4`) — mantenha o FP16 desligado se a GPU estiver comprometida com ASR. Use `--post-audio-wait` nos testes de carga para manter o WebSocket aberto até que os insights cheguem antes do encerramento da chamada.
+> ℹ️  O alias `paneas-v1` aponta para o serviço INT4 (`llm-int4`); use-o como modelo padrão ao chamar o LLM. O FP16 continua disponível apenas sob demanda. Use `--post-audio-wait` nos testes de carga para manter o WebSocket aberto até que os insights cheguem antes do encerramento da chamada.
 
 ### TTS
 

@@ -29,7 +29,7 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo processando 
 - Coletor de áudio implementado em `services.asr_batch.SessionState`: mantém buffer PCM16, aplica `max_buffer_sec` e agenda flush a cada `batch_window_sec`.
 - Cada flush converte o PCM para WAV em memória e chama o ASR síncrono (`/transcribe`) com `whisper/medium` (INT8/FP16). O texto concatenado alimenta o `InsightSession`.
 - Fila assíncrona por sessão (`asyncio.Queue`) garante processamento sequencial e controla backpressure; métricas `batch_processed` e `final_summary` são emitidas pelo gateway.
-- `insight_manager` permanece responsável por throttling (tokens mínimos + intervalo), agendamento (fila interna) e emissão de `event: insight`; a configuração atual usa `min_tokens=10`, `min_interval_sec=10`, `retain_tokens=60` e 32 workers HTTP apontando para o Qwen INT4.
+- `insight_manager` permanece responsável por throttling (tokens mínimos + intervalo), agendamento (fila interna) e emissão de `event: insight`; a configuração atual usa `min_tokens=10`, `min_interval_sec=10`, `retain_tokens=60` e 32 workers HTTP apontando para o modelo corporativo `paneas-v1` (Qwen2.5-14B INT4).
 - Ao receber `stop`, o gateway aguarda até `INSIGHT_FLUSH_TIMEOUT` (60 s) para escoar jobs pendentes antes de fechar o WebSocket, evitando perdas quando o LLM responde com atraso.
 - Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) continua disponível para offload de jobs de LLM.
 - Os workers de ASR (`asr-worker-gpu0..3`) rodam variantes `whisper/medium` em cada GPU; `whisper/small` fica disponível apenas para requisições HTTP explícitas. O NGINX `stack-asr` distribui as sessões conforme `session_affinity`.

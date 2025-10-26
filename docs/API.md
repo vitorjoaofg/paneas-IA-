@@ -173,7 +173,7 @@ Content-Type: audio/wav
 ## Chat Completions
 `POST /api/v1/chat/completions`
 
-Compatível com o formato OpenAI; o roteador interno escolhe FP16 ou INT4 com base no contexto, mas você pode forçar o modelo passando `qwen2.5-14b-instruct` (FP16) ou `qwen2.5-14b-instruct-awq` (INT4).
+Compatível com o formato OpenAI; o roteador interno usa por padrão o modelo corporativo `paneas-v1` (alias para Qwen2.5-14B INT4). Se necessário, especifique explicitamente `paneas-v1`, `qwen2.5-14b-instruct-awq` (INT4) ou `qwen2.5-14b-instruct` (FP16).
 
 Modelos disponíveis:
 - `qwen2.5-14b-instruct` (alta qualidade, FP16, GPUs 2-3)
