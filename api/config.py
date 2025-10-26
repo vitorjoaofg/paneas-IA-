@@ -2,7 +2,7 @@ import json
 from functools import lru_cache
 from typing import List
 
-from pydantic import AnyHttpUrl, Field, field_validator
+from pydantic import AliasChoices, AnyHttpUrl, Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -51,8 +51,30 @@ class Settings(BaseSettings):
 
     asr_host: str = Field(default="asr", alias="ASR_HOST")
     asr_port: int = Field(default=9000, alias="ASR_PORT")
-    asr_default_model: str = Field(default="whisper/medium", alias="ASR_DEFAULT_MODEL")
-    asr_compute_type: str = Field(default="int8_float16", alias="ASR_COMPUTE_TYPE")
+    asr_default_model: str = Field(
+        default="whisper/medium",
+        validation_alias=AliasChoices("DEFAULT_MODEL_NAME", "ASR_DEFAULT_MODEL"),
+    )
+    asr_compute_type: str = Field(
+        default="int8_float16",
+        validation_alias=AliasChoices("DEFAULT_COMPUTE_TYPE", "ASR_COMPUTE_TYPE"),
+    )
+    asr_model_pool_specs: str = Field(
+        default="",
+        validation_alias=AliasChoices("MODEL_POOL_SPECS", "ASR_MODEL_POOL_SPECS"),
+    )
+    asr_batch_window_sec: float = Field(
+        default=5.0,
+        validation_alias=AliasChoices("ASR_BATCH_WINDOW_SEC", "BATCH_WINDOW_SEC"),
+    )
+    asr_max_batch_window_sec: float = Field(
+        default=10.0,
+        validation_alias=AliasChoices("ASR_MAX_BATCH_WINDOW_SEC", "MAX_BATCH_WINDOW_SEC"),
+    )
+    asr_max_buffer_sec: float = Field(
+        default=60.0,
+        validation_alias=AliasChoices("ASR_MAX_BUFFER_SEC", "MAX_BUFFER_SEC"),
+    )
 
     tts_host: str = Field(default="tts", alias="TTS_HOST")
     tts_port: int = Field(default=9001, alias="TTS_PORT")
@@ -82,6 +104,14 @@ class Settings(BaseSettings):
     insight_use_celery: bool = Field(default=False, alias="INSIGHT_USE_CELERY")
     insight_celery_timeout_sec: float = Field(default=15.0, alias="INSIGHT_CELERY_TIMEOUT_SEC")
     insight_celery_queue: str = Field(default="insights", alias="INSIGHT_CELERY_QUEUE")
+    insight_min_tokens: int = Field(default=30, alias="INSIGHT_MIN_TOKENS")
+    insight_min_interval_sec: float = Field(default=20.0, alias="INSIGHT_MIN_INTERVAL_SEC")
+    insight_retain_tokens: int = Field(default=50, alias="INSIGHT_RETAIN_TOKENS")
+    insight_max_context_tokens: int = Field(default=180, alias="INSIGHT_MAX_CONTEXT_TOKENS")
+    insight_model_name: str = Field(default="qwen2.5-14b-instruct-awq", alias="INSIGHT_MODEL")
+    insight_temperature: float = Field(default=0.3, alias="INSIGHT_TEMPERATURE")
+    insight_max_tokens: int = Field(default=180, alias="INSIGHT_MAX_TOKENS")
+    insight_flush_timeout: float = Field(default=5.0, alias="INSIGHT_FLUSH_TIMEOUT")
 
     @field_validator("api_tokens", mode="before")
     @classmethod

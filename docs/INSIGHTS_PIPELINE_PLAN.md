@@ -1,11 +1,10 @@
 # Plano De Pipeline De Insights Em Tempo Real
 
 ## Objetivo
-Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando a transcrição de streaming. A resposta deve chegar em até ~2 s após o gatilho, privilegiando precisão em português/espanhol.
+Gerar insights acionáveis para operadores durante chamadas ao vivo processando áudio em janelas de 5–10 segundos. A resposta deve chegar em até ~2 s após o fechamento de cada lote, privilegiando precisão em português/espanhol.
 
-## Fluxo De Alto Nível
 - Operador conecta no `WS /api/v1/asr/stream` com `tenant_id` e `conversation_id`.
-- Gateway agrega segmentos (texto, speaker, confiança, timestamps) e envia lotes para uma fila baixa-latência (Redis Stream ou Kafka) por sessão.
+- Gateway bufferiza o áudio cru por sessão (PCM16), consolida lotes de 5–10 s e envia o bloco para o serviço ASR síncrono (`/transcribe`).
 - Um worker de insights consome a fila, decide se há contexto suficiente e chama o modelo LLM adequado.
 - O resultado retorna ao operador via evento WebSocket `{"event":"insight", ...}` e é persistido para auditoria.
 
@@ -27,13 +26,13 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando
 3. **Emitter**: publica no WS existente um novo evento.
 
 ### Estado Atual (Out/2025)
-- Collector incorporado em `InsightSession` com buffer deslizante e mascaramento de PII.
-- Fila assíncrona interna (`asyncio.Queue`) no API Gateway limita jobs simultâneos (tamanho configurável, padrão 200) e aciona até 2 workers concorrentes.
-- Cada worker reusa `services.llm_client.chat_completion` com timeout implícito do HTTPX, reaproveitando o roteamento Qwen FP16/AWQ.
-- Após publicar `event: insight`, a sessão reavalia automaticamente se há contexto extra acumulado para novo disparo sem depender de novo áudio.
-- Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) envia o job para workers dedicados (`stack-celery-worker`) mantendo backpressure e respeitando `insights.generate` queue.
-- Pipeline de ASR streaming agora mantém janelas incrementais (contexto deslizante de ~2,5 s), processa apenas o delta de áudio e aceita parametrização de modelo/compute por sessão (`whisper/medium` como padrão `int8_float16`; `whisper/large-v3-turbo` para alta fidelidade em FP16).
-- Sessões longas (~38 min) estabelecidas: 10 canais simultâneos completam sem falhas; 20 canais alcançam 95% de sucesso com latência ~15 min por chamada (restante expira por timeout do cliente — ajustar thresholds antes de subir a carga).
+- Coletor de áudio implementado em `services.asr_batch.SessionState`: mantém buffer PCM16, aplica `max_buffer_sec` e agenda flush a cada `batch_window_sec`.
+- Cada flush converte o PCM para WAV em memória e chama o ASR síncrono (`/transcribe`) com `whisper/medium` (INT8/FP16). O texto concatenado alimenta o `InsightSession`.
+- Fila assíncrona por sessão (`asyncio.Queue`) garante processamento sequencial e controla backpressure; métricas `batch_processed` e `final_summary` são emitidas pelo gateway.
+- `insight_manager` permanece responsável por throttling (tokens mínimos + intervalo), agendamento (fila interna) e emissão de `event: insight`; a configuração atual usa `min_tokens=10`, `min_interval_sec=10`, `retain_tokens=60` e 32 workers HTTP apontando para o Qwen INT4.
+- Ao receber `stop`, o gateway aguarda até `INSIGHT_FLUSH_TIMEOUT` (60 s) para escoar jobs pendentes antes de fechar o WebSocket, evitando perdas quando o LLM responde com atraso.
+- Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) continua disponível para offload de jobs de LLM.
+- Os workers de ASR (`asr-worker-gpu0..3`) rodam variantes `whisper/medium` em cada GPU; `whisper/small` fica disponível apenas para requisições HTTP explícitas. O NGINX `stack-asr` distribui as sessões conforme `session_affinity`.
 
 ## Observabilidade E Controle
 - Métricas: tempo transcrição→insight, taxa de acerto (feedback do operador), volume por tenant, erros do LLM, além dos novos gauges/histogramas (`insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`).
@@ -42,11 +41,11 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo reutilizando
 - Dashboards recomendados: painel LLM (latência, tokens/s), painel ASR streaming (`asr_stream_*`), health `api/v1/health` com destaque para alias `llm_int4` opcional.
 
 ## Teste De Carga
-- Script `scripts/loadtest/asr_insight_stress.py` gera N sessões WebSocket com áudio real, valida `event=final` e `event=insight` e mede latências.
-- Targets: `make loadtest-insights` (50 sessões por padrão, configurável com `SESSIONS`, `RAMP`, `AUDIO`) e `make loadtest-insights-max` (500 sessões, utiliza o target anterior com predefinições pesadas).
-- Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`.
-- Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, latência média do ASR (`processing_time_ms`) e utilização de GPU/CPU.
-- Referência atual: `python3 scripts/loadtest/asr_insight_stress.py --sessions 10 --model whisper/medium --compute-type int8_float16` → sucesso 10/10 (latência p95 ~8 min); `--sessions 20` requer timeout ≥ 900 s e ainda gera 1/20 expirado — priorizar otimizações antes de aumentar o fanout.
+- Script `scripts/loadtest/asr_insight_stress.py` gera N sessões WebSocket com áudio real, valida `event=session_ended` e, opcionalmente, a presença de `event=insight`, medindo latências de conclusão.
+- Targets: `make loadtest-insights` (50 sessões por padrão, configurável com `SESSIONS`, `RAMP`, `AUDIO`) e `make loadtest-insights-max` (500 sessões com presets agressivos).
+- Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `BATCH_WINDOW_SEC`, `MAX_BATCH_WINDOW_SEC`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`.
+- Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, métricas `batch_processed`/`final_summary` e utilização de GPU/CPU.
+- Referência atual: `python3 scripts/loadtest/asr_insight_stress.py --sessions 100 --audio test-data/audio/sample4_8s.wav --batch-window-sec 5 --max-batch-window-sec 10 --post-audio-wait 10 --expect-insight --require-final` → sucesso 100/100 (latência p95 de conclusão ~48 s, insights p95 ~48 s, aguardando flush antes do encerramento).
 
 ## Próximos Passos
 1. Definir esquema de fila e storage temporário.

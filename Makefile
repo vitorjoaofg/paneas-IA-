@@ -72,6 +72,9 @@ loadtest-insights:
 	RAMP_SECS=$${RAMP:-30}; \
 	AUDIO_FILE=$${AUDIO:-test-data/audio/sample_stream.wav}; \
 	CHUNK=$${CHUNK_MS:-600}; \
+	POST_WAIT=$${POST_AUDIO_WAIT:-0}; \
+	BATCH=$${BATCH_WINDOW_SEC:-5}; \
+	MAX_BATCH=$${MAX_BATCH_WINDOW_SEC:-10}; \
 	echo "Sessions=$$SESS Ramp=$$RAMP_SECS Audio=$$AUDIO_FILE ChunkMS=$$CHUNK"; \
 	python3 scripts/loadtest/asr_insight_stress.py \
 		--sessions $$SESS \
@@ -79,6 +82,9 @@ loadtest-insights:
 		--audio $$AUDIO_FILE \
 		--chunk-ms $$CHUNK \
 		--token $$API_TOKEN \
+		--batch-window-sec $$BATCH \
+		--max-batch-window-sec $$MAX_BATCH \
+		--post-audio-wait $$POST_WAIT \
 		--expect-insight
 
 loadtest-insights-max:
@@ -86,7 +92,10 @@ loadtest-insights-max:
 	RAMP_MAX=$${RAMP:-120}; \
 	AUDIO_MAX=$${AUDIO:-test-data/audio/sample_stream.wav}; \
 	CHUNK_MAX=$${CHUNK_MS:-600}; \
-	make loadtest-insights SESSIONS=$$SESS_MAX RAMP=$$RAMP_MAX AUDIO=$$AUDIO_MAX CHUNK_MS=$$CHUNK_MAX
+	POST_WAIT_MAX=$${POST_AUDIO_WAIT:-0}; \
+	BATCH_MAX=$${BATCH_WINDOW_SEC:-5}; \
+	MAX_BATCH_MAX=$${MAX_BATCH_WINDOW_SEC:-10}; \
+	make loadtest-insights SESSIONS=$$SESS_MAX RAMP=$$RAMP_MAX AUDIO=$$AUDIO_MAX CHUNK_MS=$$CHUNK_MAX BATCH_WINDOW_SEC=$$BATCH_MAX MAX_BATCH_WINDOW_SEC=$$MAX_BATCH_MAX POST_AUDIO_WAIT=$$POST_WAIT_MAX
 
 clean:
 	@echo "Cleaning up..."

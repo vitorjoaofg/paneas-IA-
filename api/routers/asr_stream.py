@@ -1,19 +1,24 @@
-import asyncio
+import base64
 import contextlib
-import inspect
 import json
 import uuid
-from typing import Optional, Dict, Any
+from typing import Any, Dict, Optional
 
-import websockets
+import structlog
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, status
 from prometheus_client import Counter, Gauge
 from starlette.websockets import WebSocketState
-from websockets.exceptions import ConnectionClosed
 
 from config import get_settings
-from utils.pii_masking import PIIMasker
+from services.asr_batch import (
+    BatchASRConfig,
+    batch_session_manager,
+    parse_batch_config,
+    shutdown_batch_asr,
+)
 from services.insight_manager import insight_manager
+
+LOGGER = structlog.get_logger(__name__)
 
 router = APIRouter(prefix="/api/v1", tags=["asr-stream"])
 settings = get_settings()
@@ -21,18 +26,19 @@ settings = get_settings()
 ACTIVE_SESSIONS = Gauge("asr_stream_active_sessions", "Active ASR streaming sessions")
 STREAM_MESSAGES = Counter(
     "asr_stream_messages_total",
-    "Total WebSocket messages relayed",
+    "Total WebSocket messages observed",
     ["direction"],
 )
 STREAM_BYTES = Counter(
     "asr_stream_message_bytes_total",
-    "Total WebSocket payload bytes relayed",
+    "Total WebSocket payload bytes observed",
     ["direction"],
 )
 STREAM_INSIGHTS = Counter(
     "asr_stream_insights_total",
     "Total streaming insights emitted",
 )
+
 
 def _extract_token(websocket: WebSocket) -> Optional[str]:
     auth_header = websocket.headers.get("Authorization")
@@ -41,89 +47,20 @@ def _extract_token(websocket: WebSocket) -> Optional[str]:
     return websocket.query_params.get("token")
 
 
-async def _relay_client_to_asr(client_ws: WebSocket, upstream_ws: websockets.WebSocketClientProtocol) -> None:
+def _decode_pcm16(chunk_b64: str) -> bytes:
     try:
-        while True:
-            message = await client_ws.receive()
-            if message["type"] == "websocket.receive":
-                data = message.get("text")
-                if data is not None:
-                    await upstream_ws.send(data)
-                    STREAM_MESSAGES.labels(direction="to_asr").inc()
-                    STREAM_BYTES.labels(direction="to_asr").inc(len(data))
-                else:
-                    binary = message.get("bytes")
-                    if binary is not None:
-                        await upstream_ws.send(binary)
-                        STREAM_MESSAGES.labels(direction="to_asr").inc()
-                        STREAM_BYTES.labels(direction="to_asr").inc(len(binary))
-            elif message["type"] == "websocket.disconnect":
-                await upstream_ws.close()
-                break
-    except (WebSocketDisconnect, ConnectionClosed):
-        await upstream_ws.close()
+        return base64.b64decode(chunk_b64, validate=True)
+    except Exception as exc:  # noqa: BLE001
+        raise ValueError(f"Invalid base64 audio chunk: {exc}") from exc
 
 
-async def _relay_asr_to_client(client_ws: WebSocket, upstream_ws: websockets.WebSocketClientProtocol) -> None:
-    session_id: Optional[str] = None
-    session_registered = False
-    try:
-        async for message in upstream_ws:
-            if isinstance(message, bytes):
-                await client_ws.send_bytes(message)
-                STREAM_MESSAGES.labels(direction="to_client").inc()
-                STREAM_BYTES.labels(direction="to_client").inc(len(message))
-                continue
-
-            try:
-                payload = json.loads(message)
-            except json.JSONDecodeError:
-                await client_ws.send_text(message)
-                STREAM_MESSAGES.labels(direction="to_client").inc()
-                STREAM_BYTES.labels(direction="to_client").inc(len(message))
-                continue
-
-            event = payload.get("event")
-
-            if event == "ready":
-                session_id = payload.get("session_id")
-
-            if payload.get("event") in {"partial", "final"}:
-                payload["text"] = PIIMasker.mask_text(payload.get("text", ""))
-                for segment in payload.get("segments", []):
-                    if "text" in segment:
-                        segment["text"] = PIIMasker.mask_text(segment["text"])
-
-            if event == "session_started" and session_id and not session_registered:
-                async def send_insight(data: Dict[str, Any]) -> None:
-                    STREAM_INSIGHTS.inc()
-                    try:
-                        await client_ws.send_text(json.dumps(data))
-                    except WebSocketDisconnect:
-                        pass
-
-                await insight_manager.register_session(session_id, send_insight)
-                session_registered = True
-            elif event in {"partial", "final"} and session_id and session_registered:
-                await insight_manager.handle_transcript(session_id, payload.get("text", ""))
-            elif event == "session_ended" and session_id and session_registered:
-                await insight_manager.handle_transcript(session_id, payload.get("text", ""))
-                await insight_manager.close_session(session_id)
-                session_registered = False
-
-            encoded = json.dumps(payload)
-            try:
-                await client_ws.send_text(encoded)
-            except WebSocketDisconnect:
-                break
-            STREAM_MESSAGES.labels(direction="to_client").inc()
-            STREAM_BYTES.labels(direction="to_client").inc(len(encoded))
-    except ConnectionClosed:
-        if client_ws.client_state != WebSocketState.DISCONNECTED:
-            await client_ws.close(code=status.WS_1011_INTERNAL_ERROR)
-    finally:
-        if session_registered and session_id:
-            await insight_manager.close_session(session_id)
+async def _send_event(ws: WebSocket, payload: Dict[str, Any]) -> None:
+    if ws.client_state != WebSocketState.CONNECTED:
+        return
+    encoded = json.dumps(payload)
+    await ws.send_text(encoded)
+    STREAM_MESSAGES.labels(direction="to_client").inc()
+    STREAM_BYTES.labels(direction="to_client").inc(len(encoded))
 
 
 @router.websocket("/asr/stream")
@@ -137,38 +74,180 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
     await websocket.accept()
     ACTIVE_SESSIONS.inc()
 
-    upstream_uri = f"ws://{settings.asr_host}:{settings.asr_port}/stream"
-    upstream_headers = {"X-Request-Relay": "api-gateway", "X-Relay-Session": str(uuid.uuid4())}
+    session_id = str(uuid.uuid4())
+    session_config: Optional[BatchASRConfig] = None
+    session_state = None
+    session_registered = False
+    summary: Dict[str, Any] = {}
+
+    async def send_insight(payload: Dict[str, Any]) -> None:
+        STREAM_INSIGHTS.inc()
+        payload.setdefault("event", "insight")
+        payload.setdefault("session_id", session_id)
+        await _send_event(websocket, payload)
+
+    async def ingest_text(text: str) -> None:
+        await insight_manager.handle_transcript(session_id, text)
+
     try:
-        connect_kwargs = {
-            "ping_interval": None,
-            "ping_timeout": None,
-            "max_queue": 1,
-        }
-        param = "additional_headers" if "additional_headers" in inspect.signature(websockets.connect).parameters else "extra_headers"
-        connect_kwargs[param] = upstream_headers
-        async with websockets.connect(upstream_uri, **connect_kwargs) as upstream_ws:
-            relay_to_upstream = asyncio.create_task(_relay_client_to_asr(websocket, upstream_ws))
-            relay_to_client = asyncio.create_task(_relay_asr_to_client(websocket, upstream_ws))
-            done, pending = await asyncio.wait(
-                [relay_to_upstream, relay_to_client],
-                return_when=asyncio.FIRST_COMPLETED,
+        await _send_event(
+            websocket,
+            {"event": "ready", "session_id": session_id, "mode": "batch"},
+        )
+
+        try:
+            initial = await websocket.receive_json()
+        except WebSocketDisconnect:
+            return
+        except json.JSONDecodeError:
+            await _send_event(
+                websocket,
+                {"event": "error", "message": "Invalid JSON payload on start."},
             )
-            for task in pending:
-                task.cancel()
-                with contextlib.suppress(asyncio.CancelledError):
-                    await task
-            for task in done:
-                with contextlib.suppress(asyncio.CancelledError):
-                    await task
-    except ConnectionClosed:
-        pass
+            await websocket.close(code=status.WS_1003_UNSUPPORTED_DATA)
+            return
+
+        if initial.get("event") != "start":
+            await _send_event(
+                websocket,
+                {"event": "error", "message": "Expected start event."},
+            )
+            await websocket.close(code=4400, reason="Expected start event.")
+            return
+
+        encoding = initial.get("encoding", "pcm16").lower()
+        if encoding != "pcm16":
+            await _send_event(
+                websocket,
+                {"event": "error", "message": f"Unsupported encoding: {encoding}"},
+            )
+            await websocket.close(code=4400, reason="Unsupported encoding")
+            return
+
+        sample_rate = int(initial.get("sample_rate", 16000))
+        session_config = parse_batch_config(initial)
+        LOGGER.info(
+            "batch_stream_start",
+            session_id=session_id,
+            sample_rate=sample_rate,
+            model=session_config.model,
+            diarization=session_config.enable_diarization,
+            batch_window=session_config.batch_window_sec,
+        )
+
+        async def send_event(payload: Dict[str, Any]) -> None:
+            payload.setdefault("session_id", session_id)
+            await _send_event(websocket, payload)
+
+        await _send_event(
+            websocket,
+            {
+                "event": "session_started",
+                "session_id": session_id,
+                "mode": "batch",
+                "batch_window_sec": session_config.batch_window_sec,
+            },
+        )
+
+        await insight_manager.register_session(session_id, send_insight)
+        session_registered = True
+
+        session_state = await batch_session_manager.create(
+            session_id=session_id,
+            config=session_config,
+            sample_rate=sample_rate,
+            send_event=send_event,
+            insight_callback=ingest_text,
+        )
+
+        while True:
+            message = await websocket.receive()
+            if message["type"] == "websocket.disconnect":
+                LOGGER.info("batch_stream_disconnect", session_id=session_id)
+                break
+            if message["type"] != "websocket.receive":
+                continue
+
+            data = message.get("text")
+            if data is None:
+                continue
+            try:
+                payload = json.loads(data)
+            except json.JSONDecodeError:
+                await _send_event(
+                    websocket,
+                    {"event": "error", "message": "Invalid JSON payload."},
+                )
+                continue
+
+            event = payload.get("event")
+            if event == "audio":
+                chunk_b64 = payload.get("chunk")
+                if not chunk_b64:
+                    await _send_event(
+                        websocket,
+                        {"event": "error", "message": "Missing chunk data."},
+                    )
+                    continue
+                try:
+                    pcm_bytes = _decode_pcm16(chunk_b64)
+                except ValueError as exc:
+                    await _send_event(websocket, {"event": "error", "message": str(exc)})
+                    continue
+                STREAM_MESSAGES.labels(direction="from_client").inc()
+                STREAM_BYTES.labels(direction="from_client").inc(len(pcm_bytes))
+                if session_state:
+                    await session_state.append_audio(pcm_bytes)
+            elif event == "stop":
+                if session_state:
+                    summary = await session_state.close()
+                if session_registered:
+                    await insight_manager.wait_for_pending(
+                        session_id, settings.insight_flush_timeout
+                    )
+                await _send_event(
+                    websocket,
+                    {
+                        "event": "final_summary",
+                        "session_id": session_id,
+                        "stats": summary,
+                    },
+                )
+                await _send_event(
+                    websocket,
+                    {"event": "session_ended", "session_id": session_id},
+                )
+                break
+            else:
+                await _send_event(
+                    websocket,
+                    {
+                        "event": "error",
+                        "message": f"Unknown event: {event}",
+                    },
+                )
+    except WebSocketDisconnect:
+        LOGGER.info("batch_stream_client_closed", session_id=session_id)
     except Exception as exc:  # noqa: BLE001
+        LOGGER.exception("batch_stream_failure", session_id=session_id, error=str(exc))
         if websocket.client_state != WebSocketState.DISCONNECTED:
             with contextlib.suppress(RuntimeError, WebSocketDisconnect):
-                await websocket.send_json({"event": "error", "message": str(exc)})
+                await _send_event(
+                    websocket, {"event": "error", "message": "Internal server error."}
+                )
             await websocket.close(code=status.WS_1011_INTERNAL_ERROR)
     finally:
+        if session_registered:
+            await insight_manager.close_session(session_id)
+        if session_state:
+            if not session_state.closed:
+                await session_state.close()
+            await batch_session_manager.pop(session_id)
         ACTIVE_SESSIONS.dec()
         if websocket.client_state != WebSocketState.DISCONNECTED:
             await websocket.close()
+
+
+@router.on_event("shutdown")
+async def _shutdown_batch_client() -> None:
+    await shutdown_batch_asr()

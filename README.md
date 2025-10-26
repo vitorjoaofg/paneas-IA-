@@ -4,7 +4,7 @@ Plataforma completa de IA on-premises com ASR, Diarização, OCR, LLM e TTS otim
 
 ## Características
 
-- **ASR**: Faster-Whisper medium (INT8/FP16) e large-v3-turbo opcional (GPU0)
+- **ASR**: Pipeline em lotes (5–10 s) operando `whisper/medium` em todas as GPUs; `whisper/small` permanece disponível como fallback HTTP
 - **Diarização**: Pyannote 3.x com cache de embeddings (GPU1)
 - **Alinhamento**: WhisperX word-level alignment (GPU1)
 - **LLM**: LLaMA-3.1-8B (FP16 e INT4/AWQ) com vLLM (GPU2-3)
@@ -59,14 +59,14 @@ Saída esperada:
 [1/8] Checking Whisper large-v3...
 ✓ Whisper large-v3 already exists at /srv/models/whisper/large-v3
 
-[2/8] Checking Whisper large-v3-turbo...
+[2/11] Checking Whisper large-v3-turbo...
 ✓ Whisper large-v3-turbo already exists at /srv/models/whisper/large-v3-turbo
 
-[3/8] Checking Whisper medium (INT8-capable)...
+[3/11] Checking Whisper medium (INT8-capable)...
 ✗ Whisper medium not found, will download...
 Downloading Whisper medium...
 
-[4/8] Checking Pyannote models...
+[4/11] Checking Pyannote models...
 ✓ Pyannote Diarization 3.1 already exists at /srv/models/pyannote/speaker-diarization-3.1
 
 ...
@@ -161,7 +161,16 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
   }'
 ```
 
-> ℹ️  O alias `qwen2.5-14b-instruct-awq` hoje aponta para o mesmo servidor FP16. Ative o perfil opcional (`docker compose --profile int4 up -d llm-int4`) quando a variante quantizada estiver disponível.
+## Arquitetura ASR em Lotes
+
+- O serviço `stack-asr` segue atuando como load balancer (NGINX) escutando na porta 9000 e distribuindo sessões por hash de `session_affinity`.
+- GPUs 0 e 1 concentram a transcrição em lotes com `whisper/medium:int8_float16` (8 réplicas cada); GPUs 2 e 3 permanecem livres para o LLM (`llm-fp16`/`llm-int4`), mantendo apenas listeners HTTP para fallback.
+- O gateway WebSocket armazena o áudio bruto por sessão, converte o lote para WAV e chama o `/transcribe` síncrono; os eventos expostos ao operador são `batch_processed`, `final_summary`, `session_ended` e `insight`.
+- Configure o tamanho da janela com `batch_window_sec`/`max_batch_window_sec` no evento `start`. Valores padrão (5s / 10s) sustentam 500+ sessões simultâneas mantendo latência de ~3 s por lote.
+- `make logs-asr` exibe os logs do balanceador; use `docker compose logs asr-worker-gpuX` para investigar um worker específico.
+- O gateway de API acrescenta automaticamente `session_affinity=<uuid>` ao conectar com o balanceador; clientes que se conectarem diretamente ao `stack-asr` devem enviar esse parâmetro para manter a sessão no mesmo worker.
+
+> ℹ️  O alias `qwen2.5-14b-instruct-awq` aponta para o serviço INT4 (`llm-int4`) — mantenha o FP16 desligado se a GPU estiver comprometida com ASR. Use `--post-audio-wait` nos testes de carga para manter o WebSocket aberto até que os insights cheguem antes do encerramento da chamada.
 
 ### TTS
 

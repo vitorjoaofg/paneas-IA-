@@ -12,7 +12,6 @@ Uso:
 import argparse
 import asyncio
 import base64
-import inspect
 import json
 from pathlib import Path
 from typing import AsyncGenerator, Optional, Tuple
@@ -58,6 +57,9 @@ async def stream_audio(
     chunk_ms: int,
     model: str,
     compute_type: Optional[str],
+    batch_window_sec: float,
+    max_batch_window_sec: float,
+    enable_diarization: bool,
 ) -> None:
     pcm16, sample_rate = load_audio(audio_path)
     ws_url = url
@@ -67,10 +69,7 @@ async def stream_audio(
         if "token=" not in ws_url:
             ws_url = f"{ws_url}{'&' if '?' in ws_url else '?'}token={token}"
 
-    connect_kwargs = {}
-    if headers:
-        param = "additional_headers" if "additional_headers" in inspect.signature(websockets.connect).parameters else "extra_headers"
-        connect_kwargs[param] = headers
+    connect_kwargs = {"extra_headers": headers} if headers else {}
 
     async with websockets.connect(ws_url, **connect_kwargs) as ws:
         start_payload = {
@@ -78,8 +77,10 @@ async def stream_audio(
             "language": language,
             "sample_rate": sample_rate,
             "encoding": "pcm16",
-            "emit_interval_sec": chunk_ms / 1000.0,
             "model": model,
+            "batch_window_sec": batch_window_sec,
+            "max_batch_window_sec": max_batch_window_sec,
+            "enable_diarization": enable_diarization,
         }
         if compute_type:
             start_payload["compute_type"] = compute_type
@@ -119,15 +120,31 @@ def main() -> None:
     parser.add_argument("--file", default="test-data/audio/sample_10s.wav", help="Arquivo de áudio de entrada.")
     parser.add_argument("--language", default="pt", help="Idioma esperado.")
     parser.add_argument("--chunk-ms", type=int, default=800, help="Tamanho do chunk em milissegundos.")
-    parser.add_argument("--model", default="whisper/medium", help="Modelo Whisper a ser utilizado.")
-    parser.add_argument("--compute-type", help="Tipo de compute do modelo (ex.: fp16, int8_float16).")
+    parser.add_argument("--model", default="whisper/medium", help="Modelo Whisper final.")
+    parser.add_argument("--compute-type", help="Compute type do modelo final (ex.: fp16, int8_float16).")
+    parser.add_argument("--batch-window-sec", type=float, default=5.0, help="Janela alvo de processamento em segundos.")
+    parser.add_argument("--max-batch-window-sec", type=float, default=10.0, help="Janela máxima antes de forçar processamento.")
+    parser.add_argument("--enable-diarization", action="store_true", help="Ativa diarização por lote.")
     args = parser.parse_args()
 
     audio_path = Path(args.file)
     if not audio_path.exists():
         raise SystemExit(f"Arquivo não encontrado: {audio_path}")
 
-    asyncio.run(stream_audio(args.url, args.token, audio_path, args.language, args.chunk_ms, args.model, args.compute_type))
+    asyncio.run(
+        stream_audio(
+            args.url,
+            args.token,
+            audio_path,
+            args.language,
+            args.chunk_ms,
+            args.model,
+            args.compute_type,
+            args.batch_window_sec,
+            args.max_batch_window_sec,
+            args.enable_diarization,
+        )
+    )
 
 
 if __name__ == "__main__":

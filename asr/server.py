@@ -6,10 +6,11 @@ import os
 import tempfile
 import time
 import uuid
+from dataclasses import dataclass
 from pathlib import Path
+from queue import Queue
 from typing import Any, Dict, List, Optional, Tuple
 import threading
-from queue import Queue
 
 import numpy as np
 import soundfile as sf
@@ -19,89 +20,167 @@ from faster_whisper import WhisperModel
 from httpx import Client
 
 MODELS_ROOT = Path(os.environ.get("MODELS_DIR", "/models"))
-DEFAULT_MODEL = os.environ.get("MODEL_NAME", "whisper/medium")
-COMPUTE_TYPE = os.environ.get("COMPUTE_TYPE", "int8_float16")
-MODEL_REPLICAS = int(os.environ.get("MODEL_REPLICAS", "1"))
-GPU_DEVICE = os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(",")[0]
+
+# Default model configuration (batch processing)
+DEFAULT_MODEL_NAME = os.environ.get("DEFAULT_MODEL_NAME", "whisper/medium")
+DEFAULT_COMPUTE_TYPE = os.environ.get("DEFAULT_COMPUTE_TYPE", "int8_float16")
+DEFAULT_MODEL_REPLICAS = int(os.environ.get("DEFAULT_MODEL_REPLICAS", "4"))
+MODEL_POOL_SPECS = os.environ.get("MODEL_POOL_SPECS", "")
+
+_gpu_env = os.environ.get("CUDA_VISIBLE_DEVICES") or os.environ.get("NVIDIA_VISIBLE_DEVICES") or "0"
+GPU_DEVICE = _gpu_env.split(",")[0]
+DEFAULT_CONTEXT_SECONDS = float(os.environ.get("CONTEXT_SECONDS", "1.2"))
+DEFAULT_MIN_SLICE_SECONDS = float(os.environ.get("MIN_SLICE_SECONDS", "0.35"))
 DIAR_SERVICE_URL = os.environ.get("DIAR_SERVICE_URL", "http://diar:9003/diarize")
 
 app = FastAPI(title="ASR Service", version="1.0.0")
 
 
-class ASRService:
+class ModelPool:
     def __init__(self, model_name: str, compute_type: str, replicas: int) -> None:
-        self.default_model_name = model_name
-        self.default_compute_type = compute_type
-        self._replicas = max(1, replicas)
-        self._model_pools: Dict[Tuple[str, str], Dict[str, Any]] = {}
-        self._global_lock = threading.Lock()
-        # Pre-load default pool so the first request avoids the download cost.
-        self._ensure_model_pool(model_name, compute_type)
+        self.model_name = model_name
+        self.compute_type = compute_type
+        self.replicas = max(1, replicas)
+        self._models: List[WhisperModel] = []
+        self._queue: Queue = Queue(maxsize=self.replicas)
+        self._lock = threading.Lock()
+        self._initialise()
+
+    def _resolve_model_path(self) -> Path:
+        candidate = MODELS_ROOT / self.model_name
+        if candidate.exists():
+            return candidate
+        alt_path = MODELS_ROOT / "whisper" / self.model_name
+        if alt_path.exists():
+            return alt_path
+        raise RuntimeError(f"Model path not found: {candidate}")
 
     def _warmup(self, model: WhisperModel) -> None:
         dummy_audio = np.zeros(16000, dtype=np.float32)
         list(model.transcribe(dummy_audio, beam_size=1))
 
-    @staticmethod
-    def _resolve_model_path(model_name: str) -> Path:
-        candidate = MODELS_ROOT / model_name
-        if candidate.exists():
-            return candidate
-        alt_path = MODELS_ROOT / "whisper" / model_name
-        if alt_path.exists():
-            return alt_path
-        raise RuntimeError(f"Model path not found: {candidate}")
+    def _initialise(self) -> None:
+        with self._lock:
+            if self._models:
+                return
+            model_path = self._resolve_model_path()
+            for idx in range(self.replicas):
+                model = WhisperModel(
+                    str(model_path),
+                    device="cuda",
+                    compute_type=self.compute_type,
+                    cpu_threads=8,
+                    num_workers=4,
+                    download_root=str(MODELS_ROOT),
+                )
+                self._warmup(model)
+                self._models.append(model)
+                self._queue.put(idx)
 
-    def _create_model(self, model_name: str, compute_type: str) -> WhisperModel:
-        model_path = self._resolve_model_path(model_name)
-        whisper_model = WhisperModel(
-            str(model_path),
-            device="cuda",
-            compute_type=compute_type,
-            cpu_threads=8,
-            num_workers=4,
-            download_root=str(MODELS_ROOT),
+    def acquire(self) -> Tuple[int, WhisperModel]:
+        idx = self._queue.get()
+        return idx, self._models[idx]
+
+    def release(self, idx: int) -> None:
+        self._queue.put(idx)
+
+
+@dataclass(frozen=True)
+class ModelSpec:
+    name: str
+    compute_type: str
+    replicas: int
+
+
+def _parse_model_specs() -> List[ModelSpec]:
+    specs: List[ModelSpec] = []
+    entries = [entry.strip() for entry in MODEL_POOL_SPECS.split(";") if entry.strip()]
+    for entry in entries:
+        parts = [part.strip() for part in entry.split(":")]
+        if not parts:
+            continue
+        name = parts[0] or DEFAULT_MODEL_NAME
+        compute_type = parts[1] if len(parts) > 1 and parts[1] else DEFAULT_COMPUTE_TYPE
+        try:
+            replicas = int(parts[2]) if len(parts) > 2 and parts[2] else DEFAULT_MODEL_REPLICAS
+        except ValueError:
+            replicas = DEFAULT_MODEL_REPLICAS
+        if replicas <= 0:
+            continue
+        specs.append(ModelSpec(name=name, compute_type=compute_type, replicas=replicas))
+
+    if DEFAULT_MODEL_REPLICAS > 0 and not any(
+        spec.name == DEFAULT_MODEL_NAME and spec.compute_type == DEFAULT_COMPUTE_TYPE for spec in specs
+    ):
+        specs.append(
+            ModelSpec(
+                name=DEFAULT_MODEL_NAME,
+                compute_type=DEFAULT_COMPUTE_TYPE,
+                replicas=DEFAULT_MODEL_REPLICAS,
+            )
         )
-        self._warmup(whisper_model)
-        return whisper_model
+    return specs
 
-    def _ensure_model_pool(self, model_name: str, compute_type: str) -> Dict[str, Any]:
+
+class ModelRegistry:
+    def __init__(self, specs: List[ModelSpec]) -> None:
+        self._pools: Dict[Tuple[str, str], ModelPool] = {}
+        self._lock = threading.Lock()
+        for spec in specs:
+            key = (spec.name, spec.compute_type)
+            if key not in self._pools:
+                self._pools[key] = ModelPool(spec.name, spec.compute_type, spec.replicas)
+
+    def get_pool(self, model_name: str, compute_type: str) -> ModelPool:
         key = (model_name, compute_type)
-        pool = self._model_pools.get(key)
-        if pool is not None:
+        with self._lock:
+            pool = self._pools.get(key)
+            if pool is None:
+                pool = ModelPool(model_name, compute_type, 1)
+                self._pools[key] = pool
             return pool
 
-        with self._global_lock:
-            pool = self._model_pools.get(key)
-            if pool is not None:
-                return pool
+    def list_specs(self) -> List[Dict[str, Any]]:
+        with self._lock:
+            return [
+                {"model": key[0], "compute_type": key[1], "replicas": pool.replicas}
+                for key, pool in self._pools.items()
+            ]
 
-            models: List[WhisperModel] = []
-            for _ in range(self._replicas):
-                models.append(self._create_model(model_name, compute_type))
 
-            queue: Queue = Queue(maxsize=len(models))
-            for idx in range(len(models)):
-                queue.put(idx)
-
-            pool = {"models": models, "queue": queue}
-            self._model_pools[key] = pool
-            return pool
+class ASRService:
+    def __init__(self) -> None:
+        self._registry = ModelRegistry(_parse_model_specs())
+        self.default_model_name = DEFAULT_MODEL_NAME
+        self.default_compute_type = DEFAULT_COMPUTE_TYPE
 
     def transcribe(self, audio: np.ndarray, sample_rate: int, options: Dict[str, Any]) -> Dict[str, Any]:
+        model_name = str(options.get("model") or self.default_model_name)
+        compute_type = str(options.get("compute_type") or self.default_compute_type)
+        pool = self._registry.get_pool(model_name, compute_type)
+        idx, model = pool.acquire()
+        try:
+            return self._do_transcribe(model, audio, sample_rate, options, model_name, compute_type)
+        finally:
+            pool.release(idx)
+
+    def available_models(self) -> List[Dict[str, Any]]:
+        return self._registry.list_specs()
+
+    @staticmethod
+    def _do_transcribe(
+        model: WhisperModel,
+        audio: np.ndarray,
+        sample_rate: int,
+        options: Dict[str, Any],
+        model_name: str,
+        compute_type: str,
+    ) -> Dict[str, Any]:
         start = time.perf_counter()
         opts = dict(options)
         language = opts.get("language", "auto")
         if language and str(language).lower() == "auto":
             language = None
-
-        model_name = str(opts.get("model", self.default_model_name))
-        compute_type = str(opts.get("compute_type", self.default_compute_type))
-
-        pool = self._ensure_model_pool(model_name, compute_type)
-        queue: Queue = pool["queue"]
-        idx = queue.get()
-        model = pool["models"][idx]
 
         vad_threshold = float(opts.get("vad_threshold", 0.5))
         vad_filter = _to_bool(opts.get("vad_filter", True), default=True)
@@ -109,21 +188,18 @@ class ASRService:
         enable_alignment = _to_bool(opts.get("enable_alignment", False))
         enable_diarization = _to_bool(opts.get("enable_diarization", False))
 
-        try:
-            segments, info = model.transcribe(
-                audio,
-                beam_size=beam_size,
-                best_of=3,
-                vad_filter=vad_filter,
-                vad_parameters=dict(
-                    threshold=vad_threshold,
-                    min_speech_duration_ms=250,
-                    min_silence_duration_ms=500,
-                ),
-                language=language,
-            )
-        finally:
-            queue.put(idx)
+        segments, info = model.transcribe(
+            audio,
+            beam_size=beam_size,
+            best_of=3,
+            vad_filter=vad_filter,
+            vad_parameters=dict(
+                threshold=vad_threshold,
+                min_speech_duration_ms=250,
+                min_silence_duration_ms=500,
+            ),
+            language=language,
+        )
 
         duration_seconds = float(len(audio) / sample_rate)
         elapsed_ms = int((time.perf_counter() - start) * 1000)
@@ -148,8 +224,8 @@ class ASRService:
             result_segments.append(result)
 
         if enable_diarization:
-            diar_segments = self._diarize(audio, sample_rate)
-            self._apply_diarization(result_segments, diar_segments)
+            diar_segments = _diarize(audio, sample_rate)
+            _apply_diarization(result_segments, diar_segments)
 
         detected_language = getattr(info, "language", None) or (language or "unknown")
 
@@ -167,38 +243,39 @@ class ASRService:
             },
         }
 
-    def _diarize(self, audio: np.ndarray, sample_rate: int) -> List[Dict[str, Any]]:
-        if not DIAR_SERVICE_URL:
-            return []
-        with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
-            sf.write(tmp.name, audio, sample_rate)
-            tmp.seek(0)
-            files = {"file": ("audio.wav", tmp.read(), "audio/wav")}
-        try:
-            with Client(timeout=30.0) as client:
-                response = client.post(DIAR_SERVICE_URL, files=files)
-                response.raise_for_status()
-                payload = response.json()
-                return payload.get("segments", [])
-        except Exception:  # noqa: BLE001
-            return []
 
-    @staticmethod
-    def _apply_diarization(segments: List[Dict[str, Any]], diar_segments: List[Dict[str, Any]]) -> None:
-        if not diar_segments:
-            for segment in segments:
-                segment["speaker"] = "SPEAKER_00"
-            return
+def _diarize(audio: np.ndarray, sample_rate: int) -> List[Dict[str, Any]]:
+    if not DIAR_SERVICE_URL:
+        return []
+    with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
+        sf.write(tmp.name, audio, sample_rate)
+        tmp.seek(0)
+        files = {"file": ("audio.wav", tmp.read(), "audio/wav")}
+    try:
+        with Client(timeout=30.0) as client:
+            response = client.post(DIAR_SERVICE_URL, files=files)
+            response.raise_for_status()
+            payload = response.json()
+            return payload.get("segments", [])
+    except Exception:  # noqa: BLE001
+        return []
 
+
+def _apply_diarization(segments: List[Dict[str, Any]], diar_segments: List[Dict[str, Any]]) -> None:
+    if not diar_segments:
         for segment in segments:
-            mid_point = (segment["start"] + segment["end"]) / 2
-            candidates = [
-                diar for diar in diar_segments if diar["start"] <= mid_point <= diar["end"]
-            ]
-            if candidates:
-                segment["speaker"] = candidates[0]["speaker"]
-            else:
-                segment["speaker"] = "SPEAKER_00"
+            segment["speaker"] = "SPEAKER_00"
+        return
+
+    for segment in segments:
+        mid_point = (segment["start"] + segment["end"]) / 2
+        candidates = [
+            diar for diar in diar_segments if diar["start"] <= mid_point <= diar["end"]
+        ]
+        if candidates:
+            segment["speaker"] = candidates[0]["speaker"]
+        else:
+            segment["speaker"] = "SPEAKER_00"
 
 
 def load_audio(contents: bytes) -> tuple[np.ndarray, int]:
@@ -220,7 +297,7 @@ def load_audio(contents: bytes) -> tuple[np.ndarray, int]:
     return audio.astype(np.float32), int(sr)
 
 
-service = ASRService(model_name=DEFAULT_MODEL, compute_type=COMPUTE_TYPE, replicas=MODEL_REPLICAS)
+service = ASRService()
 
 
 def decode_audio_chunk(chunk_b64: str, encoding: str) -> np.ndarray:
@@ -236,14 +313,16 @@ class StreamingSession:
         self,
         request_id: str,
         sample_rate: int,
-        options: Dict[str, Any],
-        min_slice_seconds: float = 1.5,
-        context_seconds: float = 2.5,
+        partial_options: Dict[str, Any],
+        final_options: Dict[str, Any],
+        min_slice_seconds: float = DEFAULT_MIN_SLICE_SECONDS,
+        context_seconds: float = DEFAULT_CONTEXT_SECONDS,
         min_emit_seconds: float = 0.0,
     ) -> None:
         self.request_id = request_id
         self.sample_rate = sample_rate
-        self.options = options
+        self.partial_options = dict(partial_options)
+        self.final_options = dict(final_options)
         self.min_slice_seconds = min_slice_seconds
         self.context_seconds = max(context_seconds, 0.0)
         self._max_context_samples = int(self.context_seconds * self.sample_rate)
@@ -255,8 +334,8 @@ class StreamingSession:
         self._segments: List[Dict[str, Any]] = []
         self._history_text = ""
         self._metadata: Dict[str, Any] = {
-            "model": str(options.get("model", DEFAULT_MODEL)),
-            "compute_type": str(options.get("compute_type", COMPUTE_TYPE)),
+            "model": str(final_options.get("model", DEFAULT_MODEL_NAME)),
+            "compute_type": str(final_options.get("compute_type", DEFAULT_COMPUTE_TYPE)),
             "gpu_id": int(GPU_DEVICE or 0),
         }
         self._last_sent_text = ""
@@ -408,6 +487,7 @@ async def health() -> Dict[str, Any]:
         "status": "up",
         "model": service.default_model_name,
         "compute_type": service.default_compute_type,
+        "available_models": service.available_models(),
     }
 
 
@@ -415,10 +495,10 @@ async def health() -> Dict[str, Any]:
 async def transcribe(  # noqa: PLR0913
     file: UploadFile = File(...),
     language: str = Form("auto"),
-    model: str = Form(DEFAULT_MODEL),
+    model: str = Form(DEFAULT_MODEL_NAME),
     enable_diarization: bool = Form(False),
     enable_alignment: bool = Form(False),
-    compute_type: str = Form(COMPUTE_TYPE),
+    compute_type: str = Form(DEFAULT_COMPUTE_TYPE),
     vad_filter: bool = Form(True),
     vad_threshold: float = Form(0.5),
     beam_size: int = Form(5),
@@ -457,11 +537,14 @@ async def _run_transcription(
             return session.build_response(is_final=True)
         return None
 
-    options = {**session.options, "request_id": session.request_id}
+    base_options = session.final_options if is_final else session.partial_options
+    options = {**base_options, "request_id": session.request_id}
     loop = asyncio.get_running_loop()
-    result: Dict[str, Any] = await loop.run_in_executor(
-        None, service.transcribe, audio, session.sample_rate, options
-    )
+
+    def _invoke() -> Dict[str, Any]:
+        return service.transcribe(audio, session.sample_rate, options)
+
+    result: Dict[str, Any] = await loop.run_in_executor(None, _invoke)
     new_segments = session.ingest_transcription(result, audio, context_samples, new_samples)
     print(
         "stream_transcribe",
@@ -514,27 +597,48 @@ async def stream(websocket: WebSocket) -> None:
     sample_rate = int(message.get("sample_rate", 16000))
     encoding = message.get("encoding", "pcm16")
     language = message.get("language", "auto")
-    model = message.get("model", DEFAULT_MODEL)
-    beam_size = int(message.get("beam_size", 5))
+    final_model = message.get("model", DEFAULT_MODEL_NAME)
+    final_compute_type = message.get("compute_type", DEFAULT_COMPUTE_TYPE)
+    partial_model = message.get("partial_model") or final_model
+    partial_compute_type = message.get("partial_compute_type") or final_compute_type
+    final_beam_size = int(message.get("beam_size", 5))
+    partial_beam_size = int(message.get("partial_beam_size", 1))
     vad_filter = bool(message.get("vad_filter", True))
     vad_threshold = float(message.get("vad_threshold", 0.5))
+    enable_alignment = bool(message.get("enable_alignment", False))
+    enable_diarization = bool(message.get("enable_diarization", False))
 
-    options = {
+    base_options = {
         "language": language,
-        "model": model,
-        "beam_size": beam_size,
         "vad_filter": vad_filter,
         "vad_threshold": vad_threshold,
-        "enable_alignment": bool(message.get("enable_alignment", False)),
-        "enable_diarization": bool(message.get("enable_diarization", False)),
-        "compute_type": message.get("compute_type", COMPUTE_TYPE),
+        "enable_alignment": enable_alignment,
+        "enable_diarization": enable_diarization,
+    }
+
+    partial_options = {
+        **base_options,
+        "model": partial_model,
+        "compute_type": partial_compute_type,
+        "beam_size": partial_beam_size,
+        "enable_diarization": False,
+    }
+    partial_options["enable_alignment"] = False
+
+    final_options = {
+        **base_options,
+        "model": final_model,
+        "compute_type": final_compute_type,
+        "beam_size": final_beam_size,
     }
 
     session = StreamingSession(
         request_id=session_id,
         sample_rate=sample_rate,
-        options=options,
-        min_slice_seconds=float(message.get("emit_interval_sec", 1.5)),
+        partial_options=partial_options,
+        final_options=final_options,
+        min_slice_seconds=float(message.get("emit_interval_sec", DEFAULT_MIN_SLICE_SECONDS)),
+        min_emit_seconds=float(message.get("min_emit_seconds", 0.0)),
     )
 
     await websocket.send_json({"event": "session_started", "session_id": session_id})

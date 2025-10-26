@@ -65,16 +65,17 @@ class SessionResult:
     session_id: Optional[str]
     started_at: float
     ready_at: Optional[float] = None
-    final_at: Optional[float] = None
+    ended_at: Optional[float] = None
     insight_at: Optional[float] = None
     error: Optional[str] = None
     events: List[Dict[str, str]] = field(default_factory=list)
+    batches: int = 0
 
     @property
-    def final_latency(self) -> Optional[float]:
-        if self.ready_at is None or self.final_at is None:
+    def completion_latency(self) -> Optional[float]:
+        if self.ready_at is None or self.ended_at is None:
             return None
-        return self.final_at - self.ready_at
+        return self.ended_at - self.ready_at
 
     @property
     def insight_latency(self) -> Optional[float]:
@@ -92,11 +93,15 @@ async def run_session(
     language: str,
     model: str,
     compute_type: Optional[str],
+    batch_window_sec: float,
+    max_batch_window_sec: float,
+    enable_diarization: bool,
     realtime: bool,
     expect_insight: bool,
     require_final: bool,
     insight_timeout: float,
     start_delay: float,
+    post_audio_wait: float,
 ) -> SessionResult:
     await asyncio.sleep(start_delay)
     headers: Dict[str, str] = {}
@@ -119,8 +124,10 @@ async def run_session(
                 "language": language,
                 "sample_rate": 16000,
                 "encoding": "pcm16",
-                "emit_interval_sec": chunk_ms / 1000.0,
                 "model": model,
+                "batch_window_sec": batch_window_sec,
+                "max_batch_window_sec": max_batch_window_sec,
+                "enable_diarization": enable_diarization,
             }
             if compute_type:
                 start_payload["compute_type"] = compute_type
@@ -129,7 +136,7 @@ async def run_session(
 
             receiver = asyncio.create_task(_receiver(ws, result, expect_insight))
             sender = asyncio.create_task(
-                _sender(ws, chunks, chunk_ms, realtime)
+                _sender(ws, chunks, chunk_ms, realtime, post_audio_wait)
             )
 
             done, pending = await asyncio.wait(
@@ -139,18 +146,18 @@ async def run_session(
             )
             for task in pending:
                 task.cancel()
-            if expect_insight and result.insight_at is None:
-                result.error = result.error or "missing_insight"
+        if expect_insight and result.insight_at is None:
+            result.error = result.error or "missing_insight"
     except ConnectionClosed as exc:
         if getattr(exc, "code", None) is not None:
             result.error = f"connection_closed:{exc.code}"
     except Exception as exc:  # noqa: BLE001
         result.error = f"error:{exc.__class__.__name__}:{exc}"
     finally:
-        if require_final and result.final_at is None and result.error is None:
-            result.error = "missing_final"
+        if require_final and result.ended_at is None and result.error is None:
+            result.error = "missing_completion"
         success = (
-            (result.final_at is not None or not require_final)
+            (result.ended_at is not None or not require_final)
             and (not expect_insight or result.insight_at is not None)
         )
         if success and result.error:
@@ -158,7 +165,13 @@ async def run_session(
     return result
 
 
-async def _sender(ws: websockets.WebSocketClientProtocol, chunks: List[bytes], chunk_ms: int, realtime: bool) -> None:
+async def _sender(
+    ws: websockets.WebSocketClientProtocol,
+    chunks: List[bytes],
+    chunk_ms: int,
+    realtime: bool,
+    post_audio_wait: float,
+) -> None:
     for raw in chunks:
         payload = base64.b64encode(raw).decode("ascii")
         try:
@@ -167,6 +180,8 @@ async def _sender(ws: websockets.WebSocketClientProtocol, chunks: List[bytes], c
             return
         if realtime:
             await asyncio.sleep(chunk_ms / 1000.0)
+    if post_audio_wait > 0:
+        await asyncio.sleep(post_audio_wait)
     try:
         await ws.send(json.dumps({"event": "stop"}))
     except ConnectionClosed:
@@ -186,8 +201,10 @@ async def _receiver(ws: websockets.WebSocketClientProtocol, result: SessionResul
             if event == "ready":
                 result.session_id = payload.get("session_id")
                 result.ready_at = now
-            elif event == "final":
-                result.final_at = now
+            elif event == "batch_processed":
+                result.batches += 1
+            elif event in {"session_ended", "final_summary"}:
+                result.ended_at = now
             elif expect_insight and event == "insight":
                 result.insight_at = now
             elif event == "error":
@@ -202,8 +219,11 @@ def summarize(results: List[SessionResult]) -> Dict[str, float]:
     totals = len(results)
     successes = sum(1 for r in results if r.error is None)
     insights = sum(1 for r in results if r.insight_at is not None)
-    final_latencies = [r.final_latency for r in results if r.final_latency is not None]
+    completion_latencies = [
+        r.completion_latency for r in results if r.completion_latency is not None
+    ]
     insight_latencies = [r.insight_latency for r in results if r.insight_latency is not None]
+    batches = [r.batches for r in results]
 
     def _stats(values: List[float]) -> Dict[str, float]:
         if not values:
@@ -219,7 +239,8 @@ def summarize(results: List[SessionResult]) -> Dict[str, float]:
         "sessions_success": successes,
         "sessions_failed": totals - successes,
         "insights_emitted": insights,
-        **{f"final_{k}": v for k, v in _stats(final_latencies).items()},
+        "batches_total": sum(batches),
+        **{f"completion_{k}": v for k, v in _stats(completion_latencies).items()},
         **{f"insight_{k}": v for k, v in _stats(insight_latencies).items()},
     }
 
@@ -249,10 +270,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--language", default="pt", help="Language hint.")
     parser.add_argument("--model", default="whisper/medium", help="ASR model (e.g., whisper/medium, whisper/large-v3-turbo).")
     parser.add_argument("--compute-type", help="Optional compute type (e.g., fp16, int8_float16).")
+    parser.add_argument("--batch-window-sec", type=float, default=5.0, help="Tempo alvo de processamento em segundos.")
+    parser.add_argument("--max-batch-window-sec", type=float, default=10.0, help="Tempo máximo antes de forçar processamento.")
+    parser.add_argument("--enable-diarization", action="store_true", help="Ativa diarização por lote.")
     parser.add_argument("--realtime", action="store_true", help="Stream audio in real time (default sends as fast as possible).")
     parser.add_argument("--expect-insight", action="store_true", help="Fail sessions missing insight events.")
-    parser.add_argument("--require-final", action="store_true", help="Fail sessions missing final transcription event.")
+    parser.add_argument("--require-final", action="store_true", help="Fail sessions missing session_ended event.")
     parser.add_argument("--insight-timeout", type=float, default=30.0, help="Seconds to wait before flagging missing insight.")
+    parser.add_argument("--post-audio-wait", type=float, default=0.0, help="Seconds to keep the connection open after streaming audio before sending stop.")
     parser.add_argument("--summary-json", help="Optional path to dump summary JSON.")
     return parser.parse_args()
 
@@ -290,11 +315,15 @@ async def main_async(args: argparse.Namespace) -> None:
                     language=args.language,
                     model=args.model,
                     compute_type=args.compute_type,
+                    batch_window_sec=args.batch_window_sec,
+                    max_batch_window_sec=args.max_batch_window_sec,
+                    enable_diarization=args.enable_diarization,
                     realtime=args.realtime,
                     expect_insight=args.expect_insight,
                     require_final=args.require_final,
                     insight_timeout=args.insight_timeout,
                     start_delay=start_delay,
+                    post_audio_wait=args.post_audio_wait,
                 )
             )
         )

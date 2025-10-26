@@ -256,6 +256,9 @@ class InsightSession:
         self._last_text = ""
         self._job_inflight = False
 
+    def has_pending_job(self) -> bool:
+        return self._job_inflight
+
 
 class InsightManager:
     def __init__(self, config: Optional[InsightConfig] = None, llm_callable: Optional[LLMCallable] = None) -> None:
@@ -288,6 +291,14 @@ class InsightManager:
         session = self._sessions.pop(session_id, None)
         if session:
             await session.close()
+
+    async def wait_for_pending(self, session_id: str, timeout: float = 5.0) -> None:
+        session = self._sessions.get(session_id)
+        if not session:
+            return
+        start = time.time()
+        while session.has_pending_job() and (time.time() - start) < timeout:
+            await asyncio.sleep(0.05)
 
     async def startup(self) -> None:
         if self._started:
@@ -367,5 +378,12 @@ insight_manager = InsightManager(
         use_celery=_settings.insight_use_celery,
         celery_task_timeout_sec=_settings.insight_celery_timeout_sec,
         celery_queue=_settings.insight_celery_queue,
+        min_tokens=_settings.insight_min_tokens,
+        min_interval_sec=_settings.insight_min_interval_sec,
+        retain_tokens=_settings.insight_retain_tokens,
+        max_context_tokens=_settings.insight_max_context_tokens,
+        model=_settings.insight_model_name,
+        temperature=_settings.insight_temperature,
+        max_tokens=_settings.insight_max_tokens,
     )
 )

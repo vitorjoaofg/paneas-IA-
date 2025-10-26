@@ -67,9 +67,9 @@ else
     exit 1
 fi
 
-if grep -Eq '"event"\s*:\s*"final"' "$OUTPUT_FILE"; then
+if grep -Eq '"event"\s*:\s*"session_ended"' "$OUTPUT_FILE"; then
     echo "✓ Streaming ASR smoke test passed."
 else
-    echo "✗ Streaming ASR smoke test failed (final event not observed)."
+    echo "✗ Streaming ASR smoke test failed (session_ended event not observed)."
     exit 1
 fi

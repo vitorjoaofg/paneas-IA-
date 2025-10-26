@@ -20,6 +20,15 @@ services:
       - MINIO_ROOT_USER=${MINIO_ROOT_USER}
       - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
       - MINIO_SECURE=false
+      - INSIGHT_WORKER_CONCURRENCY=32
+      - INSIGHT_MIN_TOKENS=10
+      - INSIGHT_MIN_INTERVAL_SEC=10
+      - INSIGHT_RETAIN_TOKENS=60
+      - INSIGHT_MAX_CONTEXT_TOKENS=180
+      - INSIGHT_MODEL=qwen2.5-14b-instruct-awq
+      - INSIGHT_TEMPERATURE=0.3
+      - INSIGHT_MAX_TOKENS=180
+      - INSIGHT_FLUSH_TIMEOUT=60
     volumes:
       - type: bind
         source: /srv/models
@@ -30,6 +39,7 @@ services:
       - postgres
       - redis
       - minio
+      - asr
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
       interval: 10s
@@ -39,17 +49,39 @@ services:
       - stack-network
 
   asr:
-    build: ./asr
+    image: nginx:alpine
     container_name: stack-asr
+    restart: unless-stopped
+    volumes:
+      - ./infra/asr/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - asr-worker-gpu0
+      - asr-worker-gpu1
+      - asr-worker-gpu2
+      - asr-worker-gpu3
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    networks:
+      - stack-network
+
+  asr-worker-gpu0:
+    build: ./asr
+    container_name: stack-asr-gpu0
     restart: unless-stopped
     runtime: nvidia
     gpus:
       - device_ids: ['0']
     environment:
       - CUDA_VISIBLE_DEVICES=0
-      - COMPUTE_TYPE=int8_float16
-      - MODEL_NAME=whisper/medium
-      - MODEL_REPLICAS=2
+      - DEFAULT_MODEL_NAME=whisper/medium
+      - DEFAULT_COMPUTE_TYPE=int8_float16
+      - DEFAULT_MODEL_REPLICAS=8
+      - MODEL_POOL_SPECS=whisper/medium:int8_float16:8
+      - MIN_SLICE_SECONDS=0.35
+      - CONTEXT_SECONDS=1.2
       - MODELS_DIR=/models
       - DIAR_SERVICE_URL=http://diar:9003/diarize
       - NVIDIA_VISIBLE_DEVICES=0
@@ -62,6 +94,114 @@ services:
           devices:
             - driver: nvidia
               device_ids: ['0']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  asr-worker-gpu1:
+    build: ./asr
+    container_name: stack-asr-gpu1
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - DEFAULT_MODEL_NAME=whisper/medium
+      - DEFAULT_COMPUTE_TYPE=int8_float16
+      - DEFAULT_MODEL_REPLICAS=8
+      - MODEL_POOL_SPECS=whisper/medium:int8_float16:8
+      - MIN_SLICE_SECONDS=0.35
+      - CONTEXT_SECONDS=1.2
+      - MODELS_DIR=/models
+      - DIAR_SERVICE_URL=http://diar:9003/diarize
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  asr-worker-gpu2:
+    build: ./asr
+    container_name: stack-asr-gpu2
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['2']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - DEFAULT_MODEL_NAME=whisper/medium
+      - DEFAULT_COMPUTE_TYPE=int8_float16
+      - DEFAULT_MODEL_REPLICAS=0
+      - MODEL_POOL_SPECS=
+      - MIN_SLICE_SECONDS=0.35
+      - CONTEXT_SECONDS=1.2
+      - MODELS_DIR=/models
+      - DIAR_SERVICE_URL=http://diar:9003/diarize
+      - NVIDIA_VISIBLE_DEVICES=2
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2']
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    networks:
+      - stack-network
+
+  asr-worker-gpu3:
+    build: ./asr
+    container_name: stack-asr-gpu3
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['3']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - DEFAULT_MODEL_NAME=whisper/medium
+      - DEFAULT_COMPUTE_TYPE=int8_float16
+      - DEFAULT_MODEL_REPLICAS=0
+      - MODEL_POOL_SPECS=
+      - MIN_SLICE_SECONDS=0.35
+      - CONTEXT_SECONDS=1.2
+      - MODELS_DIR=/models
+      - DIAR_SERVICE_URL=http://diar:9003/diarize
+      - NVIDIA_VISIBLE_DEVICES=3
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['3']
               capabilities: [gpu]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
@@ -185,7 +325,7 @@ services:
       --model /models/qwen2_5/fp16
       --dtype float16
       --tensor-parallel-size 2
-      --gpu-memory-utilization 0.88
+      --gpu-memory-utilization 0.22
       --max-num-seqs 16
       --max-model-len 3200
       --max-num-batched-tokens 3200
@@ -230,7 +370,7 @@ services:
       --model /models/qwen2_5/int4-awq
       --quantization awq
       --tensor-parallel-size 1
-      --gpu-memory-utilization 0.85
+      --gpu-memory-utilization 0.20
       --max-num-seqs 16
       --max-model-len 3200
       --max-num-batched-tokens 3200

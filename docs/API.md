@@ -28,8 +28,9 @@ curl -H "Authorization: Bearer $API_TOKEN" \
 Entrada: upload `multipart/form-data` com `file=@audio.wav` e parâmetros opcionais (`language`, `model`, `enable_diarization`, `enable_alignment`, `compute_type`, `vad_filter`, `vad_threshold`, `beam_size`).
 
 Modelos suportados:
-- `whisper/medium` (padrão, executa em INT8/FP16 híbrido)
-- `whisper/large-v3-turbo` (alta fidelidade; exige FP16 e mais GPU)
+- `whisper/medium` (padrão; INT8/FP16 híbrido, indicado para produção)
+- `whisper/small` (uso opcional em cenários de baixa latência)
+- `whisper/large-v3-turbo` (alta fidelidade; exige FP16)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/asr \
@@ -53,35 +54,47 @@ curl -X POST http://localhost:8000/api/v1/asr \
 }
 ```
 
+> Nota: as requisições HTTP síncronas reutilizam o modelo do evento final (`whisper/medium` por padrão).
+
 ## ASR Streaming (WebSocket)
 `WS /api/v1/asr/stream`
 
+O endpoint opera em **modo batch**: cada sessão acumula 5–10 segundos de áudio, processa o lote com `whisper/medium` e envia o resultado apenas para o pipeline de insights. O operador recebe metadados e os insights resumidos, em vez da transcrição palavra a palavra.
+
 Fluxo:
 
-1. Conecte-se com header `Authorization: Bearer <token>` ou query `?token=`.
-2. Envie `{"event":"start","sample_rate":16000,"encoding":"pcm16","language":"pt"}`.
-   - Opcionalmente sobrescreva `"model":"whisper/large-v3-turbo"` e `"compute_type":"fp16"` quando for necessário mais fidelidade.
-3. Envie múltiplos `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
-4. Finalize com `{"event":"stop"}` para receber a transcrição final.
+1. Conecte-se com header `Authorization: Bearer <token>` (ou query `?token=`).
+2. Envie `{"event":"start","sample_rate":16000,"encoding":"pcm16","language":"pt"}`. Campos opcionais:
+   - `model` / `compute_type`: modelo Whisper usado por lote (default `whisper/medium` + `int8_float16`);
+   - `batch_window_sec`: janela alvo (default `5.0`);
+   - `max_batch_window_sec`: tempo máximo antes de forçar processamento (default `10.0`);
+   - `enable_diarization`: ativa diarização por lote (default `false`).
+3. Envie `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
+4. Finalize com `{"event":"stop"}` para processar o último lote e encerrar.
 
-Exemplo:
-
-```bash
-wscat -c "ws://localhost:8000/api/v1/asr/stream?token=$API_TOKEN"
-```
-
-Respostas típicas (parciais incluem o histórico completo da chamada):
+Respostas típicas:
 
 ```json
-{"event":"ready","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
-{"event":"session_started","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
-{"event":"partial","is_final":false,"text":"Olá, obrigado por ligar","segments":[{"start":0.0,"end":2.1,"text":"Olá, obrigado por ligar"}]}
-{"event":"final","is_final":true,"text":"Olá, obrigado por ligar para a central.","segments":[{"start":0.0,"end":2.6,"text":"Olá, obrigado por ligar para a central."}]}
-{"event":"session_ended","session_id":"cc31a9fd-2d64-4975-bda9-3344dc64a95e"}
-{"event":"insight","type":"live_summary","text":"Cliente solicita renegociação. Reforce condições especiais.","confidence":0.7,"model":"qwen2.5-14b-instruct-awq"}
+{"event":"ready","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch"}
+{"event":"session_started","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch","batch_window_sec":5.0}
+{"event":"batch_processed","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","batch_index":1,"duration_sec":5.0,"transcript_chars":428,"model":"whisper/medium","diarization":false}
+{"event":"insight","type":"live_summary","text":"Cliente reclama de cobrança duplicada; ofereça revisão da fatura e abertura de contestação.","confidence":0.7,"model":"qwen2.5-14b-instruct-awq"}
+{"event":"final_summary","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","stats":{"total_batches":3.0,"total_audio_seconds":14.9,"total_tokens":92.0}}
+{"event":"session_ended","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c"}
 ```
 
-Para um cliente completo em Python, consulte `scripts/streaming/asr_stream_client.py`.
+Eventos relevantes:
+
+- `batch_processed`: confirma que um lote foi transcrito (sem expor o texto bruto).
+- `insight`: insight em tempo (quase) real emitido pelo `insight_manager`.
+- `final_summary`: resumo agregado da chamada (lotes, duração e contagem de tokens).
+- `session_ended`: fechamento definitivo da sessão.
+
+> Para evitar perda de insights quando a chamada é encerrada, o gateway aguarda até `INSIGHT_FLUSH_TIMEOUT` (60 s por padrão) para escoar jobs pendentes antes de fechar o WebSocket. Clientes que desejam encerrar imediatamente podem aguardar explicitamente o último `event=insight` ou aumentar esse timeout na aplicação.
+
+Referências:
+- Cliente de exemplo: `scripts/streaming/asr_stream_client.py`
+- Stress test: `scripts/loadtest/asr_insight_stress.py --batch-window-sec 5 --max-batch-window-sec 10`
 
 ## Align & Diarize
 `POST /api/v1/align_diarize`
