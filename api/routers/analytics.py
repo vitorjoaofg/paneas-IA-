@@ -10,7 +10,7 @@ router = APIRouter(prefix="/api/v1", tags=["analytics"])
 
 @router.post("/analytics/speech", response_model=AnalyticsJobResponse, status_code=202)
 async def submit_analytics(payload: SpeechAnalyticsRequest):
-    response = await submit_job(payload.model_dump())
+    response = await submit_job(payload.model_dump(mode="json"))
     return AnalyticsJobResponse.model_validate(response)
 
 

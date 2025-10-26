@@ -21,7 +21,8 @@ echo "=== AI Stack Models Bootstrap ==="
 echo "Target directory: $MODELS_DIR"
 echo ""
 
-mkdir -p "$MODELS_DIR"/{whisper,pyannote,llama,qwen2_5,xtts,paddleocr,embeddings}
+mkdir -p "$MODELS_DIR"/{whisper,pyannote,llama,qwen2_5,xtts,paddleocr,embeddings,nlp}
+mkdir -p "$MODELS_DIR"/nlp/{sentiment,emotion,zeroshot}
 mkdir -p "$MODELS_DIR"/manifests/licenses
 
 model_exists() {
@@ -160,7 +161,7 @@ echo "=== Checking existing models in $MODELS_DIR ==="
 echo ""
 
 if command -v find >/dev/null 2>&1; then
-    find "$MODELS_DIR" -type f \( -name "*.bin" -o -name "*.safetensors" -o -name "config.json" \) | head -20
+    find "$MODELS_DIR" -type f \( -name "*.bin" -o -name "*.safetensors" -o -name "config.json" \) | head -20 || true
 fi
 
 echo ""
@@ -170,14 +171,14 @@ if [ -d "$MODELS_DIR" ]; then
 fi
 
 echo ""
-echo "[1/11] Checking Whisper large-v3..."
+echo "Checking Whisper large-v3..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3" "Whisper large-v3"; then
     echo "Downloading Whisper large-v3..."
     hf_download_public Systran/faster-whisper-large-v3 "$MODELS_DIR/whisper/large-v3"
 fi
 
 echo ""
-echo "[2/11] Checking Whisper large-v3-turbo..."
+echo "Checking Whisper large-v3-turbo..."
 if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo"; then
     echo "Downloading Whisper large-v3-turbo..."
     hf_download_public_any "$MODELS_DIR/whisper/large-v3-turbo" \
@@ -186,21 +187,21 @@ if ! model_exists "$MODELS_DIR/whisper/large-v3-turbo" "Whisper large-v3-turbo";
 fi
 
 echo ""
-echo "[3/12] Checking Whisper medium (INT8-capable)..."
+echo "Checking Whisper medium (INT8-capable)..."
 if ! model_exists "$MODELS_DIR/whisper/medium" "Whisper medium"; then
     echo "Downloading Whisper medium..."
     hf_download_public Systran/faster-whisper-medium "$MODELS_DIR/whisper/medium"
 fi
 
 echo ""
-echo "[4/12] Checking Whisper small (INT8-capable)..."
+echo "Checking Whisper small (INT8-capable)..."
 if ! model_exists "$MODELS_DIR/whisper/small" "Whisper small"; then
     echo "Downloading Whisper small..."
     hf_download_public Systran/faster-whisper-small "$MODELS_DIR/whisper/small"
 fi
 
 echo ""
-echo "[5/12] Checking Pyannote models..."
+echo "Checking Pyannote models..."
 if [ -z "${HF_TOKEN:-}" ]; then
     echo "WARNING: HF_TOKEN not set. Skipping Pyannote models (required for diarization)."
     echo "To enable diarization, set HF_TOKEN and re-run this script."
@@ -217,14 +218,14 @@ else
 fi
 
 echo ""
-echo "[6/12] Checking LLaMA-3.1-8B-Instruct FP16..."
+echo "Checking LLaMA-3.1-8B-Instruct FP16..."
 if ! model_exists "$MODELS_DIR/llama/fp16" "LLaMA-3.1-8B FP16"; then
     echo "Downloading LLaMA-3.1-8B-Instruct FP16..."
     hf_download_public meta-llama/Meta-Llama-3.1-8B-Instruct "$MODELS_DIR/llama/fp16"
 fi
 
 echo ""
-echo "[7/12] Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
+echo "Checking LLaMA-3.1-8B-Instruct INT4/AWQ..."
 if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
     echo "Downloading LLaMA-3.1-8B-Instruct INT4/AWQ..."
     hf_download_public_any "$MODELS_DIR/llama/int4-awq" \
@@ -233,28 +234,28 @@ if ! model_exists "$MODELS_DIR/llama/int4-awq" "LLaMA-3.1-8B INT4/AWQ"; then
 fi
 
 echo ""
-echo "[8/12] Checking Qwen2.5-14B-Instruct FP16..."
+echo "Checking Qwen2.5-14B-Instruct FP16..."
 if ! model_exists "$MODELS_DIR/qwen2_5/fp16" "Qwen2.5-14B-Instruct FP16"; then
     echo "Downloading Qwen2.5-14B-Instruct FP16..."
     hf_download_public Qwen/Qwen2.5-14B-Instruct "$MODELS_DIR/qwen2_5/fp16"
 fi
 
 echo ""
-echo "[9/12] Checking Qwen2.5-14B-Instruct INT4/AWQ..."
+echo "Checking Qwen2.5-14B-Instruct INT4/AWQ..."
 if ! model_exists "$MODELS_DIR/qwen2_5/int4-awq" "Qwen2.5-14B-Instruct INT4/AWQ"; then
     echo "Downloading Qwen2.5-14B-Instruct INT4/AWQ..."
     hf_download_public Qwen/Qwen2.5-14B-Instruct-AWQ "$MODELS_DIR/qwen2_5/int4-awq"
 fi
 
 echo ""
-echo "[10/12] Checking XTTS-v2..."
+echo "Checking XTTS-v2..."
 if ! model_exists "$MODELS_DIR/xtts" "XTTS-v2"; then
     echo "Downloading XTTS-v2..."
     hf_download_public coqui/XTTS-v2 "$MODELS_DIR/xtts"
 fi
 
 echo ""
-echo "[11/12] Checking PaddleOCR models..."
+echo "Checking PaddleOCR models..."
 mkdir -p "$MODELS_DIR/paddleocr"/{det,rec,cls,onnx,engines}
 
 if ! model_exists "$MODELS_DIR/paddleocr/det" "PaddleOCR Detection"; then
@@ -282,10 +283,31 @@ if ! model_exists "$MODELS_DIR/paddleocr/cls" "PaddleOCR Classification"; then
 fi
 
 echo ""
-echo "[12/12] Checking BGE-M3 embeddings..."
+echo "Checking BGE-M3 embeddings..."
 if ! model_exists "$MODELS_DIR/embeddings/bge-m3" "BGE-M3"; then
     echo "Downloading BGE-M3 embeddings..."
     hf_download_public BAAI/bge-m3 "$MODELS_DIR/embeddings/bge-m3"
+fi
+
+echo ""
+echo "Checking NLP sentiment model (cardiffnlp/twitter-xlm-roberta-base-sentiment)..."
+if ! model_exists "$MODELS_DIR/nlp/sentiment/twitter-xlm-roberta-base-sentiment" "Sentiment (twitter-xlm-roberta-base)"; then
+    echo "Downloading sentiment model..."
+    hf_download_public cardiffnlp/twitter-xlm-roberta-base-sentiment "$MODELS_DIR/nlp/sentiment/twitter-xlm-roberta-base-sentiment"
+fi
+
+echo ""
+echo "Checking NLP emotion model (pysentimiento/robertuito-emotion-analysis)..."
+if ! model_exists "$MODELS_DIR/nlp/emotion/robertuito-emotion-analysis" "Emotion (robertuito)"; then
+    echo "Downloading emotion model..."
+    hf_download_public pysentimiento/robertuito-emotion-analysis "$MODELS_DIR/nlp/emotion/robertuito-emotion-analysis"
+fi
+
+echo ""
+echo "Checking NLP zero-shot model (joeddav/xlm-roberta-large-xnli)..."
+if ! model_exists "$MODELS_DIR/nlp/zeroshot/xlm-roberta-large-xnli" "Zero-shot (xlm-roberta-large-xnli)"; then
+    echo "Downloading zero-shot classification model..."
+    hf_download_public joeddav/xlm-roberta-large-xnli "$MODELS_DIR/nlp/zeroshot/xlm-roberta-large-xnli"
 fi
 
 echo ""
@@ -307,6 +329,9 @@ declare -A EXPECTED_MODELS=(
     ["paddleocr-rec"]="$MODELS_DIR/paddleocr/rec"
     ["paddleocr-cls"]="$MODELS_DIR/paddleocr/cls"
     ["bge-m3"]="$MODELS_DIR/embeddings/bge-m3"
+    ["sentiment-cardiffnlp"]="$MODELS_DIR/nlp/sentiment/twitter-xlm-roberta-base-sentiment"
+    ["emotion-robertuito"]="$MODELS_DIR/nlp/emotion/robertuito-emotion-analysis"
+    ["zeroshot-xnli"]="$MODELS_DIR/nlp/zeroshot/xlm-roberta-large-xnli"
 )
 
 MISSING_MODELS=0
@@ -420,6 +445,24 @@ cat > "$MANIFEST_FILE" <<MANIFEST_EOF
       "size_gb": 0.67,
       "license": "MIT",
       "status": "$([ -d "$MODELS_DIR/embeddings/bge-m3" ] && echo "present" || echo "missing")"
+    },
+    "nlp_sentiment": {
+      "path": "nlp/sentiment/twitter-xlm-roberta-base-sentiment",
+      "size_gb": 1.1,
+      "license": "Apache-2.0",
+      "status": "$([ -d "$MODELS_DIR/nlp/sentiment/twitter-xlm-roberta-base-sentiment" ] && echo "present" || echo "missing")"
+    },
+    "nlp_emotion": {
+      "path": "nlp/emotion/robertuito-emotion-analysis",
+      "size_gb": 0.5,
+      "license": "MIT",
+      "status": "$([ -d "$MODELS_DIR/nlp/emotion/robertuito-emotion-analysis" ] && echo "present" || echo "missing")"
+    },
+    "nlp_zeroshot": {
+      "path": "nlp/zeroshot/xlm-roberta-large-xnli",
+      "size_gb": 2.0,
+      "license": "Apache-2.0",
+      "status": "$([ -d "$MODELS_DIR/nlp/zeroshot/xlm-roberta-large-xnli" ] && echo "present" || echo "missing")"
     }
   }
 }

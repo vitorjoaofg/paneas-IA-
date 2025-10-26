@@ -108,6 +108,8 @@ class Settings(BaseSettings):
     insight_min_interval_sec: float = Field(default=20.0, alias="INSIGHT_MIN_INTERVAL_SEC")
     insight_retain_tokens: int = Field(default=50, alias="INSIGHT_RETAIN_TOKENS")
     insight_max_context_tokens: int = Field(default=180, alias="INSIGHT_MAX_CONTEXT_TOKENS")
+    insight_context_segments: int = Field(default=6, alias="INSIGHT_CONTEXT_SEGMENTS")
+    insight_novelty_threshold: float = Field(default=0.85, alias="INSIGHT_NOVELTY_THRESHOLD")
     insight_model_name: str = Field(default="qwen2.5-14b-instruct-awq", alias="INSIGHT_MODEL")
     insight_temperature: float = Field(default=0.3, alias="INSIGHT_TEMPERATURE")
     insight_max_tokens: int = Field(default=180, alias="INSIGHT_MAX_TOKENS")

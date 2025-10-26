@@ -41,12 +41,13 @@ def load_audio(path: Path, target_sr: int = 16000) -> Tuple[np.ndarray, int]:
 
 
 async def chunk_audio(
-    audio: np.ndarray, sample_rate: int, chunk_ms: int
+    audio: np.ndarray, sample_rate: int, chunk_ms: int, realtime: bool
 ) -> AsyncGenerator[np.ndarray, None]:
     samples_per_chunk = int(sample_rate * chunk_ms / 1000)
     for offset in range(0, len(audio), samples_per_chunk):
         yield audio[offset : offset + samples_per_chunk]
-        await asyncio.sleep(chunk_ms / 1000.0)
+        if realtime:
+            await asyncio.sleep(chunk_ms / 1000.0)
 
 
 async def stream_audio(
@@ -55,11 +56,13 @@ async def stream_audio(
     audio_path: Path,
     language: str,
     chunk_ms: int,
+    realtime: bool,
     model: str,
     compute_type: Optional[str],
     batch_window_sec: float,
     max_batch_window_sec: float,
     enable_diarization: bool,
+    post_audio_wait: float,
 ) -> None:
     pcm16, sample_rate = load_audio(audio_path)
     ws_url = url
@@ -97,7 +100,7 @@ async def stream_audio(
         reader_task = asyncio.create_task(reader())
 
         try:
-            async for chunk in chunk_audio(pcm16, sample_rate, chunk_ms):
+            async for chunk in chunk_audio(pcm16, sample_rate, chunk_ms, realtime):
                 if chunk.size == 0:
                     continue
                 payload = base64.b64encode(chunk.tobytes()).decode("ascii")
@@ -106,6 +109,8 @@ async def stream_audio(
                 except ConnectionClosed:
                     break
         finally:
+            if post_audio_wait > 0:
+                await asyncio.sleep(post_audio_wait)
             try:
                 await ws.send(json.dumps({"event": "stop"}))
             except ConnectionClosed:
@@ -120,11 +125,14 @@ def main() -> None:
     parser.add_argument("--file", default="test-data/audio/sample_10s.wav", help="Arquivo de áudio de entrada.")
     parser.add_argument("--language", default="pt", help="Idioma esperado.")
     parser.add_argument("--chunk-ms", type=int, default=800, help="Tamanho do chunk em milissegundos.")
+    parser.add_argument("--no-realtime", dest="realtime", action="store_false", help="Enviar áudio o mais rápido possível (sem aguardar o tamanho do chunk).")
     parser.add_argument("--model", default="whisper/medium", help="Modelo Whisper final.")
     parser.add_argument("--compute-type", help="Compute type do modelo final (ex.: fp16, int8_float16).")
     parser.add_argument("--batch-window-sec", type=float, default=5.0, help="Janela alvo de processamento em segundos.")
     parser.add_argument("--max-batch-window-sec", type=float, default=10.0, help="Janela máxima antes de forçar processamento.")
     parser.add_argument("--enable-diarization", action="store_true", help="Ativa diarização por lote.")
+    parser.add_argument("--post-audio-wait", type=float, default=0.0, help="Segundos para aguardar após enviar todo o áudio antes de enviar stop.")
+    parser.set_defaults(realtime=True)
     args = parser.parse_args()
 
     audio_path = Path(args.file)
@@ -138,11 +146,13 @@ def main() -> None:
             audio_path,
             args.language,
             args.chunk_ms,
+            args.realtime,
             args.model,
             args.compute_type,
             args.batch_window_sec,
             args.max_batch_window_sec,
             args.enable_diarization,
+            args.post_audio_wait,
         )
     )
 

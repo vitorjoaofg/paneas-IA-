@@ -30,9 +30,12 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo processando 
 - Cada flush converte o PCM para WAV em memória e chama o ASR síncrono (`/transcribe`) com `whisper/medium` (INT8/FP16). O texto concatenado alimenta o `InsightSession`.
 - Fila assíncrona por sessão (`asyncio.Queue`) garante processamento sequencial e controla backpressure; métricas `batch_processed` e `final_summary` são emitidas pelo gateway.
 - `insight_manager` permanece responsável por throttling (tokens mínimos + intervalo), agendamento (fila interna) e emissão de `event: insight`; a configuração atual usa `min_tokens=10`, `min_interval_sec=10`, `retain_tokens=60` e 32 workers HTTP apontando para o modelo corporativo `paneas-v1` (Qwen2.5-14B INT4).
+- Para reduzir repetições, cada insight considera apenas os últimos trechos relevantes (`INSIGHT_CONTEXT_SEGMENTS`, padrão 6) e compara a saída com o insight anterior. Se a similaridade exceder `INSIGHT_NOVELTY_THRESHOLD` (0.85 por padrão), o resultado é descartado e o cache é mantido até surgirem fatos novos.
 - Ao receber `stop`, o gateway aguarda até `INSIGHT_FLUSH_TIMEOUT` (60 s) para escoar jobs pendentes antes de fechar o WebSocket, evitando perdas quando o LLM responde com atraso.
 - Integração opcional com Celery (`INSIGHT_USE_CELERY=true`) continua disponível para offload de jobs de LLM.
 - Os workers de ASR (`asr-worker-gpu0..3`) rodam variantes `whisper/medium` em cada GPU; `whisper/small` fica disponível apenas para requisições HTTP explícitas. O NGINX `stack-asr` distribui as sessões conforme `session_affinity`.
+- O serviço `stack-analytics` foi reescrito (FastAPI + Redis + MinIO) e agora calcula métricas completas (`keywords`, `acoustic`, `sentiment`, `emotion`, `intent`/`outcome`, `compliance`, `summary`, `timeline`) com auxílio do modelo `paneas-v1` para geração de resumos e próximos passos.
+- Para as análises textuais são carregados modelos Hugging Face locais: `cardiffnlp/twitter-xlm-roberta-base-sentiment` (sentimento), `pysentimiento/robertuito-emotion-analysis` (emoção) e `joeddav/xlm-roberta-large-xnli` (intenção/compliance via zero-shot). Todos ficam em `/srv/models/nlp/*` e rodam em CPU.
 
 ## Observabilidade E Controle
 - Métricas: tempo transcrição→insight, taxa de acerto (feedback do operador), volume por tenant, erros do LLM, além dos novos gauges/histogramas (`insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`).
@@ -43,7 +46,7 @@ Gerar insights acionáveis para operadores durante chamadas ao vivo processando 
 ## Teste De Carga
 - Script `scripts/loadtest/asr_insight_stress.py` gera N sessões WebSocket com áudio real, valida `event=session_ended` e, opcionalmente, a presença de `event=insight`, medindo latências de conclusão.
 - Targets: `make loadtest-insights` (50 sessões por padrão, configurável com `SESSIONS`, `RAMP`, `AUDIO`) e `make loadtest-insights-max` (500 sessões com presets agressivos).
-- Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `BATCH_WINDOW_SEC`, `MAX_BATCH_WINDOW_SEC`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`.
+- Variáveis relevantes: `API_TOKEN`, `CHUNK_MS`, `BATCH_WINDOW_SEC`, `MAX_BATCH_WINDOW_SEC`, `INSIGHT_WORKER_CONCURRENCY`, `INSIGHT_QUEUE_MAXSIZE`, `INSIGHT_USE_CELERY`, `INSIGHT_CONTEXT_SEGMENTS`, `INSIGHT_NOVELTY_THRESHOLD`.
 - Monitorar durante o teste: `insight_queue_size`, `insight_job_wait_seconds`, `insight_job_duration_seconds`, `insight_job_failures_total`, métricas `batch_processed`/`final_summary` e utilização de GPU/CPU.
 - Referência atual: `python3 scripts/loadtest/asr_insight_stress.py --sessions 100 --audio test-data/audio/sample4_8s.wav --batch-window-sec 5 --max-batch-window-sec 10 --post-audio-wait 10 --expect-insight --require-final` → sucesso 100/100 (latência p95 de conclusão ~48 s, insights p95 ~48 s, aguardando flush antes do encerramento).
 

@@ -208,8 +208,7 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
 ```
 
 ## Speech Analytics
-- `POST /api/v1/analytics/speech`: cria job assíncrono.
-- `GET /api/v1/analytics/speech/{job_id}`: consulta progresso/resultado.
+`POST /api/v1/analytics/speech` cria um job assíncrono; `GET /api/v1/analytics/speech/{job_id}` retorna o resultado quando finalizado.
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/analytics/speech \
@@ -217,15 +216,24 @@ curl -X POST http://localhost:8000/api/v1/analytics/speech \
   -H "Content-Type: application/json" \
   -d '{
         "call_id": "b56d0a24-677d-4d59-84de-1e2fd6c0c978",
-        "audio_uri": "s3://recordings/call.wav",
-        "transcript_uri": "s3://transcripts/call.json",
-        "analysis_types": ["sentiment", "compliance"],
-        "keywords": ["cancelamento", "upgrade"]
+        "audio_uri": "s3://audio/call.wav",
+        "transcript_uri": "s3://artifacts/call.json",
+        "analysis_types": [
+          "vad_advanced",
+          "sentiment",
+          "emotion",
+          "intent",
+          "outcome",
+          "compliance",
+          "summary",
+          "keywords"
+        ],
+        "keywords": ["internet", "cancelamento", "upgrade"]
       }'
 ```
 
 ```json
-{"job_id": "ae12b74c-1ef7-4cb6-a9ac-60b1f3b162b8", "status": "queued"}
+{"job_id": "ae12b74c-1ef7-4cb6-a9ac-60b1f3b162b8", "status": "processing"}
 ```
 
 Consulta:
@@ -239,9 +247,107 @@ curl -H "Authorization: Bearer $API_TOKEN" \
 {
   "job_id": "ae12b74c-1ef7-4cb6-a9ac-60b1f3b162b8",
   "status": "completed",
-  "results": {"sentiment": {"score": 0.72}, "compliance": {"breaches": 0}}
+  "results": {
+    "keywords": {
+      "searched": ["internet", "cancelamento", "upgrade"],
+      "occurrences": {"internet": 2},
+      "positions": {"internet": 18.6}
+    },
+    "acoustic": {
+      "duration_seconds": 312.7,
+      "speech_ratio": 0.64,
+      "speech_rate_wpm": 118.5,
+      "average_pitch_hz": 198.4,
+      "speaker_activity": {
+        "SPEAKER_00": {"total_seconds": 176.3, "turns": 41},
+        "SPEAKER_01": {"total_seconds": 136.4, "turns": 37}
+      }
+    },
+    "sentiment": {
+      "overall": {
+        "label": "positive",
+        "score": 0.48,
+        "total_tokens": 812,
+        "probabilities": {"positive": 0.59, "neutral": 0.36, "negative": 0.05}
+      },
+      "per_speaker": {
+        "SPEAKER_00": {
+          "label": "positive",
+          "scores": {"positive": 0.63, "neutral": 0.32, "negative": 0.05},
+          "score": 0.58,
+          "tokens": 436,
+          "positive_terms": 28,
+          "negative_terms": 8
+        },
+        "SPEAKER_01": {
+          "label": "neutral",
+          "scores": {"positive": 0.52, "neutral": 0.42, "negative": 0.06},
+          "score": 0.46,
+          "tokens": 376,
+          "positive_terms": 14,
+          "negative_terms": 11
+        }
+      }
+    },
+    "emotion": {
+      "overall": {"label": "calm", "confidence": 0.61},
+      "per_speaker": {
+        "SPEAKER_00": {"label": "motivated", "score": 0.74, "scores": {"motivated": 0.74, "calm": 0.19, "frustrated": 0.07}},
+        "SPEAKER_01": {"label": "calm", "score": 0.68, "scores": {"calm": 0.68, "motivated": 0.21, "frustrated": 0.11}}
+      }
+    },
+    "intent": {
+      "intents": {
+        "venda": {"score": 0.97, "evidence": ["oferta", "contratar"]},
+        "upgrade": {"score": 0.82, "evidence": ["plano melhor", "aumentar velocidade"]},
+        "cancelamento": {"score": 0.18, "evidence": []},
+        "suporte": {"score": 0.33, "evidence": ["problema"]}
+      },
+      "outcome": {"label": "accepted", "score": 0.89, "evidence": ["aceito", "vamos fechar"]}
+    },
+    "compliance": {
+      "passed": ["greeting", "operator_identification", "offer_presented"],
+      "failed": ["call_closure"],
+      "score": 0.75,
+      "details": [
+        {"name": "greeting", "score": 0.91, "passed": true, "evidence": ["ola"]},
+        {"name": "operator_identification", "score": 0.88, "passed": true, "evidence": ["sou da claro"]},
+        {"name": "offer_presented", "score": 0.94, "passed": true, "evidence": ["fibra", "globoplay"]},
+        {"name": "call_closure", "score": 0.31, "passed": false, "evidence": []}
+      ]
+    },
+    "summary": {
+      "summary": [
+        "Cliente avaliou migrar para o combo fibra + Globoplay destacando custo-benefício.",
+        "Operador reforçou vantagens de manter o número atual e ampliou franquia de dados móveis.",
+        "Conversa encerrou com aceite condicionado ao envio do contrato para assinatura."
+      ],
+      "next_actions": ["Enviar contrato digital", "Registrar aceite no CRM", "Agendar instalação"],
+      "confidence": 0.78
+    },
+    "timeline": [
+      {"timestamp": 18.6, "type": "keyword", "label": "internet", "confidence": 0.6, "metadata": {"keyword": "internet"}},
+      {"timestamp": 182.4, "type": "intent", "label": "venda", "confidence": 0.97, "metadata": {"score": 0.97, "evidence": ["contratar"]}},
+      {"timestamp": 289.1, "type": "outcome", "label": "accepted", "confidence": 0.89, "metadata": {"score": 0.89, "evidence": ["aceito"]}}
+    ]
+  }
 }
 ```
+
+`analysis_types` controla quais módulos executam. Disponíveis:
+
+| Flag             | Descrição                                                                 |
+|------------------|---------------------------------------------------------------------------|
+| `vad_advanced`   | Métricas acústicas (duração, relação fala/silêncio, taxa de fala, pitch e distribuição por speaker). |
+| `sentiment`      | Polaridade geral e por participante (léxicos PT/ES).                      |
+| `emotion`        | Categoria emocional inferida a partir do sentimento e da dinâmica de fala.|
+| `intent`         | Intenções detectadas (venda, suporte, cancelamento, upgrade, downgrade).  |
+| `outcome`        | Resultado da negociação (`accepted`, `rejected`, `pending`).              |
+| `keywords`       | Busca de termos fornecidos pelo cliente com timestamps quando possível.   |
+| `compliance`     | Checklist de script (saudação, identificação, oferta, encerramento).      |
+| `summary`        | Resumo estruturado + próximos passos gerado pelo modelo `paneas-v1`.      |
+
+> Pré-requisito: o áudio e a transcrição precisam estar acessíveis (MinIO ou caminho local).
 
 ## Métricas Prometheus
 `GET /metrics` (sem autenticação, exposto pela instância FastAPI através do `prometheus_fastapi_instrumentator`).

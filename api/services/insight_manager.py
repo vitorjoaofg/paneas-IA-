@@ -4,6 +4,7 @@ import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any, Awaitable, Callable, Dict, List, Optional
+from difflib import SequenceMatcher
 
 import structlog
 from prometheus_client import Counter, Gauge, Histogram
@@ -45,6 +46,8 @@ class InsightConfig:
     min_interval_sec: float = 20.0
     retain_tokens: int = 50
     max_context_tokens: int = 180
+    context_segment_window: int = 6
+    novelty_overlap_threshold: float = 0.85
     model: str = "qwen2.5-14b-instruct-awq"
     temperature: float = 0.3
     max_tokens: int = 180
@@ -82,6 +85,7 @@ class InsightSession:
         self._last_text: str = ""
         self._segments: List[str] = []
         self._last_insight_ts: float = 0.0
+        self._last_insight_text: Optional[str] = None
         self._job_inflight: bool = False
         self._closed: bool = False
         self._lock = asyncio.Lock()
@@ -94,8 +98,9 @@ class InsightSession:
         if not delta:
             return
         self._segments.append(delta)
-        if len(self._segments) > 50:
-            self._segments = self._segments[-50:]
+        max_segments = max(self._config.context_segment_window * 3, self._config.context_segment_window)
+        if len(self._segments) > max_segments:
+            self._segments = self._segments[-max_segments:]
         LOGGER.info(
             "insight_ingest",
             session_id=self.session_id,
@@ -149,22 +154,37 @@ class InsightSession:
                 {
                     "role": "system",
                     "content": (
-                        "Você está acompanhando uma chamada de call center em tempo real. "
-                        "Crie insights práticos para o operador, mantendo confidencialidade e sem inventar dados."
-                    ),
-                },
-                {
-                    "role": "user",
-                    "content": (
-                        "Contexto da conversa até agora:\n"
-                        f"{context}\n\n"
-                        "Produza um insight curto (2 frases):\n"
-                        "1) Resuma a situação atual do cliente.\n"
-                        "2) Recomende a próxima ação do operador (ex.: sondar necessidade, confirmar dados, oferecer solução).\n"
-                        "Use o mesmo idioma detectado no contexto. Se não houver informação suficiente, responda 'Sem dados suficientes até o momento.'."
+                        "Você acompanha uma chamada de call center em tempo quase real. "
+                        "Gere insights orientados à ação, sem inventar dados, mantendo confidencialidade. "
+                        "Traga detalhes objetivos (produtos, números, preços, status do cliente) e evite generalidades."
                     ),
                 },
             ]
+            if self._last_insight_text:
+                messages.append(
+                    {
+                        "role": "system",
+                        "content": (
+                            "Último insight enviado ao operador:\n"
+                            f"{self._last_insight_text}\n\n"
+                            "Forneça apenas novidades relevantes em relação ao insight anterior. "
+                            "Se nada substancial mudou, responda exatamente: 'Sem novos eventos relevantes até o momento.'"
+                        ),
+                    }
+                )
+            messages.append(
+                {
+                    "role": "user",
+                    "content": (
+                        "Trecho recente da conversa (últimas interações relevantes):\n"
+                        f"{context}\n\n"
+                        "Produza duas frases numeradas no formato:\n"
+                        "1) Situação atual do cliente com fatos e números específicos.\n"
+                        "2) Próxima ação recomendada para o operador, citando valores/planos quando aparecerem.\n"
+                        "Use o idioma do trecho e mantenha até 2 frases. Se não houver dados novos suficientes, responda exatamente: 'Sem novos eventos relevantes até o momento.'"
+                    ),
+                }
+            )
 
             payload = {
                 "model": self._config.model,
@@ -184,6 +204,24 @@ class InsightSession:
             if not content:
                 LOGGER.warning("insight_llm_empty_content", session_id=self.session_id)
                 return
+            overlap = (
+                self._similarity(content, self._last_insight_text)
+                if self._last_insight_text
+                else 0.0
+            )
+            if (
+                self._last_insight_text
+                and self._config.novelty_overlap_threshold < 1.0
+                and overlap >= self._config.novelty_overlap_threshold
+            ):
+                LOGGER.info(
+                    "insight_skipped_low_novelty",
+                    session_id=self.session_id,
+                    overlap=overlap,
+                )
+                self._last_insight_ts = time.time()
+                self._trim_cache()
+                return
 
             insight_payload = {
                 "event": "insight",
@@ -197,6 +235,7 @@ class InsightSession:
             await self._send_callback(insight_payload)
             LOGGER.info("insight_emitted", session_id=self.session_id)
             self._last_insight_ts = time.time()
+            self._last_insight_text = content
             self._trim_cache()
         except Exception as exc:  # noqa: BLE001
             LOGGER.exception("insight_generation_failed", session_id=self.session_id, error=str(exc))
@@ -238,7 +277,10 @@ class InsightSession:
     def _build_context(self) -> str:
         if not self._last_text:
             return ""
-        words = self._last_text.split()
+        window_segments = self._segments[-self._config.context_segment_window :] if self._segments else []
+        joined = " ".join(segment.strip() for segment in window_segments if segment)
+        candidate = joined or self._last_text
+        words = candidate.split()
         if len(words) > self._config.max_context_tokens:
             words = words[-self._config.max_context_tokens :]
         return " ".join(words)
@@ -248,7 +290,10 @@ class InsightSession:
         if len(words) > self._config.retain_tokens:
             words = words[-self._config.retain_tokens :]
             self._last_text = " ".join(words)
-            self._segments = [" ".join(words)]
+        if self._last_text:
+            self._segments = [self._last_text]
+        else:
+            self._segments.clear()
 
     async def close(self) -> None:
         self._closed = True
@@ -368,6 +413,12 @@ class InsightManager:
     async def _default_llm_call(self, payload: Dict[str, Any], target: LLMTarget) -> Dict[str, Any]:
         return await chat_completion(payload, target)
 
+    @staticmethod
+    def _similarity(a: str, b: str) -> float:
+        if not a or not b:
+            return 0.0
+        return SequenceMatcher(None, a, b).ratio()
+
 
 _settings = get_settings()
 
@@ -382,6 +433,8 @@ insight_manager = InsightManager(
         min_interval_sec=_settings.insight_min_interval_sec,
         retain_tokens=_settings.insight_retain_tokens,
         max_context_tokens=_settings.insight_max_context_tokens,
+        context_segment_window=_settings.insight_context_segments,
+        novelty_overlap_threshold=_settings.insight_novelty_threshold,
         model=_settings.insight_model_name,
         temperature=_settings.insight_temperature,
         max_tokens=_settings.insight_max_tokens,

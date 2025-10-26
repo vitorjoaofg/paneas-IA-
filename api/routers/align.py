@@ -8,5 +8,5 @@ router = APIRouter(prefix="/api/v1", tags=["align"])
 
 @router.post("/align_diarize", response_model=AlignDiarizeResponse, status_code=202)
 async def align_and_diarize(payload: AlignDiarizeRequest):
-    result = await submit(payload.model_dump())
+    result = await submit(payload.model_dump(mode="json"))
     return AlignDiarizeResponse.model_validate(result)
