@@ -22,7 +22,6 @@
     <header class="hero">
         <div class="hero__content">
             <h1>Paneas Real-Time Studio</h1>
-            <p>Experimente a transcricao em tempo real, insights acionaveis e chat com o LLM do stack core.</p>
         </div>
         <div class="hero__status" id="sessionStatus">Offline</div>
     </header>
@@ -52,6 +51,17 @@
             <div class="controls__actions">
                 <button id="startButton" class="btn btn--primary">Comecar captura</button>
                 <button id="stopButton" class="btn" disabled>Encerrar</button>
+                <div id="listeningIndicator" class="listening-indicator hidden">
+                    <span class="listening-icon">🎤</span>
+                    <div class="sound-wave">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <span class="listening-text">Escutando...</span>
+                </div>
             </div>
         </section>
 

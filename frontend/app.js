@@ -22,6 +22,7 @@ const ui = {
     chatModel: document.getElementById("chatModel"),
     chatPlaceholder: document.querySelector(".chat__placeholder"),
     chatClear: document.getElementById("clearChat"),
+    listeningIndicator: document.getElementById("listeningIndicator"),
 };
 
 const state = {
@@ -42,6 +43,7 @@ const state = {
     tokens: 0,
     audioSeconds: 0,
     aggregatedTranscript: "",
+    previousTranscript: "",
     timeline: [],
     insights: [],
     chatHistory: [],
@@ -77,10 +79,74 @@ function updateStats() {
 
 function renderTranscript() {
     if (!state.aggregatedTranscript) {
-        ui.transcript.textContent = "Fale apos iniciar a captura para ver a transcricao acumulada aqui.";
+        ui.transcript.innerHTML = '<span class="transcript__placeholder">Fale apos iniciar a captura para ver a transcricao acumulada aqui.</span>';
         return;
     }
-    ui.transcript.textContent = state.aggregatedTranscript;
+
+    const currentText = state.aggregatedTranscript;
+    const previousText = state.previousTranscript;
+
+    // Se é a primeira transcrição (estava vazio), remove o placeholder
+    if (!previousText && currentText) {
+        ui.transcript.innerHTML = '';
+    }
+
+    // Se o texto é completamente diferente, renderiza tudo de uma vez
+    if (!currentText.startsWith(previousText)) {
+        ui.transcript.innerHTML = escapeHtml(currentText);
+        state.previousTranscript = currentText;
+        smoothScrollTranscript();
+        return;
+    }
+
+    // Extrai apenas o texto novo
+    const newText = currentText.slice(previousText.length);
+
+    if (newText) {
+        // Separa em palavras
+        const words = newText.split(/(\s+)/);
+
+        // Adiciona palavras com delay progressivo para efeito de "digitação"
+        words.forEach((word, index) => {
+            setTimeout(() => {
+                if (word.trim()) {
+                    const span = document.createElement('span');
+                    span.className = 'word-new';
+                    span.textContent = word;
+                    ui.transcript.appendChild(span);
+
+                    // Remove highlight depois de 1.5s
+                    setTimeout(() => {
+                        span.classList.remove('word-new');
+                        span.classList.add('word-faded');
+                    }, 1500);
+                } else if (word) {
+                    // Adiciona espaços
+                    ui.transcript.appendChild(document.createTextNode(word));
+                }
+
+                smoothScrollTranscript();
+            }, index * 80); // 80ms de delay entre cada palavra
+        });
+
+        // Atualiza previousTranscript depois que todas as palavras forem agendadas
+        setTimeout(() => {
+            state.previousTranscript = currentText;
+        }, words.length * 80);
+    }
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function smoothScrollTranscript() {
+    ui.transcript.scrollTo({
+        top: ui.transcript.scrollHeight,
+        behavior: 'smooth'
+    });
 }
 
 function renderTimeline() {
@@ -255,6 +321,7 @@ function resetSessionState() {
     state.timeline = [];
     state.insights = [];
     state.aggregatedTranscript = "";
+    state.previousTranscript = "";
     updateStats();
     renderTranscript();
     renderTimeline();
@@ -328,6 +395,7 @@ function cleanupSession(message = "Sessao finalizada.") {
     closeWebSocket();
     ui.startButton.disabled = false;
     ui.stopButton.disabled = true;
+    ui.listeningIndicator.classList.add("hidden");
     setStatus(message, "idle");
 }
 
@@ -477,6 +545,7 @@ async function openSession() {
     ws.onopen = () => {
         ui.startButton.disabled = true;
         ui.stopButton.disabled = false;
+        ui.listeningIndicator.classList.remove("hidden");
         state.streaming = true;
         const payload = {
             event: "start",
