@@ -7,7 +7,7 @@ Plataforma completa de IA on-premises com ASR, Diarização, OCR, LLM e TTS otim
 - **ASR**: Pipeline em lotes (5–10 s) operando `whisper/medium` em todas as GPUs; `whisper/small` permanece disponível como fallback HTTP
 - **Diarização**: Pyannote 3.x com cache de embeddings (GPU1)
 - **Alinhamento**: WhisperX word-level alignment (GPU1)
-- **LLM**: LLaMA-3.1-8B (FP16 e INT4/AWQ) com vLLM (GPU2-3)
+- **LLM**: Qwen2.5-14B (FP16 e INT4/AWQ via vLLM) exposto como `paneas-v1` (GPU2-3)
 - **OCR**: PaddleOCR com TensorRT (GPU2)
 - **TTS**: Coqui XTTS-v2 com voice cloning (GPU0)
 - **Analytics**: Speech analytics D+1 (GPU1)
@@ -30,6 +30,7 @@ git clone <repo>
 cd ai-stack-platform
 cp .env.example .env
 # Editar .env com suas credenciais
+# Garanta que `API_TOKENS` contenha pelo menos uma credencial válida (requerido em produção)
 ```
 
 ### 2. Bootstrap de Modelos
@@ -76,8 +77,8 @@ Downloading Whisper medium...
 ✓ OK: whisper-large-v3-turbo
 ✓ OK: whisper-medium
 ✓ OK: pyannote-diarization
-✓ OK: llama-fp16
-✓ OK: llama-int4
+✓ OK: qwen2.5-fp16
+✓ OK: qwen2.5-int4
 ✓ OK: xtts
 ✓ OK: paddleocr-det
 ✓ OK: bge-m3
@@ -88,8 +89,8 @@ whisper-large-v3: present
 whisper-large-v3-turbo: present
 whisper-medium: present
 pyannote-diarization: present
-llama-fp16: present
-llama-int4: present
+qwen2.5-fp16: present
+qwen2.5-int4: present
 xtts: present
 paddleocr: present
 bge-m3: present
@@ -101,6 +102,24 @@ bge-m3: present
 make up
 # Aguarde ~2 minutos para todos os serviços ficarem prontos
 ```
+
+### 3a. Subir apenas o core (LLM + ASR)
+
+Quando precisar apenas do gateway com chat completions, ASR síncrono e streaming de insights, use o helper script recém-adicionado:
+
+```bash
+# Pré-requisito: exportar as credenciais básicas ou popular .env
+export API_TOKENS='["token_abc123"]'
+export POSTGRES_USER=aistack
+export POSTGRES_PASSWORD=changeme
+export POSTGRES_DB=aistack
+export MINIO_ROOT_USER=aistack
+export MINIO_ROOT_PASSWORD=changeme
+
+./scripts/start_core_stack.sh core
+```
+
+O modo `core` sobe somente `postgres`, `redis`, `minio`, o balanceador/ASR workers, `llm-fp16` e o `stack-api`. Para subir tudo novamente, execute `./scripts/start_core_stack.sh full` ou `make up`.
 
 ### 4. Verificar Saúde
 
@@ -115,6 +134,7 @@ make smoke-test
 - **Grafana**: http://localhost:3000 (admin/senha_do_.env)
 - **Flower**: http://localhost:5555 (apenas rede interna)
 - **Prometheus**: http://localhost:9090
+- **Métricas de serviços**: expostas em `/metrics` diretamente nos containers (`api`, `asr-worker-gpu*`, `ocr`, `tts`, `align`, `diar`, `analytics`)
 
 ## Uso da API
 
@@ -160,6 +180,14 @@ curl -X POST http://localhost:8000/api/v1/chat/completions \
     ]
   }'
 ```
+
+Para validar rapidamente que o core stack está funcional (chat completions, streaming e ASR batch) use:
+
+```bash
+./scripts/test_core_stack.sh
+```
+
+O script aguarda o `/api/v1/health`, faz um completion síncrono, verifica o modo `stream=true` recebendo `[DONE]` e executa uma transcrição multipart usando `test-data/audio/sample4_8s.wav`.
 
 ## Arquitetura ASR em Lotes
 

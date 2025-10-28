@@ -16,6 +16,9 @@ from minio import Minio
 from pydantic import BaseModel, Field
 from redis.asyncio import Redis
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
+import torch
+from tenacity import AsyncRetrying, retry_if_exception_type, stop_after_attempt, wait_exponential
+from prometheus_fastapi_instrumentator import Instrumentator
 
 
 # ---------------------------------------------------------------------------
@@ -84,6 +87,7 @@ class Settings:
     zeroshot_model_path: str = ZEROSHOT_MODEL_DEFAULT
     max_text_chars: int = MAX_TEXT_CHARS_DEFAULT
     compliance_threshold: float = COMPLIANCE_THRESHOLD_DEFAULT
+    max_concurrent_jobs: int = int(os.environ.get("ANALYTICS_MAX_CONCURRENCY", "4"))
 
 
 SETTINGS = Settings()
@@ -260,6 +264,7 @@ def select_agent_speaker(segments: List[Dict[str, Any]]) -> Optional[str]:
 
 class NLPModelHub:
     def __init__(self, settings: Settings) -> None:
+        self.device = 0 if torch.cuda.is_available() else -1
         self.sentiment_model, self.sentiment_tokenizer = self._load_sequence_model(settings.sentiment_model_path)
         self.emotion_model, self.emotion_tokenizer = self._load_sequence_model(settings.emotion_model_path)
         self.zeroshot_model, self.zeroshot_tokenizer = self._load_sequence_model(settings.zeroshot_model_path)
@@ -268,19 +273,19 @@ class NLPModelHub:
             "text-classification",
             model=self.sentiment_model,
             tokenizer=self.sentiment_tokenizer,
-            device=-1,
+            device=self.device,
         )
         self.emotion_pipeline = pipeline(
             "text-classification",
             model=self.emotion_model,
             tokenizer=self.emotion_tokenizer,
-            device=-1,
+            device=self.device,
         )
         self.zeroshot_pipeline = pipeline(
             "zero-shot-classification",
             model=self.zeroshot_model,
             tokenizer=self.zeroshot_tokenizer,
-            device=-1,
+            device=self.device,
         )
 
         self.sentiment_label_lookup = self._build_label_lookup(self.sentiment_model)
@@ -288,7 +293,14 @@ class NLPModelHub:
 
     @staticmethod
     def _load_sequence_model(path: str):
-        model = AutoModelForSequenceClassification.from_pretrained(path, local_files_only=True)
+        torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+        model = AutoModelForSequenceClassification.from_pretrained(
+            path,
+            local_files_only=True,
+            torch_dtype=torch_dtype,
+        )
+        if torch.cuda.is_available():
+            model = model.to("cuda")
         tokenizer = AutoTokenizer.from_pretrained(path, local_files_only=True)
         model.eval()
         return model, tokenizer
@@ -395,6 +407,8 @@ class AnalyticsEngine:
             timeout=settings.llm_timeout,
         )
         self.nlp = NLPModelHub(settings)
+        self._job_semaphore = asyncio.Semaphore(max(1, settings.max_concurrent_jobs))
+        self._inflight_tasks: set[asyncio.Task[Any]] = set()
 
     async def connect(self) -> None:
         self.redis = Redis(
@@ -405,6 +419,8 @@ class AnalyticsEngine:
         )
 
     async def close(self) -> None:
+        if self._inflight_tasks:
+            await asyncio.gather(*self._inflight_tasks, return_exceptions=True)
         if self.redis:
             await self.redis.close()
         await self.llm.aclose()
@@ -412,7 +428,9 @@ class AnalyticsEngine:
     async def submit_job(self, payload: SpeechAnalyticsRequest) -> uuid.UUID:
         job_id = uuid.uuid4()
         await self._set_status(job_id, {"status": "processing"})
-        asyncio.create_task(self._process_job(job_id, payload))
+        task = asyncio.create_task(self._run_job(job_id, payload))
+        task.add_done_callback(self._inflight_tasks.discard)
+        self._inflight_tasks.add(task)
         return job_id
 
     async def get_job(self, job_id: uuid.UUID) -> SpeechAnalyticsJob:
@@ -432,6 +450,10 @@ class AnalyticsEngine:
     async def _store_result(self, job_id: uuid.UUID, payload: Dict[str, Any]) -> None:
         await self._set_status(job_id, payload)
 
+    async def _run_job(self, job_id: uuid.UUID, payload: SpeechAnalyticsRequest) -> None:
+        async with self._job_semaphore:
+            await self._process_job(job_id, payload)
+
     async def _process_job(self, job_id: uuid.UUID, payload: SpeechAnalyticsRequest) -> None:
         temp_audio: Optional[Path] = None
         try:
@@ -439,6 +461,7 @@ class AnalyticsEngine:
             transcript = await asyncio.to_thread(self._load_transcript, payload.transcript_uri)
             segments = transcript.get("segments") or []
             raw_text = (transcript.get("text") or " ".join(seg.get("text", "") for seg in segments)).strip()
+            raw_text = self._truncate_text(raw_text, max_chars=self.settings.max_text_chars)
 
             feature_context = {
                 "call_id": str(payload.call_id),
@@ -886,6 +909,12 @@ class AsyncLLMClient:
         self._model = model
         self._timeout = timeout
         self._client: Optional[httpx.AsyncClient] = None
+        self._retry_kwargs = {
+            "stop": stop_after_attempt(3),
+            "wait": wait_exponential(multiplier=0.5, min=0.5, max=4),
+            "retry": retry_if_exception_type((httpx.RequestError,)),
+            "reraise": True,
+        }
 
     async def _ensure_client(self) -> httpx.AsyncClient:
         if self._client is None:
@@ -903,13 +932,28 @@ class AsyncLLMClient:
             "max_tokens": max_tokens,
             "temperature": 0.3,
         }
-        response = await client.post(self._endpoint, json=payload)
-        response.raise_for_status()
-        data = response.json()
-        choices = data.get("choices") or []
-        if not choices:
-            return ""
-        return (choices[0].get("message") or {}).get("content", "").strip()
+        async for attempt in AsyncRetrying(**self._retry_kwargs):
+            with attempt:
+                try:
+                    response = await client.post(
+                        self._endpoint,
+                        json=payload,
+                        timeout=self._timeout,
+                    )
+                    response.raise_for_status()
+                except httpx.HTTPStatusError as exc:
+                    if 500 <= exc.response.status_code < 600:
+                        # Treat 5xx as retryable transport-level failures.
+                        raise httpx.RequestError(str(exc)) from exc
+                    raise
+
+                data = response.json()
+                choices = data.get("choices") or []
+                if not choices:
+                    raise httpx.RequestError("LLM response did not contain choices")
+                return (choices[0].get("message") or {}).get("content", "").strip()
+
+        return ""  # pragma: no cover
 
     async def aclose(self) -> None:
         if self._client:
@@ -923,6 +967,7 @@ class AsyncLLMClient:
 
 
 app = FastAPI(title="Speech Analytics Service", version="3.0.0")
+Instrumentator().instrument(app).expose(app, include_in_schema=False)
 engine = AnalyticsEngine(SETTINGS)
 
 

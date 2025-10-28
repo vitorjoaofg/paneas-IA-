@@ -16,6 +16,7 @@ class ChatRequest(BaseModel):
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)
     stream: bool = False
     quality_priority: bool = False
+    provider: Literal["paneas", "openai"] = Field(default="paneas")
 
 
 class ChatChoice(BaseModel):

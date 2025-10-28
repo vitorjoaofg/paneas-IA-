@@ -6,10 +6,10 @@ import wave
 from dataclasses import dataclass
 from typing import Any, Awaitable, Callable, Dict, Optional
 
-import httpx
 import structlog
 
 from config import get_settings
+from services.asr_client import transcribe_audio_bytes
 
 LOGGER = structlog.get_logger(__name__)
 
@@ -26,6 +26,7 @@ class BatchASRConfig:
     max_batch_window_sec: float = 10.0
     flush_interval_sec: float = 1.0
     max_buffer_sec: float = 60.0
+    provider: str = "paneas"
 
 
 def _clamp(value: float, min_value: float, max_value: float) -> float:
@@ -33,11 +34,12 @@ def _clamp(value: float, min_value: float, max_value: float) -> float:
 
 
 class BatchASRClient:
-    def __init__(self, base_url: str, timeout_sec: float = 30.0) -> None:
-        self._client = httpx.AsyncClient(base_url=base_url, timeout=timeout_sec)
+    def __init__(self, base_url: str, timeout_sec: float = 30.0) -> None:  # noqa: D401 - kept for compatibility
+        self._base_url = base_url
+        self._timeout_sec = timeout_sec
 
-    async def close(self) -> None:
-        await self._client.aclose()
+    async def close(self) -> None:  # pragma: no cover - retained for interface compatibility
+        return None
 
     async def transcribe(
         self,
@@ -57,10 +59,13 @@ class BatchASRClient:
             "enable_alignment": str(config.enable_alignment).lower(),
             "request_id": request_id,
         }
-        files = {"file": ("audio.wav", audio_wav, "audio/wav")}
-        response = await self._client.post("/transcribe", data=data, files=files)
-        response.raise_for_status()
-        return response.json()
+        return await transcribe_audio_bytes(
+            audio_bytes=audio_wav,
+            filename="audio.wav",
+            content_type="audio/wav",
+            options=data,
+            provider=config.provider,
+        )
 
 
 def _pcm16_to_wav(pcm_bytes: bytes, sample_rate: int) -> bytes:
@@ -302,6 +307,7 @@ def parse_batch_config(payload: Dict[str, Any]) -> BatchASRConfig:
         max_batch_window_sec=max_window,
         flush_interval_sec=float(payload.get("flush_interval_sec", 1.0)),
         max_buffer_sec=float(payload.get("max_buffer_sec", 60.0)),
+        provider=str(payload.get("provider", "paneas")).lower(),
     )
     return config
 

@@ -2,7 +2,7 @@ import uuid
 from typing import Any, Dict
 
 from config import get_settings
-from services.http_client import get_http_client
+from services.http_client import get_http_client, request_with_retry
 
 _settings = get_settings()
 
@@ -13,8 +13,14 @@ async def synthesize(payload: Dict[str, Any]) -> Dict[str, Any]:
 
     headers = {"Content-Type": "application/json"}
     body = {"request_id": str(uuid.uuid4()), **payload}
-    response = await client.post(url, json=body, headers=headers)
-    response.raise_for_status()
+    response = await request_with_retry(
+        "POST",
+        url,
+        client=client,
+        json=body,
+        headers=headers,
+        timeout=60.0,
+    )
     return {
         "audio": response.content,
         "content_type": response.headers.get("content-type", "audio/wav"),

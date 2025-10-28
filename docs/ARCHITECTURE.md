@@ -8,7 +8,7 @@ A plataforma é composta por serviços especializados que compartilham infraestr
 
 - **GPU0**: Serviços de tempo real (ASR Faster-Whisper, TTS Coqui XTTS-v2) com pinagem exclusiva.
 - **GPU1**: WhisperX Align, Pyannote Diarization e pipeline de Speech Analytics D+1.
-- **GPU2-3**: Instâncias vLLM para LLaMA-3.1 (FP16 e INT4/AWQ) com tensor parallelism + OCR (PaddleOCR com TensorRT).
+- **GPU2-3**: Instâncias vLLM servindo Qwen2.5-14B (FP16 e INT4/AWQ) com tensor parallelism + OCR (PaddleOCR com TensorRT).
 
 ## Estado & Mensageria
 
@@ -25,7 +25,7 @@ A plataforma é composta por serviços especializados que compartilham infraestr
 ## Observabilidade
 
 - **OpenTelemetry Collector** consolidando métricas, logs e traces de todos os serviços.
-- **Prometheus** e **Alertmanager** para métricas e alertas.
+- **Prometheus** e **Alertmanager** para métricas e alertas, agora consumindo exporters dedicados (Redis/Postgres) e os `/metrics` nativos de cada microserviço.
 - **Grafana** com dashboards provisionados (GPU, LLM, ASR/TTS, OCR, API, Celery).
 - **Loki** + **Promtail** para logs estruturados.
 - **Tempo** para tracing distribuído.
@@ -34,6 +34,7 @@ A plataforma é composta por serviços especializados que compartilham infraestr
 
 - **Caddy** atua como reverse proxy com restrições de acesso, CORS, autenticação básica para `/metrics` e regras de IP para Flower.
 - Todos os serviços sensíveis montam `/srv/models` como read-only.
+- O gateway FastAPI bloqueia inicialização em ambientes `production/staging` caso `API_TOKENS` não estejam configurados.
 
 ## Fluxo de Dados
 
@@ -46,5 +47,6 @@ A plataforma é composta por serviços especializados que compartilham infraestr
 
 - Roteamento dinâmico entre instâncias FP16/INT4 para balancear latência e throughput.
 - ASR reduz compute_type para int8 sob alta utilização de VRAM e troca para modelo turbo se necessário.
-- OCR realiza fallback automático para Tesseract CPU quando TensorRT indisponível.
+- OCR realiza fallback automático para execução em CPU quando TensorRT indisponível ou `use_gpu=false`.
+- LLM tenta o backend INT4 por padrão e alterna para FP16 diante de falhas transitórias.
 - Celery aplica retires exponenciais para falhas transitórias.

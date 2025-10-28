@@ -1,7 +1,7 @@
 import asyncio
 import contextlib
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timezone
 from typing import Any, Awaitable, Callable, Dict, List, Optional
 from difflib import SequenceMatcher
@@ -14,6 +14,8 @@ from services.llm_client import MODEL_REGISTRY, chat_completion
 from services.llm_router import LLMTarget
 
 LOGGER = structlog.get_logger(__name__)
+PROVIDER_PANEAS = "paneas"
+PROVIDER_OPENAI = "openai"
 
 INSIGHT_QUEUE_SIZE = Gauge(
     "insight_queue_size",
@@ -56,6 +58,8 @@ class InsightConfig:
     use_celery: bool = False
     celery_task_timeout_sec: float = 15.0
     celery_queue: str = "insights"
+    provider: str = PROVIDER_PANEAS
+    openai_model: Optional[str] = None
 
 
 SendCallable = Callable[[Dict[str, Any]], Awaitable[None]]
@@ -82,6 +86,8 @@ class InsightSession:
         self._send_callback = send_callback
         self._config = config
         self._llm_callable = llm_callable
+        self._provider = (config.provider or PROVIDER_PANEAS).lower()
+        self._openai_model = config.openai_model
         self._last_text: str = ""
         self._segments: List[str] = []
         self._last_insight_ts: float = 0.0
@@ -186,15 +192,30 @@ class InsightSession:
                 }
             )
 
+            requested_model = self._config.model
             payload = {
-                "model": self._config.model,
+                "model": requested_model,
                 "messages": messages,
                 "max_tokens": self._config.max_tokens,
                 "temperature": self._config.temperature,
             }
-            target = MODEL_REGISTRY.get(self._config.model, MODEL_REGISTRY["qwen2.5-14b-instruct"])["target"]
+
+            provider = self._provider
+            if provider == PROVIDER_OPENAI:
+                payload["provider"] = PROVIDER_OPENAI
+                payload["model"] = self._openai_model or _settings.openai_insights_model
+                target = LLMTarget.OPENAI
+            else:
+                payload["provider"] = provider or PROVIDER_PANEAS
+                registry_entry = MODEL_REGISTRY.get(
+                    requested_model,
+                    MODEL_REGISTRY["qwen2.5-14b-instruct"],
+                )
+                target = registry_entry["target"]
 
             response = await self._call_llm(payload, target)
+            if provider == PROVIDER_OPENAI:
+                response["model"] = requested_model
             choices = response.get("choices") or []
             if not choices:
                 LOGGER.warning("insight_llm_no_choices", session_id=self.session_id)
@@ -230,6 +251,7 @@ class InsightSession:
                 "text": content,
                 "confidence": 0.7,
                 "model": self._config.model,
+                "provider": provider,
                 "generated_at": datetime.utcnow().replace(tzinfo=timezone.utc).isoformat(),
             }
             await self._send_callback(insight_payload)
@@ -315,13 +337,29 @@ class InsightManager:
         self._sentinel = object()
         self._started = False
 
-    async def register_session(self, session_id: str, send_callback: SendCallable) -> None:
+    async def register_session(
+        self,
+        session_id: str,
+        send_callback: SendCallable,
+        *,
+        model: Optional[str] = None,
+        provider: Optional[str] = None,
+        openai_model: Optional[str] = None,
+    ) -> None:
         await self.startup()
         await self.close_session(session_id)
+        provider_value = (provider or self._config.provider or PROVIDER_PANEAS).lower()
+        openai_value = openai_model or self._config.openai_model or _settings.openai_insights_model
+        session_config = replace(
+            self._config,
+            model=model or self._config.model,
+            provider=provider_value,
+            openai_model=openai_value,
+        )
         self._sessions[session_id] = InsightSession(
             session_id=session_id,
             send_callback=send_callback,
-            config=self._config,
+            config=session_config,
             llm_callable=self._llm_callable,
             enqueue_callback=self._enqueue_job,
         )
@@ -438,5 +476,7 @@ insight_manager = InsightManager(
         model=_settings.insight_model_name,
         temperature=_settings.insight_temperature,
         max_tokens=_settings.insight_max_tokens,
+        provider=PROVIDER_PANEAS,
+        openai_model=_settings.openai_insights_model,
     )
 )

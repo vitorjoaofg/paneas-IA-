@@ -9,7 +9,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    env: str = Field(default="production", alias="ENV")
+    env: str = Field(default="development", alias="ENV")
     log_level: str = Field(default="info", alias="LOG_LEVEL")
     stack_version: str = Field(default="1.0.0", alias="STACK_VERSION")
 
@@ -48,6 +48,7 @@ class Settings(BaseSettings):
     llm_int4_port: int = Field(default=8002, alias="LLM_INT4_PORT")
     llm_max_tokens: int = Field(default=16384, alias="LLM_MAX_TOKENS")
     llm_routing_strategy: str = Field(default="auto", alias="LLM_ROUTING_STRATEGY")
+    llm_timeout: float = Field(default=30.0, alias="LLM_TIMEOUT")
 
     asr_host: str = Field(default="asr", alias="ASR_HOST")
     asr_port: int = Field(default=9000, alias="ASR_PORT")
@@ -114,6 +115,12 @@ class Settings(BaseSettings):
     insight_temperature: float = Field(default=0.3, alias="INSIGHT_TEMPERATURE")
     insight_max_tokens: int = Field(default=180, alias="INSIGHT_MAX_TOKENS")
     insight_flush_timeout: float = Field(default=5.0, alias="INSIGHT_FLUSH_TIMEOUT")
+
+    openai_api_key: str = Field(default="", alias="OPENAI_API_KEY")
+    openai_api_base: AnyHttpUrl = Field(default="https://api.openai.com/v1", alias="OPENAI_API_BASE")
+    openai_timeout: float = Field(default=45.0, alias="OPENAI_TIMEOUT")
+    openai_asr_model: str = Field(default="whisper-1", alias="OPENAI_ASR_MODEL")
+    openai_insights_model: str = Field(default="gpt-4o-mini", alias="OPENAI_INSIGHTS_MODEL")
 
     @field_validator("api_tokens", mode="before")
     @classmethod

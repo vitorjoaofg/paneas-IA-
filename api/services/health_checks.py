@@ -9,7 +9,7 @@ from httpx import RequestError
 from minio import Minio
 
 from config import get_settings
-from services.http_client import get_http_client
+from services.http_client import get_http_client, request_with_retry
 from services.redis_client import get_redis
 
 _settings = get_settings()
@@ -30,7 +30,13 @@ async def _check_http(name: str, url: str) -> Tuple[str, Dict]:
     client = await get_http_client()
     start = time.perf_counter()
     try:
-        response = await client.get(url, timeout=5.0)
+        response = await request_with_retry(
+            "GET",
+            url,
+            client=client,
+            timeout=5.0,
+            retry_attempts=2,
+        )
         latency_ms = int((time.perf_counter() - start) * 1000)
         if response.status_code == 200:
             payload = (

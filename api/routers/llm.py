@@ -2,10 +2,11 @@ import secrets
 import time
 
 from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
 
 from config import get_settings
 from schemas.llm import ChatRequest, ChatResponse, ChatChoice, ChatMessage, UsageMetrics
-from services.llm_client import MODEL_REGISTRY, chat_completion
+from services.llm_client import MODEL_REGISTRY, chat_completion, chat_completion_stream
 from services.llm_router import LLMRouter, LLMRoutingDecision, LLMTarget
 
 router = APIRouter(prefix="/api/v1", tags=["llm"])
@@ -17,7 +18,10 @@ router_engine = LLMRouter(strategy=settings.llm_routing_strategy)
 async def create_chat_completion(payload: ChatRequest):
     prompt_tokens = sum(len(msg.content.split()) for msg in payload.messages)
     context_length = prompt_tokens + payload.max_tokens
-    if payload.model in MODEL_REGISTRY:
+    provider = payload.provider
+    if provider == "openai":
+        decision = LLMRoutingDecision(target=LLMTarget.OPENAI, reason="requested_provider")
+    elif payload.model in MODEL_REGISTRY:
         forced_target = MODEL_REGISTRY[payload.model]["target"]
         decision = LLMRoutingDecision(target=forced_target, reason="requested_model")
     else:
@@ -27,12 +31,46 @@ async def create_chat_completion(payload: ChatRequest):
             quality_priority=payload.quality_priority,
         )
 
-    target_model = LLMTarget.FP16 if decision.target == LLMTarget.FP16 else LLMTarget.INT4
+    target_model = decision.target
 
     upstream_payload = payload.model_dump()
 
+    if payload.stream:
+        upstream_payload["stream"] = True
+    else:
+        upstream_payload.pop("stream", None)
+
+    router_metadata = {
+        "router_decision": decision.target.value,
+        "router_reason": decision.reason,
+    }
+
     start = time.perf_counter()
-    upstream_response = await chat_completion(upstream_payload, target_model)
+
+    if payload.stream:
+        async def event_iterator():
+            async for chunk in chat_completion_stream(
+                upstream_payload,
+                target_model,
+                router_metadata=router_metadata,
+            ):
+                yield chunk
+
+        return StreamingResponse(
+            event_iterator(),
+            media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "X-Accel-Buffering": "no",
+            },
+        )
+
+    upstream_response = await chat_completion(
+        upstream_payload,
+        target_model,
+        router_metadata=router_metadata,
+    )
     elapsed = time.perf_counter() - start
 
     usage = upstream_response.get("usage", {})
@@ -54,10 +92,9 @@ async def create_chat_completion(payload: ChatRequest):
     response_id = upstream_response.get("id", f"chatcmpl-{secrets.token_hex(8)}")
     model_name = upstream_response.get("model", payload.model)
     metadata = upstream_response.setdefault("metadata", {})
-    metadata.update({
-        "router_target": decision.target.value,
-        "router_reason": decision.reason,
-        "latency_ms": int(elapsed * 1000),
-    })
+    metadata.setdefault("router_target", router_metadata["router_decision"])
+    metadata["router_decision"] = router_metadata["router_decision"]
+    metadata["router_reason"] = router_metadata["router_reason"]
+    metadata["latency_ms"] = int(elapsed * 1000)
 
     return ChatResponse(id=response_id, model=model_name, choices=choices, usage=usage_metrics)

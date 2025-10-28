@@ -16,6 +16,11 @@ from telemetry.tracing import configure_tracing
 
 settings = get_settings()
 
+if settings.env.lower() in {"production", "prod", "staging"} and not settings.api_tokens:
+    raise RuntimeError(
+        "API_TOKENS must be configured when running in production/staging environments."
+    )
+
 configure_logging(settings.log_level)
 configure_tracing()
 

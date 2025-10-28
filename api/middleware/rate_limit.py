@@ -2,6 +2,7 @@ import math
 import time
 from typing import Callable
 
+import structlog
 from fastapi import Request
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import JSONResponse
@@ -19,6 +20,7 @@ ROUTE_LIMITS = {
 }
 
 WINDOW_SECONDS = 60
+LOGGER = structlog.get_logger(__name__)
 
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
@@ -34,30 +36,43 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         route_key = self._match_route(path)
         limit = ROUTE_LIMITS.get(route_key, _settings.rate_limit_global)
 
-        redis = await get_redis()
-        window = math.floor(time.time() / WINDOW_SECONDS)
-        key = f"rl:{route_key}:{client_ip}:{window}"
-        current = await redis.incr(key)
-        if current == 1:
-            await redis.expire(key, WINDOW_SECONDS)
+        try:
+            redis = await get_redis()
+            window = math.floor(time.time() / WINDOW_SECONDS)
+            key = f"rl:{route_key}:{client_ip}:{window}"
+            current = await redis.incr(key)
+            if current == 1:
+                await redis.expire(key, WINDOW_SECONDS)
 
-        remaining = max(limit - current, 0)
-        reset = WINDOW_SECONDS - (int(time.time()) % WINDOW_SECONDS)
+            remaining = max(limit - current, 0)
+            reset = WINDOW_SECONDS - (int(time.time()) % WINDOW_SECONDS)
 
-        if current > limit:
-            headers = {
-                "Retry-After": str(reset),
-                "X-RateLimit-Limit": str(limit),
-                "X-RateLimit-Remaining": "0",
-                "X-RateLimit-Reset": str(reset),
-            }
-            return JSONResponse({"detail": "Rate limit exceeded"}, status_code=429, headers=headers)
+            if current > limit:
+                headers = {
+                    "Retry-After": str(reset),
+                    "X-RateLimit-Limit": str(limit),
+                    "X-RateLimit-Remaining": "0",
+                    "X-RateLimit-Reset": str(reset),
+                }
+                return JSONResponse({"detail": "Rate limit exceeded"}, status_code=429, headers=headers)
 
-        response = await call_next(request)
-        response.headers["X-RateLimit-Limit"] = str(limit)
-        response.headers["X-RateLimit-Remaining"] = str(remaining)
-        response.headers["X-RateLimit-Reset"] = str(reset)
-        return response
+            response = await call_next(request)
+            response.headers["X-RateLimit-Limit"] = str(limit)
+            response.headers["X-RateLimit-Remaining"] = str(remaining)
+            response.headers["X-RateLimit-Reset"] = str(reset)
+            return response
+        except Exception as exc:  # noqa: BLE001
+            LOGGER.warning(
+                "rate_limit_fail_open",
+                path=path,
+                client_ip=client_ip,
+                error=str(exc),
+            )
+            response = await call_next(request)
+            response.headers.setdefault("X-RateLimit-Limit", str(limit))
+            response.headers.setdefault("X-RateLimit-Remaining", "unavailable")
+            response.headers.setdefault("X-RateLimit-Reset", "unavailable")
+            return response
 
     @staticmethod
     def _match_route(path: str) -> str:

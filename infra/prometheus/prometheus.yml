@@ -31,11 +31,45 @@ scrape_configs:
 
   - job_name: redis
     static_configs:
-      - targets: ['redis:6379']
+      - targets: ['redis-exporter:9121']
 
   - job_name: postgres
     static_configs:
-      - targets: ['postgres:9187']
+      - targets: ['postgres-exporter:9187']
+
+  - job_name: asr-workers
+    static_configs:
+      - targets:
+          - 'asr-worker-gpu0:9000'
+          - 'asr-worker-gpu1:9000'
+          - 'asr-worker-gpu2:9000'
+          - 'asr-worker-gpu3:9000'
+    metrics_path: /metrics
+
+  - job_name: ocr
+    static_configs:
+      - targets: ['ocr:9004']
+    metrics_path: /metrics
+
+  - job_name: tts
+    static_configs:
+      - targets: ['tts:9001']
+    metrics_path: /metrics
+
+  - job_name: align
+    static_configs:
+      - targets: ['align:9002']
+    metrics_path: /metrics
+
+  - job_name: diar
+    static_configs:
+      - targets: ['diar:9003']
+    metrics_path: /metrics
+
+  - job_name: analytics
+    static_configs:
+      - targets: ['analytics:9005']
+    metrics_path: /metrics
 
   - job_name: node_exporter
     static_configs:

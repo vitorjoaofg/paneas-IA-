@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Literal, Optional
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -44,3 +44,4 @@ class ASRRequest(BaseModel):
     vad_filter: bool = Field(default=True)
     vad_threshold: float = Field(default=0.5, ge=0.0, le=1.0)
     beam_size: int = Field(default=5, ge=1, le=10)
+    provider: Literal["paneas", "openai"] = Field(default="paneas")

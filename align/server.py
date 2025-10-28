@@ -13,6 +13,7 @@ from fastapi import FastAPI
 from httpx import AsyncClient
 from faster_whisper import WhisperModel
 from minio import Minio
+from prometheus_fastapi_instrumentator import Instrumentator
 
 MODELS_ROOT = Path(os.environ.get("MODELS_DIR", "/models"))
 MODEL_NAME = os.environ.get("MODEL_NAME", "large-v3-turbo")
@@ -23,6 +24,7 @@ MINIO_SECURE = os.environ.get("MINIO_SECURE", "false").lower() == "true"
 DIAR_SERVICE_URL = os.environ.get("DIAR_SERVICE_URL", "http://diar:9003/diarize")
 
 app = FastAPI(title="Align Service", version="1.0.0")
+Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
 class AudioAligner:

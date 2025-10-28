@@ -62,11 +62,20 @@ hf_download_public() {
     if [ -n "${HF_TOKEN:-}" ]; then
         token_args+=(--token "$HF_TOKEN")
     fi
-    hf download "$repo_id" \
+    local tmp_dir
+    tmp_dir=$(mktemp -d "${target_dir}.tmp.XXXX")
+    if hf download "$repo_id" \
         --repo-type model \
-        --local-dir "$target_dir" \
+        --local-dir "$tmp_dir" \
         --include "*" \
-        "${token_args[@]}"
+        "${token_args[@]}"; then
+        rm -rf "$target_dir"
+        mkdir -p "$(dirname "$target_dir")"
+        mv "$tmp_dir" "$target_dir"
+        return 0
+    fi
+    rm -rf "$tmp_dir"
+    return 1
 }
 
 hf_download_private() {
@@ -76,11 +85,20 @@ hf_download_private() {
         echo "ERROR: HF_TOKEN is required to download $repo_id"
         return 1
     fi
-    hf download "$repo_id" \
+    local tmp_dir
+    tmp_dir=$(mktemp -d "${target_dir}.tmp.XXXX")
+    if hf download "$repo_id" \
         --repo-type model \
-        --local-dir "$target_dir" \
+        --local-dir "$tmp_dir" \
         --include "*" \
-        --token "$HF_TOKEN"
+        --token "$HF_TOKEN"; then
+        rm -rf "$target_dir"
+        mkdir -p "$(dirname "$target_dir")"
+        mv "$tmp_dir" "$target_dir"
+        return 0
+    fi
+    rm -rf "$tmp_dir"
+    return 1
 }
 
 hf_download_public_any() {
@@ -93,27 +111,27 @@ hf_download_public_any() {
         token_args+=(--token "$HF_TOKEN")
     fi
 
-    rm -rf "$target_dir"
-    mkdir -p "$target_dir"
-
     for repo_id in "${repos[@]}"; do
         echo "Attempting download from $repo_id"
-        rm -rf "$target_dir"
-        mkdir -p "$target_dir"
+        local tmp_dir
+        tmp_dir=$(mktemp -d "${target_dir}.tmp.XXXX")
         if hf download "$repo_id" \
             --repo-type model \
-            --local-dir "$target_dir" \
+            --local-dir "$tmp_dir" \
             --include "*" \
             "${token_args[@]}"; then
+            rm -rf "$target_dir"
+            mkdir -p "$(dirname "$target_dir")"
+            mv "$tmp_dir" "$target_dir"
             return 0
         else
             status=$?
             echo "Failed to download from $repo_id (exit $status)."
+            rm -rf "$tmp_dir"
         fi
     done
 
     echo "ERROR: Unable to download any of the candidates: ${repos[*]}"
-    rm -rf "$target_dir"
     return 1
 }
 

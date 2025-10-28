@@ -4,7 +4,7 @@ from typing import Any, Dict
 from fastapi import UploadFile
 
 from config import get_settings
-from services.http_client import get_http_client
+from services.http_client import get_http_client, request_with_retry
 
 _settings = get_settings()
 
@@ -20,6 +20,12 @@ async def run_ocr(file: UploadFile, payload: Dict[str, Any]) -> Dict[str, Any]:
         "file": (file.filename, await file.read(), file.content_type or "application/pdf"),
     }
 
-    response = await client.post(url, data=form_data, files=files)
-    response.raise_for_status()
+    response = await request_with_retry(
+        "POST",
+        url,
+        client=client,
+        data=form_data,
+        files=files,
+        timeout=60.0,
+    )
     return response.json()

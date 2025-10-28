@@ -6,6 +6,7 @@ from pydantic import BaseModel
 class LLMTarget(str, Enum):
     FP16 = "fp16"
     INT4 = "int4"
+    OPENAI = "openai"
 
 
 class LLMRoutingDecision(BaseModel):

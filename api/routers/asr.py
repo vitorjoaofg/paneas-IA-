@@ -19,6 +19,7 @@ def build_request(
     vad_filter: bool = Form(True),
     vad_threshold: float = Form(0.5),
     beam_size: int = Form(5),
+    provider: str = Form("paneas"),
 ) -> ASRRequest:
     return ASRRequest(
         language=language,
@@ -29,6 +30,7 @@ def build_request(
         vad_filter=vad_filter,
         vad_threshold=vad_threshold,
         beam_size=beam_size,
+        provider=provider,
     )
 
 
@@ -40,9 +42,14 @@ async def transcribe_audio(
     request_id = uuid.uuid4()
     start = time.perf_counter()
     options = payload.model_dump()
+    provider = options.pop("provider", "paneas")
     options["request_id"] = str(request_id)
 
-    raw_result = await asr_client.transcribe(file=file, options=options)
+    raw_result = await asr_client.transcribe(
+        file=file,
+        options=options,
+        provider=provider,
+    )
     raw_result["request_id"] = request_id
     raw_result["processing_time_ms"] = int((time.perf_counter() - start) * 1000)
     raw_result["text"] = PIIMasker.mask_text(raw_result.get("text", ""))

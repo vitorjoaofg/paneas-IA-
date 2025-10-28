@@ -18,6 +18,7 @@ from fastapi import FastAPI, File, Form, UploadFile, WebSocket, WebSocketDisconn
 from starlette.websockets import WebSocketState
 from faster_whisper import WhisperModel
 from httpx import Client
+from prometheus_fastapi_instrumentator import Instrumentator
 
 MODELS_ROOT = Path(os.environ.get("MODELS_DIR", "/models"))
 
@@ -34,6 +35,7 @@ DEFAULT_MIN_SLICE_SECONDS = float(os.environ.get("MIN_SLICE_SECONDS", "0.35"))
 DIAR_SERVICE_URL = os.environ.get("DIAR_SERVICE_URL", "http://diar:9003/diarize")
 
 app = FastAPI(title="ASR Service", version="1.0.0")
+Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
 class ModelPool:

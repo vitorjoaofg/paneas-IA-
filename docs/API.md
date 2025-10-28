@@ -10,6 +10,8 @@ curl -H "Authorization: Bearer $API_TOKEN" \
   http://localhost:8000/api/v1/health
 ```
 
+> ℹ️ Para ambientes com GPU limitada, você pode subir apenas os serviços essenciais (postgres, redis, minio, ASR e LLM FP16) executando `./scripts/start_core_stack.sh core`. Após subir o core stack, valide o gateway com `./scripts/test_core_stack.sh`, que cobre chat completions (incluindo `stream=true`) e o endpoint de transcrição batch.
+
 ```json
 {
   "status": "healthy",
@@ -25,7 +27,7 @@ curl -H "Authorization: Bearer $API_TOKEN" \
 ## ASR
 `POST /api/v1/asr`
 
-Entrada: upload `multipart/form-data` com `file=@audio.wav` e parâmetros opcionais (`language`, `model`, `enable_diarization`, `enable_alignment`, `compute_type`, `vad_filter`, `vad_threshold`, `beam_size`).
+Entrada: upload `multipart/form-data` com `file=@audio.wav` e parâmetros opcionais (`language`, `model`, `enable_diarization`, `enable_alignment`, `compute_type`, `vad_filter`, `vad_threshold`, `beam_size`, `provider`). Use `provider=openai` para encaminhar a transcrição via OpenAI em vez do pool interno (padrão `paneas`).
 
 Modelos suportados:
 - `whisper/medium` (padrão; INT8/FP16 híbrido, indicado para produção)
@@ -69,6 +71,9 @@ Fluxo:
    - `batch_window_sec`: janela alvo (default `5.0`);
    - `max_batch_window_sec`: tempo máximo antes de forçar processamento (default `10.0`);
    - `enable_diarization`: ativa diarização por lote (default `false`).
+   - `provider`: backend de ASR (`paneas` padrão, `openai` para usar a API da OpenAI para transcrição);
+   - `insight_provider`: backend para geração de insights (`paneas` padrão, `openai` para roteamento via OpenAI);
+   - `insight_model` / `insight_openai_model`: sobrescrevem o modelo lógico e o modelo físico usado quando necessário.
 3. Envie `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
 4. Finalize com `{"event":"stop"}` para processar o último lote e encerrar.
 

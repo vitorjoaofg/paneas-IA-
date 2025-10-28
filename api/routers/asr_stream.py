@@ -126,6 +126,9 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
 
         sample_rate = int(initial.get("sample_rate", 16000))
         session_config = parse_batch_config(initial)
+        insight_provider = str(initial.get("insight_provider", session_config.provider)).lower()
+        insight_model = initial.get("insight_model")
+        insight_openai_model = initial.get("insight_openai_model")
         LOGGER.info(
             "batch_stream_start",
             session_id=session_id,
@@ -133,6 +136,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
             model=session_config.model,
             diarization=session_config.enable_diarization,
             batch_window=session_config.batch_window_sec,
+            provider=session_config.provider,
+            insight_provider=insight_provider,
         )
 
         async def send_event(payload: Dict[str, Any]) -> None:
@@ -149,7 +154,13 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
             },
         )
 
-        await insight_manager.register_session(session_id, send_insight)
+        await insight_manager.register_session(
+            session_id,
+            send_insight,
+            model=insight_model,
+            provider=insight_provider,
+            openai_model=insight_openai_model,
+        )
         session_registered = True
 
         session_state = await batch_session_manager.create(

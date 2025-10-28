@@ -8,6 +8,7 @@ import soundfile as sf
 from fastapi import FastAPI, File, Form, UploadFile
 from pyannote.audio import Pipeline
 import torch
+from prometheus_fastapi_instrumentator import Instrumentator
 
 CACHE_DIR = Path(os.environ.get("EMBEDDINGS_CACHE", "/cache/embeddings"))
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -15,6 +16,7 @@ MODEL_NAME = os.environ.get("PYANNOTE_MODEL", "pyannote/speaker-diarization-3.1"
 HF_TOKEN = os.environ.get("HF_TOKEN")
 
 app = FastAPI(title="Diarization Service", version="1.0.0")
+Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
 class DiarizationEngine:

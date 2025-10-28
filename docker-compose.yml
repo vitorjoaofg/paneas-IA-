@@ -20,6 +20,7 @@ services:
       - MINIO_ROOT_USER=${MINIO_ROOT_USER}
       - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
       - MINIO_SECURE=false
+      - API_TOKENS=${API_TOKENS}
       - INSIGHT_WORKER_CONCURRENCY=32
       - INSIGHT_MIN_TOKENS=10
       - INSIGHT_MIN_INTERVAL_SEC=10
@@ -33,7 +34,7 @@ services:
       - type: bind
         source: /srv/models
         target: /models
-        read_only: false
+        read_only: true
       - /srv/data:/data
     depends_on:
       - postgres
@@ -87,7 +88,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=0
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
-      - /srv/models:/models
+      - /srv/models:/models:ro
     deploy:
       resources:
         reservations:
@@ -123,7 +124,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=1
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
-      - /srv/models:/models
+      - /srv/models:/models:ro
     deploy:
       resources:
         reservations:
@@ -159,7 +160,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=2
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
-      - /srv/models:/models
+      - /srv/models:/models:ro
     deploy:
       resources:
         reservations:
@@ -195,7 +196,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=3
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
-      - /srv/models:/models
+      - /srv/models:/models:ro
     deploy:
       resources:
         reservations:
@@ -325,8 +326,8 @@ services:
       --model /models/qwen2_5/fp16
       --dtype float16
       --tensor-parallel-size 2
-      --gpu-memory-utilization 0.22
-      --max-num-seqs 16
+      --gpu-memory-utilization 0.90
+      --max-num-seqs 4
       --max-model-len 3200
       --max-num-batched-tokens 3200
       --disable-log-requests
@@ -554,6 +555,28 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - stack-network
+
+  redis-exporter:
+    image: oliver006/redis_exporter:v1.54.0
+    container_name: stack-redis-exporter
+    restart: unless-stopped
+    environment:
+      - REDIS_ADDR=redis:6379
+    depends_on:
+      - redis
+    networks:
+      - stack-network
+
+  postgres-exporter:
+    image: quay.io/prometheuscommunity/postgres-exporter:v0.15.0
+    container_name: stack-postgres-exporter
+    restart: unless-stopped
+    environment:
+      - DATA_SOURCE_NAME=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}?sslmode=disable
+    depends_on:
+      - postgres
     networks:
       - stack-network
 

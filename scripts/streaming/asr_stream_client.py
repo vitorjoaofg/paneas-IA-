@@ -63,6 +63,10 @@ async def stream_audio(
     max_batch_window_sec: float,
     enable_diarization: bool,
     post_audio_wait: float,
+    provider: Optional[str],
+    insight_provider: Optional[str],
+    insight_model: Optional[str],
+    insight_openai_model: Optional[str],
 ) -> None:
     pcm16, sample_rate = load_audio(audio_path)
     ws_url = url
@@ -87,6 +91,14 @@ async def stream_audio(
         }
         if compute_type:
             start_payload["compute_type"] = compute_type
+        if provider:
+            start_payload["provider"] = provider
+        if insight_provider:
+            start_payload["insight_provider"] = insight_provider
+        if insight_model:
+            start_payload["insight_model"] = insight_model
+        if insight_openai_model:
+            start_payload["insight_openai_model"] = insight_openai_model
 
         await ws.send(json.dumps(start_payload))
 
@@ -132,6 +144,10 @@ def main() -> None:
     parser.add_argument("--max-batch-window-sec", type=float, default=10.0, help="Janela máxima antes de forçar processamento.")
     parser.add_argument("--enable-diarization", action="store_true", help="Ativa diarização por lote.")
     parser.add_argument("--post-audio-wait", type=float, default=0.0, help="Segundos para aguardar após enviar todo o áudio antes de enviar stop.")
+    parser.add_argument("--provider", help="Backend provider para ASR (ex.: paneas, openai).")
+    parser.add_argument("--insight-provider", help="Provider para geração de insights (ex.: paneas, openai).")
+    parser.add_argument("--insight-model", help="Modelo lógico de insight a ser utilizado.")
+    parser.add_argument("--insight-openai-model", help="Modelo OpenAI para insights quando provider=openai.")
     parser.set_defaults(realtime=True)
     args = parser.parse_args()
 
@@ -153,6 +169,10 @@ def main() -> None:
             args.max_batch_window_sec,
             args.enable_diarization,
             args.post_audio_wait,
+            args.provider,
+            args.insight_provider,
+            args.insight_model,
+            args.insight_openai_model,
         )
     )
 

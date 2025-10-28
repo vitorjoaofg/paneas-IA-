@@ -12,6 +12,7 @@ from pydantic import BaseModel
 from TTS.api import TTS
 from minio import Minio
 import torch
+from prometheus_fastapi_instrumentator import Instrumentator
 
 MODELS_DIR = Path(os.environ.get("MODELS_DIR", "/models/xtts"))
 VOICES_DIR = Path(os.environ.get("VOICES_DIR", "/voices"))
@@ -24,6 +25,7 @@ SAMPLE_RATE = int(os.environ.get("TTS_SAMPLE_RATE", "16000"))
 VOICES_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(title="TTS Service", version="1.0.0")
+Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 
 class TTSRequest(BaseModel):
