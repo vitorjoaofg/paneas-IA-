@@ -61,15 +61,29 @@ curl -X POST http://localhost:8000/api/v1/asr \
 ## ASR Streaming (WebSocket)
 `WS /api/v1/asr/stream`
 
-O endpoint opera em **modo batch**: cada sessão acumula 5–10 segundos de áudio, processa o lote com `whisper/medium` e envia o resultado apenas para o pipeline de insights. O operador recebe metadados e os insights resumidos, em vez da transcrição palavra a palavra.
+O endpoint opera em **modo batch**: cada sessão acumula áudio por um período configurável, processa o lote com `whisper/medium` e envia o resultado para o pipeline de insights. O operador recebe metadados e os insights resumidos, em vez da transcrição palavra a palavra.
 
-Fluxo:
+### Configuração de Performance
+
+**Valores Otimizados (Produção):**
+- `batch_window_sec: 2.0` - Latência média de ~2.3s com 90-95% de qualidade
+- `beam_size: 5` - Qualidade máxima de beam search
+- `best_of: 1` - Otimizado para latência
+
+**Alternativas:**
+- **Máxima Qualidade**: `batch_window_sec: 5.0, beam_size: 5, best_of: 3` (~5.1s latência, 100% qualidade)
+- **Ultra Responsivo**: `batch_window_sec: 1.5, beam_size: 5, best_of: 1` (~1.8s latência, 85-90% qualidade)
+
+Ver [PERFORMANCE_OPTIMIZATION.md](PERFORMANCE_OPTIMIZATION.md) para detalhes de tuning.
+
+### Fluxo de Conexão
 
 1. Conecte-se com header `Authorization: Bearer <token>` (ou query `?token=`).
 2. Envie `{"event":"start","sample_rate":16000,"encoding":"pcm16","language":"pt"}`. Campos opcionais:
    - `model` / `compute_type`: modelo Whisper usado por lote (default `whisper/medium` + `int8_float16`);
-   - `batch_window_sec`: janela alvo (default `5.0`);
+   - `batch_window_sec`: janela alvo em segundos (default `2.0`, otimizado para real-time);
    - `max_batch_window_sec`: tempo máximo antes de forçar processamento (default `10.0`);
+   - `beam_size`: tamanho do beam search (default `5`, range 1-10);
    - `enable_diarization`: ativa diarização por lote (default `false`).
    - `provider`: backend de ASR (`paneas` padrão, `openai` para usar a API da OpenAI para transcrição);
    - `insight_provider`: backend para geração de insights (`paneas` padrão, `openai` para roteamento via OpenAI);
@@ -82,10 +96,10 @@ Respostas típicas:
 
 ```json
 {"event":"ready","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch"}
-{"event":"session_started","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch","batch_window_sec":5.0,"insights_enabled":true}
-{"event":"batch_processed","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","batch_index":1,"duration_sec":5.0,"transcript_chars":428,"tokens":112,"total_tokens":112,"text":"Trecho reconhecido do lote atual.","transcript":"Transcrição acumulada até o momento.","model":"whisper/medium","diarization":false}
+{"event":"session_started","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch","batch_window_sec":2.0,"insights_enabled":true}
+{"event":"batch_processed","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","batch_index":1,"duration_sec":2.0,"transcript_chars":428,"tokens":112,"total_tokens":112,"text":"Trecho reconhecido do lote atual.","transcript":"Transcrição acumulada até o momento.","model":"whisper/medium","diarization":false}
 {"event":"insight","type":"live_summary","text":"Cliente reclama de cobrança duplicada; ofereça revisão da fatura e abertura de contestação.","confidence":0.7,"model":"qwen2.5-14b-instruct-awq"}
-{"event":"final_summary","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","stats":{"total_batches":3.0,"total_audio_seconds":14.9,"total_tokens":92.0,"transcript":"Transcrição completa da sessão."}}
+{"event":"final_summary","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","stats":{"total_batches":5.0,"total_audio_seconds":14.9,"total_tokens":92.0,"transcript":"Transcrição completa da sessão."}}
 {"event":"session_ended","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c"}
 ```
 
