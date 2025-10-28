@@ -10,7 +10,7 @@ class ChatMessage(BaseModel):
 
 
 class ChatRequest(BaseModel):
-    model: str = Field(default="qwen2.5-14b-instruct")
+    model: str = Field(default="paneas-q32b")
     messages: List[ChatMessage]
     max_tokens: int = Field(default=1024, ge=1, le=16384)
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)

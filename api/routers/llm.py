@@ -1,7 +1,7 @@
 import secrets
 import time
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 
 from config import get_settings
@@ -13,11 +13,22 @@ router = APIRouter(prefix="/api/v1", tags=["llm"])
 settings = get_settings()
 router_engine = LLMRouter(strategy=settings.llm_routing_strategy)
 
+MAX_CONTEXT_LENGTH = 32768  # Limite máximo do Qwen2.5 INT4
+
 
 @router.post("/chat/completions", response_model=ChatResponse)
 async def create_chat_completion(payload: ChatRequest):
     prompt_tokens = sum(len(msg.content.split()) for msg in payload.messages)
     context_length = prompt_tokens + payload.max_tokens
+
+    # Validação: rejeita se ultrapassar limite de 32k tokens
+    if context_length > MAX_CONTEXT_LENGTH:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Context length ({context_length} tokens) exceeds maximum allowed ({MAX_CONTEXT_LENGTH} tokens). "
+                   f"Please reduce your message size or max_tokens parameter."
+        )
+
     provider = payload.provider
     if provider == "openai":
         decision = LLMRoutingDecision(target=LLMTarget.OPENAI, reason="requested_provider")

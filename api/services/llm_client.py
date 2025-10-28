@@ -11,13 +11,8 @@ _settings = get_settings()
 LOGGER = structlog.get_logger(__name__)
 
 MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
-    "qwen2.5-14b-instruct": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    "qwen2.5-14b-instruct-awq": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    "paneas-v1": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    # Legacy aliases kept for backward compatibility; both point to the new Qwen deployment.
-    "llama-3.1-8b-instruct": {"target": LLMTarget.FP16, "path": "/models/qwen2_5/fp16"},
-    "llama-3.1-8b-instruct-awq": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    "llama-3.1-8b-instruct-int4": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
+    "paneas-v1-q14b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
+    "paneas-q32b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq-32b"},
     "gpt-4o-mini": {"target": LLMTarget.OPENAI, "path": "gpt-4o-mini"},
 }
 
@@ -46,7 +41,7 @@ def resolve_model_path(model_name: Optional[str], target: LLMTarget) -> str:
         return MODEL_REGISTRY[model_name]["path"]
     if target == LLMTarget.FP16:
         return "/models/qwen2_5/fp16"
-    return "/models/qwen2_5/int4-awq"
+    return "/models/qwen2_5/int4-awq-32b"
 
 
 async def chat_completion(
@@ -330,6 +325,6 @@ def _resolve_openai_chat_model(requested_model: Optional[str]) -> str:
     lowered = requested_model.lower()
     if lowered.startswith("openai/"):
         return requested_model.split("/", 1)[1]
-    if lowered in {"paneas-v1", "qwen2.5-14b-instruct", "qwen2.5-14b-instruct-awq"}:
+    if lowered == "paneas-v1-q14b":
         return _settings.openai_insights_model
     return requested_model

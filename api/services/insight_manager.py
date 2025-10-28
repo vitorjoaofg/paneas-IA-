@@ -3,7 +3,7 @@ import contextlib
 import time
 from dataclasses import dataclass, replace
 from datetime import datetime, timezone
-from typing import Any, Awaitable, Callable, Dict, List, Optional
+from typing import Any, Awaitable, Callable, Dict, List, Optional, Set
 from difflib import SequenceMatcher
 
 import structlog
@@ -12,6 +12,7 @@ from prometheus_client import Counter, Gauge, Histogram
 from config import get_settings
 from services.llm_client import MODEL_REGISTRY, chat_completion
 from services.llm_router import LLMTarget
+from services.room_manager import room_manager
 
 LOGGER = structlog.get_logger(__name__)
 PROVIDER_PANEAS = "paneas"
@@ -50,7 +51,7 @@ class InsightConfig:
     max_context_tokens: int = 180
     context_segment_window: int = 6
     novelty_overlap_threshold: float = 0.85
-    model: str = "qwen2.5-14b-instruct-awq"
+    model: str = "paneas-q32b"
     temperature: float = 0.3
     max_tokens: int = 180
     queue_maxsize: int = 200
@@ -81,8 +82,12 @@ class InsightSession:
         config: InsightConfig,
         llm_callable: LLMCallable,
         enqueue_callback: EnqueueCallable,
+        room_id: Optional[str] = None,
+        role: Optional[str] = None,
     ) -> None:
         self.session_id = session_id
+        self.room_id = room_id
+        self.role = role
         self._send_callback = send_callback
         self._config = config
         self._llm_callable = llm_callable
@@ -219,7 +224,7 @@ class InsightSession:
                 payload["provider"] = provider or PROVIDER_PANEAS
                 registry_entry = MODEL_REGISTRY.get(
                     requested_model,
-                    MODEL_REGISTRY["qwen2.5-14b-instruct"],
+                    MODEL_REGISTRY["paneas-q32b"],
                 )
                 target = registry_entry["target"]
 
@@ -307,6 +312,13 @@ class InsightSession:
             raise RuntimeError("Insight generation timed out") from exc
 
     def _build_context(self) -> str:
+        # Se faz parte de uma sala, combina transcrições de ambos participantes
+        if self.room_id:
+            room = room_manager.get_room(self.room_id)
+            if room:
+                return room.get_combined_transcript()
+
+        # Modo single-user (comportamento original)
         if not self._last_text:
             return ""
         window_segments = self._segments[-self._config.context_segment_window :] if self._segments else []
@@ -380,6 +392,8 @@ class InsightManager:
         model: Optional[str] = None,
         provider: Optional[str] = None,
         openai_model: Optional[str] = None,
+        room_id: Optional[str] = None,
+        role: Optional[str] = None,
     ) -> None:
         await self.startup()
         await self.close_session(session_id)
@@ -397,6 +411,14 @@ class InsightManager:
             config=session_config,
             llm_callable=self._llm_callable,
             enqueue_callback=self._enqueue_job,
+            room_id=room_id,
+            role=role,
+        )
+        LOGGER.info(
+            "insight_session_registered",
+            session_id=session_id,
+            room_id=room_id,
+            role=role,
         )
 
     async def handle_transcript(self, session_id: str, text: str) -> None:

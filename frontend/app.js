@@ -23,6 +23,9 @@ const ui = {
     chatPlaceholder: document.querySelector(".chat__placeholder"),
     chatClear: document.getElementById("clearChat"),
     listeningIndicator: document.getElementById("listeningIndicator"),
+    roomId: document.getElementById("roomId"),
+    roleSelector: document.getElementById("roleSelector"),
+    roomStatus: document.getElementById("roomStatus"),
 };
 
 const state = {
@@ -48,6 +51,9 @@ const state = {
     insights: [],
     chatHistory: [],
     awaitingStopAck: false,
+    roomId: null,
+    role: null,
+    roomStatus: null,
 };
 
 function trimTrailingSlash(url) {
@@ -456,6 +462,18 @@ function handleWsMessage(event) {
             flushChunks();
             break;
         }
+        case "room_joined": {
+            state.roomId = payload.room_id;
+            state.role = payload.role;
+            state.roomStatus = payload.room_status;
+            const roleLabel = payload.role === "agent" ? "Atendente" : "Cliente";
+            const statusLabel = payload.room_status === "active" ? "ATIVA" : "Aguardando";
+            const participantsText = `${payload.participants_count}/2 participantes`;
+            ui.roomStatus.textContent = `Sala: ${payload.room_id} | ${roleLabel} | ${statusLabel} | ${participantsText}`;
+            ui.roomStatus.style.display = "block";
+            console.log(`Entrou na sala ${payload.room_id} como ${roleLabel}`);
+            break;
+        }
         case "batch_processed": {
             state.batches = payload.batch_index || state.batches;
             if (typeof payload.total_tokens === "number") {
@@ -547,6 +565,16 @@ async function openSession() {
         ui.stopButton.disabled = false;
         ui.listeningIndicator.classList.remove("hidden");
         state.streaming = true;
+
+        // Captura room_id e role se fornecidos
+        const roomId = ui.roomId.value.trim() || null;
+        const role = ui.roleSelector.value || null;
+
+        if (roomId) {
+            state.roomId = roomId;
+            state.role = role;
+        }
+
         const payload = {
             event: "start",
             language: "pt",
@@ -559,6 +587,15 @@ async function openSession() {
             enable_insights: ui.insightToggle.checked,
             provider: "paneas",
         };
+
+        // Adiciona room_id e role se estiverem presentes
+        if (roomId) {
+            payload.room_id = roomId;
+            if (role) {
+                payload.role = role;
+            }
+        }
+
         if (ui.insightToggle.checked && ui.insightModel.value.trim()) {
             payload.insight_model = ui.insightModel.value.trim();
         }

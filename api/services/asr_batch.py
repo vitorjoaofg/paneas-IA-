@@ -10,6 +10,7 @@ import structlog
 
 from config import get_settings
 from services.asr_client import transcribe_audio_bytes
+from services.room_manager import room_manager
 
 LOGGER = structlog.get_logger(__name__)
 
@@ -88,10 +89,14 @@ class SessionState:
         asr_client: BatchASRClient,
         send_event: Callable[[Dict], Awaitable[None]],
         insight_callback: Callable[[str], Awaitable[None]],
+        room_id: Optional[str] = None,
+        role: Optional[str] = None,
     ) -> None:
         self.session_id = session_id
         self.config = config
         self.sample_rate = sample_rate
+        self.room_id = room_id
+        self.role = role
         self._asr_client = asr_client
         self._send_event = send_event
         self._insight_callback = insight_callback
@@ -231,6 +236,14 @@ class SessionState:
             await self._insight_callback(self._transcript_accumulated)
         transcript_snapshot = self._transcript_accumulated
 
+        # Atualiza sala se aplicável
+        if self.room_id and self.role:
+            room_manager.update_transcript(
+                room_id=self.room_id,
+                session_id=self.session_id,
+                transcript=transcript_snapshot,
+            )
+
         payload = {
             "event": "batch_processed",
             "session_id": self.session_id,
@@ -268,6 +281,8 @@ class BatchSessionManager:
         sample_rate: int,
         send_event: Callable[[Dict], Awaitable[None]],
         insight_callback: Callable[[str], Awaitable[None]],
+        room_id: Optional[str] = None,
+        role: Optional[str] = None,
     ) -> SessionState:
         session = SessionState(
             session_id=session_id,
@@ -276,10 +291,17 @@ class BatchSessionManager:
             asr_client=self._asr_client,
             send_event=send_event,
             insight_callback=insight_callback,
+            room_id=room_id,
+            role=role,
         )
         async with self._lock:
             self._sessions[session_id] = session
-        LOGGER.info("batch_session_created", session_id=session_id)
+        LOGGER.info(
+            "batch_session_created",
+            session_id=session_id,
+            room_id=room_id,
+            role=role,
+        )
         return session
 
     async def get(self, session_id: str) -> Optional[SessionState]:

@@ -16,7 +16,8 @@ class LLMRoutingDecision(BaseModel):
 
 class LLMRouter:
     THRESHOLD_SHORT_PROMPT = 512
-    THRESHOLD_LONG_CONTEXT = 8192
+    THRESHOLD_LONG_CONTEXT = 32768  # Limite máximo do Qwen2.5 INT4 (32k tokens)
+    MAX_CONTEXT_LENGTH = 32768  # Hard limit - acima disso retorna erro
 
     def __init__(self, strategy: str = "auto"):
         self.strategy = strategy
@@ -36,8 +37,8 @@ class LLMRouter:
         if quality_priority:
             return LLMRoutingDecision(target=LLMTarget.FP16, reason="quality_priority")
 
-        if context_length > self.THRESHOLD_LONG_CONTEXT:
-            return LLMRoutingDecision(target=LLMTarget.FP16, reason="long_context")
+        # Removido fallback para FP16 em long context - INT4 aguenta até 32k
+        # Se passar de 32k, será tratado como erro no endpoint
 
         if prompt_tokens < self.THRESHOLD_SHORT_PROMPT:
             return LLMRoutingDecision(target=LLMTarget.INT4, reason="short_prompt_latency")

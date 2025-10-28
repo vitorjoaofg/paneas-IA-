@@ -17,6 +17,7 @@ from services.asr_batch import (
     shutdown_batch_asr,
 )
 from services.insight_manager import insight_manager
+from services.room_manager import room_manager, Room
 
 LOGGER = structlog.get_logger(__name__)
 
@@ -80,6 +81,9 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
     session_registered = False
     insights_enabled = True
     summary: Dict[str, Any] = {}
+    room: Optional[Room] = None
+    room_id: Optional[str] = None
+    role: Optional[str] = None
 
     async def send_insight(payload: Dict[str, Any]) -> None:
         STREAM_INSIGHTS.inc()
@@ -132,9 +136,43 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
         insight_provider = str(initial.get("insight_provider", session_config.provider)).lower()
         insight_model = initial.get("insight_model")
         insight_openai_model = initial.get("insight_openai_model")
+
+        # Suporte a salas (room)
+        room_id = initial.get("room_id")
+        role = initial.get("role")
+
+        if room_id:
+            if not role:
+                await _send_event(
+                    websocket,
+                    {"event": "error", "message": "role required when room_id is provided"},
+                )
+                await websocket.close(code=4400, reason="Missing role")
+                return
+
+            try:
+                room = room_manager.join_room(room_id, session_id, role)
+                LOGGER.info(
+                    "room_joined",
+                    session_id=session_id,
+                    room_id=room_id,
+                    role=role,
+                    room_status=room.status,
+                    participants=len(room.participants),
+                )
+            except ValueError as exc:
+                await _send_event(
+                    websocket,
+                    {"event": "error", "message": str(exc)},
+                )
+                await websocket.close(code=4400, reason=str(exc))
+                return
+
         LOGGER.info(
             "batch_stream_start",
             session_id=session_id,
+            room_id=room_id,
+            role=role,
             sample_rate=sample_rate,
             model=session_config.model,
             diarization=session_config.enable_diarization,
@@ -147,6 +185,20 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
             payload.setdefault("session_id", session_id)
             await _send_event(websocket, payload)
 
+        # Notifica join da sala se aplicável
+        if room:
+            await _send_event(
+                websocket,
+                {
+                    "event": "room_joined",
+                    "session_id": session_id,
+                    "room_id": room_id,
+                    "role": role,
+                    "room_status": room.status,
+                    "participants_count": len(room.participants),
+                },
+            )
+
         await _send_event(
             websocket,
             {
@@ -155,6 +207,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
                 "mode": "batch",
                 "batch_window_sec": session_config.batch_window_sec,
                 "insights_enabled": insights_enabled,
+                "room_id": room_id,
+                "role": role,
             },
         )
 
@@ -165,6 +219,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
                 model=insight_model,
                 provider=insight_provider,
                 openai_model=insight_openai_model,
+                room_id=room_id,
+                role=role,
             )
             session_registered = True
 
@@ -174,6 +230,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
             sample_rate=sample_rate,
             send_event=send_event,
             insight_callback=ingest_text,
+            room_id=room_id,
+            role=role,
         )
 
         while True:
@@ -259,6 +317,17 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
             if not session_state.closed:
                 await session_state.close()
             await batch_session_manager.pop(session_id)
+
+        # Remove da sala se aplicável
+        if room_id:
+            room_manager.leave_room(room_id, session_id)
+            LOGGER.info(
+                "room_left",
+                session_id=session_id,
+                room_id=room_id,
+                role=role,
+            )
+
         ACTIVE_SESSIONS.dec()
         if websocket.client_state != WebSocketState.DISCONNECTED:
             await websocket.close()

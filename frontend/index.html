@@ -37,6 +37,18 @@
                 <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
             </div>
             <div class="controls__group">
+                <label for="roomId">Room ID (sala)</label>
+                <input id="roomId" type="text" placeholder="Deixe vazio ou insira ID" />
+            </div>
+            <div class="controls__group">
+                <label for="roleSelector">Papel na sala</label>
+                <select id="roleSelector">
+                    <option value="">Modo Solo</option>
+                    <option value="agent">Atendente</option>
+                    <option value="client">Cliente</option>
+                </select>
+            </div>
+            <div class="controls__group">
                 <label for="chunkSize">Tamanho do lote (ms)</label>
                 <input id="chunkSize" type="number" min="200" max="2000" step="100" value="300" />
             </div>
@@ -46,7 +58,7 @@
             </div>
             <div class="controls__group">
                 <label for="insightModel">Modelo de insight</label>
-                <input id="insightModel" type="text" value="paneas-v1" />
+                <input id="insightModel" type="text" value="paneas-q32b" />
             </div>
             <div class="controls__actions">
                 <button id="startButton" class="btn btn--primary">Comecar captura</button>
@@ -69,7 +81,10 @@
             <article class="card card--primary">
                 <header class="card__header">
                     <h2>Transcricao</h2>
-                <div class="pill" id="sessionId">Sessao nao iniciada</div>
+                    <div>
+                        <div class="pill" id="sessionId">Sessao nao iniciada</div>
+                        <div class="pill pill--secondary" id="roomStatus" style="display: none; margin-top: 0.5rem;"></div>
+                    </div>
                 </header>
                 <div class="stats">
                     <div class="stat"><span class="stat__label">Lotes</span><span class="stat__value" id="batchCount">0</span></div>
@@ -94,9 +109,7 @@
                 <header class="card__header">
                     <h2>Chat com LLM</h2>
                     <select id="chatModel">
-                        <option value="paneas-v1">paneas-v1 (Qwen2.5 INT4)</option>
-                        <option value="qwen2.5-14b-instruct">qwen2.5-14b-instruct</option>
-                        <option value="qwen2.5-14b-instruct-awq">qwen2.5-14b-instruct-awq</option>
+                        <option value="paneas-q32b">paneas-q32b (Qwen2.5-32B INT4)</option>
                     </select>
                 </header>
                 <div class="chat" id="chatLog">
