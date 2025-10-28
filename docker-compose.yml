@@ -157,8 +157,8 @@ services:
       - CUDA_VISIBLE_DEVICES=0
       - DEFAULT_MODEL_NAME=whisper/medium
       - DEFAULT_COMPUTE_TYPE=int8_float16
-      - DEFAULT_MODEL_REPLICAS=0
-      - MODEL_POOL_SPECS=
+      - DEFAULT_MODEL_REPLICAS=6
+      - MODEL_POOL_SPECS=whisper/medium:int8_float16:6
       - MIN_SLICE_SECONDS=0.35
       - CONTEXT_SECONDS=1.2
       - MODELS_DIR=/models
@@ -193,8 +193,8 @@ services:
       - CUDA_VISIBLE_DEVICES=0
       - DEFAULT_MODEL_NAME=whisper/medium
       - DEFAULT_COMPUTE_TYPE=int8_float16
-      - DEFAULT_MODEL_REPLICAS=0
-      - MODEL_POOL_SPECS=
+      - DEFAULT_MODEL_REPLICAS=8
+      - MODEL_POOL_SPECS=whisper/medium:int8_float16:8
       - MIN_SLICE_SECONDS=0.35
       - CONTEXT_SECONDS=1.2
       - MODELS_DIR=/models

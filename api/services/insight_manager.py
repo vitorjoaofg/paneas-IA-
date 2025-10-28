@@ -164,6 +164,8 @@ class InsightSession:
                     session_id=self.session_id,
                     tokens=self._token_count()
                 )
+                # Atualiza timestamp para evitar loop infinito de tentativas
+                self._last_insight_ts = time.time()
                 return
             messages = [
                 {
