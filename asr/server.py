@@ -193,7 +193,7 @@ class ASRService:
         segments, info = model.transcribe(
             audio,
             beam_size=beam_size,
-            best_of=3,
+            best_of=1,
             vad_filter=vad_filter,
             vad_parameters=dict(
                 threshold=vad_threshold,

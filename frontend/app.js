@@ -554,7 +554,7 @@ async function openSession() {
             encoding: "pcm16",
             model: "whisper/medium",
             compute_type: "int8_float16",
-            batch_window_sec: 2.5,
+            batch_window_sec: 2.0,
             max_batch_window_sec: 10.0,
             enable_insights: ui.insightToggle.checked,
             provider: "paneas",

@@ -35,7 +35,7 @@ services:
       - INSIGHT_TEMPERATURE=0.4
       - INSIGHT_MAX_TOKENS=200
       - INSIGHT_FLUSH_TIMEOUT=60
-      - ASR_BATCH_WINDOW_SEC=2.5
+      - ASR_BATCH_WINDOW_SEC=1.0
     volumes:
       - type: bind
         source: /srv/models

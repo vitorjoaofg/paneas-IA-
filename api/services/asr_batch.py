@@ -300,7 +300,7 @@ batch_session_manager = BatchSessionManager(batch_asr_client)
 def parse_batch_config(payload: Dict[str, Any]) -> BatchASRConfig:
     min_window = float(payload.get("batch_window_sec", 5.0))
     max_window = float(payload.get("max_batch_window_sec", min_window * 2.0))
-    min_window = _clamp(min_window, 3.0, 15.0)
+    min_window = _clamp(min_window, 0.5, 15.0)
     max_window = _clamp(max_window, min_window, 20.0)
     config = BatchASRConfig(
         language=payload.get("language", "auto"),
