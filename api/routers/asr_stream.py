@@ -78,6 +78,7 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
     session_config: Optional[BatchASRConfig] = None
     session_state = None
     session_registered = False
+    insights_enabled = True
     summary: Dict[str, Any] = {}
 
     async def send_insight(payload: Dict[str, Any]) -> None:
@@ -87,7 +88,8 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
         await _send_event(websocket, payload)
 
     async def ingest_text(text: str) -> None:
-        await insight_manager.handle_transcript(session_id, text)
+        if session_registered:
+            await insight_manager.handle_transcript(session_id, text)
 
     try:
         await _send_event(
@@ -126,6 +128,7 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
 
         sample_rate = int(initial.get("sample_rate", 16000))
         session_config = parse_batch_config(initial)
+        insights_enabled = bool(initial.get("enable_insights", True))
         insight_provider = str(initial.get("insight_provider", session_config.provider)).lower()
         insight_model = initial.get("insight_model")
         insight_openai_model = initial.get("insight_openai_model")
@@ -151,17 +154,19 @@ async def websocket_asr_stream(websocket: WebSocket) -> None:
                 "session_id": session_id,
                 "mode": "batch",
                 "batch_window_sec": session_config.batch_window_sec,
+                "insights_enabled": insights_enabled,
             },
         )
 
-        await insight_manager.register_session(
-            session_id,
-            send_insight,
-            model=insight_model,
-            provider=insight_provider,
-            openai_model=insight_openai_model,
-        )
-        session_registered = True
+        if insights_enabled:
+            await insight_manager.register_session(
+                session_id,
+                send_insight,
+                model=insight_model,
+                provider=insight_provider,
+                openai_model=insight_openai_model,
+            )
+            session_registered = True
 
         session_state = await batch_session_manager.create(
             session_id=session_id,

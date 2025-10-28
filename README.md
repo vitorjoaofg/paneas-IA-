@@ -119,6 +119,10 @@ export MINIO_ROOT_PASSWORD=changeme
 ./scripts/start_core_stack.sh core
 ```
 
+### 4. Interface web opcional
+
+Após levantar o stack, sirva o diretório `frontend/` (ex.: `cd frontend && python3 -m http.server 5173`). A página oferece captura por microfone, exibe a transcricao acumulada, permite ligar/desligar insights e abre um painel de chat contra `/api/v1/chat/completions`.
+
 O modo `core` sobe somente `postgres`, `redis`, `minio`, o balanceador/ASR workers, `llm-fp16` e o `stack-api`. Para subir tudo novamente, execute `./scripts/start_core_stack.sh full` ou `make up`.
 
 ### 4. Verificar Saúde

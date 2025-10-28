@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paneas Real-Time Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Modal de Senha -->
+    <div id="passwordModal" class="modal">
+        <div class="modal__content">
+            <h2>Acesso Restrito</h2>
+            <p>Digite a senha para acessar o Paneas Real-Time Studio</p>
+            <form id="passwordForm">
+                <input type="password" id="passwordInput" placeholder="Digite a senha" autocomplete="off" />
+                <button type="submit" class="btn btn--primary">Entrar</button>
+                <p id="passwordError" class="modal__error" style="display: none;">Senha incorreta!</p>
+            </form>
+        </div>
+    </div>
+    <header class="hero">
+        <div class="hero__content">
+            <h1>Paneas Real-Time Studio</h1>
+            <p>Experimente a transcricao em tempo real, insights acionaveis e chat com o LLM do stack core.</p>
+        </div>
+        <div class="hero__status" id="sessionStatus">Offline</div>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="controls__group">
+                <label for="apiBase">API Base URL</label>
+                <input id="apiBase" type="text" value="" placeholder="Auto-detectado" />
+            </div>
+            <div class="controls__group">
+                <label for="authToken">Bearer Token</label>
+                <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
+            </div>
+            <div class="controls__group">
+                <label for="chunkSize">Tamanho do lote (ms)</label>
+                <input id="chunkSize" type="number" min="200" max="2000" step="100" value="800" />
+            </div>
+            <div class="controls__group controls__toggle">
+                <label for="insightToggle">Insights em tempo real</label>
+                <input id="insightToggle" type="checkbox" checked />
+            </div>
+            <div class="controls__group">
+                <label for="insightModel">Modelo de insight</label>
+                <input id="insightModel" type="text" value="paneas-v1" />
+            </div>
+            <div class="controls__actions">
+                <button id="startButton" class="btn btn--primary">Comecar captura</button>
+                <button id="stopButton" class="btn" disabled>Encerrar</button>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card card--primary">
+                <header class="card__header">
+                    <h2>Transcricao</h2>
+                <div class="pill" id="sessionId">Sessao nao iniciada</div>
+                </header>
+                <div class="stats">
+                    <div class="stat"><span class="stat__label">Lotes</span><span class="stat__value" id="batchCount">0</span></div>
+                    <div class="stat"><span class="stat__label">Tokens</span><span class="stat__value" id="tokenCount">0</span></div>
+                    <div class="stat"><span class="stat__label">Audio (s)</span><span class="stat__value" id="audioSeconds">0</span></div>
+                </div>
+                <div class="transcript" id="transcriptText">Fale apos iniciar a captura para ver a transcricao acumulada aqui.</div>
+                <div class="timeline" id="batchTimeline"></div>
+            </article>
+
+            <article class="card">
+                <header class="card__header">
+                    <h2>Insights</h2>
+                    <div class="pill pill--secondary" id="insightStatus">Habilitados</div>
+                </header>
+                <div class="insights" id="insightsList">
+                    <p>Nenhum insight emitido ainda.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card__header">
+                    <h2>Chat com LLM</h2>
+                    <select id="chatModel">
+                        <option value="paneas-v1">paneas-v1 (Qwen2.5 INT4)</option>
+                        <option value="qwen2.5-14b-instruct">qwen2.5-14b-instruct</option>
+                        <option value="qwen2.5-14b-instruct-awq">qwen2.5-14b-instruct-awq</option>
+                    </select>
+                </header>
+                <div class="chat" id="chatLog">
+                    <div class="chat__placeholder">Converse com o modelo enquanto a chamada acontece.</div>
+                </div>
+                <form class="chat__form" id="chatForm">
+                    <textarea id="chatInput" rows="3" placeholder="Digite sua mensagem..."></textarea>
+                    <div class="chat__actions">
+                        <button type="button" class="btn" id="clearChat">Limpar</button>
+                        <button type="submit" class="btn btn--primary" id="sendChat">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Paneas AI Stack &mdash; ambiente local.</p>
+        <p class="footer__meta">Status: <span id="footerStatus">Pronto para iniciar.</span></p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

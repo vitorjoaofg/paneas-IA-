@@ -1,5 +1,7 @@
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.responses import ORJSONResponse
+from fastapi.staticfiles import StaticFiles
 from prometheus_fastapi_instrumentator import Instrumentator
 
 from config import get_settings
@@ -48,6 +50,11 @@ app.include_router(ocr.router)
 app.include_router(tts.router)
 app.include_router(llm.router)
 app.include_router(analytics.router)
+
+# Serve frontend static files
+frontend_path = Path(__file__).parent / "frontend"
+if frontend_path.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_path), html=True), name="frontend")
 
 
 @app.on_event("startup")

@@ -21,14 +21,19 @@ services:
       - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
       - MINIO_SECURE=false
       - API_TOKENS=${API_TOKENS}
+      - RATE_LIMIT_GLOBAL=${RATE_LIMIT_GLOBAL}
+      - RATE_LIMIT_ASR=${RATE_LIMIT_ASR}
+      - RATE_LIMIT_OCR=${RATE_LIMIT_OCR}
+      - RATE_LIMIT_LLM=${RATE_LIMIT_LLM}
+      - RATE_LIMIT_TTS=${RATE_LIMIT_TTS}
       - INSIGHT_WORKER_CONCURRENCY=32
-      - INSIGHT_MIN_TOKENS=10
-      - INSIGHT_MIN_INTERVAL_SEC=10
-      - INSIGHT_RETAIN_TOKENS=60
-      - INSIGHT_MAX_CONTEXT_TOKENS=180
+      - INSIGHT_MIN_TOKENS=50
+      - INSIGHT_MIN_INTERVAL_SEC=20
+      - INSIGHT_RETAIN_TOKENS=120
+      - INSIGHT_MAX_CONTEXT_TOKENS=300
       - INSIGHT_MODEL=qwen2.5-14b-instruct-awq
-      - INSIGHT_TEMPERATURE=0.3
-      - INSIGHT_MAX_TOKENS=180
+      - INSIGHT_TEMPERATURE=0.4
+      - INSIGHT_MAX_TOKENS=200
       - INSIGHT_FLUSH_TIMEOUT=60
     volumes:
       - type: bind
@@ -36,6 +41,7 @@ services:
         target: /models
         read_only: true
       - /srv/data:/data
+      - ./frontend:/app/frontend
     depends_on:
       - postgres
       - redis
@@ -371,7 +377,7 @@ services:
       --model /models/qwen2_5/int4-awq
       --quantization awq
       --tensor-parallel-size 1
-      --gpu-memory-utilization 0.20
+      --gpu-memory-utilization 0.55
       --max-num-seqs 16
       --max-model-len 3200
       --max-num-batched-tokens 3200

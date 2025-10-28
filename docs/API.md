@@ -74,6 +74,7 @@ Fluxo:
    - `provider`: backend de ASR (`paneas` padrão, `openai` para usar a API da OpenAI para transcrição);
    - `insight_provider`: backend para geração de insights (`paneas` padrão, `openai` para roteamento via OpenAI);
    - `insight_model` / `insight_openai_model`: sobrescrevem o modelo lógico e o modelo físico usado quando necessário.
+   - `enable_insights`: quando `false`, o gateway não registra a sessão no `insight_manager` (default `true`).
 3. Envie `{"event":"audio","chunk":"<base64>"}` com áudio PCM16 16 kHz.
 4. Finalize com `{"event":"stop"}` para processar o último lote e encerrar.
 
@@ -81,18 +82,18 @@ Respostas típicas:
 
 ```json
 {"event":"ready","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch"}
-{"event":"session_started","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch","batch_window_sec":5.0}
-{"event":"batch_processed","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","batch_index":1,"duration_sec":5.0,"transcript_chars":428,"model":"whisper/medium","diarization":false}
+{"event":"session_started","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","mode":"batch","batch_window_sec":5.0,"insights_enabled":true}
+{"event":"batch_processed","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","batch_index":1,"duration_sec":5.0,"transcript_chars":428,"tokens":112,"total_tokens":112,"text":"Trecho reconhecido do lote atual.","transcript":"Transcrição acumulada até o momento.","model":"whisper/medium","diarization":false}
 {"event":"insight","type":"live_summary","text":"Cliente reclama de cobrança duplicada; ofereça revisão da fatura e abertura de contestação.","confidence":0.7,"model":"qwen2.5-14b-instruct-awq"}
-{"event":"final_summary","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","stats":{"total_batches":3.0,"total_audio_seconds":14.9,"total_tokens":92.0}}
+{"event":"final_summary","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c","stats":{"total_batches":3.0,"total_audio_seconds":14.9,"total_tokens":92.0,"transcript":"Transcrição completa da sessão."}}
 {"event":"session_ended","session_id":"2a01fcb6-3ce6-4f4f-9ceb-93f7b6b44a6c"}
 ```
 
 Eventos relevantes:
 
-- `batch_processed`: confirma que um lote foi transcrito (sem expor o texto bruto).
+- `batch_processed`: confirma que um lote foi transcrito, incluindo o texto do lote (`text`), a transcrição acumulada (`transcript`) e contadores de tokens (`tokens` por lote, `total_tokens` acumulado).
 - `insight`: insight em tempo (quase) real emitido pelo `insight_manager`.
-- `final_summary`: resumo agregado da chamada (lotes, duração e contagem de tokens).
+- `final_summary`: resumo agregado da chamada (lotes, duração, contagem de tokens e transcrição final).
 - `session_ended`: fechamento definitivo da sessão.
 
 > Para evitar perda de insights quando a chamada é encerrada, o gateway aguarda até `INSIGHT_FLUSH_TIMEOUT` (60 s por padrão) para escoar jobs pendentes antes de fechar o WebSocket. Clientes que desejam encerrar imediatamente podem aguardar explicitamente o último `event=insight` ou aumentar esse timeout na aplicação.

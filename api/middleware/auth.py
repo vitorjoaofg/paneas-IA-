@@ -17,6 +17,11 @@ class AuthMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next: Callable):
         path = request.url.path
+
+        # Allow public access to frontend static files (anything not under /api/ or /metrics)
+        if not path.startswith("/api/") and path != "/metrics":
+            return await call_next(request)
+
         if path in EXCLUDED_PATHS or path.startswith("/docs") or path.startswith("/openapi"):
             return await call_next(request)
 

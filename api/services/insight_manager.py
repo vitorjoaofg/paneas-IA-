@@ -156,38 +156,46 @@ class InsightSession:
             context = self._build_context()
             if not context:
                 return
+
+            # Valida se o contexto tem conteúdo substancial
+            if not self._has_substantial_content(context):
+                LOGGER.info(
+                    "insight_skipped_insufficient_content",
+                    session_id=self.session_id,
+                    tokens=self._token_count()
+                )
+                return
             messages = [
                 {
                     "role": "system",
                     "content": (
-                        "Você acompanha uma chamada de call center em tempo quase real. "
-                        "Gere insights orientados à ação, sem inventar dados, mantendo confidencialidade. "
-                        "Traga detalhes objetivos (produtos, números, preços, status do cliente) e evite generalidades."
+                        "Você é um assistente de call center que analisa chamadas e gera insights APENAS quando há informação concreta. "
+                        "Identifique e extraia: problema específico do cliente, valores/códigos mencionados, "
+                        "ações já tomadas (pagamentos, solicitações), status atual, próximo passo necessário. "
+                        "Seja extremamente objetivo e use APENAS dados explícitos da conversa. "
+                        "Priorize informações como: números de protocolo, valores monetários, datas, nomes de produtos/serviços."
                     ),
                 },
             ]
             if self._last_insight_text:
                 messages.append(
                     {
-                        "role": "system",
-                        "content": (
-                            "Último insight enviado ao operador:\n"
-                            f"{self._last_insight_text}\n\n"
-                            "Forneça apenas novidades relevantes em relação ao insight anterior. "
-                            "Se nada substancial mudou, responda exatamente: 'Sem novos eventos relevantes até o momento.'"
-                        ),
+                        "role": "assistant",
+                        "content": self._last_insight_text,
                     }
                 )
             messages.append(
                 {
                     "role": "user",
                     "content": (
-                        "Trecho recente da conversa (últimas interações relevantes):\n"
-                        f"{context}\n\n"
-                        "Produza duas frases numeradas no formato:\n"
-                        "1) Situação atual do cliente com fatos e números específicos.\n"
-                        "2) Próxima ação recomendada para o operador, citando valores/planos quando aparecerem.\n"
-                        "Use o idioma do trecho e mantenha até 2 frases. Se não houver dados novos suficientes, responda exatamente: 'Sem novos eventos relevantes até o momento.'"
+                        f"Transcrição:\n{context}\n\n"
+                        "Extraia informações concretas e forneça:\n"
+                        "1) Situação: [Problema específico] + [Dados mencionados: valores, códigos, datas, produtos]\n"
+                        "2) Próxima ação: [Passo específico que o atendente deve executar agora]\n\n"
+                        "Exemplo: '1) Cliente reportou cobrança duplicada de R$ 150,00 na fatura 2024/10, "
+                        "apresentou comprovante código 10203040. 2) Verificar código no sistema e estornar "
+                        "valor duplicado.'\n\n"
+                        "Seja direto, mencione números/códigos quando disponíveis, evite generalidades."
                     ),
                 }
             )
@@ -306,6 +314,31 @@ class InsightSession:
         if len(words) > self._config.max_context_tokens:
             words = words[-self._config.max_context_tokens :]
         return " ".join(words)
+
+    def _has_substantial_content(self, context: str) -> bool:
+        """Verifica se o contexto tem informações substanciais para gerar insight útil."""
+        if not context:
+            return False
+
+        # Palavras-chave que indicam conteúdo útil em call center
+        keywords = [
+            "problema", "ajuda", "cartão", "fatura", "débito", "pagamento", "valor",
+            "código", "protocolo", "comprovante", "conta", "cliente", "número",
+            "quero", "preciso", "gostaria", "não", "erro", "consulta",
+            "reclamação", "reclamacao", "solicitação", "solicitacao",
+            "quanto", "quando", "como", "porque", "por que"
+        ]
+
+        context_lower = context.lower()
+
+        # Conta quantas palavras-chave aparecem
+        keyword_count = sum(1 for kw in keywords if kw in context_lower)
+
+        # Verifica se tem números (códigos, valores, protocolos)
+        has_numbers = any(char.isdigit() for char in context)
+
+        # Precisa ter pelo menos 2 palavras-chave OU pelo menos 1 palavra-chave + números
+        return keyword_count >= 2 or (keyword_count >= 1 and has_numbers)
 
     def _trim_cache(self) -> None:
         words = self._last_text.split()

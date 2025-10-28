@@ -223,29 +223,35 @@ class SessionState:
         self._total_batches += 1
         self._total_tokens += tokens
 
-        payload = {
-            "event": "batch_processed",
-            "session_id": self.session_id,
-            "batch_index": self._batch_index,
-            "duration_sec": round(duration_sec, 3),
-            "transcript_chars": len(text),
-            "model": self.config.model,
-            "diarization": self.config.enable_diarization,
-        }
-        await self._send_event(payload)
-
         if text:
             if self._transcript_accumulated:
                 self._transcript_accumulated = f"{self._transcript_accumulated} {text}".strip()
             else:
                 self._transcript_accumulated = text
             await self._insight_callback(self._transcript_accumulated)
+        transcript_snapshot = self._transcript_accumulated
 
-    def _summary_payload(self) -> Dict[str, float]:
+        payload = {
+            "event": "batch_processed",
+            "session_id": self.session_id,
+            "batch_index": self._batch_index,
+            "duration_sec": round(duration_sec, 3),
+            "transcript_chars": len(text),
+            "text": text,
+            "transcript": transcript_snapshot,
+            "tokens": tokens,
+            "total_tokens": int(self._total_tokens),
+            "model": self.config.model,
+            "diarization": self.config.enable_diarization,
+        }
+        await self._send_event(payload)
+
+    def _summary_payload(self) -> Dict[str, Any]:
         return {
             "total_batches": float(self._total_batches),
             "total_audio_seconds": float(round(self._total_audio_seconds, 3)),
             "total_tokens": float(self._total_tokens),
+            "transcript": self._transcript_accumulated,
         }
 
 

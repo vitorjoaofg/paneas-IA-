@@ -11,9 +11,9 @@ _settings = get_settings()
 LOGGER = structlog.get_logger(__name__)
 
 MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
-    "qwen2.5-14b-instruct": {"target": LLMTarget.FP16, "path": "/models/qwen2_5/fp16"},
-    "qwen2.5-14b-instruct-awq": {"target": LLMTarget.FP16, "path": "/models/qwen2_5/fp16"},
-    "paneas-v1": {"target": LLMTarget.FP16, "path": "/models/qwen2_5/fp16"},
+    "qwen2.5-14b-instruct": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
+    "qwen2.5-14b-instruct-awq": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
+    "paneas-v1": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
     # Legacy aliases kept for backward compatibility; both point to the new Qwen deployment.
     "llama-3.1-8b-instruct": {"target": LLMTarget.FP16, "path": "/models/qwen2_5/fp16"},
     "llama-3.1-8b-instruct-awq": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
