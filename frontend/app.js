@@ -126,13 +126,13 @@ function renderTranscript() {
                 }
 
                 smoothScrollTranscript();
-            }, index * 80); // 80ms de delay entre cada palavra
+            }, index * 50); // 50ms de delay entre cada palavra
         });
 
         // Atualiza previousTranscript depois que todas as palavras forem agendadas
         setTimeout(() => {
             state.previousTranscript = currentText;
-        }, words.length * 80);
+        }, words.length * 50);
     }
 }
 
@@ -554,7 +554,7 @@ async function openSession() {
             encoding: "pcm16",
             model: "whisper/medium",
             compute_type: "int8_float16",
-            batch_window_sec: 5.0,
+            batch_window_sec: 2.5,
             max_batch_window_sec: 10.0,
             enable_insights: ui.insightToggle.checked,
             provider: "paneas",
