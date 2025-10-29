@@ -18,11 +18,13 @@ MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
 
 
 def _preferred_targets(primary: LLMTarget) -> List[LLMTarget]:
+    # Por enquanto, apenas usar INT4 já que FP16 não está rodando
     order: List[LLMTarget] = [primary]
-    if primary == LLMTarget.INT4:
-        order.append(LLMTarget.FP16)
-    elif primary == LLMTarget.FP16:
-        order.append(LLMTarget.INT4)
+    # Comentado até termos FP16 disponível
+    # if primary == LLMTarget.INT4:
+    #     order.append(LLMTarget.FP16)
+    # elif primary == LLMTarget.FP16:
+    #     order.append(LLMTarget.INT4)
     return order
 
 
@@ -52,6 +54,9 @@ async def chat_completion(
     payload = dict(payload)
     provider = (payload.pop("provider", None) or "paneas").lower()
     payload.pop("quality_priority", None)
+    # Remove any extra fields that vLLM doesn't understand
+    payload.pop("tools", None)
+    payload.pop("tool_choice", None)
     if target == LLMTarget.OPENAI or provider == "openai":
         request_payload = dict(payload)
         original_model = request_payload.get("model")
@@ -72,8 +77,22 @@ async def chat_completion(
         request_payload = dict(payload)
         request_payload["model"] = resolve_model_path(original_model, current_target)
 
+        # Clean up messages to remove None fields
+        if "messages" in request_payload:
+            clean_messages = []
+            for msg in request_payload["messages"]:
+                clean_msg = {"role": msg["role"]}
+                if "content" in msg and msg["content"] is not None:
+                    clean_msg["content"] = msg["content"]
+                # Only add optional fields if they exist and are not None
+                if msg.get("name"):
+                    clean_msg["name"] = msg["name"]
+                clean_messages.append(clean_msg)
+            request_payload["messages"] = clean_messages
+
         client = await get_http_client()
         endpoint = resolve_endpoint(current_target)
+        LOGGER.info("DEBUG: Sending to vLLM", endpoint=endpoint, payload=request_payload)
         try:
             response = await request_with_retry(
                 "POST",
@@ -141,6 +160,20 @@ async def chat_completion_stream(
     for current_target in preferred_order:
         request_payload = dict(payload)
         request_payload["model"] = resolve_model_path(original_model, current_target)
+
+        # Clean up messages to remove None fields (same as non-streaming)
+        if "messages" in request_payload:
+            clean_messages = []
+            for msg in request_payload["messages"]:
+                clean_msg = {"role": msg["role"]}
+                if "content" in msg and msg["content"] is not None:
+                    clean_msg["content"] = msg["content"]
+                # Only add optional fields if they exist and are not None
+                if msg.get("name"):
+                    clean_msg["name"] = msg["name"]
+                clean_messages.append(clean_msg)
+            request_payload["messages"] = clean_messages
+
         client = await get_http_client()
         endpoint = resolve_endpoint(current_target)
         timeout = httpx.Timeout(_settings.llm_timeout, connect=min(10.0, _settings.llm_timeout))

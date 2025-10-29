@@ -12,7 +12,6 @@ from services.llm_client import MODEL_REGISTRY, chat_completion, chat_completion
 from services.llm_router import LLMRouter, LLMRoutingDecision, LLMTarget
 from services.tool_executor import get_tool_executor
 from services.tools import unimed_consult
-from services.tools.generic_http import age_predictor, external_api_call
 from services.tool_prompt_helper import tools_to_prompt, extract_function_call
 
 LOGGER = structlog.get_logger(__name__)
@@ -27,8 +26,6 @@ MAX_TOOL_ITERATIONS = 3
 # Registrar tools disponíveis
 tool_executor = get_tool_executor()
 tool_executor.register("unimed_consult", unimed_consult)
-tool_executor.register("age_predictor", age_predictor)
-tool_executor.register("external_api_call", external_api_call)
 
 
 @router.post("/chat/completions", response_model=ChatResponse)
@@ -77,24 +74,8 @@ async def create_chat_completion(payload: ChatRequest):
     # Se streaming sem tools, usar fluxo antigo
     if payload.stream and not has_tools:
         LOGGER.info("DEBUG: Using streaming flow")
-        upstream_payload = payload.model_dump(exclude_none=True, exclude_unset=True)
+        upstream_payload = payload.model_dump()
         upstream_payload["stream"] = True
-
-        # Remove fields not supported by vLLM
-        upstream_payload.pop("tools", None)
-        upstream_payload.pop("tool_choice", None)
-        upstream_payload.pop("provider", None)
-        upstream_payload.pop("quality_priority", None)
-
-        # Clean up messages to remove None fields
-        if "messages" in upstream_payload:
-            clean_messages = []
-            for msg in upstream_payload["messages"]:
-                clean_msg = {"role": msg["role"]}
-                if "content" in msg and msg["content"] is not None:
-                    clean_msg["content"] = msg["content"]
-                clean_messages.append(clean_msg)
-            upstream_payload["messages"] = clean_messages
 
         async def event_iterator():
             async for chunk in chat_completion_stream(
@@ -203,43 +184,6 @@ async def create_chat_completion(payload: ChatRequest):
         if clean_msg["role"] != "system":
             messages.append(clean_msg)
 
-    # Detectar se há tool choice forçado para execução direta
-    forced_tool_choice = None
-    forced_tool_used = False
-
-    if isinstance(payload.tool_choice, dict):
-        tool_choice_dict = payload.tool_choice
-        if tool_choice_dict.get("type") == "function":
-            function_choice = tool_choice_dict.get("function", {})
-            forced_name = function_choice.get("name")
-            if forced_name:
-                raw_arguments = function_choice.get("arguments")
-
-                if isinstance(raw_arguments, str):
-                    try:
-                        parsed_arguments = json.loads(raw_arguments)
-                    except json.JSONDecodeError:
-                        parsed_arguments = raw_arguments
-                elif raw_arguments is None:
-                    parsed_arguments = {}
-                else:
-                    parsed_arguments = raw_arguments
-
-                if isinstance(parsed_arguments, str):
-                    arguments_str = parsed_arguments
-                else:
-                    arguments_str = json.dumps(parsed_arguments, ensure_ascii=False)
-
-                forced_tool_choice = {
-                    "name": forced_name,
-                    "arguments_payload": parsed_arguments,
-                    "arguments_str": arguments_str,
-                }
-                LOGGER.info(
-                    "DEBUG: Forced tool_choice detected",
-                    function_name=forced_name,
-                )
-
     total_prompt_tokens = 0
     total_completion_tokens = 0
     iteration = 0
@@ -263,54 +207,31 @@ async def create_chat_completion(payload: ChatRequest):
             num_messages=len(messages),
         )
 
-        use_forced_tool = bool(forced_tool_choice) and not forced_tool_used
-        function_call_data = None
-
-        if use_forced_tool:
-            forced_tool_used = True
-            content_payload = {
-                "function_call": {
-                    "name": forced_tool_choice["name"],
-                    "arguments": forced_tool_choice["arguments_payload"],
-                }
-            }
-            content = json.dumps(content_payload, ensure_ascii=False)
-            finish_reason = "tool_calls"
-            function_call_data = {
-                "name": forced_tool_choice["name"],
-                "arguments": forced_tool_choice["arguments_str"],
-            }
-            LOGGER.info(
-                "DEBUG: Applying forced tool_choice",
-                iteration=iteration,
-                function_name=forced_tool_choice["name"],
+        # Fazer chamada ao LLM
+        try:
+            upstream_response = await chat_completion(
+                current_payload,
+                target_model,
+                router_metadata=router_metadata,
             )
-        else:
-            # Fazer chamada ao LLM
-            try:
-                upstream_response = await chat_completion(
-                    current_payload,
-                    target_model,
-                    router_metadata=router_metadata,
-                )
-            except Exception as e:
-                LOGGER.error("DEBUG: Tool LLM call failed", error=str(e), iteration=iteration)
-                raise HTTPException(status_code=500, detail=f"LLM call failed: {str(e)}")
+        except Exception as e:
+            LOGGER.error("DEBUG: Tool LLM call failed", error=str(e), iteration=iteration)
+            raise HTTPException(status_code=500, detail=f"LLM call failed: {str(e)}")
 
-            # Acumular tokens
-            usage = upstream_response.get("usage", {})
-            total_prompt_tokens += usage.get("prompt_tokens", 0)
-            total_completion_tokens += usage.get("completion_tokens", 0)
+        # Acumular tokens
+        usage = upstream_response.get("usage", {})
+        total_prompt_tokens += usage.get("prompt_tokens", 0)
+        total_completion_tokens += usage.get("completion_tokens", 0)
 
-            # Extrair primeira choice
-            choices_raw = upstream_response.get("choices", [])
-            if not choices_raw:
-                raise HTTPException(status_code=500, detail="No choices returned from LLM")
+        # Extrair primeira choice
+        choices_raw = upstream_response.get("choices", [])
+        if not choices_raw:
+            raise HTTPException(status_code=500, detail="No choices returned from LLM")
 
-            first_choice = choices_raw[0]
-            message_dict = first_choice.get("message", {})
-            content = message_dict.get("content", "")
-            finish_reason = first_choice.get("finish_reason", "stop")
+        first_choice = choices_raw[0]
+        message_dict = first_choice.get("message", {})
+        content = message_dict.get("content", "")
+        finish_reason = first_choice.get("finish_reason", "stop")
 
         LOGGER.info(
             "DEBUG: Tool response",
@@ -319,58 +240,57 @@ async def create_chat_completion(payload: ChatRequest):
             finish_reason=finish_reason,
         )
 
-        if not use_forced_tool:
-            # Tentar extrair function call do conteúdo
-            function_call_data = extract_function_call(content)
+        # Tentar extrair function call do conteúdo
+        function_call_data = extract_function_call(content)
 
-            if not function_call_data:
-                # Não há function call, retornar resposta final
-                elapsed = time.perf_counter() - start
+        if not function_call_data:
+            # Não há function call, retornar resposta final
+            elapsed = time.perf_counter() - start
 
-                # Se é a primeira iteração e não detectou tool call, vamos ajudar o modelo
-                if iteration == 1 and has_tools:
-                    # Verificar se o usuário mencionou consultar algo
-                    user_msg = payload.messages[-1].content.lower()
-                    if any(word in user_msg for word in ["consulte", "consultar", "buscar", "verificar", "checar"]):
-                        # Adicionar hint mais específico
-                        messages.append({
-                            "role": "assistant",
-                            "content": content
-                        })
-                        messages.append({
-                            "role": "user",
-                            "content": "Por favor, use a função unimed_consult para fazer a consulta solicitada. Responda no formato JSON especificado."
-                        })
-                        continue  # Tentar novamente
+            # Se é a primeira iteração e não detectou tool call, vamos ajudar o modelo
+            if iteration == 1 and has_tools:
+                # Verificar se o usuário mencionou consultar algo
+                user_msg = payload.messages[-1].content.lower()
+                if any(word in user_msg for word in ["consulte", "consultar", "buscar", "verificar", "checar"]):
+                    # Adicionar hint mais específico
+                    messages.append({
+                        "role": "assistant",
+                        "content": content
+                    })
+                    messages.append({
+                        "role": "user",
+                        "content": "Por favor, use a função unimed_consult para fazer a consulta solicitada. Responda no formato JSON especificado."
+                    })
+                    continue  # Tentar novamente
 
-                choices = [
-                    ChatChoice(
-                        index=0,
-                        message=ChatMessage(role="assistant", content=content),
-                        finish_reason=finish_reason,
-                    )
-                ]
-
-                usage_metrics = UsageMetrics(
-                    prompt_tokens=total_prompt_tokens,
-                    completion_tokens=total_completion_tokens,
-                    total_tokens=total_prompt_tokens + total_completion_tokens,
+            choices = [
+                ChatChoice(
+                    index=0,
+                    message=ChatMessage(role="assistant", content=content),
+                    finish_reason=finish_reason,
                 )
+            ]
 
-                model_name = upstream_response.get("model", payload.model)
-                metadata = upstream_response.setdefault("metadata", {})
-                metadata.setdefault("router_target", router_metadata["router_decision"])
-                metadata["router_decision"] = router_metadata["router_decision"]
-                metadata["router_reason"] = router_metadata["router_reason"]
-                metadata["latency_ms"] = int(elapsed * 1000)
-                metadata["tool_iterations"] = iteration
+            usage_metrics = UsageMetrics(
+                prompt_tokens=total_prompt_tokens,
+                completion_tokens=total_completion_tokens,
+                total_tokens=total_prompt_tokens + total_completion_tokens,
+            )
 
-                return ChatResponse(
-                    id=response_id,
-                    model=model_name,
-                    choices=choices,
-                    usage=usage_metrics,
-                )
+            model_name = upstream_response.get("model", payload.model)
+            metadata = upstream_response.setdefault("metadata", {})
+            metadata.setdefault("router_target", router_metadata["router_decision"])
+            metadata["router_decision"] = router_metadata["router_decision"]
+            metadata["router_reason"] = router_metadata["router_reason"]
+            metadata["latency_ms"] = int(elapsed * 1000)
+            metadata["tool_iterations"] = iteration
+
+            return ChatResponse(
+                id=response_id,
+                model=model_name,
+                choices=choices,
+                usage=usage_metrics,
+            )
 
         # Há function call, executar
         LOGGER.info(
