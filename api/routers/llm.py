@@ -184,24 +184,25 @@ async def create_chat_completion(payload: ChatRequest):
     LOGGER.info("DEBUG: Using tools flow", num_tools=len(payload.tools))
 
     # Preparar mensagens - CORRIGIDO
+    # Gerar prompt de tools e injetar nas mensagens existentes
     tools_prompt = tools_to_prompt(payload.tools)
+    messages = []
+    system_injected = False
 
-    # Criar lista de mensagens inicial com system prompt
-    messages = [
-        {"role": "system", "content": tools_prompt}
-    ]
-
-    # Adicionar mensagens do usuário (convertendo para dict)
     for msg in payload.messages:
         msg_dict = msg.model_dump()
-        # Garantir que não há fields inválidos
-        clean_msg = {
-            "role": msg_dict["role"],
-            "content": msg_dict.get("content", "")
-        }
-        # Pular system messages do payload original (já temos nosso próprio)
-        if clean_msg["role"] != "system":
-            messages.append(clean_msg)
+        if msg_dict["role"] == "system" and not system_injected:
+            combined_content = (msg_dict.get("content") or "") + "\n\n" + tools_prompt
+            messages.append({"role": "system", "content": combined_content})
+            system_injected = True
+        else:
+            messages.append({
+                "role": msg_dict["role"],
+                "content": msg_dict.get("content", "")
+            })
+
+    if not system_injected:
+        messages.insert(0, {"role": "system", "content": tools_prompt})
 
     # Detectar se há tool choice forçado para execução direta
     forced_tool_choice = None
