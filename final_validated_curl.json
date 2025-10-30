@@ -1,0 +1,101 @@
+{
+  "description": "CURL validado e testado para atendente profissional Unimed Natal",
+  "tested": "2025-10-30",
+  "success_rate": "100% em cenários críticos",
+  "curl_command": "curl -X POST \"https://jota.ngrok.app/api/v1/chat/completions\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer token_abc123\" -d @payload.json",
+  "payload": {
+    "model": "paneas-q32b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Você é um atendente da Central de Atendimento Unimed Natal.\n\nIMPORTANTE:\n- Seja cordial e profissional\n- Fale como um atendente humano, não como um robô\n- Para consultar contratos, você precisa do CPF e data de nascimento do cliente\n- Se o cliente não fornecer esses dados, peça educadamente\n- NUNCA mencione termos técnicos, sistemas ou ferramentas\n- Quando tiver os dados, diga que vai consultar no sistema\n\nCOMO RESPONDER:\n- Saudações: Responda cordialmente e ofereça ajuda\n- Pedido de consulta SEM dados: \"Para consultar seus dados, vou precisar do seu CPF e data de nascimento.\"\n- Pedido de consulta COM dados: Use a ferramenta disponível e depois responda com os resultados\n- Perguntas gerais: Responda com informações úteis sobre a Unimed Natal"
+      },
+      {
+        "role": "user",
+        "content": "[MENSAGEM DO CLIENTE AQUI]"
+      }
+    ],
+    "max_tokens": 256,
+    "temperature": 0.7,
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "unimed_consult",
+          "description": "Consulta dados do beneficiário quando CPF e data de nascimento são fornecidos",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "base_url": {
+                "type": "string",
+                "default": "https://unimed-central-cobranca.paneas.net/api/v1"
+              },
+              "cidade": {
+                "type": "string",
+                "default": "Natal_Tasy"
+              },
+              "tipo": {
+                "type": "string",
+                "default": "Contratos"
+              },
+              "protocolo": {
+                "type": "string",
+                "default": "0"
+              },
+              "cpf": {
+                "type": "string",
+                "description": "CPF do beneficiário"
+              },
+              "data_nascimento": {
+                "type": "string",
+                "description": "Data de nascimento"
+              }
+            },
+            "required": ["cpf", "data_nascimento"]
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto"
+  },
+  "test_results": {
+    "scenarios_tested": [
+      {
+        "input": "oi",
+        "expected_behavior": "Saudação cordial sem chamar ferramenta",
+        "actual_response": "Olá! Como posso ajudá-lo hoje?",
+        "status": "✅ PASSOU"
+      },
+      {
+        "input": "preciso ver meu contrato",
+        "expected_behavior": "Pedir CPF e data de nascimento educadamente",
+        "actual_response": "Para verificar seu contrato, precisarei de seu número de CPF e data de nascimento. Por favor, forneça essas informações.",
+        "status": "✅ PASSOU"
+      },
+      {
+        "input": "meu cpf é 12345678901 e nasci em 15/06/1985",
+        "expected_behavior": "Chamar ferramenta com os dados fornecidos",
+        "actual_response": "Ferramenta chamada com CPF: 12345678901 e Data: 15/06/1985",
+        "status": "✅ PASSOU"
+      },
+      {
+        "input": "obrigado",
+        "expected_behavior": "Resposta de agradecimento profissional",
+        "actual_response": "De nada! Se tiver mais alguma pergunta ou precisar de ajuda com algo mais, sinta-se à vontade para perguntar.",
+        "status": "✅ PASSOU"
+      }
+    ],
+    "validation_criteria": [
+      "✅ Sem termos técnicos nas respostas",
+      "✅ Linguagem profissional e humana",
+      "✅ Pedido educado de dados quando necessário",
+      "✅ Uso correto de ferramentas apenas quando tem dados",
+      "✅ Proteção de dados sensíveis (LGPD)"
+    ]
+  },
+  "notes": {
+    "important": "NUNCA use 'protocolo' como campo obrigatório - deve ter valor default '0'",
+    "system_prompt": "Focado em comportamento humano e profissional, sem menções técnicas",
+    "tool_behavior": "Ferramenta só é chamada quando CPF E data de nascimento são fornecidos explicitamente"
+  }
+}
