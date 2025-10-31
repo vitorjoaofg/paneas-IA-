@@ -300,11 +300,12 @@ services:
       - CUDA_VISIBLE_DEVICES=0
       - HF_TOKEN=${HF_TOKEN}
       - EMBEDDINGS_CACHE=/cache/embeddings
-      - HF_HOME=/cache/hf
+      - HF_HOME=/models
+      - TRANSFORMERS_CACHE=/models
       - NVIDIA_VISIBLE_DEVICES=1
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
-      - /srv/models:/models:ro
+      - /srv/models:/models
       - /srv/data/embeddings_cache:/cache
     deploy:
       resources:

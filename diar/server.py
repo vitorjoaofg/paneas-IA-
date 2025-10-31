@@ -12,6 +12,11 @@ from prometheus_fastapi_instrumentator import Instrumentator
 
 CACHE_DIR = Path(os.environ.get("EMBEDDINGS_CACHE", "/cache/embeddings"))
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+# Set HuggingFace cache to use local models
+os.environ["HF_HOME"] = "/models"
+os.environ["TRANSFORMERS_CACHE"] = "/models"
+
 MODEL_NAME = os.environ.get("PYANNOTE_MODEL", "pyannote/speaker-diarization-3.1")
 HF_TOKEN = os.environ.get("HF_TOKEN")
 
@@ -21,9 +26,11 @@ Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 class DiarizationEngine:
     def __init__(self) -> None:
-        if HF_TOKEN is None:
-            raise RuntimeError("HF_TOKEN must be set for Pyannote models")
-        self.pipeline = Pipeline.from_pretrained(MODEL_NAME, use_auth_token=HF_TOKEN)
+        # Load model from HuggingFace Hub or local cache
+        if HF_TOKEN:
+            self.pipeline = Pipeline.from_pretrained(MODEL_NAME, use_auth_token=HF_TOKEN)
+        else:
+            self.pipeline = Pipeline.from_pretrained(MODEL_NAME)
         self.pipeline.to(torch.device("cuda"))
 
     def diarize(self, audio_path: Path, num_speakers: int | None) -> List[Dict[str, Any]]:
