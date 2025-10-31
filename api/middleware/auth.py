@@ -18,6 +18,10 @@ class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next: Callable):
         path = request.url.path
 
+        # Allow CORS preflight requests (OPTIONS) without authentication
+        if request.method == "OPTIONS":
+            return await call_next(request)
+
         # Allow public access to frontend static files (anything not under /api/ or /metrics)
         if not path.startswith("/api/") and path != "/metrics":
             return await call_next(request)

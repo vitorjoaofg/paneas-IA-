@@ -890,15 +890,20 @@ async function sendChatMessage(text) {
 }
 
 async function transcribeUploadedAudio() {
+    console.log("[ASR] Função transcribeUploadedAudio iniciada");
+
     if (!ui.asrResult) {
+        console.log("[ASR] ui.asrResult não encontrado");
         return;
     }
     const file = ui.asrFileInput?.files?.[0];
     if (!file) {
+        console.log("[ASR] Nenhum arquivo selecionado");
         setOutput(ui.asrResult, "Selecione um arquivo de áudio para transcrever.");
         return;
     }
 
+    console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
     setOutput(ui.asrResult, "Enviando áudio para transcrição...");
 
     const formData = new FormData();
@@ -910,38 +915,49 @@ async function transcribeUploadedAudio() {
 
     const base = resolveApiBase();
     const url = `${base}/api/v1/asr`;
+    console.log("[ASR] URL do endpoint:", url);
 
     try {
+        console.log("[ASR] Iniciando requisição fetch...");
         const response = await fetch(url, {
             method: "POST",
             headers: buildAuthHeaders(),
             body: formData,
         });
 
+        console.log("[ASR] Resposta recebida - status:", response.status);
+
         if (!response.ok) {
             const errorText = await response.text();
+            console.error("[ASR] Erro na resposta:", errorText);
             setOutput(ui.asrResult, `Erro ${response.status}: ${errorText || "Falha ao processar a transcrição."}`);
             return;
         }
 
         const data = await response.json();
+        console.log("[ASR] Dados recebidos:", data);
         setOutput(ui.asrResult, prettyPrintJson(data));
     } catch (err) {
-        console.error("Falha na transcrição por arquivo", err);
+        console.error("[ASR] Falha na transcrição por arquivo", err);
         setOutput(ui.asrResult, `Erro: ${err.message || err}`);
     }
 }
 
 async function runOcr() {
+    console.log("[OCR] Função runOcr iniciada");
+
     if (!ui.ocrResult) {
+        console.log("[OCR] ui.ocrResult não encontrado");
         return;
     }
     const file = ui.ocrFileInput?.files?.[0];
     if (!file) {
+        console.log("[OCR] Nenhum arquivo selecionado");
         setOutput(ui.ocrResult, "Selecione uma imagem ou PDF para processar.");
         return;
     }
 
+    console.log("[OCR] Arquivo selecionado:", file.name, file.size, "bytes");
     setOutput(ui.ocrResult, "Enviando arquivo para OCR...");
 
     const formData = new FormData();
@@ -951,24 +967,30 @@ async function runOcr() {
 
     const base = resolveApiBase();
     const url = `${base}/api/v1/ocr`;
+    console.log("[OCR] URL do endpoint:", url);
 
     try {
+        console.log("[OCR] Iniciando requisição fetch...");
         const response = await fetch(url, {
             method: "POST",
             headers: buildAuthHeaders(),
             body: formData,
         });
 
+        console.log("[OCR] Resposta recebida - status:", response.status);
+
         if (!response.ok) {
             const errorText = await response.text();
+            console.error("[OCR] Erro na resposta:", errorText);
             setOutput(ui.ocrResult, `Erro ${response.status}: ${errorText || "Falha ao processar o OCR."}`);
             return;
         }
 
         const data = await response.json();
+        console.log("[OCR] Dados recebidos:", data);
         setOutput(ui.ocrResult, prettyPrintJson(data));
     } catch (err) {
-        console.error("Falha no OCR", err);
+        console.error("[OCR] Falha no OCR", err);
         setOutput(ui.ocrResult, `Erro: ${err.message || err}`);
     }
 }
@@ -1061,9 +1083,17 @@ function bindEvents() {
         clearChat();
     });
 
-    ui.asrUploadButton?.addEventListener("click", (event) => {
+    ui.asrUploadButton?.addEventListener("click", async (event) => {
         event.preventDefault();
-        transcribeUploadedAudio();
+        console.log("[ASR] Botão clicado - iniciando transcrição");
+        ui.asrUploadButton.disabled = true;
+        ui.asrUploadButton.textContent = "Processando...";
+        try {
+            await transcribeUploadedAudio();
+        } finally {
+            ui.asrUploadButton.disabled = false;
+            ui.asrUploadButton.textContent = "Transcrever áudio";
+        }
     });
 
     ui.asrFileInput?.addEventListener("change", () => {
@@ -1077,9 +1107,10 @@ function bindEvents() {
         }
     });
 
-    ui.streamFileButton?.addEventListener("click", (event) => {
+    ui.streamFileButton?.addEventListener("click", async (event) => {
         event.preventDefault();
-        streamAudioFile();
+        console.log("[Streaming] Botão clicado - iniciando streaming de arquivo");
+        await streamAudioFile();
     });
 
     ui.streamFileInput?.addEventListener("change", () => {
@@ -1093,9 +1124,17 @@ function bindEvents() {
         }
     });
 
-    ui.ocrButton?.addEventListener("click", (event) => {
+    ui.ocrButton?.addEventListener("click", async (event) => {
         event.preventDefault();
-        runOcr();
+        console.log("[OCR] Botão clicado - iniciando OCR");
+        ui.ocrButton.disabled = true;
+        ui.ocrButton.textContent = "Processando...";
+        try {
+            await runOcr();
+        } finally {
+            ui.ocrButton.disabled = false;
+            ui.ocrButton.textContent = "Executar OCR";
+        }
     });
 
     ui.ocrFileInput?.addEventListener("change", () => {
