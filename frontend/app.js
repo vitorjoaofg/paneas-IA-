@@ -812,7 +812,7 @@ async function sendChatMessage(text) {
     const payload = {
         model: ui.chatModel.value,
         messages: state.chatHistory.slice(-8),
-        max_tokens: 384,
+        max_tokens: 1000,
         temperature: 0.6,
         stream: true,
     };
