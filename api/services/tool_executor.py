@@ -93,18 +93,13 @@ class ToolExecutor:
             return json.dumps(error_result)
 
         except TypeError as e:
-            error_result = {
-                "error": "Invalid arguments for function",
-                "details": str(e),
-            }
-            LOGGER.error(
-                "tool_execution_failed",
-                tool_call_id=tool_call.id,
+            # Se der erro de tipo (argumentos incorretos), tentar executor genérico HTTP
+            LOGGER.info(
+                "tool_type_error_fallback_to_generic",
                 function=func_name,
-                error="type_error",
-                details=str(e),
+                error=str(e),
             )
-            return json.dumps(error_result)
+            return await self._execute_generic_http(tool_call)
 
         except Exception as e:
             error_result = {
@@ -156,11 +151,26 @@ class ToolExecutor:
             args = json.loads(tool_call.function.arguments)
 
             # Verificar se tem URL para chamar
+            url_template = args.get("url_template")
             url = args.get("base_url") or args.get("url", "")
+
+            # Rastrear quais parâmetros foram usados no template
+            used_in_template = set()
+
+            # Se tem url_template, processar placeholders
+            if url_template:
+                url = url_template
+                # Substituir placeholders {param} pelos valores
+                for key, value in args.items():
+                    if key not in ["url_template", "method", "headers", "body", "data"]:
+                        placeholder = f"{{{key}}}"
+                        if placeholder in url:
+                            url = url.replace(placeholder, str(value))
+                            used_in_template.add(key)
 
             if not url:
                 return json.dumps({
-                    "error": f"Function '{func_name}' not registered and no base_url/url provided for generic HTTP call"
+                    "error": f"Function '{func_name}' not registered and no base_url/url/url_template provided for generic HTTP call"
                 })
 
             LOGGER.info(
@@ -179,10 +189,11 @@ class ToolExecutor:
             # Body/data para POST/PUT/PATCH
             body = args.get("body") or args.get("data")
 
-            # Parâmetros adicionais viram query params
+            # Parâmetros adicionais viram query params (excluir os já usados no template)
             params = {}
+            excluded_keys = {"base_url", "url", "url_template", "method", "headers", "body", "data"} | used_in_template
             for key, value in args.items():
-                if key not in ["base_url", "url", "method", "headers", "body", "data"]:
+                if key not in excluded_keys:
                     params[key] = value
 
             async with httpx.AsyncClient(timeout=30.0) as client:
