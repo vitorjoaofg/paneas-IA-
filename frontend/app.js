@@ -730,8 +730,8 @@ async function openSession(options = {}) {
         state.streaming = true;
 
         // Captura room_id e role se fornecidos
-        const roomId = source === "mic" ? (ui.roomId.value.trim() || null) : null;
-        const role = source === "mic" ? (ui.roleSelector.value || null) : null;
+        const roomId = source === "mic" && ui.roomId ? (ui.roomId.value.trim() || null) : null;
+        const role = source === "mic" && ui.roleSelector ? (ui.roleSelector.value || null) : null;
 
         if (roomId) {
             state.roomId = roomId;
@@ -747,8 +747,8 @@ async function openSession(options = {}) {
             compute_type: "int8_float16",
             batch_window_sec: 2.0,
             max_batch_window_sec: 10.0,
-            enable_insights: ui.insightToggle.checked,
-            enable_diarization: ui.diarizationToggle.checked,
+            enable_insights: ui.insightToggle ? ui.insightToggle.checked : false,
+            enable_diarization: ui.diarizationToggle ? ui.diarizationToggle.checked : false,
             provider: "paneas",
         };
 
@@ -760,7 +760,7 @@ async function openSession(options = {}) {
             }
         }
 
-        if (ui.insightToggle.checked && ui.insightModel.value.trim()) {
+        if (ui.insightToggle && ui.insightToggle.checked && ui.insightModel && ui.insightModel.value.trim()) {
             payload.insight_model = ui.insightModel.value.trim();
         }
         ws.send(JSON.stringify(payload));
