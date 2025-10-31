@@ -234,6 +234,7 @@ services:
       - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
       - MINIO_SECURE=false
       - VOICES_DIR=/voices
+      - TTS_SAMPLE_RATE=24000
       - NVIDIA_VISIBLE_DEVICES=0
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:

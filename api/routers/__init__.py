@@ -3,6 +3,7 @@ __all__ = [
     "analytics",
     "asr",
     "asr_stream",
+    "diar",
     "health",
     "llm",
     "ocr",

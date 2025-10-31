@@ -115,6 +115,12 @@ class TTSService:
             speaker_wav=speaker_wav,
             speaker=speaker_id,
             language=payload.language,
+            temperature=0.75,
+            repetition_penalty=5.0,
+            top_k=50,
+            top_p=0.85,
+            speed=1.0,
+            enable_text_splitting=True,
         )
         audio = np.array(audio, dtype=np.float32)
         peak = np.max(np.abs(audio)) or 1.0

@@ -23,3 +23,7 @@ htmlcov/
 .eggs/
 *.egg-info/
 /srv/
+
+# Large audio files (original, non-optimized versions)
+test-data/audio/perola.wav
+test-data/audio/Guilherme.wav

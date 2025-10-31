@@ -36,6 +36,18 @@ const ui = {
     ocrFileInput: document.getElementById("ocrFileInput"),
     ocrButton: document.getElementById("ocrButton"),
     ocrResult: document.getElementById("ocrResult"),
+    diarFileInput: document.getElementById("diarFileInput"),
+    diarButton: document.getElementById("diarButton"),
+    diarResult: document.getElementById("diarResult"),
+    numSpeakers: document.getElementById("numSpeakers"),
+    ttsVoice: document.getElementById("ttsVoice"),
+    ttsText: document.getElementById("ttsText"),
+    ttsButton: document.getElementById("ttsButton"),
+    ttsResult: document.getElementById("ttsResult"),
+    ttsAudioPlayer: document.getElementById("ttsAudioPlayer"),
+    ttsMetadata: document.getElementById("ttsMetadata"),
+    ttsDownload: document.getElementById("ttsDownload"),
+    ttsStatus: document.getElementById("ttsStatus"),
 };
 
 const state = {
@@ -69,6 +81,8 @@ const state = {
     fileStreamData: null,
     fileStreamOffset: 0,
     fileStreamTimer: null,
+    currentAudioBlob: null,
+    currentAudioMetadata: null,
 };
 
 function trimTrailingSlash(url) {
@@ -1152,6 +1166,16 @@ function bindEvents() {
         ui.insightStatus.textContent = ui.insightToggle.checked ? "Habilitados" : "Desabilitados";
     });
 
+    ui.ttsButton?.addEventListener("click", async (event) => {
+        event.preventDefault();
+        await synthesizeTTS();
+    });
+
+    ui.ttsDownload?.addEventListener("click", (event) => {
+        event.preventDefault();
+        downloadTTSAudio();
+    });
+
     window.addEventListener("beforeunload", () => {
         try {
             if (state.ws && state.ws.readyState === WebSocket.OPEN) {
@@ -1197,12 +1221,217 @@ function checkPassword() {
     });
 }
 
+// Tab Switching
+function initTabs() {
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active from all
+            tabs.forEach(t => t.classList.remove('tab--active'));
+            tabContents.forEach(tc => tc.classList.remove('tab-content--active'));
+
+            // Add active to clicked
+            tab.classList.add('tab--active');
+            const targetTab = tab.dataset.tab;
+            const targetContent = document.querySelector(`[data-content="${targetTab}"]`);
+            if (targetContent) {
+                targetContent.classList.add('tab-content--active');
+            }
+        });
+    });
+}
+
+// File Name Display
+function setupFileDisplays() {
+    const fileInputs = [
+        { input: ui.asrFileInput, display: 'asrFileName' },
+        { input: ui.diarFileInput, display: 'diarFileName' },
+        { input: ui.streamFileInput, display: 'streamFileName' },
+        { input: ui.ocrFileInput, display: 'ocrFileName' },
+    ];
+
+    fileInputs.forEach(({ input, display }) => {
+        if (!input) return;
+        input.addEventListener('change', (e) => {
+            const displayEl = document.getElementById(display);
+            if (displayEl && e.target.files.length > 0) {
+                displayEl.textContent = e.target.files[0].name;
+            }
+        });
+    });
+}
+
+// Diarization
+async function handleDiarization() {
+    const file = ui.diarFileInput?.files[0];
+    if (!file) {
+        setOutput(ui.diarResult, "Nenhum arquivo selecionado.");
+        return;
+    }
+
+    const numSpeakers = ui.numSpeakers.value ? parseInt(ui.numSpeakers.value) : null;
+    setOutput(ui.diarResult, "Processando diarização...");
+    ui.diarButton.disabled = true;
+
+    try {
+        const formData = new FormData();
+        formData.append("file", file);
+        if (numSpeakers) {
+            formData.append("num_speakers", numSpeakers.toString());
+        }
+
+        const apiBase = resolveApiBase();
+        const response = await fetch(`${apiBase}/api/v1/diar`, {
+            method: "POST",
+            headers: buildAuthHeaders(),
+            body: formData,
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+
+        // Format output
+        let output = `Arquivo: ${file.name}\n`;
+        output += `Speakers detectados: ${new Set(data.segments.map(s => s.speaker)).size}\n\n`;
+        output += "Segmentos:\n";
+        output += "─".repeat(60) + "\n\n";
+
+        data.segments.forEach((seg, idx) => {
+            output += `[${seg.start.toFixed(2)}s - ${seg.end.toFixed(2)}s] ${seg.speaker}\n`;
+        });
+
+        setOutput(ui.diarResult, output);
+    } catch (err) {
+        console.error("Erro na diarização:", err);
+        setOutput(ui.diarResult, `Erro: ${err.message}`);
+    } finally {
+        ui.diarButton.disabled = false;
+    }
+}
+
+// TTS Functions
+async function synthesizeTTS() {
+    const text = ui.ttsText?.value?.trim();
+    const voice = ui.ttsVoice?.value;
+
+    if (!text) {
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Digite um texto para sintetizar.");
+        return;
+    }
+
+    if (text.length > 500) {
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Texto muito longo (máximo 500 caracteres).");
+        return;
+    }
+
+    ui.ttsButton && (ui.ttsButton.disabled = true);
+    ui.ttsButton && (ui.ttsButton.textContent = "Sintetizando...");
+    ui.ttsStatus && (ui.ttsStatus.textContent = "Gerando áudio...");
+    ui.ttsResult && (ui.ttsResult.style.display = "none");
+
+    try {
+        const base = resolveApiBase();
+        const url = `${base}/api/v1/tts`;
+
+        const payload = {
+            text: text,
+            language: "pt",
+            speaker_reference: voice,
+            format: "wav"
+        };
+
+        const headers = buildAuthHeaders({ "Content-Type": "application/json" });
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`HTTP ${response.status}: ${errorText}`);
+        }
+
+        // Captura metadados dos headers
+        const sampleRate = response.headers.get("X-Audio-Sample-Rate");
+        const duration = response.headers.get("X-Audio-Duration");
+        const requestId = response.headers.get("X-Request-ID");
+
+        // Captura o blob do áudio
+        const audioBlob = await response.blob();
+        state.currentAudioBlob = audioBlob;
+        state.currentAudioMetadata = { sampleRate, duration, requestId };
+
+        // Cria URL para o player
+        const audioUrl = URL.createObjectURL(audioBlob);
+        ui.ttsAudioPlayer.src = audioUrl;
+
+        // Mostra metadados
+        if (ui.ttsMetadata) {
+            const voiceName = voice.split('/').pop().replace('.wav', '');
+            ui.ttsMetadata.innerHTML = `
+                <small class="text-muted">
+                    Duração: ${parseFloat(duration).toFixed(2)}s |
+                    Sample Rate: ${sampleRate}Hz |
+                    Voz: ${voiceName}
+                </small>
+            `;
+        }
+
+        // Mostra resultado
+        ui.ttsResult && (ui.ttsResult.style.display = "block");
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Áudio gerado com sucesso!");
+
+    } catch (err) {
+        console.error("Erro na síntese TTS:", err);
+        ui.ttsStatus && (ui.ttsStatus.textContent = `Erro: ${err.message}`);
+    } finally {
+        ui.ttsButton && (ui.ttsButton.disabled = false);
+        ui.ttsButton && (ui.ttsButton.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
+            Sintetizar Áudio
+        `);
+    }
+}
+
+function downloadTTSAudio() {
+    if (!state.currentAudioBlob) {
+        return;
+    }
+
+    const url = URL.createObjectURL(state.currentAudioBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `tts_${Date.now()}.wav`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
 function bootstrap() {
     checkPassword();
     ensureChunkSize();
     resetSessionState();
     renderChat();
     bindEvents();
+    initTabs();
+    setupFileDisplays();
+
+    // Bind diarization
+    if (ui.diarButton) {
+        ui.diarButton.addEventListener('click', handleDiarization);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", bootstrap);
