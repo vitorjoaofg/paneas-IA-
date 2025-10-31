@@ -15,6 +15,154 @@ from services.tools import unimed_consult
 from services.tools.generic_http import age_predictor, external_api_call
 from services.tool_prompt_helper import tools_to_prompt, extract_function_call
 
+
+def _truncate_tool_result(content: str, max_length: int = 3000) -> str:
+    """
+    Trunca ou resume resultado de tool para evitar payloads muito grandes.
+
+    Args:
+        content: Conteúdo do resultado da tool
+        max_length: Tamanho máximo permitido
+
+    Returns:
+        Conteúdo truncado ou resumido
+    """
+    if len(content) <= max_length:
+        return content
+
+    # Tentar parsear como JSON e extrair campos importantes
+    try:
+        data = json.loads(content)
+
+        # Se tem estrutura de sucesso/dados, criar resumo
+        if isinstance(data, dict):
+            summary = {}
+
+            # Campos de controle
+            if "success" in data:
+                summary["success"] = data["success"]
+            if "sucesso" in data:
+                summary["sucesso"] = data["sucesso"]
+            if "status_code" in data:
+                summary["status_code"] = data["status_code"]
+            if "error" in data:
+                summary["error"] = data["error"]
+
+            # Se tem dados, extrair apenas campos-chave
+            if "dados" in data and isinstance(data["dados"], dict):
+                dados = data["dados"]
+                summary["dados"] = {}
+
+                # Protocolo
+                if "protocolo" in dados:
+                    summary["dados"]["protocolo"] = dados["protocolo"]
+
+                # Beneficiário - apenas campos principais
+                if "beneficiario" in dados and isinstance(dados["beneficiario"], dict):
+                    benef = dados["beneficiario"]
+                    summary["dados"]["beneficiario"] = {
+                        "nome_beneficiario": benef.get("nome_beneficiario", ""),
+                        "cpf": benef.get("cpf", ""),
+                        "nrCarteira": benef.get("nrCarteira", ""),
+                        "pagador": benef.get("pagador", ""),
+                    }
+
+                # Contratos - resumo
+                if "contratos" in dados and isinstance(dados["contratos"], dict):
+                    contratos = dados["contratos"]
+                    summary["dados"]["contratos"] = {
+                        "cod_dependencia": contratos.get("cod_dependencia", ""),
+                        "qtdDependentes": contratos.get("qtdDependentes", 0),
+                    }
+
+                    # Carteira
+                    if "carteira" in contratos:
+                        summary["dados"]["contratos"]["carteira"] = contratos["carteira"]
+
+                    # Produto - apenas alguns campos
+                    if "produto" in contratos and isinstance(contratos["produto"], dict):
+                        prod = contratos["produto"]
+                        summary["dados"]["contratos"]["produto"] = {
+                            "descricao": prod.get("descricao", ""),
+                            "codProduto": prod.get("codProduto", ""),
+                        }
+
+                    # Valores - apenas campos principais
+                    if "valores" in contratos and isinstance(contratos["valores"], dict):
+                        vals = contratos["valores"]
+                        summary["dados"]["contratos"]["valores"] = {
+                            "valorMensalidade": vals.get("valorMensalidade", 0),
+                            "totalDebito": vals.get("totalDebito", 0),
+                        }
+
+            elif "data" in data:
+                # Outra estrutura de dados
+                if isinstance(data["data"], dict) and len(str(data["data"])) > max_length:
+                    summary["data"] = "[Dados truncados - objeto muito grande]"
+                    summary["data_keys"] = list(data["data"].keys()) if isinstance(data["data"], dict) else []
+                else:
+                    summary["data"] = data["data"]
+
+            result = json.dumps(summary, ensure_ascii=False, indent=2)
+
+            # Se ainda for muito grande, truncar
+            if len(result) > max_length:
+                result = result[:max_length] + "\n... [truncado por tamanho]"
+
+            return result
+
+    except (json.JSONDecodeError, Exception):
+        # Se não for JSON válido, apenas truncar
+        pass
+
+    # Truncamento simples
+    return content[:max_length] + "\n... [truncado - resposta muito grande]"
+
+
+def normalize_messages_for_llm(raw_messages):
+    """Converte mensagens possivelmente com tool_calls em formato aceito pelo vLLM."""
+    LOGGER = structlog.get_logger(__name__)
+    LOGGER.info("DEBUG normalize: Starting", message_count=len(raw_messages))
+
+    normalized = []
+    for idx, msg in enumerate(raw_messages):
+        msg_dict = msg.model_dump() if hasattr(msg, "model_dump") else dict(msg)
+        role = msg_dict.get("role", "user")
+        content = msg_dict.get("content")
+
+        LOGGER.info(f"DEBUG normalize: Processing message {idx}", role=role, has_content=content is not None)
+
+        if role == "tool":
+            tool_name = msg_dict.get("name") or "tool"
+            tool_call_id = msg_dict.get("tool_call_id") or ""
+            payload = msg_dict.get("content", "") or ""
+
+            LOGGER.info("DEBUG normalize: Converting tool to user", tool_name=tool_name)
+
+            # CORRIGIDO: Truncar payload grande para evitar erro 400
+            payload = _truncate_tool_result(payload)
+
+            hint = "Agora responda ao usuário original de forma completa e útil com base neste resultado."
+            prefix = f"Resultado da função {tool_name}"
+            if tool_call_id and tool_call_id not in prefix:
+                prefix += f" (execução {tool_call_id})"
+            normalized.append({
+                "role": "user",
+                "content": f"{prefix}:\n{payload}\n\n{hint}"
+            })
+            continue
+
+        # Se assistant não tem content, pular a mensagem
+        if role == "assistant" and not content:
+            LOGGER.info("DEBUG normalize: Skipping assistant without content")
+            continue
+
+        message = {"role": role, "content": content or ""}
+        normalized.append(message)
+
+    LOGGER.info("DEBUG normalize: Done", original_count=len(raw_messages), normalized_count=len(normalized))
+    return normalized
+
 LOGGER = structlog.get_logger(__name__)
 
 router = APIRouter(prefix="/api/v1", tags=["llm"])
@@ -73,11 +221,13 @@ async def create_chat_completion(payload: ChatRequest):
     }
 
     start = time.perf_counter()
+    raw_payload = payload.model_dump(exclude_none=True, exclude_unset=True)
+    normalized_messages = normalize_messages_for_llm(raw_payload.get("messages", []))
 
     # Se streaming sem tools, usar fluxo antigo
     if payload.stream and not has_tools:
         LOGGER.info("DEBUG: Using streaming flow")
-        upstream_payload = payload.model_dump(exclude_none=True, exclude_unset=True)
+        upstream_payload = dict(raw_payload)
         upstream_payload["stream"] = True
 
         # Remove fields not supported by vLLM
@@ -86,15 +236,11 @@ async def create_chat_completion(payload: ChatRequest):
         upstream_payload.pop("provider", None)
         upstream_payload.pop("quality_priority", None)
 
-        # Clean up messages to remove None fields
-        if "messages" in upstream_payload:
-            clean_messages = []
-            for msg in upstream_payload["messages"]:
-                clean_msg = {"role": msg["role"]}
-                if "content" in msg and msg["content"] is not None:
-                    clean_msg["content"] = msg["content"]
-                clean_messages.append(clean_msg)
-            upstream_payload["messages"] = clean_messages
+        upstream_payload["messages"] = normalized_messages
+        LOGGER.info(
+            "DEBUG: Normalized messages for simple flow",
+            roles=[msg.get("role") for msg in upstream_payload["messages"]],
+        )
 
         async def event_iterator():
             async for chunk in chat_completion_stream(
@@ -117,7 +263,7 @@ async def create_chat_completion(payload: ChatRequest):
     # Se não tem tools, usar fluxo simples (uma única chamada)
     if not has_tools:
         LOGGER.info("DEBUG: Simple completion without tools")
-        upstream_payload = payload.model_dump(exclude_none=True, exclude_unset=True)
+        upstream_payload = dict(raw_payload)
         upstream_payload.pop("stream", None)
 
         # Remove tools from payload if present but empty
@@ -127,15 +273,11 @@ async def create_chat_completion(payload: ChatRequest):
         upstream_payload.pop("provider", None)
         upstream_payload.pop("quality_priority", None)
 
-        # Clean up messages to remove None fields
-        if "messages" in upstream_payload:
-            clean_messages = []
-            for msg in upstream_payload["messages"]:
-                clean_msg = {"role": msg["role"]}
-                if "content" in msg and msg["content"] is not None:
-                    clean_msg["content"] = msg["content"]
-                clean_messages.append(clean_msg)
-            upstream_payload["messages"] = clean_messages
+        upstream_payload["messages"] = normalized_messages
+        LOGGER.info(
+            "DEBUG: Normalized messages for simple flow",
+            roles=[msg.get("role") for msg in upstream_payload["messages"]],
+        )
 
         LOGGER.info("DEBUG: Calling LLM", payload_keys=list(upstream_payload.keys()))
 
@@ -191,13 +333,31 @@ async def create_chat_completion(payload: ChatRequest):
 
     for msg in payload.messages:
         msg_dict = msg.model_dump()
-        if msg_dict["role"] == "system" and not system_injected:
+        role = msg_dict["role"]
+
+        if role == "system" and not system_injected:
             combined_content = (msg_dict.get("content") or "") + "\n\n" + tools_prompt
             messages.append({"role": "system", "content": combined_content})
             system_injected = True
+        elif role == "tool":
+            tool_name = msg_dict.get("name") or "tool"
+            tool_call_id = msg_dict.get("tool_call_id") or ""
+            tool_content = msg_dict.get("content", "")
+
+            # CORRIGIDO: Truncar payload grande para evitar erro 400
+            tool_content = _truncate_tool_result(tool_content)
+
+            hint = "Agora responda ao usuário original de forma completa e útil com base neste resultado."
+            prefix = f"Resultado da função {tool_name}"
+            if tool_call_id and tool_call_id not in tool_name:
+                prefix += f" (execução {tool_call_id})"
+            messages.append({
+                "role": "user",
+                "content": f"{prefix}:\n{tool_content}\n\n{hint}"
+            })
         else:
             messages.append({
-                "role": msg_dict["role"],
+                "role": role,
                 "content": msg_dict.get("content", "")
             })
 
@@ -407,10 +567,13 @@ async def create_chat_completion(payload: ChatRequest):
             result_preview=tool_result[:200] if tool_result else None,
         )
 
+        # CORRIGIDO: Truncar resultado grande antes de adicionar às mensagens
+        tool_result_truncated = _truncate_tool_result(tool_result)
+
         # Adicionar resultado como mensagem do usuário
         messages.append({
             "role": "user",
-            "content": f"Resultado da função {function_call_data['name']}:\n{tool_result}\n\nAgora responda ao usuário original de forma completa e útil com base neste resultado."
+            "content": f"Resultado da função {function_call_data['name']}:\n{tool_result_truncated}\n\nAgora responda ao usuário original de forma completa e útil com base neste resultado."
         })
 
         # Continuar loop para fazer nova chamada ao LLM

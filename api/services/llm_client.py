@@ -81,14 +81,36 @@ async def chat_completion(
         if "messages" in request_payload:
             clean_messages = []
             for msg in request_payload["messages"]:
-                clean_msg = {"role": msg["role"]}
+                # Skip tool messages and messages with empty role
+                role = msg.get("role", "")
+                if role == "tool":
+                    LOGGER.info("DEBUG: Skipping tool message", tool_name=msg.get("name", "unknown"))
+                    continue
+
+                clean_msg = {"role": role}
+
+                # CORRIGIDO: Garantir que sempre tem content, mesmo que vazio
+                # vLLM não aceita mensagens assistant sem content
                 if "content" in msg and msg["content"] is not None:
                     clean_msg["content"] = msg["content"]
+                elif role in ["assistant", "user"]:
+                    # Se assistant ou user não tem content, adicionar string vazia
+                    clean_msg["content"] = ""
+                    LOGGER.info("DEBUG: Adding empty content", role=role)
+                else:
+                    clean_msg["content"] = msg.get("content", "")
+
                 # Only add optional fields if they exist and are not None
                 if msg.get("name"):
                     clean_msg["name"] = msg["name"]
+
                 clean_messages.append(clean_msg)
             request_payload["messages"] = clean_messages
+
+            LOGGER.info("DEBUG: Cleaned messages",
+                        original_count=len(payload.get("messages", [])),
+                        cleaned_count=len(clean_messages),
+                        roles=[m.get("role") for m in clean_messages])
 
         client = await get_http_client()
         endpoint = resolve_endpoint(current_target)
@@ -165,12 +187,26 @@ async def chat_completion_stream(
         if "messages" in request_payload:
             clean_messages = []
             for msg in request_payload["messages"]:
+                # Skip tool messages and messages with empty role
+                if msg["role"] == "tool":
+                    continue
+
                 clean_msg = {"role": msg["role"]}
+
+                # CORRIGIDO: Garantir que sempre tem content, mesmo que vazio
+                # vLLM não aceita mensagens assistant sem content
                 if "content" in msg and msg["content"] is not None:
                     clean_msg["content"] = msg["content"]
+                elif msg["role"] in ["assistant", "user"]:
+                    # Se assistant ou user não tem content, adicionar string vazia
+                    clean_msg["content"] = ""
+                else:
+                    clean_msg["content"] = msg.get("content", "")
+
                 # Only add optional fields if they exist and are not None
                 if msg.get("name"):
                     clean_msg["name"] = msg["name"]
+
                 clean_messages.append(clean_msg)
             request_payload["messages"] = clean_messages
 

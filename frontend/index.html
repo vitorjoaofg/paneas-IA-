@@ -53,6 +53,10 @@
                 <input id="chunkSize" type="number" min="200" max="2000" step="100" value="300" />
             </div>
             <div class="controls__group controls__toggle">
+                <label for="diarizationToggle">Ativar diarização</label>
+                <input id="diarizationToggle" type="checkbox" />
+            </div>
+            <div class="controls__group controls__toggle">
                 <label for="insightToggle">Insights em tempo real</label>
                 <input id="insightToggle" type="checkbox" checked />
             </div>
@@ -122,6 +126,44 @@
                         <button type="submit" class="btn btn--primary" id="sendChat">Enviar</button>
                     </div>
                 </form>
+            </article>
+        </section>
+
+        <section class="grid grid--uploads">
+            <article class="card">
+                <header class="card__header">
+                    <h2>Transcrição por arquivo</h2>
+                </header>
+                <div class="uploader">
+                    <label class="uploader__label" for="asrFileInput">Selecione um áudio (WAV/MP3)</label>
+                    <input type="file" id="asrFileInput" accept="audio/*" />
+                    <button class="btn btn--primary" id="asrUploadButton">Transcrever áudio</button>
+                    <pre class="output" id="asrResult">Aguardando arquivo.</pre>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card__header">
+                    <h2>Streaming de arquivo (ASR)</h2>
+                </header>
+                <div class="uploader">
+                    <label class="uploader__label" for="streamFileInput">Selecione um áudio para simular streaming</label>
+                    <input type="file" id="streamFileInput" accept="audio/*" />
+                    <button class="btn" id="streamFileButton">Enviar por streaming</button>
+                    <div class="status-text" id="streamStatus">Aguardando arquivo.</div>
+                </div>
+            </article>
+
+            <article class="card">
+                <header class="card__header">
+                    <h2>OCR</h2>
+                </header>
+                <div class="uploader">
+                    <label class="uploader__label" for="ocrFileInput">Selecione uma imagem ou PDF</label>
+                    <input type="file" id="ocrFileInput" accept="image/*,application/pdf" />
+                    <button class="btn" id="ocrButton">Executar OCR</button>
+                    <pre class="output" id="ocrResult">Aguardando arquivo.</pre>
+                </div>
             </article>
         </section>
     </main>

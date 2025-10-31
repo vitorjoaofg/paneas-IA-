@@ -14,6 +14,7 @@ const ui = {
     apiBase: document.getElementById("apiBase"),
     authToken: document.getElementById("authToken"),
     chunkSize: document.getElementById("chunkSize"),
+    diarizationToggle: document.getElementById("diarizationToggle"),
     insightToggle: document.getElementById("insightToggle"),
     insightModel: document.getElementById("insightModel"),
     chatLog: document.getElementById("chatLog"),
@@ -26,6 +27,15 @@ const ui = {
     roomId: document.getElementById("roomId"),
     roleSelector: document.getElementById("roleSelector"),
     roomStatus: document.getElementById("roomStatus"),
+    asrFileInput: document.getElementById("asrFileInput"),
+    asrUploadButton: document.getElementById("asrUploadButton"),
+    asrResult: document.getElementById("asrResult"),
+    streamFileInput: document.getElementById("streamFileInput"),
+    streamFileButton: document.getElementById("streamFileButton"),
+    streamStatus: document.getElementById("streamStatus"),
+    ocrFileInput: document.getElementById("ocrFileInput"),
+    ocrButton: document.getElementById("ocrButton"),
+    ocrResult: document.getElementById("ocrResult"),
 };
 
 const state = {
@@ -54,10 +64,47 @@ const state = {
     roomId: null,
     role: null,
     roomStatus: null,
+    streamSource: "mic",
+    useFileStream: false,
+    fileStreamData: null,
+    fileStreamOffset: 0,
+    fileStreamTimer: null,
 };
 
 function trimTrailingSlash(url) {
     return url.replace(/\/$/, "");
+}
+
+function resolveApiBase() {
+    let base = ui.apiBase.value.trim();
+    if (!base) {
+        base = window.location.origin;
+    }
+    return trimTrailingSlash(base);
+}
+
+function buildAuthHeaders(extra = {}) {
+    const headers = { ...extra };
+    const token = ui.authToken.value.trim();
+    if (token) {
+        headers.Authorization = `Bearer ${token}`;
+    }
+    return headers;
+}
+
+function setOutput(element, content) {
+    if (!element) {
+        return;
+    }
+    element.textContent = content;
+}
+
+function prettyPrintJson(data) {
+    try {
+        return JSON.stringify(data, null, 2);
+    } catch (err) {
+        return String(data);
+    }
 }
 
 function setStatus(message, tone = "idle") {
@@ -315,7 +362,55 @@ function flushChunks(force = false) {
     }
 }
 
+function sendNextFileChunk() {
+    if (!state.useFileStream || !state.ws || state.ws.readyState !== WebSocket.OPEN) {
+        return;
+    }
+
+    const total = state.fileStreamData ? state.fileStreamData.length : 0;
+    if (!total || state.fileStreamOffset >= total) {
+        if (!state.awaitingStopAck) {
+            state.awaitingStopAck = true;
+            try {
+                state.ws.send(JSON.stringify({ event: "stop" }));
+                ui.streamStatus && (ui.streamStatus.textContent = "Arquivo enviado. Aguardando processamento...");
+            } catch (err) {
+                console.warn("Falha ao enviar stop apos arquivo", err);
+            }
+        }
+        return;
+    }
+
+    const chunkSamples = state.chunkSamples;
+    const end = Math.min(state.fileStreamOffset + chunkSamples, total);
+    const chunk = state.fileStreamData.slice(state.fileStreamOffset, end);
+    state.fileStreamOffset = end;
+
+    try {
+        state.ws.send(JSON.stringify({ event: "audio", chunk: chunkToBase64(chunk) }));
+        state.audioSeconds += chunk.length / state.targetSampleRate;
+        updateStats();
+    } catch (err) {
+        console.error("Falha ao enviar chunk de arquivo", err);
+        setStatus("Falha ao transmitir áudio do arquivo.", "error");
+        return;
+    }
+
+    const remaining = total - state.fileStreamOffset;
+    if (remaining <= 0) {
+        state.fileStreamTimer = setTimeout(sendNextFileChunk, 10);
+        return;
+    }
+
+    const delayMs = Math.max(Math.round((chunk.length / state.targetSampleRate) * 1000), 20);
+    state.fileStreamTimer = setTimeout(sendNextFileChunk, delayMs);
+}
+
 function resetSessionState() {
+    if (state.fileStreamTimer) {
+        clearTimeout(state.fileStreamTimer);
+        state.fileStreamTimer = null;
+    }
     state.sessionId = null;
     state.sessionStarted = false;
     state.streaming = false;
@@ -328,6 +423,10 @@ function resetSessionState() {
     state.insights = [];
     state.aggregatedTranscript = "";
     state.previousTranscript = "";
+    state.streamSource = "mic";
+    state.useFileStream = false;
+    state.fileStreamData = null;
+    state.fileStreamOffset = 0;
     updateStats();
     renderTranscript();
     renderTimeline();
@@ -395,13 +494,31 @@ function closeWebSocket() {
 }
 
 function cleanupSession(message = "Sessao finalizada.") {
+    if (state.fileStreamTimer) {
+        clearTimeout(state.fileStreamTimer);
+        state.fileStreamTimer = null;
+    }
+    const wasFileStream = state.streamSource === "file";
+
     state.streaming = false;
     state.sessionStarted = false;
     stopAudio();
     closeWebSocket();
+
     ui.startButton.disabled = false;
     ui.stopButton.disabled = true;
     ui.listeningIndicator.classList.add("hidden");
+
+    if (wasFileStream && ui.streamFileButton) {
+        ui.streamFileButton.disabled = false;
+        ui.streamStatus && (ui.streamStatus.textContent = message);
+    }
+
+    state.useFileStream = false;
+    state.fileStreamData = null;
+    state.fileStreamOffset = 0;
+    state.streamSource = "mic";
+
     setStatus(message, "idle");
 }
 
@@ -414,12 +531,7 @@ function ensureChunkSize() {
 
 function resolveWsUrl() {
     // Auto-detecta a URL base se não estiver configurada
-    let base = ui.apiBase.value.trim();
-    if (!base) {
-        base = window.location.origin;
-    }
-    base = trimTrailingSlash(base);
-
+    const base = resolveApiBase();
     const token = ui.authToken.value.trim();
 
     // Se a página está em HTTPS, force WSS. Se HTTP, force WS.
@@ -458,8 +570,14 @@ function handleWsMessage(event) {
             state.streaming = true;
             state.insightsRequested = Boolean(payload.insights_enabled);
             ui.insightStatus.textContent = state.insightsRequested ? "Habilitados" : "Desabilitados";
-            setStatus("Capturando audio e enviando para o ASR.", "streaming");
-            flushChunks();
+            if (state.streamSource === "file") {
+                setStatus("Transmitindo arquivo para o ASR.", "streaming");
+                ui.streamStatus && (ui.streamStatus.textContent = "Enviando áudio do arquivo...");
+                sendNextFileChunk();
+            } else {
+                setStatus("Capturando audio e enviando para o ASR.", "streaming");
+                flushChunks();
+            }
             break;
         }
         case "room_joined": {
@@ -490,6 +608,10 @@ function handleWsMessage(event) {
                     text: payload.text,
                 });
             }
+            if (state.streamSource === "file" && ui.streamStatus) {
+                const batchLabel = payload.batch_index != null ? `#${payload.batch_index}` : "";
+                ui.streamStatus.textContent = `Lote ${batchLabel} processado (${(payload.duration_sec || 0).toFixed(1)}s).`;
+            }
             renderTranscript();
             renderTimeline();
             updateStats();
@@ -518,13 +640,17 @@ function handleWsMessage(event) {
             if (stats.transcript) {
                 state.aggregatedTranscript = stats.transcript;
             }
+            if (state.streamSource === "file" && ui.streamStatus) {
+                ui.streamStatus.textContent = "Processamento concluído. Gerando resumo final...";
+            }
             renderTranscript();
             updateStats();
             break;
         }
         case "session_ended": {
             const message = state.awaitingStopAck ? "Sessao encerrada pelo cliente." : "Sessao encerrada pelo servidor.";
-            cleanupSession(message);
+            const finalMessage = state.streamSource === "file" ? "Streaming finalizado." : message;
+            cleanupSession(finalMessage);
             break;
         }
         case "error": {
@@ -539,21 +665,42 @@ function handleWsMessage(event) {
     }
 }
 
-async function openSession() {
+async function openSession(options = {}) {
     if (state.ws) {
         return;
     }
+    const source = options.source || "mic";
     ensureChunkSize();
     resetSessionState();
+    state.streamSource = source;
+
+    if (source === "file") {
+        state.useFileStream = true;
+        state.fileStreamData = options.pcm16 || null;
+        state.fileStreamOffset = 0;
+        ui.streamStatus && (ui.streamStatus.textContent = state.fileStreamData && state.fileStreamData.length
+            ? "Arquivo preparado. Conectando ao gateway..."
+            : "Arquivo inválido para streaming.");
+        if (!state.fileStreamData || !state.fileStreamData.length) {
+            setStatus("Arquivo inválido para streaming.", "error");
+            state.useFileStream = false;
+            return;
+        }
+    }
+
     setStatus("Conectando ao gateway...", "connecting");
 
-    try {
-        await setupAudio();
-    } catch (err) {
-        console.error("Permissao de microfone negada", err);
-        setStatus("Permissao de microfone negada ou indisponivel.", "error");
+    if (source === "mic") {
+        try {
+            await setupAudio();
+        } catch (err) {
+            console.error("Permissao de microfone negada", err);
+            setStatus("Permissao de microfone negada ou indisponivel.", "error");
+            stopAudio();
+            return;
+        }
+    } else {
         stopAudio();
-        return;
     }
 
     const url = resolveWsUrl();
@@ -561,14 +708,16 @@ async function openSession() {
     state.ws = ws;
 
     ws.onopen = () => {
-        ui.startButton.disabled = true;
+        if (source === "mic") {
+            ui.startButton.disabled = true;
+            ui.listeningIndicator.classList.remove("hidden");
+        }
         ui.stopButton.disabled = false;
-        ui.listeningIndicator.classList.remove("hidden");
         state.streaming = true;
 
         // Captura room_id e role se fornecidos
-        const roomId = ui.roomId.value.trim() || null;
-        const role = ui.roleSelector.value || null;
+        const roomId = source === "mic" ? (ui.roomId.value.trim() || null) : null;
+        const role = source === "mic" ? (ui.roleSelector.value || null) : null;
 
         if (roomId) {
             state.roomId = roomId;
@@ -585,6 +734,7 @@ async function openSession() {
             batch_window_sec: 2.0,
             max_batch_window_sec: 10.0,
             enable_insights: ui.insightToggle.checked,
+            enable_diarization: ui.diarizationToggle.checked,
             provider: "paneas",
         };
 
@@ -600,6 +750,10 @@ async function openSession() {
             payload.insight_model = ui.insightModel.value.trim();
         }
         ws.send(JSON.stringify(payload));
+
+        if (source === "file" && ui.streamStatus) {
+            ui.streamStatus.textContent = "Sessão iniciada. Enviando áudio...";
+        }
     };
 
     ws.onmessage = handleWsMessage;
@@ -622,7 +776,15 @@ function stopSession() {
     }
     state.awaitingStopAck = true;
     state.streaming = false;
-    flushChunks(true);
+    if (state.useFileStream) {
+        if (state.fileStreamTimer) {
+            clearTimeout(state.fileStreamTimer);
+            state.fileStreamTimer = null;
+        }
+        ui.streamStatus && (ui.streamStatus.textContent = "Envio interrompido. Aguardando encerramento...");
+    } else {
+        flushChunks(true);
+    }
     try {
         state.ws.send(JSON.stringify({ event: "stop" }));
     } catch (err) {
@@ -637,14 +799,7 @@ async function sendChatMessage(text) {
     if (!content) {
         return;
     }
-    // Auto-detecta a URL base se não estiver configurada
-    let base = ui.apiBase.value.trim();
-    if (!base) {
-        base = window.location.origin;
-    }
-    base = trimTrailingSlash(base);
-
-    const token = ui.authToken.value.trim();
+    const base = resolveApiBase();
     const url = `${base}/api/v1/chat/completions`;
 
     state.chatHistory.push({ role: "user", content });
@@ -662,12 +817,7 @@ async function sendChatMessage(text) {
         stream: true,
     };
 
-    const headers = {
-        "Content-Type": "application/json",
-    };
-    if (token) {
-        headers.Authorization = `Bearer ${token}`;
-    }
+    const headers = buildAuthHeaders({ "Content-Type": "application/json" });
 
     // Adiciona mensagem do assistente vazia que será preenchida gradualmente
     const assistantMessageIndex = state.chatHistory.length;
@@ -739,6 +889,153 @@ async function sendChatMessage(text) {
     }
 }
 
+async function transcribeUploadedAudio() {
+    if (!ui.asrResult) {
+        return;
+    }
+    const file = ui.asrFileInput?.files?.[0];
+    if (!file) {
+        setOutput(ui.asrResult, "Selecione um arquivo de áudio para transcrever.");
+        return;
+    }
+
+    setOutput(ui.asrResult, "Enviando áudio para transcrição...");
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("language", "pt");
+    if (ui.diarizationToggle?.checked) {
+        formData.append("enable_diarization", "true");
+    }
+
+    const base = resolveApiBase();
+    const url = `${base}/api/v1/asr`;
+
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: buildAuthHeaders(),
+            body: formData,
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            setOutput(ui.asrResult, `Erro ${response.status}: ${errorText || "Falha ao processar a transcrição."}`);
+            return;
+        }
+
+        const data = await response.json();
+        setOutput(ui.asrResult, prettyPrintJson(data));
+    } catch (err) {
+        console.error("Falha na transcrição por arquivo", err);
+        setOutput(ui.asrResult, `Erro: ${err.message || err}`);
+    }
+}
+
+async function runOcr() {
+    if (!ui.ocrResult) {
+        return;
+    }
+    const file = ui.ocrFileInput?.files?.[0];
+    if (!file) {
+        setOutput(ui.ocrResult, "Selecione uma imagem ou PDF para processar.");
+        return;
+    }
+
+    setOutput(ui.ocrResult, "Enviando arquivo para OCR...");
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("languages", "pt");
+    formData.append("output_format", "json");
+
+    const base = resolveApiBase();
+    const url = `${base}/api/v1/ocr`;
+
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: buildAuthHeaders(),
+            body: formData,
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            setOutput(ui.ocrResult, `Erro ${response.status}: ${errorText || "Falha ao processar o OCR."}`);
+            return;
+        }
+
+        const data = await response.json();
+        setOutput(ui.ocrResult, prettyPrintJson(data));
+    } catch (err) {
+        console.error("Falha no OCR", err);
+        setOutput(ui.ocrResult, `Erro: ${err.message || err}`);
+    }
+}
+
+async function decodeAudioFileToPCM16(file) {
+    const arrayBuffer = await file.arrayBuffer();
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    const audioContext = new AudioCtx();
+    try {
+        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer.slice(0));
+        const { numberOfChannels, length, sampleRate } = audioBuffer;
+        if (!length) {
+            return new Int16Array(0);
+        }
+        const combined = new Float32Array(length);
+        const channels = Math.max(1, numberOfChannels);
+        for (let channel = 0; channel < channels; channel += 1) {
+            const channelData = audioBuffer.getChannelData(channel);
+            for (let i = 0; i < length; i += 1) {
+                combined[i] += channelData[i];
+            }
+        }
+        for (let i = 0; i < length; i += 1) {
+            combined[i] /= channels;
+        }
+
+        const resampled = downsampleBuffer(combined, sampleRate, state.targetSampleRate);
+        return floatTo16BitPCM(resampled);
+    } finally {
+        await audioContext.close().catch(() => undefined);
+    }
+}
+
+async function streamAudioFile() {
+    if (!ui.streamStatus) {
+        return;
+    }
+    const file = ui.streamFileInput?.files?.[0];
+    if (!file) {
+        ui.streamStatus.textContent = "Selecione um arquivo de áudio para streaming.";
+        return;
+    }
+
+    ui.streamFileButton && (ui.streamFileButton.disabled = true);
+    ui.streamStatus.textContent = "Convertendo áudio...";
+
+    try {
+        const pcm16 = await decodeAudioFileToPCM16(file);
+        if (!pcm16.length) {
+            ui.streamStatus.textContent = "Não foi possível extrair áudio deste arquivo.";
+            ui.streamFileButton && (ui.streamFileButton.disabled = false);
+            return;
+        }
+        await openSession({ source: "file", pcm16 });
+        if (!state.ws) {
+            ui.streamFileButton && (ui.streamFileButton.disabled = false);
+        }
+    } catch (err) {
+        console.error("Falha ao preparar streaming do arquivo", err);
+        ui.streamStatus.textContent = `Erro: ${err.message || err}`;
+        ui.streamFileButton && (ui.streamFileButton.disabled = false);
+        state.useFileStream = false;
+        state.fileStreamData = null;
+        state.fileStreamOffset = 0;
+    }
+}
+
 function clearChat() {
     state.chatHistory = [];
     renderChat();
@@ -762,6 +1059,54 @@ function bindEvents() {
     ui.chatClear.addEventListener("click", (event) => {
         event.preventDefault();
         clearChat();
+    });
+
+    ui.asrUploadButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        transcribeUploadedAudio();
+    });
+
+    ui.asrFileInput?.addEventListener("change", () => {
+        if (!ui.asrResult) {
+            return;
+        }
+        if (ui.asrFileInput.files && ui.asrFileInput.files.length) {
+            setOutput(ui.asrResult, `Arquivo selecionado: ${ui.asrFileInput.files[0].name}`);
+        } else {
+            setOutput(ui.asrResult, "Aguardando arquivo.");
+        }
+    });
+
+    ui.streamFileButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        streamAudioFile();
+    });
+
+    ui.streamFileInput?.addEventListener("change", () => {
+        if (!ui.streamStatus) {
+            return;
+        }
+        if (ui.streamFileInput.files && ui.streamFileInput.files.length) {
+            ui.streamStatus.textContent = `Arquivo selecionado: ${ui.streamFileInput.files[0].name}`;
+        } else {
+            ui.streamStatus.textContent = "Aguardando arquivo.";
+        }
+    });
+
+    ui.ocrButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        runOcr();
+    });
+
+    ui.ocrFileInput?.addEventListener("change", () => {
+        if (!ui.ocrResult) {
+            return;
+        }
+        if (ui.ocrFileInput.files && ui.ocrFileInput.files.length) {
+            setOutput(ui.ocrResult, `Arquivo selecionado: ${ui.ocrFileInput.files[0].name}`);
+        } else {
+            setOutput(ui.ocrResult, "Aguardando arquivo.");
+        }
     });
 
     ui.insightToggle.addEventListener("change", () => {
