@@ -10,7 +10,7 @@ from middleware.auth import AuthMiddleware
 from middleware.logging import LoggingMiddleware
 from middleware.rate_limit import RateLimitMiddleware
 from middleware.request_id import RequestIDMiddleware
-from routers import align, analytics, asr, asr_stream, diar, health, llm, ocr, tts
+from routers import align, analytics, asr, asr_stream, diar, health, llm, ocr, scrapper, tts
 from services.http_client import close_http_client
 from services.redis_client import close_redis
 from services.insight_manager import insight_manager
@@ -61,6 +61,7 @@ app.include_router(diar.router)
 app.include_router(tts.router)
 app.include_router(llm.router)
 app.include_router(analytics.router)
+app.include_router(scrapper.router)
 
 # Serve frontend static files
 frontend_path = Path(__file__).parent / "frontend"

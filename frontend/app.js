@@ -58,6 +58,16 @@ const ui = {
     ttsStreamStop: document.getElementById("ttsStreamStop"),
     streamingStatusText: document.getElementById("streamingStatusText"),
     streamingText: document.getElementById("streamingText"),
+    scrapperConsultaForm: document.getElementById("scrapperConsultaForm"),
+    scrapperConsultaSubmit: document.getElementById("scrapperConsultaSubmit"),
+    scrapperConsultaReset: document.getElementById("scrapperConsultaReset"),
+    scrapperConsultaResult: document.getElementById("scrapperConsultaResult"),
+    scrapperListForm: document.getElementById("scrapperListForm"),
+    scrapperListSubmit: document.getElementById("scrapperListSubmit"),
+    scrapperListReset: document.getElementById("scrapperListReset"),
+    scrapperListResult: document.getElementById("scrapperListResult"),
+    scrapperToolsButton: document.getElementById("scrapperToolsButton"),
+    scrapperToolsResult: document.getElementById("scrapperToolsResult"),
 };
 
 const state = {
@@ -205,6 +215,162 @@ function prettyPrintJson(data) {
         return JSON.stringify(data, null, 2);
     } catch (err) {
         return String(data);
+    }
+}
+
+function collectScrapperPayload(form, numericFields = []) {
+    if (!form) {
+        return {};
+    }
+    const numericSet = new Set(numericFields);
+    const formData = new FormData(form);
+    const payload = {};
+
+    formData.forEach((value, key) => {
+        if (typeof value !== "string") {
+            return;
+        }
+        const trimmed = value.trim();
+        if (!trimmed) {
+            return;
+        }
+
+        if (numericSet.has(key)) {
+            const parsed = parseInt(trimmed, 10);
+            if (!Number.isNaN(parsed)) {
+                payload[key] = parsed;
+            }
+            return;
+        }
+
+        payload[key] = trimmed;
+    });
+
+    return payload;
+}
+
+function resetScrapperForm(form, resultElement, placeholder) {
+    form?.reset();
+    if (placeholder && resultElement) {
+        setOutput(resultElement, placeholder);
+    }
+}
+
+async function callScrapperEndpoint(path, { method = "GET", payload = null } = {}) {
+    const base = resolveApiBase();
+    const url = `${base}/api/v1/scrapper/${path}`;
+    const headers = payload
+        ? buildAuthHeaders({ "Content-Type": "application/json" })
+        : buildAuthHeaders();
+
+    const response = await fetch(url, {
+        method,
+        headers,
+        body: payload ? JSON.stringify(payload) : undefined,
+    });
+
+    if (!response.ok) {
+        const errorText = await response.text().catch(() => "");
+        const message = errorText || `HTTP ${response.status}: ${response.statusText}`;
+        throw new Error(message);
+    }
+
+    return response.json();
+}
+
+async function submitScrapperConsulta() {
+    if (!ui.scrapperConsultaResult || !ui.scrapperConsultaForm) {
+        return;
+    }
+
+    const payload = collectScrapperPayload(ui.scrapperConsultaForm);
+    if (Object.keys(payload).length === 0) {
+        setOutput(ui.scrapperConsultaResult, "Informe pelo menos um critério de busca.");
+        return;
+    }
+
+    setOutput(ui.scrapperConsultaResult, "Consultando processo...");
+    const originalLabel = ui.scrapperConsultaSubmit?.textContent;
+    if (ui.scrapperConsultaSubmit) {
+        ui.scrapperConsultaSubmit.disabled = true;
+        ui.scrapperConsultaSubmit.textContent = "Consultando...";
+    }
+
+    try {
+        const data = await callScrapperEndpoint("processos/consulta", {
+            method: "POST",
+            payload,
+        });
+        setOutput(ui.scrapperConsultaResult, prettyPrintJson(data));
+    } catch (err) {
+        console.error("[Scrapper] Falha ao consultar processo", err);
+        setOutput(ui.scrapperConsultaResult, `Erro: ${err.message || err}`);
+    } finally {
+        if (ui.scrapperConsultaSubmit) {
+            ui.scrapperConsultaSubmit.disabled = false;
+            ui.scrapperConsultaSubmit.textContent = originalLabel || "Consultar";
+        }
+    }
+}
+
+async function submitScrapperList() {
+    if (!ui.scrapperListForm || !ui.scrapperListResult) {
+        return;
+    }
+
+    const payload = collectScrapperPayload(ui.scrapperListForm, ["max_paginas", "max_processos"]);
+    if (Object.keys(payload).length === 0) {
+        setOutput(ui.scrapperListResult, "Informe pelo menos um critério de busca.");
+        return;
+    }
+
+    setOutput(ui.scrapperListResult, "Carregando lista de processos...");
+    const originalLabel = ui.scrapperListSubmit?.textContent;
+    if (ui.scrapperListSubmit) {
+        ui.scrapperListSubmit.disabled = true;
+        ui.scrapperListSubmit.textContent = "Listando...";
+    }
+
+    try {
+        const data = await callScrapperEndpoint("processos/listar", {
+            method: "POST",
+            payload,
+        });
+        setOutput(ui.scrapperListResult, prettyPrintJson(data));
+    } catch (err) {
+        console.error("[Scrapper] Falha ao listar processos", err);
+        setOutput(ui.scrapperListResult, `Erro: ${err.message || err}`);
+    } finally {
+        if (ui.scrapperListSubmit) {
+            ui.scrapperListSubmit.disabled = false;
+            ui.scrapperListSubmit.textContent = originalLabel || "Listar Processos";
+        }
+    }
+}
+
+async function loadScrapperManifest() {
+    if (!ui.scrapperToolsResult) {
+        return;
+    }
+
+    setOutput(ui.scrapperToolsResult, "Carregando manifesto...");
+    const originalLabel = ui.scrapperToolsButton?.textContent;
+    if (ui.scrapperToolsButton) {
+        ui.scrapperToolsButton.disabled = true;
+        ui.scrapperToolsButton.textContent = "Carregando...";
+    }
+
+    try {
+        const data = await callScrapperEndpoint("tools");
+        setOutput(ui.scrapperToolsResult, prettyPrintJson(data));
+    } catch (err) {
+        console.error("[Scrapper] Falha ao carregar manifesto", err);
+        setOutput(ui.scrapperToolsResult, `Erro: ${err.message || err}`);
+    } finally {
+        if (ui.scrapperToolsButton) {
+            ui.scrapperToolsButton.disabled = false;
+            ui.scrapperToolsButton.textContent = originalLabel || "Carregar manifesto";
+        }
     }
 }
 
@@ -1330,6 +1496,39 @@ function bindEvents() {
     ui.ttsStreamStop?.addEventListener("click", (event) => {
         event.preventDefault();
         stopTTSStream();
+    });
+
+    ui.scrapperConsultaForm?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        await submitScrapperConsulta();
+    });
+
+    ui.scrapperConsultaReset?.addEventListener("click", (event) => {
+        event.preventDefault();
+        resetScrapperForm(
+            ui.scrapperConsultaForm,
+            ui.scrapperConsultaResult,
+            'Preencha os filtros e clique em "Consultar".'
+        );
+    });
+
+    ui.scrapperListForm?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        await submitScrapperList();
+    });
+
+    ui.scrapperListReset?.addEventListener("click", (event) => {
+        event.preventDefault();
+        resetScrapperForm(
+            ui.scrapperListForm,
+            ui.scrapperListResult,
+            'Informe os filtros desejados e clique em "Listar Processos".'
+        );
+    });
+
+    ui.scrapperToolsButton?.addEventListener("click", async (event) => {
+        event.preventDefault();
+        await loadScrapperManifest();
     });
 
     window.addEventListener("beforeunload", () => {

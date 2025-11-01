@@ -92,6 +92,9 @@ class Settings(BaseSettings):
     analytics_host: str = Field(default="analytics", alias="ANALYTICS_HOST")
     analytics_port: int = Field(default=9005, alias="ANALYTICS_PORT")
 
+    scrapper_host: str = Field(default="scrapper", alias="SCRAPPER_HOST")
+    scrapper_port: int = Field(default=8080, alias="SCRAPPER_PORT")
+
     celery_broker_url: str = Field(default="redis://redis:6379/0", alias="CELERY_BROKER")
     celery_backend_url: str = Field(default="redis://redis:6379/1", alias="CELERY_BACKEND")
     celery_task_time_limit: int = Field(default=600, alias="CELERY_TASK_TIME_LIMIT")

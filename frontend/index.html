@@ -80,6 +80,13 @@
             </svg>
             OCR
         </button>
+        <button class="tab" data-tab="scrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            Processos
+        </button>
         <button class="tab" data-tab="chat">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -325,6 +332,132 @@
                 </button>
                 <div class="result-box result-box--large" id="ocrResult">
                     <p class="placeholder">Aguardando arquivo...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrapper Tab -->
+        <section class="tab-content" data-content="scrapper">
+            <div class="card">
+                <h2 class="card__title">Consulta de Processo (TJSP)</h2>
+                <p class="card__description">Busque um processo específico informando pelo menos um dos parâmetros abaixo.</p>
+                <form id="scrapperConsultaForm" class="form-grid">
+                    <div class="form-group">
+                        <label for="scrapperNumeroProcesso">Número do Processo</label>
+                        <input id="scrapperNumeroProcesso" name="numero_processo" type="text" placeholder="1014843-66.2025.8.26.0554" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNomeParte">Nome da Parte</label>
+                        <input id="scrapperNomeParte" name="nome_parte" type="text" placeholder="Ex.: Ana Paula Dentello Luiz" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperDocumentoParte">Documento da Parte</label>
+                        <input id="scrapperDocumentoParte" name="documento_parte" type="text" placeholder="CPF ou CNPJ (somente números)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNomeAdvogado">Nome do Advogado</label>
+                        <input id="scrapperNomeAdvogado" name="nome_advogado" type="text" placeholder="Ex.: João Silva" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNumeroOab">Número da OAB</label>
+                        <input id="scrapperNumeroOab" name="numero_oab" type="text" placeholder="Ex.: 123456/SP" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNumeroPrecatoria">Número da Carta Precatória</label>
+                        <input id="scrapperNumeroPrecatoria" name="numero_precatoria" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNumeroDelegacia">Nº Documento Delegacia</label>
+                        <input id="scrapperNumeroDelegacia" name="numero_documento_delegacia" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperNumeroCda">Número da CDA</label>
+                        <input id="scrapperNumeroCda" name="numero_cda" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperForo">Foro</label>
+                        <input id="scrapperForo" name="foro" type="text" placeholder="Ex.: 554" />
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn--primary" id="scrapperConsultaSubmit">Consultar</button>
+                        <button type="button" class="btn btn--ghost" id="scrapperConsultaReset">Limpar</button>
+                    </div>
+                </form>
+                <div class="result-box result-box--large" id="scrapperConsultaResult">
+                    <p class="placeholder">Preencha os filtros e clique em &ldquo;Consultar&rdquo;.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="card__title">Listagem de Processos</h2>
+                <p class="card__description">Combine filtros para listar processos relacionados a uma parte e aplicar refinamentos.</p>
+                <form id="scrapperListForm" class="form-grid">
+                    <div class="form-group">
+                        <label for="scrapperListNumeroProcesso">Número do Processo</label>
+                        <input id="scrapperListNumeroProcesso" name="numero_processo" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNomeParte">Nome da Parte</label>
+                        <input id="scrapperListNomeParte" name="nome_parte" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListDocumentoParte">Documento da Parte</label>
+                        <input id="scrapperListDocumentoParte" name="documento_parte" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNomeAdvogado">Nome do Advogado</label>
+                        <input id="scrapperListNomeAdvogado" name="nome_advogado" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNumeroOab">Número da OAB</label>
+                        <input id="scrapperListNumeroOab" name="numero_oab" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNumeroPrecatoria">Número da Carta Precatória</label>
+                        <input id="scrapperListNumeroPrecatoria" name="numero_precatoria" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNumeroDelegacia">Nº Documento Delegacia</label>
+                        <input id="scrapperListNumeroDelegacia" name="numero_documento_delegacia" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListNumeroCda">Número da CDA</label>
+                        <input id="scrapperListNumeroCda" name="numero_cda" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListForo">Foro</label>
+                        <input id="scrapperListForo" name="foro" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListContraParte">Filtro de Contraparte</label>
+                        <input id="scrapperListContraParte" name="contra_parte" type="text" placeholder="Ex.: Vivo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListMaxPaginas">Máx. Páginas</label>
+                        <input id="scrapperListMaxPaginas" name="max_paginas" type="number" min="1" max="10" value="1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="scrapperListMaxProcessos">Máx. Processos</label>
+                        <input id="scrapperListMaxProcessos" name="max_processos" type="number" min="1" />
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn--primary" id="scrapperListSubmit">Listar Processos</button>
+                        <button type="button" class="btn btn--ghost" id="scrapperListReset">Limpar</button>
+                    </div>
+                </form>
+                <div class="result-box result-box--large" id="scrapperListResult">
+                    <p class="placeholder">Informe os filtros desejados e clique em &ldquo;Listar Processos&rdquo;.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="card__title">Manifesto de Ferramentas</h2>
+                <p class="card__description">Visualize o manifesto JSON exposto pelo serviço de scrapper.</p>
+                <div class="button-group">
+                    <button class="btn btn--primary" id="scrapperToolsButton">Carregar manifesto</button>
+                </div>
+                <div class="result-box" id="scrapperToolsResult">
+                    <p class="placeholder">Clique em &ldquo;Carregar manifesto&rdquo; para visualizar.</p>
                 </div>
             </div>
         </section>

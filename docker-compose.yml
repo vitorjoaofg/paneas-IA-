@@ -36,6 +36,8 @@ services:
       - INSIGHT_MAX_TOKENS=200
       - INSIGHT_FLUSH_TIMEOUT=60
       - ASR_BATCH_WINDOW_SEC=1.0
+      - SCRAPPER_HOST=scrapper
+      - SCRAPPER_PORT=8080
     volumes:
       - type: bind
         source: /srv/models
@@ -52,6 +54,23 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
       interval: 10s
       timeout: 5s
+      retries: 3
+    networks:
+      - stack-network
+
+  scrapper:
+    build: ./scrapper
+    container_name: stack-scrapper
+    restart: unless-stopped
+    environment:
+      - SCRAPPER_ENV=prod
+      - SCRAPPER_HEADLESS=true
+    ports:
+      - "8089:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/tools"]
+      interval: 30s
+      timeout: 10s
       retries: 3
     networks:
       - stack-network

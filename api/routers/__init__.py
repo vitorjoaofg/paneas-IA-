@@ -7,5 +7,6 @@ __all__ = [
     "health",
     "llm",
     "ocr",
+    "scrapper",
     "tts",
 ]
