@@ -11,7 +11,7 @@ from schemas.llm import ChatRequest, ChatResponse, ChatChoice, ChatMessage, Usag
 from services.llm_client import MODEL_REGISTRY, chat_completion, chat_completion_stream
 from services.llm_router import LLMRouter, LLMRoutingDecision, LLMTarget
 from services.tool_executor import get_tool_executor
-from services.tools import unimed_consult
+from services.tools.weather import get_weather
 from services.tools.generic_http import age_predictor, external_api_call
 from services.tool_prompt_helper import tools_to_prompt, extract_function_call
 
@@ -174,7 +174,8 @@ MAX_TOOL_ITERATIONS = 3
 
 # Registrar tools disponíveis
 tool_executor = get_tool_executor()
-tool_executor.register("unimed_consult", unimed_consult)
+# unimed_consult agora usa executor genérico HTTP (sem registro necessário)
+tool_executor.register("get_weather", get_weather)
 tool_executor.register("age_predictor", age_predictor)
 tool_executor.register("external_api_call", external_api_call)
 
@@ -322,11 +323,10 @@ async def create_chat_completion(payload: ChatRequest):
         LOGGER.info("DEBUG: Returning response", response_id=response_id)
         return response
 
-    # Fluxo COM TOOLS - usar prompt engineering
-    LOGGER.info("DEBUG: Using tools flow", num_tools=len(payload.tools))
+    # Fluxo COM TOOLS - usar prompt engineering (vLLM antigo)
+    LOGGER.info("DEBUG: Using tools flow (PROMPT ENGINEERING)", num_tools=len(payload.tools))
 
-    # Preparar mensagens - CORRIGIDO
-    # Gerar prompt de tools e injetar nas mensagens existentes
+    # Preparar mensagens COM prompt engineering de tools
     tools_prompt = tools_to_prompt(payload.tools)
     messages = []
     system_injected = False
@@ -344,13 +344,10 @@ async def create_chat_completion(payload: ChatRequest):
             tool_call_id = msg_dict.get("tool_call_id") or ""
             tool_content = msg_dict.get("content", "")
 
-            # CORRIGIDO: Truncar payload grande para evitar erro 400
             tool_content = _truncate_tool_result(tool_content)
 
-            hint = "Agora responda ao usuário original de forma completa e útil com base neste resultado."
+            hint = "Agora responda ao usuário com base no resultado."
             prefix = f"Resultado da função {tool_name}"
-            if tool_call_id and tool_call_id not in tool_name:
-                prefix += f" (execução {tool_call_id})"
             messages.append({
                 "role": "user",
                 "content": f"{prefix}:\n{tool_content}\n\n{hint}"
@@ -410,12 +407,14 @@ async def create_chat_completion(payload: ChatRequest):
     while iteration < MAX_TOOL_ITERATIONS:
         iteration += 1
 
-        # Preparar payload para esta iteração
+        # Preparar payload para esta iteração COM TOOLS NATIVOS
         current_payload = {
             "model": payload.model,
             "messages": messages,
             "max_tokens": payload.max_tokens,
-            "temperature": 0.3,  # Baixa temperatura para melhor seguir instruções
+            "temperature": payload.temperature,
+            "tools": raw_payload.get("tools", []),  # Passar tools nativamente
+            "tool_choice": raw_payload.get("tool_choice", "auto"),  # Auto tool choice
         }
 
         LOGGER.info(
@@ -481,7 +480,7 @@ async def create_chat_completion(payload: ChatRequest):
         )
 
         if not use_forced_tool:
-            # Tentar extrair function call do conteúdo
+            # Extrair function call do conteúdo (prompt engineering)
             function_call_data = extract_function_call(content)
 
             if not function_call_data:
@@ -540,14 +539,40 @@ async def create_chat_completion(payload: ChatRequest):
             function_name=function_call_data["name"],
         )
 
+        # Aplicar defaults da tool definition se disponível
+        function_name = function_call_data["name"]
+        arguments_dict = json.loads(function_call_data["arguments"])
+
+        # Procurar a tool definition no payload original
+        if payload.tools:
+            for tool in payload.tools:
+                if tool.function.name == function_name:
+                    # Aplicar defaults dos parâmetros
+                    if tool.function.parameters and "properties" in tool.function.parameters:
+                        properties = tool.function.parameters["properties"]
+                        for param_name, param_def in properties.items():
+                            # Se o parâmetro tem default e não foi fornecido pelo LLM
+                            if "default" in param_def and param_name not in arguments_dict:
+                                arguments_dict[param_name] = param_def["default"]
+                                LOGGER.info(
+                                    "applying_tool_default",
+                                    function=function_name,
+                                    parameter=param_name,
+                                    default_value=param_def["default"]
+                                )
+                    break
+
+        # Serializar de volta para JSON
+        arguments_json = json.dumps(arguments_dict)
+
         # Criar ToolCall object
         tool_call_id = f"call_{secrets.token_hex(12)}"
         tool_call = ToolCall(
             id=tool_call_id,
             type="function",
             function=FunctionCall(
-                name=function_call_data["name"],
-                arguments=function_call_data["arguments"],
+                name=function_name,
+                arguments=arguments_json,
             )
         )
 

@@ -1,0 +1,2 @@
+"""Scrapper API package."""
+

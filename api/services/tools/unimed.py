@@ -11,12 +11,12 @@ LOGGER = structlog.get_logger(__name__)
 
 
 async def unimed_consult(
-    base_url: str,
-    cidade: str,
-    tipo: str,
-    protocolo: Optional[str],
     cpf: str,
     data_nascimento: str,
+    base_url: str = "https://unimed-central-cobranca.paneas.net/api/v1",
+    cidade: str = "Natal_Tasy",
+    tipo: str = "Contratos",
+    protocolo: Optional[str] = "0",
 ) -> Dict[str, Any]:
     """
     Consulta dados de beneficiário na API Unimed

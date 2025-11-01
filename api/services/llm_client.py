@@ -54,7 +54,7 @@ async def chat_completion(
     payload = dict(payload)
     provider = (payload.pop("provider", None) or "paneas").lower()
     payload.pop("quality_priority", None)
-    # Remove any extra fields that vLLM doesn't understand
+    # Remove tools/tool_choice - vLLM antigo não suporta (usar prompt engineering)
     payload.pop("tools", None)
     payload.pop("tool_choice", None)
     if target == LLMTarget.OPENAI or provider == "openai":

@@ -21,6 +21,9 @@ const ui = {
     chatForm: document.getElementById("chatForm"),
     chatInput: document.getElementById("chatInput"),
     chatModel: document.getElementById("chatModel"),
+    chatKeepHistory: document.getElementById("chatKeepHistory"),
+    chatTools: document.getElementById("chatTools"),
+    chatSystemPrompt: document.getElementById("chatSystemPrompt"),
     chatPlaceholder: document.querySelector(".chat__placeholder"),
     chatClear: document.getElementById("clearChat"),
     listeningIndicator: document.getElementById("listeningIndicator"),
@@ -48,6 +51,13 @@ const ui = {
     ttsMetadata: document.getElementById("ttsMetadata"),
     ttsDownload: document.getElementById("ttsDownload"),
     ttsStatus: document.getElementById("ttsStatus"),
+    ttsStreamButton: document.getElementById("ttsStreamButton"),
+    ttsStreamResult: document.getElementById("ttsStreamResult"),
+    ttsStreamPlayer: document.getElementById("ttsStreamPlayer"),
+    ttsStreamMetadata: document.getElementById("ttsStreamMetadata"),
+    ttsStreamStop: document.getElementById("ttsStreamStop"),
+    streamingStatusText: document.getElementById("streamingStatusText"),
+    streamingText: document.getElementById("streamingText"),
 };
 
 const state = {
@@ -72,6 +82,76 @@ const state = {
     timeline: [],
     insights: [],
     chatHistory: [],
+    availableTools: {
+        unimed: {
+            type: "function",
+            function: {
+                name: "unimed_consult",
+                description: "Consulta dados do beneficiário na Unimed",
+                parameters: {
+                    type: "object",
+                    properties: {
+                        url_template: {
+                            type: "string",
+                            description: "Template da URL",
+                            default: "https://unimed-central-cobranca.paneas.net/api/v1/{cidade}/{tipo}/{protocolo}/{cpf}/{data_nascimento}"
+                        },
+                        cpf: {
+                            type: "string",
+                            description: "CPF do beneficiário (apenas números)"
+                        },
+                        data_nascimento: {
+                            type: "string",
+                            description: "Data de nascimento no formato AAAAMMDD"
+                        },
+                        cidade: {
+                            type: "string",
+                            description: "Cidade",
+                            default: "Natal_Tasy"
+                        },
+                        tipo: {
+                            type: "string",
+                            description: "Tipo de consulta",
+                            default: "Carteira_Virtual"
+                        },
+                        protocolo: {
+                            type: "string",
+                            description: "Número do protocolo",
+                            default: "0"
+                        },
+                        method: {
+                            type: "string",
+                            description: "Método HTTP",
+                            default: "GET"
+                        }
+                    },
+                    required: ["cpf", "data_nascimento"]
+                }
+            }
+        },
+        weather: {
+            type: "function",
+            function: {
+                name: "get_weather",
+                description: "Consulta o clima atual de uma cidade",
+                parameters: {
+                    type: "object",
+                    properties: {
+                        cidade: {
+                            type: "string",
+                            description: "Nome da cidade"
+                        },
+                        pais: {
+                            type: "string",
+                            description: "País (opcional)",
+                            default: "Brasil"
+                        }
+                    },
+                    required: ["cidade"]
+                }
+            }
+        }
+    },
     awaitingStopAck: false,
     roomId: null,
     role: null,
@@ -83,6 +163,13 @@ const state = {
     fileStreamTimer: null,
     currentAudioBlob: null,
     currentAudioMetadata: null,
+    streamingAudio: false,
+    streamMediaSource: null,
+    streamSourceBuffer: null,
+    streamingTextInterval: null,
+    streamingTextWords: [],
+    streamingStartTime: null,
+    streamingTextDuration: 0,
 };
 
 function trimTrailingSlash(url) {
@@ -823,13 +910,38 @@ async function sendChatMessage(text) {
     ui.chatModel.disabled = true;
     ui.chatPlaceholder && (ui.chatPlaceholder.style.display = "none");
 
+    // Se "Manter Histórico" estiver marcado, envia todas as mensagens
+    // Caso contrário, envia apenas a última mensagem do usuário
+    const keepHistory = ui.chatKeepHistory && ui.chatKeepHistory.checked;
+    let messagesToSend = keepHistory ? [...state.chatHistory] : [state.chatHistory[state.chatHistory.length - 1]];
+
+    // Adiciona system prompt se fornecido
+    const systemPrompt = ui.chatSystemPrompt && ui.chatSystemPrompt.value.trim();
+    if (systemPrompt) {
+        // Verifica se já existe um system message
+        const hasSystemMessage = messagesToSend.some(msg => msg.role === "system");
+        if (!hasSystemMessage) {
+            messagesToSend = [{ role: "system", content: systemPrompt }, ...messagesToSend];
+        }
+    }
+
     const payload = {
         model: ui.chatModel.value,
-        messages: state.chatHistory.slice(-8),
+        messages: messagesToSend,
         max_tokens: 1500,
         temperature: 0.6,
         stream: true,
     };
+
+    // Adiciona tools ao payload se alguma foi selecionada
+    const selectedTool = ui.chatTools && ui.chatTools.value;
+    if (selectedTool && state.availableTools[selectedTool]) {
+        payload.tools = [state.availableTools[selectedTool]];
+        payload.tool_choice = "auto";
+    }
+
+    // Log do payload para debug
+    console.log("📤 Enviando payload para LLM:", JSON.stringify(payload, null, 2));
 
     const headers = buildAuthHeaders({ "Content-Type": "application/json" });
 
@@ -849,36 +961,70 @@ async function sendChatMessage(text) {
             throw new Error(`HTTP ${response.status}`);
         }
 
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        let buffer = "";
+        // Verifica se é streaming ou resposta completa
+        const contentType = response.headers.get("content-type");
+        console.log("📡 Content-Type:", contentType);
 
-        while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
+        if (contentType && contentType.includes("application/json")) {
+            // Resposta completa (não-streaming)
+            console.log("📄 Resposta completa (não-streaming)");
+            const data = await response.json();
+            console.log("📦 Resposta recebida:", data);
 
-            buffer += decoder.decode(value, { stream: true });
-            const lines = buffer.split("\n");
-            buffer = lines.pop() || "";
+            const choice = data.choices && data.choices[0];
+            const message = choice && choice.message;
+            const content = message && message.content;
 
-            for (const line of lines) {
-                const trimmed = line.trim();
-                if (!trimmed || trimmed === "data: [DONE]") continue;
+            if (content) {
+                state.chatHistory[assistantMessageIndex].content = content;
+                renderChat();
+            } else {
+                console.warn("⚠️ Nenhum conteúdo na resposta:", data);
+            }
+        } else {
+            // Resposta em streaming (SSE)
+            console.log("🔄 Resposta em streaming (SSE)");
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = "";
+            let chunkCount = 0;
 
-                if (trimmed.startsWith("data: ")) {
-                    try {
-                        const jsonStr = trimmed.substring(6);
-                        const data = JSON.parse(jsonStr);
-                        const choice = data.choices && data.choices[0];
-                        const delta = choice && choice.delta;
-                        const deltaContent = delta && delta.content;
+            console.log("🔄 Iniciando leitura do stream...");
 
-                        if (deltaContent) {
-                            state.chatHistory[assistantMessageIndex].content += deltaContent;
-                            renderChat();
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) {
+                    console.log("✅ Stream finalizado. Total de chunks:", chunkCount);
+                    break;
+                }
+
+                chunkCount++;
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split("\n");
+                buffer = lines.pop() || "";
+
+                for (const line of lines) {
+                    const trimmed = line.trim();
+                    if (!trimmed || trimmed === "data: [DONE]") continue;
+
+                    if (trimmed.startsWith("data: ")) {
+                        try {
+                            const jsonStr = trimmed.substring(6);
+                            const data = JSON.parse(jsonStr);
+
+                            console.log("📦 Chunk SSE recebido:", data);
+
+                            const choice = data.choices && data.choices[0];
+                            const delta = choice && choice.delta;
+                            const deltaContent = delta && delta.content;
+
+                            if (deltaContent) {
+                                state.chatHistory[assistantMessageIndex].content += deltaContent;
+                                renderChat();
+                            }
+                        } catch (parseErr) {
+                            console.warn("⚠️ Erro ao parsear SSE:", trimmed, parseErr);
                         }
-                    } catch (parseErr) {
-                        console.warn("Failed to parse SSE data:", trimmed, parseErr);
                     }
                 }
             }
@@ -1176,6 +1322,16 @@ function bindEvents() {
         downloadTTSAudio();
     });
 
+    ui.ttsStreamButton?.addEventListener("click", async (event) => {
+        event.preventDefault();
+        await synthesizeTTSStream();
+    });
+
+    ui.ttsStreamStop?.addEventListener("click", (event) => {
+        event.preventDefault();
+        stopTTSStream();
+    });
+
     window.addEventListener("beforeunload", () => {
         try {
             if (state.ws && state.ws.readyState === WebSocket.OPEN) {
@@ -1417,6 +1573,210 @@ function downloadTTSAudio() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+}
+
+async function synthesizeTTSStream() {
+    const text = ui.ttsText?.value?.trim();
+    const voice = ui.ttsVoice?.value;
+
+    if (!text) {
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Digite um texto para sintetizar.");
+        return;
+    }
+
+    if (text.length > 500) {
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Texto muito longo (máximo 500 caracteres).");
+        return;
+    }
+
+    // Disable buttons
+    ui.ttsStreamButton && (ui.ttsStreamButton.disabled = true);
+    ui.ttsStreamButton && (ui.ttsStreamButton.textContent = "Conectando...");
+
+    // Hide regular result, show streaming result
+    ui.ttsResult && (ui.ttsResult.style.display = "none");
+    ui.ttsStreamResult && (ui.ttsStreamResult.style.display = "block");
+
+    ui.streamingStatusText && (ui.streamingStatusText.textContent = "Conectando...");
+    state.streamingAudio = true;
+
+    // Prepare text animation
+    state.streamingTextWords = text.split(/\s+/);
+    if (ui.streamingText) {
+        ui.streamingText.innerHTML = state.streamingTextWords
+            .map((word, idx) => `<span class="word" data-index="${idx}">${word}</span>`)
+            .join(' ');
+    }
+
+    try {
+        const base = resolveApiBase();
+        const url = `${base}/api/v1/tts/stream`;
+
+        const payload = {
+            text: text,
+            language: "pt",
+            speaker_reference: voice,
+            format: "wav"
+        };
+
+        const headers = buildAuthHeaders({ "Content-Type": "application/json" });
+
+        ui.streamingStatusText && (ui.streamingStatusText.textContent = "Buffering...");
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`HTTP ${response.status}: ${errorText}`);
+        }
+
+        // Read the stream - collect all chunks first for smooth playback
+        const reader = response.body.getReader();
+        const chunks = [];
+
+        ui.streamingStatusText && (ui.streamingStatusText.textContent = "Carregando...");
+
+        // Collect all audio data
+        while (state.streamingAudio) {
+            const { done, value } = await reader.read();
+
+            if (done) break;
+
+            chunks.push(value);
+
+            // Show progress
+            const totalBytes = chunks.reduce((sum, chunk) => sum + chunk.length, 0);
+            const totalKB = (totalBytes / 1024).toFixed(1);
+            ui.streamingStatusText && (ui.streamingStatusText.textContent = `Carregando... ${totalKB}KB`);
+        }
+
+        // Now create the complete audio and play
+        if (chunks.length > 0 && state.streamingAudio) {
+            ui.streamingStatusText && (ui.streamingStatusText.textContent = "Streamando...");
+
+            const blob = new Blob(chunks, { type: 'audio/wav' });
+            const audioUrl = URL.createObjectURL(blob);
+
+            if (ui.ttsStreamPlayer.src) {
+                URL.revokeObjectURL(ui.ttsStreamPlayer.src);
+            }
+            ui.ttsStreamPlayer.src = audioUrl;
+
+            // Setup audio player event for text sync
+            setupAudioTextSync();
+
+            // Start playing
+            ui.ttsStreamPlayer.play().catch(err => {
+                console.error('Error playing audio:', err);
+            });
+        }
+
+        ui.streamingStatusText && (ui.streamingStatusText.textContent = "Concluído!");
+        ui.ttsStatus && (ui.ttsStatus.textContent = "Streaming de áudio concluído!");
+
+    } catch (err) {
+        console.error("Erro no streaming TTS:", err);
+        ui.ttsStatus && (ui.ttsStatus.textContent = `Erro: ${err.message}`);
+        ui.streamingStatusText && (ui.streamingStatusText.textContent = "Erro");
+    } finally {
+        state.streamingAudio = false;
+        stopStreamingTextAnimation();
+        ui.ttsStreamButton && (ui.ttsStreamButton.disabled = false);
+        ui.ttsStreamButton && (ui.ttsStreamButton.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 3l14 9-14 9V3z"/>
+                <path d="M19 12h2"/>
+            </svg>
+            Modo Streaming
+        `);
+    }
+}
+
+function setupAudioTextSync() {
+    if (!ui.ttsStreamPlayer || !ui.streamingText) return;
+
+    // Remove any existing listener
+    ui.ttsStreamPlayer.removeEventListener('timeupdate', handleAudioTimeUpdate);
+
+    // Add time update listener for syncing text with audio
+    ui.ttsStreamPlayer.addEventListener('timeupdate', handleAudioTimeUpdate);
+
+    // Store start time when audio begins playing
+    ui.ttsStreamPlayer.addEventListener('play', () => {
+        if (!state.streamingStartTime) {
+            state.streamingStartTime = Date.now();
+        }
+    }, { once: true });
+}
+
+function handleAudioTimeUpdate() {
+    if (!ui.streamingText || !state.streamingTextWords.length) return;
+
+    const player = ui.ttsStreamPlayer;
+    const currentTime = player.currentTime;
+    const duration = player.duration;
+
+    if (!duration || duration === 0 || isNaN(duration)) return;
+
+    // Calculate which word should be highlighted based on audio progress
+    const wordCount = state.streamingTextWords.length;
+    const timePerWord = duration / wordCount;
+    const currentWordIndex = Math.floor(currentTime / timePerWord);
+
+    // Highlight current word and mark previous as spoken
+    for (let i = 0; i < wordCount; i++) {
+        const wordElement = ui.streamingText.querySelector(`[data-index="${i}"]`);
+        if (!wordElement) continue;
+
+        if (i < currentWordIndex) {
+            // Already spoken
+            wordElement.classList.remove('highlight');
+            wordElement.classList.add('spoken');
+        } else if (i === currentWordIndex) {
+            // Currently speaking
+            wordElement.classList.add('highlight');
+            wordElement.classList.remove('spoken');
+        } else {
+            // Not yet spoken
+            wordElement.classList.remove('highlight', 'spoken');
+        }
+    }
+}
+
+function stopStreamingTextAnimation() {
+    // Remove audio event listener
+    if (ui.ttsStreamPlayer) {
+        ui.ttsStreamPlayer.removeEventListener('timeupdate', handleAudioTimeUpdate);
+    }
+
+    // Reset state
+    state.streamingStartTime = null;
+
+    // Mark all words as spoken
+    if (ui.streamingText) {
+        const words = ui.streamingText.querySelectorAll('.word');
+        words.forEach(word => {
+            word.classList.remove('highlight');
+            word.classList.add('spoken');
+        });
+    }
+}
+
+function stopTTSStream() {
+    state.streamingAudio = false;
+    stopStreamingTextAnimation();
+
+    if (ui.ttsStreamPlayer) {
+        ui.ttsStreamPlayer.pause();
+    }
+
+    ui.ttsStreamResult && (ui.ttsStreamResult.style.display = "none");
+    ui.streamingStatusText && (ui.streamingStatusText.textContent = "Parado");
+    ui.ttsStatus && (ui.ttsStatus.textContent = "Streaming interrompido.");
 }
 
 function bootstrap() {

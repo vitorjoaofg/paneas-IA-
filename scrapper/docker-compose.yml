@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  tools:
+    build:
+      context: .
+    container_name: scrapper-tools
+    ports:
+      - "8089:8080"
+    environment:
+      SCRAPPER_ENV: dev
+      SCRAPPER_HEADLESS: "true"
+    restart: unless-stopped
+

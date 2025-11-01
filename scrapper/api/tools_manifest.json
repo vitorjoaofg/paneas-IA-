@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "tools": [
+    {
+      "name": "tjsp_consulta_processo",
+      "description": "Consulta processos públicos do TJSP (e-SAJ) e retorna dados estruturados do processo.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "numero_processo": {
+            "type": "string",
+            "description": "Número completo do processo no formato CNJ ou somente dígitos."
+          },
+          "nome_parte": {
+            "type": "string",
+            "description": "Nome da parte envolvida no processo."
+          },
+          "documento_parte": {
+            "type": "string",
+            "description": "CPF ou CNPJ da parte."
+          },
+          "nome_advogado": {
+            "type": "string",
+            "description": "Nome do advogado."
+          },
+          "numero_oab": {
+            "type": "string",
+            "description": "Número de inscrição na OAB."
+          },
+          "numero_precatoria": {
+            "type": "string",
+            "description": "Número da carta precatória na origem."
+          },
+          "numero_documento_delegacia": {
+            "type": "string",
+            "description": "Número do documento na delegacia."
+          },
+          "numero_cda": {
+            "type": "string",
+            "description": "Número da CDA."
+          },
+          "foro": {
+            "type": "string",
+            "description": "Código do foro (ex.: 554)."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "tjsp_listar_processos",
+      "description": "Lista processos associados a um CPF/CNPJ ou outro critério e permite filtrar por contraparte.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "numero_processo": {
+            "type": "string",
+            "description": "Número completo do processo no formato CNJ ou somente dígitos."
+          },
+          "nome_parte": {
+            "type": "string",
+            "description": "Nome da parte envolvida no processo."
+          },
+          "documento_parte": {
+            "type": "string",
+            "description": "CPF ou CNPJ da parte alvo da consulta."
+          },
+          "nome_advogado": {
+            "type": "string",
+            "description": "Nome do advogado."
+          },
+          "numero_oab": {
+            "type": "string",
+            "description": "Número de inscrição na OAB."
+          },
+          "numero_precatoria": {
+            "type": "string",
+            "description": "Número da carta precatória na origem."
+          },
+          "numero_documento_delegacia": {
+            "type": "string",
+            "description": "Número do documento na delegacia."
+          },
+          "numero_cda": {
+            "type": "string",
+            "description": "Número da CDA."
+          },
+          "foro": {
+            "type": "string",
+            "description": "Código do foro (ex.: 554)."
+          },
+          "contra_parte": {
+            "type": "string",
+            "description": "Texto para filtrar processos onde a parte contrária contenha esse termo."
+          },
+          "max_paginas": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Número máximo de páginas da listagem a navegar (cada página traz até 25 processos)."
+          },
+          "max_processos": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Limite máximo de processos a retornar após aplicar os filtros."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

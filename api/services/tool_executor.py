@@ -57,6 +57,19 @@ class ToolExecutor:
             # Parse arguments
             args = json.loads(tool_call.function.arguments)
 
+            # Apply defaults from function signature if missing
+            import inspect
+            sig = inspect.signature(func)
+            for param_name, param in sig.parameters.items():
+                if param.default is not inspect.Parameter.empty and param_name not in args:
+                    args[param_name] = param.default
+                    LOGGER.info(
+                        "tool_applying_default",
+                        function=func_name,
+                        parameter=param_name,
+                        default_value=param.default,
+                    )
+
             # Execute function
             if callable(func):
                 # Check if async
