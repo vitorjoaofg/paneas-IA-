@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paneas AI Studio - Plataforma completa de IA</title>
+    <title>Paneas Ecosystem - Biblioteca de Componentes de IA</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
                 </svg>
             </div>
             <h2 class="modal__title">Acesso Restrito</h2>
-            <p class="modal__description">Digite a senha para acessar o Paneas AI Studio</p>
+            <p class="modal__description">Digite a senha para acessar o Paneas Ecosystem</p>
             <form id="passwordForm">
                 <div class="modal__input-group">
                     <input type="password" id="passwordInput" placeholder="Digite a senha" autocomplete="off" required />
@@ -63,11 +63,10 @@
                         </linearGradient>
                     </defs>
                 </svg>
-                <span class="navbar__title">Paneas AI Studio</span>
+                <span class="navbar__title">Paneas Ecosystem</span>
             </div>
             <div class="navbar__nav">
-                <a href="#products" class="navbar__link">Produtos</a>
-                <a href="#features" class="navbar__link">Recursos</a>
+                <a href="#components" class="navbar__link">Componentes</a>
                 <a href="#playground" class="navbar__link navbar__link--cta">Playground</a>
                 <button id="logoutButton" class="navbar__logout" title="Sair">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -88,11 +87,11 @@
                 <span>Stack de IA Local e Completa</span>
             </div>
             <h1 class="hero__title">
-                Construa aplicações de IA
-                <span class="gradient-text">sem depender da nuvem</span>
+                Ecossistema Paneas
+                <span class="gradient-text">Componentes de IA Prontos para Produção</span>
             </h1>
             <p class="hero__description">
-                Suite completa de ferramentas de IA para transcrição, análise de documentos,
+                Biblioteca completa de componentes de IA para transcrição, análise de documentos,
                 conversação inteligente e síntese de voz. Tudo rodando localmente com máxima privacidade.
             </p>
             <div class="hero__actions">
@@ -103,8 +102,8 @@
                     </svg>
                     Experimentar agora
                 </button>
-                <button class="btn btn--ghost" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
-                    Ver produtos
+                <button class="btn btn--ghost" onclick="document.getElementById('components').scrollIntoView({behavior: 'smooth'})">
+                    Ver componentes
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -114,7 +113,7 @@
             <div class="hero__stats">
                 <div class="stat-item">
                     <div class="stat-item__value">7</div>
-                    <div class="stat-item__label">Produtos de IA</div>
+                    <div class="stat-item__label">Componentes de IA</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-item__value">100%</div>
@@ -128,28 +127,36 @@
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
+    <!-- Components Section -->
+    <section class="products" id="components">
         <div class="products__container">
             <div class="section-header">
-                <h2 class="section-title">Nossos Produtos</h2>
-                <p class="section-subtitle">Ferramentas de IA de ponta para resolver problemas reais</p>
+                <h2 class="section-title">Biblioteca de Componentes Paneas</h2>
+                <p class="section-subtitle">Componentes modulares e reutilizáveis para construir soluções de IA</p>
             </div>
 
             <div class="products__grid">
                 <!-- Real-time Transcription -->
                 <div class="product-card" data-product="realtime">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                            <line x1="12" x2="12" y1="19" y2="22"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                <line x1="12" x2="12" y1="19" y2="22"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            Real-time
+                        </span>
                     </div>
                     <h3 class="product-card__title">Real-time Transcription</h3>
                     <p class="product-card__description">
-                        Transcrição em tempo real com diarização inteligente e insights automáticos.
-                        Capture conversas ao vivo com precisão excepcional.
+                        Componente de transcrição em tempo real com diarização. Integre streaming de áudio em sua aplicação.
                     </p>
                     <ul class="product-card__features">
                         <li>Streaming de áudio em tempo real</li>
@@ -162,16 +169,25 @@
 
                 <!-- Audio Transcription -->
                 <div class="product-card" data-product="transcription">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <path d="M9 18V5l12-2v13"/>
-                            <circle cx="6" cy="18" r="3"/>
-                            <circle cx="18" cy="16" r="3"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                            </svg>
+                            Batch
+                        </span>
                     </div>
                     <h3 class="product-card__title">Audio Transcription</h3>
                     <p class="product-card__description">
-                        Converta arquivos de áudio em texto com alta precisão. Suporte para WAV, MP3 e mais.
+                        Componente de transcrição em lote para múltiplos formatos de áudio. API RESTful pronta para uso.
                     </p>
                     <ul class="product-card__features">
                         <li>Upload de múltiplos formatos</li>
@@ -183,16 +199,25 @@
 
                 <!-- OCR -->
                 <div class="product-card" data-product="ocr">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                            <circle cx="9" cy="9" r="2"/>
-                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+                                <circle cx="9" cy="9" r="2"/>
+                                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            Vision
+                        </span>
                     </div>
                     <h3 class="product-card__title">OCR Intelligence</h3>
                     <p class="product-card__description">
-                        Extraia texto de imagens e PDFs com reconhecimento óptico de caracteres avançado.
+                        Componente de OCR para extração de texto de documentos. Integre reconhecimento de caracteres facilmente.
                     </p>
                     <ul class="product-card__features">
                         <li>Suporte a múltiplos idiomas</li>
@@ -204,15 +229,24 @@
 
                 <!-- Legal Scraper -->
                 <div class="product-card" data-product="scrapper">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <circle cx="11" cy="11" r="7"/>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="11" cy="11" r="7"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                            Scraper
+                        </span>
                     </div>
                     <h3 class="product-card__title">Legal Process Tracker</h3>
                     <p class="product-card__description">
-                        Consulte e monitore processos jurídicos do TJSP com busca avançada e filtragem inteligente.
+                        Componente de consulta jurídica automatizada. Integre busca e monitoramento de processos TJSP.
                     </p>
                     <ul class="product-card__features">
                         <li>Busca por CPF/CNPJ</li>
@@ -224,17 +258,26 @@
 
                 <!-- Chat LLM -->
                 <div class="product-card" data-product="chat">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                            LLM
+                        </span>
                     </div>
                     <h3 class="product-card__title">Chat LLM</h3>
                     <p class="product-card__description">
-                        Conversação inteligente com modelo de linguagem local. Privacidade total, sem limites de API.
+                        Componente de LLM conversacional com function calling. Adicione inteligência às suas aplicações.
                     </p>
                     <ul class="product-card__features">
-                        <li>Modelo Qwen2.5-32B INT4</li>
+                        <li>Modelo Paneas-32B INT4</li>
                         <li>Function calling</li>
                         <li>Histórico persistente</li>
                     </ul>
@@ -243,16 +286,26 @@
 
                 <!-- TTS -->
                 <div class="product-card" data-product="tts">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                            Audio
+                        </span>
                     </div>
                     <h3 class="product-card__title">Voice Synthesis</h3>
                     <p class="product-card__description">
-                        Clone de voz neural com síntese de alta qualidade. Vozes naturais em português brasileiro.
+                        Componente de síntese de voz neural. Integre clonagem e geração de voz em suas aplicações.
                     </p>
                     <ul class="product-card__features">
                         <li>Múltiplas vozes</li>
@@ -264,17 +317,26 @@
 
                 <!-- Speech Analytics -->
                 <div class="product-card" data-product="analytics">
-                    <div class="product-card__icon" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <path d="M3 3v18h18"/>
-                            <path d="m19 9-5 5-4-4-3 3"/>
-                            <circle cx="9" cy="9" r="2"/>
-                            <path d="M12 2v6m0 4v10"/>
-                        </svg>
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="m19 9-5 5-4-4-3 3"/>
+                                <circle cx="9" cy="9" r="2"/>
+                                <path d="M12 2v6m0 4v10"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="m19 9-5 5-4-4-3 3"/>
+                            </svg>
+                            Analytics
+                        </span>
                     </div>
                     <h3 class="product-card__title">Speech Analytics</h3>
                     <p class="product-card__description">
-                        Análise completa de sentimentos, emoções e intenções em chamadas. Insights profundos com NLP avançado.
+                        Componente de análise de sentimentos e emoções. Extraia insights de conversas com NLP avançado.
                     </p>
                     <ul class="product-card__features">
                         <li>Análise de sentimentos (positivo/negativo/neutro)</li>
@@ -283,66 +345,6 @@
                         <li>Compliance checks automatizados</li>
                     </ul>
                     <button class="product-card__cta">Experimentar →</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="features__container">
-            <div class="section-header">
-                <h2 class="section-title">Por que escolher Paneas AI?</h2>
-                <p class="section-subtitle">Máxima privacidade, zero dependência de nuvem</p>
-            </div>
-
-            <div class="features__grid">
-                <div class="feature-card">
-                    <div class="feature-card__icon">🔒</div>
-                    <h3 class="feature-card__title">100% Local</h3>
-                    <p class="feature-card__description">
-                        Todos os dados permanecem no seu servidor. Zero uploads para nuvem.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-card__icon">⚡</div>
-                    <h3 class="feature-card__title">Alta Performance</h3>
-                    <p class="feature-card__description">
-                        Otimizado para GPUs NVIDIA. Processamento em tempo real sem latência.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-card__icon">🔧</div>
-                    <h3 class="feature-card__title">API Completa</h3>
-                    <p class="feature-card__description">
-                        RESTful APIs prontas para integração com seus sistemas existentes.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-card__icon">🌐</div>
-                    <h3 class="feature-card__title">Multi-idioma</h3>
-                    <p class="feature-card__description">
-                        Suporte para português, inglês, espanhol e mais de 90 idiomas.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-card__icon">📊</div>
-                    <h3 class="feature-card__title">Analytics</h3>
-                    <p class="feature-card__description">
-                        Métricas detalhadas e insights sobre uso e performance.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-card__icon">🚀</div>
-                    <h3 class="feature-card__title">Deploy Fácil</h3>
-                    <p class="feature-card__description">
-                        Docker Compose pronto. Configure em minutos, não em dias.
-                    </p>
                 </div>
             </div>
         </div>
@@ -528,6 +530,13 @@
                                     <span class="file-name" id="asrFileName"></span>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="asrEnableDiarization" />
+                                    <span>Ativar Separação de Canais (Diar)</span>
+                                    <small class="help-text">Usa LLM para identificar Atendente e Cliente automaticamente</small>
+                                </label>
+                            </div>
                             <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
                             <div class="result-box" id="asrResult">
                                 <p class="placeholder">Aguardando arquivo...</p>
@@ -550,8 +559,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="diarUseLLM" checked />
+                                    <span>Usar LLM (Rápido - Atendente/Cliente)</span>
+                                    <small class="help-text">Recomendado: mais rápido e preciso para 2 speakers</small>
+                                </label>
+                            </div>
+                            <div class="form-group" id="diarNumSpeakersGroup">
                                 <label for="numSpeakers">Número de speakers (opcional)</label>
                                 <input id="numSpeakers" type="number" min="1" max="10" placeholder="Auto-detectar" />
+                                <small class="help-text">Apenas para modo tradicional (sem LLM)</small>
                             </div>
                             <button class="btn btn--primary btn--block" id="diarButton">Iniciar Diarização</button>
                             <div class="result-box" id="diarResult">
@@ -662,7 +679,7 @@
                                 <div class="form-group form-group--inline">
                                     <label for="chatModel">Modelo:</label>
                                     <select id="chatModel">
-                                        <option value="paneas-q32b">paneas-q32b (Qwen2.5-32B)</option>
+                                        <option value="paneas-q32b">paneas-q32b (Paneas-32B)</option>
                                     </select>
                                 </div>
                                 <div class="form-group form-group--inline">

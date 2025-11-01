@@ -319,7 +319,8 @@ class NLPModelHub:
     def sentiment_scores(self, text: str) -> Dict[str, float]:
         if not text.strip():
             return {}
-        outputs = self.sentiment_pipeline(text, top_k=None, truncation=True)
+        # Sentiment model max_length is 514, truncate to 512 to be safe
+        outputs = self.sentiment_pipeline(text, top_k=None, truncation=True, max_length=512)
         if outputs and isinstance(outputs[0], list):
             outputs = outputs[0]
         scores: Dict[str, float] = {}
@@ -332,7 +333,8 @@ class NLPModelHub:
     def emotion_scores(self, text: str) -> Dict[str, float]:
         if not text.strip():
             return {}
-        outputs = self.emotion_pipeline(text, top_k=None, truncation=True)
+        # Emotion model max_length is 128 tokens
+        outputs = self.emotion_pipeline(text, top_k=None, truncation=True, max_length=128)
         if outputs and isinstance(outputs[0], list):
             outputs = outputs[0]
         scores: Dict[str, float] = {}
@@ -352,11 +354,14 @@ class NLPModelHub:
     ) -> Dict[str, float]:
         if not text.strip():
             return {key: 0.0 for key in candidate_map}
+        # Zero-shot model max_length is 514, truncate to 512 to be safe
         result = self.zeroshot_pipeline(
             text,
             candidate_labels=list(candidate_map.values()),
             multi_label=multi_label,
             hypothesis_template=template,
+            truncation=True,
+            max_length=512,
         )
         labels = result["labels"]
         scores = result["scores"]
@@ -372,11 +377,14 @@ class NLPModelHub:
     def zero_shot_probability(self, text: str, positive: str, negative: str, template: str) -> float:
         if not text.strip():
             return 0.0
+        # Zero-shot model max_length is 514, truncate to 512 to be safe
         result = self.zeroshot_pipeline(
             text,
             candidate_labels=[positive, negative],
             multi_label=False,
             hypothesis_template=template,
+            truncation=True,
+            max_length=512,
         )
         labels = result["labels"]
         scores = result["scores"]
@@ -501,6 +509,9 @@ class AnalyticsEngine:
 
             await self._store_result(job_id, {"status": "completed", "results": results})
         except Exception as exc:  # noqa: BLE001
+            import traceback
+            error_details = f"{str(exc)}\n{traceback.format_exc()}"
+            print(f"[ERROR] Job {job_id} failed: {error_details}", flush=True)
             await self._store_result(job_id, {"status": "failed", "error": str(exc)})
         finally:
             if temp_audio and temp_audio.exists():

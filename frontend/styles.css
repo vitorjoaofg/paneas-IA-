@@ -570,6 +570,13 @@ input, select, textarea {
     grid-column: span 2;
 }
 
+.product-card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
 .product-card__icon {
     width: 64px;
     height: 64px;
@@ -577,8 +584,26 @@ input, select, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
     box-shadow: var(--shadow-lg);
+}
+
+.product-card__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background: rgba(85, 81, 255, 0.1);
+    border: 1px solid rgba(85, 81, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    white-space: nowrap;
+}
+
+.product-card__badge svg {
+    width: 14px;
+    height: 14px;
 }
 
 .product-card__title {
@@ -1173,6 +1198,118 @@ textarea:focus {
 .placeholder {
     color: rgba(255, 255, 255, 0.4);
     font-style: italic;
+}
+
+.help-text {
+    display: block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+/* Diarized Conversation Display */
+.conversation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.conversation-message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: messageSlideIn 0.4s ease-out forwards;
+}
+
+.conversation-message--agent {
+    align-items: flex-start;
+}
+
+.conversation-message--client {
+    align-items: flex-end;
+}
+
+.conversation-speaker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.conversation-speaker--agent {
+    color: #667eea;
+}
+
+.conversation-speaker--client {
+    color: #43e97b;
+}
+
+.conversation-speaker svg {
+    width: 16px;
+    height: 16px;
+}
+
+.conversation-bubble {
+    max-width: 75%;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-lg);
+    line-height: 1.6;
+    position: relative;
+}
+
+.conversation-bubble--agent {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-top-left-radius: 0.25rem;
+}
+
+.conversation-bubble--client {
+    background: linear-gradient(135deg, rgba(67, 233, 123, 0.15) 0%, rgba(56, 249, 215, 0.15) 100%);
+    border: 1px solid rgba(67, 233, 123, 0.3);
+    border-top-right-radius: 0.25rem;
+}
+
+@keyframes messageSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.diarization-status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(85, 81, 255, 0.1);
+    border: 1px solid rgba(85, 81, 255, 0.2);
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+}
+
+.diarization-status__spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(85, 81, 255, 0.3);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.diarization-status__text {
+    font-size: 0.875rem;
+    color: var(--primary-light);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 /* Timeline */

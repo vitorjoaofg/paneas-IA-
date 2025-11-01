@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "errors": [
+    "Senha incorreta! Tente novamente."
+  ],
+  "console_logs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 501 (Unsupported method ('POST'))",
+      "location": {
+        "url": "http://localhost:8765/api/v1/analytics/save-transcript",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Analytics error: Error: Falha ao salvar transcri\u00e7\u00e3o\n    at handleAnalyticsSubmit (http://localhost:8765/app.js:2275:37)\n    at async HTMLButtonElement.<anonymous> (http://localhost:8765/app.js:1705:9)",
+      "location": {
+        "url": "http://localhost:8765/app.js",
+        "lineNumber": 2314,
+        "columnNumber": 16
+      }
+    }
+  ],
+  "network_errors": [],
+  "status_messages": [
+    "Ativos"
+  ],
+  "screenshots": []
+}

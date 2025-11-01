@@ -30,7 +30,7 @@ class UploadFileResponse(BaseModel):
 
 @router.post("/analytics/upload-audio", response_model=UploadFileResponse)
 async def upload_audio(file: UploadFile = File(...)):
-    """Upload an audio file to /tmp for analytics processing"""
+    """Upload an audio file to /srv/data/tmp for analytics processing"""
     try:
         # Validate file extension
         allowed_extensions = {'.wav', '.mp3', '.ogg', '.flac', '.m4a', '.opus'}
@@ -46,7 +46,11 @@ async def upload_audio(file: UploadFile = File(...)):
         import time
         timestamp = int(time.time() * 1000)
         safe_filename = f"analytics_audio_{timestamp}{file_ext}"
-        file_path = Path("/tmp") / safe_filename
+        # Use shared volume that both API and analytics containers can access
+        # Both containers mount /srv/data as /data
+        tmp_dir = Path("/data/tmp")
+        tmp_dir.mkdir(parents=True, exist_ok=True)
+        file_path = tmp_dir / safe_filename
 
         # Save uploaded file
         with open(file_path, 'wb') as f:
@@ -67,9 +71,13 @@ async def upload_audio(file: UploadFile = File(...)):
 
 @router.post("/analytics/save-transcript", response_model=SaveTranscriptResponse)
 async def save_transcript(payload: SaveTranscriptRequest):
-    """Save a transcript JSON to /tmp for analytics processing"""
+    """Save a transcript JSON to /data/tmp for analytics processing"""
     try:
-        file_path = Path("/tmp") / payload.filename
+        # Use shared volume that both API and analytics containers can access
+        # Both containers mount /srv/data as /data
+        tmp_dir = Path("/data/tmp")
+        tmp_dir.mkdir(parents=True, exist_ok=True)
+        file_path = tmp_dir / payload.filename
 
         # Write JSON to file
         with open(file_path, 'w', encoding='utf-8') as f:

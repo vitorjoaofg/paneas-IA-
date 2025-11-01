@@ -13,10 +13,24 @@ settings = get_settings()
 async def diarize_audio(
     file: UploadFile = File(...),
     num_speakers: Optional[int] = Form(None),
+    use_llm: bool = Form(True),  # LLM mode is now the default
 ):
     """
     Realiza diarização de áudio - identifica diferentes speakers
+
+    Modos disponíveis:
+    - use_llm=True (padrão): Usa transcrição + LLM para separar canais (mais rápido)
+    - use_llm=False: Usa modelo de diarização tradicional (mais lento, mais preciso para múltiplos speakers)
     """
+    if use_llm:
+        # LLM mode: Just return a message indicating client should use ASR + LLM flow
+        return {
+            "mode": "llm",
+            "message": "Use ASR transcription first, then apply LLM diarization on the frontend",
+            "info": "LLM diarization is handled client-side for better performance"
+        }
+
+    # Traditional diarization mode
     # Prepare form data
     files = {"file": (file.filename, await file.read(), file.content_type)}
     data = {}

@@ -381,7 +381,11 @@ function trimTrailingSlash(url) {
 function resolveApiBase() {
     let base = ui.apiBase.value.trim();
     if (!base) {
+        // Default to window.location.origin but replace port 8765 with 8000 for API
         base = window.location.origin;
+        if (base.includes(':8765')) {
+            base = base.replace(':8765', ':8000');
+        }
     }
     return trimTrailingSlash(base);
 }
@@ -1430,7 +1434,10 @@ async function transcribeUploadedAudio() {
         return;
     }
 
+    const enableDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
+
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
+    console.log("[ASR] Diarização LLM:", enableDiarization ? "ativada" : "desativada");
     setOutput(ui.asrResult, "Enviando áudio para transcrição...");
 
     const formData = new FormData();
@@ -1463,11 +1470,153 @@ async function transcribeUploadedAudio() {
 
         const data = await response.json();
         console.log("[ASR] Dados recebidos:", data);
-        setOutput(ui.asrResult, prettyPrintJson(data));
+
+        // If LLM diarization is enabled, process with LLM
+        if (enableDiarization && data.text) {
+            await diarizeWithLLM(data.text);
+        } else {
+            setOutput(ui.asrResult, prettyPrintJson(data));
+        }
     } catch (err) {
         console.error("[ASR] Falha na transcrição por arquivo", err);
         setOutput(ui.asrResult, `Erro: ${err.message || err}`);
     }
+}
+
+async function diarizeWithLLM(transcriptText) {
+    const resultBox = ui.asrResult;
+    if (!resultBox) return;
+
+    // Show loading status
+    resultBox.innerHTML = `
+        <div class="diarization-status">
+            <div class="diarization-status__spinner"></div>
+            <span class="diarization-status__text">Separando canais com LLM...</span>
+        </div>
+    `;
+
+    const base = resolveApiBase();
+    const chatUrl = `${base}/api/v1/chat/completions`;
+
+    const diarizationPrompt = `Você é um especialista em revisão de transcrições humanas de ligações telefônicas.
+Sua função é transformar a transcrição bruta em um diálogo natural, fiel e profissional.
+
+Regras:
+1. Corrija erros de reconhecimento de fala, substituindo palavras truncadas ou sem sentido pelo termo mais provável.
+   - Exemplo: "momentoedas" → "monitoradas"; "atituar" → "atuar".
+2. Corrija nomes e empresas de forma contextual (ex.: "Aquedaclar" → "Claro", "Yair" → "Jair").
+3. Remova repetições, ruídos e interjeições desnecessárias que não alteram o sentido.
+4. Aplique pontuação, ortografia e fluidez natural de conversa humana.
+5. Estruture o resultado como um JSON array com objetos no formato:
+   {"speaker": "Atendente", "text": "fala corrigida"}
+   {"speaker": "Cliente", "text": "fala corrigida"}
+
+6. Nunca invente falas novas.
+7. Se algo estiver ilegível, use "[inaudível]" ou "[provável: ...]".
+8. Se houver redundâncias no final, mantenha apenas a parte relevante.
+9. **Não explique nada.**
+10. **Retorne apenas o JSON array**, sem markdown, observações, notas ou comentários.
+
+Agora revise a transcrição abaixo seguindo essas regras:
+
+${transcriptText}`;
+
+    try {
+        console.log("[Diarization] Enviando para LLM...");
+        const response = await fetch(chatUrl, {
+            method: "POST",
+            headers: buildAuthHeaders({ "Content-Type": "application/json" }),
+            body: JSON.stringify({
+                model: "paneas-q32b",
+                messages: [
+                    { role: "user", content: diarizationPrompt }
+                ],
+                temperature: 0.3,
+                max_tokens: 4000
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`LLM request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("[Diarization] Resposta do LLM:", data);
+
+        const llmResponse = data.choices?.[0]?.message?.content || "";
+        console.log("[Diarization] Conteúdo:", llmResponse);
+
+        // Try to parse JSON from response
+        let conversation = [];
+        try {
+            // Remove markdown code blocks if present
+            let cleanedResponse = llmResponse.trim();
+            if (cleanedResponse.startsWith('```json')) {
+                cleanedResponse = cleanedResponse.replace(/```json\n?/g, '').replace(/```\n?$/g, '');
+            } else if (cleanedResponse.startsWith('```')) {
+                cleanedResponse = cleanedResponse.replace(/```\n?/g, '');
+            }
+
+            conversation = JSON.parse(cleanedResponse);
+        } catch (parseError) {
+            console.error("[Diarization] Failed to parse JSON, trying line-by-line parsing", parseError);
+            // Fallback: try to parse line by line
+            const lines = llmResponse.split('\n').filter(l => l.trim());
+            for (const line of lines) {
+                const match = line.match(/^(Atendente|Cliente):\s*(.+)$/);
+                if (match) {
+                    conversation.push({
+                        speaker: match[1],
+                        text: match[2].trim()
+                    });
+                }
+            }
+        }
+
+        if (conversation.length === 0) {
+            throw new Error("Não foi possível extrair a conversa do LLM");
+        }
+
+        // Display animated conversation
+        displayDiarizedConversation(conversation);
+
+    } catch (err) {
+        console.error("[Diarization] Erro:", err);
+        setOutput(resultBox, `Erro na diarização: ${err.message}`);
+    }
+}
+
+function displayDiarizedConversation(conversation) {
+    const resultBox = ui.asrResult;
+    if (!resultBox) return;
+
+    resultBox.innerHTML = '<div class="conversation-container"></div>';
+    const container = resultBox.querySelector('.conversation-container');
+
+    conversation.forEach((message, index) => {
+        setTimeout(() => {
+            const isAgent = message.speaker.toLowerCase().includes('atendente');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+            messageDiv.style.animationDelay = '0s';
+
+            const speakerIcon = isAgent
+                ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+                : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+
+            messageDiv.innerHTML = `
+                <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
+                    ${speakerIcon}
+                    ${message.speaker}
+                </div>
+                <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
+                    ${message.text}
+                </div>
+            `;
+
+            container.appendChild(messageDiv);
+        }, index * 300); // Stagger animations
+    });
 }
 
 async function runOcr() {
@@ -1811,47 +1960,214 @@ async function handleDiarization() {
         return;
     }
 
+    const useLLM = document.getElementById('diarUseLLM')?.checked || false;
     const numSpeakers = ui.numSpeakers.value ? parseInt(ui.numSpeakers.value) : null;
-    setOutput(ui.diarResult, "Processando diarização...");
+
+    setOutput(ui.diarResult, useLLM ? "Transcrevendo áudio..." : "Processando diarização...");
     ui.diarButton.disabled = true;
 
     try {
-        const formData = new FormData();
-        formData.append("file", file);
-        if (numSpeakers) {
-            formData.append("num_speakers", numSpeakers.toString());
+        if (useLLM) {
+            // LLM mode: transcribe first, then diarize with LLM
+            const transcriptFormData = new FormData();
+            transcriptFormData.append("file", file);
+            transcriptFormData.append("language", "pt");
+
+            const apiBase = resolveApiBase();
+
+            // Step 1: Transcribe
+            const asrResponse = await fetch(`${apiBase}/api/v1/asr`, {
+                method: "POST",
+                headers: buildAuthHeaders(),
+                body: transcriptFormData,
+            });
+
+            if (!asrResponse.ok) {
+                throw new Error(`Transcription failed: ${asrResponse.status}`);
+            }
+
+            const asrData = await asrResponse.json();
+
+            if (!asrData.text) {
+                throw new Error("No transcription text received");
+            }
+
+            // Step 2: Diarize with LLM (reuse existing function)
+            await diarizeWithLLMForDiarBox(asrData.text);
+
+        } else {
+            // Traditional diarization mode
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("use_llm", "false");
+            if (numSpeakers) {
+                formData.append("num_speakers", numSpeakers.toString());
+            }
+
+            const apiBase = resolveApiBase();
+            const response = await fetch(`${apiBase}/api/v1/diar`, {
+                method: "POST",
+                headers: buildAuthHeaders(),
+                body: formData,
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+
+            // Format output
+            let output = `Arquivo: ${file.name}\n`;
+            output += `Speakers detectados: ${new Set(data.segments.map(s => s.speaker)).size}\n\n`;
+            output += "Segmentos:\n";
+            output += "─".repeat(60) + "\n\n";
+
+            data.segments.forEach((seg, idx) => {
+                output += `[${seg.start.toFixed(2)}s - ${seg.end.toFixed(2)}s] ${seg.speaker}\n`;
+            });
+
+            setOutput(ui.diarResult, output);
         }
-
-        const apiBase = resolveApiBase();
-        const response = await fetch(`${apiBase}/api/v1/diar`, {
-            method: "POST",
-            headers: buildAuthHeaders(),
-            body: formData,
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-
-        const data = await response.json();
-
-        // Format output
-        let output = `Arquivo: ${file.name}\n`;
-        output += `Speakers detectados: ${new Set(data.segments.map(s => s.speaker)).size}\n\n`;
-        output += "Segmentos:\n";
-        output += "─".repeat(60) + "\n\n";
-
-        data.segments.forEach((seg, idx) => {
-            output += `[${seg.start.toFixed(2)}s - ${seg.end.toFixed(2)}s] ${seg.speaker}\n`;
-        });
-
-        setOutput(ui.diarResult, output);
     } catch (err) {
         console.error("Erro na diarização:", err);
         setOutput(ui.diarResult, `Erro: ${err.message}`);
     } finally {
         ui.diarButton.disabled = false;
     }
+}
+
+async function diarizeWithLLMForDiarBox(transcriptText) {
+    const resultBox = ui.diarResult;
+    if (!resultBox) return;
+
+    // Show loading status
+    resultBox.innerHTML = `
+        <div class="diarization-status">
+            <div class="diarization-status__spinner"></div>
+            <span class="diarization-status__text">Separando canais com LLM...</span>
+        </div>
+    `;
+
+    const base = resolveApiBase();
+    const chatUrl = `${base}/api/v1/chat/completions`;
+
+    const diarizationPrompt = `Você é um especialista em revisão de transcrições humanas de ligações telefônicas.
+Sua função é transformar a transcrição bruta em um diálogo natural, fiel e profissional.
+
+Regras:
+1. Corrija erros de reconhecimento de fala, substituindo palavras truncadas ou sem sentido pelo termo mais provável.
+   - Exemplo: "momentoedas" → "monitoradas"; "atituar" → "atuar".
+2. Corrija nomes e empresas de forma contextual (ex.: "Aquedaclar" → "Claro", "Yair" → "Jair").
+3. Remova repetições, ruídos e interjeições desnecessárias que não alteram o sentido.
+4. Aplique pontuação, ortografia e fluidez natural de conversa humana.
+5. Estruture o resultado como um JSON array com objetos no formato:
+   {"speaker": "Atendente", "text": "fala corrigida"}
+   {"speaker": "Cliente", "text": "fala corrigida"}
+
+6. Nunca invente falas novas.
+7. Se algo estiver ilegível, use "[inaudível]" ou "[provável: ...]".
+8. Se houver redundâncias no final, mantenha apenas a parte relevante.
+9. **Não explique nada.**
+10. **Retorne apenas o JSON array**, sem markdown, observações, notas ou comentários.
+
+Agora revise a transcrição abaixo seguindo essas regras:
+
+${transcriptText}`;
+
+    try {
+        console.log("[Diarization] Enviando para LLM...");
+        const response = await fetch(chatUrl, {
+            method: "POST",
+            headers: buildAuthHeaders({ "Content-Type": "application/json" }),
+            body: JSON.stringify({
+                model: "paneas-q32b",
+                messages: [
+                    { role: "user", content: diarizationPrompt }
+                ],
+                temperature: 0.3,
+                max_tokens: 4000
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`LLM request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const llmResponse = data.choices?.[0]?.message?.content || "";
+
+        // Try to parse JSON from response
+        let conversation = [];
+        try {
+            // Remove markdown code blocks if present
+            let cleanedResponse = llmResponse.trim();
+            if (cleanedResponse.startsWith('```json')) {
+                cleanedResponse = cleanedResponse.replace(/```json\n?/g, '').replace(/```\n?$/g, '');
+            } else if (cleanedResponse.startsWith('```')) {
+                cleanedResponse = cleanedResponse.replace(/```\n?/g, '');
+            }
+
+            conversation = JSON.parse(cleanedResponse);
+        } catch (parseError) {
+            console.error("[Diarization] Failed to parse JSON, trying line-by-line parsing");
+            // Fallback: try to parse line by line
+            const lines = llmResponse.split('\n').filter(l => l.trim());
+            for (const line of lines) {
+                const match = line.match(/^(Atendente|Cliente):\s*(.+)$/);
+                if (match) {
+                    conversation.push({
+                        speaker: match[1],
+                        text: match[2].trim()
+                    });
+                }
+            }
+        }
+
+        if (conversation.length === 0) {
+            throw new Error("Não foi possível extrair a conversa do LLM");
+        }
+
+        // Display animated conversation for diar box
+        displayDiarizedConversationInDiarBox(conversation);
+
+    } catch (err) {
+        console.error("[Diarization] Erro:", err);
+        setOutput(resultBox, `Erro na diarização: ${err.message}`);
+    }
+}
+
+function displayDiarizedConversationInDiarBox(conversation) {
+    const resultBox = ui.diarResult;
+    if (!resultBox) return;
+
+    resultBox.innerHTML = '<div class="conversation-container"></div>';
+    const container = resultBox.querySelector('.conversation-container');
+
+    conversation.forEach((message, index) => {
+        setTimeout(() => {
+            const isAgent = message.speaker.toLowerCase().includes('atendente');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+            messageDiv.style.animationDelay = '0s';
+
+            const speakerIcon = isAgent
+                ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+                : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+
+            messageDiv.innerHTML = `
+                <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
+                    ${speakerIcon}
+                    ${message.speaker}
+                </div>
+                <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
+                    ${message.text}
+                </div>
+            `;
+
+            container.appendChild(messageDiv);
+        }, index * 300); // Stagger animations
+    });
 }
 
 // TTS Functions
@@ -2196,8 +2512,10 @@ async function handleAnalyticsSubmit() {
             formData.append('file', audioFile);
 
             const base = resolveApiBase();
+            const authHeaders = buildAuthHeaders();
             const uploadResp = await fetch(`${base}/api/v1/analytics/upload-audio`, {
                 method: 'POST',
+                headers: authHeaders,
                 body: formData
             });
 
@@ -2213,7 +2531,7 @@ async function handleAnalyticsSubmit() {
             statusEl && (statusEl.textContent = '🎤 Transcrevendo áudio...');
             const transcribeResp = await fetch(`${base}/api/v1/asr/transcribe`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: buildAuthHeaders({ 'Content-Type': 'application/json' }),
                 body: JSON.stringify({
                     audio_path: audioUri,
                     language: 'pt',
@@ -2231,7 +2549,7 @@ async function handleAnalyticsSubmit() {
 
             const saveResp = await fetch(`${base}/api/v1/analytics/save-transcript`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: buildAuthHeaders({ 'Content-Type': 'application/json' }),
                 body: JSON.stringify({
                     filename: filename,
                     data: transcribeData
@@ -2263,7 +2581,7 @@ async function handleAnalyticsSubmit() {
             const base = resolveApiBase();
             const saveResp = await fetch(`${base}/api/v1/analytics/save-transcript`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: buildAuthHeaders({ 'Content-Type': 'application/json' }),
                 body: JSON.stringify({
                     filename: filename,
                     data: transcriptData
@@ -2287,9 +2605,10 @@ async function handleAnalyticsSubmit() {
 
         // Submit analytics job
         statusEl && (statusEl.textContent = '🔄 Submetendo job de análise...');
-        const analyticsResp = await fetch('http://localhost:9005/analytics/speech', {
+        const base = resolveApiBase();
+        const analyticsResp = await fetch(`${base}/api/v1/analytics/speech`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: buildAuthHeaders({ 'Content-Type': 'application/json' }),
             body: JSON.stringify({
                 call_id: crypto.randomUUID(),
                 audio_uri: audioUri,
@@ -2319,7 +2638,10 @@ function startAnalyticsPolling() {
 
     analyticsPollInterval = setInterval(async () => {
         try {
-            const resp = await fetch(`http://localhost:9005/analytics/speech/${analyticsJobId}`);
+            const base = resolveApiBase();
+            const resp = await fetch(`${base}/api/v1/analytics/speech/${analyticsJobId}`, {
+                headers: buildAuthHeaders()
+            });
             const data = await resp.json();
 
             const statusEl = document.getElementById('analyticsStatus');
