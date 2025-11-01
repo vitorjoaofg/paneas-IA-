@@ -1498,31 +1498,30 @@ async function diarizeWithLLM(transcriptText) {
     const base = resolveApiBase();
     const chatUrl = `${base}/api/v1/chat/completions`;
 
-    const diarizationPrompt = `Você é um especialista em revisão de transcrições humanas de ligações telefônicas.
-Sua função é transformar a transcrição bruta em um diálogo natural, fiel e profissional.
+    const diarizationPrompt = `Você é um especialista em revisão de transcrições de áudio de call center. Sua tarefa é separar a transcrição abaixo em um diálogo estruturado entre "Atendente" e "Cliente".
 
 Regras:
-1. Corrija erros de reconhecimento de fala, substituindo palavras truncadas ou sem sentido pelo termo mais provável.
-   - Exemplo: "momentoedas" → "monitoradas"; "atituar" → "atuar".
-2. Corrija nomes e empresas de forma contextual (ex.: "Aquedaclar" → "Claro", "Yair" → "Jair").
-3. Remova repetições, ruídos e interjeições desnecessárias que não alteram o sentido.
-4. Aplique pontuação, ortografia e fluidez natural de conversa humana.
-5. Estruture o resultado como um JSON array com objetos no formato:
-   {"speaker": "Atendente", "text": "fala corrigida"}
-   {"speaker": "Cliente", "text": "fala corrigida"}
+1. Identifique claramente quem é o Atendente e quem é o Cliente
+2. O Atendente geralmente se apresenta no início, fala de forma mais formal, e oferece ajuda
+3. Separe cada fala em uma entrada com "speaker" (Atendente ou Cliente) e "text" (o texto falado)
+4. Corrija erros óbvios de transcrição (palavras cortadas, repetições desnecessárias)
+5. Mantenha a naturalidade da conversa
+6. Se houver dúvida sobre quem está falando, use o contexto da conversa
+7. Retorne APENAS um JSON array no formato: [{"speaker": "Atendente", "text": "..."}, {"speaker": "Cliente", "text": "..."}]
+8. NÃO inclua explicações, apenas o JSON
+9. Se não conseguir identificar claramente, marque como "Desconhecido"
+10. Mantenha a ordem cronológica das falas
 
-6. Nunca invente falas novas.
-7. Se algo estiver ilegível, use "[inaudível]" ou "[provável: ...]".
-8. Se houver redundâncias no final, mantenha apenas a parte relevante.
-9. **Não explique nada.**
-10. **Retorne apenas o JSON array**, sem markdown, observações, notas ou comentários.
-
-Agora revise a transcrição abaixo seguindo essas regras:
-
+Transcrição:
 ${transcriptText}`;
 
     try {
         console.log("[Diarization] Enviando para LLM...");
+        console.log("[Diarization] Tamanho do texto:", transcriptText.length, "chars");
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 180000); // 3 min timeout
+
         const response = await fetch(chatUrl, {
             method: "POST",
             headers: buildAuthHeaders({ "Content-Type": "application/json" }),
@@ -1532,35 +1531,90 @@ ${transcriptText}`;
                     { role: "user", content: diarizationPrompt }
                 ],
                 temperature: 0.3,
-                max_tokens: 4000
-            })
+                max_tokens: 4000,
+                stream: true
+            }),
+            signal: controller.signal
         });
 
+        clearTimeout(timeoutId);
+        console.log("[Diarization] Stream iniciado, status:", response.status);
+
         if (!response.ok) {
-            throw new Error(`LLM request failed: ${response.status}`);
+            const errorText = await response.text();
+            console.error("[Diarization] Erro:", errorText);
+            throw new Error(`LLM request failed: ${response.status} - ${errorText}`);
         }
 
-        const data = await response.json();
-        console.log("[Diarization] Resposta do LLM:", data);
+        // Setup streaming conversation display
+        resultBox.innerHTML = `
+            <div class="conversation-header">
+                <div class="conversation-header__title">
+                    <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Conversa Diarizada
+                    <div class="diarization-status__spinner" style="width: 14px; height: 14px; margin-left: 8px; display: inline-block;"></div>
+                </div>
+                <div class="conversation-header__count">
+                    <span id="messageCount">0 mensagens</span>
+                </div>
+            </div>
+            <div class="conversation-container"></div>
+        `;
 
-        const llmResponse = data.choices?.[0]?.message?.content || "";
-        console.log("[Diarization] Conteúdo:", llmResponse);
+        const container = resultBox.querySelector('.conversation-container');
+        let llmResponse = "";
 
-        // Try to parse JSON from response
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n').filter(line => line.trim() !== '');
+
+            for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                    const data = line.slice(6);
+                    if (data === '[DONE]') continue;
+
+                    try {
+                        const parsed = JSON.parse(data);
+                        const content = parsed.choices?.[0]?.delta?.content || '';
+                        if (content) {
+                            llmResponse += content;
+
+                            // Try to parse incrementally and display messages
+                            const partialConversation = tryParsePartialJSON(llmResponse);
+                            if (partialConversation.length > 0) {
+                                displayStreamingConversation(container, partialConversation);
+                                document.getElementById('messageCount').textContent = `${partialConversation.length} mensagens`;
+                            }
+                        }
+                    } catch (e) {
+                        // Ignore parse errors during streaming
+                    }
+                }
+            }
+        }
+
+        console.log("[Diarization] Stream completo");
+
+        // Final parse
         let conversation = [];
         try {
-            // Remove markdown code blocks if present
             let cleanedResponse = llmResponse.trim();
             if (cleanedResponse.startsWith('```json')) {
                 cleanedResponse = cleanedResponse.replace(/```json\n?/g, '').replace(/```\n?$/g, '');
             } else if (cleanedResponse.startsWith('```')) {
                 cleanedResponse = cleanedResponse.replace(/```\n?/g, '');
             }
-
             conversation = JSON.parse(cleanedResponse);
         } catch (parseError) {
-            console.error("[Diarization] Failed to parse JSON, trying line-by-line parsing", parseError);
-            // Fallback: try to parse line by line
+            console.error("[Diarization] Failed to parse final JSON", parseError);
             const lines = llmResponse.split('\n').filter(l => l.trim());
             for (const line of lines) {
                 const match = line.match(/^(Atendente|Cliente):\s*(.+)$/);
@@ -1577,7 +1631,7 @@ ${transcriptText}`;
             throw new Error("Não foi possível extrair a conversa do LLM");
         }
 
-        // Display animated conversation
+        // Final display
         displayDiarizedConversation(conversation);
 
     } catch (err) {
@@ -1586,11 +1640,85 @@ ${transcriptText}`;
     }
 }
 
+function tryParsePartialJSON(text) {
+    // Try to extract complete JSON objects from partial stream
+    try {
+        // Look for complete objects in the stream
+        const jsonMatch = text.match(/\[\s*(\{[\s\S]*\})\s*\]/);
+        if (jsonMatch) {
+            return JSON.parse(jsonMatch[0]);
+        }
+
+        // Try to find individual complete objects
+        const objectMatches = text.matchAll(/\{\s*"speaker"\s*:\s*"(Atendente|Cliente)"\s*,\s*"text"\s*:\s*"([^"]+)"\s*\}/g);
+        const results = [];
+        for (const match of objectMatches) {
+            results.push({
+                speaker: match[1],
+                text: match[2]
+            });
+        }
+        return results;
+    } catch (e) {
+        return [];
+    }
+}
+
+function displayStreamingConversation(container, conversation) {
+    // Clear and redisplay all messages (simple approach for streaming)
+    container.innerHTML = '';
+
+    conversation.forEach((message, index) => {
+        const isAgent = message.speaker.toLowerCase().includes('atendente');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+
+        const speakerIcon = isAgent
+            ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+            : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+
+        messageDiv.innerHTML = `
+            <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
+                ${speakerIcon}
+                ${message.speaker}
+            </div>
+            <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
+                ${message.text}
+            </div>
+        `;
+
+        container.appendChild(messageDiv);
+    });
+
+    // Auto-scroll to bottom
+    container.scrollTop = container.scrollHeight;
+}
+
 function displayDiarizedConversation(conversation) {
     const resultBox = ui.asrResult;
     if (!resultBox) return;
 
-    resultBox.innerHTML = '<div class="conversation-container"></div>';
+    // Create header with conversation stats
+    const header = `
+        <div class="conversation-header">
+            <div class="conversation-header__title">
+                <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Conversa Diarizada
+            </div>
+            <div class="conversation-header__count">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                </svg>
+                ${conversation.length} mensagens
+            </div>
+        </div>
+    `;
+
+    resultBox.innerHTML = header + '<div class="conversation-container"></div>';
     const container = resultBox.querySelector('.conversation-container');
 
     conversation.forEach((message, index) => {
@@ -2052,31 +2180,30 @@ async function diarizeWithLLMForDiarBox(transcriptText) {
     const base = resolveApiBase();
     const chatUrl = `${base}/api/v1/chat/completions`;
 
-    const diarizationPrompt = `Você é um especialista em revisão de transcrições humanas de ligações telefônicas.
-Sua função é transformar a transcrição bruta em um diálogo natural, fiel e profissional.
+    const diarizationPrompt = `Você é um especialista em revisão de transcrições de áudio de call center. Sua tarefa é separar a transcrição abaixo em um diálogo estruturado entre "Atendente" e "Cliente".
 
 Regras:
-1. Corrija erros de reconhecimento de fala, substituindo palavras truncadas ou sem sentido pelo termo mais provável.
-   - Exemplo: "momentoedas" → "monitoradas"; "atituar" → "atuar".
-2. Corrija nomes e empresas de forma contextual (ex.: "Aquedaclar" → "Claro", "Yair" → "Jair").
-3. Remova repetições, ruídos e interjeições desnecessárias que não alteram o sentido.
-4. Aplique pontuação, ortografia e fluidez natural de conversa humana.
-5. Estruture o resultado como um JSON array com objetos no formato:
-   {"speaker": "Atendente", "text": "fala corrigida"}
-   {"speaker": "Cliente", "text": "fala corrigida"}
+1. Identifique claramente quem é o Atendente e quem é o Cliente
+2. O Atendente geralmente se apresenta no início, fala de forma mais formal, e oferece ajuda
+3. Separe cada fala em uma entrada com "speaker" (Atendente ou Cliente) e "text" (o texto falado)
+4. Corrija erros óbvios de transcrição (palavras cortadas, repetições desnecessárias)
+5. Mantenha a naturalidade da conversa
+6. Se houver dúvida sobre quem está falando, use o contexto da conversa
+7. Retorne APENAS um JSON array no formato: [{"speaker": "Atendente", "text": "..."}, {"speaker": "Cliente", "text": "..."}]
+8. NÃO inclua explicações, apenas o JSON
+9. Se não conseguir identificar claramente, marque como "Desconhecido"
+10. Mantenha a ordem cronológica das falas
 
-6. Nunca invente falas novas.
-7. Se algo estiver ilegível, use "[inaudível]" ou "[provável: ...]".
-8. Se houver redundâncias no final, mantenha apenas a parte relevante.
-9. **Não explique nada.**
-10. **Retorne apenas o JSON array**, sem markdown, observações, notas ou comentários.
-
-Agora revise a transcrição abaixo seguindo essas regras:
-
+Transcrição:
 ${transcriptText}`;
 
     try {
         console.log("[Diarization] Enviando para LLM...");
+        console.log("[Diarization] Tamanho do texto:", transcriptText.length, "chars");
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 180000); // 3 min timeout
+
         const response = await fetch(chatUrl, {
             method: "POST",
             headers: buildAuthHeaders({ "Content-Type": "application/json" }),
@@ -2086,32 +2213,90 @@ ${transcriptText}`;
                     { role: "user", content: diarizationPrompt }
                 ],
                 temperature: 0.3,
-                max_tokens: 4000
-            })
+                max_tokens: 4000,
+                stream: true
+            }),
+            signal: controller.signal
         });
 
+        clearTimeout(timeoutId);
+        console.log("[Diarization] Stream iniciado, status:", response.status);
+
         if (!response.ok) {
-            throw new Error(`LLM request failed: ${response.status}`);
+            const errorText = await response.text();
+            console.error("[Diarization] Erro:", errorText);
+            throw new Error(`LLM request failed: ${response.status} - ${errorText}`);
         }
 
-        const data = await response.json();
-        const llmResponse = data.choices?.[0]?.message?.content || "";
+        // Setup streaming conversation display
+        resultBox.innerHTML = `
+            <div class="conversation-header">
+                <div class="conversation-header__title">
+                    <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Conversa Diarizada
+                    <div class="diarization-status__spinner" style="width: 14px; height: 14px; margin-left: 8px; display: inline-block;"></div>
+                </div>
+                <div class="conversation-header__count">
+                    <span id="messageCountDiar">0 mensagens</span>
+                </div>
+            </div>
+            <div class="conversation-container"></div>
+        `;
 
-        // Try to parse JSON from response
+        const container = resultBox.querySelector('.conversation-container');
+        let llmResponse = "";
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n').filter(line => line.trim() !== '');
+
+            for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                    const data = line.slice(6);
+                    if (data === '[DONE]') continue;
+
+                    try {
+                        const parsed = JSON.parse(data);
+                        const content = parsed.choices?.[0]?.delta?.content || '';
+                        if (content) {
+                            llmResponse += content;
+
+                            // Try to parse incrementally and display messages
+                            const partialConversation = tryParsePartialJSON(llmResponse);
+                            if (partialConversation.length > 0) {
+                                displayStreamingConversation(container, partialConversation);
+                                document.getElementById('messageCountDiar').textContent = `${partialConversation.length} mensagens`;
+                            }
+                        }
+                    } catch (e) {
+                        // Ignore parse errors during streaming
+                    }
+                }
+            }
+        }
+
+        console.log("[Diarization] Stream completo");
+
+        // Final parse
         let conversation = [];
         try {
-            // Remove markdown code blocks if present
             let cleanedResponse = llmResponse.trim();
             if (cleanedResponse.startsWith('```json')) {
                 cleanedResponse = cleanedResponse.replace(/```json\n?/g, '').replace(/```\n?$/g, '');
             } else if (cleanedResponse.startsWith('```')) {
                 cleanedResponse = cleanedResponse.replace(/```\n?/g, '');
             }
-
             conversation = JSON.parse(cleanedResponse);
         } catch (parseError) {
-            console.error("[Diarization] Failed to parse JSON, trying line-by-line parsing");
-            // Fallback: try to parse line by line
+            console.error("[Diarization] Failed to parse final JSON", parseError);
             const lines = llmResponse.split('\n').filter(l => l.trim());
             for (const line of lines) {
                 const match = line.match(/^(Atendente|Cliente):\s*(.+)$/);
@@ -2128,7 +2313,7 @@ ${transcriptText}`;
             throw new Error("Não foi possível extrair a conversa do LLM");
         }
 
-        // Display animated conversation for diar box
+        // Display final conversation for diar box
         displayDiarizedConversationInDiarBox(conversation);
 
     } catch (err) {
@@ -2141,7 +2326,27 @@ function displayDiarizedConversationInDiarBox(conversation) {
     const resultBox = ui.diarResult;
     if (!resultBox) return;
 
-    resultBox.innerHTML = '<div class="conversation-container"></div>';
+    // Create header with conversation stats
+    const header = `
+        <div class="conversation-header">
+            <div class="conversation-header__title">
+                <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Conversa Diarizada
+            </div>
+            <div class="conversation-header__count">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                </svg>
+                ${conversation.length} mensagens
+            </div>
+        </div>
+    `;
+
+    resultBox.innerHTML = header + '<div class="conversation-container"></div>';
     const container = resultBox.querySelector('.conversation-container');
 
     conversation.forEach((message, index) => {
