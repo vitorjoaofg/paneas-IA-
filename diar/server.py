@@ -1,5 +1,6 @@
 import hashlib
 import os
+import shutil
 import tempfile
 from pathlib import Path
 from typing import Any, Dict, List
@@ -33,11 +34,29 @@ class DiarizationEngine:
             self.pipeline = Pipeline.from_pretrained(MODEL_NAME)
         self.pipeline.to(torch.device("cuda"))
 
+        # Optimize batch processing for faster inference
+        # Configure batch sizes for segmentation and embedding components
+        if hasattr(self.pipeline, '_segmentation') and hasattr(self.pipeline._segmentation, 'model'):
+            self.pipeline._segmentation.batch_size = 32
+        if hasattr(self.pipeline, '_embedding') and hasattr(self.pipeline._embedding, 'model'):
+            self.pipeline._embedding.batch_size = 32
+
     def diarize(self, audio_path: Path, num_speakers: int | None) -> List[Dict[str, Any]]:
+        # Optimize with speaker constraints to avoid unnecessary clustering
         if num_speakers:
-            diarization = self.pipeline(audio_path, num_speakers=num_speakers)
+            diarization = self.pipeline(
+                audio_path,
+                num_speakers=num_speakers,
+                min_speakers=num_speakers,
+                max_speakers=num_speakers,
+            )
         else:
-            diarization = self.pipeline(audio_path)
+            # When not specified, constrain to reasonable range (1-10 speakers)
+            diarization = self.pipeline(
+                audio_path,
+                min_speakers=1,
+                max_speakers=10,
+            )
         segments = []
         for turn, _, speaker in diarization.itertracks(yield_label=True):
             segments.append(
@@ -66,9 +85,27 @@ async def diarize_endpoint(
     contents = await file.read()
     audio_hash = hashlib.sha256(contents).hexdigest()
     cache_file = CACHE_DIR / f"{audio_hash}.wav"
-    cache_file.parent.mkdir(parents=True, exist_ok=True)
-    if not cache_file.exists():
-        with cache_file.open("wb") as handle:
-            handle.write(contents)
-    segments = engine.diarize(cache_file, num_speakers)
+
+    # Process from memory using temporary file to reduce I/O
+    if cache_file.exists():
+        # Use cached file if available
+        segments = engine.diarize(cache_file, num_speakers)
+    else:
+        # Process from memory using temporary file, then cache result
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_file:
+            tmp_path = Path(tmp_file.name)
+            tmp_file.write(contents)
+            tmp_file.flush()
+
+        try:
+            # Process from temporary file
+            segments = engine.diarize(tmp_path, num_speakers)
+            # Save to cache for future requests (use shutil.move for cross-filesystem support)
+            shutil.move(str(tmp_path), str(cache_file))
+        except Exception:
+            # Clean up temp file on error
+            tmp_path.unlink(missing_ok=True)
+            raise
+
     return {"segments": segments}

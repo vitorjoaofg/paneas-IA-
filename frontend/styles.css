@@ -755,12 +755,14 @@ textarea:focus {
     align-self: flex-start;
     background: var(--surface);
     border: 1px solid var(--border);
+    color: var(--text-primary);
 }
 
 .chat__cursor {
     display: inline-block;
     margin-left: 2px;
     animation: blink 1s infinite;
+    color: var(--primary-light);
 }
 
 @keyframes blink {

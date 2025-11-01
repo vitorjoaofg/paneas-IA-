@@ -315,14 +315,14 @@ services:
     restart: unless-stopped
     runtime: nvidia
     gpus:
-      - device_ids: ['1']
+      - device_ids: ['0']
     environment:
       - CUDA_VISIBLE_DEVICES=0
       - HF_TOKEN=${HF_TOKEN}
       - EMBEDDINGS_CACHE=/cache/embeddings
       - HF_HOME=/models
       - TRANSFORMERS_CACHE=/models
-      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_VISIBLE_DEVICES=0
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
       - /srv/models:/models
@@ -332,7 +332,7 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['1']
+              device_ids: ['0']
               capabilities: [gpu]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9003/health"]
