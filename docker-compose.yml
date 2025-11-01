@@ -467,11 +467,7 @@ services:
     build: ./analytics
     container_name: stack-analytics
     restart: unless-stopped
-    runtime: nvidia
-    gpus:
-      - device_ids: ['1']
     environment:
-      - CUDA_VISIBLE_DEVICES=0
       - CELERY_BROKER=redis://redis:6379/0
       - CELERY_BACKEND=redis://redis:6379/1
       - MINIO_ENDPOINT=minio:9000
@@ -486,8 +482,6 @@ services:
       - LLM_MODEL=paneas-v1
       - LLM_TIMEOUT=20
       - MODEL_ROOT=/models
-      - NVIDIA_VISIBLE_DEVICES=1
-      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
       - /srv/models:/models:ro
       - /srv/data:/data

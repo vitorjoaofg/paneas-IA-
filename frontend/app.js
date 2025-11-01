@@ -1,3 +1,194 @@
+// ========================================
+// Password Protection
+// ========================================
+
+const CORRECT_PASSWORD = 'Paneas@321';
+let isAuthenticated = false;
+
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', () => {
+    const passwordModal = document.getElementById('passwordModal');
+    const passwordInput = document.getElementById('passwordInput');
+    const passwordForm = document.getElementById('passwordForm');
+    const passwordError = document.getElementById('passwordError');
+
+    // Clean up old localStorage system (migration)
+    if (localStorage.getItem('paneas_unlocked')) {
+        localStorage.removeItem('paneas_unlocked');
+    }
+
+    // Check if already authenticated (session storage)
+    if (sessionStorage.getItem('paneas_authenticated') === 'true') {
+        isAuthenticated = true;
+        passwordModal.style.display = 'none';
+        passwordModal.style.opacity = '0';
+        document.body.classList.remove('modal-open');
+    } else {
+        // Show modal and add body class
+        passwordModal.style.display = 'flex';
+        passwordModal.style.opacity = '1';
+        document.body.classList.add('modal-open');
+        // Focus input
+        setTimeout(() => {
+            passwordInput.focus();
+        }, 300);
+    }
+
+    // Password form handler
+    passwordForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitButton = e.target.querySelector('button[type="submit"]');
+        const enteredPassword = passwordInput.value;
+
+        if (enteredPassword === CORRECT_PASSWORD) {
+            // Success
+            isAuthenticated = true;
+            sessionStorage.setItem('paneas_authenticated', 'true');
+
+            // Success animation
+            submitButton.innerHTML = `
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Acesso Liberado!
+            `;
+            submitButton.style.background = '#10b981';
+
+            // Hide error if visible
+            passwordError.style.display = 'none';
+
+            // Close modal with animation
+            setTimeout(() => {
+                passwordModal.style.opacity = '0';
+                document.body.classList.remove('modal-open');
+                setTimeout(() => {
+                    passwordModal.style.display = 'none';
+                }, 300);
+            }, 800);
+        } else {
+            // Error
+            passwordError.style.display = 'flex';
+            passwordInput.value = '';
+            passwordInput.focus();
+
+            // Shake animation
+            passwordInput.style.animation = 'none';
+            setTimeout(() => {
+                passwordInput.style.animation = 'shake 0.5s ease-in-out';
+            }, 10);
+
+            // Reset button
+            submitButton.disabled = false;
+        }
+    });
+
+    // Logout button handler
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', () => {
+            if (confirm('Tem certeza que deseja sair?')) {
+                // Clear authentication
+                sessionStorage.removeItem('paneas_authenticated');
+                isAuthenticated = false;
+
+                // Reset form
+                passwordInput.value = '';
+                const submitButton = document.querySelector('#passwordForm button[type="submit"]');
+                submitButton.innerHTML = `
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                        <polyline points="10 17 15 12 10 7"/>
+                        <line x1="15" x2="3" y1="12" y2="12"/>
+                    </svg>
+                    Entrar
+                `;
+                submitButton.style.background = '';
+
+                // Show modal
+                document.body.classList.add('modal-open');
+                passwordModal.style.display = 'flex';
+                passwordModal.style.opacity = '1';
+
+                setTimeout(() => {
+                    passwordInput.focus();
+                }, 300);
+            }
+        });
+    }
+});
+
+// Prevent access to functionality if not authenticated
+function checkAuth() {
+    if (!isAuthenticated) {
+        alert('Por favor, faça login primeiro.');
+        return false;
+    }
+    return true;
+}
+
+// ========================================
+// Navigation & UI Handlers
+// ========================================
+
+// Product card navigation
+document.addEventListener('DOMContentLoaded', () => {
+    // Product cards - navigate to playground
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        const ctaButton = card.querySelector('.product-card__cta');
+        const productType = card.dataset.product;
+
+        if (ctaButton && productType) {
+            ctaButton.addEventListener('click', () => {
+                // Navigate to playground section
+                document.getElementById('playground').scrollIntoView({ behavior: 'smooth' });
+
+                // Switch to the corresponding tab
+                setTimeout(() => {
+                    switchPlaygroundTab(productType);
+                }, 500);
+            });
+        }
+    });
+
+    // Playground navigation
+    const playgroundNavItems = document.querySelectorAll('.playground__nav-item');
+    playgroundNavItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const tab = item.dataset.tab;
+            if (tab) {
+                switchPlaygroundTab(tab);
+            }
+        });
+    });
+});
+
+function switchPlaygroundTab(tabName) {
+    // Update nav items
+    const navItems = document.querySelectorAll('.playground__nav-item');
+    navItems.forEach(item => {
+        if (item.dataset.tab === tabName) {
+            item.classList.add('playground__nav-item--active');
+        } else {
+            item.classList.remove('playground__nav-item--active');
+        }
+    });
+
+    // Update panels
+    const panels = document.querySelectorAll('.playground__panel');
+    panels.forEach(panel => {
+        if (panel.dataset.content === tabName) {
+            panel.classList.add('playground__panel--active');
+        } else {
+            panel.classList.remove('playground__panel--active');
+        }
+    });
+}
+
+// ========================================
+// UI Elements & State
+// ========================================
+
 const ui = {
     statusBadge: document.getElementById("sessionStatus"),
     footerStatus: document.getElementById("footerStatus"),
@@ -24,7 +215,7 @@ const ui = {
     chatKeepHistory: document.getElementById("chatKeepHistory"),
     chatTools: document.getElementById("chatTools"),
     chatSystemPrompt: document.getElementById("chatSystemPrompt"),
-    chatPlaceholder: document.querySelector(".chat__placeholder"),
+    chatPlaceholder: document.querySelector(".chat-welcome"),
     chatClear: document.getElementById("clearChat"),
     listeningIndicator: document.getElementById("listeningIndicator"),
     roomId: document.getElementById("roomId"),
@@ -180,6 +371,7 @@ const state = {
     streamingTextWords: [],
     streamingStartTime: null,
     streamingTextDuration: 0,
+    lastHighlightedWordIndex: -1,
 };
 
 function trimTrailingSlash(url) {
@@ -383,18 +575,22 @@ function setStatus(message, tone = "idle") {
         stopping: { text: "Encerrando", className: "" },
         error: { text: "Erro", className: "" },
     };
-    if (tone in toneMap) {
-        ui.statusBadge.textContent = toneMap[tone].text;
-    } else {
-        ui.statusBadge.textContent = tone;
+    if (ui.statusBadge) {
+        if (tone in toneMap) {
+            ui.statusBadge.textContent = toneMap[tone].text;
+        } else {
+            ui.statusBadge.textContent = tone;
+        }
     }
-    ui.footerStatus.textContent = message;
+    if (ui.footerStatus) {
+        ui.footerStatus.textContent = message;
+    }
 }
 
 function updateStats() {
-    ui.batchCount.textContent = state.batches.toString();
-    ui.tokenCount.textContent = state.tokens.toString();
-    ui.audioSeconds.textContent = state.audioSeconds.toFixed(1);
+    if (ui.batchCount) ui.batchCount.textContent = state.batches.toString();
+    if (ui.tokenCount) ui.tokenCount.textContent = state.tokens.toString();
+    if (ui.audioSeconds) ui.audioSeconds.textContent = state.audioSeconds.toFixed(1);
 }
 
 function renderTranscript() {
@@ -518,8 +714,13 @@ function renderChat() {
     ui.chatLog.innerHTML = "";
     if (!state.chatHistory.length) {
         const placeholder = document.createElement("div");
-        placeholder.className = "chat__placeholder";
-        placeholder.textContent = "Converse com o modelo enquanto a chamada acontece.";
+        placeholder.className = "chat-welcome";
+        placeholder.innerHTML = `
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <p>Converse com o modelo de linguagem</p>
+        `;
         ui.chatLog.appendChild(placeholder);
         return;
     }
@@ -1498,6 +1699,17 @@ function bindEvents() {
         stopTTSStream();
     });
 
+    // Analytics event listeners
+    document.getElementById('analyticsSubmit')?.addEventListener("click", async (event) => {
+        event.preventDefault();
+        await handleAnalyticsSubmit();
+    });
+
+    document.getElementById('analyticsClear')?.addEventListener("click", (event) => {
+        event.preventDefault();
+        clearAnalytics();
+    });
+
     ui.scrapperConsultaForm?.addEventListener("submit", async (event) => {
         event.preventDefault();
         await submitScrapperConsulta();
@@ -1542,38 +1754,11 @@ function bindEvents() {
     });
 }
 
+// DEPRECATED: Old password check function - replaced by new system at top of file
+// Kept here for reference only - DO NOT USE
 function checkPassword() {
-    const CORRECT_PASSWORD = "Paneas@321";
-    const unlocked = localStorage.getItem("paneas_unlocked");
-    const modal = document.getElementById("passwordModal");
-    const passwordForm = document.getElementById("passwordForm");
-    const passwordInput = document.getElementById("passwordInput");
-    const passwordError = document.getElementById("passwordError");
-
-    if (unlocked === "true") {
-        modal.classList.add("hidden");
-        document.body.classList.remove("locked");
-        return;
-    }
-
-    document.body.classList.add("locked");
-
-    passwordForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const enteredPassword = passwordInput.value;
-
-        if (enteredPassword === CORRECT_PASSWORD) {
-            localStorage.setItem("paneas_unlocked", "true");
-            modal.classList.add("hidden");
-            document.body.classList.remove("locked");
-            passwordError.style.display = "none";
-            passwordInput.value = "";
-        } else {
-            passwordError.style.display = "block";
-            passwordInput.value = "";
-            passwordInput.focus();
-        }
-    });
+    // Do nothing - new system handles everything
+    return;
 }
 
 // Tab Switching
@@ -1798,6 +1983,7 @@ async function synthesizeTTSStream() {
 
     ui.streamingStatusText && (ui.streamingStatusText.textContent = "Conectando...");
     state.streamingAudio = true;
+    state.lastHighlightedWordIndex = -1;
 
     // Prepare text animation
     state.streamingTextWords = text.split(/\s+/);
@@ -1926,23 +2112,25 @@ function handleAudioTimeUpdate() {
     const timePerWord = duration / wordCount;
     const currentWordIndex = Math.floor(currentTime / timePerWord);
 
-    // Highlight current word and mark previous as spoken
-    for (let i = 0; i < wordCount; i++) {
-        const wordElement = ui.streamingText.querySelector(`[data-index="${i}"]`);
-        if (!wordElement) continue;
-
-        if (i < currentWordIndex) {
-            // Already spoken
-            wordElement.classList.remove('highlight');
-            wordElement.classList.add('spoken');
-        } else if (i === currentWordIndex) {
-            // Currently speaking
-            wordElement.classList.add('highlight');
-            wordElement.classList.remove('spoken');
-        } else {
-            // Not yet spoken
-            wordElement.classList.remove('highlight', 'spoken');
+    // Only update if word changed
+    if (state.lastHighlightedWordIndex !== currentWordIndex) {
+        // Remove highlight from previous word
+        if (state.lastHighlightedWordIndex >= 0) {
+            const prevWord = ui.streamingText.querySelector(`[data-index="${state.lastHighlightedWordIndex}"]`);
+            if (prevWord) {
+                prevWord.classList.remove('highlight');
+                prevWord.classList.add('spoken');
+            }
         }
+
+        // Highlight current word
+        const currentWord = ui.streamingText.querySelector(`[data-index="${currentWordIndex}"]`);
+        if (currentWord && !currentWord.classList.contains('spoken')) {
+            currentWord.classList.add('highlight');
+            currentWord.classList.remove('spoken');
+        }
+
+        state.lastHighlightedWordIndex = currentWordIndex;
     }
 }
 
@@ -1976,6 +2164,453 @@ function stopTTSStream() {
     ui.ttsStreamResult && (ui.ttsStreamResult.style.display = "none");
     ui.streamingStatusText && (ui.streamingStatusText.textContent = "Parado");
     ui.ttsStatus && (ui.ttsStatus.textContent = "Streaming interrompido.");
+}
+
+// ========================================
+// Analytics Functions
+// ========================================
+
+let analyticsJobId = null;
+let analyticsPollInterval = null;
+
+async function handleAnalyticsSubmit() {
+    const audioFile = document.getElementById('analyticsAudioFile')?.files[0];
+    const transcriptText = document.getElementById('analyticsTranscript')?.value?.trim();
+    const statusEl = document.getElementById('analyticsStatus');
+
+    if (!audioFile && !transcriptText) {
+        statusEl && (statusEl.textContent = '⚠️ Forneça um arquivo de áudio OU a transcrição');
+        return;
+    }
+
+    statusEl && (statusEl.textContent = '🔄 Preparando análise...');
+
+    try {
+        let audioUri = null;
+        let transcriptUri = null;
+
+        // Upload audio file if provided
+        if (audioFile) {
+            statusEl && (statusEl.textContent = '📤 Fazendo upload do áudio...');
+            const formData = new FormData();
+            formData.append('file', audioFile);
+
+            const base = resolveApiBase();
+            const uploadResp = await fetch(`${base}/api/v1/analytics/upload-audio`, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!uploadResp.ok) {
+                const error = await uploadResp.json();
+                throw new Error(error.detail || 'Falha no upload do áudio');
+            }
+
+            const uploadData = await uploadResp.json();
+            audioUri = uploadData.path;
+
+            // If audio uploaded, transcribe it first
+            statusEl && (statusEl.textContent = '🎤 Transcrevendo áudio...');
+            const transcribeResp = await fetch(`${base}/api/v1/asr/transcribe`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    audio_path: audioUri,
+                    language: 'pt',
+                    task: 'transcribe'
+                })
+            });
+
+            if (!transcribeResp.ok) throw new Error('Falha na transcrição do áudio');
+            const transcribeData = await transcribeResp.json();
+
+            // Save transcript to file
+            statusEl && (statusEl.textContent = '📝 Salvando transcrição...');
+            const timestamp = Date.now();
+            const filename = `analytics_transcript_${timestamp}.json`;
+
+            const saveResp = await fetch(`${base}/api/v1/analytics/save-transcript`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    filename: filename,
+                    data: transcribeData
+                })
+            });
+
+            if (!saveResp.ok) throw new Error('Falha ao salvar transcrição');
+            const saveData = await saveResp.json();
+            transcriptUri = saveData.path;
+
+            // Update textarea with transcript
+            const transcriptEl = document.getElementById('analyticsTranscript');
+            if (transcriptEl && transcribeData.text) {
+                transcriptEl.value = transcribeData.text;
+            }
+        } else if (transcriptText) {
+            // No audio, just use provided transcript
+            let transcriptData;
+            try {
+                transcriptData = JSON.parse(transcriptText);
+            } catch {
+                transcriptData = { text: transcriptText, segments: [] };
+            }
+
+            statusEl && (statusEl.textContent = '📝 Salvando transcrição...');
+            const timestamp = Date.now();
+            const filename = `analytics_transcript_${timestamp}.json`;
+
+            const base = resolveApiBase();
+            const saveResp = await fetch(`${base}/api/v1/analytics/save-transcript`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    filename: filename,
+                    data: transcriptData
+                })
+            });
+
+            if (!saveResp.ok) throw new Error('Falha ao salvar transcrição');
+            const saveData = await saveResp.json();
+            transcriptUri = saveData.path;
+            audioUri = transcriptUri; // Use transcript path as audio path if no audio
+        }
+
+        // Build analysis types array
+        const analysisTypes = [];
+        if (document.getElementById('analyticsSentiment')?.checked) analysisTypes.push('sentiment');
+        if (document.getElementById('analyticsEmotion')?.checked) analysisTypes.push('emotion');
+        if (document.getElementById('analyticsIntent')?.checked) analysisTypes.push('intent', 'outcome');
+        if (document.getElementById('analyticsCompliance')?.checked) analysisTypes.push('compliance');
+        if (document.getElementById('analyticsSummary')?.checked) analysisTypes.push('summary');
+        if (document.getElementById('analyticsAcoustic')?.checked) analysisTypes.push('vad_advanced');
+
+        // Submit analytics job
+        statusEl && (statusEl.textContent = '🔄 Submetendo job de análise...');
+        const analyticsResp = await fetch('http://localhost:9005/analytics/speech', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                call_id: crypto.randomUUID(),
+                audio_uri: audioUri,
+                transcript_uri: transcriptUri,
+                analysis_types: analysisTypes,
+                keywords: []
+            })
+        });
+
+        if (!analyticsResp.ok) throw new Error('Falha ao submeter job');
+        const analyticsData = await analyticsResp.json();
+        analyticsJobId = analyticsData.job_id;
+
+        statusEl && (statusEl.textContent = `⏳ Processando... Job ID: ${analyticsJobId}`);
+
+        // Start polling for results
+        startAnalyticsPolling();
+
+    } catch (error) {
+        console.error('Analytics error:', error);
+        statusEl && (statusEl.textContent = `❌ Erro: ${error.message}`);
+    }
+}
+
+function startAnalyticsPolling() {
+    if (analyticsPollInterval) clearInterval(analyticsPollInterval);
+
+    analyticsPollInterval = setInterval(async () => {
+        try {
+            const resp = await fetch(`http://localhost:9005/analytics/speech/${analyticsJobId}`);
+            const data = await resp.json();
+
+            const statusEl = document.getElementById('analyticsStatus');
+
+            if (data.status === 'completed') {
+                clearInterval(analyticsPollInterval);
+                statusEl && (statusEl.textContent = '✅ Análise concluída!');
+                displayAnalyticsResults(data.results);
+            } else if (data.status === 'failed') {
+                clearInterval(analyticsPollInterval);
+                statusEl && (statusEl.textContent = `❌ Falha: ${data.error || 'Erro desconhecido'}`);
+            } else {
+                statusEl && (statusEl.textContent = `⏳ Processando... (${data.status})`);
+            }
+        } catch (error) {
+            console.error('Polling error:', error);
+        }
+    }, 2000);
+}
+
+function displayAnalyticsResults(results) {
+    const resultsContainer = document.getElementById('analyticsResults');
+    if (!resultsContainer) return;
+
+    resultsContainer.style.display = 'grid';
+
+    // Sentiment
+    if (results.sentiment) {
+        displaySentiment(results.sentiment);
+    }
+
+    // Emotion
+    if (results.emotion) {
+        displayEmotion(results.emotion);
+    }
+
+    // Intent
+    if (results.intent) {
+        displayIntent(results.intent);
+    }
+
+    // Compliance
+    if (results.compliance) {
+        displayCompliance(results.compliance);
+    }
+
+    // Summary
+    if (results.summary) {
+        displaySummary(results.summary);
+    }
+
+    // Timeline
+    if (results.timeline) {
+        displayTimeline(results.timeline);
+    }
+}
+
+function displaySentiment(sentiment) {
+    const container = document.getElementById('sentimentContent');
+    if (!container) return;
+
+    const overall = sentiment.overall;
+    const badgeClass = overall.label === 'positive' ? 'positive' :
+                       overall.label === 'negative' ? 'negative' : 'neutral';
+
+    let html = `
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Sentimento Geral</span>
+            <span class="analytics-badge ${badgeClass}">${overall.label}</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Score</span>
+            <span class="analytics-metric-value">${overall.score.toFixed(3)}</span>
+        </div>
+    `;
+
+    if (overall.probabilities) {
+        html += '<div style="margin-top: 1rem;"><strong>Probabilidades:</strong></div>';
+        for (const [label, prob] of Object.entries(overall.probabilities)) {
+            const percentage = (prob * 100).toFixed(1);
+            html += `
+                <div class="analytics-metric">
+                    <span class="analytics-metric-label">${label}</span>
+                    <span class="analytics-metric-value">${percentage}%</span>
+                </div>
+                <div class="analytics-progress-bar">
+                    <div class="analytics-progress-fill" style="width: ${percentage}%"></div>
+                </div>
+            `;
+        }
+    }
+
+    // Per speaker
+    if (sentiment.per_speaker) {
+        html += '<div style="margin-top: 1.5rem;"><strong>Por Speaker:</strong></div>';
+        for (const [speaker, data] of Object.entries(sentiment.per_speaker)) {
+            const speakerBadgeClass = data.label === 'positive' ? 'positive' :
+                                     data.label === 'negative' ? 'negative' : 'neutral';
+            html += `
+                <div class="analytics-speaker-card">
+                    <div class="analytics-speaker-header">
+                        <span class="analytics-speaker-name">${speaker}</span>
+                        <span class="analytics-badge ${speakerBadgeClass}">${data.label}</span>
+                    </div>
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Score</span>
+                        <span class="analytics-metric-value">${data.score.toFixed(3)}</span>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    container.innerHTML = html;
+}
+
+function displayEmotion(emotion) {
+    const container = document.getElementById('emotionContent');
+    if (!container) return;
+
+    const overall = emotion.overall;
+
+    let html = `
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Emoção Dominante</span>
+            <span class="analytics-badge">${overall.label}</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Confiança</span>
+            <span class="analytics-metric-value">${(overall.confidence * 100).toFixed(1)}%</span>
+        </div>
+    `;
+
+    // Per speaker
+    if (emotion.per_speaker) {
+        html += '<div style="margin-top: 1.5rem;"><strong>Por Speaker:</strong></div>';
+        for (const [speaker, data] of Object.entries(emotion.per_speaker)) {
+            html += `
+                <div class="analytics-speaker-card">
+                    <div class="analytics-speaker-header">
+                        <span class="analytics-speaker-name">${speaker}</span>
+                        <span class="analytics-badge">${data.label}</span>
+                    </div>
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Score</span>
+                        <span class="analytics-metric-value">${data.score.toFixed(3)}</span>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    container.innerHTML = html;
+}
+
+function displayIntent(intent) {
+    const container = document.getElementById('intentContent');
+    if (!container) return;
+
+    let html = '<div style="margin-bottom: 1rem;"><strong>Intenções Detectadas:</strong></div>';
+
+    if (intent.intents) {
+        for (const [label, data] of Object.entries(intent.intents)) {
+            const percentage = (data.score * 100).toFixed(1);
+            html += `
+                <div class="analytics-metric">
+                    <span class="analytics-metric-label">${label}</span>
+                    <span class="analytics-metric-value">${percentage}%</span>
+                </div>
+                <div class="analytics-progress-bar">
+                    <div class="analytics-progress-fill" style="width: ${percentage}%"></div>
+                </div>
+            `;
+        }
+    }
+
+    if (intent.outcome) {
+        html += '<div style="margin-top: 1.5rem;"><strong>Resultado:</strong></div>';
+        html += `
+            <div class="analytics-metric">
+                <span class="analytics-metric-label">Status</span>
+                <span class="analytics-badge">${intent.outcome.label}</span>
+            </div>
+            <div class="analytics-metric">
+                <span class="analytics-metric-label">Confiança</span>
+                <span class="analytics-metric-value">${(intent.outcome.score * 100).toFixed(1)}%</span>
+            </div>
+        `;
+    }
+
+    container.innerHTML = html;
+}
+
+function displayCompliance(compliance) {
+    const container = document.getElementById('complianceContent');
+    if (!container) return;
+
+    const scorePercentage = (compliance.score * 100).toFixed(1);
+
+    let html = `
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Score de Compliance</span>
+            <span class="analytics-metric-value">${scorePercentage}%</span>
+        </div>
+        <div class="analytics-progress-bar">
+            <div class="analytics-progress-fill" style="width: ${scorePercentage}%"></div>
+        </div>
+    `;
+
+    if (compliance.passed && compliance.passed.length > 0) {
+        html += '<div style="margin-top: 1.5rem;"><strong style="color: #43e97b;">✓ Aprovados:</strong></div>';
+        compliance.passed.forEach(item => {
+            html += `<div class="analytics-badge positive" style="margin: 0.25rem;">${item}</div>`;
+        });
+    }
+
+    if (compliance.failed && compliance.failed.length > 0) {
+        html += '<div style="margin-top: 1rem;"><strong style="color: #f5576c;">✗ Reprovados:</strong></div>';
+        compliance.failed.forEach(item => {
+            html += `<div class="analytics-badge negative" style="margin: 0.25rem;">${item}</div>`;
+        });
+    }
+
+    container.innerHTML = html;
+}
+
+function displaySummary(summary) {
+    const container = document.getElementById('summaryContent');
+    if (!container) return;
+
+    let html = '';
+
+    if (summary.summary && summary.summary.length > 0) {
+        html += '<div style="margin-bottom: 1rem;"><strong>Resumo:</strong></div>';
+        summary.summary.forEach(item => {
+            html += `<div style="padding: 0.5rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.05); border-radius: 8px;">• ${item}</div>`;
+        });
+    }
+
+    if (summary.next_actions && summary.next_actions.length > 0) {
+        html += '<div style="margin-top: 1rem; margin-bottom: 1rem;"><strong>Próximos Passos:</strong></div>';
+        summary.next_actions.forEach(item => {
+            html += `<div style="padding: 0.5rem; margin-bottom: 0.5rem; background: rgba(85,81,255,0.08); border: 1px solid rgba(85,81,255,0.25); border-radius: 8px;">→ ${item}</div>`;
+        });
+    }
+
+    container.innerHTML = html || '<p style="color: rgba(255,255,255,0.5);">Nenhum resumo disponível</p>';
+}
+
+function displayTimeline(timeline) {
+    const container = document.getElementById('timelineContent');
+    if (!container) return;
+
+    if (!timeline || timeline.length === 0) {
+        container.innerHTML = '<p style="color: rgba(255,255,255,0.5);">Nenhum evento na timeline</p>';
+        return;
+    }
+
+    let html = '';
+    timeline.forEach(item => {
+        const time = item.timestamp !== null ? `${item.timestamp.toFixed(1)}s` : 'N/A';
+        const confidence = (item.confidence * 100).toFixed(0);
+        html += `
+            <div class="analytics-timeline-item">
+                <div class="analytics-timeline-time">${time}</div>
+                <div class="analytics-timeline-content">
+                    <div class="analytics-timeline-label">${item.label}</div>
+                    <div class="analytics-timeline-type">${item.type} · ${confidence}%</div>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+function clearAnalytics() {
+    const audioFileEl = document.getElementById('analyticsAudioFile');
+    const transcriptEl = document.getElementById('analyticsTranscript');
+    const statusEl = document.getElementById('analyticsStatus');
+    const resultsEl = document.getElementById('analyticsResults');
+
+    if (audioFileEl) audioFileEl.value = '';
+    if (transcriptEl) transcriptEl.value = '';
+    if (statusEl) statusEl.textContent = '';
+    if (resultsEl) resultsEl.style.display = 'none';
+
+    if (analyticsPollInterval) {
+        clearInterval(analyticsPollInterval);
+        analyticsPollInterval = null;
+    }
 }
 
 function bootstrap() {

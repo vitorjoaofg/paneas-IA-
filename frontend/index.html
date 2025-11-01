@@ -3,635 +3,949 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paneas AI Studio</title>
+    <title>Paneas AI Studio - Plataforma completa de IA</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-        .streaming-text .word {
-            display: inline-block;
-            margin: 0 0.15rem;
-            transition: all 0.3s ease;
-            opacity: 0.3;
-        }
-        .streaming-text .word.highlight {
-            opacity: 1;
-            color: #4f46e5;
-            transform: scale(1.05);
-            text-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
-            animation: word-glow 0.5s ease-in-out;
-        }
-        .streaming-text .word.spoken {
-            opacity: 1;
-        }
-        @keyframes word-glow {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="modal-open">
     <!-- Modal de Senha -->
-    <div id="passwordModal" class="modal">
+    <div id="passwordModal" class="modal" style="display: flex; opacity: 1;">
         <div class="modal__content">
-            <h2>Acesso Restrito</h2>
-            <p>Digite a senha para acessar o Paneas AI Studio</p>
+            <div class="modal__icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+            </div>
+            <h2 class="modal__title">Acesso Restrito</h2>
+            <p class="modal__description">Digite a senha para acessar o Paneas AI Studio</p>
             <form id="passwordForm">
-                <input type="password" id="passwordInput" placeholder="Digite a senha" autocomplete="off" />
-                <button type="submit" class="btn btn--primary">Entrar</button>
-                <p id="passwordError" class="modal__error" style="display: none;">Senha incorreta!</p>
+                <div class="modal__input-group">
+                    <input type="password" id="passwordInput" placeholder="Digite a senha" autocomplete="off" required />
+                    <svg class="modal__input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                        <polyline points="10 17 15 12 10 7"/>
+                        <line x1="15" x2="3" y1="12" y2="12"/>
+                    </svg>
+                    Entrar
+                </button>
+                <p id="passwordError" class="modal__error" style="display: none;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" x2="12" y1="8" y2="12"/>
+                        <line x1="12" x2="12.01" y1="16" y2="16"/>
+                    </svg>
+                    Senha incorreta! Tente novamente.
+                </p>
             </form>
         </div>
     </div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header__content">
-            <h1 class="header__title">Paneas AI Studio</h1>
-            <p class="header__subtitle">Transcrição • Diarização • OCR • Chat</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__brand">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                    <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#5551ff"/>
+                            <stop offset="100%" stop-color="#7c6aff"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="navbar__title">Paneas AI Studio</span>
+            </div>
+            <div class="navbar__nav">
+                <a href="#products" class="navbar__link">Produtos</a>
+                <a href="#features" class="navbar__link">Recursos</a>
+                <a href="#playground" class="navbar__link navbar__link--cta">Playground</a>
+                <button id="logoutButton" class="navbar__logout" title="Sair">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                        <polyline points="16 17 21 12 16 7"/>
+                        <line x1="21" x2="9" y1="12" y2="12"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="header__status">
-            <span class="status-dot"></span>
-            <span id="sessionStatus">Pronto</span>
-        </div>
-    </header>
-
-    <!-- Tabs Navigation -->
-    <nav class="tabs">
-        <button class="tab tab--active" data-tab="realtime">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                <line x1="12" x2="12" y1="19" y2="22"/>
-            </svg>
-            Real-time
-        </button>
-        <button class="tab" data-tab="transcription">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 18V5l12-2v13"/>
-                <circle cx="6" cy="18" r="3"/>
-                <circle cx="18" cy="16" r="3"/>
-            </svg>
-            Transcrição
-        </button>
-        <button class="tab" data-tab="ocr">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                <circle cx="9" cy="9" r="2"/>
-                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-            </svg>
-            OCR
-        </button>
-        <button class="tab" data-tab="scrapper">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="7"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
-            Processos
-        </button>
-        <button class="tab" data-tab="chat">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-            Chat
-        </button>
-        <button class="tab" data-tab="tts">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-            </svg>
-            TTS
-        </button>
     </nav>
 
-    <!-- Tab Content -->
-    <main class="content">
-        <!-- Real-time Tab -->
-        <section class="tab-content tab-content--active" data-content="realtime">
-            <!-- Controls -->
-            <div class="card">
-                <h2 class="card__title">Configuração</h2>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="apiBase">API Base URL</label>
-                        <input id="apiBase" type="text" placeholder="Auto-detectado" />
-                    </div>
-                    <div class="form-group">
-                        <label for="authToken">Bearer Token</label>
-                        <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
-                    </div>
-                    <!-- COMMENTED: Room ID - pode ser adicionado de volta depois
-                    <div class="form-group">
-                        <label for="roomId">Room ID</label>
-                        <input id="roomId" type="text" placeholder="Opcional" />
-                    </div>
-                    -->
-                    <!-- COMMENTED: Papel selector - pode ser adicionado de volta depois
-                    <div class="form-group">
-                        <label for="roleSelector">Papel</label>
-                        <select id="roleSelector">
-                            <option value="">Solo</option>
-                            <option value="agent">Atendente</option>
-                            <option value="client">Cliente</option>
-                        </select>
-                    </div>
-                    -->
-                    <div class="form-group">
-                        <label for="chunkSize">Chunk (ms)</label>
-                        <input id="chunkSize" type="number" min="200" max="2000" step="100" value="800" />
-                    </div>
-                    <!-- COMMENTED: Diarização checkbox - pode ser adicionado de volta depois
-                    <div class="form-group form-group--checkbox">
-                        <input id="diarizationToggle" type="checkbox" />
-                        <label for="diarizationToggle">Diarização</label>
-                    </div>
-                    -->
-                    <div class="form-group form-group--checkbox">
-                        <input id="insightToggle" type="checkbox" checked />
-                        <label for="insightToggle">Insights</label>
-                    </div>
-                    <div class="form-group">
-                        <label for="insightModel">Modelo Insights</label>
-                        <input id="insightModel" type="text" value="paneas-q32b" />
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__badge">
+                <span class="pulse-dot"></span>
+                <span>Stack de IA Local e Completa</span>
+            </div>
+            <h1 class="hero__title">
+                Construa aplicações de IA
+                <span class="gradient-text">sem depender da nuvem</span>
+            </h1>
+            <p class="hero__description">
+                Suite completa de ferramentas de IA para transcrição, análise de documentos,
+                conversação inteligente e síntese de voz. Tudo rodando localmente com máxima privacidade.
+            </p>
+            <div class="hero__actions">
+                <button class="btn btn--hero" onclick="document.getElementById('playground').scrollIntoView({behavior: 'smooth'})">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polygon points="10 8 16 12 10 16 10 8"/>
+                    </svg>
+                    Experimentar agora
+                </button>
+                <button class="btn btn--ghost" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                    Ver produtos
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero__stats">
+                <div class="stat-item">
+                    <div class="stat-item__value">7</div>
+                    <div class="stat-item__label">Produtos de IA</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__value">100%</div>
+                    <div class="stat-item__label">Local & Privado</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__value">0ms</div>
+                    <div class="stat-item__label">Latência de Rede</div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Audio Source Selection -->
-            <div class="card">
-                <h2 class="card__title">Captura de Áudio</h2>
-                <p class="card__description">Inicie a captura de áudio em tempo real do microfone</p>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products__container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-subtitle">Ferramentas de IA de ponta para resolver problemas reais</p>
+            </div>
 
-                <!-- Microphone Capture -->
-                <div class="button-group">
-                        <button id="startButton" class="btn btn--primary btn--lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polygon points="10 8 16 12 10 16 10 8"/>
-                            </svg>
-                            Iniciar Captura
-                        </button>
-                        <button id="stopButton" class="btn btn--danger btn--lg" disabled>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <rect x="6" y="6" width="12" height="12" rx="2"/>
-                            </svg>
-                            Parar
-                        </button>
-                        <div id="listeningIndicator" class="listening-indicator hidden">
-                            <span class="pulse-dot"></span>
-                            <span>Escutando...</span>
-                        </div>
-                    </div>
-
-                <!-- COMMENTED: File Simulation - pode ser adicionado de volta depois
-                <div class="audio-source-section">
-                    <h3 class="source-title">Simular Captura com Áudio</h3>
-                    <p class="source-description">Simule transcrição ao vivo usando um arquivo de áudio</p>
-                    <div class="upload-area upload-area--compact">
-                        <input type="file" id="streamFileInput" accept="audio/*" />
-                        <div class="upload-placeholder">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"/>
-                            </svg>
-                            <p>Selecione um arquivo de áudio</p>
-                            <span class="file-name" id="streamFileName"></span>
-                        </div>
-                    </div>
-                    <button class="btn btn--accent btn--lg btn--block" id="streamFileButton">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="5 3 19 12 5 21 5 3"/>
+            <div class="products__grid">
+                <!-- Real-time Transcription -->
+                <div class="product-card" data-product="realtime">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" x2="12" y1="19" y2="22"/>
                         </svg>
-                        Simular Transcrição ao Vivo
-                    </button>
-                    <div class="status-text" id="streamStatus">Aguardando arquivo...</div>
-                </div>
-                -->
-            </div>
-
-            <!-- Results Grid -->
-            <div class="results-grid">
-                <!-- Transcript -->
-                <div class="card card--tall">
-                    <div class="card__header">
-                        <h2 class="card__title">Transcrição</h2>
-                        <div class="badges">
-                            <span class="badge" id="sessionId">Inativa</span>
-                            <span class="badge badge--accent" id="roomStatus" style="display: none;"></span>
-                        </div>
                     </div>
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="stat__value" id="batchCount">0</span>
-                            <span class="stat__label">Lotes</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat__value" id="tokenCount">0</span>
-                            <span class="stat__label">Tokens</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat__value" id="audioSeconds">0</span>
-                            <span class="stat__label">Segundos</span>
-                        </div>
-                    </div>
-                    <div class="transcript-box" id="transcriptText">
-                        <p class="placeholder">Inicie a captura para ver a transcrição em tempo real...</p>
-                    </div>
-                    <div class="timeline" id="batchTimeline"></div>
+                    <h3 class="product-card__title">Real-time Transcription</h3>
+                    <p class="product-card__description">
+                        Transcrição em tempo real com diarização inteligente e insights automáticos.
+                        Capture conversas ao vivo com precisão excepcional.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Streaming de áudio em tempo real</li>
+                        <li>Identificação de speakers (diarização)</li>
+                        <li>Insights gerados por LLM</li>
+                        <li>Suporte a múltiplos idiomas</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
 
-                <!-- Insights -->
-                <div class="card">
-                    <div class="card__header">
-                        <h2 class="card__title">Insights</h2>
-                        <span class="badge badge--success" id="insightStatus">Ativos</span>
-                    </div>
-                    <div class="insights-container" id="insightsList">
-                        <p class="placeholder">Aguardando insights...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Transcription Tab -->
-        <section class="tab-content" data-content="transcription">
-            <div class="grid-2">
                 <!-- Audio Transcription -->
-                <div class="card">
-                    <h2 class="card__title">Transcrição de Arquivo</h2>
-                    <p class="card__description">Envie um arquivo de áudio (WAV, MP3) para transcrição completa</p>
-                    <div class="upload-area">
-                        <input type="file" id="asrFileInput" accept="audio/*" />
-                        <div class="upload-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="17 8 12 3 7 8"/>
-                                <line x1="12" x2="12" y1="3" y2="15"/>
-                            </svg>
-                            <p>Clique ou arraste um arquivo de áudio</p>
-                            <span class="file-name" id="asrFileName"></span>
-                        </div>
+                <div class="product-card" data-product="transcription">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M9 18V5l12-2v13"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <circle cx="18" cy="16" r="3"/>
+                        </svg>
                     </div>
-                    <button class="btn btn--primary btn--block" id="asrUploadButton">
-                        Transcrever Áudio
-                    </button>
-                    <div class="result-box" id="asrResult">
-                        <p class="placeholder">Aguardando arquivo...</p>
-                    </div>
+                    <h3 class="product-card__title">Audio Transcription</h3>
+                    <p class="product-card__description">
+                        Converta arquivos de áudio em texto com alta precisão. Suporte para WAV, MP3 e mais.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Upload de múltiplos formatos</li>
+                        <li>Transcrição em lote</li>
+                        <li>Processamento rápido</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
 
-                <!-- Diarization -->
-                <div class="card">
-                    <h2 class="card__title">Diarização</h2>
-                    <p class="card__description">Identifique diferentes speakers no áudio</p>
-                    <div class="upload-area">
-                        <input type="file" id="diarFileInput" accept="audio/*" />
-                        <div class="upload-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                            <p>Clique ou arraste um arquivo de áudio</p>
-                            <span class="file-name" id="diarFileName"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="numSpeakers">Número de speakers (opcional)</label>
-                        <input id="numSpeakers" type="number" min="1" max="10" placeholder="Auto-detectar" />
-                    </div>
-                    <button class="btn btn--primary btn--block" id="diarButton">
-                        Iniciar Diarização
-                    </button>
-                    <div class="result-box" id="diarResult">
-                        <p class="placeholder">Aguardando arquivo...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- OCR Tab -->
-        <section class="tab-content" data-content="ocr">
-            <div class="card card--centered">
-                <h2 class="card__title">Reconhecimento de Texto (OCR)</h2>
-                <p class="card__description">Extraia texto de imagens ou documentos PDF</p>
-                <div class="upload-area upload-area--large">
-                    <input type="file" id="ocrFileInput" accept="image/*,application/pdf" />
-                    <div class="upload-placeholder">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!-- OCR -->
+                <div class="product-card" data-product="ocr">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                             <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
                             <circle cx="9" cy="9" r="2"/>
                             <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
                         </svg>
-                        <p>Clique ou arraste uma imagem ou PDF</p>
-                        <span class="file-types">PNG, JPG, JPEG, GIF, PDF</span>
-                        <span class="file-name" id="ocrFileName"></span>
                     </div>
+                    <h3 class="product-card__title">OCR Intelligence</h3>
+                    <p class="product-card__description">
+                        Extraia texto de imagens e PDFs com reconhecimento óptico de caracteres avançado.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Suporte a múltiplos idiomas</li>
+                        <li>PDFs e imagens</li>
+                        <li>Alta precisão</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
-                <button class="btn btn--primary btn--lg" id="ocrButton">
-                    Executar OCR
-                </button>
-                <div class="result-box result-box--large" id="ocrResult">
-                    <p class="placeholder">Aguardando arquivo...</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Scrapper Tab -->
-        <section class="tab-content" data-content="scrapper">
-            <div class="card">
-                <h2 class="card__title">Consulta de Processo (TJSP)</h2>
-                <p class="card__description">Busque um processo específico informando pelo menos um dos parâmetros abaixo.</p>
-                <form id="scrapperConsultaForm" class="form-grid">
-                    <div class="form-group">
-                        <label for="scrapperNumeroProcesso">Número do Processo</label>
-                        <input id="scrapperNumeroProcesso" name="numero_processo" type="text" placeholder="1014843-66.2025.8.26.0554" />
+                <!-- Legal Scraper -->
+                <div class="product-card" data-product="scrapper">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="11" cy="11" r="7"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
                     </div>
-                    <div class="form-group">
-                        <label for="scrapperNomeParte">Nome da Parte</label>
-                        <input id="scrapperNomeParte" name="nome_parte" type="text" placeholder="Ex.: Ana Paula Dentello Luiz" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperDocumentoParte">Documento da Parte</label>
-                        <input id="scrapperDocumentoParte" name="documento_parte" type="text" placeholder="CPF ou CNPJ (somente números)" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperNomeAdvogado">Nome do Advogado</label>
-                        <input id="scrapperNomeAdvogado" name="nome_advogado" type="text" placeholder="Ex.: João Silva" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperNumeroOab">Número da OAB</label>
-                        <input id="scrapperNumeroOab" name="numero_oab" type="text" placeholder="Ex.: 123456/SP" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperNumeroPrecatoria">Número da Carta Precatória</label>
-                        <input id="scrapperNumeroPrecatoria" name="numero_precatoria" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperNumeroDelegacia">Nº Documento Delegacia</label>
-                        <input id="scrapperNumeroDelegacia" name="numero_documento_delegacia" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperNumeroCda">Número da CDA</label>
-                        <input id="scrapperNumeroCda" name="numero_cda" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperForo">Foro</label>
-                        <input id="scrapperForo" name="foro" type="text" placeholder="Ex.: 554" />
-                    </div>
-                    <div class="button-group">
-                        <button type="submit" class="btn btn--primary" id="scrapperConsultaSubmit">Consultar</button>
-                        <button type="button" class="btn btn--ghost" id="scrapperConsultaReset">Limpar</button>
-                    </div>
-                </form>
-                <div class="result-box result-box--large" id="scrapperConsultaResult">
-                    <p class="placeholder">Preencha os filtros e clique em &ldquo;Consultar&rdquo;.</p>
+                    <h3 class="product-card__title">Legal Process Tracker</h3>
+                    <p class="product-card__description">
+                        Consulte e monitore processos jurídicos do TJSP com busca avançada e filtragem inteligente.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Busca por CPF/CNPJ</li>
+                        <li>Monitoramento automatizado</li>
+                        <li>Exportação de dados</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
-            </div>
 
-            <div class="card">
-                <h2 class="card__title">Listagem de Processos</h2>
-                <p class="card__description">Combine filtros para listar processos relacionados a uma parte e aplicar refinamentos.</p>
-                <form id="scrapperListForm" class="form-grid">
-                    <div class="form-group">
-                        <label for="scrapperListNumeroProcesso">Número do Processo</label>
-                        <input id="scrapperListNumeroProcesso" name="numero_processo" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNomeParte">Nome da Parte</label>
-                        <input id="scrapperListNomeParte" name="nome_parte" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListDocumentoParte">Documento da Parte</label>
-                        <input id="scrapperListDocumentoParte" name="documento_parte" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNomeAdvogado">Nome do Advogado</label>
-                        <input id="scrapperListNomeAdvogado" name="nome_advogado" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNumeroOab">Número da OAB</label>
-                        <input id="scrapperListNumeroOab" name="numero_oab" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNumeroPrecatoria">Número da Carta Precatória</label>
-                        <input id="scrapperListNumeroPrecatoria" name="numero_precatoria" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNumeroDelegacia">Nº Documento Delegacia</label>
-                        <input id="scrapperListNumeroDelegacia" name="numero_documento_delegacia" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListNumeroCda">Número da CDA</label>
-                        <input id="scrapperListNumeroCda" name="numero_cda" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListForo">Foro</label>
-                        <input id="scrapperListForo" name="foro" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListContraParte">Filtro de Contraparte</label>
-                        <input id="scrapperListContraParte" name="contra_parte" type="text" placeholder="Ex.: Vivo" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListMaxPaginas">Máx. Páginas</label>
-                        <input id="scrapperListMaxPaginas" name="max_paginas" type="number" min="1" max="10" value="1" />
-                    </div>
-                    <div class="form-group">
-                        <label for="scrapperListMaxProcessos">Máx. Processos</label>
-                        <input id="scrapperListMaxProcessos" name="max_processos" type="number" min="1" />
-                    </div>
-                    <div class="button-group">
-                        <button type="submit" class="btn btn--primary" id="scrapperListSubmit">Listar Processos</button>
-                        <button type="button" class="btn btn--ghost" id="scrapperListReset">Limpar</button>
-                    </div>
-                </form>
-                <div class="result-box result-box--large" id="scrapperListResult">
-                    <p class="placeholder">Informe os filtros desejados e clique em &ldquo;Listar Processos&rdquo;.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h2 class="card__title">Manifesto de Ferramentas</h2>
-                <p class="card__description">Visualize o manifesto JSON exposto pelo serviço de scrapper.</p>
-                <div class="button-group">
-                    <button class="btn btn--primary" id="scrapperToolsButton">Carregar manifesto</button>
-                </div>
-                <div class="result-box" id="scrapperToolsResult">
-                    <p class="placeholder">Clique em &ldquo;Carregar manifesto&rdquo; para visualizar.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chat Tab -->
-        <section class="tab-content" data-content="chat">
-            <div class="card card--chat">
-                <div class="chat-header">
-                    <h2 class="card__title">Chat com LLM</h2>
-                    <div class="chat-controls">
-                        <div class="form-group form-group--inline">
-                            <label for="chatModel">Modelo:</label>
-                            <select id="chatModel">
-                                <option value="paneas-q32b">paneas-q32b (Qwen2.5-32B INT4)</option>
-                            </select>
-                        </div>
-                        <div class="form-group form-group--inline">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="chatKeepHistory" checked>
-                                <span>Manter Histórico</span>
-                            </label>
-                        </div>
-                        <div class="form-group form-group--inline">
-                            <label for="chatTools">Tools:</label>
-                            <select id="chatTools">
-                                <option value="">Nenhuma</option>
-                                <option value="unimed">Unimed</option>
-                                <option value="weather">Clima</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group" style="margin-top: 0.5rem;">
-                        <label for="chatSystemPrompt">System Prompt (opcional):</label>
-                        <textarea
-                            id="chatSystemPrompt"
-                            rows="3"
-                            placeholder="Ex: Você é um atendente da Unimed Natal. Seja breve e direto..."
-                            style="font-size: 0.875rem; resize: vertical;"
-                        ></textarea>
-                        <small class="text-muted">Se vazio, não envia system message</small>
-                    </div>
-                </div>
-                <div class="chat-messages" id="chatLog">
-                    <div class="chat-welcome">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!-- Chat LLM -->
+                <div class="product-card" data-product="chat">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                         </svg>
-                        <p>Converse com o modelo de linguagem</p>
                     </div>
-                </div>
-                <form class="chat-input-form" id="chatForm">
-                    <textarea id="chatInput" rows="3" placeholder="Digite sua mensagem..."></textarea>
-                    <div class="chat-actions">
-                        <button type="button" class="btn btn--outline" id="clearChat">Limpar</button>
-                        <button type="submit" class="btn btn--primary" id="sendChat">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <!-- TTS Tab -->
-        <section class="tab-content" data-content="tts">
-            <div class="card card--centered">
-                <h2 class="card__title">Síntese de Voz (TTS)</h2>
-                <p class="card__description">Clone de voz com Paneas-XXTS-v2</p>
-
-                <!-- Voice Selection -->
-                <div class="form-group">
-                    <label for="ttsVoice">Voz</label>
-                    <select id="ttsVoice">
-                        <option value="/voices/perola_optimized.wav">Pérola (Feminina)</option>
-                        <option value="/voices/Guilherme_optimized.wav">Guilherme (Masculina)</option>
-                    </select>
+                    <h3 class="product-card__title">Chat LLM</h3>
+                    <p class="product-card__description">
+                        Conversação inteligente com modelo de linguagem local. Privacidade total, sem limites de API.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Modelo Qwen2.5-32B INT4</li>
+                        <li>Function calling</li>
+                        <li>Histórico persistente</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
 
-                <!-- Text Input -->
-                <div class="form-group">
-                    <label for="ttsText">Texto para Sintetizar</label>
-                    <textarea
-                        id="ttsText"
-                        rows="6"
-                        placeholder="Digite o texto que deseja converter em áudio..."
-                        maxlength="500"
-                    ></textarea>
-                    <small class="text-muted">Máximo 500 caracteres</small>
-                </div>
-
-                <!-- Synthesize Buttons -->
-                <div class="button-group">
-                    <button class="btn btn--primary btn--lg" id="ttsButton">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!-- TTS -->
+                <div class="product-card" data-product="tts">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                             <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
                             <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
                             <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
                         </svg>
-                        Sintetizar Áudio
-                    </button>
-                    <button class="btn btn--accent btn--lg" id="ttsStreamButton">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="2"/>
-                            <path d="M16.24 7.76a6 6 0 0 1 0 8.49"/>
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-                            <path d="M7.76 16.24a6 6 0 0 1 0-8.49"/>
-                            <path d="M4.93 19.07a10 10 0 0 1 0-14.14"/>
-                        </svg>
-                        Modo Streaming
-                    </button>
-                </div>
-
-                <!-- Result Audio Player -->
-                <div id="ttsResult" class="tts-result" style="display: none;">
-                    <h3>Áudio Gerado</h3>
-                    <audio id="ttsAudioPlayer" controls style="width: 100%; margin-top: 1rem;"></audio>
-                    <div class="tts-metadata" id="ttsMetadata"></div>
-                    <button class="btn btn--outline btn--sm" id="ttsDownload">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7 10 12 15 17 10"/>
-                            <line x1="12" x2="12" y1="15" y2="3"/>
-                        </svg>
-                        Baixar Áudio
-                    </button>
-                </div>
-
-                <!-- Streaming Audio Player -->
-                <div id="ttsStreamResult" class="tts-result" style="display: none;">
-                    <h3>Streaming de Áudio</h3>
-                    <div class="streaming-status">
-                        <span class="badge badge--success">
-                            <span class="pulse-dot"></span>
-                            <span id="streamingStatusText">Streamando...</span>
-                        </span>
                     </div>
-
-                    <!-- Texto animado com highlight -->
-                    <div class="streaming-text-container" style="
-                        display: block !important;
-                        background: rgba(79, 70, 229, 0.05);
-                        border: 1px solid rgba(79, 70, 229, 0.2);
-                        border-radius: 8px;
-                        padding: 1.5rem;
-                        margin: 1rem 0;
-                        min-height: 80px;
-                        align-items: center;
-                        justify-content: center;
-                    ">
-                        <div id="streamingText" class="streaming-text" style="
-                            display: block !important;
-                            font-size: 1.25rem;
-                            line-height: 1.8;
-                            text-align: center;
-                            font-weight: 500;
-                        "></div>
-                    </div>
-
-                    <audio id="ttsStreamPlayer" controls style="width: 100%; margin-top: 1rem;"></audio>
-                    <div class="tts-metadata" id="ttsStreamMetadata"></div>
-                    <button class="btn btn--danger btn--sm" id="ttsStreamStop">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <rect x="6" y="6" width="12" height="12" rx="2"/>
-                        </svg>
-                        Parar Streaming
-                    </button>
+                    <h3 class="product-card__title">Voice Synthesis</h3>
+                    <p class="product-card__description">
+                        Clone de voz neural com síntese de alta qualidade. Vozes naturais em português brasileiro.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Múltiplas vozes</li>
+                        <li>Streaming em tempo real</li>
+                        <li>Qualidade de estúdio</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
                 </div>
 
-                <!-- Status Message -->
-                <div class="status-text" id="ttsStatus"></div>
+                <!-- Speech Analytics -->
+                <div class="product-card" data-product="analytics">
+                    <div class="product-card__icon" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="m19 9-5 5-4-4-3 3"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="M12 2v6m0 4v10"/>
+                        </svg>
+                    </div>
+                    <h3 class="product-card__title">Speech Analytics</h3>
+                    <p class="product-card__description">
+                        Análise completa de sentimentos, emoções e intenções em chamadas. Insights profundos com NLP avançado.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Análise de sentimentos (positivo/negativo/neutro)</li>
+                        <li>Detecção de emoções</li>
+                        <li>Identificação de intenções</li>
+                        <li>Compliance checks automatizados</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features__container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher Paneas AI?</h2>
+                <p class="section-subtitle">Máxima privacidade, zero dependência de nuvem</p>
+            </div>
+
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">🔒</div>
+                    <h3 class="feature-card__title">100% Local</h3>
+                    <p class="feature-card__description">
+                        Todos os dados permanecem no seu servidor. Zero uploads para nuvem.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">⚡</div>
+                    <h3 class="feature-card__title">Alta Performance</h3>
+                    <p class="feature-card__description">
+                        Otimizado para GPUs NVIDIA. Processamento em tempo real sem latência.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">🔧</div>
+                    <h3 class="feature-card__title">API Completa</h3>
+                    <p class="feature-card__description">
+                        RESTful APIs prontas para integração com seus sistemas existentes.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">🌐</div>
+                    <h3 class="feature-card__title">Multi-idioma</h3>
+                    <p class="feature-card__description">
+                        Suporte para português, inglês, espanhol e mais de 90 idiomas.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">📊</div>
+                    <h3 class="feature-card__title">Analytics</h3>
+                    <p class="feature-card__description">
+                        Métricas detalhadas e insights sobre uso e performance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">🚀</div>
+                    <h3 class="feature-card__title">Deploy Fácil</h3>
+                    <p class="feature-card__description">
+                        Docker Compose pronto. Configure em minutos, não em dias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section class="playground" id="playground">
+        <div class="playground__container">
+            <div class="playground__sidebar">
+                <h3 class="playground__title">Playground</h3>
+                <p class="playground__subtitle">Teste todas as funcionalidades</p>
+
+                <nav class="playground__nav">
+                    <button class="playground__nav-item playground__nav-item--active" data-tab="realtime">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            </svg>
+                        </div>
+                        <span>Real-time</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="transcription">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                            </svg>
+                        </div>
+                        <span>Transcrição</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="ocr">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                            </svg>
+                        </div>
+                        <span>OCR</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="scrapper">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="11" cy="11" r="7"/>
+                            </svg>
+                        </div>
+                        <span>Processos</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="chat">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <span>Chat</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="tts">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                            </svg>
+                        </div>
+                        <span>TTS</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="analytics">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="m19 9-5 5-4-4-3 3"/>
+                            </svg>
+                        </div>
+                        <span>Analytics</span>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="playground__content">
+                <!-- Real-time Tab -->
+                <div class="playground__panel playground__panel--active" data-content="realtime">
+                    <div class="playground-card">
+                        <h3 class="playground-card__title">Configuração</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="apiBase">API Base URL</label>
+                                <input id="apiBase" type="text" placeholder="Auto-detectado" />
+                            </div>
+                            <div class="form-group">
+                                <label for="authToken">Bearer Token</label>
+                                <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
+                            </div>
+                            <div class="form-group">
+                                <label for="chunkSize">Chunk (ms)</label>
+                                <input id="chunkSize" type="number" min="200" max="2000" step="100" value="800" />
+                            </div>
+                            <div class="form-group form-group--checkbox">
+                                <input id="insightToggle" type="checkbox" checked />
+                                <label for="insightToggle">Insights</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="insightModel">Modelo Insights</label>
+                                <input id="insightModel" type="text" value="paneas-q32b" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playground-card">
+                        <h3 class="playground-card__title">Captura de Áudio</h3>
+                        <div class="button-group">
+                            <button id="startButton" class="btn btn--primary btn--lg">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                </svg>
+                                Iniciar Captura
+                            </button>
+                            <button id="stopButton" class="btn btn--danger btn--lg" disabled>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="6" y="6" width="12" height="12" rx="2"/>
+                                </svg>
+                                Parar
+                            </button>
+                            <div id="listeningIndicator" class="listening-indicator hidden">
+                                <span class="pulse-dot"></span>
+                                <span>Escutando...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-grid">
+                        <div class="playground-card playground-card--tall">
+                            <div class="card__header">
+                                <h3 class="playground-card__title">Transcrição</h3>
+                                <div class="badges">
+                                    <span class="badge" id="sessionId">Inativa</span>
+                                </div>
+                            </div>
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <span class="stat__value" id="batchCount">0</span>
+                                    <span class="stat__label">Lotes</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat__value" id="tokenCount">0</span>
+                                    <span class="stat__label">Tokens</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat__value" id="audioSeconds">0</span>
+                                    <span class="stat__label">Segundos</span>
+                                </div>
+                            </div>
+                            <div class="transcript-box" id="transcriptText">
+                                <p class="placeholder">Inicie a captura para ver a transcrição em tempo real...</p>
+                            </div>
+                            <div class="timeline" id="batchTimeline"></div>
+                        </div>
+
+                        <div class="playground-card">
+                            <div class="card__header">
+                                <h3 class="playground-card__title">Insights</h3>
+                                <span class="badge badge--success" id="insightStatus">Ativos</span>
+                            </div>
+                            <div class="insights-container" id="insightsList">
+                                <p class="placeholder">Aguardando insights...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transcription Tab -->
+                <div class="playground__panel" data-content="transcription">
+                    <div class="grid-2">
+                        <div class="playground-card">
+                            <h3 class="playground-card__title">Transcrição de Arquivo</h3>
+                            <p class="card__description">Envie um arquivo de áudio (WAV, MP3)</p>
+                            <div class="upload-area">
+                                <input type="file" id="asrFileInput" accept="audio/*" />
+                                <div class="upload-placeholder">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="17 8 12 3 7 8"/>
+                                        <line x1="12" x2="12" y1="3" y2="15"/>
+                                    </svg>
+                                    <p>Clique ou arraste um arquivo de áudio</p>
+                                    <span class="file-name" id="asrFileName"></span>
+                                </div>
+                            </div>
+                            <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
+                            <div class="result-box" id="asrResult">
+                                <p class="placeholder">Aguardando arquivo...</p>
+                            </div>
+                        </div>
+
+                        <div class="playground-card">
+                            <h3 class="playground-card__title">Diarização</h3>
+                            <p class="card__description">Identifique diferentes speakers</p>
+                            <div class="upload-area">
+                                <input type="file" id="diarFileInput" accept="audio/*" />
+                                <div class="upload-placeholder">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    </svg>
+                                    <p>Clique ou arraste um arquivo de áudio</p>
+                                    <span class="file-name" id="diarFileName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="numSpeakers">Número de speakers (opcional)</label>
+                                <input id="numSpeakers" type="number" min="1" max="10" placeholder="Auto-detectar" />
+                            </div>
+                            <button class="btn btn--primary btn--block" id="diarButton">Iniciar Diarização</button>
+                            <div class="result-box" id="diarResult">
+                                <p class="placeholder">Aguardando arquivo...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OCR Tab -->
+                <div class="playground__panel" data-content="ocr">
+                    <div class="playground-card playground-card--centered">
+                        <h3 class="playground-card__title">Reconhecimento de Texto (OCR)</h3>
+                        <p class="card__description">Extraia texto de imagens ou PDFs</p>
+                        <div class="upload-area upload-area--large">
+                            <input type="file" id="ocrFileInput" accept="image/*,application/pdf" />
+                            <div class="upload-placeholder">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+                                    <circle cx="9" cy="9" r="2"/>
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                                </svg>
+                                <p>Clique ou arraste uma imagem ou PDF</p>
+                                <span class="file-types">PNG, JPG, JPEG, GIF, PDF</span>
+                                <span class="file-name" id="ocrFileName"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary btn--lg" id="ocrButton">Executar OCR</button>
+                        <div class="result-box result-box--large" id="ocrResult">
+                            <p class="placeholder">Aguardando arquivo...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrapper Tab -->
+                <div class="playground__panel" data-content="scrapper">
+                    <div class="playground-card">
+                        <h3 class="playground-card__title">Consulta de Processo (TJSP)</h3>
+                        <p class="card__description">Busque processos específicos</p>
+                        <form id="scrapperConsultaForm" class="form-grid">
+                            <div class="form-group">
+                                <label for="scrapperNumeroProcesso">Número do Processo</label>
+                                <input id="scrapperNumeroProcesso" name="numero_processo" type="text" placeholder="1014843-66.2025.8.26.0554" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperNomeParte">Nome da Parte</label>
+                                <input id="scrapperNomeParte" name="nome_parte" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperDocumentoParte">Documento da Parte</label>
+                                <input id="scrapperDocumentoParte" name="documento_parte" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperNomeAdvogado">Nome do Advogado</label>
+                                <input id="scrapperNomeAdvogado" name="nome_advogado" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperNumeroOab">Número da OAB</label>
+                                <input id="scrapperNumeroOab" name="numero_oab" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperForo">Foro</label>
+                                <input id="scrapperForo" name="foro" type="text" placeholder="Ex.: 554" />
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn--primary" id="scrapperConsultaSubmit">Consultar</button>
+                                <button type="button" class="btn btn--ghost" id="scrapperConsultaReset">Limpar</button>
+                            </div>
+                        </form>
+                        <div class="result-box result-box--large" id="scrapperConsultaResult">
+                            <p class="placeholder">Preencha os filtros e clique em "Consultar".</p>
+                        </div>
+                    </div>
+
+                    <div class="playground-card">
+                        <h3 class="playground-card__title">Listagem de Processos</h3>
+                        <p class="card__description">Combine filtros para listar processos</p>
+                        <form id="scrapperListForm" class="form-grid">
+                            <div class="form-group">
+                                <label for="scrapperListNomeParte">Nome da Parte</label>
+                                <input id="scrapperListNomeParte" name="nome_parte" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperListDocumentoParte">Documento da Parte</label>
+                                <input id="scrapperListDocumentoParte" name="documento_parte" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperListMaxPaginas">Máx. Páginas</label>
+                                <input id="scrapperListMaxPaginas" name="max_paginas" type="number" min="1" max="10" value="1" />
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn--primary" id="scrapperListSubmit">Listar Processos</button>
+                                <button type="button" class="btn btn--ghost" id="scrapperListReset">Limpar</button>
+                            </div>
+                        </form>
+                        <div class="result-box result-box--large" id="scrapperListResult">
+                            <p class="placeholder">Informe os filtros desejados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Tab -->
+                <div class="playground__panel" data-content="chat">
+                    <div class="playground-card playground-card--chat">
+                        <div class="chat-header">
+                            <h3 class="playground-card__title">Chat com LLM</h3>
+                            <div class="chat-controls">
+                                <div class="form-group form-group--inline">
+                                    <label for="chatModel">Modelo:</label>
+                                    <select id="chatModel">
+                                        <option value="paneas-q32b">paneas-q32b (Qwen2.5-32B)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-group--inline">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="chatKeepHistory" checked>
+                                        <span>Manter Histórico</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 0.5rem;">
+                                <label for="chatSystemPrompt">System Prompt (opcional):</label>
+                                <textarea id="chatSystemPrompt" rows="2" placeholder="Ex: Você é um assistente útil..."></textarea>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="chatLog">
+                            <div class="chat-welcome">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                <p>Converse com o modelo de linguagem</p>
+                            </div>
+                        </div>
+                        <form class="chat-input-form" id="chatForm">
+                            <textarea id="chatInput" rows="3" placeholder="Digite sua mensagem..."></textarea>
+                            <div class="chat-actions">
+                                <button type="button" class="btn btn--outline" id="clearChat">Limpar</button>
+                                <button type="submit" class="btn btn--primary" id="sendChat">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- TTS Tab -->
+                <div class="playground__panel" data-content="tts">
+                    <div class="playground-card playground-card--centered">
+                        <h3 class="playground-card__title">Síntese de Voz (TTS)</h3>
+                        <p class="card__description">Clone de voz com Paneas-XXTS-v2</p>
+
+                        <div class="form-group">
+                            <label for="ttsVoice">Voz</label>
+                            <select id="ttsVoice">
+                                <option value="/voices/perola_optimized.wav">Pérola (Feminina)</option>
+                                <option value="/voices/Guilherme_optimized.wav">Guilherme (Masculina)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ttsText">Texto para Sintetizar</label>
+                            <textarea id="ttsText" rows="6" placeholder="Digite o texto que deseja converter em áudio..." maxlength="500"></textarea>
+                            <small class="text-muted">Máximo 500 caracteres</small>
+                        </div>
+
+                        <div class="button-group">
+                            <button class="btn btn--primary btn--lg" id="ttsButton">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                </svg>
+                                Sintetizar Áudio
+                            </button>
+                            <button class="btn btn--accent btn--lg" id="ttsStreamButton">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="2"/>
+                                    <path d="M16.24 7.76a6 6 0 0 1 0 8.49"/>
+                                </svg>
+                                Modo Streaming
+                            </button>
+                        </div>
+
+                        <div id="ttsResult" class="tts-result" style="display: none;">
+                            <h4>Áudio Gerado</h4>
+                            <audio id="ttsAudioPlayer" controls style="width: 100%; margin-top: 1rem;"></audio>
+                            <div class="tts-metadata" id="ttsMetadata"></div>
+                            <button class="btn btn--outline btn--sm" id="ttsDownload">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" x2="12" y1="15" y2="3"/>
+                                </svg>
+                                Baixar Áudio
+                            </button>
+                        </div>
+
+                        <div id="ttsStreamResult" class="tts-result" style="display: none;">
+                            <h4>Streaming de Áudio</h4>
+                            <div class="streaming-text-container">
+                                <div id="streamingText" class="streaming-text"></div>
+                            </div>
+                            <audio id="ttsStreamPlayer" controls style="width: 100%; margin-top: 1rem;"></audio>
+                            <button class="btn btn--danger btn--sm" id="ttsStreamStop">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="6" y="6" width="12" height="12" rx="2"/>
+                                </svg>
+                                Parar Streaming
+                            </button>
+                        </div>
+
+                        <div class="status-text" id="ttsStatus"></div>
+                    </div>
+                </div>
+
+                <!-- Analytics Tab -->
+                <div class="playground__panel" data-content="analytics">
+                    <div class="playground-card">
+                        <h3 class="playground-card__title">Speech Analytics</h3>
+                        <p class="card__description">Análise completa de sentimentos, emoções e intenções</p>
+
+                        <div class="form-group">
+                            <label for="analyticsAudioFile">Upload de Áudio (opcional)</label>
+                            <input type="file" id="analyticsAudioFile" accept="audio/*,.wav,.mp3,.ogg,.flac,.m4a" />
+                            <small class="text-muted">Formatos: WAV, MP3, OGG, FLAC, M4A</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="analyticsTranscript">Transcrição do Áudio</label>
+                            <textarea id="analyticsTranscript" rows="6" placeholder='Digite ou cole o texto da conversa aqui...
+
+Exemplo:
+"Operador: Bom dia, meu nome é João da Claro. Como posso ajudar?
+Cliente: Oi, eu quero cancelar meu plano.
+Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
+                            <small class="text-muted">Texto simples ou JSON com segments. Se fez upload, a transcrição será gerada automaticamente.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tipos de Análise</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsSentiment" checked />
+                                    <span>Sentimento</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsEmotion" checked />
+                                    <span>Emoção</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsIntent" checked />
+                                    <span>Intenção</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsCompliance" />
+                                    <span>Compliance</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsSummary" />
+                                    <span>Resumo (LLM)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="analyticsAcoustic" />
+                                    <span>Métricas Acústicas</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="button-group">
+                            <button class="btn btn--primary btn--lg" id="analyticsSubmit">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="m19 9-5 5-4-4-3 3"/>
+                                </svg>
+                                Analisar
+                            </button>
+                            <button class="btn btn--outline" id="analyticsClear">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 6h18"/>
+                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                                </svg>
+                                Limpar
+                            </button>
+                        </div>
+
+                        <div id="analyticsStatus" class="status-text"></div>
+                    </div>
+
+                    <!-- Results Panel -->
+                    <div id="analyticsResults" class="analytics-results" style="display: none;">
+                        <!-- Sentiment Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                </svg>
+                                Sentimento
+                            </h4>
+                            <div id="sentimentContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Emotion Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                Emoção
+                            </h4>
+                            <div id="emotionContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Intent Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                </svg>
+                                Intenção
+                            </h4>
+                            <div id="intentContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Compliance Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11l3 3L22 4"/>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                </svg>
+                                Compliance
+                            </h4>
+                            <div id="complianceContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Summary Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                                Resumo
+                            </h4>
+                            <div id="summaryContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Timeline Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                Timeline
+                            </h4>
+                            <div id="timelineContent" class="analytics-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>Paneas AI Stack — Ambiente Local</p>
-        <p id="footerStatus">Pronto para iniciar</p>
+        <div class="footer__container">
+            <div class="footer__brand">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient2)"/>
+                    <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient2" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#5551ff"/>
+                            <stop offset="100%" stop-color="#7c6aff"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div>
+                    <div class="footer__title">Paneas AI Studio</div>
+                    <div class="footer__subtitle">Stack de IA Local Completa</div>
+                </div>
+            </div>
+            <div class="footer__status">
+                <span class="status-dot"></span>
+                <span id="footerStatus">Sistema Operacional</span>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Paneas AI. Todos os direitos reservados.</p>
+            <p class="footer__tech">Powered by NVIDIA GPU • Docker • Python</p>
+        </div>
     </footer>
 
     <script type="module" src="app.js"></script>
