@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentação - Paneas API</title>
+    <link rel="stylesheet" href="docs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="docs-header">
+        <div class="docs-header__container">
+            <div class="docs-header__brand">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                    <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#5551ff"/>
+                            <stop offset="100%" stop-color="#7c6aff"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="docs-header__title">Paneas API</span>
+                <span class="docs-header__version">v1.0</span>
+            </div>
+            <div class="docs-header__actions">
+                <a href="/" class="docs-header__link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Voltar ao App
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="docs-layout">
+        <!-- Sidebar -->
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">Introdução</div>
+                    <a href="#getting-started" class="docs-nav__link docs-nav__link--active">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Começando
+                    </a>
+                    <a href="#authentication" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Autenticação
+                    </a>
+                    <a href="#base-url" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Base URL
+                    </a>
+                </div>
+
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">Endpoints</div>
+                    <a href="#chat-completions" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Chat Completions
+                    </a>
+                    <a href="#asr" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Transcrição (ASR)
+                    </a>
+                    <a href="#diarization" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Diarização
+                    </a>
+                    <a href="#tts" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Text-to-Speech
+                    </a>
+                    <a href="#ocr" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        OCR
+                    </a>
+                    <a href="#speech-analytics" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Speech Analytics
+                    </a>
+                </div>
+
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">Recursos Avançados</div>
+                    <a href="#streaming" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Streaming
+                    </a>
+                    <a href="#error-handling" class="docs-nav__link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                        Tratamento de Erros
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-content">
+            <!-- Getting Started -->
+            <section id="getting-started" class="docs-section">
+                <h1 class="docs-title">Documentação da API Paneas</h1>
+                <p class="docs-lead">
+                    Bem-vindo à documentação oficial da API Paneas Ecosystem. Esta API oferece componentes completos
+                    de IA para transcrição, análise, conversação e síntese de voz.
+                </p>
+
+                <div class="docs-info-box">
+                    <div class="docs-info-box__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" x2="12" y1="16" y2="12"/>
+                            <line x1="12" x2="12.01" y1="8" y2="8"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Stack 100% Local</strong>
+                        <p>Todos os modelos rodam localmente, garantindo máxima privacidade e controle dos seus dados.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Authentication -->
+            <section id="authentication" class="docs-section">
+                <h2 class="docs-heading">Autenticação</h2>
+                <p>Atualmente a API não requer autenticação para uso local. Para ambientes de produção, recomendamos implementar autenticação via Bearer Token.</p>
+
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">Exemplo com Bearer Token (futuro)</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{...}'</code></pre>
+                </div>
+            </section>
+
+            <!-- Base URL -->
+            <section id="base-url" class="docs-section">
+                <h2 class="docs-heading">Base URL</h2>
+                <p>Todas as requisições devem ser feitas para a seguinte URL base:</p>
+
+                <div class="docs-endpoint-box">
+                    <code class="docs-endpoint-url">http://localhost:8765/api/v1</code>
+                </div>
+            </section>
+
+            <!-- Chat Completions -->
+            <section id="chat-completions" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /chat/completions
+                </h2>
+                <p class="docs-description">
+                    API compatível com OpenAI para conversação com o modelo Paneas-32B (Qwen 2.5).
+                    Suporta modo streaming para respostas em tempo real.
+                </p>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>model</code></td>
+                                <td><span class="docs-type">string</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Nome do modelo: <code>"paneas-q32b"</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>messages</code></td>
+                                <td><span class="docs-type">array</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Array de mensagens no formato OpenAI</td>
+                            </tr>
+                            <tr>
+                                <td><code>temperature</code></td>
+                                <td><span class="docs-type">float</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Controla aleatoriedade (0.0-2.0). Padrão: 0.7</td>
+                            </tr>
+                            <tr>
+                                <td><code>max_tokens</code></td>
+                                <td><span class="docs-type">integer</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Máximo de tokens na resposta. Padrão: 2048</td>
+                            </tr>
+                            <tr>
+                                <td><code>stream</code></td>
+                                <td><span class="docs-type">boolean</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Ativar streaming. Padrão: false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "paneas-q32b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Você é um assistente prestativo."
+      },
+      {
+        "role": "user",
+        "content": "Explique o que é inteligência artificial"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 500
+  }'</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Resposta</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "id": "chatcmpl-123",
+  "object": "chat.completion",
+  "created": 1677652288,
+  "model": "paneas-q32b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Inteligência Artificial (IA) é um ramo da ciência da computação..."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 150,
+    "total_tokens": 170
+  }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- ASR -->
+            <section id="asr" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /asr
+                </h2>
+                <p class="docs-description">
+                    Transcrição de áudio usando Whisper. Suporta múltiplos formatos e detecção automática de idioma.
+                </p>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>file</code></td>
+                                <td><span class="docs-type">file</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Arquivo de áudio (mp3, wav, m4a, ogg)</td>
+                            </tr>
+                            <tr>
+                                <td><code>language</code></td>
+                                <td><span class="docs-type">string</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Código do idioma (pt, en, es). Auto-detect se omitido</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/asr \
+  -F "file=@audio.mp3" \
+  -F "language=pt"</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Resposta</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "text": "Olá, bem-vindo ao sistema de transcrição automática.",
+  "language": "pt",
+  "duration": 5.2,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.2,
+      "text": "Olá, bem-vindo ao sistema de transcrição automática."
+    }
+  ]
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Diarization -->
+            <section id="diarization" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /diar
+                </h2>
+                <p class="docs-description">
+                    Separação de speakers (diarização) com suporte a LLM. O modo LLM é mais rápido e otimizado para conversas entre 2 speakers (Atendente/Cliente).
+                </p>
+
+                <div class="docs-info-box docs-info-box--tip">
+                    <div class="docs-info-box__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Modo LLM Recomendado</strong>
+                        <p>Use <code>use_llm=true</code> para diarização rápida e precisa em conversas de call center.</p>
+                    </div>
+                </div>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>file</code></td>
+                                <td><span class="docs-type">file</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Arquivo de áudio</td>
+                            </tr>
+                            <tr>
+                                <td><code>use_llm</code></td>
+                                <td><span class="docs-type">boolean</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Usar LLM para diarização. Padrão: true</td>
+                            </tr>
+                            <tr>
+                                <td><code>num_speakers</code></td>
+                                <td><span class="docs-type">integer</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Número de speakers (modo tradicional apenas)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição - Modo LLM</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/diar \
+  -F "file=@conversation.mp3" \
+  -F "use_llm=true"</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Resposta</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "mode": "llm",
+  "conversation": [
+    {
+      "speaker": "Atendente",
+      "text": "Bom dia, meu nome é Carlos, como posso ajudar?"
+    },
+    {
+      "speaker": "Cliente",
+      "text": "Olá, gostaria de informações sobre planos."
+    }
+  ]
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- TTS -->
+            <section id="tts" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /tts
+                </h2>
+                <p class="docs-description">
+                    Síntese de voz (Text-to-Speech) com vozes clonadas e controle de velocidade.
+                </p>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>text</code></td>
+                                <td><span class="docs-type">string</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Texto para sintetizar</td>
+                            </tr>
+                            <tr>
+                                <td><code>voice</code></td>
+                                <td><span class="docs-type">string</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Nome da voz. Padrão: voz padrão</td>
+                            </tr>
+                            <tr>
+                                <td><code>speed</code></td>
+                                <td><span class="docs-type">float</span></td>
+                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
+                                <td>Velocidade (0.5-2.0). Padrão: 1.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/tts \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Olá, bem-vindo ao Paneas Ecosystem",
+    "voice": "pt-BR",
+    "speed": 1.0
+  }' \
+  --output audio.wav</code></pre>
+                </div>
+            </section>
+
+            <!-- OCR -->
+            <section id="ocr" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /ocr
+                </h2>
+                <p class="docs-description">
+                    Extração de texto de imagens e documentos PDF usando OCR.
+                </p>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>file</code></td>
+                                <td><span class="docs-type">file</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Imagem ou PDF (jpg, png, pdf)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/ocr \
+  -F "file=@documento.pdf"</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Resposta</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "text": "Texto extraído do documento...",
+  "pages": 3,
+  "confidence": 0.95
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Speech Analytics -->
+            <section id="speech-analytics" class="docs-section">
+                <h2 class="docs-heading">
+                    <span class="docs-method docs-method--post">POST</span>
+                    /speech-analytics
+                </h2>
+                <p class="docs-description">
+                    Análise completa de transcrições: sentimento, emoções, resumo, palavras-chave e ações recomendadas.
+                </p>
+
+                <h3 class="docs-subheading">Parâmetros</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Tipo</th>
+                                <th>Obrigatório</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>text</code></td>
+                                <td><span class="docs-type">string</span></td>
+                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
+                                <td>Texto da transcrição para analisar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Requisição</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">cURL</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/speech-analytics \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Cliente: Estou muito insatisfeito com o atendimento..."
+  }'</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Exemplo de Resposta</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "sentiment": {
+    "overall": "negative",
+    "score": -0.65,
+    "distribution": {
+      "positive": 10,
+      "neutral": 20,
+      "negative": 70
+    }
+  },
+  "emotions": {
+    "dominant": "frustration",
+    "scores": {
+      "joy": 5,
+      "anger": 30,
+      "sadness": 15,
+      "frustration": 65
+    }
+  },
+  "summary": "Cliente expressa insatisfação com o atendimento recebido...",
+  "keywords": ["insatisfeito", "problema", "atendimento"],
+  "actionItems": [
+    "Resolver reclamação imediatamente",
+    "Agendar follow-up com cliente"
+  ]
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Streaming -->
+            <section id="streaming" class="docs-section">
+                <h2 class="docs-heading">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; color: #5551ff;">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    Streaming (Server-Sent Events)
+                </h2>
+                <p class="docs-description">
+                    O endpoint <code>/chat/completions</code> suporta streaming de respostas usando Server-Sent Events (SSE).
+                    Isso permite que você receba a resposta do modelo token por token em tempo real.
+                </p>
+
+                <h3 class="docs-subheading">JavaScript / Fetch API</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JavaScript</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>const response = await fetch('http://localhost:8765/api/v1/chat/completions', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    model: 'paneas-q32b',
+    messages: [{role: 'user', content: 'Conte uma história'}],
+    stream: true
+  })
+});
+
+const reader = response.body.getReader();
+const decoder = new TextDecoder();
+
+while (true) {
+  const {done, value} = await reader.read();
+  if (done) break;
+
+  const chunk = decoder.decode(value);
+  const lines = chunk.split('\n');
+
+  for (const line of lines) {
+    if (line.startsWith('data: ')) {
+      const data = line.slice(6);
+      if (data === '[DONE]') break;
+
+      const parsed = JSON.parse(data);
+      const content = parsed.choices[0].delta.content || '';
+
+      // Processa cada token recebido
+      process.stdout.write(content);
+    }
+  }
+}</code></pre>
+                </div>
+
+                <h3 class="docs-subheading">Python</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">Python</span>
+                        <button class="docs-code-example__copy" onclick="copyCode(this)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                    <pre class="docs-code"><code>import requests
+import json
+
+response = requests.post(
+    'http://localhost:8765/api/v1/chat/completions',
+    json={
+        'model': 'paneas-q32b',
+        'messages': [{'role': 'user', 'content': 'Conte uma história'}],
+        'stream': True
+    },
+    stream=True
+)
+
+for line in response.iter_lines():
+    if line.startswith(b'data: '):
+        data = line[6:].decode('utf-8')
+        if data == '[DONE]':
+            break
+
+        parsed = json.loads(data)
+        content = parsed['choices'][0]['delta'].get('content', '')
+        print(content, end='', flush=True)</code></pre>
+                </div>
+            </section>
+
+            <!-- Error Handling -->
+            <section id="error-handling" class="docs-section">
+                <h2 class="docs-heading">Tratamento de Erros</h2>
+                <p class="docs-description">
+                    A API retorna erros HTTP padrão com detalhes em JSON.
+                </p>
+
+                <h3 class="docs-subheading">Códigos de Status HTTP</h3>
+                <div class="docs-params-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Significado</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>200</code></td>
+                                <td>OK</td>
+                                <td>Requisição bem-sucedida</td>
+                            </tr>
+                            <tr>
+                                <td><code>400</code></td>
+                                <td>Bad Request</td>
+                                <td>Parâmetros inválidos ou ausentes</td>
+                            </tr>
+                            <tr>
+                                <td><code>422</code></td>
+                                <td>Unprocessable Entity</td>
+                                <td>Dados válidos mas não processáveis</td>
+                            </tr>
+                            <tr>
+                                <td><code>500</code></td>
+                                <td>Internal Server Error</td>
+                                <td>Erro interno do servidor</td>
+                            </tr>
+                            <tr>
+                                <td><code>503</code></td>
+                                <td>Service Unavailable</td>
+                                <td>Serviço temporariamente indisponível</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="docs-subheading">Formato de Erro</h3>
+                <div class="docs-code-example">
+                    <div class="docs-code-example__header">
+                        <span class="docs-code-example__title">JSON Error Response</span>
+                    </div>
+                    <pre class="docs-code"><code>{
+  "detail": "Descrição do erro",
+  "error_code": "INVALID_PARAMETER",
+  "field": "messages"
+}</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Copy code functionality
+        function copyCode(button) {
+            const codeBlock = button.closest('.docs-code-example').querySelector('code');
+            const text = codeBlock.textContent;
+
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHTML = button.innerHTML;
+                button.innerHTML = `
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Copiado!
+                `;
+                button.classList.add('copied');
+
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('.docs-nav__link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const target = document.querySelector(targetId);
+
+                if (target) {
+                    // Update active link
+                    document.querySelectorAll('.docs-nav__link').forEach(l => l.classList.remove('docs-nav__link--active'));
+                    link.classList.add('docs-nav__link--active');
+
+                    // Scroll to section
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Highlight active section on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('.docs-nav__link').forEach(link => {
+                        link.classList.remove('docs-nav__link--active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('docs-nav__link--active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.docs-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
