@@ -54,9 +54,8 @@ async def chat_completion(
     payload = dict(payload)
     provider = (payload.pop("provider", None) or "paneas").lower()
     payload.pop("quality_priority", None)
-    # Remove tools/tool_choice - vLLM antigo não suporta (usar prompt engineering)
-    payload.pop("tools", None)
-    payload.pop("tool_choice", None)
+
+    # Preserve tools/tool_choice for OpenAI, remove for vLLM
     if target == LLMTarget.OPENAI or provider == "openai":
         request_payload = dict(payload)
         original_model = request_payload.get("model")
@@ -69,6 +68,11 @@ async def chat_completion(
             metadata.update(router_metadata)
         metadata["router_target"] = LLMTarget.OPENAI.value
         return data
+
+    # For vLLM (paneas) - remove tools/tool_choice as vLLM 0.4.2 doesn't support them
+    # Will use prompt engineering instead in the router
+    payload.pop("tools", None)
+    payload.pop("tool_choice", None)
 
     preferred_order = _preferred_targets(target)
     last_error: Exception | None = None
