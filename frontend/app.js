@@ -211,7 +211,8 @@ const ui = {
     chatLog: document.getElementById("chatLog"),
     chatForm: document.getElementById("chatForm"),
     chatInput: document.getElementById("chatInput"),
-    chatModel: document.getElementById("chatModel"),
+    chatTarget: document.getElementById("chatTarget"),
+    chatModel: document.getElementById("chatTarget"), // Alias para compatibilidade
     chatKeepHistory: document.getElementById("chatKeepHistory"),
     chatTools: document.getElementById("chatTools"),
     chatSystemPrompt: document.getElementById("chatSystemPrompt"),
@@ -372,6 +373,12 @@ const state = {
     streamingStartTime: null,
     streamingTextDuration: 0,
     lastHighlightedWordIndex: -1,
+    // Chat with agents/teams
+    chatType: 'model',              // 'model' | 'agent' | 'team'
+    chatTargetId: 'paneas-q32b',    // ID do modelo/agente/team
+    conversationId: null,            // Para contexto de agentes/teams
+    availableAgents: [],            // Lista de agentes
+    availableTeams: []              // Lista de teams
 };
 
 function trimTrailingSlash(url) {
@@ -1266,11 +1273,241 @@ function stopSession() {
     ui.stopButton.disabled = true;
 }
 
+// ============================================================================
+// CHAT WITH AGENTS/TEAMS
+// ============================================================================
+
+async function loadAgentsForChat() {
+    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    try {
+        const response = await fetch(`${agentsApiBase}/v1/agents`, {
+            headers: { 'ngrok-skip-browser-warning': 'true' }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        state.availableAgents = await response.json();
+        console.log('Agentes carregados:', state.availableAgents.length);
+
+        // Atualizar select se tipo atual for 'agent'
+        if (state.chatType === 'agent') {
+            updateChatTargetSelect();
+        }
+    } catch (error) {
+        console.error('Erro ao carregar agentes:', error);
+        state.availableAgents = [];
+    }
+}
+
+async function loadTeamsForChat() {
+    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    try {
+        const response = await fetch(`${agentsApiBase}/v1/teams`, {
+            headers: { 'ngrok-skip-browser-warning': 'true' }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        state.availableTeams = await response.json();
+        console.log('Teams carregados:', state.availableTeams.length);
+
+        // Atualizar select se tipo atual for 'team'
+        if (state.chatType === 'team') {
+            updateChatTargetSelect();
+        }
+    } catch (error) {
+        console.error('Erro ao carregar teams:', error);
+        state.availableTeams = [];
+    }
+}
+
+function updateChatTargetSelect() {
+    const select = document.getElementById('chatTarget');
+    if (!select) return;
+
+    const type = state.chatType;
+
+    if (type === 'model') {
+        select.innerHTML = '<option value="paneas-q32b">paneas-q32b (Paneas-32B)</option>';
+        state.chatTargetId = 'paneas-q32b';
+    } else if (type === 'agent') {
+        if (state.availableAgents.length === 0) {
+            select.innerHTML = '<option value="">Carregando agentes...</option>';
+        } else {
+            select.innerHTML = state.availableAgents
+                .map(a => `<option value="${a.id}">${a.name}</option>`)
+                .join('');
+            // Selecionar primeiro agente
+            if (state.availableAgents.length > 0) {
+                state.chatTargetId = state.availableAgents[0].id;
+                select.value = state.chatTargetId;
+            }
+        }
+    } else if (type === 'team') {
+        if (state.availableTeams.length === 0) {
+            select.innerHTML = '<option value="">Carregando teams...</option>';
+        } else {
+            select.innerHTML = state.availableTeams
+                .map(t => `<option value="${t.id}">${t.name}</option>`)
+                .join('');
+            // Selecionar primeiro team
+            if (state.availableTeams.length > 0) {
+                state.chatTargetId = state.availableTeams[0].id;
+                select.value = state.chatTargetId;
+            }
+        }
+    }
+}
+
+async function sendToAgent(message) {
+    const agentId = state.chatTargetId;
+    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+
+    // Gerar conversation_id na primeira mensagem
+    if (!state.conversationId) {
+        state.conversationId = `conv-${Date.now()}-${Math.random().toString(36).substring(7)}`;
+        console.log('Nova conversa com agente:', state.conversationId);
+    }
+
+    const url = `${agentsApiBase}/v1/agents/${agentId}/run`;
+
+    // Adicionar mensagem do usuário ao histórico
+    state.chatHistory.push({ role: "user", content: message });
+    renderChat();
+
+    ui.chatInput.value = "";
+    ui.chatInput.disabled = true;
+
+    const payload = {
+        input: message,
+        conversation_id: state.conversationId
+    };
+
+    setStatus("Consultando agente...", "loading");
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'ngrok-skip-browser-warning': 'true'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            throw new Error(errorData.detail || `HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Adicionar resposta do agente
+        state.chatHistory.push({
+            role: "assistant",
+            content: data.output || "(resposta vazia)"
+        });
+        renderChat();
+
+        setStatus("Resposta do agente recebida.", "ready");
+
+    } catch (err) {
+        console.error("Erro ao consultar agente:", err);
+        state.chatHistory.push({
+            role: "assistant",
+            content: `[erro] ${err.message}`
+        });
+        renderChat();
+        setStatus("Falha ao consultar o agente.", "error");
+    } finally {
+        ui.chatInput.disabled = false;
+        ui.chatInput.focus();
+    }
+}
+
+async function sendToTeam(message) {
+    const teamId = state.chatTargetId;
+    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+
+    if (!state.conversationId) {
+        state.conversationId = `conv-${Date.now()}-${Math.random().toString(36).substring(7)}`;
+        console.log('Nova conversa com team:', state.conversationId);
+    }
+
+    const url = `${agentsApiBase}/v1/teams/${teamId}/run`;
+
+    state.chatHistory.push({ role: "user", content: message });
+    renderChat();
+
+    ui.chatInput.value = "";
+    ui.chatInput.disabled = true;
+
+    const payload = {
+        input: message,
+        conversation_id: state.conversationId
+    };
+
+    setStatus("Consultando team...", "loading");
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'ngrok-skip-browser-warning': 'true'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            throw new Error(errorData.detail || `HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        state.chatHistory.push({
+            role: "assistant",
+            content: data.output || "(resposta vazia)"
+        });
+        renderChat();
+
+        setStatus("Resposta do team recebida.", "ready");
+
+    } catch (err) {
+        console.error("Erro ao consultar team:", err);
+        state.chatHistory.push({
+            role: "assistant",
+            content: `[erro] ${err.message}`
+        });
+        renderChat();
+        setStatus("Falha ao consultar o team.", "error");
+    } finally {
+        ui.chatInput.disabled = false;
+        ui.chatInput.focus();
+    }
+}
+
 async function sendChatMessage(text) {
     const content = text.trim();
     if (!content) {
         return;
     }
+
+    // Rotear baseado no tipo selecionado
+    const chatType = state.chatType;
+
+    if (chatType === 'agent') {
+        return await sendToAgent(content);
+    } else if (chatType === 'team') {
+        return await sendToTeam(content);
+    }
+
+    // Continuar com o fluxo de modelo direto...
     const base = resolveApiBase();
     const url = `${base}/api/v1/chat/completions`;
 
@@ -1864,6 +2101,7 @@ async function streamAudioFile() {
 
 function clearChat() {
     state.chatHistory = [];
+    state.conversationId = null; // Resetar contexto de conversa com agente/team
     renderChat();
 }
 
@@ -1886,6 +2124,36 @@ function bindEvents() {
         event.preventDefault();
         clearChat();
     });
+
+    // Chat type selector (model/agent/team)
+    document.querySelectorAll('input[name="chatType"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            state.chatType = e.target.value;
+            updateChatTargetSelect();
+
+            // Resetar conversation_id ao trocar tipo
+            state.conversationId = null;
+
+            // Mostrar/esconder system prompt (só para modelo direto)
+            const systemPromptGroup = document.getElementById('chatSystemPromptGroup');
+            if (systemPromptGroup) {
+                systemPromptGroup.style.display = state.chatType === 'model' ? 'block' : 'none';
+            }
+        });
+    });
+
+    // Chat target selector
+    const chatTarget = document.getElementById('chatTarget');
+    if (chatTarget) {
+        chatTarget.addEventListener('change', (e) => {
+            state.chatTargetId = e.target.value;
+            state.conversationId = null; // Resetar ao trocar alvo
+        });
+    }
+
+    // Carregar agentes/teams ao inicializar
+    loadAgentsForChat();
+    loadTeamsForChat();
 
     ui.asrUploadButton?.addEventListener("click", async (event) => {
         event.preventDefault();
@@ -3152,6 +3420,11 @@ function bootstrap() {
     // Bind diarization
     if (ui.diarButton) {
         ui.diarButton.addEventListener('click', handleDiarization);
+    }
+
+    // Initialize Agents Module
+    if (typeof window.initializeAgentsModule === 'function') {
+        window.initializeAgentsModule();
     }
 }
 

@@ -113,7 +113,7 @@
             </div>
             <div class="hero__stats">
                 <div class="stat-item">
-                    <div class="stat-item__value">7</div>
+                    <div class="stat-item__value">8</div>
                     <div class="stat-item__label">Componentes de IA</div>
                 </div>
                 <div class="stat-item">
@@ -347,6 +347,40 @@
                     </ul>
                     <button class="product-card__cta">Experimentar →</button>
                 </div>
+
+                <!-- AI Agents -->
+                <div class="product-card" data-product="agents">
+                    <div class="product-card__header">
+                        <div class="product-card__icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <span class="product-card__badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                            Agno
+                        </span>
+                    </div>
+                    <h3 class="product-card__title">AI Agents Framework</h3>
+                    <p class="product-card__description">
+                        Framework completo para criação de agentes de IA com ferramentas, conhecimento e templates. Suporte a multi-agente com Teams hierárquicos. Construa assistentes inteligentes personalizados e coordenados.
+                    </p>
+                    <ul class="product-card__features">
+                        <li>Criação e gerenciamento de agentes</li>
+                        <li>Teams multi-agente com hierarquia</li>
+                        <li>Tools customizáveis (function calling)</li>
+                        <li>Knowledge bases com RAG</li>
+                        <li>Templates reutilizáveis</li>
+                        <li>Execução e validação de agentes/teams</li>
+                    </ul>
+                    <button class="product-card__cta">Experimentar →</button>
+                </div>
             </div>
         </div>
     </section>
@@ -417,6 +451,17 @@
                             </svg>
                         </div>
                         <span>Analytics</span>
+                    </button>
+                    <button class="playground__nav-item" data-tab="agents">
+                        <div class="playground__nav-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <span>Agentes</span>
                     </button>
                 </nav>
             </div>
@@ -676,10 +721,27 @@
                     <div class="playground-card playground-card--chat">
                         <div class="chat-header">
                             <h3 class="playground-card__title">Chat com LLM</h3>
+
+                            <!-- Seletor de Tipo -->
+                            <div class="chat-type-selector">
+                                <label>
+                                    <input type="radio" name="chatType" value="model" checked>
+                                    <span>Modelo Direto</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="chatType" value="agent">
+                                    <span>Agente</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="chatType" value="team">
+                                    <span>Team</span>
+                                </label>
+                            </div>
+
                             <div class="chat-controls">
                                 <div class="form-group form-group--inline">
-                                    <label for="chatModel">Modelo:</label>
-                                    <select id="chatModel">
+                                    <label for="chatTarget">Selecione:</label>
+                                    <select id="chatTarget">
                                         <option value="paneas-q32b">paneas-q32b (Paneas-32B)</option>
                                     </select>
                                 </div>
@@ -690,7 +752,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group" style="margin-top: 0.5rem;">
+                            <div class="form-group" id="chatSystemPromptGroup" style="margin-top: 0.5rem;">
                                 <label for="chatSystemPrompt">System Prompt (opcional):</label>
                                 <textarea id="chatSystemPrompt" rows="2" placeholder="Ex: Você é um assistente útil..."></textarea>
                             </div>
@@ -932,6 +994,645 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
                         </div>
                     </div>
                 </div>
+
+                <!-- Agents Tab -->
+                <div class="playground__panel" data-content="agents">
+                    <!-- Sub-tabs for Agents Management -->
+                    <div class="agents-tabs">
+                        <div class="agents-tabs__nav">
+                            <button class="agents-tabs__item agents-tabs__item--active" data-agents-tab="manage-agents">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                </svg>
+                                Agentes
+                            </button>
+                            <button class="agents-tabs__item" data-agents-tab="manage-tools">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                                Tools
+                            </button>
+                            <button class="agents-tabs__item" data-agents-tab="manage-knowledge">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Knowledge
+                            </button>
+                            <button class="agents-tabs__item" data-agents-tab="manage-templates">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M7 7h10"/>
+                                    <path d="M7 12h10"/>
+                                    <path d="M7 17h6"/>
+                                </svg>
+                                Templates
+                            </button>
+                            <button class="agents-tabs__item" data-agents-tab="manage-teams">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="12" x2="15" y2="12"/>
+                                </svg>
+                                Teams
+                            </button>
+                        </div>
+
+                        <!-- Agents Management Panel -->
+                        <div class="agents-tabs__panel agents-tabs__panel--active" data-agents-content="manage-agents">
+                            <div class="grid-2">
+                                <!-- Create/Edit Agent Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title" id="agentFormTitle">Criar Novo Agente</h3>
+                                        <button class="btn btn--sm btn--ghost" id="resetAgentForm">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="1 4 1 10 7 10"/>
+                                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                                            </svg>
+                                            Limpar
+                                        </button>
+                                    </div>
+                                    <form id="agentForm">
+                                        <input type="hidden" id="agentId" />
+                                        <div class="form-group">
+                                            <label for="agentName">Nome do Agente *</label>
+                                            <input id="agentName" type="text" placeholder="Assistente Unimed Natal" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="agentDescription">Descrição</label>
+                                            <textarea id="agentDescription" rows="2" placeholder="Assistente para consultas Unimed"></textarea>
+                                        </div>
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label for="agentProvider">Provider *</label>
+                                                <select id="agentProvider" required>
+                                                    <option value="openai">OpenAI</option>
+                                                    <option value="anthropic">Anthropic</option>
+                                                    <option value="azure_openai">Azure OpenAI</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="agentModel">Modelo *</label>
+                                                <input id="agentModel" type="text" placeholder="gpt-4" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="agentTemperature">Temperature</label>
+                                                <input id="agentTemperature" type="number" min="0" max="2" step="0.1" value="0.7" />
+                                            </div>
+                                            <div class="form-group form-group--checkbox">
+                                                <input id="agentEnabled" type="checkbox" checked />
+                                                <label for="agentEnabled">Habilitado</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="agentSystemPrompt">System Prompt</label>
+                                            <textarea id="agentSystemPrompt" rows="4" placeholder="Você é um assistente especializado..."></textarea>
+                                        </div>
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                                    <polyline points="17 21 17 13 7 13 7 21"/>
+                                                    <polyline points="7 3 7 8 15 8"/>
+                                                </svg>
+                                                Salvar Agente
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Agents List Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Agentes Registrados</h3>
+                                        <button class="btn btn--sm btn--secondary" id="refreshAgents">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 4 23 10 17 10"/>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                            </svg>
+                                            Atualizar
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="agentsEnabledFilter" checked />
+                                            <span>Apenas habilitados</span>
+                                        </label>
+                                    </div>
+                                    <div id="agentsList" class="items-list">
+                                        <p class="placeholder">Carregando agentes...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Agent Details Section (shown when agent is selected) -->
+                            <div id="agentDetails" class="agent-details hidden">
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Detalhes do Agente</h3>
+                                        <div class="button-group">
+                                            <button class="btn btn--sm btn--secondary" id="validateAgent">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                                </svg>
+                                                Validar
+                                            </button>
+                                            <button class="btn btn--sm btn--primary" id="runAgent">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                                </svg>
+                                                Executar
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid-2">
+                                        <!-- Tools Management -->
+                                        <div class="card-section">
+                                            <h4 class="card-section-title">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                                </svg>
+                                                Tools Vinculadas
+                                            </h4>
+                                            <div id="agentToolsList" class="tags-list"></div>
+                                            <div class="form-group">
+                                                <label for="addToolSelect">Adicionar Tool</label>
+                                                <div class="input-button-group">
+                                                    <select id="addToolSelect">
+                                                        <option value="">Selecione uma tool...</option>
+                                                    </select>
+                                                    <button class="btn btn--sm btn--primary" id="addToolButton">
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                            <line x1="12" y1="5" x2="12" y2="19"/>
+                                                            <line x1="5" y1="12" x2="19" y2="12"/>
+                                                        </svg>
+                                                        Adicionar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Knowledge Management -->
+                                        <div class="card-section">
+                                            <h4 class="card-section-title">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                                </svg>
+                                                Knowledge Sources
+                                            </h4>
+                                            <div id="agentKnowledgeList" class="tags-list"></div>
+                                            <div class="form-group">
+                                                <label for="addKnowledgeSelect">Adicionar Knowledge</label>
+                                                <div class="input-button-group">
+                                                    <select id="addKnowledgeSelect">
+                                                        <option value="">Selecione uma fonte...</option>
+                                                    </select>
+                                                    <button class="btn btn--sm btn--primary" id="addKnowledgeButton">
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                            <line x1="12" y1="5" x2="12" y2="19"/>
+                                                            <line x1="5" y1="12" x2="19" y2="12"/>
+                                                        </svg>
+                                                        Adicionar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Agent Execution Section -->
+                                    <div class="card-section">
+                                        <h4 class="card-section-title">Executar Agente</h4>
+                                        <form id="runAgentForm">
+                                            <div class="form-group">
+                                                <label for="agentInput">Input</label>
+                                                <textarea id="agentInput" rows="3" placeholder="Digite o input para o agente..."></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                                </svg>
+                                                Executar Agora
+                                            </button>
+                                        </form>
+                                        <div id="agentOutput" class="result-box hidden">
+                                            <h5>Resultado da Execução</h5>
+                                            <div id="agentOutputContent"></div>
+                                            <div class="stats-row" id="agentOutputStats"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools Management Panel -->
+                        <div class="agents-tabs__panel" data-agents-content="manage-tools">
+                            <div class="grid-2">
+                                <!-- Create/Edit Tool Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title" id="toolFormTitle">Registrar Nova Tool</h3>
+                                        <button class="btn btn--sm btn--ghost" id="resetToolForm">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="1 4 1 10 7 10"/>
+                                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                                            </svg>
+                                            Limpar
+                                        </button>
+                                    </div>
+                                    <form id="toolForm">
+                                        <input type="hidden" id="toolId" />
+                                        <div class="form-group">
+                                            <label for="toolName">Nome da Tool *</label>
+                                            <input id="toolName" type="text" placeholder="web_fetch" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="toolDescription">Descrição *</label>
+                                            <textarea id="toolDescription" rows="2" placeholder="Busca conteúdo de URLs HTTP" required></textarea>
+                                        </div>
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label for="toolModulePath">Module Path *</label>
+                                                <input id="toolModulePath" type="text" placeholder="app.tools.web_fetch" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="toolFunctionName">Function Name *</label>
+                                                <input id="toolFunctionName" type="text" placeholder="web_fetch" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="toolSchema">Schema JSON</label>
+                                            <textarea id="toolSchema" rows="6" placeholder='{"type": "object", "properties": {...}}'></textarea>
+                                            <small class="help-text">JSON Schema descrevendo os parâmetros da função</small>
+                                        </div>
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                                    <polyline points="17 21 17 13 7 13 7 21"/>
+                                                    <polyline points="7 3 7 8 15 8"/>
+                                                </svg>
+                                                Salvar Tool
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Tools List Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Tools Registradas</h3>
+                                        <button class="btn btn--sm btn--secondary" id="refreshTools">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 4 23 10 17 10"/>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                            </svg>
+                                            Atualizar
+                                        </button>
+                                    </div>
+                                    <div id="toolsList" class="items-list">
+                                        <p class="placeholder">Carregando tools...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tools Catalog Section -->
+                            <div class="playground-card">
+                                <div class="card__header">
+                                    <h3 class="playground-card__title">Catálogo de Tools</h3>
+                                    <button class="btn btn--sm btn--secondary" id="refreshCatalog">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="23 4 23 10 17 10"/>
+                                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                        </svg>
+                                        Atualizar
+                                    </button>
+                                </div>
+                                <p class="card__description">Tools pré-configuradas disponíveis para registro rápido</p>
+                                <div id="toolsCatalog" class="items-list">
+                                    <p class="placeholder">Carregando catálogo...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Knowledge Management Panel -->
+                        <div class="agents-tabs__panel" data-agents-content="manage-knowledge">
+                            <div class="grid-2">
+                                <!-- Create Knowledge Source Card -->
+                                <div class="playground-card">
+                                    <h3 class="playground-card__title">Criar Fonte de Conhecimento</h3>
+                                    <form id="knowledgeForm">
+                                        <input type="hidden" id="knowledgeId" />
+                                        <div class="form-group">
+                                            <label for="knowledgeTitle">Título *</label>
+                                            <input id="knowledgeTitle" type="text" placeholder="Manual de Procedimentos" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="knowledgeType">Tipo *</label>
+                                            <select id="knowledgeType" required>
+                                                <option value="file">File (arquivo local)</option>
+                                                <option value="folder">Folder (pasta)</option>
+                                                <option value="url">URL (conteúdo web)</option>
+                                                <option value="markdown">Markdown (texto direto)</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="knowledgeLocation">Localização *</label>
+                                            <input id="knowledgeLocation" type="text" placeholder="uploads/knowledge/manual.pdf" required />
+                                            <small class="help-text" id="knowledgeLocationHelp">Caminho do arquivo, pasta, URL ou conteúdo markdown</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="knowledgeMeta">Metadados (JSON)</label>
+                                            <textarea id="knowledgeMeta" rows="3" placeholder='{"author": "Equipe Técnica", "version": "1.0"}'></textarea>
+                                        </div>
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                                    <polyline points="17 21 17 13 7 13 7 21"/>
+                                                    <polyline points="7 3 7 8 15 8"/>
+                                                </svg>
+                                                Salvar Fonte
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Knowledge Sources List Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Fontes de Conhecimento</h3>
+                                        <button class="btn btn--sm btn--secondary" id="refreshKnowledge">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 4 23 10 17 10"/>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                            </svg>
+                                            Atualizar
+                                        </button>
+                                    </div>
+                                    <div id="knowledgeList" class="items-list">
+                                        <p class="placeholder">Carregando fontes...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Templates Management Panel -->
+                        <div class="agents-tabs__panel" data-agents-content="manage-templates">
+                            <div class="grid-2">
+                                <!-- Create Template Card -->
+                                <div class="playground-card">
+                                    <h3 class="playground-card__title">Criar Template</h3>
+                                    <form id="templateForm">
+                                        <input type="hidden" id="templateId" />
+                                        <div class="form-group">
+                                            <label for="templateName">Nome *</label>
+                                            <input id="templateName" type="text" placeholder="Assistente Comercial" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="templateDescription">Descrição</label>
+                                            <textarea id="templateDescription" rows="2" placeholder="Template para assistente comercial"></textarea>
+                                        </div>
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label for="templateCategory">Categoria</label>
+                                                <input id="templateCategory" type="text" placeholder="assistant" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="templateAuthor">Autor</label>
+                                                <input id="templateAuthor" type="text" placeholder="Equipe Paneas" />
+                                            </div>
+                                        </div>
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label for="templateProvider">Provider *</label>
+                                                <select id="templateProvider" required>
+                                                    <option value="openai">OpenAI</option>
+                                                    <option value="anthropic">Anthropic</option>
+                                                    <option value="azure_openai">Azure OpenAI</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="templateModel">Modelo *</label>
+                                                <input id="templateModel" type="text" placeholder="gpt-4" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="templateTemperature">Temperature</label>
+                                                <input id="templateTemperature" type="number" min="0" max="2" step="0.1" value="0.7" />
+                                            </div>
+                                            <div class="form-group form-group--checkbox">
+                                                <input id="templateIsPublic" type="checkbox" />
+                                                <label for="templateIsPublic">Público</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="templateSystemPrompt">System Prompt</label>
+                                            <textarea id="templateSystemPrompt" rows="4" placeholder="Você é um assistente especializado..."></textarea>
+                                        </div>
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                                </svg>
+                                                Salvar Template
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Templates List Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Templates Disponíveis</h3>
+                                        <button class="btn btn--sm btn--secondary" id="refreshTemplates">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 4 23 10 17 10"/>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                            </svg>
+                                            Atualizar
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="templatesPublicFilter" />
+                                            <span>Apenas públicos</span>
+                                        </label>
+                                    </div>
+                                    <div id="templatesList" class="items-list">
+                                        <p class="placeholder">Carregando templates...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Teams Management Panel -->
+                        <div class="agents-tabs__panel" data-agents-content="manage-teams">
+                            <div class="grid-2">
+                                <!-- Create/Edit Team Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title" id="teamFormTitle">Criar Novo Team</h3>
+                                        <button class="btn btn--sm btn--ghost" id="resetTeamForm">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="1 4 1 10 7 10"/>
+                                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                                            </svg>
+                                            Limpar
+                                        </button>
+                                    </div>
+                                    <form id="teamForm">
+                                        <input type="hidden" id="teamId" />
+                                        <div class="form-group">
+                                            <label for="teamName">Nome do Team *</label>
+                                            <input id="teamName" type="text" placeholder="Equipe de Atendimento" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="teamDescription">Descrição</label>
+                                            <textarea id="teamDescription" rows="2" placeholder="Equipe multi-agente para atendimento"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="teamLeaderAgent">Agente Líder *</label>
+                                            <select id="teamLeaderAgent" required>
+                                                <option value="">Selecione um agente...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-grid">
+                                            <div class="form-group form-group--checkbox">
+                                                <input id="teamEnabled" type="checkbox" checked />
+                                                <label for="teamEnabled">Habilitado</label>
+                                            </div>
+                                        </div>
+                                        <div class="button-group">
+                                            <button type="submit" class="btn btn--primary">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                                </svg>
+                                                Salvar Team
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                    <!-- Team Members Section -->
+                                    <div id="teamMembersSection" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid #2d3748;">
+                                        <h4 style="color: #ffffff; margin-bottom: 16px;">Membros do Team</h4>
+                                        <div class="form-group">
+                                            <label for="memberType">Tipo de Membro</label>
+                                            <select id="memberType">
+                                                <option value="agent">Agente</option>
+                                                <option value="team">Sub-Team</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id="memberAgentGroup">
+                                            <label for="memberAgent">Selecionar Agente</label>
+                                            <select id="memberAgent">
+                                                <option value="">Selecione um agente...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id="memberTeamGroup" style="display: none;">
+                                            <label for="memberTeam">Selecionar Sub-Team</label>
+                                            <select id="memberTeam">
+                                                <option value="">Selecione um team...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="memberRole">Papel (opcional)</label>
+                                            <input id="memberRole" type="text" placeholder="Especialista em X" />
+                                        </div>
+                                        <button type="button" class="btn btn--secondary" id="addTeamMember">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                            </svg>
+                                            Adicionar Membro
+                                        </button>
+
+                                        <div id="currentMembersList" class="items-list" style="margin-top: 16px;">
+                                            <p class="placeholder">Nenhum membro adicionado ainda</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Teams List Card -->
+                                <div class="playground-card">
+                                    <div class="card__header">
+                                        <h3 class="playground-card__title">Teams Registrados</h3>
+                                        <button class="btn btn--sm btn--secondary" id="refreshTeams">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 4 23 10 17 10"/>
+                                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                            </svg>
+                                            Atualizar
+                                        </button>
+                                    </div>
+                                    <div id="teamsList" class="items-list">
+                                        <p class="placeholder">Carregando teams...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Team Hierarchy Viewer -->
+                            <div class="playground-card" style="margin-top: 20px;">
+                                <h3 class="playground-card__title">Visualizar Hierarquia do Team</h3>
+                                <div class="form-group">
+                                    <label for="hierarchyTeamSelect">Selecionar Team</label>
+                                    <select id="hierarchyTeamSelect">
+                                        <option value="">Selecione um team...</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn--secondary" id="viewTeamHierarchy">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <line x1="12" y1="8" x2="12" y2="16"/>
+                                        <line x1="8" y1="12" x2="16" y2="12"/>
+                                    </svg>
+                                    Ver Hierarquia
+                                </button>
+                                <div id="teamHierarchyDisplay" style="margin-top: 20px; display: none;">
+                                    <div id="hierarchyContent" class="hierarchy-tree"></div>
+                                </div>
+                            </div>
+
+                            <!-- Team Execution -->
+                            <div class="playground-card" style="margin-top: 20px;">
+                                <h3 class="playground-card__title">Executar Team</h3>
+                                <div class="form-group">
+                                    <label for="executeTeamSelect">Selecionar Team</label>
+                                    <select id="executeTeamSelect">
+                                        <option value="">Selecione um team...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="teamExecuteMessage">Mensagem *</label>
+                                    <textarea id="teamExecuteMessage" rows="3" placeholder="Digite a mensagem para o team executar..." required></textarea>
+                                </div>
+                                <div class="form-group form-group--checkbox">
+                                    <input id="teamExecuteStream" type="checkbox" checked />
+                                    <label for="teamExecuteStream">Streaming</label>
+                                </div>
+                                <button type="button" class="btn btn--primary" id="executeTeamBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"/>
+                                    </svg>
+                                    Executar Team
+                                </button>
+                                <div id="teamExecutionOutput" style="margin-top: 20px; padding: 16px; background: #1a202c; border-radius: 8px; display: none;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                        <h4 style="color: #ffffff; margin: 0;">Resposta</h4>
+                                        <button class="btn btn--sm btn--ghost" id="clearTeamOutput">Limpar</button>
+                                    </div>
+                                    <div id="teamOutputContent" style="color: #e2e8f0; white-space: pre-wrap; max-height: 400px; overflow-y: auto;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -966,6 +1667,7 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
         </div>
     </footer>
 
+    <script src="agents.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 </html>
