@@ -378,7 +378,10 @@ const state = {
     chatTargetId: 'paneas-q32b',    // ID do modelo/agente/team
     conversationId: null,            // Para contexto de agentes/teams
     availableAgents: [],            // Lista de agentes
-    availableTeams: []              // Lista de teams
+    availableTeams: [],             // Lista de teams
+    // Diarization tracking
+    diarizedConversation: [],      // Stores the diarized conversation
+    diarizedMessageCount: 0        // Number of diarized messages
 };
 
 function trimTrailingSlash(url) {
@@ -1132,6 +1135,34 @@ function handleWsMessage(event) {
             cleanupSession(finalMessage);
             break;
         }
+        case "diarization_update": {
+            // Handle streaming diarization updates
+            console.log("Diarization update received:", payload);
+            if (payload.conversation && payload.conversation.length > 0) {
+                state.diarizedConversation = payload.conversation;
+                state.diarizedMessageCount = payload.total_messages || payload.conversation.length;
+
+                // Display diarized conversation in streaming mode
+                if (ui.asrDiarResult) {
+                    displayStreamingDiarizedConversation(payload.conversation);
+                }
+            }
+            break;
+        }
+        case "final_diarization": {
+            // Handle final diarization result
+            console.log("Final diarization received:", payload);
+            if (payload.conversation && payload.conversation.length > 0) {
+                state.diarizedConversation = payload.conversation;
+                state.diarizedMessageCount = payload.total_messages || payload.conversation.length;
+
+                // Display final diarized conversation
+                if (ui.asrDiarResult) {
+                    displayFinalDiarizedConversation(payload.conversation);
+                }
+            }
+            break;
+        }
         case "error": {
             console.error("Erro do gateway:", payload.message);
             setStatus(`Erro: ${payload.message || "desconhecido"}`, "error");
@@ -1671,17 +1702,32 @@ async function transcribeUploadedAudio() {
         return;
     }
 
-    const enableDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
+    // Check if native diarization is enabled
+    const enableNativeDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
+    // Get number of speakers if diarization is enabled
+    const numSpeakers = enableNativeDiarization ? (document.getElementById('asrNumSpeakers')?.value || '2') : null;
 
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
-    console.log("[ASR] Diarização LLM:", enableDiarization ? "ativada" : "desativada");
-    setOutput(ui.asrResult, "Enviando áudio para transcrição...");
+    console.log("[ASR] Diarização Nativa (PyAnnote):", enableNativeDiarization ? "ativada" : "desativada");
+    if (enableNativeDiarization) {
+        console.log("[ASR] Número de speakers:", numSpeakers);
+    }
+
+    // Show appropriate loading message
+    if (enableNativeDiarization) {
+        setOutput(ui.asrResult, `Enviando áudio para transcrição com diarização nativa (PyAnnote) - ${numSpeakers} speakers...`);
+    } else {
+        setOutput(ui.asrResult, "Enviando áudio para transcrição...");
+    }
 
     const formData = new FormData();
     formData.append("file", file);
     formData.append("language", "pt");
-    if (ui.diarizationToggle?.checked) {
+
+    // Enable native diarization if toggle is checked
+    if (enableNativeDiarization) {
         formData.append("enable_diarization", "true");
+        formData.append("num_speakers", numSpeakers);
     }
 
     const base = resolveApiBase();
@@ -1690,13 +1736,16 @@ async function transcribeUploadedAudio() {
 
     try {
         console.log("[ASR] Iniciando requisição fetch...");
+        const startTime = Date.now();
+
         const response = await fetch(url, {
             method: "POST",
             headers: buildAuthHeaders(),
             body: formData,
         });
 
-        console.log("[ASR] Resposta recebida - status:", response.status);
+        const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
+        console.log("[ASR] Resposta recebida - status:", response.status, "tempo:", elapsedTime + "s");
 
         if (!response.ok) {
             const errorText = await response.text();
@@ -1707,17 +1756,96 @@ async function transcribeUploadedAudio() {
 
         const data = await response.json();
         console.log("[ASR] Dados recebidos:", data);
+        console.log("[ASR] Tempo de processamento:", elapsedTime + "s");
 
-        // If LLM diarization is enabled, process with LLM
-        if (enableDiarization && data.text) {
-            await diarizeWithLLM(data.text);
-        } else {
-            setOutput(ui.asrResult, prettyPrintJson(data));
+        // Sempre mostrar o JSON formatado
+        const resultContainer = document.getElementById('asrResult');
+        if (resultContainer) {
+            // Adicionar informação se diarização foi usada
+            let headerInfo = '';
+            if (enableNativeDiarization && data.segments && data.segments.length > 0) {
+                const hasSpeakers = data.segments[0].hasOwnProperty('speaker');
+                if (hasSpeakers) {
+                    const speakers = [...new Set(data.segments.map(seg => seg.speaker))];
+                    headerInfo = `<div style="color: #5551ff; margin-bottom: 10px;">✅ Diarização PyAnnote aplicada - ${speakers.length} speakers detectados - Tempo: ${elapsedTime}s</div>`;
+                }
+            }
+
+            // Mostrar JSON formatado
+            resultContainer.innerHTML = headerInfo + `<pre style="white-space: pre-wrap; word-wrap: break-word; overflow-x: auto;">${JSON.stringify(data, null, 2)}</pre>`;
         }
     } catch (err) {
         console.error("[ASR] Falha na transcrição por arquivo", err);
         setOutput(ui.asrResult, `Erro: ${err.message || err}`);
     }
+}
+
+// New function to display native diarized transcription
+function displayDiarizedTranscription(data, elapsedTime) {
+    const resultBox = ui.asrResult;
+    if (!resultBox) return;
+
+    // Extract unique speakers
+    const speakers = [...new Set(data.segments.map(seg => seg.speaker))].sort();
+
+    // Build conversation array
+    const conversation = data.segments.map(segment => ({
+        speaker: segment.speaker,
+        text: segment.text.trim(),
+        start: segment.start,
+        end: segment.end
+    }));
+
+    // Create HTML for display
+    let html = `
+        <div class="conversation-container">
+            <div class="conversation-header">
+                <div class="conversation-header__title">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Transcrição com Diarização Nativa (PyAnnote)
+                </div>
+                <div class="conversation-header__stats">
+                    <span>${speakers.length} speakers detectados</span>
+                    <span>${conversation.length} segmentos</span>
+                    <span>Tempo: ${elapsedTime}s</span>
+                </div>
+            </div>
+            <div class="conversation-body">`;
+
+    // Add each conversation turn
+    conversation.forEach((turn, index) => {
+        const speakerLabel = turn.speaker.replace('SPEAKER_', 'Falante ');
+        const isEven = index % 2 === 0;
+        html += `
+            <div class="conversation-turn ${isEven ? 'even' : 'odd'}">
+                <div class="speaker-label ${turn.speaker}">${speakerLabel}</div>
+                <div class="speaker-text">${turn.text}</div>
+                <div class="time-label">${formatTime(turn.start)} - ${formatTime(turn.end)}</div>
+            </div>`;
+    });
+
+    html += `
+            </div>
+            <div class="conversation-footer">
+                <div class="metadata">
+                    <strong>Metadata:</strong>
+                    <div>Modelo: ${data.metadata?.model || 'N/A'}</div>
+                    <div>Duração: ${data.duration_seconds?.toFixed(2) || 'N/A'}s</div>
+                    <div>Idioma: ${data.language || 'N/A'}</div>
+                </div>
+            </div>
+        </div>`;
+
+    resultBox.innerHTML = html;
+}
+
+// Helper function to format time in seconds to MM:SS
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
 async function diarizeWithLLM(transcriptText) {
@@ -1735,21 +1863,42 @@ async function diarizeWithLLM(transcriptText) {
     const base = resolveApiBase();
     const chatUrl = `${base}/api/v1/chat/completions`;
 
-    const diarizationPrompt = `Você é um especialista em revisão de transcrições de áudio de call center. Sua tarefa é separar a transcrição abaixo em um diálogo estruturado entre "Atendente" e "Cliente".
+    const diarizationPrompt = `Você é um especialista em análise de transcrições de call center. Separe a transcrição em diálogo entre "Atendente" e "Cliente".
 
-Regras:
-1. Identifique claramente quem é o Atendente e quem é o Cliente
-2. O Atendente geralmente se apresenta no início, fala de forma mais formal, e oferece ajuda
-3. Separe cada fala em uma entrada com "speaker" (Atendente ou Cliente) e "text" (o texto falado)
-4. Corrija erros óbvios de transcrição (palavras cortadas, repetições desnecessárias)
-5. Mantenha a naturalidade da conversa
-6. Se houver dúvida sobre quem está falando, use o contexto da conversa
-7. Retorne APENAS um JSON array no formato: [{"speaker": "Atendente", "text": "..."}, {"speaker": "Cliente", "text": "..."}]
-8. NÃO inclua explicações, apenas o JSON
-9. Se não conseguir identificar claramente, marque como "Desconhecido"
-10. Mantenha a ordem cronológica das falas
+CARACTERÍSTICAS PARA IDENTIFICAÇÃO:
 
-Transcrição:
+ATENDENTE (Operador/Vendedor):
+- Se apresenta com nome e empresa (ex: "Meu nome é Carlos, sou da Claro")
+- Faz perguntas sobre dados pessoais (CPF, nome completo, endereço)
+- Oferece produtos, planos ou serviços
+- Explica condições, valores e benefícios
+- Usa linguagem mais formal e técnica
+- Faz perguntas procedimentais ("Posso confirmar seus dados?")
+- Pede confirmações ("Correto?", "Ok?", "Tudo bem?")
+- Agradece e se despede formalmente
+
+CLIENTE:
+- Responde às perguntas do atendente
+- Geralmente fala menos em cada turno
+- Fornece dados pessoais quando solicitado
+- Faz perguntas sobre o serviço
+- Aceita ou recusa ofertas ("Sim", "Não", "Vamos", "Ok")
+- Expressa dúvidas ou problemas pessoais
+- Fala de forma mais informal
+
+REGRAS IMPORTANTES:
+1. O primeiro "Oi" ou "Alô" geralmente é do CLIENTE atendendo a ligação
+2. Quem se apresenta com nome e empresa é SEMPRE o Atendente
+3. Respostas curtas como "Sim", "Ok", "Tá" são geralmente do Cliente
+4. Mantenha a ordem cronológica exata das falas
+5. Cada mudança de speaker deve ser uma nova entrada
+6. Corrija pequenos erros de transcrição mas mantenha o sentido
+
+FORMATO DE SAÍDA:
+Retorne APENAS um JSON array, sem explicações:
+[{"speaker": "Cliente", "text": "..."}, {"speaker": "Atendente", "text": "..."}]
+
+Transcrição para separar:
 ${transcriptText}`;
 
     try {
@@ -1902,13 +2051,18 @@ function tryParsePartialJSON(text) {
 }
 
 function displayStreamingConversation(container, conversation) {
-    // Clear and redisplay all messages (simple approach for streaming)
-    container.innerHTML = '';
+    // Smart update: only add new messages instead of clearing everything
+    const existingMessages = container.querySelectorAll('.conversation-message');
+    const startIndex = existingMessages.length;
 
-    conversation.forEach((message, index) => {
+    // Only add new messages
+    for (let i = startIndex; i < conversation.length; i++) {
+        const message = conversation[i];
         const isAgent = message.speaker.toLowerCase().includes('atendente');
         const messageDiv = document.createElement('div');
         messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+        messageDiv.style.opacity = '0';
+        messageDiv.style.transform = 'translateY(20px)';
 
         const speakerIcon = isAgent
             ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
@@ -1925,10 +2079,87 @@ function displayStreamingConversation(container, conversation) {
         `;
 
         container.appendChild(messageDiv);
-    });
 
-    // Auto-scroll to bottom
-    container.scrollTop = container.scrollHeight;
+        // Smooth fade-in animation
+        setTimeout(() => {
+            messageDiv.style.transition = 'all 0.3s ease-out';
+            messageDiv.style.opacity = '1';
+            messageDiv.style.transform = 'translateY(0)';
+        }, 10);
+    }
+
+    // Smooth scroll to bottom
+    container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+
+function displayStreamingDiarizedConversation(conversation) {
+    const resultBox = ui.asrDiarResult || ui.asrResult;
+    if (!resultBox) return;
+
+    // Create header if not exists
+    if (!resultBox.querySelector('.conversation-header')) {
+        const header = `
+            <div class="conversation-header">
+                <div class="conversation-header__title">
+                    <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Diarização em Tempo Real
+                    <div class="diarization-status__spinner" style="width: 14px; height: 14px; margin-left: 8px; display: inline-block;"></div>
+                </div>
+                <div class="conversation-header__count">
+                    <span id="diarMessageCount">${conversation.length} mensagens</span>
+                </div>
+            </div>
+            <div class="conversation-container"></div>
+        `;
+        resultBox.innerHTML = header;
+    } else {
+        // Update message count
+        const countEl = resultBox.querySelector('#diarMessageCount');
+        if (countEl) {
+            countEl.textContent = `${conversation.length} mensagens`;
+        }
+    }
+
+    const container = resultBox.querySelector('.conversation-container');
+    if (container) {
+        displayStreamingConversation(container, conversation);
+    }
+}
+
+function displayFinalDiarizedConversation(conversation) {
+    const resultBox = ui.asrDiarResult || ui.asrResult;
+    if (!resultBox) return;
+
+    // Update header to show final status
+    const header = `
+        <div class="conversation-header">
+            <div class="conversation-header__title">
+                <svg style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Conversa Diarizada (Final)
+            </div>
+            <div class="conversation-header__count">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                </svg>
+                ${conversation.length} mensagens
+            </div>
+        </div>
+    `;
+
+    resultBox.innerHTML = header + '<div class="conversation-container"></div>';
+    const container = resultBox.querySelector('.conversation-container');
+
+    // Display all messages
+    displayDiarizedConversation(conversation);
 }
 
 function displayDiarizedConversation(conversation) {
@@ -1955,32 +2186,53 @@ function displayDiarizedConversation(conversation) {
         </div>
     `;
 
-    resultBox.innerHTML = header + '<div class="conversation-container"></div>';
+    // Check if we already have content to avoid flickering
+    const existingContainer = resultBox.querySelector('.conversation-container');
+    if (!existingContainer) {
+        resultBox.innerHTML = header + '<div class="conversation-container"></div>';
+    }
+
     const container = resultBox.querySelector('.conversation-container');
+    const existingMessages = container.querySelectorAll('.conversation-message');
+    const startIndex = existingMessages.length;
 
-    conversation.forEach((message, index) => {
-        setTimeout(() => {
-            const isAgent = message.speaker.toLowerCase().includes('atendente');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
-            messageDiv.style.animationDelay = '0s';
+    // Only add new messages
+    for (let i = startIndex; i < conversation.length; i++) {
+        const message = conversation[i];
+        const isAgent = message.speaker.toLowerCase().includes('atendente');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+        messageDiv.style.opacity = '0';
+        messageDiv.style.transform = 'translateY(10px)';
 
-            const speakerIcon = isAgent
-                ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
-                : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+        const speakerIcon = isAgent
+            ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+            : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
 
-            messageDiv.innerHTML = `
-                <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
-                    ${speakerIcon}
-                    ${message.speaker}
-                </div>
-                <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
-                    ${message.text}
-                </div>
-            `;
+        messageDiv.innerHTML = `
+            <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
+                ${speakerIcon}
+                ${message.speaker}
+            </div>
+            <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
+                ${message.text}
+            </div>
+        `;
 
-            container.appendChild(messageDiv);
-        }, index * 300); // Stagger animations
+        container.appendChild(messageDiv);
+
+        // Smooth fade-in animation with minimal delay
+        requestAnimationFrame(() => {
+            messageDiv.style.transition = 'all 0.3s ease-out';
+            messageDiv.style.opacity = '1';
+            messageDiv.style.transform = 'translateY(0)';
+        });
+    }
+
+    // Smooth scroll to bottom
+    container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth'
     });
 }
 
@@ -2176,6 +2428,18 @@ function bindEvents() {
             setOutput(ui.asrResult, `Arquivo selecionado: ${ui.asrFileInput.files[0].name}`);
         } else {
             setOutput(ui.asrResult, "Aguardando arquivo.");
+        }
+    });
+
+    // Toggle number of speakers field when diarization is enabled
+    const asrDiarizationCheckbox = document.getElementById('asrEnableDiarization');
+    const asrNumSpeakersGroup = document.getElementById('asrNumSpeakersGroup');
+
+    asrDiarizationCheckbox?.addEventListener('change', () => {
+        if (asrDiarizationCheckbox.checked) {
+            asrNumSpeakersGroup.style.display = 'block';
+        } else {
+            asrNumSpeakersGroup.style.display = 'none';
         }
     });
 
@@ -2448,21 +2712,42 @@ async function diarizeWithLLMForDiarBox(transcriptText) {
     const base = resolveApiBase();
     const chatUrl = `${base}/api/v1/chat/completions`;
 
-    const diarizationPrompt = `Você é um especialista em revisão de transcrições de áudio de call center. Sua tarefa é separar a transcrição abaixo em um diálogo estruturado entre "Atendente" e "Cliente".
+    const diarizationPrompt = `Você é um especialista em análise de transcrições de call center. Separe a transcrição em diálogo entre "Atendente" e "Cliente".
 
-Regras:
-1. Identifique claramente quem é o Atendente e quem é o Cliente
-2. O Atendente geralmente se apresenta no início, fala de forma mais formal, e oferece ajuda
-3. Separe cada fala em uma entrada com "speaker" (Atendente ou Cliente) e "text" (o texto falado)
-4. Corrija erros óbvios de transcrição (palavras cortadas, repetições desnecessárias)
-5. Mantenha a naturalidade da conversa
-6. Se houver dúvida sobre quem está falando, use o contexto da conversa
-7. Retorne APENAS um JSON array no formato: [{"speaker": "Atendente", "text": "..."}, {"speaker": "Cliente", "text": "..."}]
-8. NÃO inclua explicações, apenas o JSON
-9. Se não conseguir identificar claramente, marque como "Desconhecido"
-10. Mantenha a ordem cronológica das falas
+CARACTERÍSTICAS PARA IDENTIFICAÇÃO:
 
-Transcrição:
+ATENDENTE (Operador/Vendedor):
+- Se apresenta com nome e empresa (ex: "Meu nome é Carlos, sou da Claro")
+- Faz perguntas sobre dados pessoais (CPF, nome completo, endereço)
+- Oferece produtos, planos ou serviços
+- Explica condições, valores e benefícios
+- Usa linguagem mais formal e técnica
+- Faz perguntas procedimentais ("Posso confirmar seus dados?")
+- Pede confirmações ("Correto?", "Ok?", "Tudo bem?")
+- Agradece e se despede formalmente
+
+CLIENTE:
+- Responde às perguntas do atendente
+- Geralmente fala menos em cada turno
+- Fornece dados pessoais quando solicitado
+- Faz perguntas sobre o serviço
+- Aceita ou recusa ofertas ("Sim", "Não", "Vamos", "Ok")
+- Expressa dúvidas ou problemas pessoais
+- Fala de forma mais informal
+
+REGRAS IMPORTANTES:
+1. O primeiro "Oi" ou "Alô" geralmente é do CLIENTE atendendo a ligação
+2. Quem se apresenta com nome e empresa é SEMPRE o Atendente
+3. Respostas curtas como "Sim", "Ok", "Tá" são geralmente do Cliente
+4. Mantenha a ordem cronológica exata das falas
+5. Cada mudança de speaker deve ser uma nova entrada
+6. Corrija pequenos erros de transcrição mas mantenha o sentido
+
+FORMATO DE SAÍDA:
+Retorne APENAS um JSON array, sem explicações:
+[{"speaker": "Cliente", "text": "..."}, {"speaker": "Atendente", "text": "..."}]
+
+Transcrição para separar:
 ${transcriptText}`;
 
     try {
@@ -2614,32 +2899,53 @@ function displayDiarizedConversationInDiarBox(conversation) {
         </div>
     `;
 
-    resultBox.innerHTML = header + '<div class="conversation-container"></div>';
+    // Check if we already have content to avoid flickering
+    const existingContainer = resultBox.querySelector('.conversation-container');
+    if (!existingContainer) {
+        resultBox.innerHTML = header + '<div class="conversation-container"></div>';
+    }
+
     const container = resultBox.querySelector('.conversation-container');
+    const existingMessages = container.querySelectorAll('.conversation-message');
+    const startIndex = existingMessages.length;
 
-    conversation.forEach((message, index) => {
-        setTimeout(() => {
-            const isAgent = message.speaker.toLowerCase().includes('atendente');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
-            messageDiv.style.animationDelay = '0s';
+    // Only add new messages
+    for (let i = startIndex; i < conversation.length; i++) {
+        const message = conversation[i];
+        const isAgent = message.speaker.toLowerCase().includes('atendente');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `conversation-message conversation-message--${isAgent ? 'agent' : 'client'}`;
+        messageDiv.style.opacity = '0';
+        messageDiv.style.transform = 'translateY(10px)';
 
-            const speakerIcon = isAgent
-                ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
-                : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+        const speakerIcon = isAgent
+            ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+            : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
 
-            messageDiv.innerHTML = `
-                <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
-                    ${speakerIcon}
-                    ${message.speaker}
-                </div>
-                <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
-                    ${message.text}
-                </div>
-            `;
+        messageDiv.innerHTML = `
+            <div class="conversation-speaker conversation-speaker--${isAgent ? 'agent' : 'client'}">
+                ${speakerIcon}
+                ${message.speaker}
+            </div>
+            <div class="conversation-bubble conversation-bubble--${isAgent ? 'agent' : 'client'}">
+                ${message.text}
+            </div>
+        `;
 
-            container.appendChild(messageDiv);
-        }, index * 300); // Stagger animations
+        container.appendChild(messageDiv);
+
+        // Smooth fade-in animation with minimal delay
+        requestAnimationFrame(() => {
+            messageDiv.style.transition = 'all 0.3s ease-out';
+            messageDiv.style.opacity = '1';
+            messageDiv.style.transform = 'translateY(0)';
+        });
+    }
+
+    // Smooth scroll to bottom
+    container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth'
     });
 }
 

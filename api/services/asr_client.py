@@ -61,13 +61,18 @@ async def _transcribe_internal(
     }
 
     files = {"file": (filename, audio_bytes, content_type)}
+    # Use longer timeout when diarization is enabled
+    timeout = 180.0 if options.get("enable_diarization") else 30.0
+    # Don't retry on timeout for diarization requests (already takes 60+ seconds)
+    retry_attempts = 1 if options.get("enable_diarization") else 3
     response = await request_with_retry(
         "POST",
         url,
         client=client,
         data=form_data,
         files=files,
-        timeout=30.0,
+        timeout=timeout,
+        retry_attempts=retry_attempts,
     )
     return response.json()
 

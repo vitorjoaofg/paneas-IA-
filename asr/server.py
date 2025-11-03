@@ -2,6 +2,7 @@ import asyncio
 import base64
 import io
 import json
+import logging
 import os
 import tempfile
 import time
@@ -19,6 +20,14 @@ from starlette.websockets import WebSocketState
 from faster_whisper import WhisperModel
 from httpx import Client
 from prometheus_fastapi_instrumentator import Instrumentator
+from llm_diarization import correct_speaker_labels_sync
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 MODELS_ROOT = Path(os.environ.get("MODELS_DIR", "/models"))
 
@@ -33,6 +42,7 @@ GPU_DEVICE = _gpu_env.split(",")[0]
 DEFAULT_CONTEXT_SECONDS = float(os.environ.get("CONTEXT_SECONDS", "1.2"))
 DEFAULT_MIN_SLICE_SECONDS = float(os.environ.get("MIN_SLICE_SECONDS", "0.35"))
 DIAR_SERVICE_URL = os.environ.get("DIAR_SERVICE_URL", "http://diar:9003/diarize")
+LLM_DIARIZATION_ENABLED = os.environ.get("LLM_DIARIZATION_ENABLED", "true").lower() == "true"
 
 app = FastAPI(title="ASR Service", version="1.0.0")
 Instrumentator().instrument(app).expose(app, include_in_schema=False)
@@ -189,6 +199,15 @@ class ASRService:
         beam_size = int(opts.get("beam_size", 5))
         enable_alignment = _to_bool(opts.get("enable_alignment", False))
         enable_diarization = _to_bool(opts.get("enable_diarization", False))
+        num_speakers = opts.get("num_speakers", None)
+        if num_speakers:
+            try:
+                num_speakers = int(num_speakers)
+            except (ValueError, TypeError):
+                num_speakers = None
+
+        logger.info(f"Starting transcription with diarization={enable_diarization}")
+        transcribe_start = time.perf_counter()
 
         segments, info = model.transcribe(
             audio,
@@ -202,6 +221,9 @@ class ASRService:
             ),
             language=language,
         )
+
+        transcribe_elapsed = time.perf_counter() - transcribe_start
+        logger.info(f"Transcription completed in {transcribe_elapsed:.2f} seconds")
 
         duration_seconds = float(len(audio) / sample_rate)
         elapsed_ms = int((time.perf_counter() - start) * 1000)
@@ -226,7 +248,44 @@ class ASRService:
             result_segments.append(result)
 
         if enable_diarization:
-            diar_segments = _diarize(audio, sample_rate)
+            diar_start = time.perf_counter()
+            logger.info(f"Starting diarization for {duration_seconds:.1f} seconds of audio, num_speakers={num_speakers}")
+            diar_segments = _diarize(audio, sample_rate, num_speakers=num_speakers)
+            diar_elapsed = time.perf_counter() - diar_start
+            logger.info(f"Diarization completed in {diar_elapsed:.2f} seconds, got {len(diar_segments)} segments")
+
+            # Apply LLM correction if enabled and we have segments
+            if LLM_DIARIZATION_ENABLED and diar_segments and options.get("enable_llm_correction", True):
+                llm_start = time.perf_counter()
+                logger.info("Starting LLM speaker label correction")
+                try:
+                    # Need to pass segments with text for LLM analysis
+                    # First apply diarization to get speaker labels
+                    temp_segments = [seg.copy() for seg in result_segments]
+                    _apply_diarization(temp_segments, diar_segments)
+
+                    # Then correct the speaker labels using LLM
+                    corrected_segments = correct_speaker_labels_sync(temp_segments)
+
+                    # Extract just the speaker labels from corrected segments
+                    corrected_diar = []
+                    for seg in corrected_segments:
+                        if "speaker" in seg:
+                            corrected_diar.append({
+                                "start": seg["start"],
+                                "end": seg["end"],
+                                "speaker": seg["speaker"]
+                            })
+
+                    if corrected_diar:
+                        diar_segments = corrected_diar
+
+                    llm_elapsed = time.perf_counter() - llm_start
+                    logger.info(f"LLM correction completed in {llm_elapsed:.2f} seconds")
+                except Exception as e:
+                    logger.error(f"LLM correction failed, using original diarization: {e}")
+                    # Continue with original diar_segments
+
             _apply_diarization(result_segments, diar_segments)
 
         detected_language = getattr(info, "language", None) or (language or "unknown")
@@ -246,20 +305,39 @@ class ASRService:
         }
 
 
-def _diarize(audio: np.ndarray, sample_rate: int) -> List[Dict[str, Any]]:
+def _diarize(audio: np.ndarray, sample_rate: int, num_speakers: int = None) -> List[Dict[str, Any]]:
     if not DIAR_SERVICE_URL:
+        logger.warning("DIAR_SERVICE_URL not configured, skipping diarization")
         return []
+
+    # FIXME: Hardcoded to 2 speakers as temporary solution
+    if num_speakers is None:
+        num_speakers = 2
+
+    logger.info(f"Preparing audio for diarization, sample_rate={sample_rate}, num_speakers={num_speakers}")
     with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
         sf.write(tmp.name, audio, sample_rate)
         tmp.seek(0)
         files = {"file": ("audio.wav", tmp.read(), "audio/wav")}
+        file_size_mb = len(files["file"][1]) / (1024 * 1024)
+        logger.info(f"Audio file size: {file_size_mb:.2f} MB")
+
     try:
-        with Client(timeout=30.0) as client:
-            response = client.post(DIAR_SERVICE_URL, files=files)
+        # Add num_speakers as form data if specified
+        data = {}
+        if num_speakers:
+            data["num_speakers"] = str(num_speakers)
+
+        logger.info(f"Calling diarization service at {DIAR_SERVICE_URL} with 180s timeout, data={data}")
+        with Client(timeout=180.0) as client:  # Increased timeout to match direct diar endpoint
+            response = client.post(DIAR_SERVICE_URL, files=files, data=data)
             response.raise_for_status()
             payload = response.json()
-            return payload.get("segments", [])
-    except Exception:  # noqa: BLE001
+            segments = payload.get("segments", [])
+            logger.info(f"Diarization service returned {len(segments)} segments")
+            return segments
+    except Exception as e:  # noqa: BLE001
+        logger.error(f"Diarization failed: {e}", exc_info=True)
         return []
 
 

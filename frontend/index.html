@@ -560,66 +560,36 @@
 
                 <!-- Transcription Tab -->
                 <div class="playground__panel" data-content="transcription">
-                    <div class="grid-2">
-                        <div class="playground-card">
-                            <h3 class="playground-card__title">Transcrição de Arquivo</h3>
-                            <p class="card__description">Envie um arquivo de áudio (WAV, MP3)</p>
-                            <div class="upload-area">
-                                <input type="file" id="asrFileInput" accept="audio/*" />
-                                <div class="upload-placeholder">
-                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                        <polyline points="17 8 12 3 7 8"/>
-                                        <line x1="12" x2="12" y1="3" y2="15"/>
-                                    </svg>
-                                    <p>Clique ou arraste um arquivo de áudio</p>
-                                    <span class="file-name" id="asrFileName"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="asrEnableDiarization" />
-                                    <span>Ativar Separação de Canais (Diar)</span>
-                                    <small class="help-text">Usa LLM para identificar Atendente e Cliente automaticamente</small>
-                                </label>
-                            </div>
-                            <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
-                            <div class="result-box" id="asrResult">
-                                <p class="placeholder">Aguardando arquivo...</p>
+                    <div class="playground-card playground-card--centered">
+                        <h3 class="playground-card__title">Transcrição de Arquivo</h3>
+                        <p class="card__description">Envie um arquivo de áudio (WAV, MP3)</p>
+                        <div class="upload-area">
+                            <input type="file" id="asrFileInput" accept="audio/*" />
+                            <div class="upload-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" x2="12" y1="3" y2="15"/>
+                                </svg>
+                                <p>Clique ou arraste um arquivo de áudio</p>
+                                <span class="file-name" id="asrFileName"></span>
                             </div>
                         </div>
-
-                        <div class="playground-card">
-                            <h3 class="playground-card__title">Diarização</h3>
-                            <p class="card__description">Identifique diferentes speakers</p>
-                            <div class="upload-area">
-                                <input type="file" id="diarFileInput" accept="audio/*" />
-                                <div class="upload-placeholder">
-                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                    </svg>
-                                    <p>Clique ou arraste um arquivo de áudio</p>
-                                    <span class="file-name" id="diarFileName"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="diarUseLLM" checked />
-                                    <span>Usar LLM (Rápido - Atendente/Cliente)</span>
-                                    <small class="help-text">Recomendado: mais rápido e preciso para 2 speakers</small>
-                                </label>
-                            </div>
-                            <div class="form-group" id="diarNumSpeakersGroup">
-                                <label for="numSpeakers">Número de speakers (opcional)</label>
-                                <input id="numSpeakers" type="number" min="1" max="10" placeholder="Auto-detectar" />
-                                <small class="help-text">Apenas para modo tradicional (sem LLM)</small>
-                            </div>
-                            <button class="btn btn--primary btn--block" id="diarButton">Iniciar Diarização</button>
-                            <div class="result-box" id="diarResult">
-                                <p class="placeholder">Aguardando arquivo...</p>
-                            </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="asrEnableDiarization" />
+                                <span>Ativar Diarização com PyAnnote</span>
+                                <small class="help-text">Identifica diferentes speakers automaticamente (tempo adicional: ~30s)</small>
+                            </label>
+                        </div>
+                        <div class="form-group" id="asrNumSpeakersGroup" style="display:none;">
+                            <label for="asrNumSpeakers">Número de Speakers</label>
+                            <input id="asrNumSpeakers" type="number" min="2" max="10" value="2" />
+                            <small class="help-text">Defina quantos speakers estão no áudio (padrão: 2)</small>
+                        </div>
+                        <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
+                        <div class="result-box result-box--large" id="asrResult" style="font-family: 'JetBrains Mono', monospace; text-align: left;">
+                            <p class="placeholder">Aguardando arquivo...</p>
                         </div>
                     </div>
                 </div>

@@ -1,16 +1,19 @@
 import asyncio
 import contextlib
 import io
+import json
 import time
 import wave
 from dataclasses import dataclass
-from typing import Any, Awaitable, Callable, Dict, Optional
+from typing import Any, Awaitable, Callable, Dict, Optional, List
 
 import structlog
 
 from config import get_settings
 from services.asr_client import transcribe_audio_bytes
 from services.room_manager import room_manager
+from services.llm_client import chat_completion
+from services.llm_router import LLMTarget
 
 LOGGER = structlog.get_logger(__name__)
 
@@ -117,6 +120,13 @@ class SessionState:
         self._min_batch_samples = int(config.batch_window_sec * sample_rate)
         self._max_batch_samples = int(config.max_batch_window_sec * sample_rate)
 
+        # LLM Diarization tracking
+        self._last_diarization_batch = 0
+        self._diarization_interval_batches = 6  # Diarize every 6 batches (~30 seconds)
+        self._diarization_task = None
+        self._diarization_results = []
+        self._is_diarizing = False
+
     def _pending_duration(self) -> float:
         return len(self._pending) / float(self.sample_rate * 2)
 
@@ -148,6 +158,26 @@ class SessionState:
         self._flush_task.cancel()
         with contextlib.suppress(asyncio.CancelledError):
             await self._flush_task
+
+        # Perform final diarization if enabled
+        if self.config.enable_diarization and self._transcript_accumulated:
+            # Wait for any pending diarization to complete
+            if self._diarization_task and not self._diarization_task.done():
+                with contextlib.suppress(asyncio.CancelledError):
+                    await self._diarization_task
+
+            # Perform final diarization
+            await self._perform_llm_diarization()
+
+            # Send final diarization event
+            if self._diarization_results:
+                await self._send_event({
+                    "event": "final_diarization",
+                    "session_id": self.session_id,
+                    "conversation": self._diarization_results,
+                    "total_messages": len(self._diarization_results),
+                })
+
         return self._summary_payload()
 
     @property
@@ -259,6 +289,18 @@ class SessionState:
         }
         await self._send_event(payload)
 
+        # Trigger LLM diarization periodically if enabled
+        if self.config.enable_diarization and text:
+            # Check if we should run diarization
+            batches_since_last = self._batch_index - self._last_diarization_batch
+            if batches_since_last >= self._diarization_interval_batches:
+                self._last_diarization_batch = self._batch_index
+                # Run diarization in background
+                if self._diarization_task and not self._diarization_task.done():
+                    # Cancel previous diarization if still running
+                    self._diarization_task.cancel()
+                self._diarization_task = asyncio.create_task(self._perform_llm_diarization())
+
     def _summary_payload(self) -> Dict[str, Any]:
         return {
             "total_batches": float(self._total_batches),
@@ -266,6 +308,124 @@ class SessionState:
             "total_tokens": float(self._total_tokens),
             "transcript": self._transcript_accumulated,
         }
+
+    async def _perform_llm_diarization(self) -> None:
+        """Perform LLM diarization on the accumulated transcript."""
+        if self._is_diarizing or not self._transcript_accumulated:
+            return
+
+        self._is_diarizing = True
+        try:
+            LOGGER.info(
+                "llm_diarization_started",
+                session_id=self.session_id,
+                batch_index=self._batch_index,
+                transcript_length=len(self._transcript_accumulated),
+            )
+
+            # Prepare the diarization prompt
+            diarization_prompt = f"""Você é um especialista em análise de transcrições de call center. Separe a transcrição em diálogo entre "Atendente" e "Cliente".
+
+CARACTERÍSTICAS PARA IDENTIFICAÇÃO:
+
+ATENDENTE (Operador/Vendedor):
+- Se apresenta com nome e empresa (ex: "Meu nome é Carlos, sou da Claro")
+- Faz perguntas sobre dados pessoais (CPF, nome completo, endereço)
+- Oferece produtos, planos ou serviços
+- Explica condições, valores e benefícios
+- Usa linguagem mais formal e técnica
+- Faz perguntas procedimentais ("Posso confirmar seus dados?")
+- Pede confirmações ("Correto?", "Ok?", "Tudo bem?")
+- Agradece e se despede formalmente
+
+CLIENTE:
+- Responde às perguntas do atendente
+- Geralmente fala menos em cada turno
+- Fornece dados pessoais quando solicitado
+- Faz perguntas sobre o serviço
+- Aceita ou recusa ofertas ("Sim", "Não", "Vamos", "Ok")
+- Expressa dúvidas ou problemas pessoais
+- Fala de forma mais informal
+
+REGRAS IMPORTANTES:
+1. O primeiro "Oi" ou "Alô" geralmente é do CLIENTE atendendo a ligação
+2. Quem se apresenta com nome e empresa é SEMPRE o Atendente
+3. Respostas curtas como "Sim", "Ok", "Tá" são geralmente do Cliente
+4. Mantenha a ordem cronológica exata das falas
+5. Cada mudança de speaker deve ser uma nova entrada
+6. Corrija pequenos erros de transcrição mas mantenha o sentido
+
+FORMATO DE SAÍDA:
+Retorne APENAS um JSON array, sem explicações:
+[{{"speaker": "Cliente", "text": "..."}}, {{"speaker": "Atendente", "text": "..."}}]
+
+Transcrição para separar:
+{self._transcript_accumulated}"""
+
+            # Call LLM for diarization
+            llm_payload = {
+                "model": "paneas-q32b",
+                "messages": [
+                    {"role": "user", "content": diarization_prompt}
+                ],
+                "temperature": 0.3,
+                "max_tokens": 4000,
+            }
+
+            llm_response = await chat_completion(
+                llm_payload,
+                target=LLMTarget.INT4,
+            )
+
+            # Parse LLM response
+            llm_content = llm_response.get("choices", [{}])[0].get("message", {}).get("content", "")
+
+            # Try to parse the JSON response
+            conversation = []
+            try:
+                # Clean up the response
+                cleaned_response = llm_content.strip()
+                if cleaned_response.startswith('```json'):
+                    cleaned_response = cleaned_response.replace('```json\n', '').replace('```\n', '').replace('```', '')
+                elif cleaned_response.startswith('```'):
+                    cleaned_response = cleaned_response.replace('```\n', '').replace('```', '')
+
+                conversation = json.loads(cleaned_response)
+
+                if isinstance(conversation, list) and len(conversation) > 0:
+                    self._diarization_results = conversation
+
+                    # Send diarization update event
+                    await self._send_event({
+                        "event": "diarization_update",
+                        "session_id": self.session_id,
+                        "batch_index": self._batch_index,
+                        "conversation": conversation,
+                        "total_messages": len(conversation),
+                    })
+
+                    LOGGER.info(
+                        "llm_diarization_completed",
+                        session_id=self.session_id,
+                        messages_count=len(conversation),
+                    )
+
+            except json.JSONDecodeError as e:
+                LOGGER.error(
+                    "llm_diarization_parse_error",
+                    session_id=self.session_id,
+                    error=str(e),
+                    response_preview=llm_content[:200],
+                )
+
+        except Exception as e:
+            LOGGER.exception(
+                "llm_diarization_failed",
+                session_id=self.session_id,
+                error=str(e),
+            )
+        finally:
+            self._is_diarizing = False
 
 
 class BatchSessionManager:

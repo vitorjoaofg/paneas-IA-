@@ -13,6 +13,15 @@ class LoggingMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next):
         start = time.perf_counter()
+
+        # Skip middleware for long-running ASR requests with diarization
+        # to avoid BaseHTTPMiddleware timeout issues
+        if request.url.path in ["/api/v1/asr", "/api/v1/diar"]:
+            # Check if diarization is enabled (form data parsing is complex in middleware)
+            # So we just skip middleware for all ASR/diar requests
+            response = await call_next(request)
+            return response
+
         response = await call_next(request)
         duration_ms = int((time.perf_counter() - start) * 1000)
         logger.info(

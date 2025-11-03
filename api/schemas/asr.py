@@ -40,6 +40,7 @@ class ASRRequest(BaseModel):
     model: str = Field(default="whisper/medium")
     enable_diarization: bool = Field(default=False)
     enable_alignment: bool = Field(default=False)
+    num_speakers: Optional[int] = Field(default=None, ge=1, le=10)
     compute_type: str = Field(default="int8_float16")
     vad_filter: bool = Field(default=True)
     vad_threshold: float = Field(default=0.5, ge=0.0, le=1.0)
