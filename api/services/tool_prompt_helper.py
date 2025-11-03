@@ -55,6 +55,9 @@ IMPORTANTE:
 - Use aspas duplas para strings
 - Certifique-se de que o JSON seja válido
 - Inclua TODOS os parâmetros obrigatórios
+- Use os nomes exatos dos parâmetros conforme declarados acima
+- Respeite o formato especificado na descrição de cada parâmetro (ex.: datas no padrão AAAAMMDD, CPFs apenas números)
+- Não invente campos adicionais nem renomeie parâmetros
 - Se não precisar chamar nenhuma função, responda normalmente com texto
 
 Quando você retornar um function_call, eu executarei a função e retornarei o resultado para você processar."""
