@@ -142,11 +142,24 @@ make smoke-test
 
 ## Uso da API
 
+### Autenticação
+
+Todas as requisições à API requerem autenticação via API Key no header `Authorization`:
+
+```bash
+Authorization: Bearer sk-proj-xxxxxxxxxxxxx
+```
+
+**Para solicitar uma API Key:**
+- Entre em contato via email: **joao.vitor@paneas.com**
+- Informe o nome da sua aplicação e casos de uso
+- Você receberá uma API Key no formato `sk-proj-xxxxxxxx...`
+
 ### ASR Simples
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/asr \
-  -H "Authorization: Bearer token_abc123" \
+  -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
   -F "file=@audio.wav" \
   -F "language=pt" \
   -F "model=whisper/medium"
@@ -156,7 +169,7 @@ curl -X POST http://localhost:8000/api/v1/asr \
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/asr \
-  -H "Authorization: Bearer token_abc123" \
+  -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
   -F "file=@conversation.wav" \
   -F "enable_diarization=true" \
   -F "enable_alignment=true"
@@ -166,7 +179,7 @@ curl -X POST http://localhost:8000/api/v1/asr \
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/ocr \
-  -H "Authorization: Bearer token_abc123" \
+  -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
   -F "file=@document.pdf" \
   -F "languages=pt,en"
 ```
@@ -175,7 +188,7 @@ curl -X POST http://localhost:8000/api/v1/ocr \
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/chat/completions \
-  -H "Authorization: Bearer token_abc123" \
+  -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
   -H "Content-Type: application/json" \
   -d '{
     "model": "qwen2.5-14b-instruct",
@@ -219,7 +232,7 @@ Configuração detalhada e opções de tuning disponíveis em [docs/PERFORMANCE_
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/tts \
-  -H "Authorization: Bearer token_abc123" \
+  -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
   -H "Content-Type: application/json" \
   -d '{"text": "Olá mundo", "language": "pt"}' \
   -o output.wav

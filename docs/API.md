@@ -2,6 +2,40 @@
 
 Todas as rotas ficam sob `/api/v1`, exigem `Authorization: Bearer <token>` e são protegidas por middleware de rate limiting.
 
+## Autenticação
+
+Todas as requisições à API requerem uma **API Key** válida no header `Authorization`:
+
+```bash
+Authorization: Bearer sk-proj-xxxxxxxxxxxxx
+```
+
+### Como obter uma API Key
+
+Para solicitar uma API Key de acesso:
+
+1. **Envie um email para:** joao.vitor@paneas.com
+2. **Inclua as seguintes informações:**
+   - Nome da sua aplicação/projeto
+   - Casos de uso pretendidos (ASR, OCR, LLM, TTS, etc.)
+   - Estimativa de volume de requisições
+3. **Você receberá:** Uma API Key no formato `sk-proj-xxxxxxxx...`
+
+### Usando a API Key
+
+Após receber sua API Key, utilize-a em todas as requisições:
+
+```bash
+curl -H "Authorization: Bearer sk-proj-xxxxxxxxxxxxx" \
+  http://localhost:8000/api/v1/health
+```
+
+**Importante:**
+- Mantenha sua API Key em segredo
+- Não compartilhe ou exponha a key em código público
+- Use variáveis de ambiente para armazenar a key (`$API_TOKEN`)
+- Em caso de vazamento, solicite uma nova key imediatamente
+
 ## Health
 `GET /api/v1/health`
 

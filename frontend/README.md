@@ -12,6 +12,19 @@ Interface estatica para testar a captura por microfone, transcricao em tempo qua
    ```
 3. Abra `http://localhost:5173` no navegador, informe a URL da API (ex: `http://localhost:8000`) e um token valido.
 
+## Como obter API Key
+
+Para solicitar acesso à API:
+
+1. **Envie um email para:** joao.vitor@paneas.com
+2. **Informe:**
+   - Nome da sua aplicação
+   - Casos de uso (ASR, OCR, LLM, TTS)
+   - Volume estimado de requisições
+3. **Você receberá:** Uma API Key no formato `sk-proj-xxxxxxxx...`
+
+Após receber a key, insira-a no campo "Bearer Token" do playground ou faça login no painel "API Keys".
+
 ## Recursos
 
 - Envio de audio PCM16 (16 kHz) via WebSocket para `/api/v1/asr/stream` com janelas configuraveis.
