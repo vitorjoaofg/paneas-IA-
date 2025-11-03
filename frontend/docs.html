@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentação - Paneas API</title>
+    <title>Documentação - Paneas Studio API</title>
     <link rel="stylesheet" href="docs.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
                         </linearGradient>
                     </defs>
                 </svg>
-                <span class="docs-header__title">Paneas API</span>
+                <span class="docs-header__title">Paneas Studio API</span>
                 <span class="docs-header__version">v1.0</span>
             </div>
             <div class="docs-header__actions">
@@ -45,80 +45,37 @@
             <nav class="docs-nav">
                 <div class="docs-nav__section">
                     <div class="docs-nav__section-title">Introdução</div>
-                    <a href="#getting-started" class="docs-nav__link docs-nav__link--active">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Começando
-                    </a>
-                    <a href="#authentication" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Autenticação
-                    </a>
-                    <a href="#base-url" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Base URL
-                    </a>
+                    <a href="#getting-started" class="docs-nav__link docs-nav__link--active">Primeiros Passos</a>
+                    <a href="#authentication" class="docs-nav__link">Autenticação</a>
                 </div>
 
                 <div class="docs-nav__section">
-                    <div class="docs-nav__section-title">Endpoints</div>
-                    <a href="#chat-completions" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Chat Completions
-                    </a>
-                    <a href="#asr" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Transcrição (ASR)
-                    </a>
-                    <a href="#diarization" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Diarização
-                    </a>
-                    <a href="#tts" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Text-to-Speech
-                    </a>
-                    <a href="#ocr" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        OCR
-                    </a>
-                    <a href="#speech-analytics" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Speech Analytics
-                    </a>
+                    <div class="docs-nav__section-title">APIs de Áudio</div>
+                    <a href="#asr" class="docs-nav__link">Transcrição (ASR)</a>
+                    <a href="#realtime" class="docs-nav__link">Tempo Real (WebSocket)</a>
+                    <a href="#diarization" class="docs-nav__link">Diarização</a>
+                    <a href="#tts" class="docs-nav__link">Síntese de Voz (TTS)</a>
                 </div>
 
                 <div class="docs-nav__section">
-                    <div class="docs-nav__section-title">Recursos Avançados</div>
-                    <a href="#streaming" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Streaming
-                    </a>
-                    <a href="#error-handling" class="docs-nav__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                        Tratamento de Erros
-                    </a>
+                    <div class="docs-nav__section-title">APIs de Documento</div>
+                    <a href="#ocr" class="docs-nav__link">OCR</a>
+                </div>
+
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">APIs de IA</div>
+                    <a href="#chat" class="docs-nav__link">Chat/LLM</a>
+                    <a href="#analytics" class="docs-nav__link">Analytics</a>
+                </div>
+
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">APIs Especializadas</div>
+                    <a href="#scrapper" class="docs-nav__link">Scrapper (TJSP)</a>
+                </div>
+
+                <div class="docs-nav__section">
+                    <div class="docs-nav__section-title">Utilitários</div>
+                    <a href="#health" class="docs-nav__link">Health Check</a>
                 </div>
             </nav>
         </aside>
@@ -127,783 +84,1723 @@
         <main class="docs-content">
             <!-- Getting Started -->
             <section id="getting-started" class="docs-section">
-                <h1 class="docs-title">Documentação da API Paneas</h1>
-                <p class="docs-lead">
-                    Bem-vindo à documentação oficial da API Paneas Ecosystem. Esta API oferece componentes completos
-                    de IA para transcrição, análise, conversação e síntese de voz.
+                <h1 class="docs-section__title">Primeiros Passos</h1>
+                <p class="docs-section__description">
+                    A Paneas Studio API fornece acesso a um conjunto completo de ferramentas de IA para processamento de áudio,
+                    documentos e conversação. Todas as requisições são feitas via HTTP/HTTPS e retornam JSON.
                 </p>
 
-                <div class="docs-info-box">
-                    <div class="docs-info-box__icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="12" x2="12" y1="16" y2="12"/>
-                            <line x1="12" x2="12.01" y1="8" y2="8"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <strong>Stack 100% Local</strong>
-                        <p>Todos os modelos rodam localmente, garantindo máxima privacidade e controle dos seus dados.</p>
-                    </div>
+                <div class="docs-card">
+                    <h3>Base URL</h3>
+                    <pre><code class="language-bash">https://seu-servidor.com/api/v1</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Formatos Suportados</h3>
+                    <ul>
+                        <li><strong>Áudio:</strong> WAV, MP3, OGG, FLAC, M4A, OPUS</li>
+                        <li><strong>Documentos:</strong> PDF, PNG, JPG, JPEG, TIFF</li>
+                        <li><strong>Resposta:</strong> JSON</li>
+                    </ul>
                 </div>
             </section>
 
             <!-- Authentication -->
             <section id="authentication" class="docs-section">
-                <h2 class="docs-heading">Autenticação</h2>
-                <p>Atualmente a API não requer autenticação para uso local. Para ambientes de produção, recomendamos implementar autenticação via Bearer Token.</p>
-
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">Exemplo com Bearer Token (futuro)</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/chat/completions \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{...}'</code></pre>
-                </div>
-            </section>
-
-            <!-- Base URL -->
-            <section id="base-url" class="docs-section">
-                <h2 class="docs-heading">Base URL</h2>
-                <p>Todas as requisições devem ser feitas para a seguinte URL base:</p>
-
-                <div class="docs-endpoint-box">
-                    <code class="docs-endpoint-url">http://localhost:8765/api/v1</code>
-                </div>
-            </section>
-
-            <!-- Chat Completions -->
-            <section id="chat-completions" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /chat/completions
-                </h2>
-                <p class="docs-description">
-                    API compatível com OpenAI para conversação com o modelo Paneas-32B (Qwen 2.5).
-                    Suporta modo streaming para respostas em tempo real.
+                <h1 class="docs-section__title">Autenticação</h1>
+                <p class="docs-section__description">
+                    Todas as requisições à API requerem autenticação via Bearer Token.
                 </p>
 
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
+                <div class="docs-card">
+                    <h3>Header de Autenticação</h3>
+                    <pre><code class="language-bash">Authorization: Bearer SEU_TOKEN_AQUI</code></pre>
+
+                    <div class="docs-alert docs-alert--info">
+                        <strong>Importante:</strong> Substitua <code>SEU_TOKEN_AQUI</code> pelo seu token de autenticação.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ASR API -->
+            <section id="asr" class="docs-section">
+                <h1 class="docs-section__title">API de Transcrição (ASR)</h1>
+                <p class="docs-section__description">
+                    Transcreva arquivos de áudio para texto com suporte a múltiplos idiomas, diarização de falantes e alinhamento de palavras.
+                </p>
+
+                <!-- Basic Transcription -->
+                <div class="docs-card">
+                    <h3>Transcrição Básica</h3>
+                    <p>Upload de arquivo de áudio para transcrição</p>
+
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/asr</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/asr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@audio.wav" \
+  -F "language=pt"</code></pre>
+                    </div>
+
+                    <h4>Parâmetros</h4>
+                    <table class="docs-table">
                         <thead>
                             <tr>
-                                <th>Nome</th>
+                                <th>Parâmetro</th>
                                 <th>Tipo</th>
-                                <th>Obrigatório</th>
                                 <th>Descrição</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>model</code></td>
-                                <td><span class="docs-type">string</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Nome do modelo: <code>"paneas-q32b"</code></td>
+                                <td><code>file</code></td>
+                                <td>arquivo</td>
+                                <td>Arquivo de áudio (obrigatório)</td>
                             </tr>
                             <tr>
-                                <td><code>messages</code></td>
-                                <td><span class="docs-type">array</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Array de mensagens no formato OpenAI</td>
+                                <td><code>language</code></td>
+                                <td>string</td>
+                                <td>Código do idioma (ex: "pt", "en", "es"). Padrão: "auto"</td>
                             </tr>
                             <tr>
-                                <td><code>temperature</code></td>
-                                <td><span class="docs-type">float</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Controla aleatoriedade (0.0-2.0). Padrão: 0.7</td>
+                                <td><code>enable_diarization</code></td>
+                                <td>boolean</td>
+                                <td>Ativar identificação de falantes. Padrão: false</td>
                             </tr>
                             <tr>
-                                <td><code>max_tokens</code></td>
-                                <td><span class="docs-type">integer</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Máximo de tokens na resposta. Padrão: 2048</td>
+                                <td><code>enable_alignment</code></td>
+                                <td>boolean</td>
+                                <td>Ativar alinhamento de palavras. Padrão: false</td>
                             </tr>
                             <tr>
-                                <td><code>stream</code></td>
-                                <td><span class="docs-type">boolean</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Ativar streaming. Padrão: false</td>
+                                <td><code>num_speakers</code></td>
+                                <td>integer</td>
+                                <td>Número de falantes (1-10). Usado com diarization</td>
+                            </tr>
+                            <tr>
+                                <td><code>vad_filter</code></td>
+                                <td>boolean</td>
+                                <td>Filtro de detecção de voz. Padrão: true</td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "request_id": "550e8400-e29b-41d4-a716-446655440000",
+  "duration_seconds": 123.45,
+  "processing_time_ms": 1234,
+  "language": "pt",
+  "text": "Olá, como posso ajudá-lo hoje?",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.5,
+      "text": "Olá, como posso ajudá-lo hoje?",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "word": "Olá",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}</code></pre>
                 </div>
 
-                <h3 class="docs-subheading">Exemplo de Requisição</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
+                <!-- Transcription with Diarization -->
+                <div class="docs-card">
+                    <h3>Transcrição com Diarização</h3>
+                    <p>Identifique diferentes falantes no áudio</p>
+
+                    <div class="docs-code-block">
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/asr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@conversation.wav" \
+  -F "language=pt" \
+  -F "enable_diarization=true" \
+  -F "num_speakers=2"</code></pre>
                     </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/chat/completions \
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "request_id": "550e8400-e29b-41d4-a716-446655440000",
+  "text": "Olá, como posso ajudar? Gostaria de agendar uma consulta.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.5,
+      "text": "Olá, como posso ajudar?",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 3.0,
+      "end": 5.5,
+      "text": "Gostaria de agendar uma consulta.",
+      "speaker": "SPEAKER_01"
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <!-- LLM Post-processing -->
+                <div class="docs-card">
+                    <h3>Pós-processamento com LLM</h3>
+                    <p>Melhore a qualidade da transcrição com correção inteligente de texto</p>
+
+                    <div class="docs-code-block">
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/asr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@audio.wav" \
+  -F "language=pt" \
+  -F "enable_llm_postprocess=true"</code></pre>
+                    </div>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "request_id": "550e8400-e29b-41d4-a716-446655440000",
+  "text": "Olá, como posso ajudá-lo hoje?",
+  "raw_text": "ola como posso ajuda lo oje",
+  "segments": [...]
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Real-time API -->
+            <section id="realtime" class="docs-section">
+                <h1 class="docs-section__title">API de Transcrição em Tempo Real</h1>
+                <p class="docs-section__description">
+                    Transcreva áudio em tempo real via WebSocket para aplicações de streaming e conversação ao vivo.
+                </p>
+
+                <div class="docs-card">
+                    <h3>Conexão WebSocket</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--ws">WS</span>
+                            <span class="docs-code-block__endpoint">/api/v1/asr/stream</span>
+                        </div>
+                        <pre><code class="language-bash">wss://seu-servidor.com/api/v1/asr/stream?token=SEU_TOKEN_AQUI</code></pre>
+                    </div>
+
+                    <h4>Mensagem de Início</h4>
+                    <pre><code class="language-json">{
+  "event": "start",
+  "encoding": "pcm16",
+  "sample_rate": 16000,
+  "language": "pt",
+  "enable_diarization": false,
+  "enable_insights": true,
+  "batch_window_sec": 5.0
+}</code></pre>
+
+                    <h4>Envio de Áudio</h4>
+                    <pre><code class="language-json">{
+  "event": "audio",
+  "chunk": "base64-encoded-audio-data"
+}</code></pre>
+
+                    <h4>Mensagem de Parada</h4>
+                    <pre><code class="language-json">{
+  "event": "stop"
+}</code></pre>
+
+                    <h4>Resposta do Servidor (Transcrição)</h4>
+                    <pre><code class="language-json">{
+  "event": "transcript",
+  "session_id": "550e8400-e29b-41d4-a716-446655440000",
+  "text": "Olá, como posso ajudar?",
+  "is_final": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.5,
+      "text": "Olá, como posso ajudar?"
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Salas Multi-Participante</h3>
+                    <p>Suporte para transcrição colaborativa em tempo real</p>
+
+                    <h4>Conectar a uma Sala</h4>
+                    <pre><code class="language-json">{
+  "event": "start",
+  "room_id": "sala-reuniao-123",
+  "role": "agent",
+  "sample_rate": 16000,
+  "language": "pt"
+}</code></pre>
+
+                    <h4>Resposta de Entrada na Sala</h4>
+                    <pre><code class="language-json">{
+  "event": "room_joined",
+  "session_id": "550e8400-e29b-41d4-a716-446655440000",
+  "room_id": "sala-reuniao-123",
+  "role": "agent",
+  "room_status": "active",
+  "participants_count": 2
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Insights em Tempo Real</h3>
+                    <p>Receba análises e insights durante a transcrição</p>
+
+                    <h4>Configuração</h4>
+                    <pre><code class="language-json">{
+  "event": "start",
+  "enable_insights": true,
+  "insight_provider": "paneas",
+  "sample_rate": 16000
+}</code></pre>
+
+                    <h4>Resposta de Insight</h4>
+                    <pre><code class="language-json">{
+  "event": "insight",
+  "session_id": "550e8400-e29b-41d4-a716-446655440000",
+  "insight_type": "summary",
+  "content": "Cliente solicitou agendamento de consulta médica"
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Diarization API -->
+            <section id="diarization" class="docs-section">
+                <h1 class="docs-section__title">API de Diarização</h1>
+                <p class="docs-section__description">
+                    Identifique e separe diferentes falantes em uma gravação de áudio.
+                </p>
+
+                <div class="docs-card">
+                    <h3>Diarização de Arquivo</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/diar</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/diar" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@conversation.wav" \
+  -F "num_speakers=2" \
+  -F "use_llm=false"</code></pre>
+                    </div>
+
+                    <h4>Parâmetros</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>file</code></td>
+                                <td>arquivo</td>
+                                <td>Arquivo de áudio (obrigatório)</td>
+                            </tr>
+                            <tr>
+                                <td><code>num_speakers</code></td>
+                                <td>integer</td>
+                                <td>Número esperado de falantes (opcional)</td>
+                            </tr>
+                            <tr>
+                                <td><code>use_llm</code></td>
+                                <td>boolean</td>
+                                <td>Usar diarização via LLM. Padrão: true</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.5,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 3.0,
+      "end": 5.5,
+      "speaker": "SPEAKER_01"
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <div class="docs-alert docs-alert--info">
+                    <strong>Dica:</strong> Para melhor performance, use diarização integrada com transcrição via <code>enable_diarization=true</code> na API de ASR.
+                </div>
+            </section>
+
+            <!-- TTS API -->
+            <section id="tts" class="docs-section">
+                <h1 class="docs-section__title">API de Síntese de Voz (TTS)</h1>
+                <p class="docs-section__description">
+                    Converta texto em fala natural com suporte a múltiplos idiomas e vozes.
+                </p>
+
+                <!-- Basic TTS -->
+                <div class="docs-card">
+                    <h3>Síntese Básica</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/tts</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/tts" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "paneas-q32b",
+    "text": "Olá, como posso ajudá-lo hoje?",
+    "language": "pt",
+    "format": "wav"
+  }' \
+  --output audio.wav</code></pre>
+                    </div>
+
+                    <h4>Parâmetros</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>text</code></td>
+                                <td>string</td>
+                                <td>Texto para sintetizar (obrigatório)</td>
+                            </tr>
+                            <tr>
+                                <td><code>language</code></td>
+                                <td>string</td>
+                                <td>Código do idioma (ex: "pt", "en"). Padrão: "pt"</td>
+                            </tr>
+                            <tr>
+                                <td><code>speaker_reference</code></td>
+                                <td>string</td>
+                                <td>ID de referência de voz (opcional)</td>
+                            </tr>
+                            <tr>
+                                <td><code>format</code></td>
+                                <td>string</td>
+                                <td>Formato de saída. Padrão: "wav"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Headers de Resposta</h4>
+                    <ul>
+                        <li><code>X-Request-ID</code>: ID único da requisição</li>
+                        <li><code>X-Audio-Sample-Rate</code>: Taxa de amostragem do áudio</li>
+                        <li><code>X-Audio-Duration</code>: Duração em segundos</li>
+                        <li><code>Content-Type</code>: audio/wav</li>
+                    </ul>
+                </div>
+
+                <!-- Streaming TTS -->
+                <div class="docs-card">
+                    <h3>Síntese em Streaming</h3>
+                    <p>Receba áudio em chunks para reprodução imediata</p>
+
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/tts/stream</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/tts/stream" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Este é um texto longo que será sintetizado em streaming para reprodução imediata.",
+    "language": "pt"
+  }' \
+  --output streaming_audio.wav</code></pre>
+                    </div>
+
+                    <div class="docs-alert docs-alert--info">
+                        <strong>Benefício:</strong> A síntese em streaming permite iniciar a reprodução antes da conclusão total da geração.
+                    </div>
+                </div>
+            </section>
+
+            <!-- OCR API -->
+            <section id="ocr" class="docs-section">
+                <h1 class="docs-section__title">API de OCR</h1>
+                <p class="docs-section__description">
+                    Extraia texto de imagens e documentos com suporte a múltiplos idiomas e detecção de entidades.
+                </p>
+
+                <!-- Basic OCR -->
+                <div class="docs-card">
+                    <h3>Extração Básica</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/ocr</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/ocr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@document.pdf" \
+  -F 'languages=["pt"]' \
+  -F "use_gpu=true"</code></pre>
+                    </div>
+
+                    <h4>Parâmetros</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>file</code></td>
+                                <td>arquivo</td>
+                                <td>Documento ou imagem (obrigatório)</td>
+                            </tr>
+                            <tr>
+                                <td><code>languages</code></td>
+                                <td>array</td>
+                                <td>Lista de idiomas. Padrão: ["pt"]</td>
+                            </tr>
+                            <tr>
+                                <td><code>output_format</code></td>
+                                <td>string</td>
+                                <td>Formato de saída. Padrão: "json"</td>
+                            </tr>
+                            <tr>
+                                <td><code>use_gpu</code></td>
+                                <td>boolean</td>
+                                <td>Usar GPU para processamento. Padrão: true</td>
+                            </tr>
+                            <tr>
+                                <td><code>deskew</code></td>
+                                <td>boolean</td>
+                                <td>Corrigir inclinação do documento. Padrão: true</td>
+                            </tr>
+                            <tr>
+                                <td><code>denoise</code></td>
+                                <td>boolean</td>
+                                <td>Remover ruído da imagem. Padrão: false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "request_id": "550e8400-e29b-41d4-a716-446655440000",
+  "pages": [
+    {
+      "page_num": 1,
+      "text": "Texto extraído do documento",
+      "blocks": [
+        {
+          "bbox": [100, 200, 500, 250],
+          "text": "Bloco de texto",
+          "confidence": 0.95
+        }
+      ],
+      "document_type": {
+        "type": "invoice",
+        "confidence": 0.92,
+        "detected_by": "pattern_matching"
+      },
+      "entities": [
+        {
+          "type": "cpf",
+          "value": "123.456.789-00",
+          "raw_value": "12345678900",
+          "confidence": 0.98,
+          "validated": true
+        }
+      ],
+      "metadata": {
+        "processing_time_ms": 456,
+        "engine": "gpu-tensorrt"
+      }
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <!-- OCR with Preprocessing -->
+                <div class="docs-card">
+                    <h3>Com Pré-processamento</h3>
+                    <p>Melhore a qualidade da extração em imagens de baixa qualidade</p>
+
+                    <div class="docs-code-block">
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/ocr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@low_quality_scan.jpg" \
+  -F 'languages=["pt"]' \
+  -F "deskew=true" \
+  -F "denoise=true" \
+  -F "use_gpu=true"</code></pre>
+                    </div>
+
+                    <div class="docs-alert docs-alert--success">
+                        <strong>Performance:</strong> GPU acelera o processamento em até 10x. Tempo médio: ~100ms por página.
+                    </div>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Entidades Suportadas</h3>
+                    <p>O OCR detecta e valida automaticamente:</p>
+                    <ul>
+                        <li><strong>CPF:</strong> Validação de dígitos verificadores</li>
+                        <li><strong>CNPJ:</strong> Validação de dígitos verificadores</li>
+                        <li><strong>Email:</strong> Validação de formato</li>
+                        <li><strong>Telefone:</strong> Detecção de números brasileiros</li>
+                        <li><strong>Data:</strong> Múltiplos formatos (DD/MM/YYYY, etc)</li>
+                        <li><strong>CEP:</strong> Formato brasileiro (00000-000)</li>
+                        <li><strong>Placa de veículo:</strong> Formatos antigo e Mercosul</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Chat/LLM API -->
+            <section id="chat" class="docs-section">
+                <h1 class="docs-section__title">API de Chat/LLM</h1>
+                <p class="docs-section__description">
+                    Interface compatível com OpenAI para conversação e geração de texto com suporte a ferramentas (function calling).
+                </p>
+
+                <!-- Basic Chat -->
+                <div class="docs-card">
+                    <h3>Chat Básico</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/chat/completions</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/chat/completions" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
     "messages": [
       {
         "role": "system",
-        "content": "Você é um assistente prestativo."
+        "content": "Você é um assistente útil e prestativo."
       },
       {
         "role": "user",
-        "content": "Explique o que é inteligência artificial"
+        "content": "Olá, como você pode me ajudar?"
       }
     ],
-    "temperature": 0.7,
-    "max_tokens": 500
+    "max_tokens": 1024,
+    "temperature": 0.7
   }'</code></pre>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Resposta</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Response</span>
                     </div>
-                    <pre class="docs-code"><code>{
-  "id": "chatcmpl-123",
-  "object": "chat.completion",
-  "created": 1677652288,
-  "model": "paneas-q32b",
+
+                    <h4>Parâmetros</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>messages</code></td>
+                                <td>array</td>
+                                <td>Lista de mensagens da conversa (obrigatório)</td>
+                            </tr>
+                            <tr>
+                                <td><code>max_tokens</code></td>
+                                <td>integer</td>
+                                <td>Máximo de tokens na resposta. Padrão: 1024</td>
+                            </tr>
+                            <tr>
+                                <td><code>temperature</code></td>
+                                <td>float</td>
+                                <td>Criatividade (0.0-1.0). Padrão: 0.7</td>
+                            </tr>
+                            <tr>
+                                <td><code>stream</code></td>
+                                <td>boolean</td>
+                                <td>Resposta em streaming. Padrão: false</td>
+                            </tr>
+                            <tr>
+                                <td><code>quality_priority</code></td>
+                                <td>boolean</td>
+                                <td>Priorizar qualidade sobre velocidade. Padrão: false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "id": "chatcmpl-550e8400",
   "choices": [
     {
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "Inteligência Artificial (IA) é um ramo da ciência da computação..."
+        "content": "Olá! Posso ajudá-lo de várias formas: responder perguntas, auxiliar em tarefas, fornecer informações e muito mais. Como posso ser útil hoje?"
       },
       "finish_reason": "stop"
     }
   ],
   "usage": {
-    "prompt_tokens": 20,
-    "completion_tokens": 150,
-    "total_tokens": 170
+    "prompt_tokens": 28,
+    "completion_tokens": 42,
+    "total_tokens": 70
   }
 }</code></pre>
                 </div>
-            </section>
 
-            <!-- ASR -->
-            <section id="asr" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /asr
-                </h2>
-                <p class="docs-description">
-                    Transcrição de áudio usando Whisper. Suporta múltiplos formatos e detecção automática de idioma.
-                </p>
+                <!-- Streaming Chat -->
+                <div class="docs-card">
+                    <h3>Chat com Streaming</h3>
+                    <p>Receba a resposta em tempo real, token por token</p>
 
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tipo</th>
-                                <th>Obrigatório</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>file</code></td>
-                                <td><span class="docs-type">file</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Arquivo de áudio (mp3, wav, m4a, ogg)</td>
-                            </tr>
-                            <tr>
-                                <td><code>language</code></td>
-                                <td><span class="docs-type">string</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Código do idioma (pt, en, es). Auto-detect se omitido</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Requisição</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/asr \
-  -F "file=@audio.mp3" \
-  -F "language=pt"</code></pre>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Resposta</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Response</span>
-                    </div>
-                    <pre class="docs-code"><code>{
-  "text": "Olá, bem-vindo ao sistema de transcrição automática.",
-  "language": "pt",
-  "duration": 5.2,
-  "segments": [
-    {
-      "start": 0.0,
-      "end": 5.2,
-      "text": "Olá, bem-vindo ao sistema de transcrição automática."
-    }
-  ]
-}</code></pre>
-                </div>
-            </section>
-
-            <!-- Diarization -->
-            <section id="diarization" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /diar
-                </h2>
-                <p class="docs-description">
-                    Separação de speakers (diarização) com suporte a LLM. O modo LLM é mais rápido e otimizado para conversas entre 2 speakers (Atendente/Cliente).
-                </p>
-
-                <div class="docs-info-box docs-info-box--tip">
-                    <div class="docs-info-box__icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <strong>Modo LLM Recomendado</strong>
-                        <p>Use <code>use_llm=true</code> para diarização rápida e precisa em conversas de call center.</p>
-                    </div>
-                </div>
-
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tipo</th>
-                                <th>Obrigatório</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>file</code></td>
-                                <td><span class="docs-type">file</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Arquivo de áudio</td>
-                            </tr>
-                            <tr>
-                                <td><code>use_llm</code></td>
-                                <td><span class="docs-type">boolean</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Usar LLM para diarização. Padrão: true</td>
-                            </tr>
-                            <tr>
-                                <td><code>num_speakers</code></td>
-                                <td><span class="docs-type">integer</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Número de speakers (modo tradicional apenas)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Requisição - Modo LLM</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/diar \
-  -F "file=@conversation.mp3" \
-  -F "use_llm=true"</code></pre>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Resposta</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Response</span>
-                    </div>
-                    <pre class="docs-code"><code>{
-  "mode": "llm",
-  "conversation": [
-    {
-      "speaker": "Atendente",
-      "text": "Bom dia, meu nome é Carlos, como posso ajudar?"
-    },
-    {
-      "speaker": "Cliente",
-      "text": "Olá, gostaria de informações sobre planos."
-    }
-  ]
-}</code></pre>
-                </div>
-            </section>
-
-            <!-- TTS -->
-            <section id="tts" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /tts
-                </h2>
-                <p class="docs-description">
-                    Síntese de voz (Text-to-Speech) com vozes clonadas e controle de velocidade.
-                </p>
-
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tipo</th>
-                                <th>Obrigatório</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>text</code></td>
-                                <td><span class="docs-type">string</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Texto para sintetizar</td>
-                            </tr>
-                            <tr>
-                                <td><code>voice</code></td>
-                                <td><span class="docs-type">string</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Nome da voz. Padrão: voz padrão</td>
-                            </tr>
-                            <tr>
-                                <td><code>speed</code></td>
-                                <td><span class="docs-type">float</span></td>
-                                <td><span class="docs-badge docs-badge--optional">Não</span></td>
-                                <td>Velocidade (0.5-2.0). Padrão: 1.0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Requisição</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/tts \
+                    <div class="docs-code-block">
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/chat/completions" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -H "Content-Type: application/json" \
   -d '{
-    "text": "Olá, bem-vindo ao Paneas Ecosystem",
-    "voice": "pt-BR",
-    "speed": 1.0
-  }' \
-  --output audio.wav</code></pre>
-                </div>
-            </section>
-
-            <!-- OCR -->
-            <section id="ocr" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /ocr
-                </h2>
-                <p class="docs-description">
-                    Extração de texto de imagens e documentos PDF usando OCR.
-                </p>
-
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tipo</th>
-                                <th>Obrigatório</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>file</code></td>
-                                <td><span class="docs-type">file</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Imagem ou PDF (jpg, png, pdf)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Requisição</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/ocr \
-  -F "file=@documento.pdf"</code></pre>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Resposta</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Response</span>
-                    </div>
-                    <pre class="docs-code"><code>{
-  "text": "Texto extraído do documento...",
-  "pages": 3,
-  "confidence": 0.95
-}</code></pre>
-                </div>
-            </section>
-
-            <!-- Speech Analytics -->
-            <section id="speech-analytics" class="docs-section">
-                <h2 class="docs-heading">
-                    <span class="docs-method docs-method--post">POST</span>
-                    /speech-analytics
-                </h2>
-                <p class="docs-description">
-                    Análise completa de transcrições: sentimento, emoções, resumo, palavras-chave e ações recomendadas.
-                </p>
-
-                <h3 class="docs-subheading">Parâmetros</h3>
-                <div class="docs-params-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tipo</th>
-                                <th>Obrigatório</th>
-                                <th>Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>text</code></td>
-                                <td><span class="docs-type">string</span></td>
-                                <td><span class="docs-badge docs-badge--required">Sim</span></td>
-                                <td>Texto da transcrição para analisar</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="docs-subheading">Exemplo de Requisição</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">cURL</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>curl -X POST http://localhost:8765/api/v1/speech-analytics \
-  -H "Content-Type: application/json" \
-  -d '{
-    "text": "Cliente: Estou muito insatisfeito com o atendimento..."
+    "messages": [
+      {"role": "user", "content": "Conte-me uma história curta."}
+    ],
+    "stream": true,
+    "max_tokens": 500
   }'</code></pre>
+                    </div>
+
+                    <h4>Resposta (Server-Sent Events)</h4>
+                    <pre><code class="language-text">data: {"id":"chatcmpl-550e8400","choices":[{"delta":{"role":"assistant"},"index":0}]}
+
+data: {"id":"chatcmpl-550e8400","choices":[{"delta":{"content":"Era"},"index":0}]}
+
+data: {"id":"chatcmpl-550e8400","choices":[{"delta":{"content":" uma"},"index":0}]}
+
+data: [DONE]</code></pre>
                 </div>
 
-                <h3 class="docs-subheading">Exemplo de Resposta</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Response</span>
+                <!-- Function Calling -->
+                <div class="docs-card">
+                    <h3>Function Calling (Tools)</h3>
+                    <p>Permita que o LLM chame funções externas</p>
+
+                    <div class="docs-code-block">
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/chat/completions" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "messages": [
+      {
+        "role": "user",
+        "content": "Qual é o clima em São Paulo hoje?"
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Obtém informações do clima para uma cidade",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string",
+                "description": "Nome da cidade"
+              },
+              "unit": {
+                "type": "string",
+                "enum": ["celsius", "fahrenheit"],
+                "default": "celsius"
+              }
+            },
+            "required": ["city"]
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto"
+  }'</code></pre>
                     </div>
-                    <pre class="docs-code"><code>{
-  "sentiment": {
-    "overall": "negative",
-    "score": -0.65,
-    "distribution": {
-      "positive": 10,
-      "neutral": 20,
-      "negative": 70
+
+                    <h4>Resposta com Tool Call</h4>
+                    <pre><code class="language-json">{
+  "id": "chatcmpl-550e8400",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_abc123",
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "arguments": "{\"city\":\"São Paulo\",\"unit\":\"celsius\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
     }
-  },
-  "emotions": {
-    "dominant": "frustration",
-    "scores": {
-      "joy": 5,
-      "anger": 30,
-      "sadness": 15,
-      "frustration": 65
+  ]
+}</code></pre>
+
+                    <h4>Resposta Após Executar a Função</h4>
+                    <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/chat/completions" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "messages": [
+      {
+        "role": "user",
+        "content": "Qual é o clima em São Paulo hoje?"
+      },
+      {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_abc123",
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "arguments": "{\"city\":\"São Paulo\",\"unit\":\"celsius\"}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "call_abc123",
+        "content": "{\"temperature\":25,\"condition\":\"ensolarado\"}"
+      }
+    ],
+    "tools": [...]
+  }'</code></pre>
+
+                    <pre><code class="language-json">{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "O clima em São Paulo está ensolarado com temperatura de 25°C."
+      },
+      "finish_reason": "stop"
     }
-  },
-  "summary": "Cliente expressa insatisfação com o atendimento recebido...",
-  "keywords": ["insatisfeito", "problema", "atendimento"],
-  "actionItems": [
-    "Resolver reclamação imediatamente",
-    "Agendar follow-up com cliente"
+  ]
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Ferramentas Disponíveis</h3>
+                    <ul>
+                        <li><code>get_weather</code> - Obter informações climáticas</li>
+                        <li><code>age_predictor</code> - Prever idade baseado em nome</li>
+                        <li><code>external_api_call</code> - Fazer chamadas HTTP externas</li>
+                        <li><code>unimed_consult</code> - Consultar dados do plano de saúde</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Analytics API -->
+            <section id="analytics" class="docs-section">
+                <h1 class="docs-section__title">API de Analytics</h1>
+                <p class="docs-section__description">
+                    Analise conversas e extraia insights como sentimento, palavras-chave e resumos.
+                </p>
+
+                <div class="docs-card">
+                    <h3>Upload de Áudio</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/analytics/upload-audio</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/analytics/upload-audio" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@conversation.wav"</code></pre>
+                    </div>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "path": "/data/tmp/analytics_audio_1699876543.wav",
+  "filename": "analytics_audio_1699876543.wav",
+  "size": 1234567
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Submeter Job de Análise</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/analytics/speech</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/analytics/speech" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "call_id": "550e8400-e29b-41d4-a716-446655440000",
+    "audio_uri": "/data/tmp/analytics_audio_1699876543.wav",
+    "transcript_uri": "/data/tmp/transcript_1699876543.json",
+    "analysis_types": ["sentiment", "keywords", "summary"],
+    "keywords": ["agendamento", "consulta", "urgência"]
+  }'</code></pre>
+                    </div>
+
+                    <h4>Resposta (202 Accepted)</h4>
+                    <pre><code class="language-json">{
+  "job_id": "job_550e8400-e29b-41d4-a716-446655440000",
+  "status": "pending"
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Obter Resultado da Análise</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--get">GET</span>
+                            <span class="docs-code-block__endpoint">/api/v1/analytics/speech/{job_id}</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X GET "https://seu-servidor.com/api/v1/analytics/speech/job_550e8400" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI"</code></pre>
+                    </div>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "job_id": "job_550e8400",
+  "status": "completed",
+  "results": {
+    "sentiment": {
+      "overall": "positive",
+      "confidence": 0.87,
+      "segments": [
+        {
+          "text": "Muito obrigado pela ajuda!",
+          "sentiment": "positive",
+          "score": 0.95
+        }
+      ]
+    },
+    "keywords": [
+      {
+        "keyword": "agendamento",
+        "count": 5,
+        "relevance": 0.92
+      },
+      {
+        "keyword": "consulta",
+        "count": 3,
+        "relevance": 0.88
+      }
+    ],
+    "summary": "Cliente solicitou agendamento de consulta médica para a próxima semana. Atendente forneceu opções e confirmou horário."
+  }
+}</code></pre>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Tipos de Análise</h3>
+                    <ul>
+                        <li><strong>sentiment:</strong> Análise de sentimento (positivo, negativo, neutro)</li>
+                        <li><strong>keywords:</strong> Extração de palavras-chave e tópicos</li>
+                        <li><strong>summary:</strong> Resumo automático da conversa</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Scrapper API -->
+            <section id="scrapper" class="docs-section">
+                <h1 class="docs-section__title">API de Scrapper (TJSP)</h1>
+                <p class="docs-section__description">
+                    Consulte e liste processos judiciais do Tribunal de Justiça de São Paulo.
+                </p>
+
+                <!-- Query Process -->
+                <div class="docs-card">
+                    <h3>Consultar Processo Específico</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/scrapper/processos/consulta</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/scrapper/processos/consulta" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "numero_processo": "1014843-66.2025.8.26.0554",
+    "foro": "554",
+    "uf": "SP"
+  }'</code></pre>
+                    </div>
+
+                    <h4>Parâmetros de Busca (pelo menos 1 obrigatório)</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>numero_processo</code></td>
+                                <td>string</td>
+                                <td>Número do processo (formato CNJ)</td>
+                            </tr>
+                            <tr>
+                                <td><code>nome_parte</code></td>
+                                <td>string</td>
+                                <td>Nome da parte envolvida</td>
+                            </tr>
+                            <tr>
+                                <td><code>nome_completo</code></td>
+                                <td>boolean</td>
+                                <td>Pesquisar por nome completo. Padrão: false</td>
+                            </tr>
+                            <tr>
+                                <td><code>documento_parte</code></td>
+                                <td>string</td>
+                                <td>CPF ou CNPJ da parte</td>
+                            </tr>
+                            <tr>
+                                <td><code>nome_advogado</code></td>
+                                <td>string</td>
+                                <td>Nome do advogado</td>
+                            </tr>
+                            <tr>
+                                <td><code>numero_oab</code></td>
+                                <td>string</td>
+                                <td>Número da OAB</td>
+                            </tr>
+                            <tr>
+                                <td><code>foro</code></td>
+                                <td>string</td>
+                                <td>Código do foro (ex: "554")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "uf": "SP",
+  "numeroProcesso": "10148436620258260554",
+  "valorCausa": "R$ 10.000,00",
+  "tipoJuizo": "Juizado Especial Cível",
+  "classe": "Procedimento do Juizado Especial Cível",
+  "assunto": "Direito do Consumidor",
+  "foro": "Foro de Santo André",
+  "vara": "1ª Vara do Juizado Especial Cível",
+  "juiz": "Dr. João Silva",
+  "requerente": "Maria Santos",
+  "advogadoConsumidor": "Dr. José Advogado - OAB/SP 123456",
+  "dataAudiencia": "2025-12-01",
+  "situacaoProcessual": "Em andamento",
+  "inicio": "2025-01-15",
+  "ultima_atualizacao": "2025-11-01",
+  "linkPublico": "https://esaj.tjsp.jus.br/...",
+  "movimentos": [
+    {
+      "data": "2025-11-01",
+      "descricao": "Juntada de petição - Manifestação da parte autora"
+    },
+    {
+      "data": "2025-10-15",
+      "descricao": "Intimação - Prazo para contestação"
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <!-- List Processes -->
+                <div class="docs-card">
+                    <h3>Listar Processos</h3>
+                    <p>Busque múltiplos processos com filtros e paginação</p>
+
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--post">POST</span>
+                            <span class="docs-code-block__endpoint">/api/v1/scrapper/processos/listar</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X POST "https://seu-servidor.com/api/v1/scrapper/processos/listar" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nome_parte": "EMPRESA XYZ",
+    "nome_completo": true,
+    "contra_parte": "CLIENTE",
+    "max_paginas": 3,
+    "max_processos": 50,
+    "foro": "554",
+    "uf": "SP"
+  }'</code></pre>
+                    </div>
+
+                    <h4>Parâmetros Adicionais</h4>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Parâmetro</th>
+                                <th>Tipo</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>contra_parte</code></td>
+                                <td>string</td>
+                                <td>Filtrar pela parte contrária</td>
+                            </tr>
+                            <tr>
+                                <td><code>max_paginas</code></td>
+                                <td>integer</td>
+                                <td>Máximo de páginas a consultar (1-10). Padrão: 1</td>
+                            </tr>
+                            <tr>
+                                <td><code>max_processos</code></td>
+                                <td>integer</td>
+                                <td>Limite de processos a retornar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "total_processos": 72,
+  "paginas_consultadas": 3,
+  "possui_mais_paginas": true,
+  "filtro_contra_parte": "CLIENTE",
+  "processos": [
+    {
+      "numeroProcesso": "1153074-14.2024.8.26.0100",
+      "processoCodigo": "ABC123",
+      "foroId": "100",
+      "linkPublico": "https://esaj.tjsp.jus.br/...",
+      "tipoParticipacao": "Autor",
+      "partesRelacionadas": [
+        "EMPRESA XYZ LTDA",
+        "CLIENTE SILVA"
+      ],
+      "classe": "Procedimento Comum Cível",
+      "assunto": "Indenização por Dano Moral",
+      "distribuicao": "2024-01-15",
+      "pagina": 1,
+      "contrapartesEncontradas": [
+        "CLIENTE SILVA"
+      ]
+    }
+  ]
+}</code></pre>
+                </div>
+
+                <div class="docs-alert docs-alert--warning">
+                    <strong>Nota:</strong> A pesquisa por nome completo (<code>nome_completo: true</code>) é recomendada para evitar excesso de resultados.
+                </div>
+
+                <div class="docs-card">
+                    <h3>Obter Ferramentas do Scrapper</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--get">GET</span>
+                            <span class="docs-code-block__endpoint">/api/v1/scrapper/tools</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X GET "https://seu-servidor.com/api/v1/scrapper/tools" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI"</code></pre>
+                    </div>
+
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "tools": [
+    {
+      "name": "consulta_processo",
+      "description": "Consulta processo específico no TJSP",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "numero_processo": {
+            "type": "string",
+            "description": "Número do processo"
+          }
+        }
+      }
+    }
   ]
 }</code></pre>
                 </div>
             </section>
 
-            <!-- Streaming -->
-            <section id="streaming" class="docs-section">
-                <h2 class="docs-heading">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; color: #5551ff;">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                    </svg>
-                    Streaming (Server-Sent Events)
-                </h2>
-                <p class="docs-description">
-                    O endpoint <code>/chat/completions</code> suporta streaming de respostas usando Server-Sent Events (SSE).
-                    Isso permite que você receba a resposta do modelo token por token em tempo real.
+            <!-- Health API -->
+            <section id="health" class="docs-section">
+                <h1 class="docs-section__title">Health Check</h1>
+                <p class="docs-section__description">
+                    Verifique o status e saúde dos serviços da API.
                 </p>
 
-                <h3 class="docs-subheading">JavaScript / Fetch API</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JavaScript</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
+                <div class="docs-card">
+                    <h3>Verificar Status</h3>
+                    <div class="docs-code-block">
+                        <div class="docs-code-block__header">
+                            <span class="docs-code-block__method docs-code-block__method--get">GET</span>
+                            <span class="docs-code-block__endpoint">/api/v1/health</span>
+                        </div>
+                        <pre><code class="language-bash">curl -X GET "https://seu-servidor.com/api/v1/health" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI"</code></pre>
                     </div>
-                    <pre class="docs-code"><code>const response = await fetch('http://localhost:8765/api/v1/chat/completions', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    model: 'paneas-q32b',
-    messages: [{role: 'user', content: 'Conte uma história'}],
-    stream: true
-  })
-});
 
-const reader = response.body.getReader();
-const decoder = new TextDecoder();
-
-while (true) {
-  const {done, value} = await reader.read();
-  if (done) break;
-
-  const chunk = decoder.decode(value);
-  const lines = chunk.split('\n');
-
-  for (const line of lines) {
-    if (line.startsWith('data: ')) {
-      const data = line.slice(6);
-      if (data === '[DONE]') break;
-
-      const parsed = JSON.parse(data);
-      const content = parsed.choices[0].delta.content || '';
-
-      // Processa cada token recebido
-      process.stdout.write(content);
+                    <h4>Resposta</h4>
+                    <pre><code class="language-json">{
+  "status": "healthy",
+  "timestamp": "2025-11-03T14:30:00Z",
+  "services": {
+    "asr": {
+      "status": "up",
+      "latency_ms": 45
+    },
+    "ocr": {
+      "status": "up",
+      "latency_ms": 32
+    },
+    "llm": {
+      "status": "up",
+      "latency_ms": 120
+    },
+    "tts": {
+      "status": "up",
+      "latency_ms": 67
     }
-  }
+  },
+  "version": "1.0.0"
 }</code></pre>
                 </div>
 
-                <h3 class="docs-subheading">Python</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">Python</span>
-                        <button class="docs-code-example__copy" onclick="copyCode(this)">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                            </svg>
-                            Copiar
-                        </button>
-                    </div>
-                    <pre class="docs-code"><code>import requests
-import json
-
-response = requests.post(
-    'http://localhost:8765/api/v1/chat/completions',
-    json={
-        'model': 'paneas-q32b',
-        'messages': [{'role': 'user', 'content': 'Conte uma história'}],
-        'stream': True
-    },
-    stream=True
-)
-
-for line in response.iter_lines():
-    if line.startswith(b'data: '):
-        data = line[6:].decode('utf-8')
-        if data == '[DONE]':
-            break
-
-        parsed = json.loads(data)
-        content = parsed['choices'][0]['delta'].get('content', '')
-        print(content, end='', flush=True)</code></pre>
+                <div class="docs-card">
+                    <h3>Status Possíveis</h3>
+                    <ul>
+                        <li><code>healthy</code>: Todos os serviços operacionais</li>
+                        <li><code>degraded</code>: Um ou mais serviços com problemas</li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- Error Handling -->
-            <section id="error-handling" class="docs-section">
-                <h2 class="docs-heading">Tratamento de Erros</h2>
-                <p class="docs-description">
-                    A API retorna erros HTTP padrão com detalhes em JSON.
-                </p>
+            <!-- Rate Limits & Best Practices -->
+            <section id="rate-limits" class="docs-section">
+                <h1 class="docs-section__title">Rate Limits e Boas Práticas</h1>
 
-                <h3 class="docs-subheading">Códigos de Status HTTP</h3>
-                <div class="docs-params-table">
-                    <table>
+                <div class="docs-card">
+                    <h3>Limites de Taxa</h3>
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Endpoint</th>
+                                <th>Limite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Global</td>
+                                <td>1000 requisições/minuto</td>
+                            </tr>
+                            <tr>
+                                <td>ASR</td>
+                                <td>100 requisições/minuto</td>
+                            </tr>
+                            <tr>
+                                <td>OCR</td>
+                                <td>50 requisições/minuto</td>
+                            </tr>
+                            <tr>
+                                <td>LLM/Chat</td>
+                                <td>200 requisições/minuto</td>
+                            </tr>
+                            <tr>
+                                <td>TTS</td>
+                                <td>80 requisições/minuto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Boas Práticas</h3>
+
+                    <h4>1. Tratamento de Erros</h4>
+                    <pre><code class="language-bash"># Sempre verifique o status HTTP
+curl -w "\nHTTP Status: %{http_code}\n" \
+  -X POST "https://seu-servidor.com/api/v1/asr" \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -F "file=@audio.wav"</code></pre>
+
+                    <h4>2. Retry com Backoff Exponencial</h4>
+                    <p>Em caso de erro 429 (rate limit) ou 503 (serviço indisponível), aguarde antes de tentar novamente:</p>
+                    <ul>
+                        <li>1ª tentativa: aguardar 1 segundo</li>
+                        <li>2ª tentativa: aguardar 2 segundos</li>
+                        <li>3ª tentativa: aguardar 4 segundos</li>
+                    </ul>
+
+                    <h4>3. Compressão de Áudio</h4>
+                    <p>Para melhor performance, use áudio em formato otimizado:</p>
+                    <ul>
+                        <li><strong>Sample rate:</strong> 16kHz (suficiente para voz)</li>
+                        <li><strong>Formato:</strong> WAV com PCM16 ou OGG Opus</li>
+                        <li><strong>Mono:</strong> Um canal é suficiente</li>
+                    </ul>
+
+                    <h4>4. Timeouts Recomendados</h4>
+                    <ul>
+                        <li><strong>ASR:</strong> 60 segundos</li>
+                        <li><strong>OCR:</strong> 30 segundos</li>
+                        <li><strong>LLM:</strong> 120 segundos</li>
+                        <li><strong>TTS:</strong> 45 segundos</li>
+                    </ul>
+                </div>
+
+                <div class="docs-card">
+                    <h3>Códigos de Status HTTP</h3>
+                    <table class="docs-table">
                         <thead>
                             <tr>
                                 <th>Código</th>
-                                <th>Significado</th>
                                 <th>Descrição</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>200</code></td>
-                                <td>OK</td>
-                                <td>Requisição bem-sucedida</td>
+                                <td>Sucesso</td>
+                            </tr>
+                            <tr>
+                                <td><code>202</code></td>
+                                <td>Aceito (processamento assíncrono)</td>
                             </tr>
                             <tr>
                                 <td><code>400</code></td>
-                                <td>Bad Request</td>
-                                <td>Parâmetros inválidos ou ausentes</td>
+                                <td>Requisição inválida</td>
                             </tr>
                             <tr>
-                                <td><code>422</code></td>
-                                <td>Unprocessable Entity</td>
-                                <td>Dados válidos mas não processáveis</td>
+                                <td><code>401</code></td>
+                                <td>Não autenticado</td>
+                            </tr>
+                            <tr>
+                                <td><code>403</code></td>
+                                <td>Não autorizado</td>
+                            </tr>
+                            <tr>
+                                <td><code>429</code></td>
+                                <td>Rate limit excedido</td>
                             </tr>
                             <tr>
                                 <td><code>500</code></td>
-                                <td>Internal Server Error</td>
                                 <td>Erro interno do servidor</td>
                             </tr>
                             <tr>
                                 <td><code>503</code></td>
-                                <td>Service Unavailable</td>
                                 <td>Serviço temporariamente indisponível</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3 class="docs-subheading">Formato de Erro</h3>
-                <div class="docs-code-example">
-                    <div class="docs-code-example__header">
-                        <span class="docs-code-example__title">JSON Error Response</span>
-                    </div>
-                    <pre class="docs-code"><code>{
-  "detail": "Descrição do erro",
-  "error_code": "INVALID_PARAMETER",
-  "field": "messages"
-}</code></pre>
+                <div class="docs-alert docs-alert--success">
+                    <strong>Dica:</strong> Use streaming sempre que possível para requisições longas (Chat, TTS). Isso melhora a experiência do usuário e reduz timeouts.
                 </div>
             </section>
+
         </main>
     </div>
 
-    <script>
-        // Copy code functionality
-        function copyCode(button) {
-            const codeBlock = button.closest('.docs-code-example').querySelector('code');
-            const text = codeBlock.textContent;
-
-            navigator.clipboard.writeText(text).then(() => {
-                const originalHTML = button.innerHTML;
-                button.innerHTML = `
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                    Copiado!
-                `;
-                button.classList.add('copied');
-
-                setTimeout(() => {
-                    button.innerHTML = originalHTML;
-                    button.classList.remove('copied');
-                }, 2000);
-            });
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        // Smooth scroll for navigation
-        document.querySelectorAll('.docs-nav__link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const target = document.querySelector(targetId);
+        :root {
+            --primary: #5551ff;
+            --primary-light: #7c6aff;
+            --bg-dark: #0f172a;
+            --bg-darker: #0a0f1e;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border: #1e293b;
+            --code-bg: #1e293b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #3b82f6;
+        }
 
-                if (target) {
-                    // Update active link
-                    document.querySelectorAll('.docs-nav__link').forEach(l => l.classList.remove('docs-nav__link--active'));
-                    link.classList.add('docs-nav__link--active');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
 
-                    // Scroll to section
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+        code, pre {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+        }
 
-        // Highlight active section on scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '-20% 0px -70% 0px',
-            threshold: 0
-        };
+        /* Header */
+        .docs-header {
+            background: var(--bg-darker);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    document.querySelectorAll('.docs-nav__link').forEach(link => {
-                        link.classList.remove('docs-nav__link--active');
-                        if (link.getAttribute('href') === `#${id}`) {
-                            link.classList.add('docs-nav__link--active');
-                        }
-                    });
-                }
-            });
-        }, observerOptions);
+        .docs-header__container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-        document.querySelectorAll('.docs-section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+        .docs-header__brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .docs-header__title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .docs-header__version {
+            padding: 0.25rem 0.75rem;
+            background: rgba(85, 81, 255, 0.15);
+            border: 1px solid rgba(85, 81, 255, 0.3);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+
+        .docs-header__link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .docs-header__link:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+            border-color: var(--primary);
+        }
+
+        /* Layout */
+        .docs-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+
+        /* Sidebar */
+        .docs-sidebar {
+            position: sticky;
+            top: 90px;
+            height: calc(100vh - 110px);
+            overflow-y: auto;
+            padding: 2rem 1rem 2rem 2rem;
+            border-right: 1px solid var(--border);
+        }
+
+        .docs-nav__section {
+            margin-bottom: 2rem;
+        }
+
+        .docs-nav__section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .docs-nav__link {
+            display: block;
+            padding: 0.5rem 0.75rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 0.375rem;
+            transition: all 0.2s;
+            font-size: 0.9375rem;
+        }
+
+        .docs-nav__link:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        .docs-nav__link--active {
+            background: rgba(85, 81, 255, 0.15);
+            color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        /* Content */
+        .docs-content {
+            padding: 2rem 2rem 2rem 0;
+            max-width: 900px;
+        }
+
+        .docs-section {
+            margin-bottom: 4rem;
+        }
+
+        .docs-section__title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .docs-section__description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Cards */
+        .docs-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .docs-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .docs-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .docs-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .docs-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .docs-card ul li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .docs-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Code Blocks */
+        .docs-code-block {
+            margin: 1rem 0;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .docs-code-block__header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .docs-code-block__method {
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .docs-code-block__method--get {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+        }
+
+        .docs-code-block__method--post {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--info);
+        }
+
+        .docs-code-block__method--ws {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--warning);
+        }
+
+        .docs-code-block__endpoint {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+        }
+
+        pre {
+            margin: 0;
+            padding: 1.25rem;
+            background: var(--code-bg);
+            overflow-x: auto;
+        }
+
+        code {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #e2e8f0;
+        }
+
+        :not(pre) > code {
+            padding: 0.2rem 0.4rem;
+            background: rgba(85, 81, 255, 0.15);
+            border: 1px solid rgba(85, 81, 255, 0.3);
+            border-radius: 0.25rem;
+            color: var(--primary-light);
+            font-size: 0.875rem;
+        }
+
+        /* Tables */
+        .docs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .docs-table th {
+            text-align: left;
+            padding: 0.75rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .docs-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .docs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Alerts */
+        .docs-alert {
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid;
+        }
+
+        .docs-alert--info {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--info);
+            color: var(--info);
+        }
+
+        .docs-alert--success {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--success);
+            color: var(--success);
+        }
+
+        .docs-alert--warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--warning);
+            color: var(--warning);
+        }
+
+        .docs-alert strong {
+            font-weight: 700;
+        }
+
+        /* Scrollbar */
+        .docs-sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .docs-sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .docs-sidebar::-webkit-scrollbar-thumb {
+            background: rgba(85, 81, 255, 0.3);
+            border-radius: 3px;
+        }
+
+        .docs-sidebar::-webkit-scrollbar-thumb:hover {
+            background: rgba(85, 81, 255, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .docs-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .docs-sidebar {
+                position: relative;
+                top: 0;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    </style>
 </body>
 </html>

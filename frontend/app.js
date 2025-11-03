@@ -402,7 +402,12 @@ function resolveApiBase() {
 
 function buildAuthHeaders(extra = {}) {
     const headers = { ...extra };
-    const token = ui.authToken.value.trim();
+    // Try to get token from sessionStorage first (from API Keys panel)
+    let token = sessionStorage.getItem('adminToken');
+    // If not found, try to get from the input field
+    if (!token && ui.authToken) {
+        token = ui.authToken.value.trim();
+    }
     if (token) {
         headers.Authorization = `Bearer ${token}`;
     }
@@ -3748,6 +3753,7 @@ function bootstrap() {
     bindEvents();
     initTabs();
     setupFileDisplays();
+    loadAuthTokenFromStorage();
 
     // Bind diarization
     if (ui.diarButton) {
@@ -3757,6 +3763,15 @@ function bootstrap() {
     // Initialize Agents Module
     if (typeof window.initializeAgentsModule === 'function') {
         window.initializeAgentsModule();
+    }
+}
+
+function loadAuthTokenFromStorage() {
+    // Try to load API key from sessionStorage (set by API Keys panel)
+    const adminToken = sessionStorage.getItem('adminToken');
+    if (adminToken && ui.authToken) {
+        ui.authToken.value = adminToken;
+        console.log('[Auth] Loaded API key from sessionStorage');
     }
 }
 

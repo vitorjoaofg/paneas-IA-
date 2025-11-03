@@ -68,6 +68,12 @@
             <div class="navbar__nav">
                 <a href="#components" class="navbar__link">Componentes</a>
                 <a href="#playground" class="navbar__link">Playground</a>
+                <button id="apiKeysNavBtn" class="navbar__link navbar__link--button">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+                    </svg>
+                    API Keys
+                </button>
                 <button id="logoutButton" class="navbar__logout" title="Sair">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
@@ -1665,9 +1671,244 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- API Keys Panel (Separate from Playground) -->
+    <section id="apiKeysPanel" class="apikeys-panel" style="display: none;">
+        <div class="apikeys-panel__container">
+            <div class="apikeys-panel__header">
+                <div>
+                    <h1 class="apikeys-panel__title">Gerenciamento de API Keys</h1>
+                    <p class="apikeys-panel__subtitle">Crie e gerencie suas API keys para acesso ao Paneas Studio</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <button id="logoutApiKeysBtn" class="btn btn--ghost" style="color: #f56565;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                            <polyline points="16 17 21 12 16 7"/>
+                            <line x1="21" y1="12" x2="9" y2="12"/>
+                        </svg>
+                        Logout
+                    </button>
+                    <button id="closeApiKeysPanel" class="btn btn--ghost">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                        Fechar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Analytics Overview -->
+            <div class="apikeys-analytics">
+                <div class="apikeys-stat-card">
+                    <div class="apikeys-stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+                        </svg>
+                    </div>
+                    <div class="apikeys-stat-content">
+                        <div class="apikeys-stat-label">Total de Keys</div>
+                        <div class="apikeys-stat-value" id="statTotalKeys">-</div>
+                    </div>
+                </div>
+                <div class="apikeys-stat-card">
+                    <div class="apikeys-stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                            <path d="M21 3v5h-5"/>
+                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                            <path d="M8 16H3v5"/>
+                        </svg>
+                    </div>
+                    <div class="apikeys-stat-content">
+                        <div class="apikeys-stat-label">Requests (24h)</div>
+                        <div class="apikeys-stat-value" id="statRequests24h">-</div>
+                    </div>
+                </div>
+                <div class="apikeys-stat-card">
+                    <div class="apikeys-stat-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <div class="apikeys-stat-content">
+                        <div class="apikeys-stat-label">Latência Média</div>
+                        <div class="apikeys-stat-value" id="statAvgLatency">-</div>
+                    </div>
+                </div>
+                <div class="apikeys-stat-card">
+                    <div class="apikeys-stat-icon" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <div class="apikeys-stat-content">
+                        <div class="apikeys-stat-label">Tokens (24h)</div>
+                        <div class="apikeys-stat-value" id="statTotalTokens">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Key Section -->
+            <div class="apikeys-section">
+                <div class="apikeys-section-header">
+                                <h3>Criar Nova API Key</h3>
+                                <button class="btn btn--primary" id="createKeyBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                    Nova Key
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Keys List Section -->
+                        <div class="apikeys-section">
+                            <div class="apikeys-section-header">
+                                <h3>API Keys</h3>
+                                <button class="btn btn--ghost btn--sm" id="refreshKeysBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                                        <path d="M21 3v5h-5"/>
+                                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                                        <path d="M8 16H3v5"/>
+                                    </svg>
+                                    Atualizar
+                                </button>
+                            </div>
+                            <div class="apikeys-table-container">
+                                <table class="apikeys-table" id="apiKeysTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Key</th>
+                                            <th>Status</th>
+                                            <th>Admin</th>
+                                            <th>Criado em</th>
+                                            <th>Último uso</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="apiKeysTableBody">
+                                        <tr>
+                                            <td colspan="7" class="placeholder">Carregando API keys...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Key Details Section -->
+                        <div class="apikeys-section" id="keyDetailsSection" style="display: none;">
+                            <div class="apikeys-section-header">
+                                <h3>Estatísticas de Uso</h3>
+                                <button class="btn btn--ghost btn--sm" id="closeKeyDetailsBtn">Fechar</button>
+                            </div>
+                            <div class="apikeys-details" id="keyDetailsContent">
+                                <!-- Details will be loaded dynamically -->
+                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Admin Token -->
+    <div id="authModal" class="modal" style="display: none;">
+        <div class="modal__content" style="max-width: 500px;">
+            <div class="modal__header">
+                <h2 class="modal__title">Acesso Restrito</h2>
+                <button class="modal__close" id="closeAuthModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="adminToken">Token de Acesso *</label>
+                    <input type="password" id="adminToken" placeholder="sk-proj-xxxxxxxx..." required style="font-family: monospace;" />
+                    <small style="color: #64748b; display: block; margin-top: 8px;">
+                        Insira o token de acesso para gerenciar API keys
+                    </small>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancelAuthBtn" class="btn btn--ghost">Cancelar</button>
+                    <button type="submit" class="btn btn--primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                            <polyline points="10 17 15 12 10 7"/>
+                            <line x1="15" y1="12" x2="3" y2="12"/>
+                        </svg>
+                        Acessar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Creating API Key -->
+    <div id="createKeyModal" class="modal" style="display: none;">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Criar Nova API Key</h2>
+                <button class="modal__close" id="closeCreateKeyModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <form id="createKeyForm">
+                <div class="form-group">
+                    <label for="keyName">Nome da Key *</label>
+                    <input type="text" id="keyName" placeholder="Ex: Produção, Desenvolvimento, Teste" required />
+                </div>
+                <div class="form-group form-group--checkbox">
+                    <input id="keyIsAdmin" type="checkbox" />
+                    <label for="keyIsAdmin">Permissões de Admin (permite gerenciar outras keys)</label>
+                </div>
+                <div class="modal__actions">
+                    <button type="button" class="btn btn--ghost" id="cancelCreateKeyBtn">Cancelar</button>
+                    <button type="submit" class="btn btn--primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Criar Key
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Showing New Key -->
+    <div id="showKeyModal" class="modal" style="display: none;">
+        <div class="modal__content">
+            <div class="modal__icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+            </div>
+            <h2 class="modal__title">API Key Criada!</h2>
+            <p class="modal__description">Copie sua API key agora. Ela não será mostrada novamente!</p>
+            <div class="apikeys-key-display">
+                <code id="newKeyDisplay"></code>
+                <button class="btn btn--sm btn--primary" id="copyKeyBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Copiar
+                </button>
+            </div>
+            <button class="btn btn--primary btn--block" id="closeShowKeyModal">Entendi, fechar</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1700,6 +1941,7 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
     </footer>
 
     <script src="agents.js"></script>
+    <script src="apikeys.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -39,6 +39,10 @@ services:
       - SCRAPPER_HOST=scrapper
       - SCRAPPER_PORT=8080
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - GOOGLE_REDIRECT_URI=${GOOGLE_REDIRECT_URI}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
     volumes:
       - type: bind
         source: /srv/models

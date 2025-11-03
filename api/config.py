@@ -125,6 +125,14 @@ class Settings(BaseSettings):
     openai_asr_model: str = Field(default="whisper-1", alias="OPENAI_ASR_MODEL")
     openai_insights_model: str = Field(default="gpt-4o-mini", alias="OPENAI_INSIGHTS_MODEL")
 
+    # Google OAuth Configuration
+    google_client_id: str = Field(default="", alias="GOOGLE_CLIENT_ID")
+    google_client_secret: str = Field(default="", alias="GOOGLE_CLIENT_SECRET")
+    google_redirect_uri: str = Field(default="https://jota.ngrok.app/auth/google/callback", alias="GOOGLE_REDIRECT_URI")
+
+    # JWT Configuration
+    jwt_secret_key: str = Field(default="your-secret-key-change-in-production", alias="JWT_SECRET_KEY")
+
     @field_validator("api_tokens", mode="before")
     @classmethod
     def _parse_api_tokens(cls, value):
