@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paneas Ecosystem - Biblioteca de Componentes de IA</title>
+    <title>Paneas Studio - Biblioteca de Componentes de IA</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
                 </svg>
             </div>
             <h2 class="modal__title">Acesso Restrito</h2>
-            <p class="modal__description">Digite a senha para acessar o Paneas Ecosystem</p>
+            <p class="modal__description">Digite a senha para acessar o Paneas Studio</p>
             <form id="passwordForm">
                 <div class="modal__input-group">
                     <input type="password" id="passwordInput" placeholder="Digite a senha" autocomplete="off" required />
@@ -63,12 +63,11 @@
                         </linearGradient>
                     </defs>
                 </svg>
-                <span class="navbar__title">Paneas Ecosystem</span>
+                <span class="navbar__title">Paneas Studio</span>
             </div>
             <div class="navbar__nav">
                 <a href="#components" class="navbar__link">Componentes</a>
                 <a href="#playground" class="navbar__link">Playground</a>
-                <a href="docs.html" class="navbar__link navbar__link--cta" target="_blank">Documentação</a>
                 <button id="logoutButton" class="navbar__logout" title="Sair">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
@@ -85,16 +84,12 @@
         <div class="hero__container">
             <div class="hero__badge">
                 <span class="pulse-dot"></span>
-                <span>Stack de IA Local e Completa</span>
+                <span>Stack de IA Completa</span>
             </div>
             <h1 class="hero__title">
-                Ecossistema Paneas
-                <span class="gradient-text">Componentes de IA Prontos para Produção</span>
+                Ecossistema
+                <span class="gradient-text">Paneas Studio</span>
             </h1>
-            <p class="hero__description">
-                Biblioteca completa de componentes de IA para transcrição, análise de documentos,
-                conversação inteligente e síntese de voz. Tudo rodando localmente com máxima privacidade.
-            </p>
             <div class="hero__actions">
                 <button class="btn btn--hero" onclick="document.getElementById('playground').scrollIntoView({behavior: 'smooth'})">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -110,6 +105,13 @@
                         <polyline points="12 5 19 12 12 19"/>
                     </svg>
                 </button>
+                <a href="docs.html" class="btn btn--ghost" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    Documentação
+                </a>
             </div>
             <div class="hero__stats">
                 <div class="stat-item">
@@ -121,8 +123,47 @@
                     <div class="stat-item__label">Local & Privado</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-item__value">0ms</div>
-                    <div class="stat-item__label">Latência de Rede</div>
+                    <div class="stat-item__value">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-item__label">Baixa Latência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__value">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                    </div>
+                    <div class="stat-item__label">Conforme LGPD</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__value">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                            <rect x="9" y="9" width="6" height="6"/>
+                            <line x1="9" y1="1" x2="9" y2="4"/>
+                            <line x1="15" y1="1" x2="15" y2="4"/>
+                            <line x1="9" y1="20" x2="9" y2="23"/>
+                            <line x1="15" y1="20" x2="15" y2="23"/>
+                            <line x1="20" y1="9" x2="23" y2="9"/>
+                            <line x1="20" y1="14" x2="23" y2="14"/>
+                            <line x1="1" y1="9" x2="4" y2="9"/>
+                            <line x1="1" y1="14" x2="4" y2="14"/>
+                        </svg>
+                    </div>
+                    <div class="stat-item__label">GPU Acelerado</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__value">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="9 11 12 14 15 10"/>
+                        </svg>
+                    </div>
+                    <div class="stat-item__label">Sempre Ativo</div>
                 </div>
             </div>
         </div>
@@ -132,7 +173,7 @@
     <section class="products" id="components">
         <div class="products__container">
             <div class="section-header">
-                <h2 class="section-title">Biblioteca de Componentes Paneas</h2>
+                <h2 class="section-title">Biblioteca</h2>
                 <p class="section-subtitle">Componentes modulares e reutilizáveis para construir soluções de IA</p>
             </div>
 
@@ -629,8 +670,10 @@
                 <!-- Scrapper Tab -->
                 <div class="playground__panel" data-content="scrapper">
                     <div class="playground-card">
-                        <h3 class="playground-card__title">Consulta de Processo (TJSP)</h3>
-                        <p class="card__description">Busque processos específicos</p>
+                        <div>
+                            <h3 class="playground-card__title">Consulta de Processo (TJSP)</h3>
+                            <p class="card__description">Busque processos específicos</p>
+                        </div>
                         <form id="scrapperConsultaForm" class="form-grid">
                             <div class="form-group">
                                 <label for="scrapperNumeroProcesso">Número do Processo</label>
@@ -667,8 +710,10 @@
                     </div>
 
                     <div class="playground-card">
-                        <h3 class="playground-card__title">Listagem de Processos</h3>
-                        <p class="card__description">Combine filtros para listar processos</p>
+                        <div>
+                            <h3 class="playground-card__title">Listagem de Processos</h3>
+                            <p class="card__description">Combine filtros para listar processos</p>
+                        </div>
                         <form id="scrapperListForm" class="form-grid">
                             <div class="form-group">
                                 <label for="scrapperListNomeParte">Nome da Parte</label>

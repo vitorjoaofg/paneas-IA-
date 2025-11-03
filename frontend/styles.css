@@ -254,18 +254,20 @@ input, select, textarea {
 .modal__input-group input {
     width: 100%;
     padding: 1rem 1rem 1rem 3rem;
-    border: 2px solid var(--border-color);
-    border-radius: var(--radius-md);
+    border: 2px solid rgba(124, 106, 255, 0.3);
+    border-radius: 12px;
     font-size: 1rem;
-    transition: var(--transition-fast);
-    background: var(--bg-secondary);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(124, 106, 255, 0.05);
 }
 
 .modal__input-group input:focus {
     outline: none;
     border-color: var(--primary);
     background: white;
-    box-shadow: 0 0 0 4px rgba(85, 81, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(124, 106, 255, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.1);
+    transform: translateY(-1px);
 }
 
 .modal__input-icon {
@@ -725,11 +727,12 @@ input, select, textarea {
 }
 
 .playground__container {
-    max-width: 1600px;
+    max-width: 90vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 250px 1fr;
     gap: 2rem;
+    overflow-x: hidden;
 }
 
 .playground__sidebar {
@@ -740,6 +743,7 @@ input, select, textarea {
     height: fit-content;
     position: sticky;
     top: 100px;
+    z-index: 5;
 }
 
 .playground__title {
@@ -800,6 +804,9 @@ input, select, textarea {
 
 .playground__content {
     min-height: 600px;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    scroll-behavior: smooth;
 }
 
 .playground__panel {
@@ -808,7 +815,10 @@ input, select, textarea {
 }
 
 .playground__panel--active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
 }
 
 /* ==========================================================================
@@ -816,12 +826,17 @@ input, select, textarea {
    ========================================================================== */
 
 .playground-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(15, 23, 42, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-xl);
     padding: 2rem;
-    margin-bottom: 1.5rem;
-    backdrop-filter: blur(20px);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+    isolation: isolate;
 }
 
 .playground-card--centered {
@@ -841,10 +856,10 @@ input, select, textarea {
 }
 
 .playground-card__title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--text-white);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -855,7 +870,7 @@ input, select, textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .form-group {
@@ -889,21 +904,29 @@ input, select, textarea {
 .form-group select,
 textarea {
     padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(30, 27, 50, 0.95) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.2);
+    border-radius: 12px;
     color: white;
     font-size: 0.9375rem;
-    transition: var(--transition-fast);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.05);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 textarea:focus {
     outline: none;
-    background: rgba(255, 255, 255, 0.12);
-    border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(85, 81, 255, 0.15);
+    background: linear-gradient(135deg, rgba(30, 27, 50, 0.98) 0%, rgba(40, 35, 70, 0.98) 100%);
+    border-color: rgba(124, 106, 255, 0.6);
+    box-shadow: 0 4px 16px rgba(124, 106, 255, 0.25), inset 0 1px 0 rgba(124, 106, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.form-group input:hover:not(:focus),
+.form-group select:hover:not(:focus),
+textarea:hover:not(:focus) {
+    border-color: rgba(124, 106, 255, 0.4);
 }
 
 .form-group input[type="checkbox"] {
@@ -975,7 +998,7 @@ textarea:focus {
 
 .btn--ghost {
     background: transparent;
-    color: var(--text-primary);
+    color: #e2e8f0;
     border: 2px solid var(--border-color);
     padding: 1rem 2rem;
     font-size: 1.125rem;
@@ -1049,6 +1072,7 @@ textarea:focus {
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
+    grid-column: 1 / -1;
 }
 
 /* ==========================================================================
@@ -1130,28 +1154,37 @@ textarea:focus {
 
 .upload-placeholder {
     padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 2px dashed rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.8) 0%, rgba(30, 27, 50, 0.8) 100%);
+    border: 2px dashed rgba(124, 106, 255, 0.3);
+    border-radius: 16px;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.1);
 }
 
 .upload-area:hover .upload-placeholder {
-    background: rgba(85, 81, 255, 0.05);
-    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(30, 27, 50, 0.9) 0%, rgba(85, 81, 255, 0.15) 100%);
+    border-color: rgba(124, 106, 255, 0.6);
+    box-shadow: 0 6px 20px rgba(124, 106, 255, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .upload-placeholder svg {
     margin: 0 auto 1rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(124, 106, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover .upload-placeholder svg {
+    color: rgba(124, 106, 255, 1);
+    transform: scale(1.1);
 }
 
 .upload-placeholder p {
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(124, 106, 255, 0.9);
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .file-types {
@@ -1183,33 +1216,69 @@ textarea:focus {
     gap: 1.5rem;
 }
 
-.transcript-box,
-.result-box {
+.transcript-box {
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(30, 27, 50, 0.95) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.2);
+    border-radius: 16px;
     min-height: 200px;
-    max-height: 400px;
+    max-height: 70vh;
     overflow-y: auto;
+    overflow-x: auto;
     font-size: 0.9375rem;
     line-height: 1.8;
     white-space: pre-wrap;
+    word-wrap: break-word;
     color: rgba(255, 255, 255, 0.9);
+    scroll-behavior: smooth;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(124, 106, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.transcript-box:hover {
+    border-color: rgba(124, 106, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(124, 106, 255, 0.15), inset 0 1px 0 rgba(124, 106, 255, 0.15);
 }
 
 .result-box {
     font-family: var(--font-mono);
     font-size: 0.875rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(30, 27, 50, 0.95) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.2);
+    border-radius: 16px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 70vh;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 10;
+    color: #e2e8f0;
+    opacity: 1;
+    isolation: isolate;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(124, 106, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.result-box:hover {
+    border-color: rgba(124, 106, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(124, 106, 255, 0.15), inset 0 1px 0 rgba(124, 106, 255, 0.15);
 }
 
 .result-box--large {
-    max-height: 500px;
+    max-height: 70vh;
 }
 
 .placeholder {
-    color: rgba(255, 255, 255, 0.4);
-    font-style: italic;
+    color: rgba(124, 106, 255, 0.6);
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .help-text {
@@ -1317,17 +1386,17 @@ textarea:focus {
 }
 
 .conversation-bubble--agent {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.18) 100%);
-    border: 1px solid rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, rgba(124, 106, 255, 0.15) 0%, rgba(85, 81, 255, 0.12) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.4);
     border-top-left-radius: 0.375rem;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(124, 106, 255, 0.15), inset 0 1px 0 rgba(124, 106, 255, 0.1);
 }
 
 .conversation-bubble--client {
-    background: linear-gradient(135deg, rgba(67, 233, 123, 0.2) 0%, rgba(56, 249, 215, 0.18) 100%);
+    background: linear-gradient(135deg, rgba(67, 233, 123, 0.15) 0%, rgba(56, 249, 215, 0.12) 100%);
     border: 1px solid rgba(67, 233, 123, 0.4);
     border-top-right-radius: 0.375rem;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(67, 233, 123, 0.15), inset 0 1px 0 rgba(67, 233, 123, 0.1);
 }
 
 @keyframes messageSlideIn {
@@ -1964,9 +2033,10 @@ textarea:focus {
 }
 
 .card__description {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5;
 }
 
 /* ==========================================================================
@@ -2033,20 +2103,30 @@ textarea:focus {
 
 ::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: var(--radius-full);
+    background: rgba(85, 81, 255, 0.3);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(85, 81, 255, 0.5);
+    background-clip: padding-box;
 }
 
 /* ==========================================================================
    Responsive Design
    ========================================================================== */
+
+@media (max-width: 1440px) {
+    .playground__container {
+        max-width: 95vw;
+    }
+}
 
 @media (max-width: 1200px) {
     .products__grid {
@@ -2059,6 +2139,7 @@ textarea:focus {
 
     .playground__container {
         grid-template-columns: 1fr;
+        max-width: 95vw;
     }
 
     .playground__sidebar {
@@ -2120,6 +2201,16 @@ textarea:focus {
     .playground__nav-item {
         flex: 1;
         min-width: 120px;
+    }
+
+    .playground-card {
+        padding: 1.5rem;
+    }
+
+    .result-box,
+    .result-box--large,
+    .transcript-box {
+        max-height: 60vh;
     }
 }
 
@@ -2218,20 +2309,22 @@ textarea:focus {
 
 .item-card {
     padding: var(--spacing-lg);
-    background: var(--surface-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-lg);
-    transition: all var(--transition-normal);
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(30, 27, 50, 0.95) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(124, 106, 255, 0.1);
 }
 
 .item-card:hover {
-    border-color: var(--primary-light);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(124, 106, 255, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(124, 106, 255, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.15);
 }
 
 .item-card--catalog {
-    background: linear-gradient(135deg, var(--surface-secondary) 0%, var(--surface-primary) 100%);
+    background: linear-gradient(135deg, rgba(30, 27, 50, 0.95) 0%, rgba(40, 35, 70, 0.95) 100%);
+    border-color: rgba(124, 106, 255, 0.3);
 }
 
 .item-card__header {
@@ -3086,4 +3179,110 @@ textarea:focus {
         align-items: flex-start;
         gap: 0.25rem;
     }
+}
+
+/* Fix for overlapping cards - ensure proper stacking */
+.playground__panel--active > .playground-card:nth-child(1) {
+    z-index: 2;
+}
+
+.playground__panel--active > .playground-card:nth-child(2) {
+    z-index: 1;
+}
+
+.playground-card .result-box {
+    z-index: 10 !important;
+    background: #171717 !important;
+    opacity: 1 !important;
+}
+
+/* Fix button visibility in hero section (light background) */
+.hero .btn--ghost {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.hero .btn--ghost:hover {
+    color: var(--primary-light);
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+/* Icon styling for stat items */
+.stat-item__value svg {
+    color: var(--primary);
+    stroke: var(--primary);
+}
+
+/* Allow links to use button styles */
+a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+a.btn svg {
+    flex-shrink: 0;
+}
+
+/* Enhanced placeholder styling inside result boxes */
+.result-box .placeholder,
+.transcript-box .placeholder {
+    min-height: 150px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.result-box .placeholder::before,
+.transcript-box .placeholder::before {
+    content: '✨';
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    opacity: 0.6;
+}
+
+/* Global purple theme overrides for all tabs */
+.playground__panel input[type="text"],
+.playground__panel input[type="number"],
+.playground__panel input[type="password"],
+.playground__panel select,
+.playground__panel textarea {
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(30, 27, 50, 0.95) 100%);
+    border: 1px solid rgba(124, 106, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(124, 106, 255, 0.05);
+}
+
+.playground__panel input[type="text"]:focus,
+.playground__panel input[type="number"]:focus,
+.playground__panel input[type="password"]:focus,
+.playground__panel select:focus,
+.playground__panel textarea:focus {
+    border-color: rgba(124, 106, 255, 0.6);
+    box-shadow: 0 4px 16px rgba(124, 106, 255, 0.25), inset 0 1px 0 rgba(124, 106, 255, 0.15);
+}
+
+/* Force purple color for all placeholder text elements */
+.result-box p,
+.transcript-box p,
+.upload-placeholder p,
+p.placeholder,
+.placeholder p,
+.items-list .placeholder,
+.placeholder-sm {
+    color: rgba(124, 106, 255, 0.85) !important;
+}
+
+/* Specific overrides for Agent tab placeholders */
+.playground__panel[data-content="agents"] .placeholder {
+    color: rgba(124, 106, 255, 0.75) !important;
+}
+
+/* File types text in upload areas */
+.file-types {
+    color: rgba(124, 106, 255, 0.6) !important;
 }
