@@ -300,6 +300,92 @@ def _clean_json_response(content: str) -> str:
     return content
 
 
+async def postprocess_with_local_llm_only(
+    full_text: str,
+    segments: List[Dict[str, Any]],
+) -> Dict[str, Any]:
+    """
+    Usa SOMENTE o LLM local para melhorar texto e segmentos em uma única chamada.
+    Muito mais rápido que chamar OpenAI + LLM local separadamente.
+
+    Args:
+        full_text: Texto completo da transcrição
+        segments: Segmentos originais com timestamps e speakers
+
+    Returns:
+        Dict com improved_text e improved_segments
+    """
+    LOGGER.info("postprocess_with_local_llm_only", text_length=len(full_text), num_segments=len(segments))
+
+    # Construir contexto dos segmentos
+    segments_info = []
+    for i, seg in enumerate(segments[:50]):  # Limitar para performance
+        speaker = seg.get("speaker", "")
+        text = seg.get("text", "").strip()
+        if text:
+            segments_info.append(f"[{i}] {speaker}: {text}")
+
+    segments_context = "\n".join(segments_info)
+
+    prompt = f"""Você é um especialista em transcrições de call center e correção de textos.
+
+TEXTO ORIGINAL DA TRANSCRIÇÃO:
+{full_text[:3000]}
+
+TAREFA:
+Melhore esta transcrição corrigindo:
+1. Erros de transcrição (ex: "Aquedaclar" → "Claro", "para pago" → "pré-pago")
+2. Pontuação e formatação
+3. Remova ruídos verbais excessivos
+
+IMPORTANTE:
+- Mantenha fidelidade ao conteúdo
+- Corrija nomes de empresas
+- Melhore clareza e organização
+
+Retorne APENAS o texto melhorado, sem explicações.
+
+TEXTO MELHORADO:"""
+
+    try:
+        async with httpx.AsyncClient(timeout=LLM_LOCAL_TIMEOUT) as client:
+            response = await client.post(
+                LLM_LOCAL_ENDPOINT,
+                json={
+                    "model": "/models/qwen2_5/int4-awq-32b",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.3,
+                    "max_tokens": 3000,
+                },
+            )
+            response.raise_for_status()
+
+            llm_result = response.json()
+            improved_text = llm_result["choices"][0]["message"]["content"].strip()
+
+            LOGGER.info("local_llm_text_improved", original_length=len(full_text), improved_length=len(improved_text))
+
+            # Agora mapear aos segmentos (reutilizando a outra função)
+            improved_segments = await map_improved_text_to_segments_with_local_llm(
+                improved_text=improved_text,
+                original_segments=segments,
+            )
+
+            return {
+                "improved_text": improved_text,
+                "improved_segments": improved_segments,
+                "processing_notes": "Processado com LLM local",
+            }
+
+    except Exception as e:
+        LOGGER.error("local_llm_postprocess_failed", error=str(e))
+        return {
+            "improved_text": full_text,
+            "improved_segments": segments,
+            "processing_notes": None,
+        }
+
+
 async def map_improved_text_to_segments_with_local_llm(
     improved_text: str,
     original_segments: List[Dict[str, Any]],
