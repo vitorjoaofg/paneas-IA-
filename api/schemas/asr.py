@@ -31,6 +31,7 @@ class ASRResponse(BaseModel):
     processing_time_ms: int
     language: str
     text: str
+    raw_text: Optional[str] = None  # Original text before LLM post-processing
     segments: List[TranscriptSegment]
     metadata: ASRMetadata
 
@@ -40,6 +41,7 @@ class ASRRequest(BaseModel):
     model: str = Field(default="whisper/medium")
     enable_diarization: bool = Field(default=False)
     enable_alignment: bool = Field(default=False)
+    enable_llm_postprocess: bool = Field(default=False)
     num_speakers: Optional[int] = Field(default=None, ge=1, le=10)
     compute_type: str = Field(default="int8_float16")
     vad_filter: bool = Field(default=True)

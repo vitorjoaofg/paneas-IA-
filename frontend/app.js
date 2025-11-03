@@ -1706,19 +1706,26 @@ async function transcribeUploadedAudio() {
     const enableNativeDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
     // Get number of speakers if diarization is enabled
     const numSpeakers = enableNativeDiarization ? (document.getElementById('asrNumSpeakers')?.value || '2') : null;
+    // Check if LLM post-processing is enabled
+    const enableLlmPostprocess = document.getElementById('asrEnableLlmPostprocess')?.checked || false;
 
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
     console.log("[ASR] Diarização Nativa (PyAnnote):", enableNativeDiarization ? "ativada" : "desativada");
     if (enableNativeDiarization) {
         console.log("[ASR] Número de speakers:", numSpeakers);
     }
+    console.log("[ASR] Pós-processamento OpenAI:", enableLlmPostprocess ? "ativado" : "desativado");
 
     // Show appropriate loading message
+    let loadingMsg = "Enviando áudio para transcrição";
     if (enableNativeDiarization) {
-        setOutput(ui.asrResult, `Enviando áudio para transcrição com diarização nativa (PyAnnote) - ${numSpeakers} speakers...`);
-    } else {
-        setOutput(ui.asrResult, "Enviando áudio para transcrição...");
+        loadingMsg += ` com diarização nativa (PyAnnote) - ${numSpeakers} speakers`;
     }
+    if (enableLlmPostprocess) {
+        loadingMsg += " + pós-processamento";
+    }
+    loadingMsg += "...";
+    setOutput(ui.asrResult, loadingMsg);
 
     const formData = new FormData();
     formData.append("file", file);
@@ -1728,6 +1735,11 @@ async function transcribeUploadedAudio() {
     if (enableNativeDiarization) {
         formData.append("enable_diarization", "true");
         formData.append("num_speakers", numSpeakers);
+    }
+
+    // Enable LLM post-processing if toggle is checked
+    if (enableLlmPostprocess) {
+        formData.append("enable_llm_postprocess", "true");
     }
 
     const base = resolveApiBase();
@@ -1767,8 +1779,13 @@ async function transcribeUploadedAudio() {
                 const hasSpeakers = data.segments[0].hasOwnProperty('speaker');
                 if (hasSpeakers) {
                     const speakers = [...new Set(data.segments.map(seg => seg.speaker))];
-                    headerInfo = `<div style="color: #5551ff; margin-bottom: 10px;">✅ Diarização PyAnnote aplicada - ${speakers.length} speakers detectados - Tempo: ${elapsedTime}s</div>`;
+                    headerInfo = `<div style="color: #5551ff; margin-bottom: 10px;">✅ Diarização aplicada - ${speakers.length} speakers detectados - Tempo: ${elapsedTime}s</div>`;
                 }
+            }
+
+            // Adicionar informação se pós-processamento foi usado
+            if (enableLlmPostprocess && data.raw_text) {
+                headerInfo += `<div style="color: #10b981; margin-bottom: 10px;">✅ Pós-processamento aplicado</div>`;
             }
 
             // Mostrar JSON formatado

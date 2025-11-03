@@ -4,10 +4,14 @@ from pathlib import Path
 
 from fastapi import APIRouter, Depends, File, Form, UploadFile, HTTPException
 from pydantic import BaseModel
+import structlog
 
 from schemas.asr import ASRRequest, ASRResponse
 from services import asr_client
+from services.transcription_postprocess import postprocess_transcription
 from utils.pii_masking import PIIMasker
+
+LOGGER = structlog.get_logger(__name__)
 
 router = APIRouter(prefix="/api/v1", tags=["asr"])
 
@@ -24,6 +28,7 @@ def build_request(
     model: str = Form("whisper/medium"),
     enable_diarization: bool = Form(False),
     enable_alignment: bool = Form(False),
+    enable_llm_postprocess: bool = Form(False),
     num_speakers: int | None = Form(None),
     compute_type: str = Form("int8_float16"),
     vad_filter: bool = Form(True),
@@ -36,6 +41,7 @@ def build_request(
         model=model,
         enable_diarization=enable_diarization,
         enable_alignment=enable_alignment,
+        enable_llm_postprocess=enable_llm_postprocess,
         num_speakers=num_speakers,
         compute_type=compute_type,
         vad_filter=vad_filter,
@@ -54,6 +60,7 @@ async def transcribe_audio(
     start = time.perf_counter()
     options = payload.model_dump()
     provider = options.pop("provider", "paneas")
+    enable_llm_postprocess = options.pop("enable_llm_postprocess", False)
     options["request_id"] = str(request_id)
 
     raw_result = await asr_client.transcribe(
@@ -63,9 +70,43 @@ async def transcribe_audio(
     )
     raw_result["request_id"] = request_id
     raw_result["processing_time_ms"] = int((time.perf_counter() - start) * 1000)
+
+    # Apply PII masking first
     raw_result["text"] = PIIMasker.mask_text(raw_result.get("text", ""))
     for segment in raw_result.get("segments", []):
         segment["text"] = PIIMasker.mask_text(segment.get("text", ""))
+
+    # Apply LLM post-processing if enabled
+    if enable_llm_postprocess:
+        LOGGER.info("applying_llm_postprocess", request_id=str(request_id))
+        try:
+            postprocess_result = await postprocess_transcription(
+                full_text=raw_result["text"],
+                segments=raw_result.get("segments", []),
+                model="gpt-4o-mini",
+                process_segments=False,  # Desabilitado para performance
+            )
+
+            # Save original text before replacing
+            raw_result["raw_text"] = raw_result["text"]
+
+            # Update with improved versions (apenas texto completo)
+            raw_result["text"] = postprocess_result["improved_text"]
+
+            LOGGER.info(
+                "llm_postprocess_complete",
+                request_id=str(request_id),
+                notes=postprocess_result.get("processing_notes"),
+            )
+        except Exception as e:
+            LOGGER.error(
+                "llm_postprocess_failed",
+                request_id=str(request_id),
+                error=str(e),
+                error_type=type(e).__name__,
+            )
+            # Continue without post-processing on error
+
     return ASRResponse.model_validate(raw_result)
 
 
