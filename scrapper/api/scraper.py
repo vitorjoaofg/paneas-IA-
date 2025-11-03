@@ -173,13 +173,27 @@ class TJSPFetcher:
     async def submit_query_for_listing(self, query: TJSPProcessoQuery) -> None:
         assert self.page
         search_key, search_value = self._resolve_search_parameter(query)
-        await self._select_search_mode(search_key)
-        await self._fill_inputs(search_key, search_value, query)
-        submit_locator = self.page.locator("#botaoConsultarProcessos, input[type=submit][value='Consultar']")
-        if await submit_locator.count() == 0:
-            raise HTTPException(status_code=500, detail="Não foi possível localizar o botão de consulta.")
-        async with self.page.expect_navigation(wait_until="domcontentloaded"):
-            await submit_locator.first.click()
+
+        # Build URL with parameters instead of using form submission for better control
+        base_url = "https://esaj.tjsp.jus.br/cpopg/search.do"
+        params = {
+            "conversationId": "",
+            "cbPesquisa": search_key,
+            "dadosConsulta.valorConsulta": search_value,
+            "cdForo": query.foro if query.foro else "-1",
+        }
+
+        # Add nome_completo parameter if requested and searching by name
+        if query.nome_completo and search_key == "NMPARTE":
+            params["chNmCompleto"] = "true"
+
+        # Build query string
+        from urllib.parse import urlencode
+        query_string = urlencode(params)
+        full_url = f"{base_url}?{query_string}"
+
+        # Navigate directly to the search results
+        await self.page.goto(full_url, wait_until="domcontentloaded")
         await self.ensure_page_is_ready()
 
     async def go_to_listing_page(self, page_number: int) -> bool:
@@ -276,6 +290,25 @@ class TJSPFetcher:
                     }""",
                     foro_value,
                 )
+
+        # Handle nome completo checkbox (must be AFTER filling the input)
+        if query.nome_completo and query.nome_parte and code == "NMPARTE":
+            with contextlib.suppress(Exception):
+                # Remove disabled attribute and click the label
+                await self.page.evaluate("""
+                    () => {
+                        const checkbox = document.querySelector("input[name='chNmCompleto']");
+                        if (checkbox) {
+                            checkbox.removeAttribute('disabled');
+                            checkbox.disabled = false;
+                        }
+                        const label = document.querySelector("label:has(input[name='chNmCompleto'])");
+                        if (label) {
+                            label.click();
+                        }
+                    }
+                """)
+                await self.page.wait_for_timeout(500)  # Wait for any JS to react
 
     async def _fill_first_input(self, selectors: List[str], value: str) -> None:
         assert self.page
@@ -534,6 +567,7 @@ async def fetch_tjsp_process_list(
     base_query = TJSPProcessoQuery(
         numero_processo=query.numero_processo,
         nome_parte=query.nome_parte,
+        nome_completo=query.nome_completo,
         documento_parte=query.documento_parte,
         nome_advogado=query.nome_advogado,
         numero_oab=query.numero_oab,

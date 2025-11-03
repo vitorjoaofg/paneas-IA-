@@ -14,6 +14,10 @@ from pdf2image import convert_from_bytes
 from paddleocr import PaddleOCR
 from prometheus_fastapi_instrumentator import Instrumentator
 
+from document_classifier import classify_document
+from entity_extractor import extract_entities
+from image_preprocessor import preprocess_image
+
 MODELS_DIR = Path(os.environ.get("MODELS_DIR", "/models"))
 CACHE_DIR = Path(os.environ.get("OCR_CACHE_DIR", "/tmp/paddleocr"))
 USE_TENSORRT = os.environ.get("USE_TENSORRT", "true").lower() == "true"
@@ -50,8 +54,24 @@ class OCRService:
         engine, engine_label = self._select_engine(prefer_gpu)
         pages = []
         for idx, image in enumerate(images, start=1):
+            # Apply preprocessing if requested
+            preprocessed_image = image
+            if deskew or denoise:
+                LOGGER.info(
+                    "applying_image_preprocessing",
+                    page=idx,
+                    deskew=deskew,
+                    denoise=denoise,
+                )
+                preprocessed_image = preprocess_image(
+                    image,
+                    deskew=deskew,
+                    denoise=denoise,
+                    enhance_contrast=True,  # Always enhance contrast for better OCR
+                )
+
             try:
-                page_result = self._process_page(engine, image, engine_label)
+                page_result = self._process_page(engine, preprocessed_image, engine_label)
             except Exception as exc:  # noqa: BLE001
                 if prefer_gpu and FALLBACK_CPU:
                     LOGGER.warning(
@@ -75,6 +95,8 @@ class OCRService:
                     "page_num": idx,
                     "text": page_result["text"],
                     "blocks": page_result["blocks"],
+                    "document_type": page_result.get("document_type"),
+                    "entities": page_result.get("entities", []),
                     "metadata": page_result["metadata"],
                 }
             )
@@ -100,9 +122,35 @@ class OCRService:
                     }
                 )
         text_joined = "\n".join(block["text"] for block in blocks)
+
+        # Classify document type
+        doc_classification = classify_document(text_joined)
+        document_type = {
+            "type": doc_classification.type.value,
+            "confidence": doc_classification.confidence,
+            "detected_by": doc_classification.detected_by,
+            "matched_patterns": doc_classification.matched_patterns,
+        }
+
+        # Extract entities
+        entities_raw = extract_entities(text_joined, blocks)
+        entities = [
+            {
+                "type": e.type.value,
+                "value": e.value,
+                "raw_value": e.raw_value,
+                "confidence": e.confidence,
+                "position": e.position,
+                "validated": e.validated,
+            }
+            for e in entities_raw
+        ]
+
         return {
             "text": text_joined,
             "blocks": blocks,
+            "document_type": document_type,
+            "entities": entities,
             "metadata": {"processing_time_ms": duration, "engine": engine_label},
         }
 

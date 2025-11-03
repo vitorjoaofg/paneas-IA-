@@ -432,6 +432,7 @@ function collectScrapperPayload(form, numericFields = []) {
     const formData = new FormData(form);
     const payload = {};
 
+    // Collect text and numeric fields
     formData.forEach((value, key) => {
         if (typeof value !== "string") {
             return;
@@ -450,6 +451,14 @@ function collectScrapperPayload(form, numericFields = []) {
         }
 
         payload[key] = trimmed;
+    });
+
+    // Collect checkboxes (FormData doesn't include unchecked checkboxes)
+    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.name) {
+            payload[checkbox.name] = checkbox.checked;
+        }
     });
 
     return payload;

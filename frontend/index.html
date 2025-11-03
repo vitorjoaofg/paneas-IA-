@@ -675,12 +675,22 @@
                                 <input id="scrapperListNomeParte" name="nome_parte" type="text" />
                             </div>
                             <div class="form-group">
+                                <label for="scrapperListNomeCompleto" style="display: flex; align-items: center; gap: 8px;">
+                                    <input id="scrapperListNomeCompleto" name="nome_completo" type="checkbox" style="width: auto; margin: 0;" />
+                                    <span>Pesquisar por nome completo</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
                                 <label for="scrapperListDocumentoParte">Documento da Parte</label>
                                 <input id="scrapperListDocumentoParte" name="documento_parte" type="text" />
                             </div>
                             <div class="form-group">
                                 <label for="scrapperListMaxPaginas">Máx. Páginas</label>
                                 <input id="scrapperListMaxPaginas" name="max_paginas" type="number" min="1" max="10" value="1" />
+                            </div>
+                            <div class="form-group">
+                                <label for="scrapperListMaxProcessos">Máx. Processos (por página)</label>
+                                <input id="scrapperListMaxProcessos" name="max_processos" type="number" min="1" max="100" />
                             </div>
                             <div class="button-group">
                                 <button type="submit" class="btn btn--primary" id="scrapperListSubmit">Listar Processos</button>

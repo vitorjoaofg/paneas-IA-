@@ -32,6 +32,10 @@ class TJSPProcessoQuery(BaseModel):
         example="1014843-66.2025.8.26.0554",
     )
     nome_parte: Optional[str] = Field(default=None, description="Nome da parte.")
+    nome_completo: bool = Field(
+        default=False,
+        description="Pesquisar por nome completo (evita resultados com nomes similares).",
+    )
     documento_parte: Optional[str] = Field(
         default=None,
         description="CPF ou CNPJ da parte.",
