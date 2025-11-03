@@ -10,8 +10,13 @@ from typing import Any, Dict, List, Optional
 
 from services.llm_client import chat_completion
 from services.llm_router import LLMTarget
+import httpx
 
 LOGGER = structlog.get_logger(__name__)
+
+# Endpoint do LLM local
+LLM_LOCAL_ENDPOINT = "http://llm-int4:8002/v1/chat/completions"
+LLM_LOCAL_TIMEOUT = 30.0
 
 # Prompt template for transcription improvement
 TRANSCRIPTION_IMPROVEMENT_PROMPT = """Você é um especialista em transcrições de call center e correção de textos.
@@ -293,3 +298,123 @@ def _clean_json_response(content: str) -> str:
         return json_match.group()
 
     return content
+
+
+async def map_improved_text_to_segments_with_local_llm(
+    improved_text: str,
+    original_segments: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """
+    Usa o LLM local para mapear o texto melhorado de volta aos segmentos originais.
+    Mantém timestamps e speakers, mas atualiza o texto de cada segmento.
+
+    Args:
+        improved_text: Texto completo já melhorado pela OpenAI
+        original_segments: Segmentos originais com timestamps, speakers e texto original
+
+    Returns:
+        Lista de segmentos com textos atualizados
+    """
+    if not original_segments:
+        return original_segments
+
+    LOGGER.info("mapping_improved_text_to_segments", num_segments=len(original_segments))
+
+    # Construir contexto para o LLM
+    segments_info = []
+    for i, seg in enumerate(original_segments):
+        speaker = seg.get("speaker", "")
+        original_text = seg.get("text", "").strip()
+        start = seg.get("start", 0)
+        end = seg.get("end", 0)
+
+        if original_text:
+            segments_info.append(f"[{i}] ({start:.1f}s-{end:.1f}s) {speaker}: {original_text}")
+
+    segments_context = "\n".join(segments_info[:50])  # Limitar a 50 primeiros segmentos
+
+    prompt = f"""Você é um assistente que mapeia texto melhorado de volta aos segmentos temporais originais.
+
+TEXTO MELHORADO (corrigido e formatado):
+{improved_text[:2000]}
+
+SEGMENTOS ORIGINAIS (com timestamps e speakers):
+{segments_context}
+
+TAREFA:
+Para cada segmento original, encontre o texto correspondente no TEXTO MELHORADO e retorne um JSON array com os textos atualizados, mantendo a mesma ordem.
+
+REGRAS IMPORTANTES:
+1. Mantenha a mesma quantidade de segmentos ({len(original_segments[:50])})
+2. Preserve o sentido de cada segmento
+3. Use o texto melhorado quando disponível
+4. Se não encontrar correspondência, use o texto original
+5. Seja conciso - cada segmento deve ser curto (1-2 frases no máximo)
+
+FORMATO DE SAÍDA:
+Retorne APENAS um JSON array de strings, sem explicações:
+["texto do segmento 1", "texto do segmento 2", ...]
+
+JSON array:"""
+
+    try:
+        # Chamar LLM local de forma síncrona
+        async with httpx.AsyncClient(timeout=LLM_LOCAL_TIMEOUT) as client:
+            response = await client.post(
+                LLM_LOCAL_ENDPOINT,
+                json={
+                    "model": "/models/qwen2_5/int4-awq-32b",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.3,
+                    "max_tokens": 2000,
+                },
+            )
+            response.raise_for_status()
+
+            llm_result = response.json()
+            llm_content = llm_result["choices"][0]["message"]["content"].strip()
+
+            # Limpar resposta
+            llm_content = _clean_json_response(llm_content)
+
+            # Parsear JSON array
+            try:
+                improved_texts = json.loads(llm_content)
+
+                if not isinstance(improved_texts, list):
+                    LOGGER.warning("llm_returned_non_array", type=type(improved_texts).__name__)
+                    return original_segments
+
+                # Atualizar segmentos com textos melhorados
+                updated_segments = []
+                for i, segment in enumerate(original_segments):
+                    new_segment = segment.copy()
+
+                    if i < len(improved_texts) and improved_texts[i]:
+                        new_segment["text"] = improved_texts[i]
+
+                    updated_segments.append(new_segment)
+
+                LOGGER.info(
+                    "segments_mapped_successfully",
+                    original_count=len(original_segments),
+                    updated_count=len(updated_segments),
+                )
+
+                return updated_segments
+
+            except json.JSONDecodeError as e:
+                LOGGER.error(
+                    "failed_to_parse_llm_json",
+                    error=str(e),
+                    content_preview=llm_content[:200],
+                )
+                return original_segments
+
+    except Exception as e:
+        LOGGER.error(
+            "segment_mapping_failed",
+            error=str(e),
+            error_type=type(e).__name__,
+        )
+        return original_segments

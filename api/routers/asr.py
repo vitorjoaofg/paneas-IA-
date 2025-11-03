@@ -8,7 +8,10 @@ import structlog
 
 from schemas.asr import ASRRequest, ASRResponse
 from services import asr_client
-from services.transcription_postprocess import postprocess_transcription
+from services.transcription_postprocess import (
+    postprocess_transcription,
+    map_improved_text_to_segments_with_local_llm,
+)
 from utils.pii_masking import PIIMasker
 
 LOGGER = structlog.get_logger(__name__)
@@ -80,6 +83,7 @@ async def transcribe_audio(
     if enable_llm_postprocess:
         LOGGER.info("applying_llm_postprocess", request_id=str(request_id))
         try:
+            # Etapa 1: OpenAI melhora o texto completo
             postprocess_result = await postprocess_transcription(
                 full_text=raw_result["text"],
                 segments=raw_result.get("segments", []),
@@ -90,8 +94,18 @@ async def transcribe_audio(
             # Save original text before replacing
             raw_result["raw_text"] = raw_result["text"]
 
-            # Update with improved versions (apenas texto completo)
-            raw_result["text"] = postprocess_result["improved_text"]
+            # Update with improved full text
+            improved_text = postprocess_result["improved_text"]
+            raw_result["text"] = improved_text
+
+            # Etapa 2: LLM local mapeia texto melhorado aos segmentos
+            if raw_result.get("segments"):
+                LOGGER.info("mapping_segments_with_local_llm", request_id=str(request_id))
+                updated_segments = await map_improved_text_to_segments_with_local_llm(
+                    improved_text=improved_text,
+                    original_segments=raw_result["segments"],
+                )
+                raw_result["segments"] = updated_segments
 
             LOGGER.info(
                 "llm_postprocess_complete",
