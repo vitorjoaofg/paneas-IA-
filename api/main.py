@@ -7,7 +7,7 @@ from starlette.middleware.sessions import SessionMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
 
 from config import get_settings
-from middleware.auth import AuthMiddleware
+# from middleware.auth import AuthMiddleware
 from middleware.logging import LoggingMiddleware
 from middleware.rate_limit import RateLimitMiddleware
 from middleware.request_id import RequestIDMiddleware
@@ -50,7 +50,7 @@ app.add_middleware(
 
 app.add_middleware(RequestIDMiddleware)
 app.add_middleware(LoggingMiddleware)
-app.add_middleware(AuthMiddleware)
+# app.add_middleware(AuthMiddleware)
 app.add_middleware(RateLimitMiddleware)
 
 instrumentator = Instrumentator(should_group_status_codes=True)

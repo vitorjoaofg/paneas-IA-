@@ -253,6 +253,8 @@ const ui = {
     ttsMetadata: document.getElementById("ttsMetadata"),
     ttsDownload: document.getElementById("ttsDownload"),
     ttsStatus: document.getElementById("ttsStatus"),
+    ttsAccentGroup: document.getElementById("ttsAccentGroup"),
+    ttsAccent: document.getElementById("ttsAccent"),
     ttsStreamButton: document.getElementById("ttsStreamButton"),
     ttsStreamResult: document.getElementById("ttsStreamResult"),
     ttsStreamPlayer: document.getElementById("ttsStreamPlayer"),
@@ -391,7 +393,49 @@ const state = {
     availableTeams: [],             // Lista de teams
     // Diarization tracking
     diarizedConversation: [],      // Stores the diarized conversation
-    diarizedMessageCount: 0        // Number of diarized messages
+    diarizedMessageCount: 0,       // Number of diarized messages
+    // TTS Language and Accent
+    ttsLanguage: 'pt-br',
+    ttsAccent: 'co'
+};
+
+// TTS Voice Configuration
+const voiceConfig = {
+    'pt-br': {
+        label: 'Português',
+        language: 'pt',
+        voices: [
+            { value: '/voices/perola_optimized.wav', label: 'Pérola (Feminina)' },
+            { value: '/voices/Guilherme_optimized.wav', label: 'Guilherme (Masculina)' }
+        ]
+    },
+    'es': {
+        label: 'Español',
+        language: 'es',
+        accents: {
+            'co': {
+                label: 'Colombiano',
+                voices: [
+                    { value: '/voices/es_co_female_optimized.wav', label: 'Colombiana (Feminina)' },
+                    { value: '/voices/es_co_male_optimized.wav', label: 'Colombiano (Masculino)' }
+                ]
+            },
+            'ar': {
+                label: 'Argentino',
+                voices: [
+                    { value: '/voices/es_ar_female_optimized.wav', label: 'Argentina (Feminina)' },
+                    { value: '/voices/es_ar_male_optimized.wav', label: 'Argentino (Masculino)' }
+                ]
+            },
+            'pe': {
+                label: 'Peruano',
+                voices: [
+                    { value: '/voices/es_pe_female_optimized.wav', label: 'Peruana (Feminina)' },
+                    { value: '/voices/es_pe_male_optimized.wav', label: 'Peruano (Masculino)' }
+                ]
+            }
+        }
+    }
 };
 
 function trimTrailingSlash(url) {
@@ -1440,7 +1484,7 @@ function stopSession() {
 // ============================================================================
 
 async function loadAgentsForChat() {
-    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    const agentsApiBase = 'https://esdras.ngrok.app';
     try {
         const response = await fetch(`${agentsApiBase}/v1/agents`, {
             headers: { 'ngrok-skip-browser-warning': 'true' }
@@ -1464,7 +1508,7 @@ async function loadAgentsForChat() {
 }
 
 async function loadTeamsForChat() {
-    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    const agentsApiBase = 'https://esdras.ngrok.app';
     try {
         const response = await fetch(`${agentsApiBase}/v1/teams`, {
             headers: { 'ngrok-skip-browser-warning': 'true' }
@@ -1527,7 +1571,7 @@ function updateChatTargetSelect() {
 
 async function sendToAgent(message) {
     const agentId = state.chatTargetId;
-    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    const agentsApiBase = 'https://esdras.ngrok.app';
 
     // Gerar conversation_id na primeira mensagem
     if (!state.conversationId) {
@@ -1593,7 +1637,7 @@ async function sendToAgent(message) {
 
 async function sendToTeam(message) {
     const teamId = state.chatTargetId;
-    const agentsApiBase = 'https://831f64a96e91.ngrok-free.app';
+    const agentsApiBase = 'https://esdras.ngrok.app';
 
     if (!state.conversationId) {
         state.conversationId = `conv-${Date.now()}-${Math.random().toString(36).substring(7)}`;
@@ -2775,8 +2819,10 @@ function bindEvents() {
         ui.ocrResult.innerHTML = '';
     });
 
-    ui.insightToggle.addEventListener("change", () => {
-        ui.insightStatus.textContent = ui.insightToggle.checked ? "Habilitados" : "Desabilitados";
+    ui.insightToggle?.addEventListener("change", () => {
+        if (ui.insightStatus && ui.insightToggle) {
+            ui.insightStatus.textContent = ui.insightToggle.checked ? "Habilitados" : "Desabilitados";
+        }
     });
 
     ui.ttsButton?.addEventListener("click", async (event) => {
@@ -2798,6 +2844,73 @@ function bindEvents() {
         event.preventDefault();
         stopTTSStream();
     });
+
+    // TTS Language and Accent selection
+    function updateVoiceOptions() {
+        const voiceSelect = ui.ttsVoice;
+        if (!voiceSelect) return;
+
+        voiceSelect.innerHTML = '';
+
+        if (state.ttsLanguage === 'pt-br') {
+            const voices = voiceConfig['pt-br'].voices;
+            voices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.value;
+                option.textContent = voice.label;
+                voiceSelect.appendChild(option);
+            });
+        } else if (state.ttsLanguage === 'es') {
+            const voices = voiceConfig['es'].accents[state.ttsAccent].voices;
+            voices.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.value;
+                option.textContent = voice.label;
+                voiceSelect.appendChild(option);
+            });
+        }
+    }
+
+    function setTTSLanguage(lang) {
+        state.ttsLanguage = lang;
+
+        // Update button states
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            }
+        });
+
+        // Show/hide accent selector
+        if (ui.ttsAccentGroup) {
+            if (lang === 'es') {
+                ui.ttsAccentGroup.style.display = 'block';
+            } else {
+                ui.ttsAccentGroup.style.display = 'none';
+            }
+        }
+
+        updateVoiceOptions();
+    }
+
+    // Language button click handlers
+    setTimeout(() => {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTTSLanguage(btn.dataset.lang);
+            });
+        });
+
+        // Accent selector change handler
+        ui.ttsAccent?.addEventListener('change', (event) => {
+            state.ttsAccent = event.target.value;
+            updateVoiceOptions();
+        });
+
+        // Initialize with default language
+        setTTSLanguage('pt-br');
+    }, 100);
 
     // Analytics event listeners
     document.getElementById('analyticsSubmit')?.addEventListener("click", async (event) => {
@@ -3264,9 +3377,10 @@ async function synthesizeTTS() {
         const base = resolveApiBase();
         const url = `${base}/api/v1/tts`;
 
+        const lang = state.ttsLanguage === 'pt-br' ? 'pt' : voiceConfig[state.ttsLanguage].language;
         const payload = {
             text: text,
-            language: "pt",
+            language: lang,
             speaker_reference: voice,
             format: "wav"
         };
@@ -3383,9 +3497,10 @@ async function synthesizeTTSStream() {
         const base = resolveApiBase();
         const url = `${base}/api/v1/tts/stream`;
 
+        const lang = state.ttsLanguage === 'pt-br' ? 'pt' : voiceConfig[state.ttsLanguage].language;
         const payload = {
             text: text,
-            language: "pt",
+            language: lang,
             speaker_reference: voice,
             format: "wav"
         };

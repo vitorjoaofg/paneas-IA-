@@ -9,7 +9,7 @@
 // STATE MANAGEMENT
 // ============================================================================
 const agentsState = {
-    apiBase: 'https://831f64a96e91.ngrok-free.app',
+    apiBase: 'https://esdras.ngrok.app',
     authToken: '',
     currentAgent: null,
     agents: [],

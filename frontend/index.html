@@ -901,6 +901,23 @@
                         <p class="card__description">Clone de voz com Paneas-XXTS-v2</p>
 
                         <div class="form-group">
+                            <label>Idioma</label>
+                            <div class="language-selector">
+                                <button type="button" data-lang="pt-br" class="lang-btn active">🇧🇷 Português</button>
+                                <button type="button" data-lang="es" class="lang-btn">🇪🇸 Español</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="ttsAccentGroup" style="display: none;">
+                            <label for="ttsAccent">Sotaque</label>
+                            <select id="ttsAccent">
+                                <option value="co">🇨🇴 Colombiano</option>
+                                <option value="ar">🇦🇷 Argentino</option>
+                                <option value="pe">🇵🇪 Peruano</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
                             <label for="ttsVoice">Voz</label>
                             <select id="ttsVoice">
                                 <option value="/voices/perola_optimized.wav">Pérola (Feminina)</option>
