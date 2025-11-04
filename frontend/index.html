@@ -545,14 +545,6 @@
                                     <label for="chunkSize">Chunk (ms)</label>
                                     <input id="chunkSize" type="number" min="200" max="2000" step="100" value="900" />
                                 </div>
-                                <div class="form-group form-group--checkbox">
-                                    <input id="insightToggle" type="checkbox" />
-                                    <label for="insightToggle">Insights</label>
-                                </div>
-                                <div class="form-group">
-                                    <label for="insightModel">Modelo Insights</label>
-                                    <input id="insightModel" type="text" value="paneas-q32b" />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -598,6 +590,19 @@
                             <div class="stat-card">
                                 <div class="stat-card__icon">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-card__content">
+                                    <span class="stat-card__value" id="audioSeconds">0</span>
+                                    <span class="stat-card__label">Segundos</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <rect x="3" y="3" width="18" height="18" rx="2"/>
                                         <rect x="7" y="7" width="10" height="3"/>
                                         <rect x="7" y="14" width="10" height="3"/>
@@ -620,19 +625,6 @@
                                 <div class="stat-card__content">
                                     <span class="stat-card__value" id="tokenCount">0</span>
                                     <span class="stat-card__label">Tokens</span>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-card__icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12 6 12 12 16 14"/>
-                                    </svg>
-                                </div>
-                                <div class="stat-card__content">
-                                    <span class="stat-card__value" id="audioSeconds">0</span>
-                                    <span class="stat-card__label">Segundos</span>
                                 </div>
                             </div>
 
@@ -663,25 +655,6 @@
                             </div>
                         </div>
 
-                        <!-- Right Column: Insights + Timeline -->
-                        <div class="sidebar-column">
-                            <div class="playground-card">
-                                <div class="card__header">
-                                    <h3 class="playground-card__title">Insights</h3>
-                                    <span class="badge badge--secondary" id="insightStatus">Inativos</span>
-                                </div>
-                                <div class="insights-container" id="insightsList">
-                                    <p class="placeholder">Aguardando insights...</p>
-                                </div>
-                            </div>
-
-                            <div class="playground-card">
-                                <h3 class="playground-card__title">Timeline</h3>
-                                <div class="timeline" id="batchTimeline">
-                                    <p class="placeholder">Aguardando processamento...</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

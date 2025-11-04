@@ -721,13 +721,13 @@ input, select, textarea {
    ========================================================================== */
 
 .playground {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
     min-height: 100vh;
 }
 
 .playground__container {
-    max-width: 90vw;
+    max-width: 98vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -840,9 +840,8 @@ input, select, textarea {
 }
 
 .playground-card--centered {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: none;
 }
 
 .playground-card--chat {
@@ -4105,10 +4104,10 @@ p.placeholder,
     border-radius: 8px;
 }
 
-/* Realtime Grid (3 columns) */
+/* Realtime Grid (2 columns) */
 .realtime-grid {
     display: grid;
-    grid-template-columns: 280px 1fr 320px;
+    grid-template-columns: 280px 1fr;
     gap: 2rem;
     align-items: start;
 }

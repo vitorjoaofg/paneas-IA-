@@ -45,6 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
             isAuthenticated = true;
             sessionStorage.setItem('paneas_authenticated', 'true');
 
+            // Set admin API token
+            const adminToken = 'sk-proj-m9TcZYgxbAC10dtk_h_XJD3p3NY8zRj4';
+            sessionStorage.setItem('adminToken', adminToken);
+
+            // Update the auth token input field if it exists
+            const authTokenInput = document.getElementById('authToken');
+            if (authTokenInput) {
+                authTokenInput.value = adminToken;
+            }
+
             // Success animation
             submitButton.innerHTML = `
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -197,17 +207,17 @@ const ui = {
     tokenCount: document.getElementById("tokenCount"),
     audioSeconds: document.getElementById("audioSeconds"),
     transcript: document.getElementById("transcriptText"),
-    timeline: document.getElementById("batchTimeline"),
-    insights: document.getElementById("insightsList"),
-    insightStatus: document.getElementById("insightStatus"),
+    // timeline: document.getElementById("batchTimeline"), // Removed
+    // insights: document.getElementById("insightsList"), // Removed
+    // insightStatus: document.getElementById("insightStatus"), // Removed
     startButton: document.getElementById("startButton"),
     stopButton: document.getElementById("stopButton"),
     apiBase: document.getElementById("apiBase"),
     authToken: document.getElementById("authToken"),
     chunkSize: document.getElementById("chunkSize"),
     diarizationToggle: document.getElementById("diarizationToggle"),
-    insightToggle: document.getElementById("insightToggle"),
-    insightModel: document.getElementById("insightModel"),
+    // insightToggle: document.getElementById("insightToggle"), // Removed
+    // insightModel: document.getElementById("insightModel"), // Removed
     chatLog: document.getElementById("chatLog"),
     chatForm: document.getElementById("chatForm"),
     chatInput: document.getElementById("chatInput"),
@@ -782,51 +792,53 @@ function smoothScrollTranscript() {
     });
 }
 
-function renderTimeline() {
-    ui.timeline.innerHTML = "";
-    const fragment = document.createDocumentFragment();
-    state.timeline.slice(-20).forEach((item) => {
-        const div = document.createElement("div");
-        div.className = "timeline__item";
-        const top = document.createElement("div");
-        top.className = "timeline__meta";
-        const tokensInfo = typeof item.tokens === "number" && item.tokens > 0 ? ` | ${item.tokens} tokens` : "";
-        top.innerHTML = `<span>Lote #${item.batch}</span><span>${item.duration.toFixed(1)}s${tokensInfo}</span>`;
-        const body = document.createElement("div");
-        body.textContent = item.text || "(texto vazio)";
-        div.appendChild(top);
-        div.appendChild(body);
-        fragment.appendChild(div);
-    });
-    ui.timeline.appendChild(fragment);
-    ui.timeline.scrollTop = ui.timeline.scrollHeight;
-}
+// Removed: renderTimeline function - Timeline box was removed from UI
+// function renderTimeline() {
+//     ui.timeline.innerHTML = "";
+//     const fragment = document.createDocumentFragment();
+//     state.timeline.slice(-20).forEach((item) => {
+//         const div = document.createElement("div");
+//         div.className = "timeline__item";
+//         const top = document.createElement("div");
+//         top.className = "timeline__meta";
+//         const tokensInfo = typeof item.tokens === "number" && item.tokens > 0 ? ` | ${item.tokens} tokens` : "";
+//         top.innerHTML = `<span>Lote #${item.batch}</span><span>${item.duration.toFixed(1)}s${tokensInfo}</span>`;
+//         const body = document.createElement("div");
+//         body.textContent = item.text || "(texto vazio)";
+//         div.appendChild(top);
+//         div.appendChild(body);
+//         fragment.appendChild(div);
+//     });
+//     ui.timeline.appendChild(fragment);
+//     ui.timeline.scrollTop = ui.timeline.scrollHeight;
+// }
 
-function renderInsights() {
-    ui.insights.innerHTML = "";
-    if (!state.insights.length) {
-        const p = document.createElement("p");
-        p.className = "placeholder";
-        p.textContent = "Nenhum insight emitido ainda.";
-        ui.insights.appendChild(p);
-        return;
-    }
-    const fragment = document.createDocumentFragment();
-    state.insights.forEach((insight) => {
-        const container = document.createElement("div");
-        container.className = "insight";
-        const meta = document.createElement("div");
-        meta.className = "insight__meta";
-        const ts = new Date(insight.generated_at || Date.now());
-        meta.innerHTML = `<span>${insight.type || "Insight"}</span><span>${ts.toLocaleTimeString()}</span>`;
-        const body = document.createElement("div");
-        body.textContent = insight.text || "(sem texto)";
-        container.appendChild(meta);
-        container.appendChild(body);
-        fragment.appendChild(container);
-    });
-    ui.insights.appendChild(fragment);
-}
+// Removed: renderInsights function - Insights box was removed from UI
+// function renderInsights() {
+//     ui.insights.innerHTML = "";
+//     if (!state.insights.length) {
+//         const p = document.createElement("p");
+//         p.className = "placeholder";
+//         p.textContent = "Nenhum insight emitido ainda.";
+//         ui.insights.appendChild(p);
+//         return;
+//     }
+//     const fragment = document.createDocumentFragment();
+//     state.insights.forEach((insight) => {
+//         const container = document.createElement("div");
+//         container.className = "insight";
+//         const meta = document.createElement("div");
+//         meta.className = "insight__meta";
+//         const ts = new Date(insight.generated_at || Date.now());
+//         meta.innerHTML = `<span>${insight.type || "Insight"}</span><span>${ts.toLocaleTimeString()}</span>`;
+//         const body = document.createElement("div");
+//         body.textContent = insight.text || "(sem texto)";
+//         container.appendChild(meta);
+//         container.appendChild(body);
+//         fragment.appendChild(container);
+//     });
+//     ui.insights.appendChild(fragment);
+// }
 
 function renderChat() {
     ui.chatLog.innerHTML = "";
@@ -1015,8 +1027,8 @@ function resetSessionState() {
     state.fileStreamOffset = 0;
     updateStats();
     renderTranscript();
-    renderTimeline();
-    renderInsights();
+    // renderTimeline(); // Removed - Timeline box was removed from UI
+    // renderInsights(); // Removed - Insights box was removed from UI
 }
 
 async function setupAudio() {
@@ -1159,7 +1171,7 @@ function handleWsMessage(event) {
             state.sessionStarted = true;
             state.streaming = true;
             state.insightsRequested = Boolean(payload.insights_enabled);
-            ui.insightStatus.textContent = state.insightsRequested ? "Habilitados" : "Desabilitados";
+            // ui.insightStatus.textContent = state.insightsRequested ? "Habilitados" : "Desabilitados"; // Removed - insightStatus element was removed from UI
             if (state.streamSource === "file") {
                 setStatus("Transmitindo arquivo para o ASR.", "streaming");
                 ui.streamStatus && (ui.streamStatus.textContent = "Enviando áudio do arquivo...");
@@ -1203,7 +1215,7 @@ function handleWsMessage(event) {
                 ui.streamStatus.textContent = `Lote ${batchLabel} processado (${(payload.duration_sec || 0).toFixed(1)}s).`;
             }
             renderTranscript();
-            renderTimeline();
+            // renderTimeline(); // Removed - Timeline box was removed from UI
             updateStats();
             break;
         }
@@ -1213,7 +1225,7 @@ function handleWsMessage(event) {
             }
             state.insights.unshift(payload);
             state.insights = state.insights.slice(0, 12);
-            renderInsights();
+            // renderInsights(); // Removed - Insights box was removed from UI
             break;
         }
         case "final_summary": {
@@ -1362,7 +1374,7 @@ async function openSession(options = {}) {
             compute_type: "int8_float16",
             batch_window_sec: 2.0,
             max_batch_window_sec: 10.0,
-            enable_insights: ui.insightToggle ? ui.insightToggle.checked : false,
+            enable_insights: false, // Insights feature removed
             enable_diarization: ui.diarizationToggle ? ui.diarizationToggle.checked : false,
             provider: "paneas",
         };
