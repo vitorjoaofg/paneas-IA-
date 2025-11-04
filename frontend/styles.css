@@ -375,6 +375,41 @@ input, select, textarea {
     box-shadow: var(--shadow-lg);
 }
 
+.navbar__language {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.language-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    opacity: 0.6;
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
+.language-btn.active {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    opacity: 1;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
 .navbar__logout {
     width: 40px;
     height: 40px;

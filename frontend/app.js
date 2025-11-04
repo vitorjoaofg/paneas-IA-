@@ -4150,4 +4150,112 @@ function loadAuthTokenFromStorage() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", bootstrap);
+// ============================================================================
+// Internationalization (i18n)
+// ============================================================================
+
+const translations = {
+    'pt-br': {
+        // Navbar
+        'navbar-components': 'Componentes',
+        'navbar-playground': 'Playground',
+        'navbar-logout-title': 'Sair',
+
+        // Hero
+        'hero-title': 'Biblioteca de Componentes de IA',
+        'hero-subtitle': 'Ferramentas profissionais de IA para desenvolvimento rápido',
+
+        // Tabs
+        'tab-asr': 'ASR',
+        'tab-diar': 'Diarização',
+        'tab-analytics': 'Analytics',
+        'tab-agents': 'Agents',
+        'tab-ocr': 'OCR',
+        'tab-tts': 'TTS',
+        'tab-scrapper': 'Scrapper',
+        'tab-chat': 'Chat'
+    },
+    'es': {
+        // Navbar
+        'navbar-components': 'Componentes',
+        'navbar-playground': 'Playground',
+        'navbar-logout-title': 'Salir',
+
+        // Hero
+        'hero-title': 'Biblioteca de Componentes de IA',
+        'hero-subtitle': 'Herramientas profesionales de IA para desarrollo rápido',
+
+        // Tabs
+        'tab-asr': 'ASR',
+        'tab-diar': 'Diarización',
+        'tab-analytics': 'Analytics',
+        'tab-agents': 'Agentes',
+        'tab-ocr': 'OCR',
+        'tab-tts': 'TTS',
+        'tab-scrapper': 'Scrapper',
+        'tab-chat': 'Chat'
+    }
+};
+
+let currentPageLanguage = localStorage.getItem('pageLanguage') || 'pt-br';
+
+function setPageLanguage(lang) {
+    currentPageLanguage = lang;
+    localStorage.setItem('pageLanguage', lang);
+
+    // Update button states
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.language === lang) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Apply translations
+    const t = translations[lang];
+    if (!t) return;
+
+    // Navbar
+    const navComponents = document.querySelector('a[href="#components"]');
+    if (navComponents) navComponents.textContent = t['navbar-components'];
+
+    const navPlayground = document.querySelector('a[href="#playground"]');
+    if (navPlayground) navPlayground.textContent = t['navbar-playground'];
+
+    const logoutBtn = document.getElementById('logoutButton');
+    if (logoutBtn) logoutBtn.setAttribute('title', t['navbar-logout-title']);
+
+    // Hero
+    const heroTitle = document.querySelector('.hero__title');
+    if (heroTitle) heroTitle.textContent = t['hero-title'];
+
+    const heroSubtitle = document.querySelector('.hero__subtitle');
+    if (heroSubtitle) heroSubtitle.textContent = t['hero-subtitle'];
+
+    // Tabs - preserve icons, only update text in span
+    document.querySelectorAll('.playground__nav-item').forEach(tab => {
+        const tabId = tab.dataset.tab;
+        if (tabId && t[`tab-${tabId}`]) {
+            const span = tab.querySelector('span');
+            if (span) {
+                span.textContent = t[`tab-${tabId}`];
+            }
+        }
+    });
+}
+
+function initializeLanguageSelector() {
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setPageLanguage(btn.dataset.language);
+        });
+    });
+
+    // Apply saved language
+    setPageLanguage(currentPageLanguage);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    bootstrap();
+    initializeLanguageSelector();
+});
