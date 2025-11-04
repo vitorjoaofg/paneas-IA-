@@ -1,3 +1,4 @@
+import asyncio
 import time
 import uuid
 from pathlib import Path
@@ -11,6 +12,7 @@ from services import asr_client
 from services.transcription_postprocess import (
     postprocess_transcription,
     map_improved_text_to_segments_with_local_llm,
+    fix_speaker_labels_with_llm,
 )
 from utils.pii_masking import PIIMasker
 
@@ -32,6 +34,7 @@ def build_request(
     enable_diarization: bool = Form(False),
     enable_alignment: bool = Form(False),
     enable_llm_postprocess: bool = Form(False),
+    postprocess_mode: str = Form("paneas-default"),
     num_speakers: int | None = Form(None),
     compute_type: str = Form("int8_float16"),
     vad_filter: bool = Form(True),
@@ -64,6 +67,7 @@ async def transcribe_audio(
     options = payload.model_dump()
     provider = options.pop("provider", "paneas")
     enable_llm_postprocess = options.pop("enable_llm_postprocess", False)
+    postprocess_mode = options.pop("postprocess_mode", "premium")
     options["request_id"] = str(request_id)
 
     raw_result = await asr_client.transcribe(
@@ -81,37 +85,139 @@ async def transcribe_audio(
 
     # Apply LLM post-processing if enabled
     if enable_llm_postprocess:
-        LOGGER.info("applying_llm_postprocess", request_id=str(request_id))
+        LOGGER.info("applying_llm_postprocess", request_id=str(request_id), mode=postprocess_mode)
         try:
-            # Etapa 1: OpenAI melhora o texto completo
-            postprocess_result = await postprocess_transcription(
-                full_text=raw_result["text"],
-                segments=raw_result.get("segments", []),
-                model="gpt-4o-mini",
-                process_segments=False,  # Desabilitado para performance
-            )
+            original_text = raw_result["text"]
+            original_segments = raw_result.get("segments", [])
 
-            # Save original text before replacing
-            raw_result["raw_text"] = raw_result["text"]
+            if postprocess_mode == "paneas-default":
+                # PANEAS-DEFAULT MODE: Local LLM for both tasks in parallel
+                # - Local LLM improves full text
+                # - Local LLM fixes speaker labels
+                # Both run in parallel using local model
 
-            # Update with improved full text
-            improved_text = postprocess_result["improved_text"]
-            raw_result["text"] = improved_text
-
-            # Etapa 2: LLM local mapeia texto melhorado aos segmentos
-            if raw_result.get("segments"):
-                LOGGER.info("mapping_segments_with_local_llm", request_id=str(request_id))
-                updated_segments = await map_improved_text_to_segments_with_local_llm(
-                    improved_text=improved_text,
-                    original_segments=raw_result["segments"],
+                from services.transcription_postprocess import (
+                    postprocess_with_local_llm_text_only,
+                    fix_speaker_labels_with_llm,
                 )
-                raw_result["segments"] = updated_segments
 
-            LOGGER.info(
-                "llm_postprocess_complete",
-                request_id=str(request_id),
-                notes=postprocess_result.get("processing_notes"),
-            )
+                # Execute both tasks in parallel using local LLM
+                text_task = postprocess_with_local_llm_text_only(
+                    full_text=original_text,
+                    segments=original_segments,
+                )
+
+                speaker_fix_task = fix_speaker_labels_with_llm(
+                    segments=original_segments,
+                    full_text=original_text,
+                )
+
+                # Wait for both to complete
+                improved_text, corrected_segments = await asyncio.gather(
+                    text_task,
+                    speaker_fix_task,
+                )
+
+                # Save original text
+                raw_result["raw_text"] = original_text
+
+                # Update with results
+                raw_result["text"] = improved_text
+                raw_result["segments"] = corrected_segments
+
+                LOGGER.info(
+                    "paneas_default_complete",
+                    request_id=str(request_id),
+                )
+
+            elif postprocess_mode == "paneas-hybrid":
+                # PANEAS-HYBRID MODE: OpenAI + Local LLM in parallel
+                # - OpenAI improves full text (~24s)
+                # - Local LLM fixes speaker labels (~24s)
+                # Total time: ~24-25s (best of both worlds)
+
+                # Execute both tasks in parallel
+                postprocess_task = postprocess_transcription(
+                    full_text=original_text,
+                    segments=original_segments,
+                    model="gpt-4o-mini",
+                    process_segments=False,
+                )
+
+                speaker_fix_task = fix_speaker_labels_with_llm(
+                    segments=original_segments,
+                    full_text=original_text,
+                )
+
+                # Wait for both to complete
+                postprocess_result, corrected_segments = await asyncio.gather(
+                    postprocess_task,
+                    speaker_fix_task,
+                )
+
+                # Save original text before replacing
+                raw_result["raw_text"] = original_text
+
+                # Update with improved full text (from OpenAI)
+                improved_text = postprocess_result["improved_text"]
+                raw_result["text"] = improved_text
+
+                # Update segments with corrected speakers (from local LLM)
+                raw_result["segments"] = corrected_segments
+
+                LOGGER.info(
+                    "paneas_hybrid_complete",
+                    request_id=str(request_id),
+                    notes=postprocess_result.get("processing_notes"),
+                )
+
+            elif postprocess_mode == "paneas-large":
+                # PANEAS-LARGE MODE: OpenAI for both tasks in parallel
+                # - OpenAI improves full text
+                # - OpenAI fixes speaker labels
+                # Both run in parallel using OpenAI
+
+                from services.transcription_postprocess import fix_speaker_labels_with_openai
+
+                # Execute both tasks in parallel using OpenAI
+                text_task = postprocess_transcription(
+                    full_text=original_text,
+                    segments=original_segments,
+                    model="gpt-4o-mini",
+                    process_segments=False,
+                )
+
+                speaker_fix_task = fix_speaker_labels_with_openai(
+                    segments=original_segments,
+                    full_text=original_text,
+                )
+
+                # Wait for both to complete
+                postprocess_result, corrected_segments = await asyncio.gather(
+                    text_task,
+                    speaker_fix_task,
+                )
+
+                # Save original text
+                raw_result["raw_text"] = original_text
+
+                # Update with results
+                raw_result["text"] = postprocess_result["improved_text"]
+                raw_result["segments"] = corrected_segments
+
+                LOGGER.info(
+                    "paneas_large_complete",
+                    request_id=str(request_id),
+                    notes=postprocess_result.get("processing_notes"),
+                )
+
+            else:
+                LOGGER.warning(
+                    "unknown_postprocess_mode",
+                    request_id=str(request_id),
+                    mode=postprocess_mode,
+                )
+
         except Exception as e:
             LOGGER.error(
                 "llm_postprocess_failed",

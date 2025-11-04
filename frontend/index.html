@@ -516,37 +516,49 @@
             <div class="playground__content">
                 <!-- Real-time Tab -->
                 <div class="playground__panel playground__panel--active" data-content="realtime">
-                    <div class="playground-card">
-                        <h3 class="playground-card__title">Configuração</h3>
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="apiBase">API Base URL</label>
-                                <input id="apiBase" type="text" placeholder="Auto-detectado" />
-                            </div>
-                            <div class="form-group">
-                                <label for="authToken">Bearer Token</label>
-                                <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
-                                <small style="color: #64748b; display: block; margin-top: 8px;">
-                                    Para solicitar uma API Key, envie email para: <strong>joao.vitor@paneas.com</strong>
-                                </small>
-                            </div>
-                            <div class="form-group">
-                                <label for="chunkSize">Chunk (ms)</label>
-                                <input id="chunkSize" type="number" min="200" max="2000" step="100" value="800" />
-                            </div>
-                            <div class="form-group form-group--checkbox">
-                                <input id="insightToggle" type="checkbox" checked />
-                                <label for="insightToggle">Insights</label>
-                            </div>
-                            <div class="form-group">
-                                <label for="insightModel">Modelo Insights</label>
-                                <input id="insightModel" type="text" value="paneas-q32b" />
+                    <!-- Collapsible Configuration -->
+                    <div class="config-collapsible">
+                        <button class="config-toggle" id="configToggle">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6M1 12h6m6 0h6"/>
+                            </svg>
+                            Configurações Avançadas
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="config-content" id="configContent">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="apiBase">API Base URL</label>
+                                    <input id="apiBase" type="text" placeholder="Auto-detectado" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="authToken">Bearer Token</label>
+                                    <input id="authToken" type="text" value="token_abc123" autocomplete="off" />
+                                    <small style="color: #64748b; display: block; margin-top: 8px;">
+                                        Para solicitar uma API Key, envie email para: <strong>joao.vitor@paneas.com</strong>
+                                    </small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chunkSize">Chunk (ms)</label>
+                                    <input id="chunkSize" type="number" min="200" max="2000" step="100" value="900" />
+                                </div>
+                                <div class="form-group form-group--checkbox">
+                                    <input id="insightToggle" type="checkbox" />
+                                    <label for="insightToggle">Insights</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="insightModel">Modelo Insights</label>
+                                    <input id="insightModel" type="text" value="paneas-q32b" />
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="playground-card">
-                        <h3 class="playground-card__title">Captura de Áudio</h3>
+                    <!-- Controls Row -->
+                    <div class="controls-row">
                         <div class="button-group">
                             <button id="startButton" class="btn btn--primary btn--lg">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -566,43 +578,108 @@
                                 <span>Escutando...</span>
                             </div>
                         </div>
+
+                        <!-- Connection Indicator -->
+                        <div class="connection-indicator" id="connectionIndicator">
+                            <span class="connection-dot connection-dot--disconnected"></span>
+                            <span class="connection-text">Desconectado</span>
+                        </div>
                     </div>
 
-                    <div class="results-grid">
-                        <div class="playground-card playground-card--tall">
-                            <div class="card__header">
-                                <h3 class="playground-card__title">Transcrição</h3>
-                                <div class="badges">
-                                    <span class="badge" id="sessionId">Inativa</span>
+                    <!-- Audio Visualizer -->
+                    <div class="audio-visualizer-container hidden" id="audioVisualizerContainer">
+                        <canvas id="audioVisualizer" class="audio-visualizer"></canvas>
+                    </div>
+
+                    <!-- Results Grid (3 columns) -->
+                    <div class="realtime-grid">
+                        <!-- Left Column: Stats Cards -->
+                        <div class="stats-column">
+                            <div class="stat-card">
+                                <div class="stat-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                        <rect x="7" y="7" width="10" height="3"/>
+                                        <rect x="7" y="14" width="10" height="3"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-card__content">
+                                    <span class="stat-card__value" id="batchCount">0</span>
+                                    <span class="stat-card__label">Lotes</span>
                                 </div>
                             </div>
-                            <div class="stats-row">
-                                <div class="stat">
-                                    <span class="stat__value" id="batchCount">0</span>
-                                    <span class="stat__label">Lotes</span>
+
+                            <div class="stat-card">
+                                <div class="stat-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="9" y1="15" x2="15" y2="15"/>
+                                    </svg>
                                 </div>
-                                <div class="stat">
-                                    <span class="stat__value" id="tokenCount">0</span>
-                                    <span class="stat__label">Tokens</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat__value" id="audioSeconds">0</span>
-                                    <span class="stat__label">Segundos</span>
+                                <div class="stat-card__content">
+                                    <span class="stat-card__value" id="tokenCount">0</span>
+                                    <span class="stat-card__label">Tokens</span>
                                 </div>
                             </div>
-                            <div class="transcript-box" id="transcriptText">
-                                <p class="placeholder">Inicie a captura para ver a transcrição em tempo real...</p>
+
+                            <div class="stat-card">
+                                <div class="stat-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-card__content">
+                                    <span class="stat-card__value" id="audioSeconds">0</span>
+                                    <span class="stat-card__label">Segundos</span>
+                                </div>
                             </div>
-                            <div class="timeline" id="batchTimeline"></div>
+
+                            <div class="stat-card stat-card--language">
+                                <div class="stat-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-card__content">
+                                    <select id="realtimeLanguage" class="language-select-realtime">
+                                        <option value="pt" data-flag="🇧🇷">🇧🇷 PT-BR</option>
+                                        <option value="es" data-flag="🇪🇸">🇪🇸 ES</option>
+                                    </select>
+                                    <span class="stat-card__label">Idioma de Saída</span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="playground-card">
-                            <div class="card__header">
-                                <h3 class="playground-card__title">Insights</h3>
-                                <span class="badge badge--success" id="insightStatus">Ativos</span>
+                        <!-- Center Column: Transcription -->
+                        <div class="transcript-column">
+                            <div class="playground-card playground-card--tall">
+                                <h3 class="playground-card__title">Transcrição em Tempo Real</h3>
+                                <div class="transcript-box" id="transcriptText">
+                                    <p class="placeholder">Inicie a captura para ver a transcrição em tempo real...</p>
+                                </div>
                             </div>
-                            <div class="insights-container" id="insightsList">
-                                <p class="placeholder">Aguardando insights...</p>
+                        </div>
+
+                        <!-- Right Column: Insights + Timeline -->
+                        <div class="sidebar-column">
+                            <div class="playground-card">
+                                <div class="card__header">
+                                    <h3 class="playground-card__title">Insights</h3>
+                                    <span class="badge badge--secondary" id="insightStatus">Inativos</span>
+                                </div>
+                                <div class="insights-container" id="insightsList">
+                                    <p class="placeholder">Aguardando insights...</p>
+                                </div>
+                            </div>
+
+                            <div class="playground-card">
+                                <h3 class="playground-card__title">Timeline</h3>
+                                <div class="timeline" id="batchTimeline">
+                                    <p class="placeholder">Aguardando processamento...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -626,8 +703,18 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="asrLanguage">Idioma</label>
+                            <div class="language-selector">
+                                <select id="asrLanguage" class="language-select">
+                                    <option value="pt" data-flag="🇧🇷">🇧🇷 Português (Brasil)</option>
+                                    <option value="es" data-flag="🇪🇸">🇪🇸 Español (España)</option>
+                                </select>
+                            </div>
+                            <small class="help-text">Selecione o idioma predominante no áudio</small>
+                        </div>
+                        <div class="form-group">
                             <label class="checkbox-label">
-                                <input type="checkbox" id="asrEnableDiarization" />
+                                <input type="checkbox" id="asrEnableDiarization" checked />
                                 <span>Ativar Diarização com PyAnnote</span>
                                 <small class="help-text">Identifica diferentes speakers automaticamente (tempo adicional: ~30s)</small>
                             </label>
@@ -644,9 +731,28 @@
                                 <small class="help-text">Melhora a transcrição corrigindo erros, pontuação e formatação</small>
                             </label>
                         </div>
+                        <div class="form-group" id="asrPostprocessModeGroup" style="display:block;">
+                            <label>Modelos de Pós-Processamento</label>
+                            <div style="margin-top: 8px;">
+                                <label class="checkbox-label" style="margin-bottom: 8px; display: block;">
+                                    <input type="radio" name="asrPostprocessMode" value="paneas-default" />
+                                    <span style="font-weight: 600;">Default</span>
+                                    <small class="help-text" style="display: block; margin-left: 24px;">Modelo Paneas local para processamento rápido e eficiente (+20s)</small>
+                                </label>
+                                <label class="checkbox-label" style="margin-bottom: 8px; display: block;">
+                                    <input type="radio" name="asrPostprocessMode" value="paneas-hybrid" checked />
+                                    <span style="font-weight: 600;">Hybrid</span>
+                                    <small class="help-text" style="display: block; margin-left: 24px;">Combina modelos Paneas para melhor custo-benefício (+17s)</small>
+                                </label>
+                                <label class="checkbox-label" style="display: block;">
+                                    <input type="radio" name="asrPostprocessMode" value="paneas-large" />
+                                    <span style="font-weight: 600;">Large</span>
+                                    <small class="help-text" style="display: block; margin-left: 24px;">Modelo Paneas avançado para qualidade máxima (+24s)</small>
+                                </label>
+                            </div>
+                        </div>
                         <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
-                        <div class="result-box result-box--large" id="asrResult" style="font-family: 'JetBrains Mono', monospace; text-align: left;">
-                            <p class="placeholder">Aguardando arquivo...</p>
+                        <div class="result-box result-box--large" id="asrResult" style="font-family: 'JetBrains Mono', monospace;">
                         </div>
                     </div>
                 </div>
@@ -671,7 +777,6 @@
                         </div>
                         <button class="btn btn--primary btn--lg" id="ocrButton">Executar OCR</button>
                         <div class="result-box result-box--large" id="ocrResult">
-                            <p class="placeholder">Aguardando arquivo...</p>
                         </div>
                     </div>
                 </div>

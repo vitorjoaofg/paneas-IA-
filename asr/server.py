@@ -7,6 +7,7 @@ import os
 import tempfile
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from queue import Queue
@@ -180,6 +181,106 @@ class ASRService:
         return self._registry.list_specs()
 
     @staticmethod
+    def _run_asr_and_diar_parallel(
+        model: WhisperModel,
+        audio: np.ndarray,
+        sample_rate: int,
+        options: Dict[str, Any],
+    ) -> Tuple[List[Any], Any, Optional[List[Dict[str, Any]]]]:
+        """
+        Run ASR and diarization in parallel to reduce latency.
+        Returns: (segments_list, info, diar_segments_or_none)
+        """
+        logger.info("Starting parallel ASR + Diarization")
+        parallel_start = time.perf_counter()
+
+        opts = dict(options)
+        language = opts.get("language", "auto")
+        if language and str(language).lower() == "auto":
+            language = None
+
+        vad_threshold = float(opts.get("vad_threshold", 0.5))
+        vad_filter = _to_bool(opts.get("vad_filter", True), default=True)
+        beam_size = int(opts.get("beam_size", 5))
+        num_speakers = opts.get("num_speakers", None)
+        if num_speakers:
+            try:
+                num_speakers = int(num_speakers)
+            except (ValueError, TypeError):
+                num_speakers = None
+
+        asr_result = {}
+        diar_result = {}
+
+        def run_asr():
+            """Run Whisper transcription"""
+            asr_start = time.perf_counter()
+            try:
+                segments, info = model.transcribe(
+                    audio,
+                    beam_size=beam_size,
+                    best_of=1,
+                    vad_filter=vad_filter,
+                    vad_parameters=dict(
+                        threshold=vad_threshold,
+                        min_speech_duration_ms=250,
+                        min_silence_duration_ms=500,
+                    ),
+                    language=language,
+                )
+                asr_elapsed = time.perf_counter() - asr_start
+                logger.info(f"ASR completed in {asr_elapsed:.2f}s (parallel)")
+                asr_result["segments"] = list(segments)
+                asr_result["info"] = info
+                asr_result["success"] = True
+            except Exception as e:
+                logger.error(f"ASR failed in parallel execution: {e}")
+                asr_result["success"] = False
+                asr_result["error"] = str(e)
+
+        def run_diar():
+            """Run PyAnnote diarization"""
+            diar_start = time.perf_counter()
+            try:
+                diar_segments = _diarize(audio, sample_rate, num_speakers=num_speakers)
+                diar_elapsed = time.perf_counter() - diar_start
+                logger.info(f"Diarization completed in {diar_elapsed:.2f}s (parallel), got {len(diar_segments)} segments")
+                diar_result["segments"] = diar_segments
+                diar_result["success"] = True
+            except Exception as e:
+                logger.error(f"Diarization failed in parallel execution: {e}")
+                diar_result["success"] = False
+                diar_result["error"] = str(e)
+                diar_result["segments"] = []
+
+        # Execute both in parallel using ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            futures = [
+                executor.submit(run_asr),
+                executor.submit(run_diar),
+            ]
+
+            # Wait for both to complete
+            for future in as_completed(futures):
+                try:
+                    future.result()
+                except Exception as e:
+                    logger.error(f"Parallel task failed: {e}")
+
+        parallel_elapsed = time.perf_counter() - parallel_start
+        logger.info(f"Parallel ASR + Diarization completed in {parallel_elapsed:.2f}s total")
+
+        # Check results
+        if not asr_result.get("success"):
+            raise RuntimeError(f"ASR failed: {asr_result.get('error', 'unknown error')}")
+
+        segments = asr_result["segments"]
+        info = asr_result["info"]
+        diar_segments = diar_result.get("segments") if diar_result.get("success") else None
+
+        return segments, info, diar_segments
+
+    @staticmethod
     def _do_transcribe(
         model: WhisperModel,
         audio: np.ndarray,
@@ -207,23 +308,31 @@ class ASRService:
                 num_speakers = None
 
         logger.info(f"Starting transcription with diarization={enable_diarization}")
-        transcribe_start = time.perf_counter()
 
-        segments, info = model.transcribe(
-            audio,
-            beam_size=beam_size,
-            best_of=1,
-            vad_filter=vad_filter,
-            vad_parameters=dict(
-                threshold=vad_threshold,
-                min_speech_duration_ms=250,
-                min_silence_duration_ms=500,
-            ),
-            language=language,
-        )
-
-        transcribe_elapsed = time.perf_counter() - transcribe_start
-        logger.info(f"Transcription completed in {transcribe_elapsed:.2f} seconds")
+        # OPTIMIZATION: Run ASR + Diarization in parallel when both are needed
+        diar_segments = None
+        if enable_diarization:
+            # Use parallel execution
+            segments, info, diar_segments = ASRService._run_asr_and_diar_parallel(
+                model, audio, sample_rate, options
+            )
+        else:
+            # Original sequential ASR-only path
+            transcribe_start = time.perf_counter()
+            segments, info = model.transcribe(
+                audio,
+                beam_size=beam_size,
+                best_of=1,
+                vad_filter=vad_filter,
+                vad_parameters=dict(
+                    threshold=vad_threshold,
+                    min_speech_duration_ms=250,
+                    min_silence_duration_ms=500,
+                ),
+                language=language,
+            )
+            transcribe_elapsed = time.perf_counter() - transcribe_start
+            logger.info(f"Transcription completed in {transcribe_elapsed:.2f} seconds")
 
         duration_seconds = float(len(audio) / sample_rate)
         elapsed_ms = int((time.perf_counter() - start) * 1000)
@@ -247,12 +356,9 @@ class ASRService:
                 ]
             result_segments.append(result)
 
-        if enable_diarization:
-            diar_start = time.perf_counter()
-            logger.info(f"Starting diarization for {duration_seconds:.1f} seconds of audio, num_speakers={num_speakers}")
-            diar_segments = _diarize(audio, sample_rate, num_speakers=num_speakers)
-            diar_elapsed = time.perf_counter() - diar_start
-            logger.info(f"Diarization completed in {diar_elapsed:.2f} seconds, got {len(diar_segments)} segments")
+        if enable_diarization and diar_segments:
+            # Diarization was already executed in parallel, diar_segments is populated
+            logger.info(f"Using diarization results from parallel execution, got {len(diar_segments)} segments")
 
             # Apply LLM correction if enabled and we have segments
             if LLM_DIARIZATION_ENABLED and diar_segments and options.get("enable_llm_correction", True):

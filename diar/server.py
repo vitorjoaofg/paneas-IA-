@@ -1,7 +1,9 @@
 import hashlib
+import json
 import os
 import shutil
 import tempfile
+import time
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -13,6 +15,11 @@ from prometheus_fastapi_instrumentator import Instrumentator
 
 CACHE_DIR = Path(os.environ.get("EMBEDDINGS_CACHE", "/cache/embeddings"))
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+# Cache for diarization results (separate from embeddings cache)
+DIARIZATION_CACHE_DIR = Path(os.environ.get("DIARIZATION_CACHE", "/cache/diarization"))
+DIARIZATION_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+DIARIZATION_CACHE_TTL_HOURS = int(os.environ.get("DIARIZATION_CACHE_TTL_HOURS", "24"))
 
 # Set HuggingFace cache to use local models
 os.environ["HF_HOME"] = "/models"
@@ -88,9 +95,53 @@ class DiarizationEngine:
 
         return consolidated_segments
 
+    def _merge_consecutive_same_speaker(self, segments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Merge consecutive segments from the same speaker that are very close together.
+        This fixes common segmentation errors where a single utterance is split.
+
+        QUALITY IMPROVEMENT: Reduces false speaker changes
+        """
+        if not segments or len(segments) <= 1:
+            return segments
+
+        merged = []
+        current = segments[0].copy()
+
+        for next_seg in segments[1:]:
+            # If same speaker and gap is very small (< 0.5s), merge
+            gap = next_seg["start"] - current["end"]
+
+            if next_seg["speaker"] == current["speaker"] and gap < 0.5:
+                # Merge: extend current segment to include next
+                current["end"] = next_seg["end"]
+                print(f"[MERGE] Merged {current['speaker']} segments: {current['start']:.2f}-{current['end']:.2f} (gap: {gap:.2f}s)")
+            else:
+                # Different speaker or gap too large: save current and start new
+                merged.append(current)
+                current = next_seg.copy()
+
+        # Don't forget the last segment
+        merged.append(current)
+
+        print(f"[POSTPROCESS] Segments reduced: {len(segments)} -> {len(merged)} (merged {len(segments) - len(merged)})")
+        return merged
+
     def diarize(self, audio_path: Path, num_speakers: int | None) -> List[Dict[str, Any]]:
         # Optimize with speaker constraints to avoid unnecessary clustering
         print(f"[DIAR] Diarizing with num_speakers={num_speakers}")
+
+        # QUALITY IMPROVEMENT: Tuned parameters for better accuracy
+        diarization_params = {
+            # Minimum duration of a speech segment (in seconds)
+            # Higher = fewer false short segments, better quality
+            "min_duration_on": 0.5,  # Default: 0.0, aumentado para evitar segmentos muito curtos
+
+            # Minimum duration of silence between segments (in seconds)
+            # Higher = less sensitive to brief pauses
+            "min_duration_off": 0.3,  # Default: 0.0, evita trocas em pausas breves
+        }
+
         if num_speakers:
             print(f"[DIAR] Forcing exactly {num_speakers} speakers")
             diarization = self.pipeline(
@@ -98,6 +149,7 @@ class DiarizationEngine:
                 num_speakers=num_speakers,
                 min_speakers=num_speakers,
                 max_speakers=num_speakers,
+                **diarization_params,
             )
         else:
             # When not specified, constrain to reasonable range (1-10 speakers)
@@ -105,7 +157,9 @@ class DiarizationEngine:
                 audio_path,
                 min_speakers=1,
                 max_speakers=10,
+                **diarization_params,
             )
+
         segments = []
         for turn, _, speaker in diarization.itertracks(yield_label=True):
             segments.append(
@@ -119,6 +173,9 @@ class DiarizationEngine:
         # Consolidate to exact number of speakers if specified
         if num_speakers and num_speakers > 0:
             segments = self._consolidate_speakers(segments, num_speakers)
+
+        # QUALITY IMPROVEMENT: Post-process to merge consecutive segments from same speaker
+        segments = self._merge_consecutive_same_speaker(segments)
 
         return segments
 
@@ -146,11 +203,30 @@ async def diarize_endpoint(
     print(f"[ENDPOINT] Received request with num_speakers={num_speakers}")
     contents = await file.read()
     audio_hash = hashlib.sha256(contents).hexdigest()
+
+    # OPTIMIZATION: Check diarization result cache first
+    speakers_str = str(num_speakers) if num_speakers else "auto"
+    result_cache_file = DIARIZATION_CACHE_DIR / f"{audio_hash}_{speakers_str}.json"
+
+    if result_cache_file.exists():
+        # Check if cache is still valid (TTL)
+        cache_age_hours = (time.time() - result_cache_file.stat().st_mtime) / 3600
+        if cache_age_hours < DIARIZATION_CACHE_TTL_HOURS:
+            print(f"[CACHE HIT] Using cached diarization result (age: {cache_age_hours:.1f}h)")
+            with open(result_cache_file, "r") as f:
+                cached_data = json.load(f)
+            return {"segments": cached_data["segments"]}
+        else:
+            print(f"[CACHE EXPIRED] Cache is {cache_age_hours:.1f}h old (TTL: {DIARIZATION_CACHE_TTL_HOURS}h)")
+
+    print("[CACHE MISS] Processing diarization")
+
+    # Check wav file cache
     cache_file = CACHE_DIR / f"{audio_hash}.wav"
 
     # Process from memory using temporary file to reduce I/O
     if cache_file.exists():
-        # Use cached file if available
+        # Use cached wav file if available
         segments = engine.diarize(cache_file, num_speakers)
     else:
         # Process from memory using temporary file, then cache result
@@ -163,11 +239,20 @@ async def diarize_endpoint(
         try:
             # Process from temporary file
             segments = engine.diarize(tmp_path, num_speakers)
-            # Save to cache for future requests (use shutil.move for cross-filesystem support)
+            # Save wav to cache for future requests
             shutil.move(str(tmp_path), str(cache_file))
         except Exception:
             # Clean up temp file on error
             tmp_path.unlink(missing_ok=True)
             raise
+
+    # OPTIMIZATION: Cache the diarization result
+    try:
+        result_cache_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(result_cache_file, "w") as f:
+            json.dump({"segments": segments, "num_speakers": num_speakers}, f)
+        print(f"[CACHE SAVE] Saved diarization result to cache")
+    except Exception as e:
+        print(f"[CACHE WARNING] Failed to save result cache: {e}")
 
     return {"segments": segments}

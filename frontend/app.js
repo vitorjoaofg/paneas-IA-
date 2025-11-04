@@ -615,6 +615,95 @@ function setStatus(message, tone = "idle") {
     }
 }
 
+// Connection status indicator
+function updateConnectionStatus(status) {
+    const indicator = document.getElementById('connectionIndicator');
+    if (!indicator) return;
+
+    const dot = indicator.querySelector('.connection-dot');
+    const text = indicator.querySelector('.connection-text');
+
+    // Remove all status classes
+    dot.classList.remove('connection-dot--connected', 'connection-dot--connecting', 'connection-dot--disconnected');
+
+    if (status === 'connected') {
+        dot.classList.add('connection-dot--connected');
+        text.textContent = 'Conectado';
+    } else if (status === 'connecting') {
+        dot.classList.add('connection-dot--connecting');
+        text.textContent = 'Conectando...';
+    } else {
+        dot.classList.add('connection-dot--disconnected');
+        text.textContent = 'Desconectado';
+    }
+}
+
+// Audio visualizer
+let visualizerCanvas = null;
+let visualizerContext = null;
+let visualizerAnimationId = null;
+
+function initAudioVisualizer() {
+    const container = document.getElementById('audioVisualizerContainer');
+    visualizerCanvas = document.getElementById('audioVisualizer');
+
+    if (!visualizerCanvas) return;
+
+    visualizerContext = visualizerCanvas.getContext('2d');
+    visualizerCanvas.width = visualizerCanvas.offsetWidth * window.devicePixelRatio;
+    visualizerCanvas.height = 80 * window.devicePixelRatio;
+
+    container.classList.remove('hidden');
+
+    // Start animation
+    animateVisualizer();
+}
+
+function animateVisualizer() {
+    if (!visualizerContext || !visualizerCanvas) return;
+
+    const ctx = visualizerContext;
+    const width = visualizerCanvas.width;
+    const height = visualizerCanvas.height;
+    const barCount = 60;
+    const barWidth = width / barCount;
+
+    ctx.clearRect(0, 0, width, height);
+
+    // Simple animated bars (will be replaced with actual audio data if needed)
+    for (let i = 0; i < barCount; i++) {
+        const barHeight = Math.random() * height * 0.7 + height * 0.1;
+        const x = i * barWidth;
+        const y = (height - barHeight) / 2;
+
+        // Gradient
+        const gradient = ctx.createLinearGradient(0, y, 0, y + barHeight);
+        gradient.addColorStop(0, 'rgba(124, 106, 255, 0.8)');
+        gradient.addColorStop(1, 'rgba(85, 81, 255, 0.4)');
+
+        ctx.fillStyle = gradient;
+        ctx.fillRect(x + 1, y, barWidth - 2, barHeight);
+    }
+
+    visualizerAnimationId = requestAnimationFrame(animateVisualizer);
+}
+
+function stopAudioVisualizer() {
+    const container = document.getElementById('audioVisualizerContainer');
+    if (container) {
+        container.classList.add('hidden');
+    }
+
+    if (visualizerAnimationId) {
+        cancelAnimationFrame(visualizerAnimationId);
+        visualizerAnimationId = null;
+    }
+
+    if (visualizerContext && visualizerCanvas) {
+        visualizerContext.clearRect(0, 0, visualizerCanvas.width, visualizerCanvas.height);
+    }
+}
+
 function updateStats() {
     if (ui.batchCount) ui.batchCount.textContent = state.batches.toString();
     if (ui.tokenCount) ui.tokenCount.textContent = state.tokens.toString();
@@ -717,6 +806,7 @@ function renderInsights() {
     ui.insights.innerHTML = "";
     if (!state.insights.length) {
         const p = document.createElement("p");
+        p.className = "placeholder";
         p.textContent = "Nenhum insight emitido ainda.";
         ui.insights.appendChild(p);
         return;
@@ -1016,6 +1106,10 @@ function cleanupSession(message = "Sessao finalizada.") {
     state.streamSource = "mic";
 
     setStatus(message, "idle");
+
+    // Stop visualizer and update connection status
+    stopAudioVisualizer();
+    updateConnectionStatus('disconnected');
 }
 
 function ensureChunkSize() {
@@ -1213,6 +1307,7 @@ async function openSession(options = {}) {
     }
 
     setStatus("Conectando ao gateway...", "connecting");
+    updateConnectionStatus('connecting');
 
     if (source === "mic") {
         try {
@@ -1220,6 +1315,7 @@ async function openSession(options = {}) {
         } catch (err) {
             console.error("Permissao de microfone negada", err);
             setStatus("Permissao de microfone negada ou indisponivel.", "error");
+            updateConnectionStatus('disconnected');
             stopAudio();
             return;
         }
@@ -1239,6 +1335,10 @@ async function openSession(options = {}) {
         ui.stopButton.disabled = false;
         state.streaming = true;
 
+        // Update connection status and initialize visualizer
+        updateConnectionStatus('connected');
+        initAudioVisualizer();
+
         // Captura room_id e role se fornecidos
         const roomId = source === "mic" && ui.roomId ? (ui.roomId.value.trim() || null) : null;
         const role = source === "mic" && ui.roleSelector ? (ui.roleSelector.value || null) : null;
@@ -1248,9 +1348,14 @@ async function openSession(options = {}) {
             state.role = role;
         }
 
+        // Get selected output language
+        const realtimeLanguageSelect = document.getElementById('realtimeLanguage');
+        const outputLanguage = realtimeLanguageSelect ? realtimeLanguageSelect.value : 'pt';
+        console.log("[Real-time] Idioma de saída selecionado:", outputLanguage);
+
         const payload = {
             event: "start",
-            language: "pt",
+            language: outputLanguage,
             sample_rate: state.targetSampleRate,
             encoding: "pcm16",
             model: "whisper/medium",
@@ -1716,34 +1821,119 @@ async function transcribeUploadedAudio() {
         return;
     }
 
+    // Get selected language
+    const language = document.getElementById('asrLanguage')?.value || 'pt';
     // Check if native diarization is enabled
     const enableNativeDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
     // Get number of speakers if diarization is enabled
     const numSpeakers = enableNativeDiarization ? (document.getElementById('asrNumSpeakers')?.value || '2') : null;
     // Check if LLM post-processing is enabled
     const enableLlmPostprocess = document.getElementById('asrEnableLlmPostprocess')?.checked || false;
+    // Get post-processing mode if enabled
+    const postprocessMode = enableLlmPostprocess ? (document.querySelector('input[name="asrPostprocessMode"]:checked')?.value || 'paneas-default') : null;
 
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
+    console.log("[ASR] Idioma selecionado:", language);
     console.log("[ASR] Diarização Nativa (PyAnnote):", enableNativeDiarization ? "ativada" : "desativada");
     if (enableNativeDiarization) {
         console.log("[ASR] Número de speakers:", numSpeakers);
     }
-    console.log("[ASR] Pós-processamento OpenAI:", enableLlmPostprocess ? "ativado" : "desativado");
+    const modeLabelMap = {
+        'paneas-default': 'Default',
+        'paneas-hybrid': 'Hybrid',
+        'paneas-large': 'Large'
+    };
+    console.log("[ASR] Pós-processamento:", enableLlmPostprocess ? `ativado (Modelo: ${modeLabelMap[postprocessMode] || 'Default'})` : "desativado");
 
-    // Show appropriate loading message
-    let loadingMsg = "Enviando áudio para transcrição";
+    // Show processing animation
+    let processingTitle = "Processando Transcrição";
+    let processingDesc = "Analisando áudio";
+
     if (enableNativeDiarization) {
-        loadingMsg += ` com diarização nativa (PyAnnote) - ${numSpeakers} speakers`;
+        processingDesc += ` com diarização de ${numSpeakers} speakers`;
     }
+
+    let detailsText = "";
+
+    // Get audio duration to calculate estimated time
+    let audioDuration = 300; // Default 5 minutes if we can't read it
+    try {
+        const audio = document.createElement('audio');
+        const audioURL = URL.createObjectURL(file);
+        audio.src = audioURL;
+
+        await new Promise((resolve) => {
+            audio.addEventListener('loadedmetadata', () => {
+                audioDuration = Math.ceil(audio.duration);
+                URL.revokeObjectURL(audioURL);
+                console.log('[ASR] Duração do áudio:', audioDuration, 'segundos');
+                resolve();
+            });
+            audio.addEventListener('error', () => {
+                URL.revokeObjectURL(audioURL);
+                console.warn('[ASR] Não foi possível ler duração do áudio, usando padrão');
+                resolve();
+            });
+        });
+    } catch (err) {
+        console.warn('[ASR] Erro ao ler duração do áudio:', err);
+    }
+
+    // Calculate estimated time based on audio duration
+    // Formula: overhead + (duration * factor)
+    let estimatedTime = 20;
     if (enableLlmPostprocess) {
-        loadingMsg += " + pós-processamento";
+        const modeLabel = modeLabelMap[postprocessMode] || 'Hybrid';
+        detailsText = `Pós-processamento com modelo ${modeLabel} será aplicado após transcrição`;
+
+        // Factors based on 5min audio tests:
+        // Base (no postprocess): 20s for 300s = overhead 5s + 0.05*duration
+        // Hybrid: 37s for 300s = overhead 10s + 0.09*duration
+        // Default: 40s for 300s = overhead 10s + 0.10*duration
+        // Large: 44s for 300s = overhead 10s + 0.113*duration
+
+        if (postprocessMode === 'paneas-default') {
+            estimatedTime = Math.ceil(10 + audioDuration * 0.10);
+        } else if (postprocessMode === 'paneas-hybrid') {
+            estimatedTime = Math.ceil(10 + audioDuration * 0.09);
+        } else if (postprocessMode === 'paneas-large') {
+            estimatedTime = Math.ceil(10 + audioDuration * 0.113);
+        }
+    } else {
+        // Base ASR without post-processing
+        estimatedTime = Math.ceil(5 + audioDuration * 0.05);
     }
-    loadingMsg += "...";
-    setOutput(ui.asrResult, loadingMsg);
+
+    console.log('[ASR] Tempo estimado de processamento:', estimatedTime, 'segundos');
+
+    // Clear result box and update button to loading state
+    ui.asrResult.innerHTML = '';
+
+    const uploadButton = document.getElementById('asrUploadButton');
+    const originalButtonText = uploadButton.innerHTML;
+
+    // Update button to loading state
+    uploadButton.disabled = true;
+    uploadButton.innerHTML = `
+        <span class="btn-spinner"></span>
+        Processando... <span id="buttonTimeCounter">0</span>s / ~${estimatedTime}s
+    `;
+
+    // Start seconds counter
+    let elapsedSeconds = 0;
+    const secondsInterval = setInterval(() => {
+        elapsedSeconds++;
+        const counterElement = document.getElementById('buttonTimeCounter');
+        if (counterElement) {
+            counterElement.textContent = elapsedSeconds;
+        }
+    }, 1000);
+
+    window.asrSecondsInterval = secondsInterval;
 
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("language", "pt");
+    formData.append("language", language);
 
     // Enable native diarization if toggle is checked
     if (enableNativeDiarization) {
@@ -1754,6 +1944,7 @@ async function transcribeUploadedAudio() {
     // Enable LLM post-processing if toggle is checked
     if (enableLlmPostprocess) {
         formData.append("enable_llm_postprocess", "true");
+        formData.append("postprocess_mode", postprocessMode);
     }
 
     const base = resolveApiBase();
@@ -1776,6 +1967,9 @@ async function transcribeUploadedAudio() {
         if (!response.ok) {
             const errorText = await response.text();
             console.error("[ASR] Erro na resposta:", errorText);
+            if (window.asrSecondsInterval) clearInterval(window.asrSecondsInterval);
+            uploadButton.disabled = false;
+            uploadButton.innerHTML = originalButtonText;
             setOutput(ui.asrResult, `Erro ${response.status}: ${errorText || "Falha ao processar a transcrição."}`);
             return;
         }
@@ -1783,6 +1977,11 @@ async function transcribeUploadedAudio() {
         const data = await response.json();
         console.log("[ASR] Dados recebidos:", data);
         console.log("[ASR] Tempo de processamento:", elapsedTime + "s");
+
+        // Stop counter and restore button
+        if (window.asrSecondsInterval) clearInterval(window.asrSecondsInterval);
+        uploadButton.disabled = false;
+        uploadButton.innerHTML = originalButtonText;
 
         // Sempre mostrar o JSON formatado
         const resultContainer = document.getElementById('asrResult');
@@ -1803,10 +2002,13 @@ async function transcribeUploadedAudio() {
             }
 
             // Mostrar JSON formatado
-            resultContainer.innerHTML = headerInfo + `<pre style="white-space: pre-wrap; word-wrap: break-word; overflow-x: auto;">${JSON.stringify(data, null, 2)}</pre>`;
+            resultContainer.innerHTML = headerInfo + `<pre style="white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; text-align: left;">${JSON.stringify(data, null, 2)}</pre>`;
         }
     } catch (err) {
         console.error("[ASR] Falha na transcrição por arquivo", err);
+        if (window.asrSecondsInterval) clearInterval(window.asrSecondsInterval);
+        uploadButton.disabled = false;
+        uploadButton.innerHTML = originalButtonText;
         setOutput(ui.asrResult, `Erro: ${err.message || err}`);
     }
 }
@@ -2282,7 +2484,6 @@ async function runOcr() {
     }
 
     console.log("[OCR] Arquivo selecionado:", file.name, file.size, "bytes");
-    setOutput(ui.ocrResult, "Enviando arquivo para OCR...");
 
     const formData = new FormData();
     formData.append("file", file);
@@ -2389,6 +2590,19 @@ function clearChat() {
 }
 
 function bindEvents() {
+    // Config collapsible toggle
+    const configToggle = document.getElementById('configToggle');
+    const configContent = document.getElementById('configContent');
+
+    configToggle?.addEventListener('click', () => {
+        const isActive = configToggle.classList.toggle('active');
+        if (isActive) {
+            configContent.classList.add('active');
+        } else {
+            configContent.classList.remove('active');
+        }
+    });
+
     ui.startButton.addEventListener("click", () => {
         openSession();
     });
@@ -2455,11 +2669,8 @@ function bindEvents() {
         if (!ui.asrResult) {
             return;
         }
-        if (ui.asrFileInput.files && ui.asrFileInput.files.length) {
-            setOutput(ui.asrResult, `Arquivo selecionado: ${ui.asrFileInput.files[0].name}`);
-        } else {
-            setOutput(ui.asrResult, "Aguardando arquivo.");
-        }
+        // Keep result box empty until processing starts
+        ui.asrResult.innerHTML = '';
     });
 
     // Toggle number of speakers field when diarization is enabled
@@ -2471,6 +2682,17 @@ function bindEvents() {
             asrNumSpeakersGroup.style.display = 'block';
         } else {
             asrNumSpeakersGroup.style.display = 'none';
+        }
+    });
+
+    const asrPostprocessCheckbox = document.getElementById('asrEnableLlmPostprocess');
+    const asrPostprocessModeGroup = document.getElementById('asrPostprocessModeGroup');
+
+    asrPostprocessCheckbox?.addEventListener('change', () => {
+        if (asrPostprocessCheckbox.checked) {
+            asrPostprocessModeGroup.style.display = 'block';
+        } else {
+            asrPostprocessModeGroup.style.display = 'none';
         }
     });
 
@@ -2494,13 +2716,42 @@ function bindEvents() {
     ui.ocrButton?.addEventListener("click", async (event) => {
         event.preventDefault();
         console.log("[OCR] Botão clicado - iniciando OCR");
+
+        // Clear result box
+        ui.ocrResult.innerHTML = '';
+
+        // Calculate estimated time for OCR (typically 8-10 seconds for most files)
+        const estimatedTime = 10;
+
+        // Save original button text
+        const originalButtonText = ui.ocrButton.innerHTML;
+
+        // Update button to loading state
         ui.ocrButton.disabled = true;
-        ui.ocrButton.textContent = "Processando...";
+        ui.ocrButton.innerHTML = `
+            <span class="btn-spinner"></span>
+            Processando... <span id="ocrTimeCounter">0</span>s / ~${estimatedTime}s
+        `;
+
+        // Start seconds counter
+        let elapsedSeconds = 0;
+        const secondsInterval = setInterval(() => {
+            elapsedSeconds++;
+            const counterElement = document.getElementById('ocrTimeCounter');
+            if (counterElement) {
+                counterElement.textContent = elapsedSeconds;
+            }
+        }, 1000);
+
+        window.ocrSecondsInterval = secondsInterval;
+
         try {
             await runOcr();
         } finally {
+            // Stop counter and restore button
+            if (window.ocrSecondsInterval) clearInterval(window.ocrSecondsInterval);
             ui.ocrButton.disabled = false;
-            ui.ocrButton.textContent = "Executar OCR";
+            ui.ocrButton.innerHTML = originalButtonText;
         }
     });
 
@@ -2508,11 +2759,8 @@ function bindEvents() {
         if (!ui.ocrResult) {
             return;
         }
-        if (ui.ocrFileInput.files && ui.ocrFileInput.files.length) {
-            setOutput(ui.ocrResult, `Arquivo selecionado: ${ui.ocrFileInput.files[0].name}`);
-        } else {
-            setOutput(ui.ocrResult, "Aguardando arquivo.");
-        }
+        // Keep result box empty until processing starts
+        ui.ocrResult.innerHTML = '';
     });
 
     ui.insightToggle.addEventListener("change", () => {
