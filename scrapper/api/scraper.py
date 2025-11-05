@@ -395,8 +395,26 @@ class TJSPFetcher:
         movimentos_raw = payload.get("movimentos") or []
         movimentos = _parse_movimentos(movimentos_raw)
         inicio, ultima_atualizacao = _movimentacoes_extremos(movimentos)
-        requerente, advogado = _parse_partes(payload.get("partes") or [])
+        requerente, advogado, partes = _parse_partes(payload.get("partes") or [])
         data_audiencia = _parse_data_audiencia(payload.get("audiencias") or [])
+
+        # Parse novos campos estruturados
+        from .models import Audiencia, Publicacao, Documento
+
+        audiencias = []
+        for aud in (payload.get("audiencias") or []):
+            if isinstance(aud, dict):
+                audiencias.append(Audiencia(**aud))
+
+        publicacoes = []
+        for pub in (payload.get("publicacoes") or []):
+            if isinstance(pub, dict):
+                publicacoes.append(Publicacao(**pub))
+
+        documentos = []
+        for doc in (payload.get("documentos") or []):
+            if isinstance(doc, dict):
+                documentos.append(Documento(**doc))
 
         valor_causa = payload.get("valorCausa")
         if valor_causa:
@@ -417,12 +435,16 @@ class TJSPFetcher:
             juiz=payload.get("juiz"),
             requerente=requerente,
             advogadoConsumidor=advogado,
+            partes=partes,
             dataAudiencia=data_audiencia,
             situacaoProcessual=situacao,
             inicio=inicio,
             ultima_atualizacao=ultima_atualizacao,
             linkPublico=payload.get("linkPublico"),
             movimentos=movimentos,
+            audiencias=audiencias,
+            publicacoes=publicacoes,
+            documentos=documentos,
         )
 
     async def _expand_details_sections(self) -> None:
@@ -559,6 +581,87 @@ async def _apply_contra_parte_filter(
     return filtered
 
 
+def _filtrar_por_data_distribuicao(processos: List[Dict[str, Any]], ano_minimo: int = 2022) -> List[Dict[str, Any]]:
+    """
+    Filtra processos por data de distribuição >= ano_minimo.
+    Para TJSP, a data está em 'distribuicao' como string "DD/MM/YYYY HH:MM:SS".
+    """
+    filtrados = []
+    for proc in processos:
+        distribuicao = proc.get("distribuicao")
+        if not distribuicao:
+            continue  # Sem data, pula
+
+        try:
+            # Parse DD/MM/YYYY HH:MM:SS ou DD/MM/YYYY
+            if " " in distribuicao:
+                data_str = distribuicao.split(" ")[0]  # Pega só a data
+            else:
+                data_str = distribuicao
+
+            partes = data_str.split("/")
+            if len(partes) == 3:
+                dia, mes, ano = int(partes[0]), int(partes[1]), int(partes[2])
+                if ano >= ano_minimo:
+                    filtrados.append(proc)
+        except (ValueError, IndexError):
+            # Se falhar o parse, inclui o processo por segurança
+            filtrados.append(proc)
+
+    return filtrados
+
+
+async def _try_tjsp_search_variation(
+    nome_parte: str,
+    query: TJSPProcessoListQuery,
+    settings: Settings
+) -> List[Dict[str, Any]]:
+    """
+    Tenta uma única variação de busca no TJSP.
+    """
+    modified_query = TJSPProcessoQuery(
+        numero_processo=query.numero_processo,
+        nome_parte=nome_parte,
+        nome_completo=query.nome_completo,
+        documento_parte=query.documento_parte,
+        nome_advogado=query.nome_advogado,
+        numero_oab=query.numero_oab,
+        numero_precatoria=query.numero_precatoria,
+        numero_documento_delegacia=query.numero_documento_delegacia,
+        numero_cda=query.numero_cda,
+        foro=query.foro,
+        uf=query.uf,
+    )
+
+    all_processes: List[Dict[str, Any]] = []
+    async with TJSPFetcher(settings) as fetcher:
+        await fetcher.navigate_to_search()
+        await fetcher.submit_query_for_listing(modified_query)
+
+        current_page = 1
+        while True:
+            page_data = await _extract_listing_page(fetcher.page, settings, current_page)
+            all_processes.extend(page_data.get("processes") or [])
+
+            # Limitar a max_paginas
+            if current_page >= query.max_paginas:
+                break
+
+            next_page_locator = fetcher.page.locator(
+                f"a.paginacao[href*='paginaConsulta={current_page + 1}']"
+            )
+            next_page_exists = await next_page_locator.count() > 0
+            if not next_page_exists:
+                break
+
+            current_page += 1
+            navigated = await fetcher.go_to_listing_page(current_page)
+            if not navigated:
+                break
+
+    return all_processes
+
+
 async def fetch_tjsp_process_list(
     query: TJSPProcessoListQuery, settings: Settings | None = None
 ) -> TJSPProcessoListResponse:
@@ -621,6 +724,54 @@ async def fetch_tjsp_process_list(
                 possui_mais_paginas = False
                 break
 
+        # Aplicar filtro temporal (processos >= 2022)
+        all_processes = _filtrar_por_data_distribuicao(all_processes, ano_minimo=2022)
+
+        # Se nenhum processo encontrado e busca é por nome, tentar variações
+        if len(all_processes) == 0 and query.nome_parte and not query.numero_processo:
+            nome_original = query.nome_parte.strip()
+
+            # Verificar se já tem sufixo
+            has_suffix = any(
+                sufixo in nome_original.upper()
+                for sufixo in ["SA", "S/A", "S.A.", "LTDA", "LTDA.", "ME", "EPP", "EIRELI"]
+            )
+
+            if not has_suffix:
+                # Tentar sufixos comuns
+                sufixos = ["SA", "S/A", "LTDA", "S.A."]
+                for sufixo in sufixos:
+                    nome_variacao = f"{nome_original} {sufixo}"
+                    print(f"Tentando variação: {nome_variacao}")
+
+                    # Criar query com variação
+                    query_variacao = TJSPProcessoListQuery(
+                        nome_parte=nome_variacao,
+                        nome_completo=query.nome_completo,
+                        max_paginas=query.max_paginas,
+                        max_processos=query.max_processos,
+                        contra_parte=query.contra_parte,
+                        documento_parte=query.documento_parte,
+                        nome_advogado=query.nome_advogado,
+                        numero_oab=query.numero_oab,
+                        foro=query.foro,
+                        uf=query.uf,
+                    )
+
+                    # Tentar busca com variação
+                    try:
+                        processos_variacao = await _try_tjsp_search_variation(nome_variacao, query_variacao, settings)
+                        processos_variacao = _filtrar_por_data_distribuicao(processos_variacao, ano_minimo=2022)
+
+                        if len(processos_variacao) > 0:
+                            print(f"✓ Encontrados {len(processos_variacao)} processos com variação '{nome_variacao}'")
+                            all_processes = processos_variacao
+                            total_processos = len(processos_variacao)
+                            break
+                    except Exception as e:
+                        print(f"Erro ao buscar variação '{nome_variacao}': {e}")
+                        continue
+
         final_processes = all_processes
 
         if query.contra_parte:
@@ -635,7 +786,7 @@ async def fetch_tjsp_process_list(
         processos_model = [ProcessoResumoTJSP(**item) for item in final_processes]
 
         return TJSPProcessoListResponse(
-            total_processos=total_processos,
+            total_processos=total_processos or len(final_processes),
             paginas_consultadas=paginas_consultadas,
             possui_mais_paginas=possui_mais_paginas,
             filtro_contra_parte=query.contra_parte,
@@ -693,15 +844,123 @@ _EXTRACT_SCRIPT = r"""
     })();
 
     const audiencias = (() => {
-        const table = document.querySelector('#tabelaTodasAudiencias, #tabelaAudiencias');
         const result = [];
-        if (!table) return result;
-        table.querySelectorAll('tr').forEach((tr) => {
-            const cells = Array.from(tr.querySelectorAll('th, td')).map((cell) => norm(cell.textContent) || '');
-            if (cells.some(Boolean)) {
-                result.push(cells);
+        // Tentar múltiplas estratégias para encontrar audiências
+        const audTables = document.querySelectorAll('#tabelaTodasAudiencias, #tabelaAudiencias, table[id*="audiencia"], table[id*="Audiencia"]');
+
+        audTables.forEach(table => {
+            table.querySelectorAll('tr').forEach((tr, idx) => {
+                if (idx === 0) return; // Skip header
+                const cells = tr.querySelectorAll('td');
+                if (cells.length >= 2) {
+                    const dataCell = cells[0]?.textContent?.trim();
+                    const tipoCell = cells[1]?.textContent?.trim();
+                    const localCell = cells[2]?.textContent?.trim();
+                    const statusCell = cells[3]?.textContent?.trim();
+
+                    if (dataCell || tipoCell) {
+                        result.push({
+                            data: dataCell || null,
+                            tipo: tipoCell || null,
+                            local: localCell || null,
+                            status: statusCell || null,
+                            observacoes: cells.length > 4 ? cells[4]?.textContent?.trim() : null
+                        });
+                    }
+                }
+            });
+        });
+
+        // Fallback: procurar por texto "Audiência" e extrair contexto
+        if (result.length === 0) {
+            document.querySelectorAll('*').forEach(elem => {
+                const text = elem.textContent;
+                if (text && /audiência/i.test(text) && text.length < 200) {
+                    const parent = elem.closest('tr, div');
+                    if (parent && !parent.querySelector('table')) {
+                        result.push({
+                            data: null,
+                            tipo: null,
+                            local: null,
+                            status: null,
+                            observacoes: norm(parent.textContent)
+                        });
+                    }
+                }
+            });
+        }
+
+        return result;
+    })();
+
+    const publicacoes = (() => {
+        const result = [];
+        // Procurar seções de publicações/intimações
+        document.querySelectorAll('[id*="publicacao"], [id*="intimacao"], [class*="publicacao"], [class*="intimacao"]').forEach(section => {
+            const text = norm(section.textContent);
+            if (text && text.length > 10 && text.length < 500) {
+                // Tentar extrair data
+                const dataMatch = text.match(/(\d{2}\/\d{2}\/\d{4})/);
+                result.push({
+                    data: dataMatch ? dataMatch[1] : null,
+                    tipo: section.id || section.className || 'Publicação',
+                    destinatario: null,
+                    descricao: text,
+                    link: null
+                });
             }
         });
+
+        // Procurar links de publicações
+        document.querySelectorAll('a[href*="publicacao"], a[href*="intimacao"]').forEach(link => {
+            const text = norm(link.textContent);
+            if (text) {
+                result.push({
+                    data: null,
+                    tipo: 'Link de Publicação',
+                    destinatario: null,
+                    descricao: text,
+                    link: link.href
+                });
+            }
+        });
+
+        return result;
+    })();
+
+    const documentos = (() => {
+        const result = [];
+        // Procurar links de documentos/petições
+        document.querySelectorAll('a[href*="documento"], a[href*="peticao"], a[href*="download"]').forEach(link => {
+            const text = norm(link.textContent);
+            if (text && text.length > 3) {
+                const parent = link.closest('tr, div');
+                const dataMatch = parent?.textContent.match(/(\d{2}\/\d{2}\/\d{4})/);
+
+                result.push({
+                    nome: text,
+                    tipo: /petição|peticao/i.test(text) ? 'Petição' : /decisão|decisao/i.test(text) ? 'Decisão' : 'Documento',
+                    data_juntada: dataMatch ? dataMatch[1] : null,
+                    autor: null,
+                    link: link.href
+                });
+            }
+        });
+
+        // Procurar spans/divs com ícones de documento
+        document.querySelectorAll('.documento, .anexo, .arquivo').forEach(elem => {
+            const text = norm(elem.textContent);
+            if (text && text.length > 3 && !result.some(d => d.nome === text)) {
+                result.push({
+                    nome: text,
+                    tipo: 'Documento',
+                    data_juntada: null,
+                    autor: null,
+                    link: null
+                });
+            }
+        });
+
         return result;
     })();
 
@@ -721,6 +980,8 @@ _EXTRACT_SCRIPT = r"""
         partes,
         movimentos,
         audiencias,
+        publicacoes,
+        documentos,
         distribuicao,
         linkPublico: window.location.href,
     };
@@ -728,18 +989,68 @@ _EXTRACT_SCRIPT = r"""
 """
 
 
-def _parse_partes(rows: List[Dict[str, str]]) -> tuple[Optional[str], Optional[str]]:
+def _parse_partes(rows: List[Dict[str, str]]) -> tuple[Optional[str], Optional[str], List]:
+    """
+    Parse all parties from TJSP (both plaintiff and defendant).
+    Returns: (requerente, advogado_consumidor, partes_estruturadas)
+
+    Keep old return values for backward compatibility, but add structured list.
+    """
+    from .models import ParteTJSP, AdvogadoTJSP
+
+    requerente = None
+    advogado_consumidor = None
+    partes_estruturadas = []
+
     for row in rows:
-        tipo = (row.get("tipo") or "").lower()
+        tipo = (row.get("tipo") or "").strip()
         conteudo = row.get("conteudo") or ""
+
         if not tipo or not conteudo:
             continue
-        if "reqte" in tipo or "autor" in tipo:
-            partes = conteudo.split("Advogado:")
-            requerente = partes[0].replace("\u00a0", " ").strip() if partes else None
-            advogado = partes[1].replace("\u00a0", " ").strip() if len(partes) > 1 else None
-            return requerente or None, advogado or None
-    return None, None
+
+        tipo_lower = tipo.lower().rstrip(": ")
+
+        # Separar nome da parte e advogado(s)
+        # Formato típico: "Nome da Parte\nAdvogado: Nome Advogado - OAB 123/SP"
+        partes_split = conteudo.split("Advogado:")
+        nome_parte = partes_split[0].replace("\u00a0", " ").strip()
+
+        # Parse advogados
+        advogados = []
+        if len(partes_split) > 1:
+            adv_text = partes_split[1].replace("\u00a0", " ").strip()
+            # Pode ter múltiplos advogados separados por vírgula ou quebra de linha
+            adv_list = re.split(r'[,\n]+', adv_text)
+            for adv in adv_list:
+                adv = adv.strip()
+                if adv:
+                    # Extrair OAB se houver (formato: "Nome - OAB 123/SP" ou "Nome OAB: 123/SP")
+                    oab_match = re.search(r'OAB[:\s-]+([\d/A-Z]+)', adv, re.IGNORECASE)
+                    oab = oab_match.group(1) if oab_match else None
+
+                    # Remover parte do OAB do nome
+                    nome_adv = re.sub(r'[-–]?\s*OAB[:\s-]+[\d/A-Z]+', '', adv, flags=re.IGNORECASE).strip()
+
+                    if nome_adv:
+                        advogados.append(AdvogadoTJSP(nome=nome_adv, oab=oab))
+
+        # Criar parte estruturada
+        parte = ParteTJSP(
+            tipo=tipo,
+            nome=nome_parte,
+            documento=None,  # TJSP não expõe CPF/CNPJ diretamente na consulta pública
+            advogados=advogados
+        )
+        partes_estruturadas.append(parte)
+
+        # Manter lógica antiga para compatibilidade
+        if "reqte" in tipo_lower or "autor" in tipo_lower:
+            if not requerente:  # Pegar primeiro autor encontrado
+                requerente = nome_parte
+                advogado_consumidor = advogados[0].nome if advogados else None
+
+    return requerente, advogado_consumidor, partes_estruturadas
 
 
 def _parse_movimentos(rows: List[Dict[str, str]]) -> List[Movimento]:

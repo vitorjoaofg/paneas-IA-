@@ -13,10 +13,37 @@ from .models import (
     PartePJE,
     AdvogadoPJE,
     MovimentoPJE,
+    Audiencia,
+    Publicacao,
+    Documento,
 )
 
 
 BASE_URL = "https://pje1g.trf1.jus.br/consultapublica/ConsultaPublica/listView.seam"
+
+
+def _filtrar_por_data_pje(processos: List[ProcessoResumoPJE], ano_minimo: int = 2022) -> List[ProcessoResumoPJE]:
+    """
+    Filtra processos PJE por data de distribuição >= ano_minimo.
+    PJE tem dataDistribuicao como string "DD/MM/YYYY".
+    """
+    filtrados = []
+    for proc in processos:
+        if not proc.dataDistribuicao:
+            continue  # Sem data, pula
+
+        try:
+            # Parse DD/MM/YYYY
+            partes = proc.dataDistribuicao.split("/")
+            if len(partes) == 3:
+                dia, mes, ano = int(partes[0]), int(partes[1]), int(partes[2])
+                if ano >= ano_minimo:
+                    filtrados.append(proc)
+        except (ValueError, IndexError, AttributeError):
+            # Se falhar o parse, inclui o processo por segurança
+            filtrados.append(proc)
+
+    return filtrados
 
 
 async def fetch_pje_process_list(query: PJEProcessoQuery) -> PJEProcessoListResponse:
@@ -77,6 +104,9 @@ async def fetch_pje_process_list(query: PJEProcessoQuery) -> PJEProcessoListResp
                     if len(processos) > 0:
                         # Found results with this suffix
                         break
+
+        # Aplicar filtro temporal (processos >= 2022)
+        processos = _filtrar_por_data_pje(processos, ano_minimo=2022)
 
         return PJEProcessoListResponse(
             total_processos=len(processos),
@@ -340,6 +370,163 @@ def _parse_process_detail(html: str, link_publico: str) -> ProcessoPJE:
                     descricao = parts[1].strip()
                     movimentos.append(MovimentoPJE(data=data, descricao=descricao))
 
+    # Extract audiências
+    audiencias = []
+    # Strategy 1: Look for tables/sections with "audiência" in id or class
+    audiencia_sections = soup.find_all(["div", "table"], id=re.compile(".*[Aa]udiencia.*", re.IGNORECASE)) + \
+                         soup.find_all(["div", "table"], class_=re.compile(".*[Aa]udiencia.*", re.IGNORECASE))
+
+    for section in audiencia_sections:
+        table = section if section.name == "table" else section.find("table")
+        if table:
+            rows = table.find_all("tr")
+            for row in rows:
+                cells = row.find_all("td")
+                if len(cells) >= 2:
+                    # Extract data and details
+                    data_text = cells[0].get_text(strip=True) if cells[0] else None
+                    tipo_text = cells[1].get_text(strip=True) if len(cells) > 1 and cells[1] else None
+                    local_text = cells[2].get_text(strip=True) if len(cells) > 2 and cells[2] else None
+                    status_text = cells[3].get_text(strip=True) if len(cells) > 3 and cells[3] else None
+                    obs_text = cells[4].get_text(strip=True) if len(cells) > 4 and cells[4] else None
+
+                    if data_text or tipo_text:
+                        audiencias.append(Audiencia(
+                            data=data_text,
+                            tipo=tipo_text,
+                            local=local_text,
+                            status=status_text,
+                            observacoes=obs_text
+                        ))
+
+    # Strategy 2: Search for text containing "Audiência" as fallback
+    if not audiencias:
+        for elem in soup.find_all(string=re.compile(r"[Aa]udi[êe]ncia", re.IGNORECASE)):
+            parent = elem.parent
+            if parent and parent.name in ['td', 'div', 'span']:
+                text = parent.get_text(strip=True)
+                if len(text) < 500:
+                    audiencias.append(Audiencia(
+                        data=None,
+                        tipo=None,
+                        local=None,
+                        status=None,
+                        observacoes=text
+                    ))
+                    break  # Only take the first one to avoid duplicates
+
+    # Extract publicações/intimações
+    publicacoes = []
+    # Look for sections with "publicação" or "intimação"
+    pub_sections = soup.find_all(["div", "table"], id=re.compile(".*[Pp]ublica.*|.*[Ii]ntima.*", re.IGNORECASE)) + \
+                   soup.find_all(["div", "table"], class_=re.compile(".*[Pp]ublica.*|.*[Ii]ntima.*", re.IGNORECASE))
+
+    for section in pub_sections:
+        table = section if section.name == "table" else section.find("table")
+        if table:
+            rows = table.find_all("tr")
+            for row in rows:
+                cells = row.find_all("td")
+                if len(cells) >= 1:
+                    text = row.get_text(strip=True)
+                    # Extract date if present
+                    data_match = re.search(r'(\d{2}/\d{2}/\d{4})', text)
+                    data = data_match.group(1) if data_match else None
+
+                    # Check for links
+                    link_elem = row.find("a")
+                    link = link_elem.get("href") if link_elem else None
+
+                    if len(text) > 10 and len(text) < 1000:
+                        publicacoes.append(Publicacao(
+                            data=data,
+                            tipo="Publicação",
+                            destinatario=None,
+                            descricao=text,
+                            link=link
+                        ))
+        else:
+            # Plain div with text
+            text = section.get_text(strip=True)
+            if len(text) > 10 and len(text) < 1000:
+                data_match = re.search(r'(\d{2}/\d{2}/\d{4})', text)
+                publicacoes.append(Publicacao(
+                    data=data_match.group(1) if data_match else None,
+                    tipo="Publicação",
+                    destinatario=None,
+                    descricao=text,
+                    link=None
+                ))
+
+    # Extract documentos/anexos
+    documentos = []
+    # Look for links with "documento", "petição", "download", "anexo"
+    doc_links = soup.find_all("a", href=re.compile(".*[Dd]ocumento.*|.*[Pp]eti.*|.*[Dd]ownload.*|.*[Aa]nexo.*", re.IGNORECASE))
+
+    for link in doc_links:
+        nome = link.get_text(strip=True)
+        if nome and len(nome) > 3:
+            href = link.get("href", "")
+
+            # Try to extract date from parent context
+            parent = link.find_parent(["tr", "div"])
+            data_match = None
+            if parent:
+                parent_text = parent.get_text(strip=True)
+                data_match = re.search(r'(\d{2}/\d{2}/\d{4})', parent_text)
+
+            # Determine document type based on name
+            tipo = "Documento"
+            nome_lower = nome.lower()
+            if "petição" in nome_lower or "peticao" in nome_lower:
+                tipo = "Petição"
+            elif "decisão" in nome_lower or "decisao" in nome_lower:
+                tipo = "Decisão"
+            elif "sentença" in nome_lower or "sentenca" in nome_lower:
+                tipo = "Sentença"
+
+            documentos.append(Documento(
+                nome=nome,
+                tipo=tipo,
+                data_juntada=data_match.group(1) if data_match else None,
+                autor=None,
+                link=href if href.startswith("http") else None
+            ))
+
+    # Also look for document sections by id/class
+    doc_sections = soup.find_all(["div", "table"], id=re.compile(".*[Dd]ocumento.*|.*[Pp]eti.*", re.IGNORECASE)) + \
+                   soup.find_all(["div", "table"], class_=re.compile(".*[Dd]ocumento.*|.*[Pp]eti.*", re.IGNORECASE))
+
+    for section in doc_sections:
+        # Find all spans or divs that might contain document names
+        for elem in section.find_all(["span", "div", "td"]):
+            text = elem.get_text(strip=True)
+            # Skip if too short or too long
+            if len(text) < 5 or len(text) > 200:
+                continue
+            # Skip if already added
+            if any(doc.nome == text for doc in documentos):
+                continue
+            # Check if looks like a document name
+            if any(keyword in text.lower() for keyword in ["petição", "peticao", "documento", "decisão", "decisao", "sentença", "sentenca", "despacho"]):
+                documentos.append(Documento(
+                    nome=text,
+                    tipo="Documento",
+                    data_juntada=None,
+                    autor=None,
+                    link=None
+                ))
+
+    # Extract valor da causa
+    valor_causa = None
+    for prop_view in property_views:
+        label_div = prop_view.find("div", class_="name")
+        if label_div and "Valor da causa" in label_div.get_text(strip=True):
+            value_div = prop_view.find("div", class_="value")
+            if value_div:
+                valor_causa = value_div.get_text(strip=True)
+                break
+
     return ProcessoPJE(
         numeroProcesso=numero_processo,
         classe=classe,
@@ -352,6 +539,10 @@ def _parse_process_detail(html: str, link_publico: str) -> ProcessoPJE:
         situacao=situacao,
         linkPublico=link_publico,
         movimentos=movimentos,
+        audiencias=audiencias,
+        publicacoes=publicacoes,
+        documentos=documentos,
+        valorCausa=valor_causa,
     )
 
 
@@ -390,9 +581,53 @@ def _extract_parties_from_table(section) -> List[PartePJE]:
             # Remove document from name
             nome = nome.split("-")[0].strip() if "-" in nome else nome.split("CNPJ")[0].split("CPF")[0].strip()
 
-        # For now, we don't extract lawyers from the summary table
-        # They would need to be extracted from a detailed party page
+        # Extract lawyers from the table
+        # In PJE, lawyers can be in the same cell (separated by line breaks) or in adjacent cells
         advogados = []
+
+        # Strategy 1: Check if there are additional cells with lawyer info
+        if len(cells) > 1:
+            # Second cell might contain lawyer information
+            lawyer_text = cells[1].get_text(strip=True)
+            if lawyer_text:
+                # Parse multiple lawyers (can be separated by newlines or commas)
+                lawyer_lines = [l.strip() for l in lawyer_text.split('\n') if l.strip()]
+                for lawyer_line in lawyer_lines:
+                    # Extract lawyer name and situacao
+                    # Format can be: "Nome do Advogado" or "Nome do Advogado (Ativo)"
+                    situacao = None
+                    nome_adv = lawyer_line
+
+                    if "(" in lawyer_line and lawyer_line.endswith(")"):
+                        parts = lawyer_line.rsplit("(", 1)
+                        nome_adv = parts[0].strip()
+                        situacao = parts[1].rstrip(")").strip()
+
+                    if nome_adv and len(nome_adv) > 3:
+                        advogados.append(AdvogadoPJE(nome=nome_adv, situacao=situacao))
+
+        # Strategy 2: Check within the first cell for lawyer info after line breaks
+        if not advogados and "\n" in party_text:
+            lines = [l.strip() for l in party_text.split('\n') if l.strip()]
+            # First line is usually the party name, subsequent lines might be lawyers
+            if len(lines) > 1:
+                for line in lines[1:]:
+                    # Skip if it looks like role or document info
+                    if any(keyword in line.lower() for keyword in ['cpf', 'cnpj', 'autor', 'réu', 'requer']):
+                        continue
+
+                    # Extract situacao if present
+                    situacao = None
+                    nome_adv = line
+
+                    if "(" in line and line.endswith(")"):
+                        parts = line.rsplit("(", 1)
+                        nome_adv = parts[0].strip()
+                        situacao = parts[1].rstrip(")").strip()
+
+                    # Check if this looks like a person's name (has at least 2 words)
+                    if nome_adv and len(nome_adv.split()) >= 2:
+                        advogados.append(AdvogadoPJE(nome=nome_adv, situacao=situacao))
 
         if nome and len(nome) > 3:
             parties.append(PartePJE(nome=nome, documento=documento, advogados=advogados))

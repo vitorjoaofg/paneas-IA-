@@ -1,4 +1,5 @@
 from celery import Celery
+from celery.schedules import crontab
 
 from config import get_settings
 
@@ -21,4 +22,19 @@ celery_app.conf.update(
     beat_scheduler="celery.beat:PersistentScheduler",
 )
 
+# Configuração de tarefas agendadas
+celery_app.conf.beat_schedule = {
+    # Coleta diária de processos judiciais (todos os tribunais)
+    "coleta-diaria-processos": {
+        "task": "coleta.todos_tribunais",
+        "schedule": crontab(hour=3, minute=0),  # 3h da manhã todo dia
+        "options": {
+            "expires": 3600 * 6,  # Expira em 6 horas se não executar
+        },
+    },
+}
+
 celery_app.autodiscover_tasks(["services"], force=True)
+
+# Import tasks explicitly to ensure they're registered
+import services.coleta_tasks  # noqa: F401, E402

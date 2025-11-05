@@ -9,6 +9,7 @@ __all__ = [
     "health",
     "llm",
     "ocr",
+    "processos",
     "scrapper",
     "tts",
 ]

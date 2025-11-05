@@ -87,6 +87,45 @@ class Movimento(BaseModel):
     descricao: str
 
 
+class Audiencia(BaseModel):
+    """Modelo para audiências (todos os tribunais)"""
+    data: Optional[str] = None  # Data/hora da audiência
+    tipo: Optional[str] = None  # Tipo: Inicial, Instrução, Julgamento, etc
+    local: Optional[str] = None  # Sala/local
+    status: Optional[str] = None  # Realizada, Agendada, Cancelada
+    observacoes: Optional[str] = None
+
+
+class Publicacao(BaseModel):
+    """Modelo para publicações/intimações"""
+    data: Optional[str] = None
+    tipo: Optional[str] = None
+    destinatario: Optional[str] = None
+    descricao: Optional[str] = None
+    link: Optional[str] = None
+
+
+class Documento(BaseModel):
+    """Modelo para documentos/anexos"""
+    nome: str
+    tipo: Optional[str] = None  # Petição, Decisão, Sentença, etc
+    data_juntada: Optional[str] = None
+    autor: Optional[str] = None
+    link: Optional[str] = None
+
+
+class AdvogadoTJSP(BaseModel):
+    nome: str
+    oab: Optional[str] = None
+
+
+class ParteTJSP(BaseModel):
+    tipo: str  # "Autor", "Réu", "Requerente", "Requerido", etc.
+    nome: str
+    documento: Optional[str] = None  # CPF/CNPJ
+    advogados: list[AdvogadoTJSP] = Field(default_factory=list)
+
+
 class ProcessoTJSP(BaseModel):
     uf: Literal["SP"]
     numeroProcesso: str
@@ -105,6 +144,10 @@ class ProcessoTJSP(BaseModel):
     ultima_atualizacao: Optional[str]
     linkPublico: str
     movimentos: list[Movimento] = Field(default_factory=list)
+    partes: list[ParteTJSP] = Field(default_factory=list)
+    audiencias: list[Audiencia] = Field(default_factory=list)
+    publicacoes: list[Publicacao] = Field(default_factory=list)
+    documentos: list[Documento] = Field(default_factory=list)
 
 
 class TJSPProcessoListQuery(TJSPProcessoQuery):
@@ -178,6 +221,10 @@ class ProcessoPJE(BaseModel):
     situacao: Optional[str] = None
     linkPublico: str
     movimentos: list[MovimentoPJE] = Field(default_factory=list)
+    audiencias: list[Audiencia] = Field(default_factory=list)
+    publicacoes: list[Publicacao] = Field(default_factory=list)
+    documentos: list[Documento] = Field(default_factory=list)
+    valorCausa: Optional[str] = None
 
 
 class PJEProcessoQuery(BaseModel):
@@ -281,6 +328,10 @@ class ProcessoTJRJ(BaseModel):
     situacao: Optional[str] = None
     linkPublico: str
     movimentos: list[Movimento] = Field(default_factory=list)
+    audiencias: list[Audiencia] = Field(default_factory=list)
+    publicacoes: list[Publicacao] = Field(default_factory=list)
+    documentos: list[Documento] = Field(default_factory=list)
+    partes: list[dict] = Field(default_factory=list)  # Estruturado: tipo, nome, documento, advogados
 
 
 class TJRJProcessoListResponse(BaseModel):

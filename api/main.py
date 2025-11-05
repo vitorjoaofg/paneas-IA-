@@ -11,7 +11,7 @@ from config import get_settings
 from middleware.logging import LoggingMiddleware
 from middleware.rate_limit import RateLimitMiddleware
 from middleware.request_id import RequestIDMiddleware
-from routers import align, analytics, asr, asr_stream, diar, health, llm, ocr, scrapper, tts, api_keys, auth
+from routers import align, analytics, asr, asr_stream, diar, health, llm, ocr, scrapper, tts, api_keys, auth, processos
 from services.http_client import close_http_client
 from services.redis_client import close_redis
 from services.db_client import get_db_pool, close_db_pool
@@ -73,6 +73,7 @@ app.include_router(tts.router)
 app.include_router(llm.router)
 app.include_router(analytics.router)
 app.include_router(scrapper.router)
+app.include_router(processos.router)
 app.include_router(api_keys.router)
 
 # Serve frontend static files

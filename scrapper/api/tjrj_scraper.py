@@ -22,6 +22,9 @@ from .models import (
     ProcessoTJRJ,
     TJRJProcessoListResponse,
     TJRJProcessoQuery,
+    Audiencia,
+    Publicacao,
+    Documento,
 )
 
 BASE_URL = "https://www3.tjrj.jus.br/consultaprocessual/"
@@ -418,10 +421,10 @@ class TJRJFetcher:
         if query.nome_parte:
             await self.frame.fill("#nomeParte", query.nome_parte, timeout=3000)
 
-        # 5. Fill Ano Inicial e Final - Use 2024-2025 for better results
+        # 5. Fill Ano Inicial e Final - Use 2022-2025 for last 3 years
         import datetime
         current_year = datetime.datetime.now().year
-        ano_inicial = "2024"  # Changed from 2020 to 2024
+        ano_inicial = "2022"  # Collect processes from last 3 years
         ano_final = str(current_year)
 
         await self.frame.fill("#anoInicial1", ano_inicial, timeout=3000)
@@ -709,7 +712,10 @@ class TJRJFetcher:
                 reu: null,
                 advogados: [],
                 situacao: null,
-                movimentos: []
+                movimentos: [],
+                audiencias: [],
+                publicacoes: [],
+                documentos: []
             };
 
             // TJRJ usa <label name="campo"> para os dados
@@ -817,6 +823,140 @@ class TJRJFetcher:
                 }
             }
 
+            // Audiências - buscar por tabelas ou seções com "audiência"
+            const audienciaKeywords = /audi[êe]ncia/i;
+            document.querySelectorAll('table, div[class*="audiencia"], div[id*="audiencia"]').forEach(elem => {
+                const text = elem.textContent;
+                if (audienciaKeywords.test(text)) {
+                    // Try to extract from table
+                    const rows = elem.querySelectorAll('tr');
+                    rows.forEach((row, idx) => {
+                        if (idx === 0) return; // Skip header
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 2) {
+                            const dataCell = cells[0]?.textContent?.trim();
+                            const tipoCell = cells[1]?.textContent?.trim();
+                            const localCell = cells[2]?.textContent?.trim();
+                            const statusCell = cells[3]?.textContent?.trim();
+
+                            if (dataCell || tipoCell) {
+                                data.audiencias.push({
+                                    data: dataCell || null,
+                                    tipo: tipoCell || null,
+                                    local: localCell || null,
+                                    status: statusCell || null,
+                                    observacoes: cells.length > 4 ? cells[4]?.textContent?.trim() : null
+                                });
+                            }
+                        }
+                    });
+
+                    // If no rows found, just extract as observacoes
+                    if (rows.length === 0 && text.length < 500) {
+                        data.audiencias.push({
+                            data: null,
+                            tipo: null,
+                            local: null,
+                            status: null,
+                            observacoes: text.trim()
+                        });
+                    }
+                }
+            });
+
+            // Publicações/Intimações
+            const publicacaoKeywords = /publica[çc][ãa]o|intima[çc][ãa]o/i;
+            document.querySelectorAll('div, section, table').forEach(elem => {
+                const text = elem.textContent;
+                const elemId = elem.id || '';
+                const elemClass = elem.className || '';
+
+                if (publicacaoKeywords.test(text) || publicacaoKeywords.test(elemId) || publicacaoKeywords.test(elemClass)) {
+                    // Check for links
+                    const links = elem.querySelectorAll('a');
+                    links.forEach(link => {
+                        const linkText = link.textContent.trim();
+                        const href = link.href;
+                        if (linkText && linkText.length > 3) {
+                            const dataMatch = link.closest('tr, div')?.textContent.match(/\\d{2}\\/\\d{2}\\/\\d{4}/);
+                            data.publicacoes.push({
+                                data: dataMatch ? dataMatch[0] : null,
+                                tipo: 'Publicação',
+                                destinatario: null,
+                                descricao: linkText,
+                                link: href || null
+                            });
+                        }
+                    });
+
+                    // If no links but has text content
+                    if (links.length === 0 && text.length > 10 && text.length < 1000) {
+                        const dataMatch = text.match(/\\d{2}\\/\\d{2}\\/\\d{4}/);
+                        data.publicacoes.push({
+                            data: dataMatch ? dataMatch[0] : null,
+                            tipo: 'Publicação',
+                            destinatario: null,
+                            descricao: text.trim(),
+                            link: null
+                        });
+                    }
+                }
+            });
+
+            // Documentos/Anexos - buscar links com keywords
+            const docKeywords = /documento|peti[çc][ãa]o|download|anexo|decis[ãa]o|senten[çc]a|despacho/i;
+            document.querySelectorAll('a').forEach(link => {
+                const linkText = link.textContent.trim();
+                const href = link.href || '';
+
+                if (docKeywords.test(linkText) || docKeywords.test(href)) {
+                    if (linkText && linkText.length > 3 && linkText.length < 200) {
+                        // Extract date from parent context
+                        const parent = link.closest('tr, div');
+                        const dataMatch = parent?.textContent.match(/\\d{2}\\/\\d{2}\\/\\d{4}/);
+
+                        // Determine document type
+                        let tipo = 'Documento';
+                        const lowerText = linkText.toLowerCase();
+                        if (/peti[çc][ãa]o/i.test(lowerText)) tipo = 'Petição';
+                        else if (/decis[ãa]o/i.test(lowerText)) tipo = 'Decisão';
+                        else if (/senten[çc]a/i.test(lowerText)) tipo = 'Sentença';
+                        else if (/despacho/i.test(lowerText)) tipo = 'Despacho';
+
+                        data.documentos.push({
+                            nome: linkText,
+                            tipo: tipo,
+                            data_juntada: dataMatch ? dataMatch[0] : null,
+                            autor: null,
+                            link: href.startsWith('http') ? href : null
+                        });
+                    }
+                }
+            });
+
+            // Also look for document sections by id/class
+            document.querySelectorAll('div[id*="documento"], div[class*="documento"], section[id*="documento"]').forEach(section => {
+                const spans = section.querySelectorAll('span, div.documento-nome, td');
+                spans.forEach(span => {
+                    const text = span.textContent.trim();
+                    if (text.length >= 5 && text.length <= 200) {
+                        // Skip if already added
+                        if (data.documentos.some(d => d.nome === text)) return;
+
+                        // Check if looks like document name
+                        if (docKeywords.test(text)) {
+                            data.documentos.push({
+                                nome: text,
+                                tipo: 'Documento',
+                                data_juntada: null,
+                                autor: null,
+                                link: null
+                            });
+                        }
+                    }
+                });
+            });
+
             return data;
         }
         """
@@ -825,6 +965,11 @@ class TJRJFetcher:
             data = await self.frame.evaluate(extraction_script)
 
             print(f"Extracted data: numeroProcesso={data.get('numeroProcesso')}, classe={data.get('classe')}, autor={data.get('autor')}")
+
+            # Convert extracted data to Pydantic models
+            audiencias = [Audiencia(**aud) for aud in data.get("audiencias", [])]
+            publicacoes = [Publicacao(**pub) for pub in data.get("publicacoes", [])]
+            documentos = [Documento(**doc) for doc in data.get("documentos", [])]
 
             return ProcessoTJRJ(
                 uf="RJ",
@@ -841,7 +986,10 @@ class TJRJFetcher:
                 advogados=data.get("advogados", []),
                 situacao=data.get("situacao"),
                 linkPublico=f"{BASE_URL}#/processo/{numero_processo}",
-                movimentos=data.get("movimentos", [])
+                movimentos=data.get("movimentos", []),
+                audiencias=audiencias,
+                publicacoes=publicacoes,
+                documentos=documentos,
             )
         except Exception as e:
             print(f"Error extracting process details: {e}")
@@ -967,5 +1115,8 @@ async def fetch_tjrj_process_detail(numero_processo: str) -> ProcessoTJRJ:
                 advogados=[],
                 situacao=None,
                 linkPublico=f"{BASE_URL}#/processo/{numero_processo}",
-                movimentos=[]
+                movimentos=[],
+                audiencias=[],
+                publicacoes=[],
+                documentos=[],
             )
