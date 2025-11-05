@@ -628,6 +628,48 @@ async function submitScrapperConsulta() {
 
                 setOutput(ui.scrapperConsultaResult, prettyPrintJson(detailData));
             }
+        } else if (tribunal === "tjrj") {
+            // For TJRJ, similar to PJE - first list to get the process, then fetch details
+            setOutput(ui.scrapperConsultaResult, "Buscando processos TJRJ...");
+
+            // Check if user provided numero_processo directly
+            if (payload.numero_processo && !payload.nome_parte && !payload.documento_parte) {
+                const data = await callScrapperEndpoint("processos/tjrj/consulta", {
+                    method: "POST",
+                    payload,
+                });
+                setOutput(ui.scrapperConsultaResult, prettyPrintJson(data));
+            } else {
+                // First, list processes with the given filters
+                const listData = await callScrapperEndpoint("processos/tjrj/listar", {
+                    method: "POST",
+                    payload,
+                });
+
+                if (!listData.processos || listData.processos.length === 0) {
+                    setOutput(ui.scrapperConsultaResult, "Nenhum processo encontrado com os filtros fornecidos.");
+                    return;
+                }
+
+                // Get the first process
+                const firstProcess = listData.processos[0];
+                const numeroProcesso = firstProcess.numeroProcesso;
+
+                if (!numeroProcesso) {
+                    setOutput(ui.scrapperConsultaResult, "Processo encontrado mas sem número disponível.");
+                    return;
+                }
+
+                setOutput(ui.scrapperConsultaResult, `Encontrado ${listData.processos.length} processo(s). Buscando detalhes...`);
+
+                // Now fetch the detailed information
+                const detailData = await callScrapperEndpoint("processos/tjrj/consulta", {
+                    method: "POST",
+                    payload: { numero_processo: numeroProcesso },
+                });
+
+                setOutput(ui.scrapperConsultaResult, prettyPrintJson(detailData));
+            }
         } else {
             // TJSP uses the same endpoint for both list and individual query
             const endpoint = "processos/consulta";
@@ -670,8 +712,8 @@ async function submitScrapperList() {
         }
     }
 
-    // Remove TJSP-specific fields when using PJE
-    if (tribunal === "pje") {
+    // Remove TJSP-specific fields when using PJE or TJRJ
+    if (tribunal === "pje" || tribunal === "tjrj") {
         delete payload.nome_completo;
         delete payload.max_paginas;
         delete payload.max_processos;
@@ -690,7 +732,13 @@ async function submitScrapperList() {
     }
 
     try {
-        const endpoint = tribunal === "pje" ? "processos/pje/listar" : "processos/listar";
+        let endpoint = "processos/listar";
+        if (tribunal === "pje") {
+            endpoint = "processos/pje/listar";
+        } else if (tribunal === "tjrj") {
+            endpoint = "processos/tjrj/listar";
+        }
+
         const data = await callScrapperEndpoint(endpoint, {
             method: "POST",
             payload,

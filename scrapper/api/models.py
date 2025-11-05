@@ -211,3 +211,81 @@ class PJEProcessoListResponse(BaseModel):
         description="Total de processos reportados pelo PJE para a consulta informada.",
     )
     processos: list[ProcessoResumoPJE] = Field(default_factory=list)
+
+
+# TJRJ Models
+class ProcessoResumoTJRJ(BaseModel):
+    numeroProcesso: str
+    classe: Optional[str] = None
+    assunto: Optional[str] = None
+    comarca: Optional[str] = None
+    vara: Optional[str] = None
+    partesRelacionadas: list[str] = Field(default_factory=list)
+    dataDistribuicao: Optional[str] = None
+    linkPublico: str
+
+
+class TJRJProcessoQuery(BaseModel):
+    """Input payload accepted by the TJRJ scraping tool."""
+
+    numero_processo: Optional[str] = Field(
+        default=None,
+        description="Número completo do processo (formato CNJ).",
+        example="0000001-00.2020.8.19.0001",
+    )
+    nome_parte: Optional[str] = Field(default=None, description="Nome da parte.")
+    documento_parte: Optional[str] = Field(default=None, description="CPF ou CNPJ da parte.")
+    nome_advogado: Optional[str] = Field(default=None, description="Nome do advogado.")
+    numero_oab: Optional[str] = Field(default=None, description="Número da OAB.")
+    instancia: Optional[str] = Field(
+        default="1",
+        description="Instância: 1 (1ª instância), 2 (2ª instância), etc.",
+    )
+    competencia: Optional[str] = Field(
+        default=None,
+        description="Competência: CIVEL, CRIMINAL, FAZENDA_PUBLICA, etc.",
+    )
+    comarca: Optional[str] = Field(
+        default=None,
+        description="Comarca (distrito judicial). Ex: Rio de Janeiro, Niterói, etc.",
+    )
+    uf: Literal["RJ"] = Field(default="RJ", description="UF do tribunal consultado (somente RJ suportado).")
+
+    @model_validator(mode="after")
+    def ensure_at_least_one_filter(cls, model: "TJRJProcessoQuery") -> "TJRJProcessoQuery":
+        filters = [
+            model.numero_processo,
+            model.nome_parte,
+            model.documento_parte,
+            model.nome_advogado,
+            model.numero_oab,
+        ]
+        if not any(filters):
+            raise ValueError("É necessário informar ao menos um critério de busca.")
+        return model
+
+
+class ProcessoTJRJ(BaseModel):
+    uf: Literal["RJ"]
+    numeroProcesso: str
+    classe: Optional[str] = None
+    assunto: Optional[str] = None
+    comarca: Optional[str] = None
+    vara: Optional[str] = None
+    juiz: Optional[str] = None
+    valorCausa: Optional[str] = None
+    dataDistribuicao: Optional[str] = None
+    autor: Optional[str] = None
+    reu: Optional[str] = None
+    advogados: list[str] = Field(default_factory=list)
+    situacao: Optional[str] = None
+    linkPublico: str
+    movimentos: list[Movimento] = Field(default_factory=list)
+
+
+class TJRJProcessoListResponse(BaseModel):
+    total_processos: Optional[int] = Field(
+        default=None,
+        description="Total de processos reportados pelo TJRJ para a consulta informada.",
+    )
+    processos: list[ProcessoResumoTJRJ] = Field(default_factory=list)

@@ -36,6 +36,21 @@ async def consulta_processo_pje(payload: Dict[str, Any]) -> Dict[str, Any]:
     return response.json()
 
 
+async def listar_processos_tjrj(payload: Dict[str, Any]) -> Dict[str, Any]:
+    client = await get_http_client()
+    url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/v1/processos/tjrj/listar"
+    # TJRJ scraper takes ~90s due to Playwright + anti-bot delays
+    response = await request_with_retry("POST", url, client=client, json=payload, timeout=120.0)
+    return response.json()
+
+
+async def consulta_processo_tjrj(payload: Dict[str, Any]) -> Dict[str, Any]:
+    client = await get_http_client()
+    url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/v1/processos/tjrj/consulta"
+    response = await request_with_retry("POST", url, client=client, json=payload, timeout=120.0)
+    return response.json()
+
+
 async def obter_manifesto() -> Dict[str, Any]:
     client = await get_http_client()
     url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/tools"

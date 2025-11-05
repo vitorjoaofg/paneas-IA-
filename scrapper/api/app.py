@@ -16,9 +16,13 @@ from .models import (
     PJEProcessoQuery,
     PJEProcessoListResponse,
     ProcessoPJE,
+    TJRJProcessoQuery,
+    TJRJProcessoListResponse,
+    ProcessoTJRJ,
 )
 from .scraper import fetch_tjsp_process, fetch_tjsp_process_list
 from .pje_scraper import fetch_pje_process_list, fetch_pje_process_detail
+from .tjrj_scraper import fetch_tjrj_process_list, fetch_tjrj_process_detail
 
 
 @asynccontextmanager
@@ -96,6 +100,33 @@ async def consulta_processo_pje(payload: dict) -> ProcessoPJE:
         raise
     except Exception as exc:
         raise HTTPException(status_code=500, detail=f"Falha ao consultar processo PJE: {exc}") from exc
+
+
+@app.post("/v1/processos/tjrj/listar", response_model=TJRJProcessoListResponse)
+async def listar_processos_tjrj(payload: TJRJProcessoQuery) -> TJRJProcessoListResponse:
+    try:
+        return await fetch_tjrj_process_list(payload)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao listar processos TJRJ: {exc}") from exc
+
+
+@app.post("/v1/processos/tjrj/consulta", response_model=ProcessoTJRJ)
+async def consulta_processo_tjrj(payload: dict) -> ProcessoTJRJ:
+    """
+    Consulta detalhes completos de um processo TJRJ.
+    Aceita tanto 'numero_processo' quanto no formato de payload completo.
+    """
+    try:
+        numero_processo = payload.get("numero_processo")
+        if not numero_processo:
+            raise HTTPException(status_code=400, detail="É necessário fornecer 'numero_processo'")
+        return await fetch_tjrj_process_detail(numero_processo)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao consultar processo TJRJ: {exc}") from exc
 
 
 @app.get("/tools")
