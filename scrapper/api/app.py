@@ -122,10 +122,16 @@ async def consulta_processo_tjrj(payload: dict) -> ProcessoTJRJ:
         numero_processo = payload.get("numero_processo")
         if not numero_processo:
             raise HTTPException(status_code=400, detail="É necessário fornecer 'numero_processo'")
-        return await fetch_tjrj_process_detail(numero_processo)
+        print(f"[DEBUG] Calling fetch_tjrj_process_detail for {numero_processo}")
+        result = await fetch_tjrj_process_detail(numero_processo)
+        print(f"[DEBUG] Result: classe={result.classe}, autor={result.autor}")
+        return result
     except HTTPException:
         raise
     except Exception as exc:
+        print(f"[ERROR] Exception in consulta_processo_tjrj: {exc}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Falha ao consultar processo TJRJ: {exc}") from exc
 
 

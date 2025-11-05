@@ -291,6 +291,80 @@ class TJRJFetcher:
         # Wait for form to be ready
         await asyncio.sleep(1)
 
+        # Check if searching by process number - use "Por Número" tab
+        if query.numero_processo:
+            print(f"Searching by process number: {query.numero_processo}")
+
+            # Click "Por Número" tab
+            try:
+                await self.frame.click("text=Por Número", timeout=5000)
+                print("Clicked 'Por Número' tab")
+                await asyncio.sleep(1)
+            except Exception as e:
+                print(f"Error clicking Por Número tab: {e}")
+
+            # Fill process number
+            # TJRJ process number format: NNNNNNN-DD.AAAA.J.TR.OOOO
+            # Need to split into parts
+            numero = query.numero_processo.replace(".", "").replace("-", "")
+
+            # Try to fill the process number field
+            # The exact selectors depend on the "Por Número" form structure
+            try:
+                # Wait for the number input field
+                await self.frame.wait_for_selector("input[name*='numero' i], input[placeholder*='número' i]", timeout=5000)
+
+                # Try common selectors for process number input
+                filled = False
+                for selector in ["#numeroProcesso", "input[name='numeroProcesso']", "input[placeholder*='número' i]"]:
+                    try:
+                        await self.frame.fill(selector, query.numero_processo, timeout=2000)
+                        print(f"Filled process number using selector: {selector}")
+                        filled = True
+                        break
+                    except:
+                        continue
+
+                if not filled:
+                    # Try JavaScript as fallback
+                    await self.frame.evaluate(f"""
+                        () => {{
+                            const input = document.querySelector('input[placeholder*="número" i]');
+                            if (input) {{
+                                input.value = '{query.numero_processo}';
+                                input.dispatchEvent(new Event('input', {{ bubbles: true }}));
+                            }}
+                        }}
+                    """)
+
+                # Click search button for "Por Número" tab
+                await asyncio.sleep(1)
+                result = await self.frame.evaluate("""
+                    () => {
+                        const buttons = Array.from(document.querySelectorAll('button'));
+                        const pesquisarBtn = buttons.find(btn =>
+                            btn.textContent.trim() === 'Pesquisar' &&
+                            btn.offsetParent !== null
+                        );
+                        if (pesquisarBtn) {
+                            pesquisarBtn.click();
+                            return true;
+                        }
+                        return false;
+                    }
+                """)
+
+                if result:
+                    print("Clicked Pesquisar button for process number search")
+                    return  # Done - exit early since we're searching by number
+                else:
+                    raise HTTPException(status_code=500, detail="Não foi possível clicar no botão Pesquisar")
+
+            except Exception as e:
+                print(f"Error in process number search: {e}")
+                raise HTTPException(status_code=500, detail=f"Erro ao buscar por número de processo: {str(e)}")
+
+        # Otherwise, use "Por Nome" search (existing logic)
         # 1. Select "Origem" (Instância) - OBRIGATÓRIO
         # Click on the dropdown to open it
         await self.frame.click("#filtroOrigem1", timeout=5000)
@@ -539,49 +613,222 @@ class TJRJFetcher:
             traceback.print_exc()
             return []
 
-    async def extract_process_detail(self, numero_processo: str) -> ProcessoTJRJ:
-        """Extract detailed process information."""
-        assert self.page
+    async def extract_process_detail(self, numero_processo: str, skip_click: bool = False) -> ProcessoTJRJ:
+        """
+        Extract detailed process information by clicking on the process link.
+        TJRJ opens details in a new iframe that needs to be accessed.
 
-        # Navigate to process detail page
-        # Note: URL structure may need adjustment
-        detail_url = f"{BASE_URL}#/processo/{numero_processo}"
-        await self.page.goto(detail_url)
-        await asyncio.sleep(2)  # Wait for Angular to load
+        Args:
+            numero_processo: Process number to extract
+            skip_click: If True, assume we're already on the details page (used after search by number)
+        """
+        assert self.frame  # Deve estar na página de resultados ou detalhes
 
-        # Extract process details
-        # This is a placeholder - will need adjustment based on real page structure
+        if not skip_click:
+            print(f"Clicking on process {numero_processo} to open details...")
+
+            # Click on the process link to open details
+            # O processo está em um div com role="link" que contém o número
+            try:
+                # Usar JavaScript para clicar no link correto
+                clicked = await self.frame.evaluate(f"""
+                    () => {{
+                        const links = Array.from(document.querySelectorAll('div[role="link"]'));
+                        const processLink = links.find(link =>
+                            link.textContent.includes('{numero_processo}')
+                        );
+
+                        if (processLink) {{
+                            processLink.click();
+                            return true;
+                        }}
+                        return false;
+                    }}
+                """)
+
+                if not clicked:
+                    # Se não encontrou na lista, pode ser que já esteja nos detalhes
+                    print(f"Process link not found in list, assuming already on details page")
+                    skip_click = True
+                else:
+                    print("✓ Clicked on process link")
+
+                    # Aguardar o iframe de detalhes ser criado/atualizado
+                    # O iframe muda de src para mostrar os detalhes
+                    await asyncio.sleep(3)
+            except Exception as e:
+                print(f"Error clicking process link: {e}, continuing anyway")
+                # Continuar para tentar extrair - pode já estar na página de detalhes
+        else:
+            print("Skipping click - assuming already on details page")
+            # Aguardar página de detalhes carregar
+            await asyncio.sleep(3)
+
+        # O iframe já existe (mainframe), mas o conteúdo muda
+        # Aguardar indicadores de que os detalhes carregaram
+        try:
+            # Aguardar elementos específicos de detalhe aparecerem
+            await self.frame.wait_for_function(
+                """() => {
+                    const text = document.body.textContent;
+                    return text.includes('Classe:') ||
+                           text.includes('Assunto:') ||
+                           text.includes('Comarca:');
+                }""",
+                timeout=15000
+            )
+            print("✓ Process details loaded")
+        except PlaywrightTimeoutError:
+            print("⚠ Timeout waiting for details indicators")
+
+        # Aguardar um pouco mais para garantir que tudo carregou
+        await asyncio.sleep(2)
+
+        # Save HTML for debugging
+        try:
+            detail_html = await self.frame.evaluate("() => document.body.innerHTML")
+            with open("/tmp/tjrj_detail_content.html", "w", encoding="utf-8") as f:
+                f.write(detail_html)
+            print(f"Saved detail HTML ({len(detail_html)} bytes)")
+        except Exception as debug_e:
+            print(f"Error saving detail HTML: {debug_e}")
+
+        # Extrair detalhes do processo - TJRJ usa labels com atributo "name"
         extraction_script = """
         () => {
-            const getText = (selector) => {
-                const elem = document.querySelector(selector);
-                return elem ? elem.textContent.trim() : null;
-            };
-
-            return {
-                numeroProcesso: getText('.numero-processo, #numeroProcesso') || '',
-                classe: getText('.classe, #classe'),
-                assunto: getText('.assunto, #assunto'),
-                comarca: getText('.comarca, #comarca'),
-                vara: getText('.vara, #vara'),
-                juiz: getText('.juiz, #juiz'),
-                valorCausa: getText('.valor-causa, #valorCausa'),
-                dataDistribuicao: getText('.data-distribuicao, #dataDistribuicao'),
-                autor: getText('.autor, #autor'),
-                reu: getText('.reu, #reu'),
-                situacao: getText('.situacao, #situacao'),
-                advogados: Array.from(document.querySelectorAll('.advogado, .advogados li')).map(el => el.textContent.trim()),
+            const data = {
+                numeroProcesso: '',
+                classe: null,
+                assunto: null,
+                comarca: null,
+                vara: null,
+                juiz: null,
+                valorCausa: null,
+                dataDistribuicao: null,
+                autor: null,
+                reu: null,
+                advogados: [],
+                situacao: null,
                 movimentos: []
             };
+
+            // TJRJ usa <label name="campo"> para os dados
+            const getFieldByName = (name) => {
+                const label = document.querySelector(`label[name="${name}"]`);
+                return label ? label.textContent.trim() : null;
+            };
+
+            // Extrair campos usando labels
+            data.classe = getFieldByName('classe');
+            data.assunto = getFieldByName('assunto');
+            data.comarca = getFieldByName('comarca');
+            data.vara = getFieldByName('vara');
+            data.juiz = getFieldByName('juiz');
+            data.valorCausa = getFieldByName('valorCausa') || getFieldByName('valor');
+
+            // Número do processo - está no título
+            const numeroMatch = document.body.textContent.match(/Processo\\s+Nº\\s+(\\d{7}-\\d{2}\\.\\d{4}\\.\\d\\.\\d{2}\\.\\d{4})/);
+            if (numeroMatch) {
+                data.numeroProcesso = numeroMatch[1];
+            }
+
+            // Situação - pode estar em vários lugares
+            const situacaoLabel = document.querySelector('label[id*="Situação"], label[for*="Situação"]');
+            if (situacaoLabel) {
+                data.situacao = situacaoLabel.textContent.replace(/^Situação:\s*/i, '').trim();
+            } else {
+                // Buscar por texto "Situação:"
+                const allText = document.body.textContent;
+                const situacaoMatch = allText.match(/Situação:\\s*([^\\n<]+)/i);
+                if (situacaoMatch) {
+                    data.situacao = situacaoMatch[1].trim();
+                }
+            }
+
+            // Autor e Réu - estão na seção "Dados dos Personagens"
+            const personagens = document.querySelectorAll('label[for="personagemDesc"]');
+            personagens.forEach(label => {
+                const tipo = label.textContent.trim();
+                const valor = label.nextElementSibling?.textContent?.trim();
+
+                if (tipo === 'Autor' && valor) {
+                    data.autor = valor.replace(/e outro\(s\)\.\.\./i, '').trim();
+                }
+                if (tipo === 'Réu' && valor) {
+                    data.reu = valor.trim();
+                }
+            });
+
+            // Se não encontrou, tentar por tabela
+            if (!data.autor || !data.reu) {
+                const personTable = document.querySelector('tbody.p-datatable-tbody');
+                if (personTable) {
+                    const rows = personTable.querySelectorAll('tr');
+                    rows.forEach(row => {
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 2) {
+                            const tipo = cells[0].textContent.trim();
+                            const nome = cells[1].textContent.trim();
+
+                            if (tipo === 'Autor') data.autor = nome;
+                            if (tipo === 'Réu') data.reu = nome;
+                        }
+                    });
+                }
+            }
+
+            // Advogados - buscar por texto
+            const allLabels = document.querySelectorAll('label');
+            allLabels.forEach(label => {
+                const text = label.textContent;
+                if (text.includes('Advogad')) {
+                    const advMatch = text.match(/Advogad[oa]:\\s*(.+?)(?:OAB|$)/i);
+                    if (advMatch) {
+                        const advNome = advMatch[1].trim();
+                        if (advNome && !data.advogados.includes(advNome)) {
+                            data.advogados.push(advNome);
+                        }
+                    }
+                }
+            });
+
+            // Movimentações - última movimentação
+            const tipoMov = document.querySelector('.titulo-movimentacao');
+            if (tipoMov) {
+                const movimento = {
+                    data: null,
+                    descricao: tipoMov.textContent.replace('Tipo do Movimento:', '').trim()
+                };
+
+                // Buscar data da movimentação
+                const dataLabels = document.querySelectorAll('label[id*="Data"]');
+                dataLabels.forEach(label => {
+                    const text = label.textContent;
+                    const dataMatch = text.match(/\\d{2}\\/\\d{2}\\/\\d{4}/);
+                    if (dataMatch && !movimento.data) {
+                        // Convert DD/MM/YYYY to YYYY-MM-DD (ISO format)
+                        const [dia, mes, ano] = dataMatch[0].split('/');
+                        movimento.data = `${ano}-${mes}-${dia}`;
+                    }
+                });
+
+                if (movimento.descricao) {
+                    data.movimentos.push(movimento);
+                }
+            }
+
+            return data;
         }
         """
 
         try:
-            data = await self.page.evaluate(extraction_script)
+            data = await self.frame.evaluate(extraction_script)
+
+            print(f"Extracted data: numeroProcesso={data.get('numeroProcesso')}, classe={data.get('classe')}, autor={data.get('autor')}")
 
             return ProcessoTJRJ(
                 uf="RJ",
-                numeroProcesso=data["numeroProcesso"] or numero_processo,
+                numeroProcesso=data.get("numeroProcesso") or numero_processo,
                 classe=data.get("classe"),
                 assunto=data.get("assunto"),
                 comarca=data.get("comarca"),
@@ -594,10 +841,16 @@ class TJRJFetcher:
                 advogados=data.get("advogados", []),
                 situacao=data.get("situacao"),
                 linkPublico=f"{BASE_URL}#/processo/{numero_processo}",
-                movimentos=[]
+                movimentos=data.get("movimentos", [])
             )
         except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Falha ao extrair detalhes do processo: {str(e)}")
+            print(f"Error extracting process details: {e}")
+            import traceback
+            traceback.print_exc()
+            raise HTTPException(
+                status_code=500,
+                detail=f"Falha ao extrair detalhes do processo: {str(e)}"
+            )
 
 
 async def fetch_tjrj_process_list(query: TJRJProcessoQuery) -> TJRJProcessoListResponse:
@@ -662,8 +915,57 @@ async def fetch_tjrj_process_list(query: TJRJProcessoQuery) -> TJRJProcessoListR
 async def fetch_tjrj_process_detail(numero_processo: str) -> ProcessoTJRJ:
     """
     Busca detalhes completos de um processo TJRJ.
+    Primeiro faz uma busca pelo número do processo para chegar na lista de resultados,
+    depois clica no processo para abrir os detalhes.
     """
     settings = get_settings()
 
     async with TJRJFetcher(settings) as fetcher:
-        return await fetcher.extract_process_detail(numero_processo)
+        # Primeiro, fazer uma busca pelo número do processo
+        # Isso nos leva para a página de resultados onde podemos clicar no processo
+        print(f"Searching for process {numero_processo} first...")
+
+        # Criar query com o número do processo
+        query = TJRJProcessoQuery(
+            numero_processo=numero_processo,
+            instancia="1"  # Tentar 1ª instância primeiro
+        )
+
+        # Navegar e buscar
+        await fetcher.navigate_to_search()
+
+        # Para busca por número, usar o formulário "Por Número"
+        # Busca por número geralmente vai direto para a página de detalhes
+        try:
+            # Submeter busca (vai usar "Por Número" se numero_processo estiver preenchido)
+            await fetcher.submit_query(query)
+
+            # Aguardar resultados/detalhes
+            await asyncio.sleep(3)
+
+            # Extrair detalhes - skip_click=True pois busca por número já vai direto pros detalhes
+            return await fetcher.extract_process_detail(numero_processo, skip_click=True)
+
+        except Exception as e:
+            print(f"Error in process detail fetch: {e}")
+            import traceback
+            traceback.print_exc()
+
+            # Se falhar, tentar retornar pelo menos o básico
+            return ProcessoTJRJ(
+                uf="RJ",
+                numeroProcesso=numero_processo,
+                classe=None,
+                assunto=None,
+                comarca=None,
+                vara=None,
+                juiz=None,
+                valorCausa=None,
+                dataDistribuicao=None,
+                autor=None,
+                reu=None,
+                advogados=[],
+                situacao=None,
+                linkPublico=f"{BASE_URL}#/processo/{numero_processo}",
+                movimentos=[]
+            )
