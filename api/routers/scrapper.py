@@ -5,6 +5,9 @@ from schemas.scrapper import (
     TJSPProcessoListQuery,
     TJSPProcessoListResponse,
     TJSPProcessoQuery,
+    PJEProcessoQuery,
+    PJEProcessoListResponse,
+    ProcessoPJE,
 )
 from services import scrapper_client
 
@@ -25,6 +28,20 @@ async def listar_processos(payload: TJSPProcessoListQuery) -> TJSPProcessoListRe
         payload.model_dump(mode="json", exclude_none=True, by_alias=True)
     )
     return TJSPProcessoListResponse.model_validate(resultado)
+
+
+@router.post("/scrapper/processos/pje/listar", response_model=PJEProcessoListResponse)
+async def listar_processos_pje(payload: PJEProcessoQuery) -> PJEProcessoListResponse:
+    resultado = await scrapper_client.listar_processos_pje(
+        payload.model_dump(mode="json", exclude_none=True, by_alias=True)
+    )
+    return PJEProcessoListResponse.model_validate(resultado)
+
+
+@router.post("/scrapper/processos/pje/consulta", response_model=ProcessoPJE)
+async def consulta_processo_pje(payload: dict) -> ProcessoPJE:
+    resultado = await scrapper_client.consulta_processo_pje(payload)
+    return ProcessoPJE.model_validate(resultado)
 
 
 @router.get("/scrapper/tools")

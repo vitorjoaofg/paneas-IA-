@@ -22,6 +22,20 @@ async def listar_processos(payload: Dict[str, Any]) -> Dict[str, Any]:
     return response.json()
 
 
+async def listar_processos_pje(payload: Dict[str, Any]) -> Dict[str, Any]:
+    client = await get_http_client()
+    url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/v1/processos/pje/listar"
+    response = await request_with_retry("POST", url, client=client, json=payload, timeout=60.0)
+    return response.json()
+
+
+async def consulta_processo_pje(payload: Dict[str, Any]) -> Dict[str, Any]:
+    client = await get_http_client()
+    url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/v1/processos/pje/consulta"
+    response = await request_with_retry("POST", url, client=client, json=payload, timeout=60.0)
+    return response.json()
+
+
 async def obter_manifesto() -> Dict[str, Any]:
     client = await get_http_client()
     url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/tools"

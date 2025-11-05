@@ -765,8 +765,15 @@
                 <div class="playground__panel" data-content="scrapper">
                     <div class="playground-card">
                         <div>
-                            <h3 class="playground-card__title">Consulta de Processo (TJSP)</h3>
-                            <p class="card__description">Busque processos específicos</p>
+                            <h3 class="playground-card__title">Consulta de Processo</h3>
+                            <p class="card__description">Busque processos por tribunal</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="scrapperTribunalSelector">Tribunal</label>
+                            <select id="scrapperTribunalSelector" name="tribunal">
+                                <option value="tjsp">TJSP - Tribunal de Justiça de São Paulo</option>
+                                <option value="pje">PJE - Processo Judicial Eletrônico (TRF1)</option>
+                            </select>
                         </div>
                         <form id="scrapperConsultaForm" class="form-grid">
                             <div class="form-group">
@@ -808,27 +815,34 @@
                             <h3 class="playground-card__title">Listagem de Processos</h3>
                             <p class="card__description">Combine filtros para listar processos</p>
                         </div>
+                        <div class="form-group">
+                            <label for="scrapperListTribunalSelector">Tribunal</label>
+                            <select id="scrapperListTribunalSelector" name="tribunal">
+                                <option value="tjsp">TJSP - Tribunal de Justiça de São Paulo</option>
+                                <option value="pje">PJE - Processo Judicial Eletrônico (TRF1)</option>
+                            </select>
+                        </div>
                         <form id="scrapperListForm" class="form-grid">
                             <div class="form-group">
                                 <label for="scrapperListNomeParte">Nome da Parte</label>
                                 <input id="scrapperListNomeParte" name="nome_parte" type="text" />
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" id="scrapperListNomeCompletoGroup">
                                 <label for="scrapperListNomeCompleto" style="display: flex; align-items: center; gap: 8px;">
                                     <input id="scrapperListNomeCompleto" name="nome_completo" type="checkbox" style="width: auto; margin: 0;" />
-                                    <span>Pesquisar por nome completo</span>
+                                    <span>Pesquisar por nome completo (apenas TJSP - auto-ativado para nomes curtos)</span>
                                 </label>
                             </div>
                             <div class="form-group">
                                 <label for="scrapperListDocumentoParte">Documento da Parte</label>
                                 <input id="scrapperListDocumentoParte" name="documento_parte" type="text" />
                             </div>
-                            <div class="form-group">
-                                <label for="scrapperListMaxPaginas">Máx. Páginas</label>
+                            <div class="form-group" id="scrapperListMaxPaginasGroup">
+                                <label for="scrapperListMaxPaginas">Máx. Páginas (apenas TJSP)</label>
                                 <input id="scrapperListMaxPaginas" name="max_paginas" type="number" min="1" max="10" value="1" />
                             </div>
-                            <div class="form-group">
-                                <label for="scrapperListMaxProcessos">Máx. Processos (por página)</label>
+                            <div class="form-group" id="scrapperListMaxProcessosGroup">
+                                <label for="scrapperListMaxProcessos">Máx. Processos (por página - apenas TJSP)</label>
                                 <input id="scrapperListMaxProcessos" name="max_processos" type="number" min="1" max="100" />
                             </div>
                             <div class="button-group">

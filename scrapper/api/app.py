@@ -8,8 +8,17 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import Settings, get_settings
-from .models import ProcessoTJSP, TJSPProcessoListQuery, TJSPProcessoListResponse, TJSPProcessoQuery
+from .models import (
+    ProcessoTJSP,
+    TJSPProcessoListQuery,
+    TJSPProcessoListResponse,
+    TJSPProcessoQuery,
+    PJEProcessoQuery,
+    PJEProcessoListResponse,
+    ProcessoPJE,
+)
 from .scraper import fetch_tjsp_process, fetch_tjsp_process_list
+from .pje_scraper import fetch_pje_process_list, fetch_pje_process_detail
 
 
 @asynccontextmanager
@@ -60,6 +69,33 @@ async def tools_listar_processos(payload: TJSPProcessoListQuery) -> TJSPProcesso
 @app.post("/v1/processos/listar", response_model=TJSPProcessoListResponse)
 async def listar_processos(payload: TJSPProcessoListQuery) -> TJSPProcessoListResponse:
     return await tools_listar_processos(payload)
+
+
+@app.post("/v1/processos/pje/listar", response_model=PJEProcessoListResponse)
+async def listar_processos_pje(payload: PJEProcessoQuery) -> PJEProcessoListResponse:
+    try:
+        return await fetch_pje_process_list(payload)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao listar processos PJE: {exc}") from exc
+
+
+@app.post("/v1/processos/pje/consulta", response_model=ProcessoPJE)
+async def consulta_processo_pje(payload: dict) -> ProcessoPJE:
+    """
+    Consulta detalhes completos de um processo PJE.
+    Aceita tanto o parâmetro 'ca' quanto 'link_publico'.
+    """
+    try:
+        ca_param = payload.get("ca") or payload.get("link_publico")
+        if not ca_param:
+            raise HTTPException(status_code=400, detail="É necessário fornecer 'ca' ou 'link_publico'")
+        return await fetch_pje_process_detail(ca_param)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao consultar processo PJE: {exc}") from exc
 
 
 @app.get("/tools")

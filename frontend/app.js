@@ -574,6 +574,10 @@ async function submitScrapperConsulta() {
         return;
     }
 
+    // Get selected tribunal
+    const tribunalSelector = document.getElementById("scrapperTribunalSelector");
+    const tribunal = tribunalSelector ? tribunalSelector.value : "tjsp";
+
     setOutput(ui.scrapperConsultaResult, "Consultando processo...");
     const originalLabel = ui.scrapperConsultaSubmit?.textContent;
     if (ui.scrapperConsultaSubmit) {
@@ -582,11 +586,57 @@ async function submitScrapperConsulta() {
     }
 
     try {
-        const data = await callScrapperEndpoint("processos/consulta", {
-            method: "POST",
-            payload,
-        });
-        setOutput(ui.scrapperConsultaResult, prettyPrintJson(data));
+        if (tribunal === "pje") {
+            // For PJE, we need to first list to get the link, then fetch details
+            setOutput(ui.scrapperConsultaResult, "Buscando processos PJE...");
+
+            // Check if user provided a link_publico or ca directly
+            if (payload.link_publico || payload.ca) {
+                const data = await callScrapperEndpoint("processos/pje/consulta", {
+                    method: "POST",
+                    payload,
+                });
+                setOutput(ui.scrapperConsultaResult, prettyPrintJson(data));
+            } else {
+                // First, list processes with the given filters
+                const listData = await callScrapperEndpoint("processos/pje/listar", {
+                    method: "POST",
+                    payload,
+                });
+
+                if (!listData.processos || listData.processos.length === 0) {
+                    setOutput(ui.scrapperConsultaResult, "Nenhum processo encontrado com os filtros fornecidos.");
+                    return;
+                }
+
+                // Get the first process link
+                const firstProcess = listData.processos[0];
+                const linkPublico = firstProcess.linkPublico;
+
+                if (!linkPublico) {
+                    setOutput(ui.scrapperConsultaResult, "Processo encontrado mas sem link público disponível.");
+                    return;
+                }
+
+                setOutput(ui.scrapperConsultaResult, `Encontrado ${listData.processos.length} processo(s). Buscando detalhes...`);
+
+                // Now fetch the detailed information
+                const detailData = await callScrapperEndpoint("processos/pje/consulta", {
+                    method: "POST",
+                    payload: { link_publico: linkPublico },
+                });
+
+                setOutput(ui.scrapperConsultaResult, prettyPrintJson(detailData));
+            }
+        } else {
+            // TJSP uses the same endpoint for both list and individual query
+            const endpoint = "processos/consulta";
+            const data = await callScrapperEndpoint(endpoint, {
+                method: "POST",
+                payload,
+            });
+            setOutput(ui.scrapperConsultaResult, prettyPrintJson(data));
+        }
     } catch (err) {
         console.error("[Scrapper] Falha ao consultar processo", err);
         setOutput(ui.scrapperConsultaResult, `Erro: ${err.message || err}`);
@@ -603,7 +653,30 @@ async function submitScrapperList() {
         return;
     }
 
+    // Get selected tribunal
+    const tribunalSelector = document.getElementById("scrapperListTribunalSelector");
+    const tribunal = tribunalSelector ? tribunalSelector.value : "tjsp";
+
     const payload = collectScrapperPayload(ui.scrapperListForm, ["max_paginas", "max_processos"]);
+
+    // Smart handling for TJSP: auto-enable nome_completo for short names
+    if (tribunal === "tjsp" && payload.nome_parte) {
+        const nomeParte = payload.nome_parte.trim();
+        // If name is short (single word or 2 words) and nome_completo is not set, enable it
+        const wordCount = nomeParte.split(/\s+/).length;
+        if (wordCount <= 2 && !payload.nome_completo) {
+            payload.nome_completo = true;
+            console.log(`[Auto] Enabling nome_completo for short name: "${nomeParte}"`);
+        }
+    }
+
+    // Remove TJSP-specific fields when using PJE
+    if (tribunal === "pje") {
+        delete payload.nome_completo;
+        delete payload.max_paginas;
+        delete payload.max_processos;
+    }
+
     if (Object.keys(payload).length === 0) {
         setOutput(ui.scrapperListResult, "Informe pelo menos um critério de busca.");
         return;
@@ -617,7 +690,8 @@ async function submitScrapperList() {
     }
 
     try {
-        const data = await callScrapperEndpoint("processos/listar", {
+        const endpoint = tribunal === "pje" ? "processos/pje/listar" : "processos/listar";
+        const data = await callScrapperEndpoint(endpoint, {
             method: "POST",
             payload,
         });
@@ -3008,6 +3082,30 @@ function bindEvents() {
         event.preventDefault();
         await loadScrapperManifest();
     });
+
+    // Handle tribunal selector change to show/hide TJSP-specific fields
+    const tribunalListSelector = document.getElementById("scrapperListTribunalSelector");
+    const tribunalConsultaSelector = document.getElementById("scrapperTribunalSelector");
+
+    function toggleTJSPFields(tribunal) {
+        const nomeCompletoGroup = document.getElementById("scrapperListNomeCompletoGroup");
+        const maxPaginasGroup = document.getElementById("scrapperListMaxPaginasGroup");
+        const maxProcessosGroup = document.getElementById("scrapperListMaxProcessosGroup");
+
+        const isTJSP = tribunal === "tjsp";
+        if (nomeCompletoGroup) nomeCompletoGroup.style.display = isTJSP ? "" : "none";
+        if (maxPaginasGroup) maxPaginasGroup.style.display = isTJSP ? "" : "none";
+        if (maxProcessosGroup) maxProcessosGroup.style.display = isTJSP ? "" : "none";
+    }
+
+    tribunalListSelector?.addEventListener("change", (event) => {
+        toggleTJSPFields(event.target.value);
+    });
+
+    // Initialize field visibility
+    if (tribunalListSelector) {
+        toggleTJSPFields(tribunalListSelector.value);
+    }
 
     window.addEventListener("beforeunload", () => {
         try {

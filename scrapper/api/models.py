@@ -139,3 +139,75 @@ class TJSPProcessoListResponse(BaseModel):
         description="Valor aplicado no filtro de contraparte, se fornecido.",
     )
     processos: list[ProcessoResumoTJSP] = Field(default_factory=list)
+
+
+# PJE Models
+class ProcessoResumoPJE(BaseModel):
+    numeroProcesso: str
+    classe: Optional[str] = None
+    partes: Optional[str] = None
+    ultimaMovimentacao: Optional[str] = None
+    linkPublico: str
+
+
+class AdvogadoPJE(BaseModel):
+    nome: str
+    situacao: Optional[str] = None
+
+
+class PartePJE(BaseModel):
+    nome: str
+    documento: Optional[str] = None
+    advogados: list[AdvogadoPJE] = Field(default_factory=list)
+
+
+class MovimentoPJE(BaseModel):
+    data: str
+    descricao: str
+
+
+class ProcessoPJE(BaseModel):
+    numeroProcesso: str
+    classe: Optional[str] = None
+    dataDistribuicao: Optional[str] = None
+    orgaoJulgador: Optional[str] = None
+    secaoJudiciaria: Optional[str] = None
+    assuntos: list[str] = Field(default_factory=list)
+    poloAtivo: list[PartePJE] = Field(default_factory=list)
+    poloPassivo: list[PartePJE] = Field(default_factory=list)
+    situacao: Optional[str] = None
+    linkPublico: str
+    movimentos: list[MovimentoPJE] = Field(default_factory=list)
+
+
+class PJEProcessoQuery(BaseModel):
+    """Input payload accepted by the PJE scraping tool."""
+
+    numero_processo: Optional[str] = Field(
+        default=None,
+        description="Número completo do processo (formato CNJ).",
+        example="0000786-87.1984.4.01.3800",
+    )
+    nome_parte: Optional[str] = Field(default=None, description="Nome da parte.")
+    nome_advogado: Optional[str] = Field(default=None, description="Nome do advogado.")
+    documento_parte: Optional[str] = Field(default=None, description="CPF ou CNPJ da parte.")
+
+    @model_validator(mode="after")
+    def ensure_at_least_one_filter(cls, model: "PJEProcessoQuery") -> "PJEProcessoQuery":
+        filters = [
+            model.numero_processo,
+            model.nome_parte,
+            model.documento_parte,
+            model.nome_advogado,
+        ]
+        if not any(filters):
+            raise ValueError("É necessário informar ao menos um critério de busca.")
+        return model
+
+
+class PJEProcessoListResponse(BaseModel):
+    total_processos: Optional[int] = Field(
+        default=None,
+        description="Total de processos reportados pelo PJE para a consulta informada.",
+    )
+    processos: list[ProcessoResumoPJE] = Field(default_factory=list)
