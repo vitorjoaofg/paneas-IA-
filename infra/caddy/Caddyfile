@@ -9,34 +9,18 @@
         format json
     }
 
-    @cors_preflight {
-        method OPTIONS
-    }
+    # CORS headers
+    header Access-Control-Allow-Origin "*"
+    header Access-Control-Allow-Methods "*"
+    header Access-Control-Allow-Headers "*"
 
-    handle @cors_preflight {
-        header Access-Control-Allow-Origin "*"
-        header Access-Control-Allow-Methods "GET, POST, OPTIONS"
-        header Access-Control-Allow-Headers "Authorization, Content-Type"
-        respond 204
-    }
+    # Handle CORS preflight
+    @options method OPTIONS
+    respond @options 204
 
+    # Proxy all API requests (auth handled by backend)
     handle /api/* {
-        @authorized {
-            header Authorization "Bearer *"
-        }
-
-        handle @authorized {
-            reverse_proxy api:8000 {
-                header_up X-Real-IP {remote_host}
-                header_up X-Forwarded-For {remote_host}
-                health_uri /api/v1/health
-                health_interval 10s
-            }
-        }
-
-        handle {
-            respond "Unauthorized" 401
-        }
+        reverse_proxy api:8000
     }
 
     handle /metrics {

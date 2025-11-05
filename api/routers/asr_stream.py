@@ -66,12 +66,24 @@ async def _send_event(ws: WebSocket, payload: Dict[str, Any]) -> None:
 
 @router.websocket("/asr/stream")
 async def websocket_asr_stream(websocket: WebSocket) -> None:
+    LOGGER.info("websocket_connection_attempt",
+                client=websocket.client.host if websocket.client else "unknown",
+                headers=dict(websocket.headers))
+
     tokens = settings.api_tokens
     token = _extract_token(websocket)
+
+    LOGGER.info("websocket_token_check",
+                token_provided=token is not None,
+                token_value=token[:20] + "..." if token and len(token) > 20 else token,
+                valid_tokens=tokens)
+
     if tokens and token not in tokens:
+        LOGGER.warning("websocket_unauthorized", token=token, valid_tokens=tokens)
         await websocket.close(code=4401, reason="Unauthorized")
         return
 
+    LOGGER.info("websocket_accepting_connection")
     await websocket.accept()
     ACTIVE_SESSIONS.inc()
 

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Paneas Studio - Biblioteca de Componentes de IA</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20251104-1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -986,79 +989,66 @@
 
                 <!-- Analytics Tab -->
                 <div class="playground__panel" data-content="analytics">
-                    <div class="playground-card">
-                        <h3 class="playground-card__title">Speech Analytics</h3>
-                        <p class="card__description">Análise completa de sentimentos, emoções e intenções</p>
+                    <!-- KPI Cards Section -->
+                    <div class="analytics-kpi-section" id="analyticsKPISection">
+                        <div class="kpi-cards-grid">
+                            <div class="kpi-card">
+                                <div class="kpi-card__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="kpi-card__content">
+                                    <div class="kpi-card__value" id="kpiDuration">3:42</div>
+                                    <div class="kpi-card__label">Duração</div>
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="analyticsAudioFile">Upload de Áudio (opcional)</label>
-                            <input type="file" id="analyticsAudioFile" accept="audio/*,.wav,.mp3,.ogg,.flac,.m4a" />
-                            <small class="text-muted">Formatos: WAV, MP3, OGG, FLAC, M4A</small>
-                        </div>
+                            <div class="kpi-card">
+                                <div class="kpi-card__icon kpi-card__icon--success">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                </div>
+                                <div class="kpi-card__content">
+                                    <div class="kpi-card__value" id="kpiSentiment">Positivo</div>
+                                    <div class="kpi-card__label">Sentimento Geral</div>
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="analyticsTranscript">Transcrição do Áudio</label>
-                            <textarea id="analyticsTranscript" rows="6" placeholder='Digite ou cole o texto da conversa aqui...
+                            <div class="kpi-card">
+                                <div class="kpi-card__icon kpi-card__icon--primary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 11l3 3L22 4"></path>
+                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                    </svg>
+                                </div>
+                                <div class="kpi-card__content">
+                                    <div class="kpi-card__value" id="kpiCompliance">75%</div>
+                                    <div class="kpi-card__label">Compliance</div>
+                                </div>
+                            </div>
 
-Exemplo:
-"Operador: Bom dia, meu nome é João da Claro. Como posso ajudar?
-Cliente: Oi, eu quero cancelar meu plano.
-Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
-                            <small class="text-muted">Texto simples ou JSON com segments. Se fez upload, a transcrição será gerada automaticamente.</small>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Tipos de Análise</label>
-                            <div class="checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsSentiment" checked />
-                                    <span>Sentimento</span>
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsEmotion" checked />
-                                    <span>Emoção</span>
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsIntent" checked />
-                                    <span>Intenção</span>
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsCompliance" />
-                                    <span>Compliance</span>
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsSummary" />
-                                    <span>Resumo (LLM)</span>
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="analyticsAcoustic" />
-                                    <span>Métricas Acústicas</span>
-                                </label>
+                            <div class="kpi-card">
+                                <div class="kpi-card__icon kpi-card__icon--accent">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                </div>
+                                <div class="kpi-card__content">
+                                    <div class="kpi-card__value" id="kpiIntent">Suporte</div>
+                                    <div class="kpi-card__label">Intento Principal</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="button-group">
-                            <button class="btn btn--primary btn--lg" id="analyticsSubmit">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 3v18h18"/>
-                                    <path d="m19 9-5 5-4-4-3 3"/>
-                                </svg>
-                                Analisar
-                            </button>
-                            <button class="btn btn--outline" id="analyticsClear">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 6h18"/>
-                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
-                                </svg>
-                                Limpar
-                            </button>
-                        </div>
-
-                        <div id="analyticsStatus" class="status-text"></div>
                     </div>
 
                     <!-- Results Panel -->
-                    <div id="analyticsResults" class="analytics-results" style="display: none;">
+                    <div id="analyticsResults" class="analytics-results">
                         <!-- Sentiment Card -->
                         <div class="playground-card">
                             <h4 class="card-section-title">
@@ -1119,6 +1109,33 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
                                 Resumo
                             </h4>
                             <div id="summaryContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Acoustic Metrics Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18V5l12-2v13"/>
+                                    <circle cx="6" cy="18" r="3"/>
+                                    <circle cx="18" cy="16" r="3"/>
+                                </svg>
+                                Métricas Acústicas
+                            </h4>
+                            <div id="acousticContent" class="analytics-content"></div>
+                        </div>
+
+                        <!-- Speaker Distribution Card -->
+                        <div class="playground-card">
+                            <h4 class="card-section-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                Distribuição por Speaker
+                            </h4>
+                            <div id="speakerContent" class="analytics-content"></div>
                         </div>
 
                         <!-- Timeline Card -->
@@ -2042,8 +2059,8 @@ Operador: Entendo. Posso saber o motivo do cancelamento?"'></textarea>
         </div>
     </footer>
 
-    <script src="agents.js"></script>
-    <script src="apikeys.js"></script>
-    <script type="module" src="app.js"></script>
+    <script src="agents.js?v=20251104-1"></script>
+    <script src="apikeys.js?v=20251104-1"></script>
+    <script type="module" src="app.js?v=20251104-1"></script>
 </body>
 </html>

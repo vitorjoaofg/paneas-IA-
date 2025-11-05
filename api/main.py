@@ -42,11 +42,13 @@ app.add_middleware(
 )
 
 # Session middleware for OAuth (must be before auth middleware)
-app.add_middleware(
-    SessionMiddleware,
-    secret_key=settings.jwt_secret_key,  # Use same key as JWT
-    max_age=3600,  # 1 hour session
-)
+# TEMPORARILY DISABLED: SessionMiddleware causes 403 errors on WebSocket connections
+# Re-enable when OAuth is fully implemented
+# app.add_middleware(
+#     SessionMiddleware,
+#     secret_key=settings.jwt_secret_key,  # Use same key as JWT
+#     max_age=3600,  # 1 hour session
+# )
 
 app.add_middleware(RequestIDMiddleware)
 app.add_middleware(LoggingMiddleware)

@@ -29,7 +29,8 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next: Callable):
         path = request.url.path
-        if path == "/metrics":
+        # Skip rate limiting for metrics and WebSocket endpoints
+        if path == "/metrics" or path.startswith("/api/v1/asr/stream"):
             return await call_next(request)
 
         client_ip = request.headers.get("X-Forwarded-For", request.client.host)

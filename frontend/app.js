@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.setItem('paneas_authenticated', 'true');
 
             // Set admin API token
-            const adminToken = 'sk-proj-m9TcZYgxbAC10dtk_h_XJD3p3NY8zRj4';
+            const adminToken = 'token_abc123';
             sessionStorage.setItem('adminToken', adminToken);
 
             // Update the auth token input field if it exists
@@ -193,6 +193,16 @@ function switchPlaygroundTab(tabName) {
             panel.classList.remove('playground__panel--active');
         }
     });
+
+    // Auto-load mock analytics when tab is opened
+    if (tabName === 'analytics') {
+        // Use setTimeout to ensure DOM is ready
+        setTimeout(() => {
+            if (typeof loadMockAnalytics === 'function') {
+                loadMockAnalytics();
+            }
+        }, 100);
+    }
 }
 
 // ========================================
@@ -451,6 +461,7 @@ function resolveApiBase() {
             base = base.replace(':8765', ':8000');
         }
     }
+    console.log("[API] Base URL resolvida:", base);
     return trimTrailingSlash(base);
 }
 
@@ -1079,15 +1090,28 @@ async function setupAudio() {
     if (state.audioContext) {
         return;
     }
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+    console.log("[Audio] Solicitando permissão de microfone...");
+    const stream = await navigator.mediaDevices.getUserMedia({
+        audio: {
+            echoCancellation: true,
+            noiseSuppression: true,
+            autoGainControl: true
+        }
+    });
+
+    console.log("[Audio] Permissão concedida. Criando AudioContext...");
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
-    const audioContext = new AudioCtx({ sampleRate: state.targetSampleRate });
+
+    // Não força sample rate específico, usa o padrão do navegador
+    const audioContext = new AudioCtx();
     const source = audioContext.createMediaStreamSource(stream);
     const processor = audioContext.createScriptProcessor(4096, 1, 1);
     const gainNode = audioContext.createGain();
     gainNode.gain.value = 0;
 
     state.inputSampleRate = audioContext.sampleRate;
+    console.log("[Audio] AudioContext criado. Sample rate:", audioContext.sampleRate);
 
     processor.onaudioprocess = (event) => {
         const channelData = event.inputBuffer.getChannelData(0);
@@ -1102,6 +1126,8 @@ async function setupAudio() {
     state.processor = processor;
     state.gainNode = gainNode;
     state.mediaStream = stream;
+
+    console.log("[Audio] Setup completo!");
 }
 
 function stopAudio() {
@@ -1180,6 +1206,9 @@ function resolveWsUrl() {
     const base = resolveApiBase();
     const token = ui.authToken.value.trim();
 
+    console.log("[WebSocket] Base URL:", base);
+    console.log("[WebSocket] Protocol:", window.location.protocol);
+
     // Se a página está em HTTPS, force WSS. Se HTTP, force WS.
     let wsBase;
     if (window.location.protocol === "https:") {
@@ -1188,10 +1217,14 @@ function resolveWsUrl() {
         wsBase = base.replace(/^https:/i, "ws:").replace(/^http:/i, "ws:");
     }
 
+    console.log("[WebSocket] WS Base:", wsBase);
+
     const url = new URL(`${wsBase}/api/v1/asr/stream`);
     if (token) {
         url.searchParams.set("token", token);
     }
+
+    console.log("[WebSocket] URL final:", url.toString());
     return url;
 }
 
@@ -1380,10 +1413,22 @@ async function openSession(options = {}) {
     }
 
     const url = resolveWsUrl();
-    const ws = new WebSocket(url);
-    state.ws = ws;
+    console.log("[WebSocket] Conectando a:", url.toString());
+
+    let ws;
+    try {
+        ws = new WebSocket(url);
+        state.ws = ws;
+    } catch (err) {
+        console.error("[WebSocket] Erro ao criar WebSocket:", err);
+        setStatus("Erro ao criar conexão WebSocket: " + err.message, "error");
+        cleanupSession("Falha ao criar WebSocket.");
+        return;
+    }
 
     ws.onopen = () => {
+        console.log("[WebSocket] Conexão estabelecida!");
+
         if (source === "mic") {
             ui.startButton.disabled = true;
             ui.listeningIndicator.classList.remove("hidden");
@@ -1444,8 +1489,11 @@ async function openSession(options = {}) {
     ws.onmessage = handleWsMessage;
 
     ws.onerror = (event) => {
-        console.error("Erro no WebSocket", event);
-        setStatus("Falha no WebSocket.", "error");
+        console.error("[WebSocket] Erro:", event);
+        console.error("[WebSocket] readyState:", ws.readyState);
+        console.error("[WebSocket] URL:", ws.url);
+        const errorMsg = `Falha no WebSocket (readyState: ${ws.readyState}). Verifique: 1) Token válido 2) Conexão HTTPS 3) Console do navegador`;
+        setStatus(errorMsg, "error");
         cleanupSession("Falha no WebSocket.");
     };
 
@@ -2918,6 +2966,11 @@ function bindEvents() {
         await handleAnalyticsSubmit();
     });
 
+    document.getElementById('analyticsLoadMock')?.addEventListener("click", (event) => {
+        event.preventDefault();
+        loadMockAnalytics();
+    });
+
     document.getElementById('analyticsClear')?.addEventListener("click", (event) => {
         event.preventDefault();
         clearAnalytics();
@@ -3674,6 +3727,243 @@ function stopTTSStream() {
 let analyticsJobId = null;
 let analyticsPollInterval = null;
 
+// Mock data for demonstration
+const MOCK_ANALYTICS_DATA = {
+    call_info: {
+        duration: 222,  // 3min 42s
+        speakers: 2,
+        language: "pt-BR",
+        date: "2025-11-04 14:30:00"
+    },
+    sentiment: {
+        overall: {
+            label: "positive",
+            score: 0.85,
+            probabilities: {
+                positive: 0.85,
+                neutral: 0.12,
+                negative: 0.03
+            }
+        },
+        per_speaker: {
+            "Atendente": {
+                label: "positive",
+                score: 0.92,
+                probabilities: {
+                    positive: 0.92,
+                    neutral: 0.07,
+                    negative: 0.01
+                }
+            },
+            "Cliente": {
+                label: "neutral",
+                score: 0.78,
+                probabilities: {
+                    positive: 0.78,
+                    neutral: 0.18,
+                    negative: 0.04
+                },
+                evolution: {
+                    start: 0.45,
+                    end: 0.78
+                }
+            }
+        }
+    },
+    emotion: {
+        overall: {
+            label: "satisfação",
+            confidence: 0.65
+        },
+        distribution: {
+            "satisfação": 0.65,
+            "frustração": 0.20,
+            "gratidão": 0.15
+        },
+        per_speaker: {
+            "Atendente": {
+                label: "profissionalismo",
+                confidence: 0.88,
+                emotions: {
+                    "profissionalismo": 0.88,
+                    "empatia": 0.10,
+                    "paciência": 0.02
+                }
+            },
+            "Cliente": {
+                label: "satisfação",
+                confidence: 0.65,
+                emotions: {
+                    "frustração": 0.35,
+                    "satisfação": 0.45,
+                    "gratidão": 0.20
+                }
+            }
+        }
+    },
+    intent: {
+        intents: {
+            "suporte": {
+                score: 0.89,
+                evidence: ["problema", "internet lenta", "ajuda", "suporte técnico"]
+            },
+            "cancelamento": {
+                score: 0.05,
+                evidence: []
+            },
+            "upgrade": {
+                score: 0.03,
+                evidence: []
+            },
+            "downgrade": {
+                score: 0.02,
+                evidence: []
+            },
+            "venda": {
+                score: 0.01,
+                evidence: []
+            }
+        },
+        outcome: {
+            label: "accepted",
+            score: 0.78,
+            confidence: 0.82
+        }
+    },
+    compliance: {
+        score: 0.75,
+        passed: ["greeting", "operator_identification", "offer_presented"],
+        failed: ["call_closure"],
+        details: [
+            {
+                check: "greeting",
+                passed: true,
+                score: 0.95,
+                evidence: "Bom dia! Meu nome é Carlos"
+            },
+            {
+                check: "operator_identification",
+                passed: true,
+                score: 1.0,
+                evidence: "Meu nome é Carlos, atendente do suporte técnico"
+            },
+            {
+                check: "offer_presented",
+                passed: true,
+                score: 0.82,
+                evidence: "Vou reiniciar seu modem remotamente"
+            },
+            {
+                check: "call_closure",
+                passed: false,
+                score: 0.45,
+                evidence: "Encerramento abrupto"
+            }
+        ]
+    },
+    summary: {
+        summary: [
+            "Cliente relatou lentidão na internet residencial",
+            "Atendente diagnosticou problema no modem e realizou reset remoto",
+            "Problema resolvido com sucesso, cliente satisfeito"
+        ],
+        next_actions: [
+            "Acompanhar estabilidade da conexão nas próximas 24h",
+            "Considerar upgrade de plano se problema persistir",
+            "Melhorar script de encerramento da chamada"
+        ],
+        confidence: 0.80
+    },
+    acoustic: {
+        duration: 222,
+        speech_rate: 145,  // words per minute
+        avg_pitch: 180,  // Hz
+        silence_ratio: 0.18,
+        overlap_ratio: 0.02,
+        per_speaker: {
+            "Atendente": {
+                total_seconds: 135,
+                percentage: 60.8,
+                turns: 12,
+                avg_turn_duration: 11.25,
+                speech_rate: 152
+            },
+            "Cliente": {
+                total_seconds: 87,
+                percentage: 39.2,
+                turns: 11,
+                avg_turn_duration: 7.91,
+                speech_rate: 138
+            }
+        }
+    },
+    timeline: [
+        {
+            timestamp: 5,
+            type: "compliance",
+            label: "Saudação detectada",
+            confidence: 0.95,
+            speaker: "Atendente"
+        },
+        {
+            timestamp: 12,
+            type: "compliance",
+            label: "Identificação do operador",
+            confidence: 1.0,
+            speaker: "Atendente"
+        },
+        {
+            timestamp: 45,
+            type: "emotion",
+            label: "Cliente expressa frustração",
+            confidence: 0.75,
+            speaker: "Cliente"
+        },
+        {
+            timestamp: 62,
+            type: "intent",
+            label: "Solicitação de suporte técnico",
+            confidence: 0.89,
+            speaker: "Cliente"
+        },
+        {
+            timestamp: 80,
+            type: "compliance",
+            label: "Diagnóstico iniciado",
+            confidence: 0.82,
+            speaker: "Atendente"
+        },
+        {
+            timestamp: 135,
+            type: "action",
+            label: "Solução proposta (reset de modem)",
+            confidence: 0.88,
+            speaker: "Atendente"
+        },
+        {
+            timestamp: 170,
+            type: "emotion",
+            label: "Cliente demonstra satisfação",
+            confidence: 0.85,
+            speaker: "Cliente"
+        },
+        {
+            timestamp: 210,
+            type: "outcome",
+            label: "Confirmação de resolução",
+            confidence: 0.78,
+            speaker: "Cliente"
+        },
+        {
+            timestamp: 220,
+            type: "compliance",
+            label: "Encerramento",
+            confidence: 0.45,
+            speaker: "Atendente"
+        }
+    ]
+};
+
 async function handleAnalyticsSubmit() {
     const audioFile = document.getElementById('analyticsAudioFile')?.files[0];
     const transcriptText = document.getElementById('analyticsTranscript')?.value?.trim();
@@ -3947,36 +4237,66 @@ function displayEmotion(emotion) {
     const container = document.getElementById('emotionContent');
     if (!container) return;
 
-    const overall = emotion.overall;
+    const emotionColors = {
+        'satisfação': '#43e97b',
+        'frustração': '#f5576c',
+        'gratidão': '#a8edea',
+        'profissionalismo': '#5551ff',
+        'empatia': '#ffa726',
+        'paciência': '#9c27b0'
+    };
 
-    let html = `
-        <div class="analytics-metric">
-            <span class="analytics-metric-label">Emoção Dominante</span>
-            <span class="analytics-badge">${overall.label}</span>
-        </div>
-        <div class="analytics-metric">
-            <span class="analytics-metric-label">Confiança</span>
-            <span class="analytics-metric-value">${(overall.confidence * 100).toFixed(1)}%</span>
-        </div>
-    `;
+    let html = '';
 
-    // Per speaker
-    if (emotion.per_speaker) {
-        html += '<div style="margin-top: 1.5rem;"><strong>Por Speaker:</strong></div>';
-        for (const [speaker, data] of Object.entries(emotion.per_speaker)) {
+    // Create donut chart if distribution is available
+    if (emotion.distribution) {
+        const total = Object.values(emotion.distribution).reduce((sum, val) => sum + val, 0);
+        let currentAngle = -90; // Start from top
+
+        html += '<div class="emotion-donut-container"><svg class="emotion-donut" viewBox="0 0 200 200">';
+
+        Object.entries(emotion.distribution).forEach(([label, value]) => {
+            const percentage = value / total;
+            const angle = percentage * 360;
+            const endAngle = currentAngle + angle;
+
+            const startX = 100 + 80 * Math.cos((currentAngle * Math.PI) / 180);
+            const startY = 100 + 80 * Math.sin((currentAngle * Math.PI) / 180);
+            const endX = 100 + 80 * Math.cos((endAngle * Math.PI) / 180);
+            const endY = 100 + 80 * Math.sin((endAngle * Math.PI) / 180);
+
+            const largeArcFlag = angle > 180 ? 1 : 0;
+            const color = emotionColors[label] || '#5551ff';
+
             html += `
-                <div class="analytics-speaker-card">
-                    <div class="analytics-speaker-header">
-                        <span class="analytics-speaker-name">${speaker}</span>
-                        <span class="analytics-badge">${data.label}</span>
-                    </div>
-                    <div class="analytics-metric">
-                        <span class="analytics-metric-label">Score</span>
-                        <span class="analytics-metric-value">${data.score.toFixed(3)}</span>
-                    </div>
+                <path d="M 100 100 L ${startX} ${startY} A 80 80 0 ${largeArcFlag} 1 ${endX} ${endY} Z"
+                      fill="${color}40"
+                      stroke="${color}"
+                      stroke-width="2"
+                      class="emotion-slice" />
+            `;
+
+            currentAngle = endAngle;
+        });
+
+        // Center hole
+        html += '<circle cx="100" cy="100" r="50" fill="rgba(15, 23, 42, 0.95)" />';
+        html += '</svg></div>';
+
+        // Legend
+        html += '<div class="emotion-legend">';
+        Object.entries(emotion.distribution).forEach(([label, value]) => {
+            const percentage = ((value / total) * 100).toFixed(0);
+            const color = emotionColors[label] || '#5551ff';
+            html += `
+                <div class="emotion-legend-item">
+                    <div class="legend-color" style="background: ${color};"></div>
+                    <div class="legend-label">${label.charAt(0).toUpperCase() + label.slice(1)}</div>
+                    <div class="legend-value">${percentage}%</div>
                 </div>
             `;
-        }
+        });
+        html += '</div>';
     }
 
     container.innerHTML = html;
@@ -3986,33 +4306,54 @@ function displayIntent(intent) {
     const container = document.getElementById('intentContent');
     if (!container) return;
 
-    let html = '<div style="margin-bottom: 1rem;"><strong>Intenções Detectadas:</strong></div>';
+    const intentColors = {
+        'suporte': '#43e97b',
+        'cancelamento': '#f5576c',
+        'upgrade': '#5551ff',
+        'downgrade': '#ffa726',
+        'venda': '#a8edea'
+    };
+
+    let html = '<div class="intent-chart">';
 
     if (intent.intents) {
-        for (const [label, data] of Object.entries(intent.intents)) {
+        const sortedIntents = Object.entries(intent.intents).sort((a, b) => b[1].score - a[1].score);
+
+        sortedIntents.forEach(([label, data]) => {
             const percentage = (data.score * 100).toFixed(1);
+            const color = intentColors[label] || '#5551ff';
+            const barWidth = Math.max(percentage, 2); // Minimum 2% for visibility
+
             html += `
-                <div class="analytics-metric">
-                    <span class="analytics-metric-label">${label}</span>
-                    <span class="analytics-metric-value">${percentage}%</span>
-                </div>
-                <div class="analytics-progress-bar">
-                    <div class="analytics-progress-fill" style="width: ${percentage}%"></div>
+                <div class="intent-bar-item">
+                    <div class="intent-bar-label">
+                        <span class="intent-name">${label.charAt(0).toUpperCase() + label.slice(1)}</span>
+                        <span class="intent-value">${percentage}%</span>
+                    </div>
+                    <div class="intent-bar-track">
+                        <div class="intent-bar-fill" style="width: ${barWidth}%; background: ${color};"></div>
+                    </div>
                 </div>
             `;
-        }
+        });
     }
 
+    html += '</div>';
+
     if (intent.outcome) {
-        html += '<div style="margin-top: 1.5rem;"><strong>Resultado:</strong></div>';
+        const outcomeColor = intent.outcome.label === 'accepted' ? '#43e97b' :
+                           intent.outcome.label === 'rejected' ? '#f5576c' : '#ffa726';
         html += `
-            <div class="analytics-metric">
-                <span class="analytics-metric-label">Status</span>
-                <span class="analytics-badge">${intent.outcome.label}</span>
-            </div>
-            <div class="analytics-metric">
-                <span class="analytics-metric-label">Confiança</span>
-                <span class="analytics-metric-value">${(intent.outcome.score * 100).toFixed(1)}%</span>
+            <div class="outcome-badge" style="background: linear-gradient(135deg, ${outcomeColor}20, ${outcomeColor}10); border-color: ${outcomeColor}50;">
+                <div class="outcome-icon" style="background: ${outcomeColor}30; color: ${outcomeColor};">
+                    ${intent.outcome.label === 'accepted' ? '✓' : intent.outcome.label === 'rejected' ? '✗' : '⏱'}
+                </div>
+                <div class="outcome-info">
+                    <div class="outcome-label">Resultado</div>
+                    <div class="outcome-status">${intent.outcome.label === 'accepted' ? 'Aceito' :
+                                                   intent.outcome.label === 'rejected' ? 'Rejeitado' : 'Pendente'}</div>
+                </div>
+                <div class="outcome-confidence">${(intent.outcome.score * 100).toFixed(0)}%</div>
             </div>
         `;
     }
@@ -4024,31 +4365,55 @@ function displayCompliance(compliance) {
     const container = document.getElementById('complianceContent');
     if (!container) return;
 
-    const scorePercentage = (compliance.score * 100).toFixed(1);
+    const scorePercentage = (compliance.score * 100).toFixed(0);
+    const circumference = 2 * Math.PI * 70; // radius = 70
+    const offset = circumference - (scorePercentage / 100) * circumference;
+    const strokeColor = scorePercentage >= 75 ? '#43e97b' : scorePercentage >= 50 ? '#ffa726' : '#f5576c';
 
     let html = `
-        <div class="analytics-metric">
-            <span class="analytics-metric-label">Score de Compliance</span>
-            <span class="analytics-metric-value">${scorePercentage}%</span>
+        <div class="compliance-gauge-container">
+            <svg class="compliance-gauge" viewBox="0 0 160 160">
+                <circle class="gauge-bg" cx="80" cy="80" r="70" />
+                <circle class="gauge-progress" cx="80" cy="80" r="70"
+                        stroke="${strokeColor}"
+                        stroke-dasharray="${circumference}"
+                        stroke-dashoffset="${offset}" />
+            </svg>
+            <div class="gauge-text">
+                <div class="gauge-value">${scorePercentage}%</div>
+                <div class="gauge-label">Compliance</div>
+            </div>
         </div>
-        <div class="analytics-progress-bar">
-            <div class="analytics-progress-fill" style="width: ${scorePercentage}%"></div>
-        </div>
+        <div class="compliance-checks">
     `;
 
-    if (compliance.passed && compliance.passed.length > 0) {
-        html += '<div style="margin-top: 1.5rem;"><strong style="color: #43e97b;">✓ Aprovados:</strong></div>';
-        compliance.passed.forEach(item => {
-            html += `<div class="analytics-badge positive" style="margin: 0.25rem;">${item}</div>`;
+    if (compliance.details && compliance.details.length > 0) {
+        compliance.details.forEach(check => {
+            const checkNames = {
+                'greeting': 'Saudação',
+                'operator_identification': 'Identificação',
+                'offer_presented': 'Oferta',
+                'call_closure': 'Encerramento'
+            };
+            const checkName = checkNames[check.check] || check.check;
+            const checkScore = (check.score * 100).toFixed(0);
+            const icon = check.passed ? '✓' : '✗';
+            const statusClass = check.passed ? 'check-passed' : 'check-failed';
+
+            html += `
+                <div class="compliance-check-item ${statusClass}">
+                    <div class="check-icon">${icon}</div>
+                    <div class="check-content">
+                        <div class="check-name">${checkName}</div>
+                        ${check.evidence ? `<div class="check-evidence">"${check.evidence}"</div>` : ''}
+                    </div>
+                    <div class="check-score">${checkScore}%</div>
+                </div>
+            `;
         });
     }
 
-    if (compliance.failed && compliance.failed.length > 0) {
-        html += '<div style="margin-top: 1rem;"><strong style="color: #f5576c;">✗ Reprovados:</strong></div>';
-        compliance.failed.forEach(item => {
-            html += `<div class="analytics-badge negative" style="margin: 0.25rem;">${item}</div>`;
-        });
-    }
+    html += '</div>';
 
     container.innerHTML = html;
 }
@@ -4108,16 +4473,169 @@ function clearAnalytics() {
     const transcriptEl = document.getElementById('analyticsTranscript');
     const statusEl = document.getElementById('analyticsStatus');
     const resultsEl = document.getElementById('analyticsResults');
+    const kpiSection = document.getElementById('analyticsKPISection');
 
     if (audioFileEl) audioFileEl.value = '';
     if (transcriptEl) transcriptEl.value = '';
     if (statusEl) statusEl.textContent = '';
     if (resultsEl) resultsEl.style.display = 'none';
+    if (kpiSection) kpiSection.style.display = 'none';
 
     if (analyticsPollInterval) {
         clearInterval(analyticsPollInterval);
         analyticsPollInterval = null;
     }
+}
+
+function loadMockAnalytics() {
+    const data = MOCK_ANALYTICS_DATA;
+
+    // Show KPI Section
+    const kpiSection = document.getElementById('analyticsKPISection');
+    if (kpiSection) {
+        kpiSection.style.display = 'block';
+
+        // Update KPI values
+        const durationEl = document.getElementById('kpiDuration');
+        const sentimentEl = document.getElementById('kpiSentiment');
+        const complianceEl = document.getElementById('kpiCompliance');
+        const intentEl = document.getElementById('kpiIntent');
+
+        if (durationEl) {
+            const minutes = Math.floor(data.call_info.duration / 60);
+            const seconds = data.call_info.duration % 60;
+            durationEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        if (sentimentEl) {
+            const label = data.sentiment.overall.label === 'positive' ? 'Positivo' :
+                         data.sentiment.overall.label === 'negative' ? 'Negativo' : 'Neutro';
+            const score = Math.round(data.sentiment.overall.score * 100);
+            sentimentEl.textContent = `${label} (${score}%)`;
+        }
+
+        if (complianceEl) {
+            const score = Math.round(data.compliance.score * 100);
+            complianceEl.textContent = `${score}%`;
+        }
+
+        if (intentEl) {
+            // Find highest intent
+            let highestIntent = '';
+            let highestScore = 0;
+            Object.entries(data.intent.intents).forEach(([intent, info]) => {
+                if (info.score > highestScore) {
+                    highestScore = info.score;
+                    highestIntent = intent;
+                }
+            });
+            const intentLabel = highestIntent.charAt(0).toUpperCase() + highestIntent.slice(1);
+            intentEl.textContent = intentLabel;
+        }
+    }
+
+    // Show results section
+    const resultsEl = document.getElementById('analyticsResults');
+    if (resultsEl) {
+        resultsEl.style.display = 'grid';
+    }
+
+    // Display all analytics
+    if (data.sentiment) displaySentiment(data.sentiment);
+    if (data.emotion) displayEmotion(data.emotion);
+    if (data.intent) displayIntent(data.intent);
+    if (data.compliance) displayCompliance(data.compliance);
+    if (data.summary) displaySummary(data.summary);
+    if (data.acoustic) displayAcoustic(data.acoustic);
+    if (data.acoustic && data.acoustic.per_speaker) displaySpeakers(data.acoustic.per_speaker);
+    if (data.timeline) displayTimeline(data.timeline);
+
+    // Update status
+    const statusEl = document.getElementById('analyticsStatus');
+    if (statusEl) {
+        statusEl.textContent = '✅ Exemplo de análise carregado com sucesso!';
+        statusEl.style.color = '#43e97b';
+    }
+}
+
+function displayAcoustic(acoustic) {
+    const container = document.getElementById('acousticContent');
+    if (!container || !acoustic) return;
+
+    const minutes = Math.floor(acoustic.duration / 60);
+    const seconds = acoustic.duration % 60;
+    const durationText = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    const silencePercent = Math.round(acoustic.silence_ratio * 100);
+    const overlapPercent = Math.round(acoustic.overlap_ratio * 100);
+
+    container.innerHTML = `
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Duração Total</span>
+            <span class="analytics-metric-value">${durationText}</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Taxa de Fala</span>
+            <span class="analytics-metric-value">${acoustic.speech_rate} palavras/min</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Pitch Médio</span>
+            <span class="analytics-metric-value">${acoustic.avg_pitch} Hz</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Silêncio</span>
+            <span class="analytics-metric-value">${silencePercent}%</span>
+        </div>
+        <div class="analytics-metric">
+            <span class="analytics-metric-label">Sobreposição de Fala</span>
+            <span class="analytics-metric-value">${overlapPercent}%</span>
+        </div>
+    `;
+}
+
+function displaySpeakers(speakers) {
+    const container = document.getElementById('speakerContent');
+    if (!container || !speakers) return;
+
+    let html = '';
+
+    Object.entries(speakers).forEach(([speaker, data]) => {
+        const minutes = Math.floor(data.total_seconds / 60);
+        const seconds = Math.round(data.total_seconds % 60);
+        const durationText = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        const percentage = Math.round(data.percentage);
+
+        html += `
+            <div class="analytics-speaker-card">
+                <div class="analytics-speaker-header">
+                    <span class="analytics-speaker-name">${speaker}</span>
+                    <span class="analytics-badge">${percentage}%</span>
+                </div>
+                <div class="analytics-progress-bar">
+                    <div class="analytics-progress-fill" style="width: ${percentage}%"></div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; margin-top: 0.75rem;">
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Tempo</span>
+                        <span class="analytics-metric-value">${durationText}</span>
+                    </div>
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Turnos</span>
+                        <span class="analytics-metric-value">${data.turns}</span>
+                    </div>
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Duração Média</span>
+                        <span class="analytics-metric-value">${data.avg_turn_duration.toFixed(1)}s</span>
+                    </div>
+                    <div class="analytics-metric">
+                        <span class="analytics-metric-label">Palavras/min</span>
+                        <span class="analytics-metric-value">${data.speech_rate}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
 }
 
 function bootstrap() {
@@ -4156,9 +4674,17 @@ function loadAuthTokenFromStorage() {
 
 const translations = {
     'pt-br': {
+        // Modal
+        'modal-title': 'Acesso Restrito',
+        'modal-description': 'Digite a senha para acessar o Paneas Studio',
+        'modal-placeholder': 'Digite a senha',
+        'modal-button': 'Entrar',
+        'modal-error': 'Senha incorreta! Tente novamente.',
+
         // Navbar
         'navbar-components': 'Componentes',
         'navbar-playground': 'Playground',
+        'navbar-api-keys': 'API Keys',
         'navbar-logout-title': 'Sair',
 
         // Hero
@@ -4166,19 +4692,176 @@ const translations = {
         'hero-subtitle': 'Ferramentas profissionais de IA para desenvolvimento rápido',
 
         // Tabs
-        'tab-asr': 'ASR',
+        'tab-realtime': 'Tempo Real',
+        'tab-transcription': 'Transcrição',
         'tab-diar': 'Diarização',
         'tab-analytics': 'Analytics',
         'tab-agents': 'Agents',
         'tab-ocr': 'OCR',
         'tab-tts': 'TTS',
-        'tab-scrapper': 'Scrapper',
-        'tab-chat': 'Chat'
+        'tab-scrapper': 'Processos',
+        'tab-chat': 'Chat',
+
+        // Common buttons
+        'btn-send': 'Enviar',
+        'btn-clear': 'Limpar',
+        'btn-download': 'Baixar',
+        'btn-stop': 'Parar',
+        'btn-execute': 'Executar',
+        'btn-upload': 'Upload',
+        'btn-cancel': 'Cancelar',
+
+        // ASR
+        'asr-title': 'Reconhecimento de Fala (ASR)',
+        'asr-subtitle': 'Transcreva áudio para texto em tempo real',
+        'asr-start': 'Iniciar Gravação',
+        'asr-stop': 'Parar Gravação',
+        'asr-language': 'Idioma',
+        'asr-model': 'Modelo',
+
+        // Diarization
+        'diar-title': 'Diarização de Áudio',
+        'diar-description': 'Identifique e separe diferentes falantes',
+        'diar-upload': 'Clique ou arraste um arquivo de áudio',
+        'diar-button': 'Executar Diarização',
+
+        // OCR
+        'ocr-title': 'Reconhecimento de Texto (OCR)',
+        'ocr-description': 'Extraia texto de imagens ou PDFs',
+        'ocr-upload': 'Clique ou arraste uma imagem ou PDF',
+        'ocr-button': 'Executar OCR',
+        'ocr-filetypes': 'PNG, JPG, JPEG, GIF, PDF',
+
+        // TTS
+        'tts-title': 'Síntese de Voz (TTS)',
+        'tts-description': 'Clone de voz com Paneas-XXTS-v2',
+        'tts-language': 'Idioma',
+        'tts-accent': 'Sotaque',
+        'tts-voice': 'Voz',
+        'tts-text': 'Texto para Sintetizar',
+        'tts-placeholder': 'Digite o texto que deseja converter em áudio...',
+        'tts-maxchars': 'Máximo 500 caracteres',
+        'tts-button': 'Sintetizar Áudio',
+        'tts-streaming': 'Modo Streaming',
+
+        // Chat
+        'chat-title': 'Chat com LLM',
+        'chat-model': 'Modelo Direto',
+        'chat-agent': 'Agente',
+        'chat-team': 'Team',
+        'chat-select': 'Selecione:',
+        'chat-history': 'Manter Histórico',
+        'chat-system': 'System Prompt (opcional):',
+        'chat-placeholder': 'Digite sua mensagem...',
+
+        // Scrapper
+        'scrapper-title': 'Consulta de Processo (TJSP)',
+        'scrapper-description': 'Busque processos específicos',
+        'scrapper-number': 'Número do Processo',
+        'scrapper-party': 'Nome da Parte',
+        'scrapper-document': 'Documento da Parte',
+        'scrapper-lawyer': 'Nome do Advogado',
+        'scrapper-oab': 'Número da OAB',
+        'scrapper-court': 'Foro',
+        'scrapper-search': 'Consultar',
+        'scrapper-list': 'Listagem de Processos',
+
+        // Analytics
+        'analytics-title': 'Analytics de Conversação',
+        'analytics-description': 'Análise de sentimentos e insights',
+        'analytics-run': 'Executar Analytics',
+        'analytics-load-mock': 'Ver Exemplo',
+        'analytics-kpi-duration': 'Duração',
+        'analytics-kpi-sentiment': 'Sentimento Geral',
+        'analytics-kpi-compliance': 'Compliance',
+        'analytics-kpi-intent': 'Intento Principal',
+        'analytics-acoustic-title': 'Métricas Acústicas',
+        'analytics-speakers-title': 'Distribuição por Speaker',
+
+        // Hero Section
+        'hero-badge': 'Stack de IA Completa',
+        'hero-main-title': 'Ecossistema',
+        'hero-btn-try': 'Experimentar agora',
+        'hero-btn-components': 'Ver componentes',
+        'hero-btn-docs': 'Documentação',
+        'hero-stat-components': 'Componentes de IA',
+        'hero-stat-private': 'Local & Privado',
+        'hero-stat-latency': 'Baixa Latência',
+        'hero-stat-lgpd': 'Conforme LGPD',
+        'hero-stat-gpu': 'GPU Acelerado',
+        'hero-stat-active': 'Sempre Ativo',
+
+        // Components Library
+        'lib-title': 'Biblioteca',
+        'lib-subtitle': 'Componentes modulares e reutilizáveis para construir soluções de IA',
+        'lib-try-btn': 'Experimentar →',
+
+        // Product Cards
+        'card-realtime-title': 'Real-time Transcription',
+        'card-realtime-desc': 'Componente de transcrição em tempo real com diarização. Integre streaming de áudio em sua aplicação.',
+        'card-realtime-feat1': 'Streaming de áudio em tempo real',
+        'card-realtime-feat2': 'Identificação de speakers (diarização)',
+        'card-realtime-feat3': 'Insights gerados por LLM',
+        'card-realtime-feat4': 'Suporte a múltiplos idiomas',
+
+        'card-transcription-title': 'Audio Transcription',
+        'card-transcription-desc': 'Componente de transcrição em lote para múltiplos formatos de áudio. API RESTful pronta para uso.',
+        'card-transcription-feat1': 'Upload de múltiplos formatos',
+        'card-transcription-feat2': 'Transcrição em lote',
+        'card-transcription-feat3': 'Processamento rápido',
+
+        'card-ocr-title': 'OCR Intelligence',
+        'card-ocr-desc': 'Componente de OCR para extração de texto de documentos. Integre reconhecimento de caracteres facilmente.',
+        'card-ocr-feat1': 'Suporte a múltiplos idiomas',
+        'card-ocr-feat2': 'PDFs e imagens',
+        'card-ocr-feat3': 'Alta precisão',
+
+        'card-scrapper-title': 'Legal Process Tracker',
+        'card-scrapper-desc': 'Componente de consulta jurídica automatizada. Integre busca e monitoramento de processos TJSP.',
+        'card-scrapper-feat1': 'Busca por CPF/CNPJ',
+        'card-scrapper-feat2': 'Monitoramento automatizado',
+        'card-scrapper-feat3': 'Exportação de dados',
+
+        'card-chat-title': 'Chat LLM',
+        'card-chat-desc': 'Componente de LLM conversacional com function calling. Adicione inteligência às suas aplicações.',
+        'card-chat-feat1': 'Modelo Paneas-32B INT4',
+        'card-chat-feat2': 'Function calling',
+        'card-chat-feat3': 'Histórico persistente',
+
+        'card-tts-title': 'Voice Synthesis',
+        'card-tts-desc': 'Componente de síntese de voz neural. Integre clonagem e geração de voz em suas aplicações.',
+        'card-tts-feat1': 'Múltiplas vozes',
+        'card-tts-feat2': 'Streaming em tempo real',
+        'card-tts-feat3': 'Qualidade de estúdio',
+
+        'card-analytics-title': 'Speech Analytics',
+        'card-analytics-desc': 'Componente de análise de sentimentos e emoções. Extraia insights de conversas com NLP avançado.',
+        'card-analytics-feat1': 'Análise de sentimentos (positivo/negativo/neutro)',
+        'card-analytics-feat2': 'Detecção de emoções',
+        'card-analytics-feat3': 'Identificação de intenções',
+        'card-analytics-feat4': 'Compliance checks automatizados',
+
+        'card-agents-title': 'AI Agents Framework',
+        'card-agents-desc': 'Framework completo para criação de agentes de IA com ferramentas, conhecimento e templates. Suporte a multi-agente com Teams hierárquicos. Construa assistentes inteligentes personalizados e coordenados.',
+        'card-agents-feat1': 'Criação e gerenciamento de agentes',
+        'card-agents-feat2': 'Teams multi-agente com hierarquia',
+        'card-agents-feat3': 'Tools customizáveis (function calling)',
+        'card-agents-feat4': 'Knowledge bases com RAG',
+        'card-agents-feat5': 'Templates reutilizáveis',
+        'card-agents-feat6': 'Execução e validação de agentes/teams'
     },
     'es': {
+        // Modal
+        'modal-title': 'Acceso Restringido',
+        'modal-description': 'Ingrese la contraseña para acceder a Paneas Studio',
+        'modal-placeholder': 'Ingrese la contraseña',
+        'modal-button': 'Entrar',
+        'modal-error': '¡Contraseña incorrecta! Inténtelo de nuevo.',
+
         // Navbar
         'navbar-components': 'Componentes',
         'navbar-playground': 'Playground',
+        'navbar-api-keys': 'Claves API',
         'navbar-logout-title': 'Salir',
 
         // Hero
@@ -4186,14 +4869,163 @@ const translations = {
         'hero-subtitle': 'Herramientas profesionales de IA para desarrollo rápido',
 
         // Tabs
-        'tab-asr': 'ASR',
+        'tab-realtime': 'Tiempo Real',
+        'tab-transcription': 'Transcripción',
         'tab-diar': 'Diarización',
         'tab-analytics': 'Analytics',
         'tab-agents': 'Agentes',
         'tab-ocr': 'OCR',
         'tab-tts': 'TTS',
-        'tab-scrapper': 'Scrapper',
-        'tab-chat': 'Chat'
+        'tab-scrapper': 'Procesos',
+        'tab-chat': 'Chat',
+
+        // Common buttons
+        'btn-send': 'Enviar',
+        'btn-clear': 'Limpiar',
+        'btn-download': 'Descargar',
+        'btn-stop': 'Detener',
+        'btn-execute': 'Ejecutar',
+        'btn-upload': 'Subir',
+        'btn-cancel': 'Cancelar',
+
+        // ASR
+        'asr-title': 'Reconocimiento de Voz (ASR)',
+        'asr-subtitle': 'Transcriba audio a texto en tiempo real',
+        'asr-start': 'Iniciar Grabación',
+        'asr-stop': 'Detener Grabación',
+        'asr-language': 'Idioma',
+        'asr-model': 'Modelo',
+
+        // Diarization
+        'diar-title': 'Diarización de Audio',
+        'diar-description': 'Identifique y separe diferentes hablantes',
+        'diar-upload': 'Haga clic o arrastre un archivo de audio',
+        'diar-button': 'Ejecutar Diarización',
+
+        // OCR
+        'ocr-title': 'Reconocimiento de Texto (OCR)',
+        'ocr-description': 'Extraiga texto de imágenes o PDFs',
+        'ocr-upload': 'Haga clic o arrastre una imagen o PDF',
+        'ocr-button': 'Ejecutar OCR',
+        'ocr-filetypes': 'PNG, JPG, JPEG, GIF, PDF',
+
+        // TTS
+        'tts-title': 'Síntesis de Voz (TTS)',
+        'tts-description': 'Clonación de voz con Paneas-XXTS-v2',
+        'tts-language': 'Idioma',
+        'tts-accent': 'Acento',
+        'tts-voice': 'Voz',
+        'tts-text': 'Texto para Sintetizar',
+        'tts-placeholder': 'Escriba el texto que desea convertir en audio...',
+        'tts-maxchars': 'Máximo 500 caracteres',
+        'tts-button': 'Sintetizar Audio',
+        'tts-streaming': 'Modo Streaming',
+
+        // Chat
+        'chat-title': 'Chat con LLM',
+        'chat-model': 'Modelo Directo',
+        'chat-agent': 'Agente',
+        'chat-team': 'Equipo',
+        'chat-select': 'Seleccione:',
+        'chat-history': 'Mantener Historial',
+        'chat-system': 'System Prompt (opcional):',
+        'chat-placeholder': 'Escriba su mensaje...',
+
+        // Scrapper
+        'scrapper-title': 'Consulta de Proceso (TJSP)',
+        'scrapper-description': 'Busque procesos específicos',
+        'scrapper-number': 'Número de Proceso',
+        'scrapper-party': 'Nombre de la Parte',
+        'scrapper-document': 'Documento de la Parte',
+        'scrapper-lawyer': 'Nombre del Abogado',
+        'scrapper-oab': 'Número de OAB',
+        'scrapper-court': 'Tribunal',
+        'scrapper-search': 'Consultar',
+        'scrapper-list': 'Listado de Procesos',
+
+        // Analytics
+        'analytics-title': 'Analytics de Conversación',
+        'analytics-description': 'Análisis de sentimientos e insights',
+        'analytics-run': 'Ejecutar Analytics',
+        'analytics-load-mock': 'Ver Ejemplo',
+        'analytics-kpi-duration': 'Duración',
+        'analytics-kpi-sentiment': 'Sentimiento General',
+        'analytics-kpi-compliance': 'Cumplimiento',
+        'analytics-kpi-intent': 'Intención Principal',
+        'analytics-acoustic-title': 'Métricas Acústicas',
+        'analytics-speakers-title': 'Distribución por Hablante',
+
+        // Hero Section
+        'hero-badge': 'Stack de IA Completo',
+        'hero-main-title': 'Ecosistema',
+        'hero-btn-try': 'Probar ahora',
+        'hero-btn-components': 'Ver componentes',
+        'hero-btn-docs': 'Documentación',
+        'hero-stat-components': 'Componentes de IA',
+        'hero-stat-private': 'Local y Privado',
+        'hero-stat-latency': 'Baja Latencia',
+        'hero-stat-lgpd': 'Conforme LGPD',
+        'hero-stat-gpu': 'Acelerado por GPU',
+        'hero-stat-active': 'Siempre Activo',
+
+        // Components Library
+        'lib-title': 'Biblioteca',
+        'lib-subtitle': 'Componentes modulares y reutilizables para construir soluciones de IA',
+        'lib-try-btn': 'Probar →',
+
+        // Product Cards
+        'card-realtime-title': 'Transcripción en Tiempo Real',
+        'card-realtime-desc': 'Componente de transcripción en tiempo real con diarización. Integre streaming de audio en su aplicación.',
+        'card-realtime-feat1': 'Streaming de audio en tiempo real',
+        'card-realtime-feat2': 'Identificación de hablantes (diarización)',
+        'card-realtime-feat3': 'Insights generados por LLM',
+        'card-realtime-feat4': 'Soporte para múltiples idiomas',
+
+        'card-transcription-title': 'Transcripción de Audio',
+        'card-transcription-desc': 'Componente de transcripción por lotes para múltiples formatos de audio. API RESTful lista para usar.',
+        'card-transcription-feat1': 'Carga de múltiples formatos',
+        'card-transcription-feat2': 'Transcripción por lotes',
+        'card-transcription-feat3': 'Procesamiento rápido',
+
+        'card-ocr-title': 'OCR Intelligence',
+        'card-ocr-desc': 'Componente OCR para extracción de texto de documentos. Integre reconocimiento de caracteres fácilmente.',
+        'card-ocr-feat1': 'Soporte para múltiples idiomas',
+        'card-ocr-feat2': 'PDFs e imágenes',
+        'card-ocr-feat3': 'Alta precisión',
+
+        'card-scrapper-title': 'Rastreador de Procesos Legales',
+        'card-scrapper-desc': 'Componente de consulta jurídica automatizada. Integre búsqueda y monitoreo de procesos TJSP.',
+        'card-scrapper-feat1': 'Búsqueda por CPF/CNPJ',
+        'card-scrapper-feat2': 'Monitoreo automatizado',
+        'card-scrapper-feat3': 'Exportación de datos',
+
+        'card-chat-title': 'Chat LLM',
+        'card-chat-desc': 'Componente LLM conversacional con function calling. Agregue inteligencia a sus aplicaciones.',
+        'card-chat-feat1': 'Modelo Paneas-32B INT4',
+        'card-chat-feat2': 'Function calling',
+        'card-chat-feat3': 'Historial persistente',
+
+        'card-tts-title': 'Síntesis de Voz',
+        'card-tts-desc': 'Componente de síntesis de voz neural. Integre clonación y generación de voz en sus aplicaciones.',
+        'card-tts-feat1': 'Múltiples voces',
+        'card-tts-feat2': 'Streaming en tiempo real',
+        'card-tts-feat3': 'Calidad de estudio',
+
+        'card-analytics-title': 'Speech Analytics',
+        'card-analytics-desc': 'Componente de análisis de sentimientos y emociones. Extraiga insights de conversaciones con NLP avanzado.',
+        'card-analytics-feat1': 'Análisis de sentimientos (positivo/negativo/neutro)',
+        'card-analytics-feat2': 'Detección de emociones',
+        'card-analytics-feat3': 'Identificación de intenciones',
+        'card-analytics-feat4': 'Verificaciones de cumplimiento automatizadas',
+
+        'card-agents-title': 'Framework de Agentes IA',
+        'card-agents-desc': 'Framework completo para creación de agentes de IA con herramientas, conocimiento y plantillas. Soporte para multi-agente con Teams jerárquicos. Construya asistentes inteligentes personalizados y coordinados.',
+        'card-agents-feat1': 'Creación y gestión de agentes',
+        'card-agents-feat2': 'Teams multi-agente con jerarquía',
+        'card-agents-feat3': 'Tools personalizables (function calling)',
+        'card-agents-feat4': 'Bases de conocimiento con RAG',
+        'card-agents-feat5': 'Plantillas reutilizables',
+        'card-agents-feat6': 'Ejecución y validación de agentes/teams'
     }
 };
 
@@ -4225,12 +5057,16 @@ function setPageLanguage(lang) {
     const logoutBtn = document.getElementById('logoutButton');
     if (logoutBtn) logoutBtn.setAttribute('title', t['navbar-logout-title']);
 
-    // Hero
-    const heroTitle = document.querySelector('.hero__title');
-    if (heroTitle) heroTitle.textContent = t['hero-title'];
-
+    // Hero subtitle
     const heroSubtitle = document.querySelector('.hero__subtitle');
     if (heroSubtitle) heroSubtitle.textContent = t['hero-subtitle'];
+
+    // API Keys button
+    const apiKeysBtn = document.getElementById('apiKeysNavBtn');
+    if (apiKeysBtn) {
+        const textNode = Array.from(apiKeysBtn.childNodes).find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+        if (textNode) textNode.textContent = ' ' + t['navbar-api-keys'];
+    }
 
     // Tabs - preserve icons, only update text in span
     document.querySelectorAll('.playground__nav-item').forEach(tab => {
@@ -4241,6 +5077,169 @@ function setPageLanguage(lang) {
                 span.textContent = t[`tab-${tabId}`];
             }
         }
+    });
+
+    // Modal de senha
+    const modalTitle = document.querySelector('.modal__title');
+    if (modalTitle) modalTitle.textContent = t['modal-title'];
+
+    const modalDesc = document.querySelector('.modal__description');
+    if (modalDesc) modalDesc.textContent = t['modal-description'];
+
+    const passwordInput = document.getElementById('passwordInput');
+    if (passwordInput) passwordInput.setAttribute('placeholder', t['modal-placeholder']);
+
+    const modalButton = document.querySelector('.modal__content button[type="submit"]');
+    if (modalButton) {
+        const btnText = modalButton.childNodes[modalButton.childNodes.length - 1];
+        if (btnText && btnText.nodeType === Node.TEXT_NODE) {
+            btnText.textContent = t['modal-button'];
+        }
+    }
+
+    const passwordError = document.getElementById('passwordError');
+    if (passwordError) {
+        const errorText = passwordError.childNodes[passwordError.childNodes.length - 1];
+        if (errorText && errorText.nodeType === Node.TEXT_NODE) {
+            errorText.textContent = t['modal-error'];
+        }
+    }
+
+    // Helper function to translate by selector
+    const translate = (selector, key, attr = 'textContent') => {
+        const el = document.querySelector(selector);
+        if (el && t[key]) {
+            if (attr === 'placeholder') {
+                el.setAttribute('placeholder', t[key]);
+            } else if (attr === 'title') {
+                el.setAttribute('title', t[key]);
+            } else {
+                el[attr] = t[key];
+            }
+        }
+    };
+
+    // TTS Tab
+    translate('[data-content="tts"] .playground-card__title', 'tts-title');
+    translate('[data-content="tts"] .card__description', 'tts-description');
+    translate('label[for="ttsVoice"]', 'tts-voice');
+    translate('label[for="ttsText"]', 'tts-text');
+    translate('#ttsText', 'tts-placeholder', 'placeholder');
+    translate('[data-content="tts"] small.text-muted', 'tts-maxchars');
+
+    // TTS Buttons - preserve SVG icons
+    const ttsButton = document.getElementById('ttsButton');
+    if (ttsButton && t['tts-button']) {
+        const textNodes = Array.from(ttsButton.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        ttsButton.appendChild(document.createTextNode(t['tts-button']));
+    }
+
+    const ttsStreamButton = document.getElementById('ttsStreamButton');
+    if (ttsStreamButton && t['tts-streaming']) {
+        const textNodes = Array.from(ttsStreamButton.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        ttsStreamButton.appendChild(document.createTextNode(t['tts-streaming']));
+    }
+
+    // OCR Tab
+    translate('[data-content="ocr"] .playground-card__title', 'ocr-title');
+    translate('[data-content="ocr"] .card__description', 'ocr-description');
+
+    const ocrButton = document.getElementById('ocrButton');
+    if (ocrButton && t['ocr-button']) {
+        const textNodes = Array.from(ocrButton.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        ocrButton.appendChild(document.createTextNode(t['ocr-button']));
+    }
+
+    // Diarization Tab
+    translate('[data-content="diarization"] .playground-card__title', 'diar-title');
+    translate('[data-content="diarization"] .card__description', 'diar-description');
+
+    const diarButton = document.getElementById('diarButton');
+    if (diarButton && t['diar-button']) {
+        const textNodes = Array.from(diarButton.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        diarButton.appendChild(document.createTextNode(t['diar-button']));
+    }
+
+    // Chat Tab
+    translate('[data-content="chat"] .playground-card__title', 'chat-title');
+    translate('[data-content="chat"] textarea', 'chat-placeholder', 'placeholder');
+
+    // Analytics Tab
+    translate('[data-content="analytics"] .playground-card__title', 'analytics-title');
+    translate('[data-content="analytics"] .card__description', 'analytics-description');
+
+    // Hero Section
+    translate('.hero__badge span:last-child', 'hero-badge');
+
+    const heroTitleEl = document.querySelector('.hero__title');
+    if (heroTitleEl && t['hero-main-title']) {
+        // Keep the gradient-text span, only update text before it
+        const gradientSpan = heroTitleEl.querySelector('.gradient-text');
+        if (gradientSpan) {
+            const textNodes = Array.from(heroTitleEl.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+            textNodes.forEach(n => n.remove());
+            heroTitleEl.insertBefore(document.createTextNode(t['hero-main-title'] + ' '), gradientSpan);
+        }
+    }
+
+    const heroBtnTry = document.querySelector('.btn.btn--hero');
+    if (heroBtnTry && t['hero-btn-try']) {
+        const textNodes = Array.from(heroBtnTry.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        heroBtnTry.appendChild(document.createTextNode(t['hero-btn-try']));
+    }
+
+    const heroBtnComponents = document.querySelector('.btn.btn--ghost');
+    if (heroBtnComponents && t['hero-btn-components']) {
+        const textNodes = Array.from(heroBtnComponents.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        heroBtnComponents.appendChild(document.createTextNode(t['hero-btn-components']));
+    }
+
+    const heroBtnDocs = document.querySelector('a.btn.btn--ghost[href="docs.html"]');
+    if (heroBtnDocs && t['hero-btn-docs']) {
+        const textNodes = Array.from(heroBtnDocs.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(n => n.remove());
+        heroBtnDocs.appendChild(document.createTextNode(t['hero-btn-docs']));
+    }
+
+    // Hero Stats
+    const statLabels = document.querySelectorAll('.stat-item__label');
+    if (statLabels[0]) statLabels[0].textContent = t['hero-stat-components'];
+    if (statLabels[1]) statLabels[1].textContent = t['hero-stat-private'];
+    if (statLabels[2]) statLabels[2].textContent = t['hero-stat-latency'];
+    if (statLabels[3]) statLabels[3].textContent = t['hero-stat-lgpd'];
+    if (statLabels[4]) statLabels[4].textContent = t['hero-stat-gpu'];
+    if (statLabels[5]) statLabels[5].textContent = t['hero-stat-active'];
+
+    // Library Section
+    translate('.section-title', 'lib-title');
+    translate('.section-subtitle', 'lib-subtitle');
+
+    // Product Cards
+    const products = ['realtime', 'transcription', 'ocr', 'scrapper', 'chat', 'tts', 'analytics', 'agents'];
+    products.forEach(product => {
+        const card = document.querySelector(`.product-card[data-product="${product}"]`);
+        if (!card) return;
+
+        const title = card.querySelector('.product-card__title');
+        if (title) title.textContent = t[`card-${product}-title`];
+
+        const desc = card.querySelector('.product-card__description');
+        if (desc) desc.textContent = t[`card-${product}-desc`];
+
+        const features = card.querySelectorAll('.product-card__features li');
+        features.forEach((feat, idx) => {
+            const key = `card-${product}-feat${idx + 1}`;
+            if (t[key]) feat.textContent = t[key];
+        });
+
+        const cta = card.querySelector('.product-card__cta');
+        if (cta) cta.textContent = t['lib-try-btn'];
     });
 }
 
