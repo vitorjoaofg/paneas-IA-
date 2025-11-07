@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class TTSRequest(BaseModel):
     text: str
     language: str = "pt"
-    speaker_reference: str | None = None
+    speaker_reference: str | None = None  # Pode ser um nome de speaker (ex: "Claribel Dervla") ou caminho s3://bucket/voice.wav
     streaming: bool = False
     format: str = "wav"
 

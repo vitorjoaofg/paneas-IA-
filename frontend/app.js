@@ -1654,7 +1654,7 @@ function stopSession() {
 // ============================================================================
 
 async function loadAgentsForChat() {
-    const agentsApiBase = 'https://esdras.ngrok.app';
+    const agentsApiBase = 'https://paneas-agents-dev.paneas.net';
     try {
         const response = await fetch(`${agentsApiBase}/v1/agents`, {
             headers: { 'ngrok-skip-browser-warning': 'true' }
@@ -1678,7 +1678,7 @@ async function loadAgentsForChat() {
 }
 
 async function loadTeamsForChat() {
-    const agentsApiBase = 'https://esdras.ngrok.app';
+    const agentsApiBase = 'https://paneas-agents-dev.paneas.net';
     try {
         const response = await fetch(`${agentsApiBase}/v1/teams`, {
             headers: { 'ngrok-skip-browser-warning': 'true' }
@@ -1741,7 +1741,7 @@ function updateChatTargetSelect() {
 
 async function sendToAgent(message) {
     const agentId = state.chatTargetId;
-    const agentsApiBase = 'https://esdras.ngrok.app';
+    const agentsApiBase = 'https://paneas-agents-dev.paneas.net';
 
     // Gerar conversation_id na primeira mensagem
     if (!state.conversationId) {
@@ -1807,7 +1807,7 @@ async function sendToAgent(message) {
 
 async function sendToTeam(message) {
     const teamId = state.chatTargetId;
-    const agentsApiBase = 'https://esdras.ngrok.app';
+    const agentsApiBase = 'https://paneas-agents-dev.paneas.net';
 
     if (!state.conversationId) {
         state.conversationId = `conv-${Date.now()}-${Math.random().toString(36).substring(7)}`;

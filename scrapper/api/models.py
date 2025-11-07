@@ -195,10 +195,12 @@ class ProcessoResumoPJE(BaseModel):
 
 class AdvogadoPJE(BaseModel):
     nome: str
+    oab: Optional[str] = None
     situacao: Optional[str] = None
 
 
 class PartePJE(BaseModel):
+    tipo: Optional[str] = None
     nome: str
     documento: Optional[str] = None
     advogados: list[AdvogadoPJE] = Field(default_factory=list)

@@ -254,7 +254,8 @@ async def _salvar_partes(conn, processo_id: UUID, dados: Dict[str, Any], tribuna
 async def buscar_processos(
     filtros: Optional[Dict[str, Any]] = None,
     limit: int = 50,
-    offset: int = 0
+    offset: int = 0,
+    include_dados_completos: bool = True
 ) -> Dict[str, Any]:
     """
     Busca processos com filtros e paginação.
@@ -346,7 +347,32 @@ async def buscar_processos(
         rows = await conn.fetch(query, *params)
 
         # Converter para dicionários
-        processos = [dict(row) for row in rows]
+        processos = []
+        for row in rows:
+            proc = dict(row)
+
+            # Parse dados_completos se for string
+            if isinstance(proc.get("dados_completos"), str):
+                try:
+                    import json
+                    proc["dados_completos"] = json.loads(proc["dados_completos"])
+                except (json.JSONDecodeError, TypeError):
+                    proc["dados_completos"] = {}
+
+            # Se include_dados_completos, buscar partes também
+            if include_dados_completos:
+                partes_query = """
+                    SELECT tipo, nome, documento, dados_adicionais
+                    FROM processos.processos_partes
+                    WHERE processo_id = $1
+                    ORDER BY tipo, nome
+                """
+                partes = await conn.fetch(partes_query, row["id"])
+                proc["partes"] = [dict(p) for p in partes]
+            else:
+                proc["partes"] = []
+
+            processos.append(proc)
 
         return {
             "total": total,

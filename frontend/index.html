@@ -831,54 +831,84 @@
                         <div class="playground-card">
                             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
                                 <div>
-                                    <h3 class="playground-card__title">Processos Salvos no Banco</h3>
-                                    <p class="card__description">Visualize processos já coletados e armazenados (Cliente: Claro, Período: 2022-2025)</p>
+                                    <h3 class="playground-card__title">Buscar do Banco de Dados</h3>
+                                    <p class="card__description">Consulte processos já coletados (Cliente: Claro, Período: 2022-2025)</p>
                                 </div>
                                 <button class="btn btn--ghost btn--sm" onclick="showProcessosView('initial')">← Voltar</button>
                             </div>
+                        </div>
 
-                            <!-- Dashboard -->
-                            <div id="processosDashboard" class="processos-dashboard">
-                                <div class="dashboard-stats">
-                                    <div class="processos-stat-card processos-stat-card--total">
-                                        <div class="stat-value" id="totalProcessos">0</div>
-                                        <div class="stat-label">Total de Processos</div>
-                                    </div>
-                                    <div class="processos-stat-card processos-stat-card--tjsp">
-                                        <div class="stat-value" id="totalTJSP">0</div>
-                                        <div class="stat-label">TJSP</div>
-                                        <button class="btn btn--sm btn--outline" onclick="visualizarTribunal('TJSP')">Ver processos</button>
-                                    </div>
-                                    <div class="processos-stat-card processos-stat-card--pje">
-                                        <div class="stat-value" id="totalPJE">0</div>
-                                        <div class="stat-label">PJE</div>
-                                        <button class="btn btn--sm btn--outline" onclick="visualizarTribunal('PJE')">Ver processos</button>
-                                    </div>
-                                    <div class="processos-stat-card processos-stat-card--tjrj">
-                                        <div class="stat-value" id="totalTJRJ">0</div>
-                                        <div class="stat-label">TJRJ</div>
-                                        <button class="btn btn--sm btn--outline" onclick="visualizarTribunal('TJRJ')">Ver processos</button>
-                                    </div>
+                        <div class="playground-card">
+                            <div>
+                                <h3 class="playground-card__title">Consulta de Processo</h3>
+                                <p class="card__description">Busque processos por tribunal</p>
+                            </div>
+                            <form id="bancoConsultaForm" class="form-grid">
+                                <div class="form-group">
+                                    <label for="bancoNumeroProcesso">Número do Processo</label>
+                                    <input id="bancoNumeroProcesso" name="numero_processo" type="text" placeholder="1014843-66.2025.8.26.0554" />
                                 </div>
-                                <div class="dashboard-info">
-                                    <span id="lastUpdate" class="last-update-text"></span>
+                                <div class="form-group">
+                                    <label for="bancoNomeParte">Nome da Parte</label>
+                                    <input id="bancoNomeParte" name="nome_parte" type="text" />
                                 </div>
+                                <div class="form-group">
+                                    <label for="bancoClasse">Classe</label>
+                                    <input id="bancoClasse" name="classe" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bancoAssunto">Assunto</label>
+                                    <input id="bancoAssunto" name="assunto" type="text" />
+                                </div>
+                                <div class="button-group">
+                                    <button type="submit" class="btn btn--primary" id="bancoConsultaSubmit">Consultar</button>
+                                    <button type="button" class="btn btn--ghost" id="bancoConsultaReset">Limpar</button>
+                                </div>
+                            </form>
+                            <div class="result-box result-box--large" id="bancoConsultaResult">
+                                <p class="placeholder">Preencha os filtros e clique em "Consultar".</p>
                             </div>
                         </div>
 
-                        <!-- Listagem de Processos -->
-                        <div id="processosListagem" class="processos-listagem" style="display: none;">
-                            <div class="listagem-header">
-                                <button class="btn btn--ghost btn--sm" onclick="voltarDashboard()">← Voltar</button>
-                                <div class="listagem-header__info">
-                                    <h4 id="tribunalTitle"></h4>
-                                    <p class="listagem-subtitle" id="tribunalSubtitle"></p>
-                                </div>
+                        <div class="playground-card">
+                            <div>
+                                <h3 class="playground-card__title">Listagem de Processos</h3>
+                                <p class="card__description">Combine filtros para listar processos</p>
                             </div>
-
-                            <div id="processosTable"></div>
-
-                            <div id="processosPagination" class="pagination-controls"></div>
+                            <div class="form-group">
+                                <label for="bancoListTribunalSelector">Tribunal</label>
+                                <select id="bancoListTribunalSelector" name="tribunal">
+                                    <option value="">Todos os Tribunais</option>
+                                    <option value="TJSP">TJSP - Tribunal de Justiça de São Paulo</option>
+                                    <option value="PJE">PJE - Processo Judicial Eletrônico</option>
+                                    <option value="TJRJ">TJRJ - Tribunal de Justiça do Rio de Janeiro</option>
+                                </select>
+                            </div>
+                            <form id="bancoListForm" class="form-grid">
+                                <div class="form-group">
+                                    <label for="bancoListNomeParte">Nome da Parte</label>
+                                    <input id="bancoListNomeParte" name="nome_parte" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bancoListClasse">Classe</label>
+                                    <input id="bancoListClasse" name="classe" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bancoListAssunto">Assunto</label>
+                                    <input id="bancoListAssunto" name="assunto" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bancoListLimit">Limite de Resultados</label>
+                                    <input id="bancoListLimit" name="limit" type="number" min="1" max="100" value="15" />
+                                </div>
+                                <div class="button-group">
+                                    <button type="submit" class="btn btn--primary" id="bancoListSubmit">Listar Processos</button>
+                                    <button type="button" class="btn btn--ghost" id="bancoListReset">Limpar</button>
+                                </div>
+                            </form>
+                            <div class="result-box result-box--large" id="bancoListResult">
+                                <p class="placeholder">Informe os filtros desejados.</p>
+                            </div>
                         </div>
                     </div>
 

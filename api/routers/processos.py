@@ -54,8 +54,19 @@ class ProcessoCompleto(BaseModel):
     valor_causa: Optional[str] = None
     situacao: Optional[str] = None
     link_publico: str
-    dados_completos: Dict[str, Any]
-    partes: List[Dict[str, Any]]
+
+    # Estrutura padronizada para todos os tribunais
+    polo_ativo: List[Dict[str, Any]] = []
+    polo_passivo: List[Dict[str, Any]] = []
+    movimentos: List[Dict[str, Any]] = []
+    audiencias: List[Dict[str, Any]] = []
+    publicacoes: List[Dict[str, Any]] = []
+    documentos: List[Dict[str, Any]] = []
+
+    # Mantido para compatibilidade
+    dados_completos: Optional[Dict[str, Any]] = None
+    partes: List[Dict[str, Any]] = []
+
     created_at: Any
     updated_at: Any
 
@@ -63,7 +74,7 @@ class ProcessoCompleto(BaseModel):
 class ProcessosListResponse(BaseModel):
     """Resposta de listagem de processos."""
     total: int
-    processos: List[ProcessoResumo]
+    processos: List[ProcessoResumo | ProcessoCompleto]
     has_more: bool
     filtros_aplicados: Dict[str, Any]
 
@@ -111,6 +122,7 @@ async def listar_processos(
     data_fim: Optional[date] = Query(None, description="Data de distribuição final (YYYY-MM-DD)"),
     limit: int = Query(50, ge=1, le=500, description="Máximo de resultados"),
     offset: int = Query(0, ge=0, description="Número de resultados para pular (paginação)"),
+    include_dados_completos: bool = Query(False, description="Incluir dados_completos (movimentos, partes, etc)"),
 ) -> ProcessosListResponse:
     """
     Lista processos com filtros opcionais e paginação.
@@ -120,6 +132,7 @@ async def listar_processos(
     - Processos do TJSP: GET /processos?tribunal=TJSP
     - Processos de 2024: GET /processos?data_inicio=2024-01-01&data_fim=2024-12-31
     - Paginação: GET /processos?limit=100&offset=100
+    - Com dados completos: GET /processos?include_dados_completos=true
     """
     filtros = {}
     if tribunal:
@@ -137,9 +150,12 @@ async def listar_processos(
     if data_fim:
         filtros["data_fim"] = data_fim
 
-    resultado = await processos_db.buscar_processos(filtros, limit, offset)
+    resultado = await processos_db.buscar_processos(filtros, limit, offset, include_dados_completos=include_dados_completos)
 
-    processos = [ProcessoResumo(**p) for p in resultado["processos"]]
+    if include_dados_completos:
+        processos = [ProcessoCompleto(**p) for p in resultado["processos"]]
+    else:
+        processos = [ProcessoResumo(**p) for p in resultado["processos"]]
 
     return ProcessosListResponse(
         total=resultado["total"],
@@ -147,6 +163,54 @@ async def listar_processos(
         has_more=resultado["has_more"],
         filtros_aplicados=filtros
     )
+
+
+def _consolidar_dados_processo(processo: Dict[str, Any]) -> Dict[str, Any]:
+    """Consolida dados_completos nos campos padronizados."""
+    dados_completos = processo.get("dados_completos", {}) or {}
+
+    # Extrair movimentos
+    movimentos = dados_completos.get("movimentos", [])
+    if isinstance(movimentos, list):
+        processo["movimentos"] = movimentos
+    else:
+        processo["movimentos"] = []
+
+    # Extrair audiências
+    audiencias = dados_completos.get("audiencias", [])
+    if isinstance(audiencias, list):
+        processo["audiencias"] = audiencias
+    else:
+        processo["audiencias"] = []
+
+    # Extrair publicações
+    publicacoes = dados_completos.get("publicacoes", [])
+    if isinstance(publicacoes, list):
+        processo["publicacoes"] = publicacoes
+    else:
+        processo["publicacoes"] = []
+
+    # Extrair documentos
+    documentos = dados_completos.get("documentos", [])
+    if isinstance(documentos, list):
+        processo["documentos"] = documentos
+    else:
+        processo["documentos"] = []
+
+    # Extrair partes (polo ativo/passivo)
+    polo_ativo = dados_completos.get("poloAtivo", [])
+    if isinstance(polo_ativo, list):
+        processo["polo_ativo"] = polo_ativo
+    else:
+        processo["polo_ativo"] = []
+
+    polo_passivo = dados_completos.get("poloPassivo", [])
+    if isinstance(polo_passivo, list):
+        processo["polo_passivo"] = polo_passivo
+    else:
+        processo["polo_passivo"] = []
+
+    return processo
 
 
 @router.get("/{numero_processo}", response_model=ProcessoCompleto)
@@ -168,6 +232,9 @@ async def obter_processo_detalhes(
             status_code=404,
             detail=f"Processo {numero_processo} não encontrado"
         )
+
+    # Consolidar dados_completos nos campos padronizados
+    processo = _consolidar_dados_processo(processo)
 
     return ProcessoCompleto(**processo)
 

@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "paneas-api-basic",
+		"name": "Paneas API - Basic",
+		"description": "Coleção básica com ASR e TTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ASR - Transcrição Simples",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [],
+							"description": "Arquivo de áudio para transcrever"
+						},
+						{
+							"key": "language",
+							"value": "pt",
+							"type": "text",
+							"description": "Idioma do áudio (pt, en, auto)"
+						},
+						{
+							"key": "model",
+							"value": "whisper/medium",
+							"type": "text"
+						},
+						{
+							"key": "enable_diarization",
+							"value": "false",
+							"type": "text",
+							"description": "Identificação de speakers"
+						},
+						{
+							"key": "enable_alignment",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "enable_llm_postprocess",
+							"value": "false",
+							"type": "text",
+							"description": "Pós-processamento com LLM"
+						},
+						{
+							"key": "vad_filter",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "vad_threshold",
+							"value": "0.5",
+							"type": "text"
+						},
+						{
+							"key": "beam_size",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "compute_type",
+							"value": "int8_float16",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "paneas",
+							"type": "text",
+							"description": "Provider do serviço ASR"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://jota.ngrok.app/api/v1/asr",
+					"protocol": "https",
+					"host": [
+						"jota",
+						"ngrok",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"asr"
+					]
+				},
+				"description": "Transcreve um arquivo de áudio sem diarização e sem pós-processamento"
+			},
+			"response": []
+		},
+		{
+			"name": "TTS - Listar Vozes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jota.ngrok.app/api/v1/tts/speakers",
+					"protocol": "https",
+					"host": [
+						"jota",
+						"ngrok",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tts",
+						"speakers"
+					]
+				},
+				"description": "Lista todas as 58 vozes disponíveis no sistema"
+			},
+			"response": []
+		},
+		{
+			"name": "TTS - Texto para Áudio (voz padrão)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Olá, este é um exemplo de conversão de texto para áudio.\",\n    \"language\": \"pt\",\n    \"speaker_reference\": null,\n    \"format\": \"wav\"\n}"
+				},
+				"url": {
+					"raw": "https://jota.ngrok.app/api/v1/tts",
+					"protocol": "https",
+					"host": [
+						"jota",
+						"ngrok",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tts"
+					]
+				},
+				"description": "Converte texto em áudio usando a voz padrão (Claribel Dervla)"
+			},
+			"response": []
+		},
+		{
+			"name": "TTS - Texto para Áudio (voz específica)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Olá, este é um exemplo com uma voz diferente.\",\n    \"language\": \"pt\",\n    \"speaker_reference\": \"Gracie Wise\",\n    \"format\": \"wav\"\n}"
+				},
+				"url": {
+					"raw": "https://jota.ngrok.app/api/v1/tts",
+					"protocol": "https",
+					"host": [
+						"jota",
+						"ngrok",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tts"
+					]
+				},
+				"description": "Converte texto em áudio usando uma voz específica. Use GET /tts/speakers para ver todas as vozes disponíveis."
+			},
+			"response": []
+		},
+		{
+			"name": "TTS - Streaming",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Texto longo para ser sintetizado em streaming. Isso é útil para textos maiores.\",\n    \"language\": \"pt\",\n    \"streaming\": true,\n    \"format\": \"wav\"\n}"
+				},
+				"url": {
+					"raw": "https://jota.ngrok.app/api/v1/tts/stream",
+					"protocol": "https",
+					"host": [
+						"jota",
+						"ngrok",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tts",
+						"stream"
+					]
+				},
+				"description": "Converte texto em áudio com streaming (útil para textos longos)"
+			},
+			"response": []
+		}
+	]
+}

@@ -7,6 +7,22 @@ from services.http_client import get_http_client, request_with_retry
 _settings = get_settings()
 
 
+async def list_speakers() -> Dict[str, Any]:
+    """
+    Lista todas as vozes disponíveis no serviço TTS
+    """
+    client = await get_http_client()
+    url = f"http://{_settings.tts_host}:{_settings.tts_port}/speakers"
+
+    response = await request_with_retry(
+        "GET",
+        url,
+        client=client,
+        timeout=10.0,
+    )
+    return response.json()
+
+
 async def synthesize(payload: Dict[str, Any]) -> Dict[str, Any]:
     client = await get_http_client()
     url = f"http://{_settings.tts_host}:{_settings.tts_port}/synthesize"

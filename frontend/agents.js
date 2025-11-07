@@ -9,7 +9,7 @@
 // STATE MANAGEMENT
 // ============================================================================
 const agentsState = {
-    apiBase: 'https://esdras.ngrok.app',
+    apiBase: 'https://paneas-agents-dev.paneas.net',
     authToken: '',
     currentAgent: null,
     agents: [],

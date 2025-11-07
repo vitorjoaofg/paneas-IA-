@@ -43,6 +43,39 @@ document.addEventListener('DOMContentLoaded', () => {
             showProcessosView('initial');
         });
     }
+
+    // Event listeners para formulários do BANCO
+    const bancoConsultaForm = document.getElementById('bancoConsultaForm');
+    if (bancoConsultaForm) {
+        bancoConsultaForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await consultarProcessoBanco();
+        });
+    }
+
+    const bancoConsultaReset = document.getElementById('bancoConsultaReset');
+    if (bancoConsultaReset) {
+        bancoConsultaReset.addEventListener('click', () => {
+            document.getElementById('bancoConsultaForm').reset();
+            document.getElementById('bancoConsultaResult').innerHTML = '<p class="placeholder">Preencha os filtros e clique em "Consultar".</p>';
+        });
+    }
+
+    const bancoListForm = document.getElementById('bancoListForm');
+    if (bancoListForm) {
+        bancoListForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await listarProcessosBanco();
+        });
+    }
+
+    const bancoListReset = document.getElementById('bancoListReset');
+    if (bancoListReset) {
+        bancoListReset.addEventListener('click', () => {
+            document.getElementById('bancoListForm').reset();
+            document.getElementById('bancoListResult').innerHTML = '<p class="placeholder">Informe os filtros desejados.</p>';
+        });
+    }
 });
 
 async function carregarDashboardProcessos() {
@@ -374,5 +407,122 @@ function formatarData(dateStr) {
         return date.toLocaleDateString('pt-BR');
     } catch {
         return dateStr;
+    }
+}
+
+// ==================== Funções para Buscar do Banco ====================
+
+async function consultarProcessoBanco() {
+    const resultDiv = document.getElementById('bancoConsultaResult');
+    const numeroProcesso = document.getElementById('bancoNumeroProcesso').value.trim();
+    const nomeParte = document.getElementById('bancoNomeParte').value.trim();
+    const classe = document.getElementById('bancoClasse').value.trim();
+    const assunto = document.getElementById('bancoAssunto').value.trim();
+
+    if (!numeroProcesso && !nomeParte && !classe && !assunto) {
+        resultDiv.innerHTML = '<div class="error-message">⚠️ Preencha pelo menos um filtro</div>';
+        return;
+    }
+
+    resultDiv.innerHTML = '<div class="loading-message">🔍 Buscando no banco de dados...</div>';
+
+    try {
+        const params = new URLSearchParams();
+        if (numeroProcesso) params.append('numero_processo', numeroProcesso);
+        if (nomeParte) params.append('nome_parte', nomeParte);
+        if (classe) params.append('classe', classe);
+        if (assunto) params.append('assunto', assunto);
+        params.append('limit', '10');
+
+        params.append('include_dados_completos', 'true');
+
+        const response = await fetch(`/api/v1/processos?${params}`, {
+            headers: {
+                'Authorization': 'Bearer token_abc123'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.processos || data.processos.length === 0) {
+            resultDiv.innerHTML = '<div class="empty-message"><div class="empty-message-icon">📋</div><p>Nenhum processo encontrado no banco de dados</p></div>';
+            return;
+        }
+
+        // Mostrar JSON puro da resposta da API
+        resultDiv.innerHTML = `
+            <div class="json-response">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h4>Resposta da API: ${data.total} processo(s) encontrado(s)</h4>
+                    <button class="btn btn--sm btn--ghost" onclick="navigator.clipboard.writeText(this.nextElementSibling.textContent)">Copiar JSON</button>
+                </div>
+                <pre style="display:none">${JSON.stringify(data, null, 2)}</pre>
+                <pre class="json-code">${JSON.stringify(data, null, 2)}</pre>
+            </div>
+        `;
+
+    } catch (error) {
+        console.error('Erro ao consultar banco:', error);
+        resultDiv.innerHTML = `<div class="error-message">❌ Erro ao buscar processos: ${error.message}</div>`;
+    }
+}
+
+async function listarProcessosBanco() {
+    const resultDiv = document.getElementById('bancoListResult');
+    const nomeParte = document.getElementById('bancoListNomeParte').value.trim();
+    const classe = document.getElementById('bancoListClasse').value.trim();
+    const assunto = document.getElementById('bancoListAssunto').value.trim();
+    const limit = document.getElementById('bancoListLimit').value || 15;
+    const tribunal = document.getElementById('bancoListTribunalSelector').value;
+
+    resultDiv.innerHTML = '<div class="loading-message">🔍 Listando processos do banco...</div>';
+
+    try {
+        const params = new URLSearchParams();
+        if (tribunal) params.append('tribunal', tribunal);
+        if (nomeParte) params.append('nome_parte', nomeParte);
+        if (classe) params.append('classe', classe);
+        if (assunto) params.append('assunto', assunto);
+        params.append('limit', limit);
+        params.append('offset', '0');
+
+        params.append('include_dados_completos', 'true');
+
+        const response = await fetch(`/api/v1/processos?${params}`, {
+            headers: {
+                'Authorization': 'Bearer token_abc123'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.processos || data.processos.length === 0) {
+            resultDiv.innerHTML = '<div class="empty-message"><div class="empty-message-icon">📋</div><p>Nenhum processo encontrado</p></div>';
+            return;
+        }
+
+        // Mostrar JSON puro da resposta da API
+        resultDiv.innerHTML = `
+            <div class="json-response">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h4>Resposta da API: ${data.total} processo(s) encontrado(s) (mostrando ${data.processos.length})</h4>
+                    <button class="btn btn--sm btn--ghost" onclick="navigator.clipboard.writeText(this.nextElementSibling.textContent)">Copiar JSON</button>
+                </div>
+                <pre style="display:none">${JSON.stringify(data, null, 2)}</pre>
+                <pre class="json-code">${JSON.stringify(data, null, 2)}</pre>
+            </div>
+        `;
+
+    } catch (error) {
+        console.error('Erro ao listar processos:', error);
+        resultDiv.innerHTML = `<div class="error-message">❌ Erro ao listar processos: ${error.message}</div>`;
     }
 }

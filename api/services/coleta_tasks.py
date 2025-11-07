@@ -19,6 +19,7 @@ from services import processos_db
 from services.scrapper_client import (
     listar_processos,
     listar_processos_pje,
+    buscar_detalhes_pje,
     listar_processos_tjrj,
 )
 
@@ -136,11 +137,33 @@ async def _coletar_pje_async() -> Dict[str, Any]:
             "nome_parte": "Claro"
         })
 
-        processos = response.get("processos", [])
-        logger.info(f"[PJE] Encontrados {len(processos)} processos")
+        processos_resumo = response.get("processos", [])
+        logger.info(f"[PJE] Encontrados {len(processos_resumo)} processos na listagem")
+
+        # Buscar detalhes completos de cada processo
+        processos_completos = []
+        for i, proc_resumo in enumerate(processos_resumo, 1):
+            link_publico = proc_resumo.get("linkPublico")
+            numero = proc_resumo.get("numeroProcesso")
+
+            if not link_publico:
+                logger.warning(f"[PJE] Processo {numero} sem linkPublico, pulando detalhes")
+                processos_completos.append(proc_resumo)
+                continue
+
+            try:
+                logger.info(f"[PJE] Buscando detalhes do processo {numero} ({i}/{len(processos_resumo)})")
+                detalhes = await buscar_detalhes_pje(link_publico)
+                processos_completos.append(detalhes)
+            except Exception as e:
+                logger.error(f"[PJE] Erro ao buscar detalhes do processo {numero}: {e}")
+                # Se falhar, usa o resumo
+                processos_completos.append(proc_resumo)
+
+        logger.info(f"[PJE] Detalhes completos obtidos para {len(processos_completos)} processos")
 
         # Salvar processos no banco
-        stats = await _salvar_processos_batch(processos, tribunal)
+        stats = await _salvar_processos_batch(processos_completos, tribunal)
 
         # Registrar fim da coleta
         await processos_db.registrar_fim_coleta(

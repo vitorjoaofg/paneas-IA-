@@ -1,4 +1,5 @@
 import uuid
+from typing import Any, Dict
 
 from fastapi import APIRouter
 from fastapi.responses import Response, StreamingResponse
@@ -7,6 +8,14 @@ from schemas.tts import TTSRequest
 from services import tts_client
 
 router = APIRouter(prefix="/api/v1", tags=["tts"])
+
+
+@router.get("/tts/speakers")
+async def list_speakers() -> Dict[str, Any]:
+    """
+    Lista todas as vozes disponíveis no sistema TTS
+    """
+    return await tts_client.list_speakers()
 
 
 @router.post("/tts")

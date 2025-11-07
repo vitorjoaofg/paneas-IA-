@@ -1,5 +1,6 @@
 import io
 import os
+import re
 import uuid
 from pathlib import Path
 from typing import Any, Dict, List
@@ -26,6 +27,47 @@ VOICES_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(title="TTS Service", version="1.0.0")
 Instrumentator().instrument(app).expose(app, include_in_schema=False)
+
+
+def preprocess_text_for_tts(text: str) -> str:
+    """
+    Preprocessa o texto para evitar que o TTS leia pontuações literalmente.
+
+    Remove ou substitui caracteres que podem ser lidos como palavras:
+    - Pontos finais, vírgulas, ponto e vírgula -> removidos (TTS entende pausas naturalmente)
+    - Reticências -> substituído por "pausa"
+    - Parênteses, colchetes, aspas -> removidos
+    - Múltiplos espaços -> espaço único
+    """
+    if not text:
+        return text
+
+    original_text = text
+
+    # Remove URLs e emails (opcional - podem ser lidos de forma estranha)
+    text = re.sub(r'http[s]?://\S+', '', text)
+    text = re.sub(r'\S+@\S+', '', text)
+
+    # Remove caracteres especiais que podem ser lidos literalmente
+    # Mantém apenas letras, números, espaços e algumas pontuações essenciais
+    text = re.sub(r'["""]', '', text)  # Remove aspas
+    text = re.sub(r'[\(\)\[\]\{\}]', '', text)  # Remove parênteses e colchetes
+    text = re.sub(r'[_\-\*\#\@\$\%\&\+\=\|\\/]', ' ', text)  # Substitui símbolos por espaço
+
+    # Remove TODOS os pontos (incluindo reticências)
+    text = text.replace('.', ' ')
+
+    # Remove pontuações que podem causar leitura literal
+    # Mantém apenas pontos de interrogação e exclamação (para entonação)
+    text = re.sub(r'[;:,]', ' ', text)  # Remove ponto e vírgula, dois pontos, vírgulas
+
+    # Normaliza espaços múltiplos
+    text = re.sub(r'\s+', ' ', text)
+
+    processed_text = text.strip()
+    print(f"[TTS] Text preprocessing: '{original_text}' -> '{processed_text}'")
+
+    return processed_text
 
 
 class TTSRequest(BaseModel):
@@ -102,16 +144,31 @@ class TTSService:
         speaker_wav = None
         speaker_id = None
         if payload.speaker_reference:
-            speaker_path = self._download_voice(payload.speaker_reference)
-            if not speaker_path.exists():
-                raise HTTPException(status_code=404, detail="Speaker reference not found")
-            speaker_wav = str(speaker_path)
+            # Verifica se é um nome de speaker conhecido ou um caminho de arquivo
+            if payload.speaker_reference in self.available_speakers:
+                # É um nome de speaker do modelo
+                speaker_id = payload.speaker_reference
+            elif payload.speaker_reference.startswith("s3://") or payload.speaker_reference.startswith("/"):
+                # É um caminho de arquivo (s3:// ou caminho local)
+                speaker_path = self._download_voice(payload.speaker_reference)
+                if not speaker_path.exists():
+                    raise HTTPException(status_code=404, detail="Speaker reference not found")
+                speaker_wav = str(speaker_path)
+            else:
+                # Não encontrado - retorna erro com sugestões
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Speaker '{payload.speaker_reference}' not found. Use GET /speakers to list available speakers."
+                )
         else:
             if self.available_speakers:
                 speaker_id = self.available_speakers[0]
 
+        # Pré-processa o texto para evitar leitura literal de pontuações
+        processed_text = preprocess_text_for_tts(payload.text)
+
         audio = self.tts.tts(
-            text=payload.text,
+            text=processed_text,
             speaker_wav=speaker_wav,
             speaker=speaker_id,
             language=payload.language,
@@ -143,6 +200,18 @@ service = TTSService()
 @app.get("/health")
 async def health() -> Dict[str, str]:
     return {"status": "up", "model": "XTTS-v2"}
+
+
+@app.get("/speakers")
+async def list_speakers() -> Dict[str, Any]:
+    """
+    Lista todas as vozes disponíveis no sistema
+    """
+    return {
+        "total": len(service.available_speakers),
+        "default": service.available_speakers[0] if service.available_speakers else None,
+        "speakers": service.available_speakers,
+    }
 
 
 @app.post("/synthesize")
