@@ -83,7 +83,7 @@ class TJSPProcessoQuery(BaseModel):
 
 
 class Movimento(BaseModel):
-    data: date
+    data: str  # Changed from date to str to support various date formats from different courts
     descricao: str
 
 
@@ -112,6 +112,7 @@ class Documento(BaseModel):
     data_juntada: Optional[str] = None
     autor: Optional[str] = None
     link: Optional[str] = None
+    numero_documento: Optional[str] = None  # Número do documento no PJE (ex: 241423663)
 
 
 class AdvogadoTJSP(BaseModel):
@@ -342,3 +343,43 @@ class TJRJProcessoListResponse(BaseModel):
         description="Total de processos reportados pelo TJRJ para a consulta informada.",
     )
     processos: list[ProcessoResumoTJRJ] = Field(default_factory=list)
+
+
+# TJRJ PJE Authenticated Models
+class TJRJPJEAuthenticatedQuery(BaseModel):
+    """Input payload for TJRJ PJE authenticated scraping (requires login)."""
+
+    cpf: str = Field(
+        description="CPF do advogado para login no sistema PJE TJRJ.",
+        example="48561184809"
+    )
+    senha: str = Field(
+        description="Senha do advogado para login no sistema PJE TJRJ.",
+        example="Julho3007!@"
+    )
+    nome_parte: str = Field(
+        description="Nome da parte para buscar no sistema.",
+        example="Claro S.A"
+    )
+    max_pages: Optional[int] = Field(
+        default=None,
+        description="Número máximo de páginas a extrair. Se None, extrai todas as páginas.",
+        example=100
+    )
+
+
+class TJRJPJEAuthenticatedDetailQuery(BaseModel):
+    """Input payload for fetching detailed process from TJRJ PJE authenticated."""
+
+    cpf: str = Field(
+        description="CPF do advogado para login.",
+        example="48561184809"
+    )
+    senha: str = Field(
+        description="Senha do advogado para login.",
+        example="Julho3007!@"
+    )
+    numero_processo: str = Field(
+        description="Número completo do processo (formato CNJ).",
+        example="0000001-00.2020.8.19.0001"
+    )

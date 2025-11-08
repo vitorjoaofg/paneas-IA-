@@ -12,7 +12,7 @@ from schemas.scrapper import (
     TJRJProcessoListResponse,
     ProcessoTJRJ,
 )
-from services import scrapper_client
+from services import scrapper_client, processos_db
 
 router = APIRouter(prefix="/api/v1", tags=["scrapper"])
 
@@ -64,3 +64,26 @@ async def consulta_processo_tjrj(payload: dict) -> ProcessoTJRJ:
 @router.get("/scrapper/tools")
 async def manifest_tools() -> dict:
     return await scrapper_client.obter_manifesto()
+
+
+@router.post("/scrapper/processos/tjrj-pje-auth/test-page3-save")
+async def test_tjrj_pje_auth_page3_and_save(payload: dict) -> dict:
+    """
+    Testa extração de processo da página 3 do TJRJ PJE autenticado E salva no banco.
+    Payload: {"cpf": "...", "senha": "...", "nome_parte": "Claro S.A"}
+    """
+    # 1. Chamar scrapper para extrair dados
+    resultado = await scrapper_client.test_tjrj_pje_auth_page3(payload)
+    processo = ProcessoTJRJ.model_validate(resultado)
+
+    # 2. Salvar no banco de dados
+    processo_dict = processo.model_dump(mode="json")
+    processo_id = await processos_db.salvar_processo(processo_dict, tribunal="TJRJ")
+
+    # 3. Retornar processo + ID no banco
+    return {
+        "processo": processo_dict,
+        "saved_to_db": True,
+        "processo_id": str(processo_id),
+        "message": f"Processo {processo.numeroProcesso} salvo com sucesso no banco"
+    }

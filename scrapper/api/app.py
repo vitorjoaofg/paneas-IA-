@@ -19,10 +19,17 @@ from .models import (
     TJRJProcessoQuery,
     TJRJProcessoListResponse,
     ProcessoTJRJ,
+    TJRJPJEAuthenticatedQuery,
+    TJRJPJEAuthenticatedDetailQuery,
 )
 from .scraper import fetch_tjsp_process, fetch_tjsp_process_list
 from .pje_scraper import fetch_pje_process_list, fetch_pje_process_detail
 from .tjrj_scraper import fetch_tjrj_process_list, fetch_tjrj_process_detail
+from .tjrj_pje_authenticated_scraper import (
+    fetch_tjrj_pje_authenticated_process_list,
+    fetch_tjrj_pje_authenticated_process_detail_single,
+    fetch_tjrj_pje_authenticated_process_from_page,
+)
 
 
 @asynccontextmanager
@@ -133,6 +140,64 @@ async def consulta_processo_tjrj(payload: dict) -> ProcessoTJRJ:
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Falha ao consultar processo TJRJ: {exc}") from exc
+
+
+@app.post("/v1/processos/tjrj-pje-auth/listar", response_model=TJRJProcessoListResponse)
+async def listar_processos_tjrj_pje_authenticated(payload: TJRJPJEAuthenticatedQuery) -> TJRJProcessoListResponse:
+    """
+    Busca processos no PJE TJRJ autenticado (painel do advogado).
+    Requer CPF e senha para login.
+    Opcionalmente limita o número de páginas extraídas com max_pages.
+    """
+    try:
+        return await fetch_tjrj_pje_authenticated_process_list(
+            cpf=payload.cpf,
+            senha=payload.senha,
+            nome_parte=payload.nome_parte,
+            max_pages=payload.max_pages
+        )
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao listar processos TJRJ PJE autenticado: {exc}") from exc
+
+
+@app.post("/v1/processos/tjrj-pje-auth/consulta", response_model=ProcessoTJRJ)
+async def consulta_processo_tjrj_pje_authenticated(payload: TJRJPJEAuthenticatedDetailQuery) -> ProcessoTJRJ:
+    """
+    Consulta detalhes completos de um processo no PJE TJRJ autenticado.
+    Requer CPF e senha para login.
+    Faz login, busca o processo, clica nele, e extrai TODOS os detalhes.
+    """
+    try:
+        return await fetch_tjrj_pje_authenticated_process_detail_single(
+            cpf=payload.cpf,
+            senha=payload.senha,
+            numero_processo=payload.numero_processo
+        )
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha ao consultar processo TJRJ PJE autenticado: {exc}") from exc
+
+
+@app.post("/v1/processos/tjrj-pje-auth/test-page3", response_model=ProcessoTJRJ)
+async def test_tjrj_pje_page3(payload: TJRJPJEAuthenticatedQuery) -> ProcessoTJRJ:
+    """
+    ENDPOINT DE TESTE: Busca processo da página 3 de "Claro S.A" e extrai detalhes.
+    """
+    try:
+        return await fetch_tjrj_pje_authenticated_process_from_page(
+            cpf=payload.cpf,
+            senha=payload.senha,
+            nome_parte=payload.nome_parte,
+            target_page=3,
+            process_index=0  # Primeiro processo da página 3
+        )
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Falha no teste: {exc}") from exc
 
 
 @app.get("/tools")

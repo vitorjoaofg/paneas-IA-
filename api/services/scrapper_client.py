@@ -64,3 +64,12 @@ async def obter_manifesto() -> Dict[str, Any]:
     url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/tools"
     response = await request_with_retry("GET", url, client=client, timeout=30.0)
     return response.json()
+
+
+async def test_tjrj_pje_auth_page3(payload: Dict[str, Any]) -> Dict[str, Any]:
+    """Testa extração de processo da página 3 do TJRJ PJE autenticado."""
+    client = await get_http_client()
+    url = f"http://{_settings.scrapper_host}:{_settings.scrapper_port}/v1/processos/tjrj-pje-auth/test-page3"
+    # PJE autenticado pode levar muito tempo (login + navegação + paginação)
+    response = await request_with_retry("POST", url, client=client, json=payload, timeout=300.0)
+    return response.json()
