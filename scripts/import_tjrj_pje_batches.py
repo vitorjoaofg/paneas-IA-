@@ -298,10 +298,11 @@ async def import_in_batches(
             with open(log_file, 'a') as f:
                 f.write(f"\n[LOTE {current_batch}] ✓{stats_lote['salvos']} ⊙{stats_lote['ja_existiam']} ✗{stats_lote['erros']} | {duracao_lote:.1f}s\n")
 
-            # 7. Se todos já existiam, provavelmente acabou
-            if stats_lote['salvos'] == 0 and stats_lote['ja_existiam'] == total_lote:
-                print(f"\n[LOTE] ✓ Todos os processos deste lote já existiam. Provavelmente terminamos!")
-                break
+            # 7. Continua mesmo se todos já existiam (pode ter processos novos nos próximos lotes)
+            # DESABILITADO: permite continuar importação após falhas/interrupções
+            # if stats_lote['salvos'] == 0 and stats_lote['ja_existiam'] == total_lote:
+            #     print(f"\n[LOTE] ✓ Todos os processos deste lote já existiam. Provavelmente terminamos!")
+            #     break
 
             current_batch += 1
 

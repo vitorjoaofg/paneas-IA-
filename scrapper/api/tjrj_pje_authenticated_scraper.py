@@ -760,6 +760,24 @@ class TJRJPJEAuthenticatedFetcher:
                             }
                         }
 
+                        // Localização - Cell 8
+                        let localizacao = null;
+                        if (cells.length > 8) {
+                            const locText = cells[8]?.textContent.trim();
+                            if (locText && locText.length > 0) {
+                                localizacao = locText;
+                            }
+                        }
+
+                        // Última movimentação - Cell 9
+                        let ultimaMovimentacao = null;
+                        if (cells.length > 9) {
+                            const movText = cells[9]?.textContent.trim();
+                            if (movText && movText.length > 0) {
+                                ultimaMovimentacao = movText;
+                            }
+                        }
+
                         processes.push({
                             numeroProcesso: numeroProcesso,
                             classe: classe,
@@ -768,6 +786,8 @@ class TJRJPJEAuthenticatedFetcher:
                             vara: vara,
                             partesRelacionadas: partesComTipo,
                             dataDistribuicao: dataDistribuicao,
+                            localizacao: localizacao,
+                            ultimaMovimentacao: ultimaMovimentacao,
                             linkPublico: linkPublico
                         });
 
@@ -812,6 +832,8 @@ class TJRJPJEAuthenticatedFetcher:
                     vara=item.get("vara"),
                     partesRelacionadas=item.get("partesRelacionadas", []),
                     dataDistribuicao=item.get("dataDistribuicao"),
+                    localizacao=item.get("localizacao"),
+                    ultimaMovimentacao=item.get("ultimaMovimentacao"),
                     linkPublico=link
                 ))
 

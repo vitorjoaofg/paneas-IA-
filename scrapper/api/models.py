@@ -272,6 +272,8 @@ class ProcessoResumoTJRJ(BaseModel):
     vara: Optional[str] = None
     partesRelacionadas: list[dict] = Field(default_factory=list)  # Estruturado: tipo, nome
     dataDistribuicao: Optional[str] = None
+    localizacao: Optional[str] = None
+    ultimaMovimentacao: Optional[str] = None
     linkPublico: str
 
 
