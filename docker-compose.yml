@@ -26,7 +26,7 @@ services:
       - RATE_LIMIT_OCR=${RATE_LIMIT_OCR}
       - RATE_LIMIT_LLM=${RATE_LIMIT_LLM}
       - RATE_LIMIT_TTS=${RATE_LIMIT_TTS}
-      - INSIGHT_WORKER_CONCURRENCY=32
+      - INSIGHT_WORKER_CONCURRENCY=6
       - INSIGHT_MIN_TOKENS=50
       - INSIGHT_MIN_INTERVAL_SEC=20
       - INSIGHT_RETAIN_TOKENS=120
@@ -375,6 +375,8 @@ services:
       - VLLM_SAMPLING_BACKEND=torch
       - VLLM_DISABLE_FLASH_INFER=1
       - FLASHINFER_FORCE_DISABLE=1
+      - VLLM_DISABLE_FLASH_INFER=1
+      - FLASHINFER_FORCE_DISABLE=1
     volumes:
       - /srv/models:/models:ro
     deploy:
@@ -403,13 +405,13 @@ services:
     gpus:
       - device_ids: ['2','3']
     command: >
-      --model /models/qwen2_5/int4-awq-32b
+      --model /models/qwen2_5/int4-awq
       --quantization awq
       --tensor-parallel-size 2
-      --gpu-memory-utilization 0.60
+      --gpu-memory-utilization 0.65
       --max-num-seqs 12
       --max-model-len 8192
-      --max-num-batched-tokens 8192
+      --max-num-batched-tokens 9216
       --disable-log-requests
       --host 0.0.0.0
       --port 8002
@@ -418,8 +420,6 @@ services:
       - NVIDIA_VISIBLE_DEVICES=2,3
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
       - VLLM_SAMPLING_BACKEND=torch
-      - VLLM_DISABLE_FLASH_INFER=1
-      - FLASHINFER_FORCE_DISABLE=1
     volumes:
       - /srv/models:/models:ro
     deploy:

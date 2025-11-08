@@ -10,7 +10,8 @@ WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip \
-    && pip install torch==2.3.0 transformers \
+    && pip install torch==2.3.0 \
+    && pip install "transformers[torch]==4.45.1" \
     && pip install vllm==0.4.2 \
     && pip install -r requirements.txt
 

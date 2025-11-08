@@ -12,7 +12,7 @@ LOGGER = structlog.get_logger(__name__)
 
 MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
     "paneas-v1-q14b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    "paneas-q32b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq-32b"},
+    "paneas-q32b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
     "gpt-4o-mini": {"target": LLMTarget.OPENAI, "path": "gpt-4o-mini"},
 }
 
@@ -43,7 +43,7 @@ def resolve_model_path(model_name: Optional[str], target: LLMTarget) -> str:
         return MODEL_REGISTRY[model_name]["path"]
     if target == LLMTarget.FP16:
         return "/models/qwen2_5/fp16"
-    return "/models/qwen2_5/int4-awq-32b"
+    return "/models/qwen2_5/int4-awq"
 
 
 async def chat_completion(
