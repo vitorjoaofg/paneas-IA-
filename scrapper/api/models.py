@@ -270,7 +270,7 @@ class ProcessoResumoTJRJ(BaseModel):
     assunto: Optional[str] = None
     comarca: Optional[str] = None
     vara: Optional[str] = None
-    partesRelacionadas: list[str] = Field(default_factory=list)
+    partesRelacionadas: list[dict] = Field(default_factory=list)  # Estruturado: tipo, nome
     dataDistribuicao: Optional[str] = None
     linkPublico: str
 
@@ -342,7 +342,7 @@ class TJRJProcessoListResponse(BaseModel):
         default=None,
         description="Total de processos reportados pelo TJRJ para a consulta informada.",
     )
-    processos: list[ProcessoResumoTJRJ] = Field(default_factory=list)
+    processos: list[dict] = Field(default_factory=list)  # Aceita dict para permitir detalhes extras
 
 
 # TJRJ PJE Authenticated Models
@@ -365,6 +365,15 @@ class TJRJPJEAuthenticatedQuery(BaseModel):
         default=None,
         description="Número máximo de páginas a extrair. Se None, extrai todas as páginas.",
         example=100
+    )
+    extract_details: bool = Field(
+        default=False,
+        description="Se True, extrai detalhes completos (movimentos, documentos, audiências) de cada processo."
+    )
+    max_details: Optional[int] = Field(
+        default=None,
+        description="Número máximo de processos para extrair detalhes. Se None, extrai de todos. Útil para testes.",
+        example=1
     )
 
 

@@ -148,13 +148,16 @@ async def listar_processos_tjrj_pje_authenticated(payload: TJRJPJEAuthenticatedQ
     Busca processos no PJE TJRJ autenticado (painel do advogado).
     Requer CPF e senha para login.
     Opcionalmente limita o número de páginas extraídas com max_pages.
+    Se extract_details=True, extrai detalhes completos (movimentos, documentos) de cada processo.
     """
     try:
         return await fetch_tjrj_pje_authenticated_process_list(
             cpf=payload.cpf,
             senha=payload.senha,
             nome_parte=payload.nome_parte,
-            max_pages=payload.max_pages
+            max_pages=payload.max_pages,
+            extract_details=payload.extract_details,
+            max_details=payload.max_details
         )
     except HTTPException:
         raise

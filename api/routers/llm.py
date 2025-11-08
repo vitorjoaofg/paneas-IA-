@@ -17,6 +17,16 @@ from services.tools.generic_http import age_predictor, external_api_call
 from services.tools.unimed import unimed_consult
 from services.tool_prompt_helper import tools_to_prompt, extract_function_call
 
+LOGGER = structlog.get_logger(__name__)
+JSON_DECODER = json.JSONDecoder()
+
+MAX_CONTEXT_LENGTH = 65536
+MAX_TOOL_ITERATIONS = 3
+MAX_PAGE_TEXT_CHARS = 4000
+MAX_DOCUMENT_TEXT_CHARS = 60000
+MAX_ENTITY_COUNT = 20
+MIN_COMPACTION_LENGTH = 4000
+HARD_MESSAGE_CHAR_LIMIT = 20000
 
 def _truncate_tool_result(content: str, max_length: int = 3000) -> str:
     """
@@ -139,6 +149,177 @@ def _has_tool_results(messages: List[Any]) -> bool:
     return False
 
 
+def _extract_embedded_json_segment(content: str) -> Optional[tuple[Any, int, int]]:
+    """Retorna (objeto_json, início, fim) se houver JSON embutido na string."""
+    if not content:
+        return None
+
+    for idx, char in enumerate(content):
+        if char == "{":
+            try:
+                data, end = JSON_DECODER.raw_decode(content[idx:])
+                return data, idx, idx + end
+            except json.JSONDecodeError:
+                continue
+    return None
+
+
+def _build_compact_document_payload(data: Any) -> Optional[Dict[str, Any]]:
+    """Remove campos pesados (blocks/entities) mantendo apenas texto necessário para o LLM."""
+    if not isinstance(data, dict):
+        return None
+
+    pages = data.get("pages")
+    if not isinstance(pages, list) or not pages:
+        return None
+
+    compact_pages = []
+    total_chars = 0
+    for page in pages:
+        if not isinstance(page, dict):
+            continue
+        text = page.get("text")
+        if not text:
+            continue
+        text = str(text)
+        if len(text) > MAX_PAGE_TEXT_CHARS:
+            text = text[:MAX_PAGE_TEXT_CHARS].rstrip() + " ...[trecho truncado]"
+        compact_pages.append({
+            "page_num": page.get("page_num"),
+            "text": text,
+        })
+        total_chars += len(text)
+        if total_chars >= MAX_DOCUMENT_TEXT_CHARS:
+            break
+
+    if not compact_pages:
+        return None
+
+    compact: Dict[str, Any] = {"pages": compact_pages}
+    if "request_id" in data:
+        compact["request_id"] = data["request_id"]
+
+    doc_type = data.get("document_type")
+    if isinstance(doc_type, dict):
+        compact["document_type"] = {
+            key: doc_type.get(key)
+            for key in ("type", "confidence", "detected_by")
+            if doc_type.get(key) is not None
+        }
+    elif doc_type:
+        compact["document_type"] = doc_type
+
+    entities = data.get("entities")
+    if isinstance(entities, list) and entities:
+        compact_entities = []
+        for entity in entities[:MAX_ENTITY_COUNT]:
+            if not isinstance(entity, dict):
+                continue
+            compact_entities.append({
+                "type": entity.get("type"),
+                "value": entity.get("value"),
+                "confidence": entity.get("confidence"),
+            })
+        if compact_entities:
+            compact["entities"] = compact_entities
+
+    return compact
+
+
+def _compact_json_in_message(content: str) -> Optional[str]:
+    """Compacta JSONs grandes embutidos em mensagens, retornando nova string."""
+    if not content or len(content) < MIN_COMPACTION_LENGTH:
+        return None
+
+    extracted = _extract_embedded_json_segment(content)
+    if not extracted:
+        return None
+
+    data, start, end = extracted
+    compact = _build_compact_document_payload(data)
+    if not compact:
+        return None
+
+    compact_json = json.dumps(compact, ensure_ascii=False)
+    if len(compact_json) >= (end - start):
+        return None
+
+    prefix = content[:start].rstrip()
+    suffix = content[end:].strip()
+
+    parts = []
+    if prefix:
+        parts.append(prefix)
+    parts.append(compact_json)
+    if suffix:
+        parts.append(suffix)
+
+    return "\n\n".join(parts)
+
+
+def _reduce_large_documents(messages: List[ChatMessage]) -> None:
+    """Tenta remover metadados pesados antes de contar tokens."""
+    for idx, msg in enumerate(messages):
+        if not getattr(msg, "content", None):
+            continue
+        compacted = _compact_json_in_message(msg.content)
+        if compacted:
+            LOGGER.info(
+                "llm_payload_compacted",
+                message_index=idx,
+                message_role=msg.role,
+                original_chars=len(msg.content),
+                new_chars=len(compacted),
+            )
+            msg.content = compacted
+
+
+def _truncate_plain_text(content: str) -> str:
+    """Corta mensagens muito longas mantendo um aviso no final."""
+    if len(content) <= HARD_MESSAGE_CHAR_LIMIT:
+        return content
+    return content[:HARD_MESSAGE_CHAR_LIMIT].rstrip() + "\n... [conteúdo reduzido automaticamente para caber no limite]"
+
+
+def _count_prompt_tokens(messages: List[ChatMessage]) -> int:
+    """Contador simples de tokens baseado em palavras (suficiente para a validação)."""
+    total = 0
+    for msg in messages:
+        if msg.content:
+            total += len(msg.content.split())
+    return total
+
+
+def _apply_aggressive_truncation(messages: List[ChatMessage], max_tokens: int) -> int:
+    """Aplica truncamento progressivo nas mensagens mais longas até atingir o limite."""
+    ordered_indexes = sorted(
+        range(len(messages)),
+        key=lambda idx: len(messages[idx].content or ""),
+        reverse=True,
+    )
+
+    for idx in ordered_indexes:
+        msg = messages[idx]
+        if not msg.content:
+            continue
+        truncated = _truncate_plain_text(msg.content)
+        if truncated == msg.content:
+            continue
+        LOGGER.info(
+            "llm_payload_truncated",
+            message_index=idx,
+            message_role=msg.role,
+            original_chars=len(msg.content),
+            new_chars=len(truncated),
+        )
+        msg.content = truncated
+        prompt_tokens = _count_prompt_tokens(messages)
+        if prompt_tokens + max_tokens <= MAX_CONTEXT_LENGTH:
+            return prompt_tokens
+
+    return _count_prompt_tokens(messages)
+
+
 def normalize_messages_for_llm(raw_messages):
     """Converte mensagens possivelmente com tool_calls em formato aceito pelo vLLM."""
     LOGGER = structlog.get_logger(__name__)
@@ -183,14 +364,9 @@ def normalize_messages_for_llm(raw_messages):
     LOGGER.info("DEBUG normalize: Done", original_count=len(raw_messages), normalized_count=len(normalized))
     return normalized
 
-LOGGER = structlog.get_logger(__name__)
-
 router = APIRouter(prefix="/api/v1", tags=["llm"])
 settings = get_settings()
 router_engine = LLMRouter(strategy=settings.llm_routing_strategy)
-
-MAX_CONTEXT_LENGTH = 32768
-MAX_TOOL_ITERATIONS = 3
 
 # Registrar tools disponíveis
 tool_executor = get_tool_executor()
@@ -210,15 +386,22 @@ async def create_chat_completion(payload: ChatRequest):
         LOGGER.info("auto_disable_streaming", reason="tools_present")
         payload.stream = False
 
-    prompt_tokens = sum(len(msg.content.split()) for msg in payload.messages if msg.content)
+    _reduce_large_documents(payload.messages)
+    prompt_tokens = _count_prompt_tokens(payload.messages)
     context_length = prompt_tokens + payload.max_tokens
+
+    if context_length > MAX_CONTEXT_LENGTH:
+        prompt_tokens = _apply_aggressive_truncation(payload.messages, payload.max_tokens)
+        context_length = prompt_tokens + payload.max_tokens
 
     # Validação: rejeita se ultrapassar limite de 32k tokens
     if context_length > MAX_CONTEXT_LENGTH:
         raise HTTPException(
             status_code=400,
-            detail=f"Context length ({context_length} tokens) exceeds maximum allowed ({MAX_CONTEXT_LENGTH} tokens). "
-                   f"Please reduce your message size or max_tokens parameter."
+            detail=(
+                f"Context length ({context_length} tokens) exceeds maximum allowed ({MAX_CONTEXT_LENGTH} tokens) "
+                "even after automatic compaction. Reduza o tamanho do documento ou envie em partes menores."
+            ),
         )
 
     provider = payload.provider

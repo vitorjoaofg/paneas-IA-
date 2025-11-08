@@ -15,7 +15,7 @@ Uso:
 import asyncio
 import sys
 import os
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from datetime import datetime
 import httpx
 import asyncpg
@@ -70,24 +70,32 @@ async def get_db_pool():
 
 async def buscar_processos_lote(
     client: httpx.AsyncClient,
-    batch_pages: int
+    batch_pages: int,
+    extract_details: bool = False,
+    max_details: Optional[int] = None
 ) -> List[Dict[str, Any]]:
     """
     Busca UM LOTE de processos (batch_pages páginas).
     Retorna lista de resumos: [{"numeroProcesso": "...", "link": "..."}, ...]
+    Se extract_details=True, retorna processos com movimentos e documentos completos.
     """
     print(f"[LOTE] Buscando primeiras {batch_pages} páginas...")
+    if extract_details:
+        print(f"[LOTE] Modo: Extração de DETALHES habilitada (max_details={max_details or 'todos'})")
 
     url = f"{SCRAPPER_URL}/v1/processos/tjrj-pje-auth/listar"
     payload = {
         "cpf": CPF,
         "senha": SENHA,
         "nome_parte": NOME_PARTE,
-        "max_pages": batch_pages
+        "max_pages": batch_pages,
+        "extract_details": extract_details,
+        "max_details": max_details
     }
 
-    # Timeout de 15 minutos para o lote
-    response = await client.post(url, json=payload, timeout=900.0)
+    # Timeout de 15 minutos para o lote (ou mais se estiver extraindo detalhes)
+    timeout = 1800.0 if extract_details else 900.0
+    response = await client.post(url, json=payload, timeout=timeout)
     response.raise_for_status()
 
     data = response.json()
@@ -152,12 +160,17 @@ async def salvar_processo_db(pool: asyncpg.Pool, processo: Dict[str, Any]) -> bo
             )
 
             # Salvar partes (ProcessoResumoTJRJ tem partesRelacionadas)
-            # Como não sabemos se é autor/réu, salvamos como 'outro'
+            # Agora partesRelacionadas contém objetos {tipo: 'autor'/'reu', nome: 'NOME'}
             for parte in processo.get("partesRelacionadas", []):
-                await conn.execute(
-                    "INSERT INTO processos.processos_partes (id, processo_id, tipo, nome) VALUES ($1, $2, $3, $4)",
-                    uuid4(), processo_id, "outro", parte
-                )
+                # parte é um objeto {tipo: 'autor'/'reu', nome: 'NOME DA PARTE'}
+                tipo = parte.get("tipo", "outro") if isinstance(parte, dict) else "outro"
+                nome = parte.get("nome") if isinstance(parte, dict) else parte
+
+                if nome:  # só salva se tem nome
+                    await conn.execute(
+                        "INSERT INTO processos.processos_partes (id, processo_id, tipo, nome) VALUES ($1, $2, $3, $4)",
+                        uuid4(), processo_id, tipo, nome
+                    )
 
             return True
 
@@ -181,13 +194,20 @@ async def processar_processo(
     return sucesso
 
 
-async def import_in_batches(max_concurrent: int = 30, batch_pages: int = 100):
+async def import_in_batches(
+    max_concurrent: int = 30,
+    batch_pages: int = 100,
+    extract_details: bool = False,
+    max_details: Optional[int] = None
+):
     """Importa processos em LOTES para evitar timeout."""
     log_file = "/tmp/import_tjrj_progress.log"
 
     print("=" * 80)
     print(f"IMPORTAÇÃO POR LOTES")
     print(f"Concorrência: {max_concurrent} | Lote: {batch_pages} páginas (~{batch_pages * 20} processos)")
+    if extract_details:
+        print(f"Extração de detalhes: HABILITADA (max_details={max_details or 'todos'})")
     print("=" * 80)
 
     # Limpar log anterior
@@ -225,7 +245,12 @@ async def import_in_batches(max_concurrent: int = 30, batch_pages: int = 100):
             # current_batch=3: busca páginas 1-300 (mas só processa os novos)
             try:
                 max_pages_cumulative = current_batch * batch_pages
-                processos_resumo = await buscar_processos_lote(client, max_pages_cumulative)
+                processos_resumo = await buscar_processos_lote(
+                    client,
+                    max_pages_cumulative,
+                    extract_details=extract_details,
+                    max_details=max_details
+                )
             except Exception as e:
                 print(f"[LOTE] ✗ Erro ao buscar lote: {e}")
                 break
@@ -312,10 +337,17 @@ def main():
     parser = argparse.ArgumentParser(description="Importar processos TJRJ PJE em lotes (evita timeout)")
     parser.add_argument("--parallel", type=int, default=30, help="Número de requisições paralelas")
     parser.add_argument("--batch-pages", type=int, default=100, help="Páginas por lote")
+    parser.add_argument("--extract-details", action="store_true", help="Extrair detalhes completos (movimentos, documentos)")
+    parser.add_argument("--max-details", type=int, default=None, help="Máximo de processos para extrair detalhes (útil para testes)")
 
     args = parser.parse_args()
 
-    asyncio.run(import_in_batches(max_concurrent=args.parallel, batch_pages=args.batch_pages))
+    asyncio.run(import_in_batches(
+        max_concurrent=args.parallel,
+        batch_pages=args.batch_pages,
+        extract_details=args.extract_details,
+        max_details=args.max_details
+    ))
 
 
 if __name__ == "__main__":

@@ -735,17 +735,28 @@ class TJRJPJEAuthenticatedFetcher:
                             }
                         }
 
-                        // Extrair partes (Cells 6, 7, e possivelmente mais)
-                        // Começar da célula 6 até o final, pegando nomes (não vazios e não muito curtos)
-                        for (let i = 6; i < cells.length && i < 10; i++) {
-                            const text = cells[i]?.textContent.trim();
-                            // Filtrar: não vazio, não é "Cartório", não é movimento
-                            if (text &&
-                                text.length > 3 &&
-                                !text.toLowerCase().includes('cartório') &&
-                                !text.toLowerCase().includes('expedida') &&
-                                !text.toLowerCase().includes('certificada')) {
-                                partes.push(text);
+                        // Estrutura real da tabela TJRJ PJE:
+                        // Cell 6 = Polo ativo (AUTOR)
+                        // Cell 7 = Polo passivo (RÉU)
+                        // Cell 8 = Localização (não é parte)
+                        // Cell 9 = Última movimentação (não é parte)
+
+                        // Array para armazenar partes com tipo
+                        const partesComTipo = [];
+
+                        // Polo ativo (autor) - Cell 6
+                        if (cells.length > 6) {
+                            const poloAtivo = cells[6]?.textContent.trim();
+                            if (poloAtivo && poloAtivo.length > 0) {
+                                partesComTipo.push({tipo: 'autor', nome: poloAtivo});
+                            }
+                        }
+
+                        // Polo passivo (réu) - Cell 7
+                        if (cells.length > 7) {
+                            const poloPassivo = cells[7]?.textContent.trim();
+                            if (poloPassivo && poloPassivo.length > 0) {
+                                partesComTipo.push({tipo: 'reu', nome: poloPassivo});
                             }
                         }
 
@@ -755,7 +766,7 @@ class TJRJPJEAuthenticatedFetcher:
                             assunto: null,
                             comarca: comarca,
                             vara: vara,
-                            partesRelacionadas: partes,
+                            partesRelacionadas: partesComTipo,
                             dataDistribuicao: dataDistribuicao,
                             linkPublico: linkPublico
                         });
@@ -932,9 +943,13 @@ class TJRJPJEAuthenticatedFetcher:
             nonlocal dialog_handled, dialog_message
             dialog_message = dialog.message
             print(f"[TJRJ PJE] ⚠️  Dialog appeared: {dialog.message[:100]}...")
-            await dialog.accept()  # Clica em OK
-            dialog_handled = True
-            print("[TJRJ PJE] ✓ Dialog accepted")
+            try:
+                await dialog.accept()  # Clica em OK
+                dialog_handled = True
+                print("[TJRJ PJE] ✓ Dialog accepted")
+            except Exception as e:
+                print(f"[TJRJ PJE] ⚠️  Could not accept dialog (may already be handled): {e}")
+                dialog_handled = True
 
         # Registrar handler na página principal (self.page, não self.frame)
         self.page.on("dialog", handle_dialog)
@@ -1416,7 +1431,9 @@ async def fetch_tjrj_pje_authenticated_process_list(
     cpf: str,
     senha: str,
     nome_parte: str,
-    max_pages: Optional[int] = None
+    max_pages: Optional[int] = None,
+    extract_details: bool = False,
+    max_details: Optional[int] = None
 ) -> TJRJProcessoListResponse:
     """
     Busca processos no sistema PJE TJRJ autenticado.
@@ -1428,6 +1445,8 @@ async def fetch_tjrj_pje_authenticated_process_list(
         senha: Senha para login
         nome_parte: Nome da parte para buscar
         max_pages: Número máximo de páginas a extrair. Se None, extrai todas.
+        extract_details: Se True, extrai detalhes completos de cada processo
+        max_details: Número máximo de processos para extrair detalhes. Se None, extrai de todos.
     """
     settings = get_settings()
 
@@ -1446,6 +1465,55 @@ async def fetch_tjrj_pje_authenticated_process_list(
 
         # 5. Extrair processos (até max_pages)
         processos = await fetcher.check_for_pagination_and_extract_all(max_pages=max_pages)
+
+        # 6. Se extract_details=True, extrair detalhes completos
+        if extract_details and len(processos) > 0:
+            limit = max_details if max_details is not None else len(processos)
+            print(f"[TJRJ PJE] Extraindo detalhes de {limit} processo(s)...")
+
+            # IMPORTANTE: Voltar para a primeira página antes de extrair detalhes
+            # porque após a paginação, o browser pode estar em qualquer página
+            print("[TJRJ PJE] Voltando para a primeira página antes de extrair detalhes...")
+            try:
+                first_page_btn = await fetcher.iframe_context.query_selector("a.rich-datascr-button[onclick*='first']")
+                if first_page_btn:
+                    await first_page_btn.click()
+                    await asyncio.sleep(2)
+                    print("[TJRJ PJE] ✓ Voltou para a primeira página")
+            except Exception as e:
+                print(f"[TJRJ PJE] ⚠️  Não foi possível voltar para primeira página: {e}")
+
+            processos_com_detalhes = []
+            for idx, processo_resumo in enumerate(processos[:limit]):
+                try:
+                    print(f"[TJRJ PJE] Extraindo detalhes do processo {idx+1}/{limit}: {processo_resumo.numeroProcesso}")
+
+                    # Chamar função que clica no processo e extrai detalhes
+                    processo_detalhe = await fetcher.click_process_and_extract_details(processo_resumo.numeroProcesso)
+
+                    if processo_detalhe:
+                        # Adicionar como dict para preservar TODOS os campos (movimentos, documentos, etc.)
+                        processos_com_detalhes.append(processo_detalhe.model_dump())
+                    else:
+                        # Se falhou, manter pelo menos o resumo (como dict)
+                        processos_com_detalhes.append(processo_resumo.model_dump())
+
+                    # Aguardar um pouco entre extrações para não sobrecarregar
+                    await asyncio.sleep(2)
+
+                except Exception as e:
+                    print(f"[TJRJ PJE] Erro ao extrair detalhes de {processo_resumo.numeroProcesso}: {e}")
+                    # Manter pelo menos o resumo (como dict)
+                    processos_com_detalhes.append(processo_resumo.model_dump())
+
+            # Adicionar os processos restantes (sem detalhes) como resumos (como dicts)
+            processos_com_detalhes.extend([p.model_dump() for p in processos[limit:]])
+
+            # Substituir lista original pelos processos com detalhes
+            processos = processos_com_detalhes
+        else:
+            # Se não está extraindo detalhes, converter ProcessoResumoTJRJ para dicts
+            processos = [p.model_dump() for p in processos]
 
         return TJRJProcessoListResponse(
             total_processos=len(processos),
