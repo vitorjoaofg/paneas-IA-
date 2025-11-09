@@ -669,7 +669,7 @@
                 <div class="playground__panel" data-content="transcription">
                     <div class="playground-card playground-card--centered">
                         <h3 class="playground-card__title">Transcrição de Arquivo</h3>
-                        <p class="card__description">Envie um arquivo de áudio (WAV, MP3)</p>
+                        <p class="card__description">Envie um arquivo de áudio (WAV, MP3) para transcrição com diarização automática</p>
                         <div class="upload-area">
                             <input type="file" id="asrFileInput" accept="audio/*" />
                             <div class="upload-placeholder">
@@ -682,56 +682,13 @@
                                 <span class="file-name" id="asrFileName"></span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="asrLanguage">Idioma</label>
-                            <div class="language-selector">
-                                <select id="asrLanguage" class="language-select">
-                                    <option value="pt" data-flag="🇧🇷">🇧🇷 Português (Brasil)</option>
-                                    <option value="es" data-flag="🇪🇸">🇪🇸 Español (España)</option>
-                                </select>
-                            </div>
-                            <small class="help-text">Selecione o idioma predominante no áudio</small>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="asrEnableDiarization" checked />
-                                <span>Ativar Diarização com PyAnnote</span>
-                                <small class="help-text">Identifica diferentes speakers automaticamente (tempo adicional: ~30s)</small>
+                        <div style="margin: 20px 0;">
+                            <label style="display: flex; align-items: center; cursor: pointer; user-select: none;">
+                                <input type="checkbox" id="asrEnableOpenaiDiar" checked style="width: 18px; height: 18px; margin-right: 10px; cursor: pointer;">
+                                <span style="font-size: 14px; color: #e5e7eb;">Ativar Diar (Separação de Canais)</span>
                             </label>
                         </div>
-                        <div class="form-group" id="asrNumSpeakersGroup" style="display:none;">
-                            <label for="asrNumSpeakers">Número de Speakers</label>
-                            <input id="asrNumSpeakers" type="number" min="2" max="10" value="2" />
-                            <small class="help-text">Defina quantos speakers estão no áudio (padrão: 2)</small>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="asrEnableLlmPostprocess" checked />
-                                <span>Aplicar Pós-processamento</span>
-                                <small class="help-text">Melhora a transcrição corrigindo erros, pontuação e formatação</small>
-                            </label>
-                        </div>
-                        <div class="form-group" id="asrPostprocessModeGroup" style="display:block;">
-                            <label>Modelos de Pós-Processamento</label>
-                            <div style="margin-top: 8px;">
-                                <label class="checkbox-label" style="margin-bottom: 8px; display: block;">
-                                    <input type="radio" name="asrPostprocessMode" value="paneas-default" />
-                                    <span style="font-weight: 600;">Default</span>
-                                    <small class="help-text" style="display: block; margin-left: 24px;">Modelo Paneas local para processamento rápido e eficiente (+20s)</small>
-                                </label>
-                                <label class="checkbox-label" style="margin-bottom: 8px; display: block;">
-                                    <input type="radio" name="asrPostprocessMode" value="paneas-hybrid" checked />
-                                    <span style="font-weight: 600;">Hybrid</span>
-                                    <small class="help-text" style="display: block; margin-left: 24px;">Combina modelos Paneas para melhor custo-benefício (+17s)</small>
-                                </label>
-                                <label class="checkbox-label" style="display: block;">
-                                    <input type="radio" name="asrPostprocessMode" value="paneas-large" />
-                                    <span style="font-weight: 600;">Large</span>
-                                    <small class="help-text" style="display: block; margin-left: 24px;">Modelo Paneas avançado para qualidade máxima (+24s)</small>
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn--primary btn--block" id="asrUploadButton">Transcrever Áudio</button>
+                        <button class="btn btn--primary btn--block" id="asrUploadButton">Processar Áudio</button>
                         <div class="result-box result-box--large" id="asrResult" style="font-family: 'JetBrains Mono', monospace;">
                         </div>
                     </div>

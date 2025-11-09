@@ -329,6 +329,7 @@ services:
       - TRANSFORMERS_CACHE=/models
       - NVIDIA_VISIBLE_DEVICES=0
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - PYANNOTE_MODEL=${PYANNOTE_MODEL}
     volumes:
       - /srv/models:/models
       - /srv/data/embeddings_cache:/cache
@@ -557,6 +558,8 @@ services:
     image: postgres:16-alpine
     container_name: stack-postgres
     restart: unless-stopped
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_DB=aistack
       - POSTGRES_USER=aistack

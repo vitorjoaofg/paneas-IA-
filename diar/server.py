@@ -95,6 +95,10 @@ class DiarizationEngine:
 
         return consolidated_segments
 
+    @staticmethod
+    def _segment_duration(segment: Dict[str, Any]) -> float:
+        return max(segment.get("end", 0.0) - segment.get("start", 0.0), 0.0)
+
     def _merge_consecutive_same_speaker(self, segments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
         Merge consecutive segments from the same speaker that are very close together.
@@ -127,29 +131,61 @@ class DiarizationEngine:
         print(f"[POSTPROCESS] Segments reduced: {len(segments)} -> {len(merged)} (merged {len(segments) - len(merged)})")
         return merged
 
+    def _reassign_short_segments(
+        self,
+        segments: List[Dict[str, Any]],
+        min_duration: float = 1.0,
+        max_words: int = 4,
+    ) -> List[Dict[str, Any]]:
+        """If a segment is extremely curto, herda o speaker dominante adjacente."""
+        if not segments:
+            return segments
+
+        remapped: List[Dict[str, Any]] = []
+        total = len(segments)
+        for idx, seg in enumerate(segments):
+            duration = self._segment_duration(seg)
+            word_count = len(seg.get("text", "").split())
+            if duration >= min_duration or word_count > max_words:
+                remapped.append(seg)
+                continue
+
+            prev_seg = remapped[-1] if remapped else None
+            next_seg = segments[idx + 1] if idx + 1 < total else None
+
+            candidate = None
+            if prev_seg and next_seg:
+                candidate = prev_seg if self._segment_duration(prev_seg) >= self._segment_duration(next_seg) else next_seg
+            else:
+                candidate = prev_seg or next_seg
+
+            if candidate:
+                seg = seg.copy()
+                seg["speaker"] = candidate["speaker"]
+            remapped.append(seg)
+
+        return self._merge_consecutive_same_speaker(remapped)
+
     def diarize(self, audio_path: Path, num_speakers: int | None) -> List[Dict[str, Any]]:
         # Optimize with speaker constraints to avoid unnecessary clustering
         print(f"[DIAR] Diarizing with num_speakers={num_speakers}")
 
-        # QUALITY IMPROVEMENT: Tuned parameters for better accuracy
-        diarization_params = {
-            # Minimum duration of a speech segment (in seconds)
-            # Higher = fewer false short segments, better quality
-            "min_duration_on": 0.5,  # Default: 0.0, aumentado para evitar segmentos muito curtos
-
-            # Minimum duration of silence between segments (in seconds)
-            # Higher = less sensitive to brief pauses
-            "min_duration_off": 0.3,  # Default: 0.0, evita trocas em pausas breves
-        }
-
-        if num_speakers:
+        # For 2-speaker scenarios (call center), optimize parameters
+        if num_speakers == 2:
+            print(f"[DIAR] Optimizing for 2-speaker call center scenario")
+            diarization = self.pipeline(
+                audio_path,
+                num_speakers=2,
+                min_speakers=2,
+                max_speakers=2,
+            )
+        elif num_speakers:
             print(f"[DIAR] Forcing exactly {num_speakers} speakers")
             diarization = self.pipeline(
                 audio_path,
                 num_speakers=num_speakers,
                 min_speakers=num_speakers,
                 max_speakers=num_speakers,
-                **diarization_params,
             )
         else:
             # When not specified, constrain to reasonable range (1-10 speakers)
@@ -176,6 +212,7 @@ class DiarizationEngine:
 
         # QUALITY IMPROVEMENT: Post-process to merge consecutive segments from same speaker
         segments = self._merge_consecutive_same_speaker(segments)
+        segments = self._reassign_short_segments(segments)
 
         return segments
 

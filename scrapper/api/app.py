@@ -155,6 +155,7 @@ async def listar_processos_tjrj_pje_authenticated(payload: TJRJPJEAuthenticatedQ
             cpf=payload.cpf,
             senha=payload.senha,
             nome_parte=payload.nome_parte,
+            start_page=payload.start_page,
             max_pages=payload.max_pages,
             extract_details=payload.extract_details,
             max_details=payload.max_details

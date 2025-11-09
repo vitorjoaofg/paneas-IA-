@@ -8,10 +8,12 @@ from fastapi import UploadFile
 
 from config import get_settings
 from services.http_client import get_http_client, request_with_retry
+from services.assemblyai_integration import transcribe_with_assemblyai
 
 _settings = get_settings()
 _PROVIDER_PANEAS = "paneas"
 _PROVIDER_OPENAI = "openai"
+_PROVIDER_ASSEMBLYAI = "assemblyai"
 
 
 async def transcribe(
@@ -42,6 +44,8 @@ async def transcribe_audio_bytes(
     normalized_provider = (provider or _PROVIDER_PANEAS).strip().lower()
     if normalized_provider == _PROVIDER_OPENAI:
         return await _transcribe_openai(audio_bytes, filename, content_type, options)
+    elif normalized_provider == _PROVIDER_ASSEMBLYAI:
+        return await _transcribe_assemblyai(audio_bytes, filename, content_type, options)
     return await _transcribe_internal(audio_bytes, filename, content_type, options)
 
 
@@ -181,3 +185,37 @@ def _normalize_openai_transcription(
             "gpu_id": -1,
         },
     }
+
+
+async def _transcribe_assemblyai(
+    audio_bytes: bytes,
+    filename: str,
+    content_type: str,
+    options: Dict[str, Any],
+) -> Dict[str, Any]:
+    import tempfile
+    import os
+
+    # Save audio bytes to temporary file
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_file:
+        temp_file.write(audio_bytes)
+        temp_file_path = temp_file.name
+
+    try:
+        language = options.get("language", "pt")
+        num_speakers = options.get("num_speakers", 2)
+
+        # Call AssemblyAI integration
+        result = await transcribe_with_assemblyai(
+            audio_file_path=temp_file_path,
+            language=language,
+            num_speakers=num_speakers
+        )
+
+        return result
+    finally:
+        # Clean up temporary file
+        try:
+            os.unlink(temp_file_path)
+        except:
+            pass

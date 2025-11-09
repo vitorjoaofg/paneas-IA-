@@ -2047,39 +2047,24 @@ async function transcribeUploadedAudio() {
         return;
     }
 
-    // Get selected language
-    const language = document.getElementById('asrLanguage')?.value || 'pt';
-    // Check if native diarization is enabled
-    const enableNativeDiarization = document.getElementById('asrEnableDiarization')?.checked || false;
-    // Get number of speakers if diarization is enabled
-    const numSpeakers = enableNativeDiarization ? (document.getElementById('asrNumSpeakers')?.value || '2') : null;
-    // Check if LLM post-processing is enabled
-    const enableLlmPostprocess = document.getElementById('asrEnableLlmPostprocess')?.checked || false;
-    // Get post-processing mode if enabled
-    const postprocessMode = enableLlmPostprocess ? (document.querySelector('input[name="asrPostprocessMode"]:checked')?.value || 'paneas-default') : null;
+    // Read parameters from form
+    const language = 'pt';
+    const enableOpenaiDiar = document.getElementById('asrEnableOpenaiDiar')?.checked ?? true;
+    const enableNativeDiarization = enableOpenaiDiar; // Show diarization info if enabled
+    const enableLlmPostprocess = false; // Not using LLM post-processing in frontend
 
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
-    console.log("[ASR] Idioma selecionado:", language);
-    console.log("[ASR] Diarização Nativa (PyAnnote):", enableNativeDiarization ? "ativada" : "desativada");
-    if (enableNativeDiarization) {
-        console.log("[ASR] Número de speakers:", numSpeakers);
-    }
-    const modeLabelMap = {
-        'paneas-default': 'Default',
-        'paneas-hybrid': 'Hybrid',
-        'paneas-large': 'Large'
-    };
-    console.log("[ASR] Pós-processamento:", enableLlmPostprocess ? `ativado (Modelo: ${modeLabelMap[postprocessMode] || 'Default'})` : "desativado");
+    console.log("[ASR] Diarização OpenAI:", enableOpenaiDiar ? "ATIVADA" : "DESATIVADA");
 
     // Show processing animation
     let processingTitle = "Processando Transcrição";
-    let processingDesc = "Analisando áudio";
+    let processingDesc = enableOpenaiDiar
+        ? "Analisando áudio com diarização automática"
+        : "Transcrevendo áudio";
 
-    if (enableNativeDiarization) {
-        processingDesc += ` com diarização de ${numSpeakers} speakers`;
-    }
-
-    let detailsText = "";
+    let detailsText = enableOpenaiDiar
+        ? "Identificando speakers automaticamente com OpenAI"
+        : "Processando transcrição simples";
 
     // Get audio duration to calculate estimated time
     let audioDuration = 300; // Default 5 minutes if we can't read it
@@ -2107,28 +2092,11 @@ async function transcribeUploadedAudio() {
 
     // Calculate estimated time based on audio duration
     // Formula: overhead + (duration * factor)
-    let estimatedTime = 20;
-    if (enableLlmPostprocess) {
-        const modeLabel = modeLabelMap[postprocessMode] || 'Hybrid';
-        detailsText = `Pós-processamento com modelo ${modeLabel} será aplicado após transcrição`;
-
-        // Factors based on 5min audio tests:
-        // Base (no postprocess): 20s for 300s = overhead 5s + 0.05*duration
-        // Hybrid: 37s for 300s = overhead 10s + 0.09*duration
-        // Default: 40s for 300s = overhead 10s + 0.10*duration
-        // Large: 44s for 300s = overhead 10s + 0.113*duration
-
-        if (postprocessMode === 'paneas-default') {
-            estimatedTime = Math.ceil(10 + audioDuration * 0.10);
-        } else if (postprocessMode === 'paneas-hybrid') {
-            estimatedTime = Math.ceil(10 + audioDuration * 0.09);
-        } else if (postprocessMode === 'paneas-large') {
-            estimatedTime = Math.ceil(10 + audioDuration * 0.113);
-        }
-    } else {
-        // Base ASR without post-processing
-        estimatedTime = Math.ceil(5 + audioDuration * 0.05);
-    }
+    // With OpenAI diarization: ~15s overhead + 0.05 * duration
+    // Without diarization: ~5s overhead + 0.02 * duration (faster)
+    let estimatedTime = enableOpenaiDiar
+        ? Math.ceil(15 + audioDuration * 0.05)
+        : Math.ceil(5 + audioDuration * 0.02);
 
     console.log('[ASR] Tempo estimado de processamento:', estimatedTime, 'segundos');
 
@@ -2160,18 +2128,9 @@ async function transcribeUploadedAudio() {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("language", language);
-
-    // Enable native diarization if toggle is checked
-    if (enableNativeDiarization) {
-        formData.append("enable_diarization", "true");
-        formData.append("num_speakers", numSpeakers);
-    }
-
-    // Enable LLM post-processing if toggle is checked
-    if (enableLlmPostprocess) {
-        formData.append("enable_llm_postprocess", "true");
-        formData.append("postprocess_mode", postprocessMode);
-    }
+    formData.append("enable_diarization", "false");
+    formData.append("use_openai_diarization", enableOpenaiDiar ? "true" : "false");
+    formData.append("provider", "paneas");
 
     const base = resolveApiBase();
     const url = `${base}/api/v1/asr`;
@@ -2898,30 +2857,6 @@ function bindEvents() {
         // Keep result box empty until processing starts
         ui.asrResult.innerHTML = '';
     });
-
-    // Toggle number of speakers field when diarization is enabled
-    const asrDiarizationCheckbox = document.getElementById('asrEnableDiarization');
-    const asrNumSpeakersGroup = document.getElementById('asrNumSpeakersGroup');
-
-    asrDiarizationCheckbox?.addEventListener('change', () => {
-        if (asrDiarizationCheckbox.checked) {
-            asrNumSpeakersGroup.style.display = 'block';
-        } else {
-            asrNumSpeakersGroup.style.display = 'none';
-        }
-    });
-
-    const asrPostprocessCheckbox = document.getElementById('asrEnableLlmPostprocess');
-    const asrPostprocessModeGroup = document.getElementById('asrPostprocessModeGroup');
-
-    asrPostprocessCheckbox?.addEventListener('change', () => {
-        if (asrPostprocessCheckbox.checked) {
-            asrPostprocessModeGroup.style.display = 'block';
-        } else {
-            asrPostprocessModeGroup.style.display = 'none';
-        }
-    });
-
     ui.streamFileButton?.addEventListener("click", async (event) => {
         event.preventDefault();
         console.log("[Streaming] Botão clicado - iniciando streaming de arquivo");

@@ -320,7 +320,44 @@ async def fix_speaker_labels_with_llm(
     if not segments:
         return segments
 
-    LOGGER.info("fixing_speaker_labels", num_segments=len(segments))
+    LOGGER.info("fixing_speaker_labels_hybrid_pipeline", num_segments=len(segments))
+
+    # 🔹 Use o novo pipeline híbrido multi-estágio (6 estágios)
+    try:
+        from asr.llm_diarization import correct_speaker_labels_sync
+
+        # O novo sistema faz tudo:
+        # 1. Multi-pass LLM (3 passes com sliding windows)
+        # 2. Lexical rules
+        # 3. RAG semantic enhancement
+        # 4. Temporal graph validation
+        # 5. Final semantic refinement
+        # 6. Confidence scoring
+        corrected_segments = correct_speaker_labels_sync(segments)
+
+        LOGGER.info(
+            "speaker_labels_corrected_hybrid",
+            original_count=len(segments),
+            corrected_count=len(corrected_segments)
+        )
+
+        return corrected_segments
+
+    except Exception as e:
+        LOGGER.error("hybrid_pipeline_failed_using_legacy", error=str(e), error_type=type(e).__name__)
+        # Fallback para lógica antiga se novo sistema falhar
+        return await _fix_speaker_labels_legacy(segments, full_text)
+
+
+async def _fix_speaker_labels_legacy(
+    segments: List[Dict[str, Any]],
+    full_text: str,
+) -> List[Dict[str, Any]]:
+    """
+    Função legada de correção de speaker labels (fallback).
+    Mantida para compatibilidade caso o novo sistema falhe.
+    """
+    LOGGER.info("using_legacy_speaker_correction", num_segments=len(segments))
 
     # Construir contexto dos segmentos para o LLM
     segments_info = []
@@ -418,7 +455,7 @@ JSON array:"""
                     updated_segments.append(new_segment)
 
                 LOGGER.info(
-                    "speaker_labels_fixed",
+                    "speaker_labels_fixed_legacy",
                     total_segments=len(segments),
                     corrections_made=corrections_made,
                 )
@@ -923,3 +960,70 @@ JSON array:"""
             error_type=type(e).__name__,
         )
         return original_segments
+
+
+async def fix_speaker_labels_with_openai_optimized(
+    segments: List[Dict[str, Any]],
+    full_text: str,
+) -> List[Dict[str, Any]]:
+    """
+    PANEAS-OPTIMIZED MODE: Local Whisper + PyAnnote + OpenAI validation
+
+    Pipeline optimizado:
+    1. Otimiza segmentos do PyAnnote (remove ruído, mescla consecutivos)
+    2. Valida e corrige speakers com OpenAI (contexto conversacional)
+
+    Custo: ~$0.0001 por áudio vs $0.009/min AssemblyAI
+
+    Args:
+        segments: Segmentos do PyAnnote com speakers SPEAKER_XX
+        full_text: Texto completo da transcrição para contexto
+
+    Returns:
+        Lista de segmentos otimizados com speakers corrigidos (Cliente/Atendente)
+    """
+    if not segments:
+        return segments
+
+    LOGGER.info("fix_speaker_labels_with_openai_optimized_start", num_segments=len(segments))
+
+    try:
+        # Import the optimization functions
+        from services.hybrid_local_optimized import (
+            optimize_pyannote_segments,
+            validate_and_fix_speakers_with_openai,
+        )
+
+        # Step 1: Optimize PyAnnote segments (remove noise, merge consecutive)
+        optimized_segments = optimize_pyannote_segments(segments)
+
+        # Step 2: Validate and fix speakers with OpenAI
+        corrected_segments = validate_and_fix_speakers_with_openai(
+            segments=optimized_segments,
+            full_text=full_text,
+        )
+
+        # Debug: log speaker distribution in corrected segments
+        speaker_counts = {}
+        for seg in corrected_segments:
+            speaker = seg.get("speaker", "None")
+            speaker_counts[speaker] = speaker_counts.get(speaker, 0) + 1
+
+        LOGGER.info(
+            "fix_speaker_labels_with_openai_optimized_complete",
+            original_segments=len(segments),
+            optimized_segments=len(optimized_segments),
+            final_segments=len(corrected_segments),
+            speaker_distribution=speaker_counts,
+        )
+
+        return corrected_segments
+
+    except Exception as e:
+        LOGGER.error(
+            "fix_speaker_labels_with_openai_optimized_failed",
+            error=str(e),
+            error_type=type(e).__name__,
+        )
+        # Fallback: return original segments
+        return segments

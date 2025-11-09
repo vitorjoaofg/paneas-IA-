@@ -845,82 +845,109 @@ class TJRJPJEAuthenticatedFetcher:
             traceback.print_exc()
             return []
 
-    async def check_for_pagination_and_extract_all(self, max_pages: Optional[int] = None) -> List[ProcessoResumoTJRJ]:
+    async def _click_next_page(self) -> bool:
         """
-        Verifica se há paginação e extrai TODOS os processos de todas as páginas (ou até max_pages).
-        Para capturar os 51200 processos mencionados pelo usuário.
-
-        Args:
-            max_pages: Número máximo de páginas a extrair. Se None, extrai todas.
+        Clica no botão de próxima página no iframe.
+        Retorna True se conseguiu clicar, False se não há próxima página.
         """
         assert self.frame
-        print(f"[TJRJ PJE] Checking for pagination (inside iframe)... max_pages={max_pages or 'ALL'}")
+        return await self.frame.evaluate("""
+            () => {
+                console.log('[Pagination] Looking for next page button...');
+
+                // Procurar botão com onclick que tenha "page": "next"
+                const allElements = document.querySelectorAll('td[onclick], a[onclick], button[onclick]');
+
+                for (let elem of allElements) {
+                    const onclick = elem.getAttribute('onclick') || '';
+
+                    // Verificar se é o botão de próxima página
+                    if (onclick.includes("'page': 'next'") || onclick.includes('"page": "next"')) {
+                        // Verificar se não está desabilitado
+                        const isDisabled = elem.classList.contains('rich-datascr-button-dsbld') ||
+                                          elem.classList.contains('disabled') ||
+                                          elem.hasAttribute('disabled');
+
+                        if (!isDisabled) {
+                            console.log('[Pagination] Found next button, clicking...');
+                            elem.click();
+                            return true;
+                        } else {
+                            console.log('[Pagination] Next button is disabled');
+                            return false;
+                        }
+                    }
+                }
+
+                // Fallback: procurar botão "»" ou "fastforward"
+                for (let elem of allElements) {
+                    const onclick = elem.getAttribute('onclick') || '';
+                    const text = elem.textContent?.trim() || '';
+
+                    if ((onclick.includes("'page': 'fastforward'") || text === '»') &&
+                        !elem.classList.contains('rich-datascr-button-dsbld')) {
+                        console.log('[Pagination] Found fastforward button, clicking...');
+                        elem.click();
+                        return true;
+                    }
+                }
+
+                console.log('[Pagination] No next page button found');
+                return false;
+            }
+        """)
+
+    async def check_for_pagination_and_extract_all(
+        self,
+        start_page: int = 1,
+        max_pages: Optional[int] = None
+    ) -> List[ProcessoResumoTJRJ]:
+        """
+        Verifica se há paginação e extrai processos de páginas específicas.
+
+        Args:
+            start_page: Página inicial para começar extração (padrão: 1)
+            max_pages: Número máximo de páginas a extrair A PARTIR de start_page. Se None, extrai todas.
+        """
+        assert self.frame
+        print(f"[TJRJ PJE] Checking for pagination (inside iframe)... start_page={start_page}, max_pages={max_pages or 'ALL'}")
+
+        # Se start_page > 1, navegar até lá primeiro
+        if start_page > 1:
+            print(f"[TJRJ PJE] Navegando até a página {start_page}...")
+            for _ in range(start_page - 1):
+                has_next = await self._click_next_page()
+                if not has_next:
+                    print(f"[TJRJ PJE] Não foi possível navegar até a página {start_page}. Parando.")
+                    return []
+                await asyncio.sleep(4)
+                try:
+                    await self.frame.wait_for_selector('table[id*="processosTable"]', timeout=10000, state="attached")
+                    await asyncio.sleep(2)
+                except Exception as e:
+                    print(f"[TJRJ PJE] Warning: table reload timeout: {e}")
 
         all_processes = []
-        page_num = 1
+        page_num = start_page
+        pages_extracted = 0
 
         while True:
-            print(f"[TJRJ PJE] Extracting page {page_num}...")
+            print(f"[TJRJ PJE] Extracting page {page_num}... (batch: {pages_extracted + 1}/{max_pages or '∞'})")
 
             # Extrair processos da página atual
             processes = await self.extract_process_list_from_table()
             all_processes.extend(processes)
 
+            pages_extracted += 1
             print(f"[TJRJ PJE] Page {page_num}: extracted {len(processes)} processes (total so far: {len(all_processes)})")
 
-            # Verificar se atingiu max_pages
-            if max_pages and page_num >= max_pages:
-                print(f"[TJRJ PJE] Reached max_pages limit ({max_pages}). Stopping.")
+            # Verificar se atingiu max_pages (relativo ao lote)
+            if max_pages and pages_extracted >= max_pages:
+                print(f"[TJRJ PJE] Reached max_pages limit ({max_pages} pages extracted). Stopping.")
                 break
 
-            # Verificar se há próxima página (NO IFRAME)
-            # RichFaces DataScroller usa Event.fire() com onclick
-            # Exemplo: onclick="Event.fire(this, 'rich:datascroller:onscroll', {'page': 'next'});"
-            has_next = await self.frame.evaluate("""
-                () => {
-                    console.log('[Pagination] Looking for next page button...');
-
-                    // Procurar botão com onclick que tenha "page": "next"
-                    const allElements = document.querySelectorAll('td[onclick], a[onclick], button[onclick]');
-
-                    for (let elem of allElements) {
-                        const onclick = elem.getAttribute('onclick') || '';
-
-                        // Verificar se é o botão de próxima página
-                        if (onclick.includes("'page': 'next'") || onclick.includes('"page": "next"')) {
-                            // Verificar se não está desabilitado
-                            const isDisabled = elem.classList.contains('rich-datascr-button-dsbld') ||
-                                              elem.classList.contains('disabled') ||
-                                              elem.hasAttribute('disabled');
-
-                            if (!isDisabled) {
-                                console.log('[Pagination] Found next button, clicking...');
-                                elem.click();
-                                return true;
-                            } else {
-                                console.log('[Pagination] Next button is disabled');
-                                return false;
-                            }
-                        }
-                    }
-
-                    // Fallback: procurar botão "»" ou "fastforward"
-                    for (let elem of allElements) {
-                        const onclick = elem.getAttribute('onclick') || '';
-                        const text = elem.textContent?.trim() || '';
-
-                        if ((onclick.includes("'page': 'fastforward'") || text === '»') &&
-                            !elem.classList.contains('rich-datascr-button-dsbld')) {
-                            console.log('[Pagination] Found fastforward button, clicking...');
-                            elem.click();
-                            return true;
-                        }
-                    }
-
-                    console.log('[Pagination] No next page button found');
-                    return false;
-                }
-            """)
+            # Verificar se há próxima página e clicar
+            has_next = await self._click_next_page()
 
             if not has_next:
                 print(f"[TJRJ PJE] No more pages. Total processes extracted: {len(all_processes)}")
@@ -1453,6 +1480,7 @@ async def fetch_tjrj_pje_authenticated_process_list(
     cpf: str,
     senha: str,
     nome_parte: str,
+    start_page: int = 1,
     max_pages: Optional[int] = None,
     extract_details: bool = False,
     max_details: Optional[int] = None
@@ -1466,7 +1494,8 @@ async def fetch_tjrj_pje_authenticated_process_list(
         cpf: CPF para login
         senha: Senha para login
         nome_parte: Nome da parte para buscar
-        max_pages: Número máximo de páginas a extrair. Se None, extrai todas.
+        start_page: Página inicial para começar a extração (padrão: 1)
+        max_pages: Número máximo de páginas a extrair A PARTIR de start_page. Se None, extrai todas.
         extract_details: Se True, extrai detalhes completos de cada processo
         max_details: Número máximo de processos para extrair detalhes. Se None, extrai de todos.
     """
@@ -1485,8 +1514,11 @@ async def fetch_tjrj_pje_authenticated_process_list(
         # 4. Buscar por nome da parte
         await fetcher.search_by_nome_parte(nome_parte)
 
-        # 5. Extrair processos (até max_pages)
-        processos = await fetcher.check_for_pagination_and_extract_all(max_pages=max_pages)
+        # 5. Extrair processos (desde start_page até start_page + max_pages)
+        processos = await fetcher.check_for_pagination_and_extract_all(
+            start_page=start_page,
+            max_pages=max_pages
+        )
 
         # 6. Se extract_details=True, extrair detalhes completos
         if extract_details and len(processos) > 0:

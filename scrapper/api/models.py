@@ -363,9 +363,14 @@ class TJRJPJEAuthenticatedQuery(BaseModel):
         description="Nome da parte para buscar no sistema.",
         example="Claro S.A"
     )
+    start_page: int = Field(
+        default=1,
+        description="Página inicial para começar a extração (para importação incremental).",
+        example=1
+    )
     max_pages: Optional[int] = Field(
         default=None,
-        description="Número máximo de páginas a extrair. Se None, extrai todas as páginas.",
+        description="Número máximo de páginas a extrair A PARTIR de start_page. Se None, extrai todas as páginas.",
         example=100
     )
     extract_details: bool = Field(

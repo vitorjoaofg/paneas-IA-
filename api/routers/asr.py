@@ -1,8 +1,11 @@
 import asyncio
+import json
+import os
 import time
 import uuid
 from pathlib import Path
 
+import httpx
 from fastapi import APIRouter, Depends, File, Form, UploadFile, HTTPException
 from pydantic import BaseModel
 import structlog
@@ -35,6 +38,7 @@ def build_request(
     enable_alignment: bool = Form(False),
     enable_llm_postprocess: bool = Form(False),
     postprocess_mode: str = Form("paneas-default"),
+    use_openai_diarization: bool = Form(False),
     num_speakers: int | None = Form(None),
     compute_type: str = Form("int8_float16"),
     vad_filter: bool = Form(True),
@@ -48,6 +52,8 @@ def build_request(
         enable_diarization=enable_diarization,
         enable_alignment=enable_alignment,
         enable_llm_postprocess=enable_llm_postprocess,
+        postprocess_mode=postprocess_mode,
+        use_openai_diarization=use_openai_diarization,
         num_speakers=num_speakers,
         compute_type=compute_type,
         vad_filter=vad_filter,
@@ -68,6 +74,7 @@ async def transcribe_audio(
     provider = options.pop("provider", "paneas")
     enable_llm_postprocess = options.pop("enable_llm_postprocess", False)
     postprocess_mode = options.pop("postprocess_mode", "premium")
+    use_openai_diarization = options.pop("use_openai_diarization", False)
     options["request_id"] = str(request_id)
 
     raw_result = await asr_client.transcribe(
@@ -77,6 +84,103 @@ async def transcribe_audio(
     )
     raw_result["request_id"] = request_id
     raw_result["processing_time_ms"] = int((time.perf_counter() - start) * 1000)
+
+    # Apply OpenAI speaker diarization if enabled
+    if use_openai_diarization:
+        LOGGER.info("applying_openai_diarization", request_id=str(request_id))
+        try:
+            segments = raw_result.get("segments", [])
+
+            # Prepare segments for OpenAI
+            segments_for_prompt = []
+            for i, seg in enumerate(segments):
+                segments_for_prompt.append({
+                    "index": i,
+                    "start": seg["start"],
+                    "end": seg["end"],
+                    "text": seg["text"]
+                })
+
+            # Build prompt
+            prompt = f"""Para cada segmento abaixo (com tempo e texto), classifique como 'Cliente' ou 'Atendente'.
+
+CONTEXTO: Ligação de telemarketing da Claro.
+
+SEGMENTOS:
+{json.dumps(segments_for_prompt, ensure_ascii=False, indent=2)}
+
+RETORNE JSON no formato:
+[
+  {{"index": 0, "speaker": "Cliente"}},
+  {{"index": 1, "speaker": "Atendente"}},
+  ...
+]
+
+IMPORTANTE: Retorne APENAS o array JSON, sem texto adicional."""
+
+            # Call OpenAI
+            openai_api_key = os.environ.get("OPENAI_API_KEY")
+            if not openai_api_key:
+                raise ValueError("OPENAI_API_KEY not configured")
+
+            async with httpx.AsyncClient(timeout=120.0) as client:
+                response = await client.post(
+                    "https://api.openai.com/v1/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {openai_api_key}",
+                        "Content-Type": "application/json"
+                    },
+                    json={
+                        "model": "gpt-4o-2024-08-06",
+                        "messages": [
+                            {"role": "system", "content": "Você é um assistente que retorna apenas JSON válido."},
+                            {"role": "user", "content": prompt}
+                        ],
+                        "temperature": 0.1
+                    }
+                )
+
+                result = response.json()
+                content = result["choices"][0]["message"]["content"]
+
+                # Strip markdown code blocks if present
+                content = content.strip()
+                if content.startswith("```"):
+                    # Remove opening ```json or ```
+                    lines = content.split("\n")
+                    if lines[0].startswith("```"):
+                        lines = lines[1:]
+                    # Remove closing ```
+                    if lines and lines[-1].strip() == "```":
+                        lines = lines[:-1]
+                    content = "\n".join(lines).strip()
+
+                # Parse JSON response
+                classifications = json.loads(content)
+
+                # Update segments with speaker labels
+                for item in classifications:
+                    idx = item["index"]
+                    speaker = item["speaker"]
+                    segments[idx]["speaker"] = speaker
+
+                raw_result["segments"] = segments
+
+                LOGGER.info(
+                    "openai_diarization_complete",
+                    request_id=str(request_id),
+                    total_segments=len(segments),
+                    tokens_used=result.get("usage", {}).get("total_tokens", 0)
+                )
+
+        except Exception as e:
+            LOGGER.error(
+                "openai_diarization_failed",
+                request_id=str(request_id),
+                error=str(e),
+                error_type=type(e).__name__,
+            )
+            # Continue without OpenAI diarization on error
 
     # Apply PII masking first
     raw_result["text"] = PIIMasker.mask_text(raw_result.get("text", ""))
@@ -209,6 +313,28 @@ async def transcribe_audio(
                     "paneas_large_complete",
                     request_id=str(request_id),
                     notes=postprocess_result.get("processing_notes"),
+                )
+
+            elif postprocess_mode == "paneas-optimized":
+                # PANEAS-OPTIMIZED MODE: Local Whisper + PyAnnote + OpenAI validation
+                # - Keep original transcription (our Whisper is excellent)
+                # - Optimize PyAnnote segments (remove noise, merge)
+                # - OpenAI validates and fixes speaker labels only
+                # Cost: ~$0.0001 per audio vs $0.009/min AssemblyAI
+
+                from services.transcription_postprocess import fix_speaker_labels_with_openai_optimized
+
+                corrected_segments = await fix_speaker_labels_with_openai_optimized(
+                    segments=original_segments,
+                    full_text=original_text,
+                )
+
+                # Update segments only (keep original text)
+                raw_result["segments"] = corrected_segments
+
+                LOGGER.info(
+                    "paneas_optimized_complete",
+                    request_id=str(request_id),
                 )
 
             else:
