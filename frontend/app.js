@@ -2048,12 +2048,13 @@ async function transcribeUploadedAudio() {
     }
 
     // Read parameters from form
-    const language = 'pt';
+    const language = document.getElementById('asrLanguage')?.value || 'pt';
     const enableOpenaiDiar = document.getElementById('asrEnableOpenaiDiar')?.checked ?? true;
     const enableNativeDiarization = enableOpenaiDiar; // Show diarization info if enabled
     const enableLlmPostprocess = false; // Not using LLM post-processing in frontend
 
     console.log("[ASR] Arquivo selecionado:", file.name, file.size, "bytes");
+    console.log("[ASR] Idioma:", language);
     console.log("[ASR] Diarização OpenAI:", enableOpenaiDiar ? "ATIVADA" : "DESATIVADA");
 
     // Show processing animation

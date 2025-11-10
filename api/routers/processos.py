@@ -13,6 +13,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from services import processos_db
+from services.processos_transformers import consolidar_dados_processo
 from celery_app import celery_app
 
 router = APIRouter(prefix="/api/v1/processos", tags=["processos"])
@@ -153,7 +154,10 @@ async def listar_processos(
     resultado = await processos_db.buscar_processos(filtros, limit, offset, include_dados_completos=include_dados_completos)
 
     if include_dados_completos:
-        processos = [ProcessoCompleto(**p) for p in resultado["processos"]]
+        processos = [
+            ProcessoCompleto(**consolidar_dados_processo(p))
+            for p in resultado["processos"]
+        ]
     else:
         processos = [ProcessoResumo(**p) for p in resultado["processos"]]
 
@@ -163,54 +167,6 @@ async def listar_processos(
         has_more=resultado["has_more"],
         filtros_aplicados=filtros
     )
-
-
-def _consolidar_dados_processo(processo: Dict[str, Any]) -> Dict[str, Any]:
-    """Consolida dados_completos nos campos padronizados."""
-    dados_completos = processo.get("dados_completos", {}) or {}
-
-    # Extrair movimentos
-    movimentos = dados_completos.get("movimentos", [])
-    if isinstance(movimentos, list):
-        processo["movimentos"] = movimentos
-    else:
-        processo["movimentos"] = []
-
-    # Extrair audiências
-    audiencias = dados_completos.get("audiencias", [])
-    if isinstance(audiencias, list):
-        processo["audiencias"] = audiencias
-    else:
-        processo["audiencias"] = []
-
-    # Extrair publicações
-    publicacoes = dados_completos.get("publicacoes", [])
-    if isinstance(publicacoes, list):
-        processo["publicacoes"] = publicacoes
-    else:
-        processo["publicacoes"] = []
-
-    # Extrair documentos
-    documentos = dados_completos.get("documentos", [])
-    if isinstance(documentos, list):
-        processo["documentos"] = documentos
-    else:
-        processo["documentos"] = []
-
-    # Extrair partes (polo ativo/passivo)
-    polo_ativo = dados_completos.get("poloAtivo", [])
-    if isinstance(polo_ativo, list):
-        processo["polo_ativo"] = polo_ativo
-    else:
-        processo["polo_ativo"] = []
-
-    polo_passivo = dados_completos.get("poloPassivo", [])
-    if isinstance(polo_passivo, list):
-        processo["polo_passivo"] = polo_passivo
-    else:
-        processo["polo_passivo"] = []
-
-    return processo
 
 
 @router.get("/{numero_processo}", response_model=ProcessoCompleto)
@@ -234,7 +190,7 @@ async def obter_processo_detalhes(
         )
 
     # Consolidar dados_completos nos campos padronizados
-    processo = _consolidar_dados_processo(processo)
+    processo = consolidar_dados_processo(processo)
 
     return ProcessoCompleto(**processo)
 

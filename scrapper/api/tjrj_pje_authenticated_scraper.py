@@ -66,6 +66,7 @@ class TJRJPJEAuthenticatedFetcher:
                 '--disable-blink-features=AutomationControlled',
                 '--disable-dev-shm-usage',
                 '--no-sandbox',
+                '--incognito',
             ]
         }
 
@@ -1063,6 +1064,12 @@ class TJRJPJEAuthenticatedFetcher:
             print(f"[TJRJ PJE] No new tab, checking if iframe navigated...")
             # Usar o frame atual
             detail_page = self.page
+
+        # Se a nova aba/página é a tela de erro (sem permissão), não prossegue
+        current_url = detail_page.url
+        if "error.seam" in current_url:
+            print(f"[TJRJ PJE] ⚠️  Portal retornou tela de erro/restrição para {numero_processo} ({current_url}). Usando resumo.")
+            return None
 
         # Extrair TODOS os detalhes do processo da página/aba de detalhes
         return await self._extract_all_process_details(numero_processo, detail_page)
