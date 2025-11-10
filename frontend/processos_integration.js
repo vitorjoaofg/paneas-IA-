@@ -2,8 +2,10 @@
 
 let processosState = {
     currentTribunal: null,
-    currentPage: 0,
+    currentPage: 1,
     pageSize: 15,
+    totalPages: 1,
+    totalItems: 0,
     stats: null,
     currentView: 'initial'
 };
@@ -114,7 +116,7 @@ async function carregarDashboardProcessos() {
 
 async function visualizarTribunal(tribunal) {
     processosState.currentTribunal = tribunal;
-    processosState.currentPage = 0;
+    processosState.currentPage = 1;
 
     // Mostrar tabela dentro do dashboard
     const listagemDiv = document.getElementById('processosListagem');
@@ -161,8 +163,9 @@ async function carregarProcessos() {
     try {
         const params = new URLSearchParams({
             tribunal: processosState.currentTribunal,
-            limit: processosState.pageSize,
-            offset: processosState.currentPage * processosState.pageSize
+            page: processosState.currentPage,
+            per_page: processosState.pageSize,
+            include_dados_completos: 'true'
         });
 
         const response = await fetch('/api/v1/processos?' + params, {
@@ -176,6 +179,9 @@ async function carregarProcessos() {
         }
 
         const data = await response.json();
+        processosState.totalPages = data.total_pages || 1;
+        processosState.totalItems = data.total || 0;
+        processosState.pageSize = data.per_page || processosState.pageSize;
         renderProcessosTable(data);
         renderPagination(data);
     } catch (error) {
@@ -378,24 +384,33 @@ function renderDetalhesProcesso(processo) {
 
 function renderPagination(data) {
     const container = document.getElementById('processosPagination');
-    const totalPages = Math.ceil(data.total / processosState.pageSize);
-    const currentPageNum = processosState.currentPage + 1;
+    const totalPages = data.total_pages || 1;
+    const currentPageNum = data.page || 1;
 
-    const prevDisabled = processosState.currentPage === 0 ? 'disabled' : '';
-    const nextDisabled = !data.has_more ? 'disabled' : '';
+    const prevDisabled = currentPageNum <= 1 ? 'disabled' : '';
+    const nextDisabled = currentPageNum >= totalPages ? 'disabled' : '';
+
+    processosState.totalPages = totalPages;
+    processosState.currentPage = currentPageNum;
 
     container.innerHTML = `
-        <button ${prevDisabled} onclick="mudarPaginaProcessos(${processosState.currentPage - 1})">
+        <button ${prevDisabled} onclick="mudarPaginaProcessos(${currentPageNum - 1})">
             ← Anterior
         </button>
         <span class="pagination-info">Página ${currentPageNum} de ${totalPages} (${data.total} processos)</span>
-        <button ${nextDisabled} onclick="mudarPaginaProcessos(${processosState.currentPage + 1})">
+        <button ${nextDisabled} onclick="mudarPaginaProcessos(${currentPageNum + 1})">
             Próxima →
         </button>
     `;
 }
 
 function mudarPaginaProcessos(page) {
+    if (!page || page < 1 || page > processosState.totalPages) {
+        return;
+    }
+    if (page === processosState.currentPage) {
+        return;
+    }
     processosState.currentPage = page;
     carregarProcessos();
 }
@@ -432,8 +447,8 @@ async function consultarProcessoBanco() {
         if (nomeParte) params.append('nome_parte', nomeParte);
         if (classe) params.append('classe', classe);
         if (assunto) params.append('assunto', assunto);
-        params.append('limit', '10');
-
+        params.append('page', '1');
+        params.append('per_page', '10');
         params.append('include_dados_completos', 'true');
 
         const response = await fetch(`/api/v1/processos?${params}`, {
@@ -476,10 +491,18 @@ async function listarProcessosBanco() {
     const nomeParte = document.getElementById('bancoListNomeParte').value.trim();
     const classe = document.getElementById('bancoListClasse').value.trim();
     const assunto = document.getElementById('bancoListAssunto').value.trim();
-    const limit = document.getElementById('bancoListLimit').value || 15;
+    const pageInput = document.getElementById('bancoListPage');
+    const perPageInput = document.getElementById('bancoListPerPage');
+    const page = Math.max(1, parseInt(pageInput?.value || '1', 10) || 1);
+    const perPage = Math.max(1, Math.min(100, parseInt(perPageInput?.value || '15', 10) || 15));
     const tribunal = document.getElementById('bancoListTribunalSelector').value;
+    const metaDiv = document.getElementById('bancoListMeta');
 
     resultDiv.innerHTML = '<div class="loading-message">🔍 Listando processos do banco...</div>';
+    if (metaDiv) {
+        metaDiv.style.display = 'none';
+        metaDiv.textContent = '';
+    }
 
     try {
         const params = new URLSearchParams();
@@ -487,9 +510,8 @@ async function listarProcessosBanco() {
         if (nomeParte) params.append('nome_parte', nomeParte);
         if (classe) params.append('classe', classe);
         if (assunto) params.append('assunto', assunto);
-        params.append('limit', limit);
-        params.append('offset', '0');
-
+        params.append('page', String(page));
+        params.append('per_page', String(perPage));
         params.append('include_dados_completos', 'true');
 
         const response = await fetch(`/api/v1/processos?${params}`, {
@@ -504,9 +526,30 @@ async function listarProcessosBanco() {
 
         const data = await response.json();
 
+        if (pageInput && data.page) {
+            pageInput.value = data.page;
+        }
+        if (perPageInput && data.per_page) {
+            perPageInput.value = data.per_page;
+        }
+
         if (!data.processos || data.processos.length === 0) {
             resultDiv.innerHTML = '<div class="empty-message"><div class="empty-message-icon">📋</div><p>Nenhum processo encontrado</p></div>';
+            if (metaDiv) metaDiv.style.display = 'none';
             return;
+        }
+
+        if (metaDiv) {
+            const totalPages = data.total_pages ?? Math.max(1, Math.ceil((data.total || 0) / (data.per_page || perPage)));
+            metaDiv.innerHTML = `
+                <div class="pagination-summary">
+                    <strong>Paginação:</strong>
+                    página ${data.page || page} de ${totalPages} •
+                    ${data.per_page || perPage} itens/página •
+                    ${data.total ?? '—'} processos totais
+                </div>
+            `;
+            metaDiv.style.display = 'block';
         }
 
         // Mostrar JSON puro da resposta da API
@@ -524,5 +567,6 @@ async function listarProcessosBanco() {
     } catch (error) {
         console.error('Erro ao listar processos:', error);
         resultDiv.innerHTML = `<div class="error-message">❌ Erro ao listar processos: ${error.message}</div>`;
+        if (metaDiv) metaDiv.style.display = 'none';
     }
 }

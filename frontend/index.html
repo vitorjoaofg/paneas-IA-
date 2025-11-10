@@ -867,14 +867,19 @@
                                     <input id="bancoListAssunto" name="assunto" type="text" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="bancoListLimit">Limite de Resultados</label>
-                                    <input id="bancoListLimit" name="limit" type="number" min="1" max="100" value="15" />
+                                    <label for="bancoListPage">Página</label>
+                                    <input id="bancoListPage" name="page" type="number" min="1" value="1" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="bancoListPerPage">Itens por página</label>
+                                    <input id="bancoListPerPage" name="per_page" type="number" min="1" max="100" value="15" />
                                 </div>
                                 <div class="button-group">
                                     <button type="submit" class="btn btn--primary" id="bancoListSubmit">Listar Processos</button>
                                     <button type="button" class="btn btn--ghost" id="bancoListReset">Limpar</button>
                                 </div>
                             </form>
+                            <div class="result-meta" id="bancoListMeta" style="display:none;"></div>
                             <div class="result-box result-box--large" id="bancoListResult">
                                 <p class="placeholder">Informe os filtros desejados.</p>
                             </div>

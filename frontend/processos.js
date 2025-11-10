@@ -4,8 +4,10 @@ const API_TOKEN = 'token_abc123';
 
 // State
 let currentTribunal = null;
-let currentPage = 0;
+let currentPage = 1;
 const pageSize = 20;
+let totalPages = 1;
+let totalItems = 0;
 let currentFilters = {};
 let allStats = null;
 
@@ -93,7 +95,7 @@ function updateLastUpdate(timestamp) {
 // Tribunal view functions
 async function abrirTribunal(tribunal) {
     currentTribunal = tribunal;
-    currentPage = 0;
+    currentPage = 1;
     currentFilters = {};
 
     // Update UI
@@ -139,8 +141,8 @@ async function carregarProcessos() {
 async function fetchProcessos() {
     const params = new URLSearchParams({
         tribunal: currentTribunal,
-        limit: pageSize,
-        offset: currentPage * pageSize,
+        page: currentPage,
+        per_page: pageSize,
         ...currentFilters
     });
 
@@ -154,7 +156,11 @@ async function fetchProcessos() {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+    currentPage = data.page || currentPage;
+    totalItems = data.total || 0;
+    totalPages = data.total_pages || Math.max(1, Math.ceil((data.total || 0) / pageSize));
+    return data;
 }
 
 function renderProcessosTable(data) {
@@ -209,21 +215,32 @@ function renderProcessosTable(data) {
 
 function renderPagination(data) {
     const container = document.getElementById('pagination');
-    const totalPages = Math.ceil(data.total / pageSize);
-    const currentPageNum = currentPage + 1;
+    const currentPageNum = data.page || currentPage || 1;
+    const total = data.total ?? totalItems;
+    const totalPagesFromResponse = data.total_pages || totalPages || 1;
+
+    totalPages = totalPagesFromResponse;
+    totalItems = total ?? totalItems;
+    currentPage = currentPageNum;
 
     container.innerHTML = `
-        <button ${currentPage === 0 ? 'disabled' : ''} onclick="mudarPagina(${currentPage - 1})">
+        <button ${currentPageNum <= 1 ? 'disabled' : ''} onclick="mudarPagina(${currentPageNum - 1})">
             ← Anterior
         </button>
-        <span>Página ${currentPageNum} de ${totalPages} (${data.total} processos)</span>
-        <button ${!data.has_more ? 'disabled' : ''} onclick="mudarPagina(${currentPage + 1})">
+        <span>Página ${currentPageNum} de ${totalPagesFromResponse} (${total} processos)</span>
+        <button ${currentPageNum >= totalPagesFromResponse ? 'disabled' : ''} onclick="mudarPagina(${currentPageNum + 1})">
             Próxima →
         </button>
     `;
 }
 
 function mudarPagina(page) {
+    if (!page || page < 1 || page > totalPages) {
+        return;
+    }
+    if (page === currentPage) {
+        return;
+    }
     currentPage = page;
     carregarProcessos();
 }
@@ -238,7 +255,7 @@ function aplicarFiltros() {
     if (classe) currentFilters.classe = classe;
     if (comarca) currentFilters.comarca = comarca;
 
-    currentPage = 0;
+    currentPage = 1;
     carregarProcessos();
 }
 
@@ -247,7 +264,7 @@ function limparFiltros() {
     document.getElementById('filter-classe').value = '';
     document.getElementById('filter-comarca').value = '';
     currentFilters = {};
-    currentPage = 0;
+    currentPage = 1;
     carregarProcessos();
 }
 
