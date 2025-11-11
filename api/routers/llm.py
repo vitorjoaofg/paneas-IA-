@@ -20,7 +20,7 @@ from services.tool_prompt_helper import tools_to_prompt, extract_function_call
 LOGGER = structlog.get_logger(__name__)
 JSON_DECODER = json.JSONDecoder()
 
-MAX_CONTEXT_LENGTH = 65536
+DEFAULT_MAX_CONTEXT_LENGTH = 65536
 MAX_TOOL_ITERATIONS = 3
 MAX_PAGE_TEXT_CHARS = 4000
 MAX_DOCUMENT_TEXT_CHARS = 60000
@@ -290,7 +290,24 @@ def _count_prompt_tokens(messages: List[ChatMessage]) -> int:
     return total
 
 
-def _apply_aggressive_truncation(messages: List[ChatMessage], max_tokens: int) -> int:
+def _resolve_context_limit(model_name: Optional[str], provider: Optional[str]) -> int:
+    """Resolve context limit based on requested model/provider."""
+    if provider and provider.lower() == "openai":
+        return DEFAULT_MAX_CONTEXT_LENGTH
+
+    if model_name and model_name in MODEL_REGISTRY:
+        limit = MODEL_REGISTRY[model_name].get("context_length")
+        if isinstance(limit, int) and limit > 0:
+            return limit
+
+    return DEFAULT_MAX_CONTEXT_LENGTH
+
+
+def _apply_aggressive_truncation(
+    messages: List[ChatMessage],
+    max_tokens: int,
+    context_limit: int,
+) -> int:
     """Aplica truncamento progressivo nas mensagens mais longas até atingir o limite."""
     ordered_indexes = sorted(
         range(len(messages)),
@@ -314,7 +331,7 @@ def _apply_aggressive_truncation(messages: List[ChatMessage], max_tokens: int) -
         )
         msg.content = truncated
         prompt_tokens = _count_prompt_tokens(messages)
-        if prompt_tokens + max_tokens <= MAX_CONTEXT_LENGTH:
+        if prompt_tokens + max_tokens <= context_limit:
             return prompt_tokens
 
     return _count_prompt_tokens(messages)
@@ -386,20 +403,25 @@ async def create_chat_completion(payload: ChatRequest):
         LOGGER.info("auto_disable_streaming", reason="tools_present")
         payload.stream = False
 
+    context_limit = _resolve_context_limit(payload.model, payload.provider)
     _reduce_large_documents(payload.messages)
     prompt_tokens = _count_prompt_tokens(payload.messages)
     context_length = prompt_tokens + payload.max_tokens
 
-    if context_length > MAX_CONTEXT_LENGTH:
-        prompt_tokens = _apply_aggressive_truncation(payload.messages, payload.max_tokens)
+    if context_length > context_limit:
+        prompt_tokens = _apply_aggressive_truncation(
+            payload.messages,
+            payload.max_tokens,
+            context_limit,
+        )
         context_length = prompt_tokens + payload.max_tokens
 
     # Validação: rejeita se ultrapassar limite de 32k tokens
-    if context_length > MAX_CONTEXT_LENGTH:
+    if context_length > context_limit:
         raise HTTPException(
             status_code=400,
             detail=(
-                f"Context length ({context_length} tokens) exceeds maximum allowed ({MAX_CONTEXT_LENGTH} tokens) "
+                f"Context length ({context_length} tokens) exceeds maximum allowed ({context_limit} tokens) "
                 "even after automatic compaction. Reduza o tamanho do documento ou envie em partes menores."
             ),
         )

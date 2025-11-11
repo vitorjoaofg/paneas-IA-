@@ -11,8 +11,16 @@ _settings = get_settings()
 LOGGER = structlog.get_logger(__name__)
 
 MODEL_REGISTRY: Dict[str, Dict[str, Any]] = {
-    "paneas-v1-q14b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
-    "paneas-q32b": {"target": LLMTarget.INT4, "path": "/models/qwen2_5/int4-awq"},
+    "paneas-v1-q14b": {
+        "target": LLMTarget.INT4,
+        "path": "/models/qwen2_5/int4-awq",
+        "context_length": 8192,
+    },
+    "paneas-q32b": {
+        "target": LLMTarget.INT4,
+        "path": "/models/qwen2_5/int4-awq",
+        "context_length": 8192,
+    },
     "gpt-4o-mini": {"target": LLMTarget.OPENAI, "path": "gpt-4o-mini"},
 }
 
