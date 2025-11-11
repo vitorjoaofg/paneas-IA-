@@ -9,8 +9,10 @@ from datetime import date
 from typing import Any, Dict, List, Optional
 from uuid import UUID
 
+import math
+
 from fastapi import APIRouter, HTTPException, Query
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 from services import processos_db
 from services.processos_transformers import consolidar_dados_processo
@@ -75,6 +77,9 @@ class ProcessoCompleto(BaseModel):
 class ProcessosListResponse(BaseModel):
     """Resposta de listagem de processos."""
     total: int
+    page: int
+    per_page: int
+    total_pages: int
     processos: List[ProcessoResumo | ProcessoCompleto]
     has_more: bool
     filtros_aplicados: Dict[str, Any]
@@ -117,12 +122,16 @@ async def listar_processos(
     tribunal: Optional[str] = Query(None, description="Tribunal (TJSP, PJE, TJRJ)"),
     numero_processo: Optional[str] = Query(None, description="Número do processo (busca parcial)"),
     classe: Optional[str] = Query(None, description="Classe do processo"),
+    assunto: Optional[str] = Query(None, description="Assunto do processo"),
+    nome_parte: Optional[str] = Query(None, description="Nome de parte (autor, réu ou advogado)"),
     comarca: Optional[str] = Query(None, description="Comarca"),
     uf: Optional[str] = Query(None, description="UF (SP, RJ)"),
     data_inicio: Optional[date] = Query(None, description="Data de distribuição inicial (YYYY-MM-DD)"),
     data_fim: Optional[date] = Query(None, description="Data de distribuição final (YYYY-MM-DD)"),
-    limit: int = Query(50, ge=1, le=500, description="Máximo de resultados"),
-    offset: int = Query(0, ge=0, description="Número de resultados para pular (paginação)"),
+    page: int = Query(1, ge=1, description="Número da página (1 = primeira)"),
+    per_page: int = Query(15, ge=1, le=500, description="Quantidade de itens por página"),
+    limit: Optional[int] = Query(None, ge=1, le=500, description="(Deprecado) sobrescreve per_page"),
+    offset: Optional[int] = Query(None, ge=0, description="(Deprecado) sobrescreve cálculo de página"),
     include_dados_completos: bool = Query(False, description="Incluir dados_completos (movimentos, partes, etc)"),
 ) -> ProcessosListResponse:
     """
@@ -132,7 +141,7 @@ async def listar_processos(
     - Todos os processos: GET /processos
     - Processos do TJSP: GET /processos?tribunal=TJSP
     - Processos de 2024: GET /processos?data_inicio=2024-01-01&data_fim=2024-12-31
-    - Paginação: GET /processos?limit=100&offset=100
+    - Paginação: GET /processos?page=2&per_page=100
     - Com dados completos: GET /processos?include_dados_completos=true
     """
     filtros = {}
@@ -142,6 +151,10 @@ async def listar_processos(
         filtros["numero_processo"] = numero_processo
     if classe:
         filtros["classe"] = classe
+    if assunto:
+        filtros["assunto"] = assunto
+    if nome_parte:
+        filtros["nome_parte"] = nome_parte
     if comarca:
         filtros["comarca"] = comarca
     if uf:
@@ -151,7 +164,16 @@ async def listar_processos(
     if data_fim:
         filtros["data_fim"] = data_fim
 
-    resultado = await processos_db.buscar_processos(filtros, limit, offset, include_dados_completos=include_dados_completos)
+    # Permitir compatibilidade com clientes antigos que ainda mandam limit/offset
+    effective_per_page = limit if limit is not None else per_page
+    effective_offset = offset if offset is not None else (page - 1) * effective_per_page
+
+    resultado = await processos_db.buscar_processos(
+        filtros,
+        effective_per_page,
+        effective_offset,
+        include_dados_completos=include_dados_completos,
+    )
 
     if include_dados_completos:
         processos = [
@@ -161,8 +183,17 @@ async def listar_processos(
     else:
         processos = [ProcessoResumo(**p) for p in resultado["processos"]]
 
+    total = resultado["total"]
+    total_pages = math.ceil(total / effective_per_page) if total else 0
+    current_page = (
+        (effective_offset // effective_per_page) + 1 if offset is not None else page
+    ) if effective_per_page else 1
+
     return ProcessosListResponse(
-        total=resultado["total"],
+        total=total,
+        page=current_page,
+        per_page=effective_per_page,
+        total_pages=total_pages,
         processos=processos,
         has_more=resultado["has_more"],
         filtros_aplicados=filtros

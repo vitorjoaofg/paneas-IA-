@@ -27,3 +27,7 @@ htmlcov/
 # Large audio files (original, non-optimized versions)
 test-data/audio/perola.wav
 test-data/audio/Guilherme.wav
+
+# Local process exports
+processos_completos_azul.json
+processos_completos_claro.json

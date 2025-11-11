@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from datetime import date, datetime
 from typing import Any, Dict, List, Optional
 from uuid import UUID, uuid4
@@ -20,7 +21,12 @@ logger = logging.getLogger(__name__)
 # Funções de salvamento e atualização
 # ==============================================================================
 
-async def salvar_processo(dados: Dict[str, Any], tribunal: str) -> UUID:
+async def salvar_processo(
+    dados: Dict[str, Any],
+    tribunal: str,
+    permitir_atualizacao: bool = True,
+    nome_parte_referencia: Optional[str] = None,
+) -> UUID:
     """
     Salva ou atualiza um processo judicial no banco de dados.
 
@@ -31,6 +37,8 @@ async def salvar_processo(dados: Dict[str, Any], tribunal: str) -> UUID:
     Args:
         dados: Dicionário com dados do processo (ProcessoTJSP, ProcessoPJE ou ProcessoTJRJ)
         tribunal: String identificando o tribunal ("TJSP", "PJE" ou "TJRJ")
+        permitir_atualizacao: Atualiza registros existentes quando True
+        nome_parte_referencia: Termo usado para coleta (ex.: "Claro S.A")
 
     Returns:
         UUID do processo (novo ou existente)
@@ -72,6 +80,13 @@ async def salvar_processo(dados: Dict[str, Any], tribunal: str) -> UUID:
                 logger.warning(f"Formato de data inválido: {data_dist_raw}")
 
     # JSON completo (serializar para armazenar no JSONB)
+    if nome_parte_referencia:
+        meta = dados.get("meta")
+        if not isinstance(meta, dict):
+            meta = {}
+        meta["nomeParteReferencia"] = nome_parte_referencia
+        dados["meta"] = meta
+
     dados_completos = json.dumps(dados, default=str, ensure_ascii=False)
 
     async with get_db_connection() as conn:
@@ -265,6 +280,8 @@ async def buscar_processos(
             - tribunal: str (TJSP/PJE/TJRJ)
             - numero_processo: str (busca parcial com ILIKE)
             - classe: str
+            - assunto: str
+            - nome_parte: str (busca ILIKE nas partes associadas)
             - data_inicio: date
             - data_fim: date
             - comarca: str
@@ -305,6 +322,11 @@ async def buscar_processos(
             params.append(f"%{filtros['classe']}%")
             param_count += 1
 
+        if filtros.get("assunto"):
+            where_clauses.append(f"assunto ILIKE ${param_count}")
+            params.append(f"%{filtros['assunto']}%")
+            param_count += 1
+
         if filtros.get("comarca"):
             where_clauses.append(f"comarca ILIKE ${param_count}")
             params.append(f"%{filtros['comarca']}%")
@@ -324,6 +346,44 @@ async def buscar_processos(
             where_clauses.append(f"data_distribuicao <= ${param_count}")
             params.append(filtros["data_fim"])
             param_count += 1
+
+        if filtros.get("nome_parte"):
+            nome_parte_raw = filtros["nome_parte"]
+            raw_tokens = [token for token in re.split(r"[^0-9A-Za-z]+", nome_parte_raw) if token]
+            search_terms = [token.lower() for token in raw_tokens if len(token) >= 3]
+
+            if not search_terms:
+                trimmed = nome_parte_raw.strip().lower()
+                if trimmed:
+                    search_terms = [trimmed]
+
+            if search_terms:
+                term_clauses = []
+                for term in search_terms:
+                    like_value = f"%{term}%"
+
+                    partes_placeholder = param_count
+                    params.append(like_value)
+                    param_count += 1
+
+                    meta_placeholder = param_count
+                    params.append(like_value)
+                    param_count += 1
+
+                    term_clauses.append(
+                        f"""(
+                            EXISTS (
+                                SELECT 1
+                                FROM processos.processos_partes pp
+                                WHERE pp.processo_id = processos.processos_judiciais.id
+                                  AND lower(pp.nome) LIKE ${partes_placeholder}
+                            )
+                            OR lower(COALESCE(dados_completos->'meta'->>'nomeParteReferencia', '')) LIKE ${meta_placeholder}
+                        )"""
+                    )
+
+                if term_clauses:
+                    where_clauses.append("(" + " AND ".join(term_clauses) + ")")
 
         where_sql = "WHERE " + " AND ".join(where_clauses) if where_clauses else ""
 

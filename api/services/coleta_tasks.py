@@ -9,7 +9,7 @@ import asyncio
 import logging
 import traceback
 from datetime import datetime
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from uuid import UUID
 
 from celery import group
@@ -27,6 +27,7 @@ logger = logging.getLogger(__name__)
 
 # Variações do nome "Claro" para buscar
 CLARO_VARIACOES = ["Claro", "Claro SA", "Claro S/A", "Claro S.A."]
+CLIENTE_PADRAO_NOME = "Claro S.A"
 
 
 # ==============================================================================
@@ -84,7 +85,11 @@ async def _coletar_tjsp_async() -> Dict[str, Any]:
         logger.info(f"[TJSP] Total de processos únicos encontrados: {len(todos_processos)}")
 
         # Salvar processos no banco
-        stats = await _salvar_processos_batch(todos_processos, tribunal)
+        stats = await _salvar_processos_batch(
+            todos_processos,
+            tribunal,
+            nome_parte_referencia=CLIENTE_PADRAO_NOME
+        )
 
         # Registrar fim da coleta
         await processos_db.registrar_fim_coleta(
@@ -163,7 +168,11 @@ async def _coletar_pje_async() -> Dict[str, Any]:
         logger.info(f"[PJE] Detalhes completos obtidos para {len(processos_completos)} processos")
 
         # Salvar processos no banco
-        stats = await _salvar_processos_batch(processos_completos, tribunal)
+        stats = await _salvar_processos_batch(
+            processos_completos,
+            tribunal,
+            nome_parte_referencia=CLIENTE_PADRAO_NOME
+        )
 
         # Registrar fim da coleta
         await processos_db.registrar_fim_coleta(
@@ -220,7 +229,11 @@ async def _coletar_tjrj_async() -> Dict[str, Any]:
         logger.info(f"[TJRJ] Encontrados {len(processos)} processos")
 
         # Salvar processos no banco
-        stats = await _salvar_processos_batch(processos, tribunal)
+        stats = await _salvar_processos_batch(
+            processos,
+            tribunal,
+            nome_parte_referencia=CLIENTE_PADRAO_NOME
+        )
 
         # Registrar fim da coleta
         await processos_db.registrar_fim_coleta(
@@ -328,7 +341,11 @@ async def _coletar_todos_tribunais_async() -> Dict[str, Any]:
 # Funções auxiliares
 # ==============================================================================
 
-async def _salvar_processos_batch(processos: List[Dict[str, Any]], tribunal: str) -> Dict[str, Any]:
+async def _salvar_processos_batch(
+    processos: List[Dict[str, Any]],
+    tribunal: str,
+    nome_parte_referencia: Optional[str] = None,
+) -> Dict[str, Any]:
     """
     Salva uma lista de processos no banco e retorna estatísticas.
     """
@@ -341,7 +358,11 @@ async def _salvar_processos_batch(processos: List[Dict[str, Any]], tribunal: str
     for proc in processos:
         try:
             # Tentar salvar (função detecta se é novo ou atualização)
-            processo_id = await processos_db.salvar_processo(proc, tribunal)
+            processo_id = await processos_db.salvar_processo(
+                proc,
+                tribunal,
+                nome_parte_referencia=nome_parte_referencia
+            )
 
             # Como não temos como saber se foi INSERT ou UPDATE na resposta,
             # vamos consultar o created_at
