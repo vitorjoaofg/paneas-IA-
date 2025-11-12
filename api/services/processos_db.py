@@ -16,6 +16,122 @@ from services.db_client import get_db_connection
 
 logger = logging.getLogger(__name__)
 
+ISO_DATE_REGEX = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
+BR_DATE_REGEX = re.compile(r"(\d{2})/(\d{2})/(\d{4})")
+
+
+def inferir_data_distribuicao(dados: Dict[str, Any], tribunal: str) -> Optional[date]:
+    """
+    Extrai e converte a melhor data de distribuição disponível em um registro cru do scraper.
+    """
+    raw_value = _buscar_data_distribuicao_bruta(dados, tribunal)
+    if raw_value is None:
+        return None
+
+    parsed = _parse_data_distribuicao(raw_value)
+    if parsed is None:
+        logger.debug(
+            "Não foi possível interpretar data de distribuição '%s' do processo %s (%s)",
+            raw_value,
+            dados.get("numeroProcesso"),
+            tribunal,
+        )
+    return parsed
+
+
+def _buscar_data_distribuicao_bruta(dados: Dict[str, Any], tribunal: str) -> Optional[Any]:
+    """
+    Procura por campos que possam conter a data de distribuição/autuação.
+    """
+    if not isinstance(dados, dict):
+        return None
+
+    candidate_keys = [
+        "dataDistribuicao",
+        "data_distribuicao",
+        "dataAutuacao",
+        "data_autuacao",
+        "dataDistribuicaoProcesso",
+    ]
+
+    # Campos específicos do TJSP (listagem usa 'distribuicao')
+    if tribunal.upper() == "TJSP":
+        candidate_keys.append("distribuicao")
+
+    for key in candidate_keys:
+        value = dados.get(key)
+        if value:
+            return value
+
+    # Informações completas podem trazer a data dentro de blocos estruturados
+    detalhes_publicos = dados.get("detalhesPublicos")
+    if isinstance(detalhes_publicos, dict):
+        informacoes = detalhes_publicos.get("informacoes")
+        if isinstance(informacoes, dict):
+            for info_key in (
+                "Data da Distribuição",
+                "Data da distribuição",
+                "Data da Distribuicao",
+                "Data da Autuação",
+                "Data da autuação",
+            ):
+                value = informacoes.get(info_key)
+                if value:
+                    return value
+
+    # Payloads de importadores podem aninhar dentro de 'dados' ou 'detalhes'
+    for nested_key in ("dados", "detalhes"):
+        nested = dados.get(nested_key)
+        if isinstance(nested, dict):
+            value = nested.get("dataDistribuicao")
+            if value:
+                return value
+
+    return None
+
+
+def _parse_data_distribuicao(value: Any) -> Optional[date]:
+    """
+    Converte valores diversos de data em objeto date.
+    """
+    if isinstance(value, date) and not isinstance(value, datetime):
+        return value
+    if isinstance(value, datetime):
+        return value.date()
+    if not isinstance(value, str):
+        return None
+
+    text = value.strip()
+    if not text:
+        return None
+
+    normalized = text.replace("\u00a0", " ").strip()
+
+    # Tentar interpretar diretamente formatos ISO (com ou sem horário)
+    iso_candidate = normalized.rstrip("Zz")
+    try:
+        dt_value = datetime.fromisoformat(iso_candidate)
+        return dt_value.date()
+    except ValueError:
+        pass
+
+    try:
+        return date.fromisoformat(iso_candidate[:10])
+    except ValueError:
+        pass
+
+    iso_match = ISO_DATE_REGEX.search(normalized)
+    if iso_match:
+        year, month, day = map(int, iso_match.groups())
+        return date(year, month, day)
+
+    br_match = BR_DATE_REGEX.search(normalized)
+    if br_match:
+        day, month, year = map(int, br_match.groups())
+        return date(year, month, day)
+
+    return None
+
 
 # ==============================================================================
 # Funções de salvamento e atualização
@@ -60,24 +176,7 @@ async def salvar_processo(
     uf = dados.get("uf")
 
     # Data de distribuição (pode estar em formatos diferentes)
-    data_distribuicao = None
-    data_dist_raw = dados.get("dataDistribuicao")
-    if data_dist_raw:
-        if isinstance(data_dist_raw, date):
-            data_distribuicao = data_dist_raw
-        elif isinstance(data_dist_raw, str):
-            # Tentar parsear DD/MM/YYYY ou YYYY-MM-DD
-            try:
-                if "/" in data_dist_raw:
-                    parts = data_dist_raw.split("/")
-                    if len(parts) == 3:
-                        # DD/MM/YYYY
-                        data_distribuicao = date(int(parts[2]), int(parts[1]), int(parts[0]))
-                elif "-" in data_dist_raw:
-                    # YYYY-MM-DD
-                    data_distribuicao = date.fromisoformat(data_dist_raw)
-            except (ValueError, IndexError):
-                logger.warning(f"Formato de data inválido: {data_dist_raw}")
+    data_distribuicao = inferir_data_distribuicao(dados, tribunal)
 
     # JSON completo (serializar para armazenar no JSONB)
     if nome_parte_referencia:
@@ -88,12 +187,13 @@ async def salvar_processo(
         dados["meta"] = meta
 
     dados_completos = json.dumps(dados, default=str, ensure_ascii=False)
+    dados_completos_dict = json.loads(dados_completos)
 
     async with get_db_connection() as conn:
         # Verificar se processo já existe
         row = await conn.fetchrow(
             """
-            SELECT id, dados_completos
+            SELECT id, dados_completos, data_distribuicao
             FROM processos.processos_judiciais
             WHERE numero_processo = $1 AND tribunal = $2
             """,
@@ -104,10 +204,19 @@ async def salvar_processo(
             # Processo existe - verificar se mudou
             processo_id = row["id"]
             dados_antigos = row["dados_completos"]
+            dados_iguais = dados_antigos == dados_completos_dict
+            data_igual = row["data_distribuicao"] == data_distribuicao
 
-            # Comparar se houve mudança (comparar JSONs)
-            if dados_antigos == json.loads(dados_completos):
-                logger.debug(f"Processo {numero_processo} ({tribunal}) não teve mudanças")
+            if dados_iguais and data_igual:
+                logger.debug(f"Processo {numero_processo} ({tribunal}) não teve mudanças estruturais")
+                return processo_id
+
+            if not permitir_atualizacao:
+                logger.debug(
+                    "Atualização ignorada para processo %s (%s) porque permitir_atualizacao=False",
+                    numero_processo,
+                    tribunal,
+                )
                 return processo_id
 
             # Houve mudança - atualizar
@@ -399,7 +508,38 @@ async def buscar_processos(
                 dados_completos, created_at, updated_at
             FROM processos.processos_judiciais
             {where_sql}
-            ORDER BY data_distribuicao DESC NULLS LAST, updated_at DESC
+            ORDER BY
+                COALESCE(
+                    data_distribuicao,
+                    CASE
+                        WHEN (dados_completos->>'dataDistribuicao') ~ '^\\d{{4}}-\\d{{2}}-\\d{{2}}'
+                            THEN substring(dados_completos->>'dataDistribuicao' from '^\\d{{4}}-\\d{{2}}-\\d{{2}}')::date
+                        WHEN (dados_completos->>'dataDistribuicao') ~ '^\\d{{2}}/\\d{{2}}/\\d{{4}}'
+                            THEN to_date(substring(dados_completos->>'dataDistribuicao' from '^\\d{{2}}/\\d{{2}}/\\d{{4}}'), 'DD/MM/YYYY')
+                        WHEN (dados_completos->>'distribuicao') ~ '^\\d{{2}}/\\d{{2}}/\\d{{4}}'
+                            THEN to_date(substring(dados_completos->>'distribuicao' from '^\\d{{2}}/\\d{{2}}/\\d{{4}}'), 'DD/MM/YYYY')
+                        WHEN (dados_completos->>'dataAutuacao') ~ '^\\d{{4}}-\\d{{2}}-\\d{{2}}'
+                            THEN substring(dados_completos->>'dataAutuacao' from '^\\d{{4}}-\\d{{2}}-\\d{{2}}')::date
+                        WHEN (dados_completos->>'dataAutuacao') ~ '^\\d{{2}}/\\d{{2}}/\\d{{4}}'
+                            THEN to_date(substring(dados_completos->>'dataAutuacao' from '^\\d{{2}}/\\d{{2}}/\\d{{4}}'), 'DD/MM/YYYY')
+                        WHEN (dados_completos->'detalhesPublicos'->'informacoes'->>'Data da Distribuição') ~ '^\\d{{2}}/\\d{{2}}/\\d{{4}}'
+                            THEN to_date(
+                                substring(dados_completos->'detalhesPublicos'->'informacoes'->>'Data da Distribuição' from '^\\d{{2}}/\\d{{2}}/\\d{{4}}'),
+                                'DD/MM/YYYY'
+                            )
+                        WHEN (dados_completos->'detalhesPublicos'->'informacoes'->>'Data da distribuição') ~ '^\\d{{2}}/\\d{{2}}/\\d{{4}}'
+                            THEN to_date(
+                                substring(dados_completos->'detalhesPublicos'->'informacoes'->>'Data da distribuição' from '^\\d{{2}}/\\d{{2}}/\\d{{4}}'),
+                                'DD/MM/YYYY'
+                            )
+                        WHEN substring(numero_processo from '\\d{{7}}-\\d{{2}}\\.(\\d{{4}})') IS NOT NULL
+                            THEN to_date(substring(numero_processo from '\\d{{7}}-\\d{{2}}\\.(\\d{{4}})'), 'YYYY')
+                        ELSE NULL
+                    END,
+                    date_trunc('day', created_at)::date,
+                    date_trunc('day', updated_at)::date
+                ) DESC,
+                updated_at DESC
             LIMIT ${param_count} OFFSET ${param_count + 1}
         """
         params.extend([limit, offset])
