@@ -49,6 +49,8 @@ class Settings(BaseSettings):
     llm_max_tokens: int = Field(default=16384, alias="LLM_MAX_TOKENS")
     llm_routing_strategy: str = Field(default="auto", alias="LLM_ROUTING_STRATEGY")
     llm_timeout: float = Field(default=30.0, alias="LLM_TIMEOUT")
+    long_doc_model_name: str = Field(default="paneas-q32b", alias="LONG_DOC_MODEL")
+    long_doc_chunk_chars: int = Field(default=6000, alias="LONG_DOC_CHUNK_CHARS")
 
     asr_host: str = Field(default="asr", alias="ASR_HOST")
     asr_port: int = Field(default=9000, alias="ASR_PORT")

@@ -1,7 +1,8 @@
 import json
 import secrets
 import time
-from typing import List, Any, Dict, Optional
+import math
+from typing import List, Any, Dict, Optional, Awaitable, Callable
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
@@ -16,6 +17,7 @@ from services.tools.weather import get_weather
 from services.tools.generic_http import age_predictor, external_api_call
 from services.tools.unimed import unimed_consult
 from services.tool_prompt_helper import tools_to_prompt, extract_function_call
+from services.document_shrinker import summarize_long_document
 
 LOGGER = structlog.get_logger(__name__)
 JSON_DECODER = json.JSONDecoder()
@@ -27,6 +29,8 @@ MAX_DOCUMENT_TEXT_CHARS = 60000
 MAX_ENTITY_COUNT = 20
 MIN_COMPACTION_LENGTH = 4000
 HARD_MESSAGE_CHAR_LIMIT = 20000
+AUTO_SUMMARY_MIN_CHARS = 12000
+MAX_AUTO_SUMMARY_PASSES = 2
 
 def _truncate_tool_result(content: str, max_length: int = 3000) -> str:
     """
@@ -281,13 +285,16 @@ def _truncate_plain_text(content: str) -> str:
     return content[:HARD_MESSAGE_CHAR_LIMIT].rstrip() + "\n... [conteúdo reduzido automaticamente para caber no limite]"
 
 
+def _estimate_tokens(content: Optional[str]) -> int:
+    if not content:
+        return 0
+    words = len(content.split())
+    char_based = math.ceil(len(content) / 3)
+    return max(words, char_based)
+
+
 def _count_prompt_tokens(messages: List[ChatMessage]) -> int:
-    """Contador simples de tokens baseado em palavras (suficiente para a validação)."""
-    total = 0
-    for msg in messages:
-        if msg.content:
-            total += len(msg.content.split())
-    return total
+    return sum(_estimate_tokens(msg.content) for msg in messages)
 
 
 def _resolve_context_limit(model_name: Optional[str], provider: Optional[str]) -> int:
@@ -335,6 +342,71 @@ def _apply_aggressive_truncation(
             return prompt_tokens
 
     return _count_prompt_tokens(messages)
+
+
+def _largest_user_message_index(messages: List[ChatMessage]) -> Optional[int]:
+    largest_idx: Optional[int] = None
+    largest_len = 0
+    for idx, msg in enumerate(messages):
+        if msg.role != "user":
+            continue
+        length = len(msg.content or "")
+        if length > largest_len:
+            largest_len = length
+            largest_idx = idx
+    return largest_idx
+
+
+async def _auto_shrink_messages(
+    payload: ChatRequest,
+    context_limit: int,
+    summarizer: Optional[Callable[[str], Awaitable[str]]] = None,
+) -> int:
+    summarizer = summarizer or summarize_long_document
+    prompt_tokens = _count_prompt_tokens(payload.messages)
+    if prompt_tokens + payload.max_tokens <= context_limit:
+        return prompt_tokens
+
+    attempts = 0
+    while attempts < MAX_AUTO_SUMMARY_PASSES:
+        idx = _largest_user_message_index(payload.messages)
+        if idx is None:
+            break
+        message = payload.messages[idx]
+        content = message.content or ""
+        if len(content) < AUTO_SUMMARY_MIN_CHARS:
+            break
+
+        try:
+            summarized = await summarizer(content)
+        except Exception as exc:  # noqa: BLE001
+            LOGGER.warning("auto_summary_failed", error=str(exc))
+            break
+
+        if not summarized or len(summarized) >= len(content):
+            LOGGER.info(
+                "auto_summary_skipped",
+                reason="no_gain",
+                original_chars=len(content),
+                new_chars=len(summarized or ""),
+            )
+            break
+
+        message.content = summarized
+        attempts += 1
+        LOGGER.info(
+            "auto_summary_applied",
+            message_index=idx,
+            original_chars=len(content),
+            new_chars=len(summarized),
+            attempt=attempts,
+        )
+
+        prompt_tokens = _count_prompt_tokens(payload.messages)
+        if prompt_tokens + payload.max_tokens <= context_limit:
+            return prompt_tokens
+
+    return _count_prompt_tokens(payload.messages)
 
 
 def normalize_messages_for_llm(raw_messages):
@@ -407,6 +479,10 @@ async def create_chat_completion(payload: ChatRequest):
     _reduce_large_documents(payload.messages)
     prompt_tokens = _count_prompt_tokens(payload.messages)
     context_length = prompt_tokens + payload.max_tokens
+
+    if context_length > context_limit:
+        prompt_tokens = await _auto_shrink_messages(payload, context_limit)
+        context_length = prompt_tokens + payload.max_tokens
 
     if context_length > context_limit:
         prompt_tokens = _apply_aggressive_truncation(
