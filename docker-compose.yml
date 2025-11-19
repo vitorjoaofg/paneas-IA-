@@ -5,8 +5,6 @@ services:
     build: ./api
     container_name: stack-api
     restart: unless-stopped
-    ports:
-      - "8000:8000"
     environment:
       - ENV=production
       - LOG_LEVEL=info
@@ -764,6 +762,7 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
+      - "8000:80"
       - "443:443"
       - "443:443/udp"
     volumes:
@@ -774,6 +773,20 @@ services:
       - api
       - grafana
       - flower
+      - izzi-dashboard
+    networks:
+      - stack-network
+
+  izzi-dashboard:
+    build:
+      context: ./izzi-intelligence-dashboard
+      dockerfile: Dockerfile
+      args:
+        - VITE_BASE_PATH=/izzi/
+    container_name: stack-izzi-dashboard
+    restart: unless-stopped
+    expose:
+      - "4173"
     networks:
       - stack-network
 

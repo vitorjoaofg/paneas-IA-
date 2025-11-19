@@ -138,6 +138,7 @@ function checkAuth() {
 
 // ========================================
 // Navigation & UI Handlers
+const IZZI_DASHBOARD_URL = "/izzi/";
 // ========================================
 
 // Product card navigation
@@ -150,6 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (ctaButton && productType) {
             ctaButton.addEventListener('click', () => {
+                if (productType === 'analytics') {
+                    window.open(IZZI_DASHBOARD_URL, '_blank', 'noopener,noreferrer');
+                    return;
+                }
                 // Navigate to playground section
                 document.getElementById('playground').scrollIntoView({ behavior: 'smooth' });
 

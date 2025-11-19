@@ -2,13 +2,14 @@ import uuid
 
 from fastapi import APIRouter, File, Form, UploadFile
 
-from schemas.ocr import OCRResponse
+from ocr_pipeline import process_document as interpret_document
+from schemas.ocr import OCRResponse, OCRStructuredResponse
 from services.ocr_client import run_ocr
 
 router = APIRouter(prefix="/api/v1", tags=["ocr"])
 
 
-@router.post("/ocr", response_model=OCRResponse)
+@router.post("/ocr", response_model=OCRStructuredResponse)
 async def process_document(
     file: UploadFile = File(...),
     languages: str = Form('["pt"]'),
@@ -26,4 +27,8 @@ async def process_document(
     }
     result = await run_ocr(file, payload)
     result["request_id"] = uuid.UUID(result.get("request_id", uuid.uuid4().hex))
-    return OCRResponse.model_validate(result)
+    structured = interpret_document(result, doc_type=None, use_llm=False)
+    return OCRStructuredResponse(
+        ocr=OCRResponse.model_validate(result),
+        structured=structured,
+    )

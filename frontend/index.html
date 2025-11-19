@@ -497,6 +497,7 @@
                         </div>
                         <span>TTS</span>
                     </button>
+                    <!--
                     <button class="playground__nav-item" data-tab="analytics">
                         <div class="playground__nav-icon" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -506,6 +507,7 @@
                         </div>
                         <span>Analytics</span>
                     </button>
+                    -->
                     <button class="playground__nav-item" data-tab="agents">
                         <div class="playground__nav-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -1139,170 +1141,7 @@
                     </div>
                 </div>
 
-                <!-- Analytics Tab -->
-                <div class="playground__panel" data-content="analytics">
-                    <!-- KPI Cards Section -->
-                    <div class="analytics-kpi-section" id="analyticsKPISection">
-                        <div class="kpi-cards-grid">
-                            <div class="kpi-card">
-                                <div class="kpi-card__icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                    </svg>
-                                </div>
-                                <div class="kpi-card__content">
-                                    <div class="kpi-card__value" id="kpiDuration">3:42</div>
-                                    <div class="kpi-card__label">Duração</div>
-                                </div>
-                            </div>
-
-                            <div class="kpi-card">
-                                <div class="kpi-card__icon kpi-card__icon--success">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                                    </svg>
-                                </div>
-                                <div class="kpi-card__content">
-                                    <div class="kpi-card__value" id="kpiSentiment">Positivo</div>
-                                    <div class="kpi-card__label">Sentimento Geral</div>
-                                </div>
-                            </div>
-
-                            <div class="kpi-card">
-                                <div class="kpi-card__icon kpi-card__icon--primary">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 11l3 3L22 4"></path>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </div>
-                                <div class="kpi-card__content">
-                                    <div class="kpi-card__value" id="kpiCompliance">75%</div>
-                                    <div class="kpi-card__label">Compliance</div>
-                                </div>
-                            </div>
-
-                            <div class="kpi-card">
-                                <div class="kpi-card__icon kpi-card__icon--accent">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <path d="M12 6v6l4 2"></path>
-                                    </svg>
-                                </div>
-                                <div class="kpi-card__content">
-                                    <div class="kpi-card__value" id="kpiIntent">Suporte</div>
-                                    <div class="kpi-card__label">Intento Principal</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Results Panel -->
-                    <div id="analyticsResults" class="analytics-results">
-                        <!-- Sentiment Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                                    <line x1="9" y1="9" x2="9.01" y2="9"/>
-                                    <line x1="15" y1="9" x2="15.01" y2="9"/>
-                                </svg>
-                                Sentimento
-                            </h4>
-                            <div id="sentimentContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Emotion Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                                Emoção
-                            </h4>
-                            <div id="emotionContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Intent Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                                </svg>
-                                Intenção
-                            </h4>
-                            <div id="intentContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Compliance Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 11l3 3L22 4"/>
-                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                                </svg>
-                                Compliance
-                            </h4>
-                            <div id="complianceContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Summary Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="16" y1="13" x2="8" y2="13"/>
-                                    <line x1="16" y1="17" x2="8" y2="17"/>
-                                </svg>
-                                Resumo
-                            </h4>
-                            <div id="summaryContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Acoustic Metrics Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 18V5l12-2v13"/>
-                                    <circle cx="6" cy="18" r="3"/>
-                                    <circle cx="18" cy="16" r="3"/>
-                                </svg>
-                                Métricas Acústicas
-                            </h4>
-                            <div id="acousticContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Speaker Distribution Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                </svg>
-                                Distribuição por Speaker
-                            </h4>
-                            <div id="speakerContent" class="analytics-content"></div>
-                        </div>
-
-                        <!-- Timeline Card -->
-                        <div class="playground-card">
-                            <h4 class="card-section-title">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 6 12 12 16 14"/>
-                                </svg>
-                                Timeline
-                            </h4>
-                            <div id="timelineContent" class="analytics-content"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Analytics tab layout removed -->
 
                 <!-- Agents Tab -->
                 <div class="playground__panel" data-content="agents">

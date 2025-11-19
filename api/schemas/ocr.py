@@ -1,4 +1,4 @@
-from typing import List, Optional, Dict
+from typing import Any, Dict, List, Optional
 from uuid import UUID
 
 from pydantic import BaseModel
@@ -45,3 +45,8 @@ class OCRPage(BaseModel):
 class OCRResponse(BaseModel):
     request_id: UUID
     pages: List[OCRPage]
+
+
+class OCRStructuredResponse(BaseModel):
+    ocr: OCRResponse
+    structured: Dict[str, Any]

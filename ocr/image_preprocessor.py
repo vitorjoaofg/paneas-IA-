@@ -32,6 +32,8 @@ class ImagePreprocessor:
         binarize: bool = False,
         enhance_contrast: bool = True,
         sharpen: bool = False,
+        upscale_small: bool = True,
+        min_dimension: int = 1200,
     ) -> np.ndarray:
         """
         Apply preprocessing pipeline to image.
@@ -54,6 +56,11 @@ class ImagePreprocessor:
             gray = cv2.cvtColor(processed, cv2.COLOR_BGR2GRAY)
         else:
             gray = processed.copy()
+
+        gray = self._add_padding(gray, pad_ratio=0.03)
+
+        if upscale_small:
+            gray = self._scale_if_needed(gray, min_dimension=min_dimension)
 
         # Apply deskewing first (before other operations)
         if deskew:
@@ -262,6 +269,55 @@ class ImagePreprocessor:
         sharpened = cv2.filter2D(image, -1, kernel)
 
         return sharpened
+
+    def _scale_if_needed(self, image: np.ndarray, *, min_dimension: int) -> np.ndarray:
+        """
+        Upscale low-resolution images to help OCR capture fine details.
+
+        Args:
+            image: Grayscale image
+            min_dimension: Minimum accepted dimension (in pixels)
+
+        Returns:
+            Possibly upscaled image
+        """
+        height, width = image.shape[:2]
+        min_dim = min(height, width)
+        if min_dim >= min_dimension:
+            return image
+
+        scale = min_dimension / max(min_dim, 1)
+        # Limit excessive scaling
+        scale = min(scale, 2.5)
+
+        new_size = (int(width * scale), int(height * scale))
+        logger.debug("Upscaling image from %sx%s to %sx%s", width, height, new_size[0], new_size[1])
+        return cv2.resize(image, new_size, interpolation=cv2.INTER_CUBIC)
+
+    def _add_padding(self, image: np.ndarray, pad_ratio: float = 0.02) -> np.ndarray:
+        """
+        Add replicated padding to prevent text near borders from being cropped.
+
+        Args:
+            image: Grayscale image
+            pad_ratio: Fraction of image dimensions used as padding
+
+        Returns:
+            Image with padding applied
+        """
+        if pad_ratio <= 0:
+            return image
+        h, w = image.shape[:2]
+        pad_y = max(5, int(h * pad_ratio))
+        pad_x = max(5, int(w * pad_ratio))
+        return cv2.copyMakeBorder(
+            image,
+            pad_y,
+            pad_y,
+            pad_x,
+            pad_x,
+            borderType=cv2.BORDER_REPLICATE,
+        )
 
     def auto_preprocess(self, image: np.ndarray) -> np.ndarray:
         """

@@ -70,8 +70,22 @@ class OCRService:
                     enhance_contrast=True,  # Always enhance contrast for better OCR
                 )
 
+            candidates = [preprocessed_image]
+            if preprocessed_image is not image:
+                candidates.append(image)
+            low_quality_variant = preprocess_image(
+                image,
+                deskew=True,
+                denoise=True,
+                binarize=True,
+                enhance_contrast=True,
+                sharpen=True,
+                min_dimension=1600,
+            )
+            candidates.append(low_quality_variant)
+
             try:
-                page_result = self._process_page(engine, preprocessed_image, engine_label)
+                page_result = self._process_page(engine, candidates, engine_label)
             except Exception as exc:  # noqa: BLE001
                 if prefer_gpu and FALLBACK_CPU:
                     LOGGER.warning(
@@ -107,7 +121,19 @@ class OCRService:
             "output_format": output_format,
         }
 
-    def _process_page(self, engine: PaddleOCR, image: np.ndarray, engine_label: str) -> Dict[str, Any]:
+    def _process_page(self, engine: PaddleOCR, candidates: List[np.ndarray], engine_label: str) -> Dict[str, Any]:
+        best_result: Dict[str, Any] | None = None
+        best_score = -1.0
+        for variant in candidates:
+            payload = self._run_ocr(engine, variant, engine_label)
+            score = sum(block["confidence"] * max(len(block["text"]), 1) for block in payload["blocks"])
+            if score > best_score:
+                best_result = payload
+                best_score = score
+        assert best_result is not None
+        return best_result
+
+    def _run_ocr(self, engine: PaddleOCR, image: np.ndarray, engine_label: str) -> Dict[str, Any]:
         start = time.perf_counter()
         result = engine.ocr(image, cls=True)
         duration = int((time.perf_counter() - start) * 1000)
@@ -123,7 +149,6 @@ class OCRService:
                 )
         text_joined = "\n".join(block["text"] for block in blocks)
 
-        # Classify document type
         doc_classification = classify_document(text_joined)
         document_type = {
             "type": doc_classification.type.value,
@@ -132,7 +157,6 @@ class OCRService:
             "matched_patterns": doc_classification.matched_patterns,
         }
 
-        # Extract entities
         entities_raw = extract_entities(text_joined, blocks)
         entities = [
             {
