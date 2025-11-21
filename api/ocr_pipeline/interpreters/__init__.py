@@ -19,6 +19,7 @@ _REGISTRY: Dict[str, Type[DocumentInterpreter]] = {
 _ALIASES: Dict[str, str] = {
     "driver_license": "cnh",
     "habilitacao": "cnh",
+    "cnh_digital": "cnh",
     "identity": "rg",
     "id": "rg",
 }
@@ -89,6 +90,19 @@ def _score_cnh(text: str) -> int:
         score += 2
     if "validade" in normalized:
         score += 1
+    digital_keywords = [
+        "cnh digital",
+        "qr-code",
+        "documento assinado",
+        "assinador serpro",
+        "serpro",
+        "denatran",
+        "renach",
+        "serpro/senatran",
+    ]
+    for keyword in digital_keywords:
+        if keyword in normalized:
+            score += 3
     return score
 
 

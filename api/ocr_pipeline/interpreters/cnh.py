@@ -1,10 +1,42 @@
 from __future__ import annotations
 
 import re
+from collections import Counter
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 
 from .base import DocumentInterpreter
+
+
+STATE_MAP = {
+    "acre": "AC",
+    "alagoas": "AL",
+    "amapa": "AP",
+    "amazonas": "AM",
+    "bahia": "BA",
+    "ceara": "CE",
+    "distrito federal": "DF",
+    "espirito santo": "ES",
+    "goias": "GO",
+    "maranhao": "MA",
+    "mato grosso": "MT",
+    "mato grosso do sul": "MS",
+    "minas gerais": "MG",
+    "para": "PA",
+    "paraiba": "PB",
+    "parana": "PR",
+    "pernambuco": "PE",
+    "piaui": "PI",
+    "rio de janeiro": "RJ",
+    "rio grande do norte": "RN",
+    "rio grande do sul": "RS",
+    "rondonia": "RO",
+    "roraima": "RR",
+    "santa catarina": "SC",
+    "sao paulo": "SP",
+    "sergipe": "SE",
+    "tocantins": "TO",
+}
 
 
 class CnhInterpreter(DocumentInterpreter):
@@ -14,7 +46,9 @@ class CnhInterpreter(DocumentInterpreter):
     CPF_REGEX = re.compile(r"\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b")
     ELEVEN_DIGITS_REGEX = re.compile(r"\b\d{11}\b")
     REGISTRO_REGEX = re.compile(r"\b(\d{5,12})\s*(?=SSP|DETRAN)", re.IGNORECASE)
-    ORGAO_REGEX = re.compile(r"(SSP/[A-Z]{2}|DETRAN/[A-Z]{2}|DETRAN-[A-Z]{2})", re.IGNORECASE)
+    ORGAO_REGEX = re.compile(r"(SSP/[A-Z]{2}|DETRAN/[A-Z]{2}|DETRAN-[A-Z]{2}|DETRAN [A-Z]{2})", re.IGNORECASE)
+    RENACH_REGEX = re.compile(r"RENACH[:\s-]*([0-9]{8,12})", re.IGNORECASE)
+    ESPELHO_REGEX = re.compile(r"\b[A-Z]{2}\d{8,}\b")
 
     def interpret(self, ocr_json: Dict[str, Any]) -> Dict[str, Any]:
         text = self._extract_text(ocr_json)
@@ -37,10 +71,26 @@ class CnhInterpreter(DocumentInterpreter):
             "filiacao": self._extract_filiation(lines, start_index=name_end_idx),
             "local_emissao": self._extract_emission_location(lines),
             "data_emissao": None,
+            "cpf": None,
+            "renach": None,
+            "categoria": None,
+            "estado_emissor": None,
+            "numero_espelho": None,
+            "data_primeira_habilitacao": None,
             "text": text,
             "metadata": self._extract_metadata(ocr_json),
         }
         structured.update(self._assign_dates(date_candidates))
+        structured["cpf"] = structured["documento"]
+        cpf_digits = self._only_digits(structured["documento"])
+        structured["renach"] = self._extract_renach(text, exclude=cpf_digits)
+        if not structured["registro"] and structured["renach"]:
+            structured["registro"] = structured["renach"]
+        structured["categoria"] = self._extract_categoria(lines)
+        structured["numero_espelho"] = self._extract_numero_espelho(text)
+        structured["estado_emissor"] = self._extract_estado_emissor(structured["orgao_emissor"], text)
+        structured["orgao_emissor"] = self._ensure_orgao_from_state(structured["orgao_emissor"], structured["estado_emissor"])
+        structured["data_primeira_habilitacao"] = structured["primeira_habilitacao"]
 
         return structured
 
@@ -93,34 +143,45 @@ class CnhInterpreter(DocumentInterpreter):
         parents: List[str] = []
         allow_suffix_for_last = False
         collector: List[str] = []
+        max_parents = 2
         for line in lines[start_index:]:
             normalized = self._normalize_whitespace(line)
             if not normalized:
                 continue
             lower_value = normalized.lower()
             if any(keyword in lower_value for keyword in stop_keywords):
+                if "filiacao" in lower_value:
+                    continue
                 collector.clear()
+                allow_suffix_for_last = False
                 continue
             if self._contains_digits(normalized):
                 collector.clear()
+                allow_suffix_for_last = False
                 continue
             cleaned = re.sub(r"[^a-zA-ZÀ-ÿ\s]", " ", normalized).strip()
             cleaned = self._normalize_whitespace(cleaned)
+            if not cleaned:
+                continue
             parts = cleaned.split()
-            if len(parts) == 1 and parents and allow_suffix_for_last:
-                parents[-1] = f"{parents[-1]} {parts[0].title()}"
-                allow_suffix_for_last = False
+            if len(parts) == 1:
+                token = parts[0].upper()
+                if token and set(token).issubset(set("ABCDE")) and len(token) <= 3:
+                    continue
+                if parents and allow_suffix_for_last:
+                    parents[-1] = f"{parents[-1]} {parts[0].title()}"
+                    allow_suffix_for_last = False
                 continue
             if len(parts) < 2:
                 collector.extend(parts)
+                continue
+            if len(parents) >= max_parents:
                 continue
             candidate_parts = collector + parts
             collector.clear()
             parents.append(self._normalize_name(" ".join(candidate_parts)))
             allow_suffix_for_last = True
-            if len(parents) == 2:
-                break
-        if collector and len(parents) < 2:
+        if collector and len(parents) < max_parents:
             parents.append(self._normalize_name(" ".join(collector)))
         return parents or None
 
@@ -146,8 +207,15 @@ class CnhInterpreter(DocumentInterpreter):
             registro = registro_match.group(1)
         orgao_match = self.ORGAO_REGEX.search(text)
         if orgao_match:
-            orgao = orgao_match.group(1).upper()
+            orgao = orgao_match.group(1).replace("  ", " ").upper()
         return registro, orgao
+
+    def _ensure_orgao_from_state(self, orgao: Optional[str], state: Optional[str]) -> Optional[str]:
+        if orgao:
+            return orgao
+        if state:
+            return f"DETRAN-{state}"
+        return None
 
     def _collect_dates(self, text: str) -> List[Dict[str, Any]]:
         dates: List[Dict[str, Any]] = []
@@ -166,6 +234,77 @@ class CnhInterpreter(DocumentInterpreter):
                     }
                 )
         return dates
+
+    def _extract_renach(self, text: str, *, exclude: Optional[str] = None) -> Optional[str]:
+        match = self.RENACH_REGEX.search(text)
+        if match:
+            return match.group(1)
+        candidates = re.findall(r"\b\d{8,12}\b", text)
+        counts = Counter(candidates)
+        for candidate, count in counts.items():
+            if count < 2:
+                continue
+            if exclude and candidate == exclude:
+                continue
+            return candidate
+        return None
+
+    def _extract_categoria(self, lines: List[str]) -> Optional[str]:
+        valid_letters = set("ABCDE")
+        for line in lines:
+            normalized = self._normalize_whitespace(line)
+            lower = normalized.lower()
+            if "categoria" in lower or "cat." in lower or "cat " in lower:
+                tokens = re.findall(r"[A-E]{1,3}", normalized.upper())
+                for token in tokens:
+                    if set(token).issubset(valid_letters):
+                        return token
+        for line in lines:
+            cleaned = self._normalize_whitespace(line)
+            upper = cleaned.upper()
+            if 1 <= len(upper) <= 3 and set(upper).issubset(valid_letters):
+                return upper
+        return None
+
+    def _extract_numero_espelho(self, text: str) -> Optional[str]:
+        matches = self.ESPELHO_REGEX.findall(text)
+        for match in matches:
+            letters, digits = match[:2], match[2:]
+            if letters.isalpha() and digits.isdigit() and len(digits) >= 6:
+                return match
+        return None
+
+    def _extract_estado_emissor(self, orgao: Optional[str], text: str) -> Optional[str]:
+        state = self._extract_uf_from_value(orgao) if orgao else None
+        if state:
+            return state
+        match = re.search(r"DETRAN[-/ ]([A-Z]{2})", text, re.IGNORECASE)
+        if match:
+            return match.group(1).upper()
+        match = re.search(r"\b([A-Z]{2})\d{6,}\b", text)
+        if match:
+            return match.group(1).upper()
+        lowered = text.lower()
+        for name, uf in STATE_MAP.items():
+            if name in lowered:
+                return uf
+        return None
+
+    def _extract_uf_from_value(self, value: Optional[str]) -> Optional[str]:
+        if not value:
+            return None
+        if "/" in value:
+            parts = value.split("/")
+            candidate = parts[-1]
+        elif "-" in value:
+            parts = value.split("-")
+            candidate = parts[-1]
+        else:
+            candidate = value
+        candidate = candidate.strip().upper()
+        if len(candidate) == 2 and candidate.isalpha():
+            return candidate
+        return None
 
     def _assign_dates(self, dates: List[Dict[str, Any]]) -> Dict[str, Optional[str]]:
         assigned = {
@@ -271,8 +410,11 @@ class CnhInterpreter(DocumentInterpreter):
                     return cleaned.title()
         # fallback: look for state/city near bottom
         for line in reversed(lines):
-            if any(city in line.lower() for city in ("sao paulo", "rio de janeiro", "curitiba", "porto alegre")):
-                return line.title()
+            lowered = line.lower()
+            if any(name in lowered for name in STATE_MAP.keys()):
+                return self._normalize_whitespace(line).title()
+            if any(city in lowered for city in ("curitiba", "porto alegre", "rio de janeiro", "goiania")):
+                return self._normalize_whitespace(line).title()
         return None
 
     def _format_cpf(self, value: str) -> str:
@@ -280,6 +422,12 @@ class CnhInterpreter(DocumentInterpreter):
         if len(digits) != 11:
             return value
         return f"{digits[:3]}.{digits[3:6]}.{digits[6:9]}-{digits[9:]}"
+
+    def _only_digits(self, value: Optional[str]) -> Optional[str]:
+        if not value:
+            return None
+        digits = re.sub(r"\D", "", value)
+        return digits or None
 
     def _normalize_date(self, value: str, text: str, end_index: int) -> Optional[str]:
         if not value:
@@ -322,6 +470,11 @@ class CnhInterpreter(DocumentInterpreter):
             "doc.",
             "doc",
             "proibido",
+            "departamento",
+            "digital",
+            "denatran",
+            "contran",
+            "serpro",
         )
         lowered = line.lower()
         return any(keyword in lowered for keyword in keywords)
