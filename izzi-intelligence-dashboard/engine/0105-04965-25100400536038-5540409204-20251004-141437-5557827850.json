@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400536038-5540409204-20251004-141437-5557827850.WAV",
+  "file_name": "0105-04965-25100400536038-5540409204-20251004-141437-5557827850.WAV",
+  "base_id": "0105-04965-25100400536038-5540409204-20251004-141437-5557827850",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Spring News y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Gracias, mi vida, permítame ir a un sitio sin duración. Espera un momento, por favor. Gracias, mi vida.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 11.12,
+      "text": " entretenimiento con 200 canales, Big Spring News y eventos deportivos exclusivos por solo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.12,
+      "end": 18.22,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.22,
+      "end": 24.52,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.52,
+      "end": 27.52,
+      "text": " Gracias, mi vida, permítame ir a un sitio sin duración.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.52,
+      "end": 29.52,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.52,
+      "end": 30.52,
+      "text": " Gracias, mi vida.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 37.476,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

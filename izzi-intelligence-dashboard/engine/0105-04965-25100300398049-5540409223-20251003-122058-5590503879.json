@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300398049-5540409223-20251003-122058-5590503879.WAV",
+  "file_name": "0105-04965-25100300398049-5540409223-20251003-122058-5590503879.WAV",
+  "base_id": "0105-04965-25100300398049-5540409223-20251003-122058-5590503879",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Mi nombre es Fernanita Ucega. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports, desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.6,
+      "text": " Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.6,
+      "end": 25.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.7,
+      "end": 34.59,
+      "text": " Hola, ¿qué tal? Buenas tardes. Mi nombre es Fernanita Ucega.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.59,
+      "end": 37.79,
+      "text": " Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 40.356,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

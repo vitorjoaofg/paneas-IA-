@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300600161-5540409202-20251003-150004-5589906200.WAV",
+  "file_name": "0105-04965-25100300600161-5540409202-20251003-150004-5589906200.WAV",
+  "base_id": "0105-04965-25100300600161-5540409202-20251003-150004-5589906200",
+  "transcription": "¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buena tarde. Habla Héctor Talamantes de la compañía de Easy. ¿Con quién tengo el gusto? Sergio Cano, servidor. Gracias, Sergio. El motivo de esta llamada es por ofrecerle a usted chips para sus equipos celulares para que no manejan recargas y mantengan una renta mensual. ¿Usted maneja recargas para ofrecerle mis costos? No, estoy en renta, pero ya les había comentado que no. Ahorita me siguen haciendo llamadas. ¿Existe la posibilidad de que me borren de ahí? Aquí tengo su número que es el 55-89-90-6200, ¿verdad? Sí, correcto. Estoy con usted. Yo se lo paso a mi supervisora y para que, bueno, es que ella es la que puede hacer el... Sácalo de la base del dato, señor. Ok. Gracias. Al contrario, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.12,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.12,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 28.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.0,
+      "end": 42.7,
+      "text": " Sí, buena tarde. Habla Héctor Talamantes de la compañía de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.7,
+      "end": 47.48,
+      "text": " Sergio Cano, servidor. Gracias, Sergio. El motivo de esta llamada es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.48,
+      "end": 55.08,
+      "text": " por ofrecerle a usted chips para sus equipos celulares para que no manejan recargas y",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.08,
+      "end": 61.32,
+      "text": " mantengan una renta mensual. ¿Usted maneja recargas para ofrecerle mis costos?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.32,
+      "end": 67.2,
+      "text": " No, estoy en renta, pero ya les había comentado que no. Ahorita me siguen haciendo llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.64,
+      "end": 79.1,
+      "text": " ¿Existe la posibilidad de que me borren de ahí? Aquí tengo su número que es el 55-89-90-6200, ¿verdad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 79.1,
+      "end": 84.62,
+      "text": " Sí, correcto. Estoy con usted. Yo se lo paso a mi supervisora y para que, bueno,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 84.62,
+      "end": 89.66,
+      "text": " es que ella es la que puede hacer el... Sácalo de la base del dato, señor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 89.66,
+      "end": 91.46,
+      "text": " Ok. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 91.46,
+      "end": 92.74,
+      "text": " Al contrario, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.352,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

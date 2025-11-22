@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300516810-3314541315-20251003-135636-3333334428.WAV",
+  "file_name": "0105-04965-25100300516810-3314541315-20251003-135636-3333334428.WAV",
+  "base_id": "0105-04965-25100300516810-3314541315-20251003-135636-3333334428",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buen día, ¿nos comunitamos o se la acompaña de Easy? Perdón, ¿easy es megacable? Bueno. No cuelgue, por favor. Bueno. Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.7,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.7,
+      "end": 23.75,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.75,
+      "end": 35.9,
+      "text": " Hola, ¿qué tal? Buen día, ¿nos comunitamos o se la acompaña de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.0,
+      "end": 43.53,
+      "text": " Perdón, ¿easy es megacable?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.53,
+      "end": 44.53,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.53,
+      "end": 50.28,
+      "text": " No cuelgue, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.28,
+      "end": 51.28,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.28,
+      "end": 53.2,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.512,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

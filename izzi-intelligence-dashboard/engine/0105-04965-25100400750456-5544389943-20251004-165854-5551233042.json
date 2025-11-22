@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400750456-5544389943-20251004-165854-5551233042.WAV",
+  "file_name": "0105-04965-25100400750456-5544389943-20251004-165854-5551233042.WAV",
+  "base_id": "0105-04965-25100400750456-5544389943-20251004-165854-5551233042",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para mí. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Bueno, bueno. Bueno, bueno. Recibí una llamada de Easy. Ajá. Somos de Easy. Mucho gusto. Me presento. ¿Mi nombre es Dany? No me de toda su historia. Y no estoy interesado. Es la segunda vez que les pido que no me entre esta grabación en mi teléfono particular. Ok. Le pongo aquí los comentarios. La siguiente vez ya voy a levantar una demanda por acoso. Ok. Bueno, te agradezco mucho que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 24.52,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para mí. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.52,
+      "end": 52.58,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenas tardes. Bueno, bueno. Bueno, bueno. Recibí una",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 52.58,
+      "end": 58.49,
+      "text": " llamada de Easy. Ajá. Somos de Easy. Mucho gusto. Me presento. ¿Mi nombre es Dany? No me",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 58.49,
+      "end": 63.33,
+      "text": " de toda su historia. Y no estoy interesado. Es la segunda vez que les pido que no me entre",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 63.33,
+      "end": 69.21,
+      "text": " esta grabación en mi teléfono particular. Ok. Le pongo aquí los comentarios. La siguiente vez",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 69.21,
+      "end": 76.01,
+      "text": " ya voy a levantar una demanda por acoso. Ok. Bueno, te agradezco mucho que tenga buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.164,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

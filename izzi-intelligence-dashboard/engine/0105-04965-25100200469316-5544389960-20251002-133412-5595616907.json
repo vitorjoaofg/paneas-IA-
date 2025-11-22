@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200469316-5544389960-20251002-133412-5595616907.WAV",
+  "file_name": "0105-04965-25100200469316-5544389960-20251002-133412-5595616907.WAV",
+  "base_id": "0105-04965-25100200469316-5544389960-20251002-133412-5595616907",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports? Desde 350 pesos el primer mes, con Izzy es posible. ¿Te interesa? ¿Qué sorte está esperando? Por favor, espera un momento, por favor. Buenas tardes, me comunicaré por parte de la entrevista de Telefonía Izzy. Mi nombre es Teresa Quinto, por qué tengo el gusto, disculpe. ¿Y qué tal? Muy buenas tardes. Buenas tardes. ¿Y qué tal? Buenas tardes. ¿Por qué tengo el gusto, disculpe? Bueno, bueno. Buenas tardes. Porque si no se que le das, finaliza la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.3,
+      "end": 13.0,
+      "text": " Desde 350 pesos el primer mes, con Izzy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.5,
+      "text": " ¿Te interesa? ¿Qué sorte está esperando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 28.34,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.34,
+      "end": 41.46,
+      "text": " Buenas tardes, me comunicaré por parte de la entrevista de Telefonía Izzy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.46,
+      "end": 46.82,
+      "text": " Mi nombre es Teresa Quinto, por qué tengo el gusto, disculpe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.82,
+      "end": 48.82,
+      "text": " ¿Y qué tal? Muy buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.82,
+      "end": 55.01,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.01,
+      "end": 58.84,
+      "text": " ¿Y qué tal? Buenas tardes. ¿Por qué tengo el gusto, disculpe?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.84,
+      "end": 65.78,
+      "text": " Bueno, bueno. Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.78,
+      "end": 67.78,
+      "text": " Porque si no se que le das, finaliza la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.096,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

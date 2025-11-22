@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200545922-5544389930-20251002-143620-5594021140.WAV",
+  "file_name": "0105-04965-25100200545922-5544389930-20251002-143620-5594021140.WAV",
+  "base_id": "0105-04965-25100200545922-5544389930-20251002-143620-5594021140",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento, más Sky Sports, desde $350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hazlo. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. ¿Qué tal? Mucho gusto. Auron Garcia, Conterataciones. Dígame, ¿qué le puedo ayudar? Disculpe si me está hablando, no lo escucho. ¿Me escucha bien? Hola, hola. Probando, probando. Uno, dos, tres. Probando, probando. Hola, hola. Muy bien. Por cuestiones de calidad, se me ha obligado a terminar la llamada. Buen día. Bueno, bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.38,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento, más Sky Sports, desde $350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.38,
+      "end": 13.38,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.38,
+      "end": 22.16,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hazlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.16,
+      "end": 27.16,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.16,
+      "end": 34.88,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.88,
+      "end": 38.88,
+      "text": " No recibo tu respuesta. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.88,
+      "end": 47.95,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.22,
+      "end": 54.22,
+      "text": " ¿Qué tal? Mucho gusto. Auron Garcia, Conterataciones. Dígame, ¿qué le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.22,
+      "end": 64.49,
+      "text": " Disculpe si me está hablando, no lo escucho. ¿Me escucha bien?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.49,
+      "end": 66.9,
+      "text": " Hola, hola. Probando, probando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.9,
+      "end": 69.03,
+      "text": " Uno, dos, tres. Probando, probando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.03,
+      "end": 73.59,
+      "text": " Hola, hola.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.59,
+      "end": 77.59,
+      "text": " Muy bien. Por cuestiones de calidad, se me ha obligado a terminar la llamada. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 77.59,
+      "end": 95.26,
+      "text": " Bueno, bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.532,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

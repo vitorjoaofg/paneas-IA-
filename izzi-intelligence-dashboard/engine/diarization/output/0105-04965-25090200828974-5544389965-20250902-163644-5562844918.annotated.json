@@ -1,0 +1,476 @@
+{
+  "call_id": "0105-04965-25090200828974-5544389965-20250902-163644-5562844918",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.300000190734863,
+      "text": "¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.300000190734863,
+      "end": 20.5,
+      "text": "Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 21.5,
+      "end": 24.5,
+      "text": "Pero pedimos a ver cuánto nos sale, ¿no?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 24.5,
+      "end": 33.5,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 4,
+      "start": 35.5,
+      "end": 37.5,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 43.5,
+      "end": 47.5,
+      "text": "Sí, buenas tardes. Gracias por comunicarse a Easy Móvil. ¿Con quién tengo el bustón?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 47.5,
+      "end": 49.5,
+      "text": "Con Rodolfo Reyes, señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 49.5,
+      "end": 61.5,
+      "text": "Mucho gusto, señor Rodolfo. El motivo de nuestra llamada es únicamente darle a conocer los planes de telefonía celular que tenemos para ustedes debido a la permanencia que tienen con nosotros. ¿Ya le dieron información acerca de sus planes?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 8,
+      "start": 61.5,
+      "end": 62.5,
+      "text": "No.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 62.5,
+      "end": 73.5,
+      "text": "No, mire, estamos ofreciéndole planes de telefonía celular que es con cargo a su recibo Easy y les permite contratar el mismo número. ¿Actualmente ya cuentan con algún servicio contratado con nosotros?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 73.5,
+      "end": 74.5,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 75.5,
+      "end": 87.5,
+      "text": "Sí, mire, estamos ofreciéndole planes de telefonía móvil con cargo a su recibo, donde ustedes al mes pagarían solamente $94 pesos al mes y tendrían lo que son llamadas ilimitadas, mensajes, servicio de WhatsApp.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 12,
+      "start": 87.5,
+      "end": 97.5,
+      "text": "Le damos también lo que son 8 GB de datos para que navegue en Internet. Y al mes pagarían solamente $94 pesos y el plan les permite conservar lo que es su mismo número celular.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 13,
+      "start": 97.5,
+      "end": 99.5,
+      "text": "Hola, ¿qué tal, señor? Buenas tardes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 14,
+      "start": 99.5,
+      "end": 101.5,
+      "text": "Oiga, hoy tengo una duda.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 101.5,
+      "end": 102.5,
+      "text": "Dígame.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 102.5,
+      "end": 109.5,
+      "text": "Actualmente ya cuento con el servicio de ustedes Easy en un domicilio, pero eso lo quiero para otro domicilio.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 109.5,
+      "end": 112.5,
+      "text": "Ah, ok, perfecto. ¿Quieres el cambio de domicilio?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 112.5,
+      "end": 119.5,
+      "text": "No, no, no. Pero en el domicilio en el que lo quisiera, estoy utilizando TotalPlay.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 119.5,
+      "end": 121.5,
+      "text": "Ah, ok, perfecto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 121.5,
+      "end": 130.5,
+      "text": "Y si quisiera contestar en cuanto me sale con ustedes lo mismo que tengo con TotalPlay, pero ahora con Easy.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 130.5,
+      "end": 132.5,
+      "text": "Con Easy. Ah, ok, claro que sí.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 132.5,
+      "end": 140.5,
+      "text": "Mire, si gusta, primero que nada deme lo que es su dirección para validar lo que es la cobertura y nos comunicaríamos con usted.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 140.5,
+      "end": 142.5,
+      "text": "A ver, permítame tantito, por favor.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 24,
+      "start": 144.5,
+      "end": 151.5,
+      "text": "¿Qué dirección tiene? Disculpe, ¿cuál es su calle y su código postal?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 25,
+      "start": 151.5,
+      "end": 153.5,
+      "text": "Cerrada Juárez.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 154.5,
+      "end": 155.5,
+      "text": "¿Sí?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 155.5,
+      "end": 159.5,
+      "text": "Número 2. San Mateo de Coluapa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 160.5,
+      "end": 161.5,
+      "text": "San Mateo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 161.5,
+      "end": 163.5,
+      "text": "Santander, Zaragoza, Estado de México.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 166.5,
+      "end": 168.5,
+      "text": "¿Cuál es su código postal?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 169.5,
+      "end": 171.5,
+      "text": "52-9...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 172.5,
+      "end": 175.5,
+      "text": "Déjame ver si es 20, 24, no recuerdo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 176.5,
+      "end": 177.5,
+      "text": "9-20.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 177.5,
+      "end": 180.5,
+      "text": "¿52-9-20?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 180.5,
+      "end": 181.5,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 181.5,
+      "end": 185.5,
+      "text": "Perfecto, me ayuda con su nombre y su número telefónico, por favor.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 37,
+      "start": 187.5,
+      "end": 189.5,
+      "text": "Mi nombre es Rodolfo Reyes.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 38,
+      "start": 191.5,
+      "end": 196.5,
+      "text": "Y mi número telefónico es el 55-82-33-58-49.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 39,
+      "start": 198.5,
+      "end": 203.5,
+      "text": "Ok, la dirección que me proporciona es donde quiere validar lo que es la instalación, ¿verdad?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 203.5,
+      "end": 204.5,
+      "text": "Acá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 204.5,
+      "end": 206.5,
+      "text": "Donde me comenta que tiene TotalPlay.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 206.5,
+      "end": 207.5,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 207.5,
+      "end": 212.5,
+      "text": "Mire, voy a validar lo que es la cobertura, señor Rodolfo, y me estaré comunicando con usted.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 212.5,
+      "end": 216.5,
+      "text": "Una compañera mía le va a marcar para darle lo que son las promociones, ¿de acuerdo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 216.5,
+      "end": 217.5,
+      "text": "Me parece bien.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 217.5,
+      "end": 220.5,
+      "text": "Bueno, le agradezco mucho, señor, haberse comunicado.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 220.5,
+      "end": 222.5,
+      "text": "Que tenga un excelente día.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 222.5,
+      "end": 223.5,
+      "text": "Igualmente para ti.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 223.5,
+      "end": 224.5,
+      "text": "Por favor, gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 50,
+      "start": 228.5,
+      "end": 229.5,
+      "text": "Se va.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 51,
+      "start": 229.5,
+      "end": 231.5,
+      "text": "Van a pasar con la persona indicada, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 21,
+  "customer_segments": 27,
+  "ivr_segments": 4
+}

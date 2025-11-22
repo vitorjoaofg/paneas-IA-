@@ -1,0 +1,197 @@
+{
+  "call_id": "0105-04965-25090200330062-5544389950-20250902-112258-5573139521",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.5,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 5.5,
+      "end": 12.260000228881836,
+      "text": "entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 12.260000228881836,
+      "end": 18.780000686645508,
+      "text": "pesos el primer mes? ¡No lo pienses más y cámbiate a EASY! ¿Te interesa? Un asesor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 18.780000686645508,
+      "end": 23.979999542236328,
+      "text": "te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 23.979999542236328,
+      "end": 32.81999969482422,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 32.81999969482422,
+      "end": 36.18000030517578,
+      "text": "un asesor o 2. Espera un momento por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 54.34000015258789,
+      "end": 57.34000015258789,
+      "text": "Mucho gusto, me pregunté si me llamabas para vender el servicio de Easy Mobile, no sé",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 57.34000015258789,
+      "end": 59.13999938964844,
+      "text": "si ya se lo han comentado.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 61.13999938964844,
+      "end": 67.13999938964844,
+      "text": "No, no me habló. Bueno, tengo una idea, pero no sé bien cómo está.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 70.13999938964844,
+      "end": 70.63999938964844,
+      "text": "¿Dónde?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 71.13999938964844,
+      "end": 73.13999938964844,
+      "text": "Yo tengo una idea, pero no sé cómo está.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 74.63999938964844,
+      "end": 77.13999938964844,
+      "text": "Es para el servicio de Easy Mobile, señora.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 77.13999938964844,
+      "end": 81.13999938964844,
+      "text": "Sí, pues digo, pero no sé cómo está, no sé cómo funciona, no sé cómo es.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 81.30000305175781,
+      "end": 90.30000305175781,
+      "text": "Es un chip que se le brinda para redes sociales y llamadas por 300 pesos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 14,
+      "start": 91.30000305175781,
+      "end": 92.30000305175781,
+      "text": "¿Por 300 pesos?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 92.30000305175781,
+      "end": 93.30000305175781,
+      "text": "Correcto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 95.30000305175781,
+      "end": 100.30000305175781,
+      "text": "Bueno, francamente, ya no le hago perder su tiempo, no me interesa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 102.30000305175781,
+      "end": 104.30000305175781,
+      "text": "Por lo cual, muchas gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 105.30000305175781,
+      "end": 107.30000305175781,
+      "text": "Muy amable, señor. Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 19,
+      "start": 108.30000305175781,
+      "end": 109.30000305175781,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 20,
+      "start": 111.13999938964844,
+      "end": 112.30000305175781,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 5,
+  "customer_segments": 10,
+  "ivr_segments": 6
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300208681-5544389902-20251003-095648-5524591081.WAV",
+  "file_name": "0105-04965-25100300208681-5544389902-20251003-095648-5524591081.WAV",
+  "base_id": "0105-04965-25100300208681-5544389902-20251003-095648-5524591081",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día. Mi nombre es Alejandra, habla de contrataciones y ¿sin quién le puedo apoyar? Sí, mire, señorita Alejandra, nada más es parlamentarles la madre y decirle que no me vuelvan a llamar hijo de su puta madre. Estaba yo cragando y ustedes me sacan de ahí pensando que... Termino la llamada por cuestión de caja.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 22.52,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.52,
+      "end": 23.88,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.88,
+      "end": 32.9,
+      "text": " Hola, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.9,
+      "end": 36.46,
+      "text": " Mi nombre es Alejandra, habla de contrataciones y ¿sin quién le puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.66,
+      "end": 41.86,
+      "text": " Sí, mire, señorita Alejandra, nada más es parlamentarles la madre y decirle que no me vuelvan a llamar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.86,
+      "end": 43.18,
+      "text": " hijo de su puta madre.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.18,
+      "end": 45.94,
+      "text": " Estaba yo cragando y ustedes me sacan de ahí pensando que...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.94,
+      "end": 47.94,
+      "text": " Termino la llamada por cuestión de caja.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.596,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

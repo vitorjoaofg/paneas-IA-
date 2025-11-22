@@ -1,0 +1,197 @@
+{
+  "call_id": "0105-04965-25090100378580-3314541315-20250901-112231-3336578738",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 3.0,
+      "text": "Bueno...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 3.0,
+      "end": 14.0,
+      "text": "Hola, ¿te gustaría tener internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 24.0,
+      "text": "Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 25.0,
+      "end": 28.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 30.0,
+      "end": 40.0,
+      "text": "Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse al área de contrataciones VIX y la tienda de Bonnie y Daniela. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 40.0,
+      "end": 42.0,
+      "text": "Jorge de Anda, servidor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 42.0,
+      "end": 46.0,
+      "text": "Hola, mucho gusto, caballero. ¿Me has interesado en algún servicio, teléfono y móvil?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 7,
+      "start": 46.0,
+      "end": 54.0,
+      "text": "Mire, quería comentarle esto. Yo tengo en mi casa, tengo el servicio de internet y teléfono nada más, de Total Play.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 54.0,
+      "end": 55.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 55.0,
+      "end": 62.0,
+      "text": "Pero la verdad me está subiendo de precio a cada rato y ahorita ya se me hace muy caro para el uso que le doy.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 62.0,
+      "end": 68.0,
+      "text": "¿Qué me puede ofrecer para...? Yo nada más quisiera el internet. De hecho, el teléfono prácticamente no se usa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 68.0,
+      "end": 72.0,
+      "text": "Pero internet y teléfono o puro internet.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 72.0,
+      "end": 80.0,
+      "text": "Ok. Nosotros no manejamos lo que es puro internet. Manejamos lo que es también los paquetes del conjunto con la telefonía,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 80.0,
+      "end": 90.0,
+      "text": "que incluye lo que es la telefonía fija. Pero si está interesado en puro internet, le pudiese pasar con otra compañera que es precisamente para eso.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 14,
+      "start": 90.0,
+      "end": 91.0,
+      "text": "Muy bien.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 91.0,
+      "end": 97.0,
+      "text": "No sé si le gustaría recibir más información sobre eso. Pues ya tendría que pasarlo directamente con ella.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 97.0,
+      "end": 98.0,
+      "text": "Sí, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 98.0,
+      "end": 103.0,
+      "text": "Ok. Entonces, nada más, permíteme un momentito. Ahorita la red se me ha llamado unos minutos, ¿ok?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.921
+    },
+    {
+      "segment_index": 18,
+      "start": 103.0,
+      "end": 104.0,
+      "text": "Ok, está bien.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 104.0,
+      "end": 106.0,
+      "text": "Les agradezco mucho. Que tengan buen día.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 20,
+      "start": 106.0,
+      "end": 107.0,
+      "text": "Igualmente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 8,
+  "customer_segments": 9,
+  "ivr_segments": 4
+}

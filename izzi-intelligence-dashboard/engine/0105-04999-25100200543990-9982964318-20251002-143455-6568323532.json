@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100200543990-9982964318-20251002-143455-6568323532.WAV",
+  "file_name": "0105-04999-25100200543990-9982964318-20251002-143455-6568323532.WAV",
+  "base_id": "0105-04999-25100200543990-9982964318-20251002-143455-6568323532",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable... ¡Es mi celular! Espera un momento, por favor. ¡Pérate! ¡Cállate! Hola, ¿qué tal? Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.11,
+      "end": 6.95,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.95,
+      "end": 13.35,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.35,
+      "end": 17.95,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.69,
+      "end": 22.69,
+      "text": " ¡Es mi celular!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.98,
+      "end": 30.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.42,
+      "end": 36.48,
+      "text": " ¡Pérate! ¡Cállate!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.48,
+      "end": 39.38,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 39.924,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

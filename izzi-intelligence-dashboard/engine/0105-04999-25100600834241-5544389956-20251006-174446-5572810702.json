@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600834241-5544389956-20251006-174446-5572810702.WAV",
+  "file_name": "0105-04999-25100600834241-5544389956-20251006-174446-5572810702.WAV",
+  "base_id": "0105-04999-25100600834241-5544389956-20251006-174446-5572810702",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Gracias por comunicarse a la área de promociones de IZI Móvil. La atiende Diana Ulloa, con quien tengo el gusto. ¿Sí, buena? ¿Hola, buenas tardes? ¿Qué tal, buenas tardes? ¿Sí, buena? ¿Sí, buenas tardes? Por motivos de calidad voy a tener que cortar la llamada, ya que esta llamada no tiene audio.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.46,
+      "end": 28.46,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.17,
+      "end": 36.93,
+      "text": " Gracias por comunicarse a la área de promociones de IZI Móvil.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.93,
+      "end": 38.93,
+      "text": " La atiende Diana Ulloa, con quien tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.99,
+      "end": 42.99,
+      "text": " ¿Sí, buena?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.94,
+      "end": 45.94,
+      "text": " ¿Hola, buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.94,
+      "end": 55.08,
+      "text": " ¿Qué tal, buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.08,
+      "end": 59.15,
+      "text": " ¿Sí, buena?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.15,
+      "end": 60.15,
+      "text": " ¿Sí, buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.15,
+      "end": 65.62,
+      "text": " Por motivos de calidad voy a tener que cortar la llamada, ya que esta llamada no tiene audio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

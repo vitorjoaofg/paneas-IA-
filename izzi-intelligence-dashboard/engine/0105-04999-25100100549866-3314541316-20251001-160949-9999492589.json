@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100549866-3314541316-20251001-160949-9999492589.WAV",
+  "file_name": "0105-04999-25100100549866-3314541316-20251001-160949-9999492589.WAV",
+  "base_id": "0105-04999-25100100549866-3314541316-20251001-160949-9999492589",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento por favor. ¿Se conozca el área de contrataciones Easy? ¿Lo atienden mal que ha sido? ¿Con quién tengo el gusto? Con el papá que te anda cogiendo, pelana, pendejo de mierda. Váyanme que rechinguen su puta madre, idiota de mierda. Ya te tengo ubicado, hijo de puta. Cuando salas hoy, te voy a desaparecer, pendejo de mierda. ¿Desea contratar un servicio?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 31.96,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.96,
+      "end": 37.68,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento por",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.68,
+      "end": 51.13,
+      "text": " favor. ¿Se conozca el área de contrataciones Easy? ¿Lo atienden mal que ha sido? ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.13,
+      "end": 56.55,
+      "text": " gusto? Con el papá que te anda cogiendo, pelana, pendejo de mierda. Váyanme que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.55,
+      "end": 61.95,
+      "text": " rechinguen su puta madre, idiota de mierda. Ya te tengo ubicado, hijo de puta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.95,
+      "end": 66.88,
+      "text": " Cuando salas hoy, te voy a desaparecer, pendejo de mierda. ¿Desea contratar un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.88,
+      "end": 69.24,
+      "text": " servicio?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

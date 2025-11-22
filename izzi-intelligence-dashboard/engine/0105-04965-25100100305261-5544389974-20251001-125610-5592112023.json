@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100305261-5544389974-20251001-125610-5592112023.WAV",
+  "file_name": "0105-04965-25100100305261-5544389974-20251001-125610-5592112023.WAV",
+  "base_id": "0105-04965-25100100305261-5544389974-20251001-125610-5592112023",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melaniza Auxedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Hola, soy Jair Gómez. ¡Hola! Mucho gusto, señor. El motivo de este llamado es comunicarle que puede tener beneficio de telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy? Sí, ya contrate Easy, pero tengo otra cuenta ahorita activa, pero de otra compañía. Entonces, quería ver cómo podía evitar que me siguieran marcando porque todos los días recibo como 10 llamadas de Easy. Ah, ok. No se preocupen de nada. Aquí lo vamos a poner, señor, para que ya nos estén comunicando. ¿Está bien? Que tenga un buen día. Gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.89,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.89,
+      "end": 34.35,
+      "text": " un momento por favor. ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melaniza Auxedo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.35,
+      "end": 39.15,
+      "text": " Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Hola, soy Jair Gómez.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.15,
+      "end": 42.87,
+      "text": " ¡Hola! Mucho gusto, señor. El motivo de este llamado es comunicarle que puede tener",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.87,
+      "end": 48.76,
+      "text": " beneficio de telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy? Sí,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.76,
+      "end": 54.76,
+      "text": " ya contrate Easy, pero tengo otra cuenta ahorita activa, pero de otra compañía.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.76,
+      "end": 59.2,
+      "text": " Entonces, quería ver cómo podía evitar que me siguieran marcando porque todos los",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.2,
+      "end": 64.87,
+      "text": " días recibo como 10 llamadas de Easy. Ah, ok. No se preocupen de nada. Aquí lo vamos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.87,
+      "end": 67.67,
+      "text": " a poner, señor, para que ya nos estén comunicando. ¿Está bien? Que tenga",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.67,
+      "end": 69.51,
+      "text": " un buen día. Gracias, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.208,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

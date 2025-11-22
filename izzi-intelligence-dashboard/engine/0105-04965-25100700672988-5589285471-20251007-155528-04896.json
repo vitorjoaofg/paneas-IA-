@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700672988-5589285471-20251007-155528-04896.WAV",
+  "file_name": "0105-04965-25100700672988-5589285471-20251007-155528-04896.WAV",
+  "base_id": "0105-04965-25100700672988-5589285471-20251007-155528-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. ¿Buenas tardes? ¿Me escuchas? Bueno, ¿me escuchas? Buenas tardes, Alex Malkasi de Easy. Mucho gusto. Se comunica la área de contrataciones Easy. ¿En qué lo podemos apoyar? ¿Qué se va a contratar el día de hoy? Quiero que me dejen de molestar. Soy Total Play. Y la verdad, me han estado marque y marque de Easy. Yo, si nada más, les pido que por favor dejen de molestar a este teléfono. Ok, perfecto. Bueno, muchas gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 11.64,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.64,
+      "end": 17.44,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.44,
+      "end": 23.44,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.44,
+      "end": 27.88,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.88,
+      "end": 42.31,
+      "text": " Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.31,
+      "end": 51.95,
+      "text": " ¿Buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.95,
+      "end": 56.06,
+      "text": " ¿Me escuchas? Bueno, ¿me escuchas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.06,
+      "end": 58.18,
+      "text": " Buenas tardes, Alex Malkasi de Easy. Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.18,
+      "end": 62.58,
+      "text": " Se comunica la área de contrataciones Easy. ¿En qué lo podemos apoyar? ¿Qué se va a contratar el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.58,
+      "end": 66.53,
+      "text": " Quiero que me dejen de molestar. Soy Total Play.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.57,
+      "end": 76.22,
+      "text": " Y la verdad, me han estado marque y marque de Easy. Yo, si nada más, les pido que por favor dejen de molestar a este teléfono.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.22,
+      "end": 78.22,
+      "text": " Ok, perfecto. Bueno, muchas gracias. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.316,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600641857-5544389994-20251006-152119-9841151040.WAV",
+  "file_name": "0105-04999-25100600641857-5544389994-20251006-152119-9841151040.WAV",
+  "base_id": "0105-04999-25100600641857-5544389994-20251006-152119-9841151040",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes. Hablé con tu amante, se la acompañé de Easy. ¿Con quién tengo el gusto? Con Sandra. Sandra, bueno, mira, el motivo, mi amada Sandra, es para ofrecerle a usted chips para sus equipos celulares para que no maneja recargas y mantenga una renta mas artificial con nosotros. ¿Usted maneja algún tipo de recarga de equipos celulares? No, porque usé internet en mi casa. ¿Perdón? No, porque usé internet más en mi casa. Ah, ok. Muy bien. Bueno, pues Sandra, gracias por estar en mi amada. Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 23.8,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.64,
+      "end": 43.08,
+      "text": " Espera un momento, por favor. Buenas tardes. Hablé con tu amante,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.08,
+      "end": 47.67,
+      "text": " se la acompañé de Easy. ¿Con quién tengo el gusto? Con Sandra.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.67,
+      "end": 53.99,
+      "text": " Sandra, bueno, mira, el motivo, mi amada Sandra, es para ofrecerle a usted chips para",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.99,
+      "end": 57.92,
+      "text": " sus equipos celulares para que no maneja recargas y mantenga una renta",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.92,
+      "end": 62.46,
+      "text": " mas artificial con nosotros. ¿Usted maneja algún tipo de recarga de equipos celulares?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.46,
+      "end": 67.33,
+      "text": " No, porque usé internet en mi casa. ¿Perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.33,
+      "end": 74.24,
+      "text": " No, porque usé internet más en mi casa. Ah, ok. Muy bien. Bueno, pues Sandra,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.24,
+      "end": 85.54,
+      "text": " gracias por estar en mi amada. Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 104.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200679247-5544389977-20251002-162319-5555343933.WAV",
+  "file_name": "0105-04965-25100200679247-5544389977-20251002-162319-5555343933.WAV",
+  "base_id": "0105-04965-25100200679247-5544389977-20251002-162319-5555343933",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Gracias por comunicarse a la área de contrataciones Easy, la tienda de Alan. ¿Con quién tengo el gusto? ¿Con quién no me se comunicó? Habla Alan gritando de la área de contrataciones Easy. Sí, ¿con quién quiere hablar? Hola, comento. Hacemos la llamada para presentarle beneficios. No quiero hablar con nadie. Antos, no hable con nadie. Aquí no vuelvo a marcar, imbécil. Le voy a pedir que me...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 23.18,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.18,
+      "end": 24.62,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.62,
+      "end": 31.7,
+      "text": " Hola, ¿qué tal?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.7,
+      "end": 35.46,
+      "text": " Gracias por comunicarse a la área de contrataciones Easy, la tienda de Alan.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.46,
+      "end": 37.69,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.81,
+      "end": 40.29,
+      "text": " ¿Con quién no me se comunicó?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.29,
+      "end": 44.29,
+      "text": " Habla Alan gritando de la área de contrataciones Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.29,
+      "end": 46.42,
+      "text": " Sí, ¿con quién quiere hablar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.42,
+      "end": 47.42,
+      "text": " Hola, comento.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 47.42,
+      "end": 49.66,
+      "text": " Hacemos la llamada para presentarle beneficios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 49.66,
+      "end": 51.87,
+      "text": " No quiero hablar con nadie.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 51.87,
+      "end": 53.07,
+      "text": " Antos, no hable con nadie.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 53.07,
+      "end": 56.14,
+      "text": " Aquí no vuelvo a marcar, imbécil.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 56.14,
+      "end": 57.14,
+      "text": " Le voy a pedir que me...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.168,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

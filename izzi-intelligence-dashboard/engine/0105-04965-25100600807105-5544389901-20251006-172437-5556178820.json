@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600807105-5544389901-20251006-172437-5556178820.WAV",
+  "file_name": "0105-04965-25100600807105-5544389901-20251006-172437-5556178820.WAV",
+  "base_id": "0105-04965-25100600807105-5544389901-20251006-172437-5556178820",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Contratación? ¿Qué le puedo ayudar? No sé, de hecho me llamaron ustedes. ¿Y qué le comentaron? No, me pusieron una grabadora que dice de algo de 100 megas y no sé qué, pero de hecho yo tengo 100 megas. ¿Ya cuento con mí? Bueno, entonces agregó el comentario.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 30.78,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.78,
+      "end": 40.25,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.25,
+      "end": 52.46,
+      "text": " momento, por favor. ¿Contratación? ¿Qué le puedo ayudar? No sé, de hecho me llamaron",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.46,
+      "end": 59.5,
+      "text": " ustedes. ¿Y qué le comentaron? No, me pusieron una grabadora que dice de algo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.5,
+      "end": 66.76,
+      "text": " de 100 megas y no sé qué, pero de hecho yo tengo 100 megas. ¿Ya cuento con mí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.76,
+      "end": 70.52,
+      "text": " Bueno, entonces agregó el comentario.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

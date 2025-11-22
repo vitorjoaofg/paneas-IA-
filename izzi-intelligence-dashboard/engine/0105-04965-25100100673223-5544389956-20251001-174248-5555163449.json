@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100673223-5544389956-20251001-174248-5555163449.WAV",
+  "file_name": "0105-04965-25100100673223-5544389956-20251001-174248-5555163449.WAV",
+  "base_id": "0105-04965-25100100673223-5544389956-20251001-174248-5555163449",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. La primera consulta que hacemos es la de, ¿cómo se llama? La interna. Pues si tienes un problema con nosotros o algo por el estilo. Y si apareciera este problema luego nos lo votaría. Si me puede mandar su buró también estaría perfecto. Ya tenlo, mandé el buró y el score, ahí es quién es los dos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.64,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.64,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.24,
+      "end": 16.8,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.8,
+      "end": 23.55,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.55,
+      "end": 24.85,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.35,
+      "end": 61.4,
+      "text": " La primera consulta que hacemos es la de, ¿cómo se llama?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.4,
+      "end": 63.0,
+      "text": " La interna.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.0,
+      "end": 67.05,
+      "text": " Pues si tienes un problema con nosotros o algo por el estilo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.05,
+      "end": 70.64,
+      "text": " Y si apareciera este problema luego nos lo votaría.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.64,
+      "end": 73.06,
+      "text": " Si me puede mandar su buró también estaría perfecto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.06,
+      "end": 77.26,
+      "text": " Ya tenlo, mandé el buró y el score, ahí es quién es los dos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.54,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

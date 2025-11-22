@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200514854-5544389973-20251002-141021-5589715610.WAV",
+  "file_name": "0105-04965-25100200514854-5544389973-20251002-141021-5589715610.WAV",
+  "base_id": "0105-04965-25100200514854-5544389973-20251002-141021-5589715610",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicaros, el área de contactas en Easy la tiene Vani Daniela, ¿con quién tengo el gusto? Hola, Johan Teja. Hola, mucho gusto, ¿te interesa andar en un servicio, telefonía, móvil, Internet? No, me entró esta llamada. Ah, ok. ¿Usamos VIX? ¿Te interesa andar en un servicio, telefonía, móvil, Internet? Pues yo tengo Total Play, pues. No sé la llamada que objeto tenga.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.64,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 25.4,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.4,
+      "end": 26.4,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.41,
+      "end": 34.81,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicaros, el área de contactas en Easy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.81,
+      "end": 37.01,
+      "text": " la tiene Vani Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.01,
+      "end": 40.2,
+      "text": " Hola, Johan Teja.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.2,
+      "end": 44.74,
+      "text": " Hola, mucho gusto, ¿te interesa andar en un servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.74,
+      "end": 47.97,
+      "text": " No, me entró esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.97,
+      "end": 53.9,
+      "text": " Ah, ok. ¿Usamos VIX? ¿Te interesa andar en un servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.9,
+      "end": 62.04,
+      "text": " Pues yo tengo Total Play, pues. No sé la llamada que objeto tenga.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.344,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

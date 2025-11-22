@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600300252-5540409220-20251006-110551-9382991476.WAV",
+  "file_name": "0105-04999-25100600300252-5540409220-20251006-110551-9382991476.WAV",
+  "base_id": "0105-04999-25100600300252-5540409220-20251006-110551-9382991476",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando, por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2. Espera un momento por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Ucedo, nos comunicamos de la campaña Easy. ¿Con quién tengo el gusto? Ah, oiga, les pude citar mi número ahí, soy ciudadmenosa de Arribi. Estoy en la escuela y me van a regañar. Ah, que no se preocupe, que lo vamos a poner. Que no me marquen solamente, porque piense que son cosas de la escuela y pues no entiendo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 17.44,
+      "text": " ¿Te interesa? Un asesor te está esperando, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.44,
+      "end": 24.92,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.92,
+      "end": 26.92,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.92,
+      "end": 30.12,
+      "text": " Presiona 1 para hablar con un asesor, o 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.12,
+      "end": 32.12,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.32,
+      "end": 54.32,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Ucedo, nos comunicamos de la campaña Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.32,
+      "end": 56.32,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.32,
+      "end": 62.32,
+      "text": " Ah, oiga, les pude citar mi número ahí, soy ciudadmenosa de Arribi.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.32,
+      "end": 65.54,
+      "text": " Estoy en la escuela y me van a regañar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 65.54,
+      "end": 69.22,
+      "text": " Ah, que no se preocupe, que lo vamos a poner.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 69.22,
+      "end": 78.07,
+      "text": " Que no me marquen solamente, porque piense que son cosas de la escuela y pues no entiendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 82.404,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

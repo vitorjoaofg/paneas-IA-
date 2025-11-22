@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300541510-3314541350-20251003-141521-3336984011.WAV",
+  "file_name": "0105-04965-25100300541510-3314541350-20251003-141521-3336984011.WAV",
+  "base_id": "0105-04965-25100300541510-3314541350-20251003-141521-3336984011",
+  "transcription": "¿Hola? ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. ¿Qué tal? Buen día. Hola, buen día. Oye, una situación nada más. Estamos en una empresa y estamos en nuestra hora de comida y no sé cómo les digo a ustedes el número este, pero este es el número de una empresa. Entonces, si me hicieras por favor de borrarlo de tu registro o algo así. Bueno, bueno, bueno, ni siquiera di algo, ¿no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.14,
+      "text": " ¿Hola? ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.14,
+      "end": 13.92,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.92,
+      "end": 20.42,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.42,
+      "end": 30.17,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.17,
+      "end": 36.49,
+      "text": " 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.49,
+      "end": 45.78,
+      "text": " un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.78,
+      "end": 58.59,
+      "text": " ¿Qué tal? Buen día. Hola, buen día. Oye, una situación nada más. Estamos en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.59,
+      "end": 64.23,
+      "text": " una empresa y estamos en nuestra hora de comida y no sé cómo les digo a ustedes",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.23,
+      "end": 68.07,
+      "text": " el número este, pero este es el número de una empresa. Entonces, si me hicieras",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.07,
+      "end": 86.76,
+      "text": " por favor de borrarlo de tu registro o algo así. Bueno, bueno, bueno, ni siquiera di algo, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.9,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100659601-5544389968-20251001-173232-5589679534.WAV",
+  "file_name": "0105-04965-25100100659601-5544389968-20251001-173232-5589679534.WAV",
+  "base_id": "0105-04965-25100100659601-5544389968-20251001-173232-5589679534",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicaros. Salario de contrataciones de Easy de China y María Ángela, ¿con quién tengo el gusto? ¿Por qué han llamado ese número? ¿Buena? ¿Buena? ¿Buena? ¿Buena? ¿Buena? ¿Me da ayuda? Bueno, voy a colgar.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.5,
+      "end": 24.71,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.71,
+      "end": 33.82,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicaros.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.82,
+      "end": 36.82,
+      "text": " Salario de contrataciones de Easy de China y María Ángela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.7,
+      "end": 45.37,
+      "text": " ¿Por qué han llamado ese número?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.37,
+      "end": 51.66,
+      "text": " ¿Buena? ¿Buena?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.66,
+      "end": 63.2,
+      "text": " ¿Buena? ¿Buena? ¿Buena?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.2,
+      "end": 64.2,
+      "text": " ¿Me da ayuda?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.2,
+      "end": 70.23,
+      "text": " Bueno, voy a colgar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.432,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

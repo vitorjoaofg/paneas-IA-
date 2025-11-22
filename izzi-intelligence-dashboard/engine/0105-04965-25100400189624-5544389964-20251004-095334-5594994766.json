@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400189624-5544389964-20251004-095334-5594994766.WAV",
+  "file_name": "0105-04965-25100400189624-5544389964-20251004-095334-5594994766.WAV",
+  "base_id": "0105-04965-25100400189624-5544389964-20251004-095334-5594994766",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Mi nombre es Melanisa Ucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Ustedes me llamaron, señorita, para ofrecerme el internet y la televisión, pero yo ya tengo total play. Ah, ok. No se preocupe, señor. Por si más adelante alguien más en casita les interesa, les comento. Aquí tenemos promociones especiales, señor. Que tengan muy bonitos días. Hasta pronto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 27.8,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.12,
+      "end": 34.4,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.4,
+      "end": 44.37,
+      "text": " asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Mi nombre es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.37,
+      "end": 47.65,
+      "text": " Melanisa Ucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.65,
+      "end": 57.54,
+      "text": " gusto? Ustedes me llamaron, señorita, para ofrecerme el internet y la televisión,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.54,
+      "end": 62.6,
+      "text": " pero yo ya tengo total play. Ah, ok. No se preocupe, señor. Por si más adelante",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.6,
+      "end": 66.4,
+      "text": " alguien más en casita les interesa, les comento. Aquí tenemos promociones especiales,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.4,
+      "end": 68.6,
+      "text": " señor. Que tengan muy bonitos días. Hasta pronto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

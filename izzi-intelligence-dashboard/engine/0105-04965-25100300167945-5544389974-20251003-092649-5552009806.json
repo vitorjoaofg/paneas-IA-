@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300167945-5544389974-20251003-092649-5552009806.WAV",
+  "file_name": "0105-04965-25100300167945-5544389974-20251003-092649-5552009806.WAV",
+  "base_id": "0105-04965-25100300167945-5544389974-20251003-092649-5552009806",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos en primer mes? No lo pienses más y cállate a Incy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. A ver. Espera un momento, por favor. Hola, buen día. Mi nombre es Alejandra. Habla de contrataciones. ¿Y sin qué le puedo apoyar? Hola, Alejandra. Buen día. Buen día. Sí, habla de contrataciones. ¿Y sin qué le puedo apoyar? Discúlpame. Yo soy cliente Incy. Ah, ok. Pero quiero cancelar una línea porque me pusieron una línea de más. Oh, entiendo muy bien. De acuerdo. Ahorita está marcando contrataciones. Para hacer cancelaciones o algún cambio, serían el 800-125,000. Ok. Muchas gracias. Muy buen día. Hasta luego. Gracias. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.96,
+      "text": " por solo 350 pesos en primer mes? No lo pienses más y cállate a Incy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.96,
+      "end": 26.6,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.6,
+      "end": 27.6,
+      "text": " A ver.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.6,
+      "end": 36.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.7,
+      "end": 40.7,
+      "text": " Hola, buen día. Mi nombre es Alejandra. Habla de contrataciones. ¿Y sin qué le puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.7,
+      "end": 44.66,
+      "text": " Hola, Alejandra. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.66,
+      "end": 47.91,
+      "text": " Buen día. Sí, habla de contrataciones. ¿Y sin qué le puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.91,
+      "end": 50.91,
+      "text": " Discúlpame. Yo soy cliente Incy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.91,
+      "end": 52.01,
+      "text": " Ah, ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.01,
+      "end": 59.42,
+      "text": " Pero quiero cancelar una línea porque me pusieron una línea de más.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.42,
+      "end": 63.86,
+      "text": " Oh, entiendo muy bien. De acuerdo. Ahorita está marcando contrataciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 63.86,
+      "end": 69.86,
+      "text": " Para hacer cancelaciones o algún cambio, serían el 800-125,000.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.86,
+      "end": 70.86,
+      "text": " Ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 70.86,
+      "end": 74.22,
+      "text": " Muchas gracias. Muy buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 74.22,
+      "end": 75.22,
+      "text": " Gracias. Igualmente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 166.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

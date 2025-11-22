@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400818408-7201404660-20251004-174953-04896.WAV",
+  "file_name": "0105-04999-25100400818408-7201404660-20251004-174953-04896.WAV",
+  "base_id": "0105-04999-25100400818408-7201404660-20251004-174953-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por ciento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Buenas tardes, dígame. Hablo de que te la matas a la compañía de Easy. ¿Con quién tengo el gusto? Está hablando una agencia. Está hablando una agencia del sector de domicilio. Disculpe. Ok, gracias. Que tengas buen día. Perdón, señor. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": " ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.0,
+      "end": 22.0,
+      "text": " Por ciento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.0,
+      "end": 24.0,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 29.0,
+      "text": " Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.0,
+      "end": 44.82,
+      "text": " Buenas tardes, dígame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.82,
+      "end": 48.05,
+      "text": " Hablo de que te la matas a la compañía de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.05,
+      "end": 54.51,
+      "text": " Está hablando una agencia. Está hablando una agencia del sector de domicilio. Disculpe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.51,
+      "end": 57.51,
+      "text": " Ok, gracias. Que tengas buen día. Perdón, señor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.51,
+      "end": 58.58,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.184,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200045647-3314541357-20251002-080048-9836890122.WAV",
+  "file_name": "0105-04965-25100200045647-3314541357-20251002-080048-9836890122.WAV",
+  "base_id": "0105-04965-25100200045647-3314541357-20251002-080048-9836890122",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión? Más el mejor entretenimiento con Vee, más Skyport. En caso de que quieras conseguir un servicio de privacidad, visite nuestra página VeeServicio.net. Un asesor te está esperando. Su llamada se está transcurriendo. Espera un momento, por favor. ¿Aló? Buen día. Soy un representante de Banco Santander. ¿Le atienden Marlene Hernández? ¿Con quién tengo lo que está? Ah, y una disculpa. ¿No es un teléfono particular? Se está comunicando a Vee. ¿A dónde? Le reitero. Mi nombre es Marlene Hernández. Hablo de Vee, representante de Banco Santander. ¿Tiene algún crédito pendiente con Santander? No, estaba tratando de comunicarme a un teléfono personal. Una disculpa. Gracias. De aquí hasta luego. Comenta la llamada. Podré ser grabada o monitoreada. Confía en su calidad de tenencia. Si usted puede consultar, avisa la privacidad en web-services.net. Buen día. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.0,
+      "end": 8.0,
+      "text": " Más el mejor entretenimiento con Vee, más Skyport.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 14.0,
+      "text": " En caso de que quieras conseguir un servicio de privacidad, visite nuestra página VeeServicio.net.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 19.0,
+      "text": " Un asesor te está esperando. Su llamada se está transcurriendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.0,
+      "end": 27.34,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.34,
+      "end": 52.22,
+      "text": " ¿Aló? Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.22,
+      "end": 57.54,
+      "text": " Soy un representante de Banco Santander. ¿Le atienden Marlene Hernández? ¿Con quién tengo lo que está?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.54,
+      "end": 61.54,
+      "text": " Ah, y una disculpa. ¿No es un teléfono particular?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.54,
+      "end": 65.08,
+      "text": " Se está comunicando a Vee.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.08,
+      "end": 67.56,
+      "text": " ¿A dónde?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.56,
+      "end": 71.91,
+      "text": " Le reitero. Mi nombre es Marlene Hernández. Hablo de Vee, representante de Banco Santander.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.91,
+      "end": 74.91,
+      "text": " ¿Tiene algún crédito pendiente con Santander?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.91,
+      "end": 81.94,
+      "text": " No, estaba tratando de comunicarme a un teléfono personal. Una disculpa. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 81.94,
+      "end": 85.94,
+      "text": " De aquí hasta luego. Comenta la llamada. Podré ser grabada o monitoreada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 85.94,
+      "end": 90.94,
+      "text": " Confía en su calidad de tenencia. Si usted puede consultar, avisa la privacidad en web-services.net.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 90.94,
+      "end": 92.98,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 92.98,
+      "end": 94.98,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.088,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

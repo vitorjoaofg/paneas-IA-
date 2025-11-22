@@ -1,0 +1,116 @@
+{
+  "call_id": "0105-04965-25090200645150-5544389905-20250902-144121-5553364391",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 6.320000171661377,
+      "text": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 1,
+      "start": 6.320000171661377,
+      "end": 14.15999984741211,
+      "text": "con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.15999984741211,
+      "end": 20.360000610351562,
+      "text": "No lo pienses más y cámbiate a EASY. ¿Te interesa? Un asesor te está esperando. Por",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 20.360000610351562,
+      "end": 25.0,
+      "text": "favor, escuche mucho menos de opciones. Si desea comunicarse al área de Recursos Humanos,",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 4,
+      "start": 25.0,
+      "end": 32.0,
+      "text": "dígite 101 o 102. Si desea soporte de nuestros productos, dígite 104. Si desea comunicarse",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 32.0,
+      "end": 41.0,
+      "text": "con el área de atención al cliente, dígite 114. Para comunicarse con la operadora, dígite",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 41.0,
+      "end": 43.0,
+      "text": "0. Para repetir el menú, dígite 7.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 55.0,
+      "end": 62.0,
+      "text": "¿Te interesa navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 62.0,
+      "end": 69.0,
+      "text": "con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 69.0,
+      "end": 76.0,
+      "text": "No lo pienses más y cámbiate a EASY. ¿Te interesa? Un asesor te está esperando. Por favor,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 76.0,
+      "end": 82.0,
+      "text": "escuche mucho menos de opciones. Si desea comunicarse con la operadora, dígite",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 11,
+      "start": 82.0,
+      "end": 108.0,
+      "text": "101 o 102.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 0,
+  "ivr_segments": 12
+}

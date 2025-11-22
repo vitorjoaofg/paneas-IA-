@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400675417-3314541365-20251004-160240-3345098646.WAV",
+  "file_name": "0105-04965-25100400675417-3314541365-20251004-160240-3345098646.WAV",
+  "base_id": "0105-04965-25100400675417-3314541365-20251004-160240-3345098646",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Sí, buenas tardes. Oiga, disculpe, ya les había dicho que no me interesa su paquete. ¿Por qué me siguen hablando? Lo que pasa es que esta llamada nos la arroja un comutador. Es una base de datos que nos arroja las llamadas. Entonces, igual, ahorita yo paso su comentario para que el supervisor la borre de la base de datos. ¿Para qué, perdón? Lo borre de la base de datos. Ay, sí, porque ya me cansé de que me estén molestes y molestes. Sí, no se preocupe. Yo me cargo de eso.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.14,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.14,
+      "end": 20.2,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 26.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.8,
+      "end": 28.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.36,
+      "end": 36.58,
+      "text": " Sí, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.02,
+      "end": 41.42,
+      "text": " Sí, buenas tardes. Oiga, disculpe, ya les había dicho que no me interesa su paquete.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.42,
+      "end": 43.42,
+      "text": " ¿Por qué me siguen hablando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.42,
+      "end": 48.22,
+      "text": " Lo que pasa es que esta llamada nos la arroja un comutador.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.22,
+      "end": 50.22,
+      "text": " Es una base de datos que nos arroja las llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.22,
+      "end": 56.22,
+      "text": " Entonces, igual, ahorita yo paso su comentario para que el supervisor la borre de la base de datos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.22,
+      "end": 58.25,
+      "text": " ¿Para qué, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.25,
+      "end": 60.25,
+      "text": " Lo borre de la base de datos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.25,
+      "end": 64.25,
+      "text": " Ay, sí, porque ya me cansé de que me estén molestes y molestes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.25,
+      "end": 66.25,
+      "text": " Sí, no se preocupe. Yo me cargo de eso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.436,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

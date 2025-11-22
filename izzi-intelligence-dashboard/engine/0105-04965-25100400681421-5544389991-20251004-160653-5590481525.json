@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400681421-5544389991-20251004-160653-5590481525.WAV",
+  "file_name": "0105-04965-25100400681421-5544389991-20251004-160653-5590481525.WAV",
+  "base_id": "0105-04965-25100400681421-5544389991-20251004-160653-5590481525",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor te está esperando! Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Hola! ¿Qué tal? Buenas tardes. Gracias. Muy bien. ¿Qué tal? Soy la Aria de Contratos y es de Easy, la Tienda de Validad Nila. ¿Cuál es quien tenga el gusto? Mira, yo no les marqué. Ustedes me han estado marquiendo. Marqué toda la semana. No sé de dónde sacaron mi teléfono. No me interesa. Ya les he dicho que no me interesa su plan. Estoy viendo dónde estoy. Estoy trabajando hasta la parte de atrás de mi casa y me hacen correr porque pienso que es una emergencia de mi familia y como ustedes me marcan y me marcan y me marcan. No me interesa el plan, señorita. OK. Le pongo aquí los comentarios. ¡Gracias con mucho que tenga un buen día!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.28,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.28,
+      "end": 26.3,
+      "text": " asesor te está esperando! Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.74,
+      "end": 27.74,
+      "text": " momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.74,
+      "end": 38.96,
+      "text": " ¡Hola! ¿Qué tal? Buenas tardes. Gracias. Muy bien. ¿Qué tal? Soy la Aria de Contratos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.96,
+      "end": 41.96,
+      "text": " y es de Easy, la Tienda de Validad Nila. ¿Cuál es quien tenga el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.96,
+      "end": 46.96,
+      "text": " Mira, yo no les marqué. Ustedes me han estado marquiendo. Marqué toda la semana.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.96,
+      "end": 51.96,
+      "text": " No sé de dónde sacaron mi teléfono. No me interesa. Ya les he dicho que no",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.96,
+      "end": 57.96,
+      "text": " me interesa su plan. Estoy viendo dónde estoy. Estoy trabajando hasta la parte",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.96,
+      "end": 61.96,
+      "text": " de atrás de mi casa y me hacen correr porque pienso que es una emergencia de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.4,
+      "end": 67.43,
+      "text": " mi familia y como ustedes me marcan y me marcan y me marcan. No me interesa el plan,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.43,
+      "end": 68.43,
+      "text": " señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 68.43,
+      "end": 74.74,
+      "text": " OK. Le pongo aquí los comentarios. ¡Gracias con mucho que tenga un buen día!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.544,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100686192-5544389956-20251001-175252-5530921776.WAV",
+  "file_name": "0105-04965-25100100686192-5544389956-20251001-175252-5530921776.WAV",
+  "base_id": "0105-04965-25100100686192-5544389956-20251001-175252-5530921776",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... Luego yo le aviso a usted, sí, porque ahorita me agarro usted, estoy en la comida, estoy dando de comer. Espera un momento, por favor. Buenas tardes. Me digo que me espere porque ahorita no puedo atender lo que estoy dando de comer. En lo de una hora yo le hablo, ¿sí? Ahorita no puedo. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 19.95,
+      "text": " Por favor, hable o pulse 1 para...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.95,
+      "end": 23.11,
+      "text": " Luego yo le aviso a usted, sí, porque ahorita me agarro usted,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.11,
+      "end": 25.51,
+      "text": " estoy en la comida, estoy dando de comer.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.51,
+      "end": 27.75,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.75,
+      "end": 43.47,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.67,
+      "end": 48.83,
+      "text": " Me digo que me espere porque ahorita no puedo atender lo que estoy dando de comer.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.83,
+      "end": 52.59,
+      "text": " En lo de una hora yo le hablo, ¿sí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.59,
+      "end": 53.91,
+      "text": " Ahorita no puedo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.91,
+      "end": 54.91,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.98,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

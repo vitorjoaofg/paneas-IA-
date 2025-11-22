@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200329077-5544389909-20251002-114219-5586245568.WAV",
+  "file_name": "0105-04965-25100200329077-5544389909-20251002-114219-5586245568.WAV",
+  "base_id": "0105-04965-25100200329077-5544389909-20251002-114219-5586245568",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Ay, pinche ya maldito! ¿Sí, buenos días? Sí, buenos días. ¿Habla de tu delamante de la compañía de Easy? ¿Con quién tengo el gusto? De mi hija madrita. Gracias. Mira, el motivo de mi llamada, me estoy comunicando de la compañía de Easy, es para hacerle a usted chips para sus equipos celulares para que no generen recargas y mantengan una transmisión fija con nosotros. ¿Usted maneja algún tipo de recargas para hacer equipos celulares? Ah, ¿para celulares? No. ¿Lo tiene con plan? Ah, ok. Bueno, sí, lo que pasa es que estamos manejando sus recargas. No sé si alguien más me pueda recomendar para hacerle mis servicios. Ah, ok. Mejor no vale. Gracias. Bueno, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 27.96,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.96,
+      "end": 47.78,
+      "text": " momento, por favor. ¡Ay, pinche ya maldito! ¿Sí, buenos días? Sí, buenos días. ¿Habla",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.78,
+      "end": 53.18,
+      "text": " de tu delamante de la compañía de Easy? ¿Con quién tengo el gusto? De mi hija madrita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.18,
+      "end": 58.3,
+      "text": " Gracias. Mira, el motivo de mi llamada, me estoy comunicando de la compañía de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.3,
+      "end": 62.92,
+      "text": " es para hacerle a usted chips para sus equipos celulares para que no generen recargas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.92,
+      "end": 67.92,
+      "text": " y mantengan una transmisión fija con nosotros. ¿Usted maneja algún tipo de recargas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.92,
+      "end": 76.83,
+      "text": " para hacer equipos celulares? Ah, ¿para celulares? No. ¿Lo tiene con plan? Ah, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 76.83,
+      "end": 80.83,
+      "text": " Bueno, sí, lo que pasa es que estamos manejando sus recargas. No sé si alguien más me",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 80.83,
+      "end": 85.83,
+      "text": " pueda recomendar para hacerle mis servicios. Ah, ok. Mejor no vale. Gracias. Bueno, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300106348-5540409209-20251003-084008-5552653530.WAV",
+  "file_name": "0105-04965-25100300106348-5540409209-20251003-084008-5552653530.WAV",
+  "base_id": "0105-04965-25100300106348-5540409209-20251003-084008-5552653530",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixenium, más Skyward, con un de 350 pesos en primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Tres, por favor. Cuatro, Construcción y Desarrollo. Cinco, Estacionamientos. Si conoces el número de extensión, ¡Espera un momento, por favor! Por favor, espere en alínea, mientras su llamada es transferida a la operadora. La persona con la que está intentando ponerse en contacto no está disponible en este momento. Deje un mensaje después del tono. Cuando termine, cuelgue o presione la tecla almohadilla para ver más opciones. ¿Sigue todavía ahí?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.4,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixenium, más Skyward,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.4,
+      "end": 11.4,
+      "text": " con un de 350 pesos en primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.4,
+      "end": 13.4,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.4,
+      "end": 14.4,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.4,
+      "end": 16.4,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.4,
+      "end": 17.4,
+      "text": " Tres, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 18.0,
+      "end": 20.0,
+      "text": " Cuatro, Construcción y Desarrollo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.5,
+      "end": 22.3,
+      "text": " Cinco, Estacionamientos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 22.8,
+      "end": 24.9,
+      "text": " Si conoces el número de extensión,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.3,
+      "end": 27.3,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.36,
+      "end": 39.36,
+      "text": " Por favor, espere en alínea, mientras su llamada es transferida a la operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.36,
+      "end": 46.88,
+      "text": " La persona con la que está intentando ponerse en contacto no está disponible en este momento.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.98,
+      "end": 49.98,
+      "text": " Deje un mensaje después del tono.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.98,
+      "end": 55.11,
+      "text": " Cuando termine, cuelgue o presione la tecla almohadilla para ver más opciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.11,
+      "end": 58.07,
+      "text": " ¿Sigue todavía ahí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.112,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

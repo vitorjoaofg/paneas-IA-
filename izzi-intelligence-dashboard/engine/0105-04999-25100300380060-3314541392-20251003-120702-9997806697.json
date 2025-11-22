@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300380060-3314541392-20251003-120702-9997806697.WAV",
+  "file_name": "0105-04999-25100300380060-3314541392-20251003-120702-9997806697.WAV",
+  "base_id": "0105-04999-25100300380060-3314541392-20251003-120702-9997806697",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. No, pues ya tengo Easy. Espera un momento, por favor. Bueno, bueno. Buenas tardes. Hablamos de compañía Easy. Me presento, mi nombre es Patricia Badillo. ¿Con quién tengo el gusto el día de hoy? Disculpando, la verdad ya tengo Easy. Ah, ok, señorita. ¿Quieres que valide a ver si se te liberó alguna promoción con tu número de cuenta o número telefónico? No creo. Será que me puede llamar en otro momento, es que estoy ocupada. Ok, señorita. Marcamos en otro momento. ¡Excelente día! Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 24.36,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.36,
+      "end": 44.87,
+      "text": " No, pues ya tengo Easy. Espera un momento, por favor. Bueno, bueno. Buenas tardes. Hablamos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.87,
+      "end": 49.67,
+      "text": " de compañía Easy. Me presento, mi nombre es Patricia Badillo. ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.67,
+      "end": 56.47,
+      "text": " gusto el día de hoy? Disculpando, la verdad ya tengo Easy. Ah, ok, señorita. ¿Quieres",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.47,
+      "end": 59.75,
+      "text": " que valide a ver si se te liberó alguna promoción con tu número de cuenta o número",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.75,
+      "end": 68.42,
+      "text": " telefónico? No creo. Será que me puede llamar en otro momento, es que estoy ocupada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.42,
+      "end": 73.53,
+      "text": " Ok, señorita. Marcamos en otro momento. ¡Excelente día! Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.084,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300112572-5544389964-20251003-084455-5552015079.WAV",
+  "file_name": "0105-04965-25100300112572-5544389964-20251003-084455-5552015079.WAV",
+  "base_id": "0105-04965-25100300112572-5544389964-20251003-084455-5552015079",
+  "transcription": "Gracias por llamar a Gretto Rotoplaz. Si desea conocer nuestro aviso de privacidad, consulte nuestra página de internet www.rotoplaz.com. Si desea comunicarse a atención al cliente, marque 800-6-3000. Si conoce el número de extensión, márquelo ahora. Si desea comunicarse a servicio al cliente, marque 2. Si desea comunicarse a compras, marque 3. Espera un momento, por favor. Marque 4 o marque 0 para ser atendente por la operadora. Hola, muy buen día. Hola, muy buen día. Mi nombre es Alicia López de parte de Easy. Hola.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 12.0,
+      "text": " Gracias por llamar a Gretto Rotoplaz. Si desea conocer nuestro aviso de privacidad, consulte nuestra página de internet www.rotoplaz.com.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 12.0,
+      "end": 20.0,
+      "text": " Si desea comunicarse a atención al cliente, marque 800-6-3000.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Si conoce el número de extensión, márquelo ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.0,
+      "end": 30.0,
+      "text": " Si desea comunicarse a servicio al cliente, marque 2. Si desea comunicarse a compras, marque 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.0,
+      "end": 32.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.0,
+      "end": 36.0,
+      "text": " Marque 4 o marque 0 para ser atendente por la operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.0,
+      "end": 46.74,
+      "text": " Hola, muy buen día. Hola, muy buen día. Mi nombre es Alicia López de parte de Easy. Hola.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 120.888,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

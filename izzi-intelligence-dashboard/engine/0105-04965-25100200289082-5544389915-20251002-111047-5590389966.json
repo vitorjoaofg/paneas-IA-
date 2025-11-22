@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200289082-5544389915-20251002-111047-5590389966.WAV",
+  "file_name": "0105-04965-25100200289082-5544389915-20251002-111047-5590389966.WAV",
+  "base_id": "0105-04965-25100200289082-5544389915-20251002-111047-5590389966",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad? Tener el Recuerdo de Entrenamiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse con nosotros. ¿Tienes la utilidad, la necesidad o el gusto? No. Bueno, por motivo de calidad, sin áudio, tendré que finalizarle más. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 9.8,
+      "text": " Tener el Recuerdo de Entrenamiento con 200 canales, Big Premium y eventos deportivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.8,
+      "end": 14.0,
+      "text": " exclusivos por solo $350 pesos el primer mes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.0,
+      "end": 18.0,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.0,
+      "end": 20.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.96,
+      "end": 32.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.96,
+      "end": 43.98,
+      "text": " Hola, ¿qué tal?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.98,
+      "end": 45.98,
+      "text": " Gracias por comunicarse con nosotros.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.98,
+      "end": 50.86,
+      "text": " ¿Tienes la utilidad, la necesidad o el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.86,
+      "end": 56.89,
+      "text": " No.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 56.89,
+      "end": 64.09,
+      "text": " Bueno, por motivo de calidad, sin áudio, tendré que finalizarle más.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.09,
+      "end": 88.7,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

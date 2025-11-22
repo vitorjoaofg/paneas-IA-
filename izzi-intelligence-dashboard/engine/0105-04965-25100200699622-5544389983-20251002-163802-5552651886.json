@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200699622-5544389983-20251002-163802-5552651886.WAV",
+  "file_name": "0105-04965-25100200699622-5544389983-20251002-163802-5552651886.WAV",
+  "base_id": "0105-04965-25100200699622-5544389983-20251002-163802-5552651886",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse en la tele con todos en Easy. La tiene Boni Daniela, ¿con quién tengo el gusto? Hola, me marcaron, un favor, están hablando en un hospital, no me vuelvan a marcar. ¿Quién? Por favor, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.78,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.78,
+      "end": 49.41,
+      "text": " por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse en la tele con todos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 49.41,
+      "end": 53.73,
+      "text": " en Easy. La tiene Boni Daniela, ¿con quién tengo el gusto? Hola, me marcaron, un favor,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.73,
+      "end": 57.45,
+      "text": " están hablando en un hospital, no me vuelvan a marcar. ¿Quién? Por favor, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.248,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

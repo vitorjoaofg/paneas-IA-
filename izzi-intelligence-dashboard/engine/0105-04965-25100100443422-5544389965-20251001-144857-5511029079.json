@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100443422-5544389965-20251001-144857-5511029079.WAV",
+  "file_name": "0105-04965-25100100443422-5544389965-20251001-144857-5511029079.WAV",
+  "base_id": "0105-04965-25100100443422-5544389965-20251001-144857-5511029079",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vip Premium, más Skype World, desde 150 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1. Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2. Espera un momento, por favor. Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2. Su llamada puede ser grabada o monitoreada por razones de calidad. Por favor, permanezca en la línea. Su llamada será atendida en breve. ¿A la rubión que le puedo colaborar?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vip Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skype World, desde 150 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 18.44,
+      "text": " Por favor, hable o pulse 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.44,
+      "end": 21.44,
+      "text": " Si desea escuchar nuestro aviso de privacidad, presione 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.44,
+      "end": 25.3,
+      "text": " Para hablar con un representante, presione 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.3,
+      "end": 27.3,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.74,
+      "end": 35.55,
+      "text": " Si desea escuchar nuestro aviso de privacidad, presione 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.55,
+      "end": 44.38,
+      "text": " Para hablar con un representante, presione 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.38,
+      "end": 52.22,
+      "text": " Su llamada puede ser grabada o monitoreada por razones de calidad.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.22,
+      "end": 54.22,
+      "text": " Por favor, permanezca en la línea.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.22,
+      "end": 56.22,
+      "text": " Su llamada será atendida en breve.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.22,
+      "end": 68.97,
+      "text": " ¿A la rubión que le puedo colaborar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.444,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

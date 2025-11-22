@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700525573-5544389957-20251007-140521-5515194762.WAV",
+  "file_name": "0105-04965-25100700525573-5544389957-20251007-140521-5515194762.WAV",
+  "base_id": "0105-04965-25100700525573-5544389957-20251007-140521-5515194762",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Buenos días. Me comunicó del servicio de Easy. ¿Con quién damos el gusto? Hola, con Aurora. Aurora, buenas tardes. Me comunicó de Easy por motivo de que me parece que le llegó un correo de nuestras promociones. ¿Usted qué piensa del servicio de Easy, Aurora? Me llegó una llamada. Es que es una línea de ventas. No te voy a contratar nada porque yo también vendo al igual que tú. Entonces, elíname tu comunicación porque así ni tú quieras el tiempo y yo tampoco. Ah, yo tuve el gusto de conocerla. Bueno, que tengas buen día. Hasta luego. Igual, bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 25.08,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.08,
+      "end": 26.08,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.48,
+      "end": 40.0,
+      "text": " Buenos días. Me comunicó del servicio de Easy. ¿Con quién damos el gusto? Hola, con Aurora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.0,
+      "end": 45.32,
+      "text": " Aurora, buenas tardes. Me comunicó de Easy por motivo de que me parece que le llegó",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.32,
+      "end": 49.16,
+      "text": " un correo de nuestras promociones. ¿Usted qué piensa del servicio de Easy, Aurora?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.16,
+      "end": 53.08,
+      "text": " Me llegó una llamada. Es que es una línea de ventas. No te voy a contratar nada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.08,
+      "end": 57.16,
+      "text": " porque yo también vendo al igual que tú. Entonces, elíname tu comunicación porque",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.16,
+      "end": 61.76,
+      "text": " así ni tú quieras el tiempo y yo tampoco. Ah, yo tuve el gusto de conocerla. Bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.76,
+      "end": 63.6,
+      "text": " que tengas buen día. Hasta luego. Igual, bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 124.272,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

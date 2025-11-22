@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600780514-3314541371-20251006-170420-3339543156.WAV",
+  "file_name": "0105-04999-25100600780514-3314541371-20251006-170420-3339543156.WAV",
+  "base_id": "0105-04999-25100600780514-3314541371-20251006-170420-3339543156",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, big premiums y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Juega de suerte está esperando! Por favor. ¿Se cancela la de Susana? Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, big premiums y eventos deportivos exclusivos por solo $350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.32,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Juega",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.32,
+      "end": 21.75,
+      "text": " de suerte está esperando! Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.75,
+      "end": 32.26,
+      "text": " ¿Se cancela la de Susana? Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 37.368,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

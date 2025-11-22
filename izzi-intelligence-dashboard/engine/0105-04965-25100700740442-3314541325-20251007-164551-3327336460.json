@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700740442-3314541325-20251007-164551-3327336460.WAV",
+  "file_name": "0105-04965-25100700740442-3314541325-20251007-164551-3327336460.WAV",
+  "base_id": "0105-04965-25100700740442-3314541325-20251007-164551-3327336460",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Ciento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor. Dice que las negociaciones estarán así, bilaterales. Y mientras se termina de hacer entender que en 10 años estaríamos rigiendo por un nuevo acuerdo de libre comercio entre comillas de libre con ya pues unas condiciones o con condiciones bilaterales. México-Estados Unidos, Estados Unidos-Canadá. Ya no habría pues un acuerdo trilateral. Esto es parte de lo que dijo Trump cuando...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.56,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.56,
+      "end": 10.64,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.64,
+      "end": 17.24,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.24,
+      "end": 20.36,
+      "text": " interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.36,
+      "end": 26.04,
+      "text": " Ciento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.04,
+      "end": 33.86,
+      "text": " hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 69.67,
+      "end": 76.79,
+      "text": " Dice que las negociaciones estarán así, bilaterales. Y mientras se termina de hacer",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 76.79,
+      "end": 81.35,
+      "text": " entender que en 10 años estaríamos rigiendo por un nuevo acuerdo de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 81.35,
+      "end": 86.75,
+      "text": " libre comercio entre comillas de libre con ya pues unas condiciones o con",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 86.75,
+      "end": 93.27,
+      "text": " condiciones bilaterales. México-Estados Unidos, Estados Unidos-Canadá. Ya no",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 93.27,
+      "end": 98.87,
+      "text": " habría pues un acuerdo trilateral. Esto es parte de lo que dijo Trump cuando...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.252,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

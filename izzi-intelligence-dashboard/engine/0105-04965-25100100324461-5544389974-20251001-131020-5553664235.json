@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100324461-5544389974-20251001-131020-5553664235.WAV",
+  "file_name": "0105-04965-25100100324461-5544389974-20251001-131020-5553664235.WAV",
+  "base_id": "0105-04965-25100100324461-5544389974-20251001-131020-5553664235",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Bicuidium, más Sky Sports, desde 350 pesos el primer mes, con Indy, es posible. ¿Te interesa un asesor que está esperando? Marque 1. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular y correo electrónico registrados en su contrato. Si usted recibió una oferta de VECA de Red Magisterial... Hola, buenas tardes, soy de parte de la compañía de ICI, mi nombre es Abigail y creo que el motivo de la llamada más que nada es informativa. Oye, no, pero otro güey, porque el otro de este ya no me sabe. Gracias por llamar al Grupo Edilar, le atiende Israel al parado. ¿Cómo le puedo ayudar? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Bicuidium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Indy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa un asesor que está esperando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 18.03,
+      "text": " Marque 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.03,
+      "end": 22.38,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.38,
+      "end": 29.86,
+      "text": " Recuerde tener a la mano su RTC, número de celular y correo electrónico registrados en su contrato.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.86,
+      "end": 32.86,
+      "text": " Si usted recibió una oferta de VECA de Red Magisterial...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.86,
+      "end": 38.86,
+      "text": " Hola, buenas tardes, soy de parte de la compañía de ICI, mi nombre es Abigail y creo que el motivo de la llamada más que nada es informativa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.86,
+      "end": 48.5,
+      "text": " Oye, no, pero otro güey, porque el otro de este ya no me sabe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.5,
+      "end": 52.5,
+      "text": " Gracias por llamar al Grupo Edilar, le atiende Israel al parado. ¿Cómo le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.5,
+      "end": 57.96,
+      "text": " Bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 115.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

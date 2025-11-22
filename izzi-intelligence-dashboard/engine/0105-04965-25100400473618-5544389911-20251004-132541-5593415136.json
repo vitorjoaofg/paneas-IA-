@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400473618-5544389911-20251004-132541-5593415136.WAV",
+  "file_name": "0105-04965-25100400473618-5544389911-20251004-132541-5593415136.WAV",
+  "base_id": "0105-04965-25100400473618-5544389911-20251004-132541-5593415136",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable opul... ¿Se equivocó? Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Sí, buenas tardes. Ya tienes a los Vargas de Easy. ¿Con quién tengo el gusto? Este... es que tal vez se confundieron. Ha estado equivocado. Sí, es que ahorita me marcó, pero yo pensé que era mi mama. Ok, bueno, te agradezco mucho que tengas buen día. Sí, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 25.06,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable opul... ¿Se equivocó?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.46,
+      "end": 34.78,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.78,
+      "end": 40.56,
+      "text": " asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.56,
+      "end": 49.8,
+      "text": " Sí, buenas tardes. Ya tienes a los Vargas de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.8,
+      "end": 54.44,
+      "text": " Este... es que tal vez se confundieron.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.44,
+      "end": 56.55,
+      "text": " Ha estado equivocado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.55,
+      "end": 61.35,
+      "text": " Sí, es que ahorita me marcó, pero yo pensé que era mi mama.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.31,
+      "end": 65.35,
+      "text": " Ok, bueno, te agradezco mucho que tengas buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.35,
+      "end": 67.35,
+      "text": " Sí, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.576,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

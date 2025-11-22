@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100564884-3314541376-20251001-162106-3339424190.WAV",
+  "file_name": "0105-04965-25100100564884-3314541376-20251001-162106-3339424190.WAV",
+  "base_id": "0105-04965-25100100564884-3314541376-20251001-162106-3339424190",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Premium más Sky Sports desde 350 pesos al primer mes con IZI? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Grabar. Hola, encantada, buenas tardes. Habla mi novio de su compañía IZI. El motivo de mi llamada es únicamente darle a conocer planes de telefonía celular y a la nada información acerca de los planes de telefonía móvil.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.94,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.94,
+      "end": 14.14,
+      "text": " más Sky Sports desde 350 pesos al primer mes con IZI?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.14,
+      "end": 15.44,
+      "text": " Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.44,
+      "end": 16.44,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 18.58,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.58,
+      "end": 27.65,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.65,
+      "end": 44.38,
+      "text": " Grabar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.38,
+      "end": 47.46,
+      "text": " Hola, encantada, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.46,
+      "end": 49.56,
+      "text": " Habla mi novio de su compañía IZI.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.6,
+      "end": 53.6,
+      "text": " El motivo de mi llamada es únicamente darle a conocer planes de telefonía celular y a la nada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.6,
+      "end": 55.9,
+      "text": " información acerca de los planes de telefonía móvil.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.052,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

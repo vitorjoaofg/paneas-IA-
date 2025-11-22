@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100423478-6391254630-20251001-143333-04896.WAV",
+  "file_name": "0105-04999-25100100423478-6391254630-20251001-143333-04896.WAV",
+  "base_id": "0105-04999-25100100423478-6391254630-20251001-143333-04896",
+  "transcription": "¡Gracias por comunicarte a Easy! ¡Tenemos las mejores promociones para ti! ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, informaciones y eventos deportivos exclusivos por solo 350 el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Buenas tardes los Haciendas Cláudia de Easy. ¿Alguna niña que les haya interesado? Sí, bueno, ella sabe que estaba esperando mi servicio y no ha llegado hoy. ¿Tiene una instalación el día de hoy? Sí. Ok, mire, déjelo franciera. Permíteme un segundo. Muy bien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " ¡Gracias por comunicarte a Easy! ¡Tenemos las mejores promociones para ti!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 17.4,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, informaciones y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 20.2,
+      "text": " ¡No lo pienses más y cámbiate a Easy!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.2,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.4,
+      "end": 28.58,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.58,
+      "end": 36.87,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.87,
+      "end": 42.12,
+      "text": " Buenas tardes los Haciendas Cláudia de Easy. ¿Alguna niña que les haya interesado?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.12,
+      "end": 48.58,
+      "text": " Sí, bueno, ella sabe que estaba esperando mi servicio y no ha llegado hoy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.58,
+      "end": 52.89,
+      "text": " ¿Tiene una instalación el día de hoy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.89,
+      "end": 54.09,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.09,
+      "end": 57.39,
+      "text": " Ok, mire, déjelo franciera. Permíteme un segundo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.39,
+      "end": 58.39,
+      "text": " Muy bien.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.088,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

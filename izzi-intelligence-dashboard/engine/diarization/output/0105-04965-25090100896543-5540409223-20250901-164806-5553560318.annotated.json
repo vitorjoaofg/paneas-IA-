@@ -1,0 +1,170 @@
+{
+  "call_id": "0105-04965-25090100896543-5540409223-20250901-164806-5553560318",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 17.0,
+      "text": "Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 17.0,
+      "end": 37.0,
+      "text": "Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 48.0,
+      "end": 54.0,
+      "text": "Hola Greta, buenas tardes. Gracias por comunicarse con Easy. ¿La tienden bien? ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 54.0,
+      "end": 58.0,
+      "text": "Mira, mi nombre es Gabita Quesada Ortiz. Dígame.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 58.0,
+      "end": 65.0,
+      "text": "Ok, mire, mucho gusto. ¿Está interesada en algún servicio, internet, telefonía, móvil?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 6,
+      "start": 65.0,
+      "end": 66.0,
+      "text": "¿Cómo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 67.0,
+      "end": 68.0,
+      "text": "¿Perdón?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 68.0,
+      "end": 69.0,
+      "text": "¿Qué me preguntó?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 70.0,
+      "end": 74.0,
+      "text": "Ah, sí. Si está interesada en algún servicio, internet, telefonía, móvil.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 75.0,
+      "end": 78.0,
+      "text": "¿Que si tengo telefonía en móvil?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 79.0,
+      "end": 83.0,
+      "text": "Si está interesada, si está comunicando, adelante, comparte con Easy.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 85.0,
+      "end": 88.0,
+      "text": "Pues no sé qué cosa es lo que me ofrezca.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 89.0,
+      "end": 92.0,
+      "text": "No lo puedo escuchar muy bien señora, se la escucha muy lejos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 92.0,
+      "end": 93.0,
+      "text": "Es que no se escucha.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 95.0,
+      "end": 97.0,
+      "text": "No se escucha claro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 97.0,
+      "end": 103.0,
+      "text": "Ah, ok. Si usted no lo puede escuchar muy bien, se la escucha muy lejos, igual usted le puede regresar la llamada.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 103.0,
+      "end": 104.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 5,
+  "customer_segments": 10,
+  "ivr_segments": 3
+}

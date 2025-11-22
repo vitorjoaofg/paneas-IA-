@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100307089-3314541388-20251001-125728-3336842790.WAV",
+  "file_name": "0105-04965-25100100307089-3314541388-20251001-125728-3336842790.WAV",
+  "base_id": "0105-04965-25100100307089-3314541388-20251001-125728-3336842790",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Ya tengo. No entendí tu respuesta. ¿Te comunico con un asesor? Ya tengo. Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Contrataciones Easy la atende Edgar Torres, con quien tengo el gusto? Ya tengo. ¿Cómo? Ya tengo Easy. Ya tengo. ¿Tiene un contrato activo? Sí, mi hija lo tiene. Y es la misma casa. Ah, comprendo. ¿Te gustaría realizar una modificación en el servicio? No, pues no, para que está bien. Ok, bueno, te lo agradezco por la llamada, señora Buendía. Gracias, igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 22.98,
+      "text": " Ya tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.98,
+      "end": 25.98,
+      "text": " No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.98,
+      "end": 26.98,
+      "text": " Ya tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.98,
+      "end": 36.97,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.97,
+      "end": 46.4,
+      "text": " ¿Contrataciones Easy la atende Edgar Torres, con quien tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.4,
+      "end": 47.4,
+      "text": " Ya tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.4,
+      "end": 48.4,
+      "text": " ¿Cómo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.4,
+      "end": 52.9,
+      "text": " Ya tengo Easy. Ya tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.9,
+      "end": 55.99,
+      "text": " ¿Tiene un contrato activo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.99,
+      "end": 64.25,
+      "text": " Sí, mi hija lo tiene. Y es la misma casa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.25,
+      "end": 69.73,
+      "text": " Ah, comprendo. ¿Te gustaría realizar una modificación en el servicio?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 69.73,
+      "end": 72.73,
+      "text": " No, pues no, para que está bien.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 72.73,
+      "end": 76.21,
+      "text": " Ok, bueno, te lo agradezco por la llamada, señora Buendía.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 76.21,
+      "end": 78.21,
+      "text": " Gracias, igualmente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 91.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

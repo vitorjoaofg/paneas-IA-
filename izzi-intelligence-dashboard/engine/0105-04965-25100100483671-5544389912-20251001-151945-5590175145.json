@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100483671-5544389912-20251001-151945-5590175145.WAV",
+  "file_name": "0105-04965-25100100483671-5544389912-20251001-151945-5590175145.WAV",
+  "base_id": "0105-04965-25100100483671-5544389912-20251001-151945-5590175145",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Contrataciones? Sí, sí, la atendente es Artur Reyes. ¿Con quién tengo el gusto? Bueno, a ver, solo llamo para que quiten mi número del registro, para que ya no marquen, por favor. Ok, usted en este momento se comunicó, ¿verdad? Bueno, contesté la llamada, pero ya va. ¿Quieres que marcan entonces para que me quiten de la lista, por favor? Ok, le pido una disculpa. Igual le agradezco por las llamadas. Espero que tenga un excelente día. Cuidense mucho.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.52,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.52,
+      "end": 17.12,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.12,
+      "end": 23.12,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.12,
+      "end": 30.74,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.74,
+      "end": 40.06,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.06,
+      "end": 81.36,
+      "text": " momento, por favor. ¿Contrataciones? Sí, sí, la atendente es Artur Reyes. ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 81.36,
+      "end": 86.36,
+      "text": " gusto? Bueno, a ver, solo llamo para que quiten mi número del",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 86.36,
+      "end": 91.53,
+      "text": " registro, para que ya no marquen, por favor. Ok, usted en este momento se",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 91.53,
+      "end": 96.85,
+      "text": " comunicó, ¿verdad? Bueno, contesté la llamada, pero ya va. ¿Quieres que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 96.85,
+      "end": 102.17,
+      "text": " marcan entonces para que me quiten de la lista, por favor? Ok, le",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 102.17,
+      "end": 104.77,
+      "text": " pido una disculpa. Igual le agradezco por las llamadas. Espero que tenga un excelente",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 104.77,
+      "end": 108.29,
+      "text": " día. Cuidense mucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

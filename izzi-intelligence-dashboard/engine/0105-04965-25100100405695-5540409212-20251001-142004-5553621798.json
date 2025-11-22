@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100405695-5540409212-20251001-142004-5553621798.WAV",
+  "file_name": "0105-04965-25100100405695-5540409212-20251001-142004-5553621798.WAV",
+  "base_id": "0105-04965-25100100405695-5540409212-20251001-142004-5553621798",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Willard, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor... Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular... ¡Espera un momento, por favor! ... y correos registrados en su contrato. Si usted se vio una oferta de beca de red magisterial, por favor, marque 3. Grupa Dilar, buenas tardes, está llamando al departamento de atención a clientes. La tienda Leina Ramirez, ¿con quién tengo listo? La tienda Leina Ramirez, ¿con quién tengo listo? Grupo de Inárvona, esta vez está llamando al departamento de atención a clientes. Le atiende Reina Ramírez. ¿Con quién tengo gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Willard,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.03,
+      "end": 22.38,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.38,
+      "end": 25.38,
+      "text": " Recuerde tener a la mano su RTC, número de celular...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.38,
+      "end": 27.38,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.38,
+      "end": 29.38,
+      "text": " ... y correos registrados en su contrato.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.38,
+      "end": 34.83,
+      "text": " Si usted se vio una oferta de beca de red magisterial, por favor, marque 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.83,
+      "end": 69.08,
+      "text": " Grupa Dilar, buenas tardes, está llamando al departamento de atención a clientes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 69.08,
+      "end": 85.06,
+      "text": " La tienda Leina Ramirez, ¿con quién tengo listo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 85.06,
+      "end": 97.13,
+      "text": " La tienda Leina Ramirez, ¿con quién tengo listo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 97.13,
+      "end": 101.13,
+      "text": " Grupo de Inárvona, esta vez está llamando al departamento de atención a clientes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 101.13,
+      "end": 103.45,
+      "text": " Le atiende Reina Ramírez. ¿Con quién tengo gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.376,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

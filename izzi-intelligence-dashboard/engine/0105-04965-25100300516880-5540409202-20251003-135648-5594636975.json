@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300516880-5540409202-20251003-135648-5594636975.WAV",
+  "file_name": "0105-04965-25100300516880-5540409202-20251003-135648-5594636975.WAV",
+  "base_id": "0105-04965-25100300516880-5540409202-20251003-135648-5594636975",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buenas tardes, lo reporto de la compañía de Easy. Mi nombre es Abigail Grego. El motivo de la llamada es informativa para darle información acerca de los beneficios. ¡Buenas tardes! Hola, buenas tardes. ¿Con quién tengo el gusto? Con María de Jesús. ¿Ya cuenta con servicios de Easy o está en otra compañía? No, la verdad no, pero es que ¿qué cree que les he preguntado a sus compañeros que andan en la calle y en los centros comerciales? Y dicen que donde yo tengo mi casa, donde vivo, no hay cobertura, o sea, no hay, ¿cómo le diré? O sea, que no hay para instalar Easy. Ok, comprendo. Aquí lo voy a poner. ¿En qué colonia vive? Morelos. ¿Y en qué ciudad? DF. DF. Ok, perfecto. Bueno, una disculpa. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 27.67,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.67,
+      "end": 39.79,
+      "text": " por favor. Hola, buenas tardes, lo reporto de la compañía de Easy. Mi nombre es Abigail",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.79,
+      "end": 44.79,
+      "text": " Grego. El motivo de la llamada es informativa para darle información acerca de los beneficios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.79,
+      "end": 52.68,
+      "text": " ¡Buenas tardes! Hola, buenas tardes. ¿Con quién tengo el gusto? Con María de Jesús.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.68,
+      "end": 57.97,
+      "text": " ¿Ya cuenta con servicios de Easy o está en otra compañía? No, la verdad no, pero",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.97,
+      "end": 62.97,
+      "text": " es que ¿qué cree que les he preguntado a sus compañeros que andan en la calle",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.97,
+      "end": 68.97,
+      "text": " y en los centros comerciales? Y dicen que donde yo tengo mi casa, donde vivo, no hay",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.97,
+      "end": 75.13,
+      "text": " cobertura, o sea, no hay, ¿cómo le diré? O sea, que no hay para instalar Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.13,
+      "end": 91.29,
+      "text": " Ok, comprendo. Aquí lo voy a poner. ¿En qué colonia vive? Morelos. ¿Y en qué",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 91.29,
+      "end": 99.86,
+      "text": " ciudad? DF. DF. Ok, perfecto. Bueno, una disculpa. Hasta luego. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.528,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

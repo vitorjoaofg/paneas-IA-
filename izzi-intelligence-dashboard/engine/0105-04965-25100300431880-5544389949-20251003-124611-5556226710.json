@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300431880-5544389949-20251003-124611-5556226710.WAV",
+  "file_name": "0105-04965-25100300431880-5544389949-20251003-124611-5556226710.WAV",
+  "base_id": "0105-04965-25100300431880-5544389949-20251003-124611-5556226710",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes con Easy? Es posible. ¿Te interesa? Un asesor se está esperando. Por favor. Si conoce la extensión, mártela ahora. Espera un momento, por favor. Llamar a la operadora. Por favor, espere un momento.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes con Easy? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor se está esperando. Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.0,
+      "end": 23.0,
+      "text": " Si conoce la extensión, mártela ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.0,
+      "end": 29.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.88,
+      "end": 47.88,
+      "text": " Llamar a la operadora. Por favor, espere un momento.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.568,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

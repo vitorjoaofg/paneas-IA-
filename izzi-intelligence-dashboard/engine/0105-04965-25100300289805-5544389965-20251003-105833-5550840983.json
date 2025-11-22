@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300289805-5544389965-20251003-105833-5550840983.WAV",
+  "file_name": "0105-04965-25100300289805-5544389965-20251003-105833-5550840983.WAV",
+  "base_id": "0105-04965-25100300289805-5544389965-20251003-105833-5550840983",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días, lo estoy comunicando por parte del servicio de telefonía Easy. Mi nombre es Teresa Quinto con quien tengo el gusto, ¿qué culpe? Oficina de pasaportes en que puedo ayudarle. Hola, ¿qué tal? Buenos días, ¿qué tal? Cabrero, mucho gusto. Miren, más que nada se le está marcando para ver si ya cuenta con el servicio de telefonía Easy.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.52,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.52,
+      "end": 17.12,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.12,
+      "end": 23.12,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.12,
+      "end": 40.22,
+      "text": " para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días, lo estoy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.22,
+      "end": 43.94,
+      "text": " comunicando por parte del servicio de telefonía Easy. Mi nombre es Teresa",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.94,
+      "end": 48.54,
+      "text": " Quinto con quien tengo el gusto, ¿qué culpe? Oficina de pasaportes en que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.54,
+      "end": 53.49,
+      "text": " puedo ayudarle. Hola, ¿qué tal? Buenos días, ¿qué tal? Cabrero, mucho gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.49,
+      "end": 56.37,
+      "text": " Miren, más que nada se le está marcando para ver si ya cuenta con el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.37,
+      "end": 59.37,
+      "text": " servicio de telefonía Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

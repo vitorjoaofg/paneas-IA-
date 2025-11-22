@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100678957-3314541367-20251001-174714-3343483912.WAV",
+  "file_name": "0105-04965-25100100678957-3314541367-20251001-174714-3343483912.WAV",
+  "base_id": "0105-04965-25100100678957-3314541367-20251001-174714-3343483912",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Maratón, esta es la contratación de Easy o la tiene al castillo con quien tengo el gusto? Con Manuel Sandoval. ¿Pero, Manuel, en qué lo podemos apoyar? ¿Quién se va a contratar el día de hoy? Bueno, ahorita no lo quiero contratar. Yo ahorita tengo una compañía pero este mismo me lo ha deshecho y inmediatamente voy a comunicar con ustedes. ¿Está bien? Ok, está bien. Ok, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.92,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.92,
+      "end": 27.92,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.35,
+      "end": 41.51,
+      "text": " Maratón, esta es la contratación de Easy o la tiene al castillo con quien tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.51,
+      "end": 45.61,
+      "text": " Con Manuel Sandoval. ¿Pero, Manuel, en qué lo podemos apoyar? ¿Quién se va a contratar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.61,
+      "end": 55.86,
+      "text": " el día de hoy? Bueno, ahorita no lo quiero contratar. Yo ahorita tengo una compañía",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.86,
+      "end": 64.41,
+      "text": " pero este mismo me lo ha deshecho y inmediatamente voy a comunicar con ustedes. ¿Está bien?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.41,
+      "end": 65.91,
+      "text": " Ok, está bien.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.91,
+      "end": 68.0,
+      "text": " Ok, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.56,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

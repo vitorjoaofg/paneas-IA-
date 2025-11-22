@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400458532-3314541360-20251004-131428-3342950677.WAV",
+  "file_name": "0105-04965-25100400458532-3314541360-20251004-131428-3342950677.WAV",
+  "base_id": "0105-04965-25100400458532-3314541360-20251004-131428-3342950677",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y ándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar. Espera un momento, por favor. Hola, ¿qué tal? Sí, buenas tardes. Me estoy comunicando por parte del Censo Telefonia Easy. Mi nombre es Teresa Quinto. ¿Con quién te gustó?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y ándate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 22.92,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 30.76,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.76,
+      "end": 36.8,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.8,
+      "end": 46.29,
+      "text": " Hola, ¿qué tal? Sí, buenas tardes. Me estoy comunicando por parte del",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.29,
+      "end": 50.09,
+      "text": " Censo Telefonia Easy. Mi nombre es Teresa Quinto. ¿Con quién te gustó?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

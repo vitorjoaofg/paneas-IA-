@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200191117-5540409201-20251002-095446-3123951575.WAV",
+  "file_name": "0105-04965-25100200191117-5540409201-20251002-095446-3123951575.WAV",
+  "base_id": "0105-04965-25100200191117-5540409201-20251002-095446-3123951575",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para ti. Yo no pongo nada. Espera un momento, por favor. Hola, ¿qué tal? ¿Buen día? Bueno, bueno, bueno. Por motivos de calidad voy a finalizar esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.0,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.0,
+      "end": 28.7,
+      "text": " Yo no pongo nada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.7,
+      "end": 50.5,
+      "text": " Espera un momento, por favor. Hola, ¿qué tal? ¿Buen día? Bueno, bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.5,
+      "end": 58.93,
+      "text": " Por motivos de calidad voy a finalizar esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.1,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

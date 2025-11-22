@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100508148-5544389990-20251001-153809-5555869759.WAV",
+  "file_name": "0105-04965-25100100508148-5544389990-20251001-153809-5555869759.WAV",
+  "base_id": "0105-04965-25100100508148-5544389990-20251001-153809-5555869759",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con dos nuevos canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Gracias por llamar a Banco Multiva. Hospital Ángeles Vindavisca. Sucursal, si conoce el número de la extensión a la que desea llamar, dígitelo ahora. Espera un momento, por favor. De lo contrario, presione 0 para ser atendido por una operadora. Buenas tardes, está comunicando con Rotaciones Incididas y de la señorita ya no ha salido. Ángeles Vindavisca. Sucursal, si conoce el número de la extensión a la que desea llamar, dígitelo ahora. De lo contrario, presione 0 para ser atendido por una operadora. Banco Multiva, buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 13.32,
+      "text": " con dos nuevos canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.32,
+      "end": 19.92,
+      "text": " mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.92,
+      "end": 25.32,
+      "text": " Gracias por llamar a Banco Multiva. Hospital Ángeles Vindavisca. Sucursal,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.32,
+      "end": 29.8,
+      "text": " si conoce el número de la extensión a la que desea llamar, dígitelo ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.8,
+      "end": 30.72,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.72,
+      "end": 34.28,
+      "text": " De lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.28,
+      "end": 42.33,
+      "text": " Buenas tardes, está comunicando con Rotaciones Incididas y de la señorita ya no ha salido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.33,
+      "end": 47.65,
+      "text": " Ángeles Vindavisca. Sucursal, si conoce el número de la extensión a la que desea llamar,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.65,
+      "end": 53.41,
+      "text": " dígitelo ahora. De lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.41,
+      "end": 86.44,
+      "text": " Banco Multiva, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

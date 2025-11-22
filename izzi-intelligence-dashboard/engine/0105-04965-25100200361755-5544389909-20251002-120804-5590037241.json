@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200361755-5544389909-20251002-120804-5590037241.WAV",
+  "file_name": "0105-04965-25100200361755-5544389909-20251002-120804-5590037241.WAV",
+  "base_id": "0105-04965-25100200361755-5544389909-20251002-120804-5590037241",
+  "transcription": "¿Estás hablando? Apreve esta gente de seguros y defiensas. ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Isol. ¿Te interesa? Por favor, vuelva a intentarlo. Por favor, hable o pulse uno para sí. Apreve esta gente de seguros y defiensas. Si conoces el número de extensión, marco la hora. Espera un momento, por favor. Bienvenido al área de contrataciones y con quien tengo el gusto. Lo siento, no lo entiendo. Por favor, vuelva a intentarlo. ¿Estás hablando? Apreve esta gente de seguros y defiensas. Si conoces el número de extensión, marco la hora. O de lo contrario, marca cero y serás atendido por una operadora. ¡Adiós!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.78,
+      "end": 4.78,
+      "text": " ¿Estás hablando? Apreve esta gente de seguros y defiensas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.78,
+      "end": 10.14,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.14,
+      "end": 15.74,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.74,
+      "end": 22.54,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Isol. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.54,
+      "end": 27.78,
+      "text": " Por favor, vuelva a intentarlo. Por favor, hable o pulse uno para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.78,
+      "end": 33.78,
+      "text": " Apreve esta gente de seguros y defiensas. Si conoces el número de extensión, marco la hora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.78,
+      "end": 35.78,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.5,
+      "end": 45.5,
+      "text": " Bienvenido al área de contrataciones y con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.5,
+      "end": 50.5,
+      "text": " Lo siento, no lo entiendo. Por favor, vuelva a intentarlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.5,
+      "end": 55.5,
+      "text": " ¿Estás hablando? Apreve esta gente de seguros y defiensas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.5,
+      "end": 58.5,
+      "text": " Si conoces el número de extensión, marco la hora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.5,
+      "end": 63.5,
+      "text": " O de lo contrario, marca cero y serás atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.5,
+      "end": 70.74,
+      "text": " ¡Adiós!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.0,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100232654-5544389908-20251001-120052-5540013634.WAV",
+  "file_name": "0105-04999-25100100232654-5544389908-20251001-120052-5540013634.WAV",
+  "base_id": "0105-04999-25100100232654-5544389908-20251001-120052-5540013634",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, bueno. Hola, buenos días. Hablamos de compañía y si me presento, mi nombre es Patricia Badillo. ¿Con quién tengo el gusto el día de hoy? Hola, buenas. Perdón, ¿me podrían quitar de la lista de llamado, por favor? Ok, señora. Aquí le voy a poner cliente molesto para que no le vuelvan a marcar. De igual manera, no me colgue, lo voy a transcurrir directamente, tensión a cliente para que retiren su número, ¿ok? Muchas gracias. De nada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 13.24,
+      "text": " más Sky Sports desde $350 pesos el primer mes con Easy Es Posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 16.56,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.8,
+      "end": 25.34,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.34,
+      "end": 43.82,
+      "text": " Bueno, bueno. Hola, buenos días. Hablamos de compañía y si me presento,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.86,
+      "end": 46.66,
+      "text": " mi nombre es Patricia Badillo. ¿Con quién tengo el gusto el día de hoy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.66,
+      "end": 52.26,
+      "text": " Hola, buenas. Perdón, ¿me podrían quitar de la lista de llamado, por favor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.26,
+      "end": 57.39,
+      "text": " Ok, señora. Aquí le voy a poner cliente molesto para que no le vuelvan a marcar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.39,
+      "end": 60.47,
+      "text": " De igual manera, no me colgue, lo voy a transcurrir directamente,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.47,
+      "end": 63.31,
+      "text": " tensión a cliente para que retiren su número, ¿ok?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.31,
+      "end": 64.67,
+      "text": " Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.67,
+      "end": 66.06,
+      "text": " De nada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.852,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400115828-5544389949-20251004-085711-5566908717.WAV",
+  "file_name": "0105-04999-25100400115828-5544389949-20251004-085711-5566908717.WAV",
+  "base_id": "0105-04999-25100400115828-5544389949-20251004-085711-5566908717",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Auceo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Señorita, nada más para decirle, por favor, no me estén llamando. Yo no les pedí que me llamen y les di mi número para que me llamen, me están interrumpiendo. Ya no les voy a volver a contestar. Por favor, borrenme ahí de sus llamadas. Sí, una disculpa, señoritendo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 31.99,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.99,
+      "end": 40.82,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.82,
+      "end": 50.34,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Auceo, nos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.34,
+      "end": 55.66,
+      "text": " comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Señorita, nada más",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.66,
+      "end": 60.3,
+      "text": " para decirle, por favor, no me estén llamando. Yo no les pedí que me llamen",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.3,
+      "end": 63.7,
+      "text": " y les di mi número para que me llamen, me están interrumpiendo. Ya no les",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.7,
+      "end": 68.66,
+      "text": " voy a volver a contestar. Por favor, borrenme ahí de sus llamadas. Sí, una",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 68.66,
+      "end": 71.5,
+      "text": " disculpa, señoritendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.732,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

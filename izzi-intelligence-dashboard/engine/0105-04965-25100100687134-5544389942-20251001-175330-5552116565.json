@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100687134-5544389942-20251001-175330-5552116565.WAV",
+  "file_name": "0105-04965-25100100687134-5544389942-20251001-175330-5552116565.WAV",
+  "base_id": "0105-04965-25100100687134-5544389942-20251001-175330-5552116565",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, del de 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Bueno. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Buenas tardes, se pone a hablar de contrataciones. ¿Y si la tienes en el castillo con quien tengo el gusto? Señor, ya tengo contratado el servicio con ustedes de Prodigy, Infinitum y todo lo demás. ¿Por qué me están llamando? Ah, ok. Es que entró aquí directamente la llamada. No, entró directamente ustedes a mí. Ah, ok. Comenta que no esa contratación. No, eso ya. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports, del de 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 17.4,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 24.5,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.5,
+      "end": 28.9,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.9,
+      "end": 31.9,
+      "text": " Presiona 1 para hablar con un asesor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.9,
+      "end": 34.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.64,
+      "end": 42.14,
+      "text": " Buenas tardes, se pone a hablar de contrataciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.14,
+      "end": 44.54,
+      "text": " ¿Y si la tienes en el castillo con quien tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.54,
+      "end": 53.17,
+      "text": " Señor, ya tengo contratado el servicio con ustedes de Prodigy, Infinitum y todo lo demás.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.17,
+      "end": 56.68,
+      "text": " ¿Por qué me están llamando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.68,
+      "end": 59.48,
+      "text": " Ah, ok. Es que entró aquí directamente la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.48,
+      "end": 64.26,
+      "text": " No, entró directamente ustedes a mí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.26,
+      "end": 66.46,
+      "text": " Ah, ok. Comenta que no esa contratación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 66.46,
+      "end": 68.46,
+      "text": " No, eso ya. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 68.46,
+      "end": 69.46,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.66,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

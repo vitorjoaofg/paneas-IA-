@@ -1,0 +1,512 @@
+{
+  "call_id": "0105-04965-25090101010306-5556383448-20250901-192057-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": "Gracias por comunicarte a EASY. Tenemos las mejores promociones para ti.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": "¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Big Screamium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.0,
+      "end": 24.0,
+      "text": "¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 25.0,
+      "end": 35.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 36.0,
+      "end": 38.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 43.0,
+      "end": 48.0,
+      "text": "Hola, buenas tardes. Lo tiene Jennifer González de la compañía de Internet EASY. ¿Qué se le puede ayudar?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 7,
+      "start": 49.0,
+      "end": 54.0,
+      "text": "No, ¿qué pasa aquí? Tenía un número de una mujer.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 55.0,
+      "end": 63.0,
+      "text": "Hola, buenas tardes. Ya lo reconocí, la abuela de Chimamarca anteriormente. ¿Me gustaría que le dé información de algunos paquetes esta vez?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 66.0,
+      "end": 67.0,
+      "text": "A ver, dime.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 68.0,
+      "end": 77.0,
+      "text": "Mire, si le interesa cambiar su Internet con nosotros a EASY, su primer pago sería de $350. Le incluye ya su primera mensualidad y el pago de su instalación.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 11,
+      "start": 78.0,
+      "end": 89.0,
+      "text": "Y lo mejor de todo es que después de ahí va a tener una promoción durante 6 meses para el paquete de 80 megas, 200 canales y lo que es llamadas ilimitadas de $599.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 12,
+      "start": 89.0,
+      "end": 94.0,
+      "text": "Más aparte se le suben los megas a 100 megas en lugar de 80 que viene en el paquete normalmente.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 95.0,
+      "end": 97.0,
+      "text": "No sé si le interesa este paquete o usted usa más Internet.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 99.0,
+      "end": 102.0,
+      "text": "Sí, me interesa ese paquete, señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 104.0,
+      "end": 111.0,
+      "text": "Sería valida darle su cobertura y por lo tanto nos tuviera que dar su código postal, número de calle y el código exterior.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 112.0,
+      "end": 120.0,
+      "text": "Para verificar que tenga cobertura en su domicilio ya que EASY no entra a todo México. En algunas partes hay cobertura como en otras no.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 17,
+      "start": 124.0,
+      "end": 129.0,
+      "text": "Lo que pasa es que estoy viviendo aquí con las mujeres.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 18,
+      "start": 131.0,
+      "end": 134.0,
+      "text": "¿Y no se sabe su dirección o ustedes ya cuentan con Internet?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 135.0,
+      "end": 137.0,
+      "text": "Ya cuento con el teniente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 137.0,
+      "end": 143.0,
+      "text": "Ah, ok. Bueno, entonces usted no es cliente de EASY, o sea, no tiene Internet y si tiene otra compañía o si es cliente de EASY.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 21,
+      "start": 145.0,
+      "end": 147.0,
+      "text": "Sí, soy cliente de EASY.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 22,
+      "start": 148.0,
+      "end": 157.0,
+      "text": "¿Le interesaría el EASY móvil? ¿Ya le mandaron la información al correo, Whatsapp o igualmente promociones por la televisión? No sé si conozca EASY móvil.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 23,
+      "start": 157.0,
+      "end": 162.0,
+      "text": "No sé las mujeres si las creen o no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 164.0,
+      "end": 176.0,
+      "text": "Ah, ok. Bueno, es que el EASY móvil es un chip celular para clientes que ya son EASY que les sale llamadas, mensajes y Whatsapp limitado durante todo el mes y 8 días para navegar por $94 mensuales, incluyéndoselo en su recibo de EASY.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 25,
+      "start": 177.0,
+      "end": 183.0,
+      "text": "No sé si le interesa este paquete. Se requiere pues el número de cuenta que esté a su nombre para poder agregarlo a su servicio.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 26,
+      "start": 186.0,
+      "end": 191.0,
+      "text": "Lo que pasa es que la otra señorita que me atendió,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 27,
+      "start": 191.0,
+      "end": 193.0,
+      "text": "Me decía que le comentó a la señorita anterior.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 194.0,
+      "end": 201.0,
+      "text": "Ajá, que me comentó que tenía un chip de $94 mensuales.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 202.0,
+      "end": 203.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 204.0,
+      "end": 211.0,
+      "text": "Bueno, no sé si le interesa este paquete. Se requiere pues el número de cuenta que esté a su nombre para poder agregarlo a su servicio.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 31,
+      "start": 212.0,
+      "end": 214.0,
+      "text": "Me decía que le comentó a la señorita anterior.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 215.0,
+      "end": 227.0,
+      "text": "Ajá, que me comentó que tenía un chip de 60 GB de mujeres.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 33,
+      "start": 229.0,
+      "end": 240.0,
+      "text": "Pues no de mujeres, pero no tenemos ahorita ningún chip con 60 GB. Solo hay un chip de todo y limitado. Es necesario para poder agregarlo a su cuenta que se me puede proporcionar su número de cuenta.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 34,
+      "start": 242.0,
+      "end": 250.0,
+      "text": "Pues de aquí hay un chip para ponérselo en su celular de una mujer.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 252.0,
+      "end": 262.0,
+      "text": "Sí se le puede vender un chip, pero ocupa tener usted, usted es el cliente de EASY, que el servicio esté a su nombre y sí se le puede agregar un chip.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 36,
+      "start": 263.0,
+      "end": 267.0,
+      "text": "Pero es necesario que me dé el número de cuenta para identificar usted qué cliente es.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 37,
+      "start": 268.0,
+      "end": 272.0,
+      "text": "Le paso a una mujer para que se lo diga.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 38,
+      "start": 281.0,
+      "end": 282.0,
+      "text": "Señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 283.0,
+      "end": 288.0,
+      "text": "Ah, ok. ¿Ocupo o rectifico el número de cuenta si lo tiene a la mano para agregar el servicio?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 291.0,
+      "end": 294.0,
+      "text": "Lo tiene mi esposa, se lo paso.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 294.0,
+      "end": 296.0,
+      "text": "¿Tiene el número de cuenta, por favor?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 42,
+      "start": 297.0,
+      "end": 298.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 300.0,
+      "end": 301.0,
+      "text": "¿Me lo dicta?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 44,
+      "start": 304.0,
+      "end": 306.0,
+      "text": "Tiene mi esposa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 307.0,
+      "end": 309.0,
+      "text": "Ah, está el nombre de su esposa al internet.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 310.0,
+      "end": 311.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 312.0,
+      "end": 321.0,
+      "text": "Ah, ok. Entonces si tuviera que comunicarse a su esposa, es que el titular de la cuenta es el que puede agregar chips, puede agregar líneas telefónicas con el número de cuenta.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 48,
+      "start": 321.0,
+      "end": 329.0,
+      "text": "Puede agregar líneas telefónicas con nosotros. No sé si le pueda comentar que si ya se comunica de regreso para poder agregarle a su servicio, no pasa nada.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 330.0,
+      "end": 334.0,
+      "text": "Igualmente puede llamar a su número de atención al cliente y ahí se puede solicitar.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 50,
+      "start": 335.0,
+      "end": 339.0,
+      "text": "Lo que pasa es que ahorita está ocupada chupando una cola de una mujer.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 51,
+      "start": 344.0,
+      "end": 354.0,
+      "text": "Bueno, igualmente si le interesa el servicio a su esposa, queda titulado, se nos puede ir a comunicar el número de atención al cliente. Señor, de mi parte por mientras sería todo y que pase una excelente tarde. Gracias.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 52,
+      "start": 355.0,
+      "end": 356.0,
+      "text": "Señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 53,
+      "start": 357.0,
+      "end": 358.0,
+      "text": "¿Ocupa algo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 54,
+      "start": 359.0,
+      "end": 361.0,
+      "text": "Eh, puede chuparle la cola.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 55,
+      "start": 361.0,
+      "end": 371.0,
+      "text": "No le han bloqueado su número todavía, pero usted ya sabe la respuesta. Se me hace raro que siga preguntando lo mismo a todas mis compañeras. Sinceramente, que pase una excelente tarde. Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 20,
+  "customer_segments": 30,
+  "ivr_segments": 6
+}

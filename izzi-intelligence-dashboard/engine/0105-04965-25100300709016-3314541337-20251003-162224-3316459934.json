@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300709016-3314541337-20251003-162224-3316459934.WAV",
+  "file_name": "0105-04965-25100300709016-3314541337-20251003-162224-3316459934.WAV",
+  "base_id": "0105-04965-25100300709016-3314541337-20251003-162224-3316459934",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixprime y más los K-Sports? Desde 350 pesos al primer mes, con INGRI, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, deja tu mensaje después del tono. Si necesitas volver a grabar, marca el signo de número y espera instrucciones. Buenas tardes, buenas tardes. Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3. Para volver a grabar el mensaje, marca 4. Para enviar el mensaje, marca 5. para escuchar el mensaje marca 1 para continuar con la grabación en este punto, marca 2.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixprime y más los K-Sports?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.3,
+      "end": 13.0,
+      "text": " Desde 350 pesos al primer mes, con INGRI, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 23.5,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.5,
+      "end": 29.0,
+      "text": " Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.43,
+      "end": 42.12,
+      "text": " Buenas tardes, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.12,
+      "end": 50.38,
+      "text": " Para escuchar el mensaje, marca 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.38,
+      "end": 54.28,
+      "text": " Para continuar con la grabación en este punto, marca 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.28,
+      "end": 57.68,
+      "text": " Para eliminar este mensaje, marca 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.68,
+      "end": 61.18,
+      "text": " Para volver a grabar el mensaje, marca 4.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.18,
+      "end": 70.88,
+      "text": " Para enviar el mensaje, marca 5.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.88,
+      "end": 73.88,
+      "text": " para escuchar el mensaje marca 1",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.88,
+      "end": 77.88,
+      "text": " para continuar con la grabación en este punto, marca 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.484,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

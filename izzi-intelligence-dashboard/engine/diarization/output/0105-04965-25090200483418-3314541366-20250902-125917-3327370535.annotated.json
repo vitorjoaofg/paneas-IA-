@@ -1,0 +1,737 @@
+{
+  "call_id": "0105-04965-25090200483418-3314541366-20250902-125917-3327370535",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 21.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 22.0,
+      "end": 32.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 3,
+      "start": 32.0,
+      "end": 34.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 41.0,
+      "end": 46.0,
+      "text": "Sí, muy buenos días. Me estoy comunicando, bueno, me estoy comunicando del Departamento de Contrataciones de EASY. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 47.0,
+      "end": 49.0,
+      "text": "Ah, es de EASY.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 55.0,
+      "end": 59.0,
+      "text": "No, contamos con otro servicio, pero queremos cambiarlo.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 66.0,
+      "end": 68.0,
+      "text": "¿Quieres Internet y Tele o no más Internet?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 71.0,
+      "end": 73.0,
+      "text": "¿Internet y Tele?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 76.0,
+      "end": 85.0,
+      "text": "Ese, se lo estamos dejando en $4.99 durante 6 meses. Trae 80 GB, ya incluidos durante también 6 meses.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 85.0,
+      "end": 94.0,
+      "text": "Y a partir del séptimo mes, les quedaría fijo en $539 y el servicio les bajaría a 60 MB.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 94.0,
+      "end": 99.0,
+      "text": "Les incluye 100 canales en servicio y pues la telefonía fija, que ese no se le cobra.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 99.0,
+      "end": 102.0,
+      "text": "Y con sus llamadas a todo México, Estados Unidos y Canadá, el servicio.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 13,
+      "start": 103.0,
+      "end": 105.0,
+      "text": "Ok, ¿y si fuera solo Internet?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 106.0,
+      "end": 115.0,
+      "text": "Solo Internet, eso lo estamos manejando ese en $3.49 durante 3 meses. Son tus 80 MB durante 6 meses.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 15,
+      "start": 115.0,
+      "end": 122.0,
+      "text": "Y después de lo que es el, bueno, después del cuarto mes ya te quedará fijo en $3.89, ¿no?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 16,
+      "start": 122.0,
+      "end": 129.0,
+      "text": "Y hasta el séptimo mes te bajaría a 60 MB y pues también te incluye la telefonía fija con sus llamadas a todo México, Estados Unidos y Canadá.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 17,
+      "start": 129.0,
+      "end": 137.0,
+      "text": "Incluso si llegas a domiciliar, bueno, si pagas con tu tarjeta ya te quedaría con $50 de descuento, ¿no? Más, ya de por vida.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 138.0,
+      "end": 144.0,
+      "text": "Ok, y lo que pasa es que acá en Mellovio me habían dicho que todavía no llegaba ahí, sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 145.0,
+      "end": 147.0,
+      "text": "¿Hace cuánto te buscaron cobertura? Disculpa.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 148.0,
+      "end": 150.0,
+      "text": "Hace como un año yo creo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 151.0,
+      "end": 154.0,
+      "text": "¿Tienes la dirección para verificar si hay cobertura?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 155.0,
+      "end": 158.0,
+      "text": "Sí, es Andador Loma Escondida, número 9.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 159.0,
+      "end": 163.0,
+      "text": "Andador Loma Escondida, ¿eh?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 163.0,
+      "end": 164.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 165.0,
+      "end": 167.0,
+      "text": "Escondida, número 9.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 168.0,
+      "end": 177.0,
+      "text": "¿Me puedes decir, bueno, en qué ciudad y, bueno, la ciudad y la dirección completa? Le ocupo también lo que es el código postal.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 178.0,
+      "end": 180.0,
+      "text": "¿Qué es el código postal?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 181.0,
+      "end": 188.0,
+      "text": "El código postal es 45403 y es Tonala.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 29,
+      "start": 189.0,
+      "end": 190.0,
+      "text": "¿Tonala?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 30,
+      "start": 190.0,
+      "end": 191.0,
+      "text": "¿Tonala?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 191.0,
+      "end": 192.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 193.0,
+      "end": 195.0,
+      "text": "¿Y te sabe las entrecalles?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 196.0,
+      "end": 197.0,
+      "text": "¿Las entrecalles?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 197.0,
+      "end": 198.0,
+      "text": "¿Y de dónde?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 198.0,
+      "end": 199.0,
+      "text": "De aquí arriba.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 201.0,
+      "end": 203.0,
+      "text": "No sabe, se llama.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 204.0,
+      "end": 206.0,
+      "text": "Sí, porque se los voy a ocupar las entrecalles.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 38,
+      "start": 207.0,
+      "end": 208.0,
+      "text": "Eh...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 210.0,
+      "end": 212.0,
+      "text": "Cruza con Loma Escondida.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 213.0,
+      "end": 214.0,
+      "text": "Cruza con Loma Escondida.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 214.0,
+      "end": 220.0,
+      "text": "Disculpa, de pura casualidad, bueno, no sé si tendrán ahí a la mano un recibo, que me puedan enviar una foto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 220.0,
+      "end": 221.0,
+      "text": "¿Un recibo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 222.0,
+      "end": 227.0,
+      "text": "Sí, sí, te doy el número y ahorita yo verifico rapidito que haya más cobertura.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 227.0,
+      "end": 228.0,
+      "text": "¿Te doy el número?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 229.0,
+      "end": 230.0,
+      "text": "A ver, permíteme.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 230.0,
+      "end": 231.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 237.0,
+      "end": 238.0,
+      "text": "Listo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 239.0,
+      "end": 242.0,
+      "text": "Mira, envíamelo aquí, mira, porque es un número de Tijuana, ¿no? Es el número 664...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 243.0,
+      "end": 244.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 50,
+      "start": 244.0,
+      "end": 245.0,
+      "text": "726...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 51,
+      "start": 246.0,
+      "end": 247.0,
+      "text": "726...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 52,
+      "start": 248.0,
+      "end": 249.0,
+      "text": "55...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 53,
+      "start": 249.0,
+      "end": 250.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 54,
+      "start": 250.0,
+      "end": 251.0,
+      "text": "84.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 55,
+      "start": 252.0,
+      "end": 253.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 56,
+      "start": 254.0,
+      "end": 258.0,
+      "text": "Tú ves la... bueno, ¿a qué número quedaría la cuenta?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 57,
+      "start": 259.0,
+      "end": 260.0,
+      "text": "De Cintia.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 58,
+      "start": 261.0,
+      "end": 262.0,
+      "text": "Cintia, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 59,
+      "start": 262.0,
+      "end": 266.0,
+      "text": "Sí, pues, qué sé yo, ¿es tu Cintia o con la muchacha que estás hablando?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 60,
+      "start": 267.0,
+      "end": 268.0,
+      "text": "Es con quien estoy hablando.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 61,
+      "start": 269.0,
+      "end": 270.0,
+      "text": "Ah, Cintia, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 62,
+      "start": 270.0,
+      "end": 273.0,
+      "text": "Sí, pues, que me envíe un recibo, ahí este número.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 63,
+      "start": 274.0,
+      "end": 279.0,
+      "text": "En cuanto ya me lo envíe, yo checo la cobertura y dame, ¿me puedes dar un número?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 64,
+      "start": 279.0,
+      "end": 283.0,
+      "text": "¿A este número me puedo comunicar o al número de ella para hablarle directamente?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 65,
+      "start": 284.0,
+      "end": 285.0,
+      "text": "Eh...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 66,
+      "start": 286.0,
+      "end": 287.0,
+      "text": "El número es...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 67,
+      "start": 288.0,
+      "end": 289.0,
+      "text": "3314...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 68,
+      "start": 290.0,
+      "end": 291.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 69,
+      "start": 291.0,
+      "end": 292.0,
+      "text": "35...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 70,
+      "start": 292.0,
+      "end": 293.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 71,
+      "start": 294.0,
+      "end": 295.0,
+      "text": "Ah...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 72,
+      "start": 296.0,
+      "end": 297.0,
+      "text": "Permíteme.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 73,
+      "start": 302.0,
+      "end": 306.0,
+      "text": "El número es 3314-3529-36.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 74,
+      "start": 307.0,
+      "end": 315.0,
+      "text": "Ajá, 36. Mira, pues, que me envíe ese dato al número que le pasé y en cuanto me lo envíe busco cobertura y le regreso la llamada, ¿qué te parece?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 75,
+      "start": 315.0,
+      "end": 316.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 76,
+      "start": 316.0,
+      "end": 320.0,
+      "text": "Sí, no, 5 o 6 minutos, no te preocupes, rapidito, en lo que me lo envíe para recibir la cobertura.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 77,
+      "start": 320.0,
+      "end": 321.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 78,
+      "start": 321.0,
+      "end": 325.0,
+      "text": "Perfecto, pues, estamos en contacto y te recibo la llamada, Edgar, para ahorita sepas quién soy.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 79,
+      "start": 326.0,
+      "end": 327.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 80,
+      "start": 327.0,
+      "end": 329.0,
+      "text": "Perfecto. Estamos en contacto. Gracias. Buen día.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 14,
+  "customer_segments": 63,
+  "ivr_segments": 4
+}

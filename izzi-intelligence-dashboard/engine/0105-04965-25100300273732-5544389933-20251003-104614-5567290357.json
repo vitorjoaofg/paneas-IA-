@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300273732-5544389933-20251003-104614-5567290357.WAV",
+  "file_name": "0105-04965-25100300273732-5544389933-20251003-104614-5567290357.WAV",
+  "base_id": "0105-04965-25100300273732-5544389933-20251003-104614-5567290357",
+  "transcription": "¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Se comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Sí, buenos días. Diga. Alex Tritalamates, de la compañía de Easy. ¿Con quién tengo el gusto? Ulises. Ulises, mire, el motivo de la llamada, señor, es porque Easy le está ofreciendo a usted chips para sus equipos celulares para que no manejan recargas, señor, y tengan una renta emasualcisa con nosotros. Ah, ya. ¿Usted cuenta con el tipo de recarga? Sí, lo escucho. Bueno, es que yo trabajo para la otra empresa. Ah, ok. Entonces pensé que era la otra cosa que me habían mencionado. Pero está bien, muchas gracias. Al contrario, que tenga buen día. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 15.31,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 15.31,
+      "end": 25.31,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 26.31,
+      "end": 42.7,
+      "text": " Siento, no entendí tu respuesta. ¿Se comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 50.65,
+      "end": 51.71,
+      "text": " Sí, buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 51.71,
+      "end": 52.94,
+      "text": " Diga.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 52.94,
+      "end": 55.94,
+      "text": " Alex Tritalamates, de la compañía de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.94,
+      "end": 56.94,
+      "text": " Ulises.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.94,
+      "end": 66.29,
+      "text": " Ulises, mire, el motivo de la llamada, señor, es porque Easy le está ofreciendo a usted chips para sus equipos celulares para que no manejan recargas, señor, y tengan una renta emasualcisa con nosotros.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.29,
+      "end": 67.35,
+      "text": " Ah, ya.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.35,
+      "end": 69.45,
+      "text": " ¿Usted cuenta con el tipo de recarga?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.45,
+      "end": 70.45,
+      "text": " Sí, lo escucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.45,
+      "end": 72.45,
+      "text": " Bueno, es que yo trabajo para la otra empresa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 72.45,
+      "end": 73.45,
+      "text": " Ah, ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 73.45,
+      "end": 80.45,
+      "text": " Entonces pensé que era la otra cosa que me habían mencionado. Pero está bien, muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 80.45,
+      "end": 81.45,
+      "text": " Al contrario, que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 81.45,
+      "end": 82.45,
+      "text": " Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

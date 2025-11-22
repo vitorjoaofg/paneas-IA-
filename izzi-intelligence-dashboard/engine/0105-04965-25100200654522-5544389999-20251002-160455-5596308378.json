@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200654522-5544389999-20251002-160455-5596308378.WAV",
+  "file_name": "0105-04965-25100200654522-5544389999-20251002-160455-5596308378.WAV",
+  "base_id": "0105-04965-25100200654522-5544389999-20251002-160455-5596308378",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, Quintero. Buenas tardes. Gracias por comunicarse al área de contrataciones de IZI. La tienda de Iván y Daniela, ¿con quién tengo el gusto? Buenas tardes, señorita. O sea, ¿qué tengo que hacer para que me dejen de estar marcando? ¿Para qué, perdón? Para que me dejen de estar marcando porque constantemente estás tú en mí y tú en el teléfono y es de ustedes. Ah, ok. Debo aquí en los comentarios. Agradezco mucho que tenga buen día. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.5,
+      "end": 28.57,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.57,
+      "end": 32.07,
+      "text": " Hola, Quintero. Buenas tardes. Gracias por comunicarse al área de contrataciones de IZI.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.07,
+      "end": 34.07,
+      "text": " La tienda de Iván y Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.76,
+      "end": 39.76,
+      "text": " Buenas tardes, señorita. O sea, ¿qué tengo que hacer para que me dejen de estar marcando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.76,
+      "end": 41.26,
+      "text": " ¿Para qué, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.26,
+      "end": 48.26,
+      "text": " Para que me dejen de estar marcando porque constantemente estás tú en mí y tú en el teléfono y es de ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.26,
+      "end": 52.52,
+      "text": " Ah, ok. Debo aquí en los comentarios. Agradezco mucho que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.52,
+      "end": 53.52,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

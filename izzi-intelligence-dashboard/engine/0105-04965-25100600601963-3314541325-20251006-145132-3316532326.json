@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600601963-3314541325-20251006-145132-3316532326.WAV",
+  "file_name": "0105-04965-25100600601963-3314541325-20251006-145132-3316532326.WAV",
+  "base_id": "0105-04965-25100600601963-3314541325-20251006-145132-3316532326",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Sí. Espera un momento, por favor. Buenas tardes. Habla de Tata Lamar, de la compañía de Easy. Con qué tengo el gusto. Con Marta Chávez. Marta, mire, el motivo de esta llamada es para resaltar a usted y por parte de Easy le estamos activando chips para sus equipos celulares. Ah, mire, yo por lo que me quise quedar en la llamada para que, por favor, me pusieran ahí para que no me esté porque es muy molesto que a cada rato esté sonando mi teléfono y solo tengan la publicidad. De antemano, no me interesa. Si me hubiera interesado desde cuándo me hubiera comunicado, le pido encarecidamente que me ponga ahí, que no me interesa y que no quiero que me siga molestando. ¿Me escuchó?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.62,
+      "end": 43.95,
+      "text": " para no. Sí. Espera un momento, por favor. Buenas tardes. Habla de Tata Lamar, de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.95,
+      "end": 49.07,
+      "text": " compañía de Easy. Con qué tengo el gusto. Con Marta Chávez. Marta, mire, el motivo de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.07,
+      "end": 52.87,
+      "text": " esta llamada es para resaltar a usted y por parte de Easy le estamos activando",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.87,
+      "end": 57.43,
+      "text": " chips para sus equipos celulares. Ah, mire, yo por lo que me quise quedar en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.43,
+      "end": 60.79,
+      "text": " la llamada para que, por favor, me pusieran ahí para que no me esté",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.75,
+      "end": 66.83,
+      "text": " porque es muy molesto que a cada rato esté sonando mi teléfono y solo tengan",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.83,
+      "end": 71.67,
+      "text": " la publicidad. De antemano, no me interesa. Si me hubiera interesado desde",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.67,
+      "end": 76.47,
+      "text": " cuándo me hubiera comunicado, le pido encarecidamente que me ponga ahí, que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.47,
+      "end": 84.94,
+      "text": " no me interesa y que no quiero que me siga molestando. ¿Me escuchó?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 116.928,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300332903-6644547919-20251003-113132-7773124121.WAV",
+  "file_name": "0105-04999-25100300332903-6644547919-20251003-113132-7773124121.WAV",
+  "base_id": "0105-04999-25100300332903-6644547919-20251003-113132-7773124121",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, ¡hablo! ¡Bueno! ¡Bueno! ¡Espera un momento, por favor! Hola, buen día. Hola, buen día. ¿Con quién tengo el gusto? ¿Con quién desde hablas? Ah, usted me está marcando. Mira, estamos... No, yo no me levantaron, señorita. Aquí es su compañía Easy, de Cable Internet.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 22.8,
+      "text": " asesor te está esperando. Por favor, ¡hablo!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.8,
+      "end": 30.98,
+      "text": " ¡Bueno! ¡Bueno! ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.38,
+      "end": 56.29,
+      "text": " Hola, buen día. Hola, buen día. ¿Con quién tengo el gusto? ¿Con quién desde hablas?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 56.29,
+      "end": 62.49,
+      "text": " Ah, usted me está marcando. Mira, estamos... No, yo no me levantaron, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 62.49,
+      "end": 64.49,
+      "text": " Aquí es su compañía Easy, de Cable Internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

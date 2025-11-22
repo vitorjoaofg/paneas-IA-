@@ -1,0 +1,42 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400058790-3314541351-20251004-080907-8676890372.WAV",
+  "file_name": "0105-04965-25100400058790-3314541351-20251004-080907-8676890372.WAV",
+  "base_id": "0105-04965-25100400058790-3314541351-20251004-080907-8676890372",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener una mejora de calidad en el servicio, en caso de que hiciera conocimiento a los deportivos exclusivos por solo 350 pesos en el primer mes? No lo pienses más y cállate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener una mejora de calidad en el servicio, en caso de que hiciera conocimiento a los deportivos exclusivos por solo 350 pesos en el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 23.98,
+      "text": " No lo pienses más y cállate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 23.98,
+      "end": 33.98,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.936,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

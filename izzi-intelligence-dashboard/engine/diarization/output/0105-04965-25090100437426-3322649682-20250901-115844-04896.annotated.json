@@ -1,0 +1,134 @@
+{
+  "call_id": "0105-04965-25090100437426-3322649682-20250901-115844-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": "Gracias por comunicarte a EASY. Tenemos las mejores promociones para ti.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": "¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.0,
+      "end": 17.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 17.0,
+      "end": 19.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 19.0,
+      "end": 23.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 23.0,
+      "end": 30.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 30.0,
+      "end": 35.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 8,
+      "start": 39.0,
+      "end": 41.0,
+      "text": "Espera un momento por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 41.0,
+      "end": 42.0,
+      "text": "Por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 72.0,
+      "end": 73.0,
+      "text": "Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 76.0,
+      "end": 77.0,
+      "text": "Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 89.0,
+      "end": 90.0,
+      "text": "Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 101.0,
+      "end": 102.0,
+      "text": "Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 5,
+  "ivr_segments": 9
+}

@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400514643-5540409204-20251004-135649-5589179063.WAV",
+  "file_name": "0105-04965-25100400514643-5540409204-20251004-135649-5589179063.WAV",
+  "base_id": "0105-04965-25100400514643-5540409204-20251004-135649-5589179063",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Muy buenas tardes. ¿Diga? Buenas tardes. ¿Con quién tengo el gusto? Disculpe. Hola. Ok, ¿en qué la puedo apoyar? No sé, me marcaban. Sí, se le entró una grabación en la cual se le indicaban unos paquetes y usted ya indicaba si quería ser atendida por un ejecutivo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.22,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.22,
+      "end": 18.66,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.66,
+      "end": 25.14,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.14,
+      "end": 26.14,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.42,
+      "end": 37.42,
+      "text": " Muy buenas tardes. ¿Diga? Buenas tardes. ¿Con quién tengo el gusto? Disculpe. Hola.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.42,
+      "end": 45.17,
+      "text": " Ok, ¿en qué la puedo apoyar? No sé, me marcaban. Sí, se le entró una grabación",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.17,
+      "end": 48.73,
+      "text": " en la cual se le indicaban unos paquetes y usted ya indicaba si quería ser atendida",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.73,
+      "end": 49.73,
+      "text": " por un ejecutivo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.436,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

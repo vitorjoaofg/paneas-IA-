@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100581898-3314541331-20251001-163358-5648661449.WAV",
+  "file_name": "0105-04999-25100100581898-3314541331-20251001-163358-5648661449.WAV",
+  "base_id": "0105-04999-25100100581898-3314541331-20251001-163358-5648661449",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o p... Espera un momento, por favor. ¿Contratación de Fizzing en que le puedo ayudar? Sí, hola, buenas tardes. Sí, buenas tardes, ¿en que le podría ayudar? Quieres que... Bueno, me acabo de leer veces esos números y ya les he dicho que no me debería ir. Que me dejen estar molestando. Y no me deben llamar de seriamente. Entonces, ¿síle que encargaría de la miniatura más alta que hiciste en ese número, por favor? Lo que pasa es que es un número de contratación. Si gusta, lo puedo transferir al área correspondiente para que le puedan apoyar. ¿Te gusta que lo transfiera? Sí, por favor. Claro que sí, lo transfiero. Me vamos a dar una vuelta a que lo transfiera al favor de presionar la opción número 2, ¿sí? Gracias, ¿qué pasa?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.85,
+      "end": 8.75,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.75,
+      "end": 16.55,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.55,
+      "end": 22.63,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.63,
+      "end": 26.39,
+      "text": " Por favor, hable o p... Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.86,
+      "end": 33.86,
+      "text": " ¿Contratación de Fizzing en que le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.86,
+      "end": 38.62,
+      "text": " Sí, hola, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.62,
+      "end": 40.62,
+      "text": " Sí, buenas tardes, ¿en que le podría ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.62,
+      "end": 46.64,
+      "text": " Quieres que... Bueno, me acabo de leer veces esos números y ya les he dicho que no me debería ir.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.64,
+      "end": 48.64,
+      "text": " Que me dejen estar molestando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.64,
+      "end": 54.68,
+      "text": " Y no me deben llamar de seriamente. Entonces, ¿síle que encargaría de la miniatura más alta que hiciste en ese número, por favor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.68,
+      "end": 61.15,
+      "text": " Lo que pasa es que es un número de contratación. Si gusta, lo puedo transferir al área correspondiente para que le puedan apoyar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.15,
+      "end": 63.15,
+      "text": " ¿Te gusta que lo transfiera?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.15,
+      "end": 65.15,
+      "text": " Sí, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.58,
+      "end": 70.46,
+      "text": " Claro que sí, lo transfiero. Me vamos a dar una vuelta a que lo transfiera al favor de presionar la opción número 2, ¿sí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 70.46,
+      "end": 73.83,
+      "text": " Gracias, ¿qué pasa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.044,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100396923-5540409212-20251001-141302-5553621755.WAV",
+  "file_name": "0105-04965-25100100396923-5540409212-20251001-141302-5553621755.WAV",
+  "base_id": "0105-04965-25100100396923-5540409212-20251001-141302-5553621755",
+  "transcription": "Y gracias por llamar a Irilar. Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con Big Freedom, más Sky Sports, desde 350 pesos al primer mes, con Easy? Es posible. ¿Te interesa un asesor de potenciación? Por favor. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular. Espera un momento, por favor. Registrados en su contrato. Si usted se siente una oferta de DECA de Red Magistral, por favor, marque 3. Gracias por llamar a Grupo Irilar. La atiendes a él al parado. ¿Cómo le puedo ayudar? Hola, ¿hola?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 3.06,
+      "text": " Y gracias por llamar a Irilar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.06,
+      "end": 6.7,
+      "text": " Hola, ¿te gustaría tener internet más televisión,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 6.7,
+      "end": 9.7,
+      "text": " más el mejor entretenimiento con Big Freedom,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 9.7,
+      "end": 14.94,
+      "text": " más Sky Sports, desde 350 pesos al primer mes, con Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.94,
+      "end": 16.22,
+      "text": " Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.22,
+      "end": 19.38,
+      "text": " ¿Te interesa un asesor de potenciación?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.38,
+      "end": 21.1,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.1,
+      "end": 23.5,
+      "text": " Si es cliente de alguno de nuestros programas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 23.5,
+      "end": 25.29,
+      "text": " marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.29,
+      "end": 28.61,
+      "text": " Recuerde tener a la mano su RTC, número de celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 28.61,
+      "end": 30.05,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 30.05,
+      "end": 32.85,
+      "text": " Registrados en su contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 32.85,
+      "end": 36.09,
+      "text": " Si usted se siente una oferta de DECA de Red Magistral,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 36.09,
+      "end": 49.78,
+      "text": " por favor, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.78,
+      "end": 51.18,
+      "text": " Gracias por llamar a Grupo Irilar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 51.18,
+      "end": 52.42,
+      "text": " La atiendes a él al parado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 52.42,
+      "end": 58.94,
+      "text": " ¿Cómo le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 58.94,
+      "end": 59.54,
+      "text": " Hola, ¿hola?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.0,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

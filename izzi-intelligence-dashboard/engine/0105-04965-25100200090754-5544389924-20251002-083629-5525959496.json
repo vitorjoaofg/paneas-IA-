@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200090754-5544389924-20251002-083629-5525959496.WAV",
+  "file_name": "0105-04965-25100200090754-5544389924-20251002-083629-5525959496.WAV",
+  "base_id": "0105-04965-25100200090754-5544389924-20251002-083629-5525959496",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, ¿habla de contrataciones y sin qué le puedo apoyar? No sé, díganle, mire, ya les he dicho que no deseo el servicio porque ya tengo. Ah, ok, muy bien, de acuerdo. Entonces tenemos el comentario de que ya le había llegado esta información. Gracias. No, hay que...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 2.42,
+      "end": 10.8,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.8,
+      "end": 15.44,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.44,
+      "end": 17.2,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 18.2,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.2,
+      "end": 20.48,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.48,
+      "end": 25.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.44,
+      "end": 27.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.0,
+      "end": 39.41,
+      "text": " Buenas tardes, ¿habla de contrataciones y sin qué le puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.61,
+      "end": 46.18,
+      "text": " No sé, díganle, mire, ya les he dicho que no deseo el servicio porque ya tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.18,
+      "end": 47.38,
+      "text": " Ah, ok, muy bien, de acuerdo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.38,
+      "end": 49.98,
+      "text": " Entonces tenemos el comentario de que ya le había llegado esta información.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.98,
+      "end": 50.58,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 50.58,
+      "end": 51.58,
+      "text": " No, hay que...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.936,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

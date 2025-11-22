@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600637254-3336764829-20251006-151728-04896.WAV",
+  "file_name": "0105-04999-25100600637254-3336764829-20251006-151728-04896.WAV",
+  "base_id": "0105-04999-25100600637254-3336764829-20251006-151728-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Contratación, Easy. La tendría Edgar Torres. ¿Con quién tengo el gusto? Buenas tardes. Tengo una llamada perdida. ¿Qué pasaría? Ok. Se le están ofreciendo lo que son nuestros servicios de Internet, televisión y telefonía para el hogar. Se le intenta mejorar lo que es el costo o la calidad del servicio que usted actualmente maneja. No sé si ya cuente cuál es nuestro servicio en su domicilio.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 19.4,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.4,
+      "end": 26.66,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.0,
+      "end": 36.0,
+      "text": " Contratación, Easy. La tendría Edgar Torres. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.0,
+      "end": 42.91,
+      "text": " Buenas tardes. Tengo una llamada perdida. ¿Qué pasaría?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.91,
+      "end": 47.91,
+      "text": " Ok. Se le están ofreciendo lo que son nuestros servicios de Internet, televisión y telefonía para el hogar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.91,
+      "end": 55.9,
+      "text": " Se le intenta mejorar lo que es el costo o la calidad del servicio que usted actualmente maneja.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.9,
+      "end": 58.9,
+      "text": " No sé si ya cuente cuál es nuestro servicio en su domicilio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

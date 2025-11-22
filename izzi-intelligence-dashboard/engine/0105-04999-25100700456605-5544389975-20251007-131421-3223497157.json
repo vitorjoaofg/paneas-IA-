@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100700456605-5544389975-20251007-131421-3223497157.WAV",
+  "file_name": "0105-04999-25100700456605-5544389975-20251007-131421-3223497157.WAV",
+  "base_id": "0105-04999-25100700456605-5544389975-20251007-131421-3223497157",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la... Espera un momento, por favor. ¿Y qué lo dijeron? ¿Qué pedo con este mato? ¿Lo grabamos o qué? Y él dije, aguanten, aguanten, no, es su hermano. Dije, así nomás tiene tiempo que no se ven y pues así se llevan ellos, me dijo, pero es su hermano, no, no, no, todo bien, todo bien. Ya le hubiera grabado yo desde cuándo, dijo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 25.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.0,
+      "end": 27.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.0,
+      "end": 38.93,
+      "text": " ¿Y qué lo dijeron? ¿Qué pedo con este mato? ¿Lo grabamos o qué? Y él dije, aguanten, aguanten, no, es su hermano.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.93,
+      "end": 45.93,
+      "text": " Dije, así nomás tiene tiempo que no se ven y pues así se llevan ellos, me dijo, pero es su hermano, no, no, no, todo bien, todo bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.93,
+      "end": 48.93,
+      "text": " Ya le hubiera grabado yo desde cuándo, dijo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 49.032,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

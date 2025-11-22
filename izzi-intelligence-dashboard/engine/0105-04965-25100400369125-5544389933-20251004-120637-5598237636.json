@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400369125-5544389933-20251004-120637-5598237636.WAV",
+  "file_name": "0105-04965-25100400369125-5544389933-20251004-120637-5598237636.WAV",
+  "base_id": "0105-04965-25100400369125-5544389933-20251004-120637-5598237636",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Sí. Espera un momento, por favor. Buenos días. Ha hablado que te la mate de la compañía de Easy. ¿Con qué tengo el gusto? Este, con Rosa. Rosa, mire, el motivo de esta llamada es para hacerle usted por primera vez, estamos activando chips para sus equipos celulares, para que no maneje recargas y mantenga una renta mensual vista con nosotros. ¿Usted maneja algún tipo de recarga en su equipo celulares para hacerle mes costos?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.18,
+      "end": 45.36,
+      "text": " para no. Sí. Espera un momento, por favor. Buenos días. Ha hablado que te la mate de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.36,
+      "end": 53.91,
+      "text": " compañía de Easy. ¿Con qué tengo el gusto? Este, con Rosa. Rosa, mire, el motivo de esta",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.91,
+      "end": 57.87,
+      "text": " llamada es para hacerle usted por primera vez, estamos activando chips",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.87,
+      "end": 62.17,
+      "text": " para sus equipos celulares, para que no maneje recargas y mantenga una",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.17,
+      "end": 66.0,
+      "text": " renta mensual vista con nosotros. ¿Usted maneja algún tipo de recarga en su",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.0,
+      "end": 69.76,
+      "text": " equipo celulares para hacerle mes costos?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

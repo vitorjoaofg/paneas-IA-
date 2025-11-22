@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100329253-5544389910-20251001-131410-5550871717.WAV",
+  "file_name": "0105-04965-25100100329253-5544389910-20251001-131410-5550871717.WAV",
+  "base_id": "0105-04965-25100100329253-5544389910-20251001-131410-5550871717",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¿Qué hacemos con tu llamado? Espera un momento, por favor. Ahorita me comunico. ¿Sabes qué, Rosy? Me da cosa que... No, porque si sobra, lo recalentamos, ¿no? La sopa, o sea, con la verdura es que esto es tan grande. Con 1, ¿da? Sí, 2, 2, ¿no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " ¿Qué hacemos con tu llamado?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.0,
+      "end": 26.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.8,
+      "end": 28.8,
+      "text": " Ahorita me comunico.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.8,
+      "end": 48.44,
+      "text": " ¿Sabes qué, Rosy? Me da cosa que...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.44,
+      "end": 51.44,
+      "text": " No, porque si sobra, lo recalentamos, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.44,
+      "end": 55.44,
+      "text": " La sopa, o sea, con la verdura es que esto es tan grande.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.98,
+      "end": 58.56,
+      "text": " Con 1, ¿da?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.56,
+      "end": 60.78,
+      "text": " Sí, 2, 2, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.236,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

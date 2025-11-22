@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200749586-5544389989-20251002-171513-5522362541.WAV",
+  "file_name": "0105-04965-25100200749586-5544389989-20251002-171513-5522362541.WAV",
+  "base_id": "0105-04965-25100200749586-5544389989-20251002-171513-5522362541",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, bikini y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de Promociones de Easy. ¿Con quién tengo el gusto? Bueno, bueno, bueno, bueno, bueno, bueno, bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.12,
+      "text": " entretenimiento con 200 canales, bikini y eventos deportivos exclusivos por solo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.12,
+      "end": 17.72,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.72,
+      "end": 26.09,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse uno para sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.09,
+      "end": 29.08,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.08,
+      "end": 37.89,
+      "text": " Hola, ¿qué tal? Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.89,
+      "end": 41.29,
+      "text": " Promociones de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.29,
+      "end": 71.21,
+      "text": " Bueno, bueno, bueno, bueno, bueno, bueno, bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 89.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

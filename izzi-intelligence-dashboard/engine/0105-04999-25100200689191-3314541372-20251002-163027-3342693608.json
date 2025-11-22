@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100200689191-3314541372-20251002-163027-3342693608.WAV",
+  "file_name": "0105-04999-25100200689191-3314541372-20251002-163027-3342693608.WAV",
+  "base_id": "0105-04999-25100200689191-3314541372-20251002-163027-3342693608",
+  "transcription": "Hola, ¿te gustaría navegar en mi teléfono en este momento? Si hay algo que quiera decir, por favor, háganmelo saber y lo grabaré y le transmitiré el exámen. Por solo $350 pesos el primer mes, no lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Gracias por la oferta. ¿Le gustaría dejar un mensaje para jefe sobre esto? Espera un momento, por favor. Jefe no está disponible para responder ahora. ¿Desea dejar un mensaje para él? Claro, tomaré nota. Hola, ¿qué tal? Buen día. ¿Con quién tengo el gusto? Hola, soy asistente, el asistente de jefe. ¿En qué puedo ayudarle hoy? ¿Hay algo específico que le gustaría comunicarle a jefe? Si necesita algo más, por favor, hágamelo saber. Si no hay nada más, colgaré ahora.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Hola, ¿te gustaría navegar en mi teléfono en este momento?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.0,
+      "end": 10.0,
+      "text": " Si hay algo que quiera decir, por favor, háganmelo saber y lo grabaré y le transmitiré el exámen.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 17.0,
+      "text": " Por solo $350 pesos el primer mes, no lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.0,
+      "end": 26.0,
+      "text": " Gracias por la oferta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.06,
+      "end": 29.06,
+      "text": " ¿Le gustaría dejar un mensaje para jefe sobre esto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.06,
+      "end": 30.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.06,
+      "end": 33.13,
+      "text": " Jefe no está disponible para responder ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.13,
+      "end": 35.13,
+      "text": " ¿Desea dejar un mensaje para él?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.13,
+      "end": 38.29,
+      "text": " Claro, tomaré nota.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.64,
+      "end": 45.64,
+      "text": " Hola, ¿qué tal? Buen día. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.64,
+      "end": 54.87,
+      "text": " Hola, soy asistente, el asistente de jefe. ¿En qué puedo ayudarle hoy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.87,
+      "end": 60.66,
+      "text": " ¿Hay algo específico que le gustaría comunicarle a jefe?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 60.66,
+      "end": 85.03,
+      "text": " Si necesita algo más, por favor, hágamelo saber. Si no hay nada más, colgaré ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.996,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

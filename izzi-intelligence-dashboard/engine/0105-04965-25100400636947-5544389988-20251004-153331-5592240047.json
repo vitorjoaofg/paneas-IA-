@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400636947-5544389988-20251004-153331-5592240047.WAV",
+  "file_name": "0105-04965-25100400636947-5544389988-20251004-153331-5592240047.WAV",
+  "base_id": "0105-04965-25100400636947-5544389988-20251004-153331-5592240047",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¿Qué le puedo ayudar? Joven, estoy marcando mi domicilio y yo no les he proporcionado mi número. Quiero que por favor me dejen de llamar, ¿cómo le puedo hacer? Ok, pues la idea no es molestarlo, es que tengo una mejor oferta para el servicio de internet en la casa. Veo que no es la primera llamada que recibe, pero en todo caso, ya le comentaron que lo tenemos desde 389 para su domicilio. No, joven, no me interesa, no quiero estar recibiendo llamadas de ustedes, por favor. Muy bien, voy a pasar el comentario para que puedan comentar eso. De cualquier manera, le gustaría que lo revisemos a fondo, seguramente le podemos dar una mejor oferta. Digo, ya estoy dejando el comentario para que no le vuelvan a hacer la llamada, pero ya que ando aquí, en todo caso, ¿cuánto le van a estar cobrando?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.63,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.63,
+      "end": 165.16,
+      "text": " por favor. ¿Qué le puedo ayudar? Joven, estoy marcando mi domicilio y yo no les he",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 165.16,
+      "end": 170.56,
+      "text": " proporcionado mi número. Quiero que por favor me dejen de llamar, ¿cómo le puedo hacer?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 170.56,
+      "end": 176.04,
+      "text": " Ok, pues la idea no es molestarlo, es que tengo una mejor oferta para el servicio de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 176.04,
+      "end": 180.16,
+      "text": " internet en la casa. Veo que no es la primera llamada que recibe, pero en todo caso, ya",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 180.16,
+      "end": 192.07,
+      "text": " le comentaron que lo tenemos desde 389 para su domicilio. No, joven, no me interesa,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 192.07,
+      "end": 200.39,
+      "text": " no quiero estar recibiendo llamadas de ustedes, por favor. Muy bien, voy a pasar el comentario",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 200.39,
+      "end": 204.8,
+      "text": " para que puedan comentar eso. De cualquier manera, le gustaría que lo revisemos a",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 204.8,
+      "end": 208.64,
+      "text": " fondo, seguramente le podemos dar una mejor oferta. Digo, ya estoy dejando el comentario",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 208.64,
+      "end": 213.24,
+      "text": " para que no le vuelvan a hacer la llamada, pero ya que ando aquí, en todo caso, ¿cuánto",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 213.24,
+      "end": 213.92,
+      "text": " le van a estar cobrando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 214.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

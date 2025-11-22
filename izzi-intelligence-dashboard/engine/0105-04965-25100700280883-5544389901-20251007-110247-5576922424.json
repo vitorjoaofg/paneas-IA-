@@ -1,0 +1,465 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700280883-5544389901-20251007-110247-5576922424.WAV",
+  "file_name": "0105-04965-25100700280883-5544389901-20251007-110247-5576922424.WAV",
+  "base_id": "0105-04965-25100700280883-5544389901-20251007-110247-5576922424",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Ya viene Claudia? ¿Ya viene Claudia? A ver, a ver, porque... Ya ven, sí, ya viene. Bueno, buenos días, mi nombre es José Manuel, ¿con quién tengo el gusto? Señor Ricardo Medina. Señor Ricardo, hola, con el señor Ricardo, ¿cómo está? Bien, bien. Está comunicando ahí en Easy, con Tratuación. ¿Usted ya cuenta con un plan con nosotros o tiene con otra compañía? Tengo con... ¿cómo se llama? Total Play, Total Play o Mega Crab, ¿verdad? Total Play. ¿Tiene completo cable, teléfono e Internet? Sí. Nosotros tenemos ahorita lo que nosotros plan es con plan de ahorro, para que pueda tener lo que sean seis necesitos ahí pagando menos. ¿De cuánto es el Internet que maneja ahí con Total Play? Deja, ahí viene mi hija, porque ella es la que paga. Permíteme tanto, ¿sí? Sí, claro. Hola, buenos días. Comentaba, mi nombre es José Manuel, usted está comunicando aquí en Tratuaciones Easy. Me preguntaban que tienen a Total Play, ¿verdad? Así es. ¿Tienen con contrato o ya pueden modificarlo como ustedes quieran? No, todavía, ¿ves lo que le expliqué ahorita? Que con ellos es un año... Sí. ...de contrato fijo y todavía no se cumple el año. Ah, sí, no, pues tendré que... Yo te digo por la penalización, porque nosotros ahí manejamos penalización. Sí, manejamos penalización. ¿Les puedo hacer la llamada que será en enero? ¿Sí? Sí. Sí, para eso le regreso la llamada. Gracias. Gracias. Que tengas una buena tarde, hasta luego. Igualmente, hasta luego. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.28,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.28,
+      "end": 13.28,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.28,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.48,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.48,
+      "end": 25.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.94,
+      "end": 28.95,
+      "text": " ¿Ya viene Claudia?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.95,
+      "end": 31.56,
+      "text": " ¿Ya viene Claudia?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.56,
+      "end": 34.56,
+      "text": " A ver, a ver, porque...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.84,
+      "end": 78.47,
+      "text": " Ya ven, sí, ya viene.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 78.47,
+      "end": 81.47,
+      "text": " Bueno, buenos días, mi nombre es José Manuel, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 81.47,
+      "end": 83.66,
+      "text": " Señor Ricardo Medina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 83.66,
+      "end": 85.66,
+      "text": " Señor Ricardo, hola, con el señor Ricardo, ¿cómo está?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 85.66,
+      "end": 86.66,
+      "text": " Bien, bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 86.66,
+      "end": 89.66,
+      "text": " Está comunicando ahí en Easy, con Tratuación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 89.66,
+      "end": 92.66,
+      "text": " ¿Usted ya cuenta con un plan con nosotros o tiene con otra compañía?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 92.66,
+      "end": 95.66,
+      "text": " Tengo con... ¿cómo se llama?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 95.66,
+      "end": 98.66,
+      "text": " Total Play, Total Play o Mega Crab, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 98.66,
+      "end": 100.66,
+      "text": " Total Play.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 100.66,
+      "end": 102.66,
+      "text": " ¿Tiene completo cable, teléfono e Internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 102.66,
+      "end": 105.66,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 105.74,
+      "end": 108.74,
+      "text": " Nosotros tenemos ahorita lo que nosotros plan es con plan de ahorro,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 108.74,
+      "end": 112.99,
+      "text": " para que pueda tener lo que sean seis necesitos ahí pagando menos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 112.99,
+      "end": 115.99,
+      "text": " ¿De cuánto es el Internet que maneja ahí con Total Play?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 115.99,
+      "end": 118.99,
+      "text": " Deja, ahí viene mi hija, porque ella es la que paga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 118.99,
+      "end": 120.99,
+      "text": " Permíteme tanto, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 120.99,
+      "end": 279.95,
+      "text": " Sí, claro.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 364.74,
+      "end": 365.74,
+      "text": " Hola, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 365.74,
+      "end": 368.63,
+      "text": " Comentaba, mi nombre es José Manuel,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 368.63,
+      "end": 371.63,
+      "text": " usted está comunicando aquí en Tratuaciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 371.71,
+      "end": 374.71,
+      "text": " Me preguntaban que tienen a Total Play, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 374.71,
+      "end": 376.58,
+      "text": " Así es.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 376.58,
+      "end": 379.58,
+      "text": " ¿Tienen con contrato o ya pueden modificarlo como ustedes quieran?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 379.58,
+      "end": 382.77,
+      "text": " No, todavía, ¿ves lo que le expliqué ahorita?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 382.77,
+      "end": 385.77,
+      "text": " Que con ellos es un año...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 385.77,
+      "end": 386.77,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 386.77,
+      "end": 389.77,
+      "text": " ...de contrato fijo y todavía no se cumple el año.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 389.77,
+      "end": 391.77,
+      "text": " Ah, sí, no, pues tendré que...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 391.77,
+      "end": 393.77,
+      "text": " Yo te digo por la penalización,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 393.77,
+      "end": 395.77,
+      "text": " porque nosotros ahí manejamos penalización.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 395.77,
+      "end": 397.77,
+      "text": " Sí, manejamos penalización.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 397.77,
+      "end": 400.8,
+      "text": " ¿Les puedo hacer la llamada que será en enero?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 400.88,
+      "end": 401.91,
+      "text": " ¿Sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 401.91,
+      "end": 403.91,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 403.91,
+      "end": 405.91,
+      "text": " Sí, para eso le regreso la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 405.91,
+      "end": 406.91,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 406.91,
+      "end": 407.91,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 407.91,
+      "end": 409.91,
+      "text": " Que tengas una buena tarde, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 409.91,
+      "end": 411.91,
+      "text": " Igualmente, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 411.91,
+      "end": 413.91,
+      "text": " Bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 411.624,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

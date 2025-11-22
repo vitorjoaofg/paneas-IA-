@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600246580-3314541352-20251006-102533-3316462260.WAV",
+  "file_name": "0105-04965-25100600246580-3314541352-20251006-102533-3316462260.WAV",
+  "base_id": "0105-04965-25100600246580-3314541352-20251006-102533-3316462260",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buenos días. Mi nombre es José Manuel. ¿Con quién tenés el gusto? Hola, buenos días. Mira, José Manuel, yo no sé cómo obtuvieron mi número, pero estoy enfadada de estas llamadas. Si yo me quisiera cambiar, yo buscaría la compañía yo misma. No me quiero cambiar y no quiero que me vuelvan a marcar, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 23.84,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.84,
+      "end": 27.31,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.87,
+      "end": 38.59,
+      "text": " Hola, buenos días. Mi nombre es José Manuel. ¿Con quién tenés el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.59,
+      "end": 43.15,
+      "text": " Hola, buenos días. Mira, José Manuel, yo no sé cómo obtuvieron mi número,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.15,
+      "end": 47.39,
+      "text": " pero estoy enfadada de estas llamadas. Si yo me quisiera cambiar, yo buscaría la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.39,
+      "end": 51.07,
+      "text": " compañía yo misma. No me quiero cambiar y no quiero que me vuelvan a marcar,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.07,
+      "end": 56.11,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

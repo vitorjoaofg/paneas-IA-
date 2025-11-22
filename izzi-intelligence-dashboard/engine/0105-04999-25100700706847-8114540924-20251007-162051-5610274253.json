@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100700706847-8114540924-20251007-162051-5610274253.WAV",
+  "file_name": "0105-04999-25100700706847-8114540924-20251007-162051-5610274253.WAV",
+  "base_id": "0105-04999-25100700706847-8114540924-20251007-162051-5610274253",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Quartz, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Espera un momento, por favor. Buenas tardes, Alex. Me alcancé en ganar la contratación. ¿Es que se ha contratado el día de hoy? Mira, ahorita yo acabo de contratar el Internet la semana pasada. ¿Ya? Sí, tengo Internet en la casa. Ah, ok. Si no, sí. ¿No desea un plan para el teléfono móvil? Mira, ahorita voy manejando. No puedo, este, atenderlo, pero después. ¿Sales? Ok, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Quartz, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.0,
+      "end": 50.73,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 50.73,
+      "end": 55.94,
+      "text": " Buenas tardes, Alex. Me alcancé en ganar la contratación. ¿Es que se ha contratado el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 55.94,
+      "end": 60.94,
+      "text": " Mira, ahorita yo acabo de contratar el Internet la semana pasada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 60.94,
+      "end": 61.94,
+      "text": " ¿Ya?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 61.94,
+      "end": 67.4,
+      "text": " Sí, tengo Internet en la casa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 67.4,
+      "end": 68.4,
+      "text": " Ah, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 68.4,
+      "end": 73.57,
+      "text": " Si no, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 73.57,
+      "end": 75.57,
+      "text": " ¿No desea un plan para el teléfono móvil?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 75.57,
+      "end": 83.52,
+      "text": " Mira, ahorita voy manejando. No puedo, este, atenderlo, pero después. ¿Sales?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 83.52,
+      "end": 85.52,
+      "text": " Ok, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 147.6,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

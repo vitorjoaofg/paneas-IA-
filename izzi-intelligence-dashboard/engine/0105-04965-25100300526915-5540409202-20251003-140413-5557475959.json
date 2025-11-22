@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300526915-5540409202-20251003-140413-5557475959.WAV",
+  "file_name": "0105-04965-25100300526915-5540409202-20251003-140413-5557475959.WAV",
+  "base_id": "0105-04965-25100300526915-5540409202-20251003-140413-5557475959",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Si conoce el número de la extensión, marque la hora. De lo contrario, marque cero y una de nuestras operadoras la atenderá. Un momento por favor. Si conoce el número de la extensión, marque la hora. De lo contrario, marque cero y una de nuestras operadoras la atenderá. Un momento por favor. Si conoce el número de la extensión, marque",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 30.26,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.26,
+      "end": 58.34,
+      "text": " por favor. Si conoce el número de la extensión, marque la hora. De lo contrario, marque cero",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 58.34,
+      "end": 75.86,
+      "text": " y una de nuestras operadoras la atenderá. Un momento por favor. Si conoce el número",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 75.86,
+      "end": 80.74,
+      "text": " de la extensión, marque la hora. De lo contrario, marque cero y una de nuestras",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 80.74,
+      "end": 99.26,
+      "text": " operadoras la atenderá. Un momento por favor. Si conoce el número de la extensión, marque",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.664,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

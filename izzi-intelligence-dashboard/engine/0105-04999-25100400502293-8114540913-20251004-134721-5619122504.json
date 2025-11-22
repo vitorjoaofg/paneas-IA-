@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400502293-8114540913-20251004-134721-5619122504.WAV",
+  "file_name": "0105-04999-25100400502293-8114540913-20251004-134721-5619122504.WAV",
+  "base_id": "0105-04999-25100400502293-8114540913-20251004-134721-5619122504",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, ¿qué tal? Buenos días. Buenos días, ¿son los de Telmex? Hola, hola. ¿Qué tal? Mucho gusto. Abraham Garcia, contrataciones Easy. Dígame, ¿en qué le puedo ayudar? Pensé que eran los de Telmex. No, no, no, pero con todo gusto le podemos ayudar a salir de por allá. Una mejor oferta.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 22.92,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 29.79,
+      "text": " dos para no. Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.79,
+      "end": 40.51,
+      "text": " Hola, ¿qué tal? Buenos días. Buenos días, ¿son los de Telmex? Hola, hola. ¿Qué tal?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.51,
+      "end": 45.16,
+      "text": " Mucho gusto. Abraham Garcia, contrataciones Easy. Dígame, ¿en qué le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.16,
+      "end": 49.0,
+      "text": " Pensé que eran los de Telmex. No, no, no, pero con todo gusto le podemos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.0,
+      "end": 53.2,
+      "text": " ayudar a salir de por allá. Una mejor oferta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.3,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400531761-5540409204-20251004-141037-5597290949.WAV",
+  "file_name": "0105-04965-25100400531761-5540409204-20251004-141037-5597290949.WAV",
+  "base_id": "0105-04965-25100400531761-5540409204-20251004-141037-5597290949",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Sí, sí, una encabezada. Bien, no entendí tu respuesta. ¿Te comunico con un asesor? 1 para hablar con un asesor. O 2. Espera un momento, por favor. Ok. Hola, buen día. Le habla Edwin Monfield, de parte de su servicio de Easy, para darle a conocer la telefonía móvil por 94 pesos al mes. Buen día. Buen día. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 18.08,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.08,
+      "end": 25.64,
+      "text": " Sí, sí, una encabezada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.64,
+      "end": 30.4,
+      "text": " Bien, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.48,
+      "end": 35.4,
+      "text": " 1 para hablar con un asesor. O 2. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.4,
+      "end": 36.4,
+      "text": " Ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.18,
+      "end": 45.62,
+      "text": " Hola, buen día. Le habla Edwin Monfield, de parte de su servicio de Easy,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.62,
+      "end": 49.86,
+      "text": " para darle a conocer la telefonía móvil por 94 pesos al mes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.86,
+      "end": 50.86,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.54,
+      "end": 52.54,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.44,
+      "end": 56.44,
+      "text": " Adiós.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

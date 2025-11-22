@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100391127-5540409214-20251001-140814-5517084783.WAV",
+  "file_name": "0105-04965-25100100391127-5540409214-20251001-140814-5517084783.WAV",
+  "base_id": "0105-04965-25100100391127-5540409214-20251001-140814-5517084783",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melaniza Ucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? ¡Ay no! Disculpe. Fueron ustedes los que me marcaron. Ah, sí. Mira, estamos hablando de la compañía Easy. Era para comentarle que podía tener beneficios de telefonía internet y cables. ¿Ya cuentan con esos servicios de Easy? Eh, no. Yo tengo Telmex y no pensaba cambiarme. Le agradezco mucho. Ah, ok. No se preocupe. Que tenga bonito día. Hasta pronto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 5.57,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.57,
+      "end": 12.37,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.37,
+      "end": 18.85,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.85,
+      "end": 27.09,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.09,
+      "end": 33.57,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.57,
+      "end": 39.66,
+      "text": " asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.66,
+      "end": 49.4,
+      "text": " ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melaniza Ucedo. Nos comunicamos de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.4,
+      "end": 51.52,
+      "text": " compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.52,
+      "end": 55.61,
+      "text": " ¡Ay no! Disculpe. Fueron ustedes los que me marcaron.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.61,
+      "end": 59.74,
+      "text": " Ah, sí. Mira, estamos hablando de la compañía Easy. Era para comentarle que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.74,
+      "end": 65.38,
+      "text": " podía tener beneficios de telefonía internet y cables. ¿Ya cuentan con esos servicios de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.38,
+      "end": 70.7,
+      "text": " Eh, no. Yo tengo Telmex y no pensaba cambiarme. Le agradezco mucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.7,
+      "end": 73.86,
+      "text": " Ah, ok. No se preocupe. Que tenga bonito día. Hasta pronto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.804,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

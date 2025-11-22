@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300105164-5544389966-20251003-083920-5596985674.WAV",
+  "file_name": "0105-04965-25100300105164-5544389966-20251003-083920-5596985674.WAV",
+  "base_id": "0105-04965-25100300105164-5544389966-20251003-083920-5596985674",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible, ¿te interesa? Un asesor te está esperando, por favor, hable o pulse uno para sí, espera un momento por favor. Hola, hola, muy buenos días, sí, buenos días, me presento, mi nombre es Daniel, estoy comunicando por parte de la compañía de Easy, con quien tengo el gusto, disculpe. Oye, te pido un favor que diles mi número de aquí porque pues me marcan a cada rato. Claro, sin problema. Ok, gracias. Hola.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.27,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.27,
+      "end": 12.91,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.91,
+      "end": 15.95,
+      "text": " Con Easy es posible, ¿te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.95,
+      "end": 22.03,
+      "text": " Un asesor te está esperando, por favor, hable o pulse uno para sí, espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.03,
+      "end": 23.03,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.03,
+      "end": 37.59,
+      "text": " Hola, hola, muy buenos días, sí, buenos días, me presento, mi nombre es Daniel,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.59,
+      "end": 41.51,
+      "text": " estoy comunicando por parte de la compañía de Easy, con quien tengo el gusto, disculpe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.51,
+      "end": 47.11,
+      "text": " Oye, te pido un favor que diles mi número de aquí porque pues me marcan a cada rato.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.11,
+      "end": 48.11,
+      "text": " Claro, sin problema.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.11,
+      "end": 49.11,
+      "text": " Ok, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.11,
+      "end": 50.11,
+      "text": " Hola.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 53.46,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

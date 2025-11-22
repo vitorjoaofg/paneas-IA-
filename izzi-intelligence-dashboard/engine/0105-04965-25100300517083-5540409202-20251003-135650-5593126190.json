@@ -1,0 +1,276 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300517083-5540409202-20251003-135650-5593126190.WAV",
+  "file_name": "0105-04965-25100300517083-5540409202-20251003-135650-5593126190.WAV",
+  "base_id": "0105-04965-25100300517083-5540409202-20251003-135650-5593126190",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Mi nombre es Melanie Saucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Con la señora Luisa Guerrero. Hola, muchas gracias, señorita. El motivo es que amadas comunicarle que puede tener beneficio su telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy? Mira, casi normalmente me hablan de una a dos veces por día. Yo tengo que usar el Play. Lamentablemente, aquí donde yo vivo, todavía no llega Easy. Ah, ok. Una disculpa, señorita. Si yo quisiera, pues no lo puedo contratar, pero sí me gustaría que me disminuyeran las llamadas porque son dos veces, tres veces al día. Ah, ok. No se preocupe. Una disculpa, señorita, que sea así. En dado caso, aquí lo voy a reportar para que ya se debe bajar definitivamente. ¿Está bien? Sí, de favor, porque en esta zona no la hay. A mí me gustaría cambiarme a Easy. Pero yo ya seté y todavía no hay... ¿A la cobertura? A la cobertura, exactamente. Sí, no se preocupen ahí. Así que tenga un bonito día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 22.18,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.18,
+      "end": 24.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.18,
+      "end": 32.37,
+      "text": " Hola, ¿qué tal? Buenas tardes. Mi nombre es Melanie Saucedo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.37,
+      "end": 35.37,
+      "text": " Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.37,
+      "end": 37.37,
+      "text": " Con la señora Luisa Guerrero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.37,
+      "end": 39.37,
+      "text": " Hola, muchas gracias, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.37,
+      "end": 43.37,
+      "text": " El motivo es que amadas comunicarle que puede tener beneficio su telefonía internet y cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.37,
+      "end": 46.37,
+      "text": " ¿Ya cuenta con estos servicios de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.37,
+      "end": 51.37,
+      "text": " Mira, casi normalmente me hablan de una a dos veces por día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.37,
+      "end": 53.37,
+      "text": " Yo tengo que usar el Play.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.37,
+      "end": 57.37,
+      "text": " Lamentablemente, aquí donde yo vivo, todavía no llega Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 57.37,
+      "end": 60.56,
+      "text": " Ah, ok. Una disculpa, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.56,
+      "end": 63.56,
+      "text": " Si yo quisiera, pues no lo puedo contratar,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 63.56,
+      "end": 68.56,
+      "text": " pero sí me gustaría que me disminuyeran las llamadas porque son dos veces, tres veces al día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 68.56,
+      "end": 71.56,
+      "text": " Ah, ok. No se preocupe. Una disculpa, señorita, que sea así.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 71.56,
+      "end": 75.56,
+      "text": " En dado caso, aquí lo voy a reportar para que ya se debe bajar definitivamente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 75.56,
+      "end": 76.56,
+      "text": " ¿Está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 76.56,
+      "end": 78.56,
+      "text": " Sí, de favor, porque en esta zona no la hay.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 78.56,
+      "end": 80.56,
+      "text": " A mí me gustaría cambiarme a Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 80.56,
+      "end": 83.78,
+      "text": " Pero yo ya seté y todavía no hay...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 83.78,
+      "end": 84.78,
+      "text": " ¿A la cobertura?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 84.78,
+      "end": 86.78,
+      "text": " A la cobertura, exactamente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 86.78,
+      "end": 88.78,
+      "text": " Sí, no se preocupen ahí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 88.78,
+      "end": 89.78,
+      "text": " Así que tenga un bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 89.78,
+      "end": 91.88,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 91.98,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

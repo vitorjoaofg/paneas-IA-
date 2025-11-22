@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300347568-5540409210-20251003-114237-5556391076.WAV",
+  "file_name": "0105-04965-25100300347568-5540409210-20251003-114237-5556391076.WAV",
+  "base_id": "0105-04965-25100300347568-5540409210-20251003-114237-5556391076",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¿Y cuándo me lo mandarán? Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar. Espera un momento, por favor. ¿Y tal? Buenos días. Buenos días. Hola, ¿tengo el visto con Benito, el señor Benito? Yo soy María Rosara del Barullo y vivo aquí en Esperanza. ¿Cuánto cuesta la chervés? Mi nombre es José Lara, mucho gusto de Easy. En Internet lo estamos... No, no, yo quiero Telmex, yo quiero Easy. ¿Cómo, perdón? Yo quiero Telmex, porque tengo el Telmex. ¿Usted tiene Telmex? Sí. Muy bien, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 21.22,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.22,
+      "end": 23.22,
+      "text": " ¿Y cuándo me lo mandarán?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.22,
+      "end": 33.96,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.72,
+      "end": 46.72,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.72,
+      "end": 55.35,
+      "text": " ¿Y tal? Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.35,
+      "end": 56.35,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.35,
+      "end": 60.74,
+      "text": " Hola, ¿tengo el visto con Benito, el señor Benito?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.74,
+      "end": 67.74,
+      "text": " Yo soy María Rosara del Barullo y vivo aquí en Esperanza. ¿Cuánto cuesta la chervés?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.74,
+      "end": 71.93,
+      "text": " Mi nombre es José Lara, mucho gusto de Easy. En Internet lo estamos...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.93,
+      "end": 73.93,
+      "text": " No, no, yo quiero Telmex, yo quiero Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.93,
+      "end": 76.34,
+      "text": " ¿Cómo, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.34,
+      "end": 78.34,
+      "text": " Yo quiero Telmex, porque tengo el Telmex.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.34,
+      "end": 80.57,
+      "text": " ¿Usted tiene Telmex?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 80.57,
+      "end": 81.57,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 81.57,
+      "end": 83.57,
+      "text": " Muy bien, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 174.816,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

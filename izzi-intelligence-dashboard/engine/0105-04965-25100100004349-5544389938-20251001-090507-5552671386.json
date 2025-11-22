@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100004349-5544389938-20251001-090507-5552671386.WAV",
+  "file_name": "0105-04965-25100100004349-5544389938-20251001-090507-5552671386.WAV",
+  "base_id": "0105-04965-25100100004349-5544389938-20251001-090507-5552671386",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Sí, buenos días. La tienda de Julio Vargas dice con quien tengo el gusto. Sí, buenos días. La tienda de Julio Vargas dice con quien tengo el gusto. Con motivos de calidad voy a finalizar la llamada ya que el entrenador responde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.46,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.46,
+      "end": 27.46,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.27,
+      "end": 37.07,
+      "text": " Sí, buenos días. La tienda de Julio Vargas dice con quien tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.07,
+      "end": 45.78,
+      "text": " Sí, buenos días. La tienda de Julio Vargas dice con quien tengo el gusto. Con motivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.78,
+      "end": 48.26,
+      "text": " de calidad voy a finalizar la llamada ya que el entrenador responde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

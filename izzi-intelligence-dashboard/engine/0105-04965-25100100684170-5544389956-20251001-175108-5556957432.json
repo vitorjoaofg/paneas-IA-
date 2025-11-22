@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100684170-5544389956-20251001-175108-5556957432.WAV",
+  "file_name": "0105-04965-25100100684170-5544389956-20251001-175108-5556957432.WAV",
+  "base_id": "0105-04965-25100100684170-5544389956-20251001-175108-5556957432",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Cámbiate a Easy. Estamos en Easy, ¿no? Ya estamos en Easy. Ah, ok, muy bien. Entonces, agregó el comentario para que actualicen la información, ¿muy bien? Sí, para que ya no nos llame a nosotros, ya tenemos con ustedes buena experiencia. Entonces, pues ya registre que ya estamos aquí, ¿eh? Claro que sí. Entonces, anexa el comentario. Igual le comento por si le iría a interesar. Ya también manejamos el servicio de teléfono móvil. Tenemos paquetes de 194 pesos al mes conservando su mismo número. No sé si le hayan comentado. Bueno, lo vamos a pensar. Lo vamos a pensar. Ahorita, por lo pronto, así dejamos todo. Claro que sí. Le agradezco de igual manera. ¿Qué pasa? Buen día. Igualmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 27.18,
+      "text": " te está esperando. Cámbiate a Easy. Estamos en Easy, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.18,
+      "end": 42.0,
+      "text": " Ya estamos en Easy. Ah, ok, muy bien. Entonces, agregó el comentario",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.0,
+      "end": 46.24,
+      "text": " para que actualicen la información, ¿muy bien? Sí, para que ya no nos llame a nosotros,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.24,
+      "end": 52.24,
+      "text": " ya tenemos con ustedes buena experiencia. Entonces, pues ya registre que ya estamos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.24,
+      "end": 55.6,
+      "text": " aquí, ¿eh? Claro que sí. Entonces, anexa el comentario.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.6,
+      "end": 59.2,
+      "text": " Igual le comento por si le iría a interesar. Ya también manejamos el servicio de teléfono",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.2,
+      "end": 64.08,
+      "text": " móvil. Tenemos paquetes de 194 pesos al mes conservando su mismo número. No sé",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.08,
+      "end": 69.43,
+      "text": " si le hayan comentado. Bueno, lo vamos a pensar. Lo vamos a pensar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.43,
+      "end": 75.06,
+      "text": " Ahorita, por lo pronto, así dejamos todo. Claro que sí. Le agradezco de igual manera.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.06,
+      "end": 77.22,
+      "text": " ¿Qué pasa? Buen día. Igualmente. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.252,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

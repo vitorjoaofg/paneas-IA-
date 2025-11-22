@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200236940-5544389927-20251002-103025-5593865872.WAV",
+  "file_name": "0105-04965-25100200236940-5544389927-20251002-103025-5593865872.WAV",
+  "base_id": "0105-04965-25100200236940-5544389927-20251002-103025-5593865872",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenos días, mi nombre es José Manuel. ¿Con quién tengo el gusto? Con Cristina Perez. Cristina, escucho algunas promociones que tenemos de Easy. ¿Ya cuentas tú con Easy o tiene otra compañía? Aquí tengo Total Play. Total Play. ¿Tiene otros servicios? Sí cuento con Easy pero en unos locales. Pero yo había pedido Easy aquí pero decían que aquí no entraban todavía. Ah, no hay cobertura todavía. Bien, vamos a validarlo, ¿verdad? ¿Cuál es el código postal que tiene y Cristina para igual este hacer? 15270. ¿Cuál? 15270. ¿Te puedo rezar a llamar este número con la intervención 5872, Cristina? Sí, claro. Igual sí tenemos, qué bueno, si no te vamos a resolver más para confirmarte. Gracias. Que tengas buen día, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 35.04,
+      "text": " para no. Espera un momento por favor. Hola, ¿qué tal? Buenos días, mi nombre es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.04,
+      "end": 41.28,
+      "text": " José Manuel. ¿Con quién tengo el gusto? Con Cristina Perez. Cristina, escucho algunas",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.28,
+      "end": 44.16,
+      "text": " promociones que tenemos de Easy. ¿Ya cuentas tú con Easy o tiene otra",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.16,
+      "end": 53.2,
+      "text": " compañía? Aquí tengo Total Play. Total Play. ¿Tiene otros servicios? Sí",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.2,
+      "end": 58.24,
+      "text": " cuento con Easy pero en unos locales. Pero yo había pedido Easy aquí pero",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.24,
+      "end": 64.55,
+      "text": " decían que aquí no entraban todavía. Ah, no hay cobertura todavía. Bien, vamos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.59,
+      "end": 69.31,
+      "text": " a validarlo, ¿verdad? ¿Cuál es el código postal que tiene y Cristina para igual",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.31,
+      "end": 78.45,
+      "text": " este hacer? 15270. ¿Cuál? 15270. ¿Te puedo rezar a llamar este número con la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 78.45,
+      "end": 83.37,
+      "text": " intervención 5872, Cristina? Sí, claro. Igual sí tenemos, qué bueno, si no",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 83.37,
+      "end": 90.61,
+      "text": " te vamos a resolver más para confirmarte. Gracias. Que tengas buen día, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.0,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

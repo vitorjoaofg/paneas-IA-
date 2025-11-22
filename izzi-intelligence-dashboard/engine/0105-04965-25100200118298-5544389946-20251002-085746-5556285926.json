@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200118298-5544389946-20251002-085746-5556285926.WAV",
+  "file_name": "0105-04965-25100200118298-5544389946-20251002-085746-5556285926.WAV",
+  "base_id": "0105-04965-25100200118298-5544389946-20251002-085746-5556285926",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Le hablé con Monfit de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. No sé si ya le comentaron. Una sugerencia se mete. Está hablando a una filial del Grupo Televisa. O sea, que están mandando su publicidad a la misma empresa. Estamos en prepel. Ah, ok. Entonces, para que puedan quitar este número porque llevan varias llamadas. Sí, yo aquí paso el reporte para que los quiten de la base. Que tengan buen día. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 20.8,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.8,
+      "end": 32.82,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 32.82,
+      "end": 42.22,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 42.22,
+      "end": 51.22,
+      "text": " Hola, buen día. Le hablé con Monfit de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. No sé si ya le comentaron.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 52.22,
+      "end": 62.34,
+      "text": " Una sugerencia se mete. Está hablando a una filial del Grupo Televisa. O sea, que están mandando su publicidad a la misma empresa. Estamos en prepel.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 62.34,
+      "end": 63.34,
+      "text": " Ah, ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 63.34,
+      "end": 66.34,
+      "text": " Entonces, para que puedan quitar este número porque llevan varias llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.34,
+      "end": 70.34,
+      "text": " Sí, yo aquí paso el reporte para que los quiten de la base. Que tengan buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.34,
+      "end": 71.34,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.34,
+      "end": 72.34,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

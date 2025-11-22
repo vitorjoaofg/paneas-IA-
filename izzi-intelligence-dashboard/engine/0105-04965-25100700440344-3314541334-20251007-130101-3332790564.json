@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700440344-3314541334-20251007-130101-3332790564.WAV",
+  "file_name": "0105-04965-25100700440344-3314541334-20251007-130101-3332790564.WAV",
+  "base_id": "0105-04965-25100700440344-3314541334-20251007-130101-3332790564",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más se mejora el procedimiento con vizquizio, más Skype World, desde 350 pesos el primer mes, con vizin, es posible, ¿te interesa? Un asesor te está esperando, su llamada se está transcurriendo. Win en representación de Banco Santander, ¿le atienden a Velarcos? ¿Con quién tengo el gusto? Espera un momento, por favor. Buenas tardes, me comunico el servicio vizi, ¿con quién tengo el gusto? Se está comunicando a Win en representación de Banco Santander, ¿con quién quieres hablar, disculpa? Con la persona encargada de servicios tecnológicos, ¿conoce la extensión? No está equivocado, se está comunicando a una agencia de cobrancias. Sí, sí, sucede que usted tiene un teléfono y nosotros proveemos ese servicio, pero no sé si el servicio que usted con el cual se comunica. No sabría decirle. Tenemos una confusión, deseamos que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más se mejora el procedimiento con vizquizio,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 14.4,
+      "text": " más Skype World, desde 350 pesos el primer mes, con vizin, es posible, ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.4,
+      "end": 18.64,
+      "text": " Un asesor te está esperando, su llamada se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 25.67,
+      "text": " Win en representación de Banco Santander, ¿le atienden a Velarcos? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.67,
+      "end": 27.67,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.67,
+      "end": 37.72,
+      "text": " Buenas tardes, me comunico el servicio vizi, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.54,
+      "end": 43.74,
+      "text": " Se está comunicando a Win en representación de Banco Santander, ¿con quién quieres hablar, disculpa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.74,
+      "end": 51.0,
+      "text": " Con la persona encargada de servicios tecnológicos, ¿conoce la extensión?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.0,
+      "end": 55.86,
+      "text": " No está equivocado, se está comunicando a una agencia de cobrancias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.86,
+      "end": 61.46,
+      "text": " Sí, sí, sucede que usted tiene un teléfono y nosotros proveemos ese servicio,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.46,
+      "end": 66.46,
+      "text": " pero no sé si el servicio que usted con el cual se comunica.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.46,
+      "end": 72.1,
+      "text": " No sabría decirle.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 72.1,
+      "end": 76.1,
+      "text": " Tenemos una confusión, deseamos que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.372,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

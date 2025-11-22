@@ -1,0 +1,332 @@
+{
+  "call_id": "0105-04965-25090200482129-5540409214-20250902-125826-5593844903",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.800000190734863,
+      "text": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 7.800000190734863,
+      "end": 13.800000190734863,
+      "text": "VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 13.800000190734863,
+      "end": 16.799999237060547,
+      "text": "¡No lo pienses más y cámbiate a Easy!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.799999237060547,
+      "end": 20.0,
+      "text": "¿Te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 25.0,
+      "end": 27.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 30.0,
+      "end": 39.79999923706055,
+      "text": "...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 40.0,
+      "end": 41.5,
+      "text": "Buenas tardes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 41.5,
+      "end": 43.0,
+      "text": "Buenas tardes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 43.0,
+      "end": 47.79999923706055,
+      "text": "¿Qué tal? Se está comunicando a contrataciones Easy. Mi nombre es Omar Fonseca. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 47.79999923706055,
+      "end": 50.0,
+      "text": "Hola, con Adela en cadena.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 50.0,
+      "end": 53.0,
+      "text": "Mucho gusto. ¿Qué servicio le interesaría contratar?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 54.0,
+      "end": 57.0,
+      "text": "Oye, mira, tengo una duda.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 57.0,
+      "end": 58.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 58.0,
+      "end": 62.0,
+      "text": "Tengo telefonía Total Play, pero me quiero cambiar ahí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 62.0,
+      "end": 67.0,
+      "text": "Sí, yo también en una ocasión tuvimos Easy, pero quiero volver a cambiar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 67.0,
+      "end": 73.0,
+      "text": "Pero, ¿cómo se llama? No sé si haya forma de que me dejen el mismo número.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 75.0,
+      "end": 78.0,
+      "text": "Conservar el número que tiene actualmente con Total Play.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 78.0,
+      "end": 79.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 79.0,
+      "end": 82.0,
+      "text": "Sí, se hace un proceso de portabilidad.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 82.0,
+      "end": 86.0,
+      "text": "A muchos se les hace un descuento de 15 pesos, pero sí, sí pueden mantener su mismo número.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 21,
+      "start": 86.0,
+      "end": 89.0,
+      "text": "Ah, ok. Perfecto. Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 89.0,
+      "end": 96.0,
+      "text": "Y, bueno, ¿qué proceso se tendría que llevar para, ahora sí, como que hacer el cambio y todo eso?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 23,
+      "start": 96.0,
+      "end": 104.0,
+      "text": "Lo primero es revisar la cobertura del domicilio. Si existe la cobertura, pues, el paquete que esté interesada.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 104.0,
+      "end": 105.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 105.0,
+      "end": 110.0,
+      "text": "Lo que nosotros pedimos nada más son dos números de teléfono, una identificación,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 110.0,
+      "end": 114.0,
+      "text": "que sería, pues, en este caso la INE, porque también se requiere la CURP.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 114.0,
+      "end": 120.0,
+      "text": "Y, pues, básicamente es todo lo que se requiere de momento al hacer el proceso de portabilidad.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 120.0,
+      "end": 124.0,
+      "text": "Se tiene que tener el número activo de Total Play en este caso.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 124.0,
+      "end": 128.0,
+      "text": "Tiene que estar activo para que el día que lo instalen se pueda hacer el proceso de portabilidad",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 128.0,
+      "end": 134.0,
+      "text": "y ya después se puede cancelar la telefonía que tienen actualmente con Total, ya que el número pertenezca a Easy.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 134.0,
+      "end": 136.0,
+      "text": "Ah, ok. Perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 136.0,
+      "end": 138.0,
+      "text": "Ajá, porque tiene que estar activo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 138.0,
+      "end": 140.0,
+      "text": "Ajá. Ah, ok. Perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 140.0,
+      "end": 143.0,
+      "text": "Sí, era mi duda porque así es como que...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 143.0,
+      "end": 145.0,
+      "text": "Bueno, no sabía si sí podían cambiar el número.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 13,
+  "customer_segments": 16,
+  "ivr_segments": 7
+}

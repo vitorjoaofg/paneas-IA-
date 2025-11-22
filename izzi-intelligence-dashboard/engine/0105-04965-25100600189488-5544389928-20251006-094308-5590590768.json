@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600189488-5544389928-20251006-094308-5590590768.WAV",
+  "file_name": "0105-04965-25100600189488-5544389928-20251006-094308-5590590768.WAV",
+  "base_id": "0105-04965-25100600189488-5544389928-20251006-094308-5590590768",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenos días. Señorita, buenos días. ¿A dónde puedo marcar para que dejen de estarme marcando? No me interesa cambiar de compañía. Ok, señorita, dame un momento. Ok, dame un momentito. Te voy a transferir directamente atención al cliente para que te quiten el teléfono de aquí, ¿ok? Gracias. Sí, señorita, entenme a una. Disculpa por la molestia. Y no ha pasado la basura.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 6.98,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.98,
+      "end": 11.38,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.38,
+      "end": 13.38,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.38,
+      "end": 16.58,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.58,
+      "end": 20.58,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.49,
+      "end": 23.59,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.68,
+      "end": 31.78,
+      "text": " Hola, buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.78,
+      "end": 35.92,
+      "text": " Señorita, buenos días. ¿A dónde puedo marcar para que dejen de estarme marcando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.92,
+      "end": 37.72,
+      "text": " No me interesa cambiar de compañía.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.41,
+      "end": 40.51,
+      "text": " Ok, señorita, dame un momento.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.43,
+      "end": 42.73,
+      "text": " Ok, dame un momentito.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.73,
+      "end": 52.14,
+      "text": " Te voy a transferir directamente atención al cliente para que te quiten el teléfono de aquí, ¿ok?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.14,
+      "end": 52.94,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.6,
+      "end": 56.0,
+      "text": " Sí, señorita, entenme a una. Disculpa por la molestia.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 105.27,
+      "end": 106.67,
+      "text": " Y no ha pasado la basura.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.744,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

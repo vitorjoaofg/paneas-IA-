@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25100300577810-9985773728-20251003-144245-04896.WAV",
+  "file_name": "0105-04896-25100300577810-9985773728-20251003-144245-04896.WAV",
+  "base_id": "0105-04896-25100300577810-9985773728-20251003-144245-04896",
+  "transcription": "Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. La Tienda Antonio Cantera en promoción de CC Móvil. Disculpe, ¿con quién tengo el gusto? Buenas tardes, ¿con Jesús? Señor Jesús, ¿en qué le podemos ayudar aquí en promoción de CC Móvil? Desde Easy. Así es, pero en lo que...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.1,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.1,
+      "end": 10.3,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.3,
+      "end": 19.63,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.63,
+      "end": 22.13,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.76,
+      "end": 30.26,
+      "text": " Hola, buenas tardes. La Tienda Antonio Cantera en promoción de CC Móvil.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.26,
+      "end": 32.96,
+      "text": " Disculpe, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.96,
+      "end": 35.09,
+      "text": " Buenas tardes, ¿con Jesús?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.19,
+      "end": 39.19,
+      "text": " Señor Jesús, ¿en qué le podemos ayudar aquí en promoción de CC Móvil?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.19,
+      "end": 40.69,
+      "text": " Desde Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.69,
+      "end": 42.19,
+      "text": " Así es, pero en lo que...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.264,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

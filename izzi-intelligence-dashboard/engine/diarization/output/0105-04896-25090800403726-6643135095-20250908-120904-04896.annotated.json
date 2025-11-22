@@ -1,0 +1,143 @@
+{
+  "call_id": "0105-04896-25090800403726-6643135095-20250908-120904-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": "¡Hola! Somos EASY, y seguro estás llamando porque viste una llamada nuestra.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 4.5,
+      "end": 8.0,
+      "text": "Tenemos una oferta exclusiva para ti. ¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 8.0,
+      "end": 14.0,
+      "text": "Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 18.0,
+      "end": 22.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 22.0,
+      "end": 27.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 31.0,
+      "end": 39.0,
+      "text": "No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 40.0,
+      "end": 42.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 61.0,
+      "end": 64.0,
+      "text": "No see tu respuesta.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 79.0,
+      "end": 82.0,
+      "text": "Los videos se cerrarán cada minuto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 83.0,
+      "end": 86.0,
+      "text": "Por favor, habilidad.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 87.0,
+      "end": 91.0,
+      "text": "Escribí en los comentarios quizás ob Literatura.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 93.0,
+      "end": 96.0,
+      "text": "Creo que hay más que escribir porque voy a Inglaterra.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 102.0,
+      "end": 105.0,
+      "text": "¡surirsurirsurirauri!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 107.0,
+      "end": 114.0,
+      "text": "aDióUr ru suUUURrsurSiR sunrURrs hyRerRrRrRr",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 146.0,
+      "end": 150.0,
+      "text": "¡Gracias por ver el vídeo!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 7,
+  "ivr_segments": 8
+}

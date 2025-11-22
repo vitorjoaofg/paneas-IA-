@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400230107-5544389994-20251004-102307-5528714539.WAV",
+  "file_name": "0105-04965-25100400230107-5544389994-20251004-102307-5528714539.WAV",
+  "base_id": "0105-04965-25100400230107-5544389994-20251004-102307-5528714539",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí. ¡Espera un momento, por favor! ¿Y qué tal? Este es el área de contrataciones VIX y le defiende Leonardo García, canciller de VIX. ¿Brono? ¿Brono? ¿Brono? ¿Cómo se llama la llamada? ¿Brono?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Sky Sports, desde 350 pesos al primer mes, con Easy? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 19.24,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.24,
+      "end": 28.36,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.84,
+      "end": 39.84,
+      "text": " ¿Y qué tal? Este es el área de contrataciones VIX y le defiende Leonardo García, canciller de VIX.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.0,
+      "end": 46.0,
+      "text": " ¿Brono?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.0,
+      "end": 52.06,
+      "text": " ¿Brono?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 62.06,
+      "end": 63.06,
+      "text": " ¿Brono?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.06,
+      "end": 66.06,
+      "text": " ¿Cómo se llama la llamada?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 111.06,
+      "end": 112.06,
+      "text": " ¿Brono?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 117.0,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

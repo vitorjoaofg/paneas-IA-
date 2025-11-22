@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300154857-5544389974-20251003-091640-5594603506.WAV",
+  "file_name": "0105-04965-25100300154857-5544389974-20251003-091640-5594603506.WAV",
+  "base_id": "0105-04965-25100300154857-5544389974-20251003-091640-5594603506",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Renews y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Renews y eventos deportivos exclusivos por solo 350 el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos para terminar la llamada. No puedo entenderte, pero no te preocupes, volveré pronto. Easy Mobile tiene tu atención. ¡Hasta luego!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Big Renews y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 28.4,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.4,
+      "end": 43.34,
+      "text": " un momento por favor. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.34,
+      "end": 49.14,
+      "text": " el mejor entretenimiento con 200 canales, Big Renews y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.14,
+      "end": 55.94,
+      "text": " por solo 350 el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.94,
+      "end": 61.54,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.14,
+      "end": 70.56,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.56,
+      "end": 76.68,
+      "text": " asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 76.68,
+      "end": 82.16,
+      "text": " para conocer nuestras promociones o dos para terminar la llamada. No puedo entenderte,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 82.16,
+      "end": 87.48,
+      "text": " pero no te preocupes, volveré pronto. Easy Mobile tiene tu atención. ¡Hasta luego!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.696,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

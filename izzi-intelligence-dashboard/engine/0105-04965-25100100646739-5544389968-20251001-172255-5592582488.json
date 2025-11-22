@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100646739-5544389968-20251001-172255-5592582488.WAV",
+  "file_name": "0105-04965-25100100646739-5544389968-20251001-172255-5592582488.WAV",
+  "base_id": "0105-04965-25100100646739-5544389968-20251001-172255-5592582488",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Bueno? Oye, no estoy interesado en sus promociones, ¿sí? Yo lo que quiero, por favor, ya, es que dejen de estar marcando este número. Me marcan mañana, tarde y noche, ¿sí? Y tengo una persona enferma. Entonces, te pido de favor que este número lo des de baja en tu sistema, si eres tan amable. Creo que sí, yo estaría pasando el reporte. OK, te agradezco. De nada, buen día, no disculpas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.24,
+      "end": 16.44,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.44,
+      "end": 24.26,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.26,
+      "end": 26.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.7,
+      "end": 33.15,
+      "text": " ¿Bueno?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.15,
+      "end": 35.95,
+      "text": " Oye, no estoy interesado en sus promociones, ¿sí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.19,
+      "end": 39.79,
+      "text": " Yo lo que quiero, por favor, ya, es que dejen de estar marcando este número.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.79,
+      "end": 42.48,
+      "text": " Me marcan mañana, tarde y noche, ¿sí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.48,
+      "end": 43.72,
+      "text": " Y tengo una persona enferma.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.72,
+      "end": 50.38,
+      "text": " Entonces, te pido de favor que este número lo des de baja en tu sistema, si eres tan amable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.38,
+      "end": 52.66,
+      "text": " Creo que sí, yo estaría pasando el reporte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.66,
+      "end": 54.86,
+      "text": " OK, te agradezco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 54.86,
+      "end": 57.06,
+      "text": " De nada, buen día, no disculpas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.328,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

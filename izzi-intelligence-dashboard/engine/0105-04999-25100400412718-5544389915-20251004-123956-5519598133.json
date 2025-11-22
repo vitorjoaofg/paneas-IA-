@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400412718-5544389915-20251004-123956-5519598133.WAV",
+  "file_name": "0105-04999-25100400412718-5544389915-20251004-123956-5519598133.WAV",
+  "base_id": "0105-04999-25100400412718-5544389915-20251004-123956-5519598133",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Y bueno, muy buenas tardes. Buenas tardes. Oye, amigo, he recibido varias llamadas, ya les comuniqué que tengo en plan mi teléfono. Me dijeron que ya no iba a recibir las llamadas. Por diario he recibido llamadas de ustedes. Ah, ok, entonces aquí lo registro, señor, no se preocupe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.64,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.64,
+      "end": 22.02,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.02,
+      "end": 23.58,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.58,
+      "end": 29.9,
+      "text": " Y bueno, muy buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.9,
+      "end": 31.0,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.44,
+      "end": 36.96,
+      "text": " Oye, amigo, he recibido varias llamadas, ya les comuniqué que tengo en plan mi teléfono.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.96,
+      "end": 39.4,
+      "text": " Me dijeron que ya no iba a recibir las llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.4,
+      "end": 42.52,
+      "text": " Por diario he recibido llamadas de ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.52,
+      "end": 45.52,
+      "text": " Ah, ok, entonces aquí lo registro, señor, no se preocupe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.484,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600787102-3314541357-20251006-170911-3336112301.WAV",
+  "file_name": "0105-04965-25100600787102-3314541357-20251006-170911-3336112301.WAV",
+  "base_id": "0105-04965-25100600787102-3314541357-20251006-170911-3336112301",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skype Ports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1... ...124. Administración 120. Si desea hablar con la operadora, márquete. Espera un momento, por favor. Nosotros entenderemos de lunes a viernes, de 9 de la mañana a 5.30 de la tarde. Gracias. Buenas tardes. Se comunica la área de contrataciones Easy, la tienes o el castillo con quien tengo el gusto. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.3,
+      "text": " más Skype Ports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.4,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.4,
+      "end": 14.4,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.4,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 19.0,
+      "text": " Por favor, hable o pulse 1...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.0,
+      "end": 20.8,
+      "text": " ...124.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.8,
+      "end": 23.6,
+      "text": " Administración 120.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 23.6,
+      "end": 25.8,
+      "text": " Si desea hablar con la operadora, márquete.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.8,
+      "end": 27.6,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 27.6,
+      "end": 33.2,
+      "text": " Nosotros entenderemos de lunes a viernes, de 9 de la mañana a 5.30 de la tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 33.2,
+      "end": 34.62,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 34.62,
+      "end": 35.62,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 35.62,
+      "end": 38.02,
+      "text": " Se comunica la área de contrataciones Easy, la tienes o el castillo con quien tengo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 38.02,
+      "end": 43.95,
+      "text": " el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 43.95,
+      "end": 44.95,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

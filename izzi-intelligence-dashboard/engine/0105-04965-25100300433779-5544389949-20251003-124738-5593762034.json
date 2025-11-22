@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300433779-5544389949-20251003-124738-5593762034.WAV",
+  "file_name": "0105-04965-25100300433779-5544389949-20251003-124738-5593762034.WAV",
+  "base_id": "0105-04965-25100300433779-5544389949-20251003-124738-5593762034",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... Dígite 2. Ingeniería. Dígite 3. Seguridad ocupacional. Espera un momento, por favor. Marketing y plataformas tecnológicas. Dígite 5. Recursos humanos. Dígite 6. Contabilidad. Dígite 7. Servintrack. Dígite 8. O marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.76,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.76,
+      "end": 19.96,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.96,
+      "end": 28.56,
+      "text": " Por favor, hable o pulse 1 para... Dígite 2. Ingeniería. Dígite 3. Seguridad ocupacional.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.56,
+      "end": 35.1,
+      "text": " Espera un momento, por favor. Marketing y plataformas tecnológicas. Dígite 5. Recursos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.1,
+      "end": 44.82,
+      "text": " humanos. Dígite 6. Contabilidad. Dígite 7. Servintrack. Dígite 8. O marque 0 para hablar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.82,
+      "end": 54.26,
+      "text": " con la operadora. Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

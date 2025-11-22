@@ -1,0 +1,206 @@
+{
+  "call_id": "0105-04965-25090200632837-5544389905-20250902-143342-5589987586",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.800000190734863,
+      "text": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 7.800000190734863,
+      "end": 13.800000190734863,
+      "text": "VIX Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 13.800000190734863,
+      "end": 16.799999237060547,
+      "text": "¡No lo pienses más y cámbiate a EASY!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.799999237060547,
+      "end": 20.0,
+      "text": "¿Te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 24.0,
+      "end": 31.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 6,
+      "start": 31.0,
+      "end": 36.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 36.0,
+      "end": 38.0,
+      "text": "¡Espera un momento por favor!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 38.0,
+      "end": 39.0,
+      "text": "Ya tengo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 54.0,
+      "end": 73.0,
+      "text": "¿Te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 73.0,
+      "end": 76.0,
+      "text": "¿No te gusta? ¡No!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 77.0,
+      "end": 81.0,
+      "text": "¡Buenos días!",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 81.0,
+      "end": 83.0,
+      "text": "Nada, se me olvidó.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 13,
+      "start": 83.0,
+      "end": 87.0,
+      "text": "Ah, pues saqué mi cilicón y me metí ahí atrás donde voy a echar el cilicón.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 91.0,
+      "end": 93.0,
+      "text": "¿Tienes que agarrar el cilicón?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 93.0,
+      "end": 95.0,
+      "text": "Sí, aquí lo dejo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 97.0,
+      "end": 99.0,
+      "text": "Y ya veréis, se trabaja ahí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 99.0,
+      "end": 103.0,
+      "text": "Y ahora terminé de poner el cilicón y voy bajando las caderas al respaldo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 104.0,
+      "end": 106.0,
+      "text": "¿Quién es?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 106.0,
+      "end": 108.0,
+      "text": "Ah, el señor Buenos Días.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 109.0,
+      "end": 111.0,
+      "text": "Ya le puse el cilicón a la ventana.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 113.0,
+      "end": 115.0,
+      "text": "¡Claro!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 2,
+  "customer_segments": 11,
+  "ivr_segments": 9
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300228725-5544389992-20251003-101208-5553214214.WAV",
+  "file_name": "0105-04965-25100300228725-5544389992-20251003-101208-5553214214.WAV",
+  "base_id": "0105-04965-25100300228725-5544389992-20251003-101208-5553214214",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Incy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 espera un momento por favor está muy bueno tíes, si bueno, bueno, bueno, como te dije que le has finalizado la llamada bueno, bueno, hola, bueno, para un paquete, me interesa el paquete si bueno, bueno, quiero un paquete, si bueno, bueno, quiero dos, para que convenga",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Incy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.18,
+      "end": 27.18,
+      "text": " espera un momento por favor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.7,
+      "end": 41.6,
+      "text": " está muy bueno tíes, si bueno, bueno, bueno, como te dije que le has finalizado la llamada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.6,
+      "end": 56.97,
+      "text": " bueno, bueno, hola, bueno, para un paquete, me interesa el paquete",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.97,
+      "end": 92.29,
+      "text": " si bueno, bueno, quiero un paquete, si bueno, bueno, quiero dos, para que convenga",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.492,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

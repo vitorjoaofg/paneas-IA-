@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100386092-5540409214-20251001-140323-5558097305.WAV",
+  "file_name": "0105-04965-25100100386092-5540409214-20251001-140323-5558097305.WAV",
+  "base_id": "0105-04965-25100100386092-5540409214-20251001-140323-5558097305",
+  "transcription": "Para verificar la disponibilidad de tu credencial, es necesario tener a la mano tu comprobante de trámite y con qué anotar. Por favor, digita los 13 números de tu folio. Si tienes a la mano tu comprobante de trámite, ingresa los 13 vigitos del número de tu folio. Espera un momento, por favor. El folio proporcionado es incorrecto. Gracias por llamar al INE. Contamos todas, contamos todos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Para verificar la disponibilidad de tu credencial, es necesario tener a la mano tu comprobante de trámite y con qué anotar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.0,
+      "end": 13.0,
+      "text": " Por favor, digita los 13 números de tu folio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.0,
+      "end": 28.0,
+      "text": " Si tienes a la mano tu comprobante de trámite, ingresa los 13 vigitos del número de tu folio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.0,
+      "end": 30.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.46,
+      "end": 43.46,
+      "text": " El folio proporcionado es incorrecto. Gracias por llamar al INE.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.46,
+      "end": 46.46,
+      "text": " Contamos todas, contamos todos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.36,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

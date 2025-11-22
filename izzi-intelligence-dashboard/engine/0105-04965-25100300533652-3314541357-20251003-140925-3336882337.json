@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300533652-3314541357-20251003-140925-3336882337.WAV",
+  "file_name": "0105-04965-25100300533652-3314541357-20251003-140925-3336882337.WAV",
+  "base_id": "0105-04965-25100300533652-3314541357-20251003-140925-3336882337",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Hola, buenas tardes. Lo departe de la compañía de Easy. ¿Tengo el gusto de titular de la cuenta? Avelina Segura. Avelina Segura. Bueno. Bueno. ¿Quién habla? Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.68,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 28.33,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.33,
+      "end": 35.17,
+      "text": " respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.17,
+      "end": 48.18,
+      "text": " Espera un momento, por favor. Hola, buenas tardes. Lo departe de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.18,
+      "end": 61.25,
+      "text": " ¿Tengo el gusto de titular de la cuenta? Avelina Segura. Avelina Segura. Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.25,
+      "end": 70.58,
+      "text": " Bueno. ¿Quién habla? Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 123.768,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

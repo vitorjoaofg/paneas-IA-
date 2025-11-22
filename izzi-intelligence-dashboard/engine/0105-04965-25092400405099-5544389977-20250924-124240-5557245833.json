@@ -1,0 +1,83 @@
+{
+  "file_path": "../izzi_batch_600_casos_01/izzi_batch_600_casos_01/audio/0105-04965-25092400405099-5544389977-20250924-124240-5557245833.WAV",
+  "file_name": "0105-04965-25092400405099-5544389977-20250924-124240-5557245833.WAV",
+  "base_id": "0105-04965-25092400405099-5544389977-20250924-124240-5557245833",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+  "language": "spanish",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.300000190734863,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "temperature": 0.0,
+      "avg_logprob": -0.3459923565387726,
+      "compression_ratio": 1.3492822647094727,
+      "no_speech_prob": 0.3835064172744751,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 1,
+      "start": 8.300000190734863,
+      "end": 16.1200008392334,
+      "text": " con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "temperature": 0.0,
+      "avg_logprob": -0.3459923565387726,
+      "compression_ratio": 1.3492822647094727,
+      "no_speech_prob": 0.3835064172744751,
+      "speaker": "customer",
+      "role": "customer"
+    },
+    {
+      "id": 2,
+      "start": 16.1200008392334,
+      "end": 22.31999969482422,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "temperature": 0.0,
+      "avg_logprob": -0.3459923565387726,
+      "compression_ratio": 1.3492822647094727,
+      "no_speech_prob": 0.3835064172744751,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 3,
+      "start": 22.31999969482422,
+      "end": 29.31999969482422,
+      "text": " favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "temperature": 0.0,
+      "avg_logprob": -0.3820401728153229,
+      "compression_ratio": 1.0136985778808594,
+      "no_speech_prob": 0.0911574438214302,
+      "speaker": "ivr",
+      "role": "ivr"
+    }
+  ],
+  "audio_metrics": {
+    "duration": 116.28,
+    "rms_db": 65.13916305121865,
+    "snr": 67.71983623504639,
+    "silence_ratio": 0.7343395252837976,
+    "silence_duration": 85.389,
+    "nonsilent_duration": 30.891000000000002,
+    "clipping": false,
+    "sample_rate": 16000,
+    "channels": 1
+  },
+  "duration": 116.28,
+  "ivr_duration": 21.499999046325684,
+  "agent_duration": 0,
+  "customer_duration": 7.820000648498535,
+  "human_duration": 7.820000648498535,
+  "silence_duration": 85.389,
+  "first_human_response": 8.300000190734863,
+  "ivr_ratio": 0.1848985126103,
+  "human_ratio": 0.06725146756534688,
+  "silence_ratio": 0.7343395252837976,
+  "rms_db": 65.13916305121865,
+  "snr": 67.71983623504639,
+  "clipping": false,
+  "processing_time": 24.880491018295288,
+  "asr_confidence": 0.7011704207312961
+}

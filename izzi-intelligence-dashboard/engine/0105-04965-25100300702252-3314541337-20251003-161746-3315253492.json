@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300702252-3314541337-20251003-161746-3315253492.WAV",
+  "file_name": "0105-04965-25100300702252-3314541337-20251003-161746-3315253492.WAV",
+  "base_id": "0105-04965-25100300702252-3314541337-20251003-161746-3315253492",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, se cuide que haga la contratación de Easy y la tiene mal que ha sido con quien tengo el uso. Hola, señora Josefina. Sita Josefina, ¿qué le podemos apoyar que se va a contratar el día de hoy? Solamente comprobar si ya tienen cobertura quien puesta del Sol 3. ¿Hasta cuánto la valió? ¿Valía? No, ustedes fueron las que me llamaron para contratación. Yo solo quiero saber si ya tienen cobertura.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.0,
+      "end": 32.46,
+      "text": " Buenas tardes, se cuide que haga la contratación de Easy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.46,
+      "end": 34.46,
+      "text": " y la tiene mal que ha sido con quien tengo el uso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.46,
+      "end": 37.74,
+      "text": " Hola, señora Josefina.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.74,
+      "end": 40.74,
+      "text": " Sita Josefina, ¿qué le podemos apoyar que se va a contratar el día de hoy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.74,
+      "end": 47.28,
+      "text": " Solamente comprobar si ya tienen cobertura quien puesta del Sol 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.28,
+      "end": 49.89,
+      "text": " ¿Hasta cuánto la valió?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.89,
+      "end": 54.69,
+      "text": " ¿Valía? No, ustedes fueron las que me llamaron para contratación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.69,
+      "end": 57.69,
+      "text": " Yo solo quiero saber si ya tienen cobertura.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.676,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

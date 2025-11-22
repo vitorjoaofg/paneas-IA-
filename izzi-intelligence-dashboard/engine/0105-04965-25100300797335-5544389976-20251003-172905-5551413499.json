@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300797335-5544389976-20251003-172905-5551413499.WAV",
+  "file_name": "0105-04965-25100300797335-5544389976-20251003-172905-5551413499.WAV",
+  "base_id": "0105-04965-25100300797335-5544389976-20251003-172905-5551413499",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Para quejas o sugerencias, marque 6. Si desea hablar con un asesor... ¡Espera un momento, por favor! Si es proveedor y desea obtener información, marque 8. Si es proveedor y requiere información, marque 9. Para conocer el aviso de privacidad, marque 0. Por favor, permanezca en línea y en un momento, uno de nuestros asesores la atendrá. Se le informó que esta llamada será grabada y monitoreada para fines de calidad en servicio. En breve, uno de nuestros operadores la atenderá.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 24.2,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.2,
+      "end": 31.2,
+      "text": " Para quejas o sugerencias, marque 6. Si desea hablar con un asesor... ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.2,
+      "end": 38.23,
+      "text": " Si es proveedor y desea obtener información, marque 8. Si es proveedor y requiere información,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.23,
+      "end": 43.23,
+      "text": " marque 9. Para conocer el aviso de privacidad, marque 0.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.23,
+      "end": 53.19,
+      "text": " Por favor, permanezca en línea y en un momento, uno de nuestros asesores la atendrá.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.19,
+      "end": 58.19,
+      "text": " Se le informó que esta llamada será grabada y monitoreada para fines de calidad en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.19,
+      "end": 62.19,
+      "text": " servicio. En breve, uno de nuestros operadores la atenderá.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100564967-5544389901-20251001-162122-5592427268.WAV",
+  "file_name": "0105-04965-25100100564967-5544389901-20251001-162122-5592427268.WAV",
+  "base_id": "0105-04965-25100100564967-5544389901-20251001-162122-5592427268",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿De Vani Daniela con quien te congusto? Con quien estés, dígame. Hola mucho, ¿está interesado en algún servicio, telefonía, móvil, Internet? ¿Es Movistar? Somos de Easy. ¿Easy? Así es. ¿Y eso para qué? ¿Está interesado en algún servicio, telefonía, móvil, Internet? Por eso, pero ¿para qué? Sí, ¿para qué?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyport, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 23.82,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.82,
+      "end": 25.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.82,
+      "end": 55.98,
+      "text": " ¿De Vani Daniela con quien te congusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.98,
+      "end": 58.17,
+      "text": " Con quien estés, dígame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.17,
+      "end": 62.26,
+      "text": " Hola mucho, ¿está interesado en algún servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.26,
+      "end": 64.65,
+      "text": " ¿Es Movistar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.65,
+      "end": 66.9,
+      "text": " Somos de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.9,
+      "end": 67.9,
+      "text": " ¿Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.9,
+      "end": 68.9,
+      "text": " Así es.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.9,
+      "end": 71.29,
+      "text": " ¿Y eso para qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.29,
+      "end": 74.29,
+      "text": " ¿Está interesado en algún servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.29,
+      "end": 78.59,
+      "text": " Por eso, pero ¿para qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 78.59,
+      "end": 80.59,
+      "text": " Sí, ¿para qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.056,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

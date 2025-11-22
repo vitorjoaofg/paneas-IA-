@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400580169-5544389988-20251004-145049-5593599486.WAV",
+  "file_name": "0105-04965-25100400580169-5544389988-20251004-145049-5593599486.WAV",
+  "base_id": "0105-04965-25100400580169-5544389988-20251004-145049-5593599486",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable ojuice uno... Espera un momento, por favor. ¿Qué tal? Buenas tardes. Hola, ¿qué tal? Habla Randirán, estamos comunicándonos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada, señor? Disculpe. Me acabo de mandar una grabación. Oh, correcto. ¿Le interesó alguno de nuestros servicios? ¿Ya ha tenido servicio con nosotros? Ninguno. Tengo otro tablet. Oh, correcto. ¿Le interesa adquirir el servicio, disculpe? No, gracias. Ah, muy bien, señor. Que tenga un accidente tarde. Que tenga buena tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.12,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.12,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 22.4,
+      "text": " Por favor, hable ojuice uno...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.82,
+      "end": 31.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.22,
+      "end": 40.65,
+      "text": " ¿Qué tal? Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.65,
+      "end": 75.42,
+      "text": " Hola, ¿qué tal? Habla Randirán, estamos comunicándonos del servicio de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 75.42,
+      "end": 78.42,
+      "text": " ¿Le llegó algún mensaje, alguna llamada, señor? Disculpe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 78.42,
+      "end": 81.94,
+      "text": " Me acabo de mandar una grabación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 81.94,
+      "end": 87.17,
+      "text": " Oh, correcto. ¿Le interesó alguno de nuestros servicios? ¿Ya ha tenido servicio con nosotros?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 87.17,
+      "end": 89.17,
+      "text": " Ninguno. Tengo otro tablet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 89.17,
+      "end": 92.36,
+      "text": " Oh, correcto. ¿Le interesa adquirir el servicio, disculpe?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 92.36,
+      "end": 94.36,
+      "text": " No, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 94.36,
+      "end": 97.06,
+      "text": " Ah, muy bien, señor. Que tenga un accidente tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 97.06,
+      "end": 99.06,
+      "text": " Que tenga buena tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.312,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

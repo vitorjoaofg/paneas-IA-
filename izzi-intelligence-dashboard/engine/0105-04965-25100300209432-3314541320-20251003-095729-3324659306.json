@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300209432-3314541320-20251003-095729-3324659306.WAV",
+  "file_name": "0105-04965-25100300209432-3314541320-20251003-095729-3324659306.WAV",
+  "base_id": "0105-04965-25100300209432-3314541320-20251003-095729-3324659306",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Plesiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Uno con el asesor. No, es que así la vez pasada me dejaron de hablar como ocho días. Si no, está marquí, marquí, marquí, marquí, y joda, y joda. Dicen que todo el día tenemos aquí para estar. Y ya ves, ni es cierto que pasan al mendigo asesor, así es de qué.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 8.51,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.51,
+      "end": 13.15,
+      "text": " más Skysports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.15,
+      "end": 15.11,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.11,
+      "end": 16.11,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.11,
+      "end": 18.23,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.23,
+      "end": 24.74,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.74,
+      "end": 27.18,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.18,
+      "end": 29.42,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.42,
+      "end": 34.14,
+      "text": " Plesiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.14,
+      "end": 36.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.18,
+      "end": 37.18,
+      "text": " Uno con el asesor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.18,
+      "end": 51.63,
+      "text": " No, es que así la vez pasada me dejaron de hablar como ocho días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.63,
+      "end": 72.19,
+      "text": " Si no, está marquí, marquí, marquí, marquí, y joda, y joda.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 72.19,
+      "end": 76.8,
+      "text": " Dicen que todo el día tenemos aquí para estar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 76.8,
+      "end": 79.88,
+      "text": " Y ya ves, ni es cierto que pasan al mendigo asesor, así es de qué.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 82.512,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

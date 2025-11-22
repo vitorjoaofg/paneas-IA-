@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200755990-3314541361-20251002-172012-3336939120.WAV",
+  "file_name": "0105-04965-25100200755990-3314541361-20251002-172012-3336939120.WAV",
+  "base_id": "0105-04965-25100200755990-3314541361-20251002-172012-3336939120",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, aquí está. Buenas tardes. Gracias por comunicarse al área de contrataciones de Easy. La atiende Iván y Daniela. ¿Con quién tengo el gusto? Con César Rendón. Hola, mucho gusto, caballero. ¿Te interesa andar con servicio o telefonía? ¿Me voy a abrir Internet? Estaba escuchando lo de Easy, pero quiero saber si aquí en De Vigo alcanzamos cobertura. Sí, ¿usted podría brindarme lo que es el código postal, la calle de la ciudad, para checarse de cobertura? El código postal es 456-83, la calle es Asteroide, el lugar es Traccionamiento El Mirador del Salto, Jalisco. ¿Jalisco? Así es. Ok, tarda un poquito en validar lo que es la cobertura. Si gusta, ahorita lo checamos y regresamos a llamar a unos minutos. ¿Le parece? Sí, muy bien, gracias. Que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.28,
+      "end": 24.28,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.28,
+      "end": 35.62,
+      "text": " Hola, aquí está. Buenas tardes. Gracias por comunicarse al área de contrataciones de Easy. La atiende Iván y Daniela. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.62,
+      "end": 36.62,
+      "text": " Con César Rendón.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.62,
+      "end": 40.62,
+      "text": " Hola, mucho gusto, caballero. ¿Te interesa andar con servicio o telefonía? ¿Me voy a abrir Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.62,
+      "end": 48.01,
+      "text": " Estaba escuchando lo de Easy, pero quiero saber si aquí en De Vigo alcanzamos cobertura.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.01,
+      "end": 53.07,
+      "text": " Sí, ¿usted podría brindarme lo que es el código postal, la calle de la ciudad, para checarse de cobertura?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.07,
+      "end": 64.26,
+      "text": " El código postal es 456-83, la calle es Asteroide, el lugar es Traccionamiento El Mirador del Salto, Jalisco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.26,
+      "end": 69.17,
+      "text": " ¿Jalisco?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.17,
+      "end": 70.62,
+      "text": " Así es.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 72.16,
+      "end": 78.16,
+      "text": " Ok, tarda un poquito en validar lo que es la cobertura. Si gusta, ahorita lo checamos y regresamos a llamar a unos minutos. ¿Le parece?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 79.16,
+      "end": 80.16,
+      "text": " Sí, muy bien, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 80.16,
+      "end": 82.16,
+      "text": " Que tenga buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400136381-7475452715-20251004-091228-04896.WAV",
+  "file_name": "0105-04999-25100400136381-7475452715-20251004-091228-04896.WAV",
+  "base_id": "0105-04999-25100400136381-7475452715-20251004-091228-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿O no? Hola, qué tal. Muy buenos días. Mi nombre es Jorge Rojas. Se está marcando de la compañía de Internet de Easy, de televisión por cable. ¿A quién le puedo ayudar?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 10.44,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.44,
+      "end": 17.28,
+      "text": " más Sky Sports, desde 350 el primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.28,
+      "end": 23.44,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.46,
+      "end": 26.66,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.08,
+      "end": 35.84,
+      "text": " ¿O no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.84,
+      "end": 38.16,
+      "text": " Hola, qué tal. Muy buenos días. Mi nombre es Jorge Rojas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.16,
+      "end": 41.24,
+      "text": " Se está marcando de la compañía de Internet de Easy, de televisión por cable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.24,
+      "end": 43.72,
+      "text": " ¿A quién le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 43.812,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400338156-5544389935-20251004-114233-5544460908.WAV",
+  "file_name": "0105-04965-25100400338156-5544389935-20251004-114233-5544460908.WAV",
+  "base_id": "0105-04965-25100400338156-5544389935-20251004-114233-5544460908",
+  "transcription": "Este de nada puede ser grabada o monitoreada y analizada para el mantenimiento y la seguridad y para mejorar nuestros sistemas de servicio incluyendo los fines de calidad de operación. Buenos días. Es importante que conozca nuestro Aviso de Tribucidad de Ley de Protección de Datos Personales en Posesión de Particulares. Si desea escuchar el mensaje marque 1 o también puede consultar nuestro Aviso de Espera un momento por favor. En www.americanexpress.com.mx. De lo contrario marque 2 para continuar. Por favor espere mientras lo comunicamos con uno de nuestros analistas. Buenos días. Gracias por llamar American Express Travel and Lifestyle. Mi nombre es Ayd Baño Eloz. ¿Quién tengo el gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.2,
+      "text": " Este de nada puede ser grabada o monitoreada y analizada para el mantenimiento y la seguridad",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.2,
+      "end": 11.8,
+      "text": " y para mejorar nuestros sistemas de servicio incluyendo los fines de calidad de operación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.8,
+      "end": 13.2,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.2,
+      "end": 18.0,
+      "text": " Es importante que conozca nuestro Aviso de Tribucidad de Ley de Protección de Datos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.0,
+      "end": 20.7,
+      "text": " Personales en Posesión de Particulares.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.7,
+      "end": 25.8,
+      "text": " Si desea escuchar el mensaje marque 1 o también puede consultar nuestro Aviso de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.9,
+      "end": 27.6,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.6,
+      "end": 32.6,
+      "text": " En www.americanexpress.com.mx.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.6,
+      "end": 40.22,
+      "text": " De lo contrario marque 2 para continuar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.22,
+      "end": 63.26,
+      "text": " Por favor espere mientras lo comunicamos con uno de nuestros analistas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.26,
+      "end": 64.26,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.26,
+      "end": 66.06,
+      "text": " Gracias por llamar American Express Travel and Lifestyle.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.06,
+      "end": 67.46,
+      "text": " Mi nombre es Ayd Baño Eloz.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.46,
+      "end": 68.66,
+      "text": " ¿Quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 116.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

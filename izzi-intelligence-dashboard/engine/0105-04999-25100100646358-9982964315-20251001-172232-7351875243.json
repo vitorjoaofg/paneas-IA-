@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100646358-9982964315-20251001-172232-7351875243.WAV",
+  "file_name": "0105-04999-25100100646358-9982964315-20251001-172232-7351875243.WAV",
+  "base_id": "0105-04999-25100100646358-9982964315-20251001-172232-7351875243",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Sí, buenas tardes. Habla Héctor Talamantes de la compañía de Easy. ¿Con qué tengo el gusto? No sé, ¿usted me llama? Ah, es lo que pasa que es una base de datos que solamente aparece el número telefónico. No aparece el nombre de la persona. Ah, mire. Pero no, yo no quiero hablar con usted. Ah, gracias. Buen día. Hasta luego. Qué divertido es esto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.96,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.96,
+      "end": 25.54,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.54,
+      "end": 28.02,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.04,
+      "end": 37.22,
+      "text": " Sí, buenas tardes. Sí, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.22,
+      "end": 41.41,
+      "text": " Habla Héctor Talamantes de la compañía de Easy. ¿Con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.41,
+      "end": 44.46,
+      "text": " No sé, ¿usted me llama?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.46,
+      "end": 48.85,
+      "text": " Ah, es lo que pasa que es una base de datos que solamente aparece el número telefónico.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.85,
+      "end": 50.85,
+      "text": " No aparece el nombre de la persona.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.85,
+      "end": 55.17,
+      "text": " Ah, mire. Pero no, yo no quiero hablar con usted.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.17,
+      "end": 58.33,
+      "text": " Ah, gracias. Buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.33,
+      "end": 63.02,
+      "text": " Qué divertido es esto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300234659-8114540906-20251003-101641-8134465599.WAV",
+  "file_name": "0105-04999-25100300234659-8114540906-20251003-101641-8134465599.WAV",
+  "base_id": "0105-04999-25100300234659-8114540906-20251003-101641-8134465599",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. Sí, por favor. Internet gratis. Internet gratis por 315 pesos. Espera un momento, por favor. Buenas tardes, me presento, mi nombre es Daniel, me suelo proporcionar la compañía de Easy. ¡Bueno! Sí, bueno, ¿me escuchan? Sí, se lo escucho. ¿En qué la puedo apoyar, disculpe? Tiene, tiene, el iPhone 16 Pro Max. Bueno. Bueno, puedo. ¿En qué la puedo apoyar? Tiene Internet, Internet. ¿Internet de cuántos megas?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.0,
+      "end": 22.0,
+      "text": " Sí, por favor. Internet gratis.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.0,
+      "end": 25.22,
+      "text": " Internet gratis por 315 pesos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.22,
+      "end": 29.15,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.03,
+      "end": 40.82,
+      "text": " Buenas tardes, me presento, mi nombre es Daniel, me suelo proporcionar la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.82,
+      "end": 42.91,
+      "text": " ¡Bueno!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.91,
+      "end": 45.01,
+      "text": " Sí, bueno, ¿me escuchan?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.01,
+      "end": 47.01,
+      "text": " Sí, se lo escucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.01,
+      "end": 51.06,
+      "text": " ¿En qué la puedo apoyar, disculpe?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.06,
+      "end": 55.59,
+      "text": " Tiene, tiene, el iPhone 16 Pro Max.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.59,
+      "end": 56.62,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 56.62,
+      "end": 58.62,
+      "text": " Bueno, puedo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 58.62,
+      "end": 60.69,
+      "text": " ¿En qué la puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 60.69,
+      "end": 64.14,
+      "text": " Tiene Internet, Internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.14,
+      "end": 66.14,
+      "text": " ¿Internet de cuántos megas?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.032,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

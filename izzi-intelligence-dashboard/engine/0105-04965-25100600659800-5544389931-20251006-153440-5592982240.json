@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600659800-5544389931-20251006-153440-5592982240.WAV",
+  "file_name": "0105-04965-25100600659800-5544389931-20251006-153440-5592982240.WAV",
+  "base_id": "0105-04965-25100600659800-5544389931-20251006-153440-5592982240",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Sí. Espera un momento, por favor. Hola, buenas tardes. Habla el Totala Matos de la compañía de Easy. ¿Con qué tengo el gusto? Oye, nada más un favor. Dígame. Yo ya no quiero que me estén hablando porque me están marcando diario. ¿O qué, señor? Yo no sé de dónde obtuvieron mi número, pero por favor anótale ahí o no sé qué tenga que hacer para que ya no recibí estas llamadas. Muy bien, señor. Ahorita lo pasa a mi supervisor. Por favor. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.48,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.48,
+      "end": 27.94,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.94,
+      "end": 29.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.94,
+      "end": 50.76,
+      "text": " Hola, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.76,
+      "end": 53.76,
+      "text": " Habla el Totala Matos de la compañía de Easy. ¿Con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.76,
+      "end": 55.76,
+      "text": " Oye, nada más un favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.76,
+      "end": 56.76,
+      "text": " Dígame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.76,
+      "end": 58.76,
+      "text": " Yo ya no quiero que me estén hablando porque me están marcando diario.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.76,
+      "end": 60.3,
+      "text": " ¿O qué, señor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 60.3,
+      "end": 64.3,
+      "text": " Yo no sé de dónde obtuvieron mi número, pero por favor anótale ahí o no sé qué",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.3,
+      "end": 67.43,
+      "text": " tenga que hacer para que ya no recibí estas llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.43,
+      "end": 69.43,
+      "text": " Muy bien, señor. Ahorita lo pasa a mi supervisor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 69.43,
+      "end": 72.78,
+      "text": " Por favor. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.132,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

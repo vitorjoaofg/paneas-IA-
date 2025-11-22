@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100684021-5544389956-20251001-175056-5592343288.WAV",
+  "file_name": "0105-04965-25100100684021-5544389956-20251001-175056-5592343288.WAV",
+  "base_id": "0105-04965-25100100684021-5544389956-20251001-175056-5592343288",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola Guetta, buenas tardes. Gracias por comunicarse a la de contestaciones de Easy, la tienda igual y Daniela, ¿con qué tengo el gusto? ¿De adónde hablo? ¿De adónde me marcan, mejor dicho? ¿De su compañía Easy? ¿Te interesan algún servicio, telefonía, móvil, Internet? De mi compañía Easy no, yo no tengo Easy, ¿verdad? Tengo TotalPlex.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 28.01,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.01,
+      "end": 29.01,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.22,
+      "end": 39.46,
+      "text": " Hola Guetta, buenas tardes. Gracias por comunicarse a la de contestaciones de Easy, la tienda",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.46,
+      "end": 43.3,
+      "text": " igual y Daniela, ¿con qué tengo el gusto? ¿De adónde hablo? ¿De adónde me marcan,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.3,
+      "end": 47.9,
+      "text": " mejor dicho? ¿De su compañía Easy? ¿Te interesan algún servicio, telefonía, móvil,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.9,
+      "end": 52.02,
+      "text": " Internet? De mi compañía Easy no, yo no tengo Easy, ¿verdad? Tengo TotalPlex.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.416,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

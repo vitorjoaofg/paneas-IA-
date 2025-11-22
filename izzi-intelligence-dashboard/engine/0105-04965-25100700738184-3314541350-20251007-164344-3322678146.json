@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700738184-3314541350-20251007-164344-3322678146.WAV",
+  "file_name": "0105-04965-25100700738184-3314541350-20251007-164344-3322678146.WAV",
+  "base_id": "0105-04965-25100700738184-3314541350-20251007-164344-3322678146",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? Si conoces el número de extensión, marque lo ahora. Para recibir asistencia técnica, marque 1. Si desea información sobre la contratación de nuestros productos y servicios, marque 2. Para hablar con el departamento de recursos humanos, marque 3. Si desea hablar con una de nuestras operadoras, marque 0. Gracias. Espera un momento, por favor. Buenas tardes. Buenas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 8.0,
+      "text": " Si conoces el número de extensión, marque lo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 11.0,
+      "text": " Para recibir asistencia técnica, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " Si desea información sobre la contratación de nuestros productos y servicios, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Para hablar con el departamento de recursos humanos, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Si desea hablar con una de nuestras operadoras, marque 0.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 25.0,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.0,
+      "end": 31.33,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.33,
+      "end": 44.74,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.74,
+      "end": 47.25,
+      "text": " Buenas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 48.888,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

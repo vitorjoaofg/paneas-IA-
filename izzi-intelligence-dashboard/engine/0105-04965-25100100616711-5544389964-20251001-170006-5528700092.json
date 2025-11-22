@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100616711-5544389964-20251001-170006-5528700092.WAV",
+  "file_name": "0105-04965-25100100616711-5544389964-20251001-170006-5528700092.WAV",
+  "base_id": "0105-04965-25100100616711-5544389964-20251001-170006-5528700092",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Oiga, oiga. Pienso, no entendí tu respuesta. ¿Te comunico con un asesor? Oiga. Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes. ¿Te estoy comunicando? ¿Sé la llave con dotaciones de Ixera? ¿Tiene Validánía en la que yo tengo el uso? Ella es de 1500. ¿Perdón? Ella es de 1500. ¿Se interesa algún servicio de telefonía, móvil, Internet?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.44,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.0,
+      "end": 28.21,
+      "text": " Oiga, oiga.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.21,
+      "end": 32.47,
+      "text": " Pienso, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.47,
+      "end": 33.13,
+      "text": " Oiga.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.13,
+      "end": 37.65,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.65,
+      "end": 40.99,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.99,
+      "end": 48.55,
+      "text": " Hola, ¿qué tal? Buenas tardes. ¿Te estoy comunicando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.55,
+      "end": 51.73,
+      "text": " ¿Sé la llave con dotaciones de Ixera? ¿Tiene Validánía en la que yo tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.73,
+      "end": 52.39,
+      "text": " uso?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.39,
+      "end": 56.02,
+      "text": " Ella es de 1500.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.02,
+      "end": 57.29,
+      "text": " ¿Perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.29,
+      "end": 61.41,
+      "text": " Ella es de 1500.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 61.41,
+      "end": 64.77,
+      "text": " ¿Se interesa algún servicio de telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.644,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

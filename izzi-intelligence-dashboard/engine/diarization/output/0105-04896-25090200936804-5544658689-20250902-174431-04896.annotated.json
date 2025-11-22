@@ -1,0 +1,1223 @@
+{
+  "call_id": "0105-04896-25090200936804-5544658689-20250902-174431-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": "Hola, somos Easy, y seguro estás llamando porque viste una llamada nuestra.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 4.5,
+      "end": 8.0,
+      "text": "Tenemos una oferta exclusiva para ti. ¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 8.0,
+      "end": 12.0,
+      "text": "Un asesor te está esperando. Por favor, hable o puedes...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 14.5,
+      "end": 19.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 19.0,
+      "end": 22.0,
+      "text": "Presiona 1 para hablar con un asesor, o 2...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 22.0,
+      "end": 24.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 31.0,
+      "end": 35.0,
+      "text": "Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse de Contrataciones de Easy.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 35.0,
+      "end": 37.0,
+      "text": "La tiene María Daniela, con quien tengo el gusto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 37.0,
+      "end": 42.0,
+      "text": "Buenas tardes, señorita. Con María Encarnación Martínez Parilla.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 42.0,
+      "end": 45.0,
+      "text": "Hola, mucho gusto, María. ¿Está interesada en algún servicio con nosotros?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 10,
+      "start": 45.0,
+      "end": 47.0,
+      "text": "Telefonía, móvil, internet...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 47.0,
+      "end": 51.0,
+      "text": "Quisiera contratar internet. Un paquete con ustedes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 51.0,
+      "end": 55.0,
+      "text": "Un paquete con nosotros, ok. ¿Actualmente, señorita, usted se encuentra con alguna compañía?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 55.0,
+      "end": 58.0,
+      "text": "Sí, estoy con Total Play y me gustaría hacer una portabilidad.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 58.0,
+      "end": 61.0,
+      "text": "Una portabilidad, perfecto. Ok.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 61.0,
+      "end": 64.0,
+      "text": "Con Total Play, ok. ¿Cuántos hombres y mujeres se encuentran en casa?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 66.0,
+      "end": 67.0,
+      "text": "Cuatro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 67.0,
+      "end": 69.0,
+      "text": "Cuatro, ok.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 69.0,
+      "end": 72.0,
+      "text": "Mira, nos encontramos con varios tipos de paquetes.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 72.0,
+      "end": 74.0,
+      "text": "No sé si le gustaría lo que se escuchó en la primera.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 74.0,
+      "end": 79.0,
+      "text": "Dice que es un overplay, que tiene lo que es internet y la telefonía fija.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 79.0,
+      "end": 81.0,
+      "text": "O si quiere un paquete con nosotros.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 81.0,
+      "end": 84.0,
+      "text": "Permítame un momento. Es que no le escucho muy bien.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 23,
+      "start": 85.0,
+      "end": 86.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 90.0,
+      "end": 91.0,
+      "text": "A ver, dígame.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 93.0,
+      "end": 94.0,
+      "text": "Es una...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 96.0,
+      "end": 97.0,
+      "text": "Soltamos lo que es un paquete.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 97.0,
+      "end": 100.0,
+      "text": "Nos dice que le gustaría lo que es nada más internet y telefonía fija.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 28,
+      "start": 100.0,
+      "end": 102.0,
+      "text": "O internet, telefonía fija y video.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 102.0,
+      "end": 107.0,
+      "text": "Nos interesaría lo que es un triple play, que contiene lo que es telefonía, internet y video.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 107.0,
+      "end": 112.0,
+      "text": "Nos interesaría lo que es un triple play, que contiene lo que es telefonía, internet y video.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 113.0,
+      "end": 117.0,
+      "text": "No, solamente internet y telefonía fija.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 117.0,
+      "end": 120.0,
+      "text": "Ok. Internet y telefonía fija.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 122.0,
+      "end": 125.0,
+      "text": "Ok. Bueno, de hecho, le voy a dar lo que es una promoción.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 125.0,
+      "end": 128.0,
+      "text": "Pero, de hecho, siempre se hace antes de tener la promoción.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 128.0,
+      "end": 130.0,
+      "text": "Tendríamos que checar lo que es la cobertura.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 130.0,
+      "end": 133.0,
+      "text": "Pero le voy a dar lo que es una promoción.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 134.0,
+      "end": 136.0,
+      "text": "Es de 80 megas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 38,
+      "start": 136.0,
+      "end": 138.0,
+      "text": "Incluye lo que es la telefonía fija.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 138.0,
+      "end": 139.0,
+      "text": "Las llamadas son limitadas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 40,
+      "start": 139.0,
+      "end": 142.0,
+      "text": "Tiene un costo de 510 pesos mensuales.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 41,
+      "start": 142.0,
+      "end": 145.0,
+      "text": "El descuento por mes es de 91 pesos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 145.0,
+      "end": 148.0,
+      "text": "Por tres meses únicamente pagaría 419 pesos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 148.0,
+      "end": 151.0,
+      "text": "Después de los tres meses prueba su pago fijo, que es 510 pesos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 151.0,
+      "end": 154.0,
+      "text": "Y por seis meses no tendría 80 megas, sino 100 megas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 154.0,
+      "end": 159.0,
+      "text": "Tendría incluido lo que es el Bix Premium totalmente gratis por un año.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 159.0,
+      "end": 162.0,
+      "text": "Y la portabilidad se hace en descuento de 15 pesos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 162.0,
+      "end": 165.0,
+      "text": "Y si usted domicilio su pago, se le estaría descontando 50 pesos mensuales.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 167.0,
+      "end": 169.0,
+      "text": "No sé si le agrada lo que es esta promoción.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 171.0,
+      "end": 172.0,
+      "text": "Ah, mire, señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 50,
+      "start": 172.0,
+      "end": 175.0,
+      "text": "Nomás que con TotalPlay tengo un problemita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 51,
+      "start": 175.0,
+      "end": 179.0,
+      "text": "De que me metieron una aplicación que yo nunca contraté.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.937
+    },
+    {
+      "segment_index": 52,
+      "start": 179.0,
+      "end": 182.0,
+      "text": "Y espero que eso no me pase con ustedes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 53,
+      "start": 182.0,
+      "end": 184.0,
+      "text": "Me pusieron Apple TV.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 54,
+      "start": 184.0,
+      "end": 188.0,
+      "text": "Yo desde un principio les dije que yo no quería esa aplicación.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 55,
+      "start": 188.0,
+      "end": 189.0,
+      "text": "Que a mí no me interesaba.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 56,
+      "start": 189.0,
+      "end": 190.0,
+      "text": "Lo mismo le digo a usted.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 57,
+      "start": 190.0,
+      "end": 195.0,
+      "text": "No me interesa ninguna otra aplicación más que mi internet y mi línea telefónica.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 58,
+      "start": 196.0,
+      "end": 200.0,
+      "text": "Ya tengo tres meses que me lo están queriendo cobrar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 59,
+      "start": 200.0,
+      "end": 202.0,
+      "text": "Ya lo cancelé desde el mes pasado.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 60,
+      "start": 202.0,
+      "end": 208.0,
+      "text": "Porque como supuestamente ellos ya se me había vencido ahorita el tiempo gratis que me lo habían dado.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 61,
+      "start": 208.0,
+      "end": 210.0,
+      "text": "Ya me lo estaban empezando a cobrar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 62,
+      "start": 210.0,
+      "end": 212.0,
+      "text": "Y yo les dije que en ningún momento lo contraté.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 63,
+      "start": 212.0,
+      "end": 216.0,
+      "text": "De hecho, revisaron las llamadas que me hicieron ese día y todo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 64,
+      "start": 216.0,
+      "end": 218.0,
+      "text": "Y ya se dieron cuenta de que nunca lo contraté.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 65,
+      "start": 219.0,
+      "end": 224.0,
+      "text": "Pero hace un mes hablé y no me hicieron nada de que me lo cancelaran.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 66,
+      "start": 224.0,
+      "end": 227.0,
+      "text": "Este mes otra vez me lo volvieron a cobrar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 67,
+      "start": 227.0,
+      "end": 232.0,
+      "text": "Les hablé y ya me lo cancelaron supuestamente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 68,
+      "start": 232.0,
+      "end": 234.0,
+      "text": "Pero eso nunca pasó.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 69,
+      "start": 234.0,
+      "end": 240.0,
+      "text": "Resulta que la señorita me hizo un descuento de 99 pesos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 70,
+      "start": 240.0,
+      "end": 244.0,
+      "text": "Y ahorita ese descuento es el que aparece reflejado que lo debo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 71,
+      "start": 245.0,
+      "end": 247.0,
+      "text": "Ahorita me cortaron el internet.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 72,
+      "start": 247.0,
+      "end": 248.0,
+      "text": "¿Por qué?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 73,
+      "start": 248.0,
+      "end": 252.0,
+      "text": "Porque supuestamente ellos debo esa cantidad de 99 pesos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 74,
+      "start": 252.0,
+      "end": 255.0,
+      "text": "Y ahorita por eso es que ya no quiero estar con ellos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.943
+    },
+    {
+      "segment_index": 75,
+      "start": 255.0,
+      "end": 256.0,
+      "text": "Ya los quiero dejar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 76,
+      "start": 256.0,
+      "end": 258.0,
+      "text": "Y les digo la verdad.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 77,
+      "start": 258.0,
+      "end": 262.0,
+      "text": "Porque yo no quiero salir mal ni con ellos ni con usted.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 78,
+      "start": 262.0,
+      "end": 264.0,
+      "text": "No me gusta deber en ningún lado.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 79,
+      "start": 264.0,
+      "end": 267.0,
+      "text": "Y por eso les estoy diciendo lo que me está pasando con TotalPlay.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 80,
+      "start": 272.0,
+      "end": 273.0,
+      "text": "No se preocupen.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 81,
+      "start": 273.0,
+      "end": 276.0,
+      "text": "Nosotros les hablemos de lo que es el paquete que se requiere.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 82,
+      "start": 276.0,
+      "end": 278.0,
+      "text": "También nosotros traemos lo que es el Apple TV.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 83,
+      "start": 278.0,
+      "end": 281.0,
+      "text": "Pero lo damos totalmente gratis.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 84,
+      "start": 281.0,
+      "end": 284.0,
+      "text": "Y sería contratar lo que es un paquete de 1,000 megas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 85,
+      "start": 284.0,
+      "end": 288.0,
+      "text": "Obviamente no se le podemos brindar a usted porque no quiere contratar un paquete tan alto que es de 1,000 megas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 86,
+      "start": 288.0,
+      "end": 289.0,
+      "text": "No.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 87,
+      "start": 289.0,
+      "end": 290.0,
+      "text": "Ahí está.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 88,
+      "start": 290.0,
+      "end": 293.0,
+      "text": "Entonces no tendríamos por qué poner el Apple TV.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 89,
+      "start": 293.0,
+      "end": 297.0,
+      "text": "Y nosotros nada más le podemos ofrecer lo que es esta promoción de sobre Play.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 90,
+      "start": 297.0,
+      "end": 299.0,
+      "text": "Pero como les digo, antes tengo que checar lo que es si hay cobertura.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 91,
+      "start": 299.0,
+      "end": 303.0,
+      "text": "Y con usted les vamos a entregar más información a fondo de instalación, descuentos, etc.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 92,
+      "start": 303.0,
+      "end": 305.0,
+      "text": "Pues antes de saber.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 93,
+      "start": 306.0,
+      "end": 308.0,
+      "text": "Pero no hay ningún problema con eso, ¿verdad?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 94,
+      "start": 310.0,
+      "end": 312.0,
+      "text": "¿Del adeudo activo que tengo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 95,
+      "start": 313.0,
+      "end": 314.0,
+      "text": "¿Tiene una deuda con nosotros?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 96,
+      "start": 314.0,
+      "end": 316.0,
+      "text": "No, con TotalPlay.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 97,
+      "start": 316.0,
+      "end": 317.0,
+      "text": "Ah, no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 98,
+      "start": 317.0,
+      "end": 319.0,
+      "text": "No hay ningún problema con eso.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 99,
+      "start": 319.0,
+      "end": 322.0,
+      "text": "Ah, para hacer la portabilidad no tengo yo ningún problema.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 100,
+      "start": 322.0,
+      "end": 325.0,
+      "text": "Porque supuestamente ellos ahorita ya me lo cancelaron.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 101,
+      "start": 325.0,
+      "end": 328.0,
+      "text": "Y el adeudo dicen que ya se quitó.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 102,
+      "start": 328.0,
+      "end": 332.0,
+      "text": "Pero que va a aparecer reflejado hasta dentro de 72 horas.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 103,
+      "start": 332.0,
+      "end": 335.0,
+      "text": "Y es cuando me van a regresar ellos el internet a mí otra vez.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 104,
+      "start": 335.0,
+      "end": 338.0,
+      "text": "Pero la verdad yo ya no quiero nada con ellos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 105,
+      "start": 338.0,
+      "end": 339.0,
+      "text": "Ya no quiero nada.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 106,
+      "start": 339.0,
+      "end": 341.0,
+      "text": "Y por eso es que los busqué a ustedes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 107,
+      "start": 342.0,
+      "end": 343.0,
+      "text": "Ah, ok.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 108,
+      "start": 343.0,
+      "end": 346.0,
+      "text": "Sí, pero como le digo, mire, ahorita primero checamos la cobertura.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 109,
+      "start": 346.0,
+      "end": 348.0,
+      "text": "Si hay la cobertura le damos información más a fondo.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 110,
+      "start": 348.0,
+      "end": 349.0,
+      "text": "¿Le parece?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 111,
+      "start": 349.0,
+      "end": 351.0,
+      "text": "Ah, claro que sí, señorita.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 112,
+      "start": 351.0,
+      "end": 354.0,
+      "text": "¿Podría brindarme lo que es código postal Ciudad de Colonia?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 113,
+      "start": 355.0,
+      "end": 357.0,
+      "text": "Estoy en el KTP, que es Estado de México.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 114,
+      "start": 357.0,
+      "end": 361.0,
+      "text": "El código postal es el 55070.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 115,
+      "start": 363.0,
+      "end": 365.0,
+      "text": "México 55070.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 116,
+      "start": 366.0,
+      "end": 367.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 117,
+      "start": 367.0,
+      "end": 368.0,
+      "text": "Es KTP.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 118,
+      "start": 369.0,
+      "end": 373.0,
+      "text": "Ok, es KTP, Estado de México, código postal 55070.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 119,
+      "start": 373.0,
+      "end": 377.0,
+      "text": "Ok, entonces ahorita checamos lo que es si hay cobertura.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 120,
+      "start": 377.0,
+      "end": 380.0,
+      "text": "Y le regresamos la llamada en unos 5 minutos, ¿ok?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 121,
+      "start": 380.0,
+      "end": 382.0,
+      "text": "Ah, ok, señorita, está bien.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 122,
+      "start": 382.0,
+      "end": 384.0,
+      "text": "Ok, entonces ahorita le regresamos la llamada.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 123,
+      "start": 384.0,
+      "end": 385.0,
+      "text": "Le agradezco mucho que tenga un buen día.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 124,
+      "start": 385.0,
+      "end": 386.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 125,
+      "start": 386.0,
+      "end": 387.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 126,
+      "start": 387.0,
+      "end": 388.0,
+      "text": "Igualmente, hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 127,
+      "start": 388.0,
+      "end": 389.0,
+      "text": "Un poquito más de gusto, disculpe.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 128,
+      "start": 389.0,
+      "end": 392.0,
+      "text": "Con María Encarnación Martínez Padilla.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 129,
+      "start": 393.0,
+      "end": 395.0,
+      "text": "María Encarnación Martínez Padilla.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 130,
+      "start": 396.0,
+      "end": 398.0,
+      "text": "Ok, entonces ahorita lo checamos y le regresamos la llamada, ¿ok?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 131,
+      "start": 398.0,
+      "end": 399.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 132,
+      "start": 399.0,
+      "end": 400.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 133,
+      "start": 400.0,
+      "end": 401.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 134,
+      "start": 402.0,
+      "end": 403.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    }
+  ],
+  "agent_segments": 61,
+  "customer_segments": 68,
+  "ivr_segments": 6
+}

@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  izzi-dashboard:
+    build: .
+    ports:
+      - "8080:4173"
+    volumes:
+      - ./public/audio:/app/dist/audio:ro
+    restart: unless-stopped

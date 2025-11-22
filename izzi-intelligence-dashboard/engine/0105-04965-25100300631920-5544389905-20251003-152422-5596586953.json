@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300631920-5544389905-20251003-152422-5596586953.WAV",
+  "file_name": "0105-04965-25100300631920-5544389905-20251003-152422-5596586953.WAV",
+  "base_id": "0105-04965-25100300631920-5544389905-20251003-152422-5596586953",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix William, más Sky Sports, desde $350 pesos al primer mes, con ICI, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Pero qué, qué es pero... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Contrataciones, ICI, la atende Edgar Torres, ¿con quién tengo el gusto? No sé, joven, me están... Espérame. Sí. Me están a brillarles, joven, a este teléfono y yo tengo una bebé y cada que me marca me la despiertan. Es una recién nacida. Entonces yo no entiendo. Cuando llego, te contesto y ya no me contestan. Entonces no sé para qué me marquen. Ok, bueno, entonces aquí ponemos que no esté interesada en la llamada, no se preocupen. Por favor, sí, joven. Se lo voy a agradecer.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix William, más Sky Sports, desde $350 pesos al primer mes, con ICI, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 24.09,
+      "text": " Pero qué, qué es pero...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.09,
+      "end": 32.09,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.09,
+      "end": 35.63,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.63,
+      "end": 89.65,
+      "text": " Contrataciones, ICI, la atende Edgar Torres, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 89.65,
+      "end": 92.65,
+      "text": " No sé, joven, me están...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 92.65,
+      "end": 93.65,
+      "text": " Espérame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 93.65,
+      "end": 94.65,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 94.65,
+      "end": 103.65,
+      "text": " Me están a brillarles, joven, a este teléfono y yo tengo una bebé y cada que me marca me la despiertan. Es una recién nacida.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 103.65,
+      "end": 115.19,
+      "text": " Entonces yo no entiendo. Cuando llego, te contesto y ya no me contestan. Entonces no sé para qué me marquen.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 115.19,
+      "end": 119.35,
+      "text": " Ok, bueno, entonces aquí ponemos que no esté interesada en la llamada, no se preocupen.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 119.35,
+      "end": 123.35,
+      "text": " Por favor, sí, joven. Se lo voy a agradecer.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 127.872,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

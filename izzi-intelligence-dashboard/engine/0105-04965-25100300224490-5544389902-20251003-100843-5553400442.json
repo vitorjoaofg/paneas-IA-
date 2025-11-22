@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300224490-5544389902-20251003-100843-5553400442.WAV",
+  "file_name": "0105-04965-25100300224490-5544389902-20251003-100843-5553400442.WAV",
+  "base_id": "0105-04965-25100300224490-5544389902-20251003-100843-5553400442",
+  "transcription": "Hola, ¿te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Spinium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando, por favor. www.ahv.my Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 2. Espera un momento, por favor. Si desea hablar al Departamento de Arquitectura, marque 2. Hola, muy buen día. Hola, muy buen día. Mi nombre es Graciela Ovet, Departe de Easy. ¿Se encuentra... ¿Con quién tengo el gusto? Vete a security, buen día. Hola, muy buen día. Mi nombre es Graciela Ovet, Departe de Easy. ¿Con quién tengo el gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Spinium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 13.28,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.36,
+      "end": 17.16,
+      "text": " Un asesor te está esperando, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.16,
+      "end": 20.16,
+      "text": " www.ahv.my",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.16,
+      "end": 23.48,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.48,
+      "end": 25.92,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.92,
+      "end": 26.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.96,
+      "end": 29.12,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.9,
+      "end": 36.56,
+      "text": " Hola, muy buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.56,
+      "end": 37.32,
+      "text": " Hola, muy buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.32,
+      "end": 39.96,
+      "text": " Mi nombre es Graciela Ovet, Departe de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.96,
+      "end": 40.96,
+      "text": " ¿Se encuentra...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 40.96,
+      "end": 43.84,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 43.84,
+      "end": 45.8,
+      "text": " Vete a security, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 45.8,
+      "end": 46.88,
+      "text": " Hola, muy buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 46.88,
+      "end": 49.48,
+      "text": " Mi nombre es Graciela Ovet, Departe de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 49.48,
+      "end": 50.68,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.688,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

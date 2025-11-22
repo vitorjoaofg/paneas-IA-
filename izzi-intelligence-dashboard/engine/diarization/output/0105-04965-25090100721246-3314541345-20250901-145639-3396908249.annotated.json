@@ -1,0 +1,98 @@
+{
+  "call_id": "0105-04965-25090100721246-3314541345-20250901-145639-3396908249",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 MB de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos al primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 14.0,
+      "end": 20.0,
+      "text": "¡No lo pienses más! ¡Háblete! ¡Cállate ahí! ¡Si te interesa, un asesor te está esperando!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 21.0,
+      "end": 25.0,
+      "text": "Puedes consultar también el estado de tu orden de servicio presionando el número 3.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 26.0,
+      "end": 34.0,
+      "text": "Si deseas escuchar nuestro aviso de privacidad, presiona 0 o presiona 0 si deseas ser atendido por nuestras operadoras.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 4,
+      "start": 35.0,
+      "end": 39.0,
+      "text": "Escucha nuevamente este menú presionando el número 7.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 40.0,
+      "end": 43.0,
+      "text": "Recuerda que para nosotros eres lo más importante.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 51.0,
+      "end": 54.0,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 MB de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos al primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 7,
+      "start": 54.0,
+      "end": 57.0,
+      "text": "¡No lo pienses más! ¡Háblete! ¡Cállate ahí! ¡Si te interesa, un asesor te está esperando!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 80.0,
+      "end": 86.0,
+      "text": "¡No lo pienses más! ¡Háblete! ¡Cállate ahí! ¡Si te interesa, un asesor te está esperando!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 110.0,
+      "end": 115.0,
+      "text": "¡No lo pienses más! ¡Háblete! ¡Cállate ahí!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 0,
+  "ivr_segments": 10
+}

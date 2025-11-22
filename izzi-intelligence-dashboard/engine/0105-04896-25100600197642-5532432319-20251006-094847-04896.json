@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25100600197642-5532432319-20251006-094847-04896.WAV",
+  "file_name": "0105-04896-25100600197642-5532432319-20251006-094847-04896.WAV",
+  "base_id": "0105-04896-25100600197642-5532432319-20251006-094847-04896",
+  "transcription": "Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Buenos días. Buenas noches. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Está aquí por ahí. Hola, ¿qué tal? Muy buenos días. Gracias por comunicarse a EasyMobile. Mi nombre es Yvonne Galeana. ¿Tengo el gusto con Francisco? Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.2,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.2,
+      "end": 8.2,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.2,
+      "end": 10.4,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 10.4,
+      "end": 15.32,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.32,
+      "end": 19.15,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.15,
+      "end": 20.15,
+      "text": " Buenas noches.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.15,
+      "end": 21.95,
+      "text": " No entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 21.95,
+      "end": 23.95,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 23.95,
+      "end": 31.82,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 31.82,
+      "end": 35.09,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 38.04,
+      "end": 39.64,
+      "text": " Está aquí por ahí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.64,
+      "end": 40.64,
+      "text": " Hola, ¿qué tal?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 40.64,
+      "end": 41.64,
+      "text": " Muy buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 41.64,
+      "end": 43.64,
+      "text": " Gracias por comunicarse a EasyMobile.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 43.64,
+      "end": 44.84,
+      "text": " Mi nombre es Yvonne Galeana.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 44.84,
+      "end": 49.21,
+      "text": " ¿Tengo el gusto con Francisco?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 49.21,
+      "end": 50.21,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

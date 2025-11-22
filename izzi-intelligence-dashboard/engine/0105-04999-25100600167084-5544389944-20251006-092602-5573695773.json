@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600167084-5544389944-20251006-092602-5573695773.WAV",
+  "file_name": "0105-04999-25100600167084-5544389944-20251006-092602-5573695773.WAV",
+  "base_id": "0105-04999-25100600167084-5544389944-20251006-092602-5573695773",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, hola, ¿qué tal? Muy buenos días. Me estoy comunicando por parte de lo que es el servicio de telefonía Easy. Mi nombre es Teresa Quinta. ¿Con quién tengo el gusto? Disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 25.1,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.1,
+      "end": 34.1,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 34.1,
+      "end": 38.73,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.73,
+      "end": 51.82,
+      "text": " Hola, hola, ¿qué tal? Muy buenos días. Me estoy comunicando por parte de lo que es el servicio de telefonía Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 51.82,
+      "end": 54.82,
+      "text": " Mi nombre es Teresa Quinta. ¿Con quién tengo el gusto? Disculpe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.492,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

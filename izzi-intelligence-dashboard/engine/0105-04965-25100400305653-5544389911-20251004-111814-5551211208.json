@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400305653-5544389911-20251004-111814-5551211208.WAV",
+  "file_name": "0105-04965-25100400305653-5544389911-20251004-111814-5551211208.WAV",
+  "base_id": "0105-04965-25100400305653-5544389911-20251004-111814-5551211208",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor... ¿Qué pasó? ...escribimiento con Vixprime, más Skyport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable... ¿Qué se revista en la televisión? Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.34,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.34,
+      "end": 4.84,
+      "text": " ¿Qué pasó?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 4.84,
+      "end": 13.18,
+      "text": " ...escribimiento con Vixprime, más Skyport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.18,
+      "end": 17.64,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.64,
+      "end": 21.96,
+      "text": " ¿Qué se revista en la televisión?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.96,
+      "end": 23.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 30.06,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

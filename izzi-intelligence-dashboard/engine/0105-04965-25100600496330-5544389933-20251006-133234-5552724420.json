@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600496330-5544389933-20251006-133234-5552724420.WAV",
+  "file_name": "0105-04965-25100600496330-5544389933-20251006-133234-5552724420.WAV",
+  "base_id": "0105-04965-25100600496330-5544389933-20251006-133234-5552724420",
+  "transcription": "¡Hola! Te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Streamer, Mark Stahlsport, que de 350 pesos el primer net, con él sí es posible, te interesa, un asesor te está esperando, por favor, hable opulso, y desea hablar con su asesor inmobiliario. 3. Seguimiento a titulación y escrituración de su casa. 4. Para hablar con el departamento de proyectos. 5. Publicidad y mecanotecnia. 6. Recursos humanos. 7. Para hablar con la operadora, por favor, marque cero o espere en línea para ser atendido. Esta llamada puede ser grabada para fines de calidad. Buenas tardes. Quédanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.52,
+      "text": " ¡Hola! Te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Streamer,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.52,
+      "end": 14.36,
+      "text": " Mark Stahlsport, que de 350 pesos el primer net, con él sí es posible, te interesa,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.36,
+      "end": 19.4,
+      "text": " un asesor te está esperando, por favor, hable opulso, y desea hablar con su asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.4,
+      "end": 26.57,
+      "text": " inmobiliario. 3. Seguimiento a titulación y escrituración de su casa. 4. Para hablar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.57,
+      "end": 33.56,
+      "text": " con el departamento de proyectos. 5. Publicidad y mecanotecnia. 6. Recursos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.56,
+      "end": 39.52,
+      "text": " humanos. 7. Para hablar con la operadora, por favor, marque cero o espere en línea",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.52,
+      "end": 48.22,
+      "text": " para ser atendido. Esta llamada puede ser grabada para fines de calidad.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.22,
+      "end": 79.8,
+      "text": " Buenas tardes. Quédanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 79.8,
+      "end": 85.96,
+      "text": " Por favor, presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 85.96,
+      "end": 93.0,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 93.0,
+      "end": 97.92,
+      "text": " presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 97.92,
+      "end": 103.72,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 103.72,
+      "end": 106.68,
+      "text": " Por favor, presiona 1 si fuiste bien atendido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.812,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

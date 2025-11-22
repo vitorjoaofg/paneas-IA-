@@ -1,0 +1,186 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600542167-5540409201-20251006-140652-5591332896.WAV",
+  "file_name": "0105-04965-25100600542167-5540409201-20251006-140652-5591332896.WAV",
+  "base_id": "0105-04965-25100600542167-5540409201-20251006-140652-5591332896",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Rick Williams, más Skye Sports, desde 350 pesos el primer mes, con INCREED, es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Marque 4, mesa de control. Marque 5, proyectos. Si deseas formar parte del... Espera un momento, por favor. ... para ser atendido por el área de recursos humanos. Puede consultar nuestro aviso de privacidad en www.hico.mx. En GICO entendemos tu negocio. Gracias por elegirnos. Usted marcó después de la clavellada, no existe. Favor de verificarlo. Gracias. El número que usted marcó después de la clavellada no existe. Favor de verificarlo. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.8,
+      "end": 13.4,
+      "text": " Rick Williams, más Skye Sports, desde 350 pesos el primer mes, con INCREED, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.4,
+      "end": 14.4,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.4,
+      "end": 16.4,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.4,
+      "end": 17.4,
+      "text": " Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.4,
+      "end": 20.62,
+      "text": " Marque 4, mesa de control.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.62,
+      "end": 24.04,
+      "text": " Marque 5, proyectos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.04,
+      "end": 26.04,
+      "text": " Si deseas formar parte del...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.04,
+      "end": 28.04,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.04,
+      "end": 30.04,
+      "text": " ... para ser atendido por el área de recursos humanos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.44,
+      "end": 36.76,
+      "text": " Puede consultar nuestro aviso de privacidad en www.hico.mx.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 36.76,
+      "end": 38.92,
+      "text": " En GICO entendemos tu negocio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 38.92,
+      "end": 40.92,
+      "text": " Gracias por elegirnos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 40.92,
+      "end": 56.18,
+      "text": " Usted marcó después de la clavellada, no existe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 56.18,
+      "end": 58.18,
+      "text": " Favor de verificarlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.18,
+      "end": 59.18,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 59.18,
+      "end": 62.18,
+      "text": " El número que usted marcó después de la clavellada no existe.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 62.18,
+      "end": 64.18,
+      "text": " Favor de verificarlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.18,
+      "end": 65.18,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.824,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

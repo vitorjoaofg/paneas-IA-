@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100355490-5544389910-20251001-133620-5590260168.WAV",
+  "file_name": "0105-04965-25100100355490-5544389910-20251001-133620-5590260168.WAV",
+  "base_id": "0105-04965-25100100355490-5544389910-20251001-133620-5590260168",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Y se puede enterar? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Bueno... Bueno... Siento, no entendí tu respuesta. No, ni yo tampoco. A ver, dime. Presiona 1 para hablar con un asesor, o 2 para terminar la llamada. A ver... Espera un momento, por favor. Hola, ¿buenas tardes? Buenas tardes. ¿Se puede calar la contratación de Easy y la atiendes en el casino con quien tenga el gusto? No, ya no, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Y se puede enterar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 23.9,
+      "text": " Bueno... Bueno...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.9,
+      "end": 26.54,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.54,
+      "end": 29.54,
+      "text": " No, ni yo tampoco. A ver, dime.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.54,
+      "end": 34.54,
+      "text": " Presiona 1 para hablar con un asesor, o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.54,
+      "end": 37.18,
+      "text": " A ver...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.18,
+      "end": 39.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.18,
+      "end": 49.11,
+      "text": " Hola, ¿buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.11,
+      "end": 50.11,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.11,
+      "end": 54.27,
+      "text": " ¿Se puede calar la contratación de Easy y la atiendes en el casino con quien tenga el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.27,
+      "end": 56.27,
+      "text": " No, ya no, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.932,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

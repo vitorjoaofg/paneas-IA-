@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200460233-3314541314-20251002-132659-3359800766.WAV",
+  "file_name": "0105-04965-25100200460233-3314541314-20251002-132659-3359800766.WAV",
+  "base_id": "0105-04965-25100200460233-3314541314-20251002-132659-3359800766",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Buenos! Hola, ¿qué tal? Buenas tardes. Hola, ¿qué tal? Buenas tardes señor. Mi nombre es Janet Pulido, me comunico de parte de la compañía de Easy. Es en este caso para darle a conocer nuestro nuevo servicio de EasyMobile y sus beneficios. Más bien ahorita le traemos lo que es una propuesta. Hace un mes aproximadamente tenía un tema con ustedes de que solicité que me dieran de baja de esta lista de publicidad. Ah, ok, ok, si gusta yo pase el reporte para que lo dejen de llamar. Por favor, si me ayudas con eso te lo agradezco mucho. Claro que sí, una disculpa muy amable. Gracias. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 26.82,
+      "text": " para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.82,
+      "end": 38.7,
+      "text": " ¡Buenos! Hola, ¿qué tal? Buenas tardes. Hola, ¿qué tal? Buenas tardes señor. Mi",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.7,
+      "end": 42.94,
+      "text": " nombre es Janet Pulido, me comunico de parte de la compañía de Easy. Es en este",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.94,
+      "end": 46.5,
+      "text": " caso para darle a conocer nuestro nuevo servicio de EasyMobile y sus beneficios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.5,
+      "end": 50.3,
+      "text": " Más bien ahorita le traemos lo que es una propuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.3,
+      "end": 60.06,
+      "text": " Hace un mes aproximadamente tenía un tema con ustedes de que solicité que me dieran de baja de esta lista de publicidad.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.22,
+      "end": 67.22,
+      "text": " Ah, ok, ok, si gusta yo pase el reporte para que lo dejen de llamar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.22,
+      "end": 70.38,
+      "text": " Por favor, si me ayudas con eso te lo agradezco mucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.38,
+      "end": 73.38,
+      "text": " Claro que sí, una disculpa muy amable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 73.38,
+      "end": 74.38,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.38,
+      "end": 75.38,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.852,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

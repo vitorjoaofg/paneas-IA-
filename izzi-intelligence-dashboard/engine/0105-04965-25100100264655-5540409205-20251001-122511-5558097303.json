@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100264655-5540409205-20251001-122511-5558097303.WAV",
+  "file_name": "0105-04965-25100100264655-5540409205-20251001-122511-5558097303.WAV",
+  "base_id": "0105-04965-25100100264655-5540409205-20251001-122511-5558097303",
+  "transcription": "Por favor, ingresa los cinco números del código postal de la zona donde deseas realizar tu trámite. Por favor, ingresa los cinco números del código postal de la zona donde deseas realizar tu trámite. Si tiene un cero a la izquierda, incluyelo. Espera un momento, por favor. El código postal no es válido. Hola, buenos días. Inetel, muy buenas tardes. La tiene Miguel Yepez. ¿En qué le puedo ayudar? Mucho gusto, señor. Mi nombre es Patricia Badille. Hablo de compañía Easy. ¿Con quién tengo el gusto, me dijo? Miguel Yepez, de Inetel. ¿En qué le puedo ayudar? El motivo de mi llamada es profesor en nuestros servicios de Internet, telefonía y cable. Perdón, señorita. Se está comunicando usted al Instituto Nacional Electoral. ¿Alguna información relacionada a información político electoral? Bueno, disculpa. Aquí le voy a poner que es número electoral. Gracias, excelente día. Lindo día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.0,
+      "text": " Por favor, ingresa los cinco números del código postal de la zona donde deseas realizar tu trámite.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " Por favor, ingresa los cinco números del código postal de la zona donde deseas realizar tu trámite.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Si tiene un cero a la izquierda, incluyelo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 27.33,
+      "end": 29.33,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.94,
+      "end": 32.94,
+      "text": " El código postal no es válido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.76,
+      "end": 39.23,
+      "text": " Hola, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.23,
+      "end": 43.23,
+      "text": " Inetel, muy buenas tardes. La tiene Miguel Yepez. ¿En qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.23,
+      "end": 49.26,
+      "text": " Mucho gusto, señor. Mi nombre es Patricia Badille. Hablo de compañía Easy. ¿Con quién tengo el gusto, me dijo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.26,
+      "end": 52.46,
+      "text": " Miguel Yepez, de Inetel. ¿En qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.46,
+      "end": 57.46,
+      "text": " El motivo de mi llamada es profesor en nuestros servicios de Internet, telefonía y cable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.46,
+      "end": 63.06,
+      "text": " Perdón, señorita. Se está comunicando usted al Instituto Nacional Electoral.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.06,
+      "end": 68.29,
+      "text": " ¿Alguna información relacionada a información político electoral?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.29,
+      "end": 73.67,
+      "text": " Bueno, disculpa. Aquí le voy a poner que es número electoral. Gracias, excelente día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 73.67,
+      "end": 74.67,
+      "text": " Lindo día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.67,
+      "end": 75.67,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 153.144,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

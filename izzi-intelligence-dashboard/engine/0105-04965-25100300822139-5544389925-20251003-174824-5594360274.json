@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300822139-5544389925-20251003-174824-5594360274.WAV",
+  "file_name": "0105-04965-25100300822139-5544389925-20251003-174824-5594360274.WAV",
+  "base_id": "0105-04965-25100300822139-5544389925-20251003-174824-5594360274",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor... A ver, permítame, déjame bajarle a la tele. ...más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. A ver, ¿de qué compañía me habla? Siento, no entendí tu respuesta. Que de qué compañía me está ofreciendo el servicio. Uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, espera un momento, por favor. Bueno, bueno, bueno...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.0,
+      "end": 7.0,
+      "text": " A ver, permítame, déjame bajarle a la tele.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " ...más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 21.35,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.35,
+      "end": 23.35,
+      "text": " A ver, ¿de qué compañía me habla?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.35,
+      "end": 27.18,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.18,
+      "end": 30.18,
+      "text": " Que de qué compañía me está ofreciendo el servicio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.18,
+      "end": 34.18,
+      "text": " Uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.18,
+      "end": 39.96,
+      "text": " No recibo tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.96,
+      "end": 42.96,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.96,
+      "end": 52.17,
+      "text": " Bueno, bueno, bueno...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

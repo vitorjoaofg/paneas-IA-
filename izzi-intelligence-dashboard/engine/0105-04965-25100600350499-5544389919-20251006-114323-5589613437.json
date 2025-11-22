@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600350499-5544389919-20251006-114323-5589613437.WAV",
+  "file_name": "0105-04965-25100600350499-5544389919-20251006-114323-5589613437.WAV",
+  "base_id": "0105-04965-25100600350499-5544389919-20251006-114323-5589613437",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, Quitel, buenas tardes. Hola, buenas tardes, joven. Mira, ya me... Bueno, me marcaron. Y la verdad, yo ya tengo Easy, pero no lo tengo aquí en mi casa, lo tengo en un local. Entonces, para mí es incomodo que cada rato me estén marque y marque. Y, pues, la verdad, yo no voy a tener que cancelar el Easy donde yo lo tengo. Oh, correcto, sí. No, yo por hacería retirar el número, se dice una disculpa. Que tenga una excelente tarde. Sí, muchísimas gracias igualmente. Oh, correcto, sí, dice que tenga una excelente tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 13.48,
+      "text": " más Sky Sports desde 350 pesos el primer mes con Easy Es Posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.48,
+      "end": 16.64,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.64,
+      "end": 23.1,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.1,
+      "end": 31.17,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.17,
+      "end": 32.65,
+      "text": " Hola, Quitel, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.65,
+      "end": 34.25,
+      "text": " Hola, buenas tardes, joven.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.25,
+      "end": 35.37,
+      "text": " Mira, ya me...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.37,
+      "end": 36.69,
+      "text": " Bueno, me marcaron.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.69,
+      "end": 40.37,
+      "text": " Y la verdad, yo ya tengo Easy, pero no lo tengo aquí en mi casa, lo tengo en un local.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.37,
+      "end": 44.86,
+      "text": " Entonces, para mí es incomodo que cada rato me estén marque y marque.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.86,
+      "end": 50.3,
+      "text": " Y, pues, la verdad, yo no voy a tener que cancelar el Easy donde yo lo tengo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.3,
+      "end": 51.3,
+      "text": " Oh, correcto, sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 51.3,
+      "end": 54.14,
+      "text": " No, yo por hacería retirar el número, se dice una disculpa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 54.14,
+      "end": 55.14,
+      "text": " Que tenga una excelente tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 55.14,
+      "end": 57.26,
+      "text": " Sí, muchísimas gracias igualmente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 57.26,
+      "end": 59.42,
+      "text": " Oh, correcto, sí, dice que tenga una excelente tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.264,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400427158-5559587606-20251004-125032-04896.WAV",
+  "file_name": "0105-04965-25100400427158-5559587606-20251004-125032-04896.WAV",
+  "base_id": "0105-04965-25100400427158-5559587606-20251004-125032-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Sí, buenas tardes. ¿Se encontrará, señorita? Bueno. Sí, buenas tardes. Me estoy comunicando del servicio de Easy. ¿Con quién tengo el gusto? ¿Cuál es la promoción que le agrada? No, estás equivocado. Ok, le agradezco mucho que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 16.0,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 24.38,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.38,
+      "end": 26.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.38,
+      "end": 38.62,
+      "text": " Sí, buenas tardes. Sí, buenas tardes. ¿Se encontrará, señorita?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.62,
+      "end": 41.04,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.04,
+      "end": 47.48,
+      "text": " Sí, buenas tardes. Me estoy comunicando del servicio de Easy. ¿Con quién tengo el gusto? ¿Cuál es la promoción que le agrada?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.48,
+      "end": 49.48,
+      "text": " No, estás equivocado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.48,
+      "end": 51.67,
+      "text": " Ok, le agradezco mucho que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.54,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

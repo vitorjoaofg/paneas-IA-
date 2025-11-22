@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600333895-5544389913-20251006-113102-5555237838.WAV",
+  "file_name": "0105-04965-25100600333895-5544389913-20251006-113102-5555237838.WAV",
+  "base_id": "0105-04965-25100600333895-5544389913-20251006-113102-5555237838",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Si desea enviar un fax, marque 55-55-36-7110. Para hablar con la operadora, marque cero. Espera un momento, por favor. ¿Y si, buenos días? ¿Buenos días? ¿Y si, buenos días? ¿Nos marcaron ahí? ¿Puedo ayudarle en algo? ¿Bueno? Si, dígame. Ah, es que me marcaron. Bueno, marcaron aquí a Easy. Le estamos contestando de Easy. A ver, permítanme un momento. Sí, gracias. Me supone que estas llamadas las íbamos a contestar y me dicen que estamos llamando a nosotros en la campaña de TMK. Sí, pero se supone que son llamadas que... Hola, ¿qué tal? Buenos días. No, yo creo que se equivocaron, porque no es que aparecieron y nadie mataste. ¿Vale? Ajá, que bueno. Pues muchas gracias. No, de qué. Hasta luego. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 29.72,
+      "text": " Si desea enviar un fax, marque 55-55-36-7110. Para hablar con la operadora, marque cero.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.72,
+      "end": 56.64,
+      "text": " Espera un momento, por favor. ¿Y si, buenos días? ¿Buenos días? ¿Y si, buenos días? ¿Nos marcaron ahí? ¿Puedo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 56.76,
+      "end": 63.67,
+      "text": " ayudarle en algo? ¿Bueno? Si, dígame. Ah, es que me marcaron. Bueno, marcaron aquí a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 63.67,
+      "end": 88.98,
+      "text": " Le estamos contestando de Easy. A ver, permítanme un momento. Sí, gracias. Me supone que estas llamadas las íbamos a contestar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 88.98,
+      "end": 103.0,
+      "text": " y me dicen que estamos llamando a nosotros en la campaña de TMK. Sí, pero se supone que son llamadas que...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 103.48,
+      "end": 122.67,
+      "text": " Hola, ¿qué tal? Buenos días. No, yo creo que se equivocaron, porque no es que aparecieron y nadie mataste. ¿Vale?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 122.67,
+      "end": 126.67,
+      "text": " Ajá, que bueno. Pues muchas gracias. No, de qué. Hasta luego. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 205.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

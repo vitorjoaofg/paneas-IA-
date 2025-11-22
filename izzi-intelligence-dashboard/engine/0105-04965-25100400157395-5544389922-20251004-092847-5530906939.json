@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400157395-5544389922-20251004-092847-5530906939.WAV",
+  "file_name": "0105-04965-25100400157395-5544389922-20251004-092847-5530906939.WAV",
+  "base_id": "0105-04965-25100400157395-5544389922-20251004-092847-5530906939",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, hola, buenos días. Me comunico de la compañía de Easy. Sí, les saludo a Paula Cabañas. ¿Cómo la puedo ayudar? Buenos días. No lo que pasa es que me están llamando para lo de la promoción, pero desgraciadamente aquí no hay cobertura para Internet. Ah, ok, ok. Bueno, pues muchas gracias. Que tenga bonito día. Igualmente, que Dios la bendiga. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 21.58,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.58,
+      "end": 30.37,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.37,
+      "end": 33.37,
+      "text": " Hola, hola, buenos días. Me comunico de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.37,
+      "end": 36.37,
+      "text": " Sí, les saludo a Paula Cabañas. ¿Cómo la puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.37,
+      "end": 41.37,
+      "text": " Buenos días. No lo que pasa es que me están llamando para lo de la promoción,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.37,
+      "end": 45.46,
+      "text": " pero desgraciadamente aquí no hay cobertura para Internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.46,
+      "end": 49.46,
+      "text": " Ah, ok, ok. Bueno, pues muchas gracias. Que tenga bonito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.46,
+      "end": 51.46,
+      "text": " Igualmente, que Dios la bendiga.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.46,
+      "end": 52.46,
+      "text": " Igualmente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.296,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

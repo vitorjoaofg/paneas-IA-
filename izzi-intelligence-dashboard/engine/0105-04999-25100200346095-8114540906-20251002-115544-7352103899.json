@@ -1,0 +1,33 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100200346095-8114540906-20251002-115544-7352103899.WAV",
+  "file_name": "0105-04999-25100200346095-8114540906-20251002-115544-7352103899.WAV",
+  "base_id": "0105-04999-25100200346095-8114540906-20251002-115544-7352103899",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Ya estamos llegando a los Vixi. A ver, para cambiarte, Total Play. ¿No? Es el más bonito el Vixi que yo he usado antes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 27.98,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 27.98,
+      "end": 39.66,
+      "text": " Ya estamos llegando a los Vixi. A ver, para cambiarte, Total Play. ¿No? Es el más bonito el Vixi que yo he usado antes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.12,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

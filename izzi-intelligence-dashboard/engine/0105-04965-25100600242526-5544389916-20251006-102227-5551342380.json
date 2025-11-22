@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600242526-5544389916-20251006-102227-5551342380.WAV",
+  "file_name": "0105-04965-25100600242526-5544389916-20251006-102227-5551342380.WAV",
+  "base_id": "0105-04965-25100600242526-5544389916-20251006-102227-5551342380",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno... Espera un momento, por favor. Ah, ¿me buenos días? Sí, ¿me buenos días? Tengo el gusto con las... Ajá. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.8,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.8,
+      "end": 13.9,
+      "text": " Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.9,
+      "end": 16.9,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.9,
+      "end": 20.1,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.1,
+      "end": 22.3,
+      "text": " Por favor, hable o pulse uno...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.5,
+      "end": 32.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.42,
+      "end": 38.92,
+      "text": " Ah, ¿me buenos días?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.92,
+      "end": 42.29,
+      "text": " Sí, ¿me buenos días?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.29,
+      "end": 45.2,
+      "text": " Tengo el gusto con las...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.2,
+      "end": 48.2,
+      "text": " Ajá.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.22,
+      "end": 62.22,
+      "text": " Adiós.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.316,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

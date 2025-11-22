@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200277149-5544389982-20251002-110118-5557521365.WAV",
+  "file_name": "0105-04965-25100200277149-5544389982-20251002-110118-5557521365.WAV",
+  "base_id": "0105-04965-25100200277149-5544389982-20251002-110118-5557521365",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos en primer vez? No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Un montón de sortes! Va esperando, por favor. ¡Espera un momento, por favor! Banco multivo a unos diez y ya tiene que abrir. ¿Ponemos no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 6.42,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.42,
+      "end": 14.22,
+      "text": " con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos en primer vez?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.22,
+      "end": 19.22,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Un montón de sortes!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.22,
+      "end": 21.22,
+      "text": " Va esperando, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.22,
+      "end": 32.22,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 80.18,
+      "end": 86.23,
+      "text": " Banco multivo a unos diez y ya tiene que abrir. ¿Ponemos no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.612,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

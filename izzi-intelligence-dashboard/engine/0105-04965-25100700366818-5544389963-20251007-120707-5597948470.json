@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700366818-5544389963-20251007-120707-5597948470.WAV",
+  "file_name": "0105-04965-25100700366818-5544389963-20251007-120707-5597948470.WAV",
+  "base_id": "0105-04965-25100700366818-5544389963-20251007-120707-5597948470",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? No. Bueno. ¿Tener el mejor enalimento con 200 canarios... Bueno, bueno, bueno, bueno, bueno, bueno, bueno, bueno. ...debiendo hacer nuevos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a IZI. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. O2, espera un momento, por favor. Bienvenido al área de contrataciones IZI. ¿Con quién tengo el gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.48,
+      "end": 5.48,
+      "text": " No. Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 5.48,
+      "end": 7.32,
+      "text": " ¿Tener el mejor enalimento con 200 canarios...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 7.32,
+      "end": 9.32,
+      "text": " Bueno, bueno, bueno, bueno, bueno, bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 9.32,
+      "end": 13.84,
+      "text": " ...debiendo hacer nuevos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 13.84,
+      "end": 16.84,
+      "text": " No lo pienses más y cámbiate a IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 16.84,
+      "end": 20.24,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.24,
+      "end": 22.72,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 22.72,
+      "end": 24.72,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 24.72,
+      "end": 27.28,
+      "text": " Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 27.4,
+      "end": 36.58,
+      "text": " O2, espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 36.58,
+      "end": 39.58,
+      "text": " Bienvenido al área de contrataciones IZI. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 41.724,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

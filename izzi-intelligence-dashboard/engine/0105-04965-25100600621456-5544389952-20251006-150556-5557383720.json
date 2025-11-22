@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600621456-5544389952-20251006-150556-5557383720.WAV",
+  "file_name": "0105-04965-25100600621456-5544389952-20251006-150556-5557383720.WAV",
+  "base_id": "0105-04965-25100600621456-5544389952-20251006-150556-5557383720",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¡Hola! ¿Qué tal? ¿Buenas tardes? ¿Quién es tu madre, hijo de puta? ¿Quién es tu madre? ¿Quién es tu madre, hijo de puta? ¿Bono? ¿Bono? ¿Sí, Bono? ¿Sí, Bono? ¿Me escucha? ¿Bono, Bono? ¿Me escucha? ¿Sí? ¿Sí? ¿Bono? ¿Bono?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.42,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.42,
+      "end": 38.64,
+      "text": " momento por favor. ¡Hola! ¿Qué tal? ¿Buenas tardes? ¿Quién es tu madre, hijo de puta?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.64,
+      "end": 50.61,
+      "text": " ¿Quién es tu madre? ¿Quién es tu madre, hijo de puta? ¿Bono? ¿Bono? ¿Sí, Bono? ¿Sí, Bono? ¿Me escucha?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.61,
+      "end": 79.66,
+      "text": " ¿Bono, Bono? ¿Me escucha? ¿Sí? ¿Sí? ¿Bono? ¿Bono?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.22,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

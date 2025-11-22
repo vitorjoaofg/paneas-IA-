@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400468065-5544389911-20251004-132124-5591547177.WAV",
+  "file_name": "0105-04965-25100400468065-5544389911-20251004-132124-5591547177.WAV",
+  "base_id": "0105-04965-25100400468065-5544389911-20251004-132124-5591547177",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Acou. Espera un momento, por favor. Acou. Hola, buen día, le hablé y bueno, en fin, de parte de su servicio de Easy, buen día. Bueno. Hola, buen día, le hablamos de Easy, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 21.54,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.54,
+      "end": 22.54,
+      "text": " Acou.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.54,
+      "end": 27.11,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.11,
+      "end": 28.11,
+      "text": " Acou.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.11,
+      "end": 39.16,
+      "text": " Hola, buen día, le hablé y bueno, en fin, de parte de su servicio de Easy, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.16,
+      "end": 42.43,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.43,
+      "end": 47.1,
+      "text": " Hola, buen día, le hablamos de Easy, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

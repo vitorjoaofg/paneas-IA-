@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200800211-5540409218-20251002-175442-5557335071.WAV",
+  "file_name": "0105-04965-25100200800211-5540409218-20251002-175442-5557335071.WAV",
+  "base_id": "0105-04965-25100200800211-5540409218-20251002-175442-5557335071",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, está marcando con protección existing, ¿qué le puedo ayudar? Buenas tardes, no sé, me marcaron de aquí. Oh, ¿ya cuenta con Easy en casa, señora? Sí, ya cuento con Easy. Ok, a lo mejor le marcaron porque estábamos manejando el servicio de teléfono a móvil para el celular, no sé si le hayan comentado. Sí, pero no me interesa el de móvil. Ok, no se preocupe entonces, pues aquí le agregamos los comentarios, ¿está bien? Gracias. A usted, qué paso, buen día. Muchas gracias. Gracias, seguramente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 21.19,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.19,
+      "end": 23.19,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.19,
+      "end": 32.12,
+      "text": " Buenas tardes, está marcando con protección existing, ¿qué le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.12,
+      "end": 34.12,
+      "text": " Buenas tardes, no sé, me marcaron de aquí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.12,
+      "end": 36.12,
+      "text": " Oh, ¿ya cuenta con Easy en casa, señora?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.12,
+      "end": 38.12,
+      "text": " Sí, ya cuento con Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.12,
+      "end": 44.12,
+      "text": " Ok, a lo mejor le marcaron porque estábamos manejando el servicio de teléfono a móvil para el celular, no sé si le hayan comentado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.12,
+      "end": 47.12,
+      "text": " Sí, pero no me interesa el de móvil.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.12,
+      "end": 51.25,
+      "text": " Ok, no se preocupe entonces, pues aquí le agregamos los comentarios, ¿está bien?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.25,
+      "end": 52.25,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.25,
+      "end": 54.25,
+      "text": " A usted, qué paso, buen día. Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.25,
+      "end": 55.25,
+      "text": " Gracias, seguramente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.984,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

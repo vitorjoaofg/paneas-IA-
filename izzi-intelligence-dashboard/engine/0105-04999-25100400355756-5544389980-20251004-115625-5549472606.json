@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400355756-5544389980-20251004-115625-5549472606.WAV",
+  "file_name": "0105-04999-25100400355756-5544389980-20251004-115625-5549472606.WAV",
+  "base_id": "0105-04999-25100400355756-5544389980-20251004-115625-5549472606",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenos días. Buenos días, hablo Eduardo Munguil, aquí de Easy. ¿Se encuentra con quien todo el gusto? Miguel. Muchas gracias Miguel, es maravillosa los servicios de Easy, no sé si acuento con ellos, de celebridad del servicio de Internet y Televisión, y Telefonía Limitada, por un costo ahorita especial de 690, pero el primer pago solo realizaría de 300, sería de 350.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 23.88,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 23.88,
+      "end": 36.49,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 36.49,
+      "end": 50.53,
+      "text": " Hola, buenos días. Buenos días, hablo Eduardo Munguil, aquí de Easy. ¿Se encuentra con quien todo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 50.53,
+      "end": 51.53,
+      "text": " Miguel.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 51.53,
+      "end": 70.78,
+      "text": " Muchas gracias Miguel, es maravillosa los servicios de Easy, no sé si acuento con ellos, de celebridad del servicio de Internet y Televisión, y Telefonía Limitada, por un costo ahorita especial de 690, pero el primer pago solo realizaría de 300, sería de 350.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

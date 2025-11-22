@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100276445-5540409222-20251001-123419-5589671980.WAV",
+  "file_name": "0105-04965-25100100276445-5540409222-20251001-123419-5589671980.WAV",
+  "base_id": "0105-04965-25100100276445-5540409222-20251001-123419-5589671980",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor que está esperando! ¡Por favor! ¡No, gracias! ¡Así estoy bien! ¡Espera un momento, por favor! ¡No, gracias! ¡Hola! ¿Qué tal? ¡Buenas tardes! Mi nombre es Jonathan Pulido, me comunico de parte de la compañía de Easy. ¿Se ve? Es para darle a conocer nuestro nuevo servicio de Easy Mobile y sus beneficios. Más bien ahorita le traemos lo que es una propuesta para que pueda navegar con nuestro servicio de Internet celular, WhatsApp, llamadas y mensajes limitados por 94 pesos al mes. ¿Usted utiliza actualmente lo que son las recargas, excuse me? ¡No, gracias!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 17.84,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.84,
+      "end": 20.84,
+      "text": " ¡Un asesor que está esperando! ¡Por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.84,
+      "end": 26.02,
+      "text": " ¡No, gracias! ¡Así estoy bien!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.02,
+      "end": 28.02,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.02,
+      "end": 29.21,
+      "text": " ¡No, gracias!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.21,
+      "end": 40.82,
+      "text": " ¡Hola! ¿Qué tal? ¡Buenas tardes! Mi nombre es Jonathan Pulido, me comunico",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.82,
+      "end": 44.14,
+      "text": " de parte de la compañía de Easy. ¿Se ve?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.14,
+      "end": 49.14,
+      "text": " Es para darle a conocer nuestro nuevo servicio de Easy Mobile y sus beneficios. Más bien",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.14,
+      "end": 53.14,
+      "text": " ahorita le traemos lo que es una propuesta para que pueda navegar con nuestro servicio",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.14,
+      "end": 59.14,
+      "text": " de Internet celular, WhatsApp, llamadas y mensajes limitados por 94 pesos al mes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.14,
+      "end": 63.84,
+      "text": " ¿Usted utiliza actualmente lo que son las recargas, excuse me?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 63.84,
+      "end": 64.84,
+      "text": " ¡No, gracias!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.772,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

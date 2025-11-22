@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100061886-5544389916-20251001-095020-5578203616.WAV",
+  "file_name": "0105-04999-25100100061886-5544389916-20251001-095020-5578203616.WAV",
+  "base_id": "0105-04999-25100100061886-5544389916-20251001-095020-5578203616",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con IZI? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Hola, buen día, le hablé, y Bon Bon Feel, de parte de su servicio de IZI.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.11,
+      "end": 6.87,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.87,
+      "end": 13.27,
+      "text": " más Sky Sports, desde 350 pesos al primer mes, con IZI? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.27,
+      "end": 20.61,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.5,
+      "end": 23.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.34,
+      "end": 32.74,
+      "text": " Hola, buen día, le hablé, y Bon Bon Feel, de parte de su servicio de IZI.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.796,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

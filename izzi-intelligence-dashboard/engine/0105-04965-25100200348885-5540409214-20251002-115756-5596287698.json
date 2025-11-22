@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200348885-5540409214-20251002-115756-5596287698.WAV",
+  "file_name": "0105-04965-25100200348885-5540409214-20251002-115756-5596287698.WAV",
+  "base_id": "0105-04965-25100200348885-5540409214-20251002-115756-5596287698",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse al área de contrataciones de GIF. La tienda Vale Daniela, con quien tengo el gusto. Hola, solo quiero que sepas que este es un número corporativo y es ilegal lo que estás haciendo. Entonces, bueno...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 14.2,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.2,
+      "end": 20.28,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.28,
+      "end": 27.1,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.1,
+      "end": 35.87,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.87,
+      "end": 44.98,
+      "text": " Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse al área de contrataciones de GIF.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.98,
+      "end": 46.66,
+      "text": " La tienda Vale Daniela, con quien tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.66,
+      "end": 51.68,
+      "text": " Hola, solo quiero que sepas que este es un número corporativo y es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.68,
+      "end": 54.6,
+      "text": " ilegal lo que estás haciendo. Entonces, bueno...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.672,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

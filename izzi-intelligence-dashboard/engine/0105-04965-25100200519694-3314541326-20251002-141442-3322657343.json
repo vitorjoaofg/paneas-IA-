@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200519694-3314541326-20251002-141442-3322657343.WAV",
+  "file_name": "0105-04965-25100200519694-3314541326-20251002-141442-3322657343.WAV",
+  "base_id": "0105-04965-25100200519694-3314541326-20251002-141442-3322657343",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. Ya estoy en Easy, coña. Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenas tardes. Lo reparteo de la compañía de Easy. Mi nombre es David Gallegre. El motivo de la llamada es informativa. Para darle información sobre los descuentos de Easy, ¿ya cuenta con los servicios? Pues mire, yo le informo a usted que ya tengo Easy y estoy aquí batallando con el sistema. Pero si no componen su sistema, pues yo cambio de empresa. Está bien, libertad. Muchas gracias. Me gustan las botas. Fíjate a la área de atención la siguiente para que lo reporte. Ay, señorita, ya me cansé. Muchas gracias. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 18.56,
+      "text": " Ya estoy en Easy, coña.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.56,
+      "end": 27.89,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.89,
+      "end": 31.89,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.89,
+      "end": 36.89,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.89,
+      "end": 45.84,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.84,
+      "end": 48.84,
+      "text": " Hola, buenas tardes. Lo reparteo de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.84,
+      "end": 51.84,
+      "text": " Mi nombre es David Gallegre. El motivo de la llamada es informativa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.84,
+      "end": 56.84,
+      "text": " Para darle información sobre los descuentos de Easy, ¿ya cuenta con los servicios?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.84,
+      "end": 61.84,
+      "text": " Pues mire, yo le informo a usted que ya tengo Easy y estoy aquí batallando con el sistema.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.67,
+      "end": 67.67,
+      "text": " Pero si no componen su sistema, pues yo cambio de empresa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.67,
+      "end": 69.67,
+      "text": " Está bien, libertad. Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.67,
+      "end": 73.67,
+      "text": " Me gustan las botas. Fíjate a la área de atención la siguiente para que lo reporte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 73.67,
+      "end": 76.67,
+      "text": " Ay, señorita, ya me cansé. Muchas gracias. Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

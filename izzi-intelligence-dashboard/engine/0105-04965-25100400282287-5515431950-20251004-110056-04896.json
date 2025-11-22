@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400282287-5515431950-20251004-110056-04896.WAV",
+  "file_name": "0105-04965-25100400282287-5515431950-20251004-110056-04896.WAV",
+  "base_id": "0105-04965-25100400282287-5515431950-20251004-110056-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Mi nombre es Melanie Saucedo. Ahora nos comunicamos en la compañía Easy. ¿Con quién tengo el gusto? Hola, ¿qué tal? Buenos días. Con Javier Rubio. Hola, mucho gusto, señor. El motivo de que andara es comunicarle que puede tener beneficios de telefonía internéticamente. ¿Ya cuenta con estos servicios de Easy? No, bueno, desde la semana. Bueno, ya tiene tiempo. Les había comentado que no quería el servicio, pero me siguen llamando. Entonces, por favor, ya no marque. Sí, una disculpa, señor. ¿Y no acaso aquí lo vamos a poner para que se vea bajar en la base? Que tenga bonito día. Hasta pronto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 24.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.8,
+      "end": 32.82,
+      "text": " Hola, ¿qué tal? Buenos días. Mi nombre es Melanie Saucedo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.82,
+      "end": 36.02,
+      "text": " Ahora nos comunicamos en la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.02,
+      "end": 38.62,
+      "text": " Hola, ¿qué tal? Buenos días. Con Javier Rubio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.62,
+      "end": 41.82,
+      "text": " Hola, mucho gusto, señor. El motivo de que andara es comunicarle que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.82,
+      "end": 44.82,
+      "text": " puede tener beneficios de telefonía internéticamente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.82,
+      "end": 47.22,
+      "text": " ¿Ya cuenta con estos servicios de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.22,
+      "end": 50.82,
+      "text": " No, bueno, desde la semana. Bueno, ya tiene tiempo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 50.82,
+      "end": 53.82,
+      "text": " Les había comentado que no quería el servicio, pero me siguen llamando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.82,
+      "end": 58.45,
+      "text": " Entonces, por favor, ya no marque.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 58.45,
+      "end": 62.25,
+      "text": " Sí, una disculpa, señor. ¿Y no acaso aquí lo vamos a poner para que se vea bajar en la base?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 62.25,
+      "end": 64.05,
+      "text": " Que tenga bonito día. Hasta pronto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.312,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

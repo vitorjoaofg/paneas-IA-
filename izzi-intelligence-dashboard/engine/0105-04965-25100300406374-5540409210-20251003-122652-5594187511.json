@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300406374-5540409210-20251003-122652-5594187511.WAV",
+  "file_name": "0105-04965-25100300406374-5540409210-20251003-122652-5594187511.WAV",
+  "base_id": "0105-04965-25100300406374-5540409210-20251003-122652-5594187511",
+  "transcription": "Hola, te gustaría tener Internet, más televisión, más el mejor entretenimiento con Viscuidium, más Skysports, desde 350 pesos al primer mes, con Instagram, es posible, te interesa, un asesor te está esperando, por favor, MX. Si ya tienes Tobono, o te gustaría saber cómo formar parte de la familia emplumada, marca 1. Si quieres información sobre proyectos directos, marca 2. Si quieres comunicarte a nuestra tienda oficial, marca 3. Para hablar con nuestros colaboradores en la Fundación Mujeres Que Viven, marca 4. O si quieres hablar con un operador, marca 0 o espera en la línea. El número que marcó se encuentra ocupado. Por favor, intente más tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, te gustaría tener Internet, más televisión, más el mejor entretenimiento con Viscuidium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 14.56,
+      "text": " más Skysports, desde 350 pesos al primer mes, con Instagram, es posible, te interesa,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.56,
+      "end": 19.26,
+      "text": " un asesor te está esperando, por favor, MX.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.26,
+      "end": 23.98,
+      "text": " Si ya tienes Tobono, o te gustaría saber cómo formar parte de la familia emplumada,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.98,
+      "end": 25.31,
+      "text": " marca 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.31,
+      "end": 29.12,
+      "text": " Si quieres información sobre proyectos directos, marca 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.12,
+      "end": 32.74,
+      "text": " Si quieres comunicarte a nuestra tienda oficial, marca 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.74,
+      "end": 37.46,
+      "text": " Para hablar con nuestros colaboradores en la Fundación Mujeres Que Viven, marca 4.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.46,
+      "end": 46.73,
+      "text": " O si quieres hablar con un operador, marca 0 o espera en la línea.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.73,
+      "end": 49.53,
+      "text": " El número que marcó se encuentra ocupado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.53,
+      "end": 51.73,
+      "text": " Por favor, intente más tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.736,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600236066-3314541340-20251006-101744-3316430693.WAV",
+  "file_name": "0105-04965-25100600236066-3314541340-20251006-101744-3316430693.WAV",
+  "base_id": "0105-04965-25100600236066-3314541340-20251006-101744-3316430693",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Aparte de la compañía de Easy, mi nombre es Miriam. O sea, gracias por haberla conocer algunos beneficios. ¿Mania qué? Easy. Sí. ¿Con nosotros o con alguna otra compañía, perdón? Con... No sé, todo está en... No pasa nada, entonces nos comunicamos más tarde. Bonito día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 2.0,
+      "end": 8.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.76,
+      "end": 15.16,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.16,
+      "end": 18.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.4,
+      "end": 22.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.31,
+      "end": 26.31,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 46.24,
+      "end": 48.84,
+      "text": " Aparte de la compañía de Easy, mi nombre es Miriam.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.84,
+      "end": 51.24,
+      "text": " O sea, gracias por haberla conocer algunos beneficios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.1,
+      "end": 53.1,
+      "text": " ¿Mania qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.1,
+      "end": 54.87,
+      "text": " Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.87,
+      "end": 59.26,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.26,
+      "end": 66.24,
+      "text": " ¿Con nosotros o con alguna otra compañía, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.24,
+      "end": 69.43,
+      "text": " Con... No sé, todo está en...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.43,
+      "end": 75.97,
+      "text": " No pasa nada, entonces nos comunicamos más tarde. Bonito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

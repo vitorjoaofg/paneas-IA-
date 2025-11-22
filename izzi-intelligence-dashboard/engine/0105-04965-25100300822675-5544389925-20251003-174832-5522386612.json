@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300822675-5544389925-20251003-174832-5522386612.WAV",
+  "file_name": "0105-04965-25100300822675-5544389925-20251003-174832-5522386612.WAV",
+  "base_id": "0105-04965-25100300822675-5544389925-20251003-174832-5522386612",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse en la área de contataciones de IZI, la tienda de Validania, con quien tengo el gusto. Hola, buenas tardes. Oye, nada más, por favor, ya dejen de estar corriendo, ¿no? Ya es mucho. No nos interesa candernos con ustedes. Por favor, dejen de esternos fastidiando, ¿sí? Somos un negocio y no podemos estar conteste y conteste cada que nos marcan. Porfa, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.76,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.76,
+      "end": 24.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.36,
+      "end": 41.62,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicarse en la área de contataciones de IZI,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.62,
+      "end": 43.62,
+      "text": " la tienda de Validania, con quien tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.82,
+      "end": 47.62,
+      "text": " Hola, buenas tardes. Oye, nada más, por favor, ya dejen de estar corriendo, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.62,
+      "end": 50.42,
+      "text": " Ya es mucho. No nos interesa candernos con ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.42,
+      "end": 52.26,
+      "text": " Por favor, dejen de esternos fastidiando, ¿sí?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.26,
+      "end": 57.42,
+      "text": " Somos un negocio y no podemos estar conteste y conteste cada que nos marcan.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.42,
+      "end": 58.82,
+      "text": " Porfa, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.208,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

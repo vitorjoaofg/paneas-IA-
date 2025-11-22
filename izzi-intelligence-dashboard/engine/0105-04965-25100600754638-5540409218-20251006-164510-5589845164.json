@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600754638-5540409218-20251006-164510-5589845164.WAV",
+  "file_name": "0105-04965-25100600754638-5540409218-20251006-164510-5589845164.WAV",
+  "base_id": "0105-04965-25100600754638-5540409218-20251006-164510-5589845164",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse al área de contratación de Easy y de Sim de Bonidad. ¿Diála con quién? ¿Tengo el gusto? Con Erika. Hola, mucho gusto, Erika. ¿Estás interesada en algún servicio, telefonía, móvil Internet? No lo escuché. ¿Estás interesada en algún servicio, telefonía, móvil Internet? No, no, ahorita no. Estoy bien. Ok. Le agradezco mucho que tenga buen día. Sí, igualmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.68,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 28.9,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.9,
+      "end": 37.19,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.39,
+      "end": 40.59,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicarse al área de contratación de Easy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.59,
+      "end": 43.26,
+      "text": " y de Sim de Bonidad. ¿Diála con quién? ¿Tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.26,
+      "end": 45.64,
+      "text": " Con Erika.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.64,
+      "end": 49.64,
+      "text": " Hola, mucho gusto, Erika. ¿Estás interesada en algún servicio, telefonía, móvil Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.64,
+      "end": 52.44,
+      "text": " No lo escuché.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.44,
+      "end": 55.44,
+      "text": " ¿Estás interesada en algún servicio, telefonía, móvil Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.44,
+      "end": 58.63,
+      "text": " No, no, ahorita no. Estoy bien.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.63,
+      "end": 61.63,
+      "text": " Ok. Le agradezco mucho que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.63,
+      "end": 62.63,
+      "text": " Sí, igualmente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 62.63,
+      "end": 64.37,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

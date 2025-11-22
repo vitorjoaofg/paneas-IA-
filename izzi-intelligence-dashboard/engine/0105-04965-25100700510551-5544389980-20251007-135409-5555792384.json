@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700510551-5544389980-20251007-135409-5555792384.WAV",
+  "file_name": "0105-04965-25100700510551-5544389980-20251007-135409-5555792384.WAV",
+  "base_id": "0105-04965-25100700510551-5544389980-20251007-135409-5555792384",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes con Easy, es posible, ¿te interesa? Un asesor te está esperando, por favor, hable opulto. Espera un momento, por favor. La persona en la extensión 1-0 no está libre. Por favor, deje su mensaje después del tono. Al terminar, cuelgue o presione la tecla de número. Lo siento, pero el buzón de esa persona no puede aceptar más mensajes. I'm sorry, an error has occurred.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 14.32,
+      "text": " más Sky Sports desde 350 pesos el primer mes con Easy, es posible, ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.32,
+      "end": 18.32,
+      "text": " Un asesor te está esperando, por favor, hable opulto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.94,
+      "end": 27.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.19,
+      "end": 84.18,
+      "text": " La persona en la extensión 1-0 no está libre.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 84.18,
+      "end": 87.18,
+      "text": " Por favor, deje su mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 87.18,
+      "end": 91.18,
+      "text": " Al terminar, cuelgue o presione la tecla de número.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 91.18,
+      "end": 97.18,
+      "text": " Lo siento, pero el buzón de esa persona no puede aceptar más mensajes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 97.18,
+      "end": 100.18,
+      "text": " I'm sorry, an error has occurred.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.7,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

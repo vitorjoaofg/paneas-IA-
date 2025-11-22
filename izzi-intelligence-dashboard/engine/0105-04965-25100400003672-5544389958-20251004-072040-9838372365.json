@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400003672-5544389958-20251004-072040-9838372365.WAV",
+  "file_name": "0105-04965-25100400003672-5544389958-20251004-072040-9838372365.WAV",
+  "base_id": "0105-04965-25100400003672-5544389958-20251004-072040-9838372365",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Cómo estás, señor? Buenos días. Buenos días. Sí, buenos días. Dígame. Pues ustedes me hablaron. ¡Ah! ¿Tiene una llamada perdida nosotros? Ustedes me marcaron. Ok, disculpe. El motivo de nuestra llamada solamente justamente para darle a conocer algunos beneficios que tiene disponible. ¿Usted ya tiene cuenta de ese con nosotros? No, está estrenando una oficina de témex. Ah, ok, disculpe. Que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 29.58,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.58,
+      "end": 36.14,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.14,
+      "end": 41.14,
+      "text": " asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.14,
+      "end": 89.46,
+      "text": " ¿Cómo estás, señor? Buenos días. Buenos días. Sí, buenos días. Dígame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 89.46,
+      "end": 95.83,
+      "text": " Pues ustedes me hablaron. ¡Ah! ¿Tiene una llamada perdida nosotros?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 97.58,
+      "end": 104.47,
+      "text": " Ustedes me marcaron. Ok, disculpe. El motivo de nuestra llamada solamente",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 104.47,
+      "end": 107.47,
+      "text": " justamente para darle a conocer algunos beneficios que tiene disponible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 107.47,
+      "end": 113.11,
+      "text": " ¿Usted ya tiene cuenta de ese con nosotros? No, está estrenando una oficina de témex.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 113.11,
+      "end": 118.55,
+      "text": " Ah, ok, disculpe. Que tenga buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 120.42,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

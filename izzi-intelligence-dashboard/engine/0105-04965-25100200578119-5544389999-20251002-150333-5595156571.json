@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200578119-5544389999-20251002-150333-5595156571.WAV",
+  "file_name": "0105-04965-25100200578119-5544389999-20251002-150333-5595156571.WAV",
+  "base_id": "0105-04965-25100200578119-5544389999-20251002-150333-5595156571",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a IZZY. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos. Espera un momento, por favor. ¿Qué onda paí? ¿Es la tarjeta del señor? Del señor que vimos en el super?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.6,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a IZZY.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.6,
+      "end": 23.24,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.61,
+      "end": 27.61,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.61,
+      "end": 81.78,
+      "text": " ¿Qué onda paí? ¿Es la tarjeta del señor? Del señor que vimos en el super?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100255304-5540409222-20251001-121810-5585261090.WAV",
+  "file_name": "0105-04965-25100100255304-5540409222-20251001-121810-5585261090.WAV",
+  "base_id": "0105-04965-25100100255304-5540409222-20251001-121810-5585261090",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. ¿Querés por comunicarse a la red ya con notaciones de Easy Latina y Vanidania en la convivienda en Augusto? No sé, ¿me han llamado ustedes o no sé si es que he llamado sin querer? No lo sé. ¿Me han llamado ustedes? No te lo voy a entender muy bien. Es que pienso que me han llamado ustedes. Yo he cogido una llamada que me ha salvatado de ustedes. No lo sé. ¿Puede ser menos? Me han llamado ustedes, digo. Es que he cogido una llamada y me han llamado ustedes. ¿De dónde me llama? De su compañía Easy. No sé qué es. Easy. Ah, sí es. ¿Está interesado en algún servicio, telefonía, móvil, Internet? No. No, no, no, no. No tengo ese...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 20.8,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.8,
+      "end": 37.62,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 37.62,
+      "end": 49.25,
+      "text": " Hola, ¿qué tal? Buenas tardes. ¿Querés por comunicarse a la red ya con notaciones de Easy Latina y Vanidania en la convivienda en Augusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 49.25,
+      "end": 57.88,
+      "text": " No sé, ¿me han llamado ustedes o no sé si es que he llamado sin querer? No lo sé. ¿Me han llamado ustedes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 59.37,
+      "end": 66.29,
+      "text": " No te lo voy a entender muy bien. Es que pienso que me han llamado ustedes. Yo he cogido una llamada que me ha salvatado de ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 66.29,
+      "end": 79.29,
+      "text": " No lo sé. ¿Puede ser menos? Me han llamado ustedes, digo. Es que he cogido una llamada y me han llamado ustedes. ¿De dónde me llama?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 79.29,
+      "end": 89.26,
+      "text": " De su compañía Easy. No sé qué es. Easy. Ah, sí es. ¿Está interesado en algún servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 89.26,
+      "end": 94.8,
+      "text": " No. No, no, no, no. No tengo ese...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

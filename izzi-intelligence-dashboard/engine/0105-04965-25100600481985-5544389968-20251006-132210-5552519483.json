@@ -1,0 +1,42 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600481985-5544389968-20251006-132210-5552519483.WAV",
+  "file_name": "0105-04965-25100600481985-5544389968-20251006-132210-5552519483.WAV",
+  "base_id": "0105-04965-25100600481985-5544389968-20251006-132210-5552519483",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, mi nombre es Melanisa Uceo, nos comunicamos de la compañía Easy. ¿Con qué tengo el gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 22.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.0,
+      "end": 33.47,
+      "text": " Hola, ¿qué tal? Buenas tardes, mi nombre es Melanisa Uceo, nos comunicamos de la compañía Easy. ¿Con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 36.792,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

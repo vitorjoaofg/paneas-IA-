@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200649401-5544389949-20251002-160110-5597575984.WAV",
+  "file_name": "0105-04965-25100200649401-5544389949-20251002-160110-5597575984.WAV",
+  "base_id": "0105-04965-25100200649401-5544389949-20251002-160110-5597575984",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buenas tardes. Buenas tardes, señorita. ¿Qué tal? Le atiendo a la señorita Jeanette Pulido de Easy. ¿Con quién tengo el gusto? Señor Robles. Hola, ¿qué tal? Señor Robles, alcanzo a escuchar la propuesta que se le hizo en el computador para que pueda tener nuestro servicio, internet, teléfono y servicio de la televisión con un precio solamente por el primer mes por 350 pesitos. Señorita, ya estoy con total play y estoy muy a gusto porque ya tuve Easy y tuve muchos problemas. Muchísimas gracias. Bueno, ya estaré dejando el comentario. Muchísimas gracias. Hasta luego. Buen día. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.12,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.12,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 25.19,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.19,
+      "end": 31.97,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.97,
+      "end": 33.17,
+      "text": " Hola, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.17,
+      "end": 35.29,
+      "text": " Buenas tardes, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.29,
+      "end": 41.36,
+      "text": " ¿Qué tal? Le atiendo a la señorita Jeanette Pulido de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.36,
+      "end": 43.95,
+      "text": " Señor Robles.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.95,
+      "end": 49.32,
+      "text": " Hola, ¿qué tal? Señor Robles, alcanzo a escuchar la propuesta que se le hizo en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.32,
+      "end": 53.48,
+      "text": " el computador para que pueda tener nuestro servicio, internet, teléfono y servicio de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.48,
+      "end": 58.68,
+      "text": " televisión con un precio solamente por el primer mes por 350 pesitos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.79,
+      "end": 67.47,
+      "text": " Señorita, ya estoy con total play y estoy muy a gusto porque ya tuve Easy y tuve muchos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.47,
+      "end": 70.76,
+      "text": " problemas. Muchísimas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 70.76,
+      "end": 74.44,
+      "text": " Bueno, ya estaré dejando el comentario. Muchísimas gracias. Hasta luego. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 74.44,
+      "end": 75.44,
+      "text": " Adiós.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

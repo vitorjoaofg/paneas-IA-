@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200714208-5544389948-20251002-164858-5552788534.WAV",
+  "file_name": "0105-04965-25100200714208-5544389948-20251002-164858-5552788534.WAV",
+  "base_id": "0105-04965-25100200714208-5544389948-20251002-164858-5552788534",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Estoy en comunicación con la dedica dotación de Easy. La tienda de Varia Daniela, ¿con quién tengo el gusto? Sí, un favor. Soy de Easy. Te voy a pedir un favor. Mira, tu grabación está entrando a mi teléfono, lo cual no me gusta. Quisiera que bordes esa grabación de mi teléfono, por favor, del teléfono que estoy marcando, por favor, si eres tan amable. ¿Te lo obedecería? Claro que te lo obedecería. ¡Chingada madre!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.0,
+      "end": 27.8,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.8,
+      "end": 29.8,
+      "text": " Estoy en comunicación con la dedica dotación de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.8,
+      "end": 31.8,
+      "text": " La tienda de Varia Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.8,
+      "end": 32.8,
+      "text": " Sí, un favor. Soy de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 32.8,
+      "end": 33.8,
+      "text": " Te voy a pedir un favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 33.8,
+      "end": 39.12,
+      "text": " Mira, tu grabación está entrando a mi teléfono, lo cual no me gusta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.12,
+      "end": 43.18,
+      "text": " Quisiera que bordes esa grabación de mi teléfono, por favor,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 43.18,
+      "end": 46.18,
+      "text": " del teléfono que estoy marcando, por favor, si eres tan amable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 46.18,
+      "end": 48.54,
+      "text": " ¿Te lo obedecería?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 48.54,
+      "end": 52.43,
+      "text": " Claro que te lo obedecería.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 52.43,
+      "end": 55.01,
+      "text": " ¡Chingada madre!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 143.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

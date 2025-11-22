@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400447387-5544389952-20251004-130603-5517408988.WAV",
+  "file_name": "0105-04999-25100400447387-5544389952-20251004-130603-5517408988.WAV",
+  "base_id": "0105-04999-25100400447387-5544389952-20251004-130603-5517408988",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días, los atienden Claudia de IZI Mobile. ¿Alguna línea que les haya interesado? Buenos días. De hecho, ninguna. Solamente quería hablar con un asesor. Ya van muchas veces que me marcan. Ya había bloqueado el número y me siguen llamando. No sé dónde sacaron mi número. Solamente quiero que lo bloqueen porque ya van más de 20 veces que les digo que no estoy interesado y me siguen marcando. Ok, no te preocupes. Permíteme dos segundos que voy a transferir la llamada. Espérame un poquito.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.7,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.7,
+      "end": 25.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.16,
+      "end": 35.34,
+      "text": " Buenos días, los atienden Claudia de IZI Mobile. ¿Alguna línea que les haya interesado?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.13,
+      "end": 38.53,
+      "text": " Buenos días. De hecho, ninguna.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.53,
+      "end": 40.73,
+      "text": " Solamente quería hablar con un asesor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.73,
+      "end": 42.93,
+      "text": " Ya van muchas veces que me marcan.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.93,
+      "end": 45.73,
+      "text": " Ya había bloqueado el número y me siguen llamando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.73,
+      "end": 47.53,
+      "text": " No sé dónde sacaron mi número.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.53,
+      "end": 52.13,
+      "text": " Solamente quiero que lo bloqueen porque ya van más de 20 veces que les digo que no estoy interesado",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.13,
+      "end": 54.28,
+      "text": " y me siguen marcando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 54.28,
+      "end": 59.68,
+      "text": " Ok, no te preocupes. Permíteme dos segundos que voy a transferir la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 59.68,
+      "end": 60.88,
+      "text": " Espérame un poquito.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 96.984,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

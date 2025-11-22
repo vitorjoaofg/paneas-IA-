@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200381261-5544389938-20251002-122321-5575721226.WAV",
+  "file_name": "0105-04965-25100200381261-5544389938-20251002-122321-5575721226.WAV",
+  "base_id": "0105-04965-25100200381261-5544389938-20251002-122321-5575721226",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer algunos paquetes de beneficios con la compañía. Buen día. Buen día. Disculpen, es que no estoy interesada y me están marcando. Ah, ok. Una disculpa. Yo aquí voy a poner para que la quiten de la base. Una disculpa. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.62,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.62,
+      "end": 13.38,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.38,
+      "end": 19.9,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.9,
+      "end": 27.3,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.3,
+      "end": 38.12,
+      "text": " un momento, por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.12,
+      "end": 42.96,
+      "text": " de Easy para darle a conocer algunos paquetes de beneficios con la compañía. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.96,
+      "end": 49.24,
+      "text": " Buen día. Disculpen, es que no estoy interesada y me están marcando. Ah, ok. Una disculpa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.24,
+      "end": 53.87,
+      "text": " Yo aquí voy a poner para que la quiten de la base. Una disculpa. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.124,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

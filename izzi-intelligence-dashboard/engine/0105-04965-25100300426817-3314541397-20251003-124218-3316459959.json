@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300426817-3314541397-20251003-124218-3316459959.WAV",
+  "file_name": "0105-04965-25100300426817-3314541397-20251003-124218-3316459959.WAV",
+  "base_id": "0105-04965-25100300426817-3314541397-20251003-124218-3316459959",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Rift Premium, más Skullsport, desde 350 pesos el primer mes, por si es posible, una sesión que está enterando, por favor? Por favor, deja tu mensaje después del tono. Si necesitas volver a grabar, marca el signo de número y espera instrucciones. ¿Contrataciones Easy y la Tendergar Torres con quien tengo el gusto? Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3. Para volver a grabar el mensaje, marca 4. Para enviar el mensaje, marca 5. Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3. Para volver a grabar el mensaje, marca 4. Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3. Para volver a grabar el mensaje, marca 4. Para enviar el mensaje, marca 5. Si tienes problemas con tu correo de voz, por favor, punta en...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 20.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Rift Premium, más Skullsport, desde 350 pesos el primer mes, por si es posible, una sesión que está enterando, por favor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 20.0,
+      "end": 34.44,
+      "text": " Por favor, deja tu mensaje después del tono. Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 34.44,
+      "end": 45.18,
+      "text": " ¿Contrataciones Easy y la Tendergar Torres con quien tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 45.18,
+      "end": 61.14,
+      "text": " Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 61.14,
+      "end": 74.42,
+      "text": " Para volver a grabar el mensaje, marca 4. Para enviar el mensaje, marca 5.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 74.42,
+      "end": 81.42,
+      "text": " Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 81.42,
+      "end": 84.42,
+      "text": " Para eliminar este mensaje, marca 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 84.42,
+      "end": 87.42,
+      "text": " Para volver a grabar el mensaje, marca 4.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 87.42,
+      "end": 90.42,
+      "text": " Para escuchar el mensaje, marca 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 90.42,
+      "end": 100.66,
+      "text": " Para continuar con la grabación en este punto, marca 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 100.66,
+      "end": 103.66,
+      "text": " Para eliminar este mensaje, marca 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 103.66,
+      "end": 106.66,
+      "text": " Para volver a grabar el mensaje, marca 4.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 106.66,
+      "end": 109.66,
+      "text": " Para enviar el mensaje, marca 5.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 109.66,
+      "end": 114.66,
+      "text": " Si tienes problemas con tu correo de voz, por favor, punta en...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.676,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

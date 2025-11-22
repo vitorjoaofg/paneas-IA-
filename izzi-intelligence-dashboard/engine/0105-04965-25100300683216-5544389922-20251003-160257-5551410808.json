@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300683216-5544389922-20251003-160257-5551410808.WAV",
+  "file_name": "0105-04965-25100300683216-5544389922-20251003-160257-5551410808.WAV",
+  "base_id": "0105-04965-25100300683216-5544389922-20251003-160257-5551410808",
+  "transcription": "Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. ¿No lo pienses más y cámbiate a Easy? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para mí. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. Por favor. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.7,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.7,
+      "end": 10.2,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.2,
+      "end": 16.7,
+      "text": " ¿No lo pienses más y cámbiate a Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.7,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para mí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.0,
+      "end": 25.5,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.5,
+      "end": 29.83,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.83,
+      "end": 30.83,
+      "text": " Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.83,
+      "end": 49.76,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.76,
+      "end": 51.88,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.88,
+      "end": 57.01,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.01,
+      "end": 63.4,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.4,
+      "end": 64.4,
+      "text": " Adiós.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.152,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100088570-3314541300-20251001-101110-3333168841.WAV",
+  "file_name": "0105-04965-25100100088570-3314541300-20251001-101110-3333168841.WAV",
+  "base_id": "0105-04965-25100100088570-3314541300-20251001-101110-3333168841",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando, por favor. ¿Yo eso? Yo no me entiendo. ¿Puedes hablar después de que vengan en la noche cuando llegan a mi trabajo? Hola, que tal. Buenos días. Mi nombre es Milán Liza-Ucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Con María de Jesús Chávez. Hola, mucho gusto, señorita. El motivo este a más comunicarle que puede tener beneficio de telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy? No sé decirle. Yo aquí estoy la licita ahorita. No sé cómo estaría aquí esto. Me da pena, pero no la puedo atender yo en eso. Sí, no se preocupe. Que tenga buenito día. Igualmente. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.36,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando, por",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.36,
+      "end": 22.26,
+      "text": " favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.26,
+      "end": 26.94,
+      "text": " ¿Yo eso? Yo no me entiendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.5,
+      "end": 34.85,
+      "text": " ¿Puedes hablar después de que vengan en la noche cuando llegan a mi trabajo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.85,
+      "end": 38.65,
+      "text": " Hola, que tal. Buenos días. Mi nombre es Milán Liza-Ucedo. Nos comunicamos de la compañía",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.65,
+      "end": 41.91,
+      "text": " Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.91,
+      "end": 43.91,
+      "text": " Con María de Jesús Chávez.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.91,
+      "end": 47.63,
+      "text": " Hola, mucho gusto, señorita. El motivo este a más comunicarle que puede tener",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.63,
+      "end": 53.74,
+      "text": " beneficio de telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.14,
+      "end": 61.14,
+      "text": " No sé decirle. Yo aquí estoy la licita ahorita. No sé cómo estaría aquí esto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.14,
+      "end": 66.14,
+      "text": " Me da pena, pero no la puedo atender yo en eso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.14,
+      "end": 68.14,
+      "text": " Sí, no se preocupe. Que tenga buenito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 68.14,
+      "end": 70.14,
+      "text": " Igualmente. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.64,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

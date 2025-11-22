@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300284034-5544389933-20251003-105355-5594093623.WAV",
+  "file_name": "0105-04965-25100300284034-5544389933-20251003-105355-5594093623.WAV",
+  "base_id": "0105-04965-25100300284034-5544389933-20251003-105355-5594093623",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buen día. Le habla Ivonne Monfin de parte de su servicio de Easy para darle a conocer la telefonía y paquetes de Internet con Easy. Buen día. ¿Usted tiene Internet con Easy o con otra compañía? Disculpe. ¿Por qué tenemos paquetes en Easy con precio especial para clientes nuevos? No sé si le gustaría que le brinde la información. Mira, ahorita son Internet y telefonía. Internet de 60 megas por 349 pesos por 3 meses. Después queda en 389. Y si quiere con canales, ya tenemos paquetes de 100 canales, 60 megas y el acceso a la telefonía por 499 durante 6 meses. Después queda en 539, pero ya sería con todos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 27.32,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.32,
+      "end": 38.53,
+      "text": " por favor. Hola, buen día. Le habla Ivonne Monfin de parte de su servicio de Easy para",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.53,
+      "end": 45.75,
+      "text": " darle a conocer la telefonía y paquetes de Internet con Easy. Buen día. ¿Usted tiene",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.75,
+      "end": 55.63,
+      "text": " Internet con Easy o con otra compañía? Disculpe. ¿Por qué tenemos paquetes en Easy con precio",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.63,
+      "end": 59.83,
+      "text": " especial para clientes nuevos? No sé si le gustaría que le brinde la información.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.83,
+      "end": 70.31,
+      "text": " Mira, ahorita son Internet y telefonía. Internet de 60 megas por 349 pesos por 3",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.31,
+      "end": 76.23,
+      "text": " meses. Después queda en 389. Y si quiere con canales, ya tenemos paquetes de 100",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 76.23,
+      "end": 84.75,
+      "text": " canales, 60 megas y el acceso a la telefonía por 499 durante 6 meses. Después queda en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 84.75,
+      "end": 87.51,
+      "text": " 539, pero ya sería con todos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.66,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

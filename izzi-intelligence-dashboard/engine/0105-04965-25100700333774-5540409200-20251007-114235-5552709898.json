@@ -1,0 +1,321 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700333774-5540409200-20251007-114235-5552709898.WAV",
+  "file_name": "0105-04965-25100700333774-5540409200-20251007-114235-5552709898.WAV",
+  "base_id": "0105-04965-25100700333774-5540409200-20251007-114235-5552709898",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenas tardes. Se está comunicando contratación Easy. ¿Le atiende a la señorita Janet Pulido con quien tengo el gusto? Gracias, señorita. He recibido muchas llamadas de pasta de ustedes, pero aquí es una empresa. No sé para qué no se están marcando. No necesitamos sus servicios. ¿Ya tiene servicio con nosotros, perdón? Es una empresa bonita. No sé quién esté dando el servicio de internet aquí en la empresa. Ah. Tiene que tener que saber de comunicar al área de telefonías, no a compra. He recibido muchísimas llamadas de ustedes. La dirigía me contó. Me dicen hola y le ponen una grabación. ¿Qué me interesa escuchar? OK. Pues ya estaré dejando la anotación. Una disculpa para que ya no le llamen. Por favor. Muy amable. Buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.68,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.68,
+      "end": 19.24,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.24,
+      "end": 21.72,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.72,
+      "end": 29.0,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.0,
+      "end": 30.76,
+      "text": " No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 30.76,
+      "end": 39.3,
+      "text": " Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.3,
+      "end": 41.3,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.3,
+      "end": 47.1,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.1,
+      "end": 49.1,
+      "text": " Se está comunicando contratación Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.1,
+      "end": 52.1,
+      "text": " ¿Le atiende a la señorita Janet Pulido con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.1,
+      "end": 53.1,
+      "text": " Gracias, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 53.1,
+      "end": 59.54,
+      "text": " He recibido muchas llamadas de pasta de ustedes, pero aquí es una empresa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 59.54,
+      "end": 61.54,
+      "text": " No sé para qué no se están marcando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 61.54,
+      "end": 63.54,
+      "text": " No necesitamos sus servicios.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 63.54,
+      "end": 65.54,
+      "text": " ¿Ya tiene servicio con nosotros, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 66.16,
+      "end": 67.16,
+      "text": " Es una empresa bonita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 67.16,
+      "end": 72.16,
+      "text": " No sé quién esté dando el servicio de internet aquí en la empresa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 72.16,
+      "end": 73.51,
+      "text": " Ah.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 73.51,
+      "end": 77.51,
+      "text": " Tiene que tener que saber de comunicar al área de telefonías, no a compra.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 77.51,
+      "end": 80.61,
+      "text": " He recibido muchísimas llamadas de ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 80.61,
+      "end": 81.61,
+      "text": " La dirigía me contó.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 81.61,
+      "end": 83.61,
+      "text": " Me dicen hola y le ponen una grabación.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 83.61,
+      "end": 85.61,
+      "text": " ¿Qué me interesa escuchar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 85.61,
+      "end": 87.31,
+      "text": " OK.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 87.31,
+      "end": 89.31,
+      "text": " Pues ya estaré dejando la anotación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 89.31,
+      "end": 92.31,
+      "text": " Una disculpa para que ya no le llamen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 92.31,
+      "end": 93.54,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 93.54,
+      "end": 94.54,
+      "text": " Muy amable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 94.54,
+      "end": 95.54,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 95.54,
+      "end": 96.54,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.072,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

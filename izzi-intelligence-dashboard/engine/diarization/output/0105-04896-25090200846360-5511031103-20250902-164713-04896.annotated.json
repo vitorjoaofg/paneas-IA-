@@ -1,0 +1,809 @@
+{
+  "call_id": "0105-04896-25090200846360-5511031103-20250902-164713-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": "Hola, somos Issy, y seguro estás llamando porque viste una llamada nuestra.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 4.5,
+      "end": 8.0,
+      "text": "Tenemos una oferta exclusiva para ti. ¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 8.0,
+      "end": 14.5,
+      "text": "Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 15.5,
+      "end": 17.5,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 24.0,
+      "end": 25.5,
+      "text": "Hola Issy, muy buenas tardes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 25.5,
+      "end": 32.0,
+      "text": "Mi amigo está comprometido con las finanzas verdes para alinear con la continua modelación de la tecnología y medio ambiente.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 33.0,
+      "end": 35.5,
+      "text": "En un minuto más, atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 36.5,
+      "end": 40.5,
+      "text": "Estrella Auto. Ayuda a sus usuarios a alcanzar algo más cercano.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 41.0,
+      "end": 44.5,
+      "text": "Tramite su crédito autonotriz con tasas de interés competitivas.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 45.5,
+      "end": 47.5,
+      "text": "Por favor, continúe en la línea.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 48.5,
+      "end": 50.5,
+      "text": "Próximamente viajará al extranjero.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 51.0,
+      "end": 54.5,
+      "text": "Lleve consigo su tarjeta Zcash Multicurrency.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 54.5,
+      "end": 60.0,
+      "text": "El monedero electrónico con cinco divisas diferentes que mantiene saldos totalmente independientes.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 61.5,
+      "end": 64.5,
+      "text": "Por favor, no juegue. Le seguimos atendiendo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 65.5,
+      "end": 67.5,
+      "text": "Realice compras alrededor del mundo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 68.0,
+      "end": 70.5,
+      "text": "Pague con su tarjeta de crédito Sibanco.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 71.0,
+      "end": 75.5,
+      "text": "Gozo de beneficios con el programa de recompensas, seguros y asistencias especiales.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 76.5,
+      "end": 79.0,
+      "text": "Solicítala en nuestras sucursales a nivel nacional.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 18,
+      "start": 80.0,
+      "end": 81.5,
+      "text": "Gracias por tu espera.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 19,
+      "start": 82.5,
+      "end": 85.5,
+      "text": "Sibanco. El primer banco verde de México presenta...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 86.0,
+      "end": 87.5,
+      "text": "Pipalo Solar.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 88.0,
+      "end": 92.5,
+      "text": "El crédito destinado a la adquisición de paneles solares para tasas de educación y negocio.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 93.0,
+      "end": 95.5,
+      "text": "Cotice a través de nuestra app SibCotiza.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 23,
+      "start": 96.5,
+      "end": 98.5,
+      "text": "Por favor, siga con nosotros.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 24,
+      "start": 99.5,
+      "end": 102.5,
+      "text": "Realice sus fideicomisos con total seguridad.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 103.0,
+      "end": 109.5,
+      "text": "Sibanco cuenta con asesores profesionales que le ofrecen una adecuada administración y operación con base en sus requerimientos.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 110.5,
+      "end": 113.5,
+      "text": "Un momento. Le seguimos atendiendo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 114.5,
+      "end": 119.5,
+      "text": "Realice operaciones bancarias desde la comodidad de su casa u oficina con Sineb.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 28,
+      "start": 120.0,
+      "end": 124.5,
+      "text": "Consulte saldos, realice inversiones, pagos de servicios y más.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 125.5,
+      "end": 129.5,
+      "text": "Su llamada es muy importante. En un momento más, le atenderemos.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 130.5,
+      "end": 134.5,
+      "text": "En Sibanco, entendemos que los tiempos evolucionan.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 134.5,
+      "end": 139.5,
+      "text": "Por eso ponemos a su disposición Simudi, nuestra banca por celular.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 140.0,
+      "end": 144.5,
+      "text": "Realice operaciones en cualquier lugar del mundo en forma fácil y segura.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 145.0,
+      "end": 147.5,
+      "text": "Gracias por continuar en la línea.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 148.5,
+      "end": 150.5,
+      "text": "Materialice sus sueños de forma sencilla.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 151.0,
+      "end": 156.5,
+      "text": "Promote su crédito SiPersonal y decida cómo darle el mejor uso para lograr sus metas.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 157.5,
+      "end": 160.5,
+      "text": "En un momento más, atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 165.5,
+      "end": 176.5,
+      "text": "Siendo la sustentabilidad el eje de negocio, Sibanco está comprometido con las finanzas verdes para la mejora continua de la sociedad, economía y medio ambiente.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 38,
+      "start": 177.5,
+      "end": 180.5,
+      "text": "En un momento más, atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 39,
+      "start": 181.5,
+      "end": 185.5,
+      "text": "Estreme Auto. Acúbre a su esposa del Sibanco más cercana.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 186.0,
+      "end": 189.5,
+      "text": "Tramite su crédito automotriz con tasas de interés competitivas.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 190.5,
+      "end": 192.5,
+      "text": "Por favor, continúen la línea.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 42,
+      "start": 193.5,
+      "end": 195.5,
+      "text": "¿Próximamente viajará al extranjero?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 43,
+      "start": 196.0,
+      "end": 199.5,
+      "text": "Lleve consigo su tarjeta SibCash Multicurrency.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 200.0,
+      "end": 205.5,
+      "text": "El monedero electrónico con cinco divisas diferentes que mantiene saldos totalmente independientes.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 206.5,
+      "end": 209.5,
+      "text": "Por favor, no cuelgue. Le seguimos atendiendo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 46,
+      "start": 210.5,
+      "end": 212.5,
+      "text": "Realice compras alrededor del mundo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 213.0,
+      "end": 215.5,
+      "text": "Pague con su tarjeta de crédito Sibanco.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 216.0,
+      "end": 220.5,
+      "text": "Gozare beneficios con el programa de recompensas seguros y asistencias especiales.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 220.5,
+      "end": 223.5,
+      "text": "Solicítala en nuestras sucursales a nivel nacional.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 50,
+      "start": 224.5,
+      "end": 226.5,
+      "text": "Gracias por su espera.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 51,
+      "start": 227.5,
+      "end": 230.5,
+      "text": "Sibanco, el primer banco verde de México presenta...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 52,
+      "start": 231.0,
+      "end": 232.5,
+      "text": "...Titanum Solar.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 53,
+      "start": 233.0,
+      "end": 237.5,
+      "text": "El crédito destinado a la adquisición de paneles solares para casas, educación y negocio.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 54,
+      "start": 238.0,
+      "end": 240.5,
+      "text": "Cotice a través de nuestra app SibCotiza.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 55,
+      "start": 241.5,
+      "end": 243.5,
+      "text": "Por favor, siga con nosotros.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 56,
+      "start": 244.5,
+      "end": 247.5,
+      "text": "Realice sus cibercomisos con total seguridad.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 57,
+      "start": 247.5,
+      "end": 254.5,
+      "text": "Sibanco cuenta con asesores profesionales que le ofrecen una adecuada administración y operación con base en sus requerimientos.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 58,
+      "start": 255.5,
+      "end": 258.5,
+      "text": "Un momento. Le seguimos atendiendo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 59,
+      "start": 259.5,
+      "end": 264.5,
+      "text": "Realice operaciones bancarias desde la comodidad de su casa u oficina con Sime.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 60,
+      "start": 265.0,
+      "end": 269.5,
+      "text": "Consulte saldos, realice inversiones, pagos de servicios y más.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 61,
+      "start": 270.5,
+      "end": 274.5,
+      "text": "Su llamada es muy importante. En un momento más, le atenderemos.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 62,
+      "start": 275.5,
+      "end": 278.5,
+      "text": "En Sibanco, entendemos que los tiempos evolucionan.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 63,
+      "start": 279.5,
+      "end": 283.5,
+      "text": "Por eso ponemos a su disposición Simovi, nuestra banca por celular.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 64,
+      "start": 284.5,
+      "end": 288.5,
+      "text": "Realice operaciones en cualquier lugar del mundo en forma fácil y segura.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 65,
+      "start": 289.5,
+      "end": 291.5,
+      "text": "Gracias por continuar en la línea.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 66,
+      "start": 292.5,
+      "end": 294.5,
+      "text": "Materialice sus sueños de forma sencilla.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 67,
+      "start": 295.5,
+      "end": 300.5,
+      "text": "Produce su crédito Sipersonal y decida cómo darle el mejor uso para lograr sus metas.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 68,
+      "start": 300.5,
+      "end": 303.5,
+      "text": "En un momento más, atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 69,
+      "start": 310.5,
+      "end": 320.5,
+      "text": "Siguiendo la sustentabilidad del eje de negocio, Sibanco está comprometido con las finanzas verdes para un mejor continuo de la sociedad, economía y medio ambiente.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 70,
+      "start": 321.5,
+      "end": 324.5,
+      "text": "En un momento más, atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 71,
+      "start": 324.5,
+      "end": 325.5,
+      "text": "Atenderemos su llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 72,
+      "start": 326.5,
+      "end": 327.5,
+      "text": "Estrene auto.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 73,
+      "start": 328.5,
+      "end": 330.5,
+      "text": "Acuda a su sucursal Sibanco Masefrana.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 74,
+      "start": 331.5,
+      "end": 334.5,
+      "text": "Tramite su crédito autonotriz con tasas de interés competitivas.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 75,
+      "start": 335.5,
+      "end": 337.5,
+      "text": "Por favor, continúe en la línea.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 76,
+      "start": 338.5,
+      "end": 340.5,
+      "text": "Próximamente viajará al extranjero.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 77,
+      "start": 341.5,
+      "end": 344.5,
+      "text": "Lleve consigo su tarjeta C-Cash Multicurrency.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 78,
+      "start": 345.5,
+      "end": 350.5,
+      "text": "El monedero electrónico con cinco divisas diferentes que mantiene saldos totalmente independientes.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 79,
+      "start": 351.5,
+      "end": 352.5,
+      "text": "Por favor, no cuelgue.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 80,
+      "start": 353.5,
+      "end": 354.5,
+      "text": "Le seguimos atendiendo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 81,
+      "start": 355.5,
+      "end": 357.5,
+      "text": "Realice compras alrededor del mundo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 82,
+      "start": 358.5,
+      "end": 360.5,
+      "text": "Pague con su tarjeta de crédito Sibanco.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 83,
+      "start": 361.5,
+      "end": 365.5,
+      "text": "Gozo de beneficios con el programa de recompensas seguros y asistencias especiales.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 84,
+      "start": 366.5,
+      "end": 368.5,
+      "text": "Solicítala en nuestras sucursales a nivel nacional.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 85,
+      "start": 369.5,
+      "end": 371.5,
+      "text": "Gracias por tu esperanza.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 86,
+      "start": 372.5,
+      "end": 375.5,
+      "text": "Sibanco, el primer banco verde de México presenta...",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 87,
+      "start": 375.5,
+      "end": 377.5,
+      "text": "Sibanco Solar.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 88,
+      "start": 378.5,
+      "end": 382.5,
+      "text": "El crédito destinado a la adquisición de paneles solares para casas, educación y negocio.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 0,
+  "ivr_segments": 88
+}

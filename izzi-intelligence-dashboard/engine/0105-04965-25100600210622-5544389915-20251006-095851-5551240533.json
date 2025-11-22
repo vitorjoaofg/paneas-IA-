@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600210622-5544389915-20251006-095851-5551240533.WAV",
+  "file_name": "0105-04965-25100600210622-5544389915-20251006-095851-5551240533.WAV",
+  "base_id": "0105-04965-25100600210622-5544389915-20251006-095851-5551240533",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un momento por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melonisa Dúcedo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Hola, buen día, disculpa, me marcaron. Actualmente yo me encuentro en un lugar muy mal. ¿Qué bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 24.48,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.48,
+      "end": 25.76,
+      "text": " momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.71,
+      "end": 35.11,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Melonisa Dúcedo, nos comunicamos de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.11,
+      "end": 37.11,
+      "text": " compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.38,
+      "end": 41.78,
+      "text": " Hola, buen día, disculpa, me marcaron. Actualmente yo me encuentro en un lugar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.78,
+      "end": 42.78,
+      "text": " muy mal.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.62,
+      "end": 57.62,
+      "text": " ¿Qué bueno?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.56,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

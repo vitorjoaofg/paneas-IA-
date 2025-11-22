@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400171833-7341132261-20251004-093940-04896.WAV",
+  "file_name": "0105-04999-25100400171833-7341132261-20251004-093940-04896.WAV",
+  "base_id": "0105-04999-25100400171833-7341132261-20251004-093940-04896",
+  "transcription": "Gracias por comunicarte, Aisy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Aisy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulseo. Espera un momento, por favor. Sí, bueno. Buenos días. Buenos días. Buenos días. Habla Eduardo Munguía de Aisy. ¿Se encuentra, perdón, con quién te da el gusto? Con... ¿Cómo, perdón? Habla Eduardo Munguía aquí de Aisy. Es para brindar aquí el servicio precisamente de Aisy. Ajá. No sé, ¿ya cuenta con Internet o televisión? No, ni teo, sus servicios. Estoy bien contéleme. Me damos activas que ustedes. Ah, ok. Bueno. Gracias. Pero ya, por favor, no me llame porque voy a reportar todos estos números. Ya son varios. Ok. Sí, lo reporto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte, Aisy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 17.4,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 23.4,
+      "text": " No lo pienses más y cándate a Aisy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 35.16,
+      "text": " Por favor, hable o pulseo. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.16,
+      "end": 40.36,
+      "text": " Sí, bueno. Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.36,
+      "end": 42.16,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.16,
+      "end": 50.09,
+      "text": " Buenos días. Habla Eduardo Munguía de Aisy. ¿Se encuentra, perdón, con quién te da el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.09,
+      "end": 55.46,
+      "text": " Con... ¿Cómo, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.46,
+      "end": 62.29,
+      "text": " Habla Eduardo Munguía aquí de Aisy. Es para brindar aquí el servicio precisamente de Aisy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.29,
+      "end": 63.67,
+      "text": " Ajá.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.67,
+      "end": 67.38,
+      "text": " No sé, ¿ya cuenta con Internet o televisión?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.38,
+      "end": 78.1,
+      "text": " No, ni teo, sus servicios. Estoy bien contéleme. Me damos activas que ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.1,
+      "end": 80.1,
+      "text": " Ah, ok. Bueno. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 80.1,
+      "end": 88.02,
+      "text": " Pero ya, por favor, no me llame porque voy a reportar todos estos números. Ya son varios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 88.02,
+      "end": 91.02,
+      "text": " Ok. Sí, lo reporto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 91.008,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

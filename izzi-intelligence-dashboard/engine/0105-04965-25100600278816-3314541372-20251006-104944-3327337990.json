@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600278816-3314541372-20251006-104944-3327337990.WAV",
+  "file_name": "0105-04965-25100600278816-3314541372-20251006-104944-3327337990.WAV",
+  "base_id": "0105-04965-25100600278816-3314541372-20251006-104944-3327337990",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Este es el área de contracción.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.98,
+      "end": 9.42,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.42,
+      "end": 17.18,
+      "text": " más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.18,
+      "end": 24.99,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.99,
+      "end": 25.99,
+      "text": " momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.99,
+      "end": 43.14,
+      "text": " Hola, ¿qué tal? Este es el área de contracción.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 43.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

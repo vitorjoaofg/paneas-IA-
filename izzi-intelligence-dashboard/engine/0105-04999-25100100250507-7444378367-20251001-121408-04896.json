@@ -1,0 +1,33 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100250507-7444378367-20251001-121408-04896.WAV",
+  "file_name": "0105-04999-25100100250507-7444378367-20251001-121408-04896.WAV",
+  "base_id": "0105-04999-25100100250507-7444378367-20251001-121408-04896",
+  "transcription": "Gracias por comunicarte a Incy. Tenemos las mejores colisiones para ti. Si, buenas tardes, la brega de Estelio Vargas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Incy. Tenemos las mejores colisiones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 35.0,
+      "end": 38.0,
+      "text": " Si, buenas tardes, la brega de Estelio Vargas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.088,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

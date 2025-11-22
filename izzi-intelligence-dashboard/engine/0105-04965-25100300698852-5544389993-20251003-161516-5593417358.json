@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300698852-5544389993-20251003-161516-5593417358.WAV",
+  "file_name": "0105-04965-25100300698852-5544389993-20251003-161516-5593417358.WAV",
+  "base_id": "0105-04965-25100300698852-5544389993-20251003-161516-5593417358",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarte a la red de contrataciones de Easy, la red de Validania, ¿con quién tengo el gusto? Buenas tardes, con la señora María. Muchísimas gracias, señor. ¿Te está interesando algún servicio de telefonía o móvil de internet? No sé, no sé, es una marca. Quiero saber a ver qué ofrece y si no, pues estamos. Deja te cuelgo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 30.75,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.75,
+      "end": 36.51,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.51,
+      "end": 58.51,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarte a la red de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.51,
+      "end": 64.0,
+      "text": " contrataciones de Easy, la red de Validania, ¿con quién tengo el gusto? Buenas tardes, con la señora",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.0,
+      "end": 68.02,
+      "text": " María. Muchísimas gracias, señor. ¿Te está interesando algún servicio de telefonía o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.02,
+      "end": 73.22,
+      "text": " móvil de internet? No sé, no sé, es una marca. Quiero saber a ver qué ofrece y si no, pues",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 73.22,
+      "end": 76.22,
+      "text": " estamos. Deja te cuelgo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.936,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300427030-5544389949-20251003-124233-5595150833.WAV",
+  "file_name": "0105-04965-25100300427030-5544389949-20251003-124233-5595150833.WAV",
+  "base_id": "0105-04965-25100300427030-5544389949-20251003-124233-5595150833",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días. Oiga, ¿cómo puedo hacer para que me dejen de estar llamando de Easy? Mira, ahorita lo que puedo hacer, ahorita tengo que este número es el 55 95 15 08 33, ¿verdad? Así es. Es que yo ya tengo mi servicio de cable y la verdad no me interesa otro. Y son constantes las llamadas, entonces ya, la verdad, ya nos cansamos. Ok, sí. De hecho, ahorita este número se lo paso a mi supervisora para que lo quite de lo que es su base de datos. Ah, bueno. ¿Le agradecería mucho que me cancelaran estas llamadas? Sí, no se preocupen. Ahorita este número se lo paso a mi supervisora. Gracias. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 25.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.86,
+      "end": 39.5,
+      "text": " Buenos días. Oiga, ¿cómo puedo hacer para que me dejen de estar llamando de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.16,
+      "end": 46.16,
+      "text": " Mira, ahorita lo que puedo hacer, ahorita tengo que este número es el 55 95 15 08 33, ¿verdad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.16,
+      "end": 50.16,
+      "text": " Así es. Es que yo ya tengo mi servicio de cable y la verdad no me interesa otro.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.16,
+      "end": 55.16,
+      "text": " Y son constantes las llamadas, entonces ya, la verdad, ya nos cansamos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.16,
+      "end": 61.16,
+      "text": " Ok, sí. De hecho, ahorita este número se lo paso a mi supervisora para que lo quite de lo que es su base de datos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.16,
+      "end": 68.09,
+      "text": " Ah, bueno. ¿Le agradecería mucho que me cancelaran estas llamadas?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.33,
+      "end": 71.33,
+      "text": " Sí, no se preocupen. Ahorita este número se lo paso a mi supervisora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.33,
+      "end": 72.33,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 72.33,
+      "end": 73.33,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.852,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

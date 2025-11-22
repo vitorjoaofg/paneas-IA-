@@ -1,0 +1,215 @@
+{
+  "call_id": "0105-04965-25090200451390-5544389965-20250902-123908-5567282923",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.800000190734863,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 7.800000190734863,
+      "end": 13.800000190734863,
+      "text": "VIX Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 13.800000190734863,
+      "end": 16.799999237060547,
+      "text": "¡No lo pienses más y cámbiate a EASY!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.799999237060547,
+      "end": 20.0,
+      "text": "¿Te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 24.0,
+      "end": 31.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 6,
+      "start": 31.0,
+      "end": 36.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 36.0,
+      "end": 39.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 47.0,
+      "end": 51.0,
+      "text": "Hola, buenas tardes. Me presento, mi nombre es Raúl Torres.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 51.0,
+      "end": 55.0,
+      "text": "Solo veo parte de su compañía de Internet. ¿Y con quien tengo el gusto?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 55.0,
+      "end": 58.0,
+      "text": "Dígame, con Alessín Ramos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 58.0,
+      "end": 64.0,
+      "text": "Un gusto saludarle, señor. El motivo de la llamada es únicamente para ofrecerle nuestros servicios en cuanto a Internet,",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 64.0,
+      "end": 67.0,
+      "text": "televisión e Internet para el hogar, teléfono fijo también.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 67.0,
+      "end": 70.0,
+      "text": "No sé si usted ya cuenta con alguno de estos en su casa, señor.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 70.0,
+      "end": 73.0,
+      "text": "No, yo nomás tengo el teléfono para emergencia.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 73.0,
+      "end": 76.0,
+      "text": "Ok, solamente maneja el teléfono personal.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 77.0,
+      "end": 83.0,
+      "text": "Como salgo fueras, no hay nadie que lo atienda hasta que no llame para cuando estoy yo aquí en la casa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 83.0,
+      "end": 86.0,
+      "text": "Sí, es lo único para que lo tengo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 87.0,
+      "end": 90.0,
+      "text": "Bueno, entonces mire, si en algún futuro estuviera interesado, señor,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 90.0,
+      "end": 94.0,
+      "text": "en adquirir lo que es el servicio de Internet, televisión para el hogar,",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 94.0,
+      "end": 99.0,
+      "text": "nosotros pues en este momento le estamos ofreciendo varias promociones para uno o más de uno de los servicios.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 99.0,
+      "end": 103.0,
+      "text": "Así que pues con que se contacte con nosotros, con eso se le estaría respetando el descuento, ¿de acuerdo?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 103.0,
+      "end": 109.0,
+      "text": "Lo voy a pensar y ya con el tiempo voy a saber si es necesario que utilice yo el servicio.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 9,
+  "customer_segments": 6,
+  "ivr_segments": 8
+}

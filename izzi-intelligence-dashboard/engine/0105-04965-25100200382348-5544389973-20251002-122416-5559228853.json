@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200382348-5544389973-20251002-122416-5559228853.WAV",
+  "file_name": "0105-04965-25100200382348-5544389973-20251002-122416-5559228853.WAV",
+  "base_id": "0105-04965-25100200382348-5544389973-20251002-122416-5559228853",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Sí, buenas tardes, la tiene Julio Vargas Díaz, con quien tengo el gusto. ¿Qué tal? Buenas tardes, dime. Buenas tardes caballero, ¿hay alguna oferta que le haya gustado? En hecho sí, pues no pueden entrar al traccionamiento donde vivo. Ah, ya habían checado su localidad. Sí. Ah, ok. En este caso, si gusta, le comento, puedo verificar una vez más si ya tenemos cobertura o si ya se comunicarán estos días con usted. No es un traccionamiento nada más puede entrar infinito, un telmé. Ah, ok. Bueno, en este caso voy a pasar el reporte correspondiente. Sí, amigo, gracias. Gracias. ¿Qué tal? Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.72,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.72,
+      "end": 36.84,
+      "text": " por favor. Sí, buenas tardes, la tiene Julio Vargas Díaz, con quien tengo el gusto. ¿Qué",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.84,
+      "end": 44.06,
+      "text": " tal? Buenas tardes, dime. Buenas tardes caballero, ¿hay alguna oferta que le haya gustado? En",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.06,
+      "end": 50.06,
+      "text": " hecho sí, pues no pueden entrar al traccionamiento donde vivo. Ah, ya habían checado su localidad.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.06,
+      "end": 56.29,
+      "text": " Sí. Ah, ok. En este caso, si gusta, le comento, puedo verificar una vez más",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.29,
+      "end": 61.29,
+      "text": " si ya tenemos cobertura o si ya se comunicarán estos días con usted. No es un traccionamiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.29,
+      "end": 68.29,
+      "text": " nada más puede entrar infinito, un telmé. Ah, ok. Bueno, en este caso voy a pasar el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.29,
+      "end": 73.29,
+      "text": " reporte correspondiente. Sí, amigo, gracias. Gracias. ¿Qué tal? Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.14,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

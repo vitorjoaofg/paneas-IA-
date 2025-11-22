@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100654032-5544389968-20251001-172820-5555104649.WAV",
+  "file_name": "0105-04965-25100100654032-5544389968-20251001-172820-5555104649.WAV",
+  "base_id": "0105-04965-25100100654032-5544389968-20251001-172820-5555104649",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la vía de contrataciones de Easy. La atiende Valía Daniela. ¿Con quién tenga gusto? Al querido Hernández Rosales, sí. Hola, mucho gusto que veías interesado en algún servicio, telefonía, móvil, Internet. ¿Esto es de Telmex? Somos de Easy. ¿De dónde, perdón? Easy. ¿Eso qué es? ¿De dónde te dijo? Easy. ¿Eso qué es Easy? Hola. Hola, sí te quiero comprar, pero... Estamos en Esperanza y Easy ha salido tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 20.7,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.7,
+      "end": 35.84,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 35.84,
+      "end": 48.84,
+      "text": " Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la vía de contrataciones de Easy. La atiende Valía Daniela. ¿Con quién tenga gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 48.84,
+      "end": 51.84,
+      "text": " Al querido Hernández Rosales, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 51.84,
+      "end": 55.84,
+      "text": " Hola, mucho gusto que veías interesado en algún servicio, telefonía, móvil, Internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.84,
+      "end": 58.64,
+      "text": " ¿Esto es de Telmex?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.64,
+      "end": 61.41,
+      "text": " Somos de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.41,
+      "end": 63.6,
+      "text": " ¿De dónde, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.6,
+      "end": 64.99,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.99,
+      "end": 73.88,
+      "text": " ¿Eso qué es? ¿De dónde te dijo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.88,
+      "end": 75.88,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.88,
+      "end": 77.88,
+      "text": " ¿Eso qué es Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 77.88,
+      "end": 82.95,
+      "text": " Hola. Hola, sí te quiero comprar, pero...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 82.95,
+      "end": 85.95,
+      "text": " Estamos en Esperanza y Easy ha salido tarde.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 91.296,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

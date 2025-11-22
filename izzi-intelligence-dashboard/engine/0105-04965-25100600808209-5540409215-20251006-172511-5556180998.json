@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600808209-5540409215-20251006-172511-5556180998.WAV",
+  "file_name": "0105-04965-25100600808209-5540409215-20251006-172511-5556180998.WAV",
+  "base_id": "0105-04965-25100600808209-5540409215-20251006-172511-5556180998",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. ¿Contratación Easy la atiende Edgar Torres, con quien tengo el gusto? Sí, es que me acaban de hablar, pero miren, ahorita no puedo estar en esto. Gracias. ¿No puede estar en qué? ¿Perdón?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.58,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.58,
+      "end": 15.38,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.38,
+      "end": 21.46,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.46,
+      "end": 27.99,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.99,
+      "end": 32.39,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.39,
+      "end": 37.39,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.39,
+      "end": 46.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.82,
+      "end": 51.82,
+      "text": " ¿Contratación Easy la atiende Edgar Torres, con quien tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.82,
+      "end": 60.26,
+      "text": " Sí, es que me acaban de hablar, pero miren, ahorita no puedo estar en esto. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.26,
+      "end": 62.26,
+      "text": " ¿No puede estar en qué? ¿Perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

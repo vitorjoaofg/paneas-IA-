@@ -1,0 +1,152 @@
+{
+  "call_id": "0105-04965-25090200516038-3314541350-20250902-131951-3310021009",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.800000190734863,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 7.800000190734863,
+      "end": 13.800000190734863,
+      "text": "Big Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 13.800000190734863,
+      "end": 16.799999237060547,
+      "text": "¡No lo pienses más y cámbiate a EASY!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.799999237060547,
+      "end": 20.0,
+      "text": "¿Te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 20.0,
+      "end": 23.799999237060547,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 24.799999237060547,
+      "end": 29.799999237060547,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 6,
+      "start": 29.799999237060547,
+      "end": 34.79999923706055,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 34.79999923706055,
+      "end": 38.79999923706055,
+      "text": "Ya apague la... ya apague la encienda ahí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 38.79999923706055,
+      "end": 47.79999923706055,
+      "text": "No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 47.79999923706055,
+      "end": 50.79999923706055,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 50.79999923706055,
+      "end": 53.79999923706055,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 59.79999923706055,
+      "end": 65.80000305175781,
+      "text": "Hola, ¿qué tal? Muy buenas tardes. Le hablo Alberto Ruiz de parte del Departamento de Promociones de EASY.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 12,
+      "start": 65.80000305175781,
+      "end": 67.80000305175781,
+      "text": "¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 69.80000305175781,
+      "end": 71.80000305175781,
+      "text": "¿Me escucho? Bueno...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 73.80000305175781,
+      "end": 76.80000305175781,
+      "text": "Alberto, corta la llamada por motivos de calidad.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 80.80000305175781,
+      "end": 82.80000305175781,
+      "text": "¡Gracias!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 2,
+  "customer_segments": 4,
+  "ivr_segments": 10
+}

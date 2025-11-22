@@ -1,0 +1,350 @@
+{
+  "call_id": "0105-04965-25090100480732-5544389966-20250901-122552-5597599984",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 21.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 23.0,
+      "end": 25.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 31.0,
+      "end": 37.0,
+      "text": "Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse de contacto con EASY, la tienda de Bonnie y Daniela. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 37.0,
+      "end": 39.0,
+      "text": "Con Gabriela.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 39.0,
+      "end": 43.0,
+      "text": "Hola, mucho gusto. Daniela, ¿está interesada en algún servicio, telefonía, móvil?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 6,
+      "start": 43.0,
+      "end": 55.0,
+      "text": "No, bueno, es que se comunicaron y me entró una grabación y dije, bueno, vamos a ver qué tan interesante o qué.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 55.0,
+      "end": 59.0,
+      "text": "Porque fue muy rápido y me dio alcance a escuchar la promoción.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 60.0,
+      "end": 70.0,
+      "text": "Ah, ok. Sí, para darle promociones sobre, bueno, no sé si usted actualmente esté con algún servicio móvil. Por ejemplo, si tiene internet, ¿se cuenta con internet o algo así?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 9,
+      "start": 70.0,
+      "end": 76.0,
+      "text": "¿Móvil? Sí, no, nada más a base de recargas.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 76.0,
+      "end": 80.0,
+      "text": "Ah, ok. ¿Cuánto es lo que usted gasta aproximadamente?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 80.0,
+      "end": 82.0,
+      "text": "100 pesos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 12,
+      "start": 82.0,
+      "end": 85.0,
+      "text": "100 pesos. ¿Cada quincena, cada mes?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 13,
+      "start": 85.0,
+      "end": 87.0,
+      "text": "Cada quincena.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 87.0,
+      "end": 99.0,
+      "text": "Cada quincena que mensual serían 200 pesos. Igual no sé si le habían comentado algo sobre el servicio, bueno, de EASY móvil. Tiene un costo de 240 pesos mensuales.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 99.0,
+      "end": 107.0,
+      "text": "Es un plan para el celular, contiene lo que son 5.000 megas para navegar y compartir en internet, conservando lo que es un mismo número de teléfono,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 107.0,
+      "end": 117.0,
+      "text": "teniendo los beneficios de WhatsApp, llamadas y mensajes de texto ilimitados. Como le repito, teniendo 5.000 megas para navegar y compartir en internet, únicamente pagando 240 pesos mensuales.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 17,
+      "start": 117.0,
+      "end": 121.0,
+      "text": "¿Usted es algún tipo de cliente con nosotros o más de EASY?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 18,
+      "start": 121.0,
+      "end": 123.0,
+      "text": "No, no, no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 123.0,
+      "end": 130.0,
+      "text": "Ah, ok. Sí, este servicio que estamos ofreciendo de EASY móvil, como le repito, tiene un costo de 240 pesos.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 20,
+      "start": 130.0,
+      "end": 134.0,
+      "text": "Ah, ok. ¿Y el servicio de internet para un domicilio?",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 21,
+      "start": 134.0,
+      "end": 135.0,
+      "text": "¿Perdón?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 135.0,
+      "end": 139.0,
+      "text": "¿El servicio de internet para domicilio? Es que me parece que fue lo que escuché.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 139.0,
+      "end": 140.0,
+      "text": "Ah, sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 140.0,
+      "end": 142.0,
+      "text": "Telefonía y televisión.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 142.0,
+      "end": 148.0,
+      "text": "Ah, sí, es para eso. Primero tendría que validar, señorita, si tiene lo que es esta cobertura en su domicilio.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 148.0,
+      "end": 151.0,
+      "text": "Ah, ok. Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 151.0,
+      "end": 158.0,
+      "text": "No sé si podría, si quiere, si usa, puedo checarlo. Nada más tendría que, el código postal, la ciudad, la colonia.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 159.0,
+      "end": 162.0,
+      "text": "Bueno, a ver, dígame. Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 163.0,
+      "end": 166.0,
+      "text": "¿Qué le doy? ¿Qué dato le doy primero?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 166.0,
+      "end": 172.0,
+      "text": "Es la señal, la, perdón, la colonia, código postal.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 172.0,
+      "end": 178.0,
+      "text": "Es desarrollo urbano Quetzalcóatl y el código postal es 09700.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 182.0,
+      "end": 183.0,
+      "text": "¿Código postal qué, perdón?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 183.0,
+      "end": 185.0,
+      "text": "09700.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 186.0,
+      "end": 192.0,
+      "text": "09700. Ok, ahorita checamos la cobertura y en unos minutos nos vamos a comunicar con usted para saber si hay cobertura, ok?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 192.0,
+      "end": 193.0,
+      "text": "Ok, gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 193.0,
+      "end": 195.0,
+      "text": "Bueno, que tenga buen día. Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 37,
+      "start": 195.0,
+      "end": 196.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 16,
+  "customer_segments": 19,
+  "ivr_segments": 3
+}

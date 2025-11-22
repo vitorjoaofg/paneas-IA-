@@ -1,0 +1,188 @@
+{
+  "call_id": "0105-04965-25090100340034-5544389989-20250901-105814-5541668256",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 3.0,
+      "text": "Hola, ¿te gustaría tener internet?",
+      "original_role": "ivr",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 3.0,
+      "end": 7.0,
+      "text": "Gracias por contactar a la Mesa de Ayuda de Versión Universal de mi proveedor.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 7.0,
+      "end": 15.0,
+      "text": "Le recordamos que ponemos a su disposición el aviso de privacidad de datos personales en nuestro sitio web www.stela.com.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 3,
+      "start": 15.0,
+      "end": 22.0,
+      "text": "A su vez, le recordamos que esta llamada puede ser grabada y monitoreada para fines de calidad en el servicio.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 22.0,
+      "end": 28.0,
+      "text": "Nuestro horario de atención es de lunes a viernes, de 8 de la mañana a 7 de la tarde.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 28.0,
+      "end": 31.0,
+      "text": "A continuación, le pedimos que escuche nuestro menú de opciones.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 31.0,
+      "end": 36.0,
+      "text": "Si es usted un cliente nuevo y nos contacta por primera vez, marque 1.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 36.0,
+      "end": 42.0,
+      "text": "Si le interesa el servicio de buzón universal y ya recibió información previamente, marque 2.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 42.0,
+      "end": 50.0,
+      "text": "Si ya está operando con el buzón universal y tiene dudas sobre el llenado de adenda o con el estado de su comprobante, marque 3.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 9,
+      "start": 50.0,
+      "end": 56.0,
+      "text": "Si tiene algún problema distinto y requiere asistencia adicional, marque 4.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 59.0,
+      "end": 61.0,
+      "text": "Bienvenido a Stela.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 61.0,
+      "end": 63.0,
+      "text": "We have you covered.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 63.0,
+      "end": 68.0,
+      "text": "Gracias por contactar a la Mesa de Ayuda de Buzón Universal de Proveedores.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 68.0,
+      "end": 76.0,
+      "text": "Le recordamos que ponemos a su disposición el aviso de privacidad de datos personales en nuestro sitio web www.stela.com.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 14,
+      "start": 76.0,
+      "end": 83.0,
+      "text": "A su vez, le recordamos que esta llamada puede ser grabada y monitoreada para fines de calidad en el servicio.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 84.0,
+      "end": 90.0,
+      "text": "A su vez, le recordamos que esta llamada puede ser grabada y monitoreada para fines de calidad en el servicio.",
+      "original_role": "agent",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 90.0,
+      "end": 96.0,
+      "text": "Nuestro horario de atención es de lunes a viernes, de 8 de la mañana a 7 de la tarde.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 17,
+      "start": 96.0,
+      "end": 100.0,
+      "text": "A continuación, le pedimos escuche nuestro menú de opciones.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 100.0,
+      "end": 104.0,
+      "text": "Si es usted un cliente nuevo y nos contacta por primera vez, marque 1.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 104.0,
+      "end": 110.0,
+      "text": "Si le interesa el servicio de buzón universal y ya recibió información previamente, marque 2.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 0,
+  "ivr_segments": 19
+}

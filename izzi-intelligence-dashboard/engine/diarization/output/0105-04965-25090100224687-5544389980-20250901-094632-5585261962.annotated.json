@@ -1,0 +1,107 @@
+{
+  "call_id": "0105-04965-25090100224687-5544389980-20250901-094632-5585261962",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.559999942779541,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 5.559999942779541,
+      "end": 12.319999694824219,
+      "text": "entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 12.319999694824219,
+      "end": 18.719999313354492,
+      "text": "pesos el primer mes? ¡No lo pienses más y cámbiate a EASY! ¿Te interesa? Un asesor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 18.719999313354492,
+      "end": 24.0,
+      "text": "te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 24.0,
+      "end": 28.0,
+      "text": "¡Espera un momento por favor!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 54.0,
+      "end": 61.0,
+      "text": "¡Ok, ok! No se preocupe. Aquí lo pondremos en los comentarios para que lo tomen en cuenta",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.975
+    },
+    {
+      "segment_index": 6,
+      "start": 61.0,
+      "end": 64.0,
+      "text": "y pues la saquen de lo que es el servidor.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 85.0,
+      "end": 91.0,
+      "text": "Ok, no se preocupe. ¡Muchísimas gracias! ¡Hasta luego igualmente!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 92.0,
+      "end": 94.0,
+      "text": "¡Bye señorita!",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 114.0,
+      "end": 117.0,
+      "text": "Subtítulos realizados por la comunidad de Amara.org",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 144.0,
+      "end": 147.0,
+      "text": "Subtítulos realizados por la comunidad de Amara.org",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 3,
+  "customer_segments": 1,
+  "ivr_segments": 7
+}

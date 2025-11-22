@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600485510-5544389968-20251006-132434-5556229980.WAV",
+  "file_name": "0105-04965-25100600485510-5544389968-20251006-132434-5556229980.WAV",
+  "base_id": "0105-04965-25100600485510-5544389968-20251006-132434-5556229980",
+  "transcription": "¡Hola! Te gustaría llegar a la División de Ingeniería Mecánica e Industrial de la Facultad de Ensenaduría de la UNAM. Si conoces el número y eventos deportivos exclusivos por sólo 350 pesos el primer mes, no lo pienses más y cállate a INSI. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Buen día. Está usted llamando a la División de Ingeniería Mecánica e Industrial de la Facultad de Ingeniería de la UNAM. Si conoce el número de extensión, marque la tecla GATO seguido del número de extensión. De lo contrario, marque 9 para escuchar el menú de opciones. Un momento por favor, su llamada está siendo transferida.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " ¡Hola! Te gustaría llegar a la División de Ingeniería Mecánica e Industrial de la Facultad de Ensenaduría de la UNAM.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 17.0,
+      "text": " Si conoces el número y eventos deportivos exclusivos por sólo 350 pesos el primer mes, no lo pienses más y cállate a INSI.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 24.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.0,
+      "end": 33.22,
+      "text": " Buen día. Está usted llamando a la División de Ingeniería Mecánica e Industrial de la Facultad de Ingeniería de la UNAM.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.22,
+      "end": 51.0,
+      "text": " Si conoce el número de extensión, marque la tecla GATO seguido del número de extensión. De lo contrario, marque 9 para escuchar el menú de opciones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 51.0,
+      "end": 55.26,
+      "text": " Un momento por favor, su llamada está siendo transferida.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

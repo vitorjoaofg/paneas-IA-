@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700673425-5544389904-20251007-155607-5521208622.WAV",
+  "file_name": "0105-04965-25100700673425-5544389904-20251007-155607-5521208622.WAV",
+  "base_id": "0105-04965-25100700673425-5544389904-20251007-155607-5521208622",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, qué tal, muy buenas tardes, le habla Alberto Ruiz, departe del Departamento de Promociones de Easy. ¿Con quién tengo el gusto? Es que no me interesa eso. Ah, ok. ¿Ella cuenta con Easy o cuenta con otra compañía de Internet? Ah, sí. Ah, ok, entiendo. Bueno, muchas gracias, que tengo una excelente tarde. Una pregunta. Dígame. ¿De qué me dijo que hablaba? Easy. ¿Alguna duda que tenga? Dígame. Bueno, adiós. Adiós. Ok, que tengo una excelente tarde. Oye. Ah, ok, que tengo una excelente tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 27.71,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.71,
+      "end": 28.71,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.42,
+      "end": 40.66,
+      "text": " Hola, qué tal, muy buenas tardes, le habla Alberto Ruiz, departe del Departamento de Promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.66,
+      "end": 48.74,
+      "text": " de Easy. ¿Con quién tengo el gusto? Es que no me interesa eso. Ah, ok. ¿Ella cuenta",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.74,
+      "end": 55.75,
+      "text": " con Easy o cuenta con otra compañía de Internet? Ah, sí. Ah, ok, entiendo. Bueno, muchas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.75,
+      "end": 61.53,
+      "text": " gracias, que tengo una excelente tarde. Una pregunta. Dígame. ¿De qué me dijo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.53,
+      "end": 77.66,
+      "text": " que hablaba? Easy. ¿Alguna duda que tenga? Dígame. Bueno, adiós. Adiós. Ok, que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.66,
+      "end": 86.17,
+      "text": " tengo una excelente tarde. Oye. Ah, ok, que tengo una excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.184,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

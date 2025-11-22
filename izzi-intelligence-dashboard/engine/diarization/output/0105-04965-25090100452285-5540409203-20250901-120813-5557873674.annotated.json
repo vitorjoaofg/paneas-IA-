@@ -1,0 +1,278 @@
+{
+  "call_id": "0105-04965-25090100452285-5540409203-20250901-120813-5557873674",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.559999942779541,
+      "text": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 5.559999942779541,
+      "end": 12.319999694824219,
+      "text": "entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 12.319999694824219,
+      "end": 18.719999313354492,
+      "text": "pesos el primer mes? ¡No lo pienses más y cámbiate a EASY! ¿Te interesa? ¡Un asesor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 18.719999313354492,
+      "end": 23.84000015258789,
+      "text": "te está esperando! Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 23.84000015258789,
+      "end": 32.91999816894531,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 32.91999816894531,
+      "end": 38.0,
+      "text": "un asesor o 2 para terminar la llamada. Espera un momento por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 38.0,
+      "end": 51.7599983215332,
+      "text": "Sí, muy buenos días. Se está comunicando una campaña de contratación de eventos nuevos.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 7,
+      "start": 51.7599983215332,
+      "end": 55.79999923706055,
+      "text": "¿Actualmente cuenta con algún servicio de televisión, cable o internet en su hogar?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 8,
+      "start": 55.79999923706055,
+      "end": 66.31999969482422,
+      "text": "Sí, tengo internet, teléfono, televisión, pero lo que están ofreciendo está súper",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 66.31999969482422,
+      "end": 78.08000183105469,
+      "text": "caro. ¿Cuánto está pagando actualmente? 600 pesos, con teléfono, internet y televisión.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 78.08000183105469,
+      "end": 84.80000305175781,
+      "text": "Pero con EASY o con otra compañía? No, con EASY. Perfecto. Sí, entonces dice que paga",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 84.80000305175781,
+      "end": 92.91999816894531,
+      "text": "600 por los 3. Sí, porque ahorita para clientes nuevos ese servicio lo estamos manejando por",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 12,
+      "start": 92.91999816894531,
+      "end": 99.95999908447266,
+      "text": "promoción en $4.99 durante 6 meses y le ofrecemos 80 GB. Ya después del séptimo",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 99.95999908447266,
+      "end": 106.91999816894531,
+      "text": "mes le quedaría fijo el costo de $5.39 hasta el séptimo mes, ya le queda ese costo. ¿Y",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 106.91999816894531,
+      "end": 116.19999694824219,
+      "text": "yo ya no puedo hacer nada? Bueno, ¿cuánto tiempo tiene con ese servicio? En diciembre",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 116.19999694824219,
+      "end": 122.55999755859375,
+      "text": "se acaba. Lo puede modificar en diciembre, porque recuerda que es por un año, son 12",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 16,
+      "start": 122.55999755859375,
+      "end": 128.0,
+      "text": "meses. Ya después de los 12 meses sí lo puede otra vez hacer el cambio, sí, le podemos",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 128.0,
+      "end": 135.44000244140625,
+      "text": "dar esta promoción, pero sí se tiene que esperar. O sea, estoy pagando mucho, yo veía",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 18,
+      "start": 135.44000244140625,
+      "end": 145.8000030517578,
+      "text": "Video Visión, SNET, y ya no lo tengo, y no sé ni qué canal, él era el 404. ¿Cuántos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 145.8000030517578,
+      "end": 155.39999389648438,
+      "text": "GB tiene su internet? ¿Sabes? No sé si son 100 GB. Ay, no sé, no sé, pero creo",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 20,
+      "start": 155.39999389648438,
+      "end": 161.8000030517578,
+      "text": "son 400 canales, ¿cómo ves? Sí, pues tiene un servicio un poquito más alto, yo creo",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 21,
+      "start": 161.8000030517578,
+      "end": 165.8000030517578,
+      "text": "que a veces es por eso que lo que está pagando. Sí, porque usted está pagando un poquito",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 165.8000030517578,
+      "end": 171.8000030517578,
+      "text": "un servicio, sí, va a tener un internet de unos 150 MB. Pero, ¿cómo veo Video Visión?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 23,
+      "start": 172.8000030517578,
+      "end": 179.8000030517578,
+      "text": "O sea, SNET, de los de la iglesia. Déjeme ver si se lo pueden volver a agregar, pero",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 179.8000030517578,
+      "end": 183.8000030517578,
+      "text": "para hacer cualquier cambio o le agreguen ese canal, déjeme la transciende directamente",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 183.8000030517578,
+      "end": 186.8000030517578,
+      "text": "al servicio cliente para que se lo puedan agregar, no sé si gusta que la transciere",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 186.8000030517578,
+      "end": 191.8000030517578,
+      "text": "y se lo pueden agregar a ese canal. A ver. Nomás que no me cuelgue, permítame un momentito.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 27,
+      "start": 201.8000030517578,
+      "end": 208.8000030517578,
+      "text": "No, no, no, no, no, no, no, no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 231.8000030517578,
+      "end": 238.8000030517578,
+      "text": "No, no, no, no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 261.79998779296875,
+      "end": 268.79998779296875,
+      "text": "No, no, no, no, no, no.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 10,
+  "customer_segments": 14,
+  "ivr_segments": 6
+}

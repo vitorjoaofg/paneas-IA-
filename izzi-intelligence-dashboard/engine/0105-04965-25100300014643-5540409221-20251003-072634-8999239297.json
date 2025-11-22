@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300014643-5540409221-20251003-072634-8999239297.WAV",
+  "file_name": "0105-04965-25100300014643-5540409221-20251003-072634-8999239297.WAV",
+  "base_id": "0105-04965-25100300014643-5540409221-20251003-072634-8999239297",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entrenamiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Hola, hola. Buen día. Me comunico de la compañía de Easy. Le saludo a Paula Cabañas. ¿Cómo la puedo ayudar? ¿Vale? Buenos días. Me comunico de aquí de la compañía de Easy. ¿Con quién tengo el gusto? No, ahorita no. Sí, bueno. Por motivos de calidad tendré que terminar mi llamada. Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.72,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entrenamiento con 200 canales,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.72,
+      "end": 13.84,
+      "text": " Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.84,
+      "end": 16.8,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.8,
+      "end": 20.08,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.08,
+      "end": 24.16,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.16,
+      "end": 30.93,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.17,
+      "end": 39.15,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.15,
+      "end": 47.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.45,
+      "end": 50.05,
+      "text": " Hola, hola. Buen día. Me comunico de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.05,
+      "end": 53.14,
+      "text": " Le saludo a Paula Cabañas. ¿Cómo la puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.14,
+      "end": 55.07,
+      "text": " ¿Vale?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.07,
+      "end": 60.03,
+      "text": " Buenos días. Me comunico de aquí de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 60.03,
+      "end": 61.31,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.31,
+      "end": 69.44,
+      "text": " No, ahorita no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.44,
+      "end": 74.18,
+      "text": " Sí, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 74.18,
+      "end": 77.38,
+      "text": " Por motivos de calidad tendré que terminar mi llamada. Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 138.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600634287-5544389975-20251006-151535-3122074833.WAV",
+  "file_name": "0105-04965-25100600634287-5544389975-20251006-151535-3122074833.WAV",
+  "base_id": "0105-04965-25100600634287-5544389975-20251006-151535-3122074833",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Contrataciones Easy, la tiene Edgar Torres, ¿con quién tengo el gusto? Buenas tardes, quiero cancelar estas llamadas. Ok, le pido una disculpa. Yo pongo aquí en el sistema, entonces, que usted no esté interesado en el servicio para evitar que se vuelvan a comunicar, no se preocupe. Ok, gracias. Le agradezco mucho por la llamada, señor, que tengan buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.16,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.36,
+      "end": 37.34,
+      "text": " un momento, por favor. Contrataciones Easy, la tiene Edgar Torres, ¿con quién tengo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.34,
+      "end": 44.75,
+      "text": " el gusto? Buenas tardes, quiero cancelar estas llamadas. Ok, le pido una disculpa. Yo pongo",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.75,
+      "end": 47.63,
+      "text": " aquí en el sistema, entonces, que usted no esté interesado en el servicio para evitar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.63,
+      "end": 51.95,
+      "text": " que se vuelvan a comunicar, no se preocupe. Ok, gracias. Le agradezco mucho por la llamada,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.95,
+      "end": 52.95,
+      "text": " señor, que tengan buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.512,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

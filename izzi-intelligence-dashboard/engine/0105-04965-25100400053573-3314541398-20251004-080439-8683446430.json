@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400053573-3314541398-20251004-080439-8683446430.WAV",
+  "file_name": "0105-04965-25100400053573-3314541398-20251004-080439-8683446430.WAV",
+  "base_id": "0105-04965-25100400053573-3314541398-20251004-080439-8683446430",
+  "transcription": "Puedo. Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysport desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Ciento, no entendí tu respuesta. ¿Te comunico con un asesor? Preciona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Ahorita no, gracias. ¿Hablas buenos días? Buenos días, disculpe, ahorita no, estamos completos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.21,
+      "end": 1.21,
+      "text": " Puedo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 1.21,
+      "end": 8.54,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.54,
+      "end": 13.18,
+      "text": " más Skysport desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.18,
+      "end": 14.86,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.86,
+      "end": 15.86,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.86,
+      "end": 18.22,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 18.22,
+      "end": 22.46,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.46,
+      "end": 27.54,
+      "text": " Ciento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.54,
+      "end": 29.74,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 29.74,
+      "end": 35.22,
+      "text": " Preciona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.22,
+      "end": 38.14,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 38.14,
+      "end": 43.53,
+      "text": " Ahorita no, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.53,
+      "end": 44.85,
+      "text": " ¿Hablas buenos días?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.85,
+      "end": 49.33,
+      "text": " Buenos días, disculpe, ahorita no, estamos completos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.152,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

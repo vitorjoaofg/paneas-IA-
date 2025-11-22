@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300152453-3314541320-20251003-091456-3316425641.WAV",
+  "file_name": "0105-04965-25100300152453-3314541320-20251003-091456-3316425641.WAV",
+  "base_id": "0105-04965-25100300152453-3314541320-20251003-091456-3316425641",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos con los 300 y 500 canales? No lo pienses más y cámbiate ahí si te interesa. Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, ¿qué tal? Buenos días. Nos comunicamos desde la compañía de ICI. Mi nombre es Dona Ezerrera. ¿Con quién tengo el gusto? Con alguien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos con los 300 y 500 canales?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " No lo pienses más y cámbiate ahí si te interesa. Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.0,
+      "end": 29.98,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.98,
+      "end": 41.22,
+      "text": " Hola, ¿qué tal? Buenos días. Nos comunicamos desde la compañía de ICI. Mi nombre es Dona Ezerrera. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.22,
+      "end": 43.8,
+      "text": " Con alguien.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 45.252,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

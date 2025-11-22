@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400269818-5540409214-20251004-105153-5558885047.WAV",
+  "file_name": "0105-04965-25100400269818-5540409214-20251004-105153-5558885047.WAV",
+  "base_id": "0105-04965-25100400269818-5540409214-20251004-105153-5558885047",
+  "transcription": "Hola, ¿te gustaría tener internet más selección, más mejor entretenimiento con Vix Premium, más Skyport, desde 350 pesos al tenerme con Easy? Es posible. Teresa, una sesión te está esperando. Por favor, hable. ¿Cuántas de cobrar o facturación marque 5? Recursos humanos marque 6. Si desea hablar con la operadora marque 0, esté en la línea. Bienvenido. Gracias por llamar a su minismo de metales multiplan. Si conoce la extensión Markelo ahora, de lo contrario escuche el siguiente menú. Ventas marque 1. Compras marque 2. Almacén marque 3. Querétaro marque 4. Cuentas por cobrar o facturación marque 5. Recursos humanos marque 6. Si desea hablar con la operadora marque 0 o esté en la línea. Bienvenido. Gracias por llamar a su ministro de metales multiplan. Si conoce la extensión Markelo ahora, de lo contrario escuche el siguiente menú. Ventas marque 1. Compras marque 2. Almacén marque 3. Querétaro marque 4. Cuentas por cobrar o facturación marque 5. Recursos humanos marque 6. Si desea hablar con la operadora marque 0 o esté en la línea. Ventas, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.44,
+      "text": " Hola, ¿te gustaría tener internet más selección, más mejor entretenimiento con Vix Premium, más Skyport, desde 350 pesos al tenerme con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.44,
+      "end": 17.92,
+      "text": " Teresa, una sesión te está esperando. Por favor, hable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.92,
+      "end": 27.34,
+      "text": " ¿Cuántas de cobrar o facturación marque 5? Recursos humanos marque 6. Si desea hablar con la operadora marque 0, esté en la línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 30.94,
+      "end": 39.94,
+      "text": " Bienvenido. Gracias por llamar a su minismo de metales multiplan. Si conoce la extensión Markelo ahora, de lo contrario escuche el siguiente menú.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 39.94,
+      "end": 55.02,
+      "text": " Ventas marque 1. Compras marque 2. Almacén marque 3. Querétaro marque 4. Cuentas por cobrar o facturación marque 5. Recursos humanos marque 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 55.42,
+      "end": 67.98,
+      "text": " Si desea hablar con la operadora marque 0 o esté en la línea. Bienvenido. Gracias por llamar a su ministro de metales multiplan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 67.98,
+      "end": 72.98,
+      "text": " Si conoce la extensión Markelo ahora, de lo contrario escuche el siguiente menú.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 72.98,
+      "end": 88.03,
+      "text": " Ventas marque 1. Compras marque 2. Almacén marque 3. Querétaro marque 4. Cuentas por cobrar o facturación marque 5. Recursos humanos marque 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 88.75,
+      "end": 92.75,
+      "text": " Si desea hablar con la operadora marque 0 o esté en la línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 92.75,
+      "end": 109.41,
+      "text": " Ventas, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 111.276,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

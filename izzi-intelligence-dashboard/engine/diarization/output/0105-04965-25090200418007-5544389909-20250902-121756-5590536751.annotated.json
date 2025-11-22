@@ -1,0 +1,359 @@
+{
+  "call_id": "0105-04965-25090200418007-5544389909-20250902-121756-5590536751",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 8.0,
+      "end": 14.0,
+      "text": "Biggs Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": "No lo pienses más y cámbiate a Easy.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 17.0,
+      "end": 24.0,
+      "text": "¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 27.0,
+      "end": 29.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 30.0,
+      "end": 33.0,
+      "text": "¡Pulse 1!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 60.0,
+      "end": 64.0,
+      "text": "¿Y qué es lo que le interesaría, señorita? ¿Internet, teléfono y televisión o solamente puro internet?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 64.0,
+      "end": 66.0,
+      "text": "No, los tres.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 66.0,
+      "end": 72.0,
+      "text": "Los tres. Bueno, le comento, sí, que actualmente la compañía de Easy, pues, le está dando a conocer lo que es ese servicio.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 72.0,
+      "end": 79.0,
+      "text": "Easy 60 son 60 megas con telefonía fija de casa y lo que es la televisión con 100 canales adicionales.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 79.0,
+      "end": 83.0,
+      "text": "Tiene un precio adicional de 539 pesos al mes.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 11,
+      "start": 83.0,
+      "end": 90.0,
+      "text": "Durante seis meses se le da un descuento de 40 pesos, lo cual únicamente usted lo pagaría en 499.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 90.0,
+      "end": 93.0,
+      "text": "Asimismo, es a una permanencia de 12 meses.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 93.0,
+      "end": 102.0,
+      "text": "Si el servicio no la convence, a los 12 meses usted puede volver a renovar o si quiere darlo de baja a los 12 meses, ya que se acaba el contrato, sin problema alguno.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 104.0,
+      "end": 110.0,
+      "text": "Igual, dependiendo de la zona donde usted se encuentra y si tenemos cobertura, le podemos ofrecer hasta 1000 megas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 111.0,
+      "end": 113.0,
+      "text": "Pero ya es dependiendo de la cobertura.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 113.0,
+      "end": 116.0,
+      "text": "Es que me parece que no hay cobertura aquí donde yo vivo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 17,
+      "start": 116.0,
+      "end": 120.0,
+      "text": "Igual, no sé si gusta que le chequemos qué código puede ser aquí actualmente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 120.0,
+      "end": 122.0,
+      "text": "56078.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 125.0,
+      "end": 129.0,
+      "text": "56078, ¿es en el Estado de México?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 129.0,
+      "end": 130.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 131.0,
+      "end": 133.0,
+      "text": "¿Qué colonia es, disculpe?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 133.0,
+      "end": 135.0,
+      "text": "Tulteca, Teotihuacán.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 138.0,
+      "end": 139.0,
+      "text": "¿Es Tulteca?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 139.0,
+      "end": 140.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 140.0,
+      "end": 141.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 144.0,
+      "end": 146.0,
+      "text": "¿Alguna calle en especial?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 146.0,
+      "end": 148.0,
+      "text": "Emiliano Velázquez.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 157.0,
+      "end": 158.0,
+      "text": "Permítame.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 29,
+      "start": 159.0,
+      "end": 161.0,
+      "text": "Lo voy a checar aquí.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 169.0,
+      "end": 171.0,
+      "text": "Permítame un segundito.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 178.0,
+      "end": 179.0,
+      "text": "Ah, sí.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 179.0,
+      "end": 180.0,
+      "text": "Sí, es cierto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 180.0,
+      "end": 183.0,
+      "text": "No tenemos cobertura en lo que es su zona, señorita.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 183.0,
+      "end": 184.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 184.0,
+      "end": 185.0,
+      "text": "Bueno, muchas gracias.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 186.0,
+      "end": 187.0,
+      "text": "Gracias, una disculpa.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 187.0,
+      "end": 188.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 38,
+      "start": 188.0,
+      "end": 189.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 22,
+  "customer_segments": 11,
+  "ivr_segments": 6
+}

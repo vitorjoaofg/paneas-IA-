@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700648983-5544389977-20251007-153738-5553400467.WAV",
+  "file_name": "0105-04965-25100700648983-5544389977-20251007-153738-5553400467.WAV",
+  "base_id": "0105-04965-25100700648983-5544389977-20251007-153738-5553400467",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad? Tener el mejor entretenimiento con 200 canales, Vips Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor... Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 3. Si conoces el número de extensión, márquelo ahora. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. ¡Buenas tardes! Hola, hola. ¿Qué tal? Mucho gusto. Abraham García, contratación de Easy. Dígame, ¿en quién le puedo ayudar?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.7,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.7,
+      "end": 7.8,
+      "text": " Tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 13.9,
+      "text": " Vips Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.9,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.0,
+      "end": 20.1,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.1,
+      "end": 21.0,
+      "text": " Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.0,
+      "end": 23.5,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.5,
+      "end": 26.9,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.9,
+      "end": 29.3,
+      "text": " Si conoces el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 29.4,
+      "end": 31.6,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 31.6,
+      "end": 40.63,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.63,
+      "end": 42.63,
+      "text": " ¡Buenas tardes!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.63,
+      "end": 44.13,
+      "text": " Hola, hola. ¿Qué tal? Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.13,
+      "end": 45.73,
+      "text": " Abraham García, contratación de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 45.73,
+      "end": 47.23,
+      "text": " Dígame, ¿en quién le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

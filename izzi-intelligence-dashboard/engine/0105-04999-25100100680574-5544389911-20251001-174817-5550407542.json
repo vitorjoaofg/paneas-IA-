@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100680574-5544389911-20251001-174817-5550407542.WAV",
+  "file_name": "0105-04999-25100100680574-5544389911-20251001-174817-5550407542.WAV",
+  "base_id": "0105-04999-25100100680574-5544389911-20251001-174817-5550407542",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Sal de aquí, Ter. Buenas tardes, gracias por comunicarse. La vida y contactas en Easy la tiene Valia y Daniela como quien tenga el gusto. Soy yo, te me marcaron, dígame. ¿Te interesa algún servicio, telefonía, móvil, Internet? No. Ok, debes con mucho que tenga buen día. Igual.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.64,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.64,
+      "end": 26.38,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.38,
+      "end": 28.38,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.38,
+      "end": 32.58,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.62,
+      "end": 34.62,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.62,
+      "end": 42.14,
+      "text": " Sal de aquí, Ter. Buenas tardes, gracias por comunicarse.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.14,
+      "end": 45.8,
+      "text": " La vida y contactas en Easy la tiene Valia y Daniela como quien tenga el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.8,
+      "end": 47.8,
+      "text": " Soy yo, te me marcaron, dígame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.8,
+      "end": 51.13,
+      "text": " ¿Te interesa algún servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.13,
+      "end": 53.74,
+      "text": " No.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.74,
+      "end": 55.74,
+      "text": " Ok, debes con mucho que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 55.74,
+      "end": 57.74,
+      "text": " Igual.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.392,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

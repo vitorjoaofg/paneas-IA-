@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300551735-8135785859-20251003-142251-04896.WAV",
+  "file_name": "0105-04999-25100300551735-8135785859-20251003-142251-04896.WAV",
+  "base_id": "0105-04999-25100300551735-8135785859-20251003-142251-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Big Streaming y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable opus... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. ¿Buenas tardes? Buenas tardes. Buenas tardes. Se comunica el área de contrataciones. ¿Y si lo atiendes, Mel Castillo? ¿Con quién tengo el uso? Con Luis Ángel, pero lo que quiero saber es por qué me están marque y marque y él no ha pedido información. ¿No desea contratar? No. Ok, yo registro el sistema para que ya no se comuniquen, cabrón. Una de sulfa. Sí, de nada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Big Streaming y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 17.4,
+      "text": " por solo 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.4,
+      "end": 20.1,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.1,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.4,
+      "end": 25.3,
+      "text": " Por favor, hable opus...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.19,
+      "end": 33.09,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.09,
+      "end": 38.19,
+      "text": " Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.86,
+      "end": 45.46,
+      "text": " ¿Buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.46,
+      "end": 47.49,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.49,
+      "end": 51.99,
+      "text": " Buenas tardes. Se comunica el área de contrataciones. ¿Y si lo atiendes, Mel Castillo? ¿Con quién tengo el uso?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.09,
+      "end": 60.02,
+      "text": " Con Luis Ángel, pero lo que quiero saber es por qué me están marque y marque y él no ha pedido información.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.02,
+      "end": 61.62,
+      "text": " ¿No desea contratar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.62,
+      "end": 62.62,
+      "text": " No.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 62.62,
+      "end": 66.02,
+      "text": " Ok, yo registro el sistema para que ya no se comuniquen, cabrón. Una de sulfa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 66.02,
+      "end": 67.02,
+      "text": " Sí, de nada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

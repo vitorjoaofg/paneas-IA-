@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200367942-3314541362-20251002-121256-3338555070.WAV",
+  "file_name": "0105-04965-25100200367942-3314541362-20251002-121256-3338555070.WAV",
+  "base_id": "0105-04965-25100200367942-3314541362-20251002-121256-3338555070",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulte uno… Su llamada será transferida al buzón. La llamada se cobrará al terminar los tonos siguientes. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No puede contestar su llamada ahora. Después del tono, grabe su mensaje. Marque la tecla GATO cuando termine. Lo sentimos. Ha alcanzado límite de tiempo para dejar su mensaje. Para enviar el mensaje. Marque 1 para escucharlo. Marque 2 para regravarlo. Marque 3 para dejar su mensaje y desconectar. Marque asterisco asterisco.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 6.94,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.94,
+      "end": 13.14,
+      "text": " más Sky Sports desde 350 pesos el primer mes con Easy Es Posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.14,
+      "end": 19.02,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulte uno…",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.02,
+      "end": 25.3,
+      "text": " Su llamada será transferida al buzón. La llamada se cobrará al terminar los tonos siguientes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.3,
+      "end": 29.66,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.66,
+      "end": 35.3,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.3,
+      "end": 38.94,
+      "text": " No puede contestar su llamada ahora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.94,
+      "end": 86.7,
+      "text": " Después del tono, grabe su mensaje. Marque la tecla GATO cuando termine.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 86.7,
+      "end": 91.75,
+      "text": " Lo sentimos. Ha alcanzado límite de tiempo para dejar su mensaje.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 91.75,
+      "end": 93.71,
+      "text": " Para enviar el mensaje.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 93.71,
+      "end": 96.43,
+      "text": " Marque 1 para escucharlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 96.51,
+      "end": 99.47,
+      "text": " Marque 2 para regravarlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 99.47,
+      "end": 103.71,
+      "text": " Marque 3 para dejar su mensaje y desconectar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 103.71,
+      "end": 105.71,
+      "text": " Marque asterisco asterisco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.36,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200393884-5544389938-20251002-123317-5575993818.WAV",
+  "file_name": "0105-04965-25100200393884-5544389938-20251002-123317-5575993818.WAV",
+  "base_id": "0105-04965-25100200393884-5544389938-20251002-123317-5575993818",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, con Trataciones Easy, la Tienda de Artorres. ¿Con quién tengo el gusto? Con Lucila Sánchez. Un gusto saludarle, señora Lucía. Se le están ofreciendo nuestros servicios de Internet, Televisión y Telefonía para el hogar. Pero ya lo tengo. O sea, no entiendo, ¿me van a bajar la tarifa o cómo va a ser esto? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.84,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.84,
+      "end": 30.58,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.58,
+      "end": 34.98,
+      "text": " Hola, con Trataciones Easy, la Tienda de Artorres. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.18,
+      "end": 37.18,
+      "text": " Con Lucila Sánchez.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.18,
+      "end": 42.38,
+      "text": " Un gusto saludarle, señora Lucía. Se le están ofreciendo nuestros servicios de Internet,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.38,
+      "end": 46.37,
+      "text": " Televisión y Telefonía para el hogar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.37,
+      "end": 56.84,
+      "text": " Pero ya lo tengo. O sea, no entiendo, ¿me van a bajar la tarifa o cómo va a ser esto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.84,
+      "end": 61.3,
+      "text": " Bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.312,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

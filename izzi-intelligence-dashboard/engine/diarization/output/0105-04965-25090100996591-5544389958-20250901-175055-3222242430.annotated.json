@@ -1,0 +1,89 @@
+{
+  "call_id": "0105-04965-25090100996591-5544389958-20250901-175055-3222242430",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big TV y eventos deportivos exclusivos por sólo 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 14.0,
+      "end": 17.0,
+      "text": "No lo pienses más y cámbiate a Easy.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 17.0,
+      "end": 24.0,
+      "text": "¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 26.0,
+      "end": 28.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 30.0,
+      "end": 40.0,
+      "text": "¿Aló? ¿Buenas tardes? ¿Aló?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 60.0,
+      "end": 74.0,
+      "text": "Para variar.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 90.0,
+      "end": 92.0,
+      "text": "¿Aló?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 120.0,
+      "end": 122.0,
+      "text": "¿Aló?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 150.0,
+      "end": 152.0,
+      "text": "¿Aló?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 4,
+  "ivr_segments": 4
+}

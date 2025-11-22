@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300108396-5540409209-20251003-084146-5552086950.WAV",
+  "file_name": "0105-04965-25100300108396-5540409209-20251003-084146-5552086950.WAV",
+  "base_id": "0105-04965-25100300108396-5540409209-20251003-084146-5552086950",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Está usted llamando a Medstent. Espera un momento, por favor. Si conoce el número de extensión, márquelo ahora. Y si no, marque 0 y una operadora lo atenderá. Para dejar un mensaje, pulse 1. Para llamar a la operadora, pulse 0. Para introducir otra extensión, pulse asterisco.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes con Easy? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 21.77,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.77,
+      "end": 24.77,
+      "text": " Está usted llamando a Medstent.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.77,
+      "end": 31.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.42,
+      "end": 39.98,
+      "text": " Si conoce el número de extensión, márquelo ahora. Y si no, marque 0 y una operadora lo atenderá.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.98,
+      "end": 43.98,
+      "text": " Para dejar un mensaje, pulse 1. Para llamar a la operadora, pulse 0.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.98,
+      "end": 57.98,
+      "text": " Para introducir otra extensión, pulse asterisco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

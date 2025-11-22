@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200230277-5544389966-20251002-102503-5550866821.WAV",
+  "file_name": "0105-04965-25100200230277-5544389966-20251002-102503-5550866821.WAV",
+  "base_id": "0105-04965-25100200230277-5544389966-20251002-102503-5550866821",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Si desarregresa el menú principal, más de nueve. Espera un momento, por favor. Lo sentimos. No hay nadie disponible para responder la llamada. Grabe su mensaje después del tono. Presione asterisco para descartar la grabación o presione cualquier para finalizar la grabación.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.26,
+      "end": 10.26,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.26,
+      "end": 18.06,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.06,
+      "end": 24.26,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.26,
+      "end": 29.06,
+      "text": " Por favor. Si desarregresa el menú principal, más de nueve.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.06,
+      "end": 35.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.7,
+      "end": 70.06,
+      "text": " Lo sentimos. No hay nadie disponible para responder la llamada. Grabe su mensaje después",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 70.06,
+      "end": 75.3,
+      "text": " del tono. Presione asterisco para descartar la grabación o presione cualquier",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 75.3,
+      "end": 77.06,
+      "text": " para finalizar la grabación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 115.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300815286-5544389914-20251003-174250-5575439541.WAV",
+  "file_name": "0105-04999-25100300815286-5544389914-20251003-174250-5575439541.WAV",
+  "base_id": "0105-04999-25100300815286-5544389914-20251003-174250-5575439541",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, espero que me digas la idea de contrataciones de Easy, la tiene Valeria Daniela, ¿con quién tengo el gusto? Hola, disculpa, tienen días marcándome de tu compañía, yo les he mencionado que no me interesa y necesito que dejen de marcarme. Ok, le pongo los comentarios. Que tenga buen día, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.4,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.4,
+      "end": 16.6,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.6,
+      "end": 23.41,
+      "text": " Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.41,
+      "end": 31.25,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.25,
+      "end": 34.25,
+      "text": " Hola, ¿qué tal? Buenas tardes, espero que me digas la idea de contrataciones de Easy,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.25,
+      "end": 37.22,
+      "text": " la tiene Valeria Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.22,
+      "end": 40.72,
+      "text": " Hola, disculpa, tienen días marcándome de tu compañía,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.72,
+      "end": 46.3,
+      "text": " yo les he mencionado que no me interesa y necesito que dejen de marcarme.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.3,
+      "end": 48.8,
+      "text": " Ok, le pongo los comentarios. Que tenga buen día, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.3,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

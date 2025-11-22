@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100639700-5544389923-20251001-171736-5661341537.WAV",
+  "file_name": "0105-04999-25100100639700-5544389923-20251001-171736-5661341537.WAV",
+  "base_id": "0105-04999-25100100639700-5544389923-20251001-171736-5661341537",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes, le habla Alberto Ruiz de parte del departamento de promociones de Easy. Hola, ¿qué crees que yo tengo este paquete? El de Easy, el de telefonía, el de internet. Ya me han estado mandando y les he dicho que la verdad es que tengo este. Yo no está mi nombre, pero está el nombre de mi hija. Yo estoy muy contenta con su servicio, ¿vale? Para que les digan que ya me han estado llamando por los avos. Esta base es para personas que se llegan a conectar redes Easy. Usted me comenta que se ha conectado a la red de su hija, ¿verdad? Sí, exactamente. Ok, es por eso. Ahorita lo saco de la base, no se preocupen. Gracias, hasta luego. Bien, nada, que tenga una excelente tarde. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.54,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.54,
+      "end": 10.62,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.62,
+      "end": 17.22,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.22,
+      "end": 23.22,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.22,
+      "end": 38.23,
+      "text": " para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes, le habla",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.23,
+      "end": 46.03,
+      "text": " Alberto Ruiz de parte del departamento de promociones de Easy. Hola, ¿qué",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.03,
+      "end": 52.91,
+      "text": " crees que yo tengo este paquete? El de Easy, el de telefonía, el de internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.91,
+      "end": 57.23,
+      "text": " Ya me han estado mandando y les he dicho que la verdad es que tengo este. Yo no",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.23,
+      "end": 63.51,
+      "text": " está mi nombre, pero está el nombre de mi hija. Yo estoy muy contenta con su",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.51,
+      "end": 69.07,
+      "text": " servicio, ¿vale? Para que les digan que ya me han estado llamando por los",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.07,
+      "end": 74.67,
+      "text": " avos. Esta base es para personas que se",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.67,
+      "end": 78.31,
+      "text": " llegan a conectar redes Easy. Usted me comenta que se ha conectado a la red de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 78.31,
+      "end": 83.39,
+      "text": " su hija, ¿verdad? Sí, exactamente. Ok, es por eso. Ahorita lo saco de la base, no se",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 83.39,
+      "end": 90.35,
+      "text": " preocupen. Gracias, hasta luego. Bien, nada, que tenga una excelente tarde. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 91.224,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

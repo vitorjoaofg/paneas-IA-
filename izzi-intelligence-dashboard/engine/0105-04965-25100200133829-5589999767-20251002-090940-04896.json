@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200133829-5589999767-20251002-090940-04896.WAV",
+  "file_name": "0105-04965-25100200133829-5589999767-20251002-090940-04896.WAV",
+  "base_id": "0105-04965-25100200133829-5589999767-20251002-090940-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola. ¿Qué tal? Buenos días. Me estoy comunicando por parte del servicio de telefonía Easy. Mi nombre es Teresa Quinto. ¿Con quién tengo el gusto? ¿Qué tal? Buenos días. Bueno. ¿A dónde está eso de los 100 megas de lo de la tele? No entiendo. ¿A dónde veo la oferta de los 100 megas de la tele?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 16.0,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 25.25,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.25,
+      "end": 27.25,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.25,
+      "end": 38.36,
+      "text": " Hola. ¿Qué tal? Buenos días. Me estoy comunicando por parte del servicio de telefonía Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.36,
+      "end": 41.36,
+      "text": " Mi nombre es Teresa Quinto. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.34,
+      "end": 46.75,
+      "text": " ¿Qué tal? Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.75,
+      "end": 75.09,
+      "text": " Bueno. ¿A dónde está eso de los 100 megas de lo de la tele? No entiendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 75.09,
+      "end": 79.09,
+      "text": " ¿A dónde veo la oferta de los 100 megas de la tele?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.564,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

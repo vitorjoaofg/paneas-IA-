@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100664882-3314541305-20251001-173640-3344945309.WAV",
+  "file_name": "0105-04965-25100100664882-3314541305-20251001-173640-3344945309.WAV",
+  "base_id": "0105-04965-25100100664882-3314541305-20251001-173640-3344945309",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Buenas tardes. Habla el talamante de la compañía de Easy. ¿Con quién tengo el gusto? Con esta Irma. Irma, mira, buena tarde. El motivo de mi llamada es porque Easy le está ofreciendo a usted chips para sus equipos celulares, Irma, para que no generen recargas y mantengan una renta mesura fija con nosotros. ¿Usted puede dejar algún tipo de recarga en su equipo celular? Disculpe, ¿de qué compañía dice? Easy, su servicio de cable. ¿Easy? ¿Megacable? No, de hecho somos la competencia de megacable, somos Easy. ¿No ha escuchado a Alvarado Easy? No, no joden, es que nosotros tenemos la línea de megacable. Ah, ok, perdón, entonces la llamada se canalizó mal, ¿verdad? Bueno, suena disculpa. No hay cuidado. Que tenga buen día. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.31,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.31,
+      "end": 39.11,
+      "text": " por favor. Buenas tardes. Habla el talamante de la compañía de Easy. ¿Con quién tengo el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.11,
+      "end": 49.71,
+      "text": " gusto? Con esta Irma. Irma, mira, buena tarde. El motivo de mi llamada es porque Easy le está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.71,
+      "end": 54.15,
+      "text": " ofreciendo a usted chips para sus equipos celulares, Irma, para que no generen recargas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.15,
+      "end": 58.39,
+      "text": " y mantengan una renta mesura fija con nosotros. ¿Usted puede dejar algún tipo de recarga en",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.39,
+      "end": 66.66,
+      "text": " su equipo celular? Disculpe, ¿de qué compañía dice? Easy, su servicio de cable. ¿Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.66,
+      "end": 73.62,
+      "text": " ¿Megacable? No, de hecho somos la competencia de megacable, somos Easy. ¿No ha escuchado",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 73.62,
+      "end": 80.5,
+      "text": " a Alvarado Easy? No, no joden, es que nosotros tenemos la línea de megacable. Ah, ok,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 80.5,
+      "end": 84.5,
+      "text": " perdón, entonces la llamada se canalizó mal, ¿verdad? Bueno, suena disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 84.5,
+      "end": 87.3,
+      "text": " No hay cuidado. Que tenga buen día. Igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

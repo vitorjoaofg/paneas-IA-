@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200459343-5540409217-20251002-132617-5553958089.WAV",
+  "file_name": "0105-04965-25100200459343-5540409217-20251002-132617-5553958089.WAV",
+  "base_id": "0105-04965-25100200459343-5540409217-20251002-132617-5553958089",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sport desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un profesor te está esperando. Por favor. ...licreativo 100, audiovisual 103, sincronización 105, copyright 106, contraloría 108. Espera un momento, por favor. Contabilidad 108, 168. Hola, ¿qué tal? Buenas tardes, bienvenida a la contratación Easy, que tienden Nancy Martínez. Bueno, bueno, buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Sky Sport desde 350 pesos el primer mes con Easy Es Posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 14.4,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.4,
+      "end": 16.44,
+      "text": " Un profesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 17.24,
+      "text": " Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.24,
+      "end": 26.36,
+      "text": " ...licreativo 100, audiovisual 103, sincronización 105, copyright 106, contraloría 108.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.36,
+      "end": 29.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.2,
+      "end": 34.38,
+      "text": " Contabilidad 108, 168.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.38,
+      "end": 35.1,
+      "text": " Hola, ¿qué tal?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.1,
+      "end": 45.66,
+      "text": " Buenas tardes, bienvenida a la contratación Easy, que tienden Nancy Martínez.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.66,
+      "end": 52.86,
+      "text": " Bueno, bueno, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 118.404,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200161680-3314541375-20251002-093205-3345266907.WAV",
+  "file_name": "0105-04965-25100200161680-3314541375-20251002-093205-3345266907.WAV",
+  "base_id": "0105-04965-25100200161680-3314541375-20251002-093205-3345266907",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día. ¿Sin qué le puedo apoyar? Hola, buenos días. Se le ponen una agencia y la verdad ya estamos molestos de que cada ratito nos estén entrando llamadas sobre eso. Queremos saber qué está pasando si nos pueden ya quitar de su lista o algo, porque son llamadas de a cada ratito y no entran las llamadas de los clientes. Ok, muy bien, de acuerdo. Ponemos el comentario. Vamos a poner entonces el comentario y pasamos al reporte. Muchas gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 24.58,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.58,
+      "end": 26.14,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.14,
+      "end": 35.34,
+      "text": " Hola, buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.94,
+      "end": 37.94,
+      "text": " ¿Sin qué le puedo apoyar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.94,
+      "end": 39.97,
+      "text": " Hola, buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.97,
+      "end": 45.97,
+      "text": " Se le ponen una agencia y la verdad ya estamos molestos de que cada ratito nos estén entrando",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.97,
+      "end": 47.97,
+      "text": " llamadas sobre eso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.97,
+      "end": 53.97,
+      "text": " Queremos saber qué está pasando si nos pueden ya quitar de su lista o algo, porque",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.97,
+      "end": 57.97,
+      "text": " son llamadas de a cada ratito y no entran las llamadas de los clientes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.97,
+      "end": 59.97,
+      "text": " Ok, muy bien, de acuerdo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 59.97,
+      "end": 61.97,
+      "text": " Ponemos el comentario.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 62.57,
+      "end": 68.57,
+      "text": " Vamos a poner entonces el comentario y pasamos al reporte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 68.57,
+      "end": 70.57,
+      "text": " Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 70.57,
+      "end": 72.57,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

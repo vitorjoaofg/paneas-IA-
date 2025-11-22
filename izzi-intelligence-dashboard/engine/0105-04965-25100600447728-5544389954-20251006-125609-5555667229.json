@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600447728-5544389954-20251006-125609-5555667229.WAV",
+  "file_name": "0105-04965-25100600447728-5544389954-20251006-125609-5555667229.WAV",
+  "base_id": "0105-04965-25100600447728-5544389954-20251006-125609-5555667229",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno, tarde. La tiene Julio Vargas Easy. ¿Con quién tengo el gusto? Ya no sabes, disculpa. Hay un favor, fíjate que han estado marcando a este número. Este número de teléfono es de teléfonos de México. Ah, ok. Sí, bueno, voy a pasar el reporte para que se comuniquen este número con terminación 7229. Te bajas, muy amable. Le agradezco, que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 14.2,
+      "text": " más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.2,
+      "end": 20.24,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 23.52,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.52,
+      "end": 35.26,
+      "text": " Sí, bueno, tarde. La tiene Julio Vargas Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.82,
+      "end": 40.86,
+      "text": " Ya no sabes, disculpa. Hay un favor, fíjate que han estado marcando a este número.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.86,
+      "end": 46.14,
+      "text": " Este número de teléfono es de teléfonos de México.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.14,
+      "end": 52.46,
+      "text": " Ah, ok. Sí, bueno, voy a pasar el reporte para que se comuniquen este número con terminación 7229.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.46,
+      "end": 53.46,
+      "text": " Te bajas, muy amable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.46,
+      "end": 54.46,
+      "text": " Le agradezco, que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.46,
+      "end": 55.46,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.716,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,39 @@
+# Node / React
+/node_modules/
+/dist/
+/.next/
+/.parcel-cache/
+/.turbo/
+
+# Build artefacts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.swp
+
+# Editor configs
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Engine outputs
+engine/full_analysis.json
+public/data/full_analysis.json
+public/audio/
+
+# Local tooling
+coverage/

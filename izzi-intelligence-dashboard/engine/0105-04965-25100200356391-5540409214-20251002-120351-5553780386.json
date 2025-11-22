@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200356391-5540409214-20251002-120351-5553780386.WAV",
+  "file_name": "0105-04965-25100200356391-5540409214-20251002-120351-5553780386.WAV",
+  "base_id": "0105-04965-25100200356391-5540409214-20251002-120351-5553780386",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Deben venir a la área de contrataciones, Easy, que atienden a Nancy Martínez. ¿Con quién tengo el gusto? Mire, señorita, me han estado marcas y marcas de esto, pero yo siempre les he colgado porque no me interesa. Y cuando les dicen que no, es que no. Yo les he marcado al número 2 para no tener esto. Disculpe y no lo necesito. Muchas gracias. Claro que sé que yo le pongo unos comentarios de que no le llamen para nada y la voy a subir al sistema para que sea eliminada de nuestro sistema de llamadas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 22.98,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.98,
+      "end": 26.98,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.98,
+      "end": 31.98,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.98,
+      "end": 33.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.98,
+      "end": 61.83,
+      "text": " Deben venir a la área de contrataciones, Easy, que atienden a Nancy Martínez. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 61.83,
+      "end": 69.83,
+      "text": " Mire, señorita, me han estado marcas y marcas de esto, pero yo siempre les he colgado porque no me interesa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 69.83,
+      "end": 82.15,
+      "text": " Y cuando les dicen que no, es que no. Yo les he marcado al número 2 para no tener esto. Disculpe y no lo necesito. Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 82.15,
+      "end": 91.15,
+      "text": " Claro que sé que yo le pongo unos comentarios de que no le llamen para nada y la voy a subir al sistema para que sea eliminada de nuestro sistema de llamadas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

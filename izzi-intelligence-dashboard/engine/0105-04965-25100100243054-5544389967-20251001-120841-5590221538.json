@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100243054-5544389967-20251001-120841-5590221538.WAV",
+  "file_name": "0105-04965-25100100243054-5544389967-20251001-120841-5590221538.WAV",
+  "base_id": "0105-04965-25100100243054-5544389967-20251001-120841-5590221538",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, hola, buenas tardes, me comunico de la compañía de Easy, leo el celular. A ver señorita, yo nada más quiero saber esto, me dicen de la posibilidad de que mi teléfono celular lo incorpore al Internet para tener datos siempre y no estar pagando constantemente los excesos de consumo. ¿Es posible? Sí, claro que sí. ¿Cuenta con algún contrato con Easy? No, ahorita no. Estoy muy ocupado, interrumpí la ocupación porque me interesó la oferta. ¿Me puede llamar más tarde, en dos horas? Sí, claro que sí caballero. ¿Con quién ven? Daniel Ávila. Ok, muy bien. Actualmente estoy en total play pero puedo cambiar. Ok, está bien. En unos momentos nos comunicamos con usted, que tenga valiente día. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.58,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.58,
+      "end": 27.58,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.34,
+      "end": 41.14,
+      "text": " Hola, hola, buenas tardes, me comunico de la compañía de Easy, leo el celular. A ver",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.14,
+      "end": 46.3,
+      "text": " señorita, yo nada más quiero saber esto, me dicen de la posibilidad de que mi teléfono",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.3,
+      "end": 56.12,
+      "text": " celular lo incorpore al Internet para tener datos siempre y no estar pagando constantemente",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.12,
+      "end": 62.62,
+      "text": " los excesos de consumo. ¿Es posible? Sí, claro que sí. ¿Cuenta con algún contrato",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.62,
+      "end": 67.32,
+      "text": " con Easy? No, ahorita no. Estoy muy ocupado, interrumpí la ocupación porque",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.32,
+      "end": 72.1,
+      "text": " me interesó la oferta. ¿Me puede llamar más tarde, en dos horas? Sí, claro que sí",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 72.1,
+      "end": 77.3,
+      "text": " caballero. ¿Con quién ven? Daniel Ávila. Ok, muy bien. Actualmente estoy en total",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 77.3,
+      "end": 83.26,
+      "text": " play pero puedo cambiar. Ok, está bien. En unos momentos nos comunicamos con usted,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 83.26,
+      "end": 85.06,
+      "text": " que tenga valiente día. Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.94,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

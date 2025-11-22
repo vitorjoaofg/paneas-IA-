@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700733561-3314541350-20251007-164035-3343834878.WAV",
+  "file_name": "0105-04965-25100700733561-3314541350-20251007-164035-3343834878.WAV",
+  "base_id": "0105-04965-25100700733561-3314541350-20251007-164035-3343834878",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la Red de Contrataciones de Easy. La atiende María Daniela, con quien tengo el gusto. Yo soy Armando. Hola, mucho gusto que vayas a interesar algún servicio, telefonía, móvil, Internet. Internet. Ok. Ok. ¿Anteriormente usted ya estuvo con nosotros, es cliente con nosotros? Ok. ¿Se gustaría venir a ver lo que hace el código postal en la calle de la ciudad para checar si hay cobertura? Oye, el código postal, la verdad, no me lo sé. Ok. ¿La calle?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 20.8,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.8,
+      "end": 28.6,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.9,
+      "end": 33.9,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.9,
+      "end": 47.33,
+      "text": " Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la Red de Contrataciones de Easy. La atiende María Daniela, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.33,
+      "end": 51.06,
+      "text": " Yo soy Armando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.06,
+      "end": 55.06,
+      "text": " Hola, mucho gusto que vayas a interesar algún servicio, telefonía, móvil, Internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.06,
+      "end": 59.97,
+      "text": " Internet. Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.27,
+      "end": 62.27,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.27,
+      "end": 65.27,
+      "text": " ¿Anteriormente usted ya estuvo con nosotros, es cliente con nosotros?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.27,
+      "end": 68.48,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.48,
+      "end": 74.28,
+      "text": " ¿Se gustaría venir a ver lo que hace el código postal en la calle de la ciudad para checar si hay cobertura?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 74.28,
+      "end": 76.28,
+      "text": " Oye, el código postal, la verdad, no me lo sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 79.21,
+      "end": 81.28,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 81.28,
+      "end": 83.28,
+      "text": " ¿La calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.56,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

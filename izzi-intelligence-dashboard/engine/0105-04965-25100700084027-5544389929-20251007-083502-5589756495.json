@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700084027-5544389929-20251007-083502-5589756495.WAV",
+  "file_name": "0105-04965-25100700084027-5544389929-20251007-083502-5589756495.WAV",
+  "base_id": "0105-04965-25100700084027-5544389929-20251007-083502-5589756495",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. ¡Buenos putos días! Ya quítenme de esta pinche lista para que me dejen de andar marcando, ¿no? Abraham García, con trataciones Easy. Mire, la idea de esto es darle la mejor oferta que la que estamos... ¡No me interesa, cabrón! ¡Deja de marcar, puta madre!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.8,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.8,
+      "end": 30.98,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.98,
+      "end": 33.11,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.11,
+      "end": 38.11,
+      "text": " ¡Buenos putos días! Ya quítenme de esta pinche lista para que me dejen de andar marcando, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.11,
+      "end": 40.11,
+      "text": " Abraham García, con trataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.11,
+      "end": 42.11,
+      "text": " Mire, la idea de esto es darle la mejor oferta que la que estamos...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.11,
+      "end": 46.11,
+      "text": " ¡No me interesa, cabrón! ¡Deja de marcar, puta madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.736,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

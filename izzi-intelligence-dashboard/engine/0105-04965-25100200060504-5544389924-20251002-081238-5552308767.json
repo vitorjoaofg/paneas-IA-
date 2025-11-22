@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200060504-5544389924-20251002-081238-5552308767.WAV",
+  "file_name": "0105-04965-25100200060504-5544389924-20251002-081238-5552308767.WAV",
+  "base_id": "0105-04965-25100200060504-5544389924-20251002-081238-5552308767",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysport desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un profesor que está esperando, por favor, hable. CampusShip o InternetSipping, marque 1. Si requiere una recolección, rastrear un paquete, o localizar un buscador, favor de verificar en la página web www.upf.com de su país, el teléfono de servicio al cliente. Soporte técnico UPS habla Julián, por falta de comunicación, pero se va a colgar la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skysport desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.24,
+      "end": 18.08,
+      "text": " Un profesor que está esperando, por favor, hable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.08,
+      "end": 22.28,
+      "text": " CampusShip o InternetSipping, marque 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.28,
+      "end": 28.16,
+      "text": " Si requiere una recolección, rastrear un paquete, o localizar un buscador,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.76,
+      "end": 38.36,
+      "text": " favor de verificar en la página web www.upf.com de su país, el teléfono de servicio al cliente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.36,
+      "end": 74.14,
+      "text": " Soporte técnico UPS habla Julián, por falta de comunicación, pero se va a colgar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

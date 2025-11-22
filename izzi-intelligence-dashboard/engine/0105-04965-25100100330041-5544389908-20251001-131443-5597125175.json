@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100330041-5544389908-20251001-131443-5597125175.WAV",
+  "file_name": "0105-04965-25100100330041-5544389908-20251001-131443-5597125175.WAV",
+  "base_id": "0105-04965-25100100330041-5544389908-20251001-131443-5597125175",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la área de contrataciones de Ixil, aquí en Neuval y Daniela, ¿con quién tengo el gusto? No, señorita. Lo que pasa es que me están llamando a mi domicilio y yo no solicito nada de contratación. ¿Bueno, bueno? Señorita, que me están llamando a mi casa y yo no solicité nada de contratación. Ok. Es que no lo voy a entender muy bien. Se escuché muy lejos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 22.89,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.89,
+      "end": 37.67,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 37.67,
+      "end": 48.98,
+      "text": " Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse a la área de contrataciones de Ixil, aquí en Neuval y Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 48.98,
+      "end": 54.46,
+      "text": " No, señorita. Lo que pasa es que me están llamando a mi domicilio y yo no solicito nada de contratación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 54.46,
+      "end": 57.34,
+      "text": " ¿Bueno, bueno?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 57.34,
+      "end": 63.08,
+      "text": " Señorita, que me están llamando a mi casa y yo no solicité nada de contratación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 63.08,
+      "end": 70.5,
+      "text": " Ok. Es que no lo voy a entender muy bien. Se escuché muy lejos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.18,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

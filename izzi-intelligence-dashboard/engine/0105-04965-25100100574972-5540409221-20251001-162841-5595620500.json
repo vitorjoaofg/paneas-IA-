@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100574972-5540409221-20251001-162841-5595620500.WAV",
+  "file_name": "0105-04965-25100100574972-5540409221-20251001-162841-5595620500.WAV",
+  "base_id": "0105-04965-25100100574972-5540409221-20251001-162841-5595620500",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor... ¿Quién está hablando? Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse al área de contratación de Easy. La tiene Vani Daniela. ¿Con quién tengo el gusto? ¿Con quién hablo? ¿Con Andrés Sánchez de Easy? De Easy. ¿Así es? No, no tengo Easy, yo. ¿Está interesado en algún servicio, telefonía, móvil, Internet? No, tengo Total Play. Bien, lo agradezco mucho que tengas buen día. Ándel, hasta luego. Hasta luego. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 19.0,
+      "text": " ¿Quién está hablando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.0,
+      "end": 24.3,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.3,
+      "end": 33.0,
+      "text": " Hola, ¿qué tal? Buenas tardes. Gracias por comunicarse al área de contratación de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.0,
+      "end": 35.0,
+      "text": " La tiene Vani Daniela. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.0,
+      "end": 39.05,
+      "text": " ¿Con quién hablo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.05,
+      "end": 41.34,
+      "text": " ¿Con Andrés Sánchez de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.34,
+      "end": 42.34,
+      "text": " De Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.34,
+      "end": 44.56,
+      "text": " ¿Así es?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.56,
+      "end": 46.56,
+      "text": " No, no tengo Easy, yo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.56,
+      "end": 49.56,
+      "text": " ¿Está interesado en algún servicio, telefonía, móvil, Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.56,
+      "end": 51.56,
+      "text": " No, tengo Total Play.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 51.56,
+      "end": 53.56,
+      "text": " Bien, lo agradezco mucho que tengas buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 53.56,
+      "end": 55.56,
+      "text": " Ándel, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 55.56,
+      "end": 56.56,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 56.56,
+      "end": 57.56,
+      "text": " Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100324434-5544389914-20251001-131025-5593396328.WAV",
+  "file_name": "0105-04965-25100100324434-5544389914-20251001-131025-5593396328.WAV",
+  "base_id": "0105-04965-25100100324434-5544389914-20251001-131025-5593396328",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buen día. Hola, buen día. Mi nombre es Alejandra. Hablamos en la compañía Easy. El motivo de mi llamada es para darle seguimiento a la información que se le está brindando sobre nuestro servicio Easy y residencia en la internet y cable. Necesito oportunidad de escuchar la promoción. ¿Qué le parece? Sí, es que ya me han marcado varias veces y el Fai ha dicho que no y pues ya lo siento como acoso. ¿Podrían quedarme la lista, por favor? Muy bien, está bien comunicado. De acuerdo, ponemos a comentar entonces. Gracias, buen día. Muchas gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 36.1,
+      "text": " para no. Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.14,
+      "end": 41.78,
+      "text": " Hola, buen día. Hola, buen día. Mi nombre es Alejandra. Hablamos en la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.78,
+      "end": 45.9,
+      "text": " compañía Easy. El motivo de mi llamada es para darle seguimiento a la información",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.9,
+      "end": 49.06,
+      "text": " que se le está brindando sobre nuestro servicio Easy y residencia en la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.06,
+      "end": 52.9,
+      "text": " internet y cable. Necesito oportunidad de escuchar la promoción. ¿Qué le",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.9,
+      "end": 60.31,
+      "text": " parece? Sí, es que ya me han marcado varias veces y el Fai ha dicho que no y pues ya lo siento como acoso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.31,
+      "end": 65.07,
+      "text": " ¿Podrían quedarme la lista, por favor? Muy bien, está bien comunicado. De acuerdo,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.07,
+      "end": 70.07,
+      "text": " ponemos a comentar entonces. Gracias, buen día. Muchas gracias, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.316,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

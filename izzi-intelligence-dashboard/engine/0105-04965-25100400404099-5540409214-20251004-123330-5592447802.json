@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400404099-5540409214-20251004-123330-5592447802.WAV",
+  "file_name": "0105-04965-25100400404099-5540409214-20251004-123330-5592447802.WAV",
+  "base_id": "0105-04965-25100400404099-5540409214-20251004-123330-5592447802",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con una... Espera un momento, por favor. Sí, bueno, buenos días. Bueno, bueno, buenos días. Bueno, por motivos de que le ha finalizado la llamada. El teléfono pongo bien, ¿no? Porque hablaron de él. Hablaron, pero pararon. Y si quería, pensé, no sé. Pero digo, no lo puedo. No lo puedo... No puedo... No lo puedo, es que tengo alguien en el teléfono. Hazme un favor de colgarlo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 32.04,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.48,
+      "end": 36.44,
+      "text": " Presiona 1 para hablar con una... Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.44,
+      "end": 47.05,
+      "text": " Sí, bueno, buenos días. Bueno, bueno, buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.05,
+      "end": 52.15,
+      "text": " Bueno, por motivos de que le ha finalizado la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.15,
+      "end": 84.5,
+      "text": " El teléfono pongo bien, ¿no? Porque hablaron de él.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 84.5,
+      "end": 90.71,
+      "text": " Hablaron, pero pararon. Y si quería, pensé, no sé.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 90.71,
+      "end": 95.58,
+      "text": " Pero digo, no lo puedo. No lo puedo... No puedo...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 95.58,
+      "end": 98.58,
+      "text": " No lo puedo, es que tengo alguien en el teléfono.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 98.58,
+      "end": 101.58,
+      "text": " Hazme un favor de colgarlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 103.716,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400358877-5544389933-20251004-115825-5557989199.WAV",
+  "file_name": "0105-04965-25100400358877-5544389933-20251004-115825-5557989199.WAV",
+  "base_id": "0105-04965-25100400358877-5544389933-20251004-115825-5557989199",
+  "transcription": "Hola, ¿te gustaría tener internet, más televisión, más decoro, entretenimiento, más escáps por, desde 350 pesos al primer mes, con el team es posible. ¿Te interesa? Un asesor te está esperando. Su llamada se está transcurriendo. Buenos días, la tiene por los que no se le apresa bien, representante. Espera un momento, por favor. Hola, ¿qué tal? ¿Buenas tardes? Sí, buenas tardes. Hola, ¿qué tal, señor? Habla Randián, estamos comunicándonos del servicio de Easy. ¿Le llegó algo en vez de...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.4,
+      "text": " Hola, ¿te gustaría tener internet, más televisión, más decoro, entretenimiento, más escáps por, desde 350 pesos al primer mes, con el team es posible. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.4,
+      "end": 18.8,
+      "text": " Un asesor te está esperando. Su llamada se está transcurriendo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.8,
+      "end": 25.28,
+      "text": " Buenos días, la tiene por los que no se le apresa bien, representante.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.28,
+      "end": 27.28,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.28,
+      "end": 34.69,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.69,
+      "end": 36.94,
+      "text": " Sí, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.94,
+      "end": 40.94,
+      "text": " Hola, ¿qué tal, señor? Habla Randián, estamos comunicándonos del servicio de Easy. ¿Le llegó algo en vez de...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 40.716,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

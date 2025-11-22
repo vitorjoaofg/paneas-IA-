@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200510245-5544389973-20251002-140635-5590442767.WAV",
+  "file_name": "0105-04965-25100200510245-5544389973-20251002-140635-5590442767.WAV",
+  "base_id": "0105-04965-25100200510245-5544389973-20251002-140635-5590442767",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor te está esperando! ¡Por favor, hable oculto! ¿Bueno? ¿Bueno? Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes, sí, dime, dime. Dime qué, qué, qué. Dile. Sí, ya cuenta con servicio. ¿Y si en casa, sabes? Hermano, tengo total play, estoy a gusto. Ah, ok. Mucha suerte, agrado. Muchísima suerte. Igualmente por suerte. Muchas gracias. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.28,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.28,
+      "end": 24.34,
+      "text": " asesor te está esperando! ¡Por favor, hable oculto!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.34,
+      "end": 29.63,
+      "text": " ¿Bueno? ¿Bueno?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.63,
+      "end": 35.63,
+      "text": " Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.63,
+      "end": 45.2,
+      "text": " con un asesor o 2. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.2,
+      "end": 49.2,
+      "text": " Hola, ¿qué tal? Buenas tardes. Buenas tardes, sí, dime, dime. Dime qué,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.2,
+      "end": 53.78,
+      "text": " qué, qué. Dile. Sí, ya cuenta con servicio. ¿Y si en casa, sabes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.78,
+      "end": 58.19,
+      "text": " Hermano, tengo total play, estoy a gusto. Ah, ok.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.19,
+      "end": 62.19,
+      "text": " Mucha suerte, agrado. Muchísima suerte. Igualmente por suerte. Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.19,
+      "end": 64.19,
+      "text": " Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

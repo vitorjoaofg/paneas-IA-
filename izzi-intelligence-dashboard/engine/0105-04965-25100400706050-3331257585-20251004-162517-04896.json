@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400706050-3331257585-20251004-162517-04896.WAV",
+  "file_name": "0105-04965-25100400706050-3331257585-20251004-162517-04896.WAV",
+  "base_id": "0105-04965-25100400706050-3331257585-20251004-162517-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Soy Jorge Manriquez Salárez, de Contatógenes de Easy, la tienda de Validania. ¿Cómo quiera que tengas el gusto? Con Miguel de Alba, señorita. Oiga, disculpe, mi pregunta es que recibí una llamada de este número aquí a mi domicilio, pero no veo el motivo, no tengo Easy ni nada que ver. Lo que sí quería preguntarle, ¿tiene que ver con Netway esta de Easy? Bueno, bueno, señorita, bueno, ¿están estúpidos o qué?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.68,
+      "text": " tener Internet más televisión, más el mejor entretenimiento con Vix Premium más",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.68,
+      "end": 18.62,
+      "text": " Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.62,
+      "end": 27.51,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.63,
+      "end": 33.79,
+      "text": " tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.79,
+      "end": 43.09,
+      "text": " un momento, por favor. Hola, ¿qué tal? Buenas tardes. Soy Jorge Manriquez Salárez,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.09,
+      "end": 45.45,
+      "text": " de Contatógenes de Easy, la tienda de Validania. ¿Cómo quiera que tengas el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.45,
+      "end": 51.61,
+      "text": " gusto? Con Miguel de Alba, señorita. Oiga, disculpe, mi pregunta es que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.61,
+      "end": 60.5,
+      "text": " recibí una llamada de este número aquí a mi domicilio, pero no veo el motivo,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.5,
+      "end": 66.06,
+      "text": " no tengo Easy ni nada que ver. Lo que sí quería preguntarle, ¿tiene que ver",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.06,
+      "end": 92.56,
+      "text": " con Netway esta de Easy? Bueno, bueno, señorita, bueno, ¿están estúpidos o qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.608,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

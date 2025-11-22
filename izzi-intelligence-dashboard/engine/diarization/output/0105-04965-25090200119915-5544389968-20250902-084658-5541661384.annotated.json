@@ -1,0 +1,206 @@
+{
+  "call_id": "0105-04965-25090200119915-5544389968-20250902-084658-5541661384",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.300000190734863,
+      "text": "¡Hola! Te gustaría tener internet más televisión, más el mejor entretenimiento con Vix Premium, más Skysport desde $350 pesos el primer mes.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.300000190734863,
+      "end": 16.5,
+      "text": "Con asesoría e implementación, ¿te interesa? Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 16.5,
+      "end": 17.0,
+      "text": "¡Por favor!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 17.0,
+      "end": 18.5,
+      "text": "Administración, 4.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 18.799999237060547,
+      "end": 22.299999237060547,
+      "text": "O si prefiere hablar con la operadora, por favor marque 0.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 25.5,
+      "end": 27.5,
+      "text": "Espera un momento por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 28.5,
+      "end": 30.0,
+      "text": "Esta opción no es válida.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 31.0,
+      "end": 34.5,
+      "text": "O si prefiere hablar con la operadora, por favor marque 0.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 35.5,
+      "end": 37.0,
+      "text": "Gracias por llamar a ProSky.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 38.0,
+      "end": 44.0,
+      "text": "Le recordamos que nuestro horario de atención es de lunes a viernes de 9 a 2 y de 4 a 7.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 46.0,
+      "end": 49.0,
+      "text": "Para llamar a soporte técnico, marque 1.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 49.5,
+      "end": 52.0,
+      "text": "Asesoría e implementación, 2.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 52.5,
+      "end": 54.0,
+      "text": "Ventas, 3.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 54.5,
+      "end": 56.5,
+      "text": "Administración, 4.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 56.5,
+      "end": 60.5,
+      "text": "O si prefiere hablar con la operadora, por favor marque 0.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 66.5,
+      "end": 68.5,
+      "text": "Esta opción no es válida.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 69.0,
+      "end": 75.5,
+      "text": "Le recordamos que nuestro horario de atención es de lunes a viernes de 9 a 2 y de 4 a 7.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 17,
+      "start": 87.5,
+      "end": 90.5,
+      "text": "ProSky Besos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 94.0,
+      "end": 96.5,
+      "text": "ProSky Besos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 100.0,
+      "end": 103.0,
+      "text": "ProSky Besos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 106.0,
+      "end": 109.0,
+      "text": "ProSky Besos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 112.0,
+      "end": 114.0,
+      "text": "ProSky Besos",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 10,
+  "ivr_segments": 11
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200048726-5544389916-20251002-080348-5555122450.WAV",
+  "file_name": "0105-04965-25100200048726-5544389916-20251002-080348-5555122450.WAV",
+  "base_id": "0105-04965-25100200048726-5544389916-20251002-080348-5555122450",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad? Es el lunes a domingo de 10 de la mañana a 7.30 de la noche. Y nuestro horario de atención para copicaciones y mayoreos es el lunes a viernes de 10 de la mañana a 7.30 de la noche. No lo pienses más y cámplame a Instagram. ¿Te interesa? Lo puedes hacer en viana en correo electrónico a contacto www.miguelpetacas.com O bien, comunícate dentro de nuestro horario de atención. Gracias. ¡Hola! ¡Espera un momento por favor! Está apagando a Miguel Petacas. Nuestro horario de atención entiendas es el lunes a domingo de 10 de la mañana a 7.30 de la noche. Y nuestro horario de atención para copicaciones de mayoreo es el lunes a viernes de 10 de la mañana a 7.30 de la noche. Si quieres pedir una copización en este momento, lo puedes hacer enviando un correo electrónico a contacto www.miguelpetacas.com O bien, comunícate dentro de nuestro horario de atención. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.64,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.64,
+      "end": 8.08,
+      "text": " Es el lunes a domingo de 10 de la mañana a 7.30 de la noche.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.08,
+      "end": 14.08,
+      "text": " Y nuestro horario de atención para copicaciones y mayoreos es el lunes a viernes de 10 de la mañana a 7.30 de la noche.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.08,
+      "end": 16.72,
+      "text": " No lo pienses más y cámplame a Instagram.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.72,
+      "end": 17.68,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.68,
+      "end": 22.4,
+      "text": " Lo puedes hacer en viana en correo electrónico a contacto www.miguelpetacas.com",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.4,
+      "end": 25.6,
+      "text": " O bien, comunícate dentro de nuestro horario de atención.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.6,
+      "end": 27.04,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.91,
+      "end": 29.41,
+      "text": " ¡Hola!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 29.41,
+      "end": 30.91,
+      "text": " ¡Espera un momento por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.91,
+      "end": 32.19,
+      "text": " Está apagando a Miguel Petacas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 32.19,
+      "end": 38.16,
+      "text": " Nuestro horario de atención entiendas es el lunes a domingo de 10 de la mañana a 7.30 de la noche.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 38.16,
+      "end": 44.64,
+      "text": " Y nuestro horario de atención para copicaciones de mayoreo es el lunes a viernes de 10 de la mañana a 7.30 de la noche.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.64,
+      "end": 52.48,
+      "text": " Si quieres pedir una copización en este momento, lo puedes hacer enviando un correo electrónico a contacto www.miguelpetacas.com",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.48,
+      "end": 55.76,
+      "text": " O bien, comunícate dentro de nuestro horario de atención.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 55.76,
+      "end": 57.12,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.176,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

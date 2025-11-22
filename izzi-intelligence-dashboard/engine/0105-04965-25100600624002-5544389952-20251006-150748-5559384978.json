@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600624002-5544389952-20251006-150748-5559384978.WAV",
+  "file_name": "0105-04965-25100600624002-5544389952-20251006-150748-5559384978.WAV",
+  "base_id": "0105-04965-25100600624002-5544389952-20251006-150748-5559384978",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium, más sports? Oigan, están marcando los del Internet. Con Easy es posible. ¿Te interesa un asesor? Está marcando al efecto. Por favor, hable o pulse uno para sí, o dos para no. Este está... Espera un momento por favor. ¿Y David? Le acabo de marcar. Buenas tardes. Buenas tardes. Hablar con talamantes de la compañía de Easy. ¿Con quién tengo el gusto? Con la Guardia Nacional. ¿Con quién, perdón? Guardia Nacional. Ok, gracias. Ten buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 2.51,
+      "end": 10.51,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium, más sports?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.51,
+      "end": 13.51,
+      "text": " Oigan, están marcando los del Internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.51,
+      "end": 17.51,
+      "text": " Con Easy es posible. ¿Te interesa un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.51,
+      "end": 19.51,
+      "text": " Está marcando al efecto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.51,
+      "end": 23.51,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.51,
+      "end": 26.12,
+      "text": " Este está...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.12,
+      "end": 28.12,
+      "text": " Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.12,
+      "end": 29.12,
+      "text": " ¿Y David?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.12,
+      "end": 35.28,
+      "text": " Le acabo de marcar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.28,
+      "end": 38.54,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.54,
+      "end": 40.54,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.54,
+      "end": 43.54,
+      "text": " Hablar con talamantes de la compañía de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.54,
+      "end": 46.21,
+      "text": " Con la Guardia Nacional.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.21,
+      "end": 47.21,
+      "text": " ¿Con quién, perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 47.21,
+      "end": 49.21,
+      "text": " Guardia Nacional.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 49.21,
+      "end": 53.22,
+      "text": " Ok, gracias. Ten buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.852,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

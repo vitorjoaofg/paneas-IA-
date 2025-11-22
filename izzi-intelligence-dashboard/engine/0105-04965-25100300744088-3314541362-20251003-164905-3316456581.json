@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300744088-3314541362-20251003-164905-3316456581.WAV",
+  "file_name": "0105-04965-25100300744088-3314541362-20251003-164905-3316456581.WAV",
+  "base_id": "0105-04965-25100300744088-3314541362-20251003-164905-3316456581",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, le habla Alberto Ruiz, de parte del departamento de promociones de Easy. ¿Con quién tengo el gusto? Con la señora Alicia. Alicia, usted actualmente no cuenta con ningún servicio de Easy, ¿verdad? No, es que aquí no entra ese. Ah, ok, ok, entiendo. Bueno, una disculpa, que tenga excelente tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.48,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.68,
+      "end": 24.62,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.62,
+      "end": 35.6,
+      "text": " Hola, ¿qué tal? Buenas tardes, le habla Alberto Ruiz, de parte del departamento de promociones de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.6,
+      "end": 37.0,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.0,
+      "end": 39.33,
+      "text": " Con la señora Alicia.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.33,
+      "end": 42.73,
+      "text": " Alicia, usted actualmente no cuenta con ningún servicio de Easy, ¿verdad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.73,
+      "end": 45.92,
+      "text": " No, es que aquí no entra ese.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.92,
+      "end": 50.52,
+      "text": " Ah, ok, ok, entiendo. Bueno, una disculpa, que tenga excelente tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.08,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

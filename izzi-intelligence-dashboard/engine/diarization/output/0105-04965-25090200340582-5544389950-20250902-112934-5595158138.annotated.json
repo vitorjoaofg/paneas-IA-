@@ -1,0 +1,476 @@
+{
+  "call_id": "0105-04965-25090200340582-5544389950-20250902-112934-5595158138",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 13.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 13.0,
+      "end": 14.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 23.0,
+      "end": 25.0,
+      "text": "Siento, no entendí tu respuesta.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 25.0,
+      "end": 27.0,
+      "text": "¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 27.0,
+      "end": 32.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 8,
+      "start": 36.0,
+      "end": 40.0,
+      "text": "No recibo tu respuesta. Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 46.0,
+      "end": 49.0,
+      "text": "Hola, ¿qué tal? Buenos días. Me presento. Habla José Juan Regoso de Contrataciones.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 49.0,
+      "end": 51.0,
+      "text": "Sí, sí. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 51.0,
+      "end": 54.0,
+      "text": "Muy buenos días. Con Araceli Aguilar, a sus órdenes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 54.0,
+      "end": 58.0,
+      "text": "Araceli, escuché alguna llamada por parte de nosotros, ¿verdad?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 58.0,
+      "end": 59.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 59.0,
+      "end": 61.0,
+      "text": "¿Ella cuenta con servicios de EASY, Araceli?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 61.0,
+      "end": 63.0,
+      "text": "No, no, pero...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 63.0,
+      "end": 64.0,
+      "text": "¿Tiene 3?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 64.0,
+      "end": 70.0,
+      "text": "Ajá, sí. No, no la tengo, pero el problema es en el lugar donde está ubicada la...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 70.0,
+      "end": 72.0,
+      "text": "Ah, ¿no hay cobertura?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 72.0,
+      "end": 75.0,
+      "text": "Eh, no sé si tengan cobertura acá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 75.0,
+      "end": 78.0,
+      "text": "¿De qué parte de la República me hablan?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 78.0,
+      "end": 80.0,
+      "text": "De aquí del Estado de México.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 80.0,
+      "end": 82.0,
+      "text": "¿Del Estado de México?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 82.0,
+      "end": 83.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 84.0,
+      "end": 87.0,
+      "text": "Y, este, ¿qué, qué...?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 87.0,
+      "end": 91.0,
+      "text": "Nada, para buscar aquí el domicilio. ¿Qué calle es la Colonia...?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 91.0,
+      "end": 93.0,
+      "text": "Esa, bueno, está aquí en el...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 93.0,
+      "end": 97.0,
+      "text": "Nos quedamos de venir para vivir por acá. Es en San Francisco, Magú.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 98.0,
+      "end": 100.0,
+      "text": "¿Es en la Colonia de San Francisco, Magú?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 100.0,
+      "end": 102.0,
+      "text": "Ajá, exactamente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 103.0,
+      "end": 106.0,
+      "text": "¿Este dónde viene siendo? ¿En el Estado de México?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 106.0,
+      "end": 111.0,
+      "text": "Ajá, el código postal es 54440.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 111.0,
+      "end": 114.0,
+      "text": "54440. ¿Es en...?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 117.0,
+      "end": 118.0,
+      "text": "¿La calle?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 119.0,
+      "end": 123.0,
+      "text": "Eh, pues es Magú. O sea, nada más es que aquí es medio raro, sí, aquí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 123.0,
+      "end": 125.0,
+      "text": "Magú. ¿El número?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 125.0,
+      "end": 130.0,
+      "text": "Bueno, te digo que es el código postal nada más. Es el que tengo, 54440.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 130.0,
+      "end": 131.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 38,
+      "start": 131.0,
+      "end": 134.0,
+      "text": "Y va a estar poquito difícil, porque sí que veo que...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 134.0,
+      "end": 135.0,
+      "text": "Exactamente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 136.0,
+      "end": 137.0,
+      "text": "Exactamente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 138.0,
+      "end": 140.0,
+      "text": "A ver si lo encuentro con el código postal.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 140.0,
+      "end": 143.0,
+      "text": "¿Le puedo regresar la llamada a este número con la terminación 8138?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 143.0,
+      "end": 145.0,
+      "text": "Claro que sí, claro que sí, con gusto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 44,
+      "start": 145.0,
+      "end": 148.0,
+      "text": "¿Sí? A ver, voy a buscarlo con el código postal y ahí en la calle Magú.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 45,
+      "start": 148.0,
+      "end": 149.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 150.0,
+      "end": 154.0,
+      "text": "Y, para buscarle, le comento, le regreso la llamada, que sea en 15 minutos, 20 minutos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 47,
+      "start": 154.0,
+      "end": 156.0,
+      "text": "Ok, perfecto, sí, claro, joven.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 156.0,
+      "end": 161.0,
+      "text": "Y se les doy la buena noticia de que sí hay, y ahorita les doy los beneficios o las promociones que tenemos.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 49,
+      "start": 161.0,
+      "end": 162.0,
+      "text": "Ok, joven, sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 50,
+      "start": 163.0,
+      "end": 165.0,
+      "text": "Gracias, buen día, hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 51,
+      "start": 167.0,
+      "end": 168.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 7,
+  "customer_segments": 36,
+  "ivr_segments": 9
+}

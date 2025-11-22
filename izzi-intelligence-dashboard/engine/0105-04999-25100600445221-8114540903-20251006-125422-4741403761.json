@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600445221-8114540903-20251006-125422-4741403761.WAV",
+  "file_name": "0105-04999-25100600445221-8114540903-20251006-125422-4741403761.WAV",
+  "base_id": "0105-04999-25100600445221-8114540903-20251006-125422-4741403761",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes. Mi nombre es José Manuel. ¿Con quién tendré el gusto? Buenas tardes, hijo. Buenas tardes, hijo. ¿Con quién hablo? Habla con José Manuel Rigoza de compañía Easy. ¿Qué ofrece? Nosotros tenemos también unos planes que son de promociones de lo que es la televisión e Internet Easy. No, ahorita no. Gracias, hijito. Hasta luego, buena tarde. Adiós. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.26,
+      "end": 10.36,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.36,
+      "end": 18.06,
+      "text": " más Skysports desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.06,
+      "end": 27.2,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 27.2,
+      "end": 28.2,
+      "text": " momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.2,
+      "end": 36.88,
+      "text": " Hola, ¿qué tal? Buenas tardes. Mi nombre es José Manuel. ¿Con quién tendré el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.88,
+      "end": 39.06,
+      "text": " gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.18,
+      "end": 52.38,
+      "text": " Buenas tardes, hijo. Buenas tardes, hijo. ¿Con quién hablo?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.38,
+      "end": 55.38,
+      "text": " Habla con José Manuel Rigoza de compañía Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.38,
+      "end": 60.3,
+      "text": " ¿Qué ofrece?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.3,
+      "end": 66.3,
+      "text": " Nosotros tenemos también unos planes que son de promociones de lo que es la televisión",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.3,
+      "end": 67.3,
+      "text": " e Internet Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.3,
+      "end": 72.5,
+      "text": " No, ahorita no. Gracias, hijito.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 72.5,
+      "end": 75.86,
+      "text": " Hasta luego, buena tarde. Adiós.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 75.86,
+      "end": 76.86,
+      "text": " Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

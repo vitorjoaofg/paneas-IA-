@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200379085-3314541342-20251002-122145-3345063664.WAV",
+  "file_name": "0105-04965-25100200379085-3314541342-20251002-122145-3345063664.WAV",
+  "base_id": "0105-04965-25100200379085-3314541342-20251002-122145-3345063664",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 neras de velocidad, tener oración por un millón de condescentes generales, bitcoine, marido de partidos exclusivos por solo tres días y un paquete por el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ...con los neros tocando melos que rican. La tierra se vuelve por avinata. Al que la des en las palas así lo alcanzan. ¡Por favor!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 8.02,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 neras de velocidad, tener oración por un millón de condescentes generales,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.02,
+      "end": 14.02,
+      "text": " bitcoine, marido de partidos exclusivos por solo tres días y un paquete por el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.02,
+      "end": 17.02,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.02,
+      "end": 20.02,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.02,
+      "end": 24.02,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.02,
+      "end": 30.54,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.54,
+      "end": 34.18,
+      "text": " ...con los neros tocando melos que rican.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.18,
+      "end": 39.7,
+      "text": " La tierra se vuelve por avinata.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.7,
+      "end": 42.7,
+      "text": " Al que la des en las palas así lo alcanzan.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.7,
+      "end": 43.7,
+      "text": " ¡Por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.204,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100400322494-5540409216-20251004-113038-5527367407.WAV",
+  "file_name": "0105-04999-25100400322494-5540409216-20251004-113038-5527367407.WAV",
+  "base_id": "0105-04999-25100400322494-5540409216-20251004-113038-5527367407",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy, ¿te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento por favor. Sí, bueno. Hola, muy buen día. Hola, buen día. ¿Con quién tengo el gusto? Con Pablo Ortiz para servirte. Ah, mucho gusto caballero. ¿Qué servicio desea contratar? Quiero que saques mi número por favor de la lista de llamadas porque me están, ya me llama, ya me llama y pues estoy en junta y me están cayendo sus llamadas. Entonces, si lo puedes sacar mi número por favor del sistema automático yo ya soy cliente. Ah, ok. Muy bien caballero. Ahorita lo pongo aquí en sistema. Perfecto. Muchísimas gracias. No, usted. Bonito día. Fíjate bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy, ¿te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.32,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.32,
+      "end": 32.64,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.64,
+      "end": 38.57,
+      "text": " para hablar con un asesor o dos para terminar la llamada. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.57,
+      "end": 53.02,
+      "text": " por favor. Sí, bueno. Hola, muy buen día. Hola, buen día. ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.02,
+      "end": 60.94,
+      "text": " gusto? Con Pablo Ortiz para servirte. Ah, mucho gusto caballero.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.94,
+      "end": 66.3,
+      "text": " ¿Qué servicio desea contratar? Quiero que saques mi número por favor de la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.3,
+      "end": 70.06,
+      "text": " lista de llamadas porque me están, ya me llama, ya me llama y pues estoy en",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.06,
+      "end": 74.5,
+      "text": " junta y me están cayendo sus llamadas. Entonces, si lo puedes sacar mi número",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.5,
+      "end": 77.94,
+      "text": " por favor del sistema automático yo ya soy cliente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 77.94,
+      "end": 83.22,
+      "text": " Ah, ok. Muy bien caballero. Ahorita lo pongo aquí en sistema. Perfecto. Muchísimas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 83.22,
+      "end": 85.38,
+      "text": " No, usted. Bonito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 85.38,
+      "end": 88.38,
+      "text": " Fíjate bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.84,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

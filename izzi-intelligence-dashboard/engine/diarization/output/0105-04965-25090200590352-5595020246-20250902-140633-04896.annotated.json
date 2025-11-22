@@ -1,0 +1,224 @@
+{
+  "call_id": "0105-04965-25090200590352-5595020246-20250902-140633-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": "Gracias por comunicarse a EASY. Tenemos las mejores promociones para ti.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": "¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.0,
+      "end": 17.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 17.0,
+      "end": 19.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 19.0,
+      "end": 23.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 23.0,
+      "end": 25.0,
+      "text": "Está funcionando.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 25.0,
+      "end": 29.0,
+      "text": "El día de mañana puedo alucinarlo estando ya con VIX Premium.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 29.0,
+      "end": 31.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 36.0,
+      "end": 38.0,
+      "text": "¿Tiene más tiempo que faltar?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 38.0,
+      "end": 40.0,
+      "text": "¿Contrato de beneficio? ¿En qué le puedo ayudar?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 40.0,
+      "end": 44.0,
+      "text": "No solamente nos faltan beneficios, nos faltan muchos pacientes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 44.0,
+      "end": 51.0,
+      "text": "Inclusive ha llegado que no hay medicamentos, no hay materia de curación, no hay muchísimas botas.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 54.0,
+      "end": 57.0,
+      "text": "¿Simulación? ¿La de la autoridad?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 57.0,
+      "end": 66.0,
+      "text": "La de un Estado que solo cuando un caso se vuelve viral, entonces resulta que mágicamente ya todo está bien, todas las máquinas sirven.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 66.0,
+      "end": 73.0,
+      "text": "¿Simulación también es decir desde el palacio que no existe el desabasto de medicamentos?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 73.0,
+      "end": 80.0,
+      "text": "¿Cuál desabasto? Al contrario, si ya el 90% está garantizado en los hospitales del país.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 80.0,
+      "end": 81.0,
+      "text": "¿Es verdad?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 81.0,
+      "end": 83.0,
+      "text": "Sí, nada más que el contraste.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 83.0,
+      "end": 94.0,
+      "text": "Los hechos como lo demuestra Lorena, los hechos como lo demuestran organizaciones no gubernamentales que responden al discurso oficial.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 94.0,
+      "end": 100.0,
+      "text": "Organizaciones que dan voz a los pacientes que viven en carne propia este desabasto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 100.0,
+      "end": 106.0,
+      "text": "En su primer informe del gobierno la presidenta dijo que el desabasto de medicamentos está al 90% a nivel nacional.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 106.0,
+      "end": 110.0,
+      "text": "Sin embargo la asociación civil le respondió diciendo que eso es mentira.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 110.0,
+      "end": 115.0,
+      "text": "Ellos viven más de 10 años acompañando a pacientes con cáncer y aseguran que la...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 16,
+  "ivr_segments": 7
+}

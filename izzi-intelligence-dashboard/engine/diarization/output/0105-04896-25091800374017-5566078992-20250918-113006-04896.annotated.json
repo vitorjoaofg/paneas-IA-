@@ -1,0 +1,1682 @@
+{
+  "call_id": "0105-04896-25091800374017-5566078992-20250918-113006-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": "Hola, somos Izzy, y seguro estás llamando porque viste una llamada nuestra.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 4.5,
+      "end": 8.0,
+      "text": "Tenemos una oferta exclusiva para ti. ¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 8.0,
+      "end": 12.0,
+      "text": "Un asesor te está esperando. Por favor, hable o pulse 1...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 12.0,
+      "end": 14.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 20.0,
+      "end": 21.0,
+      "text": "Hola, buenos días.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 21.0,
+      "end": 25.0,
+      "text": "Sí, buenos días. Se cortó mi llamada. Estaba hablando con un asesor.",
+      "original_role": "agent",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 26.0,
+      "end": 27.0,
+      "text": "Ah, ok, pero...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 27.0,
+      "end": 28.0,
+      "text": "Dígame.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 28.0,
+      "end": 33.0,
+      "text": "¿Contigo puedo ver la contratación de un teléfono fijo adicional al que ya tengo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 9,
+      "start": 34.0,
+      "end": 38.0,
+      "text": "Déjame un minuto mientras hago su sistema. ¿Quiere ampliar su paquete?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 10,
+      "start": 39.0,
+      "end": 42.0,
+      "text": "Sí, ya tengo una línea fija en mi internetito,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 42.0,
+      "end": 48.0,
+      "text": "pero quisiera saber cuál sería el costo de una línea fija adicional.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 49.0,
+      "end": 52.0,
+      "text": "¿De móvil o teléfono fijo?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 52.0,
+      "end": 53.0,
+      "text": "Teléfono fijo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 54.0,
+      "end": 57.0,
+      "text": "Ok, déjame un minuto, por favor. No me cuelgue para checar el sistema.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 15,
+      "start": 58.0,
+      "end": 59.0,
+      "text": "Sí, gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 89.0,
+      "end": 90.0,
+      "text": "Listo, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 91.0,
+      "end": 94.0,
+      "text": "Miren, serían $50 pesos más.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 95.0,
+      "end": 98.0,
+      "text": "Ah, ok. ¿Y en cuánto tiempo lo instalarían?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 19,
+      "start": 101.0,
+      "end": 103.0,
+      "text": "Usted lo tendría que...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 104.0,
+      "end": 106.0,
+      "text": "¿Usted lo tendría que instalar?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 106.0,
+      "end": 108.0,
+      "text": "Sí, lo tendría que instalar.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 108.0,
+      "end": 109.0,
+      "text": "¿Cómo lo instalaría?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 109.0,
+      "end": 110.0,
+      "text": "Lo instalaría...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 110.0,
+      "end": 111.0,
+      "text": "¿Cómo lo instalaría?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 111.0,
+      "end": 112.0,
+      "text": "Lo instalaría...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 112.0,
+      "end": 113.0,
+      "text": "¿Cómo lo instalaría?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 113.0,
+      "end": 114.0,
+      "text": "Lo instalaría...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 28,
+      "start": 114.0,
+      "end": 116.0,
+      "text": "Usted lo tendría que...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 116.0,
+      "end": 117.0,
+      "text": "del mismo...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 30,
+      "start": 117.0,
+      "end": 119.0,
+      "text": "donde usted lo conecta,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 120.0,
+      "end": 123.0,
+      "text": "ahí tendría que conectar el otro teléfono allá.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 124.0,
+      "end": 127.0,
+      "text": "Ah, ok. ¿Donde yo tengo mi conexión de teléfono?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 127.0,
+      "end": 128.0,
+      "text": "Correcto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 34,
+      "start": 128.0,
+      "end": 129.0,
+      "text": "Conectaría la conexión adicional.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 35,
+      "start": 129.0,
+      "end": 130.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 36,
+      "start": 130.0,
+      "end": 134.0,
+      "text": "Entonces acá ya lo modificaríamos para darle extensión al otro teléfono.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 37,
+      "start": 134.0,
+      "end": 135.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 38,
+      "start": 135.0,
+      "end": 137.0,
+      "text": "Entonces, usted...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 137.0,
+      "end": 138.0,
+      "text": "¿Cómo lo hacemos?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 138.0,
+      "end": 140.0,
+      "text": "¿Usted me da el nuevo número?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 140.0,
+      "end": 142.0,
+      "text": "¿En cuánto tiempo está listo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 142.0,
+      "end": 143.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 43,
+      "start": 143.0,
+      "end": 146.0,
+      "text": "Lo va a querer con otro número diferente, ¿verdad?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 146.0,
+      "end": 148.0,
+      "text": "¿O quiere conservar el mismo?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 45,
+      "start": 148.0,
+      "end": 150.0,
+      "text": "No, un número diferente.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 150.0,
+      "end": 151.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 47,
+      "start": 151.0,
+      "end": 152.0,
+      "text": "Para ponerle aquí,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 48,
+      "start": 152.0,
+      "end": 154.0,
+      "text": "llame un minuto, por favor.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 49,
+      "start": 158.0,
+      "end": 160.0,
+      "text": "No, es que tiene de la misma.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 50,
+      "start": 161.0,
+      "end": 162.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 51,
+      "start": 162.0,
+      "end": 164.0,
+      "text": "Mire, también tiene...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 52,
+      "start": 165.0,
+      "end": 167.0,
+      "text": "Dígame, no la escuché.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 53,
+      "start": 167.0,
+      "end": 169.0,
+      "text": "Tiene las dos mismas fijas.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 54,
+      "start": 169.0,
+      "end": 170.0,
+      "text": "Ajá, así es.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 55,
+      "start": 170.0,
+      "end": 171.0,
+      "text": "Otra cosita más.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 56,
+      "start": 171.0,
+      "end": 173.0,
+      "text": "Mire, también tiene otra promoción.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 57,
+      "start": 173.0,
+      "end": 175.0,
+      "text": "Le voy a poner lo de la extensión.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 58,
+      "start": 177.0,
+      "end": 178.0,
+      "text": "Para el teléfono.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 59,
+      "start": 180.0,
+      "end": 183.0,
+      "text": "Y tiene otra promoción que es un...",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 60,
+      "start": 183.0,
+      "end": 185.0,
+      "text": "Bueno, tiene un plan para su celular.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 61,
+      "start": 185.0,
+      "end": 187.0,
+      "text": "No sé si ya se habían comunicado con usted.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 62,
+      "start": 188.0,
+      "end": 192.0,
+      "text": "No, pero ahorita necesitaría primero resolver esto del teléfono,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 63,
+      "start": 192.0,
+      "end": 193.0,
+      "text": "de la línea fija.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 64,
+      "start": 193.0,
+      "end": 194.0,
+      "text": "A ver.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 65,
+      "start": 194.0,
+      "end": 195.0,
+      "text": "Claro, dígame.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 66,
+      "start": 195.0,
+      "end": 197.0,
+      "text": "Oiga, señorita, buenos días.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 67,
+      "start": 197.0,
+      "end": 201.0,
+      "text": "En el plug que tenemos para conectar nuestra línea telefónica,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 68,
+      "start": 201.0,
+      "end": 204.0,
+      "text": "nada más tengo un contacto de plug.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 69,
+      "start": 204.0,
+      "end": 209.0,
+      "text": "Entonces, ¿cómo lo hacemos para conectar el otro teléfono con la otra línea?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 70,
+      "start": 209.0,
+      "end": 211.0,
+      "text": "¿Solamente tiene un contacto?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 71,
+      "start": 211.0,
+      "end": 213.0,
+      "text": "Sí, un plug, nada más.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 72,
+      "start": 213.0,
+      "end": 214.0,
+      "text": "Deme un minuto, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 73,
+      "start": 214.0,
+      "end": 216.0,
+      "text": "Porque tengo una pregunta.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 74,
+      "start": 216.0,
+      "end": 218.0,
+      "text": "¿Cómo se conecta el teléfono?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 75,
+      "start": 218.0,
+      "end": 220.0,
+      "text": "¿Cómo se conecta el teléfono?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 76,
+      "start": 220.0,
+      "end": 222.0,
+      "text": "¿Cómo se conecta el teléfono?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 77,
+      "start": 222.0,
+      "end": 223.0,
+      "text": "Deme un minuto, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 78,
+      "start": 223.0,
+      "end": 225.0,
+      "text": "Porque tienen que tener dos, un minuto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 79,
+      "start": 225.0,
+      "end": 226.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 80,
+      "start": 237.0,
+      "end": 239.0,
+      "text": "Caballero, el modem es el que tiene los dos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 81,
+      "start": 241.0,
+      "end": 242.0,
+      "text": "¿Mande?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 82,
+      "start": 242.0,
+      "end": 244.0,
+      "text": "El modem es el que tiene los dos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 83,
+      "start": 245.0,
+      "end": 248.0,
+      "text": "Ah, ¿conectarlo al modem directamente?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 84,
+      "start": 248.0,
+      "end": 249.0,
+      "text": "Así es.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 85,
+      "start": 250.0,
+      "end": 252.0,
+      "text": "Ok, sí, sí tiene los dos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 86,
+      "start": 253.0,
+      "end": 255.0,
+      "text": "Sí, caballero, de ahí es.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 87,
+      "start": 256.0,
+      "end": 261.0,
+      "text": "Y aquí solamente, pues ya, ajá, y de aquí solamente unos 15 minutos más,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 88,
+      "start": 261.0,
+      "end": 266.0,
+      "text": "pues damos la entrada para que pueda, pues ya funcionar el otro teléfono.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 89,
+      "start": 266.0,
+      "end": 267.0,
+      "text": "Perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 90,
+      "start": 267.0,
+      "end": 275.0,
+      "text": "A ver, mire, tengo dos, dos en el modem y lo tengo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 91,
+      "start": 275.0,
+      "end": 286.0,
+      "text": "Pero del modem me sale otro plug que me lleva por un lado bien largo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 92,
+      "start": 289.0,
+      "end": 290.0,
+      "text": "Muy raro esto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 93,
+      "start": 292.0,
+      "end": 296.0,
+      "text": "Entonces, pues lo pongo en el plug nada más ahí y ya, con eso.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 94,
+      "start": 296.0,
+      "end": 297.0,
+      "text": "Así es, sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 95,
+      "start": 297.0,
+      "end": 300.0,
+      "text": "Lo más, deme unos 15 minutos para poder solo activar,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 96,
+      "start": 300.0,
+      "end": 303.0,
+      "text": "porque si lo activo ahorita, lo pongo ahorita, pues no va a tener señal.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 97,
+      "start": 303.0,
+      "end": 304.0,
+      "text": "Perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 98,
+      "start": 304.0,
+      "end": 305.0,
+      "text": "Ok, está bien.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 99,
+      "start": 305.0,
+      "end": 308.0,
+      "text": "Ok, solamente me puede pasar a María Estela Espinoza,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 100,
+      "start": 308.0,
+      "end": 311.0,
+      "text": "ya que es la titula, y le voy a pedir solamente unos datos.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 101,
+      "start": 311.0,
+      "end": 312.0,
+      "text": "Sí, claro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 102,
+      "start": 312.0,
+      "end": 313.0,
+      "text": "Muchas gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 103,
+      "start": 313.0,
+      "end": 318.0,
+      "text": "¿Tiene la CUR a la mano para validar?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 104,
+      "start": 318.0,
+      "end": 320.0,
+      "text": "Sí, me la puede proporcionar, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 105,
+      "start": 320.0,
+      "end": 322.0,
+      "text": "Sí, claro, permítame un segundo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 106,
+      "start": 322.0,
+      "end": 323.0,
+      "text": "Claro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 107,
+      "start": 335.0,
+      "end": 341.0,
+      "text": "¿Cuál es la CUR?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 108,
+      "start": 341.0,
+      "end": 360.0,
+      "text": "Es E-I-R-N-68-0-5-11-M-M-S-N-S-0-4.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 109,
+      "start": 360.0,
+      "end": 361.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 110,
+      "start": 362.0,
+      "end": 363.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 111,
+      "start": 363.0,
+      "end": 367.0,
+      "text": "Mire, también quiero corroborar que tu correo sea vigente,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 112,
+      "start": 367.0,
+      "end": 370.0,
+      "text": "estelarom.hotmail.com.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 113,
+      "start": 370.0,
+      "end": 371.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 114,
+      "start": 371.0,
+      "end": 372.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 115,
+      "start": 372.0,
+      "end": 373.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 116,
+      "start": 373.0,
+      "end": 374.0,
+      "text": "Ok, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 117,
+      "start": 374.0,
+      "end": 377.0,
+      "text": "Mire, pues un momento más, le instalaría la otra línea para que",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 118,
+      "start": 377.0,
+      "end": 380.0,
+      "text": "ya pudiera disfrutar de otra avenida telefónica.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 119,
+      "start": 380.0,
+      "end": 381.0,
+      "text": "Perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 120,
+      "start": 381.0,
+      "end": 382.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 121,
+      "start": 382.0,
+      "end": 383.0,
+      "text": "¿Usted me da el número?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 122,
+      "start": 386.0,
+      "end": 388.0,
+      "text": "Sí, deme un minuto, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 123,
+      "start": 388.0,
+      "end": 390.0,
+      "text": "Por favor, la línea.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 124,
+      "start": 390.0,
+      "end": 393.0,
+      "text": "Abajo en la cola del teléfono, o en la cocina.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 125,
+      "start": 413.0,
+      "end": 415.0,
+      "text": "Las besitas de Fer.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 126,
+      "start": 415.0,
+      "end": 418.0,
+      "text": "Sigo trabajando con usted, deme un minuto más, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 127,
+      "start": 418.0,
+      "end": 419.0,
+      "text": "Sí, claro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 128,
+      "start": 420.0,
+      "end": 426.0,
+      "text": "¿Cómo que no?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 129,
+      "start": 426.0,
+      "end": 428.0,
+      "text": "Las besitas de centro del teléfono.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 130,
+      "start": 433.0,
+      "end": 437.0,
+      "text": "Busca en el mueble negro, o si no, allá arriba.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 131,
+      "start": 437.0,
+      "end": 440.0,
+      "text": "En el mueble negro, o allá arriba en la cocina.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 132,
+      "start": 440.0,
+      "end": 450.0,
+      "text": "¿Dónde está?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 133,
+      "start": 450.0,
+      "end": 452.0,
+      "text": "En el mueble negro, o la oficina.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 134,
+      "start": 452.0,
+      "end": 455.0,
+      "text": "Estaban abajo en la sala un teléfono conectado.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 135,
+      "start": 471.0,
+      "end": 474.0,
+      "text": "Deme un minuto más, sigo trabajando con usted, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 136,
+      "start": 474.0,
+      "end": 475.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 137,
+      "start": 500.0,
+      "end": 501.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 138,
+      "start": 530.0,
+      "end": 531.0,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 139,
+      "start": 561.0,
+      "end": 562.0,
+      "text": "¿Dónde está?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 140,
+      "start": 562.0,
+      "end": 563.0,
+      "text": "Ahí, allá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 141,
+      "start": 563.0,
+      "end": 564.0,
+      "text": "Sí, este...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 142,
+      "start": 564.0,
+      "end": 567.0,
+      "text": "Le dijiste que tenía que conectar el teléfono, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 143,
+      "start": 567.0,
+      "end": 569.0,
+      "text": "Ya, deme un minuto más, por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 144,
+      "start": 569.0,
+      "end": 570.0,
+      "text": "En el micrófono de la boca.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 145,
+      "start": 570.0,
+      "end": 571.0,
+      "text": "No te voy a decir.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 146,
+      "start": 571.0,
+      "end": 574.0,
+      "text": "Ok, ahorita que me de este, yo se lo mando a mi hija.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.952
+    },
+    {
+      "segment_index": 147,
+      "start": 576.0,
+      "end": 577.0,
+      "text": "Gracias, señora.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 148,
+      "start": 577.0,
+      "end": 578.0,
+      "text": "¿Dónde está?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 149,
+      "start": 578.0,
+      "end": 579.0,
+      "text": "En el mueble negro.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 150,
+      "start": 579.0,
+      "end": 581.0,
+      "text": "Es el número para que se caiga el desconfo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 151,
+      "start": 581.0,
+      "end": 582.0,
+      "text": "O sea, ¿sí se conectó?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 152,
+      "start": 582.0,
+      "end": 583.0,
+      "text": "Sí, se conectó.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 153,
+      "start": 583.0,
+      "end": 584.0,
+      "text": "Pero no tengo duña.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 154,
+      "start": 584.0,
+      "end": 587.0,
+      "text": "Ese es el desconfo para que lleguen los niños.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 155,
+      "start": 587.0,
+      "end": 589.0,
+      "text": "Cuando maten, ese es el desconfo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 156,
+      "start": 589.0,
+      "end": 590.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 157,
+      "start": 601.0,
+      "end": 604.0,
+      "text": "Ya está confirmada la del sábado con Tania Laltosa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 158,
+      "start": 608.0,
+      "end": 610.0,
+      "text": "A ver, pon ahí una...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 159,
+      "start": 619.0,
+      "end": 620.0,
+      "text": "¿Listo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 160,
+      "start": 645.0,
+      "end": 646.0,
+      "text": "¿Listo?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 161,
+      "start": 646.0,
+      "end": 647.0,
+      "text": "¿Tiene dónde apuntar?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 162,
+      "start": 647.0,
+      "end": 652.0,
+      "text": "Sí, dígale.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 163,
+      "start": 652.0,
+      "end": 654.0,
+      "text": "¿Ok, es 55?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 164,
+      "start": 654.0,
+      "end": 656.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 165,
+      "start": 658.0,
+      "end": 660.0,
+      "text": "¿Tengo un minuto, por favor?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 166,
+      "start": 660.0,
+      "end": 663.0,
+      "text": "Ah, 55, 96.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 167,
+      "start": 663.0,
+      "end": 664.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 168,
+      "start": 664.0,
+      "end": 669.0,
+      "text": "82, 52, 23.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 169,
+      "start": 669.0,
+      "end": 671.0,
+      "text": "¿Se lo voy a repetir?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 170,
+      "start": 671.0,
+      "end": 672.0,
+      "text": "Sí.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 171,
+      "start": 672.0,
+      "end": 679.0,
+      "text": "55, 96, 82, 52, 23.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 172,
+      "start": 681.0,
+      "end": 682.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 173,
+      "start": 682.0,
+      "end": 685.0,
+      "text": "¿Y a partir de cuánto está disponible?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 174,
+      "start": 687.0,
+      "end": 688.0,
+      "text": "¿De un minuto?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 175,
+      "start": 690.0,
+      "end": 692.0,
+      "text": "Ahorita lo ponemos aquí en un papelito.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 176,
+      "start": 692.0,
+      "end": 703.0,
+      "text": "En unos 15 minutos ya estaría disponible.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 177,
+      "start": 703.0,
+      "end": 704.0,
+      "text": "Ok.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 178,
+      "start": 704.0,
+      "end": 706.0,
+      "text": "¿Con quién te va el gusto?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 179,
+      "start": 706.0,
+      "end": 707.0,
+      "text": "Melina Saldaña.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 180,
+      "start": 707.0,
+      "end": 709.0,
+      "text": "¿Algo más que la pueda ayudar?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 181,
+      "start": 709.0,
+      "end": 710.0,
+      "text": "Nada más, Melina.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 182,
+      "start": 710.0,
+      "end": 711.0,
+      "text": "Muchas gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 183,
+      "start": 711.0,
+      "end": 712.0,
+      "text": "Bonito día.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 184,
+      "start": 712.0,
+      "end": 713.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 185,
+      "start": 713.0,
+      "end": 714.0,
+      "text": "Hasta luego.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    }
+  ],
+  "agent_segments": 30,
+  "customer_segments": 152,
+  "ivr_segments": 4
+}

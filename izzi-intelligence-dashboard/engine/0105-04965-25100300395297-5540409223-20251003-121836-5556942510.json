@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300395297-5540409223-20251003-121836-5556942510.WAV",
+  "file_name": "0105-04965-25100300395297-5540409223-20251003-121836-5556942510.WAV",
+  "base_id": "0105-04965-25100300395297-5540409223-20251003-121836-5556942510",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. No, luego que sí el encargado no está. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Mi nombre es Melanie Saucedo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Ahorita no está el encargado. Ah, ¿sí? No se preocupa, ya va a poner. Yo creo que después. ¿Perdón? Sí, sí. Luego, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 19.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 19.0,
+      "end": 21.5,
+      "text": " No, luego que sí el encargado no está.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.55,
+      "end": 27.55,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.62,
+      "end": 38.12,
+      "text": " Hola, ¿qué tal? Buenas tardes. Mi nombre es Melanie Saucedo, nos comunicamos de la compañía Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.12,
+      "end": 40.82,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.82,
+      "end": 42.82,
+      "text": " Ahorita no está el encargado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.82,
+      "end": 46.14,
+      "text": " Ah, ¿sí? No se preocupa, ya va a poner.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.14,
+      "end": 48.52,
+      "text": " Yo creo que después. ¿Perdón?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.52,
+      "end": 49.52,
+      "text": " Sí, sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.52,
+      "end": 51.52,
+      "text": " Luego, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

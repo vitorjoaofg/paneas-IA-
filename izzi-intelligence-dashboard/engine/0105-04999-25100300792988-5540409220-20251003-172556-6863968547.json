@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300792988-5540409220-20251003-172556-6863968547.WAV",
+  "file_name": "0105-04999-25100300792988-5540409220-20251003-172556-6863968547.WAV",
+  "base_id": "0105-04999-25100300792988-5540409220-20251003-172556-6863968547",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Dix Premium, más Skyports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. No. Espera un momento, por favor. ¿Por favor?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Dix Premium, más Skyports, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 21.42,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.42,
+      "end": 22.42,
+      "text": " No.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.42,
+      "end": 32.59,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.59,
+      "end": 33.59,
+      "text": " ¿Por favor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 35.64,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

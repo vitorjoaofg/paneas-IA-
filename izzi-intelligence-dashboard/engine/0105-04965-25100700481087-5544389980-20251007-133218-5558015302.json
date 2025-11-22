@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700481087-5544389980-20251007-133218-5558015302.WAV",
+  "file_name": "0105-04965-25100700481087-5544389980-20251007-133218-5558015302.WAV",
+  "base_id": "0105-04965-25100700481087-5544389980-20251007-133218-5558015302",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Bienvenidos a Scuderia S3. Si requieres saber la documentación del ingreso de su vehículo, ¡Espera un momento por favor! Usted es cliente GLEP y... ¡Bueno! ... para Fijite 2. Si usted requiere saber la ubicación de nuestras instalaciones, Fijite 3. Para nosotros, su tranquilidad es nuestra prioridad. Si usted requiere hablar con gerencia, Fijite 4. Por favor, espérate mientras intento localizar la persona a la que estás llamando. Por favor, espérate mientras intento localizar la persona a la que estás llamando.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.2,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.2,
+      "end": 29.28,
+      "text": " Bienvenidos a Scuderia S3. Si requieres saber la documentación del ingreso de su vehículo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.28,
+      "end": 31.2,
+      "text": " ¡Espera un momento por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.2,
+      "end": 32.6,
+      "text": " Usted es cliente GLEP y...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.6,
+      "end": 34.4,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.4,
+      "end": 40.58,
+      "text": " ... para Fijite 2. Si usted requiere saber la ubicación de nuestras instalaciones,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.58,
+      "end": 45.38,
+      "text": " Fijite 3. Para nosotros, su tranquilidad es nuestra prioridad. Si usted requiere hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.38,
+      "end": 50.03,
+      "text": " con gerencia, Fijite 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.23,
+      "end": 75.44,
+      "text": " Por favor, espérate mientras intento localizar la persona a la que estás llamando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.44,
+      "end": 78.84,
+      "text": " Por favor, espérate mientras intento localizar la persona a la que estás llamando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 103.284,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

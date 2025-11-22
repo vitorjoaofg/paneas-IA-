@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300449414-5556953419-20251003-130016-04896.WAV",
+  "file_name": "0105-04965-25100300449414-5556953419-20251003-130016-04896.WAV",
+  "base_id": "0105-04965-25100300449414-5556953419-20251003-130016-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buen día. Gracias por tomar esta llamada. La atiende Luz Hernández de Easy. ¿Con quién tengo el gusto? Sí, oye, mira, Luz Hernández. Quisiera que no me llamaran, por favor. No me interesa su servicio porque tengo llamadas importantes en este teléfono. Ah, una disculpa. Me hacen correos para... Siempre les estaban enviando en automático algún mensaje. Por lo tanto, estoy borrando su número. Esperamos que ya no le sigan marcando. Una disculpa. Le agradezco mucho. Para servirle. Bonito día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 27.17,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.17,
+      "end": 31.17,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.17,
+      "end": 36.17,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.17,
+      "end": 39.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.36,
+      "end": 50.46,
+      "text": " Hola, ¿qué tal? Buen día. Gracias por tomar esta llamada. La atiende Luz Hernández de Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.46,
+      "end": 62.75,
+      "text": " Sí, oye, mira, Luz Hernández. Quisiera que no me llamaran, por favor. No me interesa su servicio porque tengo llamadas importantes en este teléfono.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.75,
+      "end": 64.75,
+      "text": " Ah, una disculpa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.75,
+      "end": 65.75,
+      "text": " Me hacen correos para...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.75,
+      "end": 74.75,
+      "text": " Siempre les estaban enviando en automático algún mensaje. Por lo tanto, estoy borrando su número. Esperamos que ya no le sigan marcando. Una disculpa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.75,
+      "end": 75.75,
+      "text": " Le agradezco mucho.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 75.75,
+      "end": 77.75,
+      "text": " Para servirle. Bonito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 77.75,
+      "end": 78.75,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.1,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

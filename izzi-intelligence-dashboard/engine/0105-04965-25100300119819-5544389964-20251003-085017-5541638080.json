@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300119819-5544389964-20251003-085017-5541638080.WAV",
+  "file_name": "0105-04965-25100300119819-5544389964-20251003-085017-5541638080.WAV",
+  "base_id": "0105-04965-25100300119819-5544389964-20251003-085017-5541638080",
+  "transcription": "Hola, le damos la bienvenida a Diáloga Group, especializada en soluciones de comunicación entrepreneurial impulsadas por la inteligencia artificial. Soy Alexandra, un agente autónomo con capacidades avanzadas de IAEA. A diferencia de un creador tradicional, puedo procesar y comprender su consulta en múltiples idiomas. Puede hablar conmigo en español, inglés, francés o en el idioma que prefiera. Es importante que sepa que esta conversación está siendo transcrita automáticamente. Todo lo que por falta será procesado por nuestro sistema inteligente y distribuido a los responsables de áreas pertinentes para asegurar que su solicitud se gestione de forma integral. No necesita hablar con un agente humano, ya que tanto los agentes de IAEA especializados como nuestro equipo humano recibirán y procesarán su información de manera coordinada. Este es un servicio exclusivo para empresas, por lo que necesito verificar que representa a una organización. ¿Podría decirme el nombre de su empresa, por favor?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.78,
+      "end": 6.58,
+      "text": " Hola, le damos la bienvenida a Diáloga Group, especializada en soluciones de comunicación",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.58,
+      "end": 9.46,
+      "text": " entrepreneurial impulsadas por la inteligencia artificial.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.46,
+      "end": 13.46,
+      "text": " Soy Alexandra, un agente autónomo con capacidades avanzadas de IAEA.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.46,
+      "end": 18.02,
+      "text": " A diferencia de un creador tradicional, puedo procesar y comprender su consulta en múltiples",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.02,
+      "end": 19.02,
+      "text": " idiomas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.02,
+      "end": 23.5,
+      "text": " Puede hablar conmigo en español, inglés, francés o en el idioma que prefiera.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.5,
+      "end": 27.54,
+      "text": " Es importante que sepa que esta conversación está siendo transcrita automáticamente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.14,
+      "end": 33.02,
+      "text": " Todo lo que por falta será procesado por nuestro sistema inteligente y distribuido a los responsables",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.02,
+      "end": 37.64,
+      "text": " de áreas pertinentes para asegurar que su solicitud se gestione de forma integral.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.64,
+      "end": 42.46,
+      "text": " No necesita hablar con un agente humano, ya que tanto los agentes de IAEA especializados",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.46,
+      "end": 47.54,
+      "text": " como nuestro equipo humano recibirán y procesarán su información de manera coordinada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.54,
+      "end": 52.62,
+      "text": " Este es un servicio exclusivo para empresas, por lo que necesito verificar que representa",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.62,
+      "end": 54.34,
+      "text": " a una organización.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.34,
+      "end": 57.06,
+      "text": " ¿Podría decirme el nombre de su empresa, por favor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.596,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

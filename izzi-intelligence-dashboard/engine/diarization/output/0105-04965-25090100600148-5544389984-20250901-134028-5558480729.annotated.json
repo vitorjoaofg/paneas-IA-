@@ -1,0 +1,431 @@
+{
+  "call_id": "0105-04965-25090100600148-5544389984-20250901-134028-5558480729",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 13.0,
+      "text": "¡Con EASY es posible!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 13.0,
+      "end": 14.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 16.0,
+      "end": 20.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 24.0,
+      "end": 26.0,
+      "text": "Siento, no entendí tu respuesta.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 26.0,
+      "end": 28.0,
+      "text": "¿Te comunico con un asesor?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 28.0,
+      "end": 33.0,
+      "text": "Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 8,
+      "start": 37.0,
+      "end": 38.0,
+      "text": "No alcanzo a ver.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 38.0,
+      "end": 44.0,
+      "text": "No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 44.0,
+      "end": 46.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 46.0,
+      "end": 48.0,
+      "text": "Presiona 1, por favor.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 54.0,
+      "end": 60.0,
+      "text": "Sí, muy buenas tardes. Se está comunicando al servicio de contratación de EASY. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 13,
+      "start": 60.0,
+      "end": 68.0,
+      "text": "Ay, señor, es que me estaba diciendo que más televisión o bueno, qué cosa.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 14,
+      "start": 68.0,
+      "end": 75.0,
+      "text": "¿Pero qué servicio le interesa? Dígame, yo le menciono. ¿Qué es lo que le interesa agregar?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 75.0,
+      "end": 78.0,
+      "text": "No, pues ahorita nosotros estamos en Telmex, señor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 79.0,
+      "end": 85.0,
+      "text": "¿En Telmex? Pero sí le gustaría realizar el cambio con nosotros porque también pueden hacer el cambio, si le gusta.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 85.0,
+      "end": 86.0,
+      "text": "¿Cuánto está pagando Telmex ahorita?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 86.0,
+      "end": 88.0,
+      "text": "Ah, tiene un cambio.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 88.0,
+      "end": 96.0,
+      "text": "No, ¿qué cree que no? No me interesa porque nosotros ya estamos, este, grandes y nosotros ni sabemos mover la televisión.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 96.0,
+      "end": 98.0,
+      "text": "Ah, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 98.0,
+      "end": 100.0,
+      "text": "Sí, ya, ya, ya estamos grandes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 100.0,
+      "end": 103.0,
+      "text": "Ahorita tienen puro Internet, como quien dice.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 103.0,
+      "end": 104.0,
+      "text": "¿Dónde?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 104.0,
+      "end": 106.0,
+      "text": "Ahorita manejan puro Internet.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 106.0,
+      "end": 115.0,
+      "text": "Sí, puro Internet porque nosotros no necesitamos. Y puse el Internet porque teníamos aquí una línea que tenía que hacer ya aquí en la pandemia.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 26,
+      "start": 115.0,
+      "end": 116.0,
+      "text": "Ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 116.0,
+      "end": 126.0,
+      "text": "Este, tenía que, por línea y todo eso. Y por eso la pusimos, pero no, nosotros ya no nos interesa la televisión.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 28,
+      "start": 126.0,
+      "end": 128.0,
+      "text": "Ah, perfecto, perfecto.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 29,
+      "start": 128.0,
+      "end": 143.0,
+      "text": "Y por eso se quedó aquí la, el Internet. Ajá, y como tiene unos tiros a chinizo, así a, de la edad de baja de Internet y eso, pues yo no puedo, estoy descapacitada.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 30,
+      "start": 143.0,
+      "end": 145.0,
+      "text": "Está solita, como quien dice, ajá.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 31,
+      "start": 145.0,
+      "end": 150.0,
+      "text": "Sí, eso soy yo y mi nieta, pero mi nieta es, este, niña especial.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 32,
+      "start": 150.0,
+      "end": 155.0,
+      "text": "Ah, perfecto, sí, sí. Entonces no pueden salir mucho, pues la tienen que estar cuidando.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 33,
+      "start": 155.0,
+      "end": 163.0,
+      "text": "No, no, no, no pueden salir, o sea, para hacer un cambio, pues no, porque yo soy, este, yo soy la que hice el, con la comunidad.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 34,
+      "start": 163.0,
+      "end": 171.0,
+      "text": "Sí, mire, porque, de hecho, usted no tiene que salir, no, si les interesa, si les llegara a interesar agarrar el servicio de Easy, del, del, del Internet,",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 35,
+      "start": 171.0,
+      "end": 174.0,
+      "text": "esos se lo van y se lo instalan directamente, ¿no? Usted no tiene que salir.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 36,
+      "start": 174.0,
+      "end": 184.0,
+      "text": "Sí, pero dice que es, que, que, sí, es que, mire, nosotros ya no nos, este, pues, lo que hay en la televisión es lo que vemos y pues casi nos aburre.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 37,
+      "start": 184.0,
+      "end": 188.0,
+      "text": "Porque ya no hay cosas que, como las de antes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 38,
+      "start": 188.0,
+      "end": 189.0,
+      "text": "Interesantes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 39,
+      "start": 189.0,
+      "end": 193.0,
+      "text": "Ya no, ya no, ya hay cosas tan feas que dice uno, ¿no?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 40,
+      "start": 193.0,
+      "end": 197.0,
+      "text": "Sí, pues ya no es lo mismo, ¿no? Es la programación interesante.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 41,
+      "start": 197.0,
+      "end": 203.0,
+      "text": "No, y más, nosotros ya nos viejitos ya, así que ya no podemos. Gracias, muy agradecido.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 42,
+      "start": 203.0,
+      "end": 208.0,
+      "text": "Ah, perfecto, sí, no se preocupe, pues ya sabe que cuando quiera, ya, ya sabe que puede hacer cualquier cambio, no hay problema, ¿eh?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 43,
+      "start": 208.0,
+      "end": 213.0,
+      "text": "Sí, sí, gracias, le agradezco, muy amable, Dios lo bendiga.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 44,
+      "start": 213.0,
+      "end": 215.0,
+      "text": "Gracias, que tenga un excelente día y gracias por recibir mi llamada.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 45,
+      "start": 215.0,
+      "end": 216.0,
+      "text": "Un saludo.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 46,
+      "start": 216.0,
+      "end": 217.0,
+      "text": "Buen día.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 11,
+  "customer_segments": 25,
+  "ivr_segments": 11
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400089607-3314541384-20251004-083624-9878729891.WAV",
+  "file_name": "0105-04965-25100400089607-3314541384-20251004-083624-9878729891.WAV",
+  "base_id": "0105-04965-25100400089607-3314541384-20251004-083624-9878729891",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor entretenimiento con 200 canales, BigPremium y eventos deportivos exclusivos por solo 350 pesos del primer mes? No lo pienses más y cámbiate a Easy. Para conocer su interés, una sesión te está esperando, por favor. En www.melia.com barra para Ivacy. Espera un momento, por favor. Hola. Hola, ¿me escucha? Hola. Hola, ¿me escucha? Hola. Hola, ¿me escucha? Si no me responde, voy a tener que colgar la llamada. Hola. Hola. Voy a colgar ahorita la llamada. Si no sé si es un problema de audio, entonces si es un problema de audio, púngase en contacto nuevamente con nosotros. Gracias por llamar a Melia Kusumel y agradecería que abresen la atención recibida. Buen día. Valores del 1 al 5, el servicio prestado. Pulse su valoración siendo 1 la más baja y 5 la más alta. Hemos resuelto su consulta. Pulse 1 en caso afirmativo. En caso contrario, pulse 2.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor entretenimiento con 200 canales, BigPremium y eventos deportivos exclusivos por solo 350 pesos del primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 21.0,
+      "text": " Para conocer su interés, una sesión te está esperando, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.0,
+      "end": 25.0,
+      "text": " En www.melia.com barra para Ivacy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.0,
+      "end": 36.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.16,
+      "end": 71.25,
+      "text": " Hola. Hola, ¿me escucha? Hola. Hola, ¿me escucha? Hola. Hola, ¿me escucha?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 71.25,
+      "end": 80.47,
+      "text": " Si no me responde, voy a tener que colgar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 80.47,
+      "end": 88.48,
+      "text": " Hola. Hola. Voy a colgar ahorita la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 88.48,
+      "end": 93.48,
+      "text": " Si no sé si es un problema de audio, entonces si es un problema de audio, púngase en contacto nuevamente con nosotros.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 93.48,
+      "end": 96.48,
+      "text": " Gracias por llamar a Melia Kusumel y agradecería que abresen la atención recibida.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 96.48,
+      "end": 97.48,
+      "text": " Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 97.48,
+      "end": 101.5,
+      "text": " Valores del 1 al 5, el servicio prestado.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 101.5,
+      "end": 110.59,
+      "text": " Pulse su valoración siendo 1 la más baja y 5 la más alta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 110.59,
+      "end": 112.59,
+      "text": " Hemos resuelto su consulta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 112.59,
+      "end": 114.59,
+      "text": " Pulse 1 en caso afirmativo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 114.59,
+      "end": 116.59,
+      "text": " En caso contrario, pulse 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 122.112,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

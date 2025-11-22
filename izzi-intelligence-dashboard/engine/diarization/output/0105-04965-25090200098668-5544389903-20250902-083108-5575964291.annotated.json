@@ -1,0 +1,71 @@
+{
+  "call_id": "0105-04965-25090200098668-5544389903-20250902-083108-5575964291",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.5,
+      "text": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 1,
+      "start": 7.5,
+      "end": 15.319999694824219,
+      "text": "con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 15.319999694824219,
+      "end": 21.520000457763672,
+      "text": "No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 21.520000457763672,
+      "end": 30.799999237060547,
+      "text": "favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 30.799999237060547,
+      "end": 37.52000045776367,
+      "text": "con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 37.52000045776367,
+      "end": 43.68000030517578,
+      "text": "recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 43.68000030517578,
+      "end": 47.2400016784668,
+      "text": "terminar la llamada. Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 0,
+  "ivr_segments": 7
+}

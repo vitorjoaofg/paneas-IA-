@@ -1,0 +1,195 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700107002-5544389929-20251007-085217-5594113293.WAV",
+  "file_name": "0105-04965-25100700107002-5544389929-20251007-085217-5594113293.WAV",
+  "base_id": "0105-04965-25100700107002-5544389929-20251007-085217-5594113293",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Se interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, disculpe, hablo por parte de la compañía de Easy. ¿En qué te puedo ayudar? Nada más para preguntarle cómo tal, si ya tiene algún servicio con nosotros. No, no tengo servicio con ustedes. En este caso, ¿no le gustaría contratar alguno? Tenemos precios económicos. Ok, nada más te preguntaría, ¿tienes en la zona del Estado de México, en Temascalapa? ¿Tendrá su código postal a la mano? 55980. Temascalapa, permítame. En dado caso de que sí haya, ¿le interesará algún servicio en especial? Estoy checando. ¿Internet? Por Internet. Ok, permítame. Ah, ok. Si no, no me aparece cobertura como tal. Muchas gracias. ¿Ya todo?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Se interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.38,
+      "end": 24.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.38,
+      "end": 39.7,
+      "text": " Bueno, disculpe, hablo por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 39.7,
+      "end": 41.72,
+      "text": " ¿En qué te puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.72,
+      "end": 44.72,
+      "text": " Nada más para preguntarle cómo tal, si ya tiene algún servicio con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.72,
+      "end": 47.72,
+      "text": " No, no tengo servicio con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.72,
+      "end": 51.91,
+      "text": " En este caso, ¿no le gustaría contratar alguno? Tenemos precios económicos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.36,
+      "end": 60.36,
+      "text": " Ok, nada más te preguntaría, ¿tienes en la zona del Estado de México, en Temascalapa?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.36,
+      "end": 62.94,
+      "text": " ¿Tendrá su código postal a la mano?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.94,
+      "end": 64.94,
+      "text": " 55980.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.06,
+      "end": 71.06,
+      "text": " Temascalapa, permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.25,
+      "end": 79.25,
+      "text": " En dado caso de que sí haya, ¿le interesará algún servicio en especial?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 79.25,
+      "end": 80.25,
+      "text": " Estoy checando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 80.25,
+      "end": 81.25,
+      "text": " ¿Internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 81.25,
+      "end": 82.7,
+      "text": " Por Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 84.72,
+      "end": 85.72,
+      "text": " Ok, permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 85.72,
+      "end": 97.3,
+      "text": " Ah, ok. Si no, no me aparece cobertura como tal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 100.09,
+      "end": 101.5,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 101.5,
+      "end": 102.5,
+      "text": " ¿Ya todo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 120.6,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

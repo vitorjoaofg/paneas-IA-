@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300295801-5544389965-20251003-110300-5525814840.WAV",
+  "file_name": "0105-04965-25100300295801-5544389965-20251003-110300-5525814840.WAV",
+  "base_id": "0105-04965-25100300295801-5544389965-20251003-110300-5525814840",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días. Me comunicó el servicio Easy con quien tengo el gusto. Buenos días. ¿Quién me dio este número? La verdad me lo proporcionó Easy. Easy es una compañía de internet en el país de México, ¿sabe? ¿Cuál es tu nombre? Sí, pero es que no, pues más bien ¿cuál es tu nombre? Es que este es un número corporativo de oficina de Telsel. ¿Y si se les puede llamar ahí o qué sucede? Pues no, porque es el número fijo de aquí de la oficina. No se debería de llamar. La oficina es pública, pero no recibe llamadas del público. Me confundí. Deseamos que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 28.13,
+      "text": " para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.29,
+      "end": 40.91,
+      "text": " Buenos días. Me comunicó el servicio Easy con quien tengo el gusto. Buenos días. ¿Quién me dio este",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.91,
+      "end": 47.62,
+      "text": " número? La verdad me lo proporcionó Easy. Easy es una compañía de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.62,
+      "end": 51.82,
+      "text": " internet en el país de México, ¿sabe? ¿Cuál es tu nombre? Sí, pero es que no,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.82,
+      "end": 56.32,
+      "text": " pues más bien ¿cuál es tu nombre? Es que este es un número corporativo de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.32,
+      "end": 62.34,
+      "text": " oficina de Telsel. ¿Y si se les puede llamar ahí o qué sucede?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.54,
+      "end": 67.38,
+      "text": " Pues no, porque es el número fijo de aquí de la oficina. No se debería de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.38,
+      "end": 70.34,
+      "text": " llamar. La oficina es pública, pero no recibe llamadas del público. Me",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.34,
+      "end": 74.34,
+      "text": " confundí. Deseamos que tenga buen día. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

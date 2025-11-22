@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100243546-5544389967-20251001-120857-5556225855.WAV",
+  "file_name": "0105-04965-25100100243546-5544389967-20251001-120857-5556225855.WAV",
+  "base_id": "0105-04965-25100100243546-5544389967-20251001-120857-5556225855",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarlo. Espera un momento, por favor. Hola, buenos días. La hora de partir de la compañía de Easy. Mi nombre es Abigail Griego. El motivo de la llamada es informativa, ya que aquí en tu cuenta se le acaba de activar unos beneficios. ¿Sabes que hoy nos podremos comunicar con un celular? Buenos días. En primer lugar, quisiera que verificaran bien los números porque se está llamando una institución pública. Por lo tanto, no requerimos el servicio. Pero estas llamadas ya son constantes. Entonces, no se puede hablar para que puedan dar de baja estas líneas para que me llamen. Ok, al número 800-120-5000 para que dé de baja el número de esta base. Ok, perfecto. Gracias. A usted, excelente día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 20.7,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.0,
+      "end": 33.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarlo.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 33.0,
+      "end": 35.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.0,
+      "end": 45.35,
+      "text": " Hola, buenos días. La hora de partir de la compañía de Easy. Mi nombre es Abigail Griego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.35,
+      "end": 49.85,
+      "text": " El motivo de la llamada es informativa, ya que aquí en tu cuenta se le acaba de activar unos beneficios.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.85,
+      "end": 52.85,
+      "text": " ¿Sabes que hoy nos podremos comunicar con un celular?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.05,
+      "end": 59.05,
+      "text": " Buenos días. En primer lugar, quisiera que verificaran bien los números porque se está llamando una institución pública.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.05,
+      "end": 64.05,
+      "text": " Por lo tanto, no requerimos el servicio. Pero estas llamadas ya son constantes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.05,
+      "end": 70.05,
+      "text": " Entonces, no se puede hablar para que puedan dar de baja estas líneas para que me llamen.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.05,
+      "end": 78.05,
+      "text": " Ok, al número 800-120-5000 para que dé de baja el número de esta base.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 78.05,
+      "end": 80.05,
+      "text": " Ok, perfecto. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 80.05,
+      "end": 82.14,
+      "text": " A usted, excelente día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.14,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

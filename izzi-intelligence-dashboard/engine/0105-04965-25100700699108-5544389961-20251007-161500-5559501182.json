@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700699108-5544389961-20251007-161500-5559501182.WAV",
+  "file_name": "0105-04965-25100700699108-5544389961-20251007-161500-5559501182.WAV",
+  "base_id": "0105-04965-25100700699108-5544389961-20251007-161500-5559501182",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Disney Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Hola, Sistema de mensajes de Cisco y Unity Express. Si tiene un buzón en este sistema, presione asterisco, de lo contrario, espere al operador. Espera un momento, por favor. Espero que se transiera la llamada. Hola, ¿qué tal? Buenas tardes, le habla Alberto Ruiz, departe del departamento de promociones de Easy. ¿Con quién tengo el gusto? Alberto Ruiz le llama por un tiempo de calidad.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.78,
+      "text": " entretenimiento con 200 canales, Disney Premium y eventos deportivos exclusivos por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.78,
+      "end": 17.72,
+      "text": " sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.72,
+      "end": 22.88,
+      "text": " Un asesor te está esperando. Hola, Sistema de mensajes de Cisco y Unity",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.88,
+      "end": 26.9,
+      "text": " Express. Si tiene un buzón en este sistema, presione asterisco, de lo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.02,
+      "end": 31.25,
+      "text": " contrario, espere al operador. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.25,
+      "end": 39.74,
+      "text": " Espero que se transiera la llamada. Hola, ¿qué tal? Buenas tardes, le habla",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.74,
+      "end": 43.62,
+      "text": " Alberto Ruiz, departe del departamento de promociones de Easy. ¿Con quién tengo el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.62,
+      "end": 50.91,
+      "text": " gusto? Alberto Ruiz le llama por un tiempo de calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 111.564,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

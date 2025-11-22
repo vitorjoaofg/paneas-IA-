@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200066767-5544389924-20251002-081758-5592751516.WAV",
+  "file_name": "0105-04965-25100200066767-5544389924-20251002-081758-5592751516.WAV",
+  "base_id": "0105-04965-25100200066767-5544389924-20251002-081758-5592751516",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno, ya tiene Julio Vargas físico, aquí tengo el gusto. Oye, yo sé que no tienes tú la culpa, pero dejen de estar chingando a su madre. No me hablen ya. Sí, claro que sí, voy a pasar el reporte. Me vale madre, chingan a su madre. Que tenga buen día. Sí, tú también.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.64,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.64,
+      "end": 23.18,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.18,
+      "end": 24.66,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.66,
+      "end": 34.5,
+      "text": " Sí, bueno, ya tiene Julio Vargas físico, aquí tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.54,
+      "end": 39.38,
+      "text": " Oye, yo sé que no tienes tú la culpa, pero dejen de estar chingando a su madre.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.38,
+      "end": 41.02,
+      "text": " No me hablen ya.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.02,
+      "end": 42.82,
+      "text": " Sí, claro que sí, voy a pasar el reporte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.82,
+      "end": 45.06,
+      "text": " Me vale madre, chingan a su madre.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.06,
+      "end": 46.06,
+      "text": " Que tenga buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.06,
+      "end": 47.38,
+      "text": " Sí, tú también.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.904,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

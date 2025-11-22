@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200383180-5544389973-20251002-122448-5557989086.WAV",
+  "file_name": "0105-04965-25100200383180-5544389973-20251002-122448-5557989086.WAV",
+  "base_id": "0105-04965-25100200383180-5544389973-20251002-122448-5557989086",
+  "transcription": "Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada puede ser grabado en el interior de apariciones de calidad en el servicio, en caso de que quieras tenerle 350 pesos el primer mes con easy, es posible, ¿te interesa? Un asesor está esperando, su llamada se está transcurriendo, espera un momento por favor. Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada puede ser grabada en el interior de apariciones de calidad en el servicio, en caso de que quieras tenerle 350 pesos el primer mes con easy, es posible, ¿te interesa? Un asesor está esperando, su llamada se está transcurriendo, espera un momento por favor. Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.44,
+      "text": " Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.44,
+      "end": 9.96,
+      "text": " puede ser grabado en el interior de apariciones de calidad en el servicio, en caso de que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.96,
+      "end": 15.96,
+      "text": " quieras tenerle 350 pesos el primer mes con easy, es posible, ¿te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.96,
+      "end": 28.03,
+      "text": " Un asesor está esperando, su llamada se está transcurriendo, espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.03,
+      "end": 29.03,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.03,
+      "end": 34.03,
+      "text": " Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.03,
+      "end": 39.03,
+      "text": " puede ser grabada en el interior de apariciones de calidad en el servicio, en caso de que",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.03,
+      "end": 44.03,
+      "text": " quieras tenerle 350 pesos el primer mes con easy, es posible, ¿te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.03,
+      "end": 48.03,
+      "text": " Un asesor está esperando, su llamada se está transcurriendo, espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.03,
+      "end": 49.03,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.03,
+      "end": 54.03,
+      "text": " Bienvenida, Wim, llamada es muy importante para nosotros, informamos que esta llamada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 31.824,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

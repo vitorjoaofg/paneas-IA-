@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600348716-8119059642-20251006-114154-04896.WAV",
+  "file_name": "0105-04999-25100600348716-8119059642-20251006-114154-04896.WAV",
+  "base_id": "0105-04999-25100600348716-8119059642-20251006-114154-04896",
+  "transcription": "Gracias por comunicarte a Izzy. Tenemos las mejores promociones para ti. ¿Te gustaría tener internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports? Vende 350 el primer mes con Izzy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para ti. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 2.4,
+      "text": " Gracias por comunicarte a Izzy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.4,
+      "end": 4.92,
+      "text": " Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 4.92,
+      "end": 8.52,
+      "text": " ¿Te gustaría tener internet más televisión más el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.52,
+      "end": 11.8,
+      "text": " entretenimiento con Vix Premium más Sky Sports?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 11.8,
+      "end": 16.44,
+      "text": " Vende 350 el primer mes con Izzy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.44,
+      "end": 17.44,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.44,
+      "end": 19.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 19.6,
+      "end": 26.23,
+      "text": " Por favor, hable o pulse 1 para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.23,
+      "end": 28.03,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 37.008,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

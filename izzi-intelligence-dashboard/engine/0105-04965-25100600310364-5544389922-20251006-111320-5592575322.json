@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600310364-5544389922-20251006-111320-5592575322.WAV",
+  "file_name": "0105-04965-25100600310364-5544389922-20251006-111320-5592575322.WAV",
+  "base_id": "0105-04965-25100600310364-5544389922-20251006-111320-5592575322",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor. Sí, buenos días. Sí, buenos días. Habla Acotelamantes de la compañía de Easy. ¿Con quién tengo el gusto? O con Sharon. Sharon, buen día. Mira, motivo de esta llamada es para agradecerle a usted por parte de la compañía de Easy. La empresa le está activando a usted chips para sus equipos celulares para que no manejan recargas y mantengan una renta mensual fija con nosotros. ¿Usted maneja algún tipo de recarga en su equipo celular? Pues sí, mi plan mensual de telcel. Ah, tienes plan forzoso con telcel. Ajá. Ah, ok. Bueno, pues gracias por tener mi llamada. Gracias. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.92,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.92,
+      "end": 25.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.48,
+      "end": 41.17,
+      "text": " Sí, buenos días. Sí, buenos días. Habla Acotelamantes de la compañía de Easy. ¿Con quién tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.17,
+      "end": 46.76,
+      "text": " gusto? O con Sharon. Sharon, buen día. Mira, motivo de esta llamada es para agradecerle a usted",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.76,
+      "end": 51.32,
+      "text": " por parte de la compañía de Easy. La empresa le está activando a usted chips para sus equipos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.32,
+      "end": 55.4,
+      "text": " celulares para que no manejan recargas y mantengan una renta mensual fija con nosotros.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.4,
+      "end": 63.07,
+      "text": " ¿Usted maneja algún tipo de recarga en su equipo celular? Pues sí, mi plan mensual de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.07,
+      "end": 69.07,
+      "text": " telcel. Ah, tienes plan forzoso con telcel. Ajá. Ah, ok. Bueno, pues gracias por tener",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.07,
+      "end": 71.67,
+      "text": " mi llamada. Gracias. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.016,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

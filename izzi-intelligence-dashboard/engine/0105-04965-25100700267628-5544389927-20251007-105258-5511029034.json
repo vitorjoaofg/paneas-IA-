@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700267628-5544389927-20251007-105258-5511029034.WAV",
+  "file_name": "0105-04965-25100700267628-5544389927-20251007-105258-5511029034.WAV",
+  "base_id": "0105-04965-25100700267628-5544389927-20251007-105258-5511029034",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Scottport, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para 5. Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2. Espera un momento, por favor. Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2. Su llamada puede ser grabada o monitoreada por razones de calidad. Por favor, permanezca en la línea. Su llamada será atendida en breve. Para comunicar con Metronik, hable a Daniel. ¿Con quién tengo el gusto? Aló, buenos días. Aló, buenos días, ¿me escuchan? Aló, aló. Aló, buenos días. Aló, buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Scottport, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 19.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 19.0,
+      "end": 25.0,
+      "text": " Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.0,
+      "end": 32.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.8,
+      "end": 38.8,
+      "text": " Si desea escuchar nuestro aviso de privacidad, presione 1. Para hablar con un representante, presione 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.8,
+      "end": 49.56,
+      "text": " Su llamada puede ser grabada o monitoreada por razones de calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.56,
+      "end": 63.68,
+      "text": " Por favor, permanezca en la línea. Su llamada será atendida en breve.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 63.68,
+      "end": 71.26,
+      "text": " Para comunicar con Metronik, hable a Daniel. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 71.26,
+      "end": 94.78,
+      "text": " Aló, buenos días. Aló, buenos días, ¿me escuchan? Aló, aló. Aló, buenos días. Aló, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 96.624,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

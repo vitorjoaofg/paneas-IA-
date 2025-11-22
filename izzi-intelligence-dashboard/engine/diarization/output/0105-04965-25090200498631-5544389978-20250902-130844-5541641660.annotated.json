@@ -1,0 +1,170 @@
+{
+  "call_id": "0105-04965-25090200498631-5544389978-20250902-130844-5541641660",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.440000057220459,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con cien telas de velocidad, tener el mejor",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 5.440000057220459,
+      "end": 10.800000190734863,
+      "text": "entendimiento con dos clientes canales, Big Premium y eventos deportivos exclusivos por",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 10.800000190734863,
+      "end": 13.800000190734863,
+      "text": "sólo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 13.800000190734863,
+      "end": 17.799999237060547,
+      "text": "No lo pienses más y cállate ahí, ¿te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 17.799999237060547,
+      "end": 20.799999237060547,
+      "text": "Un asesor te está esperando, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 20.799999237060547,
+      "end": 23.799999237060547,
+      "text": "Por favor, deja tu mensaje después del tono.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 23.799999237060547,
+      "end": 28.799999237060547,
+      "text": "Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 28.799999237060547,
+      "end": 31.799999237060547,
+      "text": "Estará un momento, por favor.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 38.79999923706055,
+      "end": 39.79999923706055,
+      "text": "¿Bueno?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 9,
+      "start": 42.79999923706055,
+      "end": 43.79999923706055,
+      "text": "¿Bueno, bueno?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 46.79999923706055,
+      "end": 47.79999923706055,
+      "text": "¿Hola?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 47.79999923706055,
+      "end": 53.79999923706055,
+      "text": "Se está comunicando a contrataciones y si mi nombre lo atiende Janet Pulido ¿en qué le podemos apoyar?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 59.79999923706055,
+      "end": 60.79999923706055,
+      "text": "¿Bueno?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 69.80000305175781,
+      "end": 72.80000305175781,
+      "text": "Tu mensaje ha alcanzado la duración máxima permitida.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 72.80000305175781,
+      "end": 75.80000305175781,
+      "text": "Por favor, deja tu mensaje después del tono.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 75.80000305175781,
+      "end": 80.80000305175781,
+      "text": "Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 89.80000305175781,
+      "end": 92.80000305175781,
+      "text": "Por favor, deja tu mensaje después del tono.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 92.80000305175781,
+      "end": 97.80000305175781,
+      "text": "Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 4,
+  "ivr_segments": 13
+}

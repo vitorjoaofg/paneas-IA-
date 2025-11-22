@@ -1,0 +1,242 @@
+{
+  "call_id": "0105-04965-25090100447651-3314541319-20250901-120536-5624689542",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 6.340000152587891,
+      "text": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 1,
+      "start": 6.340000152587891,
+      "end": 14.15999984741211,
+      "text": "con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.15999984741211,
+      "end": 20.360000610351562,
+      "text": "No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 20.360000610351562,
+      "end": 27.360000610351562,
+      "text": "favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 27.360000610351562,
+      "end": 28.360000610351562,
+      "text": "Sí, gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 28.360000610351562,
+      "end": 37.599998474121094,
+      "text": "Sí, muy buenas tardes. Bueno, se está contactando al área de contrataciones de Easy, me llamo",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 6,
+      "start": 37.599998474121094,
+      "end": 42.880001068115234,
+      "text": "Edgar. Mire, el motivo de la llamada es porque, bueno, no sé si actualmente cuentan con algún",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 7,
+      "start": 42.880001068115234,
+      "end": 45.720001220703125,
+      "text": "servicio de televisión, cable o internet en su hogar.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 45.720001220703125,
+      "end": 46.720001220703125,
+      "text": "Cuento con Easy.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 46.720001220703125,
+      "end": 50.959999084472656,
+      "text": "Con Easy, perfecto. Sí, no se preocupe. Entonces, sí, estamos haciendo un sondeo entonces para",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 50.959999084472656,
+      "end": 53.7599983215332,
+      "text": "poner aquí un comentario que ya cuenta con Easy. No se preocupe, ¿eh?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 54.08000183105469,
+      "end": 59.68000030517578,
+      "text": "Que nada más, de igual manera, una pregunta. Lo que pasa es que la semana pasada, el viernes,",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 59.68000030517578,
+      "end": 69.72000122070312,
+      "text": "me llegó una llamada donde me decían que por anivertar o algo así de Easy que me iban",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 13,
+      "start": 69.72000122070312,
+      "end": 71.55999755859375,
+      "text": "a dar un descuento en mi cuenta.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 71.55999755859375,
+      "end": 76.4000015258789,
+      "text": "¿De cuánto le dijeron que iba a ser el descuento?",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 76.4000015258789,
+      "end": 80.08000183105469,
+      "text": "150, me parece, 190, 170, algo así.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 80.23999786376953,
+      "end": 85.23999786376953,
+      "text": "150, déjame verificar, mire, porque para ver eso de las promociones, déjeme lo traslío,",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 85.23999786376953,
+      "end": 88.31999969482422,
+      "text": "lo voy a traslío directamente al servicio de cliente, ¿no? Para que ahí le den la",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 88.31999969482422,
+      "end": 91.16000366210938,
+      "text": "promoción, sí, porque aquí ya no tengo esa información. No, nada más no me cuelgue.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 91.16000366210938,
+      "end": 92.16000366210938,
+      "text": "Permítame.",
+      "original_role": "customer",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 20,
+      "start": 92.16000366210938,
+      "end": 93.16000366210938,
+      "text": "Por favor, gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 21,
+      "start": 93.16000366210938,
+      "end": 94.16000366210938,
+      "text": "Sí, no te preocupes.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 170.0800018310547,
+      "end": 171.0800018310547,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 171.0800018310547,
+      "end": 172.0800018310547,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 172.0800018310547,
+      "end": 173.0800018310547,
+      "text": "Gracias.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 173.0800018310547,
+      "end": 173.0800018310547,
+      "text": "",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    }
+  ],
+  "agent_segments": 10,
+  "customer_segments": 12,
+  "ivr_segments": 4
+}

@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200128248-5544389946-20251002-090526-5555315758.WAV",
+  "file_name": "0105-04965-25100200128248-5544389946-20251002-090526-5555315758.WAV",
+  "base_id": "0105-04965-25100200128248-5544389946-20251002-090526-5555315758",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport, desde 350 pesos el primer mes, con INTI, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, abre. Será atendido por una operadora. O bien, si requiere de asistencia urgente... Espera un momento, por favor. 55, 54, 56, 57, 19. Hola, hola. 55, 43, 55, 43, 76. Gracias por llamar a Grupo Hazard México. Si conoce la extensión, por favor, márkela en cualquier momento. Si no, para ventas, marque 1. Para soporte técnico, marque 2. Para administración, marque 3. Si espera, será atendido por una operadora. O bien, si requiere de asistencia urgente, por favor, llamar al 55, 44, 56, 59, 19. O para soporte, 55, 43, 55, 43.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.3,
+      "text": " más Skyport, desde 350 pesos el primer mes, con INTI, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 17.9,
+      "text": " Por favor, abre.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.9,
+      "end": 20.89,
+      "text": " Será atendido por una operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.89,
+      "end": 25.08,
+      "text": " O bien, si requiere de asistencia urgente...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.08,
+      "end": 27.87,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.87,
+      "end": 36.13,
+      "text": " 55, 54, 56, 57, 19.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.13,
+      "end": 38.32,
+      "text": " Hola, hola.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.32,
+      "end": 57.78,
+      "text": " 55, 43, 55, 43, 76.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.78,
+      "end": 60.84,
+      "text": " Gracias por llamar a Grupo Hazard México.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.84,
+      "end": 66.27,
+      "text": " Si conoce la extensión, por favor, márkela en cualquier momento.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.27,
+      "end": 70.52,
+      "text": " Si no, para ventas, marque 1.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 70.62,
+      "end": 74.34,
+      "text": " Para soporte técnico, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.34,
+      "end": 77.69,
+      "text": " Para administración, marque 3.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 77.69,
+      "end": 81.94,
+      "text": " Si espera, será atendido por una operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 81.94,
+      "end": 97.23,
+      "text": " O bien, si requiere de asistencia urgente, por favor, llamar al 55, 44, 56, 59, 19.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 97.23,
+      "end": 105.45,
+      "text": " O para soporte, 55, 43, 55, 43.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.236,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

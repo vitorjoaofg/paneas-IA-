@@ -1,0 +1,260 @@
+{
+  "call_id": "0105-04965-25090200692901-5544389989-20250902-151132-5552860333",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 7.800000190734863,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 MB de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 1,
+      "start": 7.800000190734863,
+      "end": 14.0,
+      "text": "Bix Premium y eventos deportivos exclusivos o por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": "No lo pienses más y cámbiate a Easy.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 17.0,
+      "end": 18.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 18.0,
+      "end": 20.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 5,
+      "start": 20.0,
+      "end": 21.0,
+      "text": "Por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 23.0,
+      "end": 25.0,
+      "text": "Para repetir el menú, marca 9.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 25.0,
+      "end": 34.0,
+      "text": "Está bien, repito. Esto es de Easy Mobile. Sabemos que mantenerse conectado es fundamental.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 8,
+      "start": 34.0,
+      "end": 38.0,
+      "text": "Por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 9,
+      "start": 38.0,
+      "end": 46.0,
+      "text": "¡Hola! ¿Te gustaría navegar en Internet con 100 MB de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 46.0,
+      "end": 52.0,
+      "text": "Bix Premium y eventos deportivos exclusivos o por solo 350 pesos el primer mes?",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 52.0,
+      "end": 55.0,
+      "text": "No lo pienses más y cámbiate a Easy.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 12,
+      "start": 55.0,
+      "end": 56.0,
+      "text": "¿Te interesa?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 13,
+      "start": 56.0,
+      "end": 58.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 58.0,
+      "end": 59.0,
+      "text": "Por favor.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 59.0,
+      "end": 62.0,
+      "text": "Si deseas comunicarte a una habitación, marca 2.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 62.0,
+      "end": 67.0,
+      "text": "Si deseas comunicarte a un área administrativa, marca 3.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 17,
+      "start": 67.0,
+      "end": 69.0,
+      "text": "Para repetir el menú, marca 9.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 75.0,
+      "end": 80.0,
+      "text": "Hola, buenas tardes. Latina Jennifer González de la compañía de Internet Easy. ¿En qué se le puede ayudar?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 19,
+      "start": 81.0,
+      "end": 86.0,
+      "text": "Lo siento. No lo entiendo. Por favor, vuelva a intentarlo.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 20,
+      "start": 87.0,
+      "end": 89.0,
+      "text": "Bienvenido a Euroclinic 2000.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 89.0,
+      "end": 98.0,
+      "text": "Si deseas conocer nuestro aviso de privacidad, visita nuestro sitio web www.euroclinic2000.com.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 22,
+      "start": 98.0,
+      "end": 103.0,
+      "text": "Si deseas programar una consulta o procedimiento médico, marca 1.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 23,
+      "start": 103.0,
+      "end": 107.0,
+      "text": "Si deseas comunicarte a una habitación, marca 2.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 24,
+      "start": 107.0,
+      "end": 112.0,
+      "text": "Si deseas comunicarte a un área administrativa, marca 3.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 25,
+      "start": 112.0,
+      "end": 115.0,
+      "text": "Para repetir el menú, marca 9.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 26,
+      "start": 122.0,
+      "end": 124.0,
+      "text": "Así es. Muy buenas tardes.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 27,
+      "start": 124.0,
+      "end": 127.0,
+      "text": "Bueno. Bueno. Bueno.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 2,
+  "customer_segments": 3,
+  "ivr_segments": 23
+}

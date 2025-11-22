@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100299089-5544389974-20251001-125111-5553400440.WAV",
+  "file_name": "0105-04965-25100100299089-5544389974-20251001-125111-5553400440.WAV",
+  "base_id": "0105-04965-25100100299089-5544389974-20251001-125111-5553400440",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysport, desde 350 pesos el primer mes, con ITZY? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor. www.ahv.mit. Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 2. Espera un momento, por favor. Si desea hablar al Departamento de Arquitectura, marque 2. ¿Sí, buenas tardes? ¿Sí, buenas, buenas tardes? Vete al sitio ITZY, buenas tardes. Habla Héctor Talamantes, de la compañía de ITZY. ¿Qué opina, Augusto? No me molestas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 12.08,
+      "text": " más Skysport, desde 350 pesos el primer mes, con ITZY?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.08,
+      "end": 13.28,
+      "text": " Es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.28,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.36,
+      "end": 16.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.56,
+      "end": 17.24,
+      "text": " Por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.24,
+      "end": 20.24,
+      "text": " www.ahv.mit.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.24,
+      "end": 23.56,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 23.56,
+      "end": 25.76,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.76,
+      "end": 26.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 26.96,
+      "end": 29.04,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.71,
+      "end": 38.71,
+      "text": " ¿Sí, buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 38.71,
+      "end": 47.52,
+      "text": " ¿Sí, buenas, buenas tardes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.52,
+      "end": 49.73,
+      "text": " Vete al sitio ITZY, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.73,
+      "end": 52.61,
+      "text": " Habla Héctor Talamantes, de la compañía de ITZY.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.61,
+      "end": 54.39,
+      "text": " ¿Qué opina, Augusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 54.39,
+      "end": 55.39,
+      "text": " No me molestas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.692,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

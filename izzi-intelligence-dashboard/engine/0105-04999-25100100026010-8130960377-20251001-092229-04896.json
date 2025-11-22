@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100026010-8130960377-20251001-092229-04896.WAV",
+  "file_name": "0105-04999-25100100026010-8130960377-20251001-092229-04896.WAV",
+  "base_id": "0105-04999-25100100026010-8130960377-20251001-092229-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Sí, buenos días. Buenos días. Buenos días. Me presento. Mi nombre es Daniel. Me estoy comunicando por parte de la compañía de Easy. ¿Con quién tengo el gusto, esculpe? Con Santos del Mundo. ¿En qué servicio está interesado, señor? No, es que tengo, incluso ya he tenido varias llamadas de este número. No sé a qué se deba. Entra la llamada y sale una grabación. En la grabación obviamente le brindan información de varios paquetes y ya usted presiona si quiere ser atendido con un ejecutivo. Ah, ok. Bueno, entonces a este por el momento, nada de reto me comunicaría con ustedes nuevamente. Ok, claro, sin problema. Muchas gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 10.44,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.44,
+      "end": 18.04,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.04,
+      "end": 27.9,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.9,
+      "end": 28.9,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.21,
+      "end": 40.89,
+      "text": " Sí, buenos días. Buenos días. Buenos días. Me presento. Mi nombre es Daniel. Me estoy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.89,
+      "end": 45.13,
+      "text": " comunicando por parte de la compañía de Easy. ¿Con quién tengo el gusto, esculpe? Con",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.13,
+      "end": 51.45,
+      "text": " Santos del Mundo. ¿En qué servicio está interesado, señor? No, es que tengo, incluso",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.45,
+      "end": 58.64,
+      "text": " ya he tenido varias llamadas de este número. No sé a qué se deba. Entra la llamada y",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.64,
+      "end": 63.72,
+      "text": " sale una grabación. En la grabación obviamente le brindan información de varios paquetes",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.72,
+      "end": 70.3,
+      "text": " y ya usted presiona si quiere ser atendido con un ejecutivo. Ah, ok. Bueno, entonces",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.3,
+      "end": 74.55,
+      "text": " a este por el momento, nada de reto me comunicaría con ustedes nuevamente. Ok,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.55,
+      "end": 77.95,
+      "text": " claro, sin problema. Muchas gracias. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.632,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

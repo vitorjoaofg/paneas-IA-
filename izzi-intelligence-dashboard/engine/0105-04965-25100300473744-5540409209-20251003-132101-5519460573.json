@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300473744-5540409209-20251003-132101-5519460573.WAV",
+  "file_name": "0105-04965-25100300473744-5540409209-20251003-132101-5519460573.WAV",
+  "base_id": "0105-04965-25100300473744-5540409209-20251003-132101-5519460573",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido. Espera un momento, por favor. We're sorry. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido. We're sorry.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 20.68,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.68,
+      "end": 24.68,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.68,
+      "end": 30.12,
+      "text": " Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.12,
+      "end": 32.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.12,
+      "end": 37.67,
+      "text": " We're sorry.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.67,
+      "end": 41.67,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.67,
+      "end": 47.67,
+      "text": " Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.67,
+      "end": 49.67,
+      "text": " We're sorry.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.22,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

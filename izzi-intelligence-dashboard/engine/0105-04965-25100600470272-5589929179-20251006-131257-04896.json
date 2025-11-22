@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600470272-5589929179-20251006-131257-04896.WAV",
+  "file_name": "0105-04965-25100600470272-5589929179-20251006-131257-04896.WAV",
+  "base_id": "0105-04965-25100600470272-5589929179-20251006-131257-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse a la ley de contrataciones Easy, la tienda de Alan, ¿con qué tengo el gusto? Bueno. Bueno. Sí, hola, ¿qué tal? Gracias por comunicarse al área de contrataciones Easy. La tienda de Alan, ¿con qué tengo el gusto? Perdón. Habla Alan Gaitán del área de contrataciones Easy, ¿con qué tengo el gusto? Yo a ver si... Perdón.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 16.0,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.0,
+      "end": 24.09,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.09,
+      "end": 27.09,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse a la ley de contrataciones Easy,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.09,
+      "end": 33.74,
+      "text": " la tienda de Alan, ¿con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.74,
+      "end": 34.74,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.74,
+      "end": 36.22,
+      "text": " Bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.22,
+      "end": 40.22,
+      "text": " Sí, hola, ¿qué tal? Gracias por comunicarse al área de contrataciones Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.22,
+      "end": 44.24,
+      "text": " La tienda de Alan, ¿con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.24,
+      "end": 45.24,
+      "text": " Perdón.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.24,
+      "end": 50.94,
+      "text": " Habla Alan Gaitán del área de contrataciones Easy, ¿con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.94,
+      "end": 55.08,
+      "text": " Yo a ver si...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.08,
+      "end": 57.94,
+      "text": " Perdón.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

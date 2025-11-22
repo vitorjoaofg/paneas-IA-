@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100366399-5540409221-20251001-134553-5598052834.WAV",
+  "file_name": "0105-04965-25100100366399-5540409221-20251001-134553-5598052834.WAV",
+  "base_id": "0105-04965-25100100366399-5540409221-20251001-134553-5598052834",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, mi nombre es Janet Pulido, me comunico de parte de la compañía de Easy. ¿Qué puedo hacer para que me dejen estar molestando? Ah, si usted en este caso yo puedo pasar el reporte. Sí, para que ya no me esté enmarcando, porque tengo, he tenido los servicios Easy y Easy. ¿Ya tienes servicio? Ya ya lo tengo, pero están molestes y molestes y molestes y es fastidioso porque van varias veces que me están enmarcando y les doy que no. Entonces me siguen Markey, Markey. Sí, claro, yo estaría dejando ahorita la anotación para que ya no me estén llamando. Sí, por favor. Gracias, una disculpa, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.24,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 26.77,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.77,
+      "end": 28.33,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.53,
+      "end": 43.41,
+      "text": " Buenas tardes, mi nombre es Janet Pulido, me comunico de parte de la compañía de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.41,
+      "end": 46.81,
+      "text": " ¿Qué puedo hacer para que me dejen estar molestando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.81,
+      "end": 50.8,
+      "text": " Ah, si usted en este caso yo puedo pasar el reporte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.8,
+      "end": 56.8,
+      "text": " Sí, para que ya no me esté enmarcando, porque tengo, he tenido los servicios Easy y Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.8,
+      "end": 57.8,
+      "text": " ¿Ya tienes servicio?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.8,
+      "end": 66.3,
+      "text": " Ya ya lo tengo, pero están molestes y molestes y molestes y es fastidioso porque van varias veces",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.3,
+      "end": 68.3,
+      "text": " que me están enmarcando y les doy que no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.66,
+      "end": 71.66,
+      "text": " Entonces me siguen Markey, Markey.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.66,
+      "end": 77.7,
+      "text": " Sí, claro, yo estaría dejando ahorita la anotación para que ya no me estén llamando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 77.7,
+      "end": 79.7,
+      "text": " Sí, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 79.7,
+      "end": 81.7,
+      "text": " Gracias, una disculpa, hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

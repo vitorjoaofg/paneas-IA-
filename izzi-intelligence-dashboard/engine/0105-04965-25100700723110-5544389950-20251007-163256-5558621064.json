@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700723110-5544389950-20251007-163256-5558621064.WAV",
+  "file_name": "0105-04965-25100700723110-5544389950-20251007-163256-5558621064.WAV",
+  "base_id": "0105-04965-25100700723110-5544389950-20251007-163256-5558621064",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona. Espera un momento por favor. Hola, buenas tardes. Buenas tardes, Alex Marquez de Easy. Mucho gusto. Se está publicando la recontratación de Easy. ¿En qué le podemos apreciar? ¿Qué se va a contratar el día de hoy? No, no. Ya tengo. ¿Ya tienes servicio de Easy? OK. Le estamos ofreciendo lo que sería un plan para el teléfono móvil. No sé si gusta que le brinda más información. No, no, no, no. No lo necesito. Cualquier duda se comunica. Muchas gracias. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.84,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.84,
+      "end": 26.69,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.69,
+      "end": 33.21,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.21,
+      "end": 34.21,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.21,
+      "end": 48.59,
+      "text": " Hola, buenas tardes. Buenas tardes, Alex Marquez de Easy. Mucho gusto. Se está publicando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.59,
+      "end": 51.11,
+      "text": " la recontratación de Easy. ¿En qué le podemos apreciar? ¿Qué se va a contratar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.11,
+      "end": 52.5,
+      "text": " el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.5,
+      "end": 53.5,
+      "text": " No, no. Ya tengo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.5,
+      "end": 65.02,
+      "text": " ¿Ya tienes servicio de Easy? OK. Le estamos ofreciendo lo que sería un plan",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.02,
+      "end": 67.38,
+      "text": " para el teléfono móvil. No sé si gusta que le brinda más información.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.11,
+      "end": 71.39,
+      "text": " No, no, no, no. No lo necesito.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.39,
+      "end": 73.83,
+      "text": " Cualquier duda se comunica. Muchas gracias. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.83,
+      "end": 74.83,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

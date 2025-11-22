@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100300828259-4495879811-20251003-183413-04896.WAV",
+  "file_name": "0105-04999-25100300828259-4495879811-20251003-183413-04896.WAV",
+  "base_id": "0105-04999-25100300828259-4495879811-20251003-183413-04896",
+  "transcription": "Gracias por comunicarte a IZI. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Bix Premium, más Rock Ice World desde 350 el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, ¿verdad? Por justo ahí. Entra, pues sí, sí, sí, le puedo ir. ¿Verdad? Sí, hombre, sí, hombre. Yo la pateo así. ¿Por qué? Quiero saber el tenis.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a IZI. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Bix Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 14.0,
+      "text": " más Rock Ice World desde 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.0,
+      "end": 26.91,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.42,
+      "end": 32.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.42,
+      "end": 37.87,
+      "text": " Sí, ¿verdad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.87,
+      "end": 38.87,
+      "text": " Por justo ahí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.87,
+      "end": 40.87,
+      "text": " Entra, pues sí, sí, sí, le puedo ir.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.87,
+      "end": 44.75,
+      "text": " ¿Verdad?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.75,
+      "end": 45.75,
+      "text": " Sí, hombre, sí, hombre.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.75,
+      "end": 47.75,
+      "text": " Yo la pateo así.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.75,
+      "end": 48.75,
+      "text": " ¿Por qué?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.75,
+      "end": 49.75,
+      "text": " Quiero saber el tenis.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 49.356,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

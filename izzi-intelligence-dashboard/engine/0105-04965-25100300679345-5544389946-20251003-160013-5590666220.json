@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300679345-5544389946-20251003-160013-5590666220.WAV",
+  "file_name": "0105-04965-25100300679345-5544389946-20251003-160013-5590666220.WAV",
+  "base_id": "0105-04965-25100300679345-5544389946-20251003-160013-5590666220",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor el detenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Una seporta está esperando! Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse a la área de contactaciones de Easy, la tiene Iván y Daniela, ¿con quién tengo el gusto? Con David. Hola, David. ¿Te interesa hablar con servicio, telefonía, móvil y Internet? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.2,
+      "end": 6.74,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.74,
+      "end": 13.5,
+      "text": " el detenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.5,
+      "end": 19.46,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Una",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.46,
+      "end": 27.64,
+      "text": " seporta está esperando! Por favor, hable o pulse 1 para sí o 2 para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.64,
+      "end": 29.16,
+      "text": " un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.02,
+      "end": 40.06,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicarse a la área de contactaciones",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.06,
+      "end": 42.42,
+      "text": " de Easy, la tiene Iván y Daniela, ¿con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.42,
+      "end": 44.13,
+      "text": " Con David.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.13,
+      "end": 49.57,
+      "text": " Hola, David. ¿Te interesa hablar con servicio, telefonía, móvil y Internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.57,
+      "end": 57.32,
+      "text": " Bueno, bueno.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

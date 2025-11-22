@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600227629-5544389928-20251006-101125-5586204161.WAV",
+  "file_name": "0105-04965-25100600227629-5544389928-20251006-101125-5586204161.WAV",
+  "base_id": "0105-04965-25100600227629-5544389928-20251006-101125-5586204161",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfil, de parte de su servicio de Easy, para darle a conocer la telefonía móvil por 94 pesos al mes. Buen día. Sí, pero aquí donde yo vivo no hay Easy. ¿No hay cobertura? No, no, no hay cobertura. Ah, ok. Bueno, igual sería en otro momento. Le agradezco por tomar la llamada. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 31.9,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.9,
+      "end": 43.74,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buen",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.74,
+      "end": 47.86,
+      "text": " día. Le habla Ivonne Monfil, de parte de su servicio de Easy, para darle a",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.86,
+      "end": 51.58,
+      "text": " conocer la telefonía móvil por 94 pesos al mes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.58,
+      "end": 63.55,
+      "text": " Buen día. Sí, pero aquí donde yo vivo no hay Easy. ¿No hay cobertura? No, no, no hay cobertura. Ah, ok. Bueno, igual",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.55,
+      "end": 68.03,
+      "text": " sería en otro momento. Le agradezco por tomar la llamada. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

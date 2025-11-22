@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100648310-3314541322-20251001-172401-7773285575.WAV",
+  "file_name": "0105-04999-25100100648310-3314541322-20251001-172401-7773285575.WAV",
+  "base_id": "0105-04999-25100100648310-3314541322-20251001-172401-7773285575",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Y buenas tardes. Alex Totalamates, de la compañía de Easy. ¿Con qué tengo el gusto? Oiga, no le tengo por qué decirlo, que tengo el gusto. ¿Cómo hace uno para que dejen de estar llamando? No me interesa Easy. Y llaman, y llaman, y llaman, y llaman. Es la única manera como puedo decirles que no me interesa. Porque además es una grabación. ¿Quién le dio mi número? Quiero saber. Bueno, chenaco.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.59,
+      "end": 25.59,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.72,
+      "end": 33.72,
+      "text": " Sí, buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.18,
+      "end": 35.18,
+      "text": " Y buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.8,
+      "end": 38.8,
+      "text": " Alex Totalamates, de la compañía de Easy. ¿Con qué tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.3,
+      "end": 42.3,
+      "text": " Oiga, no le tengo por qué decirlo, que tengo el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.3,
+      "end": 46.3,
+      "text": " ¿Cómo hace uno para que dejen de estar llamando? No me interesa Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.3,
+      "end": 51.3,
+      "text": " Y llaman, y llaman, y llaman, y llaman. Es la única manera como puedo decirles que no me interesa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.3,
+      "end": 53.3,
+      "text": " Porque además es una grabación.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.3,
+      "end": 55.46,
+      "text": " ¿Quién le dio mi número? Quiero saber.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.98,
+      "end": 61.0,
+      "text": " Bueno, chenaco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

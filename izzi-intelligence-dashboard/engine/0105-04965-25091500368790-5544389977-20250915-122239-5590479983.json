@@ -1,0 +1,83 @@
+{
+  "file_path": "../izzi_batch_600_casos_01/izzi_batch_600_casos_01/audio/0105-04965-25091500368790-5544389977-20250915-122239-5590479983.WAV",
+  "file_name": "0105-04965-25091500368790-5544389977-20250915-122239-5590479983.WAV",
+  "base_id": "0105-04965-25091500368790-5544389977-20250915-122239-5590479983",
+  "transcription": "¡Hola! ¿Te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. Mi nombre es José Manuel Regoza. ¿Con quién tengo el gusto?",
+  "language": "spanish",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " ¡Hola! ¿Te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "temperature": 0.0,
+      "avg_logprob": -0.3091305196285248,
+      "compression_ratio": 1.3470319509506226,
+      "no_speech_prob": 0.1227579116821289,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 20.0,
+      "text": " Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "temperature": 0.0,
+      "avg_logprob": -0.3091305196285248,
+      "compression_ratio": 1.3470319509506226,
+      "no_speech_prob": 0.1227579116821289,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 2,
+      "start": 24.0,
+      "end": 26.0,
+      "text": " Espera un momento, por favor.",
+      "temperature": 0.0,
+      "avg_logprob": -0.3091305196285248,
+      "compression_ratio": 1.3470319509506226,
+      "no_speech_prob": 0.1227579116821289,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 3,
+      "start": 30.0,
+      "end": 36.0,
+      "text": " Hola, buenas tardes. Mi nombre es José Manuel Regoza. ¿Con quién tengo el gusto?",
+      "temperature": 0.0,
+      "avg_logprob": -0.4607824385166168,
+      "compression_ratio": 0.9222221970558167,
+      "no_speech_prob": 0.19312523305416107,
+      "speaker": "agent",
+      "role": "agent"
+    }
+  ],
+  "audio_metrics": {
+    "duration": 81.288,
+    "rms_db": 65.28691014100185,
+    "snr": 50.94503879547119,
+    "silence_ratio": 0.5905791752780238,
+    "silence_duration": 48.007,
+    "nonsilent_duration": 33.281,
+    "clipping": false,
+    "sample_rate": 16000,
+    "channels": 1
+  },
+  "duration": 81.288,
+  "ivr_duration": 22.0,
+  "agent_duration": 6.0,
+  "customer_duration": 0,
+  "human_duration": 6.0,
+  "silence_duration": 48.007,
+  "first_human_response": 30.0,
+  "ivr_ratio": 0.27064265328215725,
+  "human_ratio": 0.07381163271331562,
+  "silence_ratio": 0.5905791752780238,
+  "rms_db": 65.28691014100185,
+  "snr": 50.94503879547119,
+  "clipping": false,
+  "processing_time": 17.71382784843445,
+  "asr_confidence": 0.706774583353703
+}

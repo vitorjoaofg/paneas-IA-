@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100096701-5544389988-20251001-101703-5592759830.WAV",
+  "file_name": "0105-04965-25100100096701-5544389988-20251001-101703-5592759830.WAV",
+  "base_id": "0105-04965-25100100096701-5544389988-20251001-101703-5592759830",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Sí. Espera un momento por favor. Hola, buen día. Le habla Yvonne Monfille, parte de su servicio de Easy, para darle a conocer sus beneficios con la compañía. Buen día. Buenos días. Hola señorita, ¿usted tiene internet con Easy o con otra compañía? Con otra compañía, pero me dicen que aquí ustedes no llegan. Ya le dijeron que no hay cobertura. Ajá. Y no hay cobertura de internet pero de lo que sí tenemos son canales. No sé si le gustaría 200 canales. Pero de nada me va a servir porque ustedes manejan internet más rápido y el que yo tengo es muy bajito y se pierde mucho la señal. Bueno, igual en este caso sería en otro momento. Que tenga un buen día. Igualmente, hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 30.17,
+      "text": " dos para no. Sí. Espera un momento por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.17,
+      "end": 41.62,
+      "text": " Hola, buen día. Le habla Yvonne Monfille, parte de su servicio de Easy, para darle a",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.62,
+      "end": 45.42,
+      "text": " conocer sus beneficios con la compañía. Buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.42,
+      "end": 49.94,
+      "text": " Buenos días. Hola señorita, ¿usted tiene internet con Easy o con otra",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.94,
+      "end": 55.07,
+      "text": " compañía? Con otra compañía, pero me dicen que aquí ustedes no llegan. Ya le",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.07,
+      "end": 61.22,
+      "text": " dijeron que no hay cobertura. Ajá. Y no hay cobertura de internet pero de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.22,
+      "end": 65.82,
+      "text": " lo que sí tenemos son canales. No sé si le gustaría 200 canales. Pero",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.02,
+      "end": 70.5,
+      "text": " de nada me va a servir porque ustedes manejan internet más rápido y el que yo tengo es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.5,
+      "end": 76.7,
+      "text": " muy bajito y se pierde mucho la señal. Bueno, igual en este caso sería en otro",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 76.7,
+      "end": 83.1,
+      "text": " momento. Que tenga un buen día. Igualmente, hasta luego. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.816,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

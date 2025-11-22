@@ -1,0 +1,249 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700383263-5555654768-20251007-121904-04896.WAV",
+  "file_name": "0105-04965-25100700383263-5555654768-20251007-121904-04896.WAV",
+  "base_id": "0105-04965-25100700383263-5555654768-20251007-121904-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Sí, buenas tardes? Buenas tardes, mi de joven. Permítame, déjeme decirle. Yo aquí trabajo y no le puedo decirle que sí quiero eso. Esta es la internet, porque yo aquí trabajo. ¿Y usted qué servicio tiene en su casa? Yo no tengo lo que tener. No, ahorita no puedo hacer eso. ¿Usted qué servicio maneja en su casa? ¿Perdón? ¿Usted qué servicio maneja en su casa? No, nada. Y ahorita no puedo yo, sino si conocio justo. Porque yo estoy trabajando aquí en esta casa. Sí, pero olvídese de la casa en la que está trabajando. ¿Usted en su casa qué servicio maneja? Nada, porque yo ya llego noche. ¿No tiene ningún servicio ni de cable en internet? No, ahorita no. No me he interesado por ahorita. Te agradezco. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 11.64,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.64,
+      "end": 17.44,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.44,
+      "end": 20.2,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.2,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.4,
+      "end": 27.84,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.04,
+      "end": 33.04,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.54,
+      "end": 37.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.94,
+      "end": 45.22,
+      "text": " ¿Sí, buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.22,
+      "end": 47.22,
+      "text": " Buenas tardes, mi de joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.22,
+      "end": 54.82,
+      "text": " Permítame, déjeme decirle. Yo aquí trabajo y no le puedo decirle que sí quiero eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.82,
+      "end": 59.02,
+      "text": " Esta es la internet, porque yo aquí trabajo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.02,
+      "end": 62.05,
+      "text": " ¿Y usted qué servicio tiene en su casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 62.45,
+      "end": 68.45,
+      "text": " Yo no tengo lo que tener. No, ahorita no puedo hacer eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 68.45,
+      "end": 70.45,
+      "text": " ¿Usted qué servicio maneja en su casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 70.45,
+      "end": 71.45,
+      "text": " ¿Perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 71.45,
+      "end": 73.45,
+      "text": " ¿Usted qué servicio maneja en su casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 73.45,
+      "end": 78.48,
+      "text": " No, nada. Y ahorita no puedo yo, sino si conocio justo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 78.48,
+      "end": 81.96,
+      "text": " Porque yo estoy trabajando aquí en esta casa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 81.96,
+      "end": 84.96,
+      "text": " Sí, pero olvídese de la casa en la que está trabajando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 84.96,
+      "end": 86.96,
+      "text": " ¿Usted en su casa qué servicio maneja?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 86.96,
+      "end": 90.7,
+      "text": " Nada, porque yo ya llego noche.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 91.1,
+      "end": 93.1,
+      "text": " ¿No tiene ningún servicio ni de cable en internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 93.1,
+      "end": 97.1,
+      "text": " No, ahorita no. No me he interesado por ahorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 97.1,
+      "end": 99.1,
+      "text": " Te agradezco. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 99.1,
+      "end": 101.1,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

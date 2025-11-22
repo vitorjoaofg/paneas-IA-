@@ -1,0 +1,83 @@
+{
+  "file_path": "../izzi_batch_600_casos_01/izzi_batch_600_casos_01/audio/0105-04965-25091200439213-5544389978-20250912-130452-5556062881.WAV",
+  "file_name": "0105-04965-25091200439213-5544389978-20250912-130452-5556062881.WAV",
+  "base_id": "0105-04965-25091200439213-5544389978-20250912-130452-5556062881",
+  "transcription": "Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días, los atiendo aquí hoy a la compañía de Easy, pero con beneficio que les haya interesado.",
+  "language": "spanish",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "temperature": 0.0,
+      "avg_logprob": -0.3002026379108429,
+      "compression_ratio": 1.3564814329147339,
+      "no_speech_prob": 0.2160201221704483,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 21.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "temperature": 0.0,
+      "avg_logprob": -0.3002026379108429,
+      "compression_ratio": 1.3564814329147339,
+      "no_speech_prob": 0.2160201221704483,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 2,
+      "start": 22.0,
+      "end": 24.0,
+      "text": " Espera un momento, por favor.",
+      "temperature": 0.0,
+      "avg_logprob": -0.3002026379108429,
+      "compression_ratio": 1.3564814329147339,
+      "no_speech_prob": 0.2160201221704483,
+      "speaker": "ivr",
+      "role": "ivr"
+    },
+    {
+      "id": 3,
+      "start": 30.0,
+      "end": 35.0,
+      "text": " Buenos días, los atiendo aquí hoy a la compañía de Easy, pero con beneficio que les haya interesado.",
+      "temperature": 0.0,
+      "avg_logprob": -0.46173280477523804,
+      "compression_ratio": 1.0612244606018066,
+      "no_speech_prob": 0.22986412048339844,
+      "speaker": "agent",
+      "role": "agent"
+    }
+  ],
+  "audio_metrics": {
+    "duration": 115.992,
+    "rms_db": 64.29157907140998,
+    "snr": 60.18420696258545,
+    "silence_ratio": 0.7459479964135457,
+    "silence_duration": 86.524,
+    "nonsilent_duration": 29.468,
+    "clipping": false,
+    "sample_rate": 16000,
+    "channels": 1
+  },
+  "duration": 115.992,
+  "ivr_duration": 23.0,
+  "agent_duration": 5.0,
+  "customer_duration": 0,
+  "human_duration": 5.0,
+  "silence_duration": 86.524,
+  "first_human_response": 30.0,
+  "ivr_ratio": 0.1982895372094627,
+  "human_ratio": 0.04310642113249189,
+  "silence_ratio": 0.7459479964135457,
+  "rms_db": 64.29157907140998,
+  "snr": 60.18420696258545,
+  "clipping": false,
+  "processing_time": 33.982301235198975,
+  "asr_confidence": 0.7113539311145043
+}

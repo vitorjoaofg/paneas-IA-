@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300725423-5544389993-20251003-163458-5556365674.WAV",
+  "file_name": "0105-04965-25100300725423-5544389993-20251003-163458-5556365674.WAV",
+  "base_id": "0105-04965-25100300725423-5544389993-20251003-163458-5556365674",
+  "transcription": "Hola, ¿te gustaría tener internet para que la protección de tus datos personales, por lo que si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de internet www.grupoméxico.com? Un asesor te está esperando, por favor, hable un pulso. Buenas tardes, está usted llamando a Grupo México, Servicios de Ingeniería. For English Dial 9. Si conoce el número de extensión, por favor, o espere unos instantes para ser transferido a la operadora.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.39,
+      "end": 8.19,
+      "text": " Hola, ¿te gustaría tener internet para que la protección de tus datos personales, por lo que si usted desea,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.19,
+      "end": 15.59,
+      "text": " puede consultar nuestro aviso de privacidad en nuestra página de internet www.grupoméxico.com?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.59,
+      "end": 19.79,
+      "text": " Un asesor te está esperando, por favor, hable un pulso.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.79,
+      "end": 23.29,
+      "text": " Buenas tardes, está usted llamando a Grupo México, Servicios de Ingeniería.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.29,
+      "end": 25.79,
+      "text": " For English Dial 9.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.79,
+      "end": 28.69,
+      "text": " Si conoce el número de extensión, por favor,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.69,
+      "end": 32.89,
+      "text": " o espere unos instantes para ser transferido a la operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 212.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

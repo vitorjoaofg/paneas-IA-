@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100600648559-9981390195-20251006-152557-04896.WAV",
+  "file_name": "0105-04999-25100600648559-9981390195-20251006-152557-04896.WAV",
+  "base_id": "0105-04999-25100600648559-9981390195-20251006-152557-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skype Work, desde 350 el primer mes, con Easy es posible. ¿Te interesa? Un profesor te está esperando. Por favor, a un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Skype Work, desde 350 el primer mes, con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un profesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 32.77,
+      "text": " Por favor, a un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 132.552,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

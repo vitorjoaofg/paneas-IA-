@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600413150-5544389914-20251006-123032-5555310091.WAV",
+  "file_name": "0105-04965-25100600413150-5544389914-20251006-123032-5555310091.WAV",
+  "base_id": "0105-04965-25100600413150-5544389914-20251006-123032-5555310091",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse a la área de contactaciones Easy y la atendí a Alan. ¿Con qué te gustó? ¡Sí, sí! ¿Sí? ¿Así es? ¡Ah! Bueno. ¡Me han cobrado doble de Easy! ¿Sería que haces comunicar a Alan? En la telefonía. ¿Te cobran doble? Ok. ¿Sería que haces comunicarlo 800-125.000, de acuerdo? ¡Buenos días! Bueno. ¡Me han cobrado doble!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.59,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.59,
+      "end": 32.99,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.99,
+      "end": 39.94,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.94,
+      "end": 51.08,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse a la área de contactaciones Easy y la atendí",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.08,
+      "end": 64.99,
+      "text": " a Alan. ¿Con qué te gustó? ¡Sí, sí! ¿Sí? ¿Así es? ¡Ah! Bueno. ¡Me han",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.99,
+      "end": 72.99,
+      "text": " cobrado doble de Easy! ¿Sería que haces comunicar a Alan? En la telefonía. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.99,
+      "end": 87.38,
+      "text": " cobran doble? Ok. ¿Sería que haces comunicarlo 800-125.000, de acuerdo? ¡Buenos días!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 87.38,
+      "end": 99.81,
+      "text": " Bueno. ¡Me han cobrado doble!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.036,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

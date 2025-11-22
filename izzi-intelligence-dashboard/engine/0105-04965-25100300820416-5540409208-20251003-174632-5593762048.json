@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300820416-5540409208-20251003-174632-5593762048.WAV",
+  "file_name": "0105-04965-25100300820416-5540409208-20251003-174632-5593762048.WAV",
+  "base_id": "0105-04965-25100300820416-5540409208-20251003-174632-5593762048",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable... Si quiere hablar con ventas, dígite 1, compras, dígite 2, ingeniería, seguridad ocupacional, dígite 4, marketing y plataformas tecnológicas, Contratación, sí, sí, en que le pueda ayudar. ...decesos humanos, dígite 6, contabilidad, dígite 7, serving track, dígite 8, o marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 14.3,
+      "text": " ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.3,
+      "end": 16.44,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 17.84,
+      "text": " Por favor, hable...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.84,
+      "end": 28.74,
+      "text": " Si quiere hablar con ventas, dígite 1, compras, dígite 2, ingeniería, seguridad ocupacional,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.18,
+      "end": 33.32,
+      "text": " dígite 4, marketing y plataformas tecnológicas,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.32,
+      "end": 35.32,
+      "text": " Contratación, sí, sí, en que le pueda ayudar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.32,
+      "end": 46.32,
+      "text": " ...decesos humanos, dígite 6, contabilidad, dígite 7, serving track, dígite 8, o marque 0 para hablar con la operadora.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.32,
+      "end": 54.93,
+      "text": " Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

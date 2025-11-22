@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100200341518-9982964319-20251002-115208-7442322979.WAV",
+  "file_name": "0105-04999-25100200341518-9982964319-20251002-115208-7442322979.WAV",
+  "base_id": "0105-04999-25100200341518-9982964319-20251002-115208-7442322979",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? ¡Un asesor te está esperando! ¡Espera un momento, por favor! ¿En qué le puedo ayudar? Joven, se supone que ya habían tachado mi número de su agenda, porque me siento acosada con tanta llamada que me hacen. No me interesa contratar Easy, ni mucho menos. Ok, y ese número es de contrataciones. Si usted la puede transferir al área correspondiente para que la apoyen. ¿Gusta que la transfera? Sí. Muy bien, la transfero. ¿Qué pasa? Muy buen día. ¡Muchas gracias!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? ¡Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 22.8,
+      "text": " te está esperando! ¡Espera un momento, por favor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.8,
+      "end": 33.0,
+      "text": " ¿En qué le puedo ayudar?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.0,
+      "end": 38.32,
+      "text": " Joven, se supone que ya habían tachado mi número de su agenda, porque me siento acosada",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.32,
+      "end": 42.32,
+      "text": " con tanta llamada que me hacen. No me interesa contratar Easy, ni mucho menos.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.32,
+      "end": 46.12,
+      "text": " Ok, y ese número es de contrataciones. Si usted la puede transferir al área correspondiente",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.12,
+      "end": 48.38,
+      "text": " para que la apoyen. ¿Gusta que la transfera?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.38,
+      "end": 49.38,
+      "text": " Sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.38,
+      "end": 52.42,
+      "text": " Muy bien, la transfero. ¿Qué pasa? Muy buen día. ¡Muchas gracias!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.876,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

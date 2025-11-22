@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400786340-5544389957-20251004-172549-5590650248.WAV",
+  "file_name": "0105-04965-25100400786340-5544389957-20251004-172549-5590650248.WAV",
+  "base_id": "0105-04965-25100400786340-5544389957-20251004-172549-5590650248",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Señorita, no sé cómo hacerles entender a ustedes y sí que no me estén llamando. Este teléfono estén la conducé para que no me estén hablando para publicidad ni nada. ¿Cómo lo puedo bloquear? ¿O cómo lo pueden ustedes bloquear? Le pongo aquí los comentarios si gusta. Por favor, señorita, que no me estén hablando. Ya había yo comunicado el otro día que por favor no me estén molestando. Por favor, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.56,
+      "end": 23.71,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.71,
+      "end": 40.66,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.02,
+      "end": 46.22,
+      "text": " Señorita, no sé cómo hacerles entender a ustedes y sí que no me estén llamando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.22,
+      "end": 51.7,
+      "text": " Este teléfono estén la conducé para que no me estén hablando para publicidad ni nada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.7,
+      "end": 56.44,
+      "text": " ¿Cómo lo puedo bloquear? ¿O cómo lo pueden ustedes bloquear?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.44,
+      "end": 58.87,
+      "text": " Le pongo aquí los comentarios si gusta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.87,
+      "end": 61.27,
+      "text": " Por favor, señorita, que no me estén hablando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.27,
+      "end": 66.5,
+      "text": " Ya había yo comunicado el otro día que por favor no me estén molestando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.5,
+      "end": 68.5,
+      "text": " Por favor, gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.768,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

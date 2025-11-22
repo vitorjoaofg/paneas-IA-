@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400172445-5589838353-20251004-094009-04896.WAV",
+  "file_name": "0105-04965-25100400172445-5589838353-20251004-094009-04896.WAV",
+  "base_id": "0105-04965-25100400172445-5589838353-20251004-094009-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buen día. Le atiende Miriam Gossera de los servicios de Easy Internet y Televisión por Cable. La llamada es para darle a conocer algunos beneficios que se les están proporcionando a usted en su cuenta. No sé si tengo el gusto con Lorena Valdés Saavedra. Bueno, ¿no? Se les están brindando algunos beneficios en su cuenta, señoritas. Se les están proporcionando nuestros planes de telefonía para el celular. No sé si ya le habremos comentado algo al respecto anteriormente. Calidad finalista de llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Con Easy es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 25.89,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.89,
+      "end": 29.89,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.89,
+      "end": 34.89,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.89,
+      "end": 48.54,
+      "text": " Hola, ¿qué tal? Buen día. Le atiende Miriam Gossera de los servicios de Easy Internet y Televisión por Cable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.54,
+      "end": 53.54,
+      "text": " La llamada es para darle a conocer algunos beneficios que se les están proporcionando a usted en su cuenta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.54,
+      "end": 56.54,
+      "text": " No sé si tengo el gusto con Lorena Valdés Saavedra.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.54,
+      "end": 64.06,
+      "text": " Bueno, ¿no? Se les están brindando algunos beneficios en su cuenta, señoritas.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.06,
+      "end": 67.06,
+      "text": " Se les están proporcionando nuestros planes de telefonía para el celular.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.06,
+      "end": 70.06,
+      "text": " No sé si ya le habremos comentado algo al respecto anteriormente.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.06,
+      "end": 76.98,
+      "text": " Calidad finalista de llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.476,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

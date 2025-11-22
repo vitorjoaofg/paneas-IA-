@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200591833-5544389976-20251002-151514-5590195295.WAV",
+  "file_name": "0105-04965-25100200591833-5544389976-20251002-151514-5590195295.WAV",
+  "base_id": "0105-04965-25100200591833-5544389976-20251002-151514-5590195295",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. ¡Hola! ¿Qué tal? Gracias por comunicarse a la red de contrataciones Easy, la tienda de Alan. ¿Con quién tengo el gusto? Hola, buenas tardes. Mira, únicamente les voy a pedir de favor que ya no estén marcando. A mí no me interesa ahorita ningún servicio de Easy y es que diario habla, ni a cualquier hora están llame, llame, llame. Entonces sí les voy a pedir de favor que ya no estén marcando porque no nos interesa el servicio por ahorita. Aunque ahorita lo pongan como nota. Buen día, señorita. Por favor, gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 13.68,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.68,
+      "end": 20.12,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.12,
+      "end": 27.94,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.94,
+      "end": 45.21,
+      "text": " un momento por favor. ¡Hola! ¿Qué tal? Gracias por comunicarse a la red de contrataciones",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.21,
+      "end": 51.61,
+      "text": " Easy, la tienda de Alan. ¿Con quién tengo el gusto? Hola, buenas tardes. Mira, únicamente",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.61,
+      "end": 56.01,
+      "text": " les voy a pedir de favor que ya no estén marcando. A mí no me interesa ahorita ningún",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.01,
+      "end": 61.01,
+      "text": " servicio de Easy y es que diario habla, ni a cualquier hora están llame, llame, llame.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.01,
+      "end": 66.01,
+      "text": " Entonces sí les voy a pedir de favor que ya no estén marcando porque no nos interesa",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.01,
+      "end": 70.55,
+      "text": " el servicio por ahorita. Aunque ahorita lo pongan como nota. Buen día, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.55,
+      "end": 72.55,
+      "text": " Por favor, gracias. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.996,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

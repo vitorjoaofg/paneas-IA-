@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400410603-5540409214-20251004-123814-5589401462.WAV",
+  "file_name": "0105-04965-25100400410603-5540409214-20251004-123814-5589401462.WAV",
+  "base_id": "0105-04965-25100400410603-5540409214-20251004-123814-5589401462",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Riky Premium, más el Time Quartz, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, haz... Puntadilidad 4. Mantenimiento 5. Si desea ser atendido por una operadora, espere en la línea. Espera un momento, por favor. Recuerda que tu gas brille más. No está libre. Por favor, deje su mensaje después del tono. Al terminar, cuelgue o presione la tecla de número. Lo siento, pero el buzón de esa persona no puede aceptar más mensajes. I'm sorry. An error has occurred.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Riky Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más el Time Quartz, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 17.64,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, haz...",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.64,
+      "end": 25.83,
+      "text": " Puntadilidad 4. Mantenimiento 5. Si desea ser atendido por una operadora, espere en la línea.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.83,
+      "end": 27.83,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.83,
+      "end": 29.83,
+      "text": " Recuerda que tu gas brille más.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.99,
+      "end": 60.65,
+      "text": " No está libre. Por favor, deje su mensaje después del tono. Al terminar, cuelgue o presione la tecla de número.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 60.65,
+      "end": 66.69,
+      "text": " Lo siento, pero el buzón de esa persona no puede aceptar más mensajes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.69,
+      "end": 67.69,
+      "text": " I'm sorry.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.69,
+      "end": 69.69,
+      "text": " An error has occurred.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.812,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

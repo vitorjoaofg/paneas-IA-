@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600633086-5544389988-20251006-151435-5556862313.WAV",
+  "file_name": "0105-04965-25100600633086-5544389988-20251006-151435-5556862313.WAV",
+  "base_id": "0105-04965-25100600633086-5544389988-20251006-151435-5556862313",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, dale un... ¡A ver, pero cómo me van a la asesor! Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Treceo la uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. No aceptamos transferencias. ¿Cómo? ¿Te está comunicando a contrataciones Easy? No aceptamos transferencias, chau. ¿Cuáles transferencias? ¿De qué me está hablando?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 23.24,
+      "text": " te está esperando. Por favor, dale un... ¡A ver, pero cómo me van a la asesor!",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.24,
+      "end": 34.75,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Treceo la uno",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.75,
+      "end": 41.05,
+      "text": " para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.05,
+      "end": 69.78,
+      "text": " No aceptamos transferencias. ¿Cómo? ¿Te está comunicando a contrataciones Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 69.78,
+      "end": 74.42,
+      "text": " No aceptamos transferencias, chau. ¿Cuáles transferencias? ¿De qué me está hablando?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 133.92,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

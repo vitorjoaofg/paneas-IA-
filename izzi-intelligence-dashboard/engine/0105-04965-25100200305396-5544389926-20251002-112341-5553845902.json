@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200305396-5544389926-20251002-112341-5553845902.WAV",
+  "file_name": "0105-04965-25100200305396-5544389926-20251002-112341-5553845902.WAV",
+  "base_id": "0105-04965-25100200305396-5544389926-20251002-112341-5553845902",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Es Procomunicar Salario de Contrataciones de VIX. Se la atiende Ivanie Daniela, con quien tenga el gusto. Con su servidor Jorge Arturo Aguilar, señorita. Oiga, ¿cuánto cuesta ya su secuente el servicio? ¿Usted ya es cliente con nosotros? No, no, pero ¿cuánto costaría? Porque me dijeron de la promoción de un mes, pero pues digo yo, pues voy a estar ahora sí que varios meses con ustedes. Entonces quiero saber cuánto costaría ya posteriormente ya no teniendo la promoción. OK. Permíteme aceptar. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 24.1,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.1,
+      "end": 33.1,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 33.1,
+      "end": 35.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.1,
+      "end": 47.31,
+      "text": " Hola, ¿qué tal? Buenas tardes. Es Procomunicar Salario de Contrataciones de VIX. Se la atiende Ivanie Daniela, con quien tenga el gusto.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.31,
+      "end": 54.38,
+      "text": " Con su servidor Jorge Arturo Aguilar, señorita. Oiga, ¿cuánto cuesta ya su secuente el servicio?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 54.38,
+      "end": 56.38,
+      "text": " ¿Usted ya es cliente con nosotros?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.38,
+      "end": 66.38,
+      "text": " No, no, pero ¿cuánto costaría? Porque me dijeron de la promoción de un mes, pero pues digo yo, pues voy a estar ahora sí que varios meses con ustedes.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.38,
+      "end": 72.38,
+      "text": " Entonces quiero saber cuánto costaría ya posteriormente ya no teniendo la promoción.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.38,
+      "end": 74.66,
+      "text": " OK. Permíteme aceptar.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 74.66,
+      "end": 75.66,
+      "text": " Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 170.496,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

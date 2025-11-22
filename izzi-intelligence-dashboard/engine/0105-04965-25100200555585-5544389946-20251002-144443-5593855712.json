@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100200555585-5544389946-20251002-144443-5593855712.WAV",
+  "file_name": "0105-04965-25100200555585-5544389946-20251002-144443-5593855712.WAV",
+  "base_id": "0105-04965-25100200555585-5544389946-20251002-144443-5593855712",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. ¿Bueno? Hola, buenas tardes, señorita. ¿Cómo está? Buenas tardes. Hablé en el pulido de Easy. Es en este caso para doler con nosotros, es nuestro servicio. ¿Pero si está interesada en contratar aquí con nosotros? No sé si es que se escuchó la propuesta en el computador. No.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.0,
+      "end": 30.18,
+      "text": " ¿Bueno?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.18,
+      "end": 32.91,
+      "text": " Hola, buenas tardes, señorita. ¿Cómo está?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.91,
+      "end": 40.01,
+      "text": " Buenas tardes. Hablé en el pulido de Easy. Es en este caso para doler con nosotros, es nuestro servicio.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.01,
+      "end": 47.0,
+      "text": " ¿Pero si está interesada en contratar aquí con nosotros? No sé si es que se escuchó la propuesta en el computador.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.0,
+      "end": 48.0,
+      "text": " No.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 48.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

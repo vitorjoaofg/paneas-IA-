@@ -1,0 +1,53 @@
+{
+  "call_id": "0105-04965-25090200593050-5544389937-20250902-140834-5553163000",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 20.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 2,
+      "start": 24.0,
+      "end": 26.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 30.0,
+      "end": 36.0,
+      "text": "Gracias por comunicarse a contrataciones. Sí, sí, mi nombre es Joseón Regosa. ¿Con quién tengo el gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 60.0,
+      "end": 62.0,
+      "text": "¡Gracias!",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 1,
+  "customer_segments": 1,
+  "ivr_segments": 3
+}

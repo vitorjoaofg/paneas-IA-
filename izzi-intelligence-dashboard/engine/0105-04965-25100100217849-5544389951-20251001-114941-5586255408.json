@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100217849-5544389951-20251001-114941-5586255408.WAV",
+  "file_name": "0105-04965-25100100217849-5544389951-20251001-114941-5586255408.WAV",
+  "base_id": "0105-04965-25100100217849-5544389951-20251001-114941-5586255408",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con los distintos canales, big screen y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, hola, buenos días. Me saluda Paula Cabañas aquí de Easy. ¿Contienden el gusto? No, yo soy de MegaCable, no soy de Easy. Ah, ok. Entonces, muchas gracias. Que tenga bonito día. Sí, yo soy de MegaCable, no Easy. Ok, gracias. Hasta luego. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.48,
+      "text": " entretenimiento con los distintos canales, big screen y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.48,
+      "end": 18.12,
+      "text": " por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.12,
+      "end": 26.42,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.62,
+      "end": 32.98,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.98,
+      "end": 38.46,
+      "text": " asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.46,
+      "end": 52.52,
+      "text": " Hola, hola, buenos días. Me saluda Paula Cabañas aquí de Easy. ¿Contienden el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.52,
+      "end": 55.28,
+      "text": " No, yo soy de MegaCable, no soy de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.28,
+      "end": 59.03,
+      "text": " Ah, ok. Entonces, muchas gracias. Que tenga bonito día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.03,
+      "end": 60.79,
+      "text": " Sí, yo soy de MegaCable, no Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.79,
+      "end": 63.69,
+      "text": " Ok, gracias. Hasta luego. Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.656,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

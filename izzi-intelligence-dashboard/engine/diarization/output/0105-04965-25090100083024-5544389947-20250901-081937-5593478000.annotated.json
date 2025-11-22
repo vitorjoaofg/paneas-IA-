@@ -1,0 +1,224 @@
+{
+  "call_id": "0105-04965-25090100083024-5544389947-20250901-081937-5593478000",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": "¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 11.0,
+      "end": 13.0,
+      "text": "¡Con Easy es posible!",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": "¿Te interesa? ¡Un asesor te está esperando!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 3,
+      "start": 16.0,
+      "end": 20.0,
+      "text": "Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 4,
+      "start": 21.0,
+      "end": 22.0,
+      "text": "¿Quién es?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 5,
+      "start": 24.0,
+      "end": 25.0,
+      "text": "¿Papá?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 34.0,
+      "end": 36.0,
+      "text": "¿Quién es?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 37.0,
+      "end": 43.0,
+      "text": "No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para...",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 43.0,
+      "end": 45.0,
+      "text": "¡Espera un momento, por favor!",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 9,
+      "start": 48.0,
+      "end": 49.0,
+      "text": "Buenos días.",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 10,
+      "start": 50.0,
+      "end": 51.0,
+      "text": "¿Hola?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 11,
+      "start": 52.0,
+      "end": 54.0,
+      "text": "Buenos días, contratación de VIX, ¿con quién tengo gusto?",
+      "original_role": "agent",
+      "role": "agent",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 54.0,
+      "end": 72.0,
+      "text": "Yo creo que se nos llamaron equivocados porque es aquí, de la casa de donde...",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 13,
+      "start": 72.0,
+      "end": 73.0,
+      "text": "Disculpe.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 14,
+      "start": 73.0,
+      "end": 74.0,
+      "text": "¿Ah?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 15,
+      "start": 74.0,
+      "end": 77.0,
+      "text": "Disculpe, no, no se puede. Disculpe por la interrupción.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 78.0,
+      "end": 79.0,
+      "text": "Buen día.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 17,
+      "start": 80.0,
+      "end": 84.0,
+      "text": "Buen día, yo creo que se equivocaron de llamada.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 85.0,
+      "end": 87.0,
+      "text": "Sí, perdona. Buen día, ¿estás bien?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 19,
+      "start": 89.0,
+      "end": 91.0,
+      "text": "¿Te olvidas que le he llamado? Tenés cura.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 98.0,
+      "end": 104.0,
+      "text": "Como esta casa es de mi mamá que se llama Guillermina.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 106.0,
+      "end": 107.0,
+      "text": "¿Hola?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 22,
+      "start": 107.0,
+      "end": 108.0,
+      "text": "¿Hola?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 23,
+      "start": 109.0,
+      "end": 110.0,
+      "text": "¿Hola?",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 2,
+  "customer_segments": 16,
+  "ivr_segments": 6
+}

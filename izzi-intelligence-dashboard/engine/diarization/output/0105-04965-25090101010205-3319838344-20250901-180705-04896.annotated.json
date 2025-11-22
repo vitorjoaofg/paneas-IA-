@@ -1,0 +1,215 @@
+{
+  "call_id": "0105-04965-25090101010205-3319838344-20250901-180705-04896",
+  "segments": [
+    {
+      "segment_index": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": "Gracias por comunicarte a EASY. Tenemos las mejores promociones para ti.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": "¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 3,
+      "start": 16.0,
+      "end": 24.0,
+      "text": "¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 4,
+      "start": 25.0,
+      "end": 35.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 5,
+      "start": 35.0,
+      "end": 46.0,
+      "text": "Está bien, repito. Esto es de EASY Mobile. Sabemos que mantenerse conectado es fundamental. Por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 6,
+      "start": 47.0,
+      "end": 58.0,
+      "text": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 7,
+      "start": 58.0,
+      "end": 67.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 8,
+      "start": 68.0,
+      "end": 77.0,
+      "text": "Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.9
+    },
+    {
+      "segment_index": 9,
+      "start": 77.0,
+      "end": 88.0,
+      "text": "Está bien, repito. Esto es de EASY Mobile. Sabemos que mantenerse conectado es fundamental. Por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 10,
+      "start": 89.0,
+      "end": 100.0,
+      "text": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 11,
+      "start": 100.0,
+      "end": 109.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 12,
+      "start": 113.0,
+      "end": 115.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 13,
+      "start": 118.0,
+      "end": 125.0,
+      "text": "Hola, ¿te gustaría tener Internet más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 14,
+      "start": 125.0,
+      "end": 132.0,
+      "text": "Con EASY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 15,
+      "start": 132.0,
+      "end": 134.0,
+      "text": "Espera un momento, por favor.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 16,
+      "start": 134.0,
+      "end": 141.0,
+      "text": "Hola, ¿te gustaría tener Internet más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 el primer mes?",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.909
+    },
+    {
+      "segment_index": 17,
+      "start": 141.0,
+      "end": 143.0,
+      "text": "Con EASY es posible.",
+      "original_role": "customer",
+      "role": "ivr",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 18,
+      "start": 144.0,
+      "end": 146.0,
+      "text": "Un asesor te está esperando.",
+      "original_role": "ivr",
+      "role": "ivr",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 19,
+      "start": 153.0,
+      "end": 154.0,
+      "text": "Está lloviendo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 20,
+      "start": 154.0,
+      "end": 155.0,
+      "text": "Está lloviendo.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    },
+    {
+      "segment_index": 21,
+      "start": 156.0,
+      "end": 158.0,
+      "text": "Hola, Ana Viena.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.97
+    },
+    {
+      "segment_index": 22,
+      "start": 158.0,
+      "end": 160.0,
+      "text": "Hotel Ana Viena.",
+      "original_role": "customer",
+      "role": "customer",
+      "confidence": 0.99
+    }
+  ],
+  "agent_segments": 0,
+  "customer_segments": 4,
+  "ivr_segments": 19
+}

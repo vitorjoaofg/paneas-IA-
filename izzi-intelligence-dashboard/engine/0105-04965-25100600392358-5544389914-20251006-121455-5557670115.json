@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600392358-5544389914-20251006-121455-5557670115.WAV",
+  "file_name": "0105-04965-25100600392358-5544389914-20251006-121455-5557670115.WAV",
+  "base_id": "0105-04965-25100600392358-5544389914-20251006-121455-5557670115",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buen día, señorita. Hablo, Miriam Gonzeguera, de parte de la compañía de IZI. Mi llamada es para darla a conocer algunos beneficios que se le están proporcionando en la cuenta. Se le están brindando nuestros planes de telefonía para el celular con llamadas y mensajes ilimitados. Y dependiendo de lo que ustedes utilicen, contamos con servicios de datos ilimitados u 8 GB de Internet. También manejamos servicios de residencial, que es servicio de Internet y televisión por cable. No sé si me comunico al teléfono del señor Luis Fernando Merchoro. No, se está equivocando del número, señorita. Ah, ok, una disculpa. Que tengan excelente día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con IZI es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.6,
+      "end": 24.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.38,
+      "end": 35.08,
+      "text": " Hola, ¿qué tal? Buen día, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.08,
+      "end": 38.18,
+      "text": " Hablo, Miriam Gonzeguera, de parte de la compañía de IZI.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.18,
+      "end": 43.18,
+      "text": " Mi llamada es para darla a conocer algunos beneficios que se le están proporcionando en la cuenta.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.18,
+      "end": 48.88,
+      "text": " Se le están brindando nuestros planes de telefonía para el celular con llamadas y mensajes ilimitados.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.88,
+      "end": 55.28,
+      "text": " Y dependiendo de lo que ustedes utilicen, contamos con servicios de datos ilimitados u 8 GB de Internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.28,
+      "end": 61.28,
+      "text": " También manejamos servicios de residencial, que es servicio de Internet y televisión por cable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.28,
+      "end": 66.21,
+      "text": " No sé si me comunico al teléfono del señor Luis Fernando Merchoro.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.21,
+      "end": 69.31,
+      "text": " No, se está equivocando del número, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.31,
+      "end": 72.31,
+      "text": " Ah, ok, una disculpa. Que tengan excelente día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 72.31,
+      "end": 75.46,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

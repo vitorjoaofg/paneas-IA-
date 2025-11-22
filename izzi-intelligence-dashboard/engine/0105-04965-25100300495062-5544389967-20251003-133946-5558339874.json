@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300495062-5544389967-20251003-133946-5558339874.WAV",
+  "file_name": "0105-04965-25100300495062-5544389967-20251003-133946-5558339874.WAV",
+  "base_id": "0105-04965-25100300495062-5544389967-20251003-133946-5558339874",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, mi nombre es Melaniza Ocedo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Con Alte. Hola, mucho gusto señorita. El motivo de esta llamada es comunicarle que puede tener beneficios de telefonía internet y cable. ¿Ya cuenta con estos servicios de Easy? La verdad no me interesa. Ah, ok. No te preocupes. En nada de caso aquí la vamos a poner. Por si más adelante alguien más en casita le interesa, le comento o lo pueden tener disponible. Ok, sí, muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.2,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 14.3,
+      "text": " Con Easy es posible. ¿Te interesa?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.3,
+      "end": 16.4,
+      "text": " Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.4,
+      "end": 19.2,
+      "text": " Por favor, hable o pulse uno para sí.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.1,
+      "end": 26.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.5,
+      "end": 34.72,
+      "text": " Hola, ¿qué tal? Buenas tardes, mi nombre es Melaniza Ocedo,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.72,
+      "end": 37.72,
+      "text": " nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.38,
+      "end": 39.88,
+      "text": " Con Alte.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.88,
+      "end": 46.76,
+      "text": " Hola, mucho gusto señorita. El motivo de esta llamada es comunicarle que puede tener beneficios de telefonía internet y cable.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.76,
+      "end": 49.26,
+      "text": " ¿Ya cuenta con estos servicios de Easy?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.26,
+      "end": 52.52,
+      "text": " La verdad no me interesa.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.52,
+      "end": 56.0,
+      "text": " Ah, ok. No te preocupes. En nada de caso aquí la vamos a poner.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.0,
+      "end": 60.5,
+      "text": " Por si más adelante alguien más en casita le interesa, le comento o lo pueden tener disponible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 60.5,
+      "end": 62.5,
+      "text": " Ok, sí, muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.204,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100100356267-5544389908-20251001-133707-5553501708.WAV",
+  "file_name": "0105-04965-25100100356267-5544389908-20251001-133707-5553501708.WAV",
+  "base_id": "0105-04965-25100100356267-5544389908-20251001-133707-5553501708",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, hola, buenas tardes. Me comunico de la compañía de Easy. Les saluda Paula Cabañas. ¿Concienden o al gusto? Estás hablando al área de sistemas. No sé, sonó el teléfono y estoy contestando. Ah, ok caballeros. Sí, miren, nos comunicamos aquí de parte de la compañía de Easy para ver si le interesa el servicio de Telefonía Internet y Televisión. Es que ese servicio ya lo tengo, señorita. Ok. ¿Lo tiene con otra compañía? Y sin negocios. Ah, ok, ok. Con nosotros, ok. Bueno, muchas gracias. Que tenga bonito día. Ok. ¿Algo más que te pueda ayudar? Es todo. Gracias. Hasta luego. De nada. Bye bye. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 33.22,
+      "text": " dos para no. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.22,
+      "end": 37.18,
+      "text": " Hola, hola, buenas tardes. Me comunico de la compañía de Easy. Les saluda Paula",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.18,
+      "end": 43.86,
+      "text": " Cabañas. ¿Concienden o al gusto? Estás hablando al área de sistemas. No sé, sonó",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.86,
+      "end": 48.02,
+      "text": " el teléfono y estoy contestando. Ah, ok caballeros. Sí, miren, nos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.02,
+      "end": 50.94,
+      "text": " comunicamos aquí de parte de la compañía de Easy para ver si le",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.94,
+      "end": 54.7,
+      "text": " interesa el servicio de Telefonía Internet y Televisión.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.7,
+      "end": 60.29,
+      "text": " Es que ese servicio ya lo tengo, señorita. Ok. ¿Lo tiene con otra compañía?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.94,
+      "end": 68.18,
+      "text": " Y sin negocios. Ah, ok, ok. Con nosotros, ok. Bueno, muchas gracias. Que tenga",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.18,
+      "end": 74.54,
+      "text": " bonito día. Ok. ¿Algo más que te pueda ayudar? Es todo. Gracias. Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 74.54,
+      "end": 77.54,
+      "text": " De nada. Bye bye. Bye.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 139.644,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

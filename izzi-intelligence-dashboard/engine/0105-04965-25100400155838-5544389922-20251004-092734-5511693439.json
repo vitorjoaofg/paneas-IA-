@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400155838-5544389922-20251004-092734-5511693439.WAV",
+  "file_name": "0105-04965-25100400155838-5544389922-20251004-092734-5511693439.WAV",
+  "base_id": "0105-04965-25100400155838-5544389922-20251004-092734-5511693439",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Está muy bien la promoción, pero lo que pasa es que nosotros ya tenemos el servicio de internet. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Nos comunicamos desde la compañía de Easy. Mi nombre es Ana Serrera. ¿Con quién tengo el gusto? Yo le comentaba a la señorita que acaba de llamar que nosotros ya tenemos el servicio de internet. Ok, muy bien. La llamada es... Ahorita pues ya estamos bien, ¿no? Ah, ok. Muy bien. Entiendo. Entonces, se le generó aquí la anotación para que den de bajar este número y ya no se le hagan llamadas. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.92,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.92,
+      "end": 28.28,
+      "text": " Está muy bien la promoción, pero lo que pasa es que nosotros ya tenemos el servicio de internet.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.57,
+      "end": 40.46,
+      "text": " Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Nos comunicamos desde la",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.46,
+      "end": 43.82,
+      "text": " compañía de Easy. Mi nombre es Ana Serrera. ¿Con quién tengo el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.82,
+      "end": 51.45,
+      "text": " Yo le comentaba a la señorita que acaba de llamar que nosotros ya tenemos el servicio de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.45,
+      "end": 60.45,
+      "text": " internet. Ok, muy bien. La llamada es... Ahorita pues ya estamos bien, ¿no?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.05,
+      "end": 68.49,
+      "text": " Ah, ok. Muy bien. Entiendo. Entonces, se le generó aquí la anotación para que den de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.49,
+      "end": 71.09,
+      "text": " bajar este número y ya no se le hagan llamadas. Muchas gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.456,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

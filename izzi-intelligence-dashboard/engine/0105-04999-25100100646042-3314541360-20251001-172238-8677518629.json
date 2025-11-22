@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100646042-3314541360-20251001-172238-8677518629.WAV",
+  "file_name": "0105-04999-25100100646042-3314541360-20251001-172238-8677518629.WAV",
+  "base_id": "0105-04999-25100100646042-3314541360-20251001-172238-8677518629",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para... espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, ¿te interesa comunicarse en la área de contactación de Easy? La tiene Vani Daniela, ¿con quién tengo el uso? ¿Bueno? ¿Bueno? ¿Bueno, quién hablo? Se está comunicando en la área de contactación de Easy. ¿Te interesa andar a un servicio, telefonía o abrir internet?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.52,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.52,
+      "end": 17.12,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.12,
+      "end": 22.88,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.88,
+      "end": 32.84,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.84,
+      "end": 36.88,
+      "text": " Presiona uno para... espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.71,
+      "end": 44.59,
+      "text": " Hola, ¿qué tal? Buenas tardes, ¿te interesa comunicarse en la área de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.59,
+      "end": 50.59,
+      "text": " contactación de Easy? La tiene Vani Daniela, ¿con quién tengo el uso?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.59,
+      "end": 61.1,
+      "text": " ¿Bueno? ¿Bueno? ¿Bueno, quién hablo? Se está comunicando en la área de contactación de Easy.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.1,
+      "end": 65.58,
+      "text": " ¿Te interesa andar a un servicio, telefonía o abrir internet?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.844,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

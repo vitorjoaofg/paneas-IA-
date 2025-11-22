@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100100267647-5544389912-20251001-122744-5577099815.WAV",
+  "file_name": "0105-04999-25100100267647-5544389912-20251001-122744-5577099815.WAV",
+  "base_id": "0105-04999-25100100267647-5544389912-20251001-122744-5577099815",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skull Sports, desde 350 pesos al primer mes? Y si, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Siento, no he entendido tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, claro. Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de Promociones de IZI. ¿Con quién tiene el gusto? Con Edo y Mendoza. Edo y Mendoza. Actualmente no cuenta con ningún servicio de IZI, ¿va? No, los IZI baja. Ah, ok, ok, entiendo. Mira, le comento que hoy tenemos una gran variedad de promociones. No sé si le interesaría aprobar alguna de nuestras promociones. Por ahorita no, porque lo que pasa es que tuve un problema familiar, y ya ando muy atallado entonces. Oh, que entiendo. Bueno, muchas gracias que tengas una excelente tarde. Igualmente te loco.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.11,
+      "end": 10.31,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skull Sports, desde 350 pesos al primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.31,
+      "end": 19.11,
+      "text": " Y si, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 19.11,
+      "end": 30.22,
+      "text": " Siento, no he entendido tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 30.42,
+      "end": 41.77,
+      "text": " Hola, claro. Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de Promociones de IZI. ¿Con quién tiene el gusto?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 41.77,
+      "end": 43.83,
+      "text": " Con Edo y Mendoza.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.83,
+      "end": 47.96,
+      "text": " Edo y Mendoza. Actualmente no cuenta con ningún servicio de IZI, ¿va?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.96,
+      "end": 50.6,
+      "text": " No, los IZI baja.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.6,
+      "end": 59.86,
+      "text": " Ah, ok, ok, entiendo. Mira, le comento que hoy tenemos una gran variedad de promociones. No sé si le interesaría aprobar alguna de nuestras promociones.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.06,
+      "end": 68.3,
+      "text": " Por ahorita no, porque lo que pasa es que tuve un problema familiar, y ya ando muy atallado entonces.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.3,
+      "end": 72.75,
+      "text": " Oh, que entiendo. Bueno, muchas gracias que tengas una excelente tarde.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.75,
+      "end": 74.75,
+      "text": " Igualmente te loco.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

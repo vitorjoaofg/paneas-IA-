@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100300662200-5544389922-20251003-154716-5557819532.WAV",
+  "file_name": "0105-04965-25100300662200-5544389922-20251003-154716-5557819532.WAV",
+  "base_id": "0105-04965-25100300662200-5544389922-20251003-154716-5557819532",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. ¿Señorita, es para una contratación? No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento por favor. ¿Te interesa comunicar al área de contrataciones de Easy, con quien tengo el uso? Ay, señorita, no le entendí. Disculpeme, es que está muy mal mi teléfono. Se oye muy mal. ¿Se está comunicando al área de contrataciones de Easy? ¿Te está interesando algún servicio, telefonía, móvil, Internet? No, no le entiendo. No le entiendo, señorita. Mejor voy a esperar que si me volvieran a comunicar. Gracias, señorita.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 31.99,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.99,
+      "end": 38.76,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. ¿Señorita, es",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.76,
+      "end": 45.35,
+      "text": " para una contratación? No recibo tu respuesta. Por favor, presione 1 para",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.35,
+      "end": 50.91,
+      "text": " conocer nuestras promociones o 2 para terminar la llamada. Espera un momento",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.91,
+      "end": 59.78,
+      "text": " por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.78,
+      "end": 63.3,
+      "text": " ¿Te interesa comunicar al área de contrataciones de Easy, con quien tengo el",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.3,
+      "end": 69.9,
+      "text": " uso? Ay, señorita, no le entendí. Disculpeme, es que está muy mal mi",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.9,
+      "end": 76.58,
+      "text": " teléfono. Se oye muy mal. ¿Se está comunicando al área de",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.58,
+      "end": 79.42,
+      "text": " contrataciones de Easy? ¿Te está interesando algún servicio, telefonía,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 79.42,
+      "end": 87.68,
+      "text": " móvil, Internet? No, no le entiendo. No le entiendo, señorita. Mejor voy a",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 87.68,
+      "end": 92.6,
+      "text": " esperar que si me volvieran a comunicar. Gracias, señorita.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.28,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}
