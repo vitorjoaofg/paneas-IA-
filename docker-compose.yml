@@ -41,6 +41,7 @@ services:
       - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
       - GOOGLE_REDIRECT_URI=${GOOGLE_REDIRECT_URI}
       - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - OCR_HOST=ocr-proxy
     volumes:
       - type: bind
         source: /srv/models
@@ -436,19 +437,20 @@ services:
     networks:
       - stack-network
 
-  ocr:
+  ocr-gpu0:
     build: ./ocr
-    container_name: stack-ocr
+    container_name: stack-ocr-gpu0
     restart: unless-stopped
     runtime: nvidia
     gpus:
-      - device_ids: ['2']
+      - device_ids: ['0']
     environment:
       - CUDA_VISIBLE_DEVICES=0
       - USE_TENSORRT=true
       - FALLBACK_TO_CPU=true
       - MODELS_DIR=/models
-      - NVIDIA_VISIBLE_DEVICES=2
+      - OCR_MAX_CONCURRENCY=2
+      - NVIDIA_VISIBLE_DEVICES=0
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
       - /srv/models:/models:ro
@@ -457,13 +459,121 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['2']
+              device_ids: ['0']
               capabilities: [gpu]
+    command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "9004", "--proxy-headers", "--workers", "1"]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9004/health"]
       interval: 15s
-      timeout: 10s
+      timeout: 60s
       retries: 3
+    networks:
+      - stack-network
+
+  ocr-gpu1:
+    build: ./ocr
+    container_name: stack-ocr-gpu1
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - USE_TENSORRT=true
+      - FALLBACK_TO_CPU=true
+      - MODELS_DIR=/models
+      - OCR_MAX_CONCURRENCY=2
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "9004", "--proxy-headers", "--workers", "1"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9004/health"]
+      interval: 15s
+      timeout: 60s
+      retries: 3
+    networks:
+      - stack-network
+
+  ocr-gpu0b:
+    build: ./ocr
+    container_name: stack-ocr-gpu0b
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['0']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - USE_TENSORRT=true
+      - FALLBACK_TO_CPU=true
+      - MODELS_DIR=/models
+      - OCR_MAX_CONCURRENCY=2
+      - NVIDIA_VISIBLE_DEVICES=0
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "9004", "--proxy-headers", "--workers", "1"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9004/health"]
+    networks:
+      - stack-network
+
+  ocr-gpu1b:
+    build: ./ocr
+    container_name: stack-ocr-gpu1b
+    restart: unless-stopped
+    runtime: nvidia
+    gpus:
+      - device_ids: ['1']
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - USE_TENSORRT=true
+      - FALLBACK_TO_CPU=true
+      - MODELS_DIR=/models
+      - OCR_MAX_CONCURRENCY=2
+      - NVIDIA_VISIBLE_DEVICES=1
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /srv/models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "9004", "--proxy-headers", "--workers", "1"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9004/health"]
+    networks:
+      - stack-network
+
+  ocr-proxy:
+    image: nginx:alpine
+    container_name: stack-ocr-proxy
+    restart: unless-stopped
+    volumes:
+      - ./infra/ocr/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - ocr-gpu0
+      - ocr-gpu1
+    ports:
+      - "9004:9004"
     networks:
       - stack-network
 

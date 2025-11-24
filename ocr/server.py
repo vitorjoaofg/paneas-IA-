@@ -5,6 +5,7 @@ import time
 import uuid
 from pathlib import Path
 from typing import Any, Dict, List, Sequence
+import asyncio
 
 import cv2
 import numpy as np
@@ -22,11 +23,13 @@ MODELS_DIR = Path(os.environ.get("MODELS_DIR", "/models"))
 CACHE_DIR = Path(os.environ.get("OCR_CACHE_DIR", "/tmp/paddleocr"))
 USE_TENSORRT = os.environ.get("USE_TENSORRT", "true").lower() == "true"
 FALLBACK_CPU = os.environ.get("FALLBACK_TO_CPU", "true").lower() == "true"
+MAX_CONCURRENCY = int(os.environ.get("OCR_MAX_CONCURRENCY", "2"))
 
 LOGGER = structlog.get_logger(__name__)
 
 app = FastAPI(title="OCR Service", version="1.1.0")
 Instrumentator().instrument(app).expose(app, include_in_schema=False)
+OCR_SEMAPHORE = asyncio.Semaphore(MAX_CONCURRENCY)
 
 
 class OCRService:
@@ -285,14 +288,15 @@ async def ocr_endpoint(
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
     try:
-        result = service.process(
-            contents,
-            language_list,
-            output_format,
-            prefer_gpu=use_gpu,
-            deskew=deskew,
-            denoise=denoise,
-        )
+        async with OCR_SEMAPHORE:
+            result = service.process(
+                contents,
+                language_list,
+                output_format,
+                prefer_gpu=use_gpu,
+                deskew=deskew,
+                denoise=denoise,
+            )
     except Exception as exc:  # noqa: BLE001
         LOGGER.error("ocr_processing_failed", error=str(exc))
         raise HTTPException(status_code=503, detail="OCR processing failed") from exc
