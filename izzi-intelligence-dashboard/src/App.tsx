@@ -3148,7 +3148,6 @@ function ReportTab({
           statusDistribution={executiveMetrics.statusDistribution}
           divergenceDonut={executiveMetrics.divergenceDonut}
           timeline={executiveMetrics.timeline}
-          heatmap={executiveMetrics.heatmap}
         />
       </Card>
 

@@ -12,11 +12,8 @@ import {
   LineChart,
   Line,
   Legend,
-  ScatterChart,
-  Scatter,
-  ZAxis,
 } from "recharts";
-import type { StatusDistributionItem, DivergenceDonutItem, TimelinePoint, HeatmapPoint } from "../../utils/executiveMetrics";
+import type { StatusDistributionItem, DivergenceDonutItem, TimelinePoint } from "../../utils/executiveMetrics";
 import { useTranslate } from "../../i18n";
 import { formatNumber, formatPercent } from "../../utils/numberFormat";
 
@@ -24,7 +21,6 @@ interface ExecutiveChartsProps {
   statusDistribution: StatusDistributionItem[];
   divergenceDonut: DivergenceDonutItem[];
   timeline: TimelinePoint[];
-  heatmap: HeatmapPoint[];
 }
 
 const donutColors = {
@@ -36,22 +32,10 @@ export const ExecutiveCharts = ({
   statusDistribution,
   divergenceDonut,
   timeline,
-  heatmap,
 }: ExecutiveChartsProps) => {
   const t = useTranslate();
 
   const donutData = divergenceDonut.map((item) => ({ label: item.label, value: item.value }));
-
-  const engagementBuckets = Array.from(new Set(heatmap.map((item) => item.engagementBucket))).sort();
-  const sentimentBuckets = Array.from(new Set(heatmap.map((item) => item.sentimentBucket))).sort();
-
-  const heatmapData = heatmap.map((item) => ({
-    x: engagementBuckets.indexOf(item.engagementBucket),
-    y: sentimentBuckets.indexOf(item.sentimentBucket),
-    value: item.value,
-    engagementLabel: item.engagementBucket,
-    sentimentLabel: item.sentimentBucket,
-  }));
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
@@ -156,51 +140,6 @@ export const ExecutiveCharts = ({
           </ResponsiveContainer>
         </div>
       </div>
-
-      {heatmapData.length > 0 && (
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-inner backdrop-blur lg:col-span-2">
-          <h4 className="text-sm font-semibold text-slate-100">{t("Heatmap Engajamento × Sentimento", "Heatmap Compromiso × Sentimiento")}</h4>
-          <p className="text-xs text-slate-400">
-            {t("Identifique padrões combinando buckets de engajamento e sentimento.", "Identifique patrones combinando buckets de compromiso y sentimiento.")}
-          </p>
-          <div className="mt-3 h-72">
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-                <CartesianGrid stroke="rgba(255,255,255,0.1)" />
-                <XAxis
-                  type="number"
-                  dataKey="x"
-                  tickFormatter={(value) => engagementBuckets[value] ?? ""}
-                  ticks={engagementBuckets.map((_, idx) => idx)}
-                  stroke="#cbd5f5"
-                />
-                <YAxis
-                  type="number"
-                  dataKey="y"
-                  tickFormatter={(value) => sentimentBuckets[value] ?? ""}
-                  ticks={sentimentBuckets.map((_, idx) => idx)}
-                  stroke="#cbd5f5"
-                />
-                <ZAxis type="number" dataKey="value" range={[80, 400]} />
-                <Tooltip
-                  cursor={{ strokeDasharray: "3 3" }}
-                  contentStyle={{
-                    background: "rgba(12,16,26,0.9)",
-                    borderRadius: 12,
-                    border: "1px solid rgba(148,163,184,0.4)",
-                    color: "#E2E8F0",
-                  }}
-                  formatter={(value: number, _name: string, payload) => [
-                    `${formatNumber(value)} ${t("chamadas", "llamadas")}`,
-                    `${t("Engajamento", "Compromiso")}: ${payload?.payload?.engagementLabel} • ${t("Sentimento", "Sentimiento")}: ${payload?.payload?.sentimentLabel}`,
-                  ]}
-                />
-                <Scatter data={heatmapData} fill="#a855f7" />
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
