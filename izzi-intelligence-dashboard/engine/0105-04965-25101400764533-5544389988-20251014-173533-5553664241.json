@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400764533-5544389988-20251014-173533-5553664241.WAV",
+  "file_name": "0105-04965-25101400764533-5544389988-20251014-173533-5553664241.WAV",
+  "base_id": "0105-04965-25101400764533-5544389988-20251014-173533-5553664241",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Incy, es posible. Te interesa un asesor de recuenta esperando. Marque 1. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular y telólogo registrados en su contrato. Si usted solicitó una oferta de data de red magisterial, por favor, marque 3.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 13.3,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Incy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " Te interesa un asesor de recuenta esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 18.03,
+      "text": " Marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.03,
+      "end": 21.53,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.53,
+      "end": 29.86,
+      "text": " Recuerde tener a la mano su RTC, número de celular y telólogo registrados en su contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.86,
+      "end": 35.36,
+      "text": " Si usted solicitó una oferta de data de red magisterial, por favor, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.18,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

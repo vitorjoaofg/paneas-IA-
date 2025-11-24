@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900737275-5544389987-20251029-173514-5590173482.WAV",
+  "file_name": "0105-04965-25102900737275-5544389987-20251029-173514-5590173482.WAV",
+  "base_id": "0105-04965-25102900737275-5544389987-20251029-173514-5590173482",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Un momento, por favor. Por favor, hable o pulse uno para sí o dos para no. Por favor, hable o pulse uno para sí o dos para no.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.86,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.86,
+      "end": 15.66,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.66,
+      "end": 21.7,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.7,
+      "end": 30.86,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.86,
+      "end": 31.86,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 100.16,
+      "end": 107.16,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 107.16,
+      "end": 116.16,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 120.312,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

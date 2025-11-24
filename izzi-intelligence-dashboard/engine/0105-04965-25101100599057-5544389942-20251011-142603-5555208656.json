@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100599057-5544389942-20251011-142603-5555208656.WAV",
+  "file_name": "0105-04965-25101100599057-5544389942-20251011-142603-5555208656.WAV",
+  "base_id": "0105-04965-25101100599057-5544389942-20251011-142603-5555208656",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Hola, muy buen día. Mi nombre es Brice Lovette, parte de Easy. ¿Por qué me cuelga? No.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 3.41,
+      "end": 10.17,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.17,
+      "end": 14.81,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.81,
+      "end": 16.81,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.81,
+      "end": 17.81,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.81,
+      "end": 19.81,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.81,
+      "end": 26.42,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.42,
+      "end": 28.82,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.82,
+      "end": 30.82,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.82,
+      "end": 35.82,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.82,
+      "end": 41.57,
+      "text": " No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.57,
+      "end": 49.46,
+      "text": " Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.46,
+      "end": 51.46,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.46,
+      "end": 60.76,
+      "text": " Hola, buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.76,
+      "end": 63.76,
+      "text": " Hola, muy buen día. Mi nombre es Brice Lovette, parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 63.76,
+      "end": 75.4,
+      "text": " ¿Por qué me cuelga? No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 136.836,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

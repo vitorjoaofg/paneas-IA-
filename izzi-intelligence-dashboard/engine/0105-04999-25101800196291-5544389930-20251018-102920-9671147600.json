@@ -1,0 +1,645 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101800196291-5544389930-20251018-102920-9671147600.WAV",
+  "file_name": "0105-04999-25101800196291-5544389930-20251018-102920-9671147600.WAV",
+  "base_id": "0105-04999-25101800196291-5544389930-20251018-102920-9671147600",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o púlpile. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. A ver, 1. Espera un momento, por favor. Lo siento, no quiero. Sí, bueno, buenos días. Me presento, mi nombre es Daniel, me estoy comunicando por parte de la compañía de Easy. ¿En qué lo puedo apoyar? Pues me llegó una llamada, joven, que si deseo Easy, pero ¿cómo le hacemos si vivo en San Cristóbal de las Casas Chiapas? Creo que nada más sería revisar lo que es la cobertura, señor. A ver, fíjale. Sí, claro que sí. ¿Me podría apoyar con lo que viene siendo nombre de la calle, por favor? Prolongación Baja California, 48. Baja California, 48. ¿Colonia? San Ramón. San Ramón. ¿Usted sabe código postal? Es 29240. Ok. Ok. ¿Alguna referencia? ¿Cómo de qué, joven? No sé, ¿algun local, alguna tienda, algún edificio? Pues estoy en una cuadra de un mercado. ¿Cómo se llama el mercado? El mercado se llama igual, San Ramón. San Ramón, ok. Sí. ¿Las entrecalles cuáles son? Es, o sea, te digo, es Aguascalientes y Puebla. Aguascalientes y Puebla. San Cristóbal de las Casas, ¿verdad, me dijo? Sí. Por ejemplo, ¿aquí la ubicación? Bueno, me mandó. Ahí cerca hay, por ejemplo, una Walmart. Bueno, cerca como tal, ha de estar como unos 2 kilómetros. Ah, ok. Ah, ok, ya ubiqué la entrecalla Aguascalientes. Entonces la entrecalla es Aguascalientes me dice y Puebla. Ah, ok, ya, ya ubiqué. Sí. Ya ubiqué. Hay una, bueno, una cuadra antes. Creo que dos cuadras antes había una iglesia. Ajá, eso fue como a unas tres cuadras más o menos. Ajá, ok. Ya encontramos aquí lo que es el domicilio. Vamos a rezar la cobertura. ¿Siempre ha estado en estado de domicilio? Es decir, ¿nunca ha tenido AC usted? O sí. No, nunca. Yo manejo con AMEX porque es la opción que hay. Ok. Ok, aquí en esta zona únicamente me sale cobertura para puro servicio de video, señor. ¿Cómo es el video? Sí, para cable pues, programación, canales. Ah, internet no. Internet no. Ah, bueno, ok, pues gracias. No se preocupe, lo agradezco, hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.44,
+      "end": 18.64,
+      "text": " Por favor, hable o púlpile.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.64,
+      "end": 26.22,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.22,
+      "end": 31.22,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.66,
+      "end": 33.7,
+      "text": " A ver, 1.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.7,
+      "end": 35.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.7,
+      "end": 41.98,
+      "text": " Lo siento, no quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.98,
+      "end": 46.23,
+      "text": " Sí, bueno, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.23,
+      "end": 50.23,
+      "text": " Me presento, mi nombre es Daniel, me estoy comunicando por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.23,
+      "end": 52.62,
+      "text": " ¿En qué lo puedo apoyar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.62,
+      "end": 58.87,
+      "text": " Pues me llegó una llamada, joven, que si deseo Easy, pero ¿cómo le hacemos si vivo en San Cristóbal de las Casas Chiapas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 58.87,
+      "end": 63.87,
+      "text": " Creo que nada más sería revisar lo que es la cobertura, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 63.87,
+      "end": 66.0,
+      "text": " A ver, fíjale.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 66.44,
+      "end": 69.43,
+      "text": " Sí, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 69.43,
+      "end": 75.98,
+      "text": " ¿Me podría apoyar con lo que viene siendo nombre de la calle, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 75.98,
+      "end": 83.09,
+      "text": " Prolongación Baja California, 48.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 83.09,
+      "end": 86.44,
+      "text": " Baja California, 48.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 86.44,
+      "end": 88.73,
+      "text": " ¿Colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 88.73,
+      "end": 91.34,
+      "text": " San Ramón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 91.34,
+      "end": 93.34,
+      "text": " San Ramón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 93.34,
+      "end": 96.07,
+      "text": " ¿Usted sabe código postal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 96.07,
+      "end": 100.07,
+      "text": " Es 29240.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 101.34,
+      "end": 107.7,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 107.7,
+      "end": 115.55,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 115.55,
+      "end": 117.55,
+      "text": " ¿Alguna referencia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 117.55,
+      "end": 120.67,
+      "text": " ¿Cómo de qué, joven?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 120.67,
+      "end": 124.67,
+      "text": " No sé, ¿algun local, alguna tienda, algún edificio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 124.67,
+      "end": 128.7,
+      "text": " Pues estoy en una cuadra de un mercado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 128.7,
+      "end": 130.86,
+      "text": " ¿Cómo se llama el mercado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 130.86,
+      "end": 133.86,
+      "text": " El mercado se llama igual, San Ramón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 133.86,
+      "end": 135.86,
+      "text": " San Ramón, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 135.86,
+      "end": 137.86,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 137.86,
+      "end": 141.05,
+      "text": " ¿Las entrecalles cuáles son?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 141.49,
+      "end": 154.47,
+      "text": " Es, o sea, te digo, es Aguascalientes y Puebla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 154.47,
+      "end": 156.47,
+      "text": " Aguascalientes y Puebla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 156.47,
+      "end": 162.67,
+      "text": " San Cristóbal de las Casas, ¿verdad, me dijo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 162.67,
+      "end": 163.67,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 163.67,
+      "end": 165.67,
+      "text": " Por ejemplo, ¿aquí la ubicación?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 165.67,
+      "end": 167.67,
+      "text": " Bueno, me mandó.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 167.67,
+      "end": 169.67,
+      "text": " Ahí cerca hay, por ejemplo, una Walmart.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 169.67,
+      "end": 175.92,
+      "text": " Bueno, cerca como tal, ha de estar como unos 2 kilómetros.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 175.92,
+      "end": 179.71,
+      "text": " Ah, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 180.15,
+      "end": 184.15,
+      "text": " Ah, ok, ya ubiqué la entrecalla Aguascalientes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 184.15,
+      "end": 188.15,
+      "text": " Entonces la entrecalla es Aguascalientes me dice y Puebla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 188.15,
+      "end": 190.15,
+      "text": " Ah, ok, ya, ya ubiqué.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 190.15,
+      "end": 191.15,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 191.15,
+      "end": 194.56,
+      "text": " Ya ubiqué.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 194.56,
+      "end": 196.56,
+      "text": " Hay una, bueno, una cuadra antes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 196.56,
+      "end": 200.14,
+      "text": " Creo que dos cuadras antes había una iglesia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 200.14,
+      "end": 205.14,
+      "text": " Ajá, eso fue como a unas tres cuadras más o menos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 205.14,
+      "end": 208.19,
+      "text": " Ajá, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 208.19,
+      "end": 212.45,
+      "text": " Ya encontramos aquí lo que es el domicilio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 212.89,
+      "end": 214.89,
+      "text": " Vamos a rezar la cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 214.89,
+      "end": 217.89,
+      "text": " ¿Siempre ha estado en estado de domicilio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 217.89,
+      "end": 219.89,
+      "text": " Es decir, ¿nunca ha tenido AC usted?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 219.89,
+      "end": 220.89,
+      "text": " O sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 220.89,
+      "end": 222.89,
+      "text": " No, nunca.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 222.89,
+      "end": 226.11,
+      "text": " Yo manejo con AMEX porque es la opción que hay.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 226.11,
+      "end": 236.34,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 236.34,
+      "end": 240.4,
+      "text": " Ok, aquí en esta zona únicamente me sale cobertura",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 240.4,
+      "end": 243.72,
+      "text": " para puro servicio de video, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 243.72,
+      "end": 245.75,
+      "text": " ¿Cómo es el video?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 245.75,
+      "end": 250.87,
+      "text": " Sí, para cable pues, programación, canales.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 251.31,
+      "end": 253.31,
+      "text": " Ah, internet no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 253.31,
+      "end": 255.31,
+      "text": " Internet no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 255.31,
+      "end": 257.31,
+      "text": " Ah, bueno, ok, pues gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 257.31,
+      "end": 259.31,
+      "text": " No se preocupe, lo agradezco, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 259.31,
+      "end": 261.31,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 260.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

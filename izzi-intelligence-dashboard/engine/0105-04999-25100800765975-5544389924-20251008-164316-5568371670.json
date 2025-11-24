@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800765975-5544389924-20251008-164316-5568371670.WAV",
+  "file_name": "0105-04999-25100800765975-5544389924-20251008-164316-5568371670.WAV",
+  "base_id": "0105-04999-25100800765975-5544389924-20251008-164316-5568371670",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2 para terminar la llamada. Espera un momento, por favor. Contra ocasiones, Easy la atende Edgar, aunque tenga el gusto. No gana nada más.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 19.44,
+      "text": " Por favor, hable o pulse 1 para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.29,
+      "end": 28.89,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.89,
+      "end": 30.89,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.89,
+      "end": 35.89,
+      "text": " Presiona 1 para hablar con un asesor, o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.93,
+      "end": 50.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.45,
+      "end": 53.45,
+      "text": " Contra ocasiones, Easy la atende Edgar, aunque tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.45,
+      "end": 77.82,
+      "text": " No gana nada más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

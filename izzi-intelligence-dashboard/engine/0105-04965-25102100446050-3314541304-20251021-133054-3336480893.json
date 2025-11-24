@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100446050-3314541304-20251021-133054-3336480893.WAV",
+  "file_name": "0105-04965-25102100446050-3314541304-20251021-133054-3336480893.WAV",
+  "base_id": "0105-04965-25102100446050-3314541304-20251021-133054-3336480893",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 Mbps? Si conoces el número de la extensión a la que deseas llamar, digítelo ahora. De lo contrario, presione 0 para ser atendido por una operadora. No lo pienses más y cámbiate a Easy. ¿Te interesa? Uno es por llamar a Van Commando. Por favor, Américas, si conoces el número de la extensión a la que deseas llamar, digítelo ahora. De lo contrario, presione 0 para ser atendido. Por un momento, por favor. ¿Todavía sigue ahí? Gracias por llamar a Van Commultiva. Sucursal, Américas. Si conoces el número de la extensión a la que deseas llamar, digítelo ahora. De lo contrario, presione 0 para ser atendido por una operadora.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 Mbps?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.8,
+      "text": " Si conoces el número de la extensión a la que deseas llamar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 9.1,
+      "text": " digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 9.1,
+      "end": 13.8,
+      "text": " De lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 13.8,
+      "end": 16.7,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.7,
+      "end": 17.9,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.9,
+      "end": 20.1,
+      "text": " Uno es por llamar a Van Commando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.1,
+      "end": 22.2,
+      "text": " Por favor, Américas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 22.2,
+      "end": 25.5,
+      "text": " si conoces el número de la extensión a la que deseas llamar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.5,
+      "end": 26.7,
+      "text": " digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 26.7,
+      "end": 29.9,
+      "text": " De lo contrario, presione 0 para ser atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 29.9,
+      "end": 34.32,
+      "text": " Por un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 34.32,
+      "end": 35.62,
+      "text": " ¿Todavía sigue ahí?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 35.62,
+      "end": 37.92,
+      "text": " Gracias por llamar a Van Commultiva.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 37.92,
+      "end": 39.92,
+      "text": " Sucursal, Américas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 39.92,
+      "end": 43.22,
+      "text": " Si conoces el número de la extensión a la que deseas llamar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 43.22,
+      "end": 44.42,
+      "text": " digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 44.42,
+      "end": 49.22,
+      "text": " De lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.836,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

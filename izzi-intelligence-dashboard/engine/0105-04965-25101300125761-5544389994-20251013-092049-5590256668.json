@@ -1,0 +1,51 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300125761-5544389994-20251013-092049-5590256668.WAV",
+  "file_name": "0105-04965-25101300125761-5544389994-20251013-092049-5590256668.WAV",
+  "base_id": "0105-04965-25101300125761-5544389994-20251013-092049-5590256668",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.26,
+      "end": 8.16,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.16,
+      "end": 15.38,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.38,
+      "end": 21.88,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.88,
+      "end": 31.58,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.792,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300486207-5556472204-20251013-143029-04896.WAV",
+  "file_name": "0105-04965-25101300486207-5556472204-20251013-143029-04896.WAV",
+  "base_id": "0105-04965-25101300486207-5556472204-20251013-143029-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Hola. ¿Qué tal? Buenas tardes. Gracias por comunicarse a la área de promociones de EasyMobile con quien tengo el gusto. Mi nombre es Salvador Lagunas, pero ¿sabe qué? Le hablo por lo siguiente. Porque ya estoy desesperado de que me estén marquen, marquen, marquen, marquen, marquen. No necesito los servicios. Yo los necesitaba. Yo me comunicaba con ustedes. Pero por favor, les pido de la manera más atenta, dejen de marcarme. Por favor, se los pido. Gracias. Claro, señor. Disculpe, es que tenga bonita tarde. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 11.7,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.7,
+      "end": 17.5,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.5,
+      "end": 23.5,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.5,
+      "end": 28.0,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.0,
+      "end": 33.5,
+      "text": " Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.5,
+      "end": 41.64,
+      "text": " Hola. ¿Qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.64,
+      "end": 45.14,
+      "text": " Gracias por comunicarse a la área de promociones de EasyMobile con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.14,
+      "end": 48.64,
+      "text": " Mi nombre es Salvador Lagunas, pero ¿sabe qué? Le hablo por lo siguiente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.64,
+      "end": 53.14,
+      "text": " Porque ya estoy desesperado de que me estén marquen, marquen, marquen, marquen, marquen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.14,
+      "end": 57.14,
+      "text": " No necesito los servicios. Yo los necesitaba. Yo me comunicaba con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.34,
+      "end": 60.84,
+      "text": " Pero por favor, les pido de la manera más atenta, dejen de marcarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 60.84,
+      "end": 62.84,
+      "text": " Por favor, se los pido. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 62.84,
+      "end": 64.84,
+      "text": " Claro, señor. Disculpe, es que tenga bonita tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.84,
+      "end": 65.84,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.248,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

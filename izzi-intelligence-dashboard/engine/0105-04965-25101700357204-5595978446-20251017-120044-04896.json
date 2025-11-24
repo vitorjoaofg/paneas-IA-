@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700357204-5595978446-20251017-120044-04896.WAV",
+  "file_name": "0105-04965-25101700357204-5595978446-20251017-120044-04896.WAV",
+  "base_id": "0105-04965-25101700357204-5595978446-20251017-120044-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. ¿Por favor? Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Gracias por llamar al Centro de Contratación de Easy. ¿Cómo le puedo ayudar? Buenas tardes. Buenas tardes. Sí, buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 17.4,
+      "text": " por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.4,
+      "end": 21.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.2,
+      "end": 24.2,
+      "text": " Un asesor te está esperando. ¿Por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.32,
+      "end": 37.82,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.82,
+      "end": 41.42,
+      "text": " Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.42,
+      "end": 49.66,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.66,
+      "end": 55.8,
+      "text": " Gracias por llamar al Centro de Contratación de Easy. ¿Cómo le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.8,
+      "end": 59.28,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 59.28,
+      "end": 65.55,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 65.55,
+      "end": 67.05,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.372,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

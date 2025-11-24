@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000130449-5540409219-20251010-085159-5551349338.WAV",
+  "file_name": "0105-04965-25101000130449-5540409219-20251010-085159-5551349338.WAV",
+  "base_id": "0105-04965-25101000130449-5540409219-20251010-085159-5551349338",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¡Buenos días! ¡Buenos días! ¡Buenos días! Saló, habla Eduardo Munguía aquí de Easy. ¿Con quién te ha gustado? ¿Con quién es de hablar? Está hablando a Cepsa, servicios integrales. Ah, ok. Es bueno, brindado aquí los servicios de Easy. Es para una promoción. Ah, no, no, no. Nosotros no tenemos decisiones sobre eso, son decisiones corporativas. Sí. No sé si, no sé si más bien podrían sacarnos de su directorio. Así es que lo reporto. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.07,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.07,
+      "end": 27.47,
+      "text": " momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.02,
+      "end": 35.02,
+      "text": " ¡Buenos días!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.02,
+      "end": 37.88,
+      "text": " ¡Buenos días!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.88,
+      "end": 42.6,
+      "text": " ¡Buenos días! Saló, habla Eduardo Munguía aquí de Easy. ¿Con quién te ha gustado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.6,
+      "end": 47.6,
+      "text": " ¿Con quién es de hablar? Está hablando a Cepsa, servicios integrales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.6,
+      "end": 53.73,
+      "text": " Ah, ok. Es bueno, brindado aquí los servicios de Easy. Es para una promoción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.73,
+      "end": 57.73,
+      "text": " Ah, no, no, no. Nosotros no tenemos decisiones sobre eso, son decisiones corporativas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.73,
+      "end": 58.73,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.73,
+      "end": 64.76,
+      "text": " No sé si, no sé si más bien podrían sacarnos de su directorio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.76,
+      "end": 67.76,
+      "text": " Así es que lo reporto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.76,
+      "end": 68.76,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 130.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

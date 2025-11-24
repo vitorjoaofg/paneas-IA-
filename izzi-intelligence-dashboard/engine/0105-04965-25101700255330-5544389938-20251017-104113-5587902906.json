@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700255330-5544389938-20251017-104113-5587902906.WAV",
+  "file_name": "0105-04965-25101700255330-5544389938-20251017-104113-5587902906.WAV",
+  "base_id": "0105-04965-25101700255330-5544389938-20251017-104113-5587902906",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno. Bueno, bueno, bueno. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Disculpe, ¿a dónde habló? Tu gusto, señorita. Mi nombre es Miriam Gonzaguera. Se comunica a la área de contrataciones de Easy, Internet, televisión por cable y telefonía celular. No sé si maneja el servicio con nosotros o con otra compañía. Ah, disculpe. Lo que pasa es que como contestó un niño, es que por eso lo recalque. Pero disculpe. Muy buenos días. Buenos días. Si usa usted, no sé con qué compañía tiene usted su servicio. Le podemos corroborar cobertura y le puedo brindar la información de los paquetes que tenemos para usted. No, señorita. No sé con qué compañía utilice su servicio. No, señorita. Muchas gracias. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.0,
+      "end": 23.5,
+      "text": " Bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.5,
+      "end": 37.01,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.01,
+      "end": 101.76,
+      "text": " Disculpe, ¿a dónde habló?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 101.76,
+      "end": 111.2,
+      "text": " Tu gusto, señorita. Mi nombre es Miriam Gonzaguera. Se comunica a la área de contrataciones de Easy, Internet, televisión por cable y telefonía celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 111.2,
+      "end": 114.2,
+      "text": " No sé si maneja el servicio con nosotros o con otra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 114.2,
+      "end": 125.2,
+      "text": " Ah, disculpe. Lo que pasa es que como contestó un niño, es que por eso lo recalque. Pero disculpe. Muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 125.2,
+      "end": 129.23,
+      "text": " Buenos días. Si usa usted, no sé con qué compañía tiene usted su servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 129.23,
+      "end": 133.23,
+      "text": " Le podemos corroborar cobertura y le puedo brindar la información de los paquetes que tenemos para usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 133.23,
+      "end": 134.23,
+      "text": " No, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 134.23,
+      "end": 136.23,
+      "text": " No sé con qué compañía utilice su servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 136.23,
+      "end": 138.23,
+      "text": " No, señorita. Muchas gracias. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 138.23,
+      "end": 140.23,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 141.444,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600502206-5540409220-20251016-140921-5555447452.WAV",
+  "file_name": "0105-04965-25101600502206-5540409220-20251016-140921-5555447452.WAV",
+  "base_id": "0105-04965-25101600502206-5540409220-20251016-140921-5555447452",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable un poco más. Espera un momento, por favor. Mi definición no es correcta. 2613. Si quise comunicarse con el área de atención al cliente, digite 114. Para comunicarse con la operadora, digite 0. Para repetir el menú, digite 7. ¿Vos pueden estar vez?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " Por favor, hable un poco más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.0,
+      "end": 28.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.06,
+      "end": 33.35,
+      "text": " Mi definición no es correcta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.35,
+      "end": 34.35,
+      "text": " 2613.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.35,
+      "end": 38.35,
+      "text": " Si quise comunicarse con el área de atención al cliente, digite 114.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.35,
+      "end": 41.35,
+      "text": " Para comunicarse con la operadora, digite 0.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.35,
+      "end": 43.35,
+      "text": " Para repetir el menú, digite 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.35,
+      "end": 66.51,
+      "text": " ¿Vos pueden estar vez?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

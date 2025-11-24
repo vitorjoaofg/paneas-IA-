@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700338358-5544389940-20251017-114603-5551357094.WAV",
+  "file_name": "0105-04965-25101700338358-5544389940-20251017-114603-5551357094.WAV",
+  "base_id": "0105-04965-25101700338358-5544389940-20251017-114603-5551357094",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, ¡a- Sí, bueno. Espera un momento, por favor. Bienvenido a Sky Sports. Bienvenido a Sky Sports. Bienvenido a Sky Sports.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.24,
+      "end": 9.48,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.48,
+      "end": 14.08,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.08,
+      "end": 15.68,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.68,
+      "end": 16.68,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.68,
+      "end": 19.2,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.2,
+      "end": 20.2,
+      "text": " Por favor, ¡a-",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.2,
+      "end": 27.28,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.28,
+      "end": 28.68,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.68,
+      "end": 29.68,
+      "text": " Bienvenido a Sky Sports.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 29.68,
+      "end": 30.68,
+      "text": " Bienvenido a Sky Sports.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.68,
+      "end": 30.7,
+      "text": " Bienvenido a Sky Sports.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.436,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

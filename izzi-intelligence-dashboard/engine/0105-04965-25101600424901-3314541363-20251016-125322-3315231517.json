@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600424901-3314541363-20251016-125322-3315231517.WAV",
+  "file_name": "0105-04965-25101600424901-3314541363-20251016-125322-3315231517.WAV",
+  "base_id": "0105-04965-25101600424901-3314541363-20251016-125322-3315231517",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes. Hola, ¿qué tal, señorita? Arlandina, estamos comunicándonos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada, disculpe? Oye, me están marcando y marcando, pero ¿cómo hago para que ya no me marquen? Porque es el teléfono de casa y es muy tedioso estar contestándome y que sea una contestadora. No, en este caso, señorita, una disculpa. Yo me encargaría de realizarle la eliminación del número. De hecho, era nada más para la oferta del servicio. Se supone que nada más llegaría una llamada. Igual yo haría la notación para que ya nos estén comunicándose. Sí, por favor. A partir de la tarde de hoy. Sí, a partir de la tarde 2, señorita, ya no debería recibir ninguna llamada. Igual una disculpa y que toda una excelente tarde, señorita.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 20.0,
+      "text": " Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.86,
+      "end": 23.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.93,
+      "end": 31.09,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.12,
+      "end": 33.12,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.12,
+      "end": 39.12,
+      "text": " Hola, ¿qué tal, señorita? Arlandina, estamos comunicándonos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.12,
+      "end": 48.12,
+      "text": " Oye, me están marcando y marcando, pero ¿cómo hago para que ya no me marquen? Porque es el teléfono de casa y es muy tedioso estar contestándome y que sea una contestadora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.12,
+      "end": 57.12,
+      "text": " No, en este caso, señorita, una disculpa. Yo me encargaría de realizarle la eliminación del número. De hecho, era nada más para la oferta del servicio. Se supone que nada más llegaría una llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.12,
+      "end": 60.12,
+      "text": " Igual yo haría la notación para que ya nos estén comunicándose.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.12,
+      "end": 61.12,
+      "text": " Sí, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.12,
+      "end": 62.12,
+      "text": " A partir de la tarde de hoy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.12,
+      "end": 68.12,
+      "text": " Sí, a partir de la tarde 2, señorita, ya no debería recibir ninguna llamada. Igual una disculpa y que toda una excelente tarde, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.568,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

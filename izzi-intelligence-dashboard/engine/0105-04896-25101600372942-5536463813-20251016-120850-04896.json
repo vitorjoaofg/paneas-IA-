@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25101600372942-5536463813-20251016-120850-04896.WAV",
+  "file_name": "0105-04896-25101600372942-5536463813-20251016-120850-04896.WAV",
+  "base_id": "0105-04896-25101600372942-5536463813-20251016-120850-04896",
+  "transcription": "Hola, somos Izzy, y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor. Espera un momento, por favor. ¿Te ha hola buen día?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.58,
+      "text": " Hola, somos Izzy, y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.58,
+      "end": 7.18,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.18,
+      "end": 8.18,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.18,
+      "end": 10.38,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 10.38,
+      "end": 12.38,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.52,
+      "end": 22.52,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.52,
+      "end": 30.96,
+      "text": " ¿Te ha hola buen día?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.904,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

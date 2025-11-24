@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700589019-5544389927-20251027-151759-5556224821.WAV",
+  "file_name": "0105-04965-25102700589019-5544389927-20251027-151759-5556224821.WAV",
+  "base_id": "0105-04965-25102700589019-5544389927-20251027-151759-5556224821",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Lo hablamos desde compañía Easy. ¿Qué puedo ayudarle?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.54,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.54,
+      "end": 19.04,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.04,
+      "end": 21.04,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.04,
+      "end": 26.04,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.04,
+      "end": 34.83,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.87,
+      "end": 36.87,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.87,
+      "end": 39.87,
+      "text": " Lo hablamos desde compañía Easy. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 39.276,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

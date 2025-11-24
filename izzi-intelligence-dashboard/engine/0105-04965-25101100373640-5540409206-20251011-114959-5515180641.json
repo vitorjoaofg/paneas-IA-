@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100373640-5540409206-20251011-114959-5515180641.WAV",
+  "file_name": "0105-04965-25101100373640-5540409206-20251011-114959-5515180641.WAV",
+  "base_id": "0105-04965-25101100373640-5540409206-20251011-114959-5515180641",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Buenos días, se comunica el servicio Easy con quien tengo el gusto. Con la señorita Flor, ¿su nombre es Flor? Dígame su nombre y ahora sí que este ¿qué duda tiene del servicio Easy? Voy, conozco. Bueno, buenos días Easy, ¿de acuerdo? Bueno, se colgó.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 8.8,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.8,
+      "end": 16.98,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.98,
+      "end": 18.46,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.46,
+      "end": 24.84,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.84,
+      "end": 28.9,
+      "text": " un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.9,
+      "end": 30.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.59,
+      "end": 46.5,
+      "text": " Buenos días, se comunica el servicio Easy con quien tengo el gusto. Con la señorita Flor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.5,
+      "end": 51.59,
+      "text": " ¿su nombre es Flor? Dígame su nombre y ahora sí que este ¿qué duda tiene del",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.59,
+      "end": 52.59,
+      "text": " servicio Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.66,
+      "end": 54.66,
+      "text": " Voy, conozco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.66,
+      "end": 73.31,
+      "text": " Bueno, buenos días Easy, ¿de acuerdo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.31,
+      "end": 75.86,
+      "text": " Bueno, se colgó.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 89.208,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

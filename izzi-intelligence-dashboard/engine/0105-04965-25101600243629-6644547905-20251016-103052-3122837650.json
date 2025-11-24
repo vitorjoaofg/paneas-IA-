@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600243629-6644547905-20251016-103052-3122837650.WAV",
+  "file_name": "0105-04965-25101600243629-6644547905-20251016-103052-3122837650.WAV",
+  "base_id": "0105-04965-25101600243629-6644547905-20251016-103052-3122837650",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un profesor te está esperando! ¡Por favor! ¡Habla! Sí, está bien. Espera un momento, por favor. Hola, ¿qué tal? No estoy comunicando por parte de la compañía Easy. Este es el área de contrataciones. ¿Con quién tengo el gusto? Dicen que venden internet. Sí, ¿qué tal? Buenas tardes. Me estoy comunicando por parte de Easy. Mi nombre es Leonardo García. Les marcó una grabadora dándoles algunas promociones de nuestra compañía. Nos preguntábamos si estaban interesados en alguna para poderles generar algún contrato de televisión, internet. Gracias, ahorita no. Es que ya tengo. Gracias. Gracias por su tiempo. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.28,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.28,
+      "end": 21.28,
+      "text": " profesor te está esperando! ¡Por favor! ¡Habla!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.28,
+      "end": 29.17,
+      "text": " Sí, está bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.17,
+      "end": 36.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.74,
+      "end": 40.66,
+      "text": " Hola, ¿qué tal? No estoy comunicando por parte de la compañía Easy. Este es",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.74,
+      "end": 42.74,
+      "text": " el área de contrataciones. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.74,
+      "end": 48.61,
+      "text": " Dicen que venden internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.61,
+      "end": 55.39,
+      "text": " Sí, ¿qué tal? Buenas tardes. Me estoy comunicando por parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.39,
+      "end": 57.39,
+      "text": " Mi nombre es Leonardo García.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.39,
+      "end": 61.39,
+      "text": " Les marcó una grabadora dándoles algunas promociones de nuestra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.39,
+      "end": 65.39,
+      "text": " Nos preguntábamos si estaban interesados en alguna para poderles generar algún",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.39,
+      "end": 67.39,
+      "text": " contrato de televisión, internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.39,
+      "end": 72.9,
+      "text": " Gracias, ahorita no. Es que ya tengo. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 72.9,
+      "end": 74.93,
+      "text": " Gracias por su tiempo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 74.93,
+      "end": 76.93,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 141.732,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400693119-3314541373-20251024-165915-3345058279.WAV",
+  "file_name": "0105-04965-25102400693119-3314541373-20251024-165915-3345058279.WAV",
+  "base_id": "0105-04965-25102400693119-3314541373-20251024-165915-3345058279",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, Vix. Hola, gracias. Mi cariño, hola de Contentaciones X y la tienda Alan. ¿Qué te da el gusto? Con Edgar Correa. Me gusta mucho la llamada que nosotros hacemos. Es para presentarle beneficios. ¿Usted cuenta con servicio Easy? No, nada más. Voy a checar contigo. Si quieren servicio en la colonia Los Tréboles y en la colonia Camporreal en Totopal. ¿Me puede apoyar con su código postal, por favor? 45-200. ¿45-200, verdad? Sí. ¿Me puede apoyar con su calle, por favor? Déjame lo checo que no me lo sale el domicilio. Sí, claro, no hay problema. ¿La colonia sabe cuál es? Los Tréboles. Los Tréboles. Es calle Progreso. Número 2121, local 1. Está por una glorieta, ¿verdad? Sí, está en una glorieta y... ¿Para que Los Tréboles? Está parte de Los Tréboles y está más arriba. Pasa esa avenida Avivao y llegas a una calle en el obre sentido que... Ajá. Pero está casi en la pura esquina de esa calle. Está por Providencia y del Saber, ¿verdad? Es paralela a Providencia a Progreso. Bueno, no sé si tiene Providencia también a la misma calle, porque son circuitos. OK. En un momento le confirmamos si tenemos cobertura, ¿de acuerdo? Gracias. Sigo con usted. Gracias. Sí caballero, aún en la calle Progreso todavía no hay cobertura, ¿de acuerdo? Ahorita yo lo pongo como nota para que ya no le marquen, ¿de acuerdo? Sí, eventualmente tendrás o... Ahorita tenemos lo que es el servicio off net, únicamente el servicio de televisión. Para su domicilio, pero tiene que tener lo que es el servicio de internet con otra compañía. No, no es para un local, lo que pasa es que tiene internet. Quiero verificar si también se sirva para poder estar de salvo TN. Ah, OK, entiendo. Sí, pero si no tienes la cobertura, pues no, no me sirve. Claro, igual lo otro que hacemos sería comunicando, ¿va? Que tenga un excelente día. Buen día, caballero. Gracias, perdón.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.56,
+      "end": 26.61,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.61,
+      "end": 28.61,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.05,
+      "end": 34.05,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.05,
+      "end": 46.2,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.2,
+      "end": 47.2,
+      "text": " Hola, Vix.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.2,
+      "end": 48.2,
+      "text": " Hola, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.2,
+      "end": 51.2,
+      "text": " Mi cariño, hola de Contentaciones X y la tienda Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.2,
+      "end": 52.71,
+      "text": " ¿Qué te da el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.71,
+      "end": 53.71,
+      "text": " Con Edgar Correa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.71,
+      "end": 57.87,
+      "text": " Me gusta mucho la llamada que nosotros hacemos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 57.87,
+      "end": 59.87,
+      "text": " Es para presentarle beneficios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 59.87,
+      "end": 62.87,
+      "text": " ¿Usted cuenta con servicio Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 62.87,
+      "end": 65.22,
+      "text": " No, nada más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 65.66,
+      "end": 67.89,
+      "text": " Voy a checar contigo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 67.89,
+      "end": 73.89,
+      "text": " Si quieren servicio en la colonia Los Tréboles y en la colonia Camporreal en Totopal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 73.89,
+      "end": 76.89,
+      "text": " ¿Me puede apoyar con su código postal, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 76.89,
+      "end": 79.43,
+      "text": " 45-200.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 79.43,
+      "end": 81.43,
+      "text": " ¿45-200, verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 81.43,
+      "end": 82.43,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 82.43,
+      "end": 85.55,
+      "text": " ¿Me puede apoyar con su calle, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 85.55,
+      "end": 88.55,
+      "text": " Déjame lo checo que no me lo sale el domicilio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 88.55,
+      "end": 90.55,
+      "text": " Sí, claro, no hay problema.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 90.55,
+      "end": 97.03,
+      "text": " ¿La colonia sabe cuál es?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 97.03,
+      "end": 99.42,
+      "text": " Los Tréboles.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 99.42,
+      "end": 101.61,
+      "text": " Los Tréboles.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 102.05,
+      "end": 111.57,
+      "text": " Es calle Progreso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 111.57,
+      "end": 115.57,
+      "text": " Número 2121, local 1.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 115.57,
+      "end": 119.82,
+      "text": " Está por una glorieta, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 119.82,
+      "end": 123.82,
+      "text": " Sí, está en una glorieta y...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 123.82,
+      "end": 126.14,
+      "text": " ¿Para que Los Tréboles?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 126.14,
+      "end": 132.5,
+      "text": " Está parte de Los Tréboles y está más arriba.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 132.5,
+      "end": 140.56,
+      "text": " Pasa esa avenida Avivao y llegas a una calle en el obre sentido que...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 140.56,
+      "end": 142.17,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 142.61,
+      "end": 146.61,
+      "text": " Pero está casi en la pura esquina de esa calle.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 146.61,
+      "end": 152.62,
+      "text": " Está por Providencia y del Saber, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 152.62,
+      "end": 155.62,
+      "text": " Es paralela a Providencia a Progreso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 155.62,
+      "end": 162.67,
+      "text": " Bueno, no sé si tiene Providencia también a la misma calle, porque son circuitos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 162.67,
+      "end": 163.67,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 163.67,
+      "end": 169.33,
+      "text": " En un momento le confirmamos si tenemos cobertura, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 169.33,
+      "end": 175.2,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 180.2,
+      "end": 183.74,
+      "text": " Sigo con usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 185.42,
+      "end": 194.88,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 194.88,
+      "end": 200.88,
+      "text": " Sí caballero, aún en la calle Progreso todavía no hay cobertura, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 200.88,
+      "end": 206.16,
+      "text": " Ahorita yo lo pongo como nota para que ya no le marquen, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 206.16,
+      "end": 209.16,
+      "text": " Sí, eventualmente tendrás o...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 209.16,
+      "end": 215.35,
+      "text": " Ahorita tenemos lo que es el servicio off net, únicamente el servicio de televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 215.35,
+      "end": 221.89,
+      "text": " Para su domicilio, pero tiene que tener lo que es el servicio de internet con otra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 222.33,
+      "end": 225.33,
+      "text": " No, no es para un local, lo que pasa es que tiene internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 225.33,
+      "end": 230.33,
+      "text": " Quiero verificar si también se sirva para poder estar de salvo TN.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 230.33,
+      "end": 234.79,
+      "text": " Ah, OK, entiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 234.79,
+      "end": 237.79,
+      "text": " Sí, pero si no tienes la cobertura, pues no, no me sirve.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 237.79,
+      "end": 240.89,
+      "text": " Claro, igual lo otro que hacemos sería comunicando, ¿va?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 240.89,
+      "end": 241.89,
+      "text": " Que tenga un excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 241.89,
+      "end": 242.89,
+      "text": " Buen día, caballero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 242.89,
+      "end": 244.89,
+      "text": " Gracias, perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 250.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500513939-5540409209-20251025-141713-5594219250.WAV",
+  "file_name": "0105-04965-25102500513939-5540409209-20251025-141713-5594219250.WAV",
+  "base_id": "0105-04965-25102500513939-5540409209-20251025-141713-5594219250",
+  "transcription": "¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor reconocimiento, con Vixen, Vimeo, Magui, KitePool, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2 para... Espera un momento, por favor. Buen día, el atendido en casi desde... ¡Hola!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " ¡Hola! ¿Te gustaría tener Internet, más televisión, más el mejor reconocimiento, con Vixen, Vimeo, Magui, KitePool, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.72,
+      "end": 24.72,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.72,
+      "end": 28.72,
+      "text": " Presiona 1 para hablar con un asesor, o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.72,
+      "end": 30.72,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.72,
+      "end": 37.68,
+      "text": " Buen día, el atendido en casi desde...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.68,
+      "end": 39.68,
+      "text": " ¡Hola!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

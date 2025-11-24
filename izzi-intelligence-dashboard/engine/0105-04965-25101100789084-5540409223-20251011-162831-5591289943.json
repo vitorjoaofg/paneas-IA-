@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100789084-5540409223-20251011-162831-5591289943.WAV",
+  "file_name": "0105-04965-25101100789084-5540409223-20251011-162831-5591289943.WAV",
+  "base_id": "0105-04965-25101100789084-5540409223-20251011-162831-5591289943",
+  "transcription": "Hola, ¿te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Su llamada puede ser monitoreada o grabada, confía en la calidad. Para obtener información sobre nuestra política de privacidad, visite privacy.hilton.com. Todos nuestros representantes están en línea asistiendo a nuestra llamada. ¿Te comunico con un accesor? Presiona 1 para hablar con un accesor o 2 para terminar la llamada. Hola, buenas tardes, gracias por llamar. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminarla. Espera un momento, por favor. Las promociones sí, sí. Ya tienen marcas seguidas, disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más Televisión, más el mejor entretenimiento con Big Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " Su llamada puede ser monitoreada o grabada, confía en la calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 23.0,
+      "text": " Para obtener información sobre nuestra política de privacidad, visite privacy.hilton.com.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.0,
+      "end": 28.0,
+      "text": " Todos nuestros representantes están en línea asistiendo a nuestra llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.0,
+      "end": 30.0,
+      "text": " ¿Te comunico con un accesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.0,
+      "end": 35.0,
+      "text": " Presiona 1 para hablar con un accesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.0,
+      "end": 38.47,
+      "text": " Hola, buenas tardes, gracias por llamar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.47,
+      "end": 40.47,
+      "text": " No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.47,
+      "end": 46.47,
+      "text": " Por favor, presione 1 para conocer nuestras promociones o 2 para terminarla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.47,
+      "end": 48.47,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.47,
+      "end": 100.1,
+      "text": " Las promociones sí, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 100.1,
+      "end": 102.1,
+      "text": " Ya tienen marcas seguidas, disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

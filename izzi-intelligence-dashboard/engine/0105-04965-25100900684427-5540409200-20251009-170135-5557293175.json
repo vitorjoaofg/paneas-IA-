@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900684427-5540409200-20251009-170135-5557293175.WAV",
+  "file_name": "0105-04965-25100900684427-5540409200-20251009-170135-5557293175.WAV",
+  "base_id": "0105-04965-25100900684427-5540409200-20251009-170135-5557293175",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.59,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.59,
+      "end": 33.23,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

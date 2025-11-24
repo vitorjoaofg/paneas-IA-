@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102100379288-6612420687-20251021-123304-04896.WAV",
+  "file_name": "0105-04999-25102100379288-6612420687-20251021-123304-04896.WAV",
+  "base_id": "0105-04999-25102100379288-6612420687-20251021-123304-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Big Streaming y eventos deportivos exclusivos por solo 350 y primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. No abro inversía por parte de la compañía de Easy, con traducciones. Dígame, ¿qué le puedo ayudar? Hola, hola. Hola, hola. Hola, hola. ¿Probando, probando? Uno, dos, tres. ¿Probando, probando? ¿Me escuchas? Muy bien. ¿Por qué no has terminado la llamada? No, no, no.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Big Streaming y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 20.1,
+      "text": " por solo 350 y primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.1,
+      "end": 24.9,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.9,
+      "end": 37.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.16,
+      "end": 46.52,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.52,
+      "end": 50.07,
+      "text": " Hola, hola. ¿Qué tal? Mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.07,
+      "end": 53.07,
+      "text": " No abro inversía por parte de la compañía de Easy, con traducciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.07,
+      "end": 55.07,
+      "text": " Dígame, ¿qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.07,
+      "end": 61.07,
+      "text": " Hola, hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.07,
+      "end": 63.07,
+      "text": " Hola, hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.07,
+      "end": 66.35,
+      "text": " Hola, hola. ¿Probando, probando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.35,
+      "end": 70.35,
+      "text": " Uno, dos, tres. ¿Probando, probando? ¿Me escuchas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 71.41,
+      "end": 75.51,
+      "text": " Muy bien. ¿Por qué no has terminado la llamada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 111.84,
+      "end": 113.94,
+      "text": " No, no, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 140.328,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

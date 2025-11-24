@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800249560-5544389993-20251018-111135-5596291830.WAV",
+  "file_name": "0105-04965-25101800249560-5544389993-20251018-111135-5596291830.WAV",
+  "base_id": "0105-04965-25101800249560-5544389993-20251018-111135-5596291830",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. ¿Sí, bueno? Bueno. ¿Qué tal? Buenos días. Estamos marcando de Easy. El motivo de la llamada es para ofrecerle nuestros servicios de televisión por cable, Internet y telefonía. ¿Usted ya cuenta con estos servicios? Sí, y por eso tomé la llamada, porque mi de diario me llaman a diferentes horas. Nosotros ya tenemos el servicio. No sé qué afán de seguirnos llamando para algo que ya tenemos o ver. Ok, gracias. Que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 23.05,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 23.05,
+      "end": 27.05,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.05,
+      "end": 32.05,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.05,
+      "end": 39.39,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.39,
+      "end": 40.39,
+      "text": " ¿Sí, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.39,
+      "end": 41.78,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.78,
+      "end": 44.87,
+      "text": " ¿Qué tal? Buenos días. Estamos marcando de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.87,
+      "end": 50.87,
+      "text": " El motivo de la llamada es para ofrecerle nuestros servicios de televisión por cable, Internet y telefonía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.87,
+      "end": 52.87,
+      "text": " ¿Usted ya cuenta con estos servicios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.87,
+      "end": 57.87,
+      "text": " Sí, y por eso tomé la llamada, porque mi de diario me llaman a diferentes horas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.87,
+      "end": 64.87,
+      "text": " Nosotros ya tenemos el servicio. No sé qué afán de seguirnos llamando para algo que ya tenemos o ver.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.87,
+      "end": 66.97,
+      "text": " Ok, gracias. Que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

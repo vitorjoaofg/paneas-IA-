@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600576024-5544389993-20251016-151244-5552686600.WAV",
+  "file_name": "0105-04965-25101600576024-5544389993-20251016-151244-5552686600.WAV",
+  "base_id": "0105-04965-25101600576024-5544389993-20251016-151244-5552686600",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor estenimiento con 200 canales, 10 premiums y eventos de porcos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable opuesto. Si conoce el número de la extensión, marque 300 seguido del número de extensión. Si desea la asistencia de la operadora, marque 0. Hola, ¿qué tal? Y gracias por comunicarse al área de contrataciones y si la atiende Alan, con quien tengo algún... Si conoce el número de la extensión, marque 300 seguido del número de extensión. Si desea la asistencia de la operadora, marque 0. Permite que te transfiera con el operador.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.7,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor estenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.7,
+      "end": 13.9,
+      "text": " 10 premiums y eventos de porcos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.9,
+      "end": 16.9,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.9,
+      "end": 20.1,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.1,
+      "end": 22.0,
+      "text": " Por favor, hable opuesto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.43,
+      "end": 28.72,
+      "text": " Si conoce el número de la extensión, marque 300 seguido del número de extensión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.82,
+      "end": 31.82,
+      "text": " Si desea la asistencia de la operadora, marque 0.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.82,
+      "end": 44.2,
+      "text": " Hola, ¿qué tal? Y gracias por comunicarse al área de contrataciones y si la atiende Alan, con quien tengo algún...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.2,
+      "end": 49.36,
+      "text": " Si conoce el número de la extensión, marque 300 seguido del número de extensión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.36,
+      "end": 53.02,
+      "text": " Si desea la asistencia de la operadora, marque 0.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.02,
+      "end": 66.19,
+      "text": " Permite que te transfiera con el operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 113.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000718851-5544389925-20251010-161838-5553771622.WAV",
+  "file_name": "0105-04965-25101000718851-5544389925-20251010-161838-5553771622.WAV",
+  "base_id": "0105-04965-25101000718851-5544389925-20251010-161838-5553771622",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, Fizz, está contestando su llamada. Extensión 1622, no está disponible. Espera un momento, por favor. ¿Para dejar un mensaje? Espere un momento. Cuando termine de grabar, marque el signo de números para más opciones. Al escuchar el tono, empiece a grabar. Se ha detenido la grabación. No hay nada que aprobar. Si desea ayuda, marque asterisco 4.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.18,
+      "end": 7.02,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.02,
+      "end": 11.42,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.42,
+      "end": 13.42,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.42,
+      "end": 14.42,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.42,
+      "end": 16.62,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.62,
+      "end": 20.02,
+      "text": " Por favor, Fizz, está contestando su llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.02,
+      "end": 25.8,
+      "text": " Extensión 1622, no está disponible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.8,
+      "end": 26.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.8,
+      "end": 28.2,
+      "text": " ¿Para dejar un mensaje?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.2,
+      "end": 30.42,
+      "text": " Espere un momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 31.06,
+      "end": 34.06,
+      "text": " Cuando termine de grabar, marque el signo de números para más opciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 34.06,
+      "end": 48.62,
+      "text": " Al escuchar el tono, empiece a grabar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.62,
+      "end": 50.62,
+      "text": " Se ha detenido la grabación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.62,
+      "end": 52.62,
+      "text": " No hay nada que aprobar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.62,
+      "end": 55.62,
+      "text": " Si desea ayuda, marque asterisco 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.892,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

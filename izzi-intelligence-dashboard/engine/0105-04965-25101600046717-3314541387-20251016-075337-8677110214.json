@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600046717-3314541387-20251016-075337-8677110214.WAV",
+  "file_name": "0105-04965-25101600046717-3314541387-20251016-075337-8677110214.WAV",
+  "base_id": "0105-04965-25101600046717-3314541387-20251016-075337-8677110214",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con IZI es posible, ¿te interesa? Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buen día, le habla Yvonne Monfils de parte de su servicio de IZI para darle a conocer algunos beneficios con la compañía. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 14.6,
+      "text": " Con IZI es posible, ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.6,
+      "end": 22.46,
+      "text": " Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.46,
+      "end": 23.94,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.94,
+      "end": 33.77,
+      "text": " Hola, buen día, le habla Yvonne Monfils de parte de su servicio de IZI para darle",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.77,
+      "end": 36.13,
+      "text": " a conocer algunos beneficios con la compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.13,
+      "end": 36.53,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.096,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

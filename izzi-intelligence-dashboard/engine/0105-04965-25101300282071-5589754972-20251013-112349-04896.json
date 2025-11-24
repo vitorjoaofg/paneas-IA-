@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300282071-5589754972-20251013-112349-04896.WAV",
+  "file_name": "0105-04965-25101300282071-5589754972-20251013-112349-04896.WAV",
+  "base_id": "0105-04965-25101300282071-5589754972-20251013-112349-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos de partidas exclusivas por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Bueno. Hola, buenos días. ¿Qué tal? Buenos días. Ahorita mucho gusto. ¿Me podría? Bueno, soy Jackie de Dahlia número 2, la señora Brasiela. ¿Cuánto? No sé si podría traerme lo que es un pedido de siete garrafones. No, se me interesa comunicar parte de la compañía de Easy. Ah, discúlpeme.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 8.6,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.6,
+      "end": 13.68,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.68,
+      "end": 17.6,
+      "text": " partidas exclusivas por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.6,
+      "end": 23.6,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.6,
+      "end": 31.17,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.17,
+      "end": 35.17,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.17,
+      "end": 40.17,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.17,
+      "end": 42.17,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.17,
+      "end": 52.67,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.67,
+      "end": 55.06,
+      "text": " Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.06,
+      "end": 57.06,
+      "text": " ¿Qué tal? Buenos días. Ahorita mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.06,
+      "end": 63.09,
+      "text": " ¿Me podría? Bueno, soy Jackie de Dahlia número 2, la señora Brasiela.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 63.09,
+      "end": 64.09,
+      "text": " ¿Cuánto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.09,
+      "end": 68.47,
+      "text": " No sé si podría traerme lo que es un pedido de siete garrafones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 70.18,
+      "end": 75.07,
+      "text": " No, se me interesa comunicar parte de la compañía de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 75.07,
+      "end": 77.58,
+      "text": " Ah, discúlpeme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.0,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

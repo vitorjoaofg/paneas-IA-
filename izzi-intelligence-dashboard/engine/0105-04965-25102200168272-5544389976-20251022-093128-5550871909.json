@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200168272-5544389976-20251022-093128-5550871909.WAV",
+  "file_name": "0105-04965-25102200168272-5544389976-20251022-093128-5550871909.WAV",
+  "base_id": "0105-04965-25102200168272-5544389976-20251022-093128-5550871909",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? No sé si se refiere a la revueltora de tres estilos que había que estar en el primer módulo, en el viejito que estaba ahí. Yo me acuerdo haberla visto. Espera un momento, por favor. Una revolvedora. Hola, ¿qué tal? Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.96,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.96,
+      "end": 17.96,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.96,
+      "end": 24.56,
+      "text": " No sé si se refiere a la revueltora de tres estilos que había que estar en el primer módulo,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.56,
+      "end": 29.4,
+      "text": " en el viejito que estaba ahí. Yo me acuerdo haberla visto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.6,
+      "end": 31.4,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.4,
+      "end": 32.4,
+      "text": " Una revolvedora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.4,
+      "end": 38.56,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 39.636,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

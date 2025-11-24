@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800545269-3336732217-20251028-145122-04896.WAV",
+  "file_name": "0105-04965-25102800545269-3336732217-20251028-145122-04896.WAV",
+  "base_id": "0105-04965-25102800545269-3336732217-20251028-145122-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Contrataciones? ¿Easy detiende Javier Romero con Quinto Balbuso? Javier Romero, oye, quiero pedirte que no me estés llamando a mi casa, ¿sí? Tengo múltiples llamadas de con ustedes y están chingui chingui. Bueno señor, tendría que hablar con su compañía ya que son los que nos ceden los números para marcaciones. No es cierto, Javier Romero. No me cuelgues. ¿Hm? No cuelgues.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 23.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.6,
+      "end": 28.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.06,
+      "end": 36.34,
+      "text": " ¿Contrataciones? ¿Easy detiende Javier Romero con Quinto Balbuso?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.34,
+      "end": 42.34,
+      "text": " Javier Romero, oye, quiero pedirte que no me estés llamando a mi casa, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.34,
+      "end": 46.5,
+      "text": " Tengo múltiples llamadas de con ustedes y están chingui chingui.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.5,
+      "end": 50.9,
+      "text": " Bueno señor, tendría que hablar con su compañía ya que son los que nos ceden los números para marcaciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.9,
+      "end": 55.42,
+      "text": " No es cierto, Javier Romero. No me cuelgues.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.42,
+      "end": 57.42,
+      "text": " ¿Hm? No cuelgues.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

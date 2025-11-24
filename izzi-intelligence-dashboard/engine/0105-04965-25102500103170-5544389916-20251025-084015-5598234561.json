@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500103170-5544389916-20251025-084015-5598234561.WAV",
+  "file_name": "0105-04965-25102500103170-5544389916-20251025-084015-5598234561.WAV",
+  "base_id": "0105-04965-25102500103170-5544389916-20251025-084015-5598234561",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, hola, muy buenos días. ¿Qué tal? Buenos días, caballero. ¿En qué lo puedo apoyar, disculpe? Sí, lo que pasa es que de algo recibo llamadas de Easy. ¿Para las promociones? Sí, para las promociones, pero yo soy cliente de MegaCable. Ah, creo que nadie quiere estar al servicio de Easy. Sí, no, no, por el momento ahorita no. Ok, hasta luego. Gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 13.2,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.2,
+      "end": 20.7,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.7,
+      "end": 29.95,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.95,
+      "end": 31.95,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.95,
+      "end": 46.66,
+      "text": " Hola, hola, muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.66,
+      "end": 48.66,
+      "text": " ¿Qué tal? Buenos días, caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.66,
+      "end": 50.66,
+      "text": " ¿En qué lo puedo apoyar, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.66,
+      "end": 54.66,
+      "text": " Sí, lo que pasa es que de algo recibo llamadas de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.66,
+      "end": 56.72,
+      "text": " ¿Para las promociones?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.72,
+      "end": 60.1,
+      "text": " Sí, para las promociones, pero yo soy cliente de MegaCable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.1,
+      "end": 63.1,
+      "text": " Ah, creo que nadie quiere estar al servicio de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.1,
+      "end": 65.1,
+      "text": " Sí, no, no, por el momento ahorita no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.1,
+      "end": 67.26,
+      "text": " Ok, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.26,
+      "end": 69.26,
+      "text": " Gracias, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.92,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

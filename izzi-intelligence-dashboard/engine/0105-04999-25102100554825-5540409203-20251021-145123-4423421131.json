@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102100554825-5540409203-20251021-145123-4423421131.WAV",
+  "file_name": "0105-04999-25102100554825-5540409203-20251021-145123-4423421131.WAV",
+  "base_id": "0105-04999-25102100554825-5540409203-20251021-145123-4423421131",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Pues me pongo que poner sí o no. Espera un momento, por favor. Buenas tardes, está hablando a las contrataciones Easy, ¿qué le podemos ayudar? Bueno, está hablando a contrataciones Easy. Mi nombre es Guadalupe Juárez. Vamos al equipo, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 23.0,
+      "text": " Pues me pongo que poner sí o no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 25.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.0,
+      "end": 36.08,
+      "text": " Buenas tardes, está hablando a las contrataciones Easy, ¿qué le podemos ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.08,
+      "end": 45.93,
+      "text": " Bueno, está hablando a contrataciones Easy. Mi nombre es Guadalupe Juárez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.93,
+      "end": 47.93,
+      "text": " Vamos al equipo, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.612,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900194226-5540409220-20251029-095739-5589843273.WAV",
+  "file_name": "0105-04965-25102900194226-5540409220-20251029-095739-5589843273.WAV",
+  "base_id": "0105-04965-25102900194226-5540409220-20251029-095739-5589843273",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skyport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno, por motivos de calidad me voy a forzar a terminar con la llamada. Por favor, los que nosotras esperamos aquí. Yo estoy a tal del área de decorar las calaveritas. No me da mucho gusto. Pues no, no, no, no, no. Es que tú ves, bueno, la vida. Unas calaveritas, una de las más bonitas de la calaverita, y tiene una noz de tinta. ¿Puedo pegarle eso? Que es como una clase de coronita o qué?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 26.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.42,
+      "end": 47.48,
+      "text": " Sí, bueno, por motivos de calidad me voy a forzar a terminar con la llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 58.64,
+      "end": 61.64,
+      "text": " Por favor, los que nosotras esperamos aquí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 73.86,
+      "end": 77.86,
+      "text": " Yo estoy a tal del área de decorar las calaveritas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 77.86,
+      "end": 79.86,
+      "text": " No me da mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 79.86,
+      "end": 82.86,
+      "text": " Pues no, no, no, no, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 82.86,
+      "end": 86.5,
+      "text": " Es que tú ves, bueno, la vida.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 86.5,
+      "end": 88.5,
+      "text": " Unas calaveritas, una de las más bonitas de la calaverita,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 88.5,
+      "end": 90.5,
+      "text": " y tiene una noz de tinta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 90.5,
+      "end": 93.5,
+      "text": " ¿Puedo pegarle eso? Que es como una clase de coronita o qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.284,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

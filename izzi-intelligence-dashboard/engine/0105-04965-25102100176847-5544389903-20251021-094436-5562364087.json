@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100176847-5544389903-20251021-094436-5562364087.WAV",
+  "file_name": "0105-04965-25102100176847-5544389903-20251021-094436-5562364087.WAV",
+  "base_id": "0105-04965-25102100176847-5544389903-20251021-094436-5562364087",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ¿Qué tal la compañía Easy? Este es el área de contrataciones. ¿Con quién tengo el gusto? Oye, ¿cómo puedo parar las llamadas? Es la única llamada que me sale y ya es molesto. No se preocupe, yo me encargo de hacer el reporte para que no le llamen más. Por favor. Le atendido Leonardo García. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Skyport desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 22.95,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.95,
+      "end": 24.95,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.95,
+      "end": 112.1,
+      "text": " ¿Qué tal la compañía Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 112.1,
+      "end": 114.1,
+      "text": " Este es el área de contrataciones. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 116.26,
+      "end": 118.26,
+      "text": " Oye, ¿cómo puedo parar las llamadas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 118.26,
+      "end": 123.64,
+      "text": " Es la única llamada que me sale y ya es molesto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 123.64,
+      "end": 128.31,
+      "text": " No se preocupe, yo me encargo de hacer el reporte para que no le llamen más.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 128.31,
+      "end": 129.31,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 129.31,
+      "end": 131.31,
+      "text": " Le atendido Leonardo García. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 133.92,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

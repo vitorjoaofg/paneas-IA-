@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000321138-5544389907-20251010-111000-5575761039.WAV",
+  "file_name": "0105-04965-25101000321138-5544389907-20251010-111000-5575761039.WAV",
+  "base_id": "0105-04965-25101000321138-5544389907-20251010-111000-5575761039",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Mi nombre es Melaniza Ucedo. ¿Cómo nos comunicamos de la compañía IZZY? ¿Con quién tengo el gusto? ¿Qué? Ves que no está el dueño de la casa. Ah, ¿por motivo de qué le damos a finalizar la llamada? Solamente que le hable más tarde. Yo quiero que más trabajo. Al rato le habla.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.26,
+      "end": 26.76,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.76,
+      "end": 34.56,
+      "text": " Hola, ¿qué tal? Buenos días. Mi nombre es Melaniza Ucedo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.56,
+      "end": 37.86,
+      "text": " ¿Cómo nos comunicamos de la compañía IZZY? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.86,
+      "end": 39.47,
+      "text": " ¿Qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.47,
+      "end": 42.76,
+      "text": " Ves que no está el dueño de la casa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.76,
+      "end": 45.76,
+      "text": " Ah, ¿por motivo de qué le damos a finalizar la llamada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.76,
+      "end": 49.58,
+      "text": " Solamente que le hable más tarde.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.58,
+      "end": 55.49,
+      "text": " Yo quiero que más trabajo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.49,
+      "end": 56.79,
+      "text": " Al rato le habla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

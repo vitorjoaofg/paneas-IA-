@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400408286-5544389991-20251014-124224-5519460570.WAV",
+  "file_name": "0105-04965-25101400408286-5544389991-20251014-124224-5519460570.WAV",
+  "base_id": "0105-04965-25101400408286-5544389991-20251014-124224-5519460570",
+  "transcription": "Hola, ¿te gustaría tener internet más en edición, más el mejor entretenimiento con BigSpin, más StyleOne, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando, por favor. Por favor presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido. Espera un momento por favor. We're sorry. Ayudaldo a recordar la atención que te brindamos calificando esta llamada por favor presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido. We're sorry. Ayud tercero a zweerla intensión attention que te brindamos calificando esta llamada por favor presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido. We're sorry. We're sorry.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.96,
+      "text": " Hola, ¿te gustaría tener internet más en edición, más el mejor entretenimiento con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.96,
+      "end": 11.6,
+      "text": " BigSpin, más StyleOne, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 18.11,
+      "text": " Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.11,
+      "end": 25.23,
+      "text": " Por favor presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.23,
+      "end": 26.63,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.63,
+      "end": 27.63,
+      "text": " We're sorry.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.11,
+      "end": 32.18,
+      "text": " Ayudaldo a recordar la atención que te brindamos calificando esta llamada",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 32.18,
+      "end": 38.28,
+      "text": " por favor presiona 1 si fuiste bien atendido, o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.28,
+      "end": 43.64,
+      "text": " We're sorry.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.66,
+      "end": 48.1,
+      "text": " Ayud tercero a zweerla intensión attention que te brindamos calificando esta llamada",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.1,
+      "end": 51.04,
+      "text": " por favor presiona 1 si fuiste bien atendido,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.04,
+      "end": 53.66,
+      "text": " o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.66,
+      "end": 56.66,
+      "text": " We're sorry. We're sorry.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.556,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

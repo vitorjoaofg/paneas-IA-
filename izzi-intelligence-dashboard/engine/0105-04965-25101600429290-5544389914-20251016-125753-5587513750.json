@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600429290-5544389914-20251016-125753-5587513750.WAV",
+  "file_name": "0105-04965-25101600429290-5544389914-20251016-125753-5587513750.WAV",
+  "base_id": "0105-04965-25101600429290-5544389914-20251016-125753-5587513750",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. ¿Qué tal? Se está comunicando a Contrataciones Easy. Mi nombre es Omar Fonseca. ¿Con quién tengo el gusto? Es locado. Me doy que estás hablando aquí a un despacho. Entonces, no te puedo atender en estos temas. ¿Le interesa algún servicio de Easy, señor?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.2,
+      "text": " más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 16.5,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 20.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.78,
+      "end": 26.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.18,
+      "end": 32.8,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.73,
+      "end": 37.83,
+      "text": " ¿Qué tal? Se está comunicando a Contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.83,
+      "end": 39.93,
+      "text": " Mi nombre es Omar Fonseca. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.93,
+      "end": 45.35,
+      "text": " Es locado. Me doy que estás hablando aquí a un despacho.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.35,
+      "end": 48.55,
+      "text": " Entonces, no te puedo atender en estos temas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.55,
+      "end": 52.66,
+      "text": " ¿Le interesa algún servicio de Easy, señor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 124.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

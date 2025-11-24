@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600176181-5544389998-20251016-093810-5596353043.WAV",
+  "file_name": "0105-04965-25101600176181-5544389998-20251016-093810-5596353043.WAV",
+  "base_id": "0105-04965-25101600176181-5544389998-20251016-093810-5596353043",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno para conocer nuestras. Espera un momento, por favor. ¡Hola! Muy buen día. ¡Hola! Muy buen día. Mi nombre es Brisia López de parte de Easy. ¿Con quién tengo el gusto? ¡Hola! ¡Hola! Muy buen día. ¡Hola! Muy buen día. ¿Estará tu mamá? No. ¿No se encuentra? Ah, ok. ¿Algún adulto que se encuentre por ahí? No. Si quiero, me la venga un adulto. Me llama. Ah, ok. No te preocupes. Nos comunicamos un poquito más tarde, ¿ok? Hasta luego. Bye bye. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 28.22,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.22,
+      "end": 34.54,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.54,
+      "end": 45.14,
+      "text": " un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.14,
+      "end": 48.78,
+      "text": " uno para conocer nuestras. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.78,
+      "end": 58.97,
+      "text": " ¡Hola! Muy buen día. ¡Hola! Muy buen día. Mi nombre es Brisia López de parte",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.97,
+      "end": 67.12,
+      "text": " de Easy. ¿Con quién tengo el gusto? ¡Hola! ¡Hola! Muy buen día. ¡Hola! Muy buen",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.32,
+      "end": 75.02,
+      "text": " día. ¿Estará tu mamá? No. ¿No se encuentra? Ah, ok. ¿Algún adulto que se encuentre",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 76.18,
+      "end": 83.34,
+      "text": " por ahí? No. Si quiero, me la venga un adulto. Me llama. Ah, ok. No te preocupes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 86.86,
+      "end": 91.86,
+      "text": " Nos comunicamos un poquito más tarde, ¿ok? Hasta luego. Bye bye. Bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.496,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

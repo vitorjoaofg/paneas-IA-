@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800561962-5544389905-20251028-150534-5596655405.WAV",
+  "file_name": "0105-04965-25102800561962-5544389905-20251028-150534-5596655405.WAV",
+  "base_id": "0105-04965-25102800561962-5544389905-20251028-150534-5596655405",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixenium, más Skysport desde 350 veces en el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Sí, díganme, señorita. Hola, ¿qué tal? Muy buenas tardes. Le hablamos de su compañía ahí. ¿Se ha incapado de ayudarle? Ah, no, señorita. Este, me equivoqué de presión de la tecla. Perdóneme. Oh, una disculpa, que te arreglo bien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixenium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Skysport desde 350 veces en el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 23.08,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.08,
+      "end": 25.08,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.08,
+      "end": 27.08,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.08,
+      "end": 32.08,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.08,
+      "end": 34.08,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.08,
+      "end": 43.18,
+      "text": " Sí, díganme, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.18,
+      "end": 45.18,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.18,
+      "end": 48.22,
+      "text": " Le hablamos de su compañía ahí. ¿Se ha incapado de ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.22,
+      "end": 50.22,
+      "text": " Ah, no, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.22,
+      "end": 54.22,
+      "text": " Este, me equivoqué de presión de la tecla. Perdóneme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 54.22,
+      "end": 57.22,
+      "text": " Oh, una disculpa, que te arreglo bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

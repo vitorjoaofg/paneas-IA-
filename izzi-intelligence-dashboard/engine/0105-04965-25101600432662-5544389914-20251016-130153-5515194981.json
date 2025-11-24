@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600432662-5544389914-20251016-130153-5515194981.WAV",
+  "file_name": "0105-04965-25101600432662-5544389914-20251016-130153-5515194981.WAV",
+  "base_id": "0105-04965-25101600432662-5544389914-20251016-130153-5515194981",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas, ¿sabes? Bueno, por motivo de que el día casi es el más buen día. ¿Me escuchas? ¿Me escuchas? ¿Vas a comprar o qué? ¿Vas a comprar o qué? ¿Vas a comprar o qué? Ando corto. Ando rando, perro.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.0,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.0,
+      "end": 27.04,
+      "text": " dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.04,
+      "end": 54.88,
+      "text": " Hola, ¿qué tal? Muy buenas, ¿sabes? Bueno, por motivo de que el día casi es el más buen",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 54.88,
+      "end": 111.16,
+      "text": " día. ¿Me escuchas? ¿Me escuchas? ¿Vas a comprar o qué? ¿Vas a comprar o qué? ¿Vas a",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 111.16,
+      "end": 124.48,
+      "text": " comprar o qué? Ando corto. Ando rando, perro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 122.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

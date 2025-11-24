@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900228135-5544389901-20251009-103211-5553872427.WAV",
+  "file_name": "0105-04965-25100900228135-5544389901-20251009-103211-5553872427.WAV",
+  "base_id": "0105-04965-25100900228135-5544389901-20251009-103211-5553872427",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno. ¿Quieres un paquete? No nos dicen nada. Bueno, ¿por qué no nos hablan si no nos van a contestar nada?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 13.02,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.02,
+      "end": 22.74,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.74,
+      "end": 24.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.74,
+      "end": 44.47,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 44.47,
+      "end": 54.06,
+      "text": " ¿Quieres un paquete?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 54.06,
+      "end": 56.06,
+      "text": " No nos dicen nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 56.06,
+      "end": 75.42,
+      "text": " Bueno, ¿por qué no nos hablan si no nos van a contestar nada?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.092,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

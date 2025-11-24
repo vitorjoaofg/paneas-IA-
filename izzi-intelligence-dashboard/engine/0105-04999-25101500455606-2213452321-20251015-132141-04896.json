@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101500455606-2213452321-20251015-132141-04896.WAV",
+  "file_name": "0105-04999-25101500455606-2213452321-20251015-132141-04896.WAV",
+  "base_id": "0105-04999-25101500455606-2213452321-20251015-132141-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, hola. Muy buenos días. Buenos días. Buenos días. ¿En qué lo puedo apoyar? Disculpe. Mire, nada más me llamo para decirle que si toman en cuenta mi número y no sé si lo pasa a usted, a todos sus compañeros o cómo trabajan a su sistema. Aquí lo registro. Que ya no me estén molestando, por favor. Porque a mí no me interesa Easy. No me estén llamas. Ya Mayuno está trabajando. Ok. Aquí lo registro. Te pediría esa atención, joven, por favor. Porque ya no me molesto. Ok. Aquí lo registro. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 8.6,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.6,
+      "end": 17.5,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.5,
+      "end": 23.5,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.5,
+      "end": 27.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.85,
+      "end": 32.85,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.85,
+      "end": 40.35,
+      "text": " Hola, hola. Muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.35,
+      "end": 42.4,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.4,
+      "end": 44.9,
+      "text": " Buenos días. ¿En qué lo puedo apoyar? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.9,
+      "end": 54.9,
+      "text": " Mire, nada más me llamo para decirle que si toman en cuenta mi número y no sé si lo pasa a usted, a todos sus compañeros o cómo trabajan a su sistema.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.9,
+      "end": 56.4,
+      "text": " Aquí lo registro.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.4,
+      "end": 62.9,
+      "text": " Que ya no me estén molestando, por favor. Porque a mí no me interesa Easy. No me estén llamas. Ya Mayuno está trabajando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 62.9,
+      "end": 63.9,
+      "text": " Ok. Aquí lo registro.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.4,
+      "end": 67.4,
+      "text": " Te pediría esa atención, joven, por favor. Porque ya no me molesto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.4,
+      "end": 69.4,
+      "text": " Ok. Aquí lo registro.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 69.4,
+      "end": 70.4,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

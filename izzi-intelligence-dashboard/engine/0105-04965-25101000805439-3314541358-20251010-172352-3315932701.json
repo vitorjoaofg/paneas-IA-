@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000805439-3314541358-20251010-172352-3315932701.WAV",
+  "file_name": "0105-04965-25101000805439-3314541358-20251010-172352-3315932701.WAV",
+  "base_id": "0105-04965-25101000805439-3314541358-20251010-172352-3315932701",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Está bien, repito, esto es de Easy Mobile, sabemos que mantenerse conectado es fundamental, por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp. Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.0,
+      "end": 26.0,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.0,
+      "end": 37.99,
+      "text": " Está bien, repito, esto es de Easy Mobile, sabemos que mantenerse conectado es fundamental, por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.99,
+      "end": 48.99,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.99,
+      "end": 53.99,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.99,
+      "end": 58.99,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.99,
+      "end": 60.99,
+      "text": " Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.99,
+      "end": 62.99,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.664,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

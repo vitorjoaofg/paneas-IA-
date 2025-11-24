@@ -1,0 +1,744 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800549549-5540409210-20251018-151704-5592230073.WAV",
+  "file_name": "0105-04965-25101800549549-5540409210-20251018-151704-5592230073.WAV",
+  "base_id": "0105-04965-25101800549549-5540409210-20251018-151704-5592230073",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablo su compañía, Easy. ¿En qué puedo ayudarle? Buenas tardes, señorita. Me han estado haciendo llamadas por favor para Easy. ¿Ya Easy aquí en Clapala? Es la primera pregunta. ¿Cómo? Perdón. Que si ya hay la línea de Easy aquí en el pueblo de Clapala. OK. Déjenme checar. ¿Cuál es su código postal? Perdón. ¿Cuál es su código? 56. Ajá. 641. OK. Es Chalco de Díaz Covarrubio. Ajá. OK. Por un momento, un segundito. ¿Me puede decir qué colonia es? Colonia la Candelaria de Clapala. ¿Calendaria? Candelaria. Ahá. Candelaria de Clapala. Clapala. OK. ¿Su calle cuál es? Calle es Oriente 8. ¿Calle qué? Perdón. Oriente 8. Oriente 8. Ajá. ¿Número de casa cuál es, perdón? Casa es de la Manzana 2, lote 25. OK. Manzana 2, lote 25. OK. Por un momento, un segundito. Voy a checar si hay cobertura. Oriente 8. ¿En Ciudad de México? En Ciudad de México, Chalco. Municipio de Chalco. OK. Permítame un segundito. Bien. ¿Se sabe sus entrecalles, perdón? Prolongación Miguel Hidalgo y la otra, no me la sé. Es casi esquina con Oriente 8. Oriente 8, 6, 7. Chalco, Miraflores. Es el pueblo de la Candelaria de Clapala. Miraflores está más adelante. Le digo lo que pasa es que seguido me están haciendo llame y llame para ofrecer el servicio. Pero, pues, digo, si están hablando es porque a lo mejor ya tienen si hay cobertura aquí, ¿no? OK. OK. Mira, ¿qué le pasa si ahorita le regresamos la llamada y le comentamos si sí hay? Gracias. OK. Muy bien. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.54,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.54,
+      "end": 13.54,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.54,
+      "end": 14.54,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.54,
+      "end": 16.7,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.7,
+      "end": 24.18,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.18,
+      "end": 26.9,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.9,
+      "end": 29.02,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.02,
+      "end": 34.02,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.02,
+      "end": 36.02,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.02,
+      "end": 42.01,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.01,
+      "end": 43.01,
+      "text": " Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.01,
+      "end": 44.01,
+      "text": " Le hablo su compañía, Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.01,
+      "end": 46.01,
+      "text": " ¿En qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 46.01,
+      "end": 48.01,
+      "text": " Buenas tardes, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 48.01,
+      "end": 52.2,
+      "text": " Me han estado haciendo llamadas por favor para Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 52.2,
+      "end": 54.2,
+      "text": " ¿Ya Easy aquí en Clapala?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 54.2,
+      "end": 57.73,
+      "text": " Es la primera pregunta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 57.73,
+      "end": 59.85,
+      "text": " ¿Cómo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 59.85,
+      "end": 60.85,
+      "text": " Perdón.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 60.85,
+      "end": 66.43,
+      "text": " Que si ya hay la línea de Easy aquí en el pueblo de Clapala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 66.43,
+      "end": 66.93,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 66.93,
+      "end": 68.43,
+      "text": " Déjenme checar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 68.43,
+      "end": 69.43,
+      "text": " ¿Cuál es su código postal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 69.43,
+      "end": 70.68,
+      "text": " Perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 70.68,
+      "end": 71.68,
+      "text": " ¿Cuál es su código?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 71.68,
+      "end": 78.74,
+      "text": " 56.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 78.74,
+      "end": 79.74,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 79.74,
+      "end": 85.09,
+      "text": " 641.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 85.09,
+      "end": 86.09,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 86.09,
+      "end": 89.32,
+      "text": " Es Chalco de Díaz Covarrubio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 89.32,
+      "end": 90.32,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 90.32,
+      "end": 91.83,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 91.83,
+      "end": 92.83,
+      "text": " Por un momento, un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 92.83,
+      "end": 99.47,
+      "text": " ¿Me puede decir qué colonia es?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 99.47,
+      "end": 104.75,
+      "text": " Colonia la Candelaria de Clapala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 104.75,
+      "end": 106.45,
+      "text": " ¿Calendaria?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 106.45,
+      "end": 107.45,
+      "text": " Candelaria.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 107.45,
+      "end": 108.45,
+      "text": " Ahá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 108.45,
+      "end": 111.41,
+      "text": " Candelaria de Clapala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 111.41,
+      "end": 113.76,
+      "text": " Clapala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 113.76,
+      "end": 114.76,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 114.76,
+      "end": 115.76,
+      "text": " ¿Su calle cuál es?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 115.76,
+      "end": 118.34,
+      "text": " Calle es Oriente 8.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 118.34,
+      "end": 120.3,
+      "text": " ¿Calle qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 120.3,
+      "end": 121.3,
+      "text": " Perdón.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 121.3,
+      "end": 122.43,
+      "text": " Oriente 8.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 122.43,
+      "end": 123.43,
+      "text": " Oriente 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 123.43,
+      "end": 125.2,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 125.2,
+      "end": 129.79,
+      "text": " ¿Número de casa cuál es, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 129.79,
+      "end": 141.24,
+      "text": " Casa es de la Manzana 2, lote 25.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 141.24,
+      "end": 142.72,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 142.72,
+      "end": 146.75,
+      "text": " Manzana 2, lote 25.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 146.75,
+      "end": 147.75,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 147.75,
+      "end": 148.75,
+      "text": " Por un momento, un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 148.75,
+      "end": 150.75,
+      "text": " Voy a checar si hay cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 150.75,
+      "end": 169.7,
+      "text": " Oriente 8.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 169.7,
+      "end": 192.36,
+      "text": " ¿En Ciudad de México?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 192.36,
+      "end": 197.92,
+      "text": " En Ciudad de México, Chalco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 197.92,
+      "end": 198.92,
+      "text": " Municipio de Chalco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 198.92,
+      "end": 199.92,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 199.92,
+      "end": 200.92,
+      "text": " Permítame un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 200.92,
+      "end": 202.21,
+      "text": " Bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 202.21,
+      "end": 204.21,
+      "text": " ¿Se sabe sus entrecalles, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 204.21,
+      "end": 210.92,
+      "text": " Prolongación Miguel Hidalgo y la otra, no me la sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 210.92,
+      "end": 212.92,
+      "text": " Es casi esquina con Oriente 8.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 212.92,
+      "end": 220.99,
+      "text": " Oriente 8, 6, 7.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 220.99,
+      "end": 241.52,
+      "text": " Chalco, Miraflores.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 241.52,
+      "end": 245.15,
+      "text": " Es el pueblo de la Candelaria de Clapala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 245.15,
+      "end": 248.08,
+      "text": " Miraflores está más adelante.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 70,
+      "start": 248.08,
+      "end": 252.08,
+      "text": " Le digo lo que pasa es que seguido me están haciendo llame y llame para ofrecer",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 71,
+      "start": 252.08,
+      "end": 253.08,
+      "text": " el servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 72,
+      "start": 253.08,
+      "end": 257.08,
+      "text": " Pero, pues, digo, si están hablando es porque a lo mejor ya tienen si hay cobertura",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 73,
+      "start": 257.08,
+      "end": 258.08,
+      "text": " aquí, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 74,
+      "start": 258.08,
+      "end": 260.58,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 75,
+      "start": 260.58,
+      "end": 261.58,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 76,
+      "start": 261.58,
+      "end": 266.58,
+      "text": " Mira, ¿qué le pasa si ahorita le regresamos la llamada y le comentamos si sí hay?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 77,
+      "start": 266.58,
+      "end": 268.28,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 78,
+      "start": 268.28,
+      "end": 269.28,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 79,
+      "start": 269.28,
+      "end": 270.28,
+      "text": " Muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 80,
+      "start": 270.28,
+      "end": 271.28,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 271.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

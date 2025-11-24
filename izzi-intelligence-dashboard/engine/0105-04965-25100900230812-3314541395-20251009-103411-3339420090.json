@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900230812-3314541395-20251009-103411-3339420090.WAV",
+  "file_name": "0105-04965-25100900230812-3314541395-20251009-103411-3339420090.WAV",
+  "base_id": "0105-04965-25100900230812-3314541395-20251009-103411-3339420090",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad? De lo contrario, tenerla en la hora de nacimiento con 200 canales, operadora y eventos deportivos exclusivos por solo $350 pesos el primer mes. No lo pienses más y cámbiate a ICT. ¿Te interesa? Un asesor te está esperando. Por favor, hable o puntabilidad, marque 5. Almacén, marque 6. Si desea regresar al menú anterior... ¿Qué tal? Este es el área de contrataciones ICC. ¿Le atiende Leonardo García con 100 volvos?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.72,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.72,
+      "end": 14.0,
+      "text": " De lo contrario, tenerla en la hora de nacimiento con 200 canales, operadora y eventos deportivos exclusivos por solo $350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a ICT.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 18.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.0,
+      "end": 20.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o puntabilidad, marque 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 27.42,
+      "text": " Almacén, marque 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.42,
+      "end": 29.42,
+      "text": " Si desea regresar al menú anterior...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.42,
+      "end": 37.98,
+      "text": " ¿Qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.98,
+      "end": 39.98,
+      "text": " Este es el área de contrataciones ICC.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.98,
+      "end": 42.98,
+      "text": " ¿Le atiende Leonardo García con 100 volvos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.984,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

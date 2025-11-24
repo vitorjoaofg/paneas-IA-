@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102200626740-7821772052-20251022-153456-04896.WAV",
+  "file_name": "0105-04999-25102200626740-7821772052-20251022-153456-04896.WAV",
+  "base_id": "0105-04999-25102200626740-7821772052-20251022-153456-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes, Lalo. Se acompaña Easy. Me presento mucho gusto. Mi nombre es Paula. ¿Qué puedo ayudarle? Hola, muy buenas tardes. Disculpe para cancelar mi servicio de Internet. Ah, ok. Sería con servicios a clientes, señor. Ok. Es al 800-120-5000. Ok, gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Skysports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 23.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.51,
+      "end": 29.51,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.51,
+      "end": 41.5,
+      "text": " Hola, ¿qué tal? Muy buenas tardes, Lalo. Se acompaña Easy. Me presento mucho gusto. Mi nombre es Paula. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.5,
+      "end": 49.32,
+      "text": " Hola, muy buenas tardes. Disculpe para cancelar mi servicio de Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.32,
+      "end": 53.18,
+      "text": " Ah, ok. Sería con servicios a clientes, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.18,
+      "end": 54.77,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.77,
+      "end": 57.93,
+      "text": " Es al 800-120-5000.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.93,
+      "end": 59.53,
+      "text": " Ok, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.53,
+      "end": 60.53,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.1,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

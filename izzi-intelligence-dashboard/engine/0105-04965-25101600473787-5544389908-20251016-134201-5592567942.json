@@ -1,0 +1,339 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600473787-5544389908-20251016-134201-5592567942.WAV",
+  "file_name": "0105-04965-25101600473787-5544389908-20251016-134201-5592567942.WAV",
+  "base_id": "0105-04965-25101600473787-5544389908-20251016-134201-5592567942",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes, joven. Hola, ¿qué tal, señorita? La randirana, hablamos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada, disculpe? Sí, joven. Le voy a pedir un favor. No sé si puede usted bloquear esto. Todos los días, cuatro, cinco veces en todo el día nos están marcando. Ya les dijimos que no nos interesan y siguen las llamadas, las llamadas. No, en este caso... Como un adverto, es esto, ¿eh? No, en este caso, señorita, yo me encargaría de eliminar el número. Ya no tendría que recibirlo a partir de la tarde del día de hoy. En este caso, una disculpa era para lo del... Sí, justamente lo de ese mensaje, señorita. Y documentado, yo me encargaría de que se elimine directamente el número a partir del día de hoy. Porque si ahí nos aparece a ustedes que tenemos otra... Tenemos, estamos con otra compañía porque duro y duro... No, no nos aparece, señorita. Les decimos no y todo el día es lo mismo, todo el día. No, ya no se estarían comunicando, señorita, pero sí, la verdad, no nos aparece a nosotras. Hay cuenta que se supone que nosotros la recibimos, pero nosotros nos encargamos igual de... Bueno, yo me encargaría para que ya no se comunique enseguida. Igual una disculpa. Y que está una excelente tarde. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 19.0,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.0,
+      "end": 21.0,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.0,
+      "end": 26.0,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.0,
+      "end": 28.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.06,
+      "end": 36.12,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.12,
+      "end": 37.62,
+      "text": " Buenas tardes, joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.62,
+      "end": 40.12,
+      "text": " Hola, ¿qué tal, señorita? La randirana, hablamos del servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.12,
+      "end": 42.62,
+      "text": " ¿Le llegó algún mensaje, alguna llamada, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.62,
+      "end": 44.62,
+      "text": " Sí, joven. Le voy a pedir un favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.62,
+      "end": 46.62,
+      "text": " No sé si puede usted bloquear esto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 46.62,
+      "end": 52.62,
+      "text": " Todos los días, cuatro, cinco veces en todo el día nos están marcando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.62,
+      "end": 56.62,
+      "text": " Ya les dijimos que no nos interesan y siguen las llamadas, las llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 56.62,
+      "end": 58.68,
+      "text": " No, en este caso...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 58.68,
+      "end": 60.68,
+      "text": " Como un adverto, es esto, ¿eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 60.68,
+      "end": 63.68,
+      "text": " No, en este caso, señorita, yo me encargaría de eliminar el número.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 63.68,
+      "end": 66.68,
+      "text": " Ya no tendría que recibirlo a partir de la tarde del día de hoy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 66.68,
+      "end": 69.68,
+      "text": " En este caso, una disculpa era para lo del...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 69.68,
+      "end": 71.68,
+      "text": " Sí, justamente lo de ese mensaje, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 71.68,
+      "end": 74.68,
+      "text": " Y documentado, yo me encargaría de que se elimine directamente el número",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 74.68,
+      "end": 76.68,
+      "text": " a partir del día de hoy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 76.68,
+      "end": 79.68,
+      "text": " Porque si ahí nos aparece a ustedes que tenemos otra...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 79.68,
+      "end": 82.68,
+      "text": " Tenemos, estamos con otra compañía porque duro y duro...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 82.68,
+      "end": 84.68,
+      "text": " No, no nos aparece, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 84.68,
+      "end": 88.68,
+      "text": " Les decimos no y todo el día es lo mismo, todo el día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 88.68,
+      "end": 90.68,
+      "text": " No, ya no se estarían comunicando, señorita,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 90.68,
+      "end": 92.68,
+      "text": " pero sí, la verdad, no nos aparece a nosotras.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 92.68,
+      "end": 95.68,
+      "text": " Hay cuenta que se supone que nosotros la recibimos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 95.68,
+      "end": 97.68,
+      "text": " pero nosotros nos encargamos igual de...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 97.68,
+      "end": 99.68,
+      "text": " Bueno, yo me encargaría para que ya no se comunique enseguida.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 99.68,
+      "end": 100.68,
+      "text": " Igual una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 100.68,
+      "end": 102.68,
+      "text": " Y que está una excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 102.68,
+      "end": 103.68,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.424,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

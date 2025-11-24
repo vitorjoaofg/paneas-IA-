@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000517554-3314541366-20251010-134257-3316524904.WAV",
+  "file_name": "0105-04965-25101000517554-3314541366-20251010-134257-3316524904.WAV",
+  "base_id": "0105-04965-25101000517554-3314541366-20251010-134257-3316524904",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Sí, bueno. Sí, es que me están hablando desde este año, pero no lo he pagado porque no puedo salir yo. Ah, ok. Y mi hija, ya tengo el dinero y todo, pero mi hija sale tarde de trabajar y ya no alcanza, pero me dijo que a veces mañana iba a pagarlo porque yo no sé de cómo no vivo, porque estoy inválida y estoy sola aquí en mi casa, pero de que lo voy a pagar, si lo voy a pagar, lo más que yo no vivo aquí están casados mis dos hijos y trabajan, entonces es difícil. Sí. Bueno, que lo reportamos. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 28.24,
+      "text": " comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.24,
+      "end": 33.17,
+      "text": " terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.17,
+      "end": 47.05,
+      "text": " Sí, bueno. Sí, es que me están hablando desde este",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.05,
+      "end": 50.39,
+      "text": " año, pero no lo he pagado porque no puedo salir yo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.39,
+      "end": 58.64,
+      "text": " Ah, ok. Y mi hija, ya tengo el dinero y todo, pero",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.64,
+      "end": 63.04,
+      "text": " mi hija sale tarde de trabajar y ya no alcanza, pero me dijo que a veces mañana iba a",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.12,
+      "end": 68.76,
+      "text": " pagarlo porque yo no sé de cómo no vivo, porque estoy inválida y estoy sola aquí",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 68.76,
+      "end": 75.98,
+      "text": " en mi casa, pero de que lo voy a pagar, si lo voy a pagar, lo más que yo no vivo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.98,
+      "end": 80.98,
+      "text": " aquí están casados mis dos hijos y trabajan, entonces es difícil.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 80.98,
+      "end": 84.05,
+      "text": " Sí. Bueno, que lo reportamos. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

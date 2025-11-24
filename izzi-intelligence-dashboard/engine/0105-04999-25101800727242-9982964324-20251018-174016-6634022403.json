@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101800727242-9982964324-20251018-174016-6634022403.WAV",
+  "file_name": "0105-04999-25101800727242-9982964324-20251018-174016-6634022403.WAV",
+  "base_id": "0105-04999-25101800727242-9982964324-20251018-174016-6634022403",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Gracias por llamar al centro de atención al cliente de Easy. ¿Cómo le ayudan? ¿Cómo le ayudan para que no me hicieran marcando? Bueno, bueno, bueno. En cuanto a la calidad va a ser difícil. Me pregunto, ¿cómo le ayudan para que no me hicieran marcando? Bueno, bueno. Voy a recortar este email y le voy a reportar con RH, con los signos de Charlie, con los acentuos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.0,
+      "end": 23.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.0,
+      "end": 36.13,
+      "text": " Gracias por llamar al centro de atención al cliente de Easy. ¿Cómo le ayudan?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.13,
+      "end": 42.81,
+      "text": " ¿Cómo le ayudan para que no me hicieran marcando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.81,
+      "end": 48.41,
+      "text": " Bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.41,
+      "end": 50.41,
+      "text": " En cuanto a la calidad va a ser difícil.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.41,
+      "end": 54.41,
+      "text": " Me pregunto, ¿cómo le ayudan para que no me hicieran marcando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.41,
+      "end": 61.38,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.38,
+      "end": 65.38,
+      "text": " Voy a recortar este email y le voy a reportar con RH,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.38,
+      "end": 67.7,
+      "text": " con los signos de Charlie,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.7,
+      "end": 69.7,
+      "text": " con los acentuos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.408,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

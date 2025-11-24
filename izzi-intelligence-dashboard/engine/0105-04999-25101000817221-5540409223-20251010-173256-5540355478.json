@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101000817221-5540409223-20251010-173256-5540355478.WAV",
+  "file_name": "0105-04999-25101000817221-5540409223-20251010-173256-5540355478.WAV",
+  "base_id": "0105-04999-25101000817221-5540409223-20251010-173256-5540355478",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skysport desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 13.28,
+      "text": " más Skysport desde 350 pesos el primer mes con Easy Es Posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 20.72,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.72,
+      "end": 29.65,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.73,
+      "end": 42.87,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.87,
+      "end": 52.98,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.98,
+      "end": 54.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.904,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

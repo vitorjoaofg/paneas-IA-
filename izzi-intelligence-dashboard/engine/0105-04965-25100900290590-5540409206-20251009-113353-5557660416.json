@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900290590-5540409206-20251009-113353-5557660416.WAV",
+  "file_name": "0105-04965-25100900290590-5540409206-20251009-113353-5557660416.WAV",
+  "base_id": "0105-04965-25100900290590-5540409206-20251009-113353-5557660416",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. ¿Por favor? Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Hola, ¿qué tal? ¿Muy buenos días? ¿Se está comunicando con Easy? ¿Con quién tengo el gusto? No, yo nunca lo sé, yo soy un niño. OK, disculpa, que tengas un bonito día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.14,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.14,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.36,
+      "end": 16.46,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.46,
+      "end": 17.76,
+      "text": " ¿Por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.76,
+      "end": 22.99,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.99,
+      "end": 24.83,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 24.83,
+      "end": 28.39,
+      "text": " Presiona 1 para hablar con un asesor o 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.39,
+      "end": 30.59,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.8,
+      "end": 41.17,
+      "text": " Hola, ¿qué tal? ¿Muy buenos días?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.17,
+      "end": 45.24,
+      "text": " ¿Se está comunicando con Easy? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.24,
+      "end": 49.5,
+      "text": " No, yo nunca lo sé, yo soy un niño.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.5,
+      "end": 52.5,
+      "text": " OK, disculpa, que tengas un bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

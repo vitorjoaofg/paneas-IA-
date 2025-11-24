@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600151821-5544389998-20251016-091911-5557564467.WAV",
+  "file_name": "0105-04965-25101600151821-5544389998-20251016-091911-5557564467.WAV",
+  "base_id": "0105-04965-25101600151821-5544389998-20251016-091911-5557564467",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. No le entendí nada. Habla muy cedito. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.44,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.44,
+      "end": 12.2,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.2,
+      "end": 18.64,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 25.25,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.25,
+      "end": 29.73,
+      "text": " No le entendí nada. Habla muy cedito. Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.616,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

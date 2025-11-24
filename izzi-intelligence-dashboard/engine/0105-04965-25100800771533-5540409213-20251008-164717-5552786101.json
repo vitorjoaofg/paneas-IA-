@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800771533-5540409213-20251008-164717-5552786101.WAV",
+  "file_name": "0105-04965-25100800771533-5540409213-20251008-164717-5552786101.WAV",
+  "base_id": "0105-04965-25100800771533-5540409213-20251008-164717-5552786101",
+  "transcription": "Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con VixPremix, más Retail Sports, desde 350 pesos al primer mes? Con Easy, es posible, te interesa, un asesor te está esperando. 9 y desea marcar una extensión, o 0 para la operadora. Espera un momento, por favor. Gracias por llamar a Incomix. Por favor, elija una de las siguientes opciones para continuar. Uno, ventas. Dos, crédito. Tres, soporte técnico y garantías. Cuatro, si aún no es nuestro cliente y desea darse de alta. Nueve, si desea marcar una extensión, o 0 para la operadora. Se ha comunicado con el departamento de ventas. Grupo 1, marque 1. Grupo 3, marque 3. Seguridad, marque 5.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con VixPremix,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Retail Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 16.44,
+      "text": " Con Easy, es posible, te interesa, un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.44,
+      "end": 20.4,
+      "text": " 9 y desea marcar una extensión, o 0 para la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.4,
+      "end": 26.43,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.43,
+      "end": 33.18,
+      "text": " Gracias por llamar a Incomix.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.18,
+      "end": 37.28,
+      "text": " Por favor, elija una de las siguientes opciones para continuar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.52,
+      "end": 39.7,
+      "text": " Uno, ventas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.7,
+      "end": 41.88,
+      "text": " Dos, crédito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.88,
+      "end": 45.4,
+      "text": " Tres, soporte técnico y garantías.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.4,
+      "end": 49.68,
+      "text": " Cuatro, si aún no es nuestro cliente y desea darse de alta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.68,
+      "end": 56.87,
+      "text": " Nueve, si desea marcar una extensión, o 0 para la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 56.87,
+      "end": 60.48,
+      "text": " Se ha comunicado con el departamento de ventas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.48,
+      "end": 63.09,
+      "text": " Grupo 1, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 63.09,
+      "end": 65.81,
+      "text": " Grupo 3, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 65.81,
+      "end": 68.01,
+      "text": " Seguridad, marque 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 157.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

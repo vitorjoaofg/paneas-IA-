@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800442335-3314541366-20251008-124444-9813897765.WAV",
+  "file_name": "0105-04999-25100800442335-3314541366-20251008-124444-9813897765.WAV",
+  "base_id": "0105-04999-25100800442335-3314541366-20251008-124444-9813897765",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Se puede crear una contratación en Easy. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.85,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.85,
+      "end": 13.49,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.49,
+      "end": 15.45,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.45,
+      "end": 16.45,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.45,
+      "end": 18.57,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.57,
+      "end": 26.38,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.38,
+      "end": 27.86,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.13,
+      "end": 37.49,
+      "text": " Se puede crear una contratación en Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.49,
+      "end": 38.49,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 39.132,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700136372-3314541357-20251017-090649-3345232657.WAV",
+  "file_name": "0105-04965-25101700136372-3314541357-20251017-090649-3345232657.WAV",
+  "base_id": "0105-04965-25101700136372-3314541357-20251017-090649-3345232657",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía y los paquetes de internet. Buen día. Buen día. ¿Usted tiene internet con Easy o con otra compañía? No tengo otra compañía, me está marcando el número de la compañía. Mira, ahorita tenemos paquetes para clientes nuevos hasta 349. Pérame, pérame. Necesito que dejen de marcarme este número. ¿No le interesa? No, para nada. Ok, entonces yo paso el reporte para que la borren de la lista. Que tenga un buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 32.34,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.34,
+      "end": 38.98,
+      "text": " para hablar con un asesor o 2 para terminar la llamada. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.98,
+      "end": 85.02,
+      "text": " por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 85.02,
+      "end": 88.94,
+      "text": " Easy para darle a conocer los beneficios con la telefonía y los",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 88.94,
+      "end": 94.29,
+      "text": " paquetes de internet. Buen día. Buen día. ¿Usted tiene internet con Easy o con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 94.29,
+      "end": 97.85,
+      "text": " otra compañía? No tengo otra compañía, me está marcando el número de la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 97.85,
+      "end": 106.11,
+      "text": " compañía. Mira, ahorita tenemos paquetes para clientes nuevos hasta 349.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 106.11,
+      "end": 111.09,
+      "text": " Pérame, pérame. Necesito que dejen de marcarme este número. ¿No le interesa?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 111.09,
+      "end": 115.89,
+      "text": " No, para nada. Ok, entonces yo paso el reporte para que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 115.89,
+      "end": 119.85,
+      "text": " la borren de la lista. Que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 121.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

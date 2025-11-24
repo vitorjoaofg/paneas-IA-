@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400453687-5544389938-20251014-132614-5596678576.WAV",
+  "file_name": "0105-04965-25101400453687-5544389938-20251014-132614-5596678576.WAV",
+  "base_id": "0105-04965-25101400453687-5544389938-20251014-132614-5596678576",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. ¿Con Vix? ¿Contrataciones Easy? La tendía Edgar Torres, con quien tengo el gusto. ¿Contrataciones Easy? Sí. Ah, no se refiere con Total Play. Este es otro tipo de llamada de otra empresa, más bien dicho, es lo que le quiero preguntar o lo que digo. ¿Cómo, perdón? A ver, Easy es de una empresa y Total Play es otra, ¿sí? Así es. Ah, entonces me equivoqué al contestar, Jorge. Le agradezco mucho. Porque, le voy a decir rápidamente, perdón, ¿eh? Era más para reclamarles que no tengo servicio, por eso acepté la llamada. Muchas gracias y disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 22.98,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.98,
+      "end": 30.98,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 30.98,
+      "end": 32.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.98,
+      "end": 39.82,
+      "text": " ¿Con Vix?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.82,
+      "end": 42.82,
+      "text": " ¿Contrataciones Easy? La tendía Edgar Torres, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.82,
+      "end": 44.82,
+      "text": " ¿Contrataciones Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.82,
+      "end": 46.81,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.81,
+      "end": 57.94,
+      "text": " Ah, no se refiere con Total Play. Este es otro tipo de llamada de otra empresa, más bien dicho, es lo que le quiero preguntar o lo que digo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.94,
+      "end": 60.03,
+      "text": " ¿Cómo, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.03,
+      "end": 64.03,
+      "text": " A ver, Easy es de una empresa y Total Play es otra, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.03,
+      "end": 66.26,
+      "text": " Así es.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.26,
+      "end": 73.26,
+      "text": " Ah, entonces me equivoqué al contestar, Jorge. Le agradezco mucho. Porque, le voy a decir rápidamente, perdón, ¿eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 73.26,
+      "end": 80.26,
+      "text": " Era más para reclamarles que no tengo servicio, por eso acepté la llamada. Muchas gracias y disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.408,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

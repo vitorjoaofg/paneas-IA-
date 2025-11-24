@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25101500821267-5528557526-20251015-174941-04896.WAV",
+  "file_name": "0105-04896-25101500821267-5528557526-20251015-174941-04896.WAV",
+  "base_id": "0105-04896-25101500821267-5528557526-20251015-174941-04896",
+  "transcription": "Hola, somos Izzy. Y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. ¿Bueno? Hola, ¿qué tal? ¿Me puedes pasar al área de cobros, por favor? ¿Mande? ¿Me puedes comunicar al área de cobros? Claro que sí. Muchas gracias. Permítame. Permítame. Va a abrir la opción 1 cuando entre el computador. Ok, muchas gracias. ¿Cómo hable? De nada. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Izzy. Y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.1,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.1,
+      "end": 10.3,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.3,
+      "end": 21.25,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.25,
+      "end": 22.74,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.74,
+      "end": 26.48,
+      "text": " Hola, ¿qué tal? ¿Me puedes pasar al área de cobros, por favor?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.48,
+      "end": 27.61,
+      "text": " ¿Mande?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.61,
+      "end": 30.44,
+      "text": " ¿Me puedes comunicar al área de cobros?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.44,
+      "end": 31.74,
+      "text": " Claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.74,
+      "end": 32.84,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 32.84,
+      "end": 39.71,
+      "text": " Permítame. Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.71,
+      "end": 42.41,
+      "text": " Va a abrir la opción 1 cuando entre el computador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.51,
+      "end": 44.21,
+      "text": " Ok, muchas gracias. ¿Cómo hable?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.21,
+      "end": 45.41,
+      "text": " De nada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 45.41,
+      "end": 46.21,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 112.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

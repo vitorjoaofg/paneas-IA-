@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100900508106-3319659055-20251009-143728-04896.WAV",
+  "file_name": "0105-04999-25100900508106-3319659055-20251009-143728-04896.WAV",
+  "base_id": "0105-04999-25100900508106-3319659055-20251009-143728-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Buenas tardes. Mi nombre es José Manuel. ¿Con quién tengo el gusto? Con William Carlan, es amigo. Dice, tengo una llamada perdida de este número, amigo. Ah, ok. ¿Ya cuentas con Easy tú o tienes otra compañía ya que estábamos hablando para nuestros planes? Bueno, para creen que no he donado algunos descuentos. Creo que ya, ya tengo Easy en casa. ¿Ya tienes Easy? Creo que sí. Ah, ok. Bueno, más que nada es para esto, para creen que no es vos. Gracias. Ah, ok, hermano. Buen día. Hasta luego. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 10.44,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.44,
+      "end": 18.04,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.04,
+      "end": 27.22,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.22,
+      "end": 28.22,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.98,
+      "end": 37.78,
+      "text": " Buenas tardes. Mi nombre es José Manuel. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.78,
+      "end": 42.78,
+      "text": " Con William Carlan, es amigo. Dice, tengo una llamada perdida de este número, amigo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.78,
+      "end": 47.87,
+      "text": " Ah, ok. ¿Ya cuentas con Easy tú o tienes otra compañía ya que estábamos hablando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.87,
+      "end": 52.61,
+      "text": " para nuestros planes? Bueno, para creen que no he donado algunos descuentos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.61,
+      "end": 56.61,
+      "text": " Creo que ya, ya tengo Easy en casa. ¿Ya tienes Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.61,
+      "end": 60.83,
+      "text": " Creo que sí. Ah, ok. Bueno, más que nada es para esto,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.83,
+      "end": 62.83,
+      "text": " para creen que no es vos. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 62.83,
+      "end": 63.83,
+      "text": " Ah, ok, hermano.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 63.83,
+      "end": 64.83,
+      "text": " Buen día. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.83,
+      "end": 65.83,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.132,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

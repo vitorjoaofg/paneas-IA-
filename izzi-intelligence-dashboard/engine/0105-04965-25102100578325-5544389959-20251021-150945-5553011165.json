@@ -1,0 +1,51 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100578325-5544389959-20251021-150945-5553011165.WAV",
+  "file_name": "0105-04965-25102100578325-5544389959-20251021-150945-5553011165.WAV",
+  "base_id": "0105-04965-25102100578325-5544389959-20251021-150945-5553011165",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? ¿Buenas tardes? ¿Sí, buenas tardes? Bueno, ¿me escucha? Bueno, bueno, por motivos de calidad, ¿puedo finalizar la llamada?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 22.95,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.95,
+      "end": 31.95,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 31.95,
+      "end": 62.88,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes? ¿Sí, buenas tardes? Bueno, ¿me escucha? Bueno, bueno, por motivos de calidad, ¿puedo finalizar la llamada?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 123.984,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

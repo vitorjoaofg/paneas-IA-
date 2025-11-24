@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800158149-5540409213-20251018-095858-5596293898.WAV",
+  "file_name": "0105-04965-25101800158149-5540409213-20251018-095858-5596293898.WAV",
+  "base_id": "0105-04965-25101800158149-5540409213-20251018-095858-5596293898",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, muy buen día. Hola, muy buen día. Mi nombre es Brisa López de parte de Easy. ¿Con quién tengo el gusto? Con Daniela Gómez. Señorita Daniela, mi nombre es Brisa López de parte de Easy. ¿Usted cuenta con nuestro servicio? No, de hecho quería ver con quién puedo hablar para que no me estén llamando, porque no me interesa cambiar de compañía y no sé cómo subir a mi número. Ah, ok. Miren, nos estamos comunicando con usted para darle a conocer nuestros servicios. ¿Le interesa? No, y quisiera que no me marquen, por favor. Ok, no se preocupe. Aquí le pondremos en el sistema, ¿correcto? Ok, gracias. Le atendió Brisa López, que tenga un excelente día. Hasta luego. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 36.73,
+      "text": " para no. Espera un momento, por favor. Hola, muy buen día. Hola, muy buen día. Mi",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.73,
+      "end": 40.53,
+      "text": " nombre es Brisa López de parte de Easy. ¿Con quién tengo el gusto? Con Daniela",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.53,
+      "end": 45.85,
+      "text": " Gómez. Señorita Daniela, mi nombre es Brisa López de parte de Easy. ¿Usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.85,
+      "end": 49.87,
+      "text": " cuenta con nuestro servicio? No, de hecho quería ver con quién puedo hablar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.87,
+      "end": 52.67,
+      "text": " para que no me estén llamando, porque no me interesa cambiar de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.67,
+      "end": 57.9,
+      "text": " compañía y no sé cómo subir a mi número. Ah, ok. Miren, nos estamos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.9,
+      "end": 61.66,
+      "text": " comunicando con usted para darle a conocer nuestros servicios. ¿Le interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.66,
+      "end": 66.42,
+      "text": " No, y quisiera que no me marquen, por favor. Ok, no se preocupe. Aquí le",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.42,
+      "end": 70.42,
+      "text": " pondremos en el sistema, ¿correcto? Ok, gracias. Le atendió Brisa López, que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 70.42,
+      "end": 74.58,
+      "text": " tenga un excelente día. Hasta luego. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.952,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

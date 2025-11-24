@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700396473-5544389927-20251017-124410-5587883128.WAV",
+  "file_name": "0105-04965-25101700396473-5544389927-20251017-124410-5587883128.WAV",
+  "base_id": "0105-04965-25101700396473-5544389927-20251017-124410-5587883128",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Un momento, por favor. Hola, buen día. Este, ya les dije que los voy a reportar por extorsión, ya no quiero que me estén llamando a este número. Me ponen la contestadora, me están extorsionando por este número. Nosotros nos estamos comunicando para… No, ya les pedí de favor que me bloqueen, no quiero saber nada de ustedes como empresa. Y me calen con una, con otra, con otra, de verdad voy a registrar este número, voy a levantar, a iniciar una demanda por extorsión. Ok, no se preocupe, aquí la pondremos en el sistema, ¿correcto? Gracias. Le atendió Brice Lovett que tenga un excelente día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.62,
+      "end": 8.58,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.58,
+      "end": 16.38,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.38,
+      "end": 22.46,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.46,
+      "end": 29.37,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.37,
+      "end": 37.94,
+      "text": " Un momento, por favor. Hola, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.94,
+      "end": 43.59,
+      "text": " Este, ya les dije que los voy a reportar por extorsión, ya no quiero que me estén",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.59,
+      "end": 51.31,
+      "text": " llamando a este número. Me ponen la contestadora, me están extorsionando por este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.31,
+      "end": 55.09,
+      "text": " Nosotros nos estamos comunicando para…",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.09,
+      "end": 60.61,
+      "text": " No, ya les pedí de favor que me bloqueen, no quiero saber nada de ustedes como empresa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.61,
+      "end": 67.09,
+      "text": " Y me calen con una, con otra, con otra, de verdad voy a registrar este número,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.09,
+      "end": 71.29,
+      "text": " voy a levantar, a iniciar una demanda por extorsión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.29,
+      "end": 75.97,
+      "text": " Ok, no se preocupe, aquí la pondremos en el sistema, ¿correcto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.97,
+      "end": 75.99,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 75.99,
+      "end": 79.85,
+      "text": " Le atendió Brice Lovett que tenga un excelente día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.208,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

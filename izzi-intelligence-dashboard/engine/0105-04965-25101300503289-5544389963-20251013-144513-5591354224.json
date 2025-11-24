@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300503289-5544389963-20251013-144513-5591354224.WAV",
+  "file_name": "0105-04965-25101300503289-5544389963-20251013-144513-5591354224.WAV",
+  "base_id": "0105-04965-25101300503289-5544389963-20251013-144513-5591354224",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, ¿qué tal? Me llegó este mensaje, pero ya anduve preguntando y me dijeron que no había cobertura, ¿ya hay cobertura aquí? ¿Cuál sería su dirección para poder validar? Ah, espérame, espérame, espérame. Es que creo que sí nos interesa Easy, porque el que tenemos ahorita es el Cell, pero tiene mucha con mucha falla. Estebiazteca S.A.D.C.B., preparatoria S, ¿qué? Paso Witsiliwitl, ¿cómo se pronuncia esto, Diego? ¿Cómo se pronuncia esta vez? Es el de Witsiliwitl, vamos a cambiar a un S.A.D.C.B. Paso Witsiliwitl, ¿qué me acusa de esto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.39,
+      "end": 9.2,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.2,
+      "end": 17.0,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 23.08,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.08,
+      "end": 30.39,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.43,
+      "end": 41.98,
+      "text": " Hola, ¿qué tal? Me llegó este mensaje, pero ya anduve preguntando y me dijeron que no había cobertura,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.98,
+      "end": 51.09,
+      "text": " ¿ya hay cobertura aquí? ¿Cuál sería su dirección para poder validar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.09,
+      "end": 58.72,
+      "text": " Ah, espérame, espérame, espérame. Es que creo que sí nos interesa Easy,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.8,
+      "end": 64.36,
+      "text": " porque el que tenemos ahorita es el Cell, pero tiene mucha con mucha falla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.36,
+      "end": 74.54,
+      "text": " Estebiazteca S.A.D.C.B., preparatoria S, ¿qué? Paso Witsiliwitl, ¿cómo se pronuncia esto, Diego?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 74.54,
+      "end": 84.43,
+      "text": " ¿Cómo se pronuncia esta vez? Es el de Witsiliwitl, vamos a cambiar a un S.A.D.C.B.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 84.43,
+      "end": 95.82,
+      "text": " Paso Witsiliwitl, ¿qué me acusa de esto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 116.928,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

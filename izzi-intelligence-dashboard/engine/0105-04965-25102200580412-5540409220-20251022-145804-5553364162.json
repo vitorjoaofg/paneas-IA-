@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200580412-5540409220-20251022-145804-5553364162.WAV",
+  "file_name": "0105-04965-25102200580412-5540409220-20251022-145804-5553364162.WAV",
+  "base_id": "0105-04965-25102200580412-5540409220-20251022-145804-5553364162",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Rick Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, buenas tardes. ¿Quién habla? Hola, mi nombre es Guadalupe Juárez, está hablando a contrataciones. Sí, sí. ¿Sí escuchó la grabación anterior? No, no se oía nada. Pero bueno, no estamos interesados. Muchas gracias. Ah, ok. Una disculpa. Entonces, que tenga bonitas días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Rick Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 20.68,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.68,
+      "end": 23.23,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.23,
+      "end": 31.06,
+      "text": " Bueno, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.6,
+      "end": 33.12,
+      "text": " ¿Quién habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.32,
+      "end": 37.6,
+      "text": " Hola, mi nombre es Guadalupe Juárez, está hablando a contrataciones. Sí, sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.6,
+      "end": 39.8,
+      "text": " ¿Sí escuchó la grabación anterior?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.8,
+      "end": 43.92,
+      "text": " No, no se oía nada. Pero bueno, no estamos interesados. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.92,
+      "end": 46.92,
+      "text": " Ah, ok. Una disculpa. Entonces, que tenga bonitas días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

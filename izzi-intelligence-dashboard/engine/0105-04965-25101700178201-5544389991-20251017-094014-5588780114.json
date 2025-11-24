@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700178201-5544389991-20251017-094014-5588780114.WAV",
+  "file_name": "0105-04965-25101700178201-5544389991-20251017-094014-5588780114.WAV",
+  "base_id": "0105-04965-25101700178201-5544389991-20251017-094014-5588780114",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno. Sí, bueno. Buenos días. Salve, verdad. Muy bien. ¿Y cómo que te ha gustado? Sí, buenos días. Dejen de estar chingando en la madre, no quiero su servicio, hijos de su puta madre.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.21,
+      "end": 7.01,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.01,
+      "end": 11.41,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.41,
+      "end": 13.41,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.41,
+      "end": 14.41,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.41,
+      "end": 16.61,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.61,
+      "end": 21.01,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.01,
+      "end": 31.13,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.13,
+      "end": 32.13,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.13,
+      "end": 33.73,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.73,
+      "end": 34.33,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.33,
+      "end": 34.73,
+      "text": " Salve, verdad.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 34.73,
+      "end": 35.13,
+      "text": " Muy bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 35.13,
+      "end": 36.33,
+      "text": " ¿Y cómo que te ha gustado?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 36.33,
+      "end": 37.13,
+      "text": " Sí, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 37.13,
+      "end": 41.13,
+      "text": " Dejen de estar chingando en la madre, no quiero su servicio, hijos de su puta madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.192,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

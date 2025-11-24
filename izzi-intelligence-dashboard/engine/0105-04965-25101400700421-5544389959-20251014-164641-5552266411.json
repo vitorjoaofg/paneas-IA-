@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400700421-5544389959-20251014-164641-5552266411.WAV",
+  "file_name": "0105-04965-25101400700421-5544389959-20251014-164641-5552266411.WAV",
+  "base_id": "0105-04965-25101400700421-5544389959-20251014-164641-5552266411",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¡Hola! Buenas tardes, bienvenido a la área de contrataciones Easy, aquí es Nancy Martínez. ¿Con quién tengo el gusto? Bueno, bueno, bueno, buenas tardes. Por motivos de calidad me obliga a finalizar la llamada ya que no tengo misienes con ningún remitente. Que pase muy buena tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.08,
+      "end": 5.6,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.6,
+      "end": 12.4,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.4,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.38,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.38,
+      "end": 27.38,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.54,
+      "end": 36.9,
+      "text": " ¡Hola! Buenas tardes, bienvenido a la área de contrataciones Easy, aquí es Nancy Martínez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.9,
+      "end": 72.1,
+      "text": " ¿Con quién tengo el gusto? Bueno, bueno, bueno, buenas tardes. Por motivos de calidad",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 72.1,
+      "end": 75.5,
+      "text": " me obliga a finalizar la llamada ya que no tengo misienes con ningún remitente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 75.5,
+      "end": 76.74,
+      "text": " Que pase muy buena tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.052,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

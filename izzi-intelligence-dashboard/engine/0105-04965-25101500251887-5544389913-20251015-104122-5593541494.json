@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500251887-5544389913-20251015-104122-5593541494.WAV",
+  "file_name": "0105-04965-25101500251887-5544389913-20251015-104122-5593541494.WAV",
+  "base_id": "0105-04965-25101500251887-5544389913-20251015-104122-5593541494",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ¿Qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¿Con quién tengo el gusto? Leonardo, no importa con quién estés hablando. Lo que sí importa es que me llamaron anteriormente ya bastantes veces y ya les he dicho que no me interesa. Me siguen llamando, o sea, la máquina me marca y tal. Entonces, ahorita tuve que esperar para que me contestes. Háganme el favor de quitar mi número otra vez de su lista porque además me registré en esta página para no recibir la publicidad. En todo caso, te agradezco mucho la amable atención. Mire, disculpe que le haya preguntado su nombre. Le pregunté su nombre porque pensé que había la humildad de que me lo brindara para saber con quién hablo, pero no se preocupe. Yo hago el reporte de su molestia para evitar las llamadas con usted. Te agradezco mucho, Leonardo. No puedo despedirme de usted de manera formal porque no sé cómo se llama, pero le atendió Leonardo García. Que tenga muy buen día. Gracias, Leonardo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.0,
+      "end": 68.83,
+      "text": " ¿Qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 68.83,
+      "end": 77.83,
+      "text": " Leonardo, no importa con quién estés hablando. Lo que sí importa es que me llamaron anteriormente ya bastantes veces y ya les he dicho que no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 77.83,
+      "end": 85.83,
+      "text": " Me siguen llamando, o sea, la máquina me marca y tal. Entonces, ahorita tuve que esperar para que me contestes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 85.83,
+      "end": 96.83,
+      "text": " Háganme el favor de quitar mi número otra vez de su lista porque además me registré en esta página para no recibir la publicidad.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 96.83,
+      "end": 100.83,
+      "text": " En todo caso, te agradezco mucho la amable atención.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 100.83,
+      "end": 107.83,
+      "text": " Mire, disculpe que le haya preguntado su nombre. Le pregunté su nombre porque pensé que había la humildad de que me lo brindara para saber con quién hablo, pero no se preocupe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 107.83,
+      "end": 110.83,
+      "text": " Yo hago el reporte de su molestia para evitar las llamadas con usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 110.83,
+      "end": 112.83,
+      "text": " Te agradezco mucho, Leonardo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 112.83,
+      "end": 117.83,
+      "text": " No puedo despedirme de usted de manera formal porque no sé cómo se llama, pero le atendió Leonardo García. Que tenga muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 117.83,
+      "end": 118.83,
+      "text": " Gracias, Leonardo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 121.32,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

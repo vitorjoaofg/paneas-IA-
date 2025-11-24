@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000521375-5544389911-20251010-134551-5555650560.WAV",
+  "file_name": "0105-04965-25101000521375-5544389911-20251010-134551-5555650560.WAV",
+  "base_id": "0105-04965-25101000521375-5544389911-20251010-134551-5555650560",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, bienvenida, buenas tardes, gracias por comunicarse la día de contrataciones de Easy en la tienda de Valía Daniela. ¿Te gusta? Buenas tardes, señorita. Miren, marcan todos los días para ofrecer el servicio. Nosotros tenemos Easy, pero no nos interesa el internet. Le pido de la manera más tenta que os dicen de marcar porque si no vamos a acabar cancelando también el servicio de caja. Claro que sí, lo pongo aquí en los comentarios. Una disculpa. Que tenga buen día. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 5.59,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.59,
+      "end": 10.67,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.67,
+      "end": 17.27,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.27,
+      "end": 23.27,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.27,
+      "end": 26.63,
+      "text": " para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.67,
+      "end": 37.26,
+      "text": " Hola, bienvenida, buenas tardes, gracias por comunicarse la día de contrataciones de Easy en la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.26,
+      "end": 42.56,
+      "text": " tienda de Valía Daniela. ¿Te gusta? Buenas tardes, señorita. Miren, marcan todos los días",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.56,
+      "end": 48.46,
+      "text": " para ofrecer el servicio. Nosotros tenemos Easy, pero no nos interesa el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.46,
+      "end": 51.79,
+      "text": " internet. Le pido de la manera más tenta que os",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.79,
+      "end": 55.39,
+      "text": " dicen de marcar porque si no vamos a acabar cancelando también el servicio",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.39,
+      "end": 60.9,
+      "text": " de caja. Claro que sí, lo pongo aquí en los comentarios. Una disculpa. Que tenga",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.9,
+      "end": 64.98,
+      "text": " buen día. Gracias. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.692,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

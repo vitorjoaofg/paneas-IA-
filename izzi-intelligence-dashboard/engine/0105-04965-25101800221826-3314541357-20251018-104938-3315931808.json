@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800221826-3314541357-20251018-104938-3315931808.WAV",
+  "file_name": "0105-04965-25101800221826-3314541357-20251018-104938-3315931808.WAV",
+  "base_id": "0105-04965-25101800221826-3314541357-20251018-104938-3315931808",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Hola! Buen día. Le habla Iván Monfil de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía móvil. Buen día. Bueno. ¡Hola! Le hablamos para darle a conocer algunos de los telefonistas. ¿Tienes que conocer a Tiú y a Bílus de la Brain Rot? ¿Tienes que conocer a Tiú y a Bílus de la Brain Rot?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.74,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.74,
+      "end": 48.86,
+      "text": " un momento, por favor. ¡Hola! Buen día. Le habla Iván Monfil de parte de su servicio",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.86,
+      "end": 54.4,
+      "text": " de Easy para darle a conocer los beneficios de la telefonía móvil. Buen día. Bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 54.4,
+      "end": 60.71,
+      "text": " ¡Hola! Le hablamos para darle a conocer algunos de los telefonistas. ¿Tienes que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 60.71,
+      "end": 80.59,
+      "text": " conocer a Tiú y a Bílus de la Brain Rot? ¿Tienes que conocer a Tiú y a Bílus",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 80.59,
+      "end": 81.59,
+      "text": " de la Brain Rot?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 118.044,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

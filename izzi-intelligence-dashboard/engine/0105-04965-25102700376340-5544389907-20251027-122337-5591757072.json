@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700376340-5544389907-20251027-122337-5591757072.WAV",
+  "file_name": "0105-04965-25102700376340-5544389907-20251027-122337-5591757072.WAV",
+  "base_id": "0105-04965-25102700376340-5544389907-20251027-122337-5591757072",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde $350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Hola? Hola, ¿qué tal? Buenos días. Mi nombre es Karen Sánchez, mucho gusto. Hablo por parte de Easy. ¿Con quién tengo el gusto? ¿Van a? ¿Van a? ¿Qué tal? Hablo por parte de Easy. ¿Me escuchas? Por tema de calidad, colgaré la luz.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde $350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.9,
+      "end": 25.9,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.23,
+      "end": 27.93,
+      "text": " ¿Hola?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.16,
+      "end": 33.66,
+      "text": " Hola, ¿qué tal? Buenos días. Mi nombre es Karen Sánchez, mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.66,
+      "end": 36.66,
+      "text": " Hablo por parte de Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.66,
+      "end": 45.64,
+      "text": " ¿Van a? ¿Van a?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.64,
+      "end": 53.35,
+      "text": " ¿Qué tal? Hablo por parte de Easy. ¿Me escuchas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.35,
+      "end": 62.04,
+      "text": " Por tema de calidad, colgaré la luz.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.688,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

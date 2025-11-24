@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400101228-5540409201-20251014-083541-5592404380.WAV",
+  "file_name": "0105-04965-25101400101228-5540409201-20251014-083541-5592404380.WAV",
+  "base_id": "0105-04965-25101400101228-5540409201-20251014-083541-5592404380",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Qué tal, buenos días? Este es el área de contrataciones Easy. ¿Le atiende Leonardo García, con quien tengo el gusto? Sí, bueno, bueno, por temas de calidad, se les llama la llamada. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.51,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.51,
+      "end": 36.62,
+      "text": " ¿Qué tal, buenos días? Este es el área de contrataciones Easy. ¿Le atiende Leonardo García, con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 36.62,
+      "end": 66.29,
+      "text": " Sí, bueno, bueno, por temas de calidad, se les llama la llamada. Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 127.512,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

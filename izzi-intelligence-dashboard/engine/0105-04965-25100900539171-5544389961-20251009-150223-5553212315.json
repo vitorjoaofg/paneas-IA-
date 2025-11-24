@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900539171-5544389961-20251009-150223-5553212315.WAV",
+  "file_name": "0105-04965-25100900539171-5544389961-20251009-150223-5553212315.WAV",
+  "base_id": "0105-04965-25100900539171-5544389961-20251009-150223-5553212315",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, piscis premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cambia de AISI! ¿Te interesa? ¡Una suerte está esperando, por favor! 4. Ventas sistenas. 5. Ventas repintado. 6. Servicio al cliente. ¡Espera un momento, por favor! 7. Deporte técnico. 8. Marketing. 9. Administración. Bienvenida a la área de contrataciones Easy, con quien tengo el gusto. ¡Adiós!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, piscis premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.88,
+      "text": " pesos el primer mes? ¡No lo pienses más y cambia de AISI! ¿Te interesa? ¡Una suerte",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.88,
+      "end": 28.22,
+      "text": " está esperando, por favor! 4. Ventas sistenas. 5. Ventas repintado. 6. Servicio al cliente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.66,
+      "end": 34.81,
+      "text": " ¡Espera un momento, por favor! 7. Deporte técnico. 8. Marketing. 9. Administración.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.81,
+      "end": 41.18,
+      "text": " Bienvenida a la área de contrataciones Easy, con quien tengo el gusto. ¡Adiós!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 41.94,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900736545-5544389915-20251009-174314-5592338669.WAV",
+  "file_name": "0105-04965-25100900736545-5544389915-20251009-174314-5592338669.WAV",
+  "base_id": "0105-04965-25100900736545-5544389915-20251009-174314-5592338669",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse. Gracias por comunicarse. El área de contratación es Easy, la tienda es Alan. ¿Con quién tengo el gusto? Mucho gusto, señora Laura. Mira el motivo de la llamada. Es para presentarle beneficios. ¿Usted cuenta con servicio Easy? No, tenemos total. ¿No le interesaría contratar servicio Easy por 389 pesos? Servicio Internet y Telefonía. O sea, ¿pero me harían como portabilidad o cómo? Sí, también podemos hacer lo que es la opción de portabilidad con el mismo número telefónico. Es el servicio Internet y Telefonía de 60 medas y a un precio de 389 pesos mensuales. ¿Quiere que chiquemos cobertura en su zona a ver si hay cobertura en la zona de usted? Pero me decía que es al inicio y después de cuánto tiempo cambiaría el monto. No, le comenté ser una teléfono fija de 389 pesos, servicio Internet y Telefonía. ¿Quiere que chiquemos cobertura en su zona? Ajá. Ok, ¿me puede apoyar con su código postal, por favor? Es 55793. ¿Me puede apoyar con su calle, por favor? Es Avenida San Francisco, esquina Hidalgo, sin número. ¿Cuál es su entrecalle, por favor? Entre la Avenida Hidalgo y la 2 de marzo. Un momento más. ¿Entre esas dos? Ajá. ¿Por Cruzitos Garage o Farmacia Genericos Siberia? A la siguiente esquina. ¿A la siguiente esquina? Sobre Avenida Hidalgo. Es justo en la esquina de Avenida Hidalgo y Avenida San Francisco, justo en la esquina. Ok, muy bien. Un momento, por favor. Un momentito, ¿sí? Claro que sí. Sí, aquí sigo con usted. Un momentito, por favor. Estoy baleando lo que es la cobertura, por favor. Un momentito, por favor. Sí, estoy chiquando y no hay cobertura en su zona. Ya que la habilitan a partir de un medio año, igual lo pongo como nota para que no la marquen, ¿de acuerdo? Ok, gracias. Claro, sí, la tiendas la habilitan de la compañía y se lo entodian.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Skysport desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 23.88,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.88,
+      "end": 25.88,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.88,
+      "end": 33.58,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.58,
+      "end": 34.58,
+      "text": " Gracias por comunicarse.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.58,
+      "end": 36.58,
+      "text": " El área de contratación es Easy, la tienda es Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.58,
+      "end": 40.88,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.88,
+      "end": 41.88,
+      "text": " Mucho gusto, señora Laura.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.88,
+      "end": 43.88,
+      "text": " Mira el motivo de la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.88,
+      "end": 45.88,
+      "text": " Es para presentarle beneficios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 45.88,
+      "end": 48.49,
+      "text": " ¿Usted cuenta con servicio Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.49,
+      "end": 51.0,
+      "text": " No, tenemos total.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 51.0,
+      "end": 55.0,
+      "text": " ¿No le interesaría contratar servicio Easy por 389 pesos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 55.0,
+      "end": 57.8,
+      "text": " Servicio Internet y Telefonía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 57.8,
+      "end": 64.02,
+      "text": " O sea, ¿pero me harían como portabilidad o cómo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.02,
+      "end": 67.02,
+      "text": " Sí, también podemos hacer lo que es la opción de portabilidad",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 67.02,
+      "end": 69.02,
+      "text": " con el mismo número telefónico.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 69.02,
+      "end": 73.88,
+      "text": " Es el servicio Internet y Telefonía de 60 medas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 73.88,
+      "end": 76.88,
+      "text": " y a un precio de 389 pesos mensuales.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 76.88,
+      "end": 79.71,
+      "text": " ¿Quiere que chiquemos cobertura en su zona",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 79.71,
+      "end": 82.71,
+      "text": " a ver si hay cobertura en la zona de usted?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 82.71,
+      "end": 86.76,
+      "text": " Pero me decía que es al inicio",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 86.76,
+      "end": 90.76,
+      "text": " y después de cuánto tiempo cambiaría el monto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 90.76,
+      "end": 94.76,
+      "text": " No, le comenté ser una teléfono fija de 389 pesos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 94.76,
+      "end": 99.97,
+      "text": " servicio Internet y Telefonía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 99.97,
+      "end": 101.97,
+      "text": " ¿Quiere que chiquemos cobertura en su zona?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 101.97,
+      "end": 102.97,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 102.97,
+      "end": 106.48,
+      "text": " Ok, ¿me puede apoyar con su código postal, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 106.48,
+      "end": 113.33,
+      "text": " Es 55793.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 113.33,
+      "end": 115.33,
+      "text": " ¿Me puede apoyar con su calle, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 115.33,
+      "end": 124.83,
+      "text": " Es Avenida San Francisco, esquina Hidalgo, sin número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 124.83,
+      "end": 133.2,
+      "text": " ¿Cuál es su entrecalle, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 133.2,
+      "end": 138.0,
+      "text": " Entre la Avenida Hidalgo y la 2 de marzo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 138.0,
+      "end": 140.12,
+      "text": " Un momento más.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 140.12,
+      "end": 144.71,
+      "text": " ¿Entre esas dos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 144.71,
+      "end": 145.71,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 145.71,
+      "end": 153.69,
+      "text": " ¿Por Cruzitos Garage o Farmacia Genericos Siberia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 153.69,
+      "end": 157.99,
+      "text": " A la siguiente esquina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 157.99,
+      "end": 160.25,
+      "text": " ¿A la siguiente esquina?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 160.25,
+      "end": 162.25,
+      "text": " Sobre Avenida Hidalgo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 162.25,
+      "end": 164.25,
+      "text": " Es justo en la esquina de Avenida Hidalgo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 164.25,
+      "end": 166.25,
+      "text": " y Avenida San Francisco, justo en la esquina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 166.25,
+      "end": 168.25,
+      "text": " Ok, muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 168.25,
+      "end": 186.25,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 186.25,
+      "end": 188.25,
+      "text": " Un momentito, ¿sí?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 188.25,
+      "end": 227.1,
+      "text": " Claro que sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 227.1,
+      "end": 229.1,
+      "text": " Sí, aquí sigo con usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 229.1,
+      "end": 230.1,
+      "text": " Un momentito, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 230.1,
+      "end": 241.06,
+      "text": " Estoy baleando lo que es la cobertura, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 241.06,
+      "end": 267.74,
+      "text": " Un momentito, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 267.74,
+      "end": 270.74,
+      "text": " Sí, estoy chiquando y no hay cobertura en su zona.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 270.74,
+      "end": 272.96,
+      "text": " Ya que la habilitan a partir de un medio año,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 272.96,
+      "end": 275.96,
+      "text": " igual lo pongo como nota para que no la marquen, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 275.96,
+      "end": 277.96,
+      "text": " Ok, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 277.96,
+      "end": 282.31,
+      "text": " Claro, sí, la tiendas la habilitan de la compañía y se lo entodian.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 286.236,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

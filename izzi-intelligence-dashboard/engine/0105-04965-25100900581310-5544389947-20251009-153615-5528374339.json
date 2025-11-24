@@ -1,0 +1,483 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900581310-5544389947-20251009-153615-5528374339.WAV",
+  "file_name": "0105-04965-25100900581310-5544389947-20251009-153615-5528374339.WAV",
+  "base_id": "0105-04965-25100900581310-5544389947-20251009-153615-5528374339",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Pero ya no he oído nada más que ni con Easy. Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento por favor. Sí, buenas tardes. Hola. Me marcan, me quiero saber las promociones. Me estoy comunicando con la compañía de Easy, servicio de cable. ¿Usted necesita el servicio de Internet, Telefonía y Televisión Fija? Sí. ¿Cuál es su código postal para checar cobertura? 52 760. ¿52 760? Sí, Lucas. ¿Es el Whisky Lukan de Goyado? Ajá. Ok. ¿Su calle principal cuál sería? León avicario número 47. León avicario, ¿verdad? Sí. León avicario, ok. ¿Con cuáles calles cruza su domicilio? Venetiano Carranza, no, es el Moctezuma y Vicente Guerrero. Moctezuma y... Vicente Guerrero. Vicente Guerrero, ok. Permítame, deja mucho cobertura, no me cuelgue. Me estoy tomando la cobertura, no me cuelgue. Renovar la hoja de mi seguro. ¿Yo cómo que no tengo mi seguro? Se está haciendo la pibia. ¿Y no tengo mi seguro? Pues tiene que saber que no tiene mi seguro. Entonces ya me la sacó León. Me la sacaron a hojas. Pero a tres meses no tiene mi seguro, ¿no? De lo que dijo la Contra. Mira, no llora, le pegan y está recién nacido. Sigo checando cobertura, permítame. Lo que le están pegando. No, lo que tiene en la manita. Ah. Permítame. Gracias por el tiempo de espera. Estamos checando lo que es la cobertura y ahí su domicilio no, todavía no tenemos cobertura. Ah, ok. Que tenga buen día. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.08,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.08,
+      "end": 28.14,
+      "text": " Pero ya no he oído nada más que ni con Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.14,
+      "end": 34.14,
+      "text": " Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.14,
+      "end": 44.89,
+      "text": " con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.89,
+      "end": 52.83,
+      "text": " 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.83,
+      "end": 53.83,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.83,
+      "end": 62.26,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.26,
+      "end": 66.6,
+      "text": " Hola. Me marcan, me quiero saber las promociones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.98,
+      "end": 74.02,
+      "text": " Me estoy comunicando con la compañía de Easy, servicio de cable. ¿Usted necesita",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.02,
+      "end": 78.02,
+      "text": " el servicio de Internet, Telefonía y Televisión Fija?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.02,
+      "end": 79.02,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 79.02,
+      "end": 84.02,
+      "text": " ¿Cuál es su código postal para checar cobertura?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 84.02,
+      "end": 86.02,
+      "text": " 52 760.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 86.02,
+      "end": 90.49,
+      "text": " ¿52 760?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 90.49,
+      "end": 92.49,
+      "text": " Sí, Lucas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 92.49,
+      "end": 95.55,
+      "text": " ¿Es el Whisky Lukan de Goyado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 95.55,
+      "end": 97.03,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 97.03,
+      "end": 98.03,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 98.03,
+      "end": 100.03,
+      "text": " ¿Su calle principal cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 100.03,
+      "end": 104.03,
+      "text": " León avicario número 47.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 104.03,
+      "end": 109.62,
+      "text": " León avicario, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 109.62,
+      "end": 124.18,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 124.18,
+      "end": 127.18,
+      "text": " León avicario, ok. ¿Con cuáles calles cruza su domicilio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 127.18,
+      "end": 133.18,
+      "text": " Venetiano Carranza, no, es el Moctezuma y Vicente Guerrero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 133.18,
+      "end": 140.34,
+      "text": " Moctezuma y...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 140.34,
+      "end": 141.34,
+      "text": " Vicente Guerrero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 141.34,
+      "end": 145.34,
+      "text": " Vicente Guerrero, ok. Permítame, deja mucho cobertura, no me cuelgue.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 145.34,
+      "end": 174.13,
+      "text": " Me estoy tomando la cobertura, no me cuelgue.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 174.13,
+      "end": 210.11,
+      "text": " Renovar la hoja de mi seguro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 210.11,
+      "end": 213.42,
+      "text": " ¿Yo cómo que no tengo mi seguro?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 213.42,
+      "end": 214.42,
+      "text": " Se está haciendo la pibia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 214.42,
+      "end": 217.0,
+      "text": " ¿Y no tengo mi seguro?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 217.0,
+      "end": 219.0,
+      "text": " Pues tiene que saber que no tiene mi seguro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 219.0,
+      "end": 222.44,
+      "text": " Entonces ya me la sacó León.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 222.44,
+      "end": 223.44,
+      "text": " Me la sacaron a hojas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 223.44,
+      "end": 225.44,
+      "text": " Pero a tres meses no tiene mi seguro, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 225.44,
+      "end": 234.06,
+      "text": " De lo que dijo la Contra.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 234.06,
+      "end": 237.06,
+      "text": " Mira, no llora, le pegan y está recién nacido.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 237.06,
+      "end": 240.63,
+      "text": " Sigo checando cobertura, permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 240.63,
+      "end": 256.83,
+      "text": " Lo que le están pegando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 256.83,
+      "end": 258.83,
+      "text": " No, lo que tiene en la manita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 258.83,
+      "end": 303.0,
+      "text": " Ah.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 303.0,
+      "end": 358.05,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 358.05,
+      "end": 361.33,
+      "text": " Gracias por el tiempo de espera.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 361.33,
+      "end": 363.33,
+      "text": " Estamos checando lo que es la cobertura",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 363.33,
+      "end": 367.33,
+      "text": " y ahí su domicilio no, todavía no tenemos cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 367.33,
+      "end": 369.33,
+      "text": " Ah, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 369.33,
+      "end": 370.33,
+      "text": " Que tenga buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 370.33,
+      "end": 371.33,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 374.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

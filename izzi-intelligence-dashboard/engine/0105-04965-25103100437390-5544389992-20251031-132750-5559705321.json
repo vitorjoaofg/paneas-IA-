@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100437390-5544389992-20251031-132750-5559705321.WAV",
+  "file_name": "0105-04965-25103100437390-5544389992-20251031-132750-5559705321.WAV",
+  "base_id": "0105-04965-25103100437390-5544389992-20251031-132750-5559705321",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? ¿Buenas tardes? Buenas tardes, mire, pedí la llamada porque se la pasan todo el día molestándome. Yo sé que las políticas de venta y todo, pero no quiero que me vuelvan a llamar, por favor. Oh, correcto, sí, yo me encararía de eso. Ah, correcto, sí, yo me encararía de eso, que tengo una excelente tarde. Está muy bien, entonces, para que ya no me estén llamando. Sí, correcto, sí, yo diría en otra ocasión que tengo una excelente tarde. Gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 25.53,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.53,
+      "end": 27.53,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.77,
+      "end": 34.06,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.06,
+      "end": 36.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.06,
+      "end": 44.78,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.78,
+      "end": 50.78,
+      "text": " Buenas tardes, mire, pedí la llamada porque se la pasan todo el día molestándome.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.78,
+      "end": 55.78,
+      "text": " Yo sé que las políticas de venta y todo, pero no quiero que me vuelvan a llamar, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.78,
+      "end": 59.13,
+      "text": " Oh, correcto, sí, yo me encararía de eso.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 59.13,
+      "end": 63.67,
+      "text": " Ah, correcto, sí, yo me encararía de eso, que tengo una excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.27,
+      "end": 68.04,
+      "text": " Está muy bien, entonces, para que ya no me estén llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 68.04,
+      "end": 71.04,
+      "text": " Sí, correcto, sí, yo diría en otra ocasión que tengo una excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 71.04,
+      "end": 73.04,
+      "text": " Gracias, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.912,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

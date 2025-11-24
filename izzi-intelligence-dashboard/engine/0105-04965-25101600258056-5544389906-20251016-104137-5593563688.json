@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600258056-5544389906-20251016-104137-5593563688.WAV",
+  "file_name": "0105-04965-25101600258056-5544389906-20251016-104137-5593563688.WAV",
+  "base_id": "0105-04965-25101600258056-5544389906-20251016-104137-5593563688",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No, señorita, gracias. No recibo tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos para terminar la llamada. Espera un momento, por favor. No, señorita, gracias. Hola, buen día, le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía móvil. Buen día. No, gracias, señorita. Ah, una disculpa.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.84,
+      "end": 9.49,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.49,
+      "end": 16.25,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.25,
+      "end": 22.67,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.67,
+      "end": 32.9,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.9,
+      "end": 38.34,
+      "text": " entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.34,
+      "end": 47.11,
+      "text": " asesor o dos para terminar la llamada. No, señorita, gracias. No recibo tu respuesta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.11,
+      "end": 52.51,
+      "text": " Por favor, presione uno para conocer nuestras promociones o dos para terminar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.51,
+      "end": 62.59,
+      "text": " la llamada. Espera un momento, por favor. No, señorita, gracias. Hola, buen día,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.63,
+      "end": 66.71,
+      "text": " le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer los",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.71,
+      "end": 73.75,
+      "text": " beneficios con la telefonía móvil. Buen día. No, gracias, señorita. Ah, una disculpa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.572,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

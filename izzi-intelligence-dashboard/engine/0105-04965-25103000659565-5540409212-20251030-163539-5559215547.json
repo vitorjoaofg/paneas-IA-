@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000659565-5540409212-20251030-163539-5559215547.WAV",
+  "file_name": "0105-04965-25103000659565-5540409212-20251030-163539-5559215547.WAV",
+  "base_id": "0105-04965-25103000659565-5540409212-20251030-163539-5559215547",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Claro, ¿y si hay Internet? Espera un momento, por favor. Buenas tardes. Sí, buenas tardes. Hola, buenas tardes, disculpe. Mi nombre es Brandon Aguíñiga, señorita. Me está comunicando una área de promociones de parte del servicio de Easy. ¿No se alcanza a escuchar realmente un audio donde se le está promocionando un servicio, disculpa? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 22.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.5,
+      "end": 24.5,
+      "text": " Claro, ¿y si hay Internet?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.5,
+      "end": 26.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.5,
+      "end": 31.83,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.83,
+      "end": 34.12,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.12,
+      "end": 36.25,
+      "text": " Hola, buenas tardes, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.25,
+      "end": 38.25,
+      "text": " Mi nombre es Brandon Aguíñiga, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.25,
+      "end": 42.25,
+      "text": " Me está comunicando una área de promociones de parte del servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.25,
+      "end": 46.25,
+      "text": " ¿No se alcanza a escuchar realmente un audio donde se le está promocionando un servicio, disculpa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.25,
+      "end": 53.94,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.296,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

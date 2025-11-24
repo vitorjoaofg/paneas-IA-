@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400556998-5544389987-20251024-150803-5594119151.WAV",
+  "file_name": "0105-04965-25102400556998-5544389987-20251024-150803-5594119151.WAV",
+  "base_id": "0105-04965-25102400556998-5544389987-20251024-150803-5594119151",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más escasos? ¡Ya tengo! Desde 350 pesos el primer mes... ¡Ya tengo todo eso! ...Netflix, Prime, VIX, tengo Disney, estoy colgado de la señal de megacable... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse al área de contrataciones, Xixi.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más escasos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 8.0,
+      "text": " ¡Ya tengo!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 11.0,
+      "text": " Desde 350 pesos el primer mes...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " ¡Ya tengo todo eso!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 13.0,
+      "end": 25.35,
+      "text": " ...Netflix, Prime, VIX, tengo Disney, estoy colgado de la señal de megacable...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.35,
+      "end": 30.35,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.35,
+      "end": 35.35,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.35,
+      "end": 37.35,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.35,
+      "end": 47.21,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse al área de contrataciones, Xixi.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 46.944,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400562151-5544389903-20251014-145802-5568121797.WAV",
+  "file_name": "0105-04965-25101400562151-5544389903-20251014-145802-5568121797.WAV",
+  "base_id": "0105-04965-25101400562151-5544389903-20251014-145802-5568121797",
+  "transcription": "Hola, ¿te gustaría llegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulsee un... Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes y gracias por comunicársela de contrataciones Easy. La tienda habla en con que tengo el gusto, con que tengo el gusto, disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría llegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.24,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 22.04,
+      "text": " Por favor, hable o pulsee un...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.04,
+      "end": 29.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.13,
+      "end": 41.31,
+      "text": " Hola, ¿qué tal? Buenas tardes y gracias por comunicársela de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.31,
+      "end": 51.78,
+      "text": " La tienda habla en con que tengo el gusto, con que tengo el gusto, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.032,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

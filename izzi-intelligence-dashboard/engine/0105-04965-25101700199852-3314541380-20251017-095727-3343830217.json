@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700199852-3314541380-20251017-095727-3343830217.WAV",
+  "file_name": "0105-04965-25101700199852-3314541380-20251017-095727-3343830217.WAV",
+  "base_id": "0105-04965-25101700199852-3314541380-20251017-095727-3343830217",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenos días. Oiga, disculpe, es que me están hablando todo el chingado día. Me desespera. Si yo no quiero Internet, si ya lo tengo, por favor, ya dejen de estar, márcalo a este número. Ya no tengo Internet, no necesito otro. Por favor, todo el chingado día hasta la madrugada están hable y hable. Aquí le voy a poner el cliente molesto con la compañía para que no le vuelvan a marcar, ¿ok? Sí, por favor, ya. Es bastante. Sí, señor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.08,
+      "end": 7.12,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.12,
+      "end": 11.76,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.76,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.72,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.72,
+      "end": 23.02,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.02,
+      "end": 24.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.7,
+      "end": 31.92,
+      "text": " Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.92,
+      "end": 36.64,
+      "text": " Oiga, disculpe, es que me están hablando todo el chingado día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.64,
+      "end": 37.64,
+      "text": " Me desespera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.64,
+      "end": 44.85,
+      "text": " Si yo no quiero Internet, si ya lo tengo, por favor, ya dejen de estar, márcalo a este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.85,
+      "end": 50.92,
+      "text": " Ya no tengo Internet, no necesito otro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 50.92,
+      "end": 55.03,
+      "text": " Por favor, todo el chingado día hasta la madrugada están hable y hable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.03,
+      "end": 58.83,
+      "text": " Aquí le voy a poner el cliente molesto con la compañía para que no le vuelvan",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 58.83,
+      "end": 59.83,
+      "text": " a marcar, ¿ok?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 59.83,
+      "end": 60.83,
+      "text": " Sí, por favor, ya.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.83,
+      "end": 62.28,
+      "text": " Es bastante.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 62.28,
+      "end": 63.28,
+      "text": " Sí, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.936,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

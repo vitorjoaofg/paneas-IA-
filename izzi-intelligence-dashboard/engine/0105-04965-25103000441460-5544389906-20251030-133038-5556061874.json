@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000441460-5544389906-20251030-133038-5556061874.WAV",
+  "file_name": "0105-04965-25103000441460-5544389906-20251030-133038-5556061874.WAV",
+  "base_id": "0105-04965-25103000441460-5544389906-20251030-133038-5556061874",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor emprendimiento con Big Team, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Cuego llamada por motivos de calidad.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor emprendimiento con Big Team, más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 22.56,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.56,
+      "end": 32.16,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 32.16,
+      "end": 40.56,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 40.56,
+      "end": 57.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 57.5,
+      "end": 59.5,
+      "text": " Cuego llamada por motivos de calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.76,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700392608-5544389907-20251027-123643-5598280079.WAV",
+  "file_name": "0105-04965-25102700392608-5544389907-20251027-123643-5598280079.WAV",
+  "base_id": "0105-04965-25102700392608-5544389907-20251027-123643-5598280079",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento por favor. Hola, ¿qué tal? Muy buenas tardes. Buenas tardes. ¿Qué tal? Miren, me presento. Mi nombre es Omar Pérez, está hablando en la área de promociones de Easy. ¿Con quién digo el gusto, disculpe? Con el Pito, con el Pito. ¿Sí logró escuchar la grabación anterior, disculpe?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 27.9,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.98,
+      "end": 34.38,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.38,
+      "end": 45.44,
+      "text": " asesor o 2, espera un momento por favor. Hola, ¿qué tal? Muy buenas tardes. Buenas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.44,
+      "end": 49.2,
+      "text": " tardes. ¿Qué tal? Miren, me presento. Mi nombre es Omar Pérez, está hablando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.2,
+      "end": 57.08,
+      "text": " en la área de promociones de Easy. ¿Con quién digo el gusto, disculpe? Con el Pito,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.08,
+      "end": 61.74,
+      "text": " con el Pito. ¿Sí logró escuchar la grabación anterior, disculpe?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.092,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100139527-5544389945-20251031-091306-5596302992.WAV",
+  "file_name": "0105-04965-25103100139527-5544389945-20251031-091306-5596302992.WAV",
+  "base_id": "0105-04965-25103100139527-5544389945-20251031-091306-5596302992",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos para terminar la llamada. Espera un momento, por favor. Sí, bueno, buenos días. Sí, buenos días. Buenos días, me presento. Mi nombre es Daniel. Me estoy comunicando por parte de la compañía de easy. ¿Con quién puedo apoyar? No, joven, más caro. No, ahorita no necesito nada, estoy bien. Muchas gracias. Ok, hasta luego. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, big premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.92,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 32.75,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.91,
+      "end": 41.98,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.98,
+      "end": 47.14,
+      "text": " tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.14,
+      "end": 51.78,
+      "text": " para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.78,
+      "end": 65.24,
+      "text": " Sí, bueno, buenos días. Sí, buenos días. Buenos días, me presento. Mi nombre es Daniel.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.24,
+      "end": 68.6,
+      "text": " Me estoy comunicando por parte de la compañía de easy. ¿Con quién puedo apoyar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.23,
+      "end": 75.83,
+      "text": " No, joven, más caro. No, ahorita no necesito nada, estoy bien. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.83,
+      "end": 76.79,
+      "text": " Ok, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.79,
+      "end": 77.79,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.56,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

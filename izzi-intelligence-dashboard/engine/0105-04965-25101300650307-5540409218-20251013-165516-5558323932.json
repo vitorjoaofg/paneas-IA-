@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300650307-5540409218-20251013-165516-5558323932.WAV",
+  "file_name": "0105-04965-25101300650307-5540409218-20251013-165516-5558323932.WAV",
+  "base_id": "0105-04965-25101300650307-5540409218-20251013-165516-5558323932",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 300 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer día? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor. ¡Bueno! Espera un momento, por favor. Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? Hola, ¿qué tal? Un buen día con Salvador. Buenas tardes, Salvador. Mi nombre es Daniel Quiroz. ¿En qué te puedo ayudar? Bueno, ¿a dónde estoy llamando? ¿Easy? ¿Apuntamos Easy? Sí, ese es el área de contrataciones Easy.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 300 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer día? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 21.16,
+      "text": " te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.16,
+      "end": 22.35,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.35,
+      "end": 37.77,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.77,
+      "end": 40.77,
+      "text": " Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.93,
+      "end": 44.12,
+      "text": " Hola, ¿qué tal? Un buen día con Salvador.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.12,
+      "end": 47.12,
+      "text": " Buenas tardes, Salvador. Mi nombre es Daniel Quiroz. ¿En qué te puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.84,
+      "end": 52.84,
+      "text": " Bueno, ¿a dónde estoy llamando? ¿Easy? ¿Apuntamos Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.84,
+      "end": 56.26,
+      "text": " Sí, ese es el área de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.94,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

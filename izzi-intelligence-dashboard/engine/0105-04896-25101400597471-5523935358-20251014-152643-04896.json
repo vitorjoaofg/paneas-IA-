@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25101400597471-5523935358-20251014-152643-04896.WAV",
+  "file_name": "0105-04896-25101400597471-5523935358-20251014-152643-04896.WAV",
+  "base_id": "0105-04896-25101400597471-5523935358-20251014-152643-04896",
+  "transcription": "Hola, somos IZI y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Marcaro? ¿Marcaro? Sí, buenas tardes. Sí, buenas tardes caballero. Adlecto Talamantes de la compañía de IZI. ¿Con quién tengo el gusto? Con el señor Olegario Bautista. Yo, Olegaro, el motivo de esta llamada me comunico de la compañía de IZI es para ofrecerle chips para sus equipos celulares, señor. Para que lo manacen. No me interesa. Gracias, que tengas buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": " Hola, somos IZI y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.5,
+      "end": 7.1,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.1,
+      "end": 10.3,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.3,
+      "end": 14.3,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.48,
+      "end": 18.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.95,
+      "end": 23.85,
+      "text": " ¿Marcaro?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.93,
+      "end": 25.63,
+      "text": " ¿Marcaro?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.12,
+      "end": 27.92,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.94,
+      "end": 30.24,
+      "text": " Sí, buenas tardes caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 30.9,
+      "end": 33.6,
+      "text": " Adlecto Talamantes de la compañía de IZI. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.6,
+      "end": 36.3,
+      "text": " Con el señor Olegario Bautista.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 36.8,
+      "end": 39.8,
+      "text": " Yo, Olegaro, el motivo de esta llamada me comunico de la compañía de IZI",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.8,
+      "end": 42.8,
+      "text": " es para ofrecerle chips para sus equipos celulares, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 43.67,
+      "end": 44.87,
+      "text": " Para que lo manacen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 44.87,
+      "end": 45.87,
+      "text": " No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 46.47,
+      "end": 47.87,
+      "text": " Gracias, que tengas buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 48.27,
+      "end": 48.87,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 49.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

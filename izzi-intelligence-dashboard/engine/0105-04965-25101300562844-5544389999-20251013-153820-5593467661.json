@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300562844-5544389999-20251013-153820-5593467661.WAV",
+  "file_name": "0105-04965-25101300562844-5544389999-20251013-153820-5593467661.WAV",
+  "base_id": "0105-04965-25101300562844-5544389999-20251013-153820-5593467661",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Buenos días, ¿cómo puedo hacer para que cansele mi número y me dejen de molestar? ¿Qué tal, señorita? Mucho gusto. ¿Cómo puedo hacer para que cansele mi número y dejes de estarme chingando? ¿Ya le hicieron el ofrecimiento?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 24.56,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.56,
+      "end": 29.56,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.56,
+      "end": 68.86,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 68.86,
+      "end": 74.25,
+      "text": " Buenos días, ¿cómo puedo hacer para que cansele mi número y me dejen de molestar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 74.25,
+      "end": 76.38,
+      "text": " ¿Qué tal, señorita? Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 76.38,
+      "end": 80.38,
+      "text": " ¿Cómo puedo hacer para que cansele mi número y dejes de estarme chingando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 80.38,
+      "end": 82.38,
+      "text": " ¿Ya le hicieron el ofrecimiento?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 82.152,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

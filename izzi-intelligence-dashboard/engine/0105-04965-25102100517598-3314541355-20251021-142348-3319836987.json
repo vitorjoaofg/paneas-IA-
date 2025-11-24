@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100517598-3314541355-20251021-142348-3319836987.WAV",
+  "file_name": "0105-04965-25102100517598-3314541355-20251021-142348-3319836987.WAV",
+  "base_id": "0105-04965-25102100517598-3314541355-20251021-142348-3319836987",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Marita, buenas tardes. Hola, buenas tardes. Se está comunicando a contratación de Easy. Le atiende Janeth Pulido con quien tengo el gusto. Mira, para eso llamo. Lo que pasa es que a diario estamos recibiendo más de 5 o 6 llamadas de ustedes y esta es una empresa. Entonces quería saber si pueden registrar para que no nos estén marcando. Claro que sí. Ahorita voy a pasar el reporte de atención al cliente para que puedan quitar el número de la base. Muchas gracias. De nada, que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.54,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.54,
+      "end": 12.78,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.78,
+      "end": 20.02,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.02,
+      "end": 27.34,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.9,
+      "end": 37.42,
+      "text": " Marita, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.42,
+      "end": 40.9,
+      "text": " Hola, buenas tardes. Se está comunicando a contratación de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.9,
+      "end": 43.02,
+      "text": " Le atiende Janeth Pulido con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.02,
+      "end": 49.22,
+      "text": " Mira, para eso llamo. Lo que pasa es que a diario estamos recibiendo más de 5 o 6 llamadas de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.22,
+      "end": 58.17,
+      "text": " ustedes y esta es una empresa. Entonces quería saber si pueden registrar para que no nos estén marcando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.17,
+      "end": 64.54,
+      "text": " Claro que sí. Ahorita voy a pasar el reporte de atención al cliente para que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.54,
+      "end": 66.14,
+      "text": " puedan quitar el número de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.14,
+      "end": 67.46,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.46,
+      "end": 69.5,
+      "text": " De nada, que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

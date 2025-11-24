@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100649174-3314541362-20251011-145748-3333337404.WAV",
+  "file_name": "0105-04965-25101100649174-3314541362-20251011-145748-3333337404.WAV",
+  "base_id": "0105-04965-25101100649174-3314541362-20251011-145748-3333337404",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cállate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bueno, ¿qué son esos putazos? ¿Por qué no contestas? No he confundido. ¡Contéstame! ¿Por qué me marcan? Hace que son unos putazos. Ya son de vives, eh. Ya son de vives. ¿Eh? No, es como cuando llegas una cilverada a tu casa y te vas a bajar, te vas a la capilla y te pones para la cifra.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cállate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 25.76,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.76,
+      "end": 50.74,
+      "text": " por favor. Bueno, ¿qué son esos putazos? ¿Por qué no contestas? No he confundido.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 50.74,
+      "end": 57.2,
+      "text": " ¡Contéstame! ¿Por qué me marcan? Hace que son unos putazos. Ya son de vives, eh.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 57.2,
+      "end": 61.87,
+      "text": " Ya son de vives. ¿Eh? No, es como cuando llegas una cilverada a tu casa y te vas",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.87,
+      "end": 64.27,
+      "text": " a bajar, te vas a la capilla y te pones para la cifra.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.196,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000423526-5544389906-20251030-131537-5589483756.WAV",
+  "file_name": "0105-04965-25103000423526-5544389906-20251030-131537-5589483756.WAV",
+  "base_id": "0105-04965-25103000423526-5544389906-20251030-131537-5589483756",
+  "transcription": "¿Quién habla? Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Contrataciones? ¿Y si le atiendes a Javier Romero? ¿Con quién tengo el gusto? Oye, no quiero que me vuelvan a llamar. Por favor borra este número de tu registro. No me interesa su servicio. De acuerdo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.23,
+      "end": 2.23,
+      "text": " ¿Quién habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.23,
+      "end": 9.02,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.02,
+      "end": 16.82,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.82,
+      "end": 22.7,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.7,
+      "end": 29.22,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.26,
+      "end": 34.58,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.58,
+      "end": 43.86,
+      "text": " ¿Contrataciones? ¿Y si le atiendes a Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.86,
+      "end": 48.78,
+      "text": " Oye, no quiero que me vuelvan a llamar. Por favor borra este número de tu registro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.78,
+      "end": 51.1,
+      "text": " No me interesa su servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.1,
+      "end": 52.7,
+      "text": " De acuerdo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.28,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

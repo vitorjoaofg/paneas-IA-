@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300053484-5544389969-20251013-082259-5597922781.WAV",
+  "file_name": "0105-04965-25101300053484-5544389969-20251013-082259-5597922781.WAV",
+  "base_id": "0105-04965-25101300053484-5544389969-20251013-082259-5597922781",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Sí, bueno. Buenos días. Disculpe. Lo que pasa es que yo no quiero solicitar absolutamente nada. Tengo una persona en el hospital y me es molesto que me esté hable y hable cuando yo no quiero solicitar absolutamente nada. ¿Dónde puedo reportar esto? En el 800-125,000. Ok. Gracias. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.16,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.16,
+      "end": 26.15,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.15,
+      "end": 38.2,
+      "text": " un momento, por favor. Sí, bueno. Buenos días. Disculpe. Lo que pasa es que yo no quiero",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.2,
+      "end": 43.68,
+      "text": " solicitar absolutamente nada. Tengo una persona en el hospital y me es molesto que me esté",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.68,
+      "end": 48.2,
+      "text": " hable y hable cuando yo no quiero solicitar absolutamente nada. ¿Dónde puedo reportar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.2,
+      "end": 55.42,
+      "text": " esto? En el 800-125,000. Ok. Gracias. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.7,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

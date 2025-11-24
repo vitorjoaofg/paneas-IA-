@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200283729-5544389901-20251022-110306-5589912379.WAV",
+  "file_name": "0105-04965-25102200283729-5544389901-20251022-110306-5589912379.WAV",
+  "base_id": "0105-04965-25102200283729-5544389901-20251022-110306-5589912379",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Un asesor me puede hablar. ¿Sí, bueno? Sí, buenas tardes, días. Buenos días, a lo largo me voy a decir Easy. ¿Con quién te va a gustar? Con Mari. A mucho gusto, señora Mari. Esta más suela brindarle aquí los servicios de Easy. No sé si ya cuenta con Internet o Televisión, ya sea con otra compañía o con Easy. Es Easy no, ¿verdad?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 14.3,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.3,
+      "end": 16.5,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.71,
+      "end": 25.91,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.91,
+      "end": 31.88,
+      "text": " Un asesor me puede hablar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.88,
+      "end": 32.88,
+      "text": " ¿Sí, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.51,
+      "end": 35.51,
+      "text": " Sí, buenas tardes, días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.51,
+      "end": 38.54,
+      "text": " Buenos días, a lo largo me voy a decir Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 38.54,
+      "end": 40.54,
+      "text": " ¿Con quién te va a gustar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 40.54,
+      "end": 41.74,
+      "text": " Con Mari.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 41.74,
+      "end": 43.74,
+      "text": " A mucho gusto, señora Mari.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 43.74,
+      "end": 46.24,
+      "text": " Esta más suela brindarle aquí los servicios de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 46.24,
+      "end": 52.41,
+      "text": " No sé si ya cuenta con Internet o Televisión, ya sea con otra compañía o con Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 52.41,
+      "end": 54.41,
+      "text": " Es Easy no, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

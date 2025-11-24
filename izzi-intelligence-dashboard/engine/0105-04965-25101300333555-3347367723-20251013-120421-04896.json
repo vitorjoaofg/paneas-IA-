@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300333555-3347367723-20251013-120421-04896.WAV",
+  "file_name": "0105-04965-25101300333555-3347367723-20251013-120421-04896.WAV",
+  "base_id": "0105-04965-25101300333555-3347367723-20251013-120421-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. No cuelgue, por favor. No cuelgue, por favor. ¿Quién? Bueno... ¿Quién habla? No cuelgue, por favor. No cuelgue, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 20.2,
+      "text": " por solo 350 el primer mes? No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.2,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.4,
+      "end": 27.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.0,
+      "end": 30.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.0,
+      "end": 43.86,
+      "text": " No cuelgue, por favor. No cuelgue, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.86,
+      "end": 55.47,
+      "text": " ¿Quién? Bueno... ¿Quién habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.47,
+      "end": 67.09,
+      "text": " No cuelgue, por favor. No cuelgue, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.84,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

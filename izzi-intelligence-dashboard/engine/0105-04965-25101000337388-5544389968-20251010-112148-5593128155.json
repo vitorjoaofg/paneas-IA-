@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000337388-5544389968-20251010-112148-5593128155.WAV",
+  "file_name": "0105-04965-25101000337388-5544389968-20251010-112148-5593128155.WAV",
+  "base_id": "0105-04965-25101000337388-5544389968-20251010-112148-5593128155",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melaniza Ucedo, nos comunicamos de la compañía IZZY. ¿Con quién tengo el gusto? Hola, buenos días. ¿Tienes el gusto con Adelie? Hola, mucho gusto, señorita. El motivo de esta llamada es comunicarle que tiene el beneficio de lo que es IZZY. ¿Mande? Perdóneme. Es que no lo escuché. Ay, ya secó. ¿Qué fue la señal o no sé? ¿Bueno? ¿Qué fue la señal?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.56,
+      "end": 24.97,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.97,
+      "end": 34.43,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Melaniza Ucedo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.43,
+      "end": 37.63,
+      "text": " nos comunicamos de la compañía IZZY. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.87,
+      "end": 40.57,
+      "text": " Hola, buenos días. ¿Tienes el gusto con Adelie?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.57,
+      "end": 48.08,
+      "text": " Hola, mucho gusto, señorita. El motivo de esta llamada es comunicarle que tiene el beneficio de lo que es IZZY.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.08,
+      "end": 53.27,
+      "text": " ¿Mande? Perdóneme. Es que no lo escuché.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.27,
+      "end": 58.64,
+      "text": " Ay, ya secó. ¿Qué fue la señal o no sé?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.64,
+      "end": 62.84,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 62.84,
+      "end": 63.84,
+      "text": " ¿Qué fue la señal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.7,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

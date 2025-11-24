@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900303856-5544389907-20251009-114723-5556256780.WAV",
+  "file_name": "0105-04965-25100900303856-5544389907-20251009-114723-5556256780.WAV",
+  "base_id": "0105-04965-25100900303856-5544389907-20251009-114723-5556256780",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. ¡Hola! Buen día. Le habla Ivonne Monfil de parte de su servicio de Easy para darle a conocer la telefonía y productos de Easy. No sé si ya les comentaron de estos beneficios. ¿Está hablando la Procuraduría Federal del Consumidor? ¿Usted cree que van a contratar ese servicio aquí? Pues claro que no. Entonces, actualicen sus bases de datos. Este teléfono es de Profeco. ¿Sí escuchó señora? No se quede callada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.72,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.72,
+      "end": 33.0,
+      "text": " ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.0,
+      "end": 35.6,
+      "text": " un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.6,
+      "end": 47.09,
+      "text": " ¡Hola! Buen día. Le habla Ivonne Monfil de parte de su servicio de Easy para darle",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.09,
+      "end": 51.65,
+      "text": " a conocer la telefonía y productos de Easy. No sé si ya les comentaron de estos beneficios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.65,
+      "end": 56.13,
+      "text": " ¿Está hablando la Procuraduría Federal del Consumidor? ¿Usted cree que van a",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.13,
+      "end": 60.49,
+      "text": " contratar ese servicio aquí? Pues claro que no. Entonces, actualicen sus bases",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.49,
+      "end": 71.56,
+      "text": " de datos. Este teléfono es de Profeco. ¿Sí escuchó señora? No se quede callada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.944,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

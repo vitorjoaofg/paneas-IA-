@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800782326-6863315740-20251008-165514-04896.WAV",
+  "file_name": "0105-04999-25100800782326-6863315740-20251008-165514-04896.WAV",
+  "base_id": "0105-04999-25100800782326-6863315740-20251008-165514-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable... Espera un momento, por favor. ¿Te interesa? ¿Me puedes dar una foto? ¿Te interesa? ¿Me puedes dar una foto? ¿Te interesa? ¿Te interesa? ¿Te interesa?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 8.0,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 17.0,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 25.0,
+      "text": " Por favor, hable...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.0,
+      "end": 45.79,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.79,
+      "end": 54.26,
+      "text": " ¿Te interesa? ¿Me puedes dar una foto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.26,
+      "end": 58.09,
+      "text": " ¿Te interesa? ¿Me puedes dar una foto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.09,
+      "end": 60.25,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.25,
+      "end": 62.28,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.28,
+      "end": 65.27,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.064,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

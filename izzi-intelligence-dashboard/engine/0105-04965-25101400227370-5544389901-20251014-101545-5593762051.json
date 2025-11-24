@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400227370-5544389901-20251014-101545-5593762051.WAV",
+  "file_name": "0105-04965-25101400227370-5544389901-20251014-101545-5593762051.WAV",
+  "base_id": "0105-04965-25101400227370-5544389901-20251014-101545-5593762051",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigPremium, más Skysport desde 350 pesos el primer mes con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable opulso. Un momento, por favor. Seguridad Ocupacional, DGT-4. Marketing y plataformas tecnológicas, DGT-5. Procesos de malos, DGT-6. Contabilidad, DGT-7. Serving Track, DGT-8. O marque cero para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.12,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigPremium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.12,
+      "end": 15.56,
+      "text": " más Skysport desde 350 pesos el primer mes con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.56,
+      "end": 16.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 18.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.56,
+      "end": 27.85,
+      "text": " Por favor, hable opulso.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.85,
+      "end": 29.85,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.85,
+      "end": 33.23,
+      "text": " Seguridad Ocupacional, DGT-4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.23,
+      "end": 37.23,
+      "text": " Marketing y plataformas tecnológicas, DGT-5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.23,
+      "end": 40.23,
+      "text": " Procesos de malos, DGT-6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.23,
+      "end": 43.23,
+      "text": " Contabilidad, DGT-7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.23,
+      "end": 46.23,
+      "text": " Serving Track, DGT-8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.23,
+      "end": 53.9,
+      "text": " O marque cero para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.9,
+      "end": 55.9,
+      "text": " Transfiriendo a un encargado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.9,
+      "end": 57.9,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.94,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600212620-5540409224-20251016-100626-5594791922.WAV",
+  "file_name": "0105-04965-25101600212620-5540409224-20251016-100626-5594791922.WAV",
+  "base_id": "0105-04965-25101600212620-5540409224-20251016-100626-5594791922",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más Skype Ports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buenos días. Buenos días. Hemos hablado sobre Easy. Sí, únicamente yo quiero saber. El primer mes son 350 pesos. Los siguientes meses, ¿qué costo tiene? Dependiendo del plan, ahorita tenemos el básico, sería de 690. Bueno, muchas gracias. Esto era todo. Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Skype Ports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.0,
+      "end": 22.7,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.7,
+      "end": 24.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.7,
+      "end": 34.46,
+      "text": " Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.46,
+      "end": 38.22,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.22,
+      "end": 40.22,
+      "text": " Hemos hablado sobre Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.22,
+      "end": 42.57,
+      "text": " Sí, únicamente yo quiero saber.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.57,
+      "end": 45.57,
+      "text": " El primer mes son 350 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.57,
+      "end": 48.57,
+      "text": " Los siguientes meses, ¿qué costo tiene?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 48.57,
+      "end": 53.6,
+      "text": " Dependiendo del plan, ahorita tenemos el básico, sería de 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.6,
+      "end": 56.98,
+      "text": " Bueno, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 56.98,
+      "end": 57.98,
+      "text": " Esto era todo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 57.98,
+      "end": 58.98,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 58.98,
+      "end": 59.98,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.244,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

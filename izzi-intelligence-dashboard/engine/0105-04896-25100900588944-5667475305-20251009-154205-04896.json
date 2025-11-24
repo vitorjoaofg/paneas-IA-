@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25100900588944-5667475305-20251009-154205-04896.WAV",
+  "file_name": "0105-04896-25100900588944-5667475305-20251009-154205-04896.WAV",
+  "base_id": "0105-04896-25100900588944-5667475305-20251009-154205-04896",
+  "transcription": "Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Creo que sí. Sí, bueno. Buenas tardes. Sí, buenas tardes. Estoy revisando la llamada. Tengo una llamada, ¿verdad? Ok, permíteme un segundito. Mi nombre es Iván Duarte, estamos hablando del servicio de Easy Cairn. ¿Con quién tengo el uso, Pro?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Easy, y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.2,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.2,
+      "end": 10.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.4,
+      "end": 16.31,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.31,
+      "end": 18.71,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.71,
+      "end": 56.3,
+      "text": " Creo que sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 56.3,
+      "end": 57.56,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.56,
+      "end": 59.82,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.82,
+      "end": 61.02,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.02,
+      "end": 64.99,
+      "text": " Estoy revisando la llamada. Tengo una llamada, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.99,
+      "end": 71.65,
+      "text": " Ok, permíteme un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.65,
+      "end": 77.5,
+      "text": " Mi nombre es Iván Duarte, estamos hablando del servicio de Easy Cairn.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 77.5,
+      "end": 79.0,
+      "text": " ¿Con quién tengo el uso, Pro?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.892,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

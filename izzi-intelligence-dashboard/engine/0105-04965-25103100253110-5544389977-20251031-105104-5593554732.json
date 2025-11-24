@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100253110-5544389977-20251031-105104-5593554732.WAV",
+  "file_name": "0105-04965-25103100253110-5544389977-20251031-105104-5593554732.WAV",
+  "base_id": "0105-04965-25103100253110-5544389977-20251031-105104-5593554732",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Cómo que se han dado esta ballana? ¡Estoy en una maleta! Esperando. Por favor, hable o pulse uno para ti. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. ¡Vámonos a la barra! ¿Hola, qué tal? ¿Buenas tardes? ¡Buenas! ¿Hola, qué tal? ¿Buenas tardes? ¿Un gusto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 16.56,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 19.56,
+      "text": " ¿Cómo que se han dado esta ballana? ¡Estoy en una maleta!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.56,
+      "end": 23.24,
+      "text": " Esperando. Por favor, hable o pulse uno para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.24,
+      "end": 35.41,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.41,
+      "end": 40.81,
+      "text": " con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.81,
+      "end": 55.21,
+      "text": " ¡Vámonos a la barra! ¿Hola, qué tal? ¿Buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.21,
+      "end": 57.53,
+      "text": " ¡Buenas! ¿Hola, qué tal? ¿Buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.53,
+      "end": 59.98,
+      "text": " ¿Un gusto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

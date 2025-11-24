@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300024151-3314541309-20251013-075948-8677114809.WAV",
+  "file_name": "0105-04965-25101300024151-3314541309-20251013-075948-8677114809.WAV",
+  "base_id": "0105-04965-25101300024151-3314541309-20251013-075948-8677114809",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Servicio cliente y tráfico 2. Contabilidad y pagos 3. ¿Aló? Está usted hablando a Grupo Caminera Regional. Por favor, marque el número de extensión o espere para el menú de departamentos. Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3. Está usted hablando a Grupo Caminera Regional. Por favor, marque el número de extensión o espere para el menú de departamentos. Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3. Está usted hablando a Grupo Caminera Regional. Por favor, marque el número de extensión o espere para el menú de departamentos. Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.3,
+      "text": " más Skyport, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.5,
+      "end": 27.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.0,
+      "end": 39.2,
+      "text": " Servicio cliente y tráfico 2. Contabilidad y pagos 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.2,
+      "end": 40.2,
+      "text": " ¿Aló?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.2,
+      "end": 45.27,
+      "text": " Está usted hablando a Grupo Caminera Regional.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.27,
+      "end": 50.77,
+      "text": " Por favor, marque el número de extensión o espere para el menú de departamentos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.77,
+      "end": 64.5,
+      "text": " Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.5,
+      "end": 68.0,
+      "text": " Está usted hablando a Grupo Caminera Regional.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 68.0,
+      "end": 73.5,
+      "text": " Por favor, marque el número de extensión o espere para el menú de departamentos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.5,
+      "end": 87.16,
+      "text": " Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 87.16,
+      "end": 90.66,
+      "text": " Está usted hablando a Grupo Caminera Regional.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 90.66,
+      "end": 96.16,
+      "text": " Por favor, marque el número de extensión o espere para el menú de departamentos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 96.16,
+      "end": 103.66,
+      "text": " Fijilancia 1. Servicio cliente y tráfico 2. Contabilidad y pagos 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.28,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

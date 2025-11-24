@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500431754-5595602568-20251015-130146-04896.WAV",
+  "file_name": "0105-04965-25101500431754-5595602568-20251015-130146-04896.WAV",
+  "base_id": "0105-04965-25101500431754-5595602568-20251015-130146-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hay que llamar a los 825.000 que esa es la atención que tiene. ¿Y de dónde cegados sacan si soy total play? ¿Y de dónde sacan el número telefónico? Diario, tres veces al día. Ay, pues tres veces al día. O sea, no dejen de mamar. Si yo quisiera cambiar me voy y lo busco y lo cambio. Por favor, traten de bloquear el pinche teléfono, ¿sale? Y dejen de acertar llamadas si no me cuelgo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 17.4,
+      "text": " por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.4,
+      "end": 20.2,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.2,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.4,
+      "end": 27.4,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.79,
+      "end": 192.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 192.16,
+      "end": 195.16,
+      "text": " Hay que llamar a los 825.000 que esa es la atención que tiene.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 195.16,
+      "end": 200.66,
+      "text": " ¿Y de dónde cegados sacan si soy total play? ¿Y de dónde sacan el número telefónico?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 200.66,
+      "end": 203.66,
+      "text": " Diario, tres veces al día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 203.66,
+      "end": 205.66,
+      "text": " Ay, pues tres veces al día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 205.66,
+      "end": 210.16,
+      "text": " O sea, no dejen de mamar. Si yo quisiera cambiar me voy y lo busco y lo cambio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 210.16,
+      "end": 212.66,
+      "text": " Por favor, traten de bloquear el pinche teléfono, ¿sale?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 212.66,
+      "end": 215.16,
+      "text": " Y dejen de acertar llamadas si no me cuelgo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 216.216,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

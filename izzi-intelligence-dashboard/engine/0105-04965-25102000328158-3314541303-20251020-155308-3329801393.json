@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000328158-3314541303-20251020-155308-3329801393.WAV",
+  "file_name": "0105-04965-25102000328158-3314541303-20251020-155308-3329801393.WAV",
+  "base_id": "0105-04965-25102000328158-3314541303-20251020-155308-3329801393",
+  "transcription": "¿Hola? ¿Te gustaría tener Internet más televisivo? ¡No, coño, no! Deja de estarme molestando. Más styleports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Hola, buenas tardes. Mi nombre es Easy. ¿En quién lo puedo ayudar? Ya me marqué. Ustedes me marcaron para ofrecerme un servicio. Pero ya les dije muchas veces que no me siguen marqui marqui. Ah, ok. Una disculpa de antemano. Igual, ¿cuál te pasa? Porque pues usted necesita. Vamos a estar atendientes, ¿le parece? Una disculpa de antemano. No, pero no quiero. No quiero nada con Easy. Gracias. Una disculpa, que tenga un lindo terreno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.34,
+      "end": 5.58,
+      "text": " ¿Hola? ¿Te gustaría tener Internet más televisivo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.58,
+      "end": 8.58,
+      "text": " ¡No, coño, no! Deja de estarme molestando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.58,
+      "end": 15.58,
+      "text": " Más styleports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.58,
+      "end": 18.58,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.58,
+      "end": 22.58,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.58,
+      "end": 25.97,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.97,
+      "end": 33.31,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.31,
+      "end": 34.6,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.6,
+      "end": 36.6,
+      "text": " Mi nombre es Easy. ¿En quién lo puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.6,
+      "end": 39.6,
+      "text": " Ya me marqué. Ustedes me marcaron para ofrecerme un servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.6,
+      "end": 42.6,
+      "text": " Pero ya les dije muchas veces que no me siguen marqui marqui.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.6,
+      "end": 44.6,
+      "text": " Ah, ok. Una disculpa de antemano.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.6,
+      "end": 46.6,
+      "text": " Igual, ¿cuál te pasa? Porque pues usted necesita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.6,
+      "end": 48.6,
+      "text": " Vamos a estar atendientes, ¿le parece?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.6,
+      "end": 49.6,
+      "text": " Una disculpa de antemano.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 49.6,
+      "end": 53.6,
+      "text": " No, pero no quiero. No quiero nada con Easy. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 53.6,
+      "end": 55.6,
+      "text": " Una disculpa, que tenga un lindo terreno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.996,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

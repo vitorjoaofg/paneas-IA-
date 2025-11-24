@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700741458-5544389990-20251017-174838-5558912415.WAV",
+  "file_name": "0105-04965-25101700741458-5544389990-20251017-174838-5558912415.WAV",
+  "base_id": "0105-04965-25101700741458-5544389990-20251017-174838-5558912415",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos en primer mes? Ya tengo Bix. No lo pienses más y cámbiate a Easy. ¿Te interesa? Ya tengo Easy. Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, ¿qué tal? ¿Me escuchas? Hola, sí. ¿Qué tal? Gracias por comunicarse a la de contrataciones. Sí, sí, la tiene Alan. No, lo que pasa es que me han estado llamando, ofreciéndome, me ponen primero la grabadora, pero yo ya soy cliente Easy, entonces te contesto nada más para que ya me quites de esa lista, ¿no? Ahora te lo pongo como nota. Buen día. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 16.6,
+      "text": " por solo 350 pesos en primer mes? Ya tengo Bix. No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.6,
+      "end": 20.76,
+      "text": " ¿Te interesa? Ya tengo Easy. Un asesor te está esperando. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.76,
+      "end": 27.95,
+      "text": " hable o pulse uno para sí o dos para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.55,
+      "end": 51.94,
+      "text": " Hola, ¿qué tal? ¿Me escuchas? Hola, sí. ¿Qué tal? Gracias por comunicarse a la de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.94,
+      "end": 57.3,
+      "text": " contrataciones. Sí, sí, la tiene Alan. No, lo que pasa es que me han estado llamando,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.3,
+      "end": 61.98,
+      "text": " ofreciéndome, me ponen primero la grabadora, pero yo ya soy cliente Easy,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.98,
+      "end": 67.14,
+      "text": " entonces te contesto nada más para que ya me quites de esa lista, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.14,
+      "end": 70.3,
+      "text": " Ahora te lo pongo como nota. Buen día. Bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.412,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

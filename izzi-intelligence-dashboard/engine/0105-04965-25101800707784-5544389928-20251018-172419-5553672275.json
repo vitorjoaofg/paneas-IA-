@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800707784-5544389928-20251018-172419-5553672275.WAV",
+  "file_name": "0105-04965-25101800707784-5544389928-20251018-172419-5553672275.WAV",
+  "base_id": "0105-04965-25101800707784-5544389928-20251018-172419-5553672275",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bueno, se está comunicando con Trataciones Xigilas, en la señal que hay en nuestro video, si a quien tenga el gusto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.87,
+      "end": 10.22,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.22,
+      "end": 18.42,
+      "text": " más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.42,
+      "end": 26.89,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.89,
+      "end": 27.89,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.46,
+      "end": 41.14,
+      "text": " Bueno, se está comunicando con Trataciones Xigilas, en la señal que hay en nuestro",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.14,
+      "end": 43.14,
+      "text": " video, si a quien tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 128.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

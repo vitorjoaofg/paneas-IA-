@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700283527-5544389982-20251017-110322-5597276979.WAV",
+  "file_name": "0105-04965-25101700283527-5544389982-20251017-110322-5597276979.WAV",
+  "base_id": "0105-04965-25101700283527-5544389982-20251017-110322-5597276979",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bueno, a ver, no estén chingando la madre, lo pendejo, no quiero ubicar. ¿Yo ubicaste mi número? No chinguen la madre. ¿Estamos? ¿Estamos? Hasta cobardos para contestar. Sí, estoy diciendo que sí, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.64,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 25.08,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.08,
+      "end": 26.08,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 68.61,
+      "end": 73.21,
+      "text": " Bueno, a ver, no estén chingando la madre, lo pendejo, no quiero ubicar. ¿Yo ubicaste",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 73.21,
+      "end": 80.56,
+      "text": " mi número? No chinguen la madre. ¿Estamos? ¿Estamos? Hasta cobardos para contestar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 80.56,
+      "end": 83.02,
+      "text": " Sí, estoy diciendo que sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.052,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100450919-5597125290-20251031-133907-04896.WAV",
+  "file_name": "0105-04965-25103100450919-5597125290-20251031-133907-04896.WAV",
+  "base_id": "0105-04965-25103100450919-5597125290-20251031-133907-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Contrataciones Easy la tiene Javier Romero, con quien tengo el uso. Hola, Javier. Buen día. Habla Santiago Morales. Disculpa, ¿este número telefónico es de cobranza? No, es del área de contrataciones de Easy. Ok. ¿Me puedes comunicar a cobranza, por favor? Ocuparía a marcar al 800-125000, la opción 2 y luego la opción 3. Ok. Gracias. Por hacerle la excelente idea.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.5,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.5,
+      "end": 16.5,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 19.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.5,
+      "end": 25.28,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.28,
+      "end": 33.67,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.67,
+      "end": 36.67,
+      "text": " Contrataciones Easy la tiene Javier Romero, con quien tengo el uso.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.67,
+      "end": 39.67,
+      "text": " Hola, Javier. Buen día. Habla Santiago Morales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.67,
+      "end": 44.67,
+      "text": " Disculpa, ¿este número telefónico es de cobranza?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.67,
+      "end": 48.28,
+      "text": " No, es del área de contrataciones de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.28,
+      "end": 52.31,
+      "text": " Ok. ¿Me puedes comunicar a cobranza, por favor?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.31,
+      "end": 58.31,
+      "text": " Ocuparía a marcar al 800-125000, la opción 2 y luego la opción 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.31,
+      "end": 60.4,
+      "text": " Ok. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.4,
+      "end": 62.4,
+      "text": " Por hacerle la excelente idea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.964,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

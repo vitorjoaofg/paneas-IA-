@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100026920-5540409213-20251011-073725-8992025803.WAV",
+  "file_name": "0105-04965-25101100026920-5540409213-20251011-073725-8992025803.WAV",
+  "base_id": "0105-04965-25101100026920-5540409213-20251011-073725-8992025803",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melanie Saucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? ¿Sí? ¿Bueno? ¿Bueno? ¿Por motivos de que ahorita vamos a finalizar la llamada? Quiero preguntar si quieren cobertura para San Valentín.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 27.78,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.78,
+      "end": 34.06,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.06,
+      "end": 43.8,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.8,
+      "end": 52.92,
+      "text": " ¡Hola! ¿Qué tal? Buenos días. Mi nombre es Melanie Saucedo. Nos comunicamos de la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.92,
+      "end": 62.97,
+      "text": " compañía Easy. ¿Con quién tengo el gusto? ¿Sí? ¿Bueno? ¿Bueno? ¿Por motivos de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.97,
+      "end": 64.47,
+      "text": " que ahorita vamos a finalizar la llamada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.47,
+      "end": 112.61,
+      "text": " Quiero preguntar si quieren cobertura para San Valentín.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.316,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

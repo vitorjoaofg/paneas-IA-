@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300191245-5544389932-20251023-095124-5589283845.WAV",
+  "file_name": "0105-04965-25102300191245-5544389932-20251023-095124-5589283845.WAV",
+  "base_id": "0105-04965-25102300191245-5544389932-20251023-095124-5589283845",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Incy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¡Espera un momento, por favor! Hola, buen día. Le habla Iván Monfil de parte de su servicio de Incy para darle a conocer los beneficios de la comunidad.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Incy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 28.19,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¡Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.19,
+      "end": 34.44,
+      "text": " por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.72,
+      "end": 39.0,
+      "text": " Hola, buen día. Le habla Iván Monfil de parte de su servicio de Incy para darle a conocer",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.0,
+      "end": 40.16,
+      "text": " los beneficios de la comunidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 40.176,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

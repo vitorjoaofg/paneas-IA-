@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101400406399-3314541381-20251014-124043-4495914733.WAV",
+  "file_name": "0105-04999-25101400406399-3314541381-20251014-124043-4495914733.WAV",
+  "base_id": "0105-04999-25101400406399-3314541381-20251014-124043-4495914733",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. Se comunico con un asesor, presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. No, no, no le contesto. Porque quiero decir que ya se deje mi llamar. Ya, ya lo vamos a dejar de llamar. Una disculpa. Hasta luego. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 25.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.0,
+      "end": 42.87,
+      "text": " Siento, no entendí tu respuesta. Se comunico con un asesor, presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 42.87,
+      "end": 50.87,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 50.87,
+      "end": 58.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 58.7,
+      "end": 61.99,
+      "text": " No, no, no le contesto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 61.99,
+      "end": 64.99,
+      "text": " Porque quiero decir que ya se deje mi llamar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 64.99,
+      "end": 69.99,
+      "text": " Ya, ya lo vamos a dejar de llamar. Una disculpa. Hasta luego. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.296,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

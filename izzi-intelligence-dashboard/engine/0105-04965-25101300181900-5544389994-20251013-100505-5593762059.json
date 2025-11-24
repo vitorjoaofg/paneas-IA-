@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300181900-5544389994-20251013-100505-5593762059.WAV",
+  "file_name": "0105-04965-25101300181900-5544389994-20251013-100505-5593762059.WAV",
+  "base_id": "0105-04965-25101300181900-5544389994-20251013-100505-5593762059",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... Dígite 1, Dígite 2, Ingeniería, Dígite 3, Seguridad Ocupacional, Dígite 4, Marquetin y Plataformas Tecnológicas, Recursos Humanos, Dígite 6, Contabilidad, Dígite 7, Servintrack, Dígite 8, o Marquetero para hablar con la operadora. Enciriendo a un encargado. Un momento, por favor. Menos diez, menos diez.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 16.64,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.64,
+      "end": 22.32,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.32,
+      "end": 32.72,
+      "text": " Dígite 1, Dígite 2, Ingeniería, Dígite 3, Seguridad Ocupacional, Dígite 4, Marquetin y Plataformas Tecnológicas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.72,
+      "end": 51.35,
+      "text": " Recursos Humanos, Dígite 6, Contabilidad, Dígite 7, Servintrack, Dígite 8, o Marquetero para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.35,
+      "end": 57.5,
+      "text": " Enciriendo a un encargado. Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.5,
+      "end": 61.35,
+      "text": " Menos diez, menos diez.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.98,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

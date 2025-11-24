@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900659473-5544389993-20251009-164047-5556362781.WAV",
+  "file_name": "0105-04965-25100900659473-5544389993-20251009-164047-5556362781.WAV",
+  "base_id": "0105-04965-25100900659473-5544389993-20251009-164047-5556362781",
+  "transcription": "Previsión. Espera un momento, por favor. Buenas tardes. Buenas tardes. Se está conectando a la recontratación de Sisi o la tienes en el castillo con quien te guste? Oiga, no, lo que pasa es que me quiero quejar porque cada rato me está sonando su grabadora y cada rato donde la puedo reportar. Ah, ok, está bien. Bueno, un registro para que no se comuniquen una disculpa. Sí, es que cada rato se están reportando.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 1.0,
+      "text": " Previsión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 32.53,
+      "end": 34.53,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 34.53,
+      "end": 43.05,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 43.05,
+      "end": 45.91,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 45.91,
+      "end": 48.91,
+      "text": " Se está conectando a la recontratación de Sisi o la tienes en el castillo con quien te guste?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.91,
+      "end": 56.91,
+      "text": " Oiga, no, lo que pasa es que me quiero quejar porque cada rato me está sonando su grabadora y cada rato donde la puedo reportar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 56.91,
+      "end": 63.66,
+      "text": " Ah, ok, está bien. Bueno, un registro para que no se comuniquen una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 63.66,
+      "end": 65.66,
+      "text": " Sí, es que cada rato se están reportando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 121.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

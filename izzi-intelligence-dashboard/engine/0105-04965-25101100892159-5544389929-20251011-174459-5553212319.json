@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100892159-5544389929-20251011-174459-5553212319.WAV",
+  "file_name": "0105-04965-25101100892159-5544389929-20251011-174459-5553212319.WAV",
+  "base_id": "0105-04965-25101100892159-5544389929-20251011-174459-5553212319",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, 6 premiums y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cállate a Easy. ¿Te interesa? ¡Un asesor te está esperando! 3. Venta Zona Sur. 4. Venta Sistenas. 5. Venta repintado. 6. Servicio al cliente. 7. Soporte Técnico. 8. Máquina. 9. Administración. ¡Buenas tardes!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, 6 premiums y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cállate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? ¡Un asesor te está esperando!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " 3. Venta Zona Sur.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 23.13,
+      "text": " 4. Venta Sistenas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.13,
+      "end": 25.32,
+      "text": " 5. Venta repintado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.32,
+      "end": 28.51,
+      "text": " 6. Servicio al cliente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.51,
+      "end": 30.54,
+      "text": " 7. Soporte Técnico.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.54,
+      "end": 32.54,
+      "text": " 8. Máquina.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 32.54,
+      "end": 34.54,
+      "text": " 9. Administración.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.54,
+      "end": 41.63,
+      "text": " ¡Buenas tardes!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 41.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

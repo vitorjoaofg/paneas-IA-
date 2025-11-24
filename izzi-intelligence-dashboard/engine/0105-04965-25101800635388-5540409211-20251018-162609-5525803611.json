@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800635388-5540409211-20251018-162609-5525803611.WAV",
+  "file_name": "0105-04965-25101800635388-5540409211-20251018-162609-5525803611.WAV",
+  "base_id": "0105-04965-25101800635388-5540409211-20251018-162609-5525803611",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Gracias por el mando al centro de atención, Easy. Le atendemos ahora. ¿Cómo le ha ayudado? Hola, Montserrat. Quiero que dejen de llamar. ¿Cómo le hago? Ah, una disculpa, señorita. Lo vamos a verificar para que ya no se le generen este tipo de llamadas. Mira, Montserrat, es muy incómodo contestar y que una persona me diga bueno, le respondo y me ponen la contestadora. Como método de venta en frío, no creo que funcione. ¿Sí? Sí, sí, sí. Gracias, Montserrat. Sí, una disculpa a usted. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.69,
+      "end": 23.69,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.79,
+      "end": 32.19,
+      "text": " Gracias por el mando al centro de atención, Easy. Le atendemos ahora. ¿Cómo le ha ayudado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.63,
+      "end": 35.63,
+      "text": " Hola, Montserrat. Quiero que dejen de llamar. ¿Cómo le hago?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.18,
+      "end": 41.78,
+      "text": " Ah, una disculpa, señorita. Lo vamos a verificar para que ya no se le generen este tipo de llamadas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.78,
+      "end": 48.78,
+      "text": " Mira, Montserrat, es muy incómodo contestar y que una persona me diga bueno, le respondo y me ponen la contestadora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.78,
+      "end": 54.19,
+      "text": " Como método de venta en frío, no creo que funcione. ¿Sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.19,
+      "end": 56.19,
+      "text": " Sí, sí, sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 56.19,
+      "end": 57.19,
+      "text": " Gracias, Montserrat.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.19,
+      "end": 59.19,
+      "text": " Sí, una disculpa a usted. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

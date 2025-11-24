@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900638873-5544389901-20251009-162325-5551608749.WAV",
+  "file_name": "0105-04965-25100900638873-5544389901-20251009-162325-5551608749.WAV",
+  "base_id": "0105-04965-25100900638873-5544389901-20251009-162325-5551608749",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Qué le puedo ayudar? Me llegó la llamada, pero tengo Easy. No, no me pueden marcar porque estamos manejando el nuevo servicio de telefonía móvil para el celular. Tenemos un paquete por 94 pesos al mes con controlando su mismo número. No sé si le habían comentado. Ok, bueno, gracias. No, para ahorita no. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.24,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.84,
+      "end": 44.97,
+      "text": " para no. Espera un momento, por favor. ¿Qué le puedo ayudar? Me llegó la llamada, pero tengo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.97,
+      "end": 49.29,
+      "text": " Easy. No, no me pueden marcar porque estamos manejando el nuevo servicio de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.29,
+      "end": 53.53,
+      "text": " telefonía móvil para el celular. Tenemos un paquete por 94 pesos al mes con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.53,
+      "end": 58.25,
+      "text": " controlando su mismo número. No sé si le habían comentado. Ok, bueno, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.25,
+      "end": 60.89,
+      "text": " No, para ahorita no. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.448,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

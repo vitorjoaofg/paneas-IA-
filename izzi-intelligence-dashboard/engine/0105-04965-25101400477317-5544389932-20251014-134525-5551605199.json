@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400477317-5544389932-20251014-134525-5551605199.WAV",
+  "file_name": "0105-04965-25101400477317-5544389932-20251014-134525-5551605199.WAV",
+  "base_id": "0105-04965-25101400477317-5544389932-20251014-134525-5551605199",
+  "transcription": "Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2. Espera un momento, por favor. ¿Qué tal? Buenos días. Dejen de estar chingando. Vayan a chingar a su madre. A chingar a su madre. Dejen de estar chingando, hijos de su puta madre. Quien dejen mis números de teléfono. A chingar a su madre. A chingar a su madre. A chingar a su madre. Número privado. Graben los hijos de su puta madre. La idea de esta llamada es que pueda tener un servicio más económico que el que tiene en casa. ¿Cuánto le están cobrando por su servicio de internet?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.47,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.47,
+      "end": 32.93,
+      "text": " ¿Qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.93,
+      "end": 41.82,
+      "text": " Dejen de estar chingando. Vayan a chingar a su madre. A chingar a su madre. Dejen de estar chingando, hijos de su puta madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.82,
+      "end": 53.43,
+      "text": " Quien dejen mis números de teléfono. A chingar a su madre. A chingar a su madre. A chingar a su madre. Número privado. Graben los hijos de su puta madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.43,
+      "end": 59.43,
+      "text": " La idea de esta llamada es que pueda tener un servicio más económico que el que tiene en casa. ¿Cuánto le están cobrando por su servicio de internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.436,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

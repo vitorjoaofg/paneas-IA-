@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100385985-5544389959-20251011-115921-5552076708.WAV",
+  "file_name": "0105-04965-25101100385985-5544389959-20251011-115921-5552076708.WAV",
+  "base_id": "0105-04965-25101100385985-5544389959-20251011-115921-5552076708",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Qué es la contratación de Easy? ¿En qué le puedo ayudar? Buenos días. Mira, es por la promoción esa que están hablando. Nada más que la persona que la quiere contratar está ocupada ahorita. ¿Pudiera hablar en un momentito? Sí, claro. ¿Cómo y cuánto tiempo gusta que le marque? En unos 20 minutos. ¿20 minutos? Claro que sí. ¿Ya cuenta con el servicio de esta persona con nosotros que la contratamos? Sí. ¿O sería la primera vez que la contratamos? No, ya tiene Easy. Ok, muy bien. Entonces en 20 minutos se dice el abuelo de la llamada, ¿sí? Ok, gracias. Hasta un buen día. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.24,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.24,
+      "end": 33.58,
+      "text": " para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.58,
+      "end": 38.45,
+      "text": " ¿Qué es la contratación de Easy? ¿En qué le puedo ayudar? Buenos días. Mira, es por la promoción esa que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.45,
+      "end": 42.73,
+      "text": " están hablando. Nada más que la persona que la quiere contratar está",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.73,
+      "end": 47.32,
+      "text": " ocupada ahorita. ¿Pudiera hablar en un momentito? Sí, claro. ¿Cómo y cuánto tiempo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.32,
+      "end": 52.96,
+      "text": " gusta que le marque? En unos 20 minutos. ¿20 minutos? Claro que sí. ¿Ya cuenta con el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.96,
+      "end": 58.4,
+      "text": " servicio de esta persona con nosotros que la contratamos? Sí. ¿O sería la primera vez que la contratamos? No, ya tiene Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.4,
+      "end": 62.2,
+      "text": " Ok, muy bien. Entonces en 20 minutos se dice el abuelo de la llamada, ¿sí? Ok,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.2,
+      "end": 68.0,
+      "text": " gracias. Hasta un buen día. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

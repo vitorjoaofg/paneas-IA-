@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800738618-5544389903-20251028-173233-5590263697.WAV",
+  "file_name": "0105-04965-25102800738618-5544389903-20251028-173233-5590263697.WAV",
+  "base_id": "0105-04965-25102800738618-5544389903-20251028-173233-5590263697",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¡Bueno! ¿Qué pasó, carnal? ¿Qué pedo? ¡Bueno! ¡Buenas tardes! ¿Qué pedo? Le estamos hablando de la compañía Easy. Mi nombre es Guadalupe Juárez. ¿Qué pasó? ¿Cómo que es que Easy? Y yo soy Alcatel Bley, hija. Ah, pues no mames. Sí, les estamos ofreciendo lo que es el servicio de Internet. Ya dejen de estar chingando, no sé por qué me marcan.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 20.32,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.32,
+      "end": 26.4,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.4,
+      "end": 29.32,
+      "text": " un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.27,
+      "end": 32.27,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.27,
+      "end": 38.55,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.55,
+      "end": 42.58,
+      "text": " ¿Qué pasó, carnal? ¿Qué pedo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.58,
+      "end": 44.58,
+      "text": " ¡Bueno! ¡Buenas tardes!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.58,
+      "end": 47.41,
+      "text": " ¿Qué pedo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.41,
+      "end": 51.41,
+      "text": " Le estamos hablando de la compañía Easy. Mi nombre es Guadalupe Juárez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.41,
+      "end": 55.41,
+      "text": " ¿Qué pasó? ¿Cómo que es que Easy? Y yo soy Alcatel Bley, hija.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.41,
+      "end": 57.41,
+      "text": " Ah, pues no mames.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.41,
+      "end": 61.41,
+      "text": " Sí, les estamos ofreciendo lo que es el servicio de Internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 61.41,
+      "end": 69.06,
+      "text": " Ya dejen de estar chingando, no sé por qué me marcan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.696,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

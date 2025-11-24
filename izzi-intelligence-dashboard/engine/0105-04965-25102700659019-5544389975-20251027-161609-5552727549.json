@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700659019-5544389975-20251027-161609-5552727549.WAV",
+  "file_name": "0105-04965-25102700659019-5544389975-20251027-161609-5552727549.WAV",
+  "base_id": "0105-04965-25102700659019-5544389975-20251027-161609-5552727549",
+  "transcription": "Grupo Odaya, 40 años construyendo mejores vidas, gracias por llamar al corporativo y conoce el número de extensión, márquelo en cualquier momento. Para pago y compra de material de construcción, marque 1, pago a proveedores, 2, si desea hablar con su asesor inmobiliario, 3, seguimiento a titulación y escrituración de su casa, 4, para hablar con el defatamento de proyectos, 5, publicidad y mercadotecnia, 6, recursos humanos, 7. Para hablar con la operadora, por favor marque 0 o espere en línea para ser atendido. Esta llamada puede ser grabada para fines de calidad.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.46,
+      "end": 9.06,
+      "text": " Grupo Odaya, 40 años construyendo mejores vidas, gracias por llamar al corporativo y",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.06,
+      "end": 14.22,
+      "text": " conoce el número de extensión, márquelo en cualquier momento. Para pago y compra",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.22,
+      "end": 21.46,
+      "text": " de material de construcción, marque 1, pago a proveedores, 2, si desea hablar con su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.46,
+      "end": 29.0,
+      "text": " asesor inmobiliario, 3, seguimiento a titulación y escrituración de su casa, 4, para hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.0,
+      "end": 38.4,
+      "text": " con el defatamento de proyectos, 5, publicidad y mercadotecnia, 6, recursos humanos, 7. Para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.4,
+      "end": 48.7,
+      "text": " hablar con la operadora, por favor marque 0 o espere en línea para ser atendido. Esta llamada",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.7,
+      "end": 50.66,
+      "text": " puede ser grabada para fines de calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 109.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

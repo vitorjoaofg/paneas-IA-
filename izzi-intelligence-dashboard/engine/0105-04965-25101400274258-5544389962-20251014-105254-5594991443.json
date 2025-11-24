@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400274258-5544389962-20251014-105254-5594991443.WAV",
+  "file_name": "0105-04965-25101400274258-5544389962-20251014-105254-5594991443.WAV",
+  "base_id": "0105-04965-25101400274258-5544389962-20251014-105254-5594991443",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Sí, está bien. Que lleguen, a ti les digo. Espera un momento, por favor. Pues no está. Buenos días, mi nombre es José Manuel.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Sí, está bien. Que lleguen, a ti les digo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.0,
+      "end": 27.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.06,
+      "end": 30.09,
+      "text": " Pues no está.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.37,
+      "end": 56.82,
+      "text": " Buenos días, mi nombre es José Manuel.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.276,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

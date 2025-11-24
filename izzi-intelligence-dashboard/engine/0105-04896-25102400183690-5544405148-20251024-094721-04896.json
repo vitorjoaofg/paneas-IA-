@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25102400183690-5544405148-20251024-094721-04896.WAV",
+  "file_name": "0105-04896-25102400183690-5544405148-20251024-094721-04896.WAV",
+  "base_id": "0105-04896-25102400183690-5544405148-20251024-094721-04896",
+  "transcription": "Hola, somos... Hola. ...y seguro está llamando a que se viste una llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días, la Tienda Antonio Cartagena de Promociones CC Móvil. Disculpe, ¿con quién tengo el visto? Hola, busco a Fer Álvarez. ¿Encuentra? ¿En qué le podemos apoyar en Promociones CC Móvil, caballero? Mira, me presento. Mi nombre es Juan Salas, de Ojo, en inglés. Estoy llamando porque quisieron un revista con este número. El nombre es Fer Álvarez. ¿Encuentra? No, caballero. Este es un call center de telefonía celular de la compañía ISIS. Ok. Ok, listo. Dale, muchas gracias. Disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 1.0,
+      "text": " Hola, somos...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 1.0,
+      "end": 2.0,
+      "text": " Hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 2.0,
+      "end": 4.5,
+      "text": " ...y seguro está llamando a que se viste una llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 4.5,
+      "end": 7.0,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 7.0,
+      "end": 8.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 8.0,
+      "end": 10.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 10.0,
+      "end": 14.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 14.5,
+      "end": 19.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 19.18,
+      "end": 26.62,
+      "text": " Buenos días, la Tienda Antonio Cartagena de Promociones CC Móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 26.62,
+      "end": 28.62,
+      "text": " Disculpe, ¿con quién tengo el visto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 28.62,
+      "end": 32.23,
+      "text": " Hola, busco a Fer Álvarez. ¿Encuentra?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 32.23,
+      "end": 35.86,
+      "text": " ¿En qué le podemos apoyar en Promociones CC Móvil, caballero?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 35.86,
+      "end": 39.37,
+      "text": " Mira, me presento. Mi nombre es Juan Salas, de Ojo, en inglés.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 39.37,
+      "end": 41.87,
+      "text": " Estoy llamando porque quisieron un revista con este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 41.87,
+      "end": 44.37,
+      "text": " El nombre es Fer Álvarez. ¿Encuentra?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 44.37,
+      "end": 50.37,
+      "text": " No, caballero. Este es un call center de telefonía celular de la compañía ISIS.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 50.37,
+      "end": 53.47,
+      "text": " Ok. Ok, listo. Dale, muchas gracias. Disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.476,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

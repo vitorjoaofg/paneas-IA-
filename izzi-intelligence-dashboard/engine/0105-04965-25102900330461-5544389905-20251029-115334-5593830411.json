@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900330461-5544389905-20251029-115334-5593830411.WAV",
+  "file_name": "0105-04965-25102900330461-5544389905-20251029-115334-5593830411.WAV",
+  "base_id": "0105-04965-25102900330461-5544389905-20251029-115334-5593830411",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Qué tal? Muy buenas tardes. Hablamos de compañía Easy. ¿Qué puedo ayudarle? Disculpate, ¿ya tienes ese red en transfiguración, Nicolás Romero? ¿Cómo, perdón? ¿Ya tienes el red en Nicolás Romero, que es transfiguración? No le entiendo mucho, señorita. ¿Qué le parece si le rezamos la llamada? Ok, gracias. Sí.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.56,
+      "end": 24.34,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.34,
+      "end": 32.12,
+      "text": " ¿Qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.12,
+      "end": 34.12,
+      "text": " Hablamos de compañía Easy. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.36,
+      "end": 39.9,
+      "text": " Disculpate, ¿ya tienes ese red en transfiguración, Nicolás Romero?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.9,
+      "end": 40.9,
+      "text": " ¿Cómo, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.9,
+      "end": 46.28,
+      "text": " ¿Ya tienes el red en Nicolás Romero, que es transfiguración?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.28,
+      "end": 48.48,
+      "text": " No le entiendo mucho, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.48,
+      "end": 50.88,
+      "text": " ¿Qué le parece si le rezamos la llamada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 50.88,
+      "end": 52.28,
+      "text": " Ok, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.28,
+      "end": 53.28,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.656,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

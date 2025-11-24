@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500445967-5544389910-20251015-131403-5591554132.WAV",
+  "file_name": "0105-04965-25101500445967-5544389910-20251015-131403-5591554132.WAV",
+  "base_id": "0105-04965-25101500445967-5544389910-20251015-131403-5591554132",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Buenos días. Ya les hablé en una ocasión para que dejen de estarme llamando. No me interesa. Ahorita me esperé para ver si me contestaban otra vez. Por favor, borrenme de su lista. No me interesa. Todos los días me hablan hasta dos veces al día. Ok, comprendo. Lamento escuchar eso ahorita. No planeamos molestarla. Sí, ya me molesta que me esté hablando. Por favor, no. Voy a dejarle el comentario por aquí para que la puedan sacar de la lista. Muy bien. Gracias. Hasta luego. La última sería verificar si le puedo dar una mejor oferta ahorita. Ya es la última que vamos a tener. No, no me interesa. Gracias. Muy bien. A usted. Bonito día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.92,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.92,
+      "end": 27.02,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.02,
+      "end": 35.13,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.45,
+      "end": 45.68,
+      "text": " Buenos días. Ya les hablé en una ocasión para que dejen de estarme llamando. No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.68,
+      "end": 53.34,
+      "text": " Ahorita me esperé para ver si me contestaban otra vez. Por favor, borrenme de su lista.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.34,
+      "end": 58.73,
+      "text": " No me interesa. Todos los días me hablan hasta dos veces al día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.73,
+      "end": 64.46,
+      "text": " Ok, comprendo. Lamento escuchar eso ahorita. No planeamos molestarla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.22,
+      "end": 68.54,
+      "text": " Sí, ya me molesta que me esté hablando. Por favor, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.54,
+      "end": 72.46,
+      "text": " Voy a dejarle el comentario por aquí para que la puedan sacar de la lista. Muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 72.46,
+      "end": 74.5,
+      "text": " Gracias. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.5,
+      "end": 78.02,
+      "text": " La última sería verificar si le puedo dar una mejor oferta ahorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.02,
+      "end": 82.02,
+      "text": " Ya es la última que vamos a tener. No, no me interesa. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 82.02,
+      "end": 84.59,
+      "text": " Muy bien. A usted. Bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.816,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

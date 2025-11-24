@@ -1,0 +1,402 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000485200-5544389994-20251010-131711-5515487193.WAV",
+  "file_name": "0105-04965-25101000485200-5544389994-20251010-131711-5515487193.WAV",
+  "base_id": "0105-04965-25101000485200-5544389994-20251010-131711-5515487193",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skype World desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Sí, bueno, buenas tardes. Hola, buenas tardes. Me presento, mi nombre es Daniel. Me estoy comunicando por parte de la compañía de Easy. Hola, Daniel. Oye, una pregunta. Yo entiendo que quieres vender el paquete que suena en la grabadora. Últimamente yo estoy pensando en cambiar Easy porque me han estado cobrando cada vez más y más y más. Mi paquete es de 700 y ahorita acabo de pagar una factura de 1,100. No entiendo por qué, pero digo, ¿me puedo cambiar a ese de 300 y cacho que comenta la grabadora? Ah, OK. El de 350 es un pago inicial de 350, obviamente. Y a partir de la segunda factura, ya se empieza a pagar el precio normal. ¿Cuál es el precio normal? 760. Es el paquete de 150 megas, televisión e internet y telefonía. ¿Y qué beneficios tengo con Loctal? Con el paquete que se tiene actualmente. Actualmente se puede comunicar al 800, 120, 5,000 para que la actualicen en su paquete, para que la actualicen la oferta y reciba ahí un descuento. En este caso mi área es para clientes nuevos. Entiendo. ¿Me repite el número, por favor? 800. Sí. 120. Sí. 5,000. De acuerdo. Muchas gracias, Daniel. Agradezco. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Skype World desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.8,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.8,
+      "end": 19.36,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.36,
+      "end": 21.52,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.52,
+      "end": 26.68,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.68,
+      "end": 28.32,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.63,
+      "end": 36.23,
+      "text": " Sí, bueno, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.23,
+      "end": 37.63,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.63,
+      "end": 38.91,
+      "text": " Me presento, mi nombre es Daniel.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 38.91,
+      "end": 42.21,
+      "text": " Me estoy comunicando por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 42.21,
+      "end": 43.53,
+      "text": " Hola, Daniel.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 43.53,
+      "end": 44.25,
+      "text": " Oye, una pregunta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 44.25,
+      "end": 48.85,
+      "text": " Yo entiendo que quieres vender el paquete que suena en la grabadora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 48.85,
+      "end": 52.69,
+      "text": " Últimamente yo estoy pensando en cambiar Easy porque me han estado cobrando cada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 52.69,
+      "end": 53.61,
+      "text": " vez más y más y más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 53.61,
+      "end": 59.29,
+      "text": " Mi paquete es de 700 y ahorita acabo de pagar una factura de 1,100.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 59.29,
+      "end": 62.05,
+      "text": " No entiendo por qué, pero digo,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 62.09,
+      "end": 66.33,
+      "text": " ¿me puedo cambiar a ese de 300 y cacho que comenta la grabadora?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 66.33,
+      "end": 67.13,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 67.13,
+      "end": 75.25,
+      "text": " El de 350 es un pago inicial de 350, obviamente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 75.25,
+      "end": 80.74,
+      "text": " Y a partir de la segunda factura, ya se empieza a pagar el precio normal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 80.74,
+      "end": 82.18,
+      "text": " ¿Cuál es el precio normal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 82.18,
+      "end": 85.12,
+      "text": " 760.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 85.12,
+      "end": 91.58,
+      "text": " Es el paquete de 150 megas, televisión e internet y telefonía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 91.58,
+      "end": 95.55,
+      "text": " ¿Y qué beneficios tengo con Loctal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 95.59,
+      "end": 97.07,
+      "text": " Con el paquete que se tiene actualmente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 97.07,
+      "end": 102.87,
+      "text": " Actualmente se puede comunicar al 800, 120, 5,000 para que la actualicen en su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 102.87,
+      "end": 107.11,
+      "text": " paquete, para que la actualicen la oferta y reciba ahí un descuento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 107.11,
+      "end": 111.15,
+      "text": " En este caso mi área es para clientes nuevos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 111.15,
+      "end": 111.75,
+      "text": " Entiendo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 111.75,
+      "end": 113.71,
+      "text": " ¿Me repite el número, por favor?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 113.71,
+      "end": 115.23,
+      "text": " 800.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 115.23,
+      "end": 116.19,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 116.19,
+      "end": 117.87,
+      "text": " 120.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 117.87,
+      "end": 118.75,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 118.75,
+      "end": 120.71,
+      "text": " 5,000.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 120.71,
+      "end": 121.51,
+      "text": " De acuerdo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 121.51,
+      "end": 122.91,
+      "text": " Muchas gracias, Daniel.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 122.91,
+      "end": 123.43,
+      "text": " Agradezco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 123.43,
+      "end": 124.43,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.636,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

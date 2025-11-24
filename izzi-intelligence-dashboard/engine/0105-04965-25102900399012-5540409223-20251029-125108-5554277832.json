@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900399012-5540409223-20251029-125108-5554277832.WAV",
+  "file_name": "0105-04965-25102900399012-5540409223-20251029-125108-5554277832.WAV",
+  "base_id": "0105-04965-25102900399012-5540409223-20251029-125108-5554277832",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. ¡Hola! Sí, muy buenos días. Buenos días. Mi nombre es Angelina Esma. Se está comunicando el Departamento de Promoción y de Recuperación de Easy. ¿Con quién tengo el gusto? Con Rosa Crustina, pero no. Por ahorita tenemos. Lo tenemos. Ah, ¿ya tiene lo que yo te decía, Easy? Sí. Oh, por ver. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.56,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.56,
+      "end": 32.84,
+      "text": " ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.84,
+      "end": 40.22,
+      "text": " un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.22,
+      "end": 48.72,
+      "text": " ¡Hola! Sí, muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.72,
+      "end": 50.85,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.85,
+      "end": 55.85,
+      "text": " Mi nombre es Angelina Esma. Se está comunicando el Departamento de Promoción y de Recuperación",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.85,
+      "end": 58.98,
+      "text": " de Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.98,
+      "end": 63.98,
+      "text": " Con Rosa Crustina, pero no. Por ahorita tenemos. Lo tenemos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.98,
+      "end": 66.07,
+      "text": " Ah, ¿ya tiene lo que yo te decía, Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.07,
+      "end": 68.3,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 68.3,
+      "end": 70.3,
+      "text": " Oh, por ver.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 70.3,
+      "end": 72.3,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.032,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

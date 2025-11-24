@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000061673-6644547924-20251030-080540-8671514202.WAV",
+  "file_name": "0105-04965-25103000061673-6644547924-20251030-080540-8671514202.WAV",
+  "base_id": "0105-04965-25103000061673-6644547924-20251030-080540-8671514202",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor. Espera un momento, por favor. Hola. ¿Buenos días? Se ha detenido la grabación. Para aprobar, marque el signo de números. Para grabar a partir de este punto, marque 1. Para escuchar, marque 2 y 3.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.14,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.38,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.38,
+      "end": 17.38,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.38,
+      "end": 27.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.74,
+      "end": 38.21,
+      "text": " Hola. ¿Buenos días?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 80.5,
+      "end": 82.5,
+      "text": " Se ha detenido la grabación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 82.5,
+      "end": 85.5,
+      "text": " Para aprobar, marque el signo de números.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 85.5,
+      "end": 90.07,
+      "text": " Para grabar a partir de este punto, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 90.07,
+      "end": 93.07,
+      "text": " Para escuchar, marque 2 y 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 113.976,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600181452-5544389903-20251016-094211-5591796392.WAV",
+  "file_name": "0105-04965-25101600181452-5544389903-20251016-094211-5591796392.WAV",
+  "base_id": "0105-04965-25101600181452-5544389903-20251016-094211-5591796392",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarla. Espera un momento, por favor. Hola, buenos días. Buenos días, señorita. Habla Miriam Gosteria de parte de la compañía de Easy. Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos o activos que ya manejen servicio a ustedes como nosotros. No, señorita, es una empresa. Muchísimas gracias. Ah, dime una disculpa. Un bonito día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 34.14,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarla. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 41.93,
+      "end": 42.93,
+      "text": " Hola, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 42.93,
+      "end": 54.93,
+      "text": " Buenos días, señorita. Habla Miriam Gosteria de parte de la compañía de Easy. Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos o activos que ya manejen servicio a ustedes como nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 54.93,
+      "end": 57.93,
+      "text": " No, señorita, es una empresa. Muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 57.93,
+      "end": 60.15,
+      "text": " Ah, dime una disculpa. Un bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 60.15,
+      "end": 61.15,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 116.856,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

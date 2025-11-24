@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400260406-5544389955-20251024-105117-5530922191.WAV",
+  "file_name": "0105-04965-25102400260406-5544389955-20251024-105117-5530922191.WAV",
+  "base_id": "0105-04965-25102400260406-5544389955-20251024-105117-5530922191",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Hola, buenos días. Bueno, bueno, calidad por falta de audio, colgaré llamadas. Ya no, ya de las, al minuto ya, que van a comenzar. Vale, le tomé la foto, pero no, no, cuando busca una, no, no, no, no. Bueno, pero no sé en qué cual me sufríen.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 26.05,
+      "text": " interesa? Un asesor te está esperando. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.77,
+      "end": 43.33,
+      "text": " espera un momento, por favor. Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.2,
+      "end": 58.06,
+      "text": " Bueno, bueno, calidad por falta de audio, colgaré llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 98.6,
+      "end": 104.94,
+      "text": " Ya no, ya de las, al minuto ya, que van a comenzar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 109.02,
+      "end": 121.76,
+      "text": " Vale, le tomé la foto, pero no, no, cuando busca una, no, no, no, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 121.76,
+      "end": 125.14,
+      "text": " Bueno, pero no sé en qué cual me sufríen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.352,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

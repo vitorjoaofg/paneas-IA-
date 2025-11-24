@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700634823-5544389901-20251027-155623-5522361514.WAV",
+  "file_name": "0105-04965-25102700634823-5544389901-20251027-155623-5522361514.WAV",
+  "base_id": "0105-04965-25102700634823-5544389901-20251027-155623-5522361514",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Hola! ¿Qué tal? Gracias por comunicarse la de contrataciones Easy la Team de Alan. ¿Por qué tengo el gusto? Y bueno, por motivo de calidad, cárcel en el mar. Buen día. ¡Diga, diga!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.62,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.62,
+      "end": 42.91,
+      "text": " momento, por favor. ¡Hola! ¿Qué tal? Gracias por comunicarse la de contrataciones Easy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.91,
+      "end": 65.68,
+      "text": " la Team de Alan. ¿Por qué tengo el gusto? Y bueno, por motivo de calidad, cárcel en",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 65.68,
+      "end": 74.68,
+      "text": " el mar. Buen día. ¡Diga, diga!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.824,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

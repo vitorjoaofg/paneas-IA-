@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800571872-5544389908-20251018-153455-5588680443.WAV",
+  "file_name": "0105-04965-25101800571872-5544389908-20251018-153455-5588680443.WAV",
+  "base_id": "0105-04965-25101800571872-5544389908-20251018-153455-5588680443",
+  "transcription": "bueno hola te gustaría navegar en internet con 100 megas de velocidad tener el mejor en detenimiento con 200 canales bix premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes no lo pienses más y cámbiate a easy te interesa un asesor te está esperando por favor hable o pulse uno para sí o dos para no siento no entendí tu respuesta te comunico con un asesor presiona uno para hablar con un asesor o dos para te espera un momento por favor gracias por llamar al centro de contrataciones y si cómo le ayudo mire señorita diario me llaman y es muy molesto ya no quiero que me estén llamando para para decirme de su internet no me interesa y por favor borrame de la lista es muy molesto que en marco y marco y marco y marco si yo no disculpa señorita disculpe gracias y ya no vuelvan a llamar",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.72,
+      "end": 7.26,
+      "text": " bueno hola te gustaría navegar en internet con 100 megas de velocidad tener",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.26,
+      "end": 12.78,
+      "text": " el mejor en detenimiento con 200 canales bix premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.78,
+      "end": 20.9,
+      "text": " por sólo 350 pesos el primer mes no lo pienses más y cámbiate a easy te interesa un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.9,
+      "end": 30.55,
+      "text": " te está esperando por favor hable o pulse uno para sí o dos para no siento no entendí tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.55,
+      "end": 37.71,
+      "text": " respuesta te comunico con un asesor presiona uno para hablar con un asesor o dos para te espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.71,
+      "end": 47.38,
+      "text": " un momento por favor gracias por llamar al centro de contrataciones y si cómo le ayudo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.38,
+      "end": 53.42,
+      "text": " mire señorita diario me llaman y es muy molesto ya no quiero que me estén llamando para para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.42,
+      "end": 58.66,
+      "text": " decirme de su internet no me interesa y por favor borrame de la lista es muy molesto que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.66,
+      "end": 65.18,
+      "text": " en marco y marco y marco y marco si yo no disculpa señorita disculpe gracias y ya no vuelvan a llamar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.156,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

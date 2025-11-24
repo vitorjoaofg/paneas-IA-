@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100375892-5544389994-20251021-122952-5554256343.WAV",
+  "file_name": "0105-04965-25102100375892-5544389994-20251021-122952-5554256343.WAV",
+  "base_id": "0105-04965-25102100375892-5544389994-20251021-122952-5554256343",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Estoy esperando, sí. ¿Bueno? Sí, buenas tardes. ¿Con quién quieres hablar? Hola, buenas tardes caballero. Hablo Mirián Goseguera de parte de la compañía de Easy. La llamada es cuadrada. ¿Cómo tienes mi número, amiga? Ah, bien, mire, eh, pues básicamente la semana salía en un conmutador. No, es privado, amiga. ¿Cómo crees? O sea, no sé de dónde me sacan bien. Agregamos aquí la nota, caballero, una disculpa. Bonito día. No, es privado, amiga, eh. ¿Te puedes meterle un problema? Sí, no se preocupe. Bonito día. Bueno, bye. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.76,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.76,
+      "end": 26.18,
+      "text": " te está esperando. Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.18,
+      "end": 28.02,
+      "text": " Estoy esperando, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.02,
+      "end": 33.66,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.66,
+      "end": 37.5,
+      "text": " Sí, buenas tardes. ¿Con quién quieres hablar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.5,
+      "end": 42.02,
+      "text": " Hola, buenas tardes caballero. Hablo Mirián Goseguera de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.02,
+      "end": 43.02,
+      "text": " La llamada es cuadrada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.02,
+      "end": 44.02,
+      "text": " ¿Cómo tienes mi número, amiga?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.02,
+      "end": 48.81,
+      "text": " Ah, bien, mire, eh, pues básicamente la semana salía en un conmutador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.81,
+      "end": 53.47,
+      "text": " No, es privado, amiga. ¿Cómo crees? O sea, no sé de dónde me sacan bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.47,
+      "end": 55.95,
+      "text": " Agregamos aquí la nota, caballero, una disculpa. Bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.95,
+      "end": 58.15,
+      "text": " No, es privado, amiga, eh. ¿Te puedes meterle un problema?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 58.15,
+      "end": 60.15,
+      "text": " Sí, no se preocupe. Bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.15,
+      "end": 61.15,
+      "text": " Bueno, bye. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.756,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

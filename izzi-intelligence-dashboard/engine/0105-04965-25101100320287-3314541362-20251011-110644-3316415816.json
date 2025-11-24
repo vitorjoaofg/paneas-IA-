@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100320287-3314541362-20251011-110644-3316415816.WAV",
+  "file_name": "0105-04965-25101100320287-3314541362-20251011-110644-3316415816.WAV",
+  "base_id": "0105-04965-25101100320287-3314541362-20251011-110644-3316415816",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos. Espera un momento, por favor. Que son de Easy, 350 pesos el asesor, a ver cuánto sale. Nunca hablamos por este teléfono, ¿ah? Y ahí dice, ¿quién lo echó a leer? ¿Cuánto no había? 350 por internet. Ya no me contesta el asesor. Bueno, se perdieron un cliente, adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 30.78,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.26,
+      "end": 36.34,
+      "text": " Presiona uno para hablar con un asesor o dos. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.34,
+      "end": 56.22,
+      "text": " Que son de Easy, 350 pesos el asesor, a ver cuánto sale. Nunca hablamos por este",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.22,
+      "end": 89.79,
+      "text": " teléfono, ¿ah? Y ahí dice, ¿quién lo echó a leer? ¿Cuánto no había? 350",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 89.79,
+      "end": 101.71,
+      "text": " por internet. Ya no me contesta el asesor. Bueno, se perdieron un cliente, adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 103.284,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

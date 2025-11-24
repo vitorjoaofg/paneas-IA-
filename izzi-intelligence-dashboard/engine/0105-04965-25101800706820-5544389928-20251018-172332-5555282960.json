@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800706820-5544389928-20251018-172332-5555282960.WAV",
+  "file_name": "0105-04965-25101800706820-5544389928-20251018-172332-5555282960.WAV",
+  "base_id": "0105-04965-25101800706820-5544389928-20251018-172332-5555282960",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. Hola, un gusto. Mi nombre es José Moises. ¿Se está comunicando el área de contrataciones Easy con quien tengo el gusto? ¿Bueno? ¿Bueno, bueno? ¿Se escucha? ¿Bueno? ¿Bueno, bueno? Por motivos de calidad, me veo obligado a cortar la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.8,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.8,
+      "end": 21.28,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.28,
+      "end": 22.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.8,
+      "end": 30.1,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.1,
+      "end": 32.38,
+      "text": " Hola, un gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 32.38,
+      "end": 33.38,
+      "text": " Mi nombre es José Moises.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.38,
+      "end": 42.07,
+      "text": " ¿Se está comunicando el área de contrataciones Easy con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.07,
+      "end": 45.38,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.38,
+      "end": 46.38,
+      "text": " ¿Bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.38,
+      "end": 50.0,
+      "text": " ¿Se escucha?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 50.0,
+      "end": 52.12,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.12,
+      "end": 53.57,
+      "text": " ¿Bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 53.57,
+      "end": 55.73,
+      "text": " Por motivos de calidad, me veo obligado a cortar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 117.36,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

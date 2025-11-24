@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500071667-5544389901-20251025-081349-5521691427.WAV",
+  "file_name": "0105-04965-25102500071667-5544389901-20251025-081349-5521691427.WAV",
+  "base_id": "0105-04965-25102500071667-5544389901-20251025-081349-5521691427",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¿Qué tal? Buenos días. Este es el área de Easy contrataciones, la atiende Leonardo García. ¿Con quién tengo el gusto? ¿Con quién tengo el gusto? Por temas de calidad se analizamos la llamada. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 28.53,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.57,
+      "end": 40.98,
+      "text": " un momento por favor. ¿Qué tal? Buenos días. Este es el área de Easy contrataciones, la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.98,
+      "end": 63.72,
+      "text": " atiende Leonardo García. ¿Con quién tengo el gusto? ¿Con quién tengo el gusto? Por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 63.72,
+      "end": 65.66,
+      "text": " temas de calidad se analizamos la llamada. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.56,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

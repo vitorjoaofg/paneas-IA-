@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100400339132-3314541398-20251004-114338-3327370634.WAV",
+  "file_name": "0105-04965-25100400339132-3314541398-20251004-114338-3327370634.WAV",
+  "base_id": "0105-04965-25100400339132-3314541398-20251004-114338-3327370634",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Lo siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal? ¿Me comunico con la compañía Easy? ¿Con quién tengo placer? ¿Con quién estoy hablando? ¿Se encuentra algún mayor, algún adulto? ¿Me la pasas, por favor? No, no se encuentra. ¿No hay nadie? ¿No hay ningún adulto? No. Ok, muy bien. Bueno, después vuelvo a marcar, ¿ok? Que tengas muy bien. Ok, bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.07,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Lo siento, no entendí",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.07,
+      "end": 34.59,
+      "text": " tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.59,
+      "end": 59.46,
+      "text": " terminar la llamada. Espera un momento, por favor. ¿Qué tal? ¿Me comunico con la compañía",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 59.46,
+      "end": 69.88,
+      "text": " Easy? ¿Con quién tengo placer? ¿Con quién estoy hablando? ¿Se encuentra algún mayor,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 69.88,
+      "end": 79.43,
+      "text": " algún adulto? ¿Me la pasas, por favor? No, no se encuentra. ¿No hay nadie? ¿No",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 79.43,
+      "end": 85.07,
+      "text": " hay ningún adulto? No. Ok, muy bien. Bueno, después vuelvo a marcar, ¿ok? Que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 85.07,
+      "end": 85.83,
+      "text": " tengas muy bien. Ok, bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.232,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

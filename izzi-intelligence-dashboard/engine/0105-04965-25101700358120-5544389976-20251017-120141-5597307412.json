@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700358120-5544389976-20251017-120141-5597307412.WAV",
+  "file_name": "0105-04965-25101700358120-5544389976-20251017-120141-5597307412.WAV",
+  "base_id": "0105-04965-25101700358120-5544389976-20251017-120141-5597307412",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? ¡Hola! No importa con quién tenga el gusto. Yo quiero saber quién les pasó mi número para que me estén marcando. Claro, en este caso es una base. Yo veo lo que podría hacer es borrar su número para que ya no le marquen. ¿Le parece? Por favor, gracias. Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 25.64,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.64,
+      "end": 26.64,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.24,
+      "end": 36.31,
+      "text": " Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? ¡Hola! No importa",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.31,
+      "end": 39.87,
+      "text": " con quién tenga el gusto. Yo quiero saber quién les pasó mi número para que me estén",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.87,
+      "end": 44.38,
+      "text": " marcando. Claro, en este caso es una base. Yo veo lo que podría hacer es borrar su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.38,
+      "end": 49.22,
+      "text": " número para que ya no le marquen. ¿Le parece? Por favor, gracias. Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 49.248,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

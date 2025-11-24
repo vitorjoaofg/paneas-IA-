@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101600536195-5544389903-20251016-143735-5515057865.WAV",
+  "file_name": "0105-04999-25101600536195-5544389903-20251016-143735-5515057865.WAV",
+  "base_id": "0105-04999-25101600536195-5544389903-20251016-143735-5515057865",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a ILSI. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Cuándo? Hola, muy buen día. Hola, muy buen día. Mi nombre es Tricia Lovette, parte de ILSI. ¿Con quién tengo el gusto? Hola, buen día. Hola, buen día. Hola, buen día. Hola. Por efectos de calidad, tendremos que colgar esta llamada. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.28,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.28,
+      "end": 14.08,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.08,
+      "end": 20.12,
+      "text": " No lo pienses más y cámbiate a ILSI. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.12,
+      "end": 37.7,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.7,
+      "end": 43.74,
+      "text": " ¿Cuándo? Hola, muy buen día. Hola, muy buen día. Mi nombre es Tricia Lovette, parte de ILSI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.74,
+      "end": 61.21,
+      "text": " ¿Con quién tengo el gusto? Hola, buen día. Hola, buen día. Hola, buen día. Hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 61.21,
+      "end": 64.97,
+      "text": " Por efectos de calidad, tendremos que colgar esta llamada. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 121.32,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

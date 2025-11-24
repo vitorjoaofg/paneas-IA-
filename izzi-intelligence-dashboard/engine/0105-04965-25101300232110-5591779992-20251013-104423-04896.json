@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300232110-5591779992-20251013-104423-04896.WAV",
+  "file_name": "0105-04965-25101300232110-5591779992-20251013-104423-04896.WAV",
+  "base_id": "0105-04965-25101300232110-5591779992-20251013-104423-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días. Me comunicó el servicio Easy. ¿Con quién tengo el gusto? Buenos días. Con Alan Estrada. Alan Estrada. El motivo de la llamada es comentarle que tiene un beneficio con Easy en cuanto a una promoción. ¿Usted ya tiene servicio Easy en su domicilio, Alan? Ya, amigo. Mira, nada más para hacerte un comentario. Ya están marcando ese teléfono de la Fiscalía General de la República. Entonces, nos encargo que no estén marcando ese número, ¿no?, por favor. Bueno, que tenga buen día. Hasta luego. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 16.0,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 24.38,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.38,
+      "end": 26.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.38,
+      "end": 36.59,
+      "text": " Buenos días. Me comunicó el servicio Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.59,
+      "end": 38.59,
+      "text": " Buenos días. Con Alan Estrada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.59,
+      "end": 44.62,
+      "text": " Alan Estrada. El motivo de la llamada es comentarle que tiene un beneficio con Easy en cuanto a una promoción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.62,
+      "end": 47.62,
+      "text": " ¿Usted ya tiene servicio Easy en su domicilio, Alan?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.62,
+      "end": 50.62,
+      "text": " Ya, amigo. Mira, nada más para hacerte un comentario.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.62,
+      "end": 55.3,
+      "text": " Ya están marcando ese teléfono de la Fiscalía General de la República.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.3,
+      "end": 58.39,
+      "text": " Entonces, nos encargo que no estén marcando ese número, ¿no?, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.39,
+      "end": 60.39,
+      "text": " Bueno, que tenga buen día. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.39,
+      "end": 61.39,
+      "text": " Muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.992,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

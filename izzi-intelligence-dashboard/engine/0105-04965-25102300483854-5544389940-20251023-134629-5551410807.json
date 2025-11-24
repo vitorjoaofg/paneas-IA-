@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300483854-5544389940-20251023-134629-5551410807.WAV",
+  "file_name": "0105-04965-25102300483854-5544389940-20251023-134629-5551410807.WAV",
+  "base_id": "0105-04965-25102300483854-5544389940-20251023-134629-5551410807",
+  "transcription": "Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. ¿No lo pienses más y cámbiate a Easy? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. Por favor. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Hola, buen día, le habla Ivonne Moffil de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía móvil por 94 pesos a mes. Buen día. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.7,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.7,
+      "end": 10.2,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.2,
+      "end": 16.7,
+      "text": " ¿No lo pienses más y cámbiate a Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.7,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 23.7,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.7,
+      "end": 25.7,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.7,
+      "end": 29.83,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.03,
+      "end": 31.03,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.03,
+      "end": 37.8,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.8,
+      "end": 46.3,
+      "text": " Hola, buen día, le habla Ivonne Moffil de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía móvil por 94 pesos a mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.3,
+      "end": 49.5,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.5,
+      "end": 51.5,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.5,
+      "end": 56.76,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.76,
+      "end": 63.14,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 63.14,
+      "end": 64.34,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.224,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

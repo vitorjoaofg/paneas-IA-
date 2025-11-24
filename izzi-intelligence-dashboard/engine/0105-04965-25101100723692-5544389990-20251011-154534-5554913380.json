@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100723692-5544389990-20251011-154534-5554913380.WAV",
+  "file_name": "0105-04965-25101100723692-5544389990-20251011-154534-5554913380.WAV",
+  "base_id": "0105-04965-25101100723692-5544389990-20251011-154534-5554913380",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. ¿Qué tal? Mucho gusto. Abraham Garcia por parte de la compañía de Easy. Contrataciones, dígame en qué le puedo ayudar. ¿Qué crees que casi no lo escucho muy bien? No sé si es mi teléfono. Oh, lo escucho perfectamente. Denme un segundo, denme un segundo, ¿no? OK. Denme un segundo. Claro. Mientras tanto, vamos a revisar. Y tu mirada la llevo encima.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 27.83,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.83,
+      "end": 92.38,
+      "text": " un momento por favor. ¿Qué tal? Mucho gusto. Abraham Garcia por parte de la compañía de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 92.38,
+      "end": 96.82,
+      "text": " Easy. Contrataciones, dígame en qué le puedo ayudar. ¿Qué crees que casi no lo escucho muy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 96.82,
+      "end": 100.86,
+      "text": " bien? No sé si es mi teléfono. Oh, lo escucho perfectamente. Denme un segundo, denme un segundo, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 100.86,
+      "end": 118.1,
+      "text": " OK. Denme un segundo. Claro. Mientras tanto, vamos a revisar. Y tu mirada la llevo encima.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 137.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

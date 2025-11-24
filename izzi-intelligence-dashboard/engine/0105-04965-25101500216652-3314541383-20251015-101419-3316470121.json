@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500216652-3314541383-20251015-101419-3316470121.WAV",
+  "file_name": "0105-04965-25101500216652-3314541383-20251015-101419-3316470121.WAV",
+  "base_id": "0105-04965-25101500216652-3314541383-20251015-101419-3316470121",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Hola, buen día. Le habla Yvonne Monfil de parte de su servicio de Easy para darle a conocer algunos beneficios. Buen día. Buen día, señorita. Usted... ah, ok, no le interesa. Yo le voy a poner el comentario para que le quiten de la base. Ok, muchas gracias. Te lo agradezco. Que tenga un buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 27.1,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.1,
+      "end": 28.1,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.15,
+      "end": 38.63,
+      "text": " Hola, buen día. Le habla Yvonne Monfil de parte de su servicio de Easy para darle a",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.63,
+      "end": 41.07,
+      "text": " conocer algunos beneficios. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.07,
+      "end": 43.75,
+      "text": " Buen día, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.75,
+      "end": 52.46,
+      "text": " Usted... ah, ok, no le interesa. Yo le voy a poner el comentario para que le quiten",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.46,
+      "end": 53.78,
+      "text": " de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.78,
+      "end": 55.78,
+      "text": " Ok, muchas gracias. Te lo agradezco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.78,
+      "end": 57.78,
+      "text": " Que tenga un buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

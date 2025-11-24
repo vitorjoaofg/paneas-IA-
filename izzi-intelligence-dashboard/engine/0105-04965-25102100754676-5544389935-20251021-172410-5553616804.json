@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100754676-5544389935-20251021-172410-5553616804.WAV",
+  "file_name": "0105-04965-25102100754676-5544389935-20251021-172410-5553616804.WAV",
+  "base_id": "0105-04965-25102100754676-5544389935-20251021-172410-5553616804",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Marce 1. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular, y con un momento, por favor. y con un momento, por favor. Si usted recibió una oferta redeta de Red Magisterial, por favor, marque 3. Gracias por llamar al Grupo de Hilar, Ladín Sahel Alvarado. ¿Cómo le puede ayudar? Buena.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 12.0,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.0,
+      "end": 13.0,
+      "text": " Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.0,
+      "end": 17.0,
+      "text": " Marce 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.0,
+      "end": 21.03,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.03,
+      "end": 25.35,
+      "text": " Recuerde tener a la mano su RTC, número de celular,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 25.35,
+      "end": 27.35,
+      "text": " y con un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 27.35,
+      "end": 30.02,
+      "text": " y con un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.02,
+      "end": 35.02,
+      "text": " Si usted recibió una oferta redeta de Red Magisterial, por favor, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 35.02,
+      "end": 51.22,
+      "text": " Gracias por llamar al Grupo de Hilar, Ladín Sahel Alvarado. ¿Cómo le puede ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.22,
+      "end": 56.47,
+      "text": " Buena.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 115.056,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

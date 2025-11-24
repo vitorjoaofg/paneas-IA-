@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400213953-5593498050-20251014-100508-04896.WAV",
+  "file_name": "0105-04965-25101400213953-5593498050-20251014-100508-04896.WAV",
+  "base_id": "0105-04965-25101400213953-5593498050-20251014-100508-04896",
+  "transcription": "Gracias por comunicarte a IZZY. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con IZZY es posible. Tereza, un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Sí. Espera un momento, por favor. Buenos días, señor. Buenos días. Alguien de IZZY. ¿Cómo está, Augustón? Mire, ¿usted puede ver mi número telefónico, al del cual estoy marcando? Sí. Un favor. No me interesa su servicio, pero todos los días recibo de dos a tres llamadas. Una grabadora que no permite hablar con nadie. Quiero que me borren de acuerdo a mis derechos arco, por favor. Es molesto estar recibiendo esas llamadas cuando yo no requiero el servicio. Bueno. Sí, bien. Te lo reporto. Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a IZZY. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 10.5,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.5,
+      "end": 16.4,
+      "text": " más Sky Sports desde 350 el primer mes? Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.4,
+      "end": 24.1,
+      "text": " Tereza, un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.1,
+      "end": 27.34,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.34,
+      "end": 45.62,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.62,
+      "end": 46.82,
+      "text": " Buenos días, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.92,
+      "end": 51.12,
+      "text": " Buenos días. Alguien de IZZY. ¿Cómo está, Augustón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.12,
+      "end": 56.31,
+      "text": " Mire, ¿usted puede ver mi número telefónico, al del cual estoy marcando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.31,
+      "end": 57.6,
+      "text": " Sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.6,
+      "end": 64.02,
+      "text": " Un favor. No me interesa su servicio, pero todos los días recibo de dos a tres llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.02,
+      "end": 68.04,
+      "text": " Una grabadora que no permite hablar con nadie.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.04,
+      "end": 74.36,
+      "text": " Quiero que me borren de acuerdo a mis derechos arco, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 74.36,
+      "end": 84.15,
+      "text": " Es molesto estar recibiendo esas llamadas cuando yo no requiero el servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 84.15,
+      "end": 86.4,
+      "text": " Bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 86.4,
+      "end": 89.2,
+      "text": " Sí, bien. Te lo reporto. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 89.2,
+      "end": 90.2,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.34,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

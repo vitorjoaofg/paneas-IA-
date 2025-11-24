@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102200065818-5544389917-20251022-080801-4794585703.WAV",
+  "file_name": "0105-04999-25102200065818-5544389917-20251022-080801-4794585703.WAV",
+  "base_id": "0105-04999-25102200065818-5544389917-20251022-080801-4794585703",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Y tú para eso? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Mira, aguántame, para el viernes. Ya les digo que ya estuvo. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Y tú para eso?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 25.44,
+      "text": " Mira, aguántame, para el viernes. Ya les digo que ya estuvo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.44,
+      "end": 28.44,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.004,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

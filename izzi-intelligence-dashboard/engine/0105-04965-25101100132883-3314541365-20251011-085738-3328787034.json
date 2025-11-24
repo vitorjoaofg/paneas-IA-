@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100132883-3314541365-20251011-085738-3328787034.WAV",
+  "file_name": "0105-04965-25101100132883-3314541365-20251011-085738-3328787034.WAV",
+  "base_id": "0105-04965-25101100132883-3314541365-20251011-085738-3328787034",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? ¿Con quién hablo? Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no. ¿Con quién hablo? Está bien, repito, esto es de Easy Mobile, sabemos que mantenerse conectado es fundamental, por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp. Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bueno, bueno, por motivos de calidad me ofreceré a terminar con la llamada, muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.24,
+      "end": 15.24,
+      "text": " ¿Con quién hablo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.24,
+      "end": 20.44,
+      "text": " Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.44,
+      "end": 23.5,
+      "text": " ¿Con quién hablo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.5,
+      "end": 31.32,
+      "text": " Está bien, repito, esto es de Easy Mobile, sabemos que mantenerse conectado es fundamental,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.32,
+      "end": 35.48,
+      "text": " por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.48,
+      "end": 42.12,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.12,
+      "end": 46.76,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.76,
+      "end": 48.72,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.72,
+      "end": 49.72,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.72,
+      "end": 59.24,
+      "text": " Un asesor te está esperando, por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.24,
+      "end": 60.72,
+      "text": " Espera un momento por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.72,
+      "end": 85.48,
+      "text": " Bueno, bueno, por motivos de calidad me ofreceré a terminar con la llamada, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.88,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

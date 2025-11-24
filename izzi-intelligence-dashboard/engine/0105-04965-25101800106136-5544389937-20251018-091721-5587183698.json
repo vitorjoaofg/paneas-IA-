@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800106136-5544389937-20251018-091721-5587183698.WAV",
+  "file_name": "0105-04965-25101800106136-5544389937-20251018-091721-5587183698.WAV",
+  "base_id": "0105-04965-25101800106136-5544389937-20251018-091721-5587183698",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buen día, ¿sí? Era Babe Goodman Field de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día. Ya tenemos Easy. Ahorita tenemos planes para el celular con Easy para clientes activos. Ya le incluye WhatsApp ilimitado, llamadas y mensajes ilimitados y 8 GB y 10 GB para navegar con la red de Telcel, AT&T y Altam. ¿Qué le parece? ¿Usted actualmente maneja recargas o tiene un plan? No, ya tenemos plan de Movistar. Como es muy barato, tenemos plan de Movistar y nos acabamos de cambiar apenas. En este caso, ¿para algún familiar alguien más que pueda adquirir el beneficio? No, señorita, la verdad no puedo recomendar porque si sale muy mal el servicio después me van a reclamar a mí. Bueno, igual sería en otro momento. Que tenga un buen día. Sí, para servirle. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.2,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.2,
+      "end": 15.68,
+      "text": " Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.68,
+      "end": 22.8,
+      "text": " esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.8,
+      "end": 33.6,
+      "text": " con un asesor. Espera un momento, por favor. Hola, buen día, ¿sí? Era Babe Goodman Field de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.6,
+      "end": 38.84,
+      "text": " parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.84,
+      "end": 47.89,
+      "text": " Ya tenemos Easy. Ahorita tenemos planes para el celular con Easy para clientes activos. Ya le",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.89,
+      "end": 54.41,
+      "text": " incluye WhatsApp ilimitado, llamadas y mensajes ilimitados y 8 GB y 10 GB para navegar con la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.41,
+      "end": 61.45,
+      "text": " red de Telcel, AT&T y Altam. ¿Qué le parece? ¿Usted actualmente maneja recargas o tiene un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.53,
+      "end": 68.94,
+      "text": " plan? No, ya tenemos plan de Movistar. Como es muy barato, tenemos plan de Movistar y nos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.94,
+      "end": 74.75,
+      "text": " acabamos de cambiar apenas. En este caso, ¿para algún familiar alguien más que pueda adquirir",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 74.75,
+      "end": 80.67,
+      "text": " el beneficio? No, señorita, la verdad no puedo recomendar porque si sale muy mal el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 80.67,
+      "end": 86.06,
+      "text": " servicio después me van a reclamar a mí. Bueno, igual sería en otro momento. Que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 86.06,
+      "end": 88.54,
+      "text": " Sí, para servirle. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

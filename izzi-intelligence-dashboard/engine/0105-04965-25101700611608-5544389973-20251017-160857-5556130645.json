@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700611608-5544389973-20251017-160857-5556130645.WAV",
+  "file_name": "0105-04965-25101700611608-5544389973-20251017-160857-5556130645.WAV",
+  "base_id": "0105-04965-25101700611608-5544389973-20251017-160857-5556130645",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Bueno, ahora ¿qué tal? Buenas tardes. Señor Buenas tardes, me hiciera un favor de borrar este número de su base de datos, estamos en su compañía. Ah, ok. Oiga, ¿no le interesa la permisión por la cual le hablaron? No, muchas gracias. Bueno, que tenga buen día y descupe la hambrecia. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 25.49,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.69,
+      "end": 37.32,
+      "text": " un momento, por favor. Bueno, ahora ¿qué tal? Buenas tardes. Señor Buenas tardes, me hiciera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.32,
+      "end": 43.92,
+      "text": " un favor de borrar este número de su base de datos, estamos en su compañía. Ah, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.92,
+      "end": 48.92,
+      "text": " Oiga, ¿no le interesa la permisión por la cual le hablaron? No, muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.92,
+      "end": 53.4,
+      "text": " Bueno, que tenga buen día y descupe la hambrecia. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.24,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

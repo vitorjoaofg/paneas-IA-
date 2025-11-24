@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000138575-5540409203-20251030-091203-5556262941.WAV",
+  "file_name": "0105-04965-25103000138575-5540409203-20251030-091203-5556262941.WAV",
+  "base_id": "0105-04965-25103000138575-5540409203-20251030-091203-5556262941",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, ingresos en la licitación seguida de la ciencia de medios, ingresos en la licitación seguida de la ciencia de medios, por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, sistema de mensajes de Cisco y Unity Express. Si tiene un buzón en este sistema presione asterisco, de lo contrario, espere al operador. Espera un momento, por favor. Espera a que se termine la llamada. Bueno, bueno, buenos días. Sí, bueno, buenos días. Sí, bueno, bueno. Por motivos de querer finalizar la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.44,
+      "text": " entretenimiento con 200 canales, ingresos en la licitación seguida de la ciencia de medios,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.44,
+      "end": 14.0,
+      "text": " ingresos en la licitación seguida de la ciencia de medios, por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 19.88,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.88,
+      "end": 24.76,
+      "text": " Por favor, sistema de mensajes de Cisco y Unity Express. Si tiene un buzón en",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.76,
+      "end": 28.32,
+      "text": " este sistema presione asterisco, de lo contrario, espere al operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.06,
+      "end": 31.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.82,
+      "end": 35.45,
+      "text": " Espera a que se termine la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.45,
+      "end": 51.69,
+      "text": " Bueno, bueno, buenos días. Sí, bueno, buenos días. Sí, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.69,
+      "end": 55.5,
+      "text": " Por motivos de querer finalizar la llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

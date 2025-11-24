@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400400876-5544389964-20251014-123542-5575968898.WAV",
+  "file_name": "0105-04965-25101400400876-5544389964-20251014-123542-5575968898.WAV",
+  "base_id": "0105-04965-25101400400876-5544389964-20251014-123542-5575968898",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buen día. Habla Miriam Moceda de parte de la compañía de Easy. Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos o activos. No sé si ya manejan servicio con nosotros. Sí, pero ya no quiero que esté yame yame, por favor. Ah, bienvenida y disculpas, señorita. Agregamos la nota. Bonito día. Sí, gracias. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.48,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.7,
+      "end": 25.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.02,
+      "end": 38.04,
+      "text": " Hola, ¿qué tal? Buen día. Habla Miriam Moceda de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.04,
+      "end": 43.52,
+      "text": " Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos o activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.52,
+      "end": 45.52,
+      "text": " No sé si ya manejan servicio con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.52,
+      "end": 50.52,
+      "text": " Sí, pero ya no quiero que esté yame yame, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.52,
+      "end": 54.16,
+      "text": " Ah, bienvenida y disculpas, señorita. Agregamos la nota.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.16,
+      "end": 55.16,
+      "text": " Bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.16,
+      "end": 61.14,
+      "text": " Sí, gracias. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.14,
+      "end": 63.14,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.692,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

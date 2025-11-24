@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700618820-5558652046-20251017-161408-04896.WAV",
+  "file_name": "0105-04965-25101700618820-5558652046-20251017-161408-04896.WAV",
+  "base_id": "0105-04965-25101700618820-5558652046-20251017-161408-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Pues, por favor. 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Bueno. ¿A dónde hablo? Hola, ¿qué tal? Buenas tardes. ¿Se comunica al departamento de promociones de Easy? ¿Con quién tengo el gusto? No, es que señorita, me hablan todos los días, pero habla primero un joven y me dice cosas. Y luego ya ponen esta grabación. He marcado para decir que ya los tengo grabados y deportados como llamada de extorsión. Ah, ok. No se preocupe. Ahorita yo voy a dejar un comentario que ya no le llamen, ¿sale? Que tenga una excelente tarde. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 8.6,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.6,
+      "end": 17.6,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.6,
+      "end": 20.4,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.4,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.4,
+      "end": 32.18,
+      "text": " Pues, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.18,
+      "end": 36.78,
+      "text": " 100. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.78,
+      "end": 48.62,
+      "text": " Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.62,
+      "end": 49.89,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.89,
+      "end": 51.35,
+      "text": " ¿A dónde hablo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.35,
+      "end": 57.15,
+      "text": " Hola, ¿qué tal? Buenas tardes. ¿Se comunica al departamento de promociones de Easy? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.15,
+      "end": 62.35,
+      "text": " No, es que señorita, me hablan todos los días, pero habla primero un joven y me dice cosas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 62.35,
+      "end": 65.25,
+      "text": " Y luego ya ponen esta grabación.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.25,
+      "end": 72.01,
+      "text": " He marcado para decir que ya los tengo grabados y deportados como llamada de extorsión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 72.01,
+      "end": 76.01,
+      "text": " Ah, ok. No se preocupe. Ahorita yo voy a dejar un comentario que ya no le llamen, ¿sale?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 76.01,
+      "end": 78.21,
+      "text": " Que tenga una excelente tarde. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.38,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

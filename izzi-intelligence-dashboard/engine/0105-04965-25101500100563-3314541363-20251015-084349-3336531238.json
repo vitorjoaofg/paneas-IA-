@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500100563-3314541363-20251015-084349-3336531238.WAV",
+  "file_name": "0105-04965-25101500100563-3314541363-20251015-084349-3336531238.WAV",
+  "base_id": "0105-04965-25101500100563-3314541363-20251015-084349-3336531238",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o espera un momento por favor. Bueno, sí es correcto caballero mi nombre es Miriam. Oye, mira, ¿me puedes hacer un floguzote? Díanme. Porque ellos me llaman y me llaman la ¿cómo se llama la máquina? y me está marque y marque. A ver, por favor, borrar mi número de hilo de sus contactos, ¿no? Sí, claro que sí, no se preocupa, caballero. A ver, por favor, Miriam. Sí, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.92,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.76,
+      "end": 34.39,
+      "text": " espera un momento por favor. Bueno,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.31,
+      "end": 42.09,
+      "text": " sí es correcto caballero mi nombre es Miriam.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.09,
+      "end": 44.09,
+      "text": " Oye, mira, ¿me puedes hacer un floguzote?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.09,
+      "end": 46.09,
+      "text": " Díanme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.09,
+      "end": 48.09,
+      "text": " Porque ellos me llaman",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.09,
+      "end": 50.09,
+      "text": " y me llaman la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.09,
+      "end": 52.09,
+      "text": " ¿cómo se llama la máquina?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.09,
+      "end": 54.09,
+      "text": " y me está marque y marque.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.09,
+      "end": 56.09,
+      "text": " A ver, por favor, borrar mi número de hilo de sus",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.09,
+      "end": 58.09,
+      "text": " contactos, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 58.09,
+      "end": 60.09,
+      "text": " Sí, claro que sí, no se preocupa, caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.09,
+      "end": 62.09,
+      "text": " A ver, por favor, Miriam. Sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 127.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

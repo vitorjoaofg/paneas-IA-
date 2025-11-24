@@ -1,0 +1,546 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600307373-5544389906-20251016-111905-5562362099.WAV",
+  "file_name": "0105-04965-25101600307373-5544389906-20251016-111905-5562362099.WAV",
+  "base_id": "0105-04965-25101600307373-5544389906-20251016-111905-5562362099",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor te está esperando! Por favor, hable o pulse 1 para sí o 2 para no. ¡No! ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Dice que me va a pasar con un asesor. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. A ver. Espera un momento, por favor. ¿Quieres conocer las promociones? Bueno, bueno. Hola, buenas tardes. Hablamos de compañía y sí, mi nombre es Patricia Valizio. ¿Con quién tengo el gusto? Con Mónica. Mucho gusto, señorita Mónica. El motivo de mi llamada es de ofrecerte nuestros servicios. ¿Cómo se llama tu calle siguiente para validar? ¿Cómo? Perdón. ¿Cómo se llama tu calle siguiente para validar? ¿Qué servicios te puedo ofrecer? Es que ya cuento con Easy. Ajá. Ah, qué perfecto. No, perdón. Tota y please. Entonces, ¿quieres que validemos si te podemos ofrecer nuestros servicios? Son de Easy, dice. Ajá. Somos de Easy. Así es, señorita. A ver, ¿me puedes dar? Ah, está en llamada con otra persona, ¿verdad, señorita? Sí, es con mi esposa. Es que para saber los dos. Ah, qué perfecto. Mira, ahorita tenemos lo que es el servicio de internet, telefonía y cable, todo por $690, son 200 canales, son 80 megas de internet, 20 megas más, ese le sale $690. Y le vamos a dar un descuento por sus primeros seis meses para que pague $599. ¿Y no tiene la promoción de la pura telefonía y... Y internet, claro que sí, dirita. Son 60 megas de internet, le regalamos 20 megas más por sus primeros tres meses. Y ese le sale usted, señorita, en $389 y sus primeros tres meses, $349. $3549. Ajá, $349, al cuarto mes pagarían $389. Pues déjeme, lo consultamos y vemos. Ok, señorita, también le comento que en Easy ya también tenemos planes para su celular donde le estamos ofreciendo a 5GB, WhatsApp, mensajes y llamadas ilimitadas, todo por $240. Esperamos. Sí, claro que sí. Ah, me comenta mi esposa que, este, que se aumenta por años la mensualidad. Pues el puro servicio de internet o se refiere al del plan para el teléfono? No, al servicio. Al servicio de internet de casa. Ah, qué perfecto, señorita. Le comento los primeros tres meses, cuesta $349, del cuarto al doceado mes $389. Ya después del año, si ustedes no hacen ningún cambio en su paquete, sigue quedando en el mismo precio. $389, $390. $390, vamos. Y que si tú te mantienes en el año, no te, no te sube. Bueno, lo consultamos y ya estaremos viendo. Muchas gracias por atender mi llama, excelente día, señorita. Igualmente, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.28,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.28,
+      "end": 24.44,
+      "text": " asesor te está esperando! Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.73,
+      "end": 27.73,
+      "text": " ¡No!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.73,
+      "end": 34.83,
+      "text": " ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.83,
+      "end": 37.51,
+      "text": " asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.51,
+      "end": 41.48,
+      "text": " Dice que me va a pasar con un asesor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.48,
+      "end": 47.44,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.44,
+      "end": 49.04,
+      "text": " para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.04,
+      "end": 51.46,
+      "text": " A ver.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.46,
+      "end": 53.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.06,
+      "end": 64.72,
+      "text": " ¿Quieres conocer las promociones?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.72,
+      "end": 68.74,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.97,
+      "end": 74.25,
+      "text": " Hola, buenas tardes. Hablamos de compañía y sí, mi nombre es Patricia Valizio. ¿Con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 74.25,
+      "end": 75.93,
+      "text": " quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 75.93,
+      "end": 77.46,
+      "text": " Con Mónica.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 77.46,
+      "end": 81.26,
+      "text": " Mucho gusto, señorita Mónica. El motivo de mi llamada es de ofrecerte nuestros",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 81.26,
+      "end": 86.11,
+      "text": " servicios. ¿Cómo se llama tu calle siguiente para validar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 86.11,
+      "end": 87.63,
+      "text": " ¿Cómo? Perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 87.63,
+      "end": 92.32,
+      "text": " ¿Cómo se llama tu calle siguiente para validar? ¿Qué servicios te puedo ofrecer?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 92.32,
+      "end": 94.79,
+      "text": " Es que ya cuento con Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 94.79,
+      "end": 95.47,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 95.47,
+      "end": 96.47,
+      "text": " Ah, qué perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 96.47,
+      "end": 98.74,
+      "text": " No, perdón. Tota y please.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 99.7,
+      "end": 106.07,
+      "text": " Entonces, ¿quieres que validemos si te podemos ofrecer nuestros servicios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 106.07,
+      "end": 107.83,
+      "text": " Son de Easy, dice.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 107.83,
+      "end": 114.02,
+      "text": " Ajá. Somos de Easy. Así es, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 114.02,
+      "end": 119.8,
+      "text": " A ver, ¿me puedes dar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 119.8,
+      "end": 122.2,
+      "text": " Ah, está en llamada con otra persona, ¿verdad, señorita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 122.2,
+      "end": 131.14,
+      "text": " Sí, es con mi esposa. Es que para saber los dos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 131.14,
+      "end": 135.58,
+      "text": " Ah, qué perfecto. Mira, ahorita tenemos lo que es el servicio de internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 135.58,
+      "end": 141.9,
+      "text": " telefonía y cable, todo por $690, son 200 canales, son 80 megas de internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 141.9,
+      "end": 145.9,
+      "text": " 20 megas más, ese le sale $690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 145.9,
+      "end": 151.5,
+      "text": " Y le vamos a dar un descuento por sus primeros seis meses para que pague $599.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 151.5,
+      "end": 156.46,
+      "text": " ¿Y no tiene la promoción de la pura telefonía y...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 156.46,
+      "end": 158.66,
+      "text": " Y internet, claro que sí, dirita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 158.66,
+      "end": 165.5,
+      "text": " Son 60 megas de internet, le regalamos 20 megas más por sus primeros tres meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 165.54,
+      "end": 173.94,
+      "text": " Y ese le sale usted, señorita, en $389 y sus primeros tres meses, $349.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 173.94,
+      "end": 178.78,
+      "text": " $3549.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 178.78,
+      "end": 195.41,
+      "text": " Ajá, $349, al cuarto mes pagarían $389.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 195.41,
+      "end": 200.42,
+      "text": " Pues déjeme, lo consultamos y vemos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 200.42,
+      "end": 205.98,
+      "text": " Ok, señorita, también le comento que en Easy ya también tenemos planes para su celular",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 205.98,
+      "end": 218.42,
+      "text": " donde le estamos ofreciendo a 5GB, WhatsApp, mensajes y llamadas ilimitadas, todo por $240.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 218.42,
+      "end": 220.18,
+      "text": " Esperamos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 220.18,
+      "end": 222.21,
+      "text": " Sí, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 222.21,
+      "end": 232.86,
+      "text": " Ah, me comenta mi esposa que, este, que se aumenta por años la mensualidad.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 232.86,
+      "end": 240.83,
+      "text": " Pues el puro servicio de internet o se refiere al del plan para el teléfono?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 240.83,
+      "end": 242.91,
+      "text": " No, al servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 242.91,
+      "end": 244.75,
+      "text": " Al servicio de internet de casa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 245.74,
+      "end": 247.18,
+      "text": " Ah, qué perfecto, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 247.18,
+      "end": 254.94,
+      "text": " Le comento los primeros tres meses, cuesta $349, del cuarto al doceado mes $389.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 254.94,
+      "end": 261.5,
+      "text": " Ya después del año, si ustedes no hacen ningún cambio en su paquete, sigue quedando en el mismo precio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 267.47,
+      "end": 273.07,
+      "text": " $389, $390.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 273.07,
+      "end": 282.86,
+      "text": " $390, vamos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 283.26,
+      "end": 296.5,
+      "text": " Y que si tú te mantienes en el año, no te, no te sube.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 296.5,
+      "end": 307.84,
+      "text": " Bueno, lo consultamos y ya estaremos viendo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 307.84,
+      "end": 310.64,
+      "text": " Muchas gracias por atender mi llama, excelente día, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 310.64,
+      "end": 311.84,
+      "text": " Igualmente, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 317.376,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

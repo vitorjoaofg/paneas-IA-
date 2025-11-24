@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000493126-5544389927-20251030-141420-5554276921.WAV",
+  "file_name": "0105-04965-25103000493126-5544389927-20251030-141420-5554276921.WAV",
+  "base_id": "0105-04965-25103000493126-5544389927-20251030-141420-5554276921",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes? ¡Hola! Sí, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Buenas tardes. Hola, gusto. Me presento. Mi nombre es José Muizen. ¿Se está comunicando el área de contrataciones VIX y con quién tengo el gusto? ¿Contrataciones de qué, Jorge? ¿Perdón? ¿Contrataciones de qué? Se está comunicando el área de contrataciones Easy, le comentaba. ¿Contrataciones de qué? De Easy, de la compañía Easy. Ah, no. Ese no me interesa. Ah, ok, ok. Igual aquí ojo el comentario. ¿Se le marcó por error o cuál sería el motivo? Disculpe. Sí, es por error. Gracias. Ok, muy bien. Que tengas un bonito día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 12.0,
+      "text": " ¡Hola!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.0,
+      "end": 20.5,
+      "text": " Sí, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.97,
+      "end": 39.54,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 39.54,
+      "end": 48.07,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.07,
+      "end": 49.26,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.26,
+      "end": 54.76,
+      "text": " Hola, gusto. Me presento. Mi nombre es José Muizen. ¿Se está comunicando el área de contrataciones VIX y con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.76,
+      "end": 57.28,
+      "text": " ¿Contrataciones de qué, Jorge?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.28,
+      "end": 58.72,
+      "text": " ¿Perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.72,
+      "end": 61.22,
+      "text": " ¿Contrataciones de qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.22,
+      "end": 66.12,
+      "text": " Se está comunicando el área de contrataciones Easy, le comentaba.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.12,
+      "end": 68.12,
+      "text": " ¿Contrataciones de qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.12,
+      "end": 70.12,
+      "text": " De Easy, de la compañía Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 70.12,
+      "end": 73.12,
+      "text": " Ah, no. Ese no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.12,
+      "end": 83.24,
+      "text": " Ah, ok, ok. Igual aquí ojo el comentario. ¿Se le marcó por error o cuál sería el motivo? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 83.24,
+      "end": 85.24,
+      "text": " Sí, es por error. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 85.24,
+      "end": 87.24,
+      "text": " Ok, muy bien. Que tengas un bonito día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

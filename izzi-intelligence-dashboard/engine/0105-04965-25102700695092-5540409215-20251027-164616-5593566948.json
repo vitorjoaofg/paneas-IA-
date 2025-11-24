@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700695092-5540409215-20251027-164616-5593566948.WAV",
+  "file_name": "0105-04965-25102700695092-5540409215-20251027-164616-5593566948.WAV",
+  "base_id": "0105-04965-25102700695092-5540409215-20251027-164616-5593566948",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para ter... Espera un momento, por favor. Buenas tardes. Se está comunicando contrataciones Easy con quien tengo el gusto. Mucho gusto. Mi nombre es Omar Fonseca. ¿A qué servicio le interesa contratar? No me interesa contratar. De hecho, quiero que me dejen molestar porque yo tengo total play y estoy bien feliz con ellos. Ah, ok. Dejo aquí el comentario, señor. Por favor, porque están Marqui y Marque. Claro que sí, dejo aquí el comentario, señor. Gracias. Hasta luego, buen día. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.71,
+      "end": 7.01,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.01,
+      "end": 13.77,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.77,
+      "end": 20.19,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.19,
+      "end": 27.94,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.94,
+      "end": 34.22,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.22,
+      "end": 38.34,
+      "text": " un asesor o 2 para ter... Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.34,
+      "end": 57.19,
+      "text": " Buenas tardes. Se está comunicando contrataciones Easy con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.19,
+      "end": 69.32,
+      "text": " Mucho gusto. Mi nombre es Omar Fonseca. ¿A qué servicio le interesa contratar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 69.32,
+      "end": 74.92,
+      "text": " No me interesa contratar. De hecho, quiero que me dejen molestar porque yo tengo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 74.92,
+      "end": 81.14,
+      "text": " total play y estoy bien feliz con ellos. Ah, ok. Dejo aquí el comentario, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 81.14,
+      "end": 87.39,
+      "text": " Por favor, porque están Marqui y Marque. Claro que sí, dejo aquí el comentario,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 87.39,
+      "end": 91.68,
+      "text": " señor. Gracias. Hasta luego, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 91.68,
+      "end": 92.18,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.292,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

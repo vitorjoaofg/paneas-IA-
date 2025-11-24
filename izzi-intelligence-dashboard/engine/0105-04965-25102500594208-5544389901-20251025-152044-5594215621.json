@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500594208-5544389901-20251025-152044-5594215621.WAV",
+  "file_name": "0105-04965-25102500594208-5544389901-20251025-152044-5594215621.WAV",
+  "base_id": "0105-04965-25102500594208-5544389901-20251025-152044-5594215621",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hardless, gracias por tomar la llamada por parte de Easy. ¿Te podemos apoyar? Bueno, nada más quisiera que vieran de baja mi número. No me interesa el servicio. Por favor, Dios molesta que me llamen todo el día. Ah, ok. Pero no le interesa en este caso tener un ahorro más económico por su servicio. No, no me interesa. De hecho estaba con ustedes pero me cambié de compañía. ¿Algún motivo especial que se haya cambiado? Porque me dieron de alta servicios y jamás me los cancelaron y me aumentaron la tarifa. Sí, es lo que estamos viendo, esos cambios que nos permiten crecer. Le mando la pedir dos mil disculpas. La final es que pueda conocer lo que son las nuevas disposiciones de Easy, pero ya prácticamente he tenido más económico el servicio. Muchísimas gracias, buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.0,
+      "end": 31.22,
+      "text": " Hardless, gracias por tomar la llamada por parte de Easy. ¿Te podemos apoyar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.22,
+      "end": 39.34,
+      "text": " Bueno, nada más quisiera que vieran de baja mi número. No me interesa el servicio. Por favor, Dios molesta que me llamen todo el día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.34,
+      "end": 43.76,
+      "text": " Ah, ok. Pero no le interesa en este caso tener un ahorro más económico por su servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.76,
+      "end": 47.86,
+      "text": " No, no me interesa. De hecho estaba con ustedes pero me cambié de compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.86,
+      "end": 49.92,
+      "text": " ¿Algún motivo especial que se haya cambiado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.92,
+      "end": 57.02,
+      "text": " Porque me dieron de alta servicios y jamás me los cancelaron y me aumentaron la tarifa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.02,
+      "end": 61.69,
+      "text": " Sí, es lo que estamos viendo, esos cambios que nos permiten crecer.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.69,
+      "end": 63.69,
+      "text": " Le mando la pedir dos mil disculpas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.69,
+      "end": 66.69,
+      "text": " La final es que pueda conocer lo que son las nuevas disposiciones de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.69,
+      "end": 71.69,
+      "text": " pero ya prácticamente he tenido más económico el servicio. Muchísimas gracias, buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.69,
+      "end": 72.69,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.232,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

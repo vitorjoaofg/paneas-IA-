@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100321258-5544389978-20251021-113807-5598148916.WAV",
+  "file_name": "0105-04965-25102100321258-5544389978-20251021-113807-5598148916.WAV",
+  "base_id": "0105-04965-25102100321258-5544389978-20251021-113807-5598148916",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse. La de contrataciones IZZY, la tienda de Alan. Ah, perdón. No entendí, no entendí qué era el anuncio que estaba entrando. ¿Me puede explicar? Claro, se está comunicando la de contrataciones IZZY para contrataciones del servicio. Internet, Telefonía y Televisión. Ah, ok. No, no, no estoy interesado. Es que no le entendí bien la grabación que entró. Gracias. ¿Me entiende? ¿Y para algún familiar? No, no. No conozco a nadie. Gracias. Claro, que te una excelente día. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.76,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.76,
+      "end": 24.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.1,
+      "end": 35.97,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse. La de contrataciones IZZY, la tienda de Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.37,
+      "end": 37.85,
+      "text": " Ah, perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.85,
+      "end": 44.5,
+      "text": " No entendí, no entendí qué era el anuncio que estaba entrando. ¿Me puede explicar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.5,
+      "end": 48.94,
+      "text": " Claro, se está comunicando la de contrataciones IZZY para contrataciones del servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.94,
+      "end": 51.69,
+      "text": " Internet, Telefonía y Televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.69,
+      "end": 57.74,
+      "text": " Ah, ok. No, no, no estoy interesado. Es que no le entendí bien la grabación que entró.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.74,
+      "end": 58.22,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 58.22,
+      "end": 60.42,
+      "text": " ¿Me entiende? ¿Y para algún familiar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 60.42,
+      "end": 63.96,
+      "text": " No, no. No conozco a nadie. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 63.96,
+      "end": 66.36,
+      "text": " Claro, que te una excelente día. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.568,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

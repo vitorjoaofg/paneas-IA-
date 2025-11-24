@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900108408-5544389963-20251009-085515-5590536062.WAV",
+  "file_name": "0105-04965-25100900108408-5544389963-20251009-085515-5590536062.WAV",
+  "base_id": "0105-04965-25100900108408-5544389963-20251009-085515-5590536062",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, qué tal, muy buenos días, mi nombre es Teresa Quinto, me estoy comunicando por parte del servicio de telefonía Easy, con quien tengo el gusto, disculpe. Yo me llamo Rosa Eugenia. Rosa Eugenia, qué tal, señorita, mucho gusto, mire, se les está marcando para preguntarles si ya cuenta cuál es el servicio de telefonía, cable Internet en casita. Este, ¿cómo sé por mi teléfono? Ajá, Quinta, lo que pasa es que hay el sistema marketing automático, nosotros nada más nos encargamos de él.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.32,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.32,
+      "end": 13.32,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.32,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.36,
+      "end": 16.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.56,
+      "end": 23.1,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.1,
+      "end": 31.11,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.11,
+      "end": 34.35,
+      "text": " Hola, qué tal, muy buenos días, mi nombre es Teresa Quinto, me estoy comunicando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.35,
+      "end": 39.01,
+      "text": " por parte del servicio de telefonía Easy, con quien tengo el gusto, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.01,
+      "end": 41.43,
+      "text": " Yo me llamo Rosa Eugenia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.43,
+      "end": 47.43,
+      "text": " Rosa Eugenia, qué tal, señorita, mucho gusto, mire, se les está marcando para preguntarles",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.43,
+      "end": 53.71,
+      "text": " si ya cuenta cuál es el servicio de telefonía, cable Internet en casita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.71,
+      "end": 57.78,
+      "text": " Este, ¿cómo sé por mi teléfono?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.78,
+      "end": 61.3,
+      "text": " Ajá, Quinta, lo que pasa es que hay el sistema marketing automático,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.3,
+      "end": 63.3,
+      "text": " nosotros nada más nos encargamos de él.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.36,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

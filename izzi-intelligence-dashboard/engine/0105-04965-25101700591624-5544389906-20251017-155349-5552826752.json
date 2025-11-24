@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700591624-5544389906-20251017-155349-5552826752.WAV",
+  "file_name": "0105-04965-25101700591624-5544389906-20251017-155349-5552826752.WAV",
+  "base_id": "0105-04965-25101700591624-5544389906-20251017-155349-5552826752",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo tienes más y cámpe a PA Easy. ¿Te interesa? Un asesor te está esperando. Por favor... Espera un momento, por favor. Está comunicando a la protección XC de la tiendilla en el pulido continuo. Lo siento, no pude mirar la información. Vamos a probar otra forma. Por favor, state claramente tu 5-caracter MSID un carácter al tiempo. Por ejemplo, Q1234.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.4,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.4,
+      "end": 14.0,
+      "text": " con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " No lo tienes más y cámpe a PA Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.0,
+      "end": 33.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.0,
+      "end": 42.0,
+      "text": " Está comunicando a la protección XC de la tiendilla en el pulido continuo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 76.04,
+      "end": 86.62,
+      "text": " Lo siento, no pude mirar la información.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 86.62,
+      "end": 88.62,
+      "text": " Vamos a probar otra forma.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 88.62,
+      "end": 94.2,
+      "text": " Por favor, state claramente tu 5-caracter MSID un carácter al tiempo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 94.2,
+      "end": 100.52,
+      "text": " Por ejemplo, Q1234.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

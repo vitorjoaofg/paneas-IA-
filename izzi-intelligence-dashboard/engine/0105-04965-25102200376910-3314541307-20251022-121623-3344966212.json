@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200376910-3314541307-20251022-121623-3344966212.WAV",
+  "file_name": "0105-04965-25102200376910-3314541307-20251022-121623-3344966212.WAV",
+  "base_id": "0105-04965-25102200376910-3314541307-20251022-121623-3344966212",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad? ¡Ay! ¡Ya me iré a chisla! Quiero un pararme Y eventos deportivos exclusivos por solo 350 pesos el primer mes No lo pienses más y cámbiate a Easy ¿Te interesa? Un asesor te está esperando Por favor, hable o pulse 1 para sí o 2 para no No, no para sí Espera un momento, por favor ¡Pues que me hicieron levantarme, mendigo!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.76,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.76,
+      "end": 6.76,
+      "text": " ¡Ay! ¡Ya me iré a chisla!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 6.76,
+      "end": 8.76,
+      "text": " Quiero un pararme",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.76,
+      "end": 13.76,
+      "text": " Y eventos deportivos exclusivos por solo 350 pesos el primer mes",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 13.76,
+      "end": 16.76,
+      "text": " No lo pienses más y cámbiate a Easy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.76,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.0,
+      "end": 26.54,
+      "text": " No, no para sí",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.54,
+      "end": 28.54,
+      "text": " Espera un momento, por favor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.54,
+      "end": 31.54,
+      "text": " ¡Pues que me hicieron levantarme, mendigo!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 33.3,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

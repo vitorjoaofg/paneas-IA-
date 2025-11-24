@@ -1,0 +1,465 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900528061-5544389956-20251009-145333-5588891799.WAV",
+  "file_name": "0105-04965-25100900528061-5544389956-20251009-145333-5588891799.WAV",
+  "base_id": "0105-04965-25100900528061-5544389956-20251009-145333-5588891799",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, déjame. Buen día, señorita. Hablamos de parte de la compañía de Easy. Mi nombre es Miriam. Os agradezco para darle a conocer algunos beneficios para cliente nuevo activo. No sé si ya maneja usted el servicio con nosotros. Sí, yo tengo el I.C. Ah, ok. Está nombre del señor Patricio Ramírez Flores, ¿verdad? Sí. Ah, de acuerdo, señorita. Igual nada más para que le comente al señor Patricio. Se le están brindando nuestros planes de telefonía para el celular, con llamadas y mensajes ilimitados. Y dependiendo de lo que usen, contamos con servicios bien básicos y bien accesibles desde los 94 pesos al mes. No sé si ya manejan ustedes algún plan. También la invitación está abierta para usted. Ah, no. No manejamos nada de eso. No manejan plan. Manejan recargas. Ajá, sí. Ah, bien, bien. ¿Cuánto es lo que usted puede llegar a recargar al mes? Ah, pues es que depende. A veces 100, a veces 50. Ah, bien, bien. Mire, aquí igual le brindo la información para que usted lo comente. Tengo un servicio de 5 gigas con llamadas y mensajes ilimitados. Por 120 pesos al mes, le cubrimos los 31 días completos, es decir, completos. No nada más una semana, 15 días, no. 31 días completos con llamadas y mensajes. Y se le dan 5 gigas de internet para que usted los utilice. Son 120 pesos al mes. Ya si quieren ustedes conservar su número, les queda por 99 pesos de forma permanente. Y ya el servicio que le sigue es uno de 8 gigas por 150. Su cuenta de portabilidad le queda en 124 permanente. Y un año le queda en 94 pesos al mes. Tiene 5 líneas para adquirir con nosotros. Ok. Sí, yo se la aviso. Sí. Sí, de acuerdo, señorita. Ya si llega a recibir una llamada más adelante, pues ya ahí. Ahí usted puede mencionarles de la propuesta que se les hizo. Sí, muchas gracias. A usted, bonito día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.8,
+      "end": 24.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.76,
+      "end": 32.76,
+      "text": " Sí, déjame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.06,
+      "end": 36.36,
+      "text": " Buen día, señorita. Hablamos de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.36,
+      "end": 37.26,
+      "text": " Mi nombre es Miriam.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.26,
+      "end": 40.76,
+      "text": " Os agradezco para darle a conocer algunos beneficios para cliente nuevo activo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.76,
+      "end": 43.56,
+      "text": " No sé si ya maneja usted el servicio con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.56,
+      "end": 45.56,
+      "text": " Sí, yo tengo el I.C.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.56,
+      "end": 49.49,
+      "text": " Ah, ok. Está nombre del señor Patricio Ramírez Flores, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.49,
+      "end": 50.49,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 50.49,
+      "end": 52.11,
+      "text": " Ah, de acuerdo, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.11,
+      "end": 55.31,
+      "text": " Igual nada más para que le comente al señor Patricio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 55.31,
+      "end": 58.91,
+      "text": " Se le están brindando nuestros planes de telefonía para el celular,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 58.91,
+      "end": 61.21,
+      "text": " con llamadas y mensajes ilimitados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 61.31,
+      "end": 64.51,
+      "text": " Y dependiendo de lo que usen, contamos con servicios bien básicos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 64.51,
+      "end": 67.71,
+      "text": " y bien accesibles desde los 94 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 67.71,
+      "end": 69.81,
+      "text": " No sé si ya manejan ustedes algún plan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 69.81,
+      "end": 72.41,
+      "text": " También la invitación está abierta para usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 72.41,
+      "end": 76.83,
+      "text": " Ah, no. No manejamos nada de eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 76.83,
+      "end": 78.93,
+      "text": " No manejan plan. Manejan recargas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 78.93,
+      "end": 80.49,
+      "text": " Ajá, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 80.49,
+      "end": 84.28,
+      "text": " Ah, bien, bien. ¿Cuánto es lo que usted puede llegar a recargar al mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 84.28,
+      "end": 88.98,
+      "text": " Ah, pues es que depende. A veces 100, a veces 50.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 88.98,
+      "end": 90.48,
+      "text": " Ah, bien, bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 90.58,
+      "end": 94.98,
+      "text": " Mire, aquí igual le brindo la información para que usted lo comente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 94.98,
+      "end": 99.28,
+      "text": " Tengo un servicio de 5 gigas con llamadas y mensajes ilimitados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 99.28,
+      "end": 103.58,
+      "text": " Por 120 pesos al mes, le cubrimos los 31 días completos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 103.58,
+      "end": 104.78,
+      "text": " es decir, completos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 104.78,
+      "end": 106.88,
+      "text": " No nada más una semana, 15 días, no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 106.88,
+      "end": 109.68,
+      "text": " 31 días completos con llamadas y mensajes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 109.68,
+      "end": 112.68,
+      "text": " Y se le dan 5 gigas de internet para que usted los utilice.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 112.68,
+      "end": 114.38,
+      "text": " Son 120 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 114.38,
+      "end": 117.48,
+      "text": " Ya si quieren ustedes conservar su número,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 117.48,
+      "end": 120.38,
+      "text": " les queda por 99 pesos de forma permanente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 120.68,
+      "end": 124.78,
+      "text": " Y ya el servicio que le sigue es uno de 8 gigas por 150.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 124.78,
+      "end": 127.78,
+      "text": " Su cuenta de portabilidad le queda en 124 permanente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 127.78,
+      "end": 130.38,
+      "text": " Y un año le queda en 94 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 130.38,
+      "end": 132.98,
+      "text": " Tiene 5 líneas para adquirir con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 132.98,
+      "end": 134.38,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 134.38,
+      "end": 135.78,
+      "text": " Sí, yo se la aviso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 135.78,
+      "end": 136.48,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 136.48,
+      "end": 137.68,
+      "text": " Sí, de acuerdo, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 137.68,
+      "end": 140.78,
+      "text": " Ya si llega a recibir una llamada más adelante, pues ya ahí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 140.78,
+      "end": 144.08,
+      "text": " Ahí usted puede mencionarles de la propuesta que se les hizo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 144.08,
+      "end": 145.48,
+      "text": " Sí, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 145.48,
+      "end": 147.08,
+      "text": " A usted, bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 149.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

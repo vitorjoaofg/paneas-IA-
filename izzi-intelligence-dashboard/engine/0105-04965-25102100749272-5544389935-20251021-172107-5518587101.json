@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100749272-5544389935-20251021-172107-5518587101.WAV",
+  "file_name": "0105-04965-25102100749272-5544389935-20251021-172107-5518587101.WAV",
+  "base_id": "0105-04965-25102100749272-5544389935-20251021-172107-5518587101",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Disculpe, ¿quién es la señora que me habló ahorita? Una disculpa, hablamos de Easy. Disculpe. Ah, bueno, disculpe, pero ¿para qué marcaron? Una disculpa. A ver, yo haría la aclaración. Se supone que es para la contratación de Easy. Yo haría la aclaración en este caso por el número, que tenga una excelente tarde. Pero ahorita no sé qué es eso. ¿Bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 30.18,
+      "text": " te está esperando. Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.5,
+      "end": 50.48,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 50.48,
+      "end": 55.48,
+      "text": " Disculpe, ¿quién es la señora que me habló ahorita?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.48,
+      "end": 60.92,
+      "text": " Una disculpa, hablamos de Easy. Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 60.92,
+      "end": 72.4,
+      "text": " Ah, bueno, disculpe, pero ¿para qué marcaron?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 72.4,
+      "end": 76.4,
+      "text": " Una disculpa. A ver, yo haría la aclaración. Se supone que es para la contratación",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 76.4,
+      "end": 80.4,
+      "text": " de Easy. Yo haría la aclaración en este caso por el número, que tenga una excelente",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 80.4,
+      "end": 81.4,
+      "text": " tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 81.72,
+      "end": 89.55,
+      "text": " Pero ahorita no sé qué es eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 89.55,
+      "end": 90.55,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

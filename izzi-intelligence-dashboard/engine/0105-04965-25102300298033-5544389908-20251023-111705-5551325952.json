@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300298033-5544389908-20251023-111705-5551325952.WAV",
+  "file_name": "0105-04965-25102300298033-5544389908-20251023-111705-5551325952.WAV",
+  "base_id": "0105-04965-25102300298033-5544389908-20251023-111705-5551325952",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o... O bien, marque cero y en breve será atendido. Hola, buen día. Espera un momento, por favor. El tiempo de compensación civil de... ...breve será atendido. Hola, gracias por comunicarse a Easy. ¿En qué podemos apoyarlo? Un momento, uno de nuestros agentes le atenderá.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.3,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 18.3,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.3,
+      "end": 24.17,
+      "text": " O bien, marque cero y en breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.17,
+      "end": 25.17,
+      "text": " Hola, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.17,
+      "end": 27.17,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.17,
+      "end": 30.17,
+      "text": " El tiempo de compensación civil de...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.17,
+      "end": 38.18,
+      "text": " ...breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.18,
+      "end": 41.18,
+      "text": " Hola, gracias por comunicarse a Easy. ¿En qué podemos apoyarlo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.18,
+      "end": 44.18,
+      "text": " Un momento, uno de nuestros agentes le atenderá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.992,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

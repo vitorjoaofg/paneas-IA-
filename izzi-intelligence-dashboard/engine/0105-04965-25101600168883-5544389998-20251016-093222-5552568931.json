@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600168883-5544389998-20251016-093222-5552568931.WAV",
+  "file_name": "0105-04965-25101600168883-5544389998-20251016-093222-5552568931.WAV",
+  "base_id": "0105-04965-25101600168883-5544389998-20251016-093222-5552568931",
+  "transcription": "¿Hola? ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buen día. Le hablé a Ivonne Monfield de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día. Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.3,
+      "text": " ¿Hola? ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.3,
+      "end": 15.78,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.78,
+      "end": 21.94,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.28,
+      "end": 31.36,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.36,
+      "end": 42.25,
+      "text": " Espera un momento, por favor. Hola, buen día. Le hablé a Ivonne Monfield de parte de su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.25,
+      "end": 50.01,
+      "text": " servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día. Bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 109.224,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

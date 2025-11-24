@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300608219-5544389967-20251013-162219-5521610459.WAV",
+  "file_name": "0105-04965-25101300608219-5544389967-20251013-162219-5521610459.WAV",
+  "base_id": "0105-04965-25101300608219-5544389967-20251013-162219-5521610459",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buenas tardes. Buenas tardes. ¿De parte de Telmex, disculpe? ¿Qué tal? Mi nombre es Janet Polido, estoy comunicando contrataciones Easy. En este caso para que pueda tener servicio en Internet, teléfono, servicio en la televisión por 350 pesos el primer mes. Ah, no, disculpe. Ahorita lo que me marcaron y pensé que era de Telmex. ¿Y más de? Me marcaron, pero pensé que era de Telmex. Ah, ok, no. Nosotros nos comunicamos de Easy y me está en casa para darle a conocer el servicio. Le agradezco mucho, pero por un momento no. Gracias, disculpe. De nada, hasta luego. Hasta luego, buenito día. Buen. Ven acá. Cuidado.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 27.56,
+      "text": " comunico con un asesor? Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.56,
+      "end": 47.0,
+      "text": " Espera un momento, por favor. Hola, buenas tardes. Buenas tardes. ¿De",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.0,
+      "end": 51.34,
+      "text": " parte de Telmex, disculpe? ¿Qué tal? Mi nombre es Janet Polido, estoy comunicando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.34,
+      "end": 56.4,
+      "text": " contrataciones Easy. En este caso para que pueda tener servicio en Internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.4,
+      "end": 60.98,
+      "text": " teléfono, servicio en la televisión por 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.98,
+      "end": 67.07,
+      "text": " Ah, no, disculpe. Ahorita lo que me marcaron y pensé que era de Telmex. ¿Y más de?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.07,
+      "end": 71.86,
+      "text": " Me marcaron, pero pensé que era de Telmex. Ah, ok, no. Nosotros nos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.86,
+      "end": 76.5,
+      "text": " comunicamos de Easy y me está en casa para darle a conocer el servicio. Le agradezco",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.5,
+      "end": 80.22,
+      "text": " mucho, pero por un momento no. Gracias, disculpe. De nada, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 80.22,
+      "end": 123.83,
+      "text": " Hasta luego, buenito día. Buen. Ven acá. Cuidado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 133.92,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000253959-5544389928-20251020-145532-5593121260.WAV",
+  "file_name": "0105-04965-25102000253959-5544389928-20251020-145532-5593121260.WAV",
+  "base_id": "0105-04965-25102000253959-5544389928-20251020-145532-5593121260",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Ice Boy, desde 350 pesos al primer mes, con Vix es posible. Te interesa, un profesor te está esperando, por favor. ¿Cómo ves, cabrón, eh? Si cierro el puto culito, ¿verdad, cabrón? Sí, ¿qué último advertencio, hijo de tu puta perra, verga madre, cabrón, eh? Vuelves a llamar y juro que te vamos a matar en una patrulla de tu puta casa, cabrón. Espera un momento, por favor. Puto pendejo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Ice Boy, desde 350 pesos al primer mes, con Vix es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " Te interesa, un profesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Cómo ves, cabrón, eh? Si cierro el puto culito, ¿verdad, cabrón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 24.06,
+      "text": " Sí, ¿qué último advertencio, hijo de tu puta perra, verga madre, cabrón, eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.06,
+      "end": 28.06,
+      "text": " Vuelves a llamar y juro que te vamos a matar en una patrulla de tu puta casa, cabrón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.06,
+      "end": 30.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.06,
+      "end": 32.06,
+      "text": " Puto pendejo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 33.192,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

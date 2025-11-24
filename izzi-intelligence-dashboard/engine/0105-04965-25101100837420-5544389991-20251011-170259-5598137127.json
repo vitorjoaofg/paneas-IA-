@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100837420-5544389991-20251011-170259-5598137127.WAV",
+  "file_name": "0105-04965-25101100837420-5544389991-20251011-170259-5598137127.WAV",
+  "base_id": "0105-04965-25101100837420-5544389991-20251011-170259-5598137127",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes. Dígame, señor. Hola, ¿qué tal, señor? Habla Randirama. Estamos comunicándonos del servicio de Easy. ¿Le interesa alguno de nuestros servicios, señor? ¿Ya ha tenido alguno? Disculpe. No, de hecho yo tengo total play. No sé por qué me marcan. Oh, correcto, sí o no. Entonces yo haría la aclaración, señor, una disculpa. Que tenga un excelente tarde. Vale.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 24.87,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.87,
+      "end": 26.87,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.87,
+      "end": 33.8,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.8,
+      "end": 35.8,
+      "text": " Buenas tardes. Dígame, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.8,
+      "end": 39.8,
+      "text": " Hola, ¿qué tal, señor? Habla Randirama. Estamos comunicándonos del servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.8,
+      "end": 43.8,
+      "text": " ¿Le interesa alguno de nuestros servicios, señor? ¿Ya ha tenido alguno? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.8,
+      "end": 47.8,
+      "text": " No, de hecho yo tengo total play. No sé por qué me marcan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.8,
+      "end": 52.8,
+      "text": " Oh, correcto, sí o no. Entonces yo haría la aclaración, señor, una disculpa. Que tenga un excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.8,
+      "end": 54.8,
+      "text": " Vale.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.492,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

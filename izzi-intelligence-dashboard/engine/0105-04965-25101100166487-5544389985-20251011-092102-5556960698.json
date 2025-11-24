@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100166487-5544389985-20251011-092102-5556960698.WAV",
+  "file_name": "0105-04965-25101100166487-5544389985-20251011-092102-5556960698.WAV",
+  "base_id": "0105-04965-25101100166487-5544389985-20251011-092102-5556960698",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. No tengo tele, ¿sí? ¿Mande? Sí, ¿bueno? Hola, es que no tengo televisión, pues están ofreciendo telefonías, programas y todo, pero no tengo televisión, por eso no lo requiero, no uso tele. Bueno, bueno. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.5,
+      "end": 24.7,
+      "text": " No tengo tele, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 36.76,
+      "end": 37.76,
+      "text": " ¿Mande?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.76,
+      "end": 42.79,
+      "text": " Sí, ¿bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.79,
+      "end": 54.43,
+      "text": " Hola, es que no tengo televisión, pues están ofreciendo telefonías, programas y todo, pero no tengo televisión, por eso no lo requiero, no uso tele.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 54.43,
+      "end": 55.43,
+      "text": " Bueno, bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.43,
+      "end": 57.98,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.972,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

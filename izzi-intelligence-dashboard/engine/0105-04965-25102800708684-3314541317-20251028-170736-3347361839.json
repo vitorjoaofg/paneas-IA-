@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800708684-3314541317-20251028-170736-3347361839.WAV",
+  "file_name": "0105-04965-25102800708684-3314541317-20251028-170736-3347361839.WAV",
+  "base_id": "0105-04965-25102800708684-3314541317-20251028-170736-3347361839",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. No cuelgue, por favor, no cuelgue, por favor. Bueno. Hola, ¿qué tal? Buenas tardes. Buenas tardes. ¿Qué puedo ayudarles? No, me marcaron, no sé. Ellos me marcaron para acá y yo dije que no. Oh, ok, ok. Una disculpa que te caiga linda. Sí, andale, igualmente, gracias. No cuelgue, por favor. No cuelgue, por favor. Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 23.84,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.58,
+      "end": 33.79,
+      "text": " Espera un momento, por favor. No cuelgue, por favor, no cuelgue, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.79,
+      "end": 39.18,
+      "text": " Bueno. Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.18,
+      "end": 42.06,
+      "text": " Buenas tardes. ¿Qué puedo ayudarles?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.06,
+      "end": 46.9,
+      "text": " No, me marcaron, no sé. Ellos me marcaron para acá y yo dije que no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.9,
+      "end": 52.05,
+      "text": " Oh, ok, ok. Una disculpa que te caiga linda. Sí, andale, igualmente, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.05,
+      "end": 60.16,
+      "text": " No cuelgue, por favor. No cuelgue, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.16,
+      "end": 60.8,
+      "text": " Bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.248,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

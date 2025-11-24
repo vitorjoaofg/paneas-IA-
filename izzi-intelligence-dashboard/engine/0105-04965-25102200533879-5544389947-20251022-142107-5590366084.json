@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200533879-5544389947-20251022-142107-5590366084.WAV",
+  "file_name": "0105-04965-25102200533879-5544389947-20251022-142107-5590366084.WAV",
+  "base_id": "0105-04965-25102200533879-5544389947-20251022-142107-5590366084",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Bueno, bueno, por motivos de calidad me veré obligada a finalizar esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.3,
+      "end": 9.11,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.11,
+      "end": 16.91,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.91,
+      "end": 22.99,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.99,
+      "end": 29.92,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.48,
+      "end": 37.12,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.12,
+      "end": 41.36,
+      "text": " asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.36,
+      "end": 61.13,
+      "text": " Bueno, bueno, por motivos de calidad me veré obligada a finalizar esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.18,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900605450-5544389901-20251009-155526-5593762010.WAV",
+  "file_name": "0105-04965-25100900605450-5544389901-20251009-155526-5593762010.WAV",
+  "base_id": "0105-04965-25100900605450-5544389901-20251009-155526-5593762010",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable... Si quiere hablar con ventas, dígite 1, compras, dígite 2, ingeniería... Espera un momento, por favor. Seguridad Ocupacional, Marketing y Plataformas Tecnológicas, dígite 5... Buenas tardes, ¿me comunico al servicio Easy con quien tengo el gusto? Dígite 6, Contabilidad, dígite 7, Serving Track, dígite 8, o marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 13.3,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 14.4,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.4,
+      "end": 16.5,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 17.9,
+      "text": " Por favor, hable...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.9,
+      "end": 25.56,
+      "text": " Si quiere hablar con ventas, dígite 1, compras, dígite 2, ingeniería...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.56,
+      "end": 27.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.26,
+      "end": 34.21,
+      "text": " Seguridad Ocupacional, Marketing y Plataformas Tecnológicas, dígite 5...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.21,
+      "end": 37.21,
+      "text": " Buenas tardes, ¿me comunico al servicio Easy con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.21,
+      "end": 46.21,
+      "text": " Dígite 6, Contabilidad, dígite 7, Serving Track, dígite 8, o marque 0 para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.21,
+      "end": 54.85,
+      "text": " Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.85,
+      "end": 61.38,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.212,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

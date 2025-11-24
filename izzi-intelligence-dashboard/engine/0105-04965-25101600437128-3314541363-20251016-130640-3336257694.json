@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600437128-3314541363-20251016-130640-3336257694.WAV",
+  "file_name": "0105-04965-25101600437128-3314541363-20251016-130640-3336257694.WAV",
+  "base_id": "0105-04965-25101600437128-3314541363-20251016-130640-3336257694",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Se está comunicando con Latatiana y Cecilia, ¿tienes Janette Pulido con quien tengo el gusto? Con Samantha Berenice. Hola, ¿qué tal, señorita Samantha, con su escucha la propuesta que se le hizo en el Comunitado para que pueda tener el servicio?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 14.3,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.3,
+      "end": 16.3,
+      "text": " Un asesor está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.3,
+      "end": 20.7,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.7,
+      "end": 24.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.74,
+      "end": 35.85,
+      "text": " Se está comunicando con Latatiana y Cecilia, ¿tienes Janette Pulido con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.18,
+      "end": 39.18,
+      "text": " Con Samantha Berenice.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.18,
+      "end": 45.62,
+      "text": " Hola, ¿qué tal, señorita Samantha, con su escucha la propuesta que se le hizo en el Comunitado para que pueda tener el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 48.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

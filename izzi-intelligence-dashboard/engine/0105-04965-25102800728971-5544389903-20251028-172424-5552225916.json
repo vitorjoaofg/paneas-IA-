@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800728971-5544389903-20251028-172424-5552225916.WAV",
+  "file_name": "0105-04965-25102800728971-5544389903-20251028-172424-5552225916.WAV",
+  "base_id": "0105-04965-25102800728971-5544389903-20251028-172424-5552225916",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Pulse 1 para hablar con un asesor o 2, espera un momento, por favor. Buenas tardes, mi nombre es Euscarles Návar, me comunico de Easy. ¿Con quién tengo el gusto? Buenas tardes, ¿me escuchas? Bueno, bueno, bueno, por motivos de calidad finalizaré la llamada. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.27,
+      "end": 8.95,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.95,
+      "end": 13.61,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.61,
+      "end": 15.57,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.57,
+      "end": 16.57,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.57,
+      "end": 18.69,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.69,
+      "end": 25.03,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.03,
+      "end": 27.51,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.51,
+      "end": 29.83,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.83,
+      "end": 34.83,
+      "text": " Pulse 1 para hablar con un asesor o 2, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.83,
+      "end": 43.88,
+      "text": " Buenas tardes, mi nombre es Euscarles Návar, me comunico de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.88,
+      "end": 49.05,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.05,
+      "end": 54.16,
+      "text": " Buenas tardes, ¿me escuchas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.16,
+      "end": 61.1,
+      "text": " Bueno, bueno, bueno, por motivos de calidad finalizaré la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.1,
+      "end": 62.1,
+      "text": " Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 122.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400534041-3314541388-20251014-143418-3338521459.WAV",
+  "file_name": "0105-04965-25101400534041-3314541388-20251014-143418-3338521459.WAV",
+  "base_id": "0105-04965-25101400534041-3314541388-20251014-143418-3338521459",
+  "transcription": "Gracias por llamar a Trinet, si conoce el número de extensión, márquelo ahora. O de lo contrario, pulse cero y en un momento será atendido. ¿Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos... Gracias por llamar a Trinet. Si conoce el número de extensión, márquelo ahora. Espera un momento, por favor. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.76,
+      "text": " Gracias por llamar a Trinet, si conoce el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.76,
+      "end": 8.76,
+      "text": " O de lo contrario, pulse cero y en un momento será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.76,
+      "end": 13.96,
+      "text": " ¿Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.96,
+      "end": 16.96,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.96,
+      "end": 20.16,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.16,
+      "end": 22.64,
+      "text": " Por favor, hable o pulse uno para sí o dos...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.64,
+      "end": 24.36,
+      "text": " Gracias por llamar a Trinet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.36,
+      "end": 27.89,
+      "text": " Si conoce el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.65,
+      "end": 30.65,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 86.89,
+      "end": 87.89,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 89.352,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

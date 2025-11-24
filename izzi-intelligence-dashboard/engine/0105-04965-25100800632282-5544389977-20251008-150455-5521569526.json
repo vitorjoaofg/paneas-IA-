@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800632282-5544389977-20251008-150455-5521569526.WAV",
+  "file_name": "0105-04965-25100800632282-5544389977-20251008-150455-5521569526.WAV",
+  "base_id": "0105-04965-25100800632282-5544389977-20251008-150455-5521569526",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Buenas tardes. ¿Podrían dejar de molestar por teléfono? Sí, claro que sí. Ahorita voy a poner aquí comentarios. Gracias. Que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.1,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.1,
+      "end": 14.1,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.1,
+      "end": 22.96,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.96,
+      "end": 25.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.96,
+      "end": 32.3,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.3,
+      "end": 36.3,
+      "text": " Buenas tardes. ¿Podrían dejar de molestar por teléfono?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.3,
+      "end": 39.43,
+      "text": " Sí, claro que sí. Ahorita voy a poner aquí comentarios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.43,
+      "end": 42.59,
+      "text": " Gracias. Que tenga buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.84,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

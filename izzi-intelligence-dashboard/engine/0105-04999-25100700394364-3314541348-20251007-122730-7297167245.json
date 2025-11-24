@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100700394364-3314541348-20251007-122730-7297167245.WAV",
+  "file_name": "0105-04999-25100700394364-3314541348-20251007-122730-7297167245.WAV",
+  "base_id": "0105-04999-25100700394364-3314541348-20251007-122730-7297167245",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $3,450 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Sí, buenos días. Sí, buenos días, jóvenes. Mire, ya les había apostado el reporte que no me gusta que me estén molestando por parte de Easy. Por favor, acudan a mi reporte, por favor. No quiero ser grosero con ustedes. Todo el chance de meter marque y marque. No se preocupen, ahorita lo checo con mis preesor. Por favor. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.6,
+      "text": " por solo $3,450 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.6,
+      "end": 23.84,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.44,
+      "end": 35.37,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.37,
+      "end": 50.27,
+      "text": " asesor o 2. Espera un momento, por favor. Sí, buenos días. Sí, buenos días, jóvenes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.27,
+      "end": 55.15,
+      "text": " Mire, ya les había apostado el reporte que no me gusta que me estén molestando por parte",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.15,
+      "end": 60.35,
+      "text": " de Easy. Por favor, acudan a mi reporte, por favor. No quiero ser grosero con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.35,
+      "end": 64.15,
+      "text": " Todo el chance de meter marque y marque. No se preocupen, ahorita lo checo con mis",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.15,
+      "end": 68.19,
+      "text": " preesor. Por favor. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.02,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100183304-3314541325-20251021-094959-3326864314.WAV",
+  "file_name": "0105-04965-25102100183304-3314541325-20251021-094959-3326864314.WAV",
+  "base_id": "0105-04965-25102100183304-3314541325-20251021-094959-3326864314",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buenos días. Buenos días. Buenos días. Tienen un montón de tiempo hablándome. No quiero el servicio nada más para que no me estén hablando, me hablan en la mañana, en la tarde, en la noche. Ok, señorita, ¿usted ya cuenta con servicio de internet de compañía Easy? Sí, ya todo tengo. No tengo Easy, pero tengo de otra compañía. Ok, perfecto. Bueno, señorita, si usted ya cuenta con servicio de internet, telefonía y cable con otra compañía, ¿yo le puedo ofrecer un plan para su celular, señorita? No, nada más quiero que me ofrezca no hablarme. Ok, señorita, ¿qué le voy a poner?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 23.84,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.84,
+      "end": 42.98,
+      "text": " Espera un momento, por favor. Hola, buenos días. Buenos días. Buenos días. Tienen un montón de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.98,
+      "end": 47.14,
+      "text": " tiempo hablándome. No quiero el servicio nada más para que no me estén hablando,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.14,
+      "end": 53.28,
+      "text": " me hablan en la mañana, en la tarde, en la noche. Ok, señorita, ¿usted ya cuenta con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.28,
+      "end": 59.48,
+      "text": " servicio de internet de compañía Easy? Sí, ya todo tengo. No tengo Easy, pero tengo de otra",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.48,
+      "end": 66.05,
+      "text": " compañía. Ok, perfecto. Bueno, señorita, si usted ya cuenta con servicio de internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.05,
+      "end": 69.41,
+      "text": " telefonía y cable con otra compañía, ¿yo le puedo ofrecer un plan para su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.41,
+      "end": 75.11,
+      "text": " celular, señorita? No, nada más quiero que me ofrezca no hablarme. Ok, señorita,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.11,
+      "end": 78.27,
+      "text": " ¿qué le voy a poner?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

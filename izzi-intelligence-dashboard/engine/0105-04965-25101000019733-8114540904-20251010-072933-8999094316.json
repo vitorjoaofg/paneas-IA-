@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000019733-8114540904-20251010-072933-8999094316.WAV",
+  "file_name": "0105-04965-25101000019733-8114540904-20251010-072933-8999094316.WAV",
+  "base_id": "0105-04965-25101000019733-8114540904-20251010-072933-8999094316",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Y gracias por llamar a Panasonic Automotive Systems. Por favor, hazlo uno para español o hazlo dos para inglés. Espera un momento, por favor. Sí, buenos días, lo tiene Julio Vargas de Easy, ¿con qué tengo el gusto? Sí, buenos días, lo tiene Julio Vargas de Easy, ¿con qué tengo el gusto? Por motivos de calidad, voy a financiar la llama.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 13.64,
+      "text": " con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.92,
+      "end": 16.6,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.8,
+      "end": 17.84,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.96,
+      "end": 19.92,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.92,
+      "end": 22.62,
+      "text": " Por favor, hable o pulse uno para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.66,
+      "end": 25.1,
+      "text": " Y gracias por llamar a Panasonic Automotive Systems.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.66,
+      "end": 28.9,
+      "text": " Por favor, hazlo uno para español o hazlo dos para inglés.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.61,
+      "end": 31.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.42,
+      "end": 56.94,
+      "text": " Sí, buenos días, lo tiene Julio Vargas de Easy, ¿con qué tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.76,
+      "end": 63.76,
+      "text": " Sí, buenos días, lo tiene Julio Vargas de Easy, ¿con qué tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.55,
+      "end": 67.51,
+      "text": " Por motivos de calidad, voy a financiar la llama.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.3,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

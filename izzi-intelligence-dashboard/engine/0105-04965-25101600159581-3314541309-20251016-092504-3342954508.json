@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600159581-3314541309-20251016-092504-3342954508.WAV",
+  "file_name": "0105-04965-25101600159581-3314541309-20251016-092504-3342954508.WAV",
+  "base_id": "0105-04965-25101600159581-3314541309-20251016-092504-3342954508",
+  "transcription": "Hola, ¿te gustaría tener internet más televisión más el mejor entretenimiento con Vix Premium más Skyport desde $350 pesos al primer mes con Vix es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Buenos días, saludos, muy bien, aquí es Easy.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 6.81,
+      "text": " Hola, ¿te gustaría tener internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.81,
+      "end": 13.29,
+      "text": " más Skyport desde $350 pesos al primer mes con Vix es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.29,
+      "end": 20.81,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.81,
+      "end": 27.66,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.86,
+      "end": 32.42,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.42,
+      "end": 34.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.42,
+      "end": 53.86,
+      "text": " Buenos días, saludos, muy bien, aquí es Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.684,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

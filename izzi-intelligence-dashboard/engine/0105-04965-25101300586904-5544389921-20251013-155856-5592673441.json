@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300586904-5544389921-20251013-155856-5592673441.WAV",
+  "file_name": "0105-04965-25101300586904-5544389921-20251013-155856-5592673441.WAV",
+  "base_id": "0105-04965-25101300586904-5544389921-20251013-155856-5592673441",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo tienes más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento por favor. No sé, me imagino que sí. Hola, perdone. Hola, ¿buenas tardes? Bueno. Bueno, ¿me conoces? Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 19.24,
+      "text": " pesos el primer mes? No lo tienes más y cámbiate a Easy. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.24,
+      "end": 30.14,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.14,
+      "end": 36.98,
+      "text": " ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.98,
+      "end": 47.9,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.9,
+      "end": 84.1,
+      "text": " terminar la llamada. Espera un momento por favor. No sé, me imagino que sí. Hola,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 84.1,
+      "end": 101.93,
+      "text": " perdone. Hola, ¿buenas tardes? Bueno. Bueno, ¿me conoces? Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 111.06,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200739634-5540409218-20251022-170431-5525958510.WAV",
+  "file_name": "0105-04965-25102200739634-5540409218-20251022-170431-5525958510.WAV",
+  "base_id": "0105-04965-25102200739634-5540409218-20251022-170431-5525958510",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Gracias, le mando al centro de contrataciones. Sí, sí, ¿cómo le ayudó? Muy buenas tardes, perdón, pero me han estado marcando casi diario de este número y yo nunca solicité ningún servicio de ustedes. Ah, disculpe señor. Y digo para que ahí lo pongas, que ya no me estén molestando, por favor. Sí, claro, una disculpa. Sí, es un diario que me están marcando, por favor. Sí, una disculpa, ya vamos a poner aquí para que ya no se le marque. Sí, por favor. Gracias. Hasta luego, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 27.04,
+      "text": " dos para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.04,
+      "end": 36.75,
+      "text": " Gracias, le mando al centro de contrataciones. Sí, sí, ¿cómo le ayudó? Muy buenas tardes,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.75,
+      "end": 47.27,
+      "text": " perdón, pero me han estado marcando casi diario de este número y yo nunca solicité ningún",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.27,
+      "end": 55.32,
+      "text": " servicio de ustedes. Ah, disculpe señor. Y digo para que ahí lo pongas, que ya no me estén",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.32,
+      "end": 61.08,
+      "text": " molestando, por favor. Sí, claro, una disculpa. Sí, es un diario que me están",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.08,
+      "end": 66.12,
+      "text": " marcando, por favor. Sí, una disculpa, ya vamos a poner aquí para que ya no se",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.12,
+      "end": 71.28,
+      "text": " le marque. Sí, por favor. Gracias. Hasta luego, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.892,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

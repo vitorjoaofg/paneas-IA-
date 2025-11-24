@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300407949-5544389927-20251023-124553-5576781915.WAV",
+  "file_name": "0105-04965-25102300407949-5544389927-20251023-124553-5576781915.WAV",
+  "base_id": "0105-04965-25102300407949-5544389927-20251023-124553-5576781915",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenos días, mi nombre es Scarlett, nada se comunica con Trataciones Easy. Con quien tengo el gusto, disculpe. Buenos días, señorita. ¿A quién le baja mi número telefónico en su base? Porque diario hablan y no nos interesa el servicio. Ok, dejo el reporte. Gracias, bonía.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 11.2,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 13.2,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.2,
+      "end": 16.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.4,
+      "end": 20.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.9,
+      "end": 23.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.4,
+      "end": 32.75,
+      "text": " Buenos días, mi nombre es Scarlett, nada se comunica con Trataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.75,
+      "end": 34.55,
+      "text": " Con quien tengo el gusto, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.63,
+      "end": 36.83,
+      "text": " Buenos días, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.83,
+      "end": 39.93,
+      "text": " ¿A quién le baja mi número telefónico en su base?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.93,
+      "end": 42.43,
+      "text": " Porque diario hablan y no nos interesa el servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.43,
+      "end": 44.03,
+      "text": " Ok, dejo el reporte.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.03,
+      "end": 45.03,
+      "text": " Gracias, bonía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.772,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

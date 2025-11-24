@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101100390408-5544389964-20251011-120206-5548433859.WAV",
+  "file_name": "0105-04999-25101100390408-5544389964-20251011-120206-5548433859.WAV",
+  "base_id": "0105-04999-25101100390408-5544389964-20251011-120206-5548433859",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bueno, si hablas, atiende clavias de EasyMobile. ¿Alguna línea que les haya interesado? Hola, buenas tardes. ¿Perdón? ¿Cuándo es? Perdón, no escuché lo que dijo. Ah, ok, mira, se habló de EasyMobile. No sé si te ha interesado alguna línea. No, mira, yo quiero saber si... ¿Cómo se podría decir? Y el caso es que todos los días me llaman justo a la misma vez, siempre todos los días, y ahora he descansado. Ok, mira, no te preocupes, ahorita voy a... Me gustaría que dieran de bajar mi nombre, por favor. Sí, claro, no te preocupes, te he dejado la notación para que usted te deje aquí en la lista. ¿Buenito día? Sí, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.22,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.22,
+      "end": 18.64,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 29.31,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.31,
+      "end": 30.31,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.39,
+      "end": 43.39,
+      "text": " Bueno, si hablas, atiende clavias de EasyMobile. ¿Alguna línea que les haya interesado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.39,
+      "end": 51.28,
+      "text": " Hola, buenas tardes. ¿Perdón? ¿Cuándo es? Perdón, no escuché lo que dijo. Ah, ok,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.28,
+      "end": 58.8,
+      "text": " mira, se habló de EasyMobile. No sé si te ha interesado alguna línea. No, mira,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.8,
+      "end": 67.98,
+      "text": " yo quiero saber si... ¿Cómo se podría decir? Y el caso es que todos los días",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.98,
+      "end": 71.1,
+      "text": " me llaman justo a la misma vez, siempre todos los días, y ahora he descansado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.72,
+      "end": 74.92,
+      "text": " Ok, mira, no te preocupes, ahorita voy a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.92,
+      "end": 78.2,
+      "text": " Me gustaría que dieran de bajar mi nombre, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 78.2,
+      "end": 82.43,
+      "text": " Sí, claro, no te preocupes, te he dejado la notación para que usted te deje aquí",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 82.43,
+      "end": 85.65,
+      "text": " en la lista. ¿Buenito día? Sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

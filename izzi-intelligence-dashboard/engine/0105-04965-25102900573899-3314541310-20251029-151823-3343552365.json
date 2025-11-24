@@ -1,0 +1,555 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900573899-3314541310-20251029-151823-3343552365.WAV",
+  "file_name": "0105-04965-25102900573899-3314541310-20251029-151823-3343552365.WAV",
+  "base_id": "0105-04965-25102900573899-3314541310-20251029-151823-3343552365",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes, a los de su compañía Easy, ¿en qué puedo ayudarles? Hola, buenas tardes. Nada más para preguntar si hay cobertura aquí para donde yo vivo. Ok, déjame checar. Permítanme en su bonito. ¿Cuál es su código postal, perdón? 45650. Es Jalisco. ¿Es Jalisco? Sí. ¿Cuál es su colonia? Fraccionamiento en Puerta Real. Fraccionamiento de qué, perdón? Puerta Real. Ok, Puerta... Fraccionamiento Puerta Real de Cotonorte o Puerta... No, es Puerta Real de Tlaxumulco de Zúñiga. Ah, ok, ok. ¿Clima, perdón, Cima del Sol? Es uno más adelantito de Cima. Me sale Puerta Real, Cima del Sol, Tlaxumulco de Zúñiga. ¿Entonces sí? Ok, a ver, déjame checar. ¿Cuál es su calle, perdón? Es su calle Crisopraza. Crisopraza. Praza. ¿Su número de casa cuál es, perdón? Número 6. Ok, número 6. ¿Entre qué calle se está, perdón? Entre Acerina y Tumbaga. ¿Acerina y Tumbaga? Tumbaga ahí. Ok. ¿Cercas hoy a un amar esposole blanco? ¿Un qué, perdón? Un supermercado que me aparece aquí un negocio que se llama Amar Esposole Blanco. Amar Esposole Blanco. ¿Y es Naxx La Palma? No, es que está diciendo de las calles, que sí, de aquí por las calles. No sé. No, ok, bueno, vamos a ver si. Ok. ¿Las casas son como de Infonavir? Ah, ok, ok, sí, entonces ya. Permítame un segundito. Permítame un segundito, seguimos a línea. Sí. No, no tenemos cobertura, señorita. No. No. Bueno. Bueno, gracias, que tengáis un día. Muy bien, gracias, gracias, adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.8,
+      "end": 24.52,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.52,
+      "end": 92.13,
+      "text": " Hola, ¿qué tal? Muy buenas tardes, a los de su compañía Easy, ¿en qué puedo ayudarles?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 92.13,
+      "end": 94.52,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 94.82,
+      "end": 101.82,
+      "text": " Nada más para preguntar si hay cobertura aquí para donde yo vivo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 101.82,
+      "end": 108.98,
+      "text": " Ok, déjame checar. Permítanme en su bonito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 108.98,
+      "end": 112.75,
+      "text": " ¿Cuál es su código postal, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 112.75,
+      "end": 114.75,
+      "text": " 45650.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 114.75,
+      "end": 118.14,
+      "text": " Es Jalisco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 118.14,
+      "end": 120.26,
+      "text": " ¿Es Jalisco?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 120.26,
+      "end": 121.26,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 121.26,
+      "end": 123.26,
+      "text": " ¿Cuál es su colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 123.26,
+      "end": 125.26,
+      "text": " Fraccionamiento en Puerta Real.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 130.67,
+      "end": 133.9,
+      "text": " Fraccionamiento de qué, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 134.2,
+      "end": 136.68,
+      "text": " Puerta Real.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 136.68,
+      "end": 146.9,
+      "text": " Ok, Puerta...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 146.9,
+      "end": 156.48,
+      "text": " Fraccionamiento Puerta Real de Cotonorte o Puerta...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 156.48,
+      "end": 160.48,
+      "text": " No, es Puerta Real de Tlaxumulco de Zúñiga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 160.48,
+      "end": 162.71,
+      "text": " Ah, ok, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 162.71,
+      "end": 166.02,
+      "text": " ¿Clima, perdón, Cima del Sol?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 166.02,
+      "end": 170.17,
+      "text": " Es uno más adelantito de Cima.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 170.17,
+      "end": 176.17,
+      "text": " Me sale Puerta Real, Cima del Sol, Tlaxumulco de Zúñiga.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 176.17,
+      "end": 177.33,
+      "text": " ¿Entonces sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 177.63,
+      "end": 179.63,
+      "text": " Ok, a ver, déjame checar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 179.63,
+      "end": 181.63,
+      "text": " ¿Cuál es su calle, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 181.63,
+      "end": 196.31,
+      "text": " Es su calle Crisopraza.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 196.31,
+      "end": 198.38,
+      "text": " Crisopraza.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 198.38,
+      "end": 213.05,
+      "text": " Praza.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 213.05,
+      "end": 215.05,
+      "text": " ¿Su número de casa cuál es, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 215.05,
+      "end": 216.56,
+      "text": " Número 6.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 216.56,
+      "end": 218.56,
+      "text": " Ok, número 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 218.56,
+      "end": 230.48,
+      "text": " ¿Entre qué calle se está, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 230.48,
+      "end": 234.54,
+      "text": " Entre Acerina y Tumbaga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 234.54,
+      "end": 236.54,
+      "text": " ¿Acerina y Tumbaga?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 236.54,
+      "end": 238.79,
+      "text": " Tumbaga ahí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 238.79,
+      "end": 239.79,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 239.79,
+      "end": 242.79,
+      "text": " ¿Cercas hoy a un amar esposole blanco?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 243.09,
+      "end": 244.96,
+      "text": " ¿Un qué, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 244.96,
+      "end": 254.17,
+      "text": " Un supermercado que me aparece aquí un negocio que se llama Amar Esposole Blanco.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 254.17,
+      "end": 256.78,
+      "text": " Amar Esposole Blanco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 256.78,
+      "end": 258.78,
+      "text": " ¿Y es Naxx La Palma?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 258.78,
+      "end": 264.16,
+      "text": " No, es que está diciendo de las calles, que sí, de aquí por las calles.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 264.16,
+      "end": 268.36,
+      "text": " No sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 268.36,
+      "end": 271.32,
+      "text": " No, ok, bueno, vamos a ver si.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 271.32,
+      "end": 273.87,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 273.87,
+      "end": 276.51,
+      "text": " ¿Las casas son como de Infonavir?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 276.51,
+      "end": 279.44,
+      "text": " Ah, ok, ok, sí, entonces ya.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 279.44,
+      "end": 281.44,
+      "text": " Permítame un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 281.74,
+      "end": 313.88,
+      "text": " Permítame un segundito, seguimos a línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 313.88,
+      "end": 337.28,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 337.28,
+      "end": 339.28,
+      "text": " No, no tenemos cobertura, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 339.28,
+      "end": 340.28,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 340.28,
+      "end": 341.28,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 341.28,
+      "end": 342.28,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 342.28,
+      "end": 344.28,
+      "text": " Bueno, gracias, que tengáis un día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 344.28,
+      "end": 346.28,
+      "text": " Muy bien, gracias, gracias, adiós.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 347.112,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

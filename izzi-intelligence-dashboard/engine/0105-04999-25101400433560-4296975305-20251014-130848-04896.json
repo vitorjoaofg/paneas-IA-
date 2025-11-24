@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101400433560-4296975305-20251014-130848-04896.WAV",
+  "file_name": "0105-04999-25101400433560-4296975305-20251014-130848-04896.WAV",
+  "base_id": "0105-04999-25101400433560-4296975305-20251014-130848-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para... Espera un momento, por favor. Bueno, los botones de clavios de EasyMobile, ¿alguna línea que te haga interesado? No, nomás quería decirles si me pueden quitar de su lista porque diario me están llamando. Diario me está llamando tu compañía. Sí, no se preocupe caballero. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 17.4,
+      "text": " por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.4,
+      "end": 20.2,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.2,
+      "end": 23.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.4,
+      "end": 29.13,
+      "text": " Por favor, hable o pulse uno para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.23,
+      "end": 31.83,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.83,
+      "end": 33.93,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.93,
+      "end": 35.23,
+      "text": " Presiona uno para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.23,
+      "end": 44.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.42,
+      "end": 48.92,
+      "text": " Bueno, los botones de clavios de EasyMobile, ¿alguna línea que te haga interesado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.92,
+      "end": 54.22,
+      "text": " No, nomás quería decirles si me pueden quitar de su lista porque diario me están llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.22,
+      "end": 56.55,
+      "text": " Diario me está llamando tu compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 56.55,
+      "end": 58.65,
+      "text": " Sí, no se preocupe caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.65,
+      "end": 59.55,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

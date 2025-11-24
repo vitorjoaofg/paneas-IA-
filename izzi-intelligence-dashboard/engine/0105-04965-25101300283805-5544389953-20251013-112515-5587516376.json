@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300283805-5544389953-20251013-112515-5587516376.WAV",
+  "file_name": "0105-04965-25101300283805-5544389953-20251013-112515-5587516376.WAV",
+  "base_id": "0105-04965-25101300283805-5544389953-20251013-112515-5587516376",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Pues, ¿estás muy contenta aquí? Y déjame pensar que ya sabemos cómo lo hacemos para mañana, ¿va? Hola, ¿qué tal? Gracias por comunicarse. Hablaré con la TNCC y la Tienda Alan. ¿Con quién tengo el gusto? Nada más quería pedirles un favor, que ya no me estén haciendo el número de teléfono, por favor, para ofrecerles sus promociones. Ah, pero te lo pongo como nota, ¿de acuerdo? ¿Mande? Ahora te lo pongo como nota, ¿de acuerdo? Ok, muchísimas gracias. Claro, un buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.48,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.48,
+      "end": 23.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.48,
+      "end": 25.48,
+      "text": " Pues, ¿estás muy contenta aquí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.48,
+      "end": 29.48,
+      "text": " Y déjame pensar que ya sabemos cómo lo hacemos para mañana, ¿va?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.48,
+      "end": 33.48,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse. Hablaré con la TNCC y la Tienda Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.48,
+      "end": 34.48,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.48,
+      "end": 39.48,
+      "text": " Nada más quería pedirles un favor, que ya no me estén haciendo el número de teléfono, por favor,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.48,
+      "end": 41.99,
+      "text": " para ofrecerles sus promociones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 41.99,
+      "end": 43.99,
+      "text": " Ah, pero te lo pongo como nota, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 43.99,
+      "end": 44.99,
+      "text": " ¿Mande?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 44.99,
+      "end": 46.99,
+      "text": " Ahora te lo pongo como nota, ¿de acuerdo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 46.99,
+      "end": 48.99,
+      "text": " Ok, muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 48.99,
+      "end": 50.99,
+      "text": " Claro, un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.436,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

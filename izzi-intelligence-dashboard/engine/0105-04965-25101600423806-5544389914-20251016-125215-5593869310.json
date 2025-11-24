@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600423806-5544389914-20251016-125215-5593869310.WAV",
+  "file_name": "0105-04965-25101600423806-5544389914-20251016-125215-5593869310.WAV",
+  "base_id": "0105-04965-25101600423806-5544389914-20251016-125215-5593869310",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big City, más Sky Sports desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bienvenida a la área de contrataciones, Xixi. ¿Con quién tengo el gusto? ¿Contrataciones qué? ¿Perdón? Easy. Oh, no. Yo pensé que otra cosa. ¿Qué desea? No. ¿Le contestó una contestadora? ¿Le mencionó algo sobre un paquete? No, no me mencionó que un asesor me estaba llamando. Pero no quiero contratar Easy. Yo ya tengo otro servicio de hace 15 años. Bueno, que tenga buen día. Gracias. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big City,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 22.12,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.12,
+      "end": 24.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.12,
+      "end": 34.3,
+      "text": " Bienvenida a la área de contrataciones, Xixi. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.3,
+      "end": 36.3,
+      "text": " ¿Contrataciones qué? ¿Perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.3,
+      "end": 37.3,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.3,
+      "end": 42.85,
+      "text": " Oh, no. Yo pensé que otra cosa. ¿Qué desea?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.85,
+      "end": 47.85,
+      "text": " No. ¿Le contestó una contestadora? ¿Le mencionó algo sobre un paquete?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.85,
+      "end": 52.85,
+      "text": " No, no me mencionó que un asesor me estaba llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.85,
+      "end": 57.85,
+      "text": " Pero no quiero contratar Easy. Yo ya tengo otro servicio de hace 15 años.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.85,
+      "end": 60.01,
+      "text": " Bueno, que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.01,
+      "end": 61.01,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.01,
+      "end": 62.01,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 62.01,
+      "end": 63.01,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.836,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

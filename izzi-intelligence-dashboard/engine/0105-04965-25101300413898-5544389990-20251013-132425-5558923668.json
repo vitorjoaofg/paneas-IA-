@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300413898-5544389990-20251013-132425-5558923668.WAV",
+  "file_name": "0105-04965-25101300413898-5544389990-20251013-132425-5558923668.WAV",
+  "base_id": "0105-04965-25101300413898-5544389990-20251013-132425-5558923668",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tenedone por entretenimiento con 200 canales, VIX, Vimeo y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Incy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2... No, que yo pago 100 al mes. Gracias. Espera un momento, por favor. ¿Qué bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.3,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tenedone por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.3,
+      "end": 14.0,
+      "text": " entretenimiento con 200 canales, VIX, Vimeo y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Incy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 23.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 28.89,
+      "text": " No, que yo pago 100 al mes. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.89,
+      "end": 30.89,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.89,
+      "end": 38.33,
+      "text": " ¿Qué bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.376,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

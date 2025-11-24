@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800496831-5544389976-20251018-143517-5521219480.WAV",
+  "file_name": "0105-04965-25101800496831-5544389976-20251018-143517-5521219480.WAV",
+  "base_id": "0105-04965-25101800496831-5544389976-20251018-143517-5521219480",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento por favor. Hola, buen día. Le hablé con Monfield de parte de su servicio de Easy. No sé si ya les comentaron de los beneficios. Señorita, la verdad no tengo yo para estar poniendo ningún paquete y siempre son llamadas muy recurrentes. Una disculpa por la molesta. Por favor. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 31.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.76,
+      "end": 41.53,
+      "text": " Hola, buen día. Le hablé con Monfield de parte de su servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.73,
+      "end": 48.17,
+      "text": " No sé si ya les comentaron de los beneficios. Señorita, la verdad no tengo yo para estar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.17,
+      "end": 54.97,
+      "text": " poniendo ningún paquete y siempre son llamadas muy recurrentes. Una disculpa por la molesta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.97,
+      "end": 57.48,
+      "text": " Por favor. Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.624,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

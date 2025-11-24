@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800251765-5536939462-20251018-111252-04896.WAV",
+  "file_name": "0105-04965-25101800251765-5536939462-20251018-111252-04896.WAV",
+  "base_id": "0105-04965-25101800251765-5536939462-20251018-111252-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 y primer net? No lo pienses más y cálmate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Sí, bueno. Hola, ¿qué tal? Buenos días. Buenos días. Estamos marcando de Easy. El motivo de la llamada es... No, me llegó a mí la llamada y hablaba yo para decirles que ya no me estén marcando porque no queremos ahorita el servicio de Easy. Por favor, para que ya no me estén marcando. Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 17.4,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 y primer net?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 23.4,
+      "text": " No lo pienses más y cálmate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 32.25,
+      "text": " Por favor, hable o pulse 1 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.25,
+      "end": 36.75,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.75,
+      "end": 41.75,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.75,
+      "end": 44.25,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.25,
+      "end": 50.15,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.15,
+      "end": 52.15,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.15,
+      "end": 55.65,
+      "text": " Buenos días. Estamos marcando de Easy. El motivo de la llamada es...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 55.65,
+      "end": 65.51,
+      "text": " No, me llegó a mí la llamada y hablaba yo para decirles que ya no me estén marcando porque no queremos ahorita el servicio de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 65.51,
+      "end": 71.18,
+      "text": " Por favor, para que ya no me estén marcando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.18,
+      "end": 75.0,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.164,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

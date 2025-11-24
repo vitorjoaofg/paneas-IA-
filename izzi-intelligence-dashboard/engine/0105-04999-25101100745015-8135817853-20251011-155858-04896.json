@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101100745015-8135817853-20251011-155858-04896.WAV",
+  "file_name": "0105-04999-25101100745015-8135817853-20251011-155858-04896.WAV",
+  "base_id": "0105-04999-25101100745015-8135817853-20251011-155858-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Espera un momento, por favor. Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de Promociones de Easy. ¿Con quién te invito? Con Leila. Leila. Actualmente usted no cuenta con ningún servicio de Easy, ¿verdad? No, pero he recibido varias llamadas, pero soy menor de edad, entonces no puedo tener que hablar sin servicio. Sí, entiendo. Ok, ahorita les reporto. Una disculpa que tengan acciones de tarde. Gracias, igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 14.7,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 17.4,
+      "text": " por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.4,
+      "end": 23.4,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.4,
+      "end": 26.4,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.4,
+      "end": 127.59,
+      "text": " Buenas tardes. Le habla Alberto Ruiz, de parte del Departamento de Promociones de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 127.59,
+      "end": 129.39,
+      "text": " ¿Con quién te invito?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 129.39,
+      "end": 131.54,
+      "text": " Con Leila.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 131.54,
+      "end": 134.94,
+      "text": " Leila. Actualmente usted no cuenta con ningún servicio de Easy, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 134.94,
+      "end": 141.34,
+      "text": " No, pero he recibido varias llamadas, pero soy menor de edad,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 141.34,
+      "end": 146.43,
+      "text": " entonces no puedo tener que hablar sin servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 146.43,
+      "end": 150.73,
+      "text": " Sí, entiendo. Ok, ahorita les reporto. Una disculpa que tengan acciones de tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 150.73,
+      "end": 152.53,
+      "text": " Gracias, igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 158.112,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

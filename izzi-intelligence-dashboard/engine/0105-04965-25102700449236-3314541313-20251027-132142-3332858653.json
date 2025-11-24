@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700449236-3314541313-20251027-132142-3332858653.WAV",
+  "file_name": "0105-04965-25102700449236-3314541313-20251027-132142-3332858653.WAV",
+  "base_id": "0105-04965-25102700449236-3314541313-20251027-132142-3332858653",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento, por favor. Hola, ¿qué tal? ¿Buenas tardes? Buenas tardes. Tiene muchísimas gracias. Hola, ¿qué tal? Sí, muchísimas gracias, señor, por todo lo que me abresen. Se lo agradezco mucho, pero ahorita no necesito nada. Gracias. Oh, no, correcto, señorita, que tengo que irse a identitarme. Igual a usted. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 20.7,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.04,
+      "end": 34.04,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 34.04,
+      "end": 44.24,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 44.24,
+      "end": 45.74,
+      "text": " Buenas tardes. Tiene muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.74,
+      "end": 47.24,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.24,
+      "end": 53.24,
+      "text": " Sí, muchísimas gracias, señor, por todo lo que me abresen. Se lo agradezco mucho, pero ahorita no necesito nada. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.24,
+      "end": 56.24,
+      "text": " Oh, no, correcto, señorita, que tengo que irse a identitarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.24,
+      "end": 57.74,
+      "text": " Igual a usted. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.156,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

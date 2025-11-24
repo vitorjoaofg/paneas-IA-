@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300504258-5544389940-20251023-140253-5552460382.WAV",
+  "file_name": "0105-04965-25102300504258-5544389940-20251023-140253-5552460382.WAV",
+  "base_id": "0105-04965-25102300504258-5544389940-20251023-140253-5552460382",
+  "transcription": "Hola, te gustaría navegar en la protección de sus datos personales, por lo que si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de internet www.grucomexico.com No lo quieres más, y cállate ahí si te interesa. Un operator que está esperando. Por favor, hazlo. Si conoce el número de extensión, márquelo ahora, o espere unos instantes para ser transferido a la operadora. Espera un momento, por favor. Grucomexico. Hola, qué tal, buenas tardes, mi nombre es Karen Sánchez, mucho gusto. Hablo por parte de Pronunciencias Inclusivas de Easy. ¿Con quién tengo el gusto? ¿Con quién desea hablar, perdóname? Mire, la verdad, no estamos buscando alguien en el estudio, simplemente estamos marcando para ofrecer el servicio. ¿Ya le habían hablado sobre Easy? Sí, ya, siempre se nos marcaron hace rato. Te agradezco mucho, buen día. Ah, ok, ok. Una disculpa.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " Hola, te gustaría navegar en la protección de sus datos personales, por lo que si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de internet www.grucomexico.com",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 18.0,
+      "text": " No lo quieres más, y cállate ahí si te interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.0,
+      "end": 20.0,
+      "text": " Un operator que está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor, hazlo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 28.32,
+      "text": " Si conoce el número de extensión, márquelo ahora, o espere unos instantes para ser transferido a la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.32,
+      "end": 31.32,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.32,
+      "end": 37.98,
+      "text": " Grucomexico.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.98,
+      "end": 45.85,
+      "text": " Hola, qué tal, buenas tardes, mi nombre es Karen Sánchez, mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.85,
+      "end": 49.85,
+      "text": " Hablo por parte de Pronunciencias Inclusivas de Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.85,
+      "end": 53.1,
+      "text": " ¿Con quién desea hablar, perdóname?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.1,
+      "end": 60.1,
+      "text": " Mire, la verdad, no estamos buscando alguien en el estudio, simplemente estamos marcando para ofrecer el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.1,
+      "end": 62.52,
+      "text": " ¿Ya le habían hablado sobre Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 62.52,
+      "end": 67.7,
+      "text": " Sí, ya, siempre se nos marcaron hace rato. Te agradezco mucho, buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.7,
+      "end": 69.9,
+      "text": " Ah, ok, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.9,
+      "end": 70.9,
+      "text": " Una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 127.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

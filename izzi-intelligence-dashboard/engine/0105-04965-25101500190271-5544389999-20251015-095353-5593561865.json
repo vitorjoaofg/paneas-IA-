@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500190271-5544389999-20251015-095353-5593561865.WAV",
+  "file_name": "0105-04965-25101500190271-5544389999-20251015-095353-5593561865.WAV",
+  "base_id": "0105-04965-25101500190271-5544389999-20251015-095353-5593561865",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando, por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Sí, bueno. Hola, buenos días. Disculpe, recibí una llamada de parte de Easy. Quisiera saber cómo puedo hacer para ya no estarlo recibiendo. Bueno, en este caso puede hablar atención a clientes y comentar que ya no quiere recibir llamada. Y cuál es el número, disculpe? Es 800-125,000. Bueno, muchas gracias. Que tengas buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 27.33,
+      "text": " interesa? Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.33,
+      "end": 33.25,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.25,
+      "end": 39.45,
+      "text": " hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.45,
+      "end": 55.85,
+      "text": " Sí, bueno. Hola, buenos días. Disculpe, recibí una llamada de parte de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.85,
+      "end": 64.07,
+      "text": " Quisiera saber cómo puedo hacer para ya no estarlo recibiendo. Bueno, en este",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.07,
+      "end": 66.47,
+      "text": " caso puede hablar atención a clientes y comentar que ya no quiere",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.47,
+      "end": 77.39,
+      "text": " recibir llamada. Y cuál es el número, disculpe? Es 800-125,000. Bueno, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.39,
+      "end": 80.68,
+      "text": " Que tengas buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.96,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

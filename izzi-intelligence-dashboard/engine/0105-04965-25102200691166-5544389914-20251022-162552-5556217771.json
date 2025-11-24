@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200691166-5544389914-20251022-162552-5556217771.WAV",
+  "file_name": "0105-04965-25102200691166-5544389914-20251022-162552-5556217771.WAV",
+  "base_id": "0105-04965-25102200691166-5544389914-20251022-162552-5556217771",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigVenus, más SkyPoils, desde 350 pesos en primer net con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o cuéntenos. Si requieres ser atendido por un Ejecutivo y conoces el número de extensión, márquelo ahora. Espera un momento, por favor. El contrario, permanezca en la línea y uno de nosotros. Hola, buenas tardes. Para continuar con un asesor, marque 1. Para volver al menú anterior, marque 8. Para continuar con un asesor, marque 1. Para volver al menú anterior, marque 8.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigVenus,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.28,
+      "text": " más SkyPoils, desde 350 pesos en primer net con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 19.84,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o cuéntenos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.84,
+      "end": 25.82,
+      "text": " Si requieres ser atendido por un Ejecutivo y conoces el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.82,
+      "end": 27.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.82,
+      "end": 29.82,
+      "text": " El contrario, permanezca en la línea y uno de nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.06,
+      "end": 36.73,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.73,
+      "end": 42.73,
+      "text": " Para continuar con un asesor, marque 1. Para volver al menú anterior, marque 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.73,
+      "end": 59.1,
+      "text": " Para continuar con un asesor, marque 1. Para volver al menú anterior, marque 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 133.38,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

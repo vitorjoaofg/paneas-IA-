@@ -1,0 +1,348 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700270723-3314541305-20251027-110033-3316394522.WAV",
+  "file_name": "0105-04965-25102700270723-3314541305-20251027-110033-3316394522.WAV",
+  "base_id": "0105-04965-25102700270723-3314541305-20251027-110033-3316394522",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Sí, bueno? ¿Bueno? Buenos días, disculpe. Hablo por parte de la compañía de Easy. ¿En qué le puedo ayudar? Ah, oye, mira, quería saber si tienen cobertura para el área donde yo no le estoy. ¿Tendrá su código postal a la mano? Sí, 45650. Ok, permítame. ¿45650? Sí. ¿Se tendrá el nombre de su calle? Loma de Parma. ¿Loma de qué, perdón? Parma. ¿Parma? Sí. Loma de Parma. Ok, ya la encontré. ¿Calle Loma de Parma? ¿Tiene arriba Loma de Sicilia? Mire, no me la sé. Sí, no se preocupe, la voy a poner aquí a ver si me sale cobertura. Permítame. Loma de Parma. ¿Cuál es su domicilio, su casa, número de casa? 501. Ah, ok. Sí, como tal me parece que no tenemos cobertura en esa zona. Sí, ya veo yo esperándola ansiosamente. Sí, una disculpa. Gracias. Que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 23.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 29.66,
+      "text": " ¿Sí, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.66,
+      "end": 31.21,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.21,
+      "end": 33.4,
+      "text": " Buenos días, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.4,
+      "end": 37.62,
+      "text": " Hablo por parte de la compañía de Easy. ¿En qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.62,
+      "end": 44.62,
+      "text": " Ah, oye, mira, quería saber si tienen cobertura para el área donde yo no le estoy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.62,
+      "end": 46.62,
+      "text": " ¿Tendrá su código postal a la mano?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.62,
+      "end": 48.62,
+      "text": " Sí, 45650.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.62,
+      "end": 51.71,
+      "text": " Ok, permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.71,
+      "end": 53.71,
+      "text": " ¿45650?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.71,
+      "end": 54.87,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 54.87,
+      "end": 56.87,
+      "text": " ¿Se tendrá el nombre de su calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 56.87,
+      "end": 59.03,
+      "text": " Loma de Parma.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 59.03,
+      "end": 60.03,
+      "text": " ¿Loma de qué, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 60.03,
+      "end": 61.1,
+      "text": " Parma.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 61.1,
+      "end": 62.1,
+      "text": " ¿Parma?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 62.1,
+      "end": 63.7,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 63.7,
+      "end": 64.7,
+      "text": " Loma de Parma.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 64.7,
+      "end": 66.09,
+      "text": " Ok, ya la encontré.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 66.09,
+      "end": 68.09,
+      "text": " ¿Calle Loma de Parma?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 68.09,
+      "end": 71.09,
+      "text": " ¿Tiene arriba Loma de Sicilia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 71.09,
+      "end": 74.98,
+      "text": " Mire, no me la sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 74.98,
+      "end": 78.98,
+      "text": " Sí, no se preocupe, la voy a poner aquí a ver si me sale cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 78.98,
+      "end": 79.98,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 79.98,
+      "end": 85.53,
+      "text": " Loma de Parma.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 85.53,
+      "end": 88.53,
+      "text": " ¿Cuál es su domicilio, su casa, número de casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 88.53,
+      "end": 89.53,
+      "text": " 501.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 89.53,
+      "end": 93.86,
+      "text": " Ah, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 93.86,
+      "end": 97.86,
+      "text": " Sí, como tal me parece que no tenemos cobertura en esa zona.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 97.86,
+      "end": 100.95,
+      "text": " Sí, ya veo yo esperándola ansiosamente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 100.95,
+      "end": 103.02,
+      "text": " Sí, una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 103.02,
+      "end": 104.02,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 104.02,
+      "end": 106.02,
+      "text": " Que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.9,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

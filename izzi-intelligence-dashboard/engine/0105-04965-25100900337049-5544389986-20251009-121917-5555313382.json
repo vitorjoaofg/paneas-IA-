@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900337049-5544389986-20251009-121917-5555313382.WAV",
+  "file_name": "0105-04965-25100900337049-5544389986-20251009-121917-5555313382.WAV",
+  "base_id": "0105-04965-25100900337049-5544389986-20251009-121917-5555313382",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bienvenido a Telefonos de México. Estamos chequeando que todo el mundo esté trabajando correctamente. Bueno, bueno. Bueno, bueno, esto es el área de contrataciones de Easy. ¿Con quién tengo el gusto? Ah, aquí es Telefonos de México. Ok, este es el área de contrataciones. ¿Gustas contratar algún servicio o...? No, no, pues es que también aquí me marcaron. Por eso nosotros vamos a Telefonos de México. Bueno, buenito bienvenido.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.72,
+      "end": 9.04,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.04,
+      "end": 17.04,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.04,
+      "end": 26.76,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.76,
+      "end": 27.76,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.46,
+      "end": 38.46,
+      "text": " Bienvenido a Telefonos de México. Estamos chequeando que todo el mundo esté trabajando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.46,
+      "end": 44.22,
+      "text": " correctamente. Bueno, bueno. Bueno, bueno, esto es el área de contrataciones de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.22,
+      "end": 51.63,
+      "text": " ¿Con quién tengo el gusto? Ah, aquí es Telefonos de México. Ok, este es el área",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.63,
+      "end": 56.63,
+      "text": " de contrataciones. ¿Gustas contratar algún servicio o...? No, no, pues es que también",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.63,
+      "end": 62.63,
+      "text": " aquí me marcaron. Por eso nosotros vamos a Telefonos de México. Bueno, buenito",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.63,
+      "end": 63.63,
+      "text": " bienvenido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

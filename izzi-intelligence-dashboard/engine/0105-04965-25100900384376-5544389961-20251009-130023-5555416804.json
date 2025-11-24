@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900384376-5544389961-20251009-130023-5555416804.WAV",
+  "file_name": "0105-04965-25100900384376-5544389961-20251009-130023-5555416804.WAV",
+  "base_id": "0105-04965-25100900384376-5544389961-20251009-130023-5555416804",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Hola, ¿qué tal? Gracias por comunicarse a la de Contrataciones Easy, la tienda Alan Hucki. ¿Tengo el gusto? Isabel Martínez, señor. Mire, es que están enviando lo que es un discado, una grabación aquí a estos números telefónicos. Es una empresa, no se va a contratar porque, pues, obviamente aquí no se solicita. Entonces, quisiera ver la manera de que ya me bloqueen ese discado, esas grabaciones que me ponen. Claro, ahorita lo pongo como nota. ¿Le parece muy bien? Por favor. Claro, lo sí, la tienda Alan Hucki, tendrá la compañía Easy un todo día. Gracias. Pase, Isabel.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.24,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 25.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.56,
+      "end": 41.3,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse a la de Contrataciones Easy, la tienda Alan Hucki. ¿Tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.3,
+      "end": 50.3,
+      "text": " Isabel Martínez, señor. Mire, es que están enviando lo que es un discado, una grabación aquí a estos números telefónicos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.3,
+      "end": 55.3,
+      "text": " Es una empresa, no se va a contratar porque, pues, obviamente aquí no se solicita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.3,
+      "end": 63.3,
+      "text": " Entonces, quisiera ver la manera de que ya me bloqueen ese discado, esas grabaciones que me ponen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 63.3,
+      "end": 67.74,
+      "text": " Claro, ahorita lo pongo como nota. ¿Le parece muy bien? Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.74,
+      "end": 72.9,
+      "text": " Claro, lo sí, la tienda Alan Hucki, tendrá la compañía Easy un todo día. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.9,
+      "end": 73.9,
+      "text": " Pase, Isabel.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.096,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

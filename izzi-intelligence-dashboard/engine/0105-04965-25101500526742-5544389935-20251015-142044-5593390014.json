@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500526742-5544389935-20251015-142044-5593390014.WAV",
+  "file_name": "0105-04965-25101500526742-5544389935-20251015-142044-5593390014.WAV",
+  "base_id": "0105-04965-25101500526742-5544389935-20251015-142044-5593390014",
+  "transcription": "Si conoce el número de extensión, márquelo ahora. De lo contrario, marque 100 o espere en la línea para que la operadora pueda atender su llamada. Gracias por su atención. ¿Solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Le hablé a Iván Monfi, de parte de su servicio de Easy, para darle a conocer los beneficios de la telefonía móvil.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.0,
+      "text": " Si conoce el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.0,
+      "end": 9.0,
+      "text": " De lo contrario, marque 100 o espere en la línea para que la operadora pueda atender su llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.0,
+      "end": 11.0,
+      "text": " Gracias por su atención.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 11.0,
+      "end": 14.0,
+      "text": " ¿Solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.0,
+      "end": 26.88,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.88,
+      "end": 28.88,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.88,
+      "end": 33.88,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 33.88,
+      "end": 38.54,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.7,
+      "end": 44.7,
+      "text": " Hola, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.7,
+      "end": 47.7,
+      "text": " Le hablé a Iván Monfi, de parte de su servicio de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.7,
+      "end": 51.7,
+      "text": " para darle a conocer los beneficios de la telefonía móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

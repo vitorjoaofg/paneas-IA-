@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200480497-3314541362-20251022-133837-3337134134.WAV",
+  "file_name": "0105-04965-25102200480497-3314541362-20251022-133837-3337134134.WAV",
+  "base_id": "0105-04965-25102200480497-3314541362-20251022-133837-3337134134",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... ¿Cómo consiguió este número? Siento, no entendí tu respuesta. Te comunico con un asesor. ¿Qué cómo consiguió este número? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, muy buen día. Mi nombre es Grisialove, de parte de Easy, del área de contrataciones. ¿Le interesa alguno de nuestros servicios? ¿Con quién tengo el gusto? Hola. Hola, buen día. Hola. Por efectos de calidad, tenemos que colgar esta llamada. ¡Hasta luego! ¡Fuera!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 22.56,
+      "text": " te está esperando. Por favor, hable o pulse 1 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.56,
+      "end": 27.26,
+      "text": " ¿Cómo consiguió este número?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.58,
+      "end": 30.3,
+      "text": " Siento, no entendí tu respuesta. Te comunico con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.3,
+      "end": 32.06,
+      "text": " ¿Qué cómo consiguió este número?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.06,
+      "end": 38.46,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.46,
+      "end": 39.46,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.46,
+      "end": 50.56,
+      "text": " Hola, muy buen día. Mi nombre es Grisialove, de parte de Easy, del área de contrataciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.56,
+      "end": 59.63,
+      "text": " ¿Le interesa alguno de nuestros servicios? ¿Con quién tengo el gusto? Hola. Hola,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 59.63,
+      "end": 65.86,
+      "text": " buen día. Hola. Por efectos de calidad, tenemos que colgar esta llamada. ¡Hasta luego!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 65.86,
+      "end": 66.4,
+      "text": " ¡Fuera!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.02,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

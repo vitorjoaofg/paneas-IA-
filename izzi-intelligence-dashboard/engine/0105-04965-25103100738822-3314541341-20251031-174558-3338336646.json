@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100738822-3314541341-20251031-174558-3338336646.WAV",
+  "file_name": "0105-04965-25103100738822-3314541341-20251031-174558-3338336646.WAV",
+  "base_id": "0105-04965-25103100738822-3314541341-20251031-174558-3338336646",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor. Bueno, buenas tardes. Hola, buenas tardes. Hola, mi nombre es Guadalupe Juárez. Estoy hablando por parte de la compañía Easy. ¿Has escuchado la grabación anterior? No, no la escuché. ¿Les estamos ofreciendo lo que es el servicio de telefonía e Internet y televisión aquí con nosotros? ¿Le gustaría saber los precios?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.96,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.96,
+      "end": 23.76,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.76,
+      "end": 25.76,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.62,
+      "end": 36.26,
+      "text": " Bueno, buenas tardes. Hola, buenas tardes. Hola, mi nombre es Guadalupe Juárez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.26,
+      "end": 40.74,
+      "text": " Estoy hablando por parte de la compañía Easy. ¿Has escuchado la grabación anterior?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.74,
+      "end": 47.26,
+      "text": " No, no la escuché. ¿Les estamos ofreciendo lo que es el servicio de telefonía e Internet",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.26,
+      "end": 52.14,
+      "text": " y televisión aquí con nosotros? ¿Le gustaría saber los precios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 53.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

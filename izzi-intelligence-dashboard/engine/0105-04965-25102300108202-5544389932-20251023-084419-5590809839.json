@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300108202-5544389932-20251023-084419-5590809839.WAV",
+  "file_name": "0105-04965-25102300108202-5544389932-20251023-084419-5590809839.WAV",
+  "base_id": "0105-04965-25102300108202-5544389932-20251023-084419-5590809839",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Buenos días? Sí, buenos días. ¿En qué la puedo apoyar? Disculpe, me acaban de marcar para lo de Internet. ¿Y qué le pareció la propuesta? Es que necesito darme de baja en el otro que tenía. ¿Cuándo se estaría dando de baja? Sería este fin de semana que termine de pagar para darme de baja. Claro, sin problema. Entonces, el fin de semana nos comunicamos. Ok, lo agradezco entonces. Thanks Andrea. Sí, gracias igualmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 25.2,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.4,
+      "end": 37.0,
+      "text": " un momento, por favor. ¿Buenos días? Sí, buenos días. ¿En qué la puedo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.0,
+      "end": 46.37,
+      "text": " apoyar? Disculpe, me acaban de marcar para lo de Internet. ¿Y qué le pareció la propuesta?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.37,
+      "end": 53.32,
+      "text": " Es que necesito darme de baja en el otro que tenía. ¿Cuándo se estaría dando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.32,
+      "end": 62.02,
+      "text": " de baja? Sería este fin de semana que termine de pagar para darme de baja.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.42,
+      "end": 68.6,
+      "text": " Claro, sin problema. Entonces, el fin de semana nos comunicamos. Ok, lo agradezco",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.6,
+      "end": 73.89,
+      "text": " entonces. Thanks Andrea. Sí, gracias igualmente. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

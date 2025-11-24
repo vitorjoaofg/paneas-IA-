@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700391544-5544389976-20251017-123828-5588171505.WAV",
+  "file_name": "0105-04965-25101700391544-5544389976-20251017-123828-5588171505.WAV",
+  "base_id": "0105-04965-25101700391544-5544389976-20251017-123828-5588171505",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, espera un momento por favor. Gracias por llamar al Centro de Contrataciones Isis y la Tienda Montserrat. ¿Cómo le ayudó? Por favor, ¿pueden dejar de estar marcando? Marcan desde las 7 y media de la mañana, todos los días, cinco veces. Si me interesara su servicio, ya la hubiera buscado yo. Sí, claro que sí, señora, una disculpa. Muchas buenas tardes, hasta luego. Una puta madre.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.43,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.43,
+      "end": 32.91,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.91,
+      "end": 39.83,
+      "text": " asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.83,
+      "end": 47.84,
+      "text": " por favor. Gracias por llamar al Centro de Contrataciones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.84,
+      "end": 51.36,
+      "text": " Isis y la Tienda Montserrat. ¿Cómo le ayudó? Por favor, ¿pueden dejar de estar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.36,
+      "end": 55.16,
+      "text": " marcando? Marcan desde las 7 y media de la mañana, todos los días, cinco veces.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.16,
+      "end": 58.52,
+      "text": " Si me interesara su servicio, ya la hubiera buscado yo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.56,
+      "end": 62.2,
+      "text": " Sí, claro que sí, señora, una disculpa. Muchas buenas tardes, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.2,
+      "end": 63.2,
+      "text": " Una puta madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.296,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

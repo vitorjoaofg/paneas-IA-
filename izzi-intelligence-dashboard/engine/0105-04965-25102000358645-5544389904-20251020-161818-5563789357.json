@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000358645-5544389904-20251020-161818-5563789357.WAV",
+  "file_name": "0105-04965-25102000358645-5544389904-20251020-161818-5563789357.WAV",
+  "base_id": "0105-04965-25102000358645-5544389904-20251020-161818-5563789357",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skyport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablo su compañía Easy. ¿Qué puedo ayudarle? Perdón, ¿de dónde me dice que me habla? Easy. No, yo espero la llamada del asesor Alfredo Reyes. Oh, no, no, no. Ah, estamos equivocados, ¿verdad? Sí, sí, sí. Sí, disculpe. Bueno, es que ustedes me hablaron. Yo también espero una llamada de él, por eso dice que será él. No, no. Sí, disculpe. No, no se preocupe, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 21.48,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.48,
+      "end": 23.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.48,
+      "end": 32.76,
+      "text": " Hola, ¿qué tal? Muy buenas tardes. Le hablo su compañía Easy. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.76,
+      "end": 35.76,
+      "text": " Perdón, ¿de dónde me dice que me habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.76,
+      "end": 36.76,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.76,
+      "end": 41.76,
+      "text": " No, yo espero la llamada del asesor Alfredo Reyes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.76,
+      "end": 44.43,
+      "text": " Oh, no, no, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.43,
+      "end": 46.43,
+      "text": " Ah, estamos equivocados, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.43,
+      "end": 47.43,
+      "text": " Sí, sí, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.43,
+      "end": 49.43,
+      "text": " Sí, disculpe. Bueno, es que ustedes me hablaron.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.43,
+      "end": 52.43,
+      "text": " Yo también espero una llamada de él, por eso dice que será él.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.43,
+      "end": 53.43,
+      "text": " No, no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 53.43,
+      "end": 54.43,
+      "text": " Sí, disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 54.43,
+      "end": 56.43,
+      "text": " No, no se preocupe, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

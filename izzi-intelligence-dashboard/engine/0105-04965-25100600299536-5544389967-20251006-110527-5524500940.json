@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100600299536-5544389967-20251006-110527-5524500940.WAV",
+  "file_name": "0105-04965-25100600299536-5544389967-20251006-110527-5524500940.WAV",
+  "base_id": "0105-04965-25100600299536-5544389967-20251006-110527-5524500940",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bienvenida al área de contrataciones Easy ¿Con quién tengo el gusto? Hola, buenos días. Soy Adriana. Hola Adriana, mucho gusto. Mi nombre es Daniel. ¿Qué te puedo ayudar? Gracias. Yo soy cliente Easy. ¿Y qué crees que he estado marcando a Easy? Porque mi servicio de internet me está fallando mucho. Entonces ahorita ya aproveché la oportunidad. Bueno, bueno, bueno, bueno. Bueno, bueno, bueno. Bueno, bueno, bueno. Ah, sí, sí, sí, se cortó. Me dijiste que, bueno, mi servicio de internet ahí se cortó. Ah, es que tengo, o sea, mi servicio de internet Easy. ¿Y qué crees que me está fallando mucho? Tanto la línea como el servicio de internet, la verdad sí es muy deficiente. Y ahorita pues ya aproveché la oportunidad para pues saber si me podrías ayudar. ¿Qué es lo que podría ser? Menos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 39.8,
+      "text": " para no. Espera un momento por favor. Bienvenida al área de contrataciones Easy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.8,
+      "end": 47.26,
+      "text": " ¿Con quién tengo el gusto? Hola, buenos días. Soy Adriana. Hola Adriana, mucho gusto. Mi",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.26,
+      "end": 57.5,
+      "text": " nombre es Daniel. ¿Qué te puedo ayudar? Gracias. Yo soy cliente Easy. ¿Y qué crees que he estado marcando a Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.5,
+      "end": 65.5,
+      "text": " Porque mi servicio de internet me está fallando mucho. Entonces ahorita ya aproveché la oportunidad.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.5,
+      "end": 79.18,
+      "text": " Bueno, bueno, bueno, bueno. Bueno, bueno, bueno. Bueno, bueno, bueno. Ah, sí, sí, sí, se cortó. Me dijiste que, bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 79.18,
+      "end": 86.42,
+      "text": " mi servicio de internet ahí se cortó. Ah, es que tengo, o sea, mi servicio de internet Easy. ¿Y qué crees que me está fallando mucho?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 86.42,
+      "end": 93.94,
+      "text": " Tanto la línea como el servicio de internet, la verdad sí es muy deficiente. Y ahorita pues ya",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 93.94,
+      "end": 102.34,
+      "text": " aproveché la oportunidad para pues saber si me podrías ayudar. ¿Qué es lo que podría ser?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 102.74,
+      "end": 112.26,
+      "text": " Menos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 119.124,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

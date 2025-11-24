@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000189655-5540409215-20251030-095603-5587185927.WAV",
+  "file_name": "0105-04965-25103000189655-5540409215-20251030-095603-5587185927.WAV",
+  "base_id": "0105-04965-25103000189655-5540409215-20251030-095603-5587185927",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Espera un momento, por favor. ¿Qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¿Con quién tengo el gusto? Mire, joven Leonardo García, le voy a pedir que ponga un reporte en su sistema. Le voy a pedir que me dejen de llamar. Es agobiante y es acosante su situación de ustedes. Por favor, ponga su reporte.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.7,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.82,
+      "end": 35.56,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.56,
+      "end": 47.96,
+      "text": " Espera un momento, por favor. ¿Qué tal? Este es el área de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.96,
+      "end": 52.32,
+      "text": " Le atiende Leonardo García. ¿Con quién tengo el gusto? Mire, joven Leonardo García, le",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.32,
+      "end": 57.56,
+      "text": " voy a pedir que ponga un reporte en su sistema. Le voy a pedir que me dejen de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.56,
+      "end": 65.1,
+      "text": " llamar. Es agobiante y es acosante su situación de ustedes. Por favor, ponga",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.1,
+      "end": 67.26,
+      "text": " su reporte.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.32,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200405509-5544389993-20251022-123858-5576505126.WAV",
+  "file_name": "0105-04965-25102200405509-5544389993-20251022-123858-5576505126.WAV",
+  "base_id": "0105-04965-25102200405509-5544389993-20251022-123858-5576505126",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Bueno? Sí, diga. Hola, ¿qué tal? Buenas tardes. Mi nombre es Karen Sánchez. Mucho gusto. Hablo por parte de promociones exclusivas de Easy. El motivo de mi llamada, señorita, es porque le estamos ofreciendo el servicio. ¿Ya han hablado de las promociones de Easy? No. Ah, OK. Pues mira, nosotros tenemos promociones en este mes. Tenemos el internet que es por 389 pesos, 349 de los primeros tres meses. No sé si, ¿con quién tengo el gusto? Con la señorita Ana María González. ¿Qué tal, señorita Ana María González? Pues mucho gusto. Como le comentaba, el motivo de mi llamada es porque estamos ofreciendo el servicio. El internet lo tenemos con llamadas ilimitadas, 100 canales, por 539 pesos. Pero le vamos a ofrecer lo que son 80 megas y le haremos un descuento para que le queden 499 en los primeros seis meses. Si usted domicilia su tarjeta, le descuentan 50 pesos a partir de la segunda mensualidad. Tenemos extensión de televisión hasta tres. Mire, yo no soy la titular, es mi hijo. Necesito comentarle a él porque él tiene, o sea, él lo tiene contratado con televisión, internet y ¿qué más? Telefonía, creo. Entonces, no sé decirle, porque me parece que él quería cancelar la televisión porque casi no la mira. ¿Con qué están activos, con ICI? Sí, ICI. ¿Su hijo es Saúl Daniel Chávez González? OK, mire, nosotros como tal solamente vendemos el servicio. Nosotros no lo modificamos. Ya para hacer alguna modificación de que quieran algún complemento más o algo, tendría que ser directamente al número 800-120-5000, opción 2. Tiene que marcar el titular y tiene que tener a la mano su número de cuenta. Ah, OK. Pero tiene que ser el titular, señorita, porque si no, no se puede hacer el cambio. Inclusive, para hacer la contratación, igual tiene que ser el titular. Ah, OK, yo le digo, señorita. ¿Y ustedes no les interesa entonces el servicio? Pues yo no puedo decidir por él. Ah, no, pero pues para usted, para su domicilio. No, la verdad, no. Pues yo casi ni estoy. Ah, OK, entiendo. ¿Y la porción y el día de descanse? No, tiene, o sea que el otro hijo que vive conmigo es el que paga eso, pero por eso le digo que no sé decirle de el otro. Pero no puedo tomar decisiones. Entiendo. Bueno, OK, pues de mi parte sería todo, señorita, que tenga una excelentería. Igualmente, señorita. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 23.21,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.21,
+      "end": 25.77,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.77,
+      "end": 27.89,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.89,
+      "end": 35.82,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.82,
+      "end": 45.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.48,
+      "end": 46.94,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.94,
+      "end": 48.37,
+      "text": " Sí, diga.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.37,
+      "end": 48.97,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 48.97,
+      "end": 49.65,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.65,
+      "end": 50.77,
+      "text": " Mi nombre es Karen Sánchez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 50.77,
+      "end": 51.69,
+      "text": " Mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 51.69,
+      "end": 55.21,
+      "text": " Hablo por parte de promociones exclusivas de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 55.21,
+      "end": 58.97,
+      "text": " El motivo de mi llamada, señorita, es porque le estamos ofreciendo el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 58.97,
+      "end": 61.61,
+      "text": " ¿Ya han hablado de las promociones de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 61.61,
+      "end": 63.15,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 63.15,
+      "end": 63.67,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 63.67,
+      "end": 66.83,
+      "text": " Pues mira, nosotros tenemos promociones en este mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 66.83,
+      "end": 74.18,
+      "text": " Tenemos el internet que es por 389 pesos, 349 de los primeros tres meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 74.18,
+      "end": 76.74,
+      "text": " No sé si, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 76.74,
+      "end": 79.34,
+      "text": " Con la señorita Ana María González.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 79.34,
+      "end": 80.9,
+      "text": " ¿Qué tal, señorita Ana María González?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 80.9,
+      "end": 81.94,
+      "text": " Pues mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 81.94,
+      "end": 84.98,
+      "text": " Como le comentaba, el motivo de mi llamada es porque estamos ofreciendo el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 84.98,
+      "end": 86.66,
+      "text": " servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 86.66,
+      "end": 92.02,
+      "text": " El internet lo tenemos con llamadas ilimitadas, 100 canales, por 539 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 92.02,
+      "end": 95.82,
+      "text": " Pero le vamos a ofrecer lo que son 80 megas y le haremos un descuento para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 95.86,
+      "end": 99.66,
+      "text": " que le queden 499 en los primeros seis meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 99.66,
+      "end": 104.58,
+      "text": " Si usted domicilia su tarjeta, le descuentan 50 pesos a partir de la segunda",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 104.58,
+      "end": 106.02,
+      "text": " mensualidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 106.02,
+      "end": 111.82,
+      "text": " Tenemos extensión de televisión hasta tres.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 111.82,
+      "end": 115.46,
+      "text": " Mire, yo no soy la titular, es mi hijo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 115.46,
+      "end": 119.54,
+      "text": " Necesito comentarle a él porque él tiene, o sea,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 119.54,
+      "end": 124.38,
+      "text": " él lo tiene contratado con televisión, internet y ¿qué más?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 124.38,
+      "end": 126.78,
+      "text": " Telefonía, creo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 127.26,
+      "end": 132.86,
+      "text": " Entonces, no sé decirle, porque me parece que él quería cancelar la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 132.86,
+      "end": 135.99,
+      "text": " televisión porque casi no la mira.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 135.99,
+      "end": 140.65,
+      "text": " ¿Con qué están activos, con ICI?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 140.65,
+      "end": 141.69,
+      "text": " Sí, ICI.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 141.69,
+      "end": 146.18,
+      "text": " ¿Su hijo es Saúl Daniel Chávez González?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 146.18,
+      "end": 151.06,
+      "text": " OK, mire, nosotros como tal solamente vendemos el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 151.06,
+      "end": 153.06,
+      "text": " Nosotros no lo modificamos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 153.06,
+      "end": 156.94,
+      "text": " Ya para hacer alguna modificación de que quieran algún complemento más o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 157.14,
+      "end": 163.02,
+      "text": " algo, tendría que ser directamente al número 800-120-5000, opción 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 163.02,
+      "end": 166.46,
+      "text": " Tiene que marcar el titular y tiene que tener a la mano su número de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 166.46,
+      "end": 167.46,
+      "text": " cuenta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 167.46,
+      "end": 169.18,
+      "text": " Ah, OK.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 169.18,
+      "end": 172.22,
+      "text": " Pero tiene que ser el titular, señorita, porque si no,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 172.22,
+      "end": 174.26,
+      "text": " no se puede hacer el cambio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 174.26,
+      "end": 176.38,
+      "text": " Inclusive, para hacer la contratación,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 176.38,
+      "end": 178.82,
+      "text": " igual tiene que ser el titular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 178.82,
+      "end": 182.78,
+      "text": " Ah, OK, yo le digo, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 182.78,
+      "end": 185.94,
+      "text": " ¿Y ustedes no les interesa entonces el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 185.98,
+      "end": 188.86,
+      "text": " Pues yo no puedo decidir por él.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 188.86,
+      "end": 191.82,
+      "text": " Ah, no, pero pues para usted, para su domicilio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 191.82,
+      "end": 193.46,
+      "text": " No, la verdad, no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 193.46,
+      "end": 195.99,
+      "text": " Pues yo casi ni estoy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 195.99,
+      "end": 197.19,
+      "text": " Ah, OK, entiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 197.19,
+      "end": 200.44,
+      "text": " ¿Y la porción y el día de descanse?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 200.44,
+      "end": 204.4,
+      "text": " No, tiene, o sea que el otro hijo que vive conmigo es el que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 204.4,
+      "end": 209.47,
+      "text": " paga eso, pero por eso le digo que no sé decirle de el otro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 209.47,
+      "end": 212.11,
+      "text": " Pero no puedo tomar decisiones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 212.11,
+      "end": 212.79,
+      "text": " Entiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 212.79,
+      "end": 219.1,
+      "text": " Bueno, OK, pues de mi parte sería todo, señorita,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 219.14,
+      "end": 220.94,
+      "text": " que tenga una excelentería.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 220.94,
+      "end": 221.78,
+      "text": " Igualmente, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 70,
+      "start": 221.78,
+      "end": 223.34,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 228.528,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

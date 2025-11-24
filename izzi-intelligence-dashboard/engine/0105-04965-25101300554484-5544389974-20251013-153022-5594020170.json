@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300554484-5544389974-20251013-153022-5594020170.WAV",
+  "file_name": "0105-04965-25101300554484-5544389974-20251013-153022-5594020170.WAV",
+  "base_id": "0105-04965-25101300554484-5544389974-20251013-153022-5594020170",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. No para. Sí, buenas tardes. Buenas tardes, joven. Hablar con talamantes de la compañía de Easy, ¿con qué tengo el gusto? Ah, mira, se me preocupa que me acaban de hacer una llamadita para ver, para preguntar informes. Sí, sí. Para cambiarme. Ah, ok. Sí, lo escucho. Mira, antes, antes, antes. Si uno dice que 350 con 100 megas y 200 canales el primer mes. Bueno, yo aquí tengo, este, es uno de 60 megas, son llamadas ilimitadas, es el que tengo de paquetes de 349 pesos, pero solamente es puro internet. ¿Cómo, cómo? Tengo puro internet. Ah, sí, señor. Ah, ok. Muy amable. Gracias. Que tenga buen día. Vale.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.26,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.26,
+      "end": 18.66,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.66,
+      "end": 28.46,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.46,
+      "end": 47.72,
+      "text": " por favor. No para. Sí, buenas tardes. Buenas tardes, joven. Hablar con talamantes de la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.72,
+      "end": 51.12,
+      "text": " compañía de Easy, ¿con qué tengo el gusto? Ah, mira, se me preocupa que me acaban de hacer",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.12,
+      "end": 59.7,
+      "text": " una llamadita para ver, para preguntar informes. Sí, sí. Para cambiarme. Ah, ok. Sí, lo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 59.7,
+      "end": 65.98,
+      "text": " escucho. Mira, antes, antes, antes. Si uno dice que 350 con 100 megas y 200 canales",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.98,
+      "end": 76.85,
+      "text": " el primer mes. Bueno, yo aquí tengo, este, es uno de 60 megas, son llamadas ilimitadas,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 76.85,
+      "end": 82.13,
+      "text": " es el que tengo de paquetes de 349 pesos, pero solamente es puro internet. ¿Cómo, cómo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 82.13,
+      "end": 90.41,
+      "text": " Tengo puro internet. Ah, sí, señor. Ah, ok. Muy amable. Gracias. Que tenga buen día. Vale.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.7,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

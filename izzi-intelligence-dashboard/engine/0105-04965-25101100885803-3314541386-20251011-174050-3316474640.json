@@ -1,0 +1,33 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100885803-3314541386-20251011-174050-3316474640.WAV",
+  "file_name": "0105-04965-25101100885803-3314541386-20251011-174050-3316474640.WAV",
+  "base_id": "0105-04965-25101100885803-3314541386-20251011-174050-3316474640",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.78,
+      "end": 8.78,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.78,
+      "end": 30.62,
+      "text": " más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.02,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500420317-5544389910-20251015-125231-5594496180.WAV",
+  "file_name": "0105-04965-25101500420317-5544389910-20251015-125231-5594496180.WAV",
+  "base_id": "0105-04965-25101500420317-5544389910-20251015-125231-5594496180",
+  "transcription": "bueno hola te gustaría navegar en internet con 100 megas de velocidad tener el mejor entretenimiento con 200 canales bix premium y eventos deportivos exclusivos por solo 350 pesos el primer mes no lo pienses más y cámbiate a easy te interesa un asesor te está esperando por favor hable o pulse uno para sí o dos para no siento no entendí tu respuesta te comunico con un asesor presiona uno para hablar con un asesor o 2 para terminar la llamada espera un momento por favor hola buenas tardes una cosa mire cuando yo quiera cambiar de compañía yo lo decido sí no me estén molestando porque me molestan a las 8 de la mañana cuando yo estoy acostada y cuido dos personas discapacitadas y el teléfono suene y suene y suene y suene por favor cuando yo quiera cambiar de compañía yo lo hago sí ok señorita aquí le voy a poner cliente molesto para que no le vuelvan a marcar ok",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.91,
+      "end": 7.86,
+      "text": " bueno hola te gustaría navegar en internet con 100 megas de velocidad tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.86,
+      "end": 15.06,
+      "text": " entretenimiento con 200 canales bix premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.06,
+      "end": 22.7,
+      "text": " el primer mes no lo pienses más y cámbiate a easy te interesa un asesor te está esperando por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.7,
+      "end": 32.04,
+      "text": " favor hable o pulse uno para sí o dos para no siento no entendí tu respuesta te comunico",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.04,
+      "end": 39.04,
+      "text": " con un asesor presiona uno para hablar con un asesor o 2 para terminar la llamada espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.04,
+      "end": 187.71,
+      "text": " momento por favor hola buenas tardes una cosa mire cuando yo quiera cambiar de compañía yo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 187.71,
+      "end": 193.67,
+      "text": " lo decido sí no me estén molestando porque me molestan a las 8 de la mañana cuando yo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 193.67,
+      "end": 200.57,
+      "text": " estoy acostada y cuido dos personas discapacitadas y el teléfono suene y suene y suene y suene",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 200.57,
+      "end": 207.45,
+      "text": " por favor cuando yo quiera cambiar de compañía yo lo hago sí ok señorita aquí le voy a poner",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 207.45,
+      "end": 209.57,
+      "text": " cliente molesto para que no le vuelvan a marcar ok",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 209.808,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

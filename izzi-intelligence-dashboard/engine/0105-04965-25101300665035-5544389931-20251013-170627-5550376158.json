@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300665035-5544389931-20251013-170627-5550376158.WAV",
+  "file_name": "0105-04965-25101300665035-5544389931-20251013-170627-5550376158.WAV",
+  "base_id": "0105-04965-25101300665035-5544389931-20251013-170627-5550376158",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Bienvenida a la de contrataciones Easy. ¿Con quién tengo el gusto? Estoy esperando un paquete que van a traer. ¿Son ellos? ¿Es otro? Estoy esperando un paquete de Easy. ¿Son ustedes o es diferente? ¿Qué paquete está esperando o qué beneficio le dieron? No sé, pero se dijeron que va a llegar un paquete. ¿De qué? ¿O tal vez si va a ir en técnico o paquete de alguna instalación o de algún chip? De un chip también. ¿De un chip? Ok, dame un segundo. ¿Te deje checo?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 20.7,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.32,
+      "end": 36.31,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 36.31,
+      "end": 38.81,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.81,
+      "end": 47.86,
+      "text": " Bienvenida a la de contrataciones Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.86,
+      "end": 60.78,
+      "text": " Estoy esperando un paquete que van a traer. ¿Son ellos? ¿Es otro? Estoy esperando un paquete de Easy. ¿Son ustedes o es diferente?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 60.98,
+      "end": 68.32,
+      "text": " ¿Qué paquete está esperando o qué beneficio le dieron?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 68.32,
+      "end": 72.53,
+      "text": " No sé, pero se dijeron que va a llegar un paquete.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 72.53,
+      "end": 80.53,
+      "text": " ¿De qué? ¿O tal vez si va a ir en técnico o paquete de alguna instalación o de algún chip?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 80.53,
+      "end": 82.53,
+      "text": " De un chip también.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 82.53,
+      "end": 88.93,
+      "text": " ¿De un chip? Ok, dame un segundo. ¿Te deje checo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.772,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

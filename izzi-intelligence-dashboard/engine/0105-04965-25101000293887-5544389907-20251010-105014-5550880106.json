@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000293887-5544389907-20251010-105014-5550880106.WAV",
+  "file_name": "0105-04965-25101000293887-5544389907-20251010-105014-5550880106.WAV",
+  "base_id": "0105-04965-25101000293887-5544389907-20251010-105014-5550880106",
+  "transcription": "¿Me escucho? Espera un momento, por favor. Hola, buen día. Se le habla Ivonne Monfield de parte de su servicio de Easy, para darle a conocer algunos beneficios con la compañía. Buen día. Buen día. Nada más que ahorita estoy muy ocupado, señorita. Ah, ok. Yo me puedo comunicar cuándo le gustaría que le marquemos, para darle a conocer estos beneficios. ¿Más tarde, en una hora o a qué hora? Mañana, sábado, le regalo la llamada a esta hora. ¿Está bien? Está bien. ¿Con quién tengo el gusto? Carlos. Ok. Yo me comunico mañana. Que tenga un buen día. Igualmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.34,
+      "end": 1.34,
+      "text": " ¿Me escucho?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 33.7,
+      "end": 40.03,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 40.03,
+      "end": 50.18,
+      "text": " Hola, buen día. Se le habla Ivonne Monfield de parte de su servicio de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 50.18,
+      "end": 54.18,
+      "text": " para darle a conocer algunos beneficios con la compañía. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 54.18,
+      "end": 58.41,
+      "text": " Buen día. Nada más que ahorita estoy muy ocupado, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 58.41,
+      "end": 63.44,
+      "text": " Ah, ok. Yo me puedo comunicar cuándo le gustaría que le marquemos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 63.44,
+      "end": 69.57,
+      "text": " para darle a conocer estos beneficios. ¿Más tarde, en una hora o a qué hora?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 70.57,
+      "end": 74.57,
+      "text": " Mañana, sábado, le regalo la llamada a esta hora. ¿Está bien?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 74.57,
+      "end": 75.57,
+      "text": " Está bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 75.57,
+      "end": 77.57,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.57,
+      "end": 78.57,
+      "text": " Carlos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 78.57,
+      "end": 82.66,
+      "text": " Ok. Yo me comunico mañana. Que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 82.66,
+      "end": 83.66,
+      "text": " Igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 83.66,
+      "end": 84.66,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.012,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

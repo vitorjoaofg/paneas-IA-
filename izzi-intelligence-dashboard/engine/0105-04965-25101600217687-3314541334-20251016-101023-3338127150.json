@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600217687-3314541334-20251016-101023-3338127150.WAV",
+  "file_name": "0105-04965-25101600217687-3314541334-20251016-101023-3338127150.WAV",
+  "base_id": "0105-04965-25101600217687-3314541334-20251016-101023-3338127150",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos... Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola, ¿qué tal? Mucho gusto, Abraham Garcia, por parte de la compañía de Easy, contrataciones. Dígame, ¿en qué le puedo ayudar? Hola, hola, ¿eh? Hola, hola, ¿eh? Probando, probando. Uno, dos, tres, probando, probando. ¿Me escucha, eh? Disculpe si me está hablando. ¿Ahí me escucha bien? Hola, hola, ¿eh? Señorita, ¿ahí me escucha bien? Hola, hola, hola, ¿eh? Muy bien, por cuestiones de calidad hemos obligado a terminar la llamada. Buenito día. Muy bien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 26.87,
+      "end": 28.87,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.87,
+      "end": 43.82,
+      "text": " Hola, ¿qué tal? Buenos días. Hola, hola, ¿qué tal? Mucho gusto, Abraham Garcia, por parte de la compañía de Easy, contrataciones. Dígame, ¿en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 43.82,
+      "end": 55.52,
+      "text": " Hola, hola, ¿eh? Hola, hola, ¿eh? Probando, probando. Uno, dos, tres, probando, probando. ¿Me escucha, eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 55.52,
+      "end": 59.52,
+      "text": " Disculpe si me está hablando. ¿Ahí me escucha bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 65.02,
+      "end": 66.02,
+      "text": " Hola, hola, ¿eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 68.02,
+      "end": 76.65,
+      "text": " Señorita, ¿ahí me escucha bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 76.65,
+      "end": 84.7,
+      "text": " Hola, hola, hola, ¿eh? Muy bien, por cuestiones de calidad hemos obligado a terminar la llamada. Buenito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 84.7,
+      "end": 112.29,
+      "text": " Muy bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 150.012,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

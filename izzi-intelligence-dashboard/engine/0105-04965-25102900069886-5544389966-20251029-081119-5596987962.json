@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900069886-5544389966-20251029-081119-5596987962.WAV",
+  "file_name": "0105-04965-25102900069886-5544389966-20251029-081119-5596987962.WAV",
+  "base_id": "0105-04965-25102900069886-5544389966-20251029-081119-5596987962",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible, ¿te interesa? Un asesor te está esperando, por favor. Creo que uno del Electro, no sé, que si quería Internet o no sé, o algo así. Espera un momento, por favor. Gracias. ¿Y si le tenéis el bioRomero, con quién tengo el uso?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 14.36,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible, ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.36,
+      "end": 17.24,
+      "text": " Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.24,
+      "end": 26.9,
+      "text": " Creo que uno del Electro, no sé, que si quería Internet o no sé, o algo así.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.9,
+      "end": 29.22,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.22,
+      "end": 38.76,
+      "text": " Gracias. ¿Y si le tenéis el bioRomero, con quién tengo el uso?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.192,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

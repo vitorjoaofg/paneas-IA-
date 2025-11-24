@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800485215-3314541387-20251008-131516-4771314931.WAV",
+  "file_name": "0105-04999-25100800485215-3314541387-20251008-131516-4771314931.WAV",
+  "base_id": "0105-04999-25100800485215-3314541387-20251008-131516-4771314931",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Muy buenos días. Bueno, ya tarde. ¿Nos atiende Claudia de EasyMove? ¿Alguna línea que les haya interesado? No, señorita, buenas tardes. Ninguna. Nada más quiero que deciden molestarme porque me han estado molestando hasta tres veces al día y en realidad a mí no me interesa el servicio. Yo sí la he llamado para que deciden molestarme. ¿Cómo le puedo hacer? No se preocupe, en un momento la transfiero. Gracias. Buen",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 25.12,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.12,
+      "end": 36.36,
+      "text": " por favor. Muy buenos días. Bueno, ya tarde. ¿Nos atiende Claudia de EasyMove? ¿Alguna",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.36,
+      "end": 41.87,
+      "text": " línea que les haya interesado? No, señorita, buenas tardes. Ninguna. Nada más quiero",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.87,
+      "end": 46.15,
+      "text": " que deciden molestarme porque me han estado molestando hasta tres veces al día y en",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.15,
+      "end": 50.51,
+      "text": " realidad a mí no me interesa el servicio. Yo sí la he llamado para que deciden molestarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.51,
+      "end": 57.15,
+      "text": " ¿Cómo le puedo hacer? No se preocupe, en un momento la transfiero. Gracias. Buen",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.964,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

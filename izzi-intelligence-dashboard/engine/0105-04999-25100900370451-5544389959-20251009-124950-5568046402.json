@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100900370451-5544389959-20251009-124950-5568046402.WAV",
+  "file_name": "0105-04999-25100900370451-5544389959-20251009-124950-5568046402.WAV",
+  "base_id": "0105-04999-25100900370451-5544389959-20251009-124950-5568046402",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, bien día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer la telefonía móvil por 94 pesos al mes. No sé si ya le he comentado...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 6.82,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.82,
+      "end": 11.32,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.32,
+      "end": 13.32,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.32,
+      "end": 16.52,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.52,
+      "end": 20.52,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.6,
+      "end": 26.6,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.02,
+      "end": 37.02,
+      "text": " Hola, bien día. Le habla Ivonne Monfield de parte de su servicio de Easy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.02,
+      "end": 41.02,
+      "text": " para darle a conocer la telefonía móvil por 94 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.02,
+      "end": 43.02,
+      "text": " No sé si ya le he comentado...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

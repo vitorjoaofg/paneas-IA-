@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800189457-5544389926-20251008-093944-5553400460.WAV",
+  "file_name": "0105-04965-25100800189457-5544389926-20251008-093944-5553400460.WAV",
+  "base_id": "0105-04965-25100800189457-5544389926-20251008-093944-5553400460",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixprime, más Skysport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando, por favor. www.ahv.mit. Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 2. Si conoces número de extensión, marquelo ahora. Hola, hola, muy buenos días. Buenos días. Con utilidad que le haya finalizado la IMAF. Vete a Skysport y buen día. Bueno, no escuché nada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixprime,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.36,
+      "end": 17.24,
+      "text": " Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.24,
+      "end": 20.24,
+      "text": " www.ahv.mit.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.24,
+      "end": 23.56,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.56,
+      "end": 27.0,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.0,
+      "end": 33.3,
+      "text": " Si conoces número de extensión, marquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.34,
+      "end": 36.7,
+      "text": " Hola, hola, muy buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.7,
+      "end": 39.06,
+      "text": " Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.06,
+      "end": 43.26,
+      "text": " Con utilidad que le haya finalizado la IMAF.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.26,
+      "end": 47.46,
+      "text": " Vete a Skysport y buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.46,
+      "end": 51.22,
+      "text": " Bueno, no escuché nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.248,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

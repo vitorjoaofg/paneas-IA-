@@ -1,0 +1,519 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000784272-5540409216-20251010-170741-5563792421.WAV",
+  "file_name": "0105-04965-25101000784272-5540409216-20251010-170741-5563792421.WAV",
+  "base_id": "0105-04965-25101000784272-5540409216-20251010-170741-5563792421",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno. Hola, ¿qué tal? Buenas tardes. Hola, ¿qué tal? Buenas tardes. Enrique, oye, mi pregunta es que estamos con Total Play, pero suben de la nada las cuotas y es un problema. ¿Cuánto está pagando con ellos, perdón? ¿Perdón? ¿Cuánto está pagando con ellos, perdón? $750, $780 pesos, por ahí casi $800. $750, $780, ok. Ahorita con nosotros tenemos en este caso el servicio con Internet, teléfono y servicios de la televisión. ¿Usted qué le ofrece? ¿Internet, teléfono y televisión o Internet y telefonía solamente? No, Internet, telefonía y televisión. Los tres servicios. Tengo un paquete con igual los tres servicios. Internet de 80 megas. Le proporcionamos 120 megas durante seis meses. Línea telefónica. Servicio de la tele está con 200 canales de programación. 85 en HD. También le trae su control con comando de voz. Bix Prime durante 12 meses. Le incluye los canales de Skysport y la banda Sliga. Tiene costo de $599 pesos durante seis meses. Aquí al séptimo mes pasa $690 pesos, que sería con nosotros su tarifa fija. Y el primer mes le queda por $350 pesos. Tiene la opción también de domicilia del pago. Ya sea una tarjeta de débito de crédito y le hacemos su descuento de $50 pesos permanentemente. Y los cobros se van haciendo automáticamente. O sea, es prácticamente de $600 pesos el plan. Exactamente. Ok. No sé si pudiera marcarme el lunes. ¿Sí? ¿En qué horario? Al mediodía está perfecto. A mediodía, perfecto. Muy bien. ¿Con quién tengo el gusto para agendarlo? Enrique Gutiérrez. Señora Enrique Gutiérrez. Perfecto. Muy bien. Entonces nos ponemos en contacto, señora Enrique. Le atiende Yanneth Pulido. Muchas gracias. Hasta luego. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.64,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.64,
+      "end": 24.22,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.22,
+      "end": 25.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.86,
+      "end": 32.26,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.26,
+      "end": 34.61,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.61,
+      "end": 35.99,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.99,
+      "end": 36.99,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 36.99,
+      "end": 37.99,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 38.95,
+      "end": 54.72,
+      "text": " Enrique, oye, mi pregunta es que estamos con Total Play, pero suben de la nada las cuotas",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.72,
+      "end": 55.72,
+      "text": " y es un problema.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.72,
+      "end": 60.03,
+      "text": " ¿Cuánto está pagando con ellos, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.03,
+      "end": 61.03,
+      "text": " ¿Perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.03,
+      "end": 64.38,
+      "text": " ¿Cuánto está pagando con ellos, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 65.34,
+      "end": 72.01,
+      "text": " $750, $780 pesos, por ahí casi $800.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 72.01,
+      "end": 75.01,
+      "text": " $750, $780, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 75.01,
+      "end": 80.01,
+      "text": " Ahorita con nosotros tenemos en este caso el servicio con Internet, teléfono y servicios",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 80.01,
+      "end": 83.01,
+      "text": " de la televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 83.01,
+      "end": 85.01,
+      "text": " ¿Usted qué le ofrece?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 85.01,
+      "end": 89.01,
+      "text": " ¿Internet, teléfono y televisión o Internet y telefonía solamente?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 89.01,
+      "end": 93.01,
+      "text": " No, Internet, telefonía y televisión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 93.01,
+      "end": 94.01,
+      "text": " Los tres servicios.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 94.97,
+      "end": 96.97,
+      "text": " Tengo un paquete con igual los tres servicios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 96.97,
+      "end": 98.97,
+      "text": " Internet de 80 megas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 98.97,
+      "end": 101.97,
+      "text": " Le proporcionamos 120 megas durante seis meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 101.97,
+      "end": 103.97,
+      "text": " Línea telefónica.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 103.97,
+      "end": 107.97,
+      "text": " Servicio de la tele está con 200 canales de programación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 107.97,
+      "end": 109.97,
+      "text": " 85 en HD.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 109.97,
+      "end": 111.97,
+      "text": " También le trae su control con comando de voz.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 111.97,
+      "end": 113.97,
+      "text": " Bix Prime durante 12 meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 113.97,
+      "end": 117.97,
+      "text": " Le incluye los canales de Skysport y la banda Sliga.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 117.97,
+      "end": 121.97,
+      "text": " Tiene costo de $599 pesos durante seis meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 122.93,
+      "end": 128.93,
+      "text": " Aquí al séptimo mes pasa $690 pesos, que sería con nosotros su tarifa fija.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 128.93,
+      "end": 131.93,
+      "text": " Y el primer mes le queda por $350 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 136.88,
+      "end": 139.88,
+      "text": " Tiene la opción también de domicilia del pago.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 139.88,
+      "end": 145.88,
+      "text": " Ya sea una tarjeta de débito de crédito y le hacemos su descuento de $50 pesos permanentemente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 145.88,
+      "end": 149.2,
+      "text": " Y los cobros se van haciendo automáticamente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 149.2,
+      "end": 154.74,
+      "text": " O sea, es prácticamente de $600 pesos el plan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 155.7,
+      "end": 158.76,
+      "text": " Exactamente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 158.76,
+      "end": 160.76,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 160.76,
+      "end": 163.98,
+      "text": " No sé si pudiera marcarme el lunes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 163.98,
+      "end": 167.42,
+      "text": " ¿Sí? ¿En qué horario?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 167.42,
+      "end": 169.54,
+      "text": " Al mediodía está perfecto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 169.54,
+      "end": 171.54,
+      "text": " A mediodía, perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 171.54,
+      "end": 173.54,
+      "text": " Muy bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 173.54,
+      "end": 175.54,
+      "text": " ¿Con quién tengo el gusto para agendarlo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 175.54,
+      "end": 177.93,
+      "text": " Enrique Gutiérrez.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 177.93,
+      "end": 179.93,
+      "text": " Señora Enrique Gutiérrez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 179.93,
+      "end": 181.93,
+      "text": " Perfecto. Muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 181.93,
+      "end": 183.93,
+      "text": " Entonces nos ponemos en contacto, señora Enrique.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 183.93,
+      "end": 185.93,
+      "text": " Le atiende Yanneth Pulido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 185.93,
+      "end": 187.93,
+      "text": " Muchas gracias. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 187.93,
+      "end": 189.93,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 191.844,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

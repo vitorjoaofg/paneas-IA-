@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800076150-5540409214-20251028-081723-5597166948.WAV",
+  "file_name": "0105-04965-25102800076150-5540409214-20251028-081723-5597166948.WAV",
+  "base_id": "0105-04965-25102800076150-5540409214-20251028-081723-5597166948",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigPremium, más Skyport desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable opulto. Bueno, siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2. Espera un momento, por favor. Bueno. ¿Qué tal? Buenos días. Recibí una llamada, pero la verdad es que no me interesa su servicio. Entonces, para que vende, baja mi número o no sé qué tengan que hacer. Sí, claro que sí, caballero. Agregamos entonces esta clasificación, ¿correcto? Una disculpa, bonito día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigPremium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skyport desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 18.5,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable opulto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.5,
+      "end": 31.04,
+      "text": " Bueno, siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.04,
+      "end": 36.54,
+      "text": " Presiona 1 para hablar con un asesor, o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.18,
+      "end": 44.18,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.18,
+      "end": 48.18,
+      "text": " ¿Qué tal? Buenos días. Recibí una llamada, pero la verdad es que no me interesa su servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.18,
+      "end": 51.68,
+      "text": " Entonces, para que vende, baja mi número o no sé qué tengan que hacer.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.68,
+      "end": 55.18,
+      "text": " Sí, claro que sí, caballero. Agregamos entonces esta clasificación, ¿correcto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.18,
+      "end": 56.18,
+      "text": " Una disculpa, bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.18,
+      "end": 57.18,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.3,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

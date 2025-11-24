@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100852572-5544389908-20251011-171508-5592206487.WAV",
+  "file_name": "0105-04965-25101100852572-5544389908-20251011-171508-5592206487.WAV",
+  "base_id": "0105-04965-25101100852572-5544389908-20251011-171508-5592206487",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Buenas tardes, según la ley de contrataciones Easy, ¿te tienen invitación con quien tengo el gusto? Sí, buenas tardes. Disculpas que llevan varias semanas que me están a hablar y hablar para ver si me quiero cambiar a Easy. Y la verdad no me interesa, no sé cómo, si pueden bloquear mi teléfono, mi número telefónico de su base de datos. Sí, esta es mi registro. Sí, ya está.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.44,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.44,
+      "end": 12.2,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.2,
+      "end": 18.64,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 20.04,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.04,
+      "end": 26.32,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.4,
+      "end": 31.4,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.4,
+      "end": 41.82,
+      "text": " Buenas tardes, según la ley de contrataciones Easy, ¿te tienen invitación con quien tengo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.82,
+      "end": 42.82,
+      "text": " el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.82,
+      "end": 45.82,
+      "text": " Sí, buenas tardes. Disculpas que llevan varias semanas que me están a hablar y",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.82,
+      "end": 49.82,
+      "text": " hablar para ver si me quiero cambiar a Easy. Y la verdad no me interesa, no sé",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.82,
+      "end": 54.82,
+      "text": " cómo, si pueden bloquear mi teléfono, mi número telefónico de su base de datos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.9,
+      "end": 61.07,
+      "text": " Sí, esta es mi registro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.07,
+      "end": 62.07,
+      "text": " Sí, ya está.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

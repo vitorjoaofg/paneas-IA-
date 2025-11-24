@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200471612-3314541389-20251022-133132-3333302353.WAV",
+  "file_name": "0105-04965-25102200471612-3314541389-20251022-133132-3333302353.WAV",
+  "base_id": "0105-04965-25102200471612-3314541389-20251022-133132-3333302353",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Disculpa, ¿con quién puedo hablar para que quiten mi teléfono de Timmy? Que me estén llamando. No, ya les dije que no me interesa su servicio. Estoy ahorita bien, pero siguen llamé, llamé, llamé. Ahorita como ya pudo enlazarse conmigo, ya puedo clasificar la llamada. De esta manera ya no la volveríamos a ingresar al computador el número y dejaría de recibir llamadas. Ok, le agradezco. A usted buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.56,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.56,
+      "end": 24.96,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.96,
+      "end": 38.4,
+      "text": " Disculpa, ¿con quién puedo hablar para que quiten mi teléfono de Timmy? Que me estén llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.4,
+      "end": 44.1,
+      "text": " No, ya les dije que no me interesa su servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.1,
+      "end": 47.78,
+      "text": " Estoy ahorita bien, pero siguen llamé, llamé, llamé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.78,
+      "end": 52.78,
+      "text": " Ahorita como ya pudo enlazarse conmigo, ya puedo clasificar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.78,
+      "end": 57.78,
+      "text": " De esta manera ya no la volveríamos a ingresar al computador el número y dejaría de recibir llamadas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.78,
+      "end": 59.78,
+      "text": " Ok, le agradezco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.78,
+      "end": 61.94,
+      "text": " A usted buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.94,
+      "end": 62.94,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.16,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

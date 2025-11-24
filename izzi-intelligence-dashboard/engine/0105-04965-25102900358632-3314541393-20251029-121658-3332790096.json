@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900358632-3314541393-20251029-121658-3332790096.WAV",
+  "file_name": "0105-04965-25102900358632-3314541393-20251029-121658-3332790096.WAV",
+  "base_id": "0105-04965-25102900358632-3314541393-20251029-121658-3332790096",
+  "transcription": "Hola, te gustaría tener Internet más televisión, más grabación, entretenimiento con ti, más skywalk, desde 350 pesos al primer mes, con ti es posible, ¿te interesa? Un asesor te está esperando. Por favor, se está transcurriendo. Espera un momento, por favor. Buenas tardes, está comunicando a Winnie en representación de Banco Shantander, letrín de la OREP-10, ¿con quién tengo el gusto? Bueno, bueno, esta además ha sido una grabación monetaria por fin de semana en el servicio por concreto de la misión privacidad en Winchart 609.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.4,
+      "text": " Hola, te gustaría tener Internet más televisión, más grabación, entretenimiento con ti, más skywalk, desde 350 pesos al primer mes, con ti es posible, ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.4,
+      "end": 18.8,
+      "text": " Un asesor te está esperando. Por favor, se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.8,
+      "end": 27.32,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 27.32,
+      "end": 67.67,
+      "text": " Buenas tardes, está comunicando a Winnie en representación de Banco Shantander, letrín de la OREP-10, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 67.67,
+      "end": 83.61,
+      "text": " Bueno, bueno, esta además ha sido una grabación monetaria por fin de semana en el servicio por concreto de la misión privacidad en Winchart 609.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.344,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

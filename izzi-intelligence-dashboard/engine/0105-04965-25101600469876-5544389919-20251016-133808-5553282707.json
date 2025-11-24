@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600469876-5544389919-20251016-133808-5553282707.WAV",
+  "file_name": "0105-04965-25101600469876-5544389919-20251016-133808-5553282707.WAV",
+  "base_id": "0105-04965-25101600469876-5544389919-20251016-133808-5553282707",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Luz de reconocimiento de entrada. ¡Hola! Sistema de mensajes de Cisco Unity Express. Si tiene un buzón en este sistema, presione asterisco. De lo contrario, espere al operador. Espera un momento, por favor. Espera a que se transfiera la llamada. El buzón al que intenta acceder está lleno. Llame otra vez más tarde. Espera a que se transfiera la llamada. El buzón al que intenta acceder está lleno. Llame otra vez más tarde. Espera a que se transfiera la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.84,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.84,
+      "end": 19.84,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.84,
+      "end": 20.84,
+      "text": " Luz de reconocimiento de entrada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.84,
+      "end": 25.76,
+      "text": " ¡Hola! Sistema de mensajes de Cisco Unity Express. Si tiene un buzón en este sistema,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.76,
+      "end": 29.95,
+      "text": " presione asterisco. De lo contrario, espere al operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 29.95,
+      "end": 31.23,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.23,
+      "end": 59.02,
+      "text": " Espera a que se transfiera la llamada. El buzón al que intenta acceder está lleno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.02,
+      "end": 61.49,
+      "text": " Llame otra vez más tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.49,
+      "end": 86.82,
+      "text": " Espera a que se transfiera la llamada. El buzón al que intenta acceder está lleno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 86.82,
+      "end": 89.27,
+      "text": " Llame otra vez más tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 89.27,
+      "end": 91.23,
+      "text": " Espera a que se transfiera la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.012,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

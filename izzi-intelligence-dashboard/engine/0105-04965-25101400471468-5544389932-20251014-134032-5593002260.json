@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400471468-5544389932-20251014-134032-5593002260.WAV",
+  "file_name": "0105-04965-25101400471468-5544389932-20251014-134032-5593002260.WAV",
+  "base_id": "0105-04965-25101400471468-5544389932-20251014-134032-5593002260",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos para terminar la llamada. Espera un momento, por favor. Buenas tardes, se comunica el área de contratación de Easy. ¿Te entiendo mal que ha sido con quien tengo el uso? Buenas tardes, con Iván. Iván, ¿y te lo podemos pedir que sea contratado el día de hoy? No, no, no. No quiero contratar ningún servicio nada más. Quiero que, por favor, den de baja mi número, por favor, porque me están llame, llame, llame, llame y me encuentro ocupado. Estoy en el trabajo y ahora sí es molesto. Sí, claro que sí. Yo registro aquí para que ya no se comuniquen. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 31.84,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.88,
+      "end": 42.11,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.11,
+      "end": 47.27,
+      "text": " tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.27,
+      "end": 67.24,
+      "text": " para terminar la llamada. Espera un momento, por favor. Buenas tardes, se",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 67.24,
+      "end": 69.88,
+      "text": " comunica el área de contratación de Easy. ¿Te entiendo mal que ha sido con quien tengo el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 69.88,
+      "end": 74.98,
+      "text": " uso? Buenas tardes, con Iván. Iván, ¿y te lo podemos pedir que sea",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 74.98,
+      "end": 78.26,
+      "text": " contratado el día de hoy? No, no, no. No quiero contratar ningún",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 78.26,
+      "end": 85.28,
+      "text": " servicio nada más. Quiero que, por favor, den de baja mi número, por favor,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 85.28,
+      "end": 90.92,
+      "text": " porque me están llame, llame, llame, llame y me encuentro ocupado. Estoy en el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 90.92,
+      "end": 97.13,
+      "text": " trabajo y ahora sí es molesto. Sí, claro que sí. Yo registro aquí",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 97.13,
+      "end": 99.97,
+      "text": " para que ya no se comuniquen. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 103.284,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

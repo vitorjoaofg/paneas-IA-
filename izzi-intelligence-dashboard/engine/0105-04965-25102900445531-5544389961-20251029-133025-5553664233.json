@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900445531-5544389961-20251029-133025-5553664233.WAV",
+  "file_name": "0105-04965-25102900445531-5544389961-20251029-133025-5553664233.WAV",
+  "base_id": "0105-04965-25102900445531-5544389961-20251029-133025-5553664233",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixplier, más Skysport, desde 350 pesos el primer mes, con Vixplier es posible? Te interesa, un asesor te está esperando, por favor. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular y correo el económico registrado en su contrato. Si usted recibió una oferta de DECA de Red Magisterial, por favor, marque 3. Grupo Edilar, buen día. Le atiende Sandra Olvera, con quien tengo el gusto. Grupo Edilar, buen día. Le atiende Sandra Olvera, con quien tengo el gusto. Buenas tardes, se comunica Grupo Edilar. Grupo Edilar, buenas tardes. Le atiende Sandra Olvera, con quien tengo el gusto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixplier, más Skysport, desde 350 pesos el primer mes, con Vixplier es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " Te interesa, un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.0,
+      "end": 22.32,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.32,
+      "end": 29.32,
+      "text": " Recuerde tener a la mano su RTC, número de celular y correo el económico registrado en su contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.32,
+      "end": 34.58,
+      "text": " Si usted recibió una oferta de DECA de Red Magisterial, por favor, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.58,
+      "end": 49.11,
+      "text": " Grupo Edilar, buen día. Le atiende Sandra Olvera, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.11,
+      "end": 59.65,
+      "text": " Grupo Edilar, buen día. Le atiende Sandra Olvera, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 59.65,
+      "end": 65.21,
+      "text": " Buenas tardes, se comunica Grupo Edilar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.21,
+      "end": 81.88,
+      "text": " Grupo Edilar, buenas tardes. Le atiende Sandra Olvera, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.872,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

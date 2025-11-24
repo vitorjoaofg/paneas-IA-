@@ -1,0 +1,474 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500530051-5544389935-20251015-142336-5594614033.WAV",
+  "file_name": "0105-04965-25101500530051-5544389935-20251015-142336-5594614033.WAV",
+  "base_id": "0105-04965-25101500530051-5544389935-20251015-142336-5594614033",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Muy buen día. Hola, muy buen día. Mi nombre es Brisia Laubete, parte de Easy. ¿Con quién tengo el gusto? Hola, mucho gusto. Me llamo Juan Pablo. Hola, señor Juan Pablo. Nos estamos comunicando de parte de Easy. ¿Usted cuenta con nuestro servicio? Hola. Yo me llamo Juan Pablo. ¿Sí? ¿Me escuchas? ¿Se escucha el servicio de parte de Easy? Sí, lo escucho. ¿Le gustaría tener nuestro servicio? ¿Escuchan nuestras ofertas? A ver. ¿Nuestras promociones para que usted pueda obtener nuestro servicio? Le dejo un número para mi hermano que necesita Easy. ¿No se encontrará él? ¿No? No sé si me puede pasar un número a qué. ¿Me lo podría proporcionar? ¿Cuál sería? 56. Ajá. 48. Ajá. 39. Ajá. 06. Ajá. 11. Correcto. OK. ¿Y cómo se llama su hermano? No. Es mi amigo. OK. ¿Cómo se llama él? Luis. OK. A usted, señor Juan Pablo, ¿le interesa el servicio con nosotros? OK. ¿Le gustaría escuchar nuestras promociones? No. ¿No? ¿No le interesa tener nuestro servicio de parte de Easy? No. OK. Ya tengo un excelente día. Hasta luego. Probablemente en un futuro. Gracias. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.72,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.72,
+      "end": 13.8,
+      "text": " Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.8,
+      "end": 16.8,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.8,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.44,
+      "end": 31.94,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.94,
+      "end": 36.94,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.94,
+      "end": 50.92,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.92,
+      "end": 51.92,
+      "text": " Muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.92,
+      "end": 56.17,
+      "text": " Hola, muy buen día. Mi nombre es Brisia Laubete, parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.17,
+      "end": 58.17,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.17,
+      "end": 61.23,
+      "text": " Hola, mucho gusto. Me llamo Juan Pablo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.23,
+      "end": 65.23,
+      "text": " Hola, señor Juan Pablo. Nos estamos comunicando de parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.23,
+      "end": 69.29,
+      "text": " ¿Usted cuenta con nuestro servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.29,
+      "end": 73.06,
+      "text": " Hola. Yo me llamo Juan Pablo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 73.06,
+      "end": 74.06,
+      "text": " ¿Sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 74.06,
+      "end": 75.06,
+      "text": " ¿Me escuchas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 75.06,
+      "end": 77.06,
+      "text": " ¿Se escucha el servicio de parte de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 77.06,
+      "end": 82.57,
+      "text": " Sí, lo escucho.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 82.57,
+      "end": 84.57,
+      "text": " ¿Le gustaría tener nuestro servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 84.57,
+      "end": 86.73,
+      "text": " ¿Escuchan nuestras ofertas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 86.73,
+      "end": 87.73,
+      "text": " A ver.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 87.73,
+      "end": 93.62,
+      "text": " ¿Nuestras promociones para que usted pueda obtener nuestro servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 93.62,
+      "end": 108.34,
+      "text": " Le dejo un número para mi hermano que necesita Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 108.34,
+      "end": 112.62,
+      "text": " ¿No se encontrará él? ¿No?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 112.62,
+      "end": 116.62,
+      "text": " No sé si me puede pasar un número a qué.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 116.62,
+      "end": 120.75,
+      "text": " ¿Me lo podría proporcionar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 120.75,
+      "end": 124.31,
+      "text": " ¿Cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 124.31,
+      "end": 126.38,
+      "text": " 56.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 126.38,
+      "end": 127.44,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 127.44,
+      "end": 129.57,
+      "text": " 48.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 129.57,
+      "end": 132.46,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 132.46,
+      "end": 134.46,
+      "text": " 39.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 134.46,
+      "end": 135.98,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 135.98,
+      "end": 138.14,
+      "text": " 06.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 138.14,
+      "end": 139.14,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 139.14,
+      "end": 141.0,
+      "text": " 11.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 141.0,
+      "end": 142.0,
+      "text": " Correcto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 142.0,
+      "end": 144.51,
+      "text": " OK. ¿Y cómo se llama su hermano?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 144.51,
+      "end": 147.41,
+      "text": " No. Es mi amigo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 147.41,
+      "end": 153.47,
+      "text": " OK. ¿Cómo se llama él?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 153.47,
+      "end": 154.47,
+      "text": " Luis. OK.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 154.47,
+      "end": 161.75,
+      "text": " A usted, señor Juan Pablo, ¿le interesa el servicio con nosotros?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 161.75,
+      "end": 164.85,
+      "text": " OK. ¿Le gustaría escuchar nuestras promociones?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 164.85,
+      "end": 166.2,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 166.2,
+      "end": 167.52,
+      "text": " ¿No?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 167.52,
+      "end": 171.74,
+      "text": " ¿No le interesa tener nuestro servicio de parte de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 171.74,
+      "end": 173.1,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 173.1,
+      "end": 175.1,
+      "text": " OK. Ya tengo un excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 175.1,
+      "end": 178.1,
+      "text": " Hasta luego. Probablemente en un futuro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 178.1,
+      "end": 180.35,
+      "text": " Gracias. Igualmente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 210.276,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

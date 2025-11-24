@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100458707-5544389916-20251011-124618-5554887520.WAV",
+  "file_name": "0105-04965-25101100458707-5544389916-20251011-124618-5554887520.WAV",
+  "base_id": "0105-04965-25101100458707-5544389916-20251011-124618-5554887520",
+  "transcription": "Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento para ser atendido por una operadora Skye Sports desde 350 pesos el primer mes con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal? Buenos días. Buenos días. ¿Tengo una llamada de este número? Sí, soy José Lara de Easy, compañero de Internet de Televisión por Cable. Estamos mandando una información acerca de nuestras promociones.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 12.0,
+      "text": " Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento para ser atendido por una operadora Skye Sports desde 350 pesos el primer mes con Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 12.0,
+      "end": 22.86,
+      "text": " Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.86,
+      "end": 31.86,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 33.86,
+      "end": 46.45,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 46.45,
+      "end": 55.82,
+      "text": " ¿Qué tal? Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 55.82,
+      "end": 59.88,
+      "text": " Buenos días. ¿Tengo una llamada de este número?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 59.88,
+      "end": 64.42,
+      "text": " Sí, soy José Lara de Easy, compañero de Internet de Televisión por Cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 64.42,
+      "end": 68.46,
+      "text": " Estamos mandando una información acerca de nuestras promociones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.976,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

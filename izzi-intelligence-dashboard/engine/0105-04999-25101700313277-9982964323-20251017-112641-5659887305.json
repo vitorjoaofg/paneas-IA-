@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700313277-9982964323-20251017-112641-5659887305.WAV",
+  "file_name": "0105-04999-25101700313277-9982964323-20251017-112641-5659887305.WAV",
+  "base_id": "0105-04999-25101700313277-9982964323-20251017-112641-5659887305",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse un 100. No entendí tu respuesta. ¿Te comunico con un asesor? Se selecciona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse. La re-contratación es insiste. Atiende a la Coquitico de Gusto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.28,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.28,
+      "end": 15.08,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.08,
+      "end": 21.16,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.16,
+      "end": 35.42,
+      "text": " Por favor, hable o pulse un 100. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.42,
+      "end": 42.42,
+      "text": " Se selecciona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.42,
+      "end": 52.86,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse. La re-contratación es insiste.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.86,
+      "end": 54.86,
+      "text": " Atiende a la Coquitico de Gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 55.872,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

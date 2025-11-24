@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900491506-5544389909-20251029-140854-5591289922.WAV",
+  "file_name": "0105-04965-25102900491506-5544389909-20251029-140854-5591289922.WAV",
+  "base_id": "0105-04965-25102900491506-5544389909-20251029-140854-5591289922",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Sleeper, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando, por favor. Para obtener información sobre nuestra política de privacidad, visite privacy.hilton.com. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablamos de su compañía Easy. ¿Puedo ayudarle? Bueno, por motivos de calidad, tuve que hacerle la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Sleeper, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 24.0,
+      "text": " Para obtener información sobre nuestra política de privacidad, visite privacy.hilton.com.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.0,
+      "end": 32.99,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.99,
+      "end": 34.99,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.99,
+      "end": 46.07,
+      "text": " Hola, ¿qué tal? Muy buenas tardes. Le hablamos de su compañía Easy. ¿Puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.07,
+      "end": 53.72,
+      "text": " Bueno, por motivos de calidad, tuve que hacerle la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 114.156,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

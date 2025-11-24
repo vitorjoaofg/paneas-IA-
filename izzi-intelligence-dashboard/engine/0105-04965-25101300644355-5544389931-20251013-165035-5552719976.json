@@ -1,0 +1,51 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300644355-5544389931-20251013-165035-5552719976.WAV",
+  "file_name": "0105-04965-25101300644355-5544389931-20251013-165035-5552719976.WAV",
+  "base_id": "0105-04965-25101300644355-5544389931-20251013-165035-5552719976",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más más transporte desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor. Sí, sí, lo atende Edgar Torres, con quien tenga el gusto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 16.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " más transporte desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 31.23,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 31.23,
+      "end": 33.23,
+      "text": " Sí, sí, lo atende Edgar Torres, con quien tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 34.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

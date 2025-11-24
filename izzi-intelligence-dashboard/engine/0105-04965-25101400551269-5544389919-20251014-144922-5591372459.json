@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400551269-5544389919-20251014-144922-5591372459.WAV",
+  "file_name": "0105-04965-25101400551269-5544389919-20251014-144922-5591372459.WAV",
+  "base_id": "0105-04965-25101400551269-5544389919-20251014-144922-5591372459",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, muy buenas tardes. ¿Sí, bueno? Buenas tardes. Mi mamá ya me dejó solo. Mi mamá te dejó solo, amigo, caray. Estaba llorando y cuando el policía llegó, no dejó. ¿No sabes a dónde fue? Híjole. Bueno, pues la hablábamos de Easy, amigo. Cuando regrese, por favor, le dices que le llamamos. ¿Vale? Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.64,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 24.36,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.36,
+      "end": 46.67,
+      "text": " Espera un momento, por favor. Hola, muy buenas tardes. ¿Sí, bueno? Buenas tardes. Mi mamá",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 46.67,
+      "end": 55.44,
+      "text": " ya me dejó solo. Mi mamá te dejó solo, amigo, caray. Estaba llorando y cuando el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.44,
+      "end": 64.42,
+      "text": " policía llegó, no dejó. ¿No sabes a dónde fue? Híjole. Bueno, pues la hablábamos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 64.42,
+      "end": 71.57,
+      "text": " de Easy, amigo. Cuando regrese, por favor, le dices que le llamamos. ¿Vale? Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 71.57,
+      "end": 73.47,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.504,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

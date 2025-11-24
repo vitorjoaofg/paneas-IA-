@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000327042-5576755919-20251020-155202-04896.WAV",
+  "file_name": "0105-04965-25102000327042-5576755919-20251020-155202-04896.WAV",
+  "base_id": "0105-04965-25102000327042-5576755919-20251020-155202-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Es la única recepcionista? No. Conteste y conteste tú y ya me colgaste. Quiero que me dejen en paz. Ya te dije que estoy grabando la llamada. Yo la necesito para la demanda. Yo estoy en el área de promociones, señorita. Sí, pues. Pero ya no quiero temar. Promociones. Ya no quiero tus promociones. Ya bloqueando. Ok. Que tenga bonita tarde. Y sigo cambiando, gata. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.5,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.5,
+      "end": 16.5,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 19.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.5,
+      "end": 25.25,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.25,
+      "end": 45.76,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.76,
+      "end": 51.28,
+      "text": " ¿Es la única recepcionista?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.28,
+      "end": 52.28,
+      "text": " No.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.28,
+      "end": 57.18,
+      "text": " Conteste y conteste tú y ya me colgaste. Quiero que me dejen en paz.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.18,
+      "end": 62.56,
+      "text": " Ya te dije que estoy grabando la llamada. Yo la necesito para la demanda.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.56,
+      "end": 65.06,
+      "text": " Yo estoy en el área de promociones, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.06,
+      "end": 67.56,
+      "text": " Sí, pues. Pero ya no quiero temar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.56,
+      "end": 72.46,
+      "text": " Promociones. Ya no quiero tus promociones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 72.46,
+      "end": 73.96,
+      "text": " Ya bloqueando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.96,
+      "end": 75.96,
+      "text": " Ok. Que tenga bonita tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 75.96,
+      "end": 78.28,
+      "text": " Y sigo cambiando, gata.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 78.28,
+      "end": 79.28,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.524,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

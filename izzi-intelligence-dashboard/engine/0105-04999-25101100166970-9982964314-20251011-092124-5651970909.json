@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101100166970-9982964314-20251011-092124-5651970909.WAV",
+  "file_name": "0105-04999-25101100166970-9982964314-20251011-092124-5651970909.WAV",
+  "base_id": "0105-04999-25101100166970-9982964314-20251011-092124-5651970909",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Se comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, vendía. Le habla Yvonne Monfil de parte de su servicio de Easy para contrataciones y algunas promociones. Buen día. Hola. ¿Usted tiene Easy con nosotros o...? ¿Quién tiene mi número para empezar? Le hablamos de Easy para ofrecerle beneficios, es para publicidad. ¿Quién tiene mi número? Nosotros no marcamos la demarcación, nosotros solo contestamos. Pues dile a tu computadora que no me marque, ¿vale? Aquí le pongo para que lo quiten de la base.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 27.71,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.71,
+      "end": 33.99,
+      "text": " Siento. No entendí tu respuesta. ¿Se comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.99,
+      "end": 42.72,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.72,
+      "end": 53.45,
+      "text": " Hola, vendía. Le habla Yvonne Monfil de parte de su servicio de Easy para contrataciones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.45,
+      "end": 55.85,
+      "text": " y algunas promociones. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.85,
+      "end": 57.1,
+      "text": " Hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.1,
+      "end": 60.05,
+      "text": " ¿Usted tiene Easy con nosotros o...?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.05,
+      "end": 62.73,
+      "text": " ¿Quién tiene mi número para empezar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.73,
+      "end": 66.73,
+      "text": " Le hablamos de Easy para ofrecerle beneficios, es para publicidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.73,
+      "end": 67.73,
+      "text": " ¿Quién tiene mi número?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.73,
+      "end": 73.05,
+      "text": " Nosotros no marcamos la demarcación, nosotros solo contestamos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.05,
+      "end": 78.21,
+      "text": " Pues dile a tu computadora que no me marque, ¿vale?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 78.21,
+      "end": 81.21,
+      "text": " Aquí le pongo para que lo quiten de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

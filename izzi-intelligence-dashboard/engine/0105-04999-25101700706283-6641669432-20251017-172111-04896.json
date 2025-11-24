@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700706283-6641669432-20251017-172111-04896.WAV",
+  "file_name": "0105-04999-25101700706283-6641669432-20251017-172111-04896.WAV",
+  "base_id": "0105-04999-25101700706283-6641669432-20251017-172111-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes. Disculpe, es que hace rato, como a las 11, como sí, como 11, 11 y media, he marcado este número, creo que de ahí, muebles diarrial, ¿ah? Que lo borren. O sea, estoy marcando para muebles diarrial, ¿no? ¿Muele en qué? Muebles diarrial. Ah, no, no, no, se acompaña Easy. Ah, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 14.2,
+      "text": " más Sky Sports desde 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.2,
+      "end": 16.2,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.4,
+      "end": 23.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.38,
+      "end": 29.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.28,
+      "end": 38.28,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.28,
+      "end": 44.28,
+      "text": " Buenas tardes. Disculpe, es que hace rato, como a las 11, como sí, como 11, 11 y media,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.28,
+      "end": 48.69,
+      "text": " he marcado este número, creo que de ahí, muebles diarrial, ¿ah?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.69,
+      "end": 49.69,
+      "text": " Que lo borren.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.69,
+      "end": 53.91,
+      "text": " O sea, estoy marcando para muebles diarrial, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.91,
+      "end": 58.09,
+      "text": " ¿Muele en qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 58.09,
+      "end": 61.75,
+      "text": " Muebles diarrial.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.75,
+      "end": 63.75,
+      "text": " Ah, no, no, no, se acompaña Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 63.75,
+      "end": 64.75,
+      "text": " Ah, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.584,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

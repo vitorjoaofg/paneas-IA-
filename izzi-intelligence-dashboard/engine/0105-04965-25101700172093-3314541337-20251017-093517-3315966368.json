@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700172093-3314541337-20251017-093517-3315966368.WAV",
+  "file_name": "0105-04965-25101700172093-3314541337-20251017-093517-3315966368.WAV",
+  "base_id": "0105-04965-25101700172093-3314541337-20251017-093517-3315966368",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. ¡Por favor! Espera un momento, por favor. Hola, ¿qué tal? ¡Buenos días! Hola, hola. ¿Qué tal? ¡Mucho gusto! Abram García, contratación Easy. Dígame, ¿en qué le puedo ayudar? Hola, hola. Hola, hola. Disculpe, ¿se me está hablando o no lo escucho? ¿Me escucha bien?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 32.1,
+      "text": " asesor te está esperando. ¡Por favor! Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.42,
+      "end": 45.42,
+      "text": " Hola, ¿qué tal? ¡Buenos días! Hola, hola. ¿Qué tal? ¡Mucho gusto! Abram García,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.42,
+      "end": 60.96,
+      "text": " contratación Easy. Dígame, ¿en qué le puedo ayudar? Hola, hola. Hola, hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 60.96,
+      "end": 65.44,
+      "text": " Disculpe, ¿se me está hablando o no lo escucho? ¿Me escucha bien?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.124,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

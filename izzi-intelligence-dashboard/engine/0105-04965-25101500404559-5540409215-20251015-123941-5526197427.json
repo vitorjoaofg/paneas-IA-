@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500404559-5540409215-20251015-123941-5526197427.WAV",
+  "file_name": "0105-04965-25101500404559-5540409215-20251015-123941-5526197427.WAV",
+  "base_id": "0105-04965-25101500404559-5540409215-20251015-123941-5526197427",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando, por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2. Espera un momento, por favor. Hola, ¿qué tal? Este es el área de contrataciones Easy, lo está atendiendo Leonardo García, ¿con quién tengo el gusto? Bueno, por temas de calidad, se le realizamos la llamada. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 33.3,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 33.3,
+      "end": 108.65,
+      "text": " Hola, ¿qué tal? Este es el área de contrataciones Easy, lo está atendiendo Leonardo García, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 108.65,
+      "end": 129.93,
+      "text": " Bueno, por temas de calidad, se le realizamos la llamada. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 132.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100177049-5544389903-20251021-094431-5562379843.WAV",
+  "file_name": "0105-04965-25102100177049-5544389903-20251021-094431-5562379843.WAV",
+  "base_id": "0105-04965-25102100177049-5544389903-20251021-094431-5562379843",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Este está molesti, molesti, molesti, luego ya tengo Total Play, me ha funcionado muy bien, y aquí están molesti, molesti, o sea, nada más para ver si, por favor, ya puedan retirar, no sé, su agenda, este número o algo, porque siempre molestan y molestan. Ok, aquí lo reporto entonces. Vale, gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.6,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.5,
+      "end": 25.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.89,
+      "end": 75.26,
+      "text": " Este está molesti, molesti, molesti, luego ya tengo Total Play, me ha funcionado muy bien,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 75.26,
+      "end": 81.39,
+      "text": " y aquí están molesti, molesti, o sea, nada más para ver si, por favor, ya puedan retirar, no sé,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 81.39,
+      "end": 85.39,
+      "text": " su agenda, este número o algo, porque siempre molestan y molestan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 85.39,
+      "end": 90.01,
+      "text": " Ok, aquí lo reporto entonces.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 90.01,
+      "end": 91.51,
+      "text": " Vale, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 91.51,
+      "end": 92.51,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 94.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

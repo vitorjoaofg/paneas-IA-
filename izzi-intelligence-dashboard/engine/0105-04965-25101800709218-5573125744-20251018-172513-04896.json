@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800709218-5573125744-20251018-172513-04896.WAV",
+  "file_name": "0105-04965-25101800709218-5573125744-20251018-172513-04896.WAV",
+  "base_id": "0105-04965-25101800709218-5573125744-20251018-172513-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? ¡Un asesor te está esperando! ¡Por favor! Yo recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenas tardes. Bueno, bueno, ¿se escucha?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.64,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.64,
+      "end": 10.34,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.34,
+      "end": 16.04,
+      "text": " más Sky Sports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.04,
+      "end": 20.54,
+      "text": " ¿Te interesa? ¡Un asesor te está esperando! ¡Por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.54,
+      "end": 48.38,
+      "text": " Yo recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.38,
+      "end": 50.88,
+      "text": " o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.92,
+      "end": 61.28,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.28,
+      "end": 67.99,
+      "text": " Hola, buenas tardes. Bueno, bueno, ¿se escucha?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600279861-5544389906-20251016-105802-5594646359.WAV",
+  "file_name": "0105-04965-25101600279861-5544389906-20251016-105802-5594646359.WAV",
+  "base_id": "0105-04965-25101600279861-5544389906-20251016-105802-5594646359",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar. Espera un momento, por favor. Bueno, buenos días. Buenos días. Buenos días. Salud, Gordo Muguiá, aquí de Easy. ¿Se encuentra...? Ah, perdón. ¿Con qué está, Augusto? Sí, con BlankSeries. Bueno, nada más, quisiera ver si para lo que es aquí dirección Xmo, Altenco, sí hay cobertura. Ah, ok. Sí, lo podemos checar. ¿Tendrá el número del código postal? ¿No lo tiene? No, creo que no. Ah, ok. ¿O el número de nombre con la colonia? Sí, es Alborada-Jaltenco. ¿Alborada? ¿Alborada qué, perdón? Jaltenco. Jaltenco, ok. Alborada-Jaltenco. ¿La calle sería? Xmo. ¿Es isla, me dijo? Xmo. Un momentito, seguimos buscando la cobertura. ¿Entre qué calle se encontraría? La calle es Xmo. Ajá. ¿Y las calles de al lado? La Roquita. ¿Es calle verano o privada? Es la privada. Ajá. Sí, es que como están las dos, aparece calle y privada, pero donde usted vive es calle, ¿verdad? Ok. ¿Número de vivienda? No, de hecho, nosotros estamos en local, si quisiéramos el internet, pero para local. ¿Para local? Ah, ok. Sí, tenemos varios locales. Ok. Pero mientras nada más quisiera, si se pone informes, si se puede, es que ya había marcado y me habían dicho que por aquí no había cobertura de ustedes. Sí, es que hay partes, por ejemplo, en lo que es en la privada, hay parte de la calle, que está al lado de la privada, ahí sí no tenemos cobertura, por eso le preguntaba. Pero acá ya más adelante o antes, o antes de la privada, sí tenemos cobertura. Entonces creo que no se va a poder. Ok. Sí, porque en cuestión de sus paquetes, ¿cómo están sus paquetes con ustedes? Y bueno, ahorita para el negocio, pues tenemos, por ejemplo, ahorita un plan, que es de 150 megas con 200 canales y tiene un costo ahorita de 790 y se le brindan dos números de teléfono. Ok, otro de menos. Otro de menos. Permítame. Ok, tenemos el de 100 megas, igual se le brindan 200 canales, las dos líneas telefónicas y tendría un costo de 600. 100 megas, me dicen. Ajá, 100 megas. Bueno, pues mientras lo checo, es que yo no puedo hablar igual mucho tiempo y ya si no le regreso la llamada. Ok, perfecto. Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.92,
+      "end": 25.42,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.42,
+      "end": 27.42,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.42,
+      "end": 29.12,
+      "text": " Presiona 1 para hablar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.12,
+      "end": 31.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.42,
+      "end": 40.01,
+      "text": " Bueno, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.01,
+      "end": 41.39,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.39,
+      "end": 44.39,
+      "text": " Buenos días. Salud, Gordo Muguiá, aquí de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.39,
+      "end": 47.16,
+      "text": " ¿Se encuentra...?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.16,
+      "end": 49.16,
+      "text": " Ah, perdón. ¿Con qué está, Augusto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.16,
+      "end": 51.9,
+      "text": " Sí, con BlankSeries.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 51.9,
+      "end": 57.9,
+      "text": " Bueno, nada más, quisiera ver si para lo que es aquí dirección Xmo, Altenco,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 57.9,
+      "end": 61.25,
+      "text": " sí hay cobertura.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 61.25,
+      "end": 63.25,
+      "text": " Ah, ok. Sí, lo podemos checar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 63.25,
+      "end": 70.73,
+      "text": " ¿Tendrá el número del código postal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 70.73,
+      "end": 72.96,
+      "text": " ¿No lo tiene?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 72.96,
+      "end": 74.46,
+      "text": " No, creo que no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 74.66,
+      "end": 78.66,
+      "text": " Ah, ok. ¿O el número de nombre con la colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 78.66,
+      "end": 81.94,
+      "text": " Sí, es Alborada-Jaltenco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 81.94,
+      "end": 84.62,
+      "text": " ¿Alborada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 91.49,
+      "end": 96.21,
+      "text": " ¿Alborada qué, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 96.21,
+      "end": 97.94,
+      "text": " Jaltenco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 97.94,
+      "end": 99.94,
+      "text": " Jaltenco, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 103.58,
+      "end": 105.58,
+      "text": " Alborada-Jaltenco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 114.22,
+      "end": 116.5,
+      "text": " ¿La calle sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 116.5,
+      "end": 135.23,
+      "text": " Xmo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 135.23,
+      "end": 137.23,
+      "text": " ¿Es isla, me dijo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 137.43,
+      "end": 185.7,
+      "text": " Xmo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 185.7,
+      "end": 205.09,
+      "text": " Un momentito, seguimos buscando la cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 240.25,
+      "end": 242.25,
+      "text": " ¿Entre qué calle se encontraría?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 242.25,
+      "end": 246.26,
+      "text": " La calle es Xmo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 246.26,
+      "end": 249.26,
+      "text": " Ajá. ¿Y las calles de al lado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 249.26,
+      "end": 255.71,
+      "text": " La Roquita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 281.86,
+      "end": 290.19,
+      "text": " ¿Es calle verano o privada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 290.19,
+      "end": 296.58,
+      "text": " Es la privada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 296.78,
+      "end": 299.9,
+      "text": " Ajá. Sí, es que como están las dos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 299.9,
+      "end": 301.9,
+      "text": " aparece calle y privada, pero",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 301.9,
+      "end": 314.41,
+      "text": " donde usted vive es calle, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 314.41,
+      "end": 317.34,
+      "text": " Ok. ¿Número de vivienda?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 317.34,
+      "end": 320.34,
+      "text": " No, de hecho, nosotros estamos en local,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 320.34,
+      "end": 322.34,
+      "text": " si quisiéramos el internet, pero para local.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 322.34,
+      "end": 324.34,
+      "text": " ¿Para local? Ah, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 324.34,
+      "end": 326.4,
+      "text": " Sí, tenemos varios locales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 326.4,
+      "end": 327.4,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 327.4,
+      "end": 329.85,
+      "text": " Pero mientras nada más quisiera,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 329.85,
+      "end": 330.85,
+      "text": " si se pone informes,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 330.85,
+      "end": 332.85,
+      "text": " si se puede, es que ya había marcado",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 332.85,
+      "end": 334.85,
+      "text": " y me habían dicho que por aquí no había",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 334.85,
+      "end": 336.85,
+      "text": " cobertura de ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 337.05,
+      "end": 340.05,
+      "text": " Sí, es que hay partes, por ejemplo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 340.05,
+      "end": 342.53,
+      "text": " en lo que es en la privada,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 342.53,
+      "end": 344.53,
+      "text": " hay parte de la calle,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 344.53,
+      "end": 346.53,
+      "text": " que está al lado de la privada,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 346.53,
+      "end": 348.53,
+      "text": " ahí sí no tenemos cobertura,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 348.53,
+      "end": 350.62,
+      "text": " por eso le preguntaba.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 350.62,
+      "end": 354.62,
+      "text": " Pero acá ya más adelante o antes,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 354.62,
+      "end": 356.62,
+      "text": " o antes de la privada,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 356.62,
+      "end": 361.5,
+      "text": " sí tenemos cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 361.5,
+      "end": 364.75,
+      "text": " Entonces creo que no se va a poder.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 364.75,
+      "end": 365.75,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 365.75,
+      "end": 369.26,
+      "text": " Sí, porque en cuestión de sus paquetes,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 369.26,
+      "end": 371.26,
+      "text": " ¿cómo están sus paquetes con ustedes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 371.46,
+      "end": 373.66,
+      "text": " Y bueno, ahorita para el negocio,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 373.66,
+      "end": 375.66,
+      "text": " pues tenemos, por ejemplo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 375.66,
+      "end": 377.66,
+      "text": " ahorita un plan,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 377.66,
+      "end": 380.66,
+      "text": " que es de 150 megas con 200 canales",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 70,
+      "start": 380.66,
+      "end": 384.82,
+      "text": " y tiene un costo ahorita de 790",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 71,
+      "start": 384.82,
+      "end": 388.84,
+      "text": " y se le brindan dos números de teléfono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 72,
+      "start": 388.84,
+      "end": 392.25,
+      "text": " Ok, otro de menos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 73,
+      "start": 392.25,
+      "end": 395.14,
+      "text": " Otro de menos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 74,
+      "start": 398.65,
+      "end": 417.34,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 75,
+      "start": 417.34,
+      "end": 436.14,
+      "text": " Ok, tenemos el de 100 megas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 76,
+      "start": 436.14,
+      "end": 440.34,
+      "text": " igual se le brindan 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 77,
+      "start": 440.54,
+      "end": 442.54,
+      "text": " las dos líneas telefónicas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 78,
+      "start": 442.54,
+      "end": 444.54,
+      "text": " y tendría un costo de 600.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 79,
+      "start": 444.54,
+      "end": 450.62,
+      "text": " 100 megas, me dicen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 80,
+      "start": 450.62,
+      "end": 452.62,
+      "text": " Ajá, 100 megas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 81,
+      "start": 456.78,
+      "end": 458.78,
+      "text": " Bueno, pues mientras lo checo,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 82,
+      "start": 458.78,
+      "end": 459.78,
+      "text": " es que yo no puedo hablar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 83,
+      "start": 459.78,
+      "end": 461.88,
+      "text": " igual mucho tiempo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 84,
+      "start": 461.88,
+      "end": 463.88,
+      "text": " y ya si no le regreso la llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 85,
+      "start": 463.88,
+      "end": 466.14,
+      "text": " Ok, perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 86,
+      "start": 466.14,
+      "end": 467.14,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 87,
+      "start": 467.14,
+      "end": 468.14,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 471.6,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

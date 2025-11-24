@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300233024-5544389961-20251013-104537-5591293644.WAV",
+  "file_name": "0105-04965-25101300233024-5544389961-20251013-104537-5591293644.WAV",
+  "base_id": "0105-04965-25101300233024-5544389961-20251013-104537-5591293644",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Sí o no. Hola, buenas tardes, quisiera levantar un reporte. Ajá. Ya que mi línea no está funcionando, no tengo internet. Ah, entiendo señor, pero tiene que ser al 800-125-1000. Ah, ok. Que tengas buen día. Gracias igualmente, hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 5.57,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.57,
+      "end": 12.37,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.37,
+      "end": 18.85,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.85,
+      "end": 28.26,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.26,
+      "end": 43.01,
+      "text": " por favor. Sí o no. Hola, buenas tardes, quisiera levantar un reporte. Ajá. Ya que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.01,
+      "end": 48.01,
+      "text": " mi línea no está funcionando, no tengo internet. Ah, entiendo señor, pero tiene que ser al",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 48.01,
+      "end": 56.35,
+      "text": " 800-125-1000. Ah, ok. Que tengas buen día. Gracias igualmente, hasta luego. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.156,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

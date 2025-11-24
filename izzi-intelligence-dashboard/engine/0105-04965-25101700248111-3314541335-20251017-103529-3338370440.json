@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700248111-3314541335-20251017-103529-3338370440.WAV",
+  "file_name": "0105-04965-25101700248111-3314541335-20251017-103529-3338370440.WAV",
+  "base_id": "0105-04965-25101700248111-3314541335-20251017-103529-3338370440",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Sky Sports desde 350 pesos el primer mes o, en sí, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable a Pulseo. Espera un momento, por favor. Está muy buen día, pero nunca me va a ver. Ya por eso ya lo estoy vendiendo bien. Pero adivina que con el móvil nunca me la va a ver.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Sky Sports desde 350 pesos el primer mes o, en sí, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 19.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable a Pulseo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 19.0,
+      "end": 27.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 34.54,
+      "end": 38.54,
+      "text": " Está muy buen día, pero nunca me va a ver. Ya por eso ya lo estoy vendiendo bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.54,
+      "end": 50.48,
+      "text": " Pero adivina que con el móvil nunca me la va a ver.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400631055-5544389954-20251014-155320-5552661120.WAV",
+  "file_name": "0105-04965-25101400631055-5544389954-20251014-155320-5552661120.WAV",
+  "base_id": "0105-04965-25101400631055-5544389954-20251014-155320-5552661120",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. ¿Es que ahorita no se encuentra la dueña? No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abraham García, contrataciones Easy. Dígame, ¿en qué le puedo ayudar? No, mira, ahorita les decía yo a la señorita que ya no puedo pedir nada porque no se encuentra la señora. Cuando venga yo les doy su recado. El día de ayer referirse a la grabadora que pasó ahorita, ¿verdad? Sí. ¿Qué es la idea? Que tengan una mejor oferta, que puedan pagar menos o aprovechar mejor el servicio. ¿Cuándo podría comunicarme para revisarlo entre todos? Hasta la nochecita que llegue la señora de trabajar. Ok, ok. También podríamos poner el servicio a su nombre, incluso, no hay problema. No. ¿O tendríamos que ver las fuerzas con ellos? No, pero cuando nos encuentren ya yo no me estoy aquí de pasada. Ok, muy bien. Paso el comentario y me comunico más adelante, ¿va? Sí, gracias. Bye. A usted. Un momento, bien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 24.26,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.26,
+      "end": 26.82,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.82,
+      "end": 28.94,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.94,
+      "end": 34.37,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.37,
+      "end": 37.85,
+      "text": " ¿Es que ahorita no se encuentra la dueña?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.85,
+      "end": 39.85,
+      "text": " No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.85,
+      "end": 44.85,
+      "text": " Por favor, presione 1 para conocer nuestras promociones o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.85,
+      "end": 46.85,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.85,
+      "end": 53.26,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.26,
+      "end": 56.34,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 56.34,
+      "end": 57.34,
+      "text": " Hola, hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 57.34,
+      "end": 58.34,
+      "text": " ¿Qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 58.34,
+      "end": 59.34,
+      "text": " Mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 59.34,
+      "end": 60.34,
+      "text": " Abraham García, contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 60.34,
+      "end": 61.56,
+      "text": " Dígame, ¿en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 61.56,
+      "end": 66.16,
+      "text": " No, mira, ahorita les decía yo a la señorita que ya no puedo pedir nada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 66.36,
+      "end": 68.46,
+      "text": " porque no se encuentra la señora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 68.46,
+      "end": 71.52,
+      "text": " Cuando venga yo les doy su recado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 71.52,
+      "end": 74.52,
+      "text": " El día de ayer referirse a la grabadora que pasó ahorita, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 74.52,
+      "end": 75.52,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 75.52,
+      "end": 76.52,
+      "text": " ¿Qué es la idea?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 76.52,
+      "end": 78.52,
+      "text": " Que tengan una mejor oferta, que puedan pagar menos o aprovechar mejor el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 78.52,
+      "end": 81.52,
+      "text": " ¿Cuándo podría comunicarme para revisarlo entre todos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 81.52,
+      "end": 85.97,
+      "text": " Hasta la nochecita que llegue la señora de trabajar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 85.97,
+      "end": 86.97,
+      "text": " Ok, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 86.97,
+      "end": 89.97,
+      "text": " También podríamos poner el servicio a su nombre, incluso, no hay problema.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 89.97,
+      "end": 90.97,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 90.97,
+      "end": 93.19,
+      "text": " ¿O tendríamos que ver las fuerzas con ellos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 93.39,
+      "end": 97.65,
+      "text": " No, pero cuando nos encuentren ya yo no me estoy aquí de pasada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 97.65,
+      "end": 98.65,
+      "text": " Ok, muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 98.65,
+      "end": 100.65,
+      "text": " Paso el comentario y me comunico más adelante, ¿va?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 100.65,
+      "end": 101.65,
+      "text": " Sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 101.65,
+      "end": 102.65,
+      "text": " Bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 102.65,
+      "end": 103.65,
+      "text": " A usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 103.65,
+      "end": 104.65,
+      "text": " Un momento, bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

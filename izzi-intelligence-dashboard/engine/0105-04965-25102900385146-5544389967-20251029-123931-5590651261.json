@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900385146-5544389967-20251029-123931-5590651261.WAV",
+  "file_name": "0105-04965-25102900385146-5544389967-20251029-123931-5590651261.WAV",
+  "base_id": "0105-04965-25102900385146-5544389967-20251029-123931-5590651261",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. Buenas tardes. Buenas tardes, señorita. Me presento. Mi nombre es Patricia Barillo y hablamos de compañía Easy. ¿Con quién tengo el gusto de hablar? No me interesa que sepas mi nombre. Lo único que me interesa es que quiten mi número de sus promociones. Ya les dije mil veces que no y siguen chingando para cambiar mi compañía. No me interesa con ustedes. Espero que quede claro y que quiten mi puto número de sus contactos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.8,
+      "end": 24.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.1,
+      "end": 35.06,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.06,
+      "end": 37.02,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.22,
+      "end": 38.82,
+      "text": " Buenas tardes, señorita. Me presento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.82,
+      "end": 42.82,
+      "text": " Mi nombre es Patricia Barillo y hablamos de compañía Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.82,
+      "end": 44.42,
+      "text": " ¿Con quién tengo el gusto de hablar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.42,
+      "end": 46.22,
+      "text": " No me interesa que sepas mi nombre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.22,
+      "end": 49.72,
+      "text": " Lo único que me interesa es que quiten mi número de sus promociones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.72,
+      "end": 53.82,
+      "text": " Ya les dije mil veces que no y siguen chingando para cambiar mi compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.82,
+      "end": 55.32,
+      "text": " No me interesa con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 55.32,
+      "end": 58.52,
+      "text": " Espero que quede claro y que quiten mi puto número de sus contactos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.12,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

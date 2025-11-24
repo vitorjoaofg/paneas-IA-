@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400112720-5544389993-20251014-084511-5594068873.WAV",
+  "file_name": "0105-04965-25101400112720-5544389993-20251014-084511-5594068873.WAV",
+  "base_id": "0105-04965-25101400112720-5544389993-20251014-084511-5594068873",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal, buenos días? Me presento a hablar con José Manuel Gozal. Estoy marcando compañía a Easy. ¿Con quién tengo gusto? Hola, buenos días, Consintia. Disculpe, me han sonmarcado demasiado. Yo soy de Total Play, pero no me interesa cambiarme. Ok, para ponerle aquí una nota. Vamos a quitar la terminación 8873. Permítame un minuto, permítame. Qué bueno que también hablo calmadita. Hay otros que me maltratan muy feo. Vamos a quitarlo. Ya quedó. Un desculpo. Ahora sí, hasta luego. Gracias. Ya lo desactivamos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.54,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.54,
+      "end": 12.34,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.34,
+      "end": 18.74,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.74,
+      "end": 23.86,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.86,
+      "end": 33.18,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.18,
+      "end": 39.1,
+      "text": " asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.1,
+      "end": 48.48,
+      "text": " ¿Qué tal, buenos días? Me presento a hablar con José Manuel Gozal. Estoy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.48,
+      "end": 50.28,
+      "text": " marcando compañía a Easy. ¿Con quién tengo gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.28,
+      "end": 57.12,
+      "text": " Hola, buenos días, Consintia. Disculpe, me han sonmarcado demasiado. Yo soy de Total Play,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.12,
+      "end": 59.08,
+      "text": " pero no me interesa cambiarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.52,
+      "end": 66.6,
+      "text": " Ok, para ponerle aquí una nota. Vamos a quitar la terminación 8873. Permítame un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.6,
+      "end": 74.79,
+      "text": " minuto, permítame. Qué bueno que también hablo calmadita. Hay otros que me maltratan",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.79,
+      "end": 82.19,
+      "text": " muy feo. Vamos a quitarlo. Ya quedó. Un desculpo. Ahora sí, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 82.19,
+      "end": 84.31,
+      "text": " Gracias. Ya lo desactivamos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.596,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

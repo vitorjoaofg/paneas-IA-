@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100658767-3314541379-20251011-150400-3345310449.WAV",
+  "file_name": "0105-04965-25101100658767-3314541379-20251011-150400-3345310449.WAV",
+  "base_id": "0105-04965-25101100658767-3314541379-20251011-150400-3345310449",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Contrataciones Easy en que le puedo ayudar? No, mira, me están hablando que sí, que me interesa. Si quiero tener Internet, pero ya tengo, oiga. ¿Oye, cuenta con servicio Easy en casa? Ya tengo, sí, entonces no me interesa porque ya no tengo, ¿verdad? Ok, no se preocupa, le voy entonces aquí al comentario, ¿está bien? Sí, gracias. Un buen día, muchas gracias. Adiós. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 23.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 25.4,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.4,
+      "end": 34.16,
+      "text": " ¿Contrataciones Easy en que le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.16,
+      "end": 37.16,
+      "text": " No, mira, me están hablando que sí, que me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.16,
+      "end": 40.16,
+      "text": " Si quiero tener Internet, pero ya tengo, oiga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.16,
+      "end": 42.16,
+      "text": " ¿Oye, cuenta con servicio Easy en casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.16,
+      "end": 46.16,
+      "text": " Ya tengo, sí, entonces no me interesa porque ya no tengo, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.16,
+      "end": 50.16,
+      "text": " Ok, no se preocupa, le voy entonces aquí al comentario, ¿está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.16,
+      "end": 51.16,
+      "text": " Sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.16,
+      "end": 52.16,
+      "text": " Un buen día, muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.16,
+      "end": 53.16,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.16,
+      "end": 54.16,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.124,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700028024-8675440448-20251027-073723-04896.WAV",
+  "file_name": "0105-04965-25102700028024-8675440448-20251027-073723-04896.WAV",
+  "base_id": "0105-04965-25102700028024-8675440448-20251027-073723-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, big streaming y eventos deportivos exclusivos por solo 350 en primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. ¿Contrataciones? ¿Y si le atiende Javier Romero? ¿Con quién tengo el gusto? ¿Contrataciones? ¿Y si le atiende Javier Romero? ¿Con quién tengo el gusto? Falta deuda y terminó la llamada por cuestiones de calidad. ¡Sin un su madre!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 8.5,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 17.4,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, big streaming y eventos deportivos exclusivos por solo 350 en primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 23.4,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 29.82,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.02,
+      "end": 34.62,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.62,
+      "end": 39.62,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.62,
+      "end": 49.3,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.3,
+      "end": 59.48,
+      "text": " ¿Contrataciones? ¿Y si le atiende Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.48,
+      "end": 69.66,
+      "text": " ¿Contrataciones? ¿Y si le atiende Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.66,
+      "end": 74.79,
+      "text": " Falta deuda y terminó la llamada por cuestiones de calidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.79,
+      "end": 75.79,
+      "text": " ¡Sin un su madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.608,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

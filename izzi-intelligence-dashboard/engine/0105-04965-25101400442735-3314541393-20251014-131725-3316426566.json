@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400442735-3314541393-20251014-131725-3316426566.WAV",
+  "file_name": "0105-04965-25101400442735-3314541393-20251014-131725-3316426566.WAV",
+  "base_id": "0105-04965-25101400442735-3314541393-20251014-131725-3316426566",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Buenas tardes. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Contrataciones Easy, la tienda de Edgar Torres, ¿con qué ha sido el gusto? Buenas tardes. Sí, buenas tardes. Ahorita me llegó una llamada, me dijeron que, es que ya tenía Internet o algo así. Así es, se le están ofreciendo lo que son nuestros servicios de Internet, Televisión y Telefonía para el hogar. Se te intenta mejorar la calidad del servicio que tú ya tengas o el costo de lo que tú ya pagues. Ya cuentas con alguno de estos servicios en tu domicilio. ¿Me puedes pagar tu número para que te pueda llamar? ¿Cómo? ¿Perdón? Sí, me puedes pagar tu número para que podamos comunicar. Ah, ok. Bueno, sí es un problema.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.74,
+      "end": 22.74,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.74,
+      "end": 34.76,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.76,
+      "end": 46.73,
+      "text": " Contrataciones Easy, la tienda de Edgar Torres, ¿con qué ha sido el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 46.73,
+      "end": 47.95,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.95,
+      "end": 50.55,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.55,
+      "end": 57.55,
+      "text": " Ahorita me llegó una llamada, me dijeron que, es que ya tenía Internet o algo así.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.74,
+      "end": 63.74,
+      "text": " Así es, se le están ofreciendo lo que son nuestros servicios de Internet, Televisión y Telefonía para el hogar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.74,
+      "end": 68.74,
+      "text": " Se te intenta mejorar la calidad del servicio que tú ya tengas o el costo de lo que tú ya pagues.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.74,
+      "end": 71.9,
+      "text": " Ya cuentas con alguno de estos servicios en tu domicilio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.9,
+      "end": 84.63,
+      "text": " ¿Me puedes pagar tu número para que te pueda llamar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 84.63,
+      "end": 86.27,
+      "text": " ¿Cómo? ¿Perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 86.27,
+      "end": 90.75,
+      "text": " Sí, me puedes pagar tu número para que podamos comunicar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 90.75,
+      "end": 94.17,
+      "text": " Ah, ok. Bueno, sí es un problema.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 112.212,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

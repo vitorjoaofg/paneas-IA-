@@ -1,0 +1,546 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300101002-5544389996-20251013-090110-5597921389.WAV",
+  "file_name": "0105-04965-25101300101002-5544389996-20251013-090110-5597921389.WAV",
+  "base_id": "0105-04965-25101300101002-5544389996-20251013-090110-5597921389",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, bien día. Le hablé a Ibonfil de parte de su servicio de Easy para darle con usted algunos beneficios con la compañía. Buen día. Buenos días, señorita. Bueno, mire, señorita. El primer mes es de, ¿cuánto me dijo? 350. 350. Y después, ¿qué es lo que se paga cada mes? De lo que tiene normal. Yo no quiero que me... Mire, porque entra uno con 350. Pero yo quiero saber después cuánto voy a pagar lo normal ya para siempre. Depende del paquete que quiera, ya sea con televisión o solo Internet. No, yo nada más de Internet. Son 349 por tres meses, después quedan 389. Normal ya los tres... bueno, los 400. Pero normal ya para pagar. Eso sería. Lo quiero de 100, nada más. Ah, ok. De 100 megas ya tiene otro costo. Ese es el de 60 megas. En ese precio ya de 100 megas le quedan 540. De 60 megas, 300... ¿qué? 89. Bueno, bueno, 400 pesos. Pero ya queda lo normal. Ya ni más ni menos. Sí, la instalación se hace aproximadamente en tres días. El primer pago es de 350. Y para hacer el contrato nada más ocupamos su clave lector, un número telefónico que reciba WhatsApp y un correo electrónico. Le podemos revisar si tiene cobertura. ¿Quiere que le revise? No, señorita, es por primera vez. Pero yo quiero saber. Porque luego... yo he oído muchas quejas de Dr. Price que nomás dicen... y si ahorita ya no, se embarcan y después ya 700 pagas. Digo, ¿cuánto usas eso? Y yo tengo de 100. Y si ahorita son 700... no. No, yo si lo meto... Que me digan a toda la vida cuánto es. No, que ya pagué. Y bueno, hay que pagar también antes, como de dos días o tres. Sí, si paga el día no sube. Pero si se atrasa sube 100 pesos. Es lo que les digo. Bueno, lo voy a pensar y yo luego le hablo. Gracias, que tenga un buen día. Igualmente, que tenga mucho trabajo. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.48,
+      "end": 20.48,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.04,
+      "end": 24.24,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.76,
+      "end": 33.56,
+      "text": " Hola, bien día. Le hablé a Ibonfil de parte de su servicio de Easy",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.64,
+      "end": 36.64,
+      "text": " para darle con usted algunos beneficios con la compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.64,
+      "end": 38.1,
+      "text": " Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.1,
+      "end": 39.5,
+      "text": " Buenos días, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.5,
+      "end": 40.9,
+      "text": " Bueno, mire, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.9,
+      "end": 45.29,
+      "text": " El primer mes es de, ¿cuánto me dijo? 350.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.29,
+      "end": 46.49,
+      "text": " 350.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.49,
+      "end": 50.09,
+      "text": " Y después, ¿qué es lo que se paga cada mes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 50.09,
+      "end": 51.29,
+      "text": " De lo que tiene normal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 51.29,
+      "end": 52.69,
+      "text": " Yo no quiero que me...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 52.69,
+      "end": 56.09,
+      "text": " Mire, porque entra uno con 350.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 56.09,
+      "end": 61.41,
+      "text": " Pero yo quiero saber después cuánto voy a pagar lo normal ya para siempre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 61.49,
+      "end": 65.49,
+      "text": " Depende del paquete que quiera, ya sea con televisión o solo Internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 65.49,
+      "end": 68.49,
+      "text": " No, yo nada más de Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 68.49,
+      "end": 74.55,
+      "text": " Son 349 por tres meses, después quedan 389.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 74.55,
+      "end": 77.55,
+      "text": " Normal ya los tres... bueno, los 400.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 77.55,
+      "end": 80.32,
+      "text": " Pero normal ya para pagar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 80.32,
+      "end": 81.32,
+      "text": " Eso sería.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 81.32,
+      "end": 83.48,
+      "text": " Lo quiero de 100, nada más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 83.48,
+      "end": 86.48,
+      "text": " Ah, ok. De 100 megas ya tiene otro costo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 86.48,
+      "end": 89.48,
+      "text": " Ese es el de 60 megas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 89.56,
+      "end": 93.56,
+      "text": " En ese precio ya de 100 megas le quedan 540.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 93.56,
+      "end": 96.72,
+      "text": " De 60 megas, 300... ¿qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 96.72,
+      "end": 97.72,
+      "text": " 89.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 97.72,
+      "end": 99.72,
+      "text": " Bueno, bueno, 400 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 99.72,
+      "end": 101.72,
+      "text": " Pero ya queda lo normal.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 101.72,
+      "end": 105.26,
+      "text": " Ya ni más ni menos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 105.26,
+      "end": 109.26,
+      "text": " Sí, la instalación se hace aproximadamente en tres días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 109.26,
+      "end": 112.26,
+      "text": " El primer pago es de 350.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 112.26,
+      "end": 116.26,
+      "text": " Y para hacer el contrato nada más ocupamos su clave lector,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 116.26,
+      "end": 120.26,
+      "text": " un número telefónico que reciba WhatsApp y un correo electrónico.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 120.34,
+      "end": 123.34,
+      "text": " Le podemos revisar si tiene cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 123.34,
+      "end": 125.34,
+      "text": " ¿Quiere que le revise?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 125.34,
+      "end": 127.34,
+      "text": " No, señorita, es por primera vez.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 127.34,
+      "end": 129.88,
+      "text": " Pero yo quiero saber.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 129.88,
+      "end": 133.88,
+      "text": " Porque luego... yo he oído muchas quejas de Dr. Price",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 133.88,
+      "end": 135.88,
+      "text": " que nomás dicen... y si ahorita ya no,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 135.88,
+      "end": 138.88,
+      "text": " se embarcan y después ya 700 pagas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 138.88,
+      "end": 140.88,
+      "text": " Digo, ¿cuánto usas eso?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 140.88,
+      "end": 142.88,
+      "text": " Y yo tengo de 100.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 142.88,
+      "end": 144.88,
+      "text": " Y si ahorita son 700... no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 144.88,
+      "end": 146.88,
+      "text": " No, yo si lo meto...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 146.88,
+      "end": 148.88,
+      "text": " Que me digan a toda la vida cuánto es.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 148.96,
+      "end": 149.96,
+      "text": " No, que ya pagué.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 149.96,
+      "end": 151.96,
+      "text": " Y bueno, hay que pagar también antes,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 151.96,
+      "end": 155.08,
+      "text": " como de dos días o tres.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 155.08,
+      "end": 159.08,
+      "text": " Sí, si paga el día no sube.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 159.08,
+      "end": 161.08,
+      "text": " Pero si se atrasa sube 100 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 161.08,
+      "end": 163.08,
+      "text": " Es lo que les digo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 163.08,
+      "end": 166.5,
+      "text": " Bueno, lo voy a pensar y yo luego le hablo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 166.5,
+      "end": 168.5,
+      "text": " Gracias, que tenga un buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 168.5,
+      "end": 171.5,
+      "text": " Igualmente, que tenga mucho trabajo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 171.5,
+      "end": 173.5,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 173.484,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400338590-5544389960-20251014-114255-5594614675.WAV",
+  "file_name": "0105-04965-25101400338590-5544389960-20251014-114255-5594614675.WAV",
+  "base_id": "0105-04965-25101400338590-5544389960-20251014-114255-5594614675",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? Ah, no estoy encuentro. ¿Qué es el mejor detenimiento con 200 canales, Bix Premium y eventos deportivos? Llegaría como a la... ¿Solo 350 pesos el primer mes? Seis, cinco y media. No lo siento más y cámbiate a Easy. ¿Te interesa? Un asesor que está esperando. Sí, es mi papá. Por favor, hable. Sí, está bien. Yo le digo. Ok, gracias. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.5,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.5,
+      "end": 5.5,
+      "text": " Ah, no estoy encuentro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 5.5,
+      "end": 9.5,
+      "text": " ¿Qué es el mejor detenimiento con 200 canales, Bix Premium y eventos deportivos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 9.5,
+      "end": 10.5,
+      "text": " Llegaría como a la...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 10.5,
+      "end": 13.5,
+      "text": " ¿Solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 13.5,
+      "end": 14.5,
+      "text": " Seis, cinco y media.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 14.5,
+      "end": 16.5,
+      "text": " No lo siento más y cámbiate a Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 16.5,
+      "end": 18.5,
+      "text": " ¿Te interesa? Un asesor que está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 18.5,
+      "end": 20.0,
+      "text": " Sí, es mi papá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 20.0,
+      "end": 21.5,
+      "text": " Por favor, hable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 21.5,
+      "end": 25.41,
+      "text": " Sí, está bien. Yo le digo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 26.61,
+      "end": 28.11,
+      "text": " Ok, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 28.11,
+      "end": 30.61,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

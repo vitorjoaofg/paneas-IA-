@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900415897-5544389969-20251029-130526-5530883912.WAV",
+  "file_name": "0105-04965-25102900415897-5544389969-20251029-130526-5530883912.WAV",
+  "base_id": "0105-04965-25102900415897-5544389969-20251029-130526-5530883912",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Habla Miriam Goseguera de parte de la compañía de Easy. Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos activos. No sé si ya manejo usted servicio de Internet o televisión porque hable con nosotros. Bueno, bueno, calidad finalista. Bueno, ¿sí me escucha caballero? Bueno. Habla Miriam Goseguera de parte de la compañía de Easy. Mi nombre es Miriam Goseguera, es para darles a conocer algunos beneficios. Bueno, bueno, bueno, bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.31,
+      "end": 24.61,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.61,
+      "end": 34.88,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.88,
+      "end": 37.38,
+      "text": " Habla Miriam Goseguera de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.38,
+      "end": 42.18,
+      "text": " Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.18,
+      "end": 49.82,
+      "text": " No sé si ya manejo usted servicio de Internet o televisión porque hable con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.82,
+      "end": 59.94,
+      "text": " Bueno, bueno, calidad finalista.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 59.94,
+      "end": 63.73,
+      "text": " Bueno, ¿sí me escucha caballero?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.73,
+      "end": 64.73,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.73,
+      "end": 66.73,
+      "text": " Habla Miriam Goseguera de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 66.73,
+      "end": 70.73,
+      "text": " Mi nombre es Miriam Goseguera, es para darles a conocer algunos beneficios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 70.73,
+      "end": 87.06,
+      "text": " Bueno, bueno, bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 136.764,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

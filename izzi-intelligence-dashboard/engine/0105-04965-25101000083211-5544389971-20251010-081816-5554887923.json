@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000083211-5544389971-20251010-081816-5554887923.WAV",
+  "file_name": "0105-04965-25101000083211-5544389971-20251010-081816-5554887923.WAV",
+  "base_id": "0105-04965-25101000083211-5544389971-20251010-081816-5554887923",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no... Espera un momento, por favor. Sí, buenos días, la tiene Julio Vargas Dizzi, con quien tengo el gusto. Sí, buenos días, con quien tengo el gusto. Sí, buenos días, con quien tengo el gusto. Buen motivo de calidad, voy a finalizar la llamada que el computer responde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 24.36,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no... Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.36,
+      "end": 25.76,
+      "text": " un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.94,
+      "end": 34.94,
+      "text": " Sí, buenos días, la tiene Julio Vargas Dizzi, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.94,
+      "end": 39.94,
+      "text": " Sí, buenos días, con quien tengo el gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.94,
+      "end": 65.92,
+      "text": " Sí, buenos días, con quien tengo el gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.92,
+      "end": 68.92,
+      "text": " Buen motivo de calidad, voy a finalizar la llamada que el computer responde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.576,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

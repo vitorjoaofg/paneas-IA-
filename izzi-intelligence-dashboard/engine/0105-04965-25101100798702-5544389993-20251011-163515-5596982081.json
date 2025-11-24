@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100798702-5544389993-20251011-163515-5596982081.WAV",
+  "file_name": "0105-04965-25101100798702-5544389993-20251011-163515-5596982081.WAV",
+  "base_id": "0105-04965-25101100798702-5544389993-20251011-163515-5596982081",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mismo entretenimiento con Vix Premium, más Skysports de 150 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bienvenido al área de contratación. A ver si con su puta madre te lo quiero nada, puto berguero.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mismo entretenimiento con Vix Premium, más Skysports de 150 pesos el primer mes con Easy Es Posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 30.82,
+      "end": 31.82,
+      "text": " Bienvenido al área de contratación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.82,
+      "end": 34.82,
+      "text": " A ver si con su puta madre te lo quiero nada, puto berguero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 36.396,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700378896-5544389956-20251017-122343-5597160253.WAV",
+  "file_name": "0105-04965-25101700378896-5544389956-20251017-122343-5597160253.WAV",
+  "base_id": "0105-04965-25101700378896-5544389956-20251017-122343-5597160253",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport, desde 350 pesos al día? Si no la estoy, que ya la p... Es posible. ¿Te interesa? Un asesor te está esperando. Si no la estoy, que ya la p... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.82,
+      "end": 10.82,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport, desde 350 pesos al día?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.82,
+      "end": 12.82,
+      "text": " Si no la estoy, que ya la p...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.82,
+      "end": 16.82,
+      "text": " Es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.82,
+      "end": 23.82,
+      "text": " Si no la estoy, que ya la p...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.82,
+      "end": 29.36,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.36,
+      "end": 39.41,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.736,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

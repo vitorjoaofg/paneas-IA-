@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100365130-5540409208-20251021-121847-5576788812.WAV",
+  "file_name": "0105-04965-25102100365130-5540409208-20251021-121847-5576788812.WAV",
+  "base_id": "0105-04965-25102100365130-5540409208-20251021-121847-5576788812",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skysports desde 350 pesos al primer mes? Con IFI es posible. ¿Te interesa? Un asesor te está esperando. Porfa... Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse a la de...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.26,
+      "end": 8.04,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.04,
+      "end": 12.68,
+      "text": " más Skysports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.68,
+      "end": 14.44,
+      "text": " Con IFI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.44,
+      "end": 15.44,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 15.44,
+      "end": 17.72,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.72,
+      "end": 18.72,
+      "text": " Porfa...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 18.72,
+      "end": 19.72,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 19.72,
+      "end": 29.88,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.88,
+      "end": 32.88,
+      "text": " Gracias por comunicarse a la de...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 33.732,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

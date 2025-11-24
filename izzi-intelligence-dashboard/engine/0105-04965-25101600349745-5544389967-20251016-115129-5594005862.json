@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600349745-5544389967-20251016-115129-5594005862.WAV",
+  "file_name": "0105-04965-25101600349745-5544389967-20251016-115129-5594005862.WAV",
+  "base_id": "0105-04965-25101600349745-5544389967-20251016-115129-5594005862",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Se está comunicando con Trataciones Isiria, tiene la señorita Janet Pulido, con quien tengo el gusto. Con María Esther. Hola, ¿qué tal, señorita María Esther? Alcanza a escuchar la propuesta que se le hizo en el computador para que pueda tener el servicio de Internet, teléfono y televisión. ¿Ah, no era para lavar ropa? No, aquí es Internet, teléfono y televisión. ¿Qué desea contratar? ¿Le mandamos el técnico el día de hoy? No. Bueno, entonces, tengo un excelente día. Hasta luego. Sí, bye, bye bye bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 16.48,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.48,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.68,
+      "end": 23.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.94,
+      "end": 38.26,
+      "text": " Se está comunicando con Trataciones Isiria, tiene la señorita Janet Pulido, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.18,
+      "end": 41.21,
+      "text": " Con María Esther.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.21,
+      "end": 42.81,
+      "text": " Hola, ¿qué tal, señorita María Esther?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.81,
+      "end": 47.25,
+      "text": " Alcanza a escuchar la propuesta que se le hizo en el computador para que pueda tener el servicio de Internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.25,
+      "end": 48.33,
+      "text": " teléfono y televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.33,
+      "end": 51.08,
+      "text": " ¿Ah, no era para lavar ropa?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.08,
+      "end": 55.0,
+      "text": " No, aquí es Internet, teléfono y televisión. ¿Qué desea contratar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.0,
+      "end": 57.36,
+      "text": " ¿Le mandamos el técnico el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.36,
+      "end": 60.05,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 60.05,
+      "end": 62.89,
+      "text": " Bueno, entonces, tengo un excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 62.89,
+      "end": 63.69,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 63.69,
+      "end": 66.29,
+      "text": " Sí, bye, bye bye bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.608,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

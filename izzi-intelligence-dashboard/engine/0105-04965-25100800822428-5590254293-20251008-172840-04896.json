@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800822428-5590254293-20251008-172840-04896.WAV",
+  "file_name": "0105-04965-25100800822428-5590254293-20251008-172840-04896.WAV",
+  "base_id": "0105-04965-25100800822428-5590254293-20251008-172840-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Contrataciones Easy? ¿La atiende Edgar Torres? ¿Con quien tengo el gusto? Mire, joven, lo que pasa es que me molestan diario y cada rato porque quieren que con... Ya les he dicho que no Easy. Ahorita una semana más o menos me dejaron tranquila. Y ahorita empezaron otra vez a estarme llamando. Yo no me interesa. Entonces les pido de favor a ver si hay manera de que ya no me estén molestando. Ah, ok. Mire, le pedí una disculpa. Yo no le llamé mientras la llamaba como para intentar atenderla. Pero igual aquí pongo los comentarios de que no está interesado, no se preocupen. Sí, gracias. Gracias a usted. Ten un buen día, señora. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 14.0,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 19.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.0,
+      "end": 26.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.0,
+      "end": 37.78,
+      "text": " ¿Contrataciones Easy? ¿La atiende Edgar Torres? ¿Con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.78,
+      "end": 42.78,
+      "text": " Mire, joven, lo que pasa es que me molestan diario y cada rato porque quieren que con...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.78,
+      "end": 47.78,
+      "text": " Ya les he dicho que no Easy. Ahorita una semana más o menos me dejaron tranquila.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.78,
+      "end": 50.78,
+      "text": " Y ahorita empezaron otra vez a estarme llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.78,
+      "end": 55.78,
+      "text": " Yo no me interesa. Entonces les pido de favor a ver si hay manera de que ya no me estén molestando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.78,
+      "end": 60.9,
+      "text": " Ah, ok. Mire, le pedí una disculpa. Yo no le llamé mientras la llamaba como para intentar atenderla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.9,
+      "end": 63.9,
+      "text": " Pero igual aquí pongo los comentarios de que no está interesado, no se preocupen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.9,
+      "end": 64.9,
+      "text": " Sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.9,
+      "end": 66.9,
+      "text": " Gracias a usted. Ten un buen día, señora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.9,
+      "end": 67.9,
+      "text": " Igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.272,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

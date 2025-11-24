@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300179227-5544389953-20251023-094140-5553900026.WAV",
+  "file_name": "0105-04965-25102300179227-5544389953-20251023-094140-5553900026.WAV",
+  "base_id": "0105-04965-25102300179227-5544389953-20251023-094140-5553900026",
+  "transcription": "Gracias por llamar a Incomix. Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con VIX Premium, más credit sports, desde 350 pesos en primer mes? Con Easy es posible. Si aún no es de tu interés y desea dar su realza. No decide si a marcar una extensión o cero para la operadora. Espera un momento, por favor. Gracias por llamar a Incomix. Por favor, elija una de las siguientes opciones para continuar. Uno, ventas. Dos, crédito. Tres, soporte técnico y garantías. Cuatro, si aún.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 1.52,
+      "text": " Gracias por llamar a Incomix.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.46,
+      "end": 9.16,
+      "text": " Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.16,
+      "end": 13.42,
+      "text": " más credit sports, desde 350 pesos en primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.66,
+      "end": 15.12,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 15.12,
+      "end": 18.68,
+      "text": " Si aún no es de tu interés y desea dar su realza.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.68,
+      "end": 22.22,
+      "text": " No decide si a marcar una extensión o cero para la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.56,
+      "end": 28.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.78,
+      "end": 34.98,
+      "text": " Gracias por llamar a Incomix.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.99,
+      "end": 39.11,
+      "text": " Por favor, elija una de las siguientes opciones para continuar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.05,
+      "end": 41.13,
+      "text": " Uno, ventas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.22,
+      "end": 43.52,
+      "text": " Dos, crédito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.41,
+      "end": 46.85,
+      "text": " Tres, soporte técnico y garantías.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.91,
+      "end": 48.99,
+      "text": " Cuatro, si aún.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 137.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

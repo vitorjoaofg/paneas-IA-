@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700311299-5540409207-20251017-112507-5594055826.WAV",
+  "file_name": "0105-04965-25101700311299-5540409207-20251017-112507-5594055826.WAV",
+  "base_id": "0105-04965-25101700311299-5540409207-20251017-112507-5594055826",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cambia a VIX! ¿Te interesa? ¿Una te está esperando? Por favor, hable o pulse 1 para sí o 2 para no. Sí, aquí te están marcando los IZI, te marca para que te cambies. ¿Puedes marcar uno para que te entiendan a nosotros? Gracias por llamar a IZI. ¿Cómo le ayudó? Me marcaron a mí. Ah, disculpe. ¿Le llegó alguna información referente al nuevo servicio de IZI? ¿Usted ya tiene nuestro servicio? Yo no tengo IZI. De hecho, yo soy negacable, me llegan llamadas para cambio de empresa. Ah, muy bien. ¿Ya le dieron la información? No. Ah, bien. Ahorita contamos. No sé si usted cuenta con Internet, telefonía y video o qué es lo que le interesaría. No, lo que pasa es que me marcaron. Disculpe. No cuelgue por favor. No cuelgue por favor. No cuelgue por favor. No cuelgue por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 19.52,
+      "text": " pesos el primer mes? ¡No lo pienses más y cambia a VIX! ¿Te interesa? ¿Una te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.52,
+      "end": 23.92,
+      "text": " esperando? Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.92,
+      "end": 29.82,
+      "text": " Sí, aquí te están marcando los IZI, te marca para que te cambies. ¿Puedes marcar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.82,
+      "end": 41.58,
+      "text": " uno para que te entiendan a nosotros? Gracias por llamar a IZI. ¿Cómo le ayudó?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.58,
+      "end": 47.06,
+      "text": " Me marcaron a mí. Ah, disculpe. ¿Le llegó alguna información referente al nuevo servicio",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.06,
+      "end": 52.54,
+      "text": " de IZI? ¿Usted ya tiene nuestro servicio? Yo no tengo IZI. De hecho, yo soy negacable,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.54,
+      "end": 60.31,
+      "text": " me llegan llamadas para cambio de empresa. Ah, muy bien. ¿Ya le dieron la información?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.39,
+      "end": 67.39,
+      "text": " No. Ah, bien. Ahorita contamos. No sé si usted cuenta con Internet, telefonía y video",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.27,
+      "end": 75.9,
+      "text": " o qué es lo que le interesaría. No, lo que pasa es que me marcaron. Disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.9,
+      "end": 90.67,
+      "text": " No cuelgue por favor. No cuelgue por favor. No cuelgue por favor. No cuelgue por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 93.672,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

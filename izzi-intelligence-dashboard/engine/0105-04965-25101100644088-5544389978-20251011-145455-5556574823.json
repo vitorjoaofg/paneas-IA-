@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100644088-5544389978-20251011-145455-5556574823.WAV",
+  "file_name": "0105-04965-25101100644088-5544389978-20251011-145455-5556574823.WAV",
+  "base_id": "0105-04965-25101100644088-5544389978-20251011-145455-5556574823",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Le habla Alberto Ruiz, parte del departamento de... Buenas tardes. Mire, ya tengo Easy. Ya tengo Easy. Ah, ok. ¿Ya cuenta con un servicio de Easy? Sí, ya tenemos Easy. Ah, ok. ¿Esa nombre es el señor Elias Dominguez Enrique, verdad? Así es, así es. Oh, ok, ok. Bueno, una disculpa, que tenga una excelente tarde. No, hasta luego. Bendiciones. Igualmente. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 16.5,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.5,
+      "end": 21.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.0,
+      "end": 26.0,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.13,
+      "end": 35.63,
+      "text": " Hola, ¿qué tal? Buenas tardes. Le habla Alberto Ruiz, parte del departamento de...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.63,
+      "end": 39.95,
+      "text": " Buenas tardes. Mire, ya tengo Easy. Ya tengo Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.95,
+      "end": 41.95,
+      "text": " Ah, ok. ¿Ya cuenta con un servicio de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.95,
+      "end": 43.95,
+      "text": " Sí, ya tenemos Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.95,
+      "end": 46.95,
+      "text": " Ah, ok. ¿Esa nombre es el señor Elias Dominguez Enrique, verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.95,
+      "end": 48.95,
+      "text": " Así es, así es.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.95,
+      "end": 51.95,
+      "text": " Oh, ok, ok. Bueno, una disculpa, que tenga una excelente tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.95,
+      "end": 54.95,
+      "text": " No, hasta luego. Bendiciones.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.95,
+      "end": 56.95,
+      "text": " Igualmente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.95,
+      "end": 57.95,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.036,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

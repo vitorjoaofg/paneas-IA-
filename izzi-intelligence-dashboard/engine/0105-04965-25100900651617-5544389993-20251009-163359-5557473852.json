@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900651617-5544389993-20251009-163359-5557473852.WAV",
+  "file_name": "0105-04965-25100900651617-5544389993-20251009-163359-5557473852.WAV",
+  "base_id": "0105-04965-25100900651617-5544389993-20251009-163359-5557473852",
+  "transcription": "¿Planición Buenas Tardes? ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ¿Qué buenas tardes? ¿Qué buenas buenas tardes?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.75,
+      "end": 2.75,
+      "text": " ¿Planición Buenas Tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.75,
+      "end": 8.5,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 15.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.28,
+      "end": 21.7,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.7,
+      "end": 27.78,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.1,
+      "end": 38.64,
+      "text": " un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.64,
+      "end": 45.47,
+      "text": " ¿Qué buenas tardes? ¿Qué buenas buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 116.424,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

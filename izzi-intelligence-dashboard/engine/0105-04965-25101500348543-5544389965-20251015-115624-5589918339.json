@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500348543-5544389965-20251015-115624-5589918339.WAV",
+  "file_name": "0105-04965-25101500348543-5544389965-20251015-115624-5589918339.WAV",
+  "base_id": "0105-04965-25101500348543-5544389965-20251015-115624-5589918339",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. ¿Con quién tengo el gusto? Señorita Vanessa, nos estamos comunicando porque tenemos beneficios en su cuenta. ¿Usted cuenta con nuestro servicio? Dos días acá me están llamando y no me interesa captar el servicio, pero es que a cada momento me están llamando durante todo el día. No, no se preocupe, aquí le vamos a poner en el sistema. Ok? Que tenga un excelente día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 21.2,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.2,
+      "end": 31.34,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.34,
+      "end": 129.5,
+      "text": " un asesor o 2 para... Espera un momento, por favor. ¿Con quién tengo el gusto? Señorita",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 129.5,
+      "end": 137.38,
+      "text": " Vanessa, nos estamos comunicando porque tenemos beneficios en su cuenta. ¿Usted cuenta con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 137.38,
+      "end": 138.38,
+      "text": " nuestro servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 138.38,
+      "end": 155.54,
+      "text": " Dos días acá me están llamando y no me interesa captar el servicio, pero es que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 155.54,
+      "end": 158.66,
+      "text": " a cada momento me están llamando durante todo el día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 158.66,
+      "end": 166.78,
+      "text": " No, no se preocupe, aquí le vamos a poner en el sistema. Ok? Que tenga un excelente día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 206.676,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

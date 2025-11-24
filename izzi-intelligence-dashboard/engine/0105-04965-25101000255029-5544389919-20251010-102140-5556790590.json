@@ -1,0 +1,33 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000255029-5544389919-20251010-102140-5556790590.WAV",
+  "file_name": "0105-04965-25101000255029-5544389919-20251010-102140-5556790590.WAV",
+  "base_id": "0105-04965-25101000255029-5544389919-20251010-102140-5556790590",
+  "transcription": "Bueno. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 0.5,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 33.3,
+      "end": 35.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.776,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

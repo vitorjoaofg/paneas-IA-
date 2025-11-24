@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300077640-3314541366-20251023-081919-8999575555.WAV",
+  "file_name": "0105-04965-25102300077640-3314541366-20251023-081919-8999575555.WAV",
+  "base_id": "0105-04965-25102300077640-3314541366-20251023-081919-8999575555",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. ¡Hola! ¿Buenos días? ¡Bueno! ¿Buenos días? Hablamos de compañía Easy. ¿Con quién tengo el gusto? ¿De parte de qué? Hablamos de compañía Easy, señorita. Es para ofrecerle nuestros servicios de nuestra compañía. Bueno, bueno. Bueno, bueno. ¿Qualidad por falta de audio con la rellamada?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 25.94,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.38,
+      "end": 33.02,
+      "text": " ¡Siento! No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.02,
+      "end": 41.72,
+      "text": " asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.72,
+      "end": 47.76,
+      "text": " conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.62,
+      "end": 59.62,
+      "text": " ¡Hola! ¿Buenos días?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.62,
+      "end": 61.17,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.17,
+      "end": 70.73,
+      "text": " ¿Buenos días? Hablamos de compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.73,
+      "end": 74.21,
+      "text": " ¿De parte de qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.21,
+      "end": 79.21,
+      "text": " Hablamos de compañía Easy, señorita. Es para ofrecerle nuestros servicios de nuestra",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 79.21,
+      "end": 97.12,
+      "text": " compañía. Bueno, bueno. Bueno, bueno. ¿Qualidad por falta de audio con la rellamada?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.576,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100900648407-9933204196-20251009-163101-04896.WAV",
+  "file_name": "0105-04999-25100900648407-9933204196-20251009-163101-04896.WAV",
+  "base_id": "0105-04999-25100900648407-9933204196-20251009-163101-04896",
+  "transcription": "Gracias por comunicarte, Aisy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Aisy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes. Buenas tardes. Es que quería hacer una pregunta. Dígame. Es que tengo varias llamadas perdidas de este número y siempre me están marca y marca este. ¿Para qué es este número? ¿Por qué me están llamando? Ok. Es que aquí es el área de contrataciones. Sí, sí. Ah, ok, ok, ok. Sí, sí, sí. Es que sí, ya son varias veces que me marcan, la verdad. Y me es incómodo. Ok. Sí. Gracias. Yo registro. Salud.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte, Aisy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 10.5,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.5,
+      "end": 16.4,
+      "text": " más Sky Sports desde 350 el primer mes? Con Aisy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.4,
+      "end": 19.6,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.6,
+      "end": 27.81,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.81,
+      "end": 30.01,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.01,
+      "end": 37.8,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.48,
+      "end": 41.98,
+      "text": " Buenas tardes. Es que quería hacer una pregunta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.98,
+      "end": 43.17,
+      "text": " Dígame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.17,
+      "end": 48.17,
+      "text": " Es que tengo varias llamadas perdidas de este número y siempre me están marca y marca este.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.17,
+      "end": 51.07,
+      "text": " ¿Para qué es este número? ¿Por qué me están llamando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.07,
+      "end": 54.27,
+      "text": " Ok. Es que aquí es el área de contrataciones. Sí, sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.27,
+      "end": 56.49,
+      "text": " Ah, ok, ok, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.49,
+      "end": 60.49,
+      "text": " Sí, sí, sí. Es que sí, ya son varias veces que me marcan, la verdad.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 60.49,
+      "end": 64.3,
+      "text": " Y me es incómodo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 64.3,
+      "end": 65.8,
+      "text": " Ok. Sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 65.8,
+      "end": 66.8,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 66.8,
+      "end": 68.3,
+      "text": " Yo registro. Salud.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.328,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

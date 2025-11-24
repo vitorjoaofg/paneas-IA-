@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800651037-5544389946-20251008-151835-5556226714.WAV",
+  "file_name": "0105-04965-25100800651037-5544389946-20251008-151835-5556226714.WAV",
+  "base_id": "0105-04965-25100800651037-5544389946-20251008-151835-5556226714",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Incy. ¿Te interesa? Un asesor te está esperando. Espera un momento, por favor. Buenas tardes, lo contactamos del servicio Incy. ¿Cuál es su nombre? Llamar a la operadora. Por favor, espere un momento. Buenas tardes, esta es una llamada del servicio Incy. ¿Me comunico con la titular del servicio? Estoy llamando la unidad académica Seaside. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Incy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 20.8,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.8,
+      "end": 32.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.22,
+      "end": 43.22,
+      "text": " Buenas tardes, lo contactamos del servicio Incy. ¿Cuál es su nombre?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.22,
+      "end": 47.5,
+      "text": " Llamar a la operadora. Por favor, espere un momento.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 59.01,
+      "end": 66.29,
+      "text": " Buenas tardes, esta es una llamada del servicio Incy. ¿Me comunico con la titular del servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 67.95,
+      "end": 69.95,
+      "text": " Estoy llamando la unidad académica Seaside.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 69.95,
+      "end": 72.53,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.632,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

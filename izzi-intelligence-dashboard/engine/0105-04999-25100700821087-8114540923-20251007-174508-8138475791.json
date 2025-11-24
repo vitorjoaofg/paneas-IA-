@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100700821087-8114540923-20251007-174508-8138475791.WAV",
+  "file_name": "0105-04999-25100700821087-8114540923-20251007-174508-8138475791.WAV",
+  "base_id": "0105-04999-25100700821087-8114540923-20251007-174508-8138475791",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysport, desde 350 pesos al primer mes, con Infi, es posible. ¿Te interesa? Una mejor te está esperando. Por favor. ¿Buenas? Espera un momento, por favor. Estas cuestiones que hiciste, ¿las tendría a Pierre Torres, con quien tengo el gusto? ¡Buenas! ¿Ahora? Ahorita viene mi papá. Es que fue a un mandado. Si quieres la puedes marcar ahorita, te le digo. Yo soy el papá, si quieres.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skysport, desde 350 pesos al primer mes, con Infi, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Una mejor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.44,
+      "end": 17.44,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.64,
+      "end": 29.04,
+      "text": " ¿Buenas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.28,
+      "end": 31.28,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.95,
+      "end": 40.95,
+      "text": " Estas cuestiones que hiciste, ¿las tendría a Pierre Torres, con quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.95,
+      "end": 42.95,
+      "text": " ¡Buenas!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.95,
+      "end": 45.95,
+      "text": " ¿Ahora?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.95,
+      "end": 49.95,
+      "text": " Ahorita viene mi papá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.95,
+      "end": 52.95,
+      "text": " Es que fue a un mandado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.62,
+      "end": 66.52,
+      "text": " Si quieres la puedes marcar ahorita, te le digo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 72.01,
+      "end": 77.05,
+      "text": " Yo soy el papá, si quieres.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 108.9,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000360207-5544389981-20251010-113832-5597147075.WAV",
+  "file_name": "0105-04965-25101000360207-5544389981-20251010-113832-5597147075.WAV",
+  "base_id": "0105-04965-25101000360207-5544389981-20251010-113832-5597147075",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. ¿Qué tal? Bueno, buenas tardes. Sí, buenas tardes. Hola, mucho gusto. Habla José Lara de Easy, compañero de Internet Televisión por Cables. Le llamaba para brindarle una oferta a nuestra compañía, ¿verdad? No sé si ustedes manejen alguna cuenta en Easy, disculpe la pregunta. No, no, de hecho no manejo ninguna. Cuando solicité el servicio, me dijeron que no tenían hasta acá la línea. Ah, por suerte, gracias. Aquí con el número telefónico alcanzo a distinguir esa mensaje. No, disculpe, no lo leí antes de llamarle. Perdóneme. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 22.92,
+      "text": " interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 28.2,
+      "text": " comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.2,
+      "end": 39.45,
+      "text": " terminar. Espera un momento, por favor. ¿Qué tal? Bueno, buenas tardes. Sí, buenas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.45,
+      "end": 44.09,
+      "text": " tardes. Hola, mucho gusto. Habla José Lara de Easy, compañero de Internet",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.09,
+      "end": 48.45,
+      "text": " Televisión por Cables. Le llamaba para brindarle una oferta a",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.45,
+      "end": 52.33,
+      "text": " nuestra compañía, ¿verdad? No sé si ustedes manejen alguna cuenta en Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.33,
+      "end": 56.73,
+      "text": " disculpe la pregunta. No, no, de hecho no manejo ninguna. Cuando solicité el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.73,
+      "end": 62.81,
+      "text": " servicio, me dijeron que no tenían hasta acá la línea. Ah, por suerte, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.01,
+      "end": 67.65,
+      "text": " Aquí con el número telefónico alcanzo a distinguir esa mensaje. No, disculpe, no",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.65,
+      "end": 73.13,
+      "text": " lo leí antes de llamarle. Perdóneme. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.448,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

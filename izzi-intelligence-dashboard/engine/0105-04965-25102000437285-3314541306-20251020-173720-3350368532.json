@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000437285-3314541306-20251020-173720-3350368532.WAV",
+  "file_name": "0105-04965-25102000437285-3314541306-20251020-173720-3350368532.WAV",
+  "base_id": "0105-04965-25102000437285-3314541306-20251020-173720-3350368532",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno. Muy buenas tardes, mi nombre es Yvonne Estrada, la compañía de IZZY. ¿Cómo le podemos ayudar? No, en nada, gracias. ¿Con quién habló? Yvonne Estrada, de la compañía de IZZY, del área de contrataciones. ¿Le podemos ayudar en algo? No, no, no, gracias. Todo bien. Entiendo. Bueno, gracias por la llamada. Que pase buena tarde. Hasta luego. Igualmente. Bye. Bye, bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.47,
+      "end": 25.47,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.52,
+      "end": 27.52,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.52,
+      "end": 35.51,
+      "text": " Muy buenas tardes, mi nombre es Yvonne Estrada, la compañía de IZZY.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.51,
+      "end": 37.03,
+      "text": " ¿Cómo le podemos ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.05,
+      "end": 44.32,
+      "text": " No, en nada, gracias. ¿Con quién habló?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.32,
+      "end": 47.72,
+      "text": " Yvonne Estrada, de la compañía de IZZY, del área de contrataciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.72,
+      "end": 54.04,
+      "text": " ¿Le podemos ayudar en algo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 54.04,
+      "end": 57.04,
+      "text": " No, no, no, gracias. Todo bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.04,
+      "end": 61.04,
+      "text": " Entiendo. Bueno, gracias por la llamada. Que pase buena tarde. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.04,
+      "end": 63.04,
+      "text": " Igualmente. Bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 63.04,
+      "end": 64.04,
+      "text": " Bye, bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 119.088,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

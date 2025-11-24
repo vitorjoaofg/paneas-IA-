@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600441895-5544389919-20251016-131121-5597948795.WAV",
+  "file_name": "0105-04965-25101600441895-5544389919-20251016-131121-5597948795.WAV",
+  "base_id": "0105-04965-25101600441895-5544389919-20251016-131121-5597948795",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas. Buenas tardes. Hola, ¿qué tal? Buenas tardes. Se está comunicando a contratación y Cecilia tiene ya en el pulido. Oye, ¿dónde puedo reportar que no me estén haciendo ese tipo de llamadas? Si el día que yo me quiera cambiar a otra compañía, yo lo hago. Es bien molesto que se suene y suene mi teléfono y nada más que sea para eso. O sea, ¿puedes meter el reporte? O sea, no me interesa. Claro que sí. Ahorita yo paso el reporte para que quitan el número de la base. Sí, por favor. Claro que sí. Una disculpa que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 27.64,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.64,
+      "end": 41.19,
+      "text": " momento, por favor. Buenas. Buenas tardes. Hola, ¿qué tal? Buenas tardes. Se está",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.19,
+      "end": 46.27,
+      "text": " comunicando a contratación y Cecilia tiene ya en el pulido. Oye, ¿dónde puedo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.27,
+      "end": 50.39,
+      "text": " reportar que no me estén haciendo ese tipo de llamadas? Si el día que yo me",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.39,
+      "end": 55.31,
+      "text": " quiera cambiar a otra compañía, yo lo hago. Es bien molesto que se suene y",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.31,
+      "end": 60.63,
+      "text": " suene mi teléfono y nada más que sea para eso. O sea, ¿puedes meter el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.67,
+      "end": 65.38,
+      "text": " reporte? O sea, no me interesa. Claro que sí. Ahorita yo paso el reporte para que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.38,
+      "end": 70.26,
+      "text": " quitan el número de la base. Sí, por favor. Claro que sí. Una disculpa que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.26,
+      "end": 73.22,
+      "text": " tenga buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.864,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

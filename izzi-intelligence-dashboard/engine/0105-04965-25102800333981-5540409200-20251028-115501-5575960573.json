@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800333981-5540409200-20251028-115501-5575960573.WAV",
+  "file_name": "0105-04965-25102800333981-5540409200-20251028-115501-5575960573.WAV",
+  "base_id": "0105-04965-25102800333981-5540409200-20251028-115501-5575960573",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No soy la dueña del teléfono, se va a trabajar. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, muy buenos días. Buenos días, señorita. Mire, no se encuentra el dueño del teléfono. El dueño entra a trabajar a las 7 y se va desde las 5 y media. Es mi hermano. Ah, ok, a partir de las... ¿Sí? Perdón. El señor llega como 4.20. Ok, a partir de las 5 y media ya lo podemos localizar. Y ya él sabrá qué hacer. Ok, perfecto. Gracias, señorita. Buen día. Igual, que esté bien.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.56,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.56,
+      "end": 32.88,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.88,
+      "end": 40.52,
+      "text": " un asesor o 2 para terminar la llamada. No soy la dueña del teléfono, se va a trabajar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.52,
+      "end": 46.52,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.52,
+      "end": 49.96,
+      "text": " para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.96,
+      "end": 61.27,
+      "text": " Hola, muy buenos días. Buenos días, señorita. Mire, no se encuentra",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.27,
+      "end": 65.83,
+      "text": " el dueño del teléfono. El dueño entra a trabajar a las 7 y se va desde las 5 y media.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.83,
+      "end": 73.43,
+      "text": " Es mi hermano. Ah, ok, a partir de las... ¿Sí? Perdón. El señor llega como 4.20.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.43,
+      "end": 82.7,
+      "text": " Ok, a partir de las 5 y media ya lo podemos localizar. Y ya él sabrá qué hacer. Ok,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 82.7,
+      "end": 87.98,
+      "text": " perfecto. Gracias, señorita. Buen día. Igual, que esté bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 93.636,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

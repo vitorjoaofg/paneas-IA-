@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300612418-5544389911-20251023-162855-5551417828.WAV",
+  "file_name": "0105-04965-25102300612418-5544389911-20251023-162855-5551417828.WAV",
+  "base_id": "0105-04965-25102300612418-5544389911-20251023-162855-5551417828",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible? ¿Te interesa? No le quiere contestar. Por favor, hable o pulse uno para sí, o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor, o dos para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Sí, permítanme un momento. Permítanme un segundo. Hola, ¿qué tal? Habla Randirana. Hablamos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada? Disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " No le quiere contestar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 27.94,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.94,
+      "end": 32.94,
+      "text": " Presiona uno para hablar con un asesor, o dos para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.94,
+      "end": 34.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.94,
+      "end": 43.7,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.7,
+      "end": 45.7,
+      "text": " Sí, permítanme un momento.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.7,
+      "end": 62.34,
+      "text": " Permítanme un segundo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.34,
+      "end": 76.86,
+      "text": " Hola, ¿qué tal? Habla Randirana.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 76.86,
+      "end": 82.72,
+      "text": " Hablamos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 145.008,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

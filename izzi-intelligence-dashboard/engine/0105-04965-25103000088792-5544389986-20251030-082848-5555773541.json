@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000088792-5544389986-20251030-082848-5555773541.WAV",
+  "file_name": "0105-04965-25103000088792-5544389986-20251030-082848-5555773541.WAV",
+  "base_id": "0105-04965-25103000088792-5544389986-20251030-082848-5555773541",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse un... Por favor de marcarlo en este momento. De lo contrario, permanezca en la línea y un operador... Espera un momento, por favor. Por favor, interrumpa el teléfono por nombre, presione el signo de numeral y uno. Si utiliza un teléfono de disco, permanezca en línea. Para llamar a la operadora, presione cero. Por favor, espere un momento. Buenos días, la Tienda Angélica. ¿Hola? Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.04,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.04,
+      "end": 13.48,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.48,
+      "end": 15.44,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.44,
+      "end": 16.52,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.52,
+      "end": 18.68,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.68,
+      "end": 21.56,
+      "text": " Por favor, hable o pulse un...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.56,
+      "end": 24.28,
+      "text": " Por favor de marcarlo en este momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.28,
+      "end": 27.72,
+      "text": " De lo contrario, permanezca en la línea y un operador...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.76,
+      "end": 30.68,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 30.68,
+      "end": 38.78,
+      "text": " Por favor, interrumpa el teléfono por nombre, presione el signo de numeral y uno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.78,
+      "end": 42.58,
+      "text": " Si utiliza un teléfono de disco, permanezca en línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.58,
+      "end": 58.07,
+      "text": " Para llamar a la operadora, presione cero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.07,
+      "end": 67.93,
+      "text": " Por favor, espere un momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.93,
+      "end": 73.9,
+      "text": " Buenos días, la Tienda Angélica.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.9,
+      "end": 76.98,
+      "text": " ¿Hola?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 76.98,
+      "end": 78.18,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

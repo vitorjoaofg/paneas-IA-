@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000540908-5544389932-20251010-140106-5511699043.WAV",
+  "file_name": "0105-04965-25101000540908-5544389932-20251010-140106-5511699043.WAV",
+  "base_id": "0105-04965-25101000540908-5544389932-20251010-140106-5511699043",
+  "transcription": "Ah, bueno. Permítame, no le explico nada. Sí, díganme. Presiona 1 para hablar con un asesor, o 2 para terminar la llamada. Espera un momento, por favor. ¡No lo escucho!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.01,
+      "text": " Ah, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.21,
+      "end": 15.81,
+      "text": " Permítame, no le explico nada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 28.67,
+      "end": 29.37,
+      "text": " Sí, díganme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 33.67,
+      "end": 38.67,
+      "text": " Presiona 1 para hablar con un asesor, o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 39.36,
+      "end": 41.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 53.03,
+      "end": 54.53,
+      "text": " ¡No lo escucho!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.128,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400188645-3314541322-20251014-094527-3319830440.WAV",
+  "file_name": "0105-04965-25101400188645-3314541322-20251014-094527-3319830440.WAV",
+  "base_id": "0105-04965-25101400188645-3314541322-20251014-094527-3319830440",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melaniza Aducedo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Hola, buenos días. Soy una disculpa, este nombre está registrado para evitar llamadas publicitarias y me siguen llegando. Ah, que una disculpa, en dado caso aquí lo vamos a poner para que se debe vaca de la base, ¿está bien? Oh, sí, y nos voy a llevar con la denuncia. Sí, no se preocupe, que tenga buen día. Muy buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.3,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.3,
+      "end": 10.36,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.36,
+      "end": 16.4,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.4,
+      "end": 22.38,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.38,
+      "end": 27.08,
+      "text": " o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.3,
+      "end": 35.82,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Melaniza Aducedo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.82,
+      "end": 38.82,
+      "text": " nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.82,
+      "end": 45.83,
+      "text": " Hola, buenos días. Soy una disculpa, este nombre está registrado para evitar llamadas",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.83,
+      "end": 48.63,
+      "text": " publicitarias y me siguen llegando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.63,
+      "end": 53.06,
+      "text": " Ah, que una disculpa, en dado caso aquí lo vamos a poner para que se debe vaca",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.06,
+      "end": 54.06,
+      "text": " de la base, ¿está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.06,
+      "end": 57.63,
+      "text": " Oh, sí, y nos voy a llevar con la denuncia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.63,
+      "end": 60.65,
+      "text": " Sí, no se preocupe, que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.65,
+      "end": 62.41,
+      "text": " Muy buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.456,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

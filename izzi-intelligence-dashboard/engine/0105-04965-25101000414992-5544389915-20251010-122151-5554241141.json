@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000414992-5544389915-20251010-122151-5554241141.WAV",
+  "file_name": "0105-04965-25101000414992-5544389915-20251010-122151-5554241141.WAV",
+  "base_id": "0105-04965-25101000414992-5544389915-20251010-122151-5554241141",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abram le decía, contrataciones. Dígame, ¿en qué le puedo ayudar? Hola, hola. Probando, probando. Uno, dos, tres. Probando, probando. ¿Me escuché? Muy bien. Por cuestiones de calidad, no he obligado a terminar la llamada. Buen día. Muy bien. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 30.81,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.93,
+      "end": 37.98,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.98,
+      "end": 50.09,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.09,
+      "end": 58.4,
+      "text": " Abram le decía, contrataciones. Dígame, ¿en qué le puedo ayudar? Hola, hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.4,
+      "end": 65.22,
+      "text": " Probando, probando. Uno, dos, tres. Probando, probando. ¿Me escuché? Muy bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.22,
+      "end": 68.62,
+      "text": " Por cuestiones de calidad, no he obligado a terminar la llamada. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.62,
+      "end": 80.03,
+      "text": " Muy bien. Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.62,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700334370-8114540900-20251017-114315-8110127931.WAV",
+  "file_name": "0105-04999-25101700334370-8114540900-20251017-114315-8110127931.WAV",
+  "base_id": "0105-04999-25101700334370-8114540900-20251017-114315-8110127931",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, abre o pulse uno para sí o dos para no. Un momento, por favor. Hola, ¿buenas tardes? Sí, buenas tardes. Buenas tardes, hablamos de compañía y si me presento, mi nombre es Patricia Vadicho. ¿Con quién tengo el gusto? No, no, por el momento no me interesa nada de compañía. Ay, ¿qué es, irita? ¿También tenemos planes para su celular, irita? ¿También? ¿También tenemos planes para su celular? Tampoco me interesa un plan para su celular. Gracias, irita. Adiós, adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.82,
+      "end": 8.65,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.65,
+      "end": 16.47,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.47,
+      "end": 22.53,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.53,
+      "end": 32.84,
+      "text": " Por favor, abre o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.84,
+      "end": 37.28,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.28,
+      "end": 43.43,
+      "text": " Hola, ¿buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.43,
+      "end": 45.08,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.08,
+      "end": 50.32,
+      "text": " Buenas tardes, hablamos de compañía y si me presento, mi nombre es Patricia Vadicho.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.32,
+      "end": 52.9,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.9,
+      "end": 57.57,
+      "text": " No, no, por el momento no me interesa nada de compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.57,
+      "end": 61.96,
+      "text": " Ay, ¿qué es, irita? ¿También tenemos planes para su celular, irita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.96,
+      "end": 63.27,
+      "text": " ¿También?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.27,
+      "end": 66.55,
+      "text": " ¿También tenemos planes para su celular? Tampoco me interesa un plan para su celular.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.55,
+      "end": 67.55,
+      "text": " Gracias, irita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 67.55,
+      "end": 68.55,
+      "text": " Adiós, adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.616,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

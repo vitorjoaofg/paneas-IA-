@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300624344-5544389967-20251013-163531-5556944103.WAV",
+  "file_name": "0105-04965-25101300624344-5544389967-20251013-163531-5556944103.WAV",
+  "base_id": "0105-04965-25101300624344-5544389967-20251013-163531-5556944103",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola. Buenas tardes. Hola, ¿te gustaría tener el control de VIX y usted el de Valladela? Aquí están los tipos de control de VIX. Hola, mucho gusto. ¿Te gustaría tener el control de VIX o telefonía, móvil, Internet? Mire, ¿cuánto? Pero tengo el Sky. ¿Cómo sería para cambiar para los que me están ofreciendo ustedes? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.11,
+      "end": 7.11,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.11,
+      "end": 11.11,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.11,
+      "end": 13.11,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.11,
+      "end": 16.11,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.11,
+      "end": 22.84,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.84,
+      "end": 24.84,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.84,
+      "end": 34.26,
+      "text": " Hola. Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.26,
+      "end": 38.52,
+      "text": " Hola, ¿te gustaría tener el control de VIX y usted el de Valladela?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.52,
+      "end": 41.03,
+      "text": " Aquí están los tipos de control de VIX.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.03,
+      "end": 43.03,
+      "text": " Hola, mucho gusto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.03,
+      "end": 47.09,
+      "text": " ¿Te gustaría tener el control de VIX o telefonía, móvil, Internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.09,
+      "end": 49.09,
+      "text": " Mire, ¿cuánto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.09,
+      "end": 51.09,
+      "text": " Pero tengo el Sky.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.09,
+      "end": 59.79,
+      "text": " ¿Cómo sería para cambiar para los que me están ofreciendo ustedes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.79,
+      "end": 63.97,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.44,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

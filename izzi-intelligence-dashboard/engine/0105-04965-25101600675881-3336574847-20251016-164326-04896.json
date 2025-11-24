@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600675881-3336574847-20251016-164326-04896.WAV",
+  "file_name": "0105-04965-25101600675881-3336574847-20251016-164326-04896.WAV",
+  "base_id": "0105-04965-25101600675881-3336574847-20251016-164326-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Espera un momento, por favor. ¿Nada más? Hola, ¿qué tal? Gracias por comunicarte. Hablaré con otras acciones, Easy. La tienda blanco que tengo el gusto. Me tuve que leer qué es el lengua indígena.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 22.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.0,
+      "end": 28.68,
+      "text": " ¿Nada más?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.68,
+      "end": 33.06,
+      "text": " Hola, ¿qué tal? Gracias por comunicarte. Hablaré con otras acciones, Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.06,
+      "end": 59.68,
+      "text": " La tienda blanco que tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.68,
+      "end": 61.18,
+      "text": " Me tuve que leer qué es el lengua indígena.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 121.536,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

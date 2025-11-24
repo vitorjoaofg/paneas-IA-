@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500170468-3314541304-20251015-093829-3340401449.WAV",
+  "file_name": "0105-04965-25101500170468-3314541304-20251015-093829-3340401449.WAV",
+  "base_id": "0105-04965-25101500170468-3314541304-20251015-093829-3340401449",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o no. Espera un momento, por favor. Nada puede ser grabada o monitoreada con fines de calidad en el servicio. Bueno, bueno, bueno. Gracias por llamar a Cable Diagnósticos. Para escuchar nuestro menú en inglés, presione 5. Si usted es cliente actual o desea atención de un asesor, presione 1 o espere en la línea. Para comunicarse a otros departamentos, por favor, presione 2. Para soporte técnico, presione 3. Si desea escuchar nuestro aviso de privacidad, presione 9. Ya recordamos que esta llamada puede ser grabada o monitoreada con fines de calidad en el servicio. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.08,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.08,
+      "end": 15.56,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.56,
+      "end": 16.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 18.72,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.72,
+      "end": 28.36,
+      "text": " Por favor, hable o no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.36,
+      "end": 30.6,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.6,
+      "end": 61.53,
+      "text": " Nada puede ser grabada o monitoreada con fines de calidad en el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.53,
+      "end": 64.72,
+      "text": " Bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.72,
+      "end": 67.64,
+      "text": " Gracias por llamar a Cable Diagnósticos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.64,
+      "end": 71.44,
+      "text": " Para escuchar nuestro menú en inglés, presione 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.44,
+      "end": 77.44,
+      "text": " Si usted es cliente actual o desea atención de un asesor, presione 1 o espere en la línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 77.44,
+      "end": 81.84,
+      "text": " Para comunicarse a otros departamentos, por favor, presione 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 81.84,
+      "end": 84.94,
+      "text": " Para soporte técnico, presione 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 84.94,
+      "end": 88.94,
+      "text": " Si desea escuchar nuestro aviso de privacidad, presione 9.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 88.94,
+      "end": 93.3,
+      "text": " Ya recordamos que esta llamada puede ser grabada o monitoreada con fines de calidad",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 93.3,
+      "end": 94.3,
+      "text": " en el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 94.3,
+      "end": 97.51,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.504,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

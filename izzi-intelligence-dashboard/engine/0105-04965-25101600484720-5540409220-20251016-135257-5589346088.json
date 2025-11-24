@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600484720-5540409220-20251016-135257-5589346088.WAV",
+  "file_name": "0105-04965-25101600484720-5540409220-20251016-135257-5589346088.WAV",
+  "base_id": "0105-04965-25101600484720-5540409220-20251016-135257-5589346088",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Hola, buen día. Se encuentra... ¿Le habláis con Monfils de parte de su servicio de Easy para darle a conocer la telefonía móvil por 94 pesos al mes? No sé si ya le comentaron de este beneficio. ¿Qué tal? Buenos días, disculpe. Nosotros ya no tenemos Easy, manejamos otra compañía y hemos estado recibiendo muchas llamadas de Easy. Y nos gustaría saber si es posible que nos borren del barco de datos. Ah, ok. Aquí le voy a poner que no les interesa para que ya no les marquen. Ok. Sí, perfecto. Muchas gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 20.8,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.12,
+      "end": 32.12,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.12,
+      "end": 34.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.12,
+      "end": 50.0,
+      "text": " Hola, buen día. Se encuentra... ¿Le habláis con Monfils de parte de su servicio de Easy para darle a conocer la telefonía móvil por 94 pesos al mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.0,
+      "end": 53.0,
+      "text": " No sé si ya le comentaron de este beneficio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.3,
+      "end": 64.3,
+      "text": " ¿Qué tal? Buenos días, disculpe. Nosotros ya no tenemos Easy, manejamos otra compañía y hemos estado recibiendo muchas llamadas de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.3,
+      "end": 68.3,
+      "text": " Y nos gustaría saber si es posible que nos borren del barco de datos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.3,
+      "end": 72.3,
+      "text": " Ah, ok. Aquí le voy a poner que no les interesa para que ya no les marquen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.3,
+      "end": 74.3,
+      "text": " Ok. Sí, perfecto. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.3,
+      "end": 76.3,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.216,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

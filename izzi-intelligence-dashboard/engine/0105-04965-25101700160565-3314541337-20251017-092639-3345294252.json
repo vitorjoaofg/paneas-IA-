@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700160565-3314541337-20251017-092639-3345294252.WAV",
+  "file_name": "0105-04965-25101700160565-3314541337-20251017-092639-3345294252.WAV",
+  "base_id": "0105-04965-25101700160565-3314541337-20251017-092639-3345294252",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, con Skysports, desde 300 millones de pesos al viernes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. ¿Quién era tu madre? Siento, no entendí tu respuesta. Te comunico con un asesor. ¿Quién era tu madre? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Buenos días. Por favor, no quiero que me estén llamando. Disculpe, ya había hablado con un operador antes. Pues está en llave y llame todos los días, y no quiero que me esté diciendo eso. Señorita, mucho gusto. Abraham García, Contrataciones y Skyslides.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, con Skysports, desde 300 millones de pesos al viernes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " ¿Quién era tu madre?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.0,
+      "end": 24.1,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.1,
+      "end": 25.1,
+      "text": " Te comunico con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.1,
+      "end": 26.1,
+      "text": " ¿Quién era tu madre?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.1,
+      "end": 31.1,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.1,
+      "end": 34.13,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.13,
+      "end": 42.05,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.05,
+      "end": 46.08,
+      "text": " Buenos días. Por favor, no quiero que me estén llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.08,
+      "end": 49.78,
+      "text": " Disculpe, ya había hablado con un operador antes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.78,
+      "end": 55.87,
+      "text": " Pues está en llave y llame todos los días, y no quiero que me esté diciendo eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.87,
+      "end": 60.03,
+      "text": " Señorita, mucho gusto. Abraham García, Contrataciones y Skyslides.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

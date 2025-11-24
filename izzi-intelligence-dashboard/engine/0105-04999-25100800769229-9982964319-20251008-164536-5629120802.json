@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800769229-9982964319-20251008-164536-5629120802.WAV",
+  "file_name": "0105-04999-25100800769229-9982964319-20251008-164536-5629120802.WAV",
+  "base_id": "0105-04999-25100800769229-9982964319-20251008-164536-5629120802",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable... Bueno... bueno... bueno... bueno... bueno... bueno... Espera un momento, por favor. Sí, buenas tardes. Bueno, les voy a pedir un puto favor. No me estén marcando a mi puto número, neta. Ya me quieren hacer la verga. Bueno... bueno... bueno... Ah, ya se murió.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 17.84,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.84,
+      "end": 27.61,
+      "text": " Bueno... bueno... bueno... bueno... bueno... bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.61,
+      "end": 29.61,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.3,
+      "end": 37.3,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.3,
+      "end": 43.69,
+      "text": " Bueno, les voy a pedir un puto favor. No me estén marcando a mi puto número, neta. Ya me quieren hacer la verga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.69,
+      "end": 54.86,
+      "text": " Bueno... bueno... bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.86,
+      "end": 59.78,
+      "text": " Ah, ya se murió.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.416,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

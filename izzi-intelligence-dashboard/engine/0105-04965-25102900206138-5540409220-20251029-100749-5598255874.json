@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900206138-5540409220-20251029-100749-5598255874.WAV",
+  "file_name": "0105-04965-25102900206138-5540409220-20251029-100749-5598255874.WAV",
+  "base_id": "0105-04965-25102900206138-5540409220-20251029-100749-5598255874",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, buenos días. Hablo por parte de la compañía de Icy. ¿En qué le puedo ayudar? Eh, pues recibí una llamada de ¿qué compañía es? De Icy. Ah, ¿qué? ¿Cómo está el show? ¿Por qué? Sí, pues se les está ofreciendo servicios, ya sea Internet, TV, ofrecio preferencial.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 6.89,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.89,
+      "end": 13.29,
+      "text": " más Skysports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.29,
+      "end": 16.49,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.49,
+      "end": 20.81,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.81,
+      "end": 25.9,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.9,
+      "end": 60.56,
+      "text": " Bueno, buenos días. Hablo por parte de la compañía de Icy. ¿En qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 60.56,
+      "end": 65.43,
+      "text": " Eh, pues recibí una llamada de ¿qué compañía es?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 65.55,
+      "end": 66.67,
+      "text": " De Icy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.67,
+      "end": 72.29,
+      "text": " Ah, ¿qué? ¿Cómo está el show? ¿Por qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.29,
+      "end": 77.93,
+      "text": " Sí, pues se les está ofreciendo servicios, ya sea Internet, TV, ofrecio preferencial.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.132,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

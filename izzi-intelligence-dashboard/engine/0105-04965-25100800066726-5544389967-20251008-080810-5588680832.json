@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800066726-5544389967-20251008-080810-5588680832.WAV",
+  "file_name": "0105-04965-25100800066726-5544389967-20251008-080810-5588680832.WAV",
+  "base_id": "0105-04965-25100800066726-5544389967-20251008-080810-5588680832",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Qué tal? Buenos días. ¿Qué tal? Buenos días. Disculpa, me acaban de llamar para ofrecerme Easy. Ok, soy José Lara de Easy. ¿Escucho alguna oferta distinta o algo por el estilo? No, nada más quisiera saber el motivo de dónde sacaron mi número porque yo ya tengo Easy, ¿ver? Entonces me sacaron. Ah, pues su número lo sacamos del sistema, ¿no? Si lo tiene el servicio de Easy y usted no lo vio. Pues no sé si tú puedas, pero tengo que llamar para cancelar las llamadas tan temprano porque son las 8, bueno. ¿Sería el número, el servicio al cliente, el servicio al cliente de Easy? Ya va. Bueno, voy a procurar el número mejor. Gracias, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.52,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.52,
+      "end": 17.12,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.12,
+      "end": 22.92,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 29.12,
+      "text": " 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.16,
+      "end": 40.42,
+      "text": " ¿Qué tal? Buenos días. ¿Qué tal? Buenos días. Disculpa, me acaban de llamar para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.42,
+      "end": 53.16,
+      "text": " ofrecerme Easy. Ok, soy José Lara de Easy. ¿Escucho alguna oferta distinta o algo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.16,
+      "end": 59.18,
+      "text": " por el estilo? No, nada más quisiera saber el motivo de dónde sacaron mi",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.18,
+      "end": 68.01,
+      "text": " número porque yo ya tengo Easy, ¿ver? Entonces me sacaron. Ah, pues su número lo sacamos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.01,
+      "end": 74.23,
+      "text": " del sistema, ¿no? Si lo tiene el servicio de Easy y usted no lo vio. Pues no sé si tú puedas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 74.23,
+      "end": 81.78,
+      "text": " pero tengo que llamar para cancelar las llamadas tan temprano porque son las 8, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 81.78,
+      "end": 92.36,
+      "text": " ¿Sería el número, el servicio al cliente, el servicio al cliente de Easy? Ya va.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 92.36,
+      "end": 96.52,
+      "text": " Bueno, voy a procurar el número mejor. Gracias, buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.944,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900652344-5555176740-20251009-163422-04896.WAV",
+  "file_name": "0105-04965-25100900652344-5555176740-20251009-163422-04896.WAV",
+  "base_id": "0105-04965-25100900652344-5555176740-20251009-163422-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Buenas tardes. Sí, dígame. Se publica la hora de contratación de Easy. La tienen en el castillo. Disculpe. ¿Qué le podemos apoyar? ¿Qué hace a contratar el día de hoy? Dime, señor, nada más. Hablan, contestan y me ponen una grabación. ¿Qué les faltan huevos para comunicarse como debe de ser? Y si no les faltan huevos y realmente tienen muchos huevos, pues vayan y chinden a su puta madre.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 14.3,
+      "text": " ¿Te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.3,
+      "end": 16.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.3,
+      "end": 23.7,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.79,
+      "end": 30.39,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.39,
+      "end": 35.39,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.39,
+      "end": 37.89,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.89,
+      "end": 45.88,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.88,
+      "end": 47.75,
+      "text": " Sí, dígame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.75,
+      "end": 51.55,
+      "text": " Se publica la hora de contratación de Easy. La tienen en el castillo. Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.55,
+      "end": 53.45,
+      "text": " ¿Qué le podemos apoyar? ¿Qué hace a contratar el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 53.45,
+      "end": 55.95,
+      "text": " Dime, señor, nada más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.95,
+      "end": 60.08,
+      "text": " Hablan, contestan y me ponen una grabación.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.86,
+      "end": 64.36,
+      "text": " ¿Qué les faltan huevos para comunicarse como debe de ser?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.36,
+      "end": 69.36,
+      "text": " Y si no les faltan huevos y realmente tienen muchos huevos, pues vayan y chinden a su puta madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.624,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

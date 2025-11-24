@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300593160-5593049767-20251013-160409-04896.WAV",
+  "file_name": "0105-04965-25101300593160-5593049767-20251013-160409-04896.WAV",
+  "base_id": "0105-04965-25101300593160-5593049767-20251013-160409-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Quisiera que me quitaran en su sistema mi número, porque han estado marcándome casi todos los días para ofrecerme su servicio, pero la verdad no me interesa porque ya estoy con otra compañía. Entonces, de manera más atenta, pediría que me quitaran de su sistema. Claro que sí le pongo aquí en los comentarios. Es una disculpa. Que tenga buen día. Hasta luego. Gracias. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.68,
+      "text": " tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.68,
+      "end": 18.12,
+      "text": " Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.12,
+      "end": 24.56,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.56,
+      "end": 62.46,
+      "text": " momento, por favor. Quisiera que me quitaran en su sistema mi número, porque han estado",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 62.46,
+      "end": 67.14,
+      "text": " marcándome casi todos los días para ofrecerme su servicio, pero la verdad no me interesa",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 67.14,
+      "end": 71.94,
+      "text": " porque ya estoy con otra compañía. Entonces, de manera más atenta, pediría que me quitaran",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 71.94,
+      "end": 76.3,
+      "text": " de su sistema. Claro que sí le pongo aquí en los comentarios. Es una disculpa. Que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 76.3,
+      "end": 79.5,
+      "text": " tenga buen día. Hasta luego. Gracias. Hasta luego. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.14,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

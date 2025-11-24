@@ -1,0 +1,231 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500374942-5544389963-20251015-121721-5519465401.WAV",
+  "file_name": "0105-04965-25101500374942-5544389963-20251015-121721-5519465401.WAV",
+  "base_id": "0105-04965-25101500374942-5544389963-20251015-121721-5519465401",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skype World desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Les voy a llamar a término, ¿tienen sirio solo? ¿Dicen que puedo apoyarles? No sabes, señorita, mi nombre es Patricia. Yo ya hablamos de compañía. Easy es profesor de nuestros servicios. Permíteme, tetita, por favor. Gracias. Ya salió. Bueno, señorita, estoy llamando. Hola, señorita. Esto ya está hablando a Telmex. Comuníquese con sus clientes. Ok, señorita, aquí la voy a poner. Gracias. Un excelente día. Un excelente día. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Skype World desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 27.05,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.05,
+      "end": 29.05,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.05,
+      "end": 153.42,
+      "text": " Les voy a llamar a término, ¿tienen sirio solo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 153.42,
+      "end": 155.42,
+      "text": " ¿Dicen que puedo apoyarles?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 155.42,
+      "end": 157.45,
+      "text": " No sabes, señorita, mi nombre es Patricia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 157.45,
+      "end": 159.45,
+      "text": " Yo ya hablamos de compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 159.45,
+      "end": 163.41,
+      "text": " Easy es profesor de nuestros servicios.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 163.41,
+      "end": 165.41,
+      "text": " Permíteme, tetita, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 165.41,
+      "end": 167.5,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 189.86,
+      "end": 213.6,
+      "text": " Ya salió.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 213.6,
+      "end": 216.6,
+      "text": " Bueno, señorita, estoy llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 216.6,
+      "end": 217.6,
+      "text": " Hola, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 217.6,
+      "end": 220.6,
+      "text": " Esto ya está hablando a Telmex.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 220.6,
+      "end": 223.6,
+      "text": " Comuníquese con sus clientes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 223.6,
+      "end": 225.6,
+      "text": " Ok, señorita, aquí la voy a poner.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 225.6,
+      "end": 226.6,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 226.6,
+      "end": 227.6,
+      "text": " Un excelente día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 227.6,
+      "end": 229.6,
+      "text": " Un excelente día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 229.6,
+      "end": 230.6,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 230.6,
+      "end": 231.6,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 232.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

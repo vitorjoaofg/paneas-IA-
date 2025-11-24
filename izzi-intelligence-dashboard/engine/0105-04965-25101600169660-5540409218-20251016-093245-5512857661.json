@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600169660-5540409218-20251016-093245-5512857661.WAV",
+  "file_name": "0105-04965-25101600169660-5540409218-20251016-093245-5512857661.WAV",
+  "base_id": "0105-04965-25101600169660-5540409218-20251016-093245-5512857661",
+  "transcription": "Hola, ¿te gustaría tenerlo ahora? De lo contrario, ¿marque el mejor entretenimiento con Big Premium más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, ¡gracias por llamar a Producción Arquitectónica! Si conoce la extensión, por favor, mártelo ahora. De lo contrario, marque 0 para ser atendido por un operador. Hola, ¿qué tal? Este es el área de... Gracias por llamar a Producción Arquitectónica. Si conoce la extensión, por favor, mártelo ahora. De lo contrario, marque 0 para ser atendido por una operadora. Producción Arquitectónica, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "text": " Hola, ¿te gustaría tenerlo ahora?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.8,
+      "end": 11.3,
+      "text": " De lo contrario, ¿marque el mejor entretenimiento con Big Premium más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.0,
+      "text": " Por favor, ¡gracias por llamar a Producción Arquitectónica!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 23.06,
+      "text": " Si conoce la extensión, por favor, mártelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.06,
+      "end": 27.16,
+      "text": " De lo contrario, marque 0 para ser atendido por un operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.72,
+      "end": 38.22,
+      "text": " Hola, ¿qué tal? Este es el área de...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.22,
+      "end": 40.22,
+      "text": " Gracias por llamar a Producción Arquitectónica.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.22,
+      "end": 43.38,
+      "text": " Si conoce la extensión, por favor, mártelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.38,
+      "end": 47.38,
+      "text": " De lo contrario, marque 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.38,
+      "end": 79.16,
+      "text": " Producción Arquitectónica, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.04,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

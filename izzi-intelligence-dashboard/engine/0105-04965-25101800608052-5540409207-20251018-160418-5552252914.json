@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800608052-5540409207-20251018-160418-5552252914.WAV",
+  "file_name": "0105-04965-25101800608052-5540409207-20251018-160418-5552252914.WAV",
+  "base_id": "0105-04965-25101800608052-5540409207-20251018-160418-5552252914",
+  "transcription": "Hola, recordamos que por motivos de seguridad y calidad esta llamada podrá ser grabada. Si es cliente presione 1, si no es cliente presione 2. ¿Te interesa? Un asesor te está esperando. Si es cliente presione 1, presione 2. Espera un momento, por favor. Le recordamos que por motivos de seguridad y calidad esta llamada podrá ser grabada. Todos nuestros agentes están ocupados. Espera un momento por favor, en breve le atenderemos. Todos nuestros agentes están ocupados. Espera un momento por favor, en breve le atendaremos. Todos nuestros agentes están ocupados. Espera un momento por favor, en breve le atenderemos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Hola, recordamos que por motivos de seguridad y calidad esta llamada podrá ser grabada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 10.0,
+      "text": " Si es cliente presione 1, si no es cliente presione 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 23.62,
+      "text": " Si es cliente presione 1, presione 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.62,
+      "end": 25.62,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.62,
+      "end": 30.62,
+      "text": " Le recordamos que por motivos de seguridad y calidad esta llamada podrá ser grabada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.62,
+      "end": 32.62,
+      "text": " Todos nuestros agentes están ocupados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.62,
+      "end": 35.62,
+      "text": " Espera un momento por favor, en breve le atenderemos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.64,
+      "end": 67.69,
+      "text": " Todos nuestros agentes están ocupados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 69.69,
+      "end": 88.98,
+      "text": " Espera un momento por favor, en breve le atendaremos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 102.58,
+      "end": 104.58,
+      "text": " Todos nuestros agentes están ocupados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 104.58,
+      "end": 117.69,
+      "text": " Espera un momento por favor, en breve le atenderemos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.964,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

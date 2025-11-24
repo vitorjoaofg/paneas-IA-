@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101300501176-3314541333-20251013-144314-2741033707.WAV",
+  "file_name": "0105-04999-25101300501176-3314541333-20251013-144314-2741033707.WAV",
+  "base_id": "0105-04999-25101300501176-3314541333-20251013-144314-2741033707",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Se está marcando la compañía de Internet de Easy, su televisión por cable. ¿En qué le puede ayudar? Es que me marcaron para saber de lo de... a ver, si podría hacer la contratación. Sí, ¿en qué paquete le gustaría contratar, disculpe? El de 350 que mencionas, ¿o no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.32,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.32,
+      "end": 14.12,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.12,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 30.1,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 36.86,
+      "end": 40.26,
+      "text": " Hola, ¿qué tal? Muy buenas tardes. Se está marcando la compañía de Internet de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.26,
+      "end": 42.18,
+      "text": " su televisión por cable. ¿En qué le puede ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.18,
+      "end": 49.74,
+      "text": " Es que me marcaron para saber de lo de... a ver, si podría hacer la contratación.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.74,
+      "end": 54.68,
+      "text": " Sí, ¿en qué paquete le gustaría contratar, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.68,
+      "end": 60.19,
+      "text": " El de 350 que mencionas, ¿o no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.46,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

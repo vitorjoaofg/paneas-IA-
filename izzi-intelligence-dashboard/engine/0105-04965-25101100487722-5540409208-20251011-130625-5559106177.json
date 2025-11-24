@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100487722-5540409208-20251011-130625-5559106177.WAV",
+  "file_name": "0105-04965-25101100487722-5540409208-20251011-130625-5559106177.WAV",
+  "base_id": "0105-04965-25101100487722-5540409208-20251011-130625-5559106177",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor edificio con 200 canales, vistas y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a ICI. ¿Te interesa? Un asesor te está esperando. Por favor... Oye, Pancho, ¿ya? ¿Cómo estás? ¿Bien? Cuídate mucho, ¿eh? Espera un momento, por favor. Sí. Buenas tardes. Buenas tardes. ¿Te está conectando la hora de contratación a ICI o la tienes mal castigo con quien te buscas? No, no. Le voy a avisar a mi familia, señorita. Yo luego lo aviso, ¿sí? Hasta luego, ¿eh? Ándale, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor edificio",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.0,
+      "end": 14.0,
+      "text": " con 200 canales, vistas y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " No lo pienses más y cámbiate a ICI. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 28.12,
+      "text": " Oye, Pancho, ¿ya? ¿Cómo estás? ¿Bien? Cuídate mucho, ¿eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.12,
+      "end": 32.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.12,
+      "end": 38.11,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.11,
+      "end": 39.4,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.4,
+      "end": 40.4,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.4,
+      "end": 43.4,
+      "text": " ¿Te está conectando la hora de contratación a ICI o la tienes mal castigo con quien te buscas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.4,
+      "end": 46.4,
+      "text": " No, no. Le voy a avisar a mi familia, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.4,
+      "end": 49.4,
+      "text": " Yo luego lo aviso, ¿sí? Hasta luego, ¿eh?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.4,
+      "end": 50.4,
+      "text": " Ándale, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.056,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

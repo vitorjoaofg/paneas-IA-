@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400088010-5544389967-20251014-082504-5589758580.WAV",
+  "file_name": "0105-04965-25101400088010-5544389967-20251014-082504-5589758580.WAV",
+  "base_id": "0105-04965-25101400088010-5544389967-20251014-082504-5589758580",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Igori, es posible? No, gracias. Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Maranisa Auxedo, nos comunicamos de la compañía ICI. ¿Cómo ya tengo el gusto? Mire, señorita, ya tengo, este, el otro sistema, ¿cómo se llama? Es Total Play, Internet or Infinitum. Total Play, Total Play, muchas gracias. Ah, que no se preocupe, que tenga buen día, hasta pronto. ¿Le puedo pedir un favor? Ya no estén llamando, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Igori, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " No, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.89,
+      "end": 32.89,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.89,
+      "end": 43.88,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Maranisa Auxedo, nos comunicamos de la compañía ICI. ¿Cómo ya tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.88,
+      "end": 51.07,
+      "text": " Mire, señorita, ya tengo, este, el otro sistema, ¿cómo se llama?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.07,
+      "end": 54.07,
+      "text": " Es Total Play, Internet or Infinitum.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.07,
+      "end": 57.07,
+      "text": " Total Play, Total Play, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.07,
+      "end": 60.07,
+      "text": " Ah, que no se preocupe, que tenga buen día, hasta pronto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.07,
+      "end": 65.07,
+      "text": " ¿Le puedo pedir un favor? Ya no estén llamando, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.704,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

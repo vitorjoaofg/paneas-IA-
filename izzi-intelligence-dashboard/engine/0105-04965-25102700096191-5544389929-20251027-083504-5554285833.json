@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700096191-5544389929-20251027-083504-5554285833.WAV",
+  "file_name": "0105-04965-25102700096191-5544389929-20251027-083504-5554285833.WAV",
+  "base_id": "0105-04965-25102700096191-5544389929-20251027-083504-5554285833",
+  "transcription": "¡Bueno! Bueno, buenos días, me presento, mi nombre es Daniel, me estoy comunicando por parte de la compañía de EasyMobile. ¿En qué tengo el gusto? En almáida. ¡Mucho gusto! Mira, el motivo de mi llamada es bastante breve, básicamente es por una serie de beneficios que la compañía está otorgando, debido a la buena regularidad que usted ha venido manejando con nosotros, en el cual se le está otorgando el beneficio de EasyMobile, este beneficio que le brinda llamadas ilimitadas. ¿Ya se lo han comentado? Sí, en este caso, esta es la fuerza que se le tiene, ¿qué le parece? ¿Mande? Ok, ¿quiere que le entreguemos su chip? Ahorita no, yo me comunico con ustedes. Ok, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.88,
+      "end": 1.88,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 33.47,
+      "end": 48.73,
+      "text": " Bueno, buenos días, me presento, mi nombre es Daniel, me estoy comunicando por parte",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 48.73,
+      "end": 51.53,
+      "text": " de la compañía de EasyMobile. ¿En qué tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 51.53,
+      "end": 52.53,
+      "text": " En almáida.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 52.53,
+      "end": 53.62,
+      "text": " ¡Mucho gusto!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 53.62,
+      "end": 57.38,
+      "text": " Mira, el motivo de mi llamada es bastante breve, básicamente es por una serie de beneficios",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 57.38,
+      "end": 60.5,
+      "text": " que la compañía está otorgando, debido a la buena regularidad que usted ha venido",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 60.5,
+      "end": 64.46,
+      "text": " manejando con nosotros, en el cual se le está otorgando el beneficio de EasyMobile,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.46,
+      "end": 67.9,
+      "text": " este beneficio que le brinda llamadas ilimitadas. ¿Ya se lo han comentado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.15,
+      "end": 80.58,
+      "text": " Sí, en este caso, esta es la fuerza que se le tiene, ¿qué le parece?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 83.31,
+      "end": 85.85,
+      "text": " ¿Mande?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 85.85,
+      "end": 89.94,
+      "text": " Ok, ¿quiere que le entreguemos su chip?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 89.94,
+      "end": 92.1,
+      "text": " Ahorita no, yo me comunico con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 92.1,
+      "end": 93.1,
+      "text": " Ok, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.28,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

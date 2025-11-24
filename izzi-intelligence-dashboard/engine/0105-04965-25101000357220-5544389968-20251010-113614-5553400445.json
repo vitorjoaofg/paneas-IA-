@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000357220-5544389968-20251010-113614-5553400445.WAV",
+  "file_name": "0105-04965-25101000357220-5544389968-20251010-113614-5553400445.WAV",
+  "base_id": "0105-04965-25101000357220-5544389968-20251010-113614-5553400445",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor entretenimiento con 200 canales, Bipremium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a IZIU. ¿Te interesa? ¡Una suerte está esperando! Por favor. Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 3. Si conoce el número de extensión, márquelo ahora. Espera un momento, por favor. Vete a Security.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 medas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.0,
+      "end": 16.0,
+      "text": " con 200 canales, Bipremium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " No lo pienses más y cámbiate a IZIU.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.0,
+      "end": 20.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " ¡Una suerte está esperando!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.0,
+      "end": 23.0,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.0,
+      "end": 25.0,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.0,
+      "end": 28.0,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.0,
+      "end": 31.0,
+      "text": " Si conoce el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.0,
+      "end": 33.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 33.0,
+      "end": 42.26,
+      "text": " Vete a Security.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 45.504,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

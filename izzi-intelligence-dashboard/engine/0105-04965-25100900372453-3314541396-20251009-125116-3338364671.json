@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900372453-3314541396-20251009-125116-3338364671.WAV",
+  "file_name": "0105-04965-25100900372453-3314541396-20251009-125116-3338364671.WAV",
+  "base_id": "0105-04965-25100900372453-3314541396-20251009-125116-3338364671",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport desde 350 pesos el primer mes con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor. Espera un momento, por favor. Atención, clientes. O hacer un pedido. Marque 2. Contacto a una agente de ventas. Marque 3. Crédito y cobranta. Marque 4. Compras. Marque 5. Cuentas por pagar. Marque 6. Llamar a una sucursal. Marque 7. Para hablar con un ejecutivo, espere en la línea o marque 0. Gracias por esperar. Enseguida será atendido. ¿Cómo está el teléfono? Hola, ¿buen día? Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyport desde 350 pesos el primer mes con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.49,
+      "end": 28.49,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.49,
+      "end": 33.84,
+      "text": " Atención, clientes. O hacer un pedido. Marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.84,
+      "end": 37.84,
+      "text": " Contacto a una agente de ventas. Marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.84,
+      "end": 41.9,
+      "text": " Crédito y cobranta. Marque 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.03,
+      "end": 45.06,
+      "text": " Compras. Marque 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.06,
+      "end": 48.06,
+      "text": " Cuentas por pagar. Marque 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.06,
+      "end": 52.32,
+      "text": " Llamar a una sucursal. Marque 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.32,
+      "end": 60.04,
+      "text": " Para hablar con un ejecutivo, espere en la línea o marque 0.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.04,
+      "end": 63.04,
+      "text": " Gracias por esperar. Enseguida será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.04,
+      "end": 86.88,
+      "text": " ¿Cómo está el teléfono? Hola, ¿buen día? Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.54,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

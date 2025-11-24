@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700306477-5544389972-20251017-112125-5511031248.WAV",
+  "file_name": "0105-04965-25101700306477-5544389972-20251017-112125-5511031248.WAV",
+  "base_id": "0105-04965-25101700306477-5544389972-20251017-112125-5511031248",
+  "transcription": "Hola, ¿te gustaría navegar en InchambeLite con 100 megas de velocidad, tener el mejor detenimiento con 200 canales, distribuidos y eventos deportivos exclusivos por solo 350 pesos en primer mes? No lo pienses más y cámbiate ahí. ¿Te interesa? Un asesor que está esperando. Por favor, continúen la línea. C-Banko, con C-Mobile. Paga más de 150 productos y servicios de forma rápida, fácil y segura. Espera un momento, por favor. Gracias por tu espera. Estrena un auto híbrido o eléctrico. Contrata C-Auto Verde, el crédito automotriz para autos híbridos y eléctricos. Por favor, sigue con nosotros. Ahorra en tu recibo de luz. Contrata C-Panel Solar. El crédito destinado para la adquisición de paneles solares genera energía solar para tu casa, negocio o empresa. Gracias por tu espera. C-Banko, buenos días. Hola, hola. Hola, hola.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en InchambeLite con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " detenimiento con 200 canales, distribuidos y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos en primer mes? No lo pienses más y cámbiate ahí. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 21.0,
+      "text": " que está esperando. Por favor, continúen la línea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 28.16,
+      "text": " C-Banko, con C-Mobile. Paga más de 150 productos y servicios de forma rápida,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.16,
+      "end": 31.16,
+      "text": " fácil y segura. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.16,
+      "end": 34.16,
+      "text": " Gracias por tu espera. Estrena un auto híbrido o eléctrico.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.16,
+      "end": 41.09,
+      "text": " Contrata C-Auto Verde, el crédito automotriz para autos híbridos y eléctricos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.09,
+      "end": 46.09,
+      "text": " Por favor, sigue con nosotros. Ahorra en tu recibo de luz.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.09,
+      "end": 49.09,
+      "text": " Contrata C-Panel Solar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.09,
+      "end": 54.09,
+      "text": " El crédito destinado para la adquisición de paneles solares genera energía solar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.09,
+      "end": 59.18,
+      "text": " para tu casa, negocio o empresa. Gracias por tu espera.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.18,
+      "end": 66.78,
+      "text": " C-Banko, buenos días. Hola, hola. Hola, hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.984,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

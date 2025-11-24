@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400630847-5544389954-20251014-155315-5526144375.WAV",
+  "file_name": "0105-04965-25101400630847-5544389954-20251014-155315-5526144375.WAV",
+  "base_id": "0105-04965-25101400630847-5544389954-20251014-155315-5526144375",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. ¿Quién habla? Contratación con Easy, ¿qué le puede ayudar? ¿A dónde habló? Se está marcando a Easy. ¿A dónde? Easy. Y-W-Z-I. Easy. Ah, no, señor. ¿Quién sabe? Sonó el teléfono y nosotros no marcamos. Permítame. ¿Ustedes ya cuentan con Easy en casa? ¿Qué? ¿Ustedes ya cuentan con servicio Easy en casa? Gracias. Bueno. ¿Qué pasa un día?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.12,
+      "end": 27.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.12,
+      "end": 29.12,
+      "text": " ¿Quién habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.12,
+      "end": 34.19,
+      "text": " Contratación con Easy, ¿qué le puede ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.19,
+      "end": 37.66,
+      "text": " ¿A dónde habló?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.89,
+      "end": 39.89,
+      "text": " Se está marcando a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.89,
+      "end": 41.14,
+      "text": " ¿A dónde?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.24,
+      "end": 44.24,
+      "text": " Easy. Y-W-Z-I. Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.24,
+      "end": 49.24,
+      "text": " Ah, no, señor. ¿Quién sabe? Sonó el teléfono y nosotros no marcamos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.53,
+      "end": 51.53,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.53,
+      "end": 52.53,
+      "text": " ¿Ustedes ya cuentan con Easy en casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.53,
+      "end": 54.53,
+      "text": " ¿Qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.53,
+      "end": 56.53,
+      "text": " ¿Ustedes ya cuentan con servicio Easy en casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.1,
+      "end": 60.1,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.1,
+      "end": 61.13,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 62.13,
+      "end": 63.13,
+      "text": " ¿Qué pasa un día?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

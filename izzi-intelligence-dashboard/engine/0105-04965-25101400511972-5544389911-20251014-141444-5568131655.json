@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400511972-5544389911-20251014-141444-5568131655.WAV",
+  "file_name": "0105-04965-25101400511972-5544389911-20251014-141444-5568131655.WAV",
+  "base_id": "0105-04965-25101400511972-5544389911-20251014-141444-5568131655",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con IZI? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. Espera un momento, por favor. Contrataciones IZI, la tienda de Edgar Torres, con quien tengo el gusto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con IZI? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 20.8,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.8,
+      "end": 30.69,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.69,
+      "end": 33.53,
+      "text": " Contrataciones IZI, la tienda de Edgar Torres, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 33.552,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

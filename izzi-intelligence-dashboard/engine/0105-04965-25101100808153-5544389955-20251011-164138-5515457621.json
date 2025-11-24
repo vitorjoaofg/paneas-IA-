@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100808153-5544389955-20251011-164138-5515457621.WAV",
+  "file_name": "0105-04965-25101100808153-5544389955-20251011-164138-5515457621.WAV",
+  "base_id": "0105-04965-25101100808153-5544389955-20251011-164138-5515457621",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Está bien, repito, esto es de Easy Mobile. Sabemos que mantenerse conectado es fundamental. Por eso tenemos planes móviles con llamadas ilimitadas y WhatsApp. ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? Bueno, bueno, bueno. Bienvenido al área de contrataciones Easy. Bueno, bueno, bueno. Bueno, ¿me escuchan? Bienvenido al área de contrataciones Easy. Bueno, bueno, bueno. Bueno, bueno. Bueno,",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 30.61,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Está bien, repito,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.61,
+      "end": 36.17,
+      "text": " esto es de Easy Mobile. Sabemos que mantenerse conectado es fundamental. Por eso tenemos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.17,
+      "end": 42.37,
+      "text": " planes móviles con llamadas ilimitadas y WhatsApp. ¡Hola! ¿Te gustaría navegar en Internet",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.37,
+      "end": 48.13,
+      "text": " con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.13,
+      "end": 54.21,
+      "text": " y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.21,
+      "end": 60.57,
+      "text": " más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.57,
+      "end": 69.22,
+      "text": " o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.22,
+      "end": 82.9,
+      "text": " Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? Bueno, bueno,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 82.9,
+      "end": 94.15,
+      "text": " bueno. Bienvenido al área de contrataciones Easy. Bueno, bueno, bueno. Bueno, ¿me escuchan?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 94.15,
+      "end": 159.29,
+      "text": " Bienvenido al área de contrataciones Easy. Bueno, bueno, bueno. Bueno, bueno. Bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 161.46,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101600106824-5544389905-20251016-084326-5620831170.WAV",
+  "file_name": "0105-04999-25101600106824-5544389905-20251016-084326-5620831170.WAV",
+  "base_id": "0105-04999-25101600106824-5544389905-20251016-084326-5620831170",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cándiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenos días, caballero. Hablamos de parte de la compañía de Easy. Mi nombre es Miriam González. Estamos brindando algunos beneficios para clientes nuevos activos. No sé si ya manejé servicio usted con nosotros. Sí, de hecho, por eso contesté porque ya cuento con Easy, pero todos los días la marcan. Ah, que perfecto. Agregamos entonces una disculpa, caballero. Clasifico la llamada de manera correcta para que ya no le ingresen más llamadas a usted. Igual aprovecho el espacio para mencionarle que tenemos en estos momentos los servicios de telefonía celular, clanes que van desde los 10 gigas hasta el servicio de datos ilimitados. No sé si ya manejó usted algún tipo de servicio de telefonía celular con alguna otra compañía. ¿Ya se en plan o recargas? Sí, ya. De momento no me interesa. Muchas gracias. A usted buen día. Igual.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cándiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.38,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.38,
+      "end": 42.9,
+      "text": " por favor. Hola, ¿qué tal? Buenos días, caballero. Hablamos de parte de la compañía de Easy. Mi",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.9,
+      "end": 46.82,
+      "text": " nombre es Miriam González. Estamos brindando algunos beneficios para clientes nuevos activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.82,
+      "end": 52.57,
+      "text": " No sé si ya manejé servicio usted con nosotros. Sí, de hecho, por eso contesté porque ya cuento",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.57,
+      "end": 58.54,
+      "text": " con Easy, pero todos los días la marcan. Ah, que perfecto. Agregamos entonces una disculpa,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.54,
+      "end": 62.74,
+      "text": " caballero. Clasifico la llamada de manera correcta para que ya no le ingresen más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.74,
+      "end": 67.38,
+      "text": " llamadas a usted. Igual aprovecho el espacio para mencionarle que tenemos en estos momentos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.42,
+      "end": 72.06,
+      "text": " los servicios de telefonía celular, clanes que van desde los 10 gigas hasta el servicio de datos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 72.06,
+      "end": 76.22,
+      "text": " ilimitados. No sé si ya manejó usted algún tipo de servicio de telefonía celular con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.22,
+      "end": 82.56,
+      "text": " alguna otra compañía. ¿Ya se en plan o recargas? Sí, ya. De momento no me interesa. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 82.56,
+      "end": 85.12,
+      "text": " A usted buen día. Igual.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.372,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

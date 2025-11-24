@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800657009-5540409218-20251018-164244-5557476371.WAV",
+  "file_name": "0105-04965-25101800657009-5540409218-20251018-164244-5557476371.WAV",
+  "base_id": "0105-04965-25101800657009-5540409218-20251018-164244-5557476371",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Buenas tardes, se está comunicando con Trataciones Easy. Le atiende la señorita Janet Pulido, con quien tengo el uso. Con Ernesto Toral. ¿Bueno? Con Ernesto Toral. Hola, ¿qué tal? Buenas tardes, señor Ernesto. ¿Alcanzó a escuchar la propuesta que se le hizo en el comutador para que pueda tener el servicio? No, muchas gracias. No me interesa. ¿Mande? No, muchas gracias. No me interesa. Bueno, y ustedes dejan de comentario que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.44,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.04,
+      "end": 23.04,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.02,
+      "end": 57.22,
+      "text": " Buenas tardes, se está comunicando con Trataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.22,
+      "end": 59.82,
+      "text": " Le atiende la señorita Janet Pulido, con quien tengo el uso.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.88,
+      "end": 62.88,
+      "text": " Con Ernesto Toral.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.88,
+      "end": 63.88,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.88,
+      "end": 65.88,
+      "text": " Con Ernesto Toral.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.88,
+      "end": 67.91,
+      "text": " Hola, ¿qué tal? Buenas tardes, señor Ernesto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.91,
+      "end": 71.91,
+      "text": " ¿Alcanzó a escuchar la propuesta que se le hizo en el comutador para que pueda tener el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.91,
+      "end": 74.33,
+      "text": " No, muchas gracias. No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.33,
+      "end": 76.9,
+      "text": " ¿Mande?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 76.9,
+      "end": 79.26,
+      "text": " No, muchas gracias. No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 79.26,
+      "end": 81.26,
+      "text": " Bueno, y ustedes dejan de comentario que tenga buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.448,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

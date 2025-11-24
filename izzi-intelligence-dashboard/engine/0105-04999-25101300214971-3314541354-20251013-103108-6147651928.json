@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101300214971-3314541354-20251013-103108-6147651928.WAV",
+  "file_name": "0105-04999-25101300214971-3314541354-20251013-103108-6147651928.WAV",
+  "base_id": "0105-04999-25101300214971-3314541354-20251013-103108-6147651928",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Streaming, más Skysports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un profesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. ¡Ey! ¿Qué hago? Hola. Hola. Espera un momento, por favor. ¿Y si voy a verla? Hola.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Streaming, más Skysports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un profesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.0,
+      "end": 22.0,
+      "text": " ¡Ey!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.0,
+      "end": 23.0,
+      "text": " ¿Qué hago?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 24.0,
+      "text": " Hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 25.0,
+      "text": " Hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.0,
+      "end": 28.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.0,
+      "end": 29.0,
+      "text": " ¿Y si voy a verla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.06,
+      "end": 40.06,
+      "text": " Hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

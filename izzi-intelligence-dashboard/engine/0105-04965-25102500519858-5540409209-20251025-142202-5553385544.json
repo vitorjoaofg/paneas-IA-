@@ -1,0 +1,195 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500519858-5540409209-20251025-142202-5553385544.WAV",
+  "file_name": "0105-04965-25102500519858-5540409209-20251025-142202-5553385544.WAV",
+  "base_id": "0105-04965-25102500519858-5540409209-20251025-142202-5553385544",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Sí, muy buenos días. Hola, muy buenas tardes. Buenas tardes. Buenas tardes. Mi nombre es Jacqueline Desmas. Está comunicando al departamento de promoción. Oiga, apenas lo escucho, casi no le oigo. ¿Ahí me escucha mejor? Bueno, ¿ahí me escucha mejor? Sí, no sé si sea mi línea, pero apenas lo escucho. Oh, correcto. Mire, le mencionaba que estamos hablando del departamento de promociones. Sí, sí. ¿Con quién tengo el gusto? Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.05,
+      "end": 25.55,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.55,
+      "end": 27.55,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.55,
+      "end": 30.05,
+      "text": " Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.05,
+      "end": 32.05,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.05,
+      "end": 39.1,
+      "text": " Sí, muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.1,
+      "end": 42.0,
+      "text": " Hola, muy buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.0,
+      "end": 44.1,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.1,
+      "end": 46.1,
+      "text": " Buenas tardes. Mi nombre es Jacqueline Desmas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.1,
+      "end": 48.1,
+      "text": " Está comunicando al departamento de promoción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 48.1,
+      "end": 50.1,
+      "text": " Oiga, apenas lo escucho, casi no le oigo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 50.58,
+      "end": 53.89,
+      "text": " ¿Ahí me escucha mejor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 53.89,
+      "end": 55.89,
+      "text": " Bueno, ¿ahí me escucha mejor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 55.89,
+      "end": 60.11,
+      "text": " Sí, no sé si sea mi línea, pero apenas lo escucho.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 60.11,
+      "end": 64.11,
+      "text": " Oh, correcto. Mire, le mencionaba que estamos hablando del departamento de promociones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.11,
+      "end": 66.11,
+      "text": " Sí, sí. ¿Con quién tengo el gusto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 66.11,
+      "end": 70.93,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

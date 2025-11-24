@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800670538-5544389946-20251008-153256-5515175848.WAV",
+  "file_name": "0105-04965-25100800670538-5544389946-20251008-153256-5515175848.WAV",
+  "base_id": "0105-04965-25100800670538-5544389946-20251008-153256-5515175848",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Ridesport desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable… Voy a hablar con ventas, tigite 1, compras, tigite 2, ingeniería… Espera un momento, por favor. …seguridad ocupacional, marques, recursos humanos, tigite 6… Buenas tardes. …digite 7, servintrack, tigite 8, marques 0 para hablar con la operadora. Buenas tardes. Buenas tardes. Díganme, ¿bueno, bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.44,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.44,
+      "end": 16.84,
+      "text": " más Ridesport desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.84,
+      "end": 25.58,
+      "text": " te está esperando. Por favor, hable… Voy a hablar con ventas, tigite 1, compras, tigite 2,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.14,
+      "end": 30.58,
+      "text": " ingeniería… Espera un momento, por favor. …seguridad ocupacional,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.58,
+      "end": 41.98,
+      "text": " marques, recursos humanos, tigite 6… Buenas tardes. …digite 7,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.98,
+      "end": 62.39,
+      "text": " servintrack, tigite 8, marques 0 para hablar con la operadora. Buenas tardes. Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 62.39,
+      "end": 68.01,
+      "text": " Díganme, ¿bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.324,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

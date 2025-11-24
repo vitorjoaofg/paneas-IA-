@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300174379-5544389918-20251013-095909-5593858492.WAV",
+  "file_name": "0105-04965-25101300174379-5544389918-20251013-095909-5593858492.WAV",
+  "base_id": "0105-04965-25101300174379-5544389918-20251013-095909-5593858492",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. O 2. Espera un momento, por favor. Estoy hablando con la pincelucuotor de aquí. Hola, ¿qué tal? Buenos días. Mi nombre es... Buenos días. Sí, nos comunicamos de la compañía Easy, señorita. Era para comentarle que tiene un beneficio de lo que es. ¿Qué qué? ¿Un beneficio de qué? Bueno...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.4,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.4,
+      "end": 14.2,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.2,
+      "end": 20.24,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 23.8,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.8,
+      "end": 29.72,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.72,
+      "end": 33.44,
+      "text": " hablar con un asesor. O 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.44,
+      "end": 45.42,
+      "text": " Estoy hablando con la pincelucuotor de aquí. Hola, ¿qué tal? Buenos días. Mi nombre",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.42,
+      "end": 46.42,
+      "text": " es... Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.42,
+      "end": 51.12,
+      "text": " Sí, nos comunicamos de la compañía Easy, señorita. Era para comentarle que tiene",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.12,
+      "end": 64.06,
+      "text": " un beneficio de lo que es. ¿Qué qué? ¿Un beneficio de qué? Bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.456,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200631258-5544389995-20251022-153844-5597132098.WAV",
+  "file_name": "0105-04965-25102200631258-5544389995-20251022-153844-5597132098.WAV",
+  "base_id": "0105-04965-25102200631258-5544389995-20251022-153844-5597132098",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse a Easy, por tomar la llamada y promoción. Estamos por asesor y podemos apoyarlos. Sí, me gustaría, este me escucho en cuanto me costaría. Correcto, en este caso el servicio te hace contratar por Internet o también con la Televisión. Tengo por Internet solo, individual o con la Televisión que es un decodificador Smart, con cable arriba.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.68,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 25.64,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.64,
+      "end": 26.64,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.33,
+      "end": 35.93,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicarse a Easy, por tomar la llamada y",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.93,
+      "end": 43.97,
+      "text": " promoción. Estamos por asesor y podemos apoyarlos. Sí, me gustaría, este me escucho en cuanto",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.97,
+      "end": 51.68,
+      "text": " me costaría. Correcto, en este caso el servicio te hace contratar por Internet o",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.68,
+      "end": 60.46,
+      "text": " también con la Televisión. Tengo por Internet solo, individual o con la Televisión que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.46,
+      "end": 64.02,
+      "text": " es un decodificador Smart, con cable arriba.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

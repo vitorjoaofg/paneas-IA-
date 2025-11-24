@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400427442-3314541353-20251014-130243-3319840426.WAV",
+  "file_name": "0105-04965-25101400427442-3314541353-20251014-130243-3319840426.WAV",
+  "base_id": "0105-04965-25101400427442-3314541353-20251014-130243-3319840426",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para... Espera un momento, por favor. Hola, contrataciones de Easy, la tienda Edgar Torres. ¿Con quién tengo gusto? Con Javier Antonio López Javier. Un gusto saludarle, señor Javier. Se le están ofreciendo nuestros servicios de internet, televisión y telefonía para el hogar. Se le intenta mejorar la calidad de su servicio o el costo del que este día maneje. No sé si ya cuenta con alguno de estos servicios en su domicilio. Sí, creo que todo lo que pasa es que estoy imparadito porque como lo enfermé, está todo esperado, pero para la semana yo quinto. Ah, ok. Bueno, entonces se le da el seguimiento, señor, no se preocupe. Que tenga mandela.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.04,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.04,
+      "end": 34.92,
+      "text": " respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.92,
+      "end": 42.77,
+      "text": " la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.77,
+      "end": 54.23,
+      "text": " o 2 para... Espera un momento, por favor. Hola, contrataciones de Easy, la tienda",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.23,
+      "end": 59.53,
+      "text": " Edgar Torres. ¿Con quién tengo gusto? Con Javier Antonio López Javier. Un gusto",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.53,
+      "end": 63.17,
+      "text": " saludarle, señor Javier. Se le están ofreciendo nuestros servicios de internet, televisión",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.17,
+      "end": 67.01,
+      "text": " y telefonía para el hogar. Se le intenta mejorar la calidad de su servicio o el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.01,
+      "end": 70.89,
+      "text": " costo del que este día maneje. No sé si ya cuenta con alguno de estos servicios",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.89,
+      "end": 76.27,
+      "text": " en su domicilio. Sí, creo que todo lo que pasa es que estoy imparadito porque",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.27,
+      "end": 85.34,
+      "text": " como lo enfermé, está todo esperado, pero para la semana yo quinto. Ah, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 85.34,
+      "end": 88.34,
+      "text": " Bueno, entonces se le da el seguimiento, señor, no se preocupe. Que tenga mandela.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.016,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

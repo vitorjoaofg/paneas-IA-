@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100900481204-5544389943-20251009-141620-7751922232.WAV",
+  "file_name": "0105-04999-25100900481204-5544389943-20251009-141620-7751922232.WAV",
+  "base_id": "0105-04999-25100900481204-5544389943-20251009-141620-7751922232",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, tengo gusto con el señor. ¿Con quién tengo el gusto, perdón? Con quien quiera hablar. Estamos hablando de parte de la compañía de Easy que tenemos por televisión. Ah, no sea malito, ya les había comunicado si me pueden bajar en su sistema. Yo no registré mis datos ni nada. Entonces no sé por qué tienen mis datos. Entonces no sé si me puedas ayudar a que no esté llegando a llamadas porque me están llamando constantemente. Ok, voy a que poner con comentario, no se preocupe que tenga buen día Sanego. Gracias, bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 6.86,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.86,
+      "end": 11.32,
+      "text": " más Skysports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.32,
+      "end": 13.32,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.32,
+      "end": 16.58,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.58,
+      "end": 20.82,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.82,
+      "end": 23.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.86,
+      "end": 43.13,
+      "text": " Buenas tardes, tengo gusto con el señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.13,
+      "end": 46.22,
+      "text": " ¿Con quién tengo el gusto, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.32,
+      "end": 49.06,
+      "text": " Con quien quiera hablar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.06,
+      "end": 53.06,
+      "text": " Estamos hablando de parte de la compañía de Easy que tenemos por televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.06,
+      "end": 61.1,
+      "text": " Ah, no sea malito, ya les había comunicado si me pueden bajar en su sistema.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.1,
+      "end": 64.1,
+      "text": " Yo no registré mis datos ni nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.1,
+      "end": 67.1,
+      "text": " Entonces no sé por qué tienen mis datos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.1,
+      "end": 72.36,
+      "text": " Entonces no sé si me puedas ayudar a que no esté llegando a llamadas",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 72.36,
+      "end": 75.36,
+      "text": " porque me están llamando constantemente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 75.46,
+      "end": 81.8,
+      "text": " Ok, voy a que poner con comentario, no se preocupe que tenga buen día Sanego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 81.8,
+      "end": 83.8,
+      "text": " Gracias, bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.156,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

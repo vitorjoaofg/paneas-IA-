@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500397354-5544389922-20251015-123414-5596678395.WAV",
+  "file_name": "0105-04965-25101500397354-5544389922-20251015-123414-5596678395.WAV",
+  "base_id": "0105-04965-25101500397354-5544389922-20251015-123414-5596678395",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Le hablé, y bueno, sí, de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía. Señorita, no quiero los beneficios. Quiero, por favor, que bajen mi número de teléfono porque él está registrado en el repap y, sí, no los voy a reportar porque ya esto es una cosa. Me están llamé y llamé y yo no me registro con ustedes ni tengo contacto con ustedes ni quiero sus servicios. Ah, ok. Aquí le voy a poner para que la aburren de la base. Que tenga un buen día. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.76,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.76,
+      "end": 20.0,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 29.84,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.84,
+      "end": 37.8,
+      "text": " con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.8,
+      "end": 50.6,
+      "text": " por favor. Hola, buen día. Le hablé, y bueno, sí, de parte de su servicio de Easy para darle",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 50.6,
+      "end": 55.12,
+      "text": " a conocer los beneficios de la telefonía. Señorita, no quiero los beneficios. Quiero,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.12,
+      "end": 59.76,
+      "text": " por favor, que bajen mi número de teléfono porque él está registrado en el repap y,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.76,
+      "end": 64.84,
+      "text": " sí, no los voy a reportar porque ya esto es una cosa. Me están llamé y llamé y yo no me",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.84,
+      "end": 69.68,
+      "text": " registro con ustedes ni tengo contacto con ustedes ni quiero sus servicios. Ah, ok. Aquí",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 69.68,
+      "end": 74.4,
+      "text": " le voy a poner para que la aburren de la base. Que tenga un buen día. Gracias. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.556,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

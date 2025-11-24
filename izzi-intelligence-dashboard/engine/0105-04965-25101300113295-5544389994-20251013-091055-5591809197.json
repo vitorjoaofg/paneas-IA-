@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300113295-5544389994-20251013-091055-5591809197.WAV",
+  "file_name": "0105-04965-25101300113295-5544389994-20251013-091055-5591809197.WAV",
+  "base_id": "0105-04965-25101300113295-5544389994-20251013-091055-5591809197",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno, ¿qué tal? Muy buenos días. Estamos marcando de Easy. El motivo de la llamada es para ofrecerle nuestros servicios de televisión por cable, Internet y Telefonía Fija. ¿Usted ya cuenta con estos servicios? Miren, señor, yo no sé quiénes, hijos de puta, les dio mi número, pero no me interesa ni quiero que me estén llamando. Deje de estar chingando la madre. O sea, le vale verga lo que yo tengo o no tenga. Por sí, yo le voy a seguir marcando las veredas que ha dicho. Dejé chingando a su madre, entonces, pinche puto. ¿Qué dice su madre, pinche viejo puto?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.2,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.2,
+      "end": 15.68,
+      "text": " Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.68,
+      "end": 23.66,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.66,
+      "end": 37.37,
+      "text": " Sí, bueno, ¿qué tal? Muy buenos días. Estamos marcando de Easy. El motivo de la llamada es",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.37,
+      "end": 42.41,
+      "text": " para ofrecerle nuestros servicios de televisión por cable, Internet y Telefonía Fija. ¿Usted ya",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.41,
+      "end": 46.49,
+      "text": " cuenta con estos servicios? Miren, señor, yo no sé quiénes, hijos de puta, les dio mi número,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.49,
+      "end": 49.85,
+      "text": " pero no me interesa ni quiero que me estén llamando. Deje de estar chingando la madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.85,
+      "end": 54.09,
+      "text": " O sea, le vale verga lo que yo tengo o no tenga. Por sí, yo le voy a seguir marcando las",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.09,
+      "end": 59.17,
+      "text": " veredas que ha dicho. Dejé chingando a su madre, entonces, pinche puto. ¿Qué dice su madre, pinche viejo puto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.552,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

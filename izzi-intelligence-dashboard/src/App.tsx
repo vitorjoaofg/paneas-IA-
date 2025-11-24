@@ -33,7 +33,6 @@ import {
   Hourglass,
   Bot,
   CalendarClock,
-  Link2,
   Loader2,
   Megaphone,
   MicVocal,
@@ -46,6 +45,7 @@ import {
   TrendingDown,
   TrendingUp,
   User,
+  X,
 } from "lucide-react";
 import clsx from "clsx";
 import type { DashboardData, DashboardFilters, PerCallDetail, TranscriptSegment } from "./types";
@@ -58,6 +58,8 @@ import { AISummary } from "./components/executive/AISummary";
 import { calculateExecutiveMetrics } from "./utils/executiveMetrics";
 import { formatNumber, formatPercent } from "./utils/numberFormat";
 import { ReincidenciasTab } from "./components/reincidencias/ReincidenciasTab";
+import { MonthlyComparisonTab } from "./components/MonthlyComparisonTab";
+import { AgentPerformanceTab } from "./components/AgentPerformanceTab";
 import { loadTranscript as loadTranscriptSegments, getCachedTranscript as getCachedTranscriptSegments } from "./utils/transcriptLoader";
 import "./index.css";
 
@@ -65,6 +67,7 @@ const STORAGE_KEY = "izzi-dashboard-filters-v2";
 
 const initialFilters: DashboardFilters = {
   search: "",
+  month: "all",
   izziStatus: "all",
   realStatus: "all",
   divergence: "all",
@@ -95,13 +98,23 @@ const SENTIMENT_EMOJI: Record<string, string> = {
   neutral: "😐",
   negative: "😞",
 };
-const HEATMAP_COLORS = ["#e0f2fe", "#bae6fd", "#7dd3fc", "#38bdf8", "#0ea5e9", "#0284c7", "#0369a1"];
 
 function translateSentiment(label: string, t: TranslateFn) {
   if (label === "positive") return t("Positivo", "Positivo");
   if (label === "neutral") return t("Neutro", "Neutro");
   if (label === "negative") return t("Negativo", "Negativo");
   return label;
+}
+
+function isSatisfactoryPitch(label: string | null | undefined): boolean {
+  if (!label) return false;
+  const normalized = label.toLowerCase();
+  return normalized === "satisfactory" || normalized === "satisfatório" || normalized === "satisfatorio";
+}
+
+function isConnectedCall(row: PerCallDetail): boolean {
+  // Uma chamada é "conectada" quando há diálogo entre agente e cliente
+  return row.status_real_detectado === "dialogo_conectado";
 }
 
 const DIVERGENCE_REASON_TRANSLATIONS: Record<string, string> = {
@@ -226,6 +239,11 @@ function applyFilters(rows: PerCallDetail[], filters: DashboardFilters) {
     if (filters.product !== "all" && row.product_offer !== filters.product) return false;
     if (filters.queue !== "all" && row.queue !== filters.queue) return false;
     if (filters.contactType !== "all" && row.contact_type !== filters.contactType) return false;
+
+    if (filters.month !== "all") {
+      const callMonth = row.call_datetime?.split(" ")[0]?.split("/")[1];
+      if (callMonth !== filters.month) return false;
+    }
 
     if (filters.izziStatus !== "all" && row.izzi_status_normalizado !== filters.izziStatus) return false;
     if (filters.realStatus !== "all" && row.status_real_detectado !== filters.realStatus) return false;
@@ -553,6 +571,13 @@ function OverviewTab({
     : 0;
   const wordsCustomer = filtered.reduce((acc, row) => acc + row.words_customer, 0);
   const wordsAgent = filtered.reduce((acc, row) => acc + row.words_agent, 0);
+
+  // Sales funnel metrics
+  const connectedCalls = filtered.filter(isConnectedCall).length;
+  const pitchSatisfactory = filtered.filter((row) => isConnectedCall(row) && isSatisfactoryPitch(row.sales_pitch_label)).length;
+  const followUpCount = filtered.filter((row) => isConnectedCall(row) && row.follow_up_commitment === 1).length;
+  const likelySales = filtered.filter((row) => isConnectedCall(row) && row.likely_sale === 1).length;
+
   const operatorSummary = useMemo(() => {
     return filtered.reduce(
       (acc, row) => {
@@ -605,10 +630,11 @@ function OverviewTab({
   const scriptRate = operatorSummary.scriptApplicable
     ? operatorSummary.scriptAligned / operatorSummary.scriptApplicable
     : 0;
-  const sourceRate = totalFiltered ? operatorSummary.sourceAware / totalFiltered : 0;
-  const salesRate = totalFiltered ? operatorSummary.salesSatisfactory / totalFiltered : 0;
-  const followUpRate = totalFiltered ? operatorSummary.followUps / totalFiltered : 0;
-  const objectionRate = totalFiltered ? operatorSummary.objectionHandled / totalFiltered : 0;
+  // Source Awareness e Objections devem ser calculados sobre chamadas conectadas
+  const sourceRate = connectedCalls ? operatorSummary.sourceAware / connectedCalls : 0;
+  const salesRate = connectedCalls ? operatorSummary.salesSatisfactory / connectedCalls : 0;
+  const followUpRate = connectedCalls ? operatorSummary.followUps / connectedCalls : 0;
+  const objectionRate = connectedCalls ? operatorSummary.objectionHandled / connectedCalls : 0;
   const angerRate = totalFiltered ? operatorSummary.angerCalls / totalFiltered : 0;
   const operatorMetrics = [
     {
@@ -627,13 +653,13 @@ function OverviewTab({
     {
       key: "source",
       label: t("Origem reconhecida", "Origen reconocida"),
-      value: totalFiltered ? formatPercent(sourceRate, 0) : "-",
+      value: connectedCalls ? formatPercent(sourceRate, 0) : "-",
       detail:
         operatorSummary.sourceAware === 0
           ? t("Sem menção ao bot ou origem da oportunidade.", "Sin mención al bot ni a la oportunidad.")
           : t(
-              `${formatNumber(operatorSummary.sourceAware)} citações da transferência do bot (${formatNumber(operatorSummary.sourceStrong)} explícitas).`,
-              `${formatNumber(operatorSummary.sourceAware)} citas de la transferencia del bot (${formatNumber(operatorSummary.sourceStrong)} explícitas).`,
+              `${formatNumber(operatorSummary.sourceAware)} de ${formatNumber(connectedCalls)} chamadas conectadas citaram o bot (${formatNumber(operatorSummary.sourceStrong)} explícitas).`,
+              `${formatNumber(operatorSummary.sourceAware)} de ${formatNumber(connectedCalls)} llamadas conectadas citaron el bot (${formatNumber(operatorSummary.sourceStrong)} explícitas).`,
             ),
       icon: <Bot className="h-5 w-5 text-sky-200" />,
       emphasis: sourceRate >= 0.5 ? "positive" : sourceRate >= 0.2 ? "neutral" : "warning",
@@ -641,13 +667,13 @@ function OverviewTab({
     {
       key: "sales",
       label: t("Pitch de vendas", "Pitch de ventas"),
-      value: totalFiltered ? formatPercent(salesRate, 0) : "-",
+      value: connectedCalls ? formatPercent(salesRate, 0) : "-",
       detail:
         operatorSummary.salesSatisfactory + operatorSummary.salesNominal === 0
           ? t("Quase nenhuma menção estruturada de oferta.", "Casi sin mención estructurada de la oferta.")
           : t(
-              `${formatNumber(operatorSummary.salesSatisfactory)} pitches completos e ${formatNumber(operatorSummary.salesNominal)} medianos.`,
-              `${formatNumber(operatorSummary.salesSatisfactory)} pitches completos y ${formatNumber(operatorSummary.salesNominal)} medianos.`,
+              `${formatNumber(operatorSummary.salesSatisfactory)} de ${formatNumber(connectedCalls)} conectadas: pitches completos (${formatNumber(operatorSummary.salesNominal)} medianos).`,
+              `${formatNumber(operatorSummary.salesSatisfactory)} de ${formatNumber(connectedCalls)} conectadas: pitches completos (${formatNumber(operatorSummary.salesNominal)} medianos).`,
             ),
       icon: <Megaphone className="h-5 w-5 text-amber-200" />,
       emphasis: salesRate >= 0.45 ? "positive" : salesRate >= 0.25 ? "neutral" : "warning",
@@ -655,13 +681,13 @@ function OverviewTab({
     {
       key: "followup",
       label: t("Follow-up acordado", "Seguimiento acordado"),
-      value: totalFiltered ? formatPercent(followUpRate, 0) : "-",
+      value: connectedCalls ? formatPercent(followUpRate, 0) : "-",
       detail:
         operatorSummary.followUps === 0
           ? t("Nenhuma chamada sinalizou retorno/agendamento.", "Ninguna llamada señaló retorno/agendamiento.")
           : t(
-              `${formatNumber(operatorSummary.followUps)} follow-ups (${formatNumber(operatorSummary.followUpByAgent)} pelo agente, ${formatNumber(operatorSummary.followUpByCustomer)} pelo cliente).`,
-              `${formatNumber(operatorSummary.followUps)} seguimientos (${formatNumber(operatorSummary.followUpByAgent)} por el agente, ${formatNumber(operatorSummary.followUpByCustomer)} por el cliente).`,
+              `${formatNumber(operatorSummary.followUps)} de ${formatNumber(connectedCalls)} conectadas (${formatNumber(operatorSummary.followUpByAgent)} pelo agente, ${formatNumber(operatorSummary.followUpByCustomer)} pelo cliente).`,
+              `${formatNumber(operatorSummary.followUps)} de ${formatNumber(connectedCalls)} conectadas (${formatNumber(operatorSummary.followUpByAgent)} por el agente, ${formatNumber(operatorSummary.followUpByCustomer)} por el cliente).`,
             ),
       icon: <CalendarClock className="h-5 w-5 text-cyan-200" />,
       emphasis: followUpRate >= 0.35 ? "positive" : followUpRate >= 0.15 ? "neutral" : "warning",
@@ -669,13 +695,13 @@ function OverviewTab({
     {
       key: "objection",
       label: t("Contra-argumentos", "Contraargumentos"),
-      value: totalFiltered ? formatPercent(objectionRate, 0) : "-",
+      value: connectedCalls ? formatPercent(objectionRate, 0) : "-",
       detail:
         operatorSummary.objectionHandled === 0
           ? t("Objeções do cliente ficam sem resposta estruturada.", "Las objeciones del cliente quedan sin respuesta estructurada.")
           : t(
-              `${formatNumber(operatorSummary.objectionHandled)} chamadas com resposta e ${formatNumber(operatorSummary.objectionSequences)} contra-argumentos detectados.`,
-              `${formatNumber(operatorSummary.objectionHandled)} llamadas con respuesta y ${formatNumber(operatorSummary.objectionSequences)} contraargumentos detectados.`,
+              `${formatNumber(operatorSummary.objectionHandled)} de ${formatNumber(connectedCalls)} conectadas com resposta (${formatNumber(operatorSummary.objectionSequences)} contra-argumentos detectados).`,
+              `${formatNumber(operatorSummary.objectionHandled)} de ${formatNumber(connectedCalls)} conectadas con respuesta (${formatNumber(operatorSummary.objectionSequences)} contraargumentos detectados).`,
             ),
       icon: <ShieldCheck className="h-5 w-5 text-emerald-200" />,
       emphasis: objectionRate >= 0.3 ? "positive" : objectionRate >= 0.15 ? "neutral" : "warning",
@@ -802,6 +828,61 @@ function OverviewTab({
           </p>
         </Card>
       </div>
+
+      <Card>
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg font-semibold text-slate-50">
+            {t("Funil de Conversão (Proxy de Vendas)", "Embudo de Conversión (Proxy de Ventas)")}
+          </h3>
+          <TrendingUp className="h-5 w-5 text-green-400" />
+        </div>
+        <p className="text-xs text-slate-400">
+          {t(
+            "Funil de vendas: todas as métricas são calculadas sobre as chamadas conectadas (diálogo entre agente e cliente).",
+            "Embudo de ventas: todas las métricas se calculan sobre las llamadas conectadas (diálogo entre agente y cliente).",
+          )}
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+            <p className="text-xs uppercase tracking-wider text-slate-400">{t("Base", "Base")}</p>
+            <p className="text-[10px] text-slate-500">{t("Conectadas", "Conectadas")}</p>
+            <div className="mt-1 flex items-end justify-between">
+              <span className="text-2xl font-semibold text-slate-50">{formatNumber(connectedCalls)}</span>
+              <span className="text-sm font-medium text-slate-300">100%</span>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 px-4 py-3">
+            <p className="text-xs uppercase tracking-wider text-cyan-300">{t("Passo 1", "Paso 1")}</p>
+            <p className="text-[10px] text-cyan-400/70">{t("Pitch OK", "Pitch OK")}</p>
+            <div className="mt-1 flex items-end justify-between">
+              <span className="text-2xl font-semibold text-cyan-300">{formatNumber(pitchSatisfactory)}</span>
+              <span className="text-sm font-medium text-cyan-300">
+                {connectedCalls > 0 ? formatPercent(pitchSatisfactory / connectedCalls) : "0%"}
+              </span>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-blue-400/20 bg-blue-400/5 px-4 py-3">
+            <p className="text-xs uppercase tracking-wider text-blue-300">{t("Passo 2", "Paso 2")}</p>
+            <p className="text-[10px] text-blue-400/70">{t("Follow-up", "Seguimiento")}</p>
+            <div className="mt-1 flex items-end justify-between">
+              <span className="text-2xl font-semibold text-blue-300">{formatNumber(followUpCount)}</span>
+              <span className="text-sm font-medium text-blue-300">
+                {connectedCalls > 0 ? formatPercent(followUpCount / connectedCalls) : "0%"}
+              </span>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-green-400/30 bg-green-400/10 px-4 py-3">
+            <p className="text-xs uppercase tracking-wider text-green-300">{t("Conversão", "Conversión")}</p>
+            <p className="text-[10px] text-green-400/70">{t("Pitch + Follow-up", "Pitch + Seguimiento")}</p>
+            <div className="mt-1 flex items-end justify-between">
+              <span className="text-2xl font-semibold text-green-400">{formatNumber(likelySales)}</span>
+              <span className="text-sm font-medium text-green-400">
+                {connectedCalls > 0 ? formatPercent(likelySales / connectedCalls) : "0%"}
+              </span>
+            </div>
+          </div>
+        </div>
+      </Card>
 
       <Card>
         <div className="flex items-center justify-between">
@@ -1052,6 +1133,9 @@ function OverviewTab({
           </div>
         </Card>
       </div>
+
+      {/* Matriz de Confusão */}
+      <ComparativoTab data={data} filtered={filtered} />
     </div>
   );
 }
@@ -1076,13 +1160,21 @@ const ProgressLine = ({ label, value, color }: { label: string; value: number; c
 
 function ComparativoTab({ data, filtered }: { data: DashboardData; filtered: PerCallDetail[] }) {
   const t = useTranslate();
+  const [selectedCell, setSelectedCell] = useState<{ izzi: string; real: string } | null>(null);
+
   const matrix = useMemo(() => {
+    // Usar TODA a matriz de confusão (incluindo acertos e divergências)
+    const allData = data.status_analysis.confusion_matrix;
+
+    // Pegar todos os status únicos
     const statusesIzzi = Array.from(
-      new Set(data.status_analysis.confusion_matrix.map((item) => item.izzi_status)),
-    );
+      new Set(allData.map((item) => item.izzi_status)),
+    ).sort();
     const statusesReal = Array.from(
-      new Set(data.status_analysis.confusion_matrix.map((item) => item.actual_status)),
-    );
+      new Set(allData.map((item) => item.actual_status)),
+    ).sort();
+
+    // Criar grid completo
     const grid: Record<string, Record<string, number>> = {};
     statusesIzzi.forEach((izzi) => {
       grid[izzi] = {};
@@ -1090,10 +1182,13 @@ function ComparativoTab({ data, filtered }: { data: DashboardData; filtered: Per
         grid[izzi][real] = 0;
       });
     });
-    data.status_analysis.confusion_matrix.forEach((item) => {
+
+    // Preencher com os dados
+    allData.forEach((item) => {
       if (!grid[item.izzi_status]) grid[item.izzi_status] = {} as Record<string, number>;
       grid[item.izzi_status][item.actual_status] = item.count;
     });
+
     return { grid, statusesIzzi, statusesReal };
   }, [data]);
 
@@ -1123,14 +1218,50 @@ function ComparativoTab({ data, filtered }: { data: DashboardData; filtered: Per
       .slice(0, 6);
   }, [filtered]);
 
+  const cellCalls = useMemo(() => {
+    if (!selectedCell) return [];
+    return filtered.filter(
+      call => call.izzi_status_normalizado === selectedCell.izzi &&
+              call.status_real_detectado === selectedCell.real
+    );
+  }, [filtered, selectedCell]);
+
   return (
     <div className="space-y-8">
       <Card>
         <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold text-slate-50">
-            {t("Heatmap de transições IZZI × Realidade", "Heatmap de transiciones IZZI × Realidad")}
-          </h3>
-          <Link2 className="h-5 w-5 text-accent-soft" />
+          <div>
+            <h3 className="text-lg font-semibold text-slate-50">
+              {t("Matriz de Confusão: IZZI × Realidade", "Matriz de Confusión: IZZI × Realidad")}
+            </h3>
+            <p className="mt-1 text-xs text-slate-400">
+              {t("Verde = acertos na diagonal | Vermelho = erros de classificação | Clique para detalhes", "Verde = aciertos en la diagonal | Rojo = errores de clasificación | Clic para detalles")}
+            </p>
+          </div>
+          <button
+            onClick={() => {
+              const csv = [
+                ["IZZI Status", "Real Status", "Count", "Percentage"],
+                ...data.status_analysis.confusion_matrix.map(row => [
+                  row.izzi_status,
+                  row.actual_status,
+                  row.count,
+                  ((row.count / data.dataset_summary.total_calls) * 100).toFixed(2) + "%"
+                ])
+              ].map(row => row.join(",")).join("\n");
+              const blob = new Blob([csv], { type: "text/csv" });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = "confusion_matrix.csv";
+              a.click();
+              URL.revokeObjectURL(url);
+            }}
+            className="flex items-center gap-2 rounded-2xl border border-accent-soft/30 bg-accent-soft/10 px-4 py-2 text-sm text-accent-soft hover:bg-accent-soft/20"
+          >
+            <Download className="h-4 w-4" />
+            {t("Exportar CSV", "Exportar CSV")}
+          </button>
         </div>
         <div className="mt-6 overflow-x-auto">
           <table className="min-w-full border-separate border-spacing-2 text-sm">
@@ -1157,25 +1288,47 @@ function ComparativoTab({ data, filtered }: { data: DashboardData; filtered: Per
                   </td>
                   {matrix.statusesReal.map((real) => {
                     const value = matrix.grid[izzi]?.[real] ?? 0;
+                    const isCorrect = izzi === real; // Diagonal = acertos
                     const intensity = value / maxCell;
-                    const colorIndex = Math.min(
-                      HEATMAP_COLORS.length - 1,
-                      Math.floor(intensity * (HEATMAP_COLORS.length - 1)),
-                    );
-                    const background = value
-                      ? `linear-gradient(135deg, ${HEATMAP_COLORS[colorIndex]}, rgba(12,16,26,0.75))`
-                      : "rgba(12,16,24,0.4)";
+
+                    // Cores diferentes para acertos (verde) vs erros (vermelho/laranja)
+                    let background: string;
+                    if (value === 0) {
+                      background = "rgba(12,16,24,0.4)";
+                    } else if (isCorrect) {
+                      // Diagonal: verde (acertos)
+                      background = `linear-gradient(135deg, rgba(34,197,94,${intensity * 0.8}), rgba(22,163,74,${intensity * 0.6}))`;
+                    } else {
+                      // Fora da diagonal: vermelho/laranja (erros)
+                      background = `linear-gradient(135deg, rgba(239,68,68,${intensity * 0.8}), rgba(220,38,38,${intensity * 0.6}))`;
+                    }
+
                     return (
                       <td key={real} className="rounded-2xl text-center text-xs text-slate-50">
-                        <div
-                          className="flex flex-col items-center justify-center rounded-2xl px-3 py-3"
-                          style={{ background }}
+                        <button
+                          onClick={() => value > 0 && setSelectedCell({ izzi, real })}
+                          disabled={value === 0}
+                          className={`group relative flex w-full flex-col items-center justify-center rounded-2xl px-4 py-4 ${
+                            value > 0 ? "cursor-pointer transition-all hover:scale-105 hover:shadow-xl" : "cursor-default"
+                          } ${isCorrect && value > 0 ? "ring-2 ring-green-400/30" : ""}`}
+                          style={{ background, minWidth: "80px", minHeight: "80px" }}
                         >
-                          <span className="text-sm font-semibold text-white">{formatNumber(value)}</span>
-                          <span className="text-[10px] uppercase tracking-[0.3em] text-white/70">
+                          <span className={`text-lg font-bold drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] ${
+                            isCorrect ? "text-green-50" : "text-rose-50"
+                          }`}>
+                            {formatNumber(value)}
+                          </span>
+                          <span className={`mt-1 text-[10px] font-semibold uppercase tracking-wider drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)] ${
+                            isCorrect ? "text-green-100" : "text-rose-100"
+                          }`}>
                             {formatPercent(value / data.dataset_summary.total_calls)}
                           </span>
-                        </div>
+                          {isCorrect && value > 0 && (
+                            <div className="absolute top-1 right-1">
+                              <div className="h-2 w-2 rounded-full bg-green-400 shadow-lg shadow-green-400/50" />
+                            </div>
+                          )}
+                        </button>
                       </td>
                     );
                   })}
@@ -1238,6 +1391,106 @@ function ComparativoTab({ data, filtered }: { data: DashboardData; filtered: Per
           </ul>
         </Card>
       </div>
+
+      {/* Modal de chamadas da célula */}
+      <AnimatePresence>
+        {selectedCell && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={() => setSelectedCell(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-h-[90vh] w-full max-w-5xl overflow-y-auto rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-8 shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedCell(null)}
+                className="absolute right-6 top-6 text-slate-400 hover:text-slate-200"
+              >
+                <X className="h-6 w-6" />
+              </button>
+
+              <div className="mb-6">
+                <h2 className="text-2xl font-semibold text-slate-50">
+                  {t("Chamadas nesta célula", "Llamadas en esta celda")}
+                </h2>
+                <p className="mt-2 text-sm text-slate-400">
+                  <span className="font-semibold text-cyan-400">{selectedCell.izzi}</span>
+                  {" → "}
+                  <span className="font-semibold text-blue-400">{selectedCell.real}</span>
+                  {" • "}
+                  {cellCalls.length} {t("chamadas", "llamadas")}
+                </p>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-white/10 text-left text-xs uppercase tracking-wider text-slate-400">
+                      <th className="pb-3">{t("ID", "ID")}</th>
+                      <th className="pb-3">{t("Data", "Fecha")}</th>
+                      <th className="pb-3">{t("Duração", "Duración")}</th>
+                      <th className="pb-3">{t("Agente", "Agente")}</th>
+                      <th className="pb-3">{t("Status IZZI", "Estado IZZI")}</th>
+                      <th className="pb-3">{t("Status Real", "Estado Real")}</th>
+                      <th className="pb-3">{t("Motivo", "Motivo")}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {cellCalls.map((call) => (
+                      <tr key={call.call_id} className="border-b border-white/5 hover:bg-white/5">
+                        <td className="py-3 font-mono text-xs text-slate-300">{call.call_id.slice(0, 8)}</td>
+                        <td className="py-3 text-slate-300">{call.call_datetime?.split(" ")[0]}</td>
+                        <td className="py-3 text-slate-300">{Math.floor(call.duration_seconds_transcript)}s</td>
+                        <td className="py-3 text-slate-300">{call.agent_name_detected || "-"}</td>
+                        <td className="py-3 text-cyan-300">{call.izzi_status_normalizado}</td>
+                        <td className="py-3 text-blue-300">{call.status_real_detectado}</td>
+                        <td className="py-3 text-slate-400">{call.divergencia_motivo || "-"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="mt-6 flex justify-end">
+                <button
+                  onClick={() => {
+                    const csv = [
+                      ["Call ID", "Date", "Duration", "Agent", "IZZI Status", "Real Status", "Reason"],
+                      ...cellCalls.map(call => [
+                        call.call_id,
+                        call.call_datetime || "",
+                        call.duration_seconds_transcript,
+                        call.agent_name_detected || "",
+                        call.izzi_status_normalizado,
+                        call.status_real_detectado,
+                        call.divergencia_motivo || ""
+                      ])
+                    ].map(row => row.join(",")).join("\n");
+                    const blob = new Blob([csv], { type: "text/csv" });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = `calls_${selectedCell.izzi}_${selectedCell.real}.csv`;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                  }}
+                  className="flex items-center gap-2 rounded-2xl border border-accent-soft/30 bg-accent-soft/10 px-4 py-2 text-sm text-accent-soft hover:bg-accent-soft/20"
+                >
+                  <Download className="h-4 w-4" />
+                  {t("Exportar CSV", "Exportar CSV")}
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -3339,7 +3592,12 @@ function DashboardApp() {
 
   const filtered = useMemo(() => {
     if (!data) return [] as PerCallDetail[];
-    return applyFilters(data.per_call_details, filters);
+    // Add likely_sale calculated field
+    const dataWithSales = data.per_call_details.map(row => ({
+      ...row,
+      likely_sale: row.follow_up_commitment === 1 && isSatisfactoryPitch(row.sales_pitch_label) ? 1 : 0
+    }));
+    return applyFilters(dataWithSales, filters);
   }, [data, filters]);
 
   const insights = useMemo(() => (data ? buildInsights(data, t) : []), [data, t]);
@@ -3357,6 +3615,30 @@ function DashboardApp() {
   const contactOptions = useMemo(() => {
     if (!data) return [] as string[];
     return Array.from(new Set(data.per_call_details.map((row) => row.contact_type).filter(Boolean))) as string[];
+  }, [data]);
+
+  const monthOptions = useMemo(() => {
+    if (!data) return [] as { value: string; label: string; count: number }[];
+    const monthCounts = new Map<string, number>();
+    data.per_call_details.forEach((row) => {
+      const month = row.call_datetime?.split(" ")[0]?.split("/")[1];
+      const year = row.call_datetime?.split(" ")[0]?.split("/")[2];
+      if (month && year) {
+        const key = `${month}/${year}`;
+        monthCounts.set(key, (monthCounts.get(key) || 0) + 1);
+      }
+    });
+    return Array.from(monthCounts.entries())
+      .map(([key, count]) => ({
+        value: key.split("/")[0],
+        label: key,
+        count,
+      }))
+      .sort((a, b) => {
+        const [aMonth, aYear] = a.label.split("/").map(Number);
+        const [bMonth, bYear] = b.label.split("/").map(Number);
+        return aYear !== bYear ? aYear - bYear : aMonth - bMonth;
+      });
   }, [data]);
 
   const applySevereDetection = useCallback(() => {
@@ -3423,6 +3705,16 @@ function DashboardApp() {
       icon: <FileSpreadsheet className="h-4 w-4" />,
     },
     {
+      key: "monthly",
+      label: t("Evolução Mensal", "Evolución Mensual"),
+      icon: <TrendingUp className="h-4 w-4" />,
+    },
+    {
+      key: "agents",
+      label: t("Performance por Agente", "Rendimiento por Agente"),
+      icon: <User className="h-4 w-4" />,
+    },
+    {
       key: "risk",
       label: t("Reincidências e Riscos", "Reincidencias y Riesgos"),
       icon: <ShieldAlert className="h-4 w-4" />,
@@ -3476,6 +3768,18 @@ function DashboardApp() {
                     placeholder={t("ID, produto, fila, motivo...", "ID, producto, fila, motivo...")}
                   />
                 </div>
+                <select
+                  value={filters.month}
+                  onChange={(event) => setFilter("month", event.target.value)}
+                  className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-accent-soft"
+                >
+                  <option value="all">{t("Mês (todos)", "Mes (todos)")}</option>
+                  {monthOptions.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {opt.label} ({opt.count})
+                    </option>
+                  ))}
+                </select>
                 <select
                   value={filters.izziStatus}
                   onChange={(event) => setFilter("izziStatus", event.target.value)}
@@ -3564,6 +3868,8 @@ function DashboardApp() {
               />
             )}
             {activeTab === "risk" && <ReincidenciasTab rows={filtered} />}
+            {activeTab === "monthly" && <MonthlyComparisonTab filtered={filtered} data={data} />}
+            {activeTab === "agents" && <AgentPerformanceTab filtered={filtered} />}
             {activeTab === "library" && (
               <AudioLibraryTab
                 rows={filtered}

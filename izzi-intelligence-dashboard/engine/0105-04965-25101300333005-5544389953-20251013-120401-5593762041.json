@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300333005-5544389953-20251013-120401-5593762041.WAV",
+  "file_name": "0105-04965-25101300333005-5544389953-20251013-120401-5593762041.WAV",
+  "base_id": "0105-04965-25101300333005-5544389953-20251013-120401-5593762041",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skyscroll, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable... Espera un momento, por favor. Mas tecnológicas, DIGIT 5. Recursos humanos, DIGIT 6. Contabilidad, DIGIT 7. Servintrack, DIGIT 8. O marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor. Buenas tardes. Buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyscroll, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " Por favor, hable...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.26,
+      "end": 27.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.7,
+      "end": 36.7,
+      "text": " Mas tecnológicas, DIGIT 5. Recursos humanos, DIGIT 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.7,
+      "end": 42.7,
+      "text": " Contabilidad, DIGIT 7. Servintrack, DIGIT 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.7,
+      "end": 45.7,
+      "text": " O marque 0 para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.7,
+      "end": 54.3,
+      "text": " Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.3,
+      "end": 63.96,
+      "text": " Buenas tardes. Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.808,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

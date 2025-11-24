@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000812853-5544389908-20251010-172921-5519460569.WAV",
+  "file_name": "0105-04965-25101000812853-5544389908-20251010-172921-5519460569.WAV",
+  "base_id": "0105-04965-25101000812853-5544389908-20251010-172921-5519460569",
+  "transcription": "Hola, ¿te gustaría tener el tercer mes más seleccion, más el mejor entretenimiento con Big Spoon, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando, por favor. Espera un momento, por favor. Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido. Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 2.42,
+      "end": 15.45,
+      "text": " Hola, ¿te gustaría tener el tercer mes más seleccion, más el mejor entretenimiento con Big Spoon, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 15.45,
+      "end": 19.45,
+      "text": " ¿Te interesa? Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 28.45,
+      "end": 30.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 34.17,
+      "end": 45.17,
+      "text": " Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 51.29,
+      "end": 62.29,
+      "text": " Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.98,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100586861-5544389973-20251031-153611-5553989696.WAV",
+  "file_name": "0105-04965-25103100586861-5544389973-20251031-153611-5553989696.WAV",
+  "base_id": "0105-04965-25103100586861-5544389973-20251031-153611-5553989696",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes. Muy buenas tardes. Mire, me esperé en el teléfono para hacerles una atenta súplica. Dénme baja mi teléfono. Me llaman cuando menos una vez al día. ¿Serían tan gentiles de no volver a marcar? Por favor. Sí, en este caso, señorita, una disculpa. Yo me encargaría de tirar directamente el número de la base de datos. Una disculpa y que sea una excelente tarde, disculpe. Igualmente usted, señor. Hasta luego. Hasta luego, carita.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.18,
+      "end": 36.82,
+      "text": " para no. Espera un momento por favor. Hola, ¿qué tal? Buenas tardes. Muy buenas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.98,
+      "end": 44.14,
+      "text": " tardes. Mire, me esperé en el teléfono para hacerles una atenta súplica. Dénme baja",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.14,
+      "end": 52.32,
+      "text": " mi teléfono. Me llaman cuando menos una vez al día. ¿Serían tan gentiles de no",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.32,
+      "end": 57.38,
+      "text": " volver a marcar? Por favor. Sí, en este caso, señorita, una disculpa. Yo me encargaría",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.38,
+      "end": 61.06,
+      "text": " de tirar directamente el número de la base de datos. Una disculpa y que sea una",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.06,
+      "end": 65.34,
+      "text": " excelente tarde, disculpe. Igualmente usted, señor. Hasta luego. Hasta luego,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.34,
+      "end": 67.62,
+      "text": " carita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.336,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100442096-5540409210-20251011-123548-5552663686.WAV",
+  "file_name": "0105-04965-25101100442096-5540409210-20251011-123548-5552663686.WAV",
+  "base_id": "0105-04965-25101100442096-5540409210-20251011-123548-5552663686",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. ¡Espera un momento, por favor! ¡Buenos! ¡Buenos! ¿Buenas tardes? Se está comunicando a contratación de Cecilia, tiende ya en el pulido con quien tengo el gusto. ¿Para qué hablan, eh? De Easy. A ver, espérame. Te quiero viajar, mamá. Es una señorita que si quiere viajar. No, no quiero. ¿Sí, bueno? ¿Sí, bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.76,
+      "text": " pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.76,
+      "end": 26.59,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.59,
+      "end": 32.95,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.95,
+      "end": 43.02,
+      "text": " un asesor o 2 para terminar la llamada. No recibo tu respuesta. ¡Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.02,
+      "end": 55.89,
+      "text": " por favor! ¡Buenos! ¡Buenos! ¿Buenas tardes? Se está comunicando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.89,
+      "end": 60.54,
+      "text": " a contratación de Cecilia, tiende ya en el pulido con quien tengo el gusto. ¿Para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.54,
+      "end": 81.5,
+      "text": " qué hablan, eh? De Easy. A ver, espérame. Te quiero viajar, mamá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 81.5,
+      "end": 94.25,
+      "text": " Es una señorita que si quiere viajar. No, no quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 94.25,
+      "end": 96.86,
+      "text": " ¿Sí, bueno? ¿Sí, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 104.292,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

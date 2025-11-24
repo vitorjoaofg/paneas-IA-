@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100697015-5544389908-20251011-152813-5568136025.WAV",
+  "file_name": "0105-04965-25101100697015-5544389908-20251011-152813-5568136025.WAV",
+  "base_id": "0105-04965-25101100697015-5544389908-20251011-152813-5568136025",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2, espera un momento, por favor. Sí, sí, ¿qué le puedo ayudar? Hola, oye, fíjate que me están marcando diarios para que contrate Easy, y ya no quiero que me marquen porque yo ya tengo Easy. Ah, ok, entonces se agregó el comentario para que actualicen la información, ¿muy bien? Sí, es que luego se va durmiendo, mi mamá está enferma y ella le cuenta que te para contestar y es para lo mismo, entonces... Ah, sí, como le comento, voy a agregar el comentario, ahorita posto el número para que actualicen la información de que ella cuenta con Easy, ¿muy bien? Gracias. Así es, voy a terminar, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 26.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor, o 2, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.0,
+      "end": 65.38,
+      "text": " Sí, sí, ¿qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 65.38,
+      "end": 73.5,
+      "text": " Hola, oye, fíjate que me están marcando diarios para que contrate Easy, y ya no quiero que me marquen porque yo ya tengo Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 73.5,
+      "end": 77.63,
+      "text": " Ah, ok, entonces se agregó el comentario para que actualicen la información, ¿muy bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 77.63,
+      "end": 86.22,
+      "text": " Sí, es que luego se va durmiendo, mi mamá está enferma y ella le cuenta que te para contestar y es para lo mismo, entonces...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 86.22,
+      "end": 92.22,
+      "text": " Ah, sí, como le comento, voy a agregar el comentario, ahorita posto el número para que actualicen la información de que ella cuenta con Easy, ¿muy bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 92.22,
+      "end": 93.22,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 93.22,
+      "end": 95.32,
+      "text": " Así es, voy a terminar, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.584,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

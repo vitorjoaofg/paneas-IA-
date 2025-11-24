@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600225479-5593628574-20251016-101617-04896.WAV",
+  "file_name": "0105-04965-25101600225479-5593628574-20251016-101617-04896.WAV",
+  "base_id": "0105-04965-25101600225479-5593628574-20251016-101617-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola güey, buen día. Buenos días. Mi nombre es Patricia López de parte de Easy. ¿Con quién tengo el gusto? Con Mianni. Disculpe, es que mire, ya llevan muchos días que me llaman y me cuelgan, entonces yo quería saber de dónde se comunican, pero ya vi que es ahorita de Easy. Sí, fíjese, nos estamos comunicando para darle una información. ¿Usted cuenta con nuestro servicio? Este no. No? No. Ok, mire, tenemos excelentes promociones que le pueden ser atractivas. ¿Para usted le gustaría escucharlas? Este no, así estoy. Estoy muy bien muchas gracias, nada más que ya sabés de dónde marcan porque me marcan y me cuelgan. Ok, una disculpa, probablemente no entra bien la llamada. Ok, muchas gracias. Un excelente día, cuídese mucho. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.64,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.64,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 17.16,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.24,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.84,
+      "end": 33.48,
+      "text": " Espera un momento, por favor. Hola güey, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.48,
+      "end": 39.16,
+      "text": " Buenos días. Mi nombre es Patricia López de parte de Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.16,
+      "end": 44.84,
+      "text": " Con Mianni. Disculpe, es que mire, ya llevan muchos días que me llaman y me cuelgan,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.84,
+      "end": 49.4,
+      "text": " entonces yo quería saber de dónde se comunican, pero ya vi que es ahorita de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.4,
+      "end": 54.48,
+      "text": " Sí, fíjese, nos estamos comunicando para darle una información. ¿Usted cuenta con nuestro",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 54.48,
+      "end": 59.4,
+      "text": " servicio? Este no. No? No. Ok, mire, tenemos excelentes",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.4,
+      "end": 62.84,
+      "text": " promociones que le pueden ser atractivas. ¿Para usted le gustaría escucharlas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.84,
+      "end": 67.68,
+      "text": " Este no, así estoy. Estoy muy bien muchas gracias, nada más que ya sabés de dónde",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.68,
+      "end": 72.92,
+      "text": " marcan porque me marcan y me cuelgan. Ok, una disculpa, probablemente no entra",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 72.92,
+      "end": 75.92,
+      "text": " bien la llamada. Ok, muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 75.92,
+      "end": 78.36,
+      "text": " Un excelente día, cuídese mucho. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.244,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

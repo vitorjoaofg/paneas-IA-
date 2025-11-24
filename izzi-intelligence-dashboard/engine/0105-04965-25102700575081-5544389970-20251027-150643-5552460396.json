@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700575081-5544389970-20251027-150643-5552460396.WAV",
+  "file_name": "0105-04965-25102700575081-5544389970-20251027-150643-5552460396.WAV",
+  "base_id": "0105-04965-25102700575081-5544389970-20251027-150643-5552460396",
+  "transcription": "Hola, te gustaría convocar en la transmisión de sus datos personales, por lo que, si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de internet www.groupoméxico.com. No lo quieras tomar y cállate ahí. Está usted hablando a Grupo México for English Dial Mine. Si conoce el número de extensión, márquelo ahora o espere unos instantes para ser transferido a la operadora. Espera un momento, por favor. Si desea comunicarse con una extensión, puede hacerlo ahora. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.7,
+      "text": " Hola, te gustaría convocar en la transmisión de sus datos personales, por lo que, si usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.7,
+      "end": 13.7,
+      "text": " desea, puede consultar nuestro aviso de privacidad en nuestra página de internet www.groupoméxico.com.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.7,
+      "end": 16.7,
+      "text": " No lo quieras tomar y cállate ahí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.7,
+      "end": 20.7,
+      "text": " Está usted hablando a Grupo México for English Dial Mine.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.7,
+      "end": 25.7,
+      "text": " Si conoce el número de extensión, márquelo ahora o espere unos instantes para ser",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.7,
+      "end": 28.05,
+      "text": " transferido a la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.05,
+      "end": 30.75,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 90.08,
+      "end": 93.08,
+      "text": " Si desea comunicarse con una extensión, puede hacerlo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 93.08,
+      "end": 94.08,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 115.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

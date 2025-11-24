@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900504943-5544389956-20251009-143515-5522307275.WAV",
+  "file_name": "0105-04965-25100900504943-5544389956-20251009-143515-5522307275.WAV",
+  "base_id": "0105-04965-25100900504943-5544389956-20251009-143515-5522307275",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Buenas tardes. Buenas tardes, ¿qué tal? Mi nombre es Janeth Pulido, me comunico de parte de la compañía de Easy. Ah, sí, dígame. Es en este caso para darle a conocer nuestro nuevo servicio de EasyMobile y sus beneficios. Ahorita de momento no, muchas gracias señorita. ¿Ya le viene hablado sobre el servicio? Perdón, no alcanzo a escuchar la propuesta. Ah, ya me ha hablado. ¿También para que puedan en nuestro servicio? Ya, ya me han hablado. Bueno, ya está dejando el comentario, muy amable. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 28.29,
+      "text": " dos para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.62,
+      "end": 49.78,
+      "text": " Buenas tardes. Buenas tardes, ¿qué tal? Mi nombre es Janeth Pulido, me comunico de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.78,
+      "end": 54.96,
+      "text": " parte de la compañía de Easy. Ah, sí, dígame. Es en este caso para darle a",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.96,
+      "end": 61.75,
+      "text": " conocer nuestro nuevo servicio de EasyMobile y sus beneficios. Ahorita de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.75,
+      "end": 65.31,
+      "text": " momento no, muchas gracias señorita. ¿Ya le viene hablado sobre el servicio?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.31,
+      "end": 72.1,
+      "text": " Perdón, no alcanzo a escuchar la propuesta. Ah, ya me ha hablado. ¿También para que puedan en nuestro servicio? Ya, ya me han hablado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.1,
+      "end": 77.19,
+      "text": " Bueno, ya está dejando el comentario, muy amable. Hasta luego. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.776,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

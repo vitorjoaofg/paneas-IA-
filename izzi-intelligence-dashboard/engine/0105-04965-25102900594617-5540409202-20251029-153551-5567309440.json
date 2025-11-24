@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900594617-5540409202-20251029-153551-5567309440.WAV",
+  "file_name": "0105-04965-25102900594617-5540409202-20251029-153551-5567309440.WAV",
+  "base_id": "0105-04965-25102900594617-5540409202-20251029-153551-5567309440",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal, Julio? Oye, chico, yo no tengo autorización para eso. Necesitan hablar los sábados temprano o los domingos. Están aquí los que trabajan. ¿Por eso se invitan todos los sábados como en la mañana? ¿No se oye bien, muchacho? No entiendo nada. No hay problema. Igual le devuelvo la llamada el fin de semana y nos revisamos, ¿sí? No, no. Disculpame, te voy a tener que cambiar. ¿Operaciones de calidad? Ahora ya terminaremos la llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.66,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.66,
+      "end": 32.98,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.98,
+      "end": 42.17,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.17,
+      "end": 48.84,
+      "text": " ¿Qué tal, Julio?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.84,
+      "end": 60.36,
+      "text": " Oye, chico, yo no tengo autorización para eso. Necesitan hablar los sábados temprano",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.36,
+      "end": 72.87,
+      "text": " o los domingos. Están aquí los que trabajan. ¿Por eso se invitan todos los sábados como",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.87,
+      "end": 77.76,
+      "text": " en la mañana? ¿No se oye bien, muchacho? No entiendo nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.76,
+      "end": 82.76,
+      "text": " No hay problema. Igual le devuelvo la llamada el fin de semana y nos revisamos, ¿sí?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 83.52,
+      "end": 87.52,
+      "text": " No, no. Disculpame, te voy a tener que cambiar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 87.52,
+      "end": 91.52,
+      "text": " ¿Operaciones de calidad? Ahora ya terminaremos la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.04,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

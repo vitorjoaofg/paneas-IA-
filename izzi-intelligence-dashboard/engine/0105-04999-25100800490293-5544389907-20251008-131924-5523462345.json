@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800490293-5544389907-20251008-131924-5523462345.WAV",
+  "file_name": "0105-04999-25100800490293-5544389907-20251008-131924-5523462345.WAV",
+  "base_id": "0105-04999-25100800490293-5544389907-20251008-131924-5523462345",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Se interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Bueno, bueno, bueno. Espera un momento, por favor. Hello, hello. Contra la atención, ¿qué le puedo ayudar? Me marcaron, señor. ¿Oh, ya conté con el servicio Easy? Sí, ya, señor. Ah, ok. A lo mejor lo marcaron porque estamos manejando el nuevo servicio de telefonía móvil para celular. No sé si lo habían comentado. Muchísimas gracias. No se, todo está bien. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Se interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 25.44,
+      "text": " Bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.44,
+      "end": 27.44,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.44,
+      "end": 28.44,
+      "text": " Hello, hello.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.44,
+      "end": 34.7,
+      "text": " Contra la atención, ¿qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.7,
+      "end": 37.08,
+      "text": " Me marcaron, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.08,
+      "end": 39.08,
+      "text": " ¿Oh, ya conté con el servicio Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.08,
+      "end": 41.18,
+      "text": " Sí, ya, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 41.18,
+      "end": 45.18,
+      "text": " Ah, ok. A lo mejor lo marcaron porque estamos manejando el nuevo servicio de telefonía móvil para celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 45.18,
+      "end": 46.18,
+      "text": " No sé si lo habían comentado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 46.18,
+      "end": 48.18,
+      "text": " Muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 48.18,
+      "end": 50.18,
+      "text": " No se, todo está bien. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 50.292,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

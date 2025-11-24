@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700353424-5544389976-20251017-115744-5576515731.WAV",
+  "file_name": "0105-04965-25101700353424-5544389976-20251017-115744-5576515731.WAV",
+  "base_id": "0105-04965-25101700353424-5544389976-20251017-115744-5576515731",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Una sesión te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Lo vi escuchando para decirle que no. Bueno, bueno. Bienvenido a Easy. Mira, ya escuché la promoción, pero la verdad, ahorita no nos interesa. Muchas gracias. Bueno, le agradezco que haya tomado la llamada, que tenga buen día. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.24,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Una",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.24,
+      "end": 24.2,
+      "text": " sesión te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.2,
+      "end": 29.51,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.51,
+      "end": 39.74,
+      "text": " Lo vi escuchando para decirle que no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.74,
+      "end": 42.74,
+      "text": " Bueno, bueno. Bienvenido a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.74,
+      "end": 48.74,
+      "text": " Mira, ya escuché la promoción, pero la verdad, ahorita no nos interesa. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.74,
+      "end": 52.74,
+      "text": " Bueno, le agradezco que haya tomado la llamada, que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.74,
+      "end": 53.74,
+      "text": " Igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

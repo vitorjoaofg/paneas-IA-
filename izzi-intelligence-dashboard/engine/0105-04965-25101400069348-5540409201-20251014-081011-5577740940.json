@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400069348-5540409201-20251014-081011-5577740940.WAV",
+  "file_name": "0105-04965-25101400069348-5540409201-20251014-081011-5577740940.WAV",
+  "base_id": "0105-04965-25101400069348-5540409201-20251014-081011-5577740940",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy, ¿te interesa? Un asesor te está esperando. Por favor, hable o pulse. Espera un momento, por favor. ¿Qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Hablan bien por parte de la compañía Easy, como relataciones. Díganme en qué les puedo ayudar.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy, ¿te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 25.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.2,
+      "end": 26.6,
+      "text": " momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.6,
+      "end": 53.83,
+      "text": " ¿Qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.83,
+      "end": 58.34,
+      "text": " Hablan bien por parte de la compañía Easy, como relataciones. Díganme en qué",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.34,
+      "end": 60.74,
+      "text": " les puedo ayudar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000486907-3314541310-20251010-131823-3338377310.WAV",
+  "file_name": "0105-04965-25101000486907-3314541310-20251010-131823-3338377310.WAV",
+  "base_id": "0105-04965-25101000486907-3314541310-20251010-131823-3338377310",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Una sesión te está esperando. Por favor, hazlo. Espera un momento, por favor. Si conoces el número de extensión, dígitelo ahora. De lo contrario, marque 5 para el área de ventas, 6 para compras, 7 recursos humanos, 8 tesorería. Para crédito y cobranza, digite 2020. Contabilidad, 4003. O bien marque 0 y una de nuestras operadoras le atenderá. Gracias por llamar a Máver. For English, press 9. Si conoces el número de extensión, dígitelo ahora. De lo contrario, marque 5 para el área de ventas, 6 para compras, 7 recursos humanos, 8 tesorería. Para crédito y cobranza, digite 2020. Contabilidad, 4003. O bien marque 0 y una de nuestras operadoras le atenderá.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.6,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.6,
+      "end": 13.9,
+      "text": " Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.9,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Una sesión te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 27.93,
+      "text": " Por favor, hazlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.93,
+      "end": 36.48,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.48,
+      "end": 46.28,
+      "text": " Si conoces el número de extensión, dígitelo ahora. De lo contrario, marque 5 para el área de ventas, 6 para compras,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.28,
+      "end": 53.28,
+      "text": " 7 recursos humanos, 8 tesorería. Para crédito y cobranza, digite 2020.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.28,
+      "end": 59.68,
+      "text": " Contabilidad, 4003. O bien marque 0 y una de nuestras operadoras le atenderá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.68,
+      "end": 70.58,
+      "text": " Gracias por llamar a Máver.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.78,
+      "end": 72.78,
+      "text": " For English, press 9.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.78,
+      "end": 81.78,
+      "text": " Si conoces el número de extensión, dígitelo ahora. De lo contrario, marque 5 para el área de ventas, 6 para compras,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 81.78,
+      "end": 88.78,
+      "text": " 7 recursos humanos, 8 tesorería. Para crédito y cobranza, digite 2020.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 88.78,
+      "end": 94.78,
+      "text": " Contabilidad, 4003. O bien marque 0 y una de nuestras operadoras le atenderá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.144,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

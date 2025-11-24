@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400218520-5544389924-20251014-100907-5590126465.WAV",
+  "file_name": "0105-04965-25101400218520-5544389924-20251014-100907-5590126465.WAV",
+  "base_id": "0105-04965-25101400218520-5544389924-20251014-100907-5590126465",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, ¿qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¿Con quién tengo el gusto? ¿Qué tal? Con Alejandro Mandrade. ¿Qué tal señor? Coménteme. Me imagino que lo más seguro es que he escuchado la información que tenemos para usted de las promociones. ¿Está usted interesado en contratar algún servicio?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.67,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.67,
+      "end": 27.67,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.67,
+      "end": 37.57,
+      "text": " Hola, ¿qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¿Con quién",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.57,
+      "end": 42.37,
+      "text": " tengo el gusto? ¿Qué tal? Con Alejandro Mandrade. ¿Qué tal señor? Coménteme. Me imagino",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.37,
+      "end": 44.97,
+      "text": " que lo más seguro es que he escuchado la información que tenemos para usted de las",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.97,
+      "end": 48.17,
+      "text": " promociones. ¿Está usted interesado en contratar algún servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 48.456,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

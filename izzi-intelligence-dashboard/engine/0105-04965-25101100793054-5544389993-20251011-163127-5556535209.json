@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100793054-5544389993-20251011-163127-5556535209.WAV",
+  "file_name": "0105-04965-25101100793054-5544389993-20251011-163127-5556535209.WAV",
+  "base_id": "0105-04965-25101100793054-5544389993-20251011-163127-5556535209",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. ¡Buenas tardes! Hola, ¿qué tal? Buenas tardes, señorita. Nos estamos comunicando de la compañía de Easy. En este caso para darle con nosotros su servicio, más que nada hacerle una invitación, ver si están interesados en contratar aquí con nosotros, Internet, teléfono y servicios de la televisión. Sí, tenemos el servicio de Easy, muchas gracias. ¿Ya tiene el servicio con nosotras? Sí. Ah, ok. ¿Dónde? Es un módulo de información turística. Ok, bueno, yo estaré dejando el comentario muy amable. Buen día, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 38.7,
+      "text": " asesor te está esperando. Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.7,
+      "end": 48.66,
+      "text": " ¡Buenas tardes! Hola, ¿qué tal? Buenas tardes, señorita. Nos estamos comunicando de la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.66,
+      "end": 52.94,
+      "text": " compañía de Easy. En este caso para darle con nosotros su servicio, más que nada",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.94,
+      "end": 55.94,
+      "text": " hacerle una invitación, ver si están interesados en contratar aquí con nosotros,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.94,
+      "end": 61.74,
+      "text": " Internet, teléfono y servicios de la televisión. Sí, tenemos el servicio de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.74,
+      "end": 72.49,
+      "text": " muchas gracias. ¿Ya tiene el servicio con nosotras? Sí. Ah, ok. ¿Dónde? Es un módulo de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.49,
+      "end": 77.27,
+      "text": " información turística. Ok, bueno, yo estaré dejando el comentario muy amable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.27,
+      "end": 80.99,
+      "text": " Buen día, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

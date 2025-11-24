@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000260168-5544389933-20251020-150031-5511627896.WAV",
+  "file_name": "0105-04965-25102000260168-5544389933-20251020-150031-5511627896.WAV",
+  "base_id": "0105-04965-25102000260168-5544389933-20251020-150031-5511627896",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. ¿Qué tal? Mucho gusto. Abraham García, por parte de la compañía de Easy. Contrataciones. Dígame, ¿en qué le puedo ayudar? Disculpe si me está hablando, no lo escucho. ¿Me escucha bien? Hola, hola. Probando, probando. 1, 2, 3, probando, probando. Me escuché.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.97,
+      "end": 26.97,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.97,
+      "end": 35.11,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.11,
+      "end": 41.06,
+      "text": " ¿Qué tal? Mucho gusto. Abraham García, por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.06,
+      "end": 43.06,
+      "text": " Contrataciones. Dígame, ¿en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.06,
+      "end": 52.58,
+      "text": " Disculpe si me está hablando, no lo escucho. ¿Me escucha bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.58,
+      "end": 55.0,
+      "text": " Hola, hola. Probando, probando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.0,
+      "end": 58.0,
+      "text": " 1, 2, 3, probando, probando. Me escuché.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.76,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

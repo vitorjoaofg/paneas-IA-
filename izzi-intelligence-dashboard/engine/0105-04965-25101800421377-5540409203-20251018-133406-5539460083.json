@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800421377-5540409203-20251018-133406-5539460083.WAV",
+  "file_name": "0105-04965-25101800421377-5540409203-20251018-133406-5539460083.WAV",
+  "base_id": "0105-04965-25101800421377-5540409203-20251018-133406-5539460083",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buenas tardes. Hola, mira, nada más pulse el 1 para que quiero que vuelven mi teléfono y me dejen de estar dando plata. Por eso pulse 1 para que me contestara un asesor. Quiero que vuelven mi teléfono porque si no la pulse me voy a retomar a su madre porque ya estuvo bueno. Ay, yo aquí le voy a poner cliente molesto para que no le vuelvan a marcar, ¿ok? Gracias. De nada, señor. Excelente día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.8,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.8,
+      "end": 23.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.44,
+      "end": 24.92,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.92,
+      "end": 35.33,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.33,
+      "end": 41.05,
+      "text": " Hola, mira, nada más pulse el 1 para que quiero que vuelven mi teléfono y me",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.05,
+      "end": 43.17,
+      "text": " dejen de estar dando plata.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.17,
+      "end": 47.62,
+      "text": " Por eso pulse 1 para que me contestara un asesor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.62,
+      "end": 51.94,
+      "text": " Quiero que vuelven mi teléfono porque si no la pulse me voy a retomar a su madre porque",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.94,
+      "end": 52.94,
+      "text": " ya estuvo bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.94,
+      "end": 57.89,
+      "text": " Ay, yo aquí le voy a poner cliente molesto para que no le vuelvan a marcar, ¿ok?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.89,
+      "end": 59.05,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 59.05,
+      "end": 60.05,
+      "text": " De nada, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.05,
+      "end": 60.69,
+      "text": " Excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

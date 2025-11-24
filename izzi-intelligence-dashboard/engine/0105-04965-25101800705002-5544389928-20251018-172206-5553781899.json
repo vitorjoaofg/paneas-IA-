@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800705002-5544389928-20251018-172206-5553781899.WAV",
+  "file_name": "0105-04965-25101800705002-5544389928-20251018-172206-5553781899.WAV",
+  "base_id": "0105-04965-25101800705002-5544389928-20251018-172206-5553781899",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, buenas tardes. Yo soy su compañía Easy y me presento mucho gusto. Mi nombre es Paola, ¿en qué puedo ayudarlo? Pues no sé, aquí es una casa de citas. ¿Quieres que te mandemos un hombre o una mujer? Por motivos de calidad, tengo que acceder a la llamada. Aquí también, por motivos de calidad, hacemos la oferta. ¿Qué prefieres, hombre o mujer? Potencia el cliente sigue ahí.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 23.9,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.9,
+      "end": 36.74,
+      "text": " Bueno, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.74,
+      "end": 38.94,
+      "text": " Yo soy su compañía Easy y me presento mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 38.94,
+      "end": 40.94,
+      "text": " Mi nombre es Paola, ¿en qué puedo ayudarlo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.78,
+      "end": 48.96,
+      "text": " Pues no sé, aquí es una casa de citas. ¿Quieres que te mandemos un hombre o una mujer?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.96,
+      "end": 51.96,
+      "text": " Por motivos de calidad, tengo que acceder a la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.96,
+      "end": 57.54,
+      "text": " Aquí también, por motivos de calidad, hacemos la oferta. ¿Qué prefieres, hombre o mujer?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.54,
+      "end": 70.86,
+      "text": " Potencia el cliente sigue ahí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.616,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

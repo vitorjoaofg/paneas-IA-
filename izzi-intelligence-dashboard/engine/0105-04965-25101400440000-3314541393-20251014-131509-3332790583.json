@@ -1,0 +1,51 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400440000-3314541393-20251014-131509-3332790583.WAV",
+  "file_name": "0105-04965-25101400440000-3314541393-20251014-131509-3332790583.WAV",
+  "base_id": "0105-04965-25101400440000-3314541393-20251014-131509-3332790583",
+  "transcription": "Hola, ¿te gustaría tener Internet más disponible, más el mejor entretenimiento de calidad en el servicio? En caso de que quieras conocer el servicio en privacidad, visite nuestra página www.esposible.net. Un asesor te está esperando. Su llamada se está transcurriendo. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más disponible, más el mejor entretenimiento de calidad en el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 14.0,
+      "text": " En caso de que quieras conocer el servicio en privacidad, visite nuestra página www.esposible.net.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 24.76,
+      "text": " Un asesor te está esperando. Su llamada se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.76,
+      "end": 26.76,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 29.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

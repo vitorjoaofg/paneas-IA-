@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300268073-5544389953-20251013-111300-5576804815.WAV",
+  "file_name": "0105-04965-25101300268073-5544389953-20251013-111300-5576804815.WAV",
+  "base_id": "0105-04965-25101300268073-5544389953-20251013-111300-5576804815",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? A Easy no, 350 pesos el primer mes. Easy. Espera un momento, por favor. El primer mes, 150 que? Navegaciones, no sé qué y quién sabe cuántos canales. Hola Gretel, buenos días, gracias por comunicarse a la área de contrataciones de Easy, la tienda de Vani Daniela, ¿como si tenga el gusto? No señorita, ahorita no. Es que lo estaba yo diciendo a mi esposo, pero me quedé con el teléfono, pero ahorita no, señorita. Disculpe. Necesito que tenga buen día, hasta luego. Por estarte diciendo, ya se comunicó.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 18.04,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.04,
+      "end": 29.15,
+      "text": " A Easy no, 350 pesos el primer mes. Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.35,
+      "end": 31.15,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.15,
+      "end": 43.5,
+      "text": " El primer mes, 150 que? Navegaciones, no sé qué y quién sabe cuántos canales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.5,
+      "end": 48.66,
+      "text": " Hola Gretel, buenos días, gracias por comunicarse a la área de contrataciones de Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.66,
+      "end": 50.66,
+      "text": " la tienda de Vani Daniela, ¿como si tenga el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.66,
+      "end": 59.26,
+      "text": " No señorita, ahorita no. Es que lo estaba yo diciendo a mi esposo, pero me quedé con el teléfono,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.26,
+      "end": 62.26,
+      "text": " pero ahorita no, señorita. Disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.26,
+      "end": 64.26,
+      "text": " Necesito que tenga buen día, hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.26,
+      "end": 68.26,
+      "text": " Por estarte diciendo, ya se comunicó.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

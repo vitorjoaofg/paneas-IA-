@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100452544-5544389974-20251021-133545-5513270375.WAV",
+  "file_name": "0105-04965-25102100452544-5544389974-20251021-133545-5513270375.WAV",
+  "base_id": "0105-04965-25102100452544-5544389974-20251021-133545-5513270375",
+  "transcription": "Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción, para herrarse su arma, marquen 1 para Westin House Market 2. ¿Pesos el primer mes? No lo pienses más y cámbiate a Easy. Lo siento, no lo entiendo. Por favor, vuelva a intentarlo. Bienvenido a importación en su arma. Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción, para herrarse su arma, marquen 1 para Westin House Market 2. Hola, buenos días. Lo siento, no lo entiendo. Por favor, vuelva a intentarlo. Bienvenido a importación en su arma. Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción. Para herrarse su arma, marque 1. Para Westin House Market 2. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 12.0,
+      "text": " Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción, para herrarse su arma, marquen 1 para Westin House Market 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 12.0,
+      "end": 17.0,
+      "text": " ¿Pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.0,
+      "end": 22.0,
+      "text": " Lo siento, no lo entiendo. Por favor, vuelva a intentarlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.0,
+      "end": 25.0,
+      "text": " Bienvenido a importación en su arma.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.0,
+      "end": 39.18,
+      "text": " Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción, para herrarse su arma, marquen 1 para Westin House Market 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.18,
+      "end": 42.81,
+      "text": " Hola, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.81,
+      "end": 47.81,
+      "text": " Lo siento, no lo entiendo. Por favor, vuelva a intentarlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.81,
+      "end": 51.0,
+      "text": " Bienvenido a importación en su arma.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.0,
+      "end": 57.0,
+      "text": " Si conoce el número de extensión, márquelo ahora, de lo contrario, escúchenlo en el menú de opción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.0,
+      "end": 60.38,
+      "text": " Para herrarse su arma, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.38,
+      "end": 62.38,
+      "text": " Para Westin House Market 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.38,
+      "end": 67.8,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.12,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

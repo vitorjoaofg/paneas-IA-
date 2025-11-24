@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800111641-3310996255-20251018-092134-04896.WAV",
+  "file_name": "0105-04965-25101800111641-3310996255-20251018-092134-04896.WAV",
+  "base_id": "0105-04965-25101800111641-3310996255-20251018-092134-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfils de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía móvil. Buen día. Mire, buen día, señorita. Mire, he recibido alrededor de 50 llamadas en cuatro días del número, pero en mi zona no hay Easy y no podré ni contratarlo. Ah, ok. No, disculpa por la molestia. Yo aquí le voy a poner para que la borren de la base. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 11.7,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.7,
+      "end": 17.5,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.5,
+      "end": 23.4,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 27.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.12,
+      "end": 31.42,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.42,
+      "end": 43.92,
+      "text": " Hola, buen día. Le habla Ivonne Monfils de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.92,
+      "end": 44.92,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.92,
+      "end": 52.52,
+      "text": " Mire, buen día, señorita. Mire, he recibido alrededor de 50 llamadas en cuatro días del número,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.52,
+      "end": 55.62,
+      "text": " pero en mi zona no hay Easy y no podré ni contratarlo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.62,
+      "end": 61.48,
+      "text": " Ah, ok. No, disculpa por la molestia. Yo aquí le voy a poner para que la borren de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.48,
+      "end": 62.48,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.16,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400425075-5544389935-20251024-131935-5555293545.WAV",
+  "file_name": "0105-04965-25102400425075-5544389935-20251024-131935-5555293545.WAV",
+  "base_id": "0105-04965-25102400425075-5544389935-20251024-131935-5555293545",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 100 megas y eventos deportivos exclusivos por solos de 150 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor te está esperando! Por favor, hable o pulse uno para sí o dos. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Háblame ya en la consejera de parte de la Compañía de Ipila. Llamamos para darles a conocer algunos beneficios que tenemos para clientes nuevos o activos. No sé si ya manejen ustedes servidores de Internet o servicio portable con nosotros. Calidad finalista llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 13.28,
+      "text": " entretenimiento con 100 megas y eventos deportivos exclusivos por solos de 150 pesos el primer",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 20.28,
+      "text": " mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? ¡Un asesor te está esperando!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.28,
+      "end": 27.14,
+      "text": " Por favor, hable o pulse uno para sí o dos. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.14,
+      "end": 39.72,
+      "text": " Hola, ¿qué tal? Buenas tardes. Háblame ya en la consejera de parte de la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.72,
+      "end": 43.52,
+      "text": " Compañía de Ipila. Llamamos para darles a conocer algunos beneficios que tenemos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.52,
+      "end": 47.48,
+      "text": " para clientes nuevos o activos. No sé si ya manejen ustedes servidores de Internet o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.48,
+      "end": 53.28,
+      "text": " servicio portable con nosotros. Calidad finalista llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 114.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

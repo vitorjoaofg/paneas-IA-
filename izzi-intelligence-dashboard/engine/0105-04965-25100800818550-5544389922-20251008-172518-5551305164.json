@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800818550-5544389922-20251008-172518-5551305164.WAV",
+  "file_name": "0105-04965-25100800818550-5544389922-20251008-172518-5551305164.WAV",
+  "base_id": "0105-04965-25100800818550-5544389922-20251008-172518-5551305164",
+  "transcription": "¿Predito foráneo atiende Manuel? Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Estoy hablando con Easy. Contratuación, ¿sí? ¿Sin que le puedo ayudar? Bueno. Hola, ¿buenas tardes? Hola, ¿quién habla? Sí, estoy marcando, contratuación, ¿sí? ¿Sin que le puedo ayudar?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.97,
+      "end": 3.97,
+      "text": " ¿Predito foráneo atiende Manuel?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.97,
+      "end": 12.1,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.1,
+      "end": 18.1,
+      "text": " Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.1,
+      "end": 21.1,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.1,
+      "end": 24.1,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.1,
+      "end": 28.1,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.58,
+      "end": 31.58,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.58,
+      "end": 36.65,
+      "text": " Estoy hablando con Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.65,
+      "end": 38.65,
+      "text": " Contratuación, ¿sí? ¿Sin que le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.65,
+      "end": 43.91,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.91,
+      "end": 46.94,
+      "text": " Hola, ¿buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.94,
+      "end": 49.48,
+      "text": " Hola, ¿quién habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.48,
+      "end": 51.48,
+      "text": " Sí, estoy marcando, contratuación, ¿sí? ¿Sin que le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 117.144,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

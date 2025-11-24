@@ -1,0 +1,465 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900451795-5544389952-20251029-133546-5596641672.WAV",
+  "file_name": "0105-04965-25102900451795-5544389952-20251029-133546-5596641672.WAV",
+  "base_id": "0105-04965-25102900451795-5544389952-20251029-133546-5596641672",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Contrataciones, Easy le atende Javier Romero, con quien toco el gusto. Buenas tardes, joven. Coral Molina. Mucho gusto, Sienta Molina. Solamente, bueno, ¿qué servicio hace a contratar o tiene alguna duda con la promoción que le acabas de escuchar en la grabación? Primero que nada, quisiera saber si en la zona en donde estoy ya hay Easy porque no había. ¿Cuál es su código postal? 55796. 55796, en un momento. OK, me parece en Prado San Francisco, Colonia Aguiluchos y es Hacienda Santa Inés. ¿Cuál es su colonia? Es Hacienda Santa Inés. OK. Me indica, por favor, ¿cuál es la calle? Hacienda Cantera. OK, ¿con qué número? Manzano 89, lote 78. OK, ¿me repite nuevamente la manzana y el lote, por favor? Manzana 89, lote 78. OK, de un momento. Una vez paso mal el tiempo de espera. No, me parece que nada más tengo cobertura en lo que son un fraccionamiento, Jardines de Santa Inés en Jardín de Versalles. No, no, si es que aquí no sabíamos que no había, por eso le preguntabas, ¿para qué le pregunto por los paquetes si no? Primero que nada, quiero saber esto. No, por el momento no podría brindarle el servicio. Tengo solamente lo que es televisión. Son 200 canales, 85 de ellos en alta definición, y se le entrega sin costo VIX Premium y Sky Sports por 299 pesos mensuales. No, pero a mí me interesa el internet. Me entiendo. OK, en este caso, le ofrezco una disculpa, no podría brindarle el servicio. OK, muchas gracias, Joven. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 24.46,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.46,
+      "end": 26.86,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.86,
+      "end": 29.02,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.02,
+      "end": 34.46,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.46,
+      "end": 45.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.74,
+      "end": 49.39,
+      "text": " Contrataciones, Easy le atende Javier Romero, con quien toco el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.39,
+      "end": 50.87,
+      "text": " Buenas tardes, joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 50.87,
+      "end": 52.31,
+      "text": " Coral Molina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.31,
+      "end": 54.35,
+      "text": " Mucho gusto, Sienta Molina.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 54.35,
+      "end": 58.79,
+      "text": " Solamente, bueno, ¿qué servicio hace a contratar o tiene alguna duda con la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.79,
+      "end": 61.43,
+      "text": " promoción que le acabas de escuchar en la grabación?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.43,
+      "end": 65.79,
+      "text": " Primero que nada, quisiera saber si en la zona en donde estoy ya hay Easy porque",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 65.79,
+      "end": 67.27,
+      "text": " no había.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 67.71,
+      "end": 69.75,
+      "text": " ¿Cuál es su código postal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 69.75,
+      "end": 73.88,
+      "text": " 55796.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 73.88,
+      "end": 82.58,
+      "text": " 55796, en un momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 82.58,
+      "end": 90.31,
+      "text": " OK, me parece en Prado San Francisco, Colonia Aguiluchos y es Hacienda",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 90.31,
+      "end": 91.43,
+      "text": " Santa Inés.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 91.43,
+      "end": 92.23,
+      "text": " ¿Cuál es su colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 92.23,
+      "end": 94.38,
+      "text": " Es Hacienda Santa Inés.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 94.38,
+      "end": 95.38,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 95.38,
+      "end": 98.33,
+      "text": " Me indica, por favor, ¿cuál es la calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 98.33,
+      "end": 102.01,
+      "text": " Hacienda Cantera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 102.01,
+      "end": 104.14,
+      "text": " OK, ¿con qué número?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 104.14,
+      "end": 111.86,
+      "text": " Manzano 89, lote 78.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 112.18,
+      "end": 115.86,
+      "text": " OK, ¿me repite nuevamente la manzana y el lote, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 115.86,
+      "end": 119.62,
+      "text": " Manzana 89, lote 78.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 119.62,
+      "end": 148.86,
+      "text": " OK, de un momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 148.86,
+      "end": 150.66,
+      "text": " Una vez paso mal el tiempo de espera.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 150.66,
+      "end": 154.94,
+      "text": " No, me parece que nada más tengo cobertura en lo que son un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 154.94,
+      "end": 160.89,
+      "text": " fraccionamiento, Jardines de Santa Inés en Jardín de Versalles.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 160.89,
+      "end": 164.33,
+      "text": " No, no, si es que aquí no sabíamos que no había, por eso le",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 164.33,
+      "end": 167.98,
+      "text": " preguntabas, ¿para qué le pregunto por los paquetes si no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 167.98,
+      "end": 169.98,
+      "text": " Primero que nada, quiero saber esto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 170.3,
+      "end": 172.62,
+      "text": " No, por el momento no podría brindarle el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 172.62,
+      "end": 175.5,
+      "text": " Tengo solamente lo que es televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 175.5,
+      "end": 180.1,
+      "text": " Son 200 canales, 85 de ellos en alta definición, y se le",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 180.1,
+      "end": 188.3,
+      "text": " entrega sin costo VIX Premium y Sky Sports por 299 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 188.3,
+      "end": 189.98,
+      "text": " mensuales.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 189.98,
+      "end": 192.57,
+      "text": " No, pero a mí me interesa el internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 192.57,
+      "end": 193.65,
+      "text": " Me entiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 193.65,
+      "end": 195.93,
+      "text": " OK, en este caso, le ofrezco una disculpa,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 195.93,
+      "end": 197.85,
+      "text": " no podría brindarle el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 197.85,
+      "end": 199.13,
+      "text": " OK, muchas gracias, Joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 199.13,
+      "end": 199.69,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 202.644,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

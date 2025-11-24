@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101100379132-3314541352-20251011-115428-6951039440.WAV",
+  "file_name": "0105-04999-25101100379132-3314541352-20251011-115428-6951039440.WAV",
+  "base_id": "0105-04999-25101100379132-3314541352-20251011-115428-6951039440",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento por favor. Buen día. Buen día, jefe. ¿Se comunica al área de contrataciones Easy? ¿Te tienes mal castillo? ¿Qué desea contratar el día de hoy? Oiga, pues que la verdad llevan días fregando con llamarme de que contrate Easy, pero luego se me pregunta. ¿Tienen servicios? ¿Tienen localidad? ¿Qué tanto frío hay? ¿Cómo? ¿Perdón? ¿Tienen servicio aquí en Escuina para Sinaloa? ¿Qué digo? Postar 82457 es el que digo postar. A ver, vamos a hablar con lo vamos a hablar un momento. Que Easy se aparece que no hay cobertura caballero. Si gusta yo registro a quien necesitan para que no se estén comunicando. Excelente, jefe. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 33.12,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.16,
+      "end": 42.39,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.39,
+      "end": 54.92,
+      "text": " momento por favor. Buen día. Buen día, jefe. ¿Se comunica al área de contrataciones Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.92,
+      "end": 59.6,
+      "text": " ¿Te tienes mal castillo? ¿Qué desea contratar el día de hoy? Oiga, pues que la verdad llevan días",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.6,
+      "end": 66.65,
+      "text": " fregando con llamarme de que contrate Easy, pero luego se me pregunta. ¿Tienen",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.65,
+      "end": 72.7,
+      "text": " servicios? ¿Tienen localidad? ¿Qué tanto frío hay? ¿Cómo? ¿Perdón? ¿Tienen",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.74,
+      "end": 80.4,
+      "text": " servicio aquí en Escuina para Sinaloa? ¿Qué digo? Postar 82457 es el que digo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 80.4,
+      "end": 103.24,
+      "text": " postar. A ver, vamos a hablar con lo vamos a hablar un momento. Que Easy se",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 103.24,
+      "end": 106.72,
+      "text": " aparece que no hay cobertura caballero. Si gusta yo registro a quien necesitan",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 106.72,
+      "end": 111.04,
+      "text": " para que no se estén comunicando. Excelente, jefe. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

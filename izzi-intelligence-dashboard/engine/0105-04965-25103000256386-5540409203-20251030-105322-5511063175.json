@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000256386-5540409203-20251030-105322-5511063175.WAV",
+  "file_name": "0105-04965-25103000256386-5540409203-20251030-105322-5511063175.WAV",
+  "base_id": "0105-04965-25103000256386-5540409203-20251030-105322-5511063175",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos. Espera un momento, por favor. Un chat y amita, mamá. Hola, vendía, me presento, mi nombre es Kennedy Maldon. ¿Conciente con gusto? Hola, vendía. Hola, vendía. Tienes una ropa bien bonita ahí nomás tirada adentro, como si fuera basura. Hola, vendía. Hay que sacar el que creas con lo más bonito. Hola, vendía.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 7.06,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.06,
+      "end": 13.82,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.82,
+      "end": 20.26,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.26,
+      "end": 29.0,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.32,
+      "end": 35.48,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.48,
+      "end": 39.32,
+      "text": " un asesor o dos. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.32,
+      "end": 54.63,
+      "text": " Un chat y amita, mamá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.63,
+      "end": 61.67,
+      "text": " Hola, vendía, me presento, mi nombre es Kennedy Maldon. ¿Conciente con gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.67,
+      "end": 65.4,
+      "text": " Hola, vendía. Hola, vendía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.4,
+      "end": 72.1,
+      "text": " Tienes una ropa bien bonita ahí nomás tirada adentro, como si fuera basura.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 72.1,
+      "end": 77.69,
+      "text": " Hola, vendía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 77.69,
+      "end": 82.26,
+      "text": " Hay que sacar el que creas con lo más bonito.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 82.26,
+      "end": 85.18,
+      "text": " Hola, vendía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 109.764,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

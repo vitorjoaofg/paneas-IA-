@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400617831-5544389954-20251014-154309-5555905441.WAV",
+  "file_name": "0105-04965-25101400617831-5544389954-20251014-154309-5555905441.WAV",
+  "base_id": "0105-04965-25101400617831-5544389954-20251014-154309-5555905441",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, habla. Espera un momento, por favor. Bueno, por motivos de calidad, me habré obligado a finalizar lo que es la llamada. Vamos a super rápido y no te estás apodando. Vamos a super y ya. Vamos juntos. Estoy esperando.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.8,
+      "text": " interesa? Un asesor te está esperando. Por favor, habla. Espera un momento, por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.8,
+      "end": 43.58,
+      "text": " favor. Bueno, por motivos de calidad, me habré obligado a finalizar lo que es",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 43.78,
+      "end": 87.09,
+      "text": " la llamada. Vamos a super rápido y no te estás apodando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 87.09,
+      "end": 101.67,
+      "text": " Vamos a super y ya. Vamos juntos. Estoy esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 102.384,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

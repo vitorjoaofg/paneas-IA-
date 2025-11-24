@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800081393-5540409212-20251018-085527-5573130808.WAV",
+  "file_name": "0105-04965-25101800081393-5540409212-20251018-085527-5573130808.WAV",
+  "base_id": "0105-04965-25101800081393-5540409212-20251018-085527-5573130808",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Se atiende Miriam Gonzaguera de los servicios de Easy. Brindamos servicios de internet, televisión por cable y telefonía a celular. No sé si usted haga uso del servicio con nosotros o con alguna otra compañía. Yo lo que quiero hacer es cancelarnos a ustedes por estarme llamando cada 5 minutos de manera automática a mi número. Lo escucho un poco bajo, caballero, pero me parece que está molesto por las llamadas. Agregó la clasificación correcta y ya no le ingresarían más llamaditas. Una disculpa.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 31.65,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.65,
+      "end": 37.69,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.69,
+      "end": 55.78,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenos días. Se atiende Miriam",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.78,
+      "end": 60.38,
+      "text": " Gonzaguera de los servicios de Easy. Brindamos servicios de internet, televisión",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.38,
+      "end": 63.54,
+      "text": " por cable y telefonía a celular. No sé si usted haga uso del servicio con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.54,
+      "end": 66.22,
+      "text": " nosotros o con alguna otra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.22,
+      "end": 74.63,
+      "text": " Yo lo que quiero hacer es cancelarnos a ustedes por estarme llamando cada 5 minutos de manera automática a mi número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.07,
+      "end": 81.17,
+      "text": " Lo escucho un poco bajo, caballero, pero me parece que está molesto por las",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 81.17,
+      "end": 85.65,
+      "text": " llamadas. Agregó la clasificación correcta y ya no le ingresarían más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 85.65,
+      "end": 88.65,
+      "text": " llamaditas. Una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.936,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

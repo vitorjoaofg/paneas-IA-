@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400020838-3314541338-20251024-073110-8998662329.WAV",
+  "file_name": "0105-04965-25102400020838-3314541338-20251024-073110-8998662329.WAV",
+  "base_id": "0105-04965-25102400020838-3314541338-20251024-073110-8998662329",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor. Buenos días. Hablamos de compañía y si me presento, mi nombre es Patricia Batillo. ¿Con quién tengo el gusto? Podrían poner este nombre para que no marquen porque es de negocio. Perfecto, aquí le voy a poner el número empresarial para que no estemos marcando. Vale, se lo agradezco, muchísimas gracias. Muchas gracias por atender mi llamada, hasta luego. Gracias, bye bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.26,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.26,
+      "end": 17.06,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.06,
+      "end": 23.1,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.1,
+      "end": 37.27,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 37.47,
+      "end": 47.62,
+      "text": " Buenos días. Hablamos de compañía y si me presento, mi nombre es Patricia Batillo. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.62,
+      "end": 52.22,
+      "text": " Podrían poner este nombre para que no marquen porque es de negocio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.22,
+      "end": 59.45,
+      "text": " Perfecto, aquí le voy a poner el número empresarial para que no estemos marcando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 59.45,
+      "end": 64.29,
+      "text": " Vale, se lo agradezco, muchísimas gracias. Muchas gracias por atender mi llamada,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.29,
+      "end": 68.05,
+      "text": " hasta luego. Gracias, bye bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.652,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

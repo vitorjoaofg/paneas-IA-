@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300372758-3314541352-20251013-123956-3316470112.WAV",
+  "file_name": "0105-04965-25101300372758-3314541352-20251013-123956-3316470112.WAV",
+  "base_id": "0105-04965-25101300372758-3314541352-20251013-123956-3316470112",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Buenos días. Habla Eko Talamata de la compañía de Easy. ¿Con quién trae el gusto? Polmarita, disculpe. Quisiera saber cómo lo puedo hacer para que ya no me estén más que marqués ofreciendo el servicio. ¿A qué voy a poner? Sí, lo escucho. Es que ahorita diario me marcan, o sea diario, diario seis, siete veces. La verdad, ya es molesto. Mira, ahorita voy a poner aquí en comentarios que bueno, cliente molesto. Y ahorita le comento a mi supervisor para ver la manera de cómo borrarle de la base de datos. Sí, muchas gracias, se lo agradezco. Al contrario, que tengas buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 23.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.45,
+      "end": 40.15,
+      "text": " Buenos días. Habla Eko Talamata de la compañía de Easy. ¿Con quién trae el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.23,
+      "end": 47.35,
+      "text": " Polmarita, disculpe. Quisiera saber cómo lo puedo hacer para que ya no me estén más que marqués ofreciendo el servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.35,
+      "end": 50.31,
+      "text": " ¿A qué voy a poner? Sí, lo escucho.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.31,
+      "end": 56.44,
+      "text": " Es que ahorita diario me marcan, o sea diario, diario seis, siete veces. La verdad, ya es molesto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.44,
+      "end": 60.92,
+      "text": " Mira, ahorita voy a poner aquí en comentarios que bueno, cliente molesto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.92,
+      "end": 64.24,
+      "text": " Y ahorita le comento a mi supervisor para ver la manera de cómo borrarle de la base de datos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.24,
+      "end": 65.76,
+      "text": " Sí, muchas gracias, se lo agradezco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.76,
+      "end": 67.32,
+      "text": " Al contrario, que tengas buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

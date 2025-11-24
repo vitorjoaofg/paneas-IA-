@@ -1,0 +1,384 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100449660-5544389916-20251011-124057-5522863800.WAV",
+  "file_name": "0105-04965-25101100449660-5544389916-20251011-124057-5522863800.WAV",
+  "base_id": "0105-04965-25101100449660-5544389916-20251011-124057-5522863800",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando, por favor. Sí. Espera un momento, por favor. Buen día. Mi nombre es Tricia López de parte de IZZY. ¿Se encontrará? ¿Se encontrará? ¿Con quién tengo el gusto? Con… no sé. ¿Usted cuenta con nuestro servicio de parte de IZZY? Sí. Ah, OK. Si gusta, podría verificar su cuenta para ver si tiene algún beneficio. ¿Le gustaría? Sí. Ah, OK. ¿Cuál sería su número telefónico o al nombre de quién está registrado el servicio? Con… mi mamá. Ah, OK. Disculpa. ¿Cuántos años tienes, mi niña? Diez. Ah, OK. ¿No se encuentra tu mami? No. Ah, OK. No te preocupes. Nos comunicamos en otra ocasión. ¿Sí le podrías comentar que nos comunicamos de parte de IZZY? Te lo agradecería mucho. Sí. OK. Cuídate. Hasta luego. Bye bye. Hasta luego. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 11.56,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.56,
+      "end": 13.48,
+      "text": " Con IZZY es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 18.32,
+      "text": " Un asesor te está esperando, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.32,
+      "end": 20.18,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.18,
+      "end": 34.92,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.92,
+      "end": 35.92,
+      "text": " Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.92,
+      "end": 37.92,
+      "text": " Mi nombre es Tricia López de parte de IZZY.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.92,
+      "end": 38.92,
+      "text": " ¿Se encontrará?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.92,
+      "end": 39.92,
+      "text": " ¿Se encontrará?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 39.92,
+      "end": 41.92,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.58,
+      "end": 48.96,
+      "text": " Con… no sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 48.96,
+      "end": 53.44,
+      "text": " ¿Usted cuenta con nuestro servicio de parte de IZZY?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.44,
+      "end": 54.44,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 54.44,
+      "end": 56.44,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 56.44,
+      "end": 62.44,
+      "text": " Si gusta, podría verificar su cuenta para ver si tiene algún beneficio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 62.44,
+      "end": 64.44,
+      "text": " ¿Le gustaría?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.44,
+      "end": 65.79,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 65.79,
+      "end": 66.79,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 66.79,
+      "end": 71.79,
+      "text": " ¿Cuál sería su número telefónico o al nombre de quién está registrado el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 72.55,
+      "end": 78.55,
+      "text": " Con… mi mamá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 78.55,
+      "end": 80.64,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 80.64,
+      "end": 81.64,
+      "text": " Disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 81.64,
+      "end": 84.44,
+      "text": " ¿Cuántos años tienes, mi niña?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 84.44,
+      "end": 86.73,
+      "text": " Diez.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 86.73,
+      "end": 87.73,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 87.73,
+      "end": 89.86,
+      "text": " ¿No se encuentra tu mami?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 89.86,
+      "end": 90.86,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 90.86,
+      "end": 91.86,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 91.86,
+      "end": 92.86,
+      "text": " No te preocupes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 92.86,
+      "end": 93.86,
+      "text": " Nos comunicamos en otra ocasión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 93.86,
+      "end": 96.86,
+      "text": " ¿Sí le podrías comentar que nos comunicamos de parte de IZZY?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 96.86,
+      "end": 97.86,
+      "text": " Te lo agradecería mucho.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 97.86,
+      "end": 98.86,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 98.86,
+      "end": 99.86,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 99.86,
+      "end": 100.86,
+      "text": " Cuídate.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 100.86,
+      "end": 101.86,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 101.86,
+      "end": 103.34,
+      "text": " Bye bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 103.34,
+      "end": 104.34,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 104.34,
+      "end": 105.94,
+      "text": " Bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 109.332,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

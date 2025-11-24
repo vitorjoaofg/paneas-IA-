@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102500462801-5540409224-20251025-133616-5546327545.WAV",
+  "file_name": "0105-04999-25102500462801-5540409224-20251025-133616-5546327545.WAV",
+  "base_id": "0105-04999-25102500462801-5540409224-20251025-133616-5546327545",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 pedas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un procesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Un momento, por favor. Hola, ¿buenas tardes? ¿Qué pasó? Buenas tardes. Hablamos de compañía Easy. Me presento, mi nombre es Patricia. ¿Has dicho con quién tengo el gusto? Es que no le entiendo nada. Bueno, contestó la línea y no sé. Hablamos de compañía Easy, señorita. Es progresar en nuestros planes. De compañía Easy. No me interesa, señorita. Muchas gracias por atender mi llamada. Un excelente día. Hasta luego. Hasta luego. Ya le paso.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 pedas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.24,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un procesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.24,
+      "end": 29.17,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.17,
+      "end": 44.14,
+      "text": " Un momento, por favor. Hola, ¿buenas tardes? ¿Qué pasó?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.14,
+      "end": 49.75,
+      "text": " Buenas tardes. Hablamos de compañía Easy. Me presento, mi nombre es Patricia. ¿Has dicho",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.75,
+      "end": 53.16,
+      "text": " con quién tengo el gusto? Es que no le entiendo nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.16,
+      "end": 61.22,
+      "text": " Bueno, contestó la línea y no sé. Hablamos de compañía Easy, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.22,
+      "end": 64.74,
+      "text": " Es progresar en nuestros planes. De compañía Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.74,
+      "end": 71.71,
+      "text": " No me interesa, señorita. Muchas gracias por atender mi llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.71,
+      "end": 73.74,
+      "text": " Un excelente día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.74,
+      "end": 76.26,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.26,
+      "end": 78.26,
+      "text": " Ya le paso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 101.052,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

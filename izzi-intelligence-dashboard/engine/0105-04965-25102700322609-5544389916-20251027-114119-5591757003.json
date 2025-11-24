@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700322609-5544389916-20251027-114119-5591757003.WAV",
+  "file_name": "0105-04965-25102700322609-5544389916-20251027-114119-5591757003.WAV",
+  "base_id": "0105-04965-25102700322609-5544389916-20251027-114119-5591757003",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Sí, señorita. Ya sé que ustedes tienen que vender esas cosas, ¿verdad? Pero esto es una oficina de gobierno y aquí no nos permiten hacer nada y no se puede contratar nada. Por favor, ahí pónganle en algún lado que es una oficina de gobierno para que dejen de estar molestando, por favor. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.21,
+      "end": 8.04,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.04,
+      "end": 15.84,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.84,
+      "end": 21.92,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.92,
+      "end": 42.59,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 43.49,
+      "end": 48.0,
+      "text": " Sí, señorita. Ya sé que ustedes tienen que vender esas cosas, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.0,
+      "end": 55.0,
+      "text": " Pero esto es una oficina de gobierno y aquí no nos permiten hacer nada y no se puede contratar nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 55.0,
+      "end": 62.55,
+      "text": " Por favor, ahí pónganle en algún lado que es una oficina de gobierno para que dejen de estar molestando, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 62.55,
+      "end": 63.55,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 118.944,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25102400370444-5586913294-20251024-122720-04896.WAV",
+  "file_name": "0105-04896-25102400370444-5586913294-20251024-122720-04896.WAV",
+  "base_id": "0105-04896-25102400370444-5586913294-20251024-122720-04896",
+  "transcription": "Hola, somos Easy. Y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, hola. Muy buenas tardes. Buenas tardes. Hola. Buenas tardes. Tengo una llamada perdida de este número. Ah, esto es por parte de la compañía de Easy. Ah, ¿qué? Dígame. Son promociones que se le están otorgando Internet, Telefonía y Cable por $760 pesos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Easy. Y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.1,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.1,
+      "end": 10.3,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.3,
+      "end": 14.3,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.78,
+      "end": 19.78,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.08,
+      "end": 27.72,
+      "text": " Hola, hola. Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.37,
+      "end": 30.07,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.07,
+      "end": 33.37,
+      "text": " Hola. Buenas tardes. Tengo una llamada perdida de este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.94,
+      "end": 35.64,
+      "text": " Ah, esto es por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.13,
+      "end": 38.43,
+      "text": " Ah, ¿qué? Dígame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.43,
+      "end": 43.46,
+      "text": " Son promociones que se le están otorgando Internet, Telefonía y Cable por $760 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 43.524,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

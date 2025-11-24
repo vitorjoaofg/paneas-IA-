@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100022657-9982964313-20251021-073936-8998371026.WAV",
+  "file_name": "0105-04965-25102100022657-9982964313-20251021-073936-8998371026.WAV",
+  "base_id": "0105-04965-25102100022657-9982964313-20251021-073936-8998371026",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buen día. Hola, muy buen día. Mi nombre es Vrizia López de parte de Easy. Tengo el gusto, estoy, está llamando al área de contrataciones. ¿Con quién tengo el gusto? Con Carlos. Señor Carlos, muy buenos días. Nos estamos comunicando. ¿Le interesó algo de nuestro servicio? No, es que me está en marca y marca, pero no, no, no, esto no me interesa. Ok, usted no cuenta entonces con nuestro servicio. ¿Le gustaría escuchar nuestras promociones? Tenemos ahorita el servicio de la televisión por 199 pesos. No, no, no me interesa. No, no se preocupe probablemente en otra ocasión. Correcto, le tendría a Vrizia López que tenga un excelente día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.87,
+      "end": 10.22,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 10.22,
+      "end": 18.42,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.42,
+      "end": 26.93,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.93,
+      "end": 27.93,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 36.04,
+      "end": 42.49,
+      "text": " Hola, buen día. Hola, muy buen día. Mi nombre es Vrizia López de parte de Easy. Tengo el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 42.49,
+      "end": 47.87,
+      "text": " gusto, estoy, está llamando al área de contrataciones. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.87,
+      "end": 48.87,
+      "text": " Con Carlos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.87,
+      "end": 55.37,
+      "text": " Señor Carlos, muy buenos días. Nos estamos comunicando. ¿Le interesó algo de nuestro",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.37,
+      "end": 56.37,
+      "text": " servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.37,
+      "end": 63.87,
+      "text": " No, es que me está en marca y marca, pero no, no, no, esto no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.67,
+      "end": 70.67,
+      "text": " Ok, usted no cuenta entonces con nuestro servicio. ¿Le gustaría escuchar nuestras",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.67,
+      "end": 76.67,
+      "text": " promociones? Tenemos ahorita el servicio de la televisión por 199 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.67,
+      "end": 78.93,
+      "text": " No, no, no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.93,
+      "end": 82.93,
+      "text": " No, no se preocupe probablemente en otra ocasión. Correcto, le tendría a Vrizia",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 82.93,
+      "end": 85.93,
+      "text": " López que tenga un excelente día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.128,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

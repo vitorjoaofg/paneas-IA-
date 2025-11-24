@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900292505-5515523271-20251029-112042-04896.WAV",
+  "file_name": "0105-04965-25102900292505-5515523271-20251029-112042-04896.WAV",
+  "base_id": "0105-04965-25102900292505-5515523271-20251029-112042-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Contrataciones? ¿Easy le atiende a Javier Romero? ¿Con quién tengo el gusto? Sí, buenos días. Mi nombre es Francisco Ramos. ¿Qué pasó? Mira, me tengo una llamada de ahí. Ok, sí, Francisco. ¿Se le marcó o se le dio una grabación con las promociones para contratar el servicio de Easy? Ya lo tengo, señor. Le agradezco la atención, estudiante Díaz. Oye, señor, una pregunta. ¿Ya me acordó? Señor... ¿Ya me acordó?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.9,
+      "end": 8.6,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.6,
+      "end": 14.8,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.8,
+      "end": 17.5,
+      "text": " por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.5,
+      "end": 20.3,
+      "text": " No lo pienses más y cándate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.3,
+      "end": 23.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.5,
+      "end": 28.51,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.61,
+      "end": 37.93,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.93,
+      "end": 41.36,
+      "text": " ¿Contrataciones? ¿Easy le atiende a Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.36,
+      "end": 44.66,
+      "text": " Sí, buenos días. Mi nombre es Francisco Ramos. ¿Qué pasó?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.66,
+      "end": 47.09,
+      "text": " Mira, me tengo una llamada de ahí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 47.09,
+      "end": 51.19,
+      "text": " Ok, sí, Francisco. ¿Se le marcó o se le dio una grabación con las promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.19,
+      "end": 53.09,
+      "text": " para contratar el servicio de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.09,
+      "end": 55.09,
+      "text": " Ya lo tengo, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.09,
+      "end": 57.69,
+      "text": " Le agradezco la atención, estudiante Díaz.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 57.69,
+      "end": 63.44,
+      "text": " Oye, señor, una pregunta. ¿Ya me acordó?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 63.44,
+      "end": 66.46,
+      "text": " Señor... ¿Ya me acordó?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

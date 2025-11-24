@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900426230-3314541351-20251009-133233-3331808096.WAV",
+  "file_name": "0105-04965-25100900426230-3314541351-20251009-133233-3331808096.WAV",
+  "base_id": "0105-04965-25100900426230-3314541351-20251009-133233-3331808096",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¡Hola! Buen día. Le habla Ivonne Monfield de Parque de Su Servicio de Easy para darle a conocer la teléfone a móvil por 94 pesos al mes. Buen día. Hola, Ivonne. Buenas tardes. Oye, nada más para comentarte que ese teléfono que están marcando es de una escuela pública. Ah, ok. Una disculpa por la... No, no, es ningún problema. Nada más para que no se esté como marcando el teléfono, obviamente porque no depende de nosotros la confrontación, ¿verdad? Ok, una disculpa. Yo aquí le pongo para que le borren de la base. Que tenga un buen día. Igualmente para ti, buen día. Hasta luego. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.43,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.43,
+      "end": 37.42,
+      "text": " momento, por favor. ¡Hola! Buen día. Le habla Ivonne Monfield de Parque de Su Servicio",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.42,
+      "end": 43.42,
+      "text": " de Easy para darle a conocer la teléfone a móvil por 94 pesos al mes. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.42,
+      "end": 47.42,
+      "text": " Hola, Ivonne. Buenas tardes. Oye, nada más para comentarte que ese teléfono que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.42,
+      "end": 53.99,
+      "text": " están marcando es de una escuela pública. Ah, ok. Una disculpa por la... No, no,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.99,
+      "end": 57.99,
+      "text": " es ningún problema. Nada más para que no se esté como marcando el teléfono,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.99,
+      "end": 61.99,
+      "text": " obviamente porque no depende de nosotros la confrontación, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.99,
+      "end": 66.99,
+      "text": " Ok, una disculpa. Yo aquí le pongo para que le borren de la base. Que tenga un buen",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.99,
+      "end": 70.99,
+      "text": " día. Igualmente para ti, buen día. Hasta luego. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 73.944,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

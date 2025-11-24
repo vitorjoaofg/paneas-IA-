@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500561793-5544389934-20251015-144838-5589984496.WAV",
+  "file_name": "0105-04965-25101500561793-5544389934-20251015-144838-5589984496.WAV",
+  "base_id": "0105-04965-25101500561793-5544389934-20251015-144838-5589984496",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día. Bueno. ¿Usted tiene Internet con Easy o con otra compañía? Disculpe. No, con otra. Mire, ahorita tenemos paquetes para clientes nuevos desde 349 pesos al mes. No sé si ya le comentaron de este beneficio. No, ahorita no. ¿Ahorita no le interesa? No. Bueno, será más adelante que tenga un buen día. Sí, gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 15.16,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.16,
+      "end": 24.58,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.58,
+      "end": 31.42,
+      "text": " respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.42,
+      "end": 66.7,
+      "text": " la llamada. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 66.7,
+      "end": 72.96,
+      "text": " servicio de Easy para darle a conocer algunos beneficios con la compañía. Buen día. Bueno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 76.82,
+      "end": 82.18,
+      "text": " ¿Usted tiene Internet con Easy o con otra compañía? Disculpe. No, con otra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 83.7,
+      "end": 91.02,
+      "text": " Mire, ahorita tenemos paquetes para clientes nuevos desde 349 pesos al mes. No sé si ya",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 91.02,
+      "end": 99.38,
+      "text": " le comentaron de este beneficio. No, ahorita no. ¿Ahorita no le interesa? No. Bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 99.38,
+      "end": 103.66,
+      "text": " será más adelante que tenga un buen día. Sí, gracias. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.02,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

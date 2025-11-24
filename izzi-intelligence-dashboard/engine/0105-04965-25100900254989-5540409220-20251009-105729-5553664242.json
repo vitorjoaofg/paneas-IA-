@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900254989-5540409220-20251009-105729-5553664242.WAV",
+  "file_name": "0105-04965-25100900254989-5540409220-20251009-105729-5553664242.WAV",
+  "base_id": "0105-04965-25100900254989-5540409220-20251009-105729-5553664242",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixpillar, más Sky Sports, desde 350 pesos el primer mes, con Vixpillar? Es posible. Te inserirás un mase de sortes para esperarte, por favor. Si es cliente de alguno de nuestros programas, marque dos. Recuerde tener a la mano su RFC, número de celular y correo recorristrados en su contrato. Si usted recibió una oferta de década de requisito serial, por favor, marque tres. Con otro máximo de calidad, tiene que cortar la llamada. Grupo Edilar, buenos días. ¿En qué le podemos ayudar? Bueno, buenos días. Bueno. Grupo Edilar, buenos días. Buenos días. Bueno, bueno. Bueno, buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.64,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixpillar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.64,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Vixpillar? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 17.84,
+      "text": " Te inserirás un mase de sortes para esperarte, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.84,
+      "end": 21.71,
+      "text": " Si es cliente de alguno de nuestros programas, marque dos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.71,
+      "end": 28.75,
+      "text": " Recuerde tener a la mano su RFC, número de celular y correo recorristrados en su contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.84,
+      "end": 35.28,
+      "text": " Si usted recibió una oferta de década de requisito serial, por favor, marque tres.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.28,
+      "end": 50.03,
+      "text": " Con otro máximo de calidad, tiene que cortar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.03,
+      "end": 65.17,
+      "text": " Grupo Edilar, buenos días. ¿En qué le podemos ayudar? Bueno, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.17,
+      "end": 99.14,
+      "text": " Bueno. Grupo Edilar, buenos días. Buenos días. Bueno, bueno. Bueno, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.412,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

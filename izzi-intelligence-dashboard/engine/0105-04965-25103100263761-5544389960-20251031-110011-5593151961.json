@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100263761-5544389960-20251031-110011-5593151961.WAV",
+  "file_name": "0105-04965-25103100263761-5544389960-20251031-110011-5593151961.WAV",
+  "base_id": "0105-04965-25103100263761-5544389960-20251031-110011-5593151961",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¡Buenas! ¡Buenos! ¡Hola! ¿Qué tal? ¡Buenos días! Mi nombre es Karen Sánchez. Hablo por parte de Easy. ¡Buenos! ¡Buenas tardes! ¡Buenas tardes! ¿Tuvo oportunidad de escuchar el audio que se le dejó? Disculpe. ¡Chingue su madre!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.3,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.3,
+      "end": 38.11,
+      "text": " por favor. ¡Buenas! ¡Buenos! ¡Hola! ¿Qué tal? ¡Buenos días! Mi nombre es Karen Sánchez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.11,
+      "end": 46.34,
+      "text": " Hablo por parte de Easy. ¡Buenos! ¡Buenas tardes! ¡Buenas tardes! ¿Tuvo oportunidad",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.34,
+      "end": 51.38,
+      "text": " de escuchar el audio que se le dejó? Disculpe. ¡Chingue su madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.092,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

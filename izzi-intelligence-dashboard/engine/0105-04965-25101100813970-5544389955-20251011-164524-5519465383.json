@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100813970-5544389955-20251011-164524-5519465383.WAV",
+  "file_name": "0105-04965-25101100813970-5544389955-20251011-164524-5519465383.WAV",
+  "base_id": "0105-04965-25101100813970-5544389955-20251011-164524-5519465383",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Calsport desde 300 por no existente virtual? Su número es... 5-5-4-3-8-9-9-5-5- Si es correcto, marque 1. En caso contrario, marque 2. Espera un momento, por favor. 5-4-4-5-5- Si es correcto, marque 1. En caso contrario, marque 2. Su opción no fue recibida. Vuelva a intentar. Su número es... 5-5-4-4-3-8-9-9-5-5- Si es correcto, marque 1. En caso contrario, marque 2. Su opción no fue recibida. Vuelva a intentar. En una escala del 0 al 10, en donde 0 es nada dispuesto y 10 totalmente dispuesto, ¿qué tan dispuesto está en recomendar a Telmex con un familiar o amigo?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Calsport desde 300 por no existente virtual?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 12.0,
+      "text": " Su número es...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 12.0,
+      "end": 18.0,
+      "text": " 5-5-4-3-8-9-9-5-5-",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.0,
+      "end": 23.0,
+      "text": " Si es correcto, marque 1. En caso contrario, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 26.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.01,
+      "end": 41.44,
+      "text": " 5-4-4-5-5-",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.44,
+      "end": 46.44,
+      "text": " Si es correcto, marque 1. En caso contrario, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.44,
+      "end": 58.09,
+      "text": " Su opción no fue recibida. Vuelva a intentar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.09,
+      "end": 59.09,
+      "text": " Su número es...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.09,
+      "end": 65.09,
+      "text": " 5-5-4-4-3-8-9-9-5-5-",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.09,
+      "end": 70.09,
+      "text": " Si es correcto, marque 1. En caso contrario, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.09,
+      "end": 81.83,
+      "text": " Su opción no fue recibida. Vuelva a intentar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 81.83,
+      "end": 94.49,
+      "text": " En una escala del 0 al 10, en donde 0 es nada dispuesto y 10 totalmente dispuesto,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 94.49,
+      "end": 99.49,
+      "text": " ¿qué tan dispuesto está en recomendar a Telmex con un familiar o amigo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 106.2,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000183346-5540409215-20251030-095036-5594641557.WAV",
+  "file_name": "0105-04965-25103000183346-5540409215-20251030-095036-5594641557.WAV",
+  "base_id": "0105-04965-25103000183346-5540409215-20251030-095036-5594641557",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. ¿Qué es esto? ¿De qué? ¿De Cádiz de Inega? No sé. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenos días. Sí, buenos días. Buenos días. Hablamos de compañía y, si me presento, mi nombre es Patricia Badillo. ¿Con quién tengo el gusto? Hugo Campos Dovera. Mucho gusto, señor Hugo. ¿Cómo se llama su calle parabilidad? ¿Qué servicio le puedo ofrecer? Es correcto. Es de compañía Easy, ¿verdad? ¿Ah, sí, eh? Mire, a ver, sí, porque desde cuando estaba interesado en eso. Es Barrio Santa Catarina, sin número. A ver, Barrio Santa Catarina. Sí, sin número. Barrio Santa Catarina. Sin número. ¿Y colonia? San Francisco Mabú. San Francisco. ¿San Francisco qué? Mabú. M-A-G-U. Ajá. Ok, Mabú. ¿Y está en Ciudad de México, señor? Es correcto. Municipio de Nicolás Romero. Perfecto. Perfecto. No, es estado de México, perdón. Ok. Estoy validando, señor, y solamente tenemos lo que es servicio de cable. Son 200 canales, una cajita de mar, un control sin paleta. ¿Me querés el Internet? Sí, señor. Puro servicio de cable. No, todavía no tenemos cobertura, pero aquí le voy a poner como comentario, ¿ok? Ah, oiga. Ajá, dígame. En San Mateo, ¿qué? Xoloc. A ver, déjame validar. A ver, por favor. ¿Salmateo? Sí, San Mateo, Xoloc, de Pozotlán. San Mateo, Xolo. ¿Colonia? ¿Cómo se llama la colonia? Es que la colonia es San Mateo, Xoloc. ¿Y la calle? Ajá. ¿Calle qué? Calle Uxpanapan. Ux-talapan. Uxpanapan. ¿Y también ciudad de México? Estado de México. Ok. Ok, igual, señor, es puro servicio de cable. ¿Tampoco? No. Pero aquí le voy a poner como comentario, ¿qué? Para que implementemos lo que es cobertura en su zona. Por favor. No, y mire. No me creas. Pero si llegan a mi servicio, en lo que es San Francisco Magu, tengo mi casa que es la de ustedes, que radicamos pero rentamos, y tenemos esta familia en San Mateo. Ajá. Aquí en San Francisco tendrías mucha entrada de trabajo. Porque todos estamos batallando. Tenemos mega cable, que es el único que entra. No se preocupe, aquí le voy a poner como comentario. Sí, por favor. Y con unos planes para que podamos tener una libre competencia. Ok, perfecto, señor. Gracias por atender mi llamada Salentería. Hasta luego, señorita, gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 26.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.0,
+      "end": 29.35,
+      "text": " ¿Qué es esto? ¿De qué? ¿De Cádiz de Inega?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.35,
+      "end": 30.35,
+      "text": " No sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.35,
+      "end": 38.35,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.35,
+      "end": 50.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.38,
+      "end": 51.38,
+      "text": " Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.38,
+      "end": 52.5,
+      "text": " Sí, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.5,
+      "end": 59.73,
+      "text": " Buenos días. Hablamos de compañía y, si me presento, mi nombre es Patricia Badillo. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.73,
+      "end": 61.79,
+      "text": " Hugo Campos Dovera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.79,
+      "end": 65.79,
+      "text": " Mucho gusto, señor Hugo. ¿Cómo se llama su calle parabilidad? ¿Qué servicio le puedo ofrecer?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 65.79,
+      "end": 69.14,
+      "text": " Es correcto. Es de compañía Easy, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 69.14,
+      "end": 70.14,
+      "text": " ¿Ah, sí, eh?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 70.14,
+      "end": 77.43,
+      "text": " Mire, a ver, sí, porque desde cuando estaba interesado en eso. Es Barrio Santa Catarina, sin número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 77.43,
+      "end": 80.72,
+      "text": " A ver, Barrio Santa Catarina.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 80.72,
+      "end": 82.72,
+      "text": " Sí, sin número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 82.72,
+      "end": 88.1,
+      "text": " Barrio Santa Catarina.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 88.1,
+      "end": 89.1,
+      "text": " Sin número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 89.1,
+      "end": 91.16,
+      "text": " ¿Y colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 91.16,
+      "end": 93.64,
+      "text": " San Francisco Mabú.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 93.64,
+      "end": 96.64,
+      "text": " San Francisco. ¿San Francisco qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 96.64,
+      "end": 99.8,
+      "text": " Mabú. M-A-G-U.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 99.8,
+      "end": 103.83,
+      "text": " Ajá. Ok, Mabú. ¿Y está en Ciudad de México, señor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 103.83,
+      "end": 105.83,
+      "text": " Es correcto. Municipio de Nicolás Romero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 105.83,
+      "end": 110.71,
+      "text": " Perfecto. Perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 110.71,
+      "end": 113.54,
+      "text": " No, es estado de México, perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 113.54,
+      "end": 119.54,
+      "text": " Ok. Estoy validando, señor, y solamente tenemos lo que es servicio de cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 119.54,
+      "end": 122.54,
+      "text": " Son 200 canales, una cajita de mar, un control sin paleta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 122.54,
+      "end": 126.37,
+      "text": " ¿Me querés el Internet?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 126.37,
+      "end": 128.4,
+      "text": " Sí, señor. Puro servicio de cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 128.4,
+      "end": 132.4,
+      "text": " No, todavía no tenemos cobertura, pero aquí le voy a poner como comentario, ¿ok?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 132.4,
+      "end": 134.56,
+      "text": " Ah, oiga.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 134.56,
+      "end": 135.56,
+      "text": " Ajá, dígame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 135.56,
+      "end": 137.56,
+      "text": " En San Mateo, ¿qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 137.56,
+      "end": 138.66,
+      "text": " Xoloc.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 138.66,
+      "end": 141.49,
+      "text": " A ver, déjame validar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 141.49,
+      "end": 142.49,
+      "text": " A ver, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 142.49,
+      "end": 144.99,
+      "text": " ¿Salmateo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 144.99,
+      "end": 147.99,
+      "text": " Sí, San Mateo, Xoloc, de Pozotlán.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 147.99,
+      "end": 151.85,
+      "text": " San Mateo, Xolo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 151.85,
+      "end": 152.85,
+      "text": " ¿Colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 152.85,
+      "end": 158.75,
+      "text": " ¿Cómo se llama la colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 158.75,
+      "end": 160.82,
+      "text": " Es que la colonia es San Mateo, Xoloc.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 160.82,
+      "end": 162.82,
+      "text": " ¿Y la calle? Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 162.82,
+      "end": 165.71,
+      "text": " ¿Calle qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 165.71,
+      "end": 168.26,
+      "text": " Calle Uxpanapan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 168.26,
+      "end": 170.74,
+      "text": " Ux-talapan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 170.74,
+      "end": 171.74,
+      "text": " Uxpanapan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 171.74,
+      "end": 173.74,
+      "text": " ¿Y también ciudad de México?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 173.74,
+      "end": 175.74,
+      "text": " Estado de México.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 175.74,
+      "end": 181.54,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 181.54,
+      "end": 183.54,
+      "text": " Ok, igual, señor, es puro servicio de cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 183.54,
+      "end": 184.54,
+      "text": " ¿Tampoco?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 184.54,
+      "end": 185.54,
+      "text": " No.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 185.54,
+      "end": 187.54,
+      "text": " Pero aquí le voy a poner como comentario, ¿qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 187.54,
+      "end": 189.54,
+      "text": " Para que implementemos lo que es cobertura en su zona.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 189.54,
+      "end": 190.54,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 190.54,
+      "end": 192.54,
+      "text": " No, y mire.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 192.54,
+      "end": 193.54,
+      "text": " No me creas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 193.54,
+      "end": 197.54,
+      "text": " Pero si llegan a mi servicio, en lo que es San Francisco Magu,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 197.54,
+      "end": 199.54,
+      "text": " tengo mi casa que es la de ustedes,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 199.54,
+      "end": 201.54,
+      "text": " que radicamos pero rentamos,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 201.54,
+      "end": 203.54,
+      "text": " y tenemos esta familia en San Mateo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 203.54,
+      "end": 204.76,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 204.76,
+      "end": 208.82,
+      "text": " Aquí en San Francisco tendrías mucha entrada de trabajo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 208.82,
+      "end": 212.11,
+      "text": " Porque todos estamos batallando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 212.11,
+      "end": 215.91,
+      "text": " Tenemos mega cable, que es el único que entra.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 215.91,
+      "end": 217.91,
+      "text": " No se preocupe, aquí le voy a poner como comentario.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 217.91,
+      "end": 219.91,
+      "text": " Sí, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 70,
+      "start": 219.91,
+      "end": 224.1,
+      "text": " Y con unos planes para que podamos tener una libre competencia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 71,
+      "start": 224.1,
+      "end": 225.1,
+      "text": " Ok, perfecto, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 72,
+      "start": 225.1,
+      "end": 228.1,
+      "text": " Gracias por atender mi llamada Salentería.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 73,
+      "start": 228.1,
+      "end": 229.1,
+      "text": " Hasta luego, señorita, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 74,
+      "start": 229.1,
+      "end": 230.1,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 231.84,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

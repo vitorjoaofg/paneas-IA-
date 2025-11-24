@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700013691-3314541357-20251027-072444-8999262895.WAV",
+  "file_name": "0105-04965-25102700013691-3314541357-20251027-072444-8999262895.WAV",
+  "base_id": "0105-04965-25102700013691-3314541357-20251027-072444-8999262895",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Y si le tienes a Ramiro con quien te doy gusto? Hola, soy Ramiro. Buenos días, con Pablo. Mucho gusto ser Pablo. Dígame, ¿qué servicio hacía contratar? Oye, discúlpame. Lo que pasa es que toda la semana han estado marcando. Esta es una línea de empresas. No sé si lo pudieras ahí marcar para que ya no entren llamadas. Ok. Lo seleccionamos para que lo puedan retirar de la base. Excelente día. Sí, muchas gracias. Ay, disculpa. No se preocupe, es mentira.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.43,
+      "end": 8.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.48,
+      "end": 16.28,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.28,
+      "end": 22.48,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.48,
+      "end": 41.8,
+      "text": " favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 42.72,
+      "end": 44.72,
+      "text": " ¿Y si le tienes a Ramiro con quien te doy gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.72,
+      "end": 47.14,
+      "text": " Hola, soy Ramiro. Buenos días, con Pablo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.14,
+      "end": 50.39,
+      "text": " Mucho gusto ser Pablo. Dígame, ¿qué servicio hacía contratar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.39,
+      "end": 56.39,
+      "text": " Oye, discúlpame. Lo que pasa es que toda la semana han estado marcando. Esta es",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.39,
+      "end": 63.39,
+      "text": " una línea de empresas. No sé si lo pudieras ahí marcar para que ya no entren llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.39,
+      "end": 67.39,
+      "text": " Ok. Lo seleccionamos para que lo puedan retirar de la base. Excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.39,
+      "end": 69.39,
+      "text": " Sí, muchas gracias. Ay, disculpa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.39,
+      "end": 71.39,
+      "text": " No se preocupe, es mentira.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 80.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

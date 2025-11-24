@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000174413-5540409215-20251030-094248-5555252404.WAV",
+  "file_name": "0105-04965-25103000174413-5540409215-20251030-094248-5555252404.WAV",
+  "base_id": "0105-04965-25103000174413-5540409215-20251030-094248-5555252404",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Izy, es posible. ¿Te interesa? Un asesor te está esperando. ¿Por favor? ¿Un grupo celebrado, buenos días? Espera un momento, por favor. ¿Contrataciones? ¿Izy le atiende a Javier Romero? ¿Con quién tengo el gusto? ¿Con Adriana? ¿Quién habla, perdón? Habla Javier Romero de la compañía Izy. Acaba de escuchar una grabación con una promoción de servicios que estamos manejando. ¿Tiene alguna duda con la información? No me mandaron, no me pusieron nada. Ok, no escucho la grabación. Le comento. Lo que pasa es que actualmente por parte de Izy nos estamos comunicando.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Izy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " ¿Por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.0,
+      "end": 24.54,
+      "text": " ¿Un grupo celebrado, buenos días?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.54,
+      "end": 34.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.26,
+      "end": 37.26,
+      "text": " ¿Contrataciones? ¿Izy le atiende a Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.26,
+      "end": 42.31,
+      "text": " ¿Con Adriana? ¿Quién habla, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.31,
+      "end": 45.31,
+      "text": " Habla Javier Romero de la compañía Izy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.31,
+      "end": 48.31,
+      "text": " Acaba de escuchar una grabación con una promoción de servicios que estamos manejando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.31,
+      "end": 51.41,
+      "text": " ¿Tiene alguna duda con la información?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.41,
+      "end": 54.41,
+      "text": " No me mandaron, no me pusieron nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.41,
+      "end": 57.62,
+      "text": " Ok, no escucho la grabación.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.62,
+      "end": 62.62,
+      "text": " Le comento. Lo que pasa es que actualmente por parte de Izy nos estamos comunicando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.612,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100618555-5544389942-20251011-143834-5553664239.WAV",
+  "file_name": "0105-04965-25101100618555-5544389942-20251011-143834-5553664239.WAV",
+  "base_id": "0105-04965-25101100618555-5544389942-20251011-143834-5553664239",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor emprendimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo sientes ni más y cállate ahí. Te interesa un asesor que está esperando. Por favor, hábete de telefonía, repotencia con AFE, marque 1. Si es cliente de alguno de nuestros programas, marque 2. Espera un momento por favor. Número de celular y correo teónico registrados en su contrato. Hola, buen día. Hola, muy buen día. Mi nombre es Dricie Lowe de parte de Ease y ¿con quién tengo el gusto? Hola. Hola, buen día. Hola. Por efectos de calidad tenemos que colgar esa llamada. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.56,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.56,
+      "end": 12.96,
+      "text": " emprendimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.96,
+      "end": 19.96,
+      "text": " primer mes? No lo sientes ni más y cállate ahí. Te interesa un asesor que está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.96,
+      "end": 26.76,
+      "text": " Por favor, hábete de telefonía, repotencia con AFE, marque 1. Si es cliente de alguno de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.76,
+      "end": 34.42,
+      "text": " nuestros programas, marque 2. Espera un momento por favor. Número de celular y correo teónico",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.42,
+      "end": 42.63,
+      "text": " registrados en su contrato. Hola, buen día. Hola, muy buen día. Mi nombre es Dricie Lowe de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.63,
+      "end": 53.72,
+      "text": " parte de Ease y ¿con quién tengo el gusto? Hola. Hola, buen día. Hola. Por efectos de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.72,
+      "end": 56.6,
+      "text": " calidad tenemos que colgar esa llamada. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.612,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

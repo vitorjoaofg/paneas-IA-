@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400410562-5544389991-20251014-124445-5590561183.WAV",
+  "file_name": "0105-04965-25101400410562-5544389991-20251014-124445-5590561183.WAV",
+  "base_id": "0105-04965-25101400410562-5544389991-20251014-124445-5590561183",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione uno para conocer nuestras promociones o dos para terminar la llamada. Espera un momento por favor. ¿A ver si quiere cobrar? Bueno. ¿Espera un momento, ¿de acuerdo? ¿Se cuenta alguna duda? Es que hable si... ¿Habéis llamado a mi no le da? Habéis llamado a mi mamá a ver si quiere cobrar, espera. ¿Es que no es sin peligro, perdón?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.26,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.26,
+      "end": 34.74,
+      "text": " 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.74,
+      "end": 44.81,
+      "text": " un asesor o dos para terminar la llamada. No recibo tu respuesta. Por favor, presione",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.81,
+      "end": 51.91,
+      "text": " uno para conocer nuestras promociones o dos para terminar la llamada. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.91,
+      "end": 52.91,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 69.97,
+      "end": 72.67,
+      "text": " ¿A ver si quiere cobrar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 72.67,
+      "end": 73.93,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 73.93,
+      "end": 78.66,
+      "text": " ¿Espera un momento, ¿de acuerdo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 78.66,
+      "end": 79.66,
+      "text": " ¿Se cuenta alguna duda?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 79.66,
+      "end": 82.77,
+      "text": " Es que hable si...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 82.77,
+      "end": 84.9,
+      "text": " ¿Habéis llamado a mi no le da?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 84.9,
+      "end": 123.59,
+      "text": " Habéis llamado a mi mamá a ver si quiere cobrar, espera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 123.59,
+      "end": 126.59,
+      "text": " ¿Es que no es sin peligro, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 128.34,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

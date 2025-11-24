@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000030182-5544389908-20251020-074002-8688146364.WAV",
+  "file_name": "0105-04965-25102000030182-5544389908-20251020-074002-8688146364.WAV",
+  "base_id": "0105-04965-25102000030182-5544389908-20251020-074002-8688146364",
+  "transcription": "llamara a Kaysa, es un placer atenderlo y conocer el número de la edición, por favor, marquéla ahora. De lo contrario, escuche nuestro menú de opciones. Marqué 1 para decintos y dos. Marqué 2 para remesa. Marqué 3 para visuales. Marqué 4 para consolidados. Marqué 5 para facturación. Marqué 6 para contabilidad. O si requiere hablar con una operadora, marque 0 para ser atendida. Espera un momento, por favor. Gracias por llamar a a Kaysa. Es un placer atenderlo. Si conoce el número de la extensión, por favor, marquéla ahora. De lo contrario, escuche nuestro menú de opciones. Marqué 1 para definitivos. Marqué 2 para remesas. Marqué 3 para virtuales. Marqué 4 para consolidados. Marqué 5 para facturación. Marqué 6 para contabilidad. O si requiere hablar con una operadora, marque 0 para ser atendida. Gracias por llamar a a Kaysa. Es un placer atenderlo. Si conoce el número de la extensión, por favor, marquéla ahora. De lo contrario, escuche nuestro menú de opciones. Marqué 1 para definitivos. Marqué 2 para remesas. Marqué 3 para virtuales. Marqué 4 para consolidados. Marqué 5 para",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.33,
+      "text": " llamara a Kaysa, es un placer atenderlo y conocer el número de la edición, por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.33,
+      "end": 12.45,
+      "text": " marquéla ahora. De lo contrario, escuche nuestro menú de opciones. Marqué 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.45,
+      "end": 21.45,
+      "text": " decintos y dos. Marqué 2 para remesa. Marqué 3 para visuales. Marqué 4 para consolidados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.45,
+      "end": 28.72,
+      "text": " Marqué 5 para facturación. Marqué 6 para contabilidad. O si requiere hablar con una",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.72,
+      "end": 41.05,
+      "text": " operadora, marque 0 para ser atendida. Espera un momento, por favor. Gracias por llamar a",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.05,
+      "end": 46.78,
+      "text": " a Kaysa. Es un placer atenderlo. Si conoce el número de la extensión, por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.78,
+      "end": 53.1,
+      "text": " marquéla ahora. De lo contrario, escuche nuestro menú de opciones. Marqué 1 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.1,
+      "end": 61.81,
+      "text": " definitivos. Marqué 2 para remesas. Marqué 3 para virtuales. Marqué 4 para consolidados.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.81,
+      "end": 69.4,
+      "text": " Marqué 5 para facturación. Marqué 6 para contabilidad. O si requiere hablar con una",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 69.4,
+      "end": 84.52,
+      "text": " operadora, marque 0 para ser atendida. Gracias por llamar a a Kaysa. Es un placer atenderlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 84.52,
+      "end": 90.24,
+      "text": " Si conoce el número de la extensión, por favor, marquéla ahora. De lo contrario,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 90.24,
+      "end": 97.14,
+      "text": " escuche nuestro menú de opciones. Marqué 1 para definitivos. Marqué 2 para remesas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 97.14,
+      "end": 104.74,
+      "text": " Marqué 3 para virtuales. Marqué 4 para consolidados. Marqué 5 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 104.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

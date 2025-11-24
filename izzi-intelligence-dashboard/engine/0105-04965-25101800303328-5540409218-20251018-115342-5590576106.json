@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800303328-5540409218-20251018-115342-5590576106.WAV",
+  "file_name": "0105-04965-25101800303328-5540409218-20251018-115342-5590576106.WAV",
+  "base_id": "0105-04965-25101800303328-5540409218-20251018-115342-5590576106",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate ahí. Esperenza, un asentor te está esperando. Por favor... Espera un momento, por favor. ¡Bueno, buenos días! ¡Bueno! ¡Hola, buenos días!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.6,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 14.0,
+      "text": " por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate ahí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " Esperenza, un asentor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.0,
+      "end": 31.89,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.89,
+      "end": 39.88,
+      "text": " ¡Bueno, buenos días!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.88,
+      "end": 41.48,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.48,
+      "end": 43.48,
+      "text": " ¡Hola, buenos días!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 43.236,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

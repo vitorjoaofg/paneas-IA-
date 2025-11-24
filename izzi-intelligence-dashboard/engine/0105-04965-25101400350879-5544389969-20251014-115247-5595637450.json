@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400350879-5544389969-20251014-115247-5595637450.WAV",
+  "file_name": "0105-04965-25101400350879-5544389969-20251014-115247-5595637450.WAV",
+  "base_id": "0105-04965-25101400350879-5544389969-20251014-115247-5595637450",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¡Hola! Buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer beneficios con la compañía. No sé si ya les comentaron. No, señor. Yo solamente marqué. ¿Si me escuchan? Buenos días. Buenos días. Le voy a pedirle a favor que ya no me vuelva a marcar. No me interesa. Me hablan todos los días tres veces. No me interesa. No quisiera que no le interesa. No le interesa. Yo le voy a poner aquí para que la borren de la base. Gracias. Muy amable. Se lo agradezco. Buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 26.4,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.4,
+      "end": 32.68,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.68,
+      "end": 37.68,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.68,
+      "end": 49.68,
+      "text": " ¡Hola! Buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.68,
+      "end": 53.68,
+      "text": " a conocer beneficios con la compañía. No sé si ya les comentaron.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.68,
+      "end": 56.68,
+      "text": " No, señor. Yo solamente marqué. ¿Si me escuchan? Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.68,
+      "end": 57.68,
+      "text": " Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.68,
+      "end": 62.68,
+      "text": " Le voy a pedirle a favor que ya no me vuelva a marcar. No me interesa. Me hablan",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.68,
+      "end": 69.68,
+      "text": " todos los días tres veces. No me interesa. No quisiera que no le interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.68,
+      "end": 73.68,
+      "text": " No le interesa. Yo le voy a poner aquí para que la borren de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 73.68,
+      "end": 76.68,
+      "text": " Gracias. Muy amable. Se lo agradezco. Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 76.68,
+      "end": 77.68,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.992,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

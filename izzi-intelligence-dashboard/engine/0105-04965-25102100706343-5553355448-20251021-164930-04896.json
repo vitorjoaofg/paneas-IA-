@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100706343-5553355448-20251021-164930-04896.WAV",
+  "file_name": "0105-04965-25102100706343-5553355448-20251021-164930-04896.WAV",
+  "base_id": "0105-04965-25102100706343-5553355448-20251021-164930-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para sí. Espera un momento, por favor. Vas en la clínica, Gire. Hola, ¿qué tal? Gracias por comunicarse. La de contactaciones Easy la tiene Alan. ¿Con quién tengo el gusto? Señor, mire, estoy marcando este número. Es de Easy, ¿verdad? Sí, así es. Ah, mire, lo que pasa es que me están llamando y me están dejando un mensaje que si quiero Easy o no, pero no, no me interesa. Pero para que ya no me sigan llamando, por favor. Si no, voy a tener que reportar el número. Gracias. Bonito día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 22.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.6,
+      "end": 24.8,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.05,
+      "end": 37.45,
+      "text": " Vas en la clínica, Gire.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.45,
+      "end": 41.91,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse. La de contactaciones Easy la tiene Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.91,
+      "end": 43.31,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.31,
+      "end": 49.06,
+      "text": " Señor, mire, estoy marcando este número. Es de Easy, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 49.06,
+      "end": 50.46,
+      "text": " Sí, así es.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.46,
+      "end": 55.66,
+      "text": " Ah, mire, lo que pasa es que me están llamando y me están dejando un mensaje",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.66,
+      "end": 58.66,
+      "text": " que si quiero Easy o no, pero no, no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 58.66,
+      "end": 61.66,
+      "text": " Pero para que ya no me sigan llamando, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.66,
+      "end": 64.66,
+      "text": " Si no, voy a tener que reportar el número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 64.66,
+      "end": 65.66,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 65.66,
+      "end": 67.06,
+      "text": " Bonito día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

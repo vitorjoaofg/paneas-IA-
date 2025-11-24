@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400524749-3314541388-20251014-142558-3335740067.WAV",
+  "file_name": "0105-04965-25101400524749-3314541388-20251014-142558-3335740067.WAV",
+  "base_id": "0105-04965-25101400524749-3314541388-20251014-142558-3335740067",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Slice Boys de 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Muy bien. Muy bien. Luego hablamos, ¿sale? Espera un momento, por favor. Bueno. Hola, buenas tardes. Hola, buenas tardes. Buenas tardes. ¿Qué tal? Se está comunicando a Contrataciones Easy. Mi nombre es Omar Fonseca. ¿Con quién tengo contacto? Mire, ya la habíamos comunicado, no más que a la persona indicada, ¿no? Hasta ahorita. Ah, ok. Luego la comunicamos. ¿Sí? Perfecto. Tenga buen día. Ande. A ver, pues vale. Ahí está bien. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Slice Boys de 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 20.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 24.64,
+      "text": " Muy bien. Muy bien. Luego hablamos, ¿sale?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.64,
+      "end": 26.64,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.64,
+      "end": 33.27,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.27,
+      "end": 35.46,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.46,
+      "end": 36.46,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.46,
+      "end": 37.46,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.46,
+      "end": 41.46,
+      "text": " ¿Qué tal? Se está comunicando a Contrataciones Easy. Mi nombre es Omar Fonseca. ¿Con quién tengo contacto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.46,
+      "end": 46.46,
+      "text": " Mire, ya la habíamos comunicado, no más que a la persona indicada, ¿no? Hasta ahorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.46,
+      "end": 48.35,
+      "text": " Ah, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 48.35,
+      "end": 50.35,
+      "text": " Luego la comunicamos. ¿Sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 50.35,
+      "end": 51.35,
+      "text": " Perfecto. Tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.35,
+      "end": 53.35,
+      "text": " Ande. A ver, pues vale. Ahí está bien. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 69.516,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

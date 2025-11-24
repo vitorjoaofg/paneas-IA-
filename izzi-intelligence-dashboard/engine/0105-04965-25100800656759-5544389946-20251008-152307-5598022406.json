@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800656759-5544389946-20251008-152307-5598022406.WAV",
+  "file_name": "0105-04965-25100800656759-5544389946-20251008-152307-5598022406.WAV",
+  "base_id": "0105-04965-25100800656759-5544389946-20251008-152307-5598022406",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Buenas tardes. Hablé Totanamantes de la compañía de Easy. ¿Con qué tengo el gusto? Con Concepción Canales, joven, pero ¿qué crees? Que ahí en mi zona no hay, ustedes no tienen cobertura. De hecho yo quise contratar con ustedes pero no había cobertura. O sea, no hay cobertura. ¿Hace cuánto fue eso? Hace dos, tres meses. Ah, sí, reciente, sí, reciente. Sí, sí, no hay cobertura. Bueno, pues muchas gracias Totanamie, amada. Que tenga un bonito día. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 38.9,
+      "text": " para no. Espera un momento, por favor. Sí, buenas tardes. Buenas tardes. Hablé",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.9,
+      "end": 42.86,
+      "text": " Totanamantes de la compañía de Easy. ¿Con qué tengo el gusto? Con Concepción",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.86,
+      "end": 48.26,
+      "text": " Canales, joven, pero ¿qué crees? Que ahí en mi zona no hay, ustedes no tienen",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.26,
+      "end": 53.3,
+      "text": " cobertura. De hecho yo quise contratar con ustedes pero no había",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.3,
+      "end": 59.18,
+      "text": " cobertura. O sea, no hay cobertura. ¿Hace cuánto fue eso? Hace dos, tres",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.22,
+      "end": 64.94,
+      "text": " meses. Ah, sí, reciente, sí, reciente. Sí, sí, no hay cobertura. Bueno, pues",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.94,
+      "end": 69.46,
+      "text": " muchas gracias Totanamie, amada. Que tenga un bonito día. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.172,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

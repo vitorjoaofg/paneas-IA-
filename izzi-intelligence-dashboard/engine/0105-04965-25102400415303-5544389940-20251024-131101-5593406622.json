@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400415303-5544389940-20251024-131101-5593406622.WAV",
+  "file_name": "0105-04965-25102400415303-5544389940-20251024-131101-5593406622.WAV",
+  "base_id": "0105-04965-25102400415303-5544389940-20251024-131101-5593406622",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Disney, más Skyport, desde 350 pesos el primer mes, con INTI, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.26,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.26,
+      "end": 14.26,
+      "text": " Disney, más Skyport, desde 350 pesos el primer mes, con INTI, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.26,
+      "end": 15.26,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 15.26,
+      "end": 17.26,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.26,
+      "end": 30.12,
+      "text": " Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 34.38,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

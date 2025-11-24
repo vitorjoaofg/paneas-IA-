@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101000292281-3314541357-20251010-104916-7291112644.WAV",
+  "file_name": "0105-04999-25101000292281-3314541357-20251010-104916-7291112644.WAV",
+  "base_id": "0105-04999-25101000292281-3314541357-20251010-104916-7291112644",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Sí. Espera un momento por favor. Ya tengo el gusto con... ¿con quién tengo el gusto? Quiero saber cómo fue porque yo nunca pedí de información para contratar sus servicios y me llaman más de 10 veces al día. Ya me están hostigando. No, pues usted lo sabe, yo menos señorita. Ah, pues sí, ¿verdad? Claro. Lo bueno es que no ofreces otro tipo de servicios, pendeja.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 22.92,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 31.54,
+      "text": " dos para no. Sí. Espera un momento por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.82,
+      "end": 44.34,
+      "text": " Ya tengo el gusto con... ¿con quién tengo el gusto? Quiero saber cómo fue porque yo nunca",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.34,
+      "end": 49.82,
+      "text": " pedí de información para contratar sus servicios y me llaman más de 10 veces",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.82,
+      "end": 56.73,
+      "text": " al día. Ya me están hostigando. No, pues usted lo sabe, yo menos señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.73,
+      "end": 61.22,
+      "text": " Ah, pues sí, ¿verdad? Claro. Lo bueno es que no ofreces otro tipo de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.22,
+      "end": 64.5,
+      "text": " servicios, pendeja.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.692,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

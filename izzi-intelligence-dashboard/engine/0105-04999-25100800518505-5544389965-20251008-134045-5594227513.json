@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800518505-5544389965-20251008-134045-5594227513.WAV",
+  "file_name": "0105-04999-25100800518505-5544389965-20251008-134045-5594227513.WAV",
+  "base_id": "0105-04999-25100800518505-5544389965-20251008-134045-5594227513",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde $350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Don Tracho, ¿sí, sí, en qué le puedo ayudar? Desde el otro día me están marcando para darme una promoción de Easy. Pero yo ya tengo Easy. Muy bien, entonces agrego el comentario para que lo quiten de los números de Skype. ¿Puedo cambiar mi paquete? No. Bueno, lo conmigo no sería como nada más hago contrataciones, pero sí lo puede modificar al número 800-125000 en la extensión 2. Ah, ok. Bueno. Entonces, ¿para qué no me estén marcando? Sí, agrego el comentario. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.14,
+      "end": 6.98,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.98,
+      "end": 11.38,
+      "text": " más Sky Sports desde $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.38,
+      "end": 13.38,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.38,
+      "end": 14.38,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.38,
+      "end": 16.58,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.58,
+      "end": 22.33,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.33,
+      "end": 30.78,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.78,
+      "end": 33.67,
+      "text": " Don Tracho, ¿sí, sí, en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.67,
+      "end": 38.67,
+      "text": " Desde el otro día me están marcando para darme una promoción de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.9,
+      "end": 41.99,
+      "text": " Pero yo ya tengo Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.99,
+      "end": 45.99,
+      "text": " Muy bien, entonces agrego el comentario para que lo quiten de los números de Skype.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.99,
+      "end": 47.99,
+      "text": " ¿Puedo cambiar mi paquete? No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.99,
+      "end": 51.5,
+      "text": " Bueno, lo conmigo no sería como nada más hago contrataciones,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.5,
+      "end": 56.5,
+      "text": " pero sí lo puede modificar al número 800-125000 en la extensión 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 56.5,
+      "end": 58.76,
+      "text": " Ah, ok. Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.76,
+      "end": 61.76,
+      "text": " Entonces, ¿para qué no me estén marcando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.76,
+      "end": 63.05,
+      "text": " Sí, agrego el comentario.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 63.05,
+      "end": 64.05,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.164,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

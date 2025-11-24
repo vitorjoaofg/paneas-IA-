@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800192215-5544389926-20251008-094155-5556268300.WAV",
+  "file_name": "0105-04965-25100800192215-5544389926-20251008-094155-5556268300.WAV",
+  "base_id": "0105-04965-25100800192215-5544389926-20251008-094155-5556268300",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenos días SEMEX, buenos días. Hola, ¿qué tal? Buenos días, caballero. Habla Milián Oseguera de parte de Easy. Mi llamada es para darle a conocer algunos beneficios que se le están brindando para cliente nuevo activo. No sé si ya usa usted el servicio con nosotros. Lo que pasa es que está hablando a la planta SEMEX. Entonces, eso ya lo manejarían directamente con ventas. Ah, ok, ok, perfecto caballero, una disculpa. Bonito día. No, no se preocupe, igual.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 25.86,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.86,
+      "end": 38.7,
+      "text": " momento, por favor. Sí, buenos días SEMEX, buenos días. Hola, ¿qué tal? Buenos días,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.7,
+      "end": 42.9,
+      "text": " caballero. Habla Milián Oseguera de parte de Easy. Mi llamada es para darle a conocer",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.9,
+      "end": 46.74,
+      "text": " algunos beneficios que se le están brindando para cliente nuevo activo. No sé si ya",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.74,
+      "end": 51.63,
+      "text": " usa usted el servicio con nosotros. Lo que pasa es que está hablando a la planta SEMEX.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.63,
+      "end": 57.95,
+      "text": " Entonces, eso ya lo manejarían directamente con ventas. Ah, ok, ok, perfecto caballero,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.95,
+      "end": 60.15,
+      "text": " una disculpa. Bonito día. No, no se preocupe, igual.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 115.38,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

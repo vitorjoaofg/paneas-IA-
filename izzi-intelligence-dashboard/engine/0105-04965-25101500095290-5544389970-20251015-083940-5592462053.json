@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500095290-5544389970-20251015-083940-5592462053.WAV",
+  "file_name": "0105-04965-25101500095290-5544389970-20251015-083940-5592462053.WAV",
+  "base_id": "0105-04965-25101500095290-5544389970-20251015-083940-5592462053",
+  "transcription": "Si conoces el número de extensión, márcalo ahora, de lo contrario marca cero y serás atendido por un ejecutivo. Mas Skysports, desde 350 pesos el primer mes, con Easy, es posible. Lo siento, no lo entiendo, por favor, vuelva a intentarlo. Gracias por llamar a Citelcom. Si conoces el número de extensión, márcalo ahora, de lo contrario marca cero y serás atendido por un ejecutivo. Bueno, bueno, buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.2,
+      "text": " Si conoces el número de extensión, márcalo ahora, de lo contrario marca cero y serás",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.2,
+      "end": 7.0,
+      "text": " atendido por un ejecutivo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.0,
+      "end": 13.36,
+      "text": " Mas Skysports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.36,
+      "end": 18.94,
+      "text": " Lo siento, no lo entiendo, por favor, vuelva a intentarlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.94,
+      "end": 21.5,
+      "text": " Gracias por llamar a Citelcom.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.5,
+      "end": 26.62,
+      "text": " Si conoces el número de extensión, márcalo ahora, de lo contrario marca cero y serás",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.62,
+      "end": 33.96,
+      "text": " atendido por un ejecutivo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.96,
+      "end": 35.16,
+      "text": " Bueno, bueno, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 35.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

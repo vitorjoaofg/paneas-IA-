@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500686208-3315947186-20251025-163409-04896.WAV",
+  "file_name": "0105-04965-25102500686208-3315947186-20251025-163409-04896.WAV",
+  "base_id": "0105-04965-25102500686208-3315947186-20251025-163409-04896",
+  "transcription": "Gracias por comunicarte a IZI. Tenemos las mejores promociones para IZI. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para IZI o 2 para no. Espera un momento, por favor. Me presento, mi nombre es Liza Carrillo de parte de Promociones de la Compañía IZI. ¿Con quién tengo el gusto? Disculpa. ¿Qué tal un buenas tardes? No se escucha. ¿Con quién tengo el gusto? Disculpa.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a IZI. Tenemos las mejores promociones para IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 23.6,
+      "text": " Por favor, hable o pulse 1 para IZI o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.6,
+      "end": 28.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.26,
+      "end": 40.62,
+      "text": " Me presento, mi nombre es Liza Carrillo de parte de Promociones de la Compañía IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.62,
+      "end": 42.62,
+      "text": " ¿Con quién tengo el gusto? Disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.62,
+      "end": 55.44,
+      "text": " ¿Qué tal un buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.44,
+      "end": 56.44,
+      "text": " No se escucha.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.46,
+      "end": 65.46,
+      "text": " ¿Con quién tengo el gusto? Disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.568,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

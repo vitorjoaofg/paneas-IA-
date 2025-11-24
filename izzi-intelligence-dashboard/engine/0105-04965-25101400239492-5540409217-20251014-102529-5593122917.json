@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400239492-5540409217-20251014-102529-5593122917.WAV",
+  "file_name": "0105-04965-25101400239492-5540409217-20251014-102529-5593122917.WAV",
+  "base_id": "0105-04965-25101400239492-5540409217-20251014-102529-5593122917",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, muy buen día. Hola, buenos días. Lo que pasa es que ya les había dicho que ya quería que pararan las grabaciones y sí respetaron más o menos como tres semanas y ahorita otra vez me está apareciendo la grabación todos los días y es muy molesta. Necesito que me borres, por favor, de esa base de datos. No estoy interesada en cambiar de compañía. Muchísimas gracias, pero se me hace una falta de respeto que suelten todos los días una grabadora a todas horas. Entonces, por favor, bórrame. Ok, aquí lo pondré en el sistema. Ya tengo un excelente día. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.14,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.14,
+      "end": 38.62,
+      "text": " para no. Espera un momento, por favor. Hola, muy buen día. Hola, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.62,
+      "end": 44.54,
+      "text": " Lo que pasa es que ya les había dicho que ya quería que pararan las",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.54,
+      "end": 48.98,
+      "text": " grabaciones y sí respetaron más o menos como tres semanas y ahorita otra",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.98,
+      "end": 52.74,
+      "text": " vez me está apareciendo la grabación todos los días y es muy molesta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.74,
+      "end": 56.02,
+      "text": " Necesito que me borres, por favor, de esa base de datos. No estoy",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.02,
+      "end": 60.54,
+      "text": " interesada en cambiar de compañía. Muchísimas gracias, pero se me hace una",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.54,
+      "end": 64.98,
+      "text": " falta de respeto que suelten todos los días una grabadora a todas horas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.98,
+      "end": 69.38,
+      "text": " Entonces, por favor, bórrame. Ok, aquí lo pondré en el sistema.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.38,
+      "end": 73.82,
+      "text": " Ya tengo un excelente día. Gracias. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

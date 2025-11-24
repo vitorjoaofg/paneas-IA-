@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200601852-5544389995-20251022-151521-5592320208.WAV",
+  "file_name": "0105-04965-25102200601852-5544389995-20251022-151521-5592320208.WAV",
+  "base_id": "0105-04965-25102200601852-5544389995-20251022-151521-5592320208",
+  "transcription": "Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con Rick Premium, más Skye Boy desde los 150 metros en primer mes con Indy, es posible. Una profesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Shimi Karnal. Shimi Karnal. Hola, buenas tardes. Buenas tardes. Le atiendo a Ernestina Martínez de la compañía Easy. ¿Con quién tengo el gusto? Con Eduardo. Mucho gusto. Eduardo, actualmente, ¿usted es cliente Easy o desea revisar algún proceso de control? Yo soy cliente. Ah, ok. ¿Le llegó alguna notificación para alguna promoción? Sí. Indíqueme, por favor, cuál es la información que le brindan.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener internet más televisión, más el mejor entretenimiento con Rick Premium, más Skye Boy desde los 150 metros en primer mes con Indy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 24.31,
+      "text": " Una profesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.31,
+      "end": 30.34,
+      "text": " Shimi Karnal. Shimi Karnal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 30.34,
+      "end": 31.5,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.5,
+      "end": 33.5,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.5,
+      "end": 38.42,
+      "text": " Le atiendo a Ernestina Martínez de la compañía Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.42,
+      "end": 40.42,
+      "text": " Con Eduardo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.42,
+      "end": 45.42,
+      "text": " Mucho gusto. Eduardo, actualmente, ¿usted es cliente Easy o desea revisar algún proceso de control?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.42,
+      "end": 46.42,
+      "text": " Yo soy cliente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.42,
+      "end": 51.13,
+      "text": " Ah, ok. ¿Le llegó alguna notificación para alguna promoción?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.13,
+      "end": 52.13,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.13,
+      "end": 56.93,
+      "text": " Indíqueme, por favor, cuál es la información que le brindan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.716,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

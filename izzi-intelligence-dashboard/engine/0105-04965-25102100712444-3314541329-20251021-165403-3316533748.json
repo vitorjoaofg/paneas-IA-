@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100712444-3314541329-20251021-165403-3316533748.WAV",
+  "file_name": "0105-04965-25102100712444-3314541329-20251021-165403-3316533748.WAV",
+  "base_id": "0105-04965-25102100712444-3314541329-20251021-165403-3316533748",
+  "transcription": "Hola, ¿te gustaría navegar en el internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cambia P.A.I. ¿Qué te interesa? Un asesor te está esperando. Por favor, deja tu mensaje después del tono. Si necesitas volver a grabar, marca el signo de número y espera instrucciones. Para escuchar el mensaje, marca 1. Para continuar con la grabación en este punto, marca 2. Para eliminar este mensaje, marca 3. Para volver a grabar el mensaje, marca 4. Para enviar el mensaje, marca 5. Para escuchar el mensaje, marca 1.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en el internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 13.64,
+      "text": " pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.64,
+      "end": 16.56,
+      "text": " No lo pienses más y cambia P.A.I.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.56,
+      "end": 17.56,
+      "text": " ¿Qué te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.56,
+      "end": 19.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.56,
+      "end": 22.16,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.16,
+      "end": 30.08,
+      "text": " Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.08,
+      "end": 59.28,
+      "text": " Para escuchar el mensaje, marca 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.28,
+      "end": 63.36,
+      "text": " Para continuar con la grabación en este punto, marca 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.36,
+      "end": 66.64,
+      "text": " Para eliminar este mensaje, marca 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.64,
+      "end": 70.08,
+      "text": " Para volver a grabar el mensaje, marca 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.08,
+      "end": 79.78,
+      "text": " Para enviar el mensaje, marca 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 79.78,
+      "end": 82.82,
+      "text": " Para escuchar el mensaje, marca 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 119.052,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

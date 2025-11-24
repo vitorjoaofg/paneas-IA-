@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800107698-5544389959-20251028-084415-5557989234.WAV",
+  "file_name": "0105-04965-25102800107698-5544389959-20251028-084415-5557989234.WAV",
+  "base_id": "0105-04965-25102800107698-5544389959-20251028-084415-5557989234",
+  "transcription": "Hola, ¿te gustaría tener Internet más Televisión? Más de grabar y monitorear aparecimientos de calidad de mi servicio. Más Skype, por que si quieres conocimiento en cuenta, puedes ir al primer mes con EasyServicio.me. Un asesor te está esperando. Por favor, se está transcurriendo. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.8,
+      "text": " Hola, ¿te gustaría tener Internet más Televisión?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.8,
+      "end": 6.96,
+      "text": " Más de grabar y monitorear aparecimientos de calidad de mi servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 6.96,
+      "end": 9.84,
+      "text": " Más Skype, por que si quieres conocimiento en cuenta,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 9.84,
+      "end": 14.36,
+      "text": " puedes ir al primer mes con EasyServicio.me.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.36,
+      "end": 16.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.56,
+      "end": 18.64,
+      "text": " Por favor, se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.2,
+      "end": 27.08,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 30.96,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

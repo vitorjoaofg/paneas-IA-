@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100847297-5544389908-20251011-171025-5563783805.WAV",
+  "file_name": "0105-04965-25101100847297-5544389908-20251011-171025-5563783805.WAV",
+  "base_id": "0105-04965-25101100847297-5544389908-20251011-171025-5563783805",
+  "transcription": "¡Buena! ¡Buena! ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos el primer mes, con Easy, es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. ¡Espera un momento, por favor! ¡Me toca a gón! ¡Me toca a gón, chau! ¡Me toca a gón! ¡Le digo! ¡Le digo! ¡Hay pedo!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 0.5,
+      "text": " ¡Buena!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.07,
+      "end": 2.57,
+      "text": " ¡Buena!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 2.57,
+      "end": 8.67,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.67,
+      "end": 15.05,
+      "text": " más Skysports, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 15.05,
+      "end": 16.15,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.15,
+      "end": 18.31,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 18.31,
+      "end": 22.33,
+      "text": " Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.33,
+      "end": 25.92,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 25.92,
+      "end": 86.77,
+      "text": " ¡Me toca a gón!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 86.77,
+      "end": 88.27,
+      "text": " ¡Me toca a gón, chau! ¡Me toca a gón!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 88.27,
+      "end": 91.49,
+      "text": " ¡Le digo! ¡Le digo! ¡Hay pedo!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.232,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800597390-5544389949-20251008-143911-5592802372.WAV",
+  "file_name": "0105-04965-25100800597390-5544389949-20251008-143911-5592802372.WAV",
+  "base_id": "0105-04965-25100800597390-5544389949-20251008-143911-5592802372",
+  "transcription": "Hola, ¿te gustaría tener internet, más selección, más el mejor entretenimiento con Vix Twin, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. A ver, voy a meter una vez el asesor. Hola, ¿qué tal? Buenas tardes, gracias por comunicaros. El área de contrataciones de Easy la atiende Validania, con quien tenga el gusto. Mi comunico no por gusto, sino por molestia. ¿Cómo le puedo hacer para evitar este tipo de llamadas todo el santo día y marque, y marque, y marque? Le pongo aquí a los que me enteren, no se preocupen. La verdad es que tengo buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener internet, más selección, más el mejor entretenimiento con Vix Twin, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 22.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.0,
+      "end": 25.0,
+      "text": " A ver, voy a meter una vez el asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.0,
+      "end": 34.19,
+      "text": " Hola, ¿qué tal? Buenas tardes, gracias por comunicaros. El área de contrataciones de Easy la atiende Validania, con quien tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.19,
+      "end": 47.48,
+      "text": " Mi comunico no por gusto, sino por molestia. ¿Cómo le puedo hacer para evitar este tipo de llamadas todo el santo día y marque, y marque, y marque?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.48,
+      "end": 52.38,
+      "text": " Le pongo aquí a los que me enteren, no se preocupen. La verdad es que tengo buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.772,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

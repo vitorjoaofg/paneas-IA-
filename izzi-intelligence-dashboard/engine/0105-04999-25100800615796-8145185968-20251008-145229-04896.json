@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100800615796-8145185968-20251008-145229-04896.WAV",
+  "file_name": "0105-04999-25100800615796-8145185968-20251008-145229-04896.WAV",
+  "base_id": "0105-04999-25100800615796-8145185968-20251008-145229-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Contratación de Easy, ¿en qué le puedo ayudar? Que tal, buenos días, joven. Me marcaron este número. Ok. ¿Se te cuenta con servicio Easy en casa? Ya, ya he encuentro con Easy. Ah, ok. A lo mejor lo marcaron porque estamos asesorando lo que es el nuevo servicio de telefonía móvil para el celular, señor. No sé si le habían comentado la información de qué fue la idea. Eh, sí, pero ya tengo que contratar hoy a Easy. Ah, ok. Excelente. Muy bien. Entonces, aquí he verado el comentario, ¿muy bien? Ok, muchas gracias. A usted, que pase un buen día. Muchas gracias por vuestra ayuda.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.84,
+      "end": 11.64,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.64,
+      "end": 17.4,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.4,
+      "end": 23.4,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.4,
+      "end": 27.4,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.15,
+      "end": 36.38,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.38,
+      "end": 39.23,
+      "text": " Contratación de Easy, ¿en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.23,
+      "end": 43.77,
+      "text": " Que tal, buenos días, joven. Me marcaron este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.77,
+      "end": 46.77,
+      "text": " Ok. ¿Se te cuenta con servicio Easy en casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 46.77,
+      "end": 48.9,
+      "text": " Ya, ya he encuentro con Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.9,
+      "end": 54.1,
+      "text": " Ah, ok. A lo mejor lo marcaron porque estamos asesorando lo que es el nuevo servicio de telefonía móvil para el celular, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 54.1,
+      "end": 57.1,
+      "text": " No sé si le habían comentado la información de qué fue la idea.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.1,
+      "end": 62.63,
+      "text": " Eh, sí, pero ya tengo que contratar hoy a Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 62.83,
+      "end": 66.83,
+      "text": " Ah, ok. Excelente. Muy bien. Entonces, aquí he verado el comentario, ¿muy bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 66.83,
+      "end": 67.83,
+      "text": " Ok, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 67.83,
+      "end": 70.83,
+      "text": " A usted, que pase un buen día. Muchas gracias por vuestra ayuda.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.064,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

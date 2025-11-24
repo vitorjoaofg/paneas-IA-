@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102300435414-8125061553-20251023-130734-04896.WAV",
+  "file_name": "0105-04999-25102300435414-8125061553-20251023-130734-04896.WAV",
+  "base_id": "0105-04999-25102300435414-8125061553-20251023-130734-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hombre, es Graciela López de parte de Easy. Están llamando al área de contrataciones Easy. ¿Le interesó alguno de nuestros productos? ¿Con quién tengo el gusto? Hola. Hola, buen día. Hola. Hola. Por efectos de calidad tendremos que colgar esta llamada. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.72,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.72,
+      "end": 13.76,
+      "text": " más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.76,
+      "end": 20.12,
+      "text": " mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.12,
+      "end": 26.96,
+      "text": " hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.28,
+      "end": 38.37,
+      "text": " Hombre, es Graciela López de parte de Easy. Están llamando al área de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.37,
+      "end": 45.78,
+      "text": " ¿Le interesó alguno de nuestros productos? ¿Con quién tengo el gusto? Hola. Hola,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.78,
+      "end": 60.19,
+      "text": " buen día. Hola. Hola. Por efectos de calidad tendremos que colgar esta llamada. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

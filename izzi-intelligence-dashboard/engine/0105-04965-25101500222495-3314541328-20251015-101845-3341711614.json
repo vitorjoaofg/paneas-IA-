@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500222495-3314541328-20251015-101845-3341711614.WAV",
+  "file_name": "0105-04965-25101500222495-3314541328-20251015-101845-3341711614.WAV",
+  "base_id": "0105-04965-25101500222495-3314541328-20251015-101845-3341711614",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí... Buzón de voz. Tu llamada está siendo transferida y se cobrará al terminar los tonos siguientes. Espera un momento, por favor. Por favor. ¿Hola? Por favor, deja tu mensaje después del tono. Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.58,
+      "end": 8.28,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.28,
+      "end": 12.78,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.78,
+      "end": 14.48,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.48,
+      "end": 15.78,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 15.78,
+      "end": 17.98,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.98,
+      "end": 19.98,
+      "text": " Por favor, hable o pulse uno para sí...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.98,
+      "end": 21.18,
+      "text": " Buzón de voz.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.18,
+      "end": 25.48,
+      "text": " Tu llamada está siendo transferida y se cobrará al terminar los tonos siguientes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.9,
+      "end": 28.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 28.1,
+      "end": 28.8,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 89.6,
+      "end": 90.1,
+      "text": " ¿Hola?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 108.36,
+      "end": 111.56,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 111.56,
+      "end": 116.56,
+      "text": " Si necesitas volver a grabar, marca el signo de número y espera instrucciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 124.74,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

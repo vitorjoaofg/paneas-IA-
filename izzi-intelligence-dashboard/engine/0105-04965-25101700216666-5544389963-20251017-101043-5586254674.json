@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700216666-5544389963-20251017-101043-5586254674.WAV",
+  "file_name": "0105-04965-25101700216666-5544389963-20251017-101043-5586254674.WAV",
+  "base_id": "0105-04965-25101700216666-5544389963-20251017-101043-5586254674",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un profesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Permítanme un momento ahorita a ver si contestan. Espera un momento, por favor. Hola, muy buen día. Hola, muy buen día. Mi nombre es Richie Lowe de parte de Easy. ¿Con quién tengo el gusto? Hola, muy buen día. Hola, buen día. Hola. Hola. Hola. ¿Me escuchas? Hola. Hola, buen día. Hola. Hola, buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un profesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 24.2,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.2,
+      "end": 27.2,
+      "text": " Permítanme un momento ahorita a ver si contestan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.2,
+      "end": 36.79,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.79,
+      "end": 41.79,
+      "text": " Hola, muy buen día. Hola, muy buen día. Mi nombre es Richie Lowe de parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.79,
+      "end": 44.79,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.79,
+      "end": 78.16,
+      "text": " Hola, muy buen día. Hola, buen día. Hola. Hola. Hola. ¿Me escuchas? Hola. Hola, buen día. Hola. Hola, buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.452,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

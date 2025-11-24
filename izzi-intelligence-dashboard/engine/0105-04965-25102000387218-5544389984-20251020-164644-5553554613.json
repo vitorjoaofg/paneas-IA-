@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000387218-5544389984-20251020-164644-5553554613.WAV",
+  "file_name": "0105-04965-25102000387218-5544389984-20251020-164644-5553554613.WAV",
+  "base_id": "0105-04965-25102000387218-5544389984-20251020-164644-5553554613",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIPs Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo tienes ni más, y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o no. Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse al área de contratación de Easy y de atender a la... ¿Qué tal? Buenas tardes. ¿Se me escucha? Sí. ¿Te estás comunicando al área de contratación de Easy con quien tengo el gusto? Miren, no me interesa ahorita, ando trabajando, señor, y no tengo tiempo de atender. Muy bien. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, VIPs Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo tienes ni más, y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 25.18,
+      "text": " te está esperando. Por favor, hable o no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.26,
+      "end": 36.26,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse al área de contratación de Easy y de atender",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.26,
+      "end": 43.67,
+      "text": " a la... ¿Qué tal? Buenas tardes. ¿Se me escucha? Sí. ¿Te estás comunicando al área",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.67,
+      "end": 50.74,
+      "text": " de contratación de Easy con quien tengo el gusto? Miren, no me interesa ahorita, ando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.74,
+      "end": 54.74,
+      "text": " trabajando, señor, y no tengo tiempo de atender. Muy bien. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

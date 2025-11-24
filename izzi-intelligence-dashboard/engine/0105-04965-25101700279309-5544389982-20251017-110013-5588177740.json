@@ -1,0 +1,798 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700279309-5544389982-20251017-110013-5588177740.WAV",
+  "file_name": "0105-04965-25101700279309-5544389982-20251017-110013-5588177740.WAV",
+  "base_id": "0105-04965-25101700279309-5544389982-20251017-110013-5588177740",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. ¿Qué tal? Buenos días, caballero. Le atiende Mirian Goseguera de los servicios de Easy en el área de contrataciones, servicio de Internet, televisión por cable y telefonía para el celular. No sé en qué lo puedo apoyar el día de hoy. Están ofreciendo un plan de 300 pesos. Quiero saber qué es lo que ofrece. Sí, tenemos el servicio de los 350 pesos. ¿Con qué compañía tiene usted su servicio actualmente, perdón? ¿Con quién, perdón? Total Play. Ah, ok, perfecto. Mire, el de 350 que se le menciona en llamada. Tengo los planes. Es en la primera mensualidad. Pero el servicio es de 80 megas de Internet, llamadas ilimitadas con línea telefónica. Es por 510 pesos. La primera mensualidad le queda en 350. Y tendría 2 meses con descuento, pagando 419 pesos al mes. Igual tengo el servicio del Triple Play, Internet, televisión por cable y línea telefónica por 80 megas de Internet, 200 canales, línea telefónica, 690 pesos es el costo de lista. Y igual, la instalación sería por 350 pesos que cubriría su primera mensualidad. Caballo, desde luego lleva descuento por 6 meses pagando 599 pesos. Sí, claro, claro. Oye, una duda. Dígame usted. Yo actualmente tengo un servicio que me cubre más de 300 megas por segundo la velocidad del Internet. De hecho, lo necesito para trabajar. Algo así, Nisi, en cuanto me saldría. Sí, ¿sería solo servicio de Internet? Me interesa también tenerlo... Televisión. ...tables, teléfono. OK. Tengo uno que es de 500 megas de Internet, 200 canales y es por 970 pesos al mes. Ah, ya, ya, ya. Sí, quería preguntar porque digo, actualmente yo estoy pagando 600... 650, creo, por los 300... No, esto me sube a 450 megas por segundo. Pero no tengo canales de Internet, entonces por eso quería preguntar. Sí, son 500 megas con televisión por 970 y tengo el de 500 megas, igual con línea telefónica sin televisión en 790. Ya de ahí se derivan otras velocidades, que sería el de 200 megas por 670 y igual 200 megas con televisión que darían 850. Ah, bueno. OK, está bien. Digo nada más para... para ver porque me interesa la televisión para trabajar. Si no, no le puedo... ¿Te entiendes? Sí, y ya aquí pues igual, si conservan su mismo número de teléfono con nosotros, se les da un descuento adicional y se les da descuento por domiciliación de pagos que sería un aproximado de 50 pesos, sumados son 65 pesos de descuento en cualquiera de los paquetes. Sí, está bien. Muchas gracias. A usted, caballero. Bonito día. Gracias, realmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.64,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.64,
+      "end": 25.39,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.39,
+      "end": 27.39,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.39,
+      "end": 31.39,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.43,
+      "end": 33.43,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.43,
+      "end": 45.06,
+      "text": " ¿Qué tal? Buenos días, caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 45.06,
+      "end": 49.06,
+      "text": " Le atiende Mirian Goseguera de los servicios de Easy en el área de contrataciones,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.06,
+      "end": 53.06,
+      "text": " servicio de Internet, televisión por cable y telefonía para el celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 53.06,
+      "end": 55.06,
+      "text": " No sé en qué lo puedo apoyar el día de hoy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 55.06,
+      "end": 59.77,
+      "text": " Están ofreciendo un plan de 300 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.77,
+      "end": 61.77,
+      "text": " Quiero saber qué es lo que ofrece.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 61.77,
+      "end": 67.41,
+      "text": " Sí, tenemos el servicio de los 350 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 67.41,
+      "end": 70.41,
+      "text": " ¿Con qué compañía tiene usted su servicio actualmente, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 70.41,
+      "end": 74.67,
+      "text": " ¿Con quién, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 74.71,
+      "end": 75.71,
+      "text": " Total Play.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 75.71,
+      "end": 77.71,
+      "text": " Ah, ok, perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 77.71,
+      "end": 80.71,
+      "text": " Mire, el de 350 que se le menciona en llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 80.71,
+      "end": 82.71,
+      "text": " Tengo los planes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 82.71,
+      "end": 84.71,
+      "text": " Es en la primera mensualidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 84.71,
+      "end": 87.71,
+      "text": " Pero el servicio es de 80 megas de Internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 87.71,
+      "end": 90.71,
+      "text": " llamadas ilimitadas con línea telefónica.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 90.71,
+      "end": 92.71,
+      "text": " Es por 510 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 92.71,
+      "end": 96.71,
+      "text": " La primera mensualidad le queda en 350.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 96.71,
+      "end": 99.71,
+      "text": " Y tendría 2 meses con descuento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 99.71,
+      "end": 102.71,
+      "text": " pagando 419 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 102.75,
+      "end": 105.75,
+      "text": " Igual tengo el servicio del Triple Play,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 105.75,
+      "end": 108.75,
+      "text": " Internet, televisión por cable y línea telefónica",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 108.75,
+      "end": 111.75,
+      "text": " por 80 megas de Internet, 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 111.75,
+      "end": 116.75,
+      "text": " línea telefónica, 690 pesos es el costo de lista.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 116.75,
+      "end": 120.75,
+      "text": " Y igual, la instalación sería por 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 120.75,
+      "end": 122.75,
+      "text": " que cubriría su primera mensualidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 122.75,
+      "end": 125.75,
+      "text": " Caballo, desde luego lleva descuento por 6 meses",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 125.75,
+      "end": 127.75,
+      "text": " pagando 599 pesos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 127.75,
+      "end": 128.75,
+      "text": " Sí, claro, claro.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 128.75,
+      "end": 130.75,
+      "text": " Oye, una duda.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 130.79,
+      "end": 131.79,
+      "text": " Dígame usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 131.79,
+      "end": 133.79,
+      "text": " Yo actualmente tengo un servicio",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 133.79,
+      "end": 138.79,
+      "text": " que me cubre más de 300 megas por segundo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 138.79,
+      "end": 140.79,
+      "text": " la velocidad del Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 140.79,
+      "end": 143.79,
+      "text": " De hecho, lo necesito para trabajar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 143.79,
+      "end": 146.79,
+      "text": " Algo así, Nisi, en cuanto me saldría.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 146.79,
+      "end": 151.02,
+      "text": " Sí, ¿sería solo servicio de Internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 151.02,
+      "end": 153.02,
+      "text": " Me interesa también tenerlo...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 153.02,
+      "end": 154.02,
+      "text": " Televisión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 154.02,
+      "end": 157.27,
+      "text": " ...tables, teléfono.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 157.31,
+      "end": 158.47,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 158.47,
+      "end": 162.47,
+      "text": " Tengo uno que es de 500 megas de Internet,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 162.47,
+      "end": 167.47,
+      "text": " 200 canales y es por 970 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 167.47,
+      "end": 169.47,
+      "text": " Ah, ya, ya, ya.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 169.47,
+      "end": 170.47,
+      "text": " Sí, quería preguntar porque digo,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 170.47,
+      "end": 173.47,
+      "text": " actualmente yo estoy pagando 600...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 173.47,
+      "end": 177.66,
+      "text": " 650, creo, por los 300...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 177.66,
+      "end": 181.66,
+      "text": " No, esto me sube a 450 megas por segundo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 181.66,
+      "end": 183.66,
+      "text": " Pero no tengo canales de Internet,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 183.66,
+      "end": 187.21,
+      "text": " entonces por eso quería preguntar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 187.25,
+      "end": 191.25,
+      "text": " Sí, son 500 megas con televisión por 970",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 191.25,
+      "end": 194.25,
+      "text": " y tengo el de 500 megas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 194.25,
+      "end": 198.25,
+      "text": " igual con línea telefónica sin televisión en 790.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 198.25,
+      "end": 201.25,
+      "text": " Ya de ahí se derivan otras velocidades,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 201.25,
+      "end": 205.25,
+      "text": " que sería el de 200 megas por 670",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 205.25,
+      "end": 209.25,
+      "text": " y igual 200 megas con televisión",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 209.25,
+      "end": 211.41,
+      "text": " que darían 850.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 211.41,
+      "end": 212.41,
+      "text": " Ah, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 212.41,
+      "end": 213.41,
+      "text": " OK, está bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 213.41,
+      "end": 214.41,
+      "text": " Digo nada más para...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 214.41,
+      "end": 216.41,
+      "text": " para ver porque me interesa la televisión",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 70,
+      "start": 216.45,
+      "end": 217.45,
+      "text": " para trabajar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 71,
+      "start": 217.45,
+      "end": 218.45,
+      "text": " Si no, no le puedo...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 72,
+      "start": 218.45,
+      "end": 219.83,
+      "text": " ¿Te entiendes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 73,
+      "start": 219.83,
+      "end": 221.83,
+      "text": " Sí, y ya aquí pues igual,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 74,
+      "start": 221.83,
+      "end": 223.83,
+      "text": " si conservan su mismo número de teléfono",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 75,
+      "start": 223.83,
+      "end": 224.83,
+      "text": " con nosotros,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 76,
+      "start": 224.83,
+      "end": 226.83,
+      "text": " se les da un descuento adicional",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 77,
+      "start": 226.83,
+      "end": 229.83,
+      "text": " y se les da descuento por domiciliación de pagos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 78,
+      "start": 229.83,
+      "end": 232.83,
+      "text": " que sería un aproximado de 50 pesos,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 79,
+      "start": 232.83,
+      "end": 234.83,
+      "text": " sumados son 65 pesos de descuento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 80,
+      "start": 234.83,
+      "end": 238.27,
+      "text": " en cualquiera de los paquetes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 81,
+      "start": 238.27,
+      "end": 239.27,
+      "text": " Sí, está bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 82,
+      "start": 239.27,
+      "end": 240.27,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 83,
+      "start": 240.27,
+      "end": 241.27,
+      "text": " A usted, caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 84,
+      "start": 241.27,
+      "end": 242.27,
+      "text": " Bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 85,
+      "start": 242.27,
+      "end": 243.27,
+      "text": " Gracias, realmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 86,
+      "start": 243.27,
+      "end": 244.27,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 247.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

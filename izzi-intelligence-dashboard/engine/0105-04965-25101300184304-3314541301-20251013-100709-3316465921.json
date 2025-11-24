@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300184304-3314541301-20251013-100709-3316465921.WAV",
+  "file_name": "0105-04965-25101300184304-3314541301-20251013-100709-3316465921.WAV",
+  "base_id": "0105-04965-25101300184304-3314541301-20251013-100709-3316465921",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales... ¡Vete a la verga! ... y eventos deportivos exclusivos por solo 350 pesos? ¡Vete a la verga! ¿No lo pienses más y... ¡Vete a la verga! ... ¿te interesa? ¡Vete a la verga! Por favor... ... ¡Puesto! Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para tener... ¡Espera un momento, por favor! Hola, ¿qué tal? Este es el área de contrataciones Easy. ¿Le atiende Leonardo García con quien te vuelva el gusto? Bueno...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 9.0,
+      "text": " ¡Vete a la verga!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.0,
+      "end": 12.0,
+      "text": " ... y eventos deportivos exclusivos por solo 350 pesos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 12.0,
+      "end": 14.0,
+      "text": " ¡Vete a la verga!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 15.0,
+      "text": " ¿No lo pienses más y...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.0,
+      "end": 17.0,
+      "text": " ¡Vete a la verga!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.0,
+      "end": 18.0,
+      "text": " ... ¿te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 18.0,
+      "end": 20.0,
+      "text": " ¡Vete a la verga!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 21.0,
+      "end": 22.0,
+      "text": " ... ¡Puesto!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 22.0,
+      "end": 29.75,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 29.75,
+      "end": 32.75,
+      "text": " Presiona 1 para hablar con un asesor o 2 para tener...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 32.75,
+      "end": 35.75,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 35.75,
+      "end": 48.38,
+      "text": " Hola, ¿qué tal? Este es el área de contrataciones Easy. ¿Le atiende Leonardo García con quien te vuelva el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.38,
+      "end": 52.0,
+      "text": " Bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.252,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

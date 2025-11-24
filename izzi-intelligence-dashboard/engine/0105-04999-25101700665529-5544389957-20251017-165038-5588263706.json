@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700665529-5544389957-20251017-165038-5588263706.WAV",
+  "file_name": "0105-04999-25101700665529-5544389957-20251017-165038-5588263706.WAV",
+  "base_id": "0105-04999-25101700665529-5544389957-20251017-165038-5588263706",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos al primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Hola, ¿qué tal? Señor, habla Randirana, hablamos del servicio de IZI. ¿Le llegó algún mensaje, alguna llamada, disculpe? No. Ah, muy bien. En ese caso, ¿le interesa alguno de nuestros servicios, señor? Tiene que tener un cachondo con su soporta. ¿Vale?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.11,
+      "end": 6.95,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.95,
+      "end": 11.59,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.59,
+      "end": 13.59,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.59,
+      "end": 14.59,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.59,
+      "end": 16.67,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.67,
+      "end": 24.96,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.96,
+      "end": 65.49,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 65.49,
+      "end": 66.49,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.49,
+      "end": 70.18,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.18,
+      "end": 71.18,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.18,
+      "end": 73.66,
+      "text": " Señor, habla Randirana, hablamos del servicio de IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 73.66,
+      "end": 75.66,
+      "text": " ¿Le llegó algún mensaje, alguna llamada, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.66,
+      "end": 76.75,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 76.75,
+      "end": 78.42,
+      "text": " Ah, muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 78.42,
+      "end": 81.42,
+      "text": " En ese caso, ¿le interesa alguno de nuestros servicios, señor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 81.42,
+      "end": 85.58,
+      "text": " Tiene que tener un cachondo con su soporta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 85.58,
+      "end": 86.58,
+      "text": " ¿Vale?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.84,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

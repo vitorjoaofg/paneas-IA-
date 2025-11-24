@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600377095-5544389950-20251016-121205-5597104855.WAV",
+  "file_name": "0105-04965-25101600377095-5544389950-20251016-121205-5597104855.WAV",
+  "base_id": "0105-04965-25101600377095-5544389950-20251016-121205-5597104855",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, 10 premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. ¡Hola! Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor. Espera un momento, por favor. Bueno... ¿Se está comunicando a contratación a Easy, si le atiendes ya en el púlido con quien tengo el gusto? Es que se quiere un asesor, no es con mi papá. Ah, ok. Si gusta en este caso, más tarde nos comunicamos. ¿Qué? Si gusta, más tarde nos comunicamos, ya que se encuentra un adulto. Gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, 10 premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 24.44,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.81,
+      "end": 27.86,
+      "text": " ¡Hola!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.86,
+      "end": 34.22,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.22,
+      "end": 37.46,
+      "text": " un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.46,
+      "end": 47.26,
+      "text": " Bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 47.26,
+      "end": 51.25,
+      "text": " ¿Se está comunicando a contratación a Easy, si le atiendes ya en el púlido con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.25,
+      "end": 52.25,
+      "text": " quien tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.25,
+      "end": 56.92,
+      "text": " Es que se quiere un asesor, no es con mi papá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.92,
+      "end": 61.74,
+      "text": " Ah, ok. Si gusta en este caso, más tarde nos comunicamos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.74,
+      "end": 62.97,
+      "text": " ¿Qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 62.97,
+      "end": 73.76,
+      "text": " Si gusta, más tarde nos comunicamos, ya que se encuentra un adulto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 73.76,
+      "end": 76.59,
+      "text": " Gracias, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.824,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

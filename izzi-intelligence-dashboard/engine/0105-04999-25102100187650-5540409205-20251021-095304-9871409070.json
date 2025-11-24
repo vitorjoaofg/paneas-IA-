@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102100187650-5540409205-20251021-095304-9871409070.WAV",
+  "file_name": "0105-04999-25102100187650-5540409205-20251021-095304-9871409070.WAV",
+  "base_id": "0105-04999-25102100187650-5540409205-20251021-095304-9871409070",
+  "transcription": "Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con Vixprime, más Black Sports, desde 3.50 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. No quiero. Espera un momento, por favor. Hola, ¿qué tal?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener internet, más televisión, más el mejor entretenimiento con Vixprime, más Black Sports, desde 3.50 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 23.02,
+      "end": 24.02,
+      "text": " No quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.18,
+      "end": 27.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.1,
+      "end": 35.2,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 35.244,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102000372898-5540409221-20251020-163251-5555627741.WAV",
+  "file_name": "0105-04965-25102000372898-5540409221-20251020-163251-5555627741.WAV",
+  "base_id": "0105-04965-25102000372898-5540409221-20251020-163251-5555627741",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZZY es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablo esta compañía IZZY. Me presento mucho gusto. Mi nombre es Paula. ¿En qué puedo ayudarle? Buenas tardes. Sí, no le entendí a la señorita su promoción. Mira, tengo con ustedes IZZY el paquete de cablevisión, teléfono e Internet. Así que no sé qué otro paquete. Nosotros somos de contrataciones IZZY, señorita. Sí, te digo, tengo IZZY con ustedes y ya tengo años. Oh, ok, ok. Gracias. Gracias, que tenga lindo día. Igualmente, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 11.2,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 16.4,
+      "text": " Con IZZY es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.4,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.8,
+      "end": 24.22,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.22,
+      "end": 33.86,
+      "text": " Hola, ¿qué tal? Muy buenas tardes. Le hablo esta compañía IZZY. Me presento mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.86,
+      "end": 36.26,
+      "text": " Mi nombre es Paula. ¿En qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.26,
+      "end": 43.46,
+      "text": " Buenas tardes. Sí, no le entendí a la señorita su promoción.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.46,
+      "end": 58.6,
+      "text": " Mira, tengo con ustedes IZZY el paquete de cablevisión, teléfono e Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.6,
+      "end": 64.18,
+      "text": " Así que no sé qué otro paquete.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.58,
+      "end": 68.2,
+      "text": " Nosotros somos de contrataciones IZZY, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 68.2,
+      "end": 73.4,
+      "text": " Sí, te digo, tengo IZZY con ustedes y ya tengo años.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.4,
+      "end": 76.26,
+      "text": " Oh, ok, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 76.26,
+      "end": 77.66,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 77.66,
+      "end": 79.86,
+      "text": " Gracias, que tenga lindo día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 79.86,
+      "end": 81.86,
+      "text": " Igualmente, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 87.372,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

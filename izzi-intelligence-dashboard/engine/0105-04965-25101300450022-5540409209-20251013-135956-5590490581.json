@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300450022-5540409209-20251013-135956-5590490581.WAV",
+  "file_name": "0105-04965-25101300450022-5540409209-20251013-135956-5590490581.WAV",
+  "base_id": "0105-04965-25101300450022-5540409209-20251013-135956-5590490581",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor emprendimiento con 200 canales, geeks premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate ahí! ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. ¡Hola! ¿Qué tal? Gracias por comunicarse a la de Contrataciones Easy y la tienda Alan. ¿Con quién te dé el gusto? ¡Bueno!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.68,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.68,
+      "end": 12.24,
+      "text": " emprendimiento con 200 canales, geeks premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate ahí! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 24.8,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.8,
+      "end": 29.8,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.8,
+      "end": 41.61,
+      "text": " ¡Hola! ¿Qué tal? Gracias por comunicarse a la de Contrataciones Easy y la tienda Alan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.61,
+      "end": 52.74,
+      "text": " ¿Con quién te dé el gusto? ¡Bueno!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 56.808,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

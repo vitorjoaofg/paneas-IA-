@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100822032-5544389991-20251011-165103-5589284327.WAV",
+  "file_name": "0105-04965-25101100822032-5544389991-20251011-165103-5589284327.WAV",
+  "base_id": "0105-04965-25101100822032-5544389991-20251011-165103-5589284327",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no. ¿Y si te cuelgo mejor? Espera un momento, por favor. ¿Qué le puedo ayudar? Sí, bueno, con Bacalpin, de las pizzas. Bueno, quiero una pizza. ¿Tienes pizzas? No, solamente Easy. Ah, se me marcaron para unas pizzas. Bueno, que pase buen día. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 21.32,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 21.32,
+      "end": 24.82,
+      "text": " ¿Y si te cuelgo mejor?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.82,
+      "end": 26.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.33,
+      "end": 37.06,
+      "text": " ¿Qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.06,
+      "end": 44.59,
+      "text": " Sí, bueno, con Bacalpin, de las pizzas. Bueno, quiero una pizza.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.59,
+      "end": 47.07,
+      "text": " ¿Tienes pizzas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.07,
+      "end": 49.07,
+      "text": " No, solamente Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 49.07,
+      "end": 53.07,
+      "text": " Ah, se me marcaron para unas pizzas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.07,
+      "end": 56.07,
+      "text": " Bueno, que pase buen día. Muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.032,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

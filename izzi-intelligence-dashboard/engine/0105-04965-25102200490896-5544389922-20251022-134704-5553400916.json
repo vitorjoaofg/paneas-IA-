@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200490896-5544389922-20251022-134704-5553400916.WAV",
+  "file_name": "0105-04965-25102200490896-5544389922-20251022-134704-5553400916.WAV",
+  "base_id": "0105-04965-25102200490896-5544389922-20251022-134704-5553400916",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixx y New, más Skyport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, ¡hab... ¡Pero te marcaron ante la fundación! ¿Y con la extensión? ¿Quién me ofrece esta gran oferta? Espera un momento, por favor. Hola, buen día. Le habla Yvonne Monfil de parte de su servicio de Easy, para darle a conocer los beneficios con la compañía. Buen día. Bueno...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vixx y New, más Skyport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, ¡hab...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " ¡Pero te marcaron ante la fundación!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.0,
+      "end": 23.0,
+      "text": " ¿Y con la extensión?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.0,
+      "end": 25.0,
+      "text": " ¿Quién me ofrece esta gran oferta?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.06,
+      "end": 29.06,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.06,
+      "end": 45.58,
+      "text": " Hola, buen día. Le habla Yvonne Monfil de parte de su servicio de Easy, para darle a conocer los beneficios con la compañía. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.58,
+      "end": 46.58,
+      "text": " Bueno...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.04,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900407692-5544389961-20251009-131748-5558335224.WAV",
+  "file_name": "0105-04965-25100900407692-5544389961-20251009-131748-5558335224.WAV",
+  "base_id": "0105-04965-25100900407692-5544389961-20251009-131748-5558335224",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports desde 350 pesos al primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buen día, caballero. Habla Miriam Osegra de parte de la compañía de IZI. Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos, activos. No, no lo escuchamos. Hablamos de parte de la compañía de IZI, no sé si ahí me escuché. Ahí está, mejor. Ah, ok, gracias. Se le están proporcionando nuestros planes, perdón, nuestros servicios de Internet y televisión por cable con nosotros en IZI. Caballero, mi nombre es Miriam Osegra. No sé si usted llega a uso de los servicios con nosotros o con alguna otra compañía. A ver, que venga mi esposa porque no la escucho bien yo. Ah, bien, claro que sí. Bueno, buenos días. Bueno, ¿qué tal? Buenos días, señorita. Habla Miriam Osegra de parte de IZI. Mi llamada es por motivos de que se le están proporcionando algunos beneficios para clientes nuevos o activos. Tenemos servicios de Internet y línea telefónica y televisión por cable. No sé si usted llega a uso de los servicios con nosotros o los manejen con otra compañía. ¿De dónde me está hablando? De IZI. ¿De dónde? De los servicios IZI. Ah, no, usted, gracias. Estamos bien con usted, gracias. ¿A qué tienen el servicio con otra compañía? ¿Con qué compañía tienen ustedes su servicio, perdón?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 26.86,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 26.86,
+      "end": 36.92,
+      "text": " Hola, ¿qué tal? Buen día, caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.92,
+      "end": 39.72,
+      "text": " Habla Miriam Osegra de parte de la compañía de IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.72,
+      "end": 44.12,
+      "text": " Mi llamada es para darles a conocer algunos beneficios que tenemos para clientes nuevos, activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 44.12,
+      "end": 46.26,
+      "text": " No, no lo escuchamos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 46.26,
+      "end": 49.86,
+      "text": " Hablamos de parte de la compañía de IZI, no sé si ahí me escuché.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.86,
+      "end": 51.26,
+      "text": " Ahí está, mejor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.26,
+      "end": 52.66,
+      "text": " Ah, ok, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 52.66,
+      "end": 55.26,
+      "text": " Se le están proporcionando nuestros planes, perdón,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.26,
+      "end": 59.06,
+      "text": " nuestros servicios de Internet y televisión por cable con nosotros en IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 59.06,
+      "end": 61.06,
+      "text": " Caballero, mi nombre es Miriam Osegra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.06,
+      "end": 67.65,
+      "text": " No sé si usted llega a uso de los servicios con nosotros o con alguna otra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 68.25,
+      "end": 73.25,
+      "text": " A ver, que venga mi esposa porque no la escucho bien yo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 73.25,
+      "end": 78.73,
+      "text": " Ah, bien, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 78.73,
+      "end": 80.78,
+      "text": " Bueno, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 80.78,
+      "end": 82.58,
+      "text": " Bueno, ¿qué tal? Buenos días, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 82.58,
+      "end": 84.78,
+      "text": " Habla Miriam Osegra de parte de IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 84.78,
+      "end": 88.98,
+      "text": " Mi llamada es por motivos de que se le están proporcionando algunos beneficios",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 88.98,
+      "end": 90.98,
+      "text": " para clientes nuevos o activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 90.98,
+      "end": 95.38,
+      "text": " Tenemos servicios de Internet y línea telefónica y televisión por cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 95.38,
+      "end": 97.98,
+      "text": " No sé si usted llega a uso de los servicios con nosotros",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 97.98,
+      "end": 100.95,
+      "text": " o los manejen con otra compañía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 101.15,
+      "end": 103.54,
+      "text": " ¿De dónde me está hablando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 103.54,
+      "end": 105.06,
+      "text": " De IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 105.06,
+      "end": 105.46,
+      "text": " ¿De dónde?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 105.46,
+      "end": 107.06,
+      "text": " De los servicios IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 107.06,
+      "end": 108.46,
+      "text": " Ah, no, usted, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 108.46,
+      "end": 110.66,
+      "text": " Estamos bien con usted, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 110.66,
+      "end": 114.15,
+      "text": " ¿A qué tienen el servicio con otra compañía?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 114.15,
+      "end": 116.95,
+      "text": " ¿Con qué compañía tienen ustedes su servicio, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 144.864,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

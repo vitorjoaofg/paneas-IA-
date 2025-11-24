@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100361807-5540409208-20251031-122350-5590809641.WAV",
+  "file_name": "0105-04965-25103100361807-5540409208-20251031-122350-5590809641.WAV",
+  "base_id": "0105-04965-25103100361807-5540409208-20251031-122350-5590809641",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con DIG Premium, más Skyfall, desde 350 pesos al primer mes, con IG? Es posible. ¿Te interesa? Un asesor te estará esperando. Por favor. La llamada. Bueno, bueno. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones, o 2. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.0,
+      "end": 12.0,
+      "text": " DIG Premium, más Skyfall, desde 350 pesos al primer mes, con IG?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.0,
+      "end": 17.0,
+      "text": " Es posible. ¿Te interesa? Un asesor te estará esperando. Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 35.58,
+      "text": " La llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 35.58,
+      "end": 40.2,
+      "text": " Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.2,
+      "end": 45.2,
+      "text": " No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.2,
+      "end": 48.2,
+      "text": " o 2. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.064,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300360664-5544389904-20251023-120743-5596689498.WAV",
+  "file_name": "0105-04965-25102300360664-5544389904-20251023-120743-5596689498.WAV",
+  "base_id": "0105-04965-25102300360664-5544389904-20251023-120743-5596689498",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el viejo entretenimiento con Vix Premium, más Skysport, desde 350 pesos al primer mes? Con el sí, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Puta madre. Pinches castrosos de cagada. Te estoy esperando que contestes, hijo de tu gran puta madre. Va, contéstale. ¡Contesta! ¡O de tu perra madre! ¡Contesta, mendigo!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el viejo entretenimiento con Vix Premium, más Skysport, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 22.14,
+      "text": " Con el sí, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.14,
+      "end": 31.14,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 31.14,
+      "end": 66.54,
+      "text": " Puta madre. Pinches castrosos de cagada. Te estoy esperando que contestes, hijo de tu gran puta madre. Va, contéstale.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 66.54,
+      "end": 74.11,
+      "text": " ¡Contesta! ¡O de tu perra madre! ¡Contesta, mendigo!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.076,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

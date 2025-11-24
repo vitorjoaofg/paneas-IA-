@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04896-25101700270753-3313950273-20251017-105310-04896.WAV",
+  "file_name": "0105-04896-25101700270753-3313950273-20251017-105310-04896.WAV",
+  "base_id": "0105-04896-25101700270753-3313950273-20251017-105310-04896",
+  "transcription": "Hola, somos Sisi, y seguro estás llamando porque viste la llamada nuestra. Tenemos una oferta exclusiva para ti. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Tía, Latina América, Arce de promociones, SisiMobil. ¿Con quién tengo el gusto? Con SisiMobil. Ah, ok. ¿Le interesa algún plan móvil que escucho en grabadora? Ah, ah, ah, gas rosa. Ah, ok, ok. ¿Mande, perdón? Gas rosa. ¿Qué es Planes para su celular? Oh, no, entonces está mal, mía Sisi, más que gas rosa. Ok. Sí, muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " Hola, somos Sisi, y seguro estás llamando porque viste la llamada nuestra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 7.1,
+      "text": " Tenemos una oferta exclusiva para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.1,
+      "end": 8.1,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.1,
+      "end": 10.3,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 10.3,
+      "end": 14.3,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.06,
+      "end": 17.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.26,
+      "end": 70.08,
+      "text": " Tía, Latina América, Arce de promociones, SisiMobil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 70.08,
+      "end": 71.48,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 72.2,
+      "end": 75.0,
+      "text": " Con SisiMobil.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 75.9,
+      "end": 79.0,
+      "text": " Ah, ok. ¿Le interesa algún plan móvil que escucho en grabadora?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 79.3,
+      "end": 83.53,
+      "text": " Ah, ah, ah, gas rosa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 83.53,
+      "end": 87.0,
+      "text": " Ah, ok, ok. ¿Mande, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 88.14,
+      "end": 89.34,
+      "text": " Gas rosa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 89.34,
+      "end": 92.62,
+      "text": " ¿Qué es Planes para su celular?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 93.28,
+      "end": 97.38,
+      "text": " Oh, no, entonces está mal, mía Sisi, más que gas rosa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 97.38,
+      "end": 98.38,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 98.38,
+      "end": 99.88,
+      "text": " Sí, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.972,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

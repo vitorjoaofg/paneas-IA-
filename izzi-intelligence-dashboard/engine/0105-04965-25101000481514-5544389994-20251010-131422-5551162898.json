@@ -1,0 +1,393 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000481514-5544389994-20251010-131422-5551162898.WAV",
+  "file_name": "0105-04965-25101000481514-5544389994-20251010-131422-5551162898.WAV",
+  "base_id": "0105-04965-25101000481514-5544389994-20251010-131422-5551162898",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skyport desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Bueno? ¿Bueno, bueno? Señorita, buenas tardes. Hola, ¿qué tal? Buenas tardes. Se está comunicando con Trataciones Easy y le atiende Janeth Pulido con quien tenga el gusto. Permítame. Disculpe, ¿de qué compañía es? Easy. Easy. Easy. A ver, ¿sí? Sí, bueno. Sí, permítame. ¿Puedo hablar más tarde? Es que está ocupada ahorita mi esposa, que es la que está interesada. Ah, claro. Sí, nos ponemos en contacto. Gracias. Voy a que le doy el teléfono a mi esposa para que le marque y le explique bien de lo que se trata. Sí. Permítame. 55, 49, 92, 36, 46. Perfecto. Entonces nos ponemos en contacto. Muchísimas gracias. Se llama María del Carmen Tragoso. OK. De preferencia después de las 3, por favor. OK. Claro que sí. Nos ponemos en contacto. Muy amable. Gracias. Hasta luego. Hasta luego. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skyport desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.56,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.56,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.8,
+      "end": 24.14,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.14,
+      "end": 32.26,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.26,
+      "end": 35.41,
+      "text": " ¿Bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.45,
+      "end": 37.66,
+      "text": " Señorita, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.66,
+      "end": 38.66,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.66,
+      "end": 42.66,
+      "text": " Se está comunicando con Trataciones Easy y le atiende Janeth Pulido con quien tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 42.66,
+      "end": 44.13,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.13,
+      "end": 56.62,
+      "text": " Disculpe, ¿de qué compañía es?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.62,
+      "end": 57.85,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.85,
+      "end": 58.85,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.85,
+      "end": 60.52,
+      "text": " Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.52,
+      "end": 61.52,
+      "text": " A ver, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 61.52,
+      "end": 66.81,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 66.81,
+      "end": 70.82,
+      "text": " Sí, permítame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 70.82,
+      "end": 71.82,
+      "text": " ¿Puedo hablar más tarde?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 71.82,
+      "end": 76.82,
+      "text": " Es que está ocupada ahorita mi esposa, que es la que está interesada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 76.82,
+      "end": 78.42,
+      "text": " Ah, claro.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 78.42,
+      "end": 79.42,
+      "text": " Sí, nos ponemos en contacto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 79.42,
+      "end": 80.42,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 80.42,
+      "end": 85.52,
+      "text": " Voy a que le doy el teléfono a mi esposa para que le marque y le explique bien de lo que se trata.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 85.96,
+      "end": 86.96,
+      "text": " Sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 86.96,
+      "end": 115.29,
+      "text": " Permítame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 115.29,
+      "end": 122.83,
+      "text": " 55, 49, 92, 36, 46.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 122.83,
+      "end": 123.83,
+      "text": " Perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 123.83,
+      "end": 124.83,
+      "text": " Entonces nos ponemos en contacto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 124.83,
+      "end": 125.83,
+      "text": " Muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 125.83,
+      "end": 128.34,
+      "text": " Se llama María del Carmen Tragoso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 128.34,
+      "end": 129.34,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 129.34,
+      "end": 134.1,
+      "text": " De preferencia después de las 3, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 134.1,
+      "end": 136.06,
+      "text": " OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 136.06,
+      "end": 137.06,
+      "text": " Claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 137.06,
+      "end": 138.06,
+      "text": " Nos ponemos en contacto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 138.06,
+      "end": 139.06,
+      "text": " Muy amable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 139.06,
+      "end": 140.06,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 140.06,
+      "end": 141.06,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 141.06,
+      "end": 142.06,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 142.06,
+      "end": 143.06,
+      "text": " Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 142.344,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

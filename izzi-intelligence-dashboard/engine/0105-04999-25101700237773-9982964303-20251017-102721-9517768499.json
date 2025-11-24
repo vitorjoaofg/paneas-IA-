@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700237773-9982964303-20251017-102721-9517768499.WAV",
+  "file_name": "0105-04999-25101700237773-9982964303-20251017-102721-9517768499.WAV",
+  "base_id": "0105-04999-25101700237773-9982964303-20251017-102721-9517768499",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, muy buenos días. Sí, Cacete de Quilancia, buenos días. Buenos días, me presento, mi nombre es Daniel, me estoy comunicando por parte de la compañía de Ingen. ¿Qué lo puedo apoyar, señor? No, ustedes fueron los que me marcaron. Bueno, le entró una llamada con una grabación, con unos paquetes y a usted le presionó el botón para ser atendido por uno de nosotros. Ah, no, pues no sabía qué era. Pero dígame qué me ofrece o qué me está ofreciendo. Son servicios de internet, cable. Ah, no, no, no, no, no, no, no. Yo aquí en la caseta no puedo no, aquí tenemos internet nosotros. Ah, qué bueno, lo agradezco, hasta luego. Ándale.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.04,
+      "end": 6.66,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.66,
+      "end": 11.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.72,
+      "end": 18.92,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.92,
+      "end": 25.0,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.0,
+      "end": 27.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.45,
+      "end": 74.38,
+      "text": " Hola, muy buenos días. Sí, Cacete de Quilancia, buenos días. Buenos días, me presento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 74.38,
+      "end": 76.98,
+      "text": " mi nombre es Daniel, me estoy comunicando por parte de la compañía de Ingen. ¿Qué",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 76.98,
+      "end": 84.02,
+      "text": " lo puedo apoyar, señor? No, ustedes fueron los que me marcaron. Bueno, le entró una llamada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 84.02,
+      "end": 87.18,
+      "text": " con una grabación, con unos paquetes y a usted le presionó el botón para ser",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 87.18,
+      "end": 91.0,
+      "text": " atendido por uno de nosotros. Ah, no, pues no sabía qué era. Pero dígame",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 91.0,
+      "end": 94.4,
+      "text": " qué me ofrece o qué me está ofreciendo. Son servicios de internet,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 94.48,
+      "end": 100.32,
+      "text": " cable. Ah, no, no, no, no, no, no, no. Yo aquí en la caseta no puedo no, aquí tenemos internet",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 100.32,
+      "end": 104.08,
+      "text": " nosotros. Ah, qué bueno, lo agradezco, hasta luego. Ándale.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.192,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

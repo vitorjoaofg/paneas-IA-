@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100340957-5544389999-20251021-115432-5597281864.WAV",
+  "file_name": "0105-04965-25102100340957-5544389999-20251021-115432-5597281864.WAV",
+  "base_id": "0105-04965-25102100340957-5544389999-20251021-115432-5597281864",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, buen día. Buen día, señorita. Tengo días recibiendo mensajes de ustedes que en ningún momento les solicité. Por favor, le voy a pedir un favor enorme. ¿Quiere bloquear mi número, por favor? Cuando yo quiera ir a Easy, no necesito que me estén molestando. Quedó registrado de alguna llamada que usted realizó. ¿Dejo registrada la información que me propone? No lo sé, pero no me interesa y cuando yo quiera yo voy a buscarlos ¿Dónde están? Por favor, que ya no me molesten.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 27.01,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.01,
+      "end": 28.01,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.3,
+      "end": 39.74,
+      "text": " Hola, buen día. Buen día, señorita. Tengo días recibiendo mensajes de ustedes que en",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.74,
+      "end": 46.02,
+      "text": " ningún momento les solicité. Por favor, le voy a pedir un favor enorme. ¿Quiere bloquear",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.02,
+      "end": 51.9,
+      "text": " mi número, por favor? Cuando yo quiera ir a Easy, no necesito que me estén molestando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.9,
+      "end": 57.1,
+      "text": " Quedó registrado de alguna llamada que usted realizó. ¿Dejo registrada la información",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.1,
+      "end": 61.1,
+      "text": " que me propone? No lo sé, pero no me interesa y cuando yo quiera yo voy a buscarlos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.1,
+      "end": 65.58,
+      "text": " ¿Dónde están? Por favor, que ya no me molesten.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

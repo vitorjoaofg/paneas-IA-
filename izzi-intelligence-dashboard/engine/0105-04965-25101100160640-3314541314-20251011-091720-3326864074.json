@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100160640-3314541314-20251011-091720-3326864074.WAV",
+  "file_name": "0105-04965-25101100160640-3314541314-20251011-091720-3326864074.WAV",
+  "base_id": "0105-04965-25101100160640-3314541314-20251011-091720-3326864074",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? Tened el mejor entretenimiento con 200 canales, Big Reviews y eventos deportivos exclusivos por solo $350 pesos el primer mes. No lo pienses más y cámbiate a Easy. Un asesor te está esperando. ¡Bueno! Espera un momento, por favor. Hola, buen día, le hablé con Monfield de parte de su servicio de Easy. Le hablamos para darle a conocerlo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.6,
+      "text": " Tened el mejor entretenimiento con 200 canales, Big Reviews y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 14.0,
+      "text": " por solo $350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 22.0,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.0,
+      "end": 31.53,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.53,
+      "end": 35.53,
+      "text": " Hola, buen día, le hablé con Monfield de parte de su servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.53,
+      "end": 39.53,
+      "text": " Le hablamos para darle a conocerlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 45.252,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100661944-5553869162-20251011-150529-04896.WAV",
+  "file_name": "0105-04965-25101100661944-5553869162-20251011-150529-04896.WAV",
+  "base_id": "0105-04965-25101100661944-5553869162-20251011-150529-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿En qué le puedo servir? Ah, ok. ¿Usted ya cuenta con servicio Easy en casa, de casualidad? Sí, sí. Oh, ok. Lo que pasa es que le marcamos porque estamos manejando ya lo que es el servicio de telefonía para celular. No sé si anteriormente me habían comentado de casualidad. No, no. Solicitamos nada. Tengo el supuestamente Easy básico. Ok, comprendo. Bueno, no se preocupen. Pues aquí agrego el comentario, ¿está bien? Gracias. A usted que pase buen día. ¡Muchas gracias! ¿Cómo será?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? ¡Con Easy es posible!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.4,
+      "end": 23.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.6,
+      "end": 27.1,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.1,
+      "end": 101.06,
+      "text": " ¿En qué le puedo servir?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 101.26,
+      "end": 104.66,
+      "text": " Ah, ok. ¿Usted ya cuenta con servicio Easy en casa, de casualidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 104.66,
+      "end": 106.45,
+      "text": " Sí, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 106.45,
+      "end": 107.88,
+      "text": " Oh, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 107.88,
+      "end": 112.68,
+      "text": " Lo que pasa es que le marcamos porque estamos manejando ya lo que es el servicio de telefonía para celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 112.68,
+      "end": 115.08,
+      "text": " No sé si anteriormente me habían comentado de casualidad.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 115.08,
+      "end": 120.78,
+      "text": " No, no. Solicitamos nada. Tengo el supuestamente Easy básico.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 120.78,
+      "end": 122.98,
+      "text": " Ok, comprendo. Bueno, no se preocupen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 122.98,
+      "end": 124.98,
+      "text": " Pues aquí agrego el comentario, ¿está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 124.98,
+      "end": 126.58,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 126.58,
+      "end": 129.38,
+      "text": " A usted que pase buen día. ¡Muchas gracias! ¿Cómo será?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 129.492,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

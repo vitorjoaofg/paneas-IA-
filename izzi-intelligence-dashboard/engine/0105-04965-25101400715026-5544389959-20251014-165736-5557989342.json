@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400715026-5544389959-20251014-165736-5557989342.WAV",
+  "file_name": "0105-04965-25101400715026-5544389959-20251014-165736-5557989342.WAV",
+  "base_id": "0105-04965-25101400715026-5544389959-20251014-165736-5557989342",
+  "transcription": "Hola, ¿te gustaría tener Internet más disponible, más grabado y mejor entretenimiento con VIX Premium? En caso de que quieran, desde 350 pesos el primer VIX o VIX es posible. ¿Te interesa? Un asesor te está esperando. Su llamada se está transcurriendo. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet más disponible, más grabado y mejor entretenimiento con VIX Premium?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " En caso de que quieran, desde 350 pesos el primer VIX o VIX es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 14.0,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.0,
+      "end": 24.7,
+      "text": " Un asesor te está esperando. Su llamada se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.7,
+      "end": 26.7,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 30.564,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

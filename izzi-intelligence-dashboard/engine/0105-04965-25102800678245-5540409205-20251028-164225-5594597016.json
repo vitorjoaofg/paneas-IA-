@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800678245-5540409205-20251028-164225-5594597016.WAV",
+  "file_name": "0105-04965-25102800678245-5540409205-20251028-164225-5594597016.WAV",
+  "base_id": "0105-04965-25102800678245-5540409205-20251028-164225-5594597016",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes. ¿Qué tal? Habla David Mijares por parte de Easy. Mucho gusto. Verá, el motivo de la llamada principalmente, estamos promocionando más que nada lo que son nuestros servicios tanto de Internet más económicos de 60 megas, así como la televisión. Ahorita estamos dando también 200 canales por 2.99. No sé si tenga algún servicio actualmente. Disculpe. Lo que yo quisiera saber es cómo obtuvieron mi número. Ah, pues eso es una base de datos, digo. Entonces, ¿es con un mutador? No es como que yo haya agarrado el número de cierta parte. Pues yo no sé cómo mantienen acceso a la base de datos y se supone que es privada. Pero bueno, muchas gracias por su servicio.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 26.13,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.13,
+      "end": 34.27,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.47,
+      "end": 44.37,
+      "text": " Buenas tardes. ¿Qué tal? Habla David Mijares por parte de Easy. Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.37,
+      "end": 48.37,
+      "text": " Verá, el motivo de la llamada principalmente, estamos promocionando más que nada",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.37,
+      "end": 52.37,
+      "text": " lo que son nuestros servicios tanto de Internet más económicos de 60 megas,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.37,
+      "end": 57.37,
+      "text": " así como la televisión. Ahorita estamos dando también 200 canales por 2.99.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.37,
+      "end": 60.37,
+      "text": " No sé si tenga algún servicio actualmente. Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.37,
+      "end": 65.1,
+      "text": " Lo que yo quisiera saber es cómo obtuvieron mi número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.1,
+      "end": 69.28,
+      "text": " Ah, pues eso es una base de datos, digo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.48,
+      "end": 74.48,
+      "text": " Entonces, ¿es con un mutador? No es como que yo haya agarrado el número de cierta parte.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 74.48,
+      "end": 80.86,
+      "text": " Pues yo no sé cómo mantienen acceso a la base de datos y se supone que es privada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 80.86,
+      "end": 83.86,
+      "text": " Pero bueno, muchas gracias por su servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.888,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

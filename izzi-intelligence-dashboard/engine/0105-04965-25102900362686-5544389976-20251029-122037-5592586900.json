@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900362686-5544389976-20251029-122037-5592586900.WAV",
+  "file_name": "0105-04965-25102900362686-5544389976-20251029-122037-5592586900.WAV",
+  "base_id": "0105-04965-25102900362686-5544389976-20251029-122037-5592586900",
+  "transcription": "Bueno, hola, ¿te gustaría navegar en internet con cineras de velocidad?, ¿tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos por solo 350 pesos en Cinernet?, no lo pienses más y cámbiate a Instagram. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Bueno, hola, ¿te gustaría navegar en internet con cineras de velocidad?, ¿tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.6,
+      "text": " entretenimiento con 200 canales, big premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.6,
+      "end": 19.52,
+      "text": " pesos en Cinernet?, no lo pienses más y cámbiate a Instagram. ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.52,
+      "end": 29.47,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.47,
+      "end": 30.79,
+      "text": " un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 35.604,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

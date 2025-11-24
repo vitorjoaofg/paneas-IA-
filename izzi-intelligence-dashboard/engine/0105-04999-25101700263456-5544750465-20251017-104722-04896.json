@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700263456-5544750465-20251017-104722-04896.WAV",
+  "file_name": "0105-04999-25101700263456-5544750465-20251017-104722-04896.WAV",
+  "base_id": "0105-04999-25101700263456-5544750465-20251017-104722-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día. Le habla Yvonne Munfield de parte de su servicio de Easy para darle a conocer los beneficios con la compañía. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.56,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.56,
+      "end": 10.76,
+      "text": " tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.76,
+      "end": 18.72,
+      "text": " Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 26.38,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.38,
+      "end": 38.18,
+      "text": " Hola, buen día. Le habla Yvonne Munfield de parte de su servicio de Easy para darle a conocer los",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.18,
+      "end": 40.1,
+      "text": " beneficios con la compañía. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 41.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

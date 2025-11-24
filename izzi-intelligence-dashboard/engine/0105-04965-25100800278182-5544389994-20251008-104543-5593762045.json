@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800278182-5544389994-20251008-104543-5593762045.WAV",
+  "file_name": "0105-04965-25100800278182-5544389994-20251008-104543-5593762045.WAV",
+  "base_id": "0105-04965-25100800278182-5544389994-20251008-104543-5593762045",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, haz... Espera un momento, por favor. Marketing y plataformas tecnológicas, DIGIT 5. Recursos humanos, DIGIT 6. Contabilidad, DIGIT 7. Serving Track, DIGIT 8. Un marco 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor. Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 12.0,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.0,
+      "end": 16.0,
+      "text": " Es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " Por favor, haz...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.26,
+      "end": 28.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.32,
+      "end": 34.32,
+      "text": " Marketing y plataformas tecnológicas, DIGIT 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.32,
+      "end": 37.32,
+      "text": " Recursos humanos, DIGIT 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 37.32,
+      "end": 40.32,
+      "text": " Contabilidad, DIGIT 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.32,
+      "end": 43.32,
+      "text": " Serving Track, DIGIT 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.32,
+      "end": 50.99,
+      "text": " Un marco 0 para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.99,
+      "end": 58.99,
+      "text": " Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.99,
+      "end": 60.99,
+      "text": " Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.78,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

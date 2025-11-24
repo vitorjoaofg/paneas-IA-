@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100748460-5544389935-20251021-172011-5515403938.WAV",
+  "file_name": "0105-04965-25102100748460-5544389935-20251021-172011-5515403938.WAV",
+  "base_id": "0105-04965-25102100748460-5544389935-20251021-172011-5515403938",
+  "transcription": "Hola, ¿te gustaría tener internet? Desde 350 pesos al cine... ...¿te interesa? Un asesor te está esperando. Por favor, hable oculto. Espera un momento, por favor. ¿Qué tal? ¿Qué haces tú, cabrón? ¡Puta madre! ¡Puta madre! ¡Puta madre! ¡Puta madre! ¡Cabrón, tú no puedes! ¡Cabrón! ¡Vamos a tomar un poco el video! ¡Vamos a tomar un poco el video!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.0,
+      "text": " Hola, ¿te gustaría tener internet?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.0,
+      "end": 11.0,
+      "text": " Desde 350 pesos al cine...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ...¿te interesa? Un asesor te está esperando. Por favor, hable oculto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 27.04,
+      "end": 29.04,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 68.6,
+      "end": 70.53,
+      "text": " ¿Qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 87.41,
+      "end": 90.05,
+      "text": " ¿Qué haces tú, cabrón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 98.05,
+      "end": 116.46,
+      "text": " ¡Puta madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 117.46,
+      "end": 119.46,
+      "text": " ¡Puta madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 120.46,
+      "end": 122.46,
+      "text": " ¡Puta madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 122.46,
+      "end": 124.82,
+      "text": " ¡Puta madre!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 127.82,
+      "end": 129.82,
+      "text": " ¡Cabrón, tú no puedes!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 130.82,
+      "end": 132.82,
+      "text": " ¡Cabrón!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 136.82,
+      "end": 138.82,
+      "text": " ¡Vamos a tomar un poco el video!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 140.82,
+      "end": 143.82,
+      "text": " ¡Vamos a tomar un poco el video!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 144.072,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500418460-3314541350-20251015-125048-3345263265.WAV",
+  "file_name": "0105-04965-25101500418460-3314541350-20251015-125048-3345263265.WAV",
+  "base_id": "0105-04965-25101500418460-3314541350-20251015-125048-3345263265",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Habla Yvonne Monfield de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buenos días. Oiga, le voy a pedir un favor de que no estés molestando, por favor. Están llame, llame cada rato. Una disculpa por la molestia. Yo aquí le voy a poner que lo borren de la base. Que tenga un buen día. Sí, por favor. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 23.91,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.91,
+      "end": 25.91,
+      "text": " Espera un momento, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.91,
+      "end": 223.18,
+      "text": " Habla Yvonne Monfield de parte de su servicio de Easy",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 223.18,
+      "end": 226.18,
+      "text": " para darle a conocer algunos beneficios con la compañía.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 226.18,
+      "end": 227.66,
+      "text": " Buenos días.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 227.66,
+      "end": 232.66,
+      "text": " Oiga, le voy a pedir un favor de que no estés molestando, por favor.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 232.66,
+      "end": 234.66,
+      "text": " Están llame, llame cada rato.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 234.66,
+      "end": 236.66,
+      "text": " Una disculpa por la molestia.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 236.66,
+      "end": 238.66,
+      "text": " Yo aquí le voy a poner que lo borren de la base.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 238.66,
+      "end": 240.66,
+      "text": " Que tenga un buen día.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 240.66,
+      "end": 241.66,
+      "text": " Sí, por favor. Gracias.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 241.66,
+      "end": 242.66,
+      "text": " Hasta luego.",
+      "speaker": null,
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 247.68,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

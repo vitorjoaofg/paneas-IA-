@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900662683-5544389993-20251009-164331-5553709035.WAV",
+  "file_name": "0105-04965-25100900662683-5544389993-20251009-164331-5553709035.WAV",
+  "base_id": "0105-04965-25100900662683-5544389993-20251009-164331-5553709035",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Buenas tardes, se está comunicando contrataciones y si detiene la señorita Janet Pulido con quien tengo el gusto. Bueno, bueno, bueno, por motivos de calidad me hubiera obligado a finalizar esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.55,
+      "end": 7.07,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.07,
+      "end": 12.15,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.15,
+      "end": 18.75,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.75,
+      "end": 24.79,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.79,
+      "end": 33.67,
+      "text": " para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.67,
+      "end": 41.81,
+      "text": " Buenas tardes, se está comunicando contrataciones y si detiene la señorita",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.81,
+      "end": 52.98,
+      "text": " Janet Pulido con quien tengo el gusto. Bueno, bueno, bueno, por motivos de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 52.98,
+      "end": 58.97,
+      "text": " calidad me hubiera obligado a finalizar esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.316,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

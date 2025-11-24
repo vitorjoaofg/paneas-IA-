@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100824608-5544389991-20251011-165315-5594616851.WAV",
+  "file_name": "0105-04965-25101100824608-5544389991-20251011-165315-5594616851.WAV",
+  "base_id": "0105-04965-25101100824608-5544389991-20251011-165315-5594616851",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate ahí! ¿Te interesa? ¡Un asesor te está esperando! ¡Por favor! Presiona 1 para hablar con un asesor o 2 para terminar la llamada. ¡Espera un momento, por favor! ¿Contratación? ¿Sí, sí? ¿En qué le puedo ayudar? Es que llamaron ustedes, perdón. Ok, ¿usted ya cuenta con servicio y sí en casa de casualidad? Ah, no. Ah, ok. Lo que pasa es que estamos manejando nuevas promociones al realizar la contratación por si les diera interés. ¿Tenemos paquetes de Internet y telefonía por 569 pesos o ya está solamente Internet y telefonía por 389 pesos? ¿Nos ha sido alguno que le llamé la atención? Oírselo, joven. Muchísimas gracias. Bueno, ¿qué pasa? Muy buen día. Muchas gracias. Gracias igualmente. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.84,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate ahí! ¿Te interesa? ¡Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.84,
+      "end": 39.12,
+      "text": " te está esperando! ¡Por favor! Presiona 1 para hablar con un asesor o 2 para terminar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 39.12,
+      "end": 51.64,
+      "text": " la llamada. ¡Espera un momento, por favor! ¿Contratación? ¿Sí, sí? ¿En qué le",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 51.64,
+      "end": 58.7,
+      "text": " puedo ayudar? Es que llamaron ustedes, perdón. Ok, ¿usted ya cuenta con servicio y sí en",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 58.7,
+      "end": 65.6,
+      "text": " casa de casualidad? Ah, no. Ah, ok. Lo que pasa es que estamos manejando nuevas promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 65.6,
+      "end": 69.76,
+      "text": " al realizar la contratación por si les diera interés. ¿Tenemos paquetes de Internet",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 69.76,
+      "end": 75.28,
+      "text": " y telefonía por 569 pesos o ya está solamente Internet y telefonía por 389",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 75.28,
+      "end": 79.68,
+      "text": " pesos? ¿Nos ha sido alguno que le llamé la atención? Oírselo, joven. Muchísimas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 79.68,
+      "end": 84.9,
+      "text": " gracias. Bueno, ¿qué pasa? Muy buen día. Muchas gracias. Gracias igualmente. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 90.36,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

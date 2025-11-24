@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200425135-5544389913-20251022-125440-5559290153.WAV",
+  "file_name": "0105-04965-25102200425135-5544389913-20251022-125440-5559290153.WAV",
+  "base_id": "0105-04965-25102200425135-5544389913-20251022-125440-5559290153",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para 5. Espera un momento, por favor. Que todo se carga a su cuenta de servicio. Que todo se carga a su tarjeta. Bueno. Sí, dígame, ¿qué le puedo servir? Hola, buenas tardes. Mi nombre es Brandon Aguínguez. Estaba comunicando la idea de promociones. Ahorita le estamos contactando, ya que tenemos promociones por parte del servicio de Internet de Easy. No sé si anteriormente se han contactado con usted. Por el momento no me interesa. La verdad es que mucho. ¿Ya cuenta con algún otro servicio, perdón? No, la verdad es que no me interesa. Es que este teléfono apenas me lo revé ahorita. Va que vaya. Sale, vale, muchas gracias. Este teléfono apenas me lo revé. Bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.62,
+      "end": 8.34,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.34,
+      "end": 16.14,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.14,
+      "end": 22.3,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.3,
+      "end": 31.62,
+      "text": " favor, hable o pulse 1 para 5. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 31.7,
+      "end": 41.58,
+      "text": " Que todo se carga a su cuenta de servicio. Que todo se carga a su tarjeta. Bueno. Sí, dígame, ¿qué le puedo servir?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.58,
+      "end": 46.45,
+      "text": " Hola, buenas tardes. Mi nombre es Brandon Aguínguez. Estaba comunicando la idea de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.45,
+      "end": 50.17,
+      "text": " promociones. Ahorita le estamos contactando, ya que tenemos promociones por parte del servicio",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.17,
+      "end": 55.93,
+      "text": " de Internet de Easy. No sé si anteriormente se han contactado con usted. Por el momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.93,
+      "end": 60.42,
+      "text": " no me interesa. La verdad es que mucho. ¿Ya cuenta con algún otro servicio, perdón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.42,
+      "end": 66.46,
+      "text": " No, la verdad es que no me interesa. Es que este teléfono apenas me lo revé ahorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.46,
+      "end": 69.78,
+      "text": " Va que vaya. Sale, vale, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 69.78,
+      "end": 72.91,
+      "text": " Este teléfono apenas me lo revé. Bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

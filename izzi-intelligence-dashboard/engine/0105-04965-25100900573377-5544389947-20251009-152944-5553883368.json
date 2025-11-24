@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900573377-5544389947-20251009-152944-5553883368.WAV",
+  "file_name": "0105-04965-25100900573377-5544389947-20251009-152944-5553883368.WAV",
+  "base_id": "0105-04965-25100900573377-5544389947-20251009-152944-5553883368",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad? Tener el mejor entretenimiento con 300 canales, Bigg's Premium y... Mira, mira, oye. ...solo 350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos. Espera un momento, por favor. Es grabadora. Siéntate el rey del entretenimiento con... ¿Bueno? ¿Bueno, bueno? ¿Bueno? ¿Bueno? ¿Yo hay yo?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 7.8,
+      "text": " Tener el mejor entretenimiento con 300 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 9.0,
+      "text": " Bigg's Premium y...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 9.0,
+      "end": 11.0,
+      "text": " Mira, mira, oye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 11.0,
+      "end": 14.0,
+      "text": " ...solo 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse uno para sí o dos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 24.0,
+      "end": 26.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 26.0,
+      "end": 29.18,
+      "text": " Es grabadora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 29.18,
+      "end": 33.01,
+      "text": " Siéntate el rey del entretenimiento con...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 33.01,
+      "end": 40.26,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 40.26,
+      "end": 41.26,
+      "text": " ¿Bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 41.26,
+      "end": 46.2,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 46.2,
+      "end": 47.2,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 47.2,
+      "end": 50.0,
+      "text": " ¿Yo hay yo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 58.932,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

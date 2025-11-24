@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100497989-3314541359-20251021-140906-3336480892.WAV",
+  "file_name": "0105-04965-25102100497989-3314541359-20251021-140906-3336480892.WAV",
+  "base_id": "0105-04965-25102100497989-3314541359-20251021-140906-3336480892",
+  "transcription": "Hola, gracias por llamar a Bancomultiva. Su cursal, Américas, si conoce el número de la extensión a la que desea llamar. Dígitelo ahora, de lo contrario, presione cero, para ser atendido por una operadora. ¿Te interesa? Un asesor te está esperando. Por favor, gracias por llamar a Bancomultiva. Su cursal, Américas, si conoce el número de la extensión a la que desea llamar. Dígitelo ahora, de lo contrario, presione cero, para ser atendido por una operadora. ¿Todavía se ve bien? Gracias por llamar a Bancomultiva. Su cursal, Américas, si conoce el número de la extensión a la que desea llamar. Dígitelo ahora, de lo contrario, presione cero, para ser atendido por una operadora. Bancomultiva, buena tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.08,
+      "end": 2.72,
+      "text": " Hola, gracias por llamar a Bancomultiva.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.72,
+      "end": 7.92,
+      "text": " Su cursal, Américas, si conoce el número de la extensión a la que desea llamar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 7.92,
+      "end": 13.72,
+      "text": " Dígitelo ahora, de lo contrario, presione cero, para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.72,
+      "end": 16.52,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.52,
+      "end": 20.32,
+      "text": " Por favor, gracias por llamar a Bancomultiva.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.32,
+      "end": 25.52,
+      "text": " Su cursal, Américas, si conoce el número de la extensión a la que desea llamar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.52,
+      "end": 28.92,
+      "text": " Dígitelo ahora, de lo contrario, presione cero,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.92,
+      "end": 34.35,
+      "text": " para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.35,
+      "end": 35.55,
+      "text": " ¿Todavía se ve bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.55,
+      "end": 37.95,
+      "text": " Gracias por llamar a Bancomultiva.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.95,
+      "end": 43.19,
+      "text": " Su cursal, Américas, si conoce el número de la extensión a la que desea llamar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.19,
+      "end": 46.59,
+      "text": " Dígitelo ahora, de lo contrario, presione cero,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 46.59,
+      "end": 69.49,
+      "text": " para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 69.49,
+      "end": 71.09,
+      "text": " Bancomultiva, buena tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.604,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

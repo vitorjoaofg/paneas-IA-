@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800129347-5544389908-20251008-085446-5553910422.WAV",
+  "file_name": "0105-04965-25100800129347-5544389908-20251008-085446-5553910422.WAV",
+  "base_id": "0105-04965-25100800129347-5544389908-20251008-085446-5553910422",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con los 5 canales, VIX Premium y eventos deportivos expulsivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Instagram. ¿Te interesa? Un asesor te está esperando. Por favor... ...que te brindamos calificando esta llamada. Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido. Espera un momento por favor. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido. Ayudanos a mejorar la atención que te brindamos calificando esta llamada. Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.8,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con los 5 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.8,
+      "end": 13.96,
+      "text": " VIX Premium y eventos deportivos expulsivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.96,
+      "end": 16.96,
+      "text": " No lo pienses más y cámbiate a Instagram.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.96,
+      "end": 21.26,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.26,
+      "end": 29.8,
+      "text": " ...que te brindamos calificando esta llamada. Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.88,
+      "end": 31.88,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.83,
+      "end": 40.83,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.83,
+      "end": 46.83,
+      "text": " Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.69,
+      "end": 57.69,
+      "text": " Ayudanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.69,
+      "end": 63.69,
+      "text": " Por favor presiona 1 si fuiste bien atendido o presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.852,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

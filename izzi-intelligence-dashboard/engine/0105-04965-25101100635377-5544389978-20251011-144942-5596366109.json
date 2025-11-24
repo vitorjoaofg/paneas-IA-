@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100635377-5544389978-20251011-144942-5596366109.WAV",
+  "file_name": "0105-04965-25101100635377-5544389978-20251011-144942-5596366109.WAV",
+  "base_id": "0105-04965-25101100635377-5544389978-20251011-144942-5596366109",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Uno. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse. Alaré contrataciones Easy y la atiende a la vez. ¿Con qué tengo el gusto? Hola, con Claudia. Mucho gusto, señora Claudia. Mi motivo de la llamada es para presentarle beneficios. ¿Usted cuenta con servicio Easy, señora Claudia? No, aquí donde yo vivo no hay señal de Easy. ¿Hace cuánto sigo cobertura, disculpe? Este, hace como 15 días. Entiendo. Ahorita lo pongo como nota, ¿de acuerdo? Una disculpa. Hasta luego. Páase.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.2,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.2,
+      "end": 16.5,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.48,
+      "end": 22.48,
+      "text": " Uno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.71,
+      "end": 32.71,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.71,
+      "end": 34.71,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.1,
+      "end": 46.6,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse. Alaré contrataciones Easy y la atiende a la vez. ¿Con qué tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.6,
+      "end": 48.66,
+      "text": " Hola, con Claudia.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.66,
+      "end": 55.16,
+      "text": " Mucho gusto, señora Claudia. Mi motivo de la llamada es para presentarle beneficios. ¿Usted cuenta con servicio Easy, señora Claudia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.16,
+      "end": 58.16,
+      "text": " No, aquí donde yo vivo no hay señal de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.92,
+      "end": 60.92,
+      "text": " ¿Hace cuánto sigo cobertura, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.48,
+      "end": 63.48,
+      "text": " Este, hace como 15 días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.04,
+      "end": 68.04,
+      "text": " Entiendo. Ahorita lo pongo como nota, ¿de acuerdo? Una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 68.04,
+      "end": 69.54,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 69.54,
+      "end": 70.54,
+      "text": " Páase.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.6,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300088439-5544389937-20251023-082832-8688170123.WAV",
+  "file_name": "0105-04965-25102300088439-5544389937-20251023-082832-8688170123.WAV",
+  "base_id": "0105-04965-25102300088439-5544389937-20251023-082832-8688170123",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. ¡Espera un momento, por favor! ¡Hola, muy buen día! Mi nombre es Edricia López. ¿Te interesa alguno de nuestros servicios? ¿Con quién tengo el gusto? ¡Hola! ¡Hola! ¡Hola, buen día! ¡Hola! ¡Hola! ¡Hola! Por efectos de calidad, tenemos que calmar esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 25.84,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.84,
+      "end": 40.79,
+      "text": " ¡Espera un momento, por favor! ¡Hola, muy buen día! Mi nombre es Edricia",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.79,
+      "end": 47.79,
+      "text": " López. ¿Te interesa alguno de nuestros servicios? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.79,
+      "end": 65.78,
+      "text": " ¡Hola! ¡Hola! ¡Hola, buen día! ¡Hola! ¡Hola! ¡Hola! Por efectos de calidad, tenemos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 65.78,
+      "end": 66.78,
+      "text": " que calmar esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

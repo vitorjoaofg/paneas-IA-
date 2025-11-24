@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700549809-5544389970-20251027-144522-5592117451.WAV",
+  "file_name": "0105-04965-25102700549809-5544389970-20251027-144522-5592117451.WAV",
+  "base_id": "0105-04965-25102700549809-5544389970-20251027-144522-5592117451",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Una sesión que está esperando. Por favor, hable o pulse uno para sí o dos para no. ¡Wow! Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor. ¡Wow! Espera un momento, por favor. Bueno, se está comunicando con Trataciones Easy. Le atiende la señorita Janette Pulido con quien tengo el gusto. Por motivos de calidad, me debería obligar a finalizar lo que es esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.58,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Una sesión",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.58,
+      "end": 24.74,
+      "text": " que está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.18,
+      "end": 26.68,
+      "text": " ¡Wow!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.68,
+      "end": 33.98,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.98,
+      "end": 34.98,
+      "text": " un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.98,
+      "end": 35.98,
+      "text": " ¡Wow!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.98,
+      "end": 38.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.98,
+      "end": 52.15,
+      "text": " Bueno, se está comunicando con Trataciones Easy. Le atiende la señorita Janette Pulido",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 52.15,
+      "end": 70.36,
+      "text": " con quien tengo el gusto. Por motivos de calidad, me debería obligar a finalizar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 70.36,
+      "end": 71.36,
+      "text": " lo que es esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.844,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

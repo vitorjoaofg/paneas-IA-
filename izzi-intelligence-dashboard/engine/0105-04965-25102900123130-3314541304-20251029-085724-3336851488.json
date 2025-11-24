@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900123130-3314541304-20251029-085724-3336851488.WAV",
+  "file_name": "0105-04965-25102900123130-3314541304-20251029-085724-3336851488.WAV",
+  "base_id": "0105-04965-25102900123130-3314541304-20251029-085724-3336851488",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día, le habla Yvonne Monfils de parte de su servicio de Easy para contrataciones. Buen día. ¿Qué miras los datos de los días? Hola, le hablamos de Easy para... Este es el número de contrataciones, ¿le interesó alguna propuesta que le mencionaron? La verdad ahorita no, muchas gracias, es que esta línea es de una empresa, entonces ya contratamos con una. Ah, ok. Una disculpa, se llama más adelante. Ok, muy bien, que tengas excelente día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.48,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 16.64,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.64,
+      "end": 23.41,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.41,
+      "end": 24.89,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.77,
+      "end": 35.82,
+      "text": " Hola, buen día, le habla Yvonne Monfils de parte de su servicio de Easy para contrataciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.82,
+      "end": 36.26,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.26,
+      "end": 41.5,
+      "text": " ¿Qué miras los datos de los días?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.5,
+      "end": 44.94,
+      "text": " Hola, le hablamos de Easy para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 44.94,
+      "end": 49.14,
+      "text": " Este es el número de contrataciones, ¿le interesó alguna propuesta que le mencionaron?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 49.14,
+      "end": 54.3,
+      "text": " La verdad ahorita no, muchas gracias, es que esta línea es de una empresa,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 54.3,
+      "end": 55.78,
+      "text": " entonces ya contratamos con una.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.78,
+      "end": 58.54,
+      "text": " Ah, ok. Una disculpa, se llama más adelante.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 58.54,
+      "end": 60.82,
+      "text": " Ok, muy bien, que tengas excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.82,
+      "end": 62.3,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 66.204,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

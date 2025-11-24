@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800256104-5540409205-20251018-111628-5589705186.WAV",
+  "file_name": "0105-04965-25101800256104-5540409205-20251018-111628-5589705186.WAV",
+  "base_id": "0105-04965-25101800256104-5540409205-20251018-111628-5589705186",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Muy buenos días. ¿Nos estamos comunicando de Easy? ¿Con quién tengo el gusto? ¿Hola, qué tal? ¿Sí? ¿En qué le puedo ayudar? ¿Habla Daniel Villalón? No, es que me están marcando de Easy. La verdad, ¿cómo le puedo hacer para que ya no me marquen? Ah, ok. Aquí pongo un reporte, entonces. Sin ningún problema. Que tenga buen día. Igualmente, bye. Adiós. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.82,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.82,
+      "end": 13.58,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.58,
+      "end": 20.1,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.1,
+      "end": 21.6,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.6,
+      "end": 27.82,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.82,
+      "end": 33.77,
+      "text": " un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 33.77,
+      "end": 75.22,
+      "text": " Hola, ¿qué tal? Muy buenos días. ¿Nos estamos comunicando de Easy? ¿Con quién",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 75.22,
+      "end": 77.95,
+      "text": " tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 77.95,
+      "end": 82.48,
+      "text": " ¿Hola, qué tal? ¿Sí? ¿En qué le puedo ayudar? ¿Habla Daniel Villalón?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 82.48,
+      "end": 87.48,
+      "text": " No, es que me están marcando de Easy. La verdad, ¿cómo le puedo hacer para que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 87.48,
+      "end": 88.48,
+      "text": " ya no me marquen?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 88.48,
+      "end": 93.57,
+      "text": " Ah, ok. Aquí pongo un reporte, entonces. Sin ningún problema. Que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 93.57,
+      "end": 94.57,
+      "text": " Igualmente, bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 94.57,
+      "end": 95.67,
+      "text": " Adiós.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 95.67,
+      "end": 96.31,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.992,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

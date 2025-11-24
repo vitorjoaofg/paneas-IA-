@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800458171-5544389969-20251008-125530-5575741577.WAV",
+  "file_name": "0105-04965-25100800458171-5544389969-20251008-125530-5575741577.WAV",
+  "base_id": "0105-04965-25100800458171-5544389969-20251008-125530-5575741577",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, hola. Buen día. Me comunico de la compañía de Easy. Le saludamos. ¿Paula Cabañas, cómo lo puede ayudar? Pues, es que ahorita no está el dueño del Easy, por eso hasta que él esté yo le digo que se comunique. Ah, ok. Sí, claro que sí. Ah, entonces ya tienen contrato. ¿Ya? Ok. Bueno, muchas gracias que tenga bonito día. Igualmente usted. Hasta luego, bye bye. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.3,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.3,
+      "end": 20.8,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.8,
+      "end": 34.45,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.45,
+      "end": 36.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.45,
+      "end": 49.71,
+      "text": " Hola, hola. Buen día. Me comunico de la compañía de Easy. Le saludamos. ¿Paula Cabañas, cómo lo puede ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.71,
+      "end": 57.93,
+      "text": " Pues, es que ahorita no está el dueño del Easy, por eso hasta que él esté yo le digo que se comunique.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.93,
+      "end": 62.31,
+      "text": " Ah, ok. Sí, claro que sí. Ah, entonces ya tienen contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.31,
+      "end": 63.31,
+      "text": " ¿Ya?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.31,
+      "end": 66.41,
+      "text": " Ok. Bueno, muchas gracias que tenga bonito día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.41,
+      "end": 67.41,
+      "text": " Igualmente usted.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.41,
+      "end": 69.41,
+      "text": " Hasta luego, bye bye.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.41,
+      "end": 70.41,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.924,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

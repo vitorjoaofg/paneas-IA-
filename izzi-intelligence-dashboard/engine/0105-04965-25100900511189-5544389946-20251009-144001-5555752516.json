@@ -1,0 +1,294 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900511189-5544389946-20251009-144001-5555752516.WAV",
+  "file_name": "0105-04965-25100900511189-5544389946-20251009-144001-5555752516.WAV",
+  "base_id": "0105-04965-25100900511189-5544389946-20251009-144001-5555752516",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad? ¡Ya lo tengo! ...tener el encuentro de rendimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Siento, no entendí su respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarla. Espera un momento, por favor. ¡Bueno! ¡Hola! ¿Qué tal? Buenas tardes. Mire, me han estado llamando, pero yo soy miembro de Easy, entonces no necesito que me estén recordando otras ofertas. Ah, bien, bien. Perfecto. Es usted la señorita Elia Ramírez Hernández, ¿verdad? Así es. Sí. Pero yo ya soy de Easy. Sí, o sea que... Pero me llaman y ya no necesito que me estén recordando que debo pasar. Ah, ok. Sí, no se preocupe. De hecho, no es ningún tema de área de cobranza o algo... No, pero, por ejemplo, ahorita le colgué y me volvieron a llamar. Ah, bien, bien. Ya entiendo. Ah, bien. No se preocupe. ¿A qué agregamos entonces la notita? Lo que pasa es que se le están brindando planes para teléfono celular con precios accesibles a la misma red de teléfono celular. No, muchas gracias. A usted bonito día. Hasta luego. Igual.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 6.0,
+      "text": " ¡Ya lo tengo!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 6.0,
+      "end": 8.0,
+      "text": " ...tener el encuentro de rendimiento con 200 canales,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 8.0,
+      "end": 14.0,
+      "text": " VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.0,
+      "end": 24.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.3,
+      "end": 30.3,
+      "text": " Siento, no entendí su respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 30.3,
+      "end": 32.3,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 32.3,
+      "end": 36.3,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminarla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.3,
+      "end": 38.3,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.72,
+      "end": 47.91,
+      "text": " ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.91,
+      "end": 49.91,
+      "text": " ¡Hola! ¿Qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.91,
+      "end": 52.91,
+      "text": " Mire, me han estado llamando, pero yo soy miembro de Easy,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.91,
+      "end": 57.91,
+      "text": " entonces no necesito que me estén recordando otras ofertas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 57.91,
+      "end": 60.3,
+      "text": " Ah, bien, bien. Perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 60.3,
+      "end": 63.3,
+      "text": " Es usted la señorita Elia Ramírez Hernández, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 63.3,
+      "end": 64.3,
+      "text": " Así es. Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.3,
+      "end": 66.3,
+      "text": " Pero yo ya soy de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 66.3,
+      "end": 67.3,
+      "text": " Sí, o sea que...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 67.3,
+      "end": 74.3,
+      "text": " Pero me llaman y ya no necesito que me estén recordando que debo pasar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 75.62,
+      "end": 76.62,
+      "text": " Ah, ok. Sí, no se preocupe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 76.62,
+      "end": 79.62,
+      "text": " De hecho, no es ningún tema de área de cobranza o algo...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 79.62,
+      "end": 83.9,
+      "text": " No, pero, por ejemplo, ahorita le colgué y me volvieron a llamar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 83.9,
+      "end": 85.9,
+      "text": " Ah, bien, bien. Ya entiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 85.9,
+      "end": 86.9,
+      "text": " Ah, bien. No se preocupe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 86.9,
+      "end": 87.9,
+      "text": " ¿A qué agregamos entonces la notita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 87.9,
+      "end": 90.9,
+      "text": " Lo que pasa es que se le están brindando planes para teléfono celular",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 90.9,
+      "end": 93.9,
+      "text": " con precios accesibles a la misma red de teléfono celular.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 93.9,
+      "end": 95.9,
+      "text": " No, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 95.9,
+      "end": 99.13,
+      "text": " A usted bonito día. Hasta luego. Igual.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 105.012,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

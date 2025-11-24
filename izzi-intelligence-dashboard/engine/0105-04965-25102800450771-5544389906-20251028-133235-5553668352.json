@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800450771-5544389906-20251028-133235-5553668352.WAV",
+  "file_name": "0105-04965-25102800450771-5544389906-20251028-133235-5553668352.WAV",
+  "base_id": "0105-04965-25102800450771-5544389906-20251028-133235-5553668352",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigSquare, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Marque 1. Si es cliente de alguno de nuestros programas, marque 2. Recuerde tener a la mano su RTC, número de celular y correo electrónico registrados en su contrato. Si usted recibió una oferta de DECA de Red Magisterial, por favor, 1 de 3. Grupo Dilar, buenas aves, ¿le atiende Jorge en que pueda ayudarle? Grupo Dilar, ¿le atiende Jorge en que puede ayudarle? Bueno, se finaliza la llamada por falta de interacción.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con BigSquare, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " Marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.0,
+      "end": 22.32,
+      "text": " Si es cliente de alguno de nuestros programas, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.32,
+      "end": 29.32,
+      "text": " Recuerde tener a la mano su RTC, número de celular y correo electrónico registrados en su contrato.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.32,
+      "end": 35.58,
+      "text": " Si usted recibió una oferta de DECA de Red Magisterial, por favor, 1 de 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.58,
+      "end": 47.1,
+      "text": " Grupo Dilar, buenas aves, ¿le atiende Jorge en que pueda ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.1,
+      "end": 60.34,
+      "text": " Grupo Dilar, ¿le atiende Jorge en que puede ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.34,
+      "end": 80.75,
+      "text": " Bueno, se finaliza la llamada por falta de interacción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 103.896,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

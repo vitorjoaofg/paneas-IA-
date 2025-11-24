@@ -1,0 +1,204 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800517785-5544389954-20251028-142900-5592336270.WAV",
+  "file_name": "0105-04965-25102800517785-5544389954-20251028-142900-5592336270.WAV",
+  "base_id": "0105-04965-25102800517785-5544389954-20251028-142900-5592336270",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Tenemos IZI? Sí, un asesor te quiere decir la promoción de IZI. 330 y te lo pone. ¿Bueno? Hola. Hola, ¿qué tal? Buenas tardes. Le hablamos de su compañía IZI. ¿Qué puedo ayudarle? Sobre la promoción que tienen. Ah, sí, sí, señorita. ¿Cómo que le interesaría? El Internet. Mire, le comento ahorita. Estamos usando 120 megas de velocidad por seis meses. El primer mes lo estaría pagando en 350. Ya durante seis meses 590 y su precio fijo le quedaría en 690. Ah, nada más. Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 21.16,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.16,
+      "end": 23.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.16,
+      "end": 24.16,
+      "text": " ¿Tenemos IZI?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 24.16,
+      "end": 32.62,
+      "text": " Sí, un asesor te quiere decir la promoción de IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.62,
+      "end": 35.62,
+      "text": " 330 y te lo pone.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.62,
+      "end": 36.62,
+      "text": " ¿Bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.62,
+      "end": 37.9,
+      "text": " Hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.9,
+      "end": 39.9,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.9,
+      "end": 45.34,
+      "text": " Le hablamos de su compañía IZI. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 45.34,
+      "end": 49.18,
+      "text": " Sobre la promoción que tienen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.18,
+      "end": 52.43,
+      "text": " Ah, sí, sí, señorita. ¿Cómo que le interesaría?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.43,
+      "end": 56.77,
+      "text": " El Internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 56.77,
+      "end": 65.04,
+      "text": " Mire, le comento ahorita. Estamos usando 120 megas de velocidad por seis meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 65.04,
+      "end": 70.23,
+      "text": " El primer mes lo estaría pagando en 350.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 70.23,
+      "end": 76.23,
+      "text": " Ya durante seis meses 590 y su precio fijo le quedaría en 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 76.23,
+      "end": 83.46,
+      "text": " Ah, nada más. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 83.46,
+      "end": 84.46,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.632,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

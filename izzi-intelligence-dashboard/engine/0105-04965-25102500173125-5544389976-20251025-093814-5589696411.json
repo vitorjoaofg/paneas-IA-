@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500173125-5544389976-20251025-093814-5589696411.WAV",
+  "file_name": "0105-04965-25102500173125-5544389976-20251025-093814-5589696411.WAV",
+  "base_id": "0105-04965-25102500173125-5544389976-20251025-093814-5589696411",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buen día. Me hablaron, no sé quién es usted. Hola, ¿qué tal? Buen día, señorita. Habla Miriam Goseguera de parte de la compañía de Easy. Mi llamada es para darla a conocer algunos beneficios que se le están proporcionando a usted pues para cliente nuevo o activo. No sé si manejaría servicio de Internet o televisión por cable con nosotros en Easy. No. Oiga, háblame un ratito porque estoy ocupada. Hable mejor. ¿Qué día me habla? Mañana pasado, si me interesa. Sí, si gusta, a usted le puedo hablar mañana. ¿Está bien? Saludale, bye bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 22.47,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.47,
+      "end": 24.47,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.47,
+      "end": 35.58,
+      "text": " Sí, buen día. Me hablaron, no sé quién es usted.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.58,
+      "end": 37.58,
+      "text": " Hola, ¿qué tal? Buen día, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.58,
+      "end": 39.58,
+      "text": " Habla Miriam Goseguera de parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.58,
+      "end": 44.58,
+      "text": " Mi llamada es para darla a conocer algunos beneficios que se le están proporcionando a usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.58,
+      "end": 46.58,
+      "text": " pues para cliente nuevo o activo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.58,
+      "end": 51.58,
+      "text": " No sé si manejaría servicio de Internet o televisión por cable con nosotros en Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.58,
+      "end": 56.58,
+      "text": " No. Oiga, háblame un ratito porque estoy ocupada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 56.58,
+      "end": 58.58,
+      "text": " Hable mejor. ¿Qué día me habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 58.58,
+      "end": 60.58,
+      "text": " Mañana pasado, si me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.58,
+      "end": 63.58,
+      "text": " Sí, si gusta, a usted le puedo hablar mañana. ¿Está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 63.58,
+      "end": 65.99,
+      "text": " Saludale, bye bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.572,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

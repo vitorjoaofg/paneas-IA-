@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800609124-5544389911-20251028-154448-5513141431.WAV",
+  "file_name": "0105-04965-25102800609124-5544389911-20251028-154448-5513141431.WAV",
+  "base_id": "0105-04965-25102800609124-5544389911-20251028-154448-5513141431",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abraham García por parte de la compañía de Easy. Contrataciones. Dígame, ¿qué le puedo ayudar? Me llaman, ¿o qué quieren? Pasó por una contestadora, de hecho, le tocó la oferta de 350, ¿correcto? Luego preguntamos uno. ¿Qué pasó? Exacto. Muy bien, es para que tenga un mejor servicio de Internet, teléfono y televisión en casa. Mire, actualmente",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 29.62,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.62,
+      "end": 41.12,
+      "text": " momento, por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 41.12,
+      "end": 43.56,
+      "text": " Mucho gusto. Abraham García por parte de la compañía de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.56,
+      "end": 47.93,
+      "text": " Contrataciones. Dígame, ¿qué le puedo ayudar? Me llaman, ¿o qué quieren?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.93,
+      "end": 52.45,
+      "text": " Pasó por una contestadora, de hecho, le tocó la oferta de 350, ¿correcto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.45,
+      "end": 57.37,
+      "text": " Luego preguntamos uno. ¿Qué pasó? Exacto. Muy bien, es para que tenga un",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.37,
+      "end": 62.14,
+      "text": " mejor servicio de Internet, teléfono y televisión en casa. Mire, actualmente",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.136,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

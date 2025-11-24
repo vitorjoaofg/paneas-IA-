@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100405508-5544389964-20251031-130049-5589686689.WAV",
+  "file_name": "0105-04965-25103100405508-5544389964-20251031-130049-5589686689.WAV",
+  "base_id": "0105-04965-25103100405508-5544389964-20251031-130049-5589686689",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad en el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos en primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ¿Tienes Internet pulido? ¿Con quién tengo el gusto? Bueno, de buena calidad, me veré obligada a finalizar esta llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad en el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos en primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 20.2,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 48.74,
+      "text": " Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 48.94,
+      "end": 57.82,
+      "text": " ¿Tienes Internet pulido? ¿Con quién tengo el gusto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 57.82,
+      "end": 71.86,
+      "text": " Bueno, de buena calidad, me veré obligada a finalizar esta llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 133.092,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

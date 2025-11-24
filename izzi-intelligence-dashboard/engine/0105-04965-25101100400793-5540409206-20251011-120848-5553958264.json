@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100400793-5540409206-20251011-120848-5553958264.WAV",
+  "file_name": "0105-04965-25101100400793-5540409206-20251011-120848-5553958264.WAV",
+  "base_id": "0105-04965-25101100400793-5540409206-20251011-120848-5553958264",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor en detenimiento con 200 canales, Bix Premium y eventos deportivos extrancivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor. Plaza Polanco, si conoces el número de la extensión a la que desea llamar, digítelo ahora. De lo contrario, presione 0 para ser atendido por un operador. Espera un momento, por favor. ¿Todavía sigue ahí? Gracias por llamar a Banco Multiva, Sucursal, Plaza Polanco. Si conoces el número de la extensión a la que desea llamar, digítelo ahora. De lo contrario, presione 0 para ser atendido por una operadora.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.66,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor en",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.66,
+      "end": 11.12,
+      "text": " detenimiento con 200 canales, Bix Premium y eventos deportivos extrancivos por solo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.12,
+      "end": 14.16,
+      "text": " 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.16,
+      "end": 16.96,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.96,
+      "end": 17.96,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.96,
+      "end": 20.44,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.44,
+      "end": 21.44,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.44,
+      "end": 26.44,
+      "text": " Plaza Polanco, si conoces el número de la extensión a la que desea llamar, digítelo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.44,
+      "end": 27.44,
+      "text": " ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 27.88,
+      "end": 30.88,
+      "text": " De lo contrario, presione 0 para ser atendido por un operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.88,
+      "end": 31.88,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 31.88,
+      "end": 35.06,
+      "text": " ¿Todavía sigue ahí?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 35.06,
+      "end": 40.06,
+      "text": " Gracias por llamar a Banco Multiva, Sucursal, Plaza Polanco.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 40.06,
+      "end": 45.06,
+      "text": " Si conoces el número de la extensión a la que desea llamar, digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 45.06,
+      "end": 49.06,
+      "text": " De lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.848,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

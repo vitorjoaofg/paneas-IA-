@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101600575736-6644547911-20251016-151238-5648388902.WAV",
+  "file_name": "0105-04999-25101600575736-6644547911-20251016-151238-5648388902.WAV",
+  "base_id": "0105-04999-25101600575736-6644547911-20251016-151238-5648388902",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $390 pesos el primer mes? No la pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hazlo. Pues es que teníamos que ir con tiempo. Espera un momento, por favor. Buenas tardes, mi nombre es Scarlett Navarro, me comunico de Easy con quien tenga un gusto. Bueno, bueno. Bueno, ¿me escuchan? Bueno, bueno. No sé si la voy a seguir comprando en el test, es que su papá se estaba inquilado o qué? No sé, vamos a la venta aquí. ¿Es esta foto? Sí, pero ya vamos a la venta aquí. Ya saliendo de aquí, vamos a la venta.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $390",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No la pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 21.72,
+      "text": " te está esperando. Por favor, hazlo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.72,
+      "end": 24.72,
+      "text": " Pues es que teníamos que ir con tiempo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.36,
+      "end": 28.36,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.36,
+      "end": 45.7,
+      "text": " Buenas tardes, mi nombre es Scarlett Navarro, me comunico de Easy con quien tenga un gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.7,
+      "end": 52.7,
+      "text": " Bueno, bueno. Bueno, ¿me escuchan? Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.7,
+      "end": 60.78,
+      "text": " No sé si la voy a seguir comprando en el test, es que su papá se estaba inquilado",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.78,
+      "end": 90.8,
+      "text": " o qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 90.8,
+      "end": 110.41,
+      "text": " No sé, vamos a la venta aquí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 110.41,
+      "end": 111.41,
+      "text": " ¿Es esta foto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 111.41,
+      "end": 127.62,
+      "text": " Sí, pero ya vamos a la venta aquí. Ya saliendo de aquí, vamos a la venta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 150.804,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

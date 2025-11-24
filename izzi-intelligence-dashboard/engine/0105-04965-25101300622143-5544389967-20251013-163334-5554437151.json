@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300622143-5544389967-20251013-163334-5554437151.WAV",
+  "file_name": "0105-04965-25101300622143-5544389967-20251013-163334-5554437151.WAV",
+  "base_id": "0105-04965-25101300622143-5544389967-20251013-163334-5554437151",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Streaming más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un profesor te está esperando. Por favor, hable o pulse 1 para... Espera un momento, por favor. Por motivos de que haya que financiar la llamada botola.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.12,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Streaming",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.12,
+      "end": 13.28,
+      "text": " más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.28,
+      "end": 14.28,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.28,
+      "end": 16.24,
+      "text": " Un profesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.24,
+      "end": 23.24,
+      "text": " Por favor, hable o pulse 1 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.24,
+      "end": 30.29,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.29,
+      "end": 44.04,
+      "text": " Por motivos de que haya que financiar la llamada botola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.18,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

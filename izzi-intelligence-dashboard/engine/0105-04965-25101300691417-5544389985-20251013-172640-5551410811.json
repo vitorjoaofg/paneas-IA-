@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300691417-5544389985-20251013-172640-5551410811.WAV",
+  "file_name": "0105-04965-25101300691417-5544389985-20251013-172640-5551410811.WAV",
+  "base_id": "0105-04965-25101300691417-5544389985-20251013-172640-5551410811",
+  "transcription": "Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de los deportivos exclusivos por solo $350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Contratación a Easy, la tienda Edgar Torres, con quien tenga el gusto. Gracias por llamar a CaprePoll. Si conoce la extensión de la persona con la que desea hablar, marque ahora. De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.76,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.76,
+      "end": 10.56,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de los deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 14.12,
+      "text": " por solo $350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.12,
+      "end": 17.08,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.08,
+      "end": 18.08,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.08,
+      "end": 20.16,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.16,
+      "end": 23.76,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.76,
+      "end": 26.25,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 26.25,
+      "end": 31.09,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.09,
+      "end": 42.78,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 42.78,
+      "end": 49.78,
+      "text": " Contratación a Easy, la tienda Edgar Torres, con quien tenga el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.78,
+      "end": 52.34,
+      "text": " Gracias por llamar a CaprePoll.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 52.34,
+      "end": 57.18,
+      "text": " Si conoce la extensión de la persona con la que desea hablar, marque ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.18,
+      "end": 64.81,
+      "text": " De lo contrario, marque 1 y en un momento será atendido por uno de nuestros asesores.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.81,
+      "end": 65.31,
+      "text": " Adiós.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 65.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

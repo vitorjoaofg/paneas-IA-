@@ -1,0 +1,384 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000542742-3314541328-20251030-145619-3343497363.WAV",
+  "file_name": "0105-04965-25103000542742-3314541328-20251030-145619-3343497363.WAV",
+  "base_id": "0105-04965-25103000542742-3314541328-20251030-145619-3343497363",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarla y espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablamos de su compañía Easy, ¿qué puedo ayudarle? Buenas tardes. Mira, me acaban de marcar para ver si me interesa tener su servicio. Mi duda es, ella tiene una etapa para Hacienda Santa Fe, por la etapa 12. Ya, déjame checar. Sí. ¿Cuál es su código postal, perdón? 45653. 653. Es Jalisco. Así es. ¿Cuál es su colonia? Hacienda Santa Fe. Pasionamiento, Hacienda Santa Fe. Permítame un segundito. ¿Chula Vista? No, Santa Fe. Santa Fe, Hacienda Santa Fe. Ok, ¿cuál es su calle, perdón? Avenida Mezapa, etapa 12, Santa Fe. ¿Avenida qué, perdón? Mezapa. Mezapa. Mezapa, M-Z-A-P-A. Ajá, Mezapa, Avenida Mezapa. ¿Cuál es su nombre de casa? 113. 113, ok. Permítame un segundito. Permítame un segundito, estamos validando la cobertura. Sí. No, no tenemos aún, señorita. Ok, bueno. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.54,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.54,
+      "end": 19.04,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.04,
+      "end": 21.04,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.04,
+      "end": 27.64,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminarla y espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.64,
+      "end": 35.94,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.08,
+      "end": 38.58,
+      "text": " Le hablamos de su compañía Easy, ¿qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.58,
+      "end": 43.58,
+      "text": " Buenas tardes. Mira, me acaban de marcar para ver si me interesa tener su servicio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.58,
+      "end": 49.58,
+      "text": " Mi duda es, ella tiene una etapa para Hacienda Santa Fe, por la etapa 12.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 49.58,
+      "end": 51.71,
+      "text": " Ya, déjame checar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.71,
+      "end": 53.06,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.06,
+      "end": 64.73,
+      "text": " ¿Cuál es su código postal, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.73,
+      "end": 67.73,
+      "text": " 45653.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 67.73,
+      "end": 70.34,
+      "text": " 653.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 70.34,
+      "end": 73.46,
+      "text": " Es Jalisco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 73.46,
+      "end": 74.46,
+      "text": " Así es.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 74.46,
+      "end": 75.46,
+      "text": " ¿Cuál es su colonia?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 75.46,
+      "end": 78.1,
+      "text": " Hacienda Santa Fe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 78.74,
+      "end": 80.74,
+      "text": " Pasionamiento, Hacienda Santa Fe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 80.74,
+      "end": 85.87,
+      "text": " Permítame un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 107.18,
+      "end": 108.18,
+      "text": " ¿Chula Vista?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 108.18,
+      "end": 110.31,
+      "text": " No, Santa Fe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 110.31,
+      "end": 112.38,
+      "text": " Santa Fe, Hacienda Santa Fe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 112.38,
+      "end": 114.38,
+      "text": " Ok, ¿cuál es su calle, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 114.38,
+      "end": 119.21,
+      "text": " Avenida Mezapa, etapa 12, Santa Fe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 119.21,
+      "end": 122.23,
+      "text": " ¿Avenida qué, perdón?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 122.23,
+      "end": 124.49,
+      "text": " Mezapa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 124.49,
+      "end": 126.49,
+      "text": " Mezapa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 126.49,
+      "end": 128.49,
+      "text": " Mezapa, M-Z-A-P-A.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 128.49,
+      "end": 134.75,
+      "text": " Ajá, Mezapa, Avenida Mezapa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 134.75,
+      "end": 136.75,
+      "text": " ¿Cuál es su nombre de casa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 137.39,
+      "end": 139.78,
+      "text": " 113.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 139.78,
+      "end": 144.98,
+      "text": " 113, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 144.98,
+      "end": 173.57,
+      "text": " Permítame un segundito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 173.57,
+      "end": 175.57,
+      "text": " Permítame un segundito, estamos validando la cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 175.57,
+      "end": 212.73,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 212.73,
+      "end": 214.73,
+      "text": " No, no tenemos aún, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 214.73,
+      "end": 216.73,
+      "text": " Ok, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 216.73,
+      "end": 218.73,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 220.32,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

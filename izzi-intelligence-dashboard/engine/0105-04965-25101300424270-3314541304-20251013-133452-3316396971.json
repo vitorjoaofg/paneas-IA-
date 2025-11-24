@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300424270-3314541304-20251013-133452-3316396971.WAV",
+  "file_name": "0105-04965-25101300424270-3314541304-20251013-133452-3316396971.WAV",
+  "base_id": "0105-04965-25101300424270-3314541304-20251013-133452-3316396971",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Ok. Hola, ¿qué tal? Buenas tardes. ¿Buenas tardes? Buenas tardes. Mi nombre es José Manuel. ¿Con quién tengo el gusto? Con mi papá, ¿eh? Ok. Hola, ¿qué tal señores? Buenas tardes. Estamos comunicando de compañía Easy ya que tenemos algunas promociones que tenemos ya activas para que puedan también, no sé si ya cuentan con el servicio de Easy o otra compañía. No, no. Tenemos Mega Cable. Mega Cable, ok, ok. No le desculpan, estamos marcando para hablar con nuestras promociones. Pues muchas gracias. Buenas tardes. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.32,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.88,
+      "end": 31.04,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.04,
+      "end": 46.53,
+      "text": " Ok. Hola, ¿qué tal? Buenas tardes. ¿Buenas tardes? Buenas tardes. Mi nombre es José Manuel. ¿Con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.53,
+      "end": 80.58,
+      "text": " quién tengo el gusto? Con mi papá, ¿eh? Ok. Hola, ¿qué tal señores? Buenas tardes. Estamos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 80.58,
+      "end": 86.18,
+      "text": " comunicando de compañía Easy ya que tenemos algunas promociones que tenemos ya activas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 86.18,
+      "end": 90.86,
+      "text": " para que puedan también, no sé si ya cuentan con el servicio de Easy o otra compañía. No,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 90.86,
+      "end": 96.26,
+      "text": " no. Tenemos Mega Cable. Mega Cable, ok, ok. No le desculpan, estamos marcando para hablar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 96.26,
+      "end": 101.74,
+      "text": " con nuestras promociones. Pues muchas gracias. Buenas tardes. Adiós.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 104.112,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

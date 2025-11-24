@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600351780-5544389967-20251016-115308-5598034225.WAV",
+  "file_name": "0105-04965-25101600351780-5544389967-20251016-115308-5598034225.WAV",
+  "base_id": "0105-04965-25101600351780-5544389967-20251016-115308-5598034225",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, no entiendo tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por favor. ¡Buenas tardes! ¿Se está comunicando contratación y si sigue atiendes ya en el pulido con quien tengo el gusto? En Horta no ocupo, gracias. ¿Mande? En Horta no quiero. Bueno, y usted dejando el comentario que tenga buena tarde. Gracias igualmente, y su madre.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 33.2,
+      "text": " te está esperando. Por favor, no entiendo tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 33.2,
+      "end": 39.78,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.78,
+      "end": 60.1,
+      "text": " favor. ¡Buenas tardes! ¿Se está comunicando contratación y si sigue atiendes ya en el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 60.1,
+      "end": 68.94,
+      "text": " pulido con quien tengo el gusto? En Horta no ocupo, gracias. ¿Mande? En Horta no quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 68.94,
+      "end": 74.7,
+      "text": " Bueno, y usted dejando el comentario que tenga buena tarde. Gracias igualmente,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 74.7,
+      "end": 76.86,
+      "text": " y su madre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.524,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

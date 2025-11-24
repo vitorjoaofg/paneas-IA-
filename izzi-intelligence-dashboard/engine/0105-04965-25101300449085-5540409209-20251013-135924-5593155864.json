@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300449085-5540409209-20251013-135924-5593155864.WAV",
+  "file_name": "0105-04965-25101300449085-5540409209-20251013-135924-5593155864.WAV",
+  "base_id": "0105-04965-25101300449085-5540409209-20251013-135924-5593155864",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. ¿Sí, bueno? ¿Qué tal? ¿Buenas tardes? ¿Estamos marcando de Easy? El motivo de la llamada es para ofrecerle... No me interesa, joven, y le pedí video de la manera más atenta y educada posible, que no me estén molestando. No me interesa. Con el cliente que soy, estoy bien. No me estén molestando, por favor. ¿Quién le está molestando? Ustedes, no me has enchiñado la madre, cabrón. Lo que está pasando es que me gusta hablar de esta manera.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 30.55,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.59,
+      "end": 35.51,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 35.51,
+      "end": 48.32,
+      "text": " ¿Sí, bueno? ¿Qué tal? ¿Buenas tardes? ¿Estamos marcando de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.32,
+      "end": 53.12,
+      "text": " El motivo de la llamada es para ofrecerle... No me interesa, joven, y le pedí video de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.12,
+      "end": 58.76,
+      "text": " la manera más atenta y educada posible, que no me estén molestando. No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 58.76,
+      "end": 62.04,
+      "text": " Con el cliente que soy, estoy bien. No me estén molestando, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.04,
+      "end": 66.8,
+      "text": " ¿Quién le está molestando? Ustedes, no me has enchiñado la madre,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.8,
+      "end": 70.28,
+      "text": " cabrón. Lo que está pasando es que me gusta hablar de esta manera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

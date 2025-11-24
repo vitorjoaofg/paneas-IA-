@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300309843-5540409218-20251023-112630-5593486077.WAV",
+  "file_name": "0105-04965-25102300309843-5540409218-20251023-112630-5593486077.WAV",
+  "base_id": "0105-04965-25102300309843-5540409218-20251023-112630-5593486077",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? ¡Un asesor te está esperando! ¡Por favor! Entendemos que usted está de acuerdo. Le recordamos que nuestro horario de servicio es del lunes a viernes de 8 a 10 de la tarde. ¡Espera un momento por favor! ¡Gracias! ¿Hola, buenas diez?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.26,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.26,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cándate a Easy! ¿Te interesa? ¡Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 21.0,
+      "text": " te está esperando! ¡Por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 30.28,
+      "text": " Entendemos que usted está de acuerdo. Le recordamos que nuestro horario de servicio es del lunes a viernes de 8 a 10 de la tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.28,
+      "end": 62.79,
+      "text": " ¡Espera un momento por favor! ¡Gracias! ¿Hola, buenas diez?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.392,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

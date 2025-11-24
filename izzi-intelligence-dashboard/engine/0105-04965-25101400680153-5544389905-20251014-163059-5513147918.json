@@ -1,0 +1,60 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400680153-5544389905-20251014-163059-5513147918.WAV",
+  "file_name": "0105-04965-25101400680153-5544389905-20251014-163059-5513147918.WAV",
+  "base_id": "0105-04965-25101400680153-5544389905-20251014-163059-5513147918",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con IGI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Bien, he venido al área de contrataciones IGI, con quien tengo el gusto. ¿Bueno?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.94,
+      "end": 9.27,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.27,
+      "end": 17.49,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con IGI es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.49,
+      "end": 28.58,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.58,
+      "end": 29.58,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.58,
+      "end": 40.7,
+      "text": " Bien, he venido al área de contrataciones IGI, con quien tengo el gusto. ¿Bueno?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 42.804,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

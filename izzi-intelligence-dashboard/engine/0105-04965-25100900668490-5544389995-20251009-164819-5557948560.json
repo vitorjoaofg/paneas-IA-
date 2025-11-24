@@ -1,0 +1,285 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900668490-5544389995-20251009-164819-5557948560.WAV",
+  "file_name": "0105-04965-25100900668490-5544389995-20251009-164819-5557948560.WAV",
+  "base_id": "0105-04965-25100900668490-5544389995-20251009-164819-5557948560",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Bueno, un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2. Easy, ¿pero qué te decían? Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes. Hola, ¿qué tal, señor? Buenas tardes, Alarran Diranda. Estamos comunicándonos del servicio de Easy. ¿Le llegó algún mensaje, alguna llamada, disculpe? Oh, correcto, señor. ¿Es el señor Guillermo González, disculpe? Correcto. Ah, correcto, señor. Bueno, en este caso hubiera para la contratación del servicio. ¿Le llegó algún mensaje, alguna llamada, disculpe? Asisto a un centro de atención porque veo que desconoces tú. No sé para qué me hayan llamado. Me enlazaron inmediatamente contigo. Pero asisto a un centro de atención. No, correcto, señor. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.36,
+      "end": 14.16,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.16,
+      "end": 16.8,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.8,
+      "end": 17.8,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.8,
+      "end": 20.24,
+      "text": " Bueno, un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.24,
+      "end": 23.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.8,
+      "end": 28.76,
+      "text": " Easy, ¿pero qué te decían?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 28.96,
+      "end": 31.36,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.36,
+      "end": 33.56,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.56,
+      "end": 37.36,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.36,
+      "end": 45.11,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.11,
+      "end": 45.71,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.71,
+      "end": 46.91,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.91,
+      "end": 48.31,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.31,
+      "end": 49.11,
+      "text": " Hola, ¿qué tal, señor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 49.11,
+      "end": 50.31,
+      "text": " Buenas tardes, Alarran Diranda.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 50.31,
+      "end": 52.51,
+      "text": " Estamos comunicándonos del servicio de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 52.51,
+      "end": 56.34,
+      "text": " ¿Le llegó algún mensaje, alguna llamada, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 56.34,
+      "end": 57.34,
+      "text": " Oh, correcto, señor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 57.34,
+      "end": 60.54,
+      "text": " ¿Es el señor Guillermo González, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 60.54,
+      "end": 61.74,
+      "text": " Correcto.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 61.74,
+      "end": 62.74,
+      "text": " Ah, correcto, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 62.74,
+      "end": 65.74,
+      "text": " Bueno, en este caso hubiera para la contratación del servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 65.74,
+      "end": 70.03,
+      "text": " ¿Le llegó algún mensaje, alguna llamada, disculpe?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 70.03,
+      "end": 73.63,
+      "text": " Asisto a un centro de atención porque veo que desconoces tú.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 73.63,
+      "end": 75.03,
+      "text": " No sé para qué me hayan llamado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 75.03,
+      "end": 76.83,
+      "text": " Me enlazaron inmediatamente contigo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 76.83,
+      "end": 78.83,
+      "text": " Pero asisto a un centro de atención.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 78.83,
+      "end": 79.83,
+      "text": " No, correcto, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 79.83,
+      "end": 81.03,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

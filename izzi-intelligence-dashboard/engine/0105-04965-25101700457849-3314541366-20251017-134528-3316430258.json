@@ -1,0 +1,402 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700457849-3314541366-20251017-134528-3316430258.WAV",
+  "file_name": "0105-04965-25101700457849-3314541366-20251017-134528-3316430258.WAV",
+  "base_id": "0105-04965-25101700457849-3314541366-20251017-134528-3316430258",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para no. Espera un momento, por favor. Bueno. Hola, buenas tardes, ¿con quién hablo? Perdón. Hablo Eduardo Munguía, aquí de Easy. ¿Con quién está, de gusto? Hola, Eduardo. Mira, quisiera ver si tú tienes este acceso a la base de datos de Easy que puedas quitar mi número. Ah, ¿sí? Lo podemos retirar. ¿Sabes qué? Nos llaman, o sea, no es lo mal, cada media hora y son llamadas de Easy y es una grabadora. Entonces, no hay modo de cancelar. Sí, como aquí son ventas, entonces tenemos que contestar el teléfono. ¿Tienes si usted te dictó mi número para que pase el reporte y lo bloqueen, por favor? Ah, sí. ¿Cuál sería? Mira, es el 3330-01-90-01. ¿Te lo confirmo? Es 3330-01-90-01. Perfecto. ¿Y el número de atención a clientes, disculpa? Es la extensión 3. Es el 800-120-5000, opción 3. 800-120-5000, opción 3. Ah, opción 3000, opción 3. Excelente con eso. Pues te agradezco. OK. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.24,
+      "end": 16.44,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.44,
+      "end": 20.84,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.84,
+      "end": 26.77,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.77,
+      "end": 28.77,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.77,
+      "end": 32.17,
+      "text": " Presiona 1 para hablar con un asesor o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 32.41,
+      "end": 34.41,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 34.41,
+      "end": 41.58,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.58,
+      "end": 44.29,
+      "text": " Hola, buenas tardes, ¿con quién hablo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.29,
+      "end": 45.29,
+      "text": " Perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 45.29,
+      "end": 47.29,
+      "text": " Hablo Eduardo Munguía, aquí de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 47.29,
+      "end": 48.29,
+      "text": " ¿Con quién está, de gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 48.29,
+      "end": 49.29,
+      "text": " Hola, Eduardo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 49.29,
+      "end": 53.49,
+      "text": " Mira, quisiera ver si tú tienes este acceso a la base de datos de Easy que puedas",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 53.49,
+      "end": 54.49,
+      "text": " quitar mi número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 54.49,
+      "end": 55.97,
+      "text": " Ah, ¿sí?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 55.97,
+      "end": 56.97,
+      "text": " Lo podemos retirar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 56.97,
+      "end": 57.97,
+      "text": " ¿Sabes qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 57.97,
+      "end": 65.45,
+      "text": " Nos llaman, o sea, no es lo mal, cada media hora y son llamadas de Easy y es",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 65.45,
+      "end": 66.45,
+      "text": " una grabadora.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 67.37,
+      "end": 69.37,
+      "text": " Entonces, no hay modo de cancelar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 69.37,
+      "end": 73.53,
+      "text": " Sí, como aquí son ventas, entonces tenemos que contestar el teléfono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 73.53,
+      "end": 77.53,
+      "text": " ¿Tienes si usted te dictó mi número para que pase el reporte y lo bloqueen,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 77.53,
+      "end": 78.62,
+      "text": " por favor?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 78.62,
+      "end": 79.62,
+      "text": " Ah, sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 79.62,
+      "end": 80.62,
+      "text": " ¿Cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 80.62,
+      "end": 88.1,
+      "text": " Mira, es el 3330-01-90-01.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 88.1,
+      "end": 93.34,
+      "text": " ¿Te lo confirmo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 93.34,
+      "end": 98.34,
+      "text": " Es 3330-01-90-01.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 98.34,
+      "end": 99.34,
+      "text": " Perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 100.26,
+      "end": 103.42,
+      "text": " ¿Y el número de atención a clientes, disculpa?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 103.42,
+      "end": 105.42,
+      "text": " Es la extensión 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 105.42,
+      "end": 109.42,
+      "text": " Es el 800-120-5000, opción 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 109.42,
+      "end": 112.42,
+      "text": " 800-120-5000, opción 3.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 112.42,
+      "end": 114.42,
+      "text": " Ah, opción 3000, opción 3.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 114.42,
+      "end": 115.42,
+      "text": " Excelente con eso.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 115.42,
+      "end": 116.42,
+      "text": " Pues te agradezco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 116.42,
+      "end": 117.42,
+      "text": " OK.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 117.42,
+      "end": 118.42,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 118.42,
+      "end": 119.42,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 118.512,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600205996-5544389903-20251016-100120-5576799418.WAV",
+  "file_name": "0105-04965-25101600205996-5544389903-20251016-100120-5576799418.WAV",
+  "base_id": "0105-04965-25101600205996-5544389903-20251016-100120-5576799418",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Apaga, por favor, la estufa. Buenos días, Salobardo Muguiáquede, Easy, ese concreto... Mire, Sabel, le voy a pedir un favor. No quiero que me esté marcando a mi casa, por favor, porque yo voy a llamar a la policía y les doy que ustedes me están acostando. Yo no tengo nada que ver con ustedes. Yo ya tengo mi internet y no molesten nada más.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.54,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.54,
+      "end": 10.58,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.58,
+      "end": 17.18,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.18,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.18,
+      "end": 28.78,
+      "text": " para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.78,
+      "end": 37.03,
+      "text": " Apaga, por favor, la estufa. Buenos días, Salobardo Muguiáquede, Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.03,
+      "end": 41.31,
+      "text": " ese concreto... Mire, Sabel, le voy a pedir un favor. No quiero que me esté",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 41.31,
+      "end": 44.35,
+      "text": " marcando a mi casa, por favor, porque yo voy a llamar a la policía y les doy",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.35,
+      "end": 48.79,
+      "text": " que ustedes me están acostando. Yo no tengo nada que ver con ustedes. Yo ya",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.79,
+      "end": 54.55,
+      "text": " tengo mi internet y no molesten nada más.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 52.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

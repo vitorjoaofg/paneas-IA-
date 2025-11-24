@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800641115-5540409211-20251018-163039-5528741137.WAV",
+  "file_name": "0105-04965-25101800641115-5540409211-20251018-163039-5528741137.WAV",
+  "base_id": "0105-04965-25101800641115-5540409211-20251018-163039-5528741137",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable opulso. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Le hablo de su compañía Easy. Me presento mucho gusto. Mi nombre es Paula. ¿Qué puedo ayudarte? Es Easy. A ver, es el de cablevisión o lo que era antes. ¿Así es? ¿Pero ya son de Telmex o no? No, somos Easy. Pero es que no tengo Internet de Easy en mi casa, señorita. No llegan. ¿Oye, llegan? Ok, ok. ¿Podemos chequearle cobertura? 5326, Nico Postal, la sexta sección de Lomas Verdes. Ok, permítame un segundito. ¿Cuál me dijo, perdón? 53126. ¿Su colonia cuál es? Sexta sección de Lomas Verdes. Ok, permítame un segundito. Gracias. ¿Tu código es Nico Postal?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 30.26,
+      "text": " te está esperando. Por favor, hable opulso. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.26,
+      "end": 39.55,
+      "text": " Hola, ¿qué tal? Buenas tardes. Le hablo de su compañía Easy. Me presento mucho",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.55,
+      "end": 46.58,
+      "text": " gusto. Mi nombre es Paula. ¿Qué puedo ayudarte? Es Easy. A ver, es el de cablevisión o lo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.58,
+      "end": 55.16,
+      "text": " que era antes. ¿Así es? ¿Pero ya son de Telmex o no? No, somos Easy. Pero es que no tengo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.16,
+      "end": 63.14,
+      "text": " Internet de Easy en mi casa, señorita. No llegan. ¿Oye, llegan? Ok, ok. ¿Podemos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 63.14,
+      "end": 71.84,
+      "text": " chequearle cobertura? 5326, Nico Postal, la sexta sección de Lomas Verdes. Ok,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 73.22,
+      "end": 86.94,
+      "text": " permítame un segundito. ¿Cuál me dijo, perdón? 53126. ¿Su colonia cuál es?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 89.22,
+      "end": 148.94,
+      "text": " Sexta sección de Lomas Verdes. Ok, permítame un segundito. Gracias. ¿Tu código",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 148.94,
+      "end": 149.94,
+      "text": " es Nico Postal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 157.104,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

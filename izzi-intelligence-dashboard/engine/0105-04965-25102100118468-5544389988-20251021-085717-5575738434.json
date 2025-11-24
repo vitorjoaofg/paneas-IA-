@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100118468-5544389988-20251021-085717-5575738434.WAV",
+  "file_name": "0105-04965-25102100118468-5544389988-20251021-085717-5575738434.WAV",
+  "base_id": "0105-04965-25102100118468-5544389988-20251021-085717-5575738434",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Juanmón Fil, de parte de eso le damos a conocer los beneficios con la telefonía móvil. Buen día. Hola, buenos días. ¿Usted tiene internet con Easy o con otra compañía? Con Easy, pero quería ver si podrían cancelar las llamadas porque el diario me hablan. ¿Ya le comentaron de beneficios para cliente activo de la telefonía celular con Telcel? Ya tengo. Ah, ok. Bueno, una disculpa por la molestia. Yo aquí voy a poner el reporte para que lo busquen de la base. Una disculpa de todas formas. No os preocupe. Buen día. Igualmente, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.92,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.92,
+      "end": 26.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.06,
+      "end": 193.84,
+      "text": " Juanmón Fil, de parte de eso le damos a conocer los beneficios con la telefonía móvil. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 193.84,
+      "end": 198.84,
+      "text": " Hola, buenos días. ¿Usted tiene internet con Easy o con otra compañía?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 198.84,
+      "end": 203.56,
+      "text": " Con Easy, pero quería ver si podrían cancelar las llamadas porque el diario me hablan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 203.56,
+      "end": 211.32,
+      "text": " ¿Ya le comentaron de beneficios para cliente activo de la telefonía celular con Telcel?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 211.32,
+      "end": 214.92,
+      "text": " Ya tengo. Ah, ok. Bueno, una disculpa por la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 214.92,
+      "end": 218.48,
+      "text": " molestia. Yo aquí voy a poner el reporte para que lo busquen de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 218.48,
+      "end": 223.4,
+      "text": " Una disculpa de todas formas. No os preocupe. Buen día. Igualmente, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 228.024,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

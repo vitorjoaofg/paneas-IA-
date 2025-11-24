@@ -168,6 +168,7 @@ export interface PerCallDetail {
   agent_name_confidence?: number | null;
   customer_name_detected?: string | null;
   customer_name_confidence?: number | null;
+  likely_sale?: number;
 }
 
 export interface DashboardData {
@@ -179,6 +180,7 @@ export interface DashboardData {
 
 export interface DashboardFilters {
   search: string;
+  month: string;
   izziStatus: string;
   realStatus: string;
   divergence: "all" | "divergent" | "matched";

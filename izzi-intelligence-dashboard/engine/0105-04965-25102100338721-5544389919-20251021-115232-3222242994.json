@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100338721-5544389919-20251021-115232-3222242994.WAV",
+  "file_name": "0105-04965-25102100338721-5544389919-20251021-115232-3222242994.WAV",
+  "base_id": "0105-04965-25102100338721-5544389919-20251021-115232-3222242994",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Bueno, buenos días. Buenos días. ¿De qué se trata el asunto? Habla Eduardo Muriel, aquí de Easy. Es para brindarle que una promoción le estamos brindando el servicio ya de internet y televisión. No sé si ya cuente con estos servicios. Ah, no, ya contamos con él. Gracias. Por parte de Easy. No, tenemos Infinitum. Ah, ok. Sí, es que no, que llegué un poco tarde y no me di cuenta de qué se trataba. Dije, voy a preguntar. Pero ya tenemos el servicio, ya tenemos años con él. Y si acaso lo necesitamos, pues lo buscaríamos. Gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.96,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.96,
+      "end": 32.03,
+      "text": " dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.03,
+      "end": 40.27,
+      "text": " Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.27,
+      "end": 54.4,
+      "text": " momento, por favor. Bueno, buenos días. Buenos días. ¿De qué se trata el asunto?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.4,
+      "end": 61.1,
+      "text": " Habla Eduardo Muriel, aquí de Easy. Es para brindarle que una promoción",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.1,
+      "end": 64.9,
+      "text": " le estamos brindando el servicio ya de internet y televisión. No sé si ya",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 64.9,
+      "end": 70.66,
+      "text": " cuente con estos servicios. Ah, no, ya contamos con él. Gracias. Por parte",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.66,
+      "end": 79.52,
+      "text": " de Easy. No, tenemos Infinitum. Ah, ok. Sí, es que no, que llegué un poco",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 79.52,
+      "end": 84.75,
+      "text": " tarde y no me di cuenta de qué se trataba. Dije, voy a preguntar. Pero ya",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 84.75,
+      "end": 91.79,
+      "text": " tenemos el servicio, ya tenemos años con él. Y si acaso lo necesitamos,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 91.79,
+      "end": 95.74,
+      "text": " pues lo buscaríamos. Gracias. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

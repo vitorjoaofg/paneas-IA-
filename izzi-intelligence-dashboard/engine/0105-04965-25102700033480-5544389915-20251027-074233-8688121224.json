@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102700033480-5544389915-20251027-074233-8688121224.WAV",
+  "file_name": "0105-04965-25102700033480-5544389915-20251027-074233-8688121224.WAV",
+  "base_id": "0105-04965-25102700033480-5544389915-20251027-074233-8688121224",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Contrataciones? ¿IZI le tiende a Javier Romero con Quinto Goluso? Sí, ¿qué sentes por ese joven? Ok, Javier. O sea, le hizo una llamada en la cual viene una grabación con información de promociones por parte de IZI, se le da la opción para que seleccionara un botón y se le transita al área de contrataciones. Sí, yo, mira, yo primeramente, yo tengo como 8 o 9 años con ustedes. Lo primero que te decía es que me arregles la televisión de IZI. Ganar 1, 2, 3 por eso, pero me mandas un... ¿Quieres promocionar y estar por en casa de la fregada?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.76,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.76,
+      "end": 25.45,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.45,
+      "end": 36.15,
+      "text": " ¿Contrataciones? ¿IZI le tiende a Javier Romero con Quinto Goluso?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.15,
+      "end": 38.15,
+      "text": " Sí, ¿qué sentes por ese joven?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.46,
+      "end": 45.3,
+      "text": " Ok, Javier. O sea, le hizo una llamada en la cual viene una grabación con información de promociones por parte de IZI,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 45.3,
+      "end": 51.03,
+      "text": " se le da la opción para que seleccionara un botón y se le transita al área de contrataciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.03,
+      "end": 56.63,
+      "text": " Sí, yo, mira, yo primeramente, yo tengo como 8 o 9 años con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.63,
+      "end": 63.51,
+      "text": " Lo primero que te decía es que me arregles la televisión de IZI.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 63.55,
+      "end": 67.43,
+      "text": " Ganar 1, 2, 3 por eso, pero me mandas un...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 67.43,
+      "end": 70.95,
+      "text": " ¿Quieres promocionar y estar por en casa de la fregada?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 74.916,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

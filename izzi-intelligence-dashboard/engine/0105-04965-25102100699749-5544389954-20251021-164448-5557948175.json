@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100699749-5544389954-20251021-164448-5557948175.WAV",
+  "file_name": "0105-04965-25102100699749-5544389954-20251021-164448-5557948175.WAV",
+  "base_id": "0105-04965-25102100699749-5544389954-20251021-164448-5557948175",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Se está comunicando contrataciones y si le atiende ya netpulido con quien tenga el gusto. Hola, buenas tardes, con Claudia. Oye, miren, me han estado llamando y nosotros ya somos de Easy. No sé por qué nos llaman. Ah, ok, una disculpa. ¿Ya tienen servicio con nosotros de Easy Móvil? Sí, nosotros ya estamos con ustedes y nos llaman y nos llaman, entonces no sé cómo darlo de baja. Claro que sí, ahorita estaría pasando el reporte. Muy amable. Que tenga buen día, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.18,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.18,
+      "end": 34.62,
+      "text": " para no. Espera un momento, por favor. Se está comunicando contrataciones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.62,
+      "end": 39.82,
+      "text": " y si le atiende ya netpulido con quien tenga el gusto. Hola, buenas tardes, con Claudia. Oye,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 39.82,
+      "end": 44.1,
+      "text": " miren, me han estado llamando y nosotros ya somos de Easy. No sé por qué nos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.1,
+      "end": 52.74,
+      "text": " llaman. Ah, ok, una disculpa. ¿Ya tienen servicio con nosotros de Easy Móvil? Sí,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.74,
+      "end": 57.62,
+      "text": " nosotros ya estamos con ustedes y nos llaman y nos llaman, entonces no sé",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.62,
+      "end": 63.58,
+      "text": " cómo darlo de baja. Claro que sí, ahorita estaría pasando el reporte. Muy amable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.58,
+      "end": 66.93,
+      "text": " Que tenga buen día, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.488,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

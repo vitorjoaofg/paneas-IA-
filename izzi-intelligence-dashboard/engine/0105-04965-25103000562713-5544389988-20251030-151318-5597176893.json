@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000562713-5544389988-20251030-151318-5597176893.WAV",
+  "file_name": "0105-04965-25103000562713-5544389988-20251030-151318-5597176893.WAV",
+  "base_id": "0105-04965-25103000562713-5544389988-20251030-151318-5597176893",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, espera un momento por favor. Hola, buenas tardes. Gracias por tomar las promociones y llamada de Easy, le agradezco tomar la llamada, ¿podemos apoyarla? Quisiera saber quién les dio mi número para estar marcando, perdón. Perdón, no lo escuché. Quisiera saber quién les dio mi número para estar marcando. Estos números son que en algún momento usted se comunicó con nosotros, es el sistema automático de nuestra llamada. Además, el número lo tengo de Total Play y jamás he marcado a Easy. Correcto, pues en este caso por eso el sistema lo reconoce, posiblemente lo marcó hasta por error. Correcto, ¿la podemos apoyar en algo? Indíqueme. Deseo que no me realice una llamada, por favor. Que tenga un momento tarde, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.56,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.56,
+      "end": 34.71,
+      "text": " espera un momento por favor. Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.3,
+      "end": 40.1,
+      "text": " Gracias por tomar las promociones y llamada de Easy, le agradezco tomar la llamada, ¿podemos apoyarla?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.1,
+      "end": 43.62,
+      "text": " Quisiera saber quién les dio mi número para estar marcando, perdón.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.62,
+      "end": 48.21,
+      "text": " Perdón, no lo escuché. Quisiera saber quién les dio mi número para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.21,
+      "end": 51.93,
+      "text": " estar marcando. Estos números son que en algún momento usted se comunicó con",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.93,
+      "end": 54.25,
+      "text": " nosotros, es el sistema automático de nuestra llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 54.25,
+      "end": 57.05,
+      "text": " Además, el número lo tengo de Total Play y jamás he marcado a Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.05,
+      "end": 61.18,
+      "text": " Correcto, pues en este caso por eso el sistema lo reconoce, posiblemente lo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.18,
+      "end": 64.74,
+      "text": " marcó hasta por error. Correcto, ¿la podemos apoyar en algo? Indíqueme.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 64.74,
+      "end": 69.06,
+      "text": " Deseo que no me realice una llamada, por favor. Que tenga un momento tarde, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.74,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400445455-5544389938-20251014-131949-5586200922.WAV",
+  "file_name": "0105-04965-25101400445455-5544389938-20251014-131949-5586200922.WAV",
+  "base_id": "0105-04965-25101400445455-5544389938-20251014-131949-5586200922",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno. Espérame un segundito. ¿Sí? Sí, a sus órdenes, señor. ¿Qué tal, señor? Buenas tardes. Mucho gusto. Estamos marcando de Easy. El motivo de la llamada es para ofrecerle nuestros servicios de telefonía fija, Internet y televisión por cable. ¿Usted ya cuenta con estos servicios? Sí. Mire, ¿me puede regalar la llamada en una media hora? Sí, claro que sí. Bueno, muchas gracias. Tenemos en contacto.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.46,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.46,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.58,
+      "end": 23.58,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 23.58,
+      "end": 30.68,
+      "text": " Sí, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.68,
+      "end": 33.33,
+      "text": " Espérame un segundito.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.33,
+      "end": 33.83,
+      "text": " ¿Sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.83,
+      "end": 35.33,
+      "text": " Sí, a sus órdenes, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.33,
+      "end": 38.0,
+      "text": " ¿Qué tal, señor? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 38.0,
+      "end": 40.0,
+      "text": " Mucho gusto. Estamos marcando de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 40.0,
+      "end": 46.0,
+      "text": " El motivo de la llamada es para ofrecerle nuestros servicios de telefonía fija, Internet y televisión por cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 46.0,
+      "end": 48.0,
+      "text": " ¿Usted ya cuenta con estos servicios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 48.0,
+      "end": 52.51,
+      "text": " Sí. Mire, ¿me puede regalar la llamada en una media hora?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.51,
+      "end": 54.51,
+      "text": " Sí, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 54.51,
+      "end": 55.51,
+      "text": " Bueno, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 55.51,
+      "end": 57.51,
+      "text": " Tenemos en contacto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 59.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

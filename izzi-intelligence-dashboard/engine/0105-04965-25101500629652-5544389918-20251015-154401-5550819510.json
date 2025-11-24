@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500629652-5544389918-20251015-154401-5550819510.WAV",
+  "file_name": "0105-04965-25101500629652-5544389918-20251015-154401-5550819510.WAV",
+  "base_id": "0105-04965-25101500629652-5544389918-20251015-154401-5550819510",
+  "transcription": "Si conoce el número de la extensión, márquelo en este momento. De lo contrario, seleccione una de las siguientes opciones. Para venta, marque 1. Para servicio, marque 2. Para citas de servicio, marque 3. Para recepciones, marque 4. Para seminuevos, marque 5. Para administración, marque 6. Para hojalatería y pintura, marque 7. Para atención al cliente, marque 8. O bien, marque 0 para ser atendido por un ejecutivo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Si conoce el número de la extensión, márquelo en este momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.0,
+      "end": 8.0,
+      "text": " De lo contrario, seleccione una de las siguientes opciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.0,
+      "end": 10.0,
+      "text": " Para venta, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 10.0,
+      "end": 12.0,
+      "text": " Para servicio, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 12.0,
+      "end": 15.0,
+      "text": " Para citas de servicio, marque 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.0,
+      "end": 18.03,
+      "text": " Para recepciones, marque 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 18.03,
+      "end": 21.03,
+      "text": " Para seminuevos, marque 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.03,
+      "end": 23.03,
+      "text": " Para administración, marque 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 23.03,
+      "end": 26.13,
+      "text": " Para hojalatería y pintura, marque 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 26.13,
+      "end": 29.13,
+      "text": " Para atención al cliente, marque 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 29.13,
+      "end": 32.13,
+      "text": " O bien, marque 0 para ser atendido por un ejecutivo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.056,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

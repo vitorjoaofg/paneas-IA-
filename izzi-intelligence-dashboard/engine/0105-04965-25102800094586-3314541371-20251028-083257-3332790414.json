@@ -1,0 +1,42 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800094586-3314541371-20251028-083257-3332790414.WAV",
+  "file_name": "0105-04965-25102800094586-3314541371-20251028-083257-3332790414.WAV",
+  "base_id": "0105-04965-25102800094586-3314541371-20251028-083257-3332790414",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con ti, más skywalk, desde 350 pesos al primer mes, con ti, es posible. ¿Te interesa? Un asesor te está esperando. Su llamada se está transcindiendo. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.36,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con ti, más skywalk, desde 350 pesos al primer mes, con ti, es posible. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.36,
+      "end": 18.66,
+      "text": " Un asesor te está esperando. Su llamada se está transcindiendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.04,
+      "end": 27.04,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 29.448,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

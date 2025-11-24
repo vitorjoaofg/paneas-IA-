@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700186678-5540409219-20251017-094649-5593762032.WAV",
+  "file_name": "0105-04965-25101700186678-5540409219-20251017-094649-5593762032.WAV",
+  "base_id": "0105-04965-25101700186678-5540409219-20251017-094649-5593762032",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible? ¿Se interesa? Un asesor te está esperando. Por favor, hable... Ventas, dígite 1, compras, dígite 2, ingeniería... Espera un momento, por favor. Seguridad ocupacional, marketing y plataformas tecnológicas, dígite 6... Hola, ¿qué tal? Buenos días. Cursos humanos, dígite 6. Contabilidad, dígite 7. Serving track, dígite 8. O marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor. Buenos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 13.24,
+      "text": " más Skysport, desde 350 pesos el primer mes, con Easy, es posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Se interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.44,
+      "end": 18.44,
+      "text": " Por favor, hable...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 18.44,
+      "end": 25.26,
+      "text": " Ventas, dígite 1, compras, dígite 2, ingeniería...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 25.26,
+      "end": 27.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.26,
+      "end": 33.5,
+      "text": " Seguridad ocupacional, marketing y plataformas tecnológicas, dígite 6...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.5,
+      "end": 34.5,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.5,
+      "end": 37.5,
+      "text": " Cursos humanos, dígite 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.5,
+      "end": 40.5,
+      "text": " Contabilidad, dígite 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.5,
+      "end": 43.5,
+      "text": " Serving track, dígite 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.5,
+      "end": 51.14,
+      "text": " O marque 0 para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 51.14,
+      "end": 53.14,
+      "text": " Transfiriendo a un encargado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 53.14,
+      "end": 61.38,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 61.38,
+      "end": 62.38,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.976,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

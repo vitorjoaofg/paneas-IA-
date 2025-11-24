@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600482561-5544389908-20251016-135024-5555890148.WAV",
+  "file_name": "0105-04965-25101600482561-5544389908-20251016-135024-5555890148.WAV",
+  "base_id": "0105-04965-25101600482561-5544389908-20251016-135024-5555890148",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con la extensión a la que desea llamar? Fíjatelo ahora, de lo contrario, presionérmelo para ser atendido por una operadora. ¿Te interesa? Un asesor te está esperando. Por favor, gracias por llamar a Banco Multiba, su cursal. Fuentes, si conoces el número de la extensión a la que desea llamar, digítelo ahora. De lo contrario, presionéselo para ser atendido por una operadora. Gracias por llamar a Banco Multiba, su cursal. Fuentes, si conoces el número de la extensión a la que desea llamar, digítelo ahora. De lo contrario, presionéselo para ser atendido por una operadora.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con la extensión a la que desea llamar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.0,
+      "end": 13.0,
+      "text": " Fíjatelo ahora, de lo contrario, presionérmelo para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 21.0,
+      "text": " Por favor, gracias por llamar a Banco Multiba, su cursal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 26.0,
+      "text": " Fuentes, si conoces el número de la extensión a la que desea llamar, digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.0,
+      "end": 31.0,
+      "text": " De lo contrario, presionéselo para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.0,
+      "end": 38.3,
+      "text": " Gracias por llamar a Banco Multiba, su cursal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.3,
+      "end": 43.3,
+      "text": " Fuentes, si conoces el número de la extensión a la que desea llamar, digítelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.3,
+      "end": 48.3,
+      "text": " De lo contrario, presionéselo para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.46,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

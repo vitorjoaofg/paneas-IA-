@@ -1,0 +1,573 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600196634-3314541334-20251016-095415-3346695112.WAV",
+  "file_name": "0105-04965-25101600196634-3314541334-20251016-095415-3346695112.WAV",
+  "base_id": "0105-04965-25101600196634-3314541334-20251016-095415-3346695112",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skysports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, muy buen día. Buen día. Hola, muy buen día. Mi nombre es Dricia López de parte de Easy. ¿Con quién tengo el gusto? Enrico Sotelo. Señor, señor, nos estamos comunicando de parte de Easy. Queremos darle a conocer algunos de nuestros servicios. ¿Usted cuenta con nuestros servicios de parte de Easy? No. ¿No? Ah, pues miren, nos estamos comunicando para darle a conocer. Tenemos excelentes promociones que le pueden ser interesantes para usted. ¿Le gustaría escucharlas? A ver, dígame, ¿qué es lo que tiene? Ah, ok, mire, tenemos por 350 pesos el pago inicial. Le instalaríamos de 24 a 48 horas el servicio de los 80 megas de navegación con 200 canales de televisión y también la telefonía ilimitada. El precio regular es de 690, pero los primeros seis meses usted pagaría la cantidad de 599 pesos con 120 megas y obtendría el VIX Premium, la plataforma Esquelo por un año y tendría los canales Sky Sports. Y si usted requiere una televisión adicional sería 49 pesos y a partir del séptimo mes usted ya pagaría la tarifa normal que son 690. Pero si usted domicilia su tarjeta de crédito de débito, usted tendría unos 50 pesos menos en la factura permanentemente. Si usted domicilia, pagaría 640. Y usted se le instalaría por 350 pesos en 24 a 48 horas. Y solamente es por seis meses. Por seis meses pagaría 599 y los 120 megas de navegación. Eso por seis meses. ¿Y posteriormente? Ya la tarifa normal que son 690, pero si domicilia, 640. Ajá. A ver, entonces los seis meses cada mes en cuánto me saldría? 599. 600 pesos. Sí. ¿Y posteriormente cuánto me dijo? 690. 90 pesos. Ajá. O sea que su promoción es de 90 pesos. El servicio sería por 690, perdón, 599 por los seis primeros meses. Ajá. Y la promoción es de 90 pesos porque ustedes cobran 690 en tarifa normal. Ajá. ¿Verdad? Sí. Entonces su promoción es de 600 pesos. Ok. Pues le agradezco mucho que tenga buen video. ¿Se interesa? No, gracias. ¿No? Ok. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 7.02,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.02,
+      "end": 11.66,
+      "text": " más Skysports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.66,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 14.3,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.3,
+      "end": 16.62,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.62,
+      "end": 21.91,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.91,
+      "end": 23.67,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.67,
+      "end": 32.84,
+      "text": " Hola, muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.84,
+      "end": 34.1,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.1,
+      "end": 35.1,
+      "text": " Hola, muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.1,
+      "end": 37.1,
+      "text": " Mi nombre es Dricia López de parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.1,
+      "end": 39.1,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 39.1,
+      "end": 40.1,
+      "text": " Enrico Sotelo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 40.1,
+      "end": 44.1,
+      "text": " Señor, señor, nos estamos comunicando de parte de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 44.1,
+      "end": 47.1,
+      "text": " Queremos darle a conocer algunos de nuestros servicios.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 47.1,
+      "end": 50.1,
+      "text": " ¿Usted cuenta con nuestros servicios de parte de Easy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 50.1,
+      "end": 51.1,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 51.1,
+      "end": 52.1,
+      "text": " ¿No?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 52.1,
+      "end": 55.1,
+      "text": " Ah, pues miren, nos estamos comunicando para darle a conocer.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 55.1,
+      "end": 59.1,
+      "text": " Tenemos excelentes promociones que le pueden ser interesantes para usted.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 59.1,
+      "end": 61.1,
+      "text": " ¿Le gustaría escucharlas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 61.1,
+      "end": 63.1,
+      "text": " A ver, dígame, ¿qué es lo que tiene?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 63.1,
+      "end": 67.1,
+      "text": " Ah, ok, mire, tenemos por 350 pesos el pago inicial.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 67.1,
+      "end": 72.1,
+      "text": " Le instalaríamos de 24 a 48 horas el servicio de los 80 megas de navegación",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 72.1,
+      "end": 77.1,
+      "text": " con 200 canales de televisión y también la telefonía ilimitada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 77.1,
+      "end": 79.1,
+      "text": " El precio regular es de 690,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 79.1,
+      "end": 85.1,
+      "text": " pero los primeros seis meses usted pagaría la cantidad de 599 pesos con 120 megas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 85.1,
+      "end": 90.1,
+      "text": " y obtendría el VIX Premium, la plataforma Esquelo por un año",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 90.1,
+      "end": 93.1,
+      "text": " y tendría los canales Sky Sports.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 93.1,
+      "end": 97.1,
+      "text": " Y si usted requiere una televisión adicional sería 49 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 97.1,
+      "end": 101.1,
+      "text": " y a partir del séptimo mes usted ya pagaría la tarifa normal que son 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 101.1,
+      "end": 104.1,
+      "text": " Pero si usted domicilia su tarjeta de crédito de débito,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 104.1,
+      "end": 109.1,
+      "text": " usted tendría unos 50 pesos menos en la factura permanentemente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 109.1,
+      "end": 116.06,
+      "text": " Si usted domicilia, pagaría 640.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 116.06,
+      "end": 124.06,
+      "text": " Y usted se le instalaría por 350 pesos en 24 a 48 horas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 124.06,
+      "end": 128.44,
+      "text": " Y solamente es por seis meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 128.44,
+      "end": 135.44,
+      "text": " Por seis meses pagaría 599 y los 120 megas de navegación.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 135.44,
+      "end": 138.54,
+      "text": " Eso por seis meses. ¿Y posteriormente?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 138.54,
+      "end": 145.63,
+      "text": " Ya la tarifa normal que son 690, pero si domicilia, 640.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 145.63,
+      "end": 150.63,
+      "text": " Ajá. A ver, entonces los seis meses cada mes en cuánto me saldría?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 150.63,
+      "end": 153.73,
+      "text": " 599.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 153.73,
+      "end": 156.05,
+      "text": " 600 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 156.05,
+      "end": 157.05,
+      "text": " Sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 157.05,
+      "end": 159.05,
+      "text": " ¿Y posteriormente cuánto me dijo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 159.05,
+      "end": 160.05,
+      "text": " 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 160.05,
+      "end": 162.05,
+      "text": " 90 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 162.05,
+      "end": 163.05,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 163.05,
+      "end": 166.82,
+      "text": " O sea que su promoción es de 90 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 167.82,
+      "end": 177.82,
+      "text": " El servicio sería por 690, perdón, 599 por los seis primeros meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 177.82,
+      "end": 178.82,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 178.82,
+      "end": 183.82,
+      "text": " Y la promoción es de 90 pesos porque ustedes cobran 690 en tarifa normal.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 183.82,
+      "end": 184.82,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 184.82,
+      "end": 185.82,
+      "text": " ¿Verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 185.82,
+      "end": 186.82,
+      "text": " Sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 186.82,
+      "end": 188.82,
+      "text": " Entonces su promoción es de 600 pesos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 188.82,
+      "end": 189.82,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 189.82,
+      "end": 191.82,
+      "text": " Pues le agradezco mucho que tenga buen video.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 191.82,
+      "end": 192.82,
+      "text": " ¿Se interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 192.82,
+      "end": 193.82,
+      "text": " No, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 193.82,
+      "end": 194.82,
+      "text": " ¿No?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 194.82,
+      "end": 195.82,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 195.82,
+      "end": 196.82,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 196.128,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

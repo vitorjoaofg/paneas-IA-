@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100265245-5544389970-20251021-105417-5597327697.WAV",
+  "file_name": "0105-04965-25102100265245-5544389970-20251021-105417-5597327697.WAV",
+  "base_id": "0105-04965-25102100265245-5544389970-20251021-105417-5597327697",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skysports desde 350 pesos el primer mes con Easy es posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Buenos días. Buenos días. Buenos días. Alejandro Bardom, aquí de Easy, se encuentra, perdón, ¿con quién tengo el gusto? Mira, chico, hacen llamadas, yo tengo urgencias y hacen llamadas y llamadas y a mí no me interesa ahorita sus servicios. Yo no sé de dónde sacan los números que nada más están molestando. Uno tiene unas urgencias y piensa uno que es el familiar o esto o el otro y ustedes, ¿cómo dan lata de verdad? No me interesa su servicio, si no yo hubiera ido a un centro para que me den su servicio, pero no lo necesito y no me estén marcando por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 7.06,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.06,
+      "end": 15.26,
+      "text": " más Skysports desde 350 pesos el primer mes con Easy es posible? ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.26,
+      "end": 24.02,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.02,
+      "end": 25.02,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.6,
+      "end": 35.6,
+      "text": " Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.6,
+      "end": 36.76,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.76,
+      "end": 46.8,
+      "text": " Buenos días. Alejandro Bardom, aquí de Easy, se encuentra, perdón, ¿con quién tengo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.8,
+      "end": 48.66,
+      "text": " el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.66,
+      "end": 55.84,
+      "text": " Mira, chico, hacen llamadas, yo tengo urgencias y hacen llamadas y llamadas y a mí no me",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.84,
+      "end": 61.12,
+      "text": " interesa ahorita sus servicios. Yo no sé de dónde sacan los números que nada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.12,
+      "end": 66.76,
+      "text": " más están molestando. Uno tiene unas urgencias y piensa uno que es el familiar o esto o",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.76,
+      "end": 73.18,
+      "text": " el otro y ustedes, ¿cómo dan lata de verdad? No me interesa su servicio, si no yo hubiera",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 73.18,
+      "end": 79.02,
+      "text": " ido a un centro para que me den su servicio, pero no lo necesito y no me estén marcando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 79.02,
+      "end": 79.62,
+      "text": " por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 166.464,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

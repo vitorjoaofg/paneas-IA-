@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600323748-5544389906-20251016-113131-5593490015.WAV",
+  "file_name": "0105-04965-25101600323748-5544389906-20251016-113131-5593490015.WAV",
+  "base_id": "0105-04965-25101600323748-5544389906-20251016-113131-5593490015",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. ¡Un momento, por favor! ¡Hola! ¿Qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García. ¡Qué buenos días! No da más un poposote. Quería perdón de todo reportar el teléfono porque todos los días me chingan. No quiero contratar ningún servicio de ustedes y todos los días están chingui, chingui, chingui, chingui, la madre. Ya dejen de marcar a este número, por favor. ¿Le puedo hacer yo? ¡Gracias! Que tenga buen día. Lo pido de buena manera. ¿Quiere la ayuda o sino no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.84,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.84,
+      "end": 20.36,
+      "text": " te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 20.36,
+      "end": 26.4,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.4,
+      "end": 29.12,
+      "text": " un asesor o 2 para terminar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.12,
+      "end": 30.6,
+      "text": " ¡Un momento, por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.6,
+      "end": 52.53,
+      "text": " ¡Hola! ¿Qué tal? Este es el área de contrataciones Easy. Le atiende Leonardo García.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.53,
+      "end": 55.93,
+      "text": " ¡Qué buenos días! No da más un poposote. Quería perdón de todo reportar el teléfono",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 55.93,
+      "end": 59.57,
+      "text": " porque todos los días me chingan. No quiero contratar ningún servicio de ustedes y",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.57,
+      "end": 62.69,
+      "text": " todos los días están chingui, chingui, chingui, chingui, la madre. Ya dejen de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.69,
+      "end": 64.93,
+      "text": " marcar a este número, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.93,
+      "end": 65.93,
+      "text": " ¿Le puedo hacer yo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.93,
+      "end": 66.93,
+      "text": " ¡Gracias! Que tenga buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 66.93,
+      "end": 68.93,
+      "text": " Lo pido de buena manera. ¿Quiere la ayuda o sino no?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.94,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

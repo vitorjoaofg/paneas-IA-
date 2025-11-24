@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800453967-5544389906-20251028-133516-5551695131.WAV",
+  "file_name": "0105-04965-25102800453967-5544389906-20251028-133516-5551695131.WAV",
+  "base_id": "0105-04965-25102800453967-5544389906-20251028-133516-5551695131",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, espera un momento, por favor. ¿Contrataciones Easy, detenía Javier Romero? ¿Con quién tengo el gusto? Victor Manuel Pérez de Telmex. No, es que estamos recibiendo una llamada aquí a Telmex. No, fue una llamada bidireccional, se da información, se da promoción. Si están de acuerdo o quieren contratar, dan la opción para que seleccionen uno. Entonces, en este caso, selecciona alguna opción y entra la llamada con nosotros. Hola, Manuel, le agradezco su presente día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 22.88,
+      "text": " asesor te está esperando. Por favor, hable o pulse uno para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.88,
+      "end": 35.51,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.51,
+      "end": 45.34,
+      "text": " un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.34,
+      "end": 47.9,
+      "text": " espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.9,
+      "end": 57.67,
+      "text": " ¿Contrataciones Easy, detenía Javier Romero? ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.27,
+      "end": 60.07,
+      "text": " Victor Manuel Pérez de Telmex.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.91,
+      "end": 67.33,
+      "text": " No, es que estamos recibiendo una llamada aquí a Telmex.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 76.18,
+      "end": 80.18,
+      "text": " No, fue una llamada bidireccional, se da información, se da promoción. Si están",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 80.18,
+      "end": 84.18,
+      "text": " de acuerdo o quieren contratar, dan la opción para que seleccionen uno. Entonces,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 84.18,
+      "end": 87.78,
+      "text": " en este caso, selecciona alguna opción y entra la llamada con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 87.78,
+      "end": 89.78,
+      "text": " Hola, Manuel, le agradezco su presente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 145.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

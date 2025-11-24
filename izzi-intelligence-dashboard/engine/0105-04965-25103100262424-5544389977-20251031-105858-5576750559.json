@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100262424-5544389977-20251031-105858-5576750559.WAV",
+  "file_name": "0105-04965-25103100262424-5544389977-20251031-105858-5576750559.WAV",
+  "base_id": "0105-04965-25103100262424-5544389977-20251031-105858-5576750559",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 millones de velocidades, tener el mejor entretenimiento con 200 canales, Bix Premiums y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o... Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola. ¿Qué tal? Muy buenas tardes. Muchas gracias por comunicarse y tomar la llamada de Contrataciones Easy. Lo podemos apoyar. ¿De dónde me estás llamando? Sí, en este caso es una llamada que entra para ustedes por si aceptan una promoción de Easy, señor. No, no estamos interesados. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.01,
+      "end": 9.29,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 millones de velocidades, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.29,
+      "end": 16.09,
+      "text": " entretenimiento con 200 canales, Bix Premiums y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.09,
+      "end": 22.57,
+      "text": " pesos el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.57,
+      "end": 25.65,
+      "text": " te está esperando. Por favor, hable o...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.87,
+      "end": 36.51,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.51,
+      "end": 46.14,
+      "text": " asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.14,
+      "end": 51.42,
+      "text": " presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.42,
+      "end": 55.03,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.03,
+      "end": 65.42,
+      "text": " Hola. ¿Qué tal? Muy buenas tardes. Muchas gracias por comunicarse y tomar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.42,
+      "end": 67.7,
+      "text": " la llamada de Contrataciones Easy. Lo podemos apoyar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.7,
+      "end": 70.55,
+      "text": " ¿De dónde me estás llamando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 72.29,
+      "end": 75.17,
+      "text": " Sí, en este caso es una llamada que entra para ustedes por si aceptan una",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 75.17,
+      "end": 79.01,
+      "text": " promoción de Easy, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 79.01,
+      "end": 81.01,
+      "text": " No, no estamos interesados. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 83.304,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101000358773-2411480238-20251010-113717-04896.WAV",
+  "file_name": "0105-04999-25101000358773-2411480238-20251010-113717-04896.WAV",
+  "base_id": "0105-04999-25101000358773-2411480238-20251010-113717-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, buenos días. Buenos días. Buenos días. Hablamos de compañía Easy. Me presento. Mi nombre es Patricia Badillo. ¿Con quién tengo el gusto? ¿Quién? ¿Con quién? ¿Con quién? Mucho gusto. Mi nombre es Patricia Badillo y hablo de compañía Easy. El motivo de mi llamada, señor, es ofrecerle el servicio de Internet, telefonía y cable. ¿Usted ya cuenta con estos servicios? No. Aquí le gustaría que validemos si tenemos cobertura en su zona para instalarla en nuestros servicios de Internet, telefonía y cable, señor. Sí. ¿Cómo se llama su calle? Bueno, bueno. Salida por falta de audio. Colgaré llamadas.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 16.2,
+      "text": " más Sky Sports desde 350 el primer mes? Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.2,
+      "end": 19.6,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.6,
+      "end": 24.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.0,
+      "end": 29.0,
+      "text": " Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.0,
+      "end": 38.4,
+      "text": " Hola, buenos días. Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.4,
+      "end": 44.46,
+      "text": " Buenos días. Hablamos de compañía Easy. Me presento. Mi nombre es Patricia Badillo. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.46,
+      "end": 53.55,
+      "text": " ¿Quién? ¿Con quién? ¿Con quién?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.55,
+      "end": 59.67,
+      "text": " Mucho gusto. Mi nombre es Patricia Badillo y hablo de compañía Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 59.67,
+      "end": 64.67,
+      "text": " El motivo de mi llamada, señor, es ofrecerle el servicio de Internet, telefonía y cable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.67,
+      "end": 70.4,
+      "text": " ¿Usted ya cuenta con estos servicios? No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.4,
+      "end": 77.4,
+      "text": " Aquí le gustaría que validemos si tenemos cobertura en su zona para instalarla en nuestros servicios de Internet, telefonía y cable, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 77.4,
+      "end": 91.1,
+      "text": " Sí. ¿Cómo se llama su calle? Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 91.1,
+      "end": 96.43,
+      "text": " Salida por falta de audio. Colgaré llamadas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 98.928,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

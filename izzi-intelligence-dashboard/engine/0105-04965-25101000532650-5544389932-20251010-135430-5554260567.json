@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000532650-5544389932-20251010-135430-5554260567.WAV",
+  "file_name": "0105-04965-25101000532650-5544389932-20251010-135430-5554260567.WAV",
+  "base_id": "0105-04965-25101000532650-5544389932-20251010-135430-5554260567",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía móvil. Ivonne, ¿qué crees que tengo enferma a mi mamá? Y no sé si podrás ayudarme. ¿Pueden dejar de marcar? Porque ella es la primera en un cuarto y tenemos que salir. Ok, aquí le voy a poner para que los quiten de la base y ya no les marquen esta vez. Sí, ayúdame con eso, Ivonne. Por favor. Sí, una disculpa. Que tengan buen día. Hasta luego, buena tarde. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 23.94,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 23.94,
+      "end": 31.94,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 31.94,
+      "end": 40.74,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 40.74,
+      "end": 47.74,
+      "text": " Hola, buen día. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 47.74,
+      "end": 53.96,
+      "text": " Ivonne, ¿qué crees que tengo enferma a mi mamá? Y no sé si podrás ayudarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.96,
+      "end": 61.02,
+      "text": " ¿Pueden dejar de marcar? Porque ella es la primera en un cuarto y tenemos que salir.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.02,
+      "end": 66.02,
+      "text": " Ok, aquí le voy a poner para que los quiten de la base y ya no les marquen esta vez.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.02,
+      "end": 68.02,
+      "text": " Sí, ayúdame con eso, Ivonne. Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 68.02,
+      "end": 70.02,
+      "text": " Sí, una disculpa. Que tengan buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.02,
+      "end": 71.02,
+      "text": " Hasta luego, buena tarde.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.02,
+      "end": 72.02,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 132.552,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

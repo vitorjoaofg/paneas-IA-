@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25100900650122-5544389984-20251009-163246-2331064412.WAV",
+  "file_name": "0105-04999-25100900650122-5544389984-20251009-163246-2331064412.WAV",
+  "base_id": "0105-04999-25100900650122-5544389984-20251009-163246-2331064412",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿El edificio lo tienen en el castillo, que lo podamos apoyar? No, porque me mancaron, no sé de qué se trate. Sí, pues es que aquí es el área de contrataciones Easy. No sé si desea información de un paquete ya manejé con servicios, disculpe, de Easy. Pero no sé si llegue hasta aquí en Cuestala, en Puebla. Ah, en Puebla. En un municipio. Ah, no en Puebla, no tenemos servicio, disculpe. Entonces, ¿por qué me marcan de un número cada rato de Easy, contratación, no sé qué? Sí, yo registro aquí, pa' que vamos a comunicar. Gracias. Órale, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.68,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.68,
+      "end": 24.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 40.7,
+      "text": " ¿El edificio lo tienen en el castillo, que lo podamos apoyar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.7,
+      "end": 44.37,
+      "text": " No, porque me mancaron, no sé de qué se trate.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.4,
+      "end": 48.4,
+      "text": " Sí, pues es que aquí es el área de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.4,
+      "end": 53.4,
+      "text": " No sé si desea información de un paquete ya manejé con servicios, disculpe, de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.4,
+      "end": 58.81,
+      "text": " Pero no sé si llegue hasta aquí en Cuestala, en Puebla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.81,
+      "end": 60.81,
+      "text": " Ah, en Puebla.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 60.81,
+      "end": 61.9,
+      "text": " En un municipio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 61.9,
+      "end": 64.9,
+      "text": " Ah, no en Puebla, no tenemos servicio, disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 64.9,
+      "end": 69.9,
+      "text": " Entonces, ¿por qué me marcan de un número cada rato de Easy, contratación, no sé qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 69.9,
+      "end": 71.9,
+      "text": " Sí, yo registro aquí, pa' que vamos a comunicar. Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 71.9,
+      "end": 73.9,
+      "text": " Órale, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.276,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

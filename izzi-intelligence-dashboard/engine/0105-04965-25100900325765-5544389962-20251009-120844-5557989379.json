@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900325765-5544389962-20251009-120844-5557989379.WAV",
+  "file_name": "0105-04965-25100900325765-5544389962-20251009-120844-5557989379.WAV",
+  "base_id": "0105-04965-25100900325765-5544389962-20251009-120844-5557989379",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener una mejora de calidad en el servicio? En caso de que quieras conocer nuestra lista de privacidad, visite nuestra página www.wimpervices.me No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Un asesor te está esperando! Por favor. Buenas tardes, está comunicando a Wim, que es presentante de Banco Santander. La tienda en ahí, Wilfrido, ¿concientes? Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.6,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener una mejora de calidad en el servicio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.6,
+      "end": 14.0,
+      "text": " En caso de que quieras conocer nuestra lista de privacidad, visite nuestra página www.wimpervices.me",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? ¡Un asesor te está esperando!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 21.0,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 27.43,
+      "text": " Buenas tardes, está comunicando a Wim, que es presentante de Banco Santander.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.43,
+      "end": 29.43,
+      "text": " La tienda en ahí, Wilfrido, ¿concientes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.43,
+      "end": 31.43,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 46.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

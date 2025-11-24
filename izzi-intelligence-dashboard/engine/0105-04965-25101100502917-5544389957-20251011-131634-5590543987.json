@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100502917-5544389957-20251011-131634-5590543987.WAV",
+  "file_name": "0105-04965-25101100502917-5544389957-20251011-131634-5590543987.WAV",
+  "base_id": "0105-04965-25101100502917-5544389957-20251011-131634-5590543987",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skyport, desde 350 restos al primer mes? Con ITI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para él. Espera un momento, por favor. Si, buenas tardes. Se está comunicando a contrataciones y si le atiende la señorita Janette Pulido con quien vengo el gusto. Bienvenido a la Secretaría del Medio Ambiente. Si conoce el número de extensión, márkela ahora. Si desea conocer el índice aire y salud, marque 1. Si desea información sobre verificación vehicular, hoy no circula el Fase Turístico, marque 2. O marque 0 y una operadora lo atenderá. Adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skyport, desde 350 restos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.28,
+      "text": " Con ITI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.28,
+      "end": 14.32,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.32,
+      "end": 16.48,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.48,
+      "end": 20.2,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para él.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.84,
+      "end": 28.12,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.0,
+      "end": 34.0,
+      "text": " Si, buenas tardes. Se está comunicando a contrataciones y si le atiende la señorita",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 34.0,
+      "end": 36.73,
+      "text": " Janette Pulido con quien vengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.73,
+      "end": 38.73,
+      "text": " Bienvenido a la Secretaría del Medio Ambiente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.73,
+      "end": 41.36,
+      "text": " Si conoce el número de extensión, márkela ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.36,
+      "end": 44.36,
+      "text": " Si desea conocer el índice aire y salud, marque 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.36,
+      "end": 49.36,
+      "text": " Si desea información sobre verificación vehicular, hoy no circula el Fase Turístico, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.36,
+      "end": 52.36,
+      "text": " O marque 0 y una operadora lo atenderá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 52.36,
+      "end": 53.36,
+      "text": " Adiós.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.28,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400468430-5544389958-20251014-133757-5593875524.WAV",
+  "file_name": "0105-04965-25101400468430-5544389958-20251014-133757-5593875524.WAV",
+  "base_id": "0105-04965-25101400468430-5544389958-20251014-133757-5593875524",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿En qué te puedo ayudar? Buenas tardes. Quería saber si hay fibra óptica aquí de este lado. Estamos en Calle Durango. Ok, Calle Durango. ¿El código postal cuál sería? 55400. 55400, ¿verdad? ¿El nombre de la colonia o flexionamiento cuál sería? Colonia La Purísima. Muy bien, dame un segundo momento para poderlo revisar para ver si tenemos fibra óptica. Ok, sí, gracias. ¿Cree que me puede apegar con el nombre de interior de su domicilio? Durango 512. 512, ¿verdad? Ajá. ¿Cómo es el nombre de sus entrecadillas? Es la Vía Morelos y la Tlaxcala. ¿El código postal me comentó que es 55400, ¿verdad? Sí. ¿Es en el Catepec, verdad? Sí. Ok, ya estoy revisando lo que es la dirección. Ya encontré lo que es su calle y la dirección. Pero me parece que justo en esta calle no tenemos cobertura a la altura donde se encuentra. Me parece que tenemos un poquito más arriba, casi donde está avenida de las torres. Ajá, pero exactamente en esta que está un poquito más abajo, si no tendríamos. Bueno, entonces ojalá ya después que aiga ya podamos, porque sí nos interesa. Sí, claro que sí. Igual dejo el comentario por si se nos habilita poderle agradecer la llamada, ¿está bien? Ok, muchas gracias, joven. Claro, es que igual manera, que pase muy buen día. Muchas gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 11.0,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 13.0,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.0,
+      "end": 23.08,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 23.08,
+      "end": 27.08,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 27.08,
+      "end": 32.08,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.08,
+      "end": 35.62,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.62,
+      "end": 43.87,
+      "text": " ¿En qué te puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.87,
+      "end": 48.87,
+      "text": " Buenas tardes. Quería saber si hay fibra óptica aquí de este lado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.87,
+      "end": 52.06,
+      "text": " Estamos en Calle Durango.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.06,
+      "end": 55.29,
+      "text": " Ok, Calle Durango.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.29,
+      "end": 57.29,
+      "text": " ¿El código postal cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 57.29,
+      "end": 59.29,
+      "text": " 55400.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.29,
+      "end": 63.34,
+      "text": " 55400, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 63.34,
+      "end": 68.26,
+      "text": " ¿El nombre de la colonia o flexionamiento cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 68.26,
+      "end": 71.74,
+      "text": " Colonia La Purísima.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 71.74,
+      "end": 80.1,
+      "text": " Muy bien, dame un segundo momento para poderlo revisar para ver si tenemos fibra óptica.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 80.1,
+      "end": 82.1,
+      "text": " Ok, sí, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 82.1,
+      "end": 133.41,
+      "text": " ¿Cree que me puede apegar con el nombre de interior de su domicilio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 133.41,
+      "end": 136.5,
+      "text": " Durango 512.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 136.5,
+      "end": 137.5,
+      "text": " 512, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 137.5,
+      "end": 138.5,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 138.5,
+      "end": 140.7,
+      "text": " ¿Cómo es el nombre de sus entrecadillas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 140.7,
+      "end": 143.7,
+      "text": " Es la Vía Morelos y la Tlaxcala.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 143.7,
+      "end": 151.08,
+      "text": " ¿El código postal me comentó que es 55400, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 151.08,
+      "end": 152.08,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 152.08,
+      "end": 184.9,
+      "text": " ¿Es en el Catepec, verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 184.9,
+      "end": 186.9,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 186.9,
+      "end": 215.72,
+      "text": " Ok, ya estoy revisando lo que es la dirección.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 215.72,
+      "end": 234.02,
+      "text": " Ya encontré lo que es su calle y la dirección.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 234.02,
+      "end": 240.02,
+      "text": " Pero me parece que justo en esta calle no tenemos cobertura a la altura donde se encuentra.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 240.02,
+      "end": 244.02,
+      "text": " Me parece que tenemos un poquito más arriba, casi donde está avenida de las torres.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 245.02,
+      "end": 249.02,
+      "text": " Ajá, pero exactamente en esta que está un poquito más abajo, si no tendríamos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 249.02,
+      "end": 254.02,
+      "text": " Bueno, entonces ojalá ya después que aiga ya podamos, porque sí nos interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 254.02,
+      "end": 255.46,
+      "text": " Sí, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 255.46,
+      "end": 259.46,
+      "text": " Igual dejo el comentario por si se nos habilita poderle agradecer la llamada, ¿está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 259.46,
+      "end": 262.59,
+      "text": " Ok, muchas gracias, joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 262.59,
+      "end": 264.59,
+      "text": " Claro, es que igual manera, que pase muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 264.59,
+      "end": 265.59,
+      "text": " Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 265.59,
+      "end": 266.59,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 272.952,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

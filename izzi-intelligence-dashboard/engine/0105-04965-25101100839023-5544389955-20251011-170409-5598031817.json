@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100839023-5544389955-20251011-170409-5598031817.WAV",
+  "file_name": "0105-04965-25101100839023-5544389955-20251011-170409-5598031817.WAV",
+  "base_id": "0105-04965-25101100839023-5544389955-20251011-170409-5598031817",
+  "transcription": "¿Buenos? No recibo tu respuesta. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Le habla Alberto Ruiz, de parte del departamento de promociones de IG. ¿Con quién tengo su... Funerario de San Pablo, ¿qué necesitas? Ah, mira, le toma el tromante. Voy a me llamar...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 0.5,
+      "text": " ¿Buenos?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 42.58,
+      "end": 44.58,
+      "text": " No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 44.58,
+      "end": 46.58,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 46.58,
+      "end": 53.7,
+      "text": " Hola, ¿qué tal? Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 53.7,
+      "end": 57.7,
+      "text": " Le habla Alberto Ruiz, de parte del departamento de promociones de IG.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 57.7,
+      "end": 58.7,
+      "text": " ¿Con quién tengo su...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 58.7,
+      "end": 61.06,
+      "text": " Funerario de San Pablo, ¿qué necesitas?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 61.06,
+      "end": 63.06,
+      "text": " Ah, mira, le toma el tromante. Voy a me llamar...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.496,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

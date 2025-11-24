@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800355802-5544389980-20251018-124140-5595790878.WAV",
+  "file_name": "0105-04965-25101800355802-5544389980-20251018-124140-5595790878.WAV",
+  "base_id": "0105-04965-25101800355802-5544389980-20251018-124140-5595790878",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Me dejó llamar al centro de contactaciones. Sí, sí, ¿cómo le ayudo? Buenas tardes, ¿me podrías quitar de tu lista? Es que me están llamando y llame de Easy y no me interesa, ya les dije. Tengo mega cable, me acabo de cambiar. Estaba con Easy, pero me subieron el precio, por eso me cambié a mega cable. ¿Me puedes quitar de tu lista y no estaré me llamando? Sí, claro que sí. Gracias. Por favor, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 6.82,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.82,
+      "end": 11.22,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.22,
+      "end": 13.22,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.22,
+      "end": 16.42,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.42,
+      "end": 20.62,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.78,
+      "end": 23.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.74,
+      "end": 32.34,
+      "text": " Me dejó llamar al centro de contactaciones. Sí, sí, ¿cómo le ayudo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.1,
+      "end": 35.5,
+      "text": " Buenas tardes, ¿me podrías quitar de tu lista?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.5,
+      "end": 39.1,
+      "text": " Es que me están llamando y llame de Easy y no me interesa, ya les dije.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 39.1,
+      "end": 41.3,
+      "text": " Tengo mega cable, me acabo de cambiar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.7,
+      "end": 45.2,
+      "text": " Estaba con Easy, pero me subieron el precio, por eso me cambié a mega cable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 45.2,
+      "end": 47.5,
+      "text": " ¿Me puedes quitar de tu lista y no estaré me llamando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.26,
+      "end": 49.26,
+      "text": " Sí, claro que sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.26,
+      "end": 49.76,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.76,
+      "end": 50.96,
+      "text": " Por favor, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 53.856,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

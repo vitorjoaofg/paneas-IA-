@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102500453555-5544389912-20251025-132847-5555649571.WAV",
+  "file_name": "0105-04965-25102500453555-5544389912-20251025-132847-5555649571.WAV",
+  "base_id": "0105-04965-25102500453555-5544389912-20251025-132847-5555649571",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Sí, señorita. Espera un momento, por favor. Ah, este... mire. Hola, Buendía. Le habla Ivonne Monfield de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Buendía. Raúl Cervantes Várcenas. A las 7, sí. El día 27 a las 6, 6.40. Sí, cómo no. En ayunas. Sí. Aquí lo tengo, aquí lo tenemos...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.56,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.56,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.76,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.76,
+      "end": 24.32,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.32,
+      "end": 27.43,
+      "text": " Sí, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.43,
+      "end": 30.43,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.73,
+      "end": 35.62,
+      "text": " Ah, este... mire.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.62,
+      "end": 39.62,
+      "text": " Hola, Buendía. Le habla Ivonne Monfield de parte de su servicio de Easy para darle",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.62,
+      "end": 42.62,
+      "text": " a conocer algunos beneficios con la compañía. Buendía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.62,
+      "end": 104.02,
+      "text": " Raúl Cervantes Várcenas. A las 7, sí. El día 27 a las 6, 6.40. Sí, cómo no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 104.02,
+      "end": 108.02,
+      "text": " En ayunas. Sí. Aquí lo tengo, aquí lo tenemos...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 107.712,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

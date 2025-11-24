@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100110398-5544389940-20251031-084745-5553400465.WAV",
+  "file_name": "0105-04965-25103100110398-5544389940-20251031-084745-5553400465.WAV",
+  "base_id": "0105-04965-25103100110398-5544389940-20251031-084745-5553400465",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIP Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a easy. ¿Te interesa? Un asesor te está esperando. Por favor. Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 3. Si conoces el número de extensión, márquelo ahora. Espera un momento, por favor. Hola, ¿qué tal? Buen día, disculpa, me estoy comunicando de parte de la compañía de Easy. Mi nombre es Miriam Oteguera. Es mi llamada para dar para conocer algunos beneficios. ¿Con quién tengo el gusto, verdad? Calidad, finalista y amada. De qué se sugiere que buen día para apoyarla con la salida. ¿Buena? ¿Buena, buena?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.28,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.28,
+      "end": 13.84,
+      "text": " con 200 canales, VIP Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.84,
+      "end": 20.08,
+      "text": " No lo pienses más y cámbiate a easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.08,
+      "end": 21.08,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.08,
+      "end": 24.96,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.96,
+      "end": 29.4,
+      "text": " de Arquitectura, marque 3. Si conoces el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.52,
+      "end": 31.52,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.52,
+      "end": 43.12,
+      "text": " Hola, ¿qué tal? Buen día, disculpa, me estoy comunicando de parte de la compañía",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 43.12,
+      "end": 47.28,
+      "text": " de Easy. Mi nombre es Miriam Oteguera. Es mi llamada para dar para conocer algunos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.28,
+      "end": 50.28,
+      "text": " beneficios. ¿Con quién tengo el gusto, verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 50.28,
+      "end": 55.49,
+      "text": " Calidad, finalista y amada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 81.97,
+      "end": 84.97,
+      "text": " De qué se sugiere que buen día para apoyarla con la salida.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 84.97,
+      "end": 87.82,
+      "text": " ¿Buena?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 87.82,
+      "end": 90.65,
+      "text": " ¿Buena, buena?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 95.688,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

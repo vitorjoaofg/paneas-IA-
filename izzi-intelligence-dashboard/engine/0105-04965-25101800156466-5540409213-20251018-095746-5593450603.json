@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800156466-5540409213-20251018-095746-5593450603.WAV",
+  "file_name": "0105-04965-25101800156466-5540409213-20251018-095746-5593450603.WAV",
+  "base_id": "0105-04965-25101800156466-5540409213-20251018-095746-5593450603",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí. Espera un momento, por favor. Hola, ¿qué tal? Buen día. Habla Miriam Goseguera de parte de la compañía de Easy. Estamos ayudando algunos beneficios para que hayan sesiones activas o que se maneje un descanso de internet, televisión por cable o línea telefónica con nosotros. Calidad finalista de llamada.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.76,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.76,
+      "end": 24.4,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí. Espera un momento, por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.4,
+      "end": 25.4,
+      "text": " favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.4,
+      "end": 52.62,
+      "text": " Hola, ¿qué tal? Buen día. Habla Miriam Goseguera de parte de la compañía de Easy. Estamos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.62,
+      "end": 57.62,
+      "text": " ayudando algunos beneficios para que hayan sesiones activas o que se maneje un descanso",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.62,
+      "end": 76.31,
+      "text": " de internet, televisión por cable o línea telefónica con nosotros. Calidad finalista",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 76.31,
+      "end": 117.95,
+      "text": " de llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 137.736,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

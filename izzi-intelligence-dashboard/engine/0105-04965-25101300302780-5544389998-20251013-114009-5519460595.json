@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300302780-5544389998-20251013-114009-5519460595.WAV",
+  "file_name": "0105-04965-25101300302780-5544389998-20251013-114009-5519460595.WAV",
+  "base_id": "0105-04965-25101300302780-5544389998-20251013-114009-5519460595",
+  "transcription": "¡Hola! ¿Te gustaría tener internet más televisión, más el mejor entretenimiento con VIXX Premium, más... ¡Dalas! ¿Desde 350 pesos el primer mes? ¡Con Easy es posible! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Del搖... Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido. O presiona 2 si fuiste mal atendido. Ayúdanos a mejorar la atención que te brindamos calificando esta llamada. Por favor, presiona 1 si fuiste bien atendido. O presiona 2, si fuiste mal atendido.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.4,
+      "text": " ¡Hola! ¿Te gustaría tener internet más televisión, más el mejor entretenimiento con VIXX Premium, más...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.4,
+      "end": 14.4,
+      "text": " ¡Dalas! ¿Desde 350 pesos el primer mes? ¡Con Easy es posible! ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.4,
+      "end": 20.4,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 25.4,
+      "end": 27.4,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.4,
+      "end": 36.03,
+      "text": " Del搖...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.03,
+      "end": 41.03,
+      "text": " Ayúdanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.03,
+      "end": 47.03,
+      "text": " Por favor, presiona 1 si fuiste bien atendido. O presiona 2 si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.03,
+      "end": 53.63,
+      "text": " Ayúdanos a mejorar la atención que te brindamos calificando esta llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.63,
+      "end": 58.97,
+      "text": " Por favor, presiona 1 si fuiste bien atendido. O presiona 2, si fuiste mal atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.848,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

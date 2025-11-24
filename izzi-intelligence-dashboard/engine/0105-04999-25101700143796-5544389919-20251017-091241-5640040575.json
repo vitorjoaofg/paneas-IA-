@@ -1,0 +1,411 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101700143796-5544389919-20251017-091241-5640040575.WAV",
+  "file_name": "0105-04999-25101700143796-5544389919-20251017-091241-5640040575.WAV",
+  "base_id": "0105-04999-25101700143796-5544389919-20251017-091241-5640040575",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium, más Skysports, desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abraham Garcia, contratación Easy. Dígame, ¿en qué le puedo ayudar? Nada, es que me sigan hablando y no estoy interesada. Yo ya tengo todos los servicios que me están ofreciendo y no los quiero. Ah, ok, ok, comprendo, disculpe, pero ya había hablado con un operador, un compañero mío, para poderlo comunicar. No me paran de llamar. Le pido, por favor, que me quiten del número que ya le dije tres veces que no. Por supuesto, señorita. Voy a dejar aquí el comentario. Aún así, la idea es que tenga un mejor servicio. ¿Quién tiene? Pagando menos o aprovechándolo más. Lo tengo desde 389 con Internet y Telefonía. 589 si lo quiere con televisión. Esto va a ser de lo último. Ya estoy poniendo el comentario, pero ¿qué le están incluyendo a usted? Seguramente le podemos dar un mejor servicio. No, yo soy el Internet. Necesito. Yo pago mis propios servicios de streaming, trabajo en Amazon. No necesito el no. Se lo dejaríamos desde 389 con Internet y Telefonía y ya ahí veríamos lo de las plataformas que vienen con descuentos. No, no lo necesito. Ya lo tengo. Muy bien. ¿Y cuánto le están cobrando por lo que tiene? No importa. No lo necesito. No quiero ser grosera. Le pido, por favor, que me dejen de llamar. Ya le contesté. No estoy interesada. Es la tercera vez que le digo en esa misma llamada. No me interesa. Muy bien. Perfecto. Igual, gracias por tener mi llamada, señorita. Espero que tenga un excelente día. Gracias, igualmente. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vic Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Skysports, desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 22.81,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.81,
+      "end": 32.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.26,
+      "end": 33.98,
+      "text": " Hola, ¿qué tal? Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.98,
+      "end": 35.26,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 35.26,
+      "end": 36.86,
+      "text": " Hola, hola. ¿Qué tal? Mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 36.9,
+      "end": 38.9,
+      "text": " Abraham Garcia, contratación Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 38.9,
+      "end": 40.9,
+      "text": " Dígame, ¿en qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.9,
+      "end": 43.7,
+      "text": " Nada, es que me sigan hablando y no estoy interesada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.7,
+      "end": 49.51,
+      "text": " Yo ya tengo todos los servicios que me están ofreciendo y no los quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 49.51,
+      "end": 53.91,
+      "text": " Ah, ok, ok, comprendo, disculpe, pero ya había hablado con un operador,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 53.91,
+      "end": 55.51,
+      "text": " un compañero mío, para poderlo comunicar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 55.51,
+      "end": 57.31,
+      "text": " No me paran de llamar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 57.31,
+      "end": 62.82,
+      "text": " Le pido, por favor, que me quiten del número que ya le dije tres veces que no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 62.82,
+      "end": 64.82,
+      "text": " Por supuesto, señorita. Voy a dejar aquí el comentario.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 64.9,
+      "end": 66.7,
+      "text": " Aún así, la idea es que tenga un mejor servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 66.7,
+      "end": 69.1,
+      "text": " ¿Quién tiene? Pagando menos o aprovechándolo más.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 69.1,
+      "end": 71.5,
+      "text": " Lo tengo desde 389 con Internet y Telefonía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 71.5,
+      "end": 74.42,
+      "text": " 589 si lo quiere con televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 74.42,
+      "end": 75.82,
+      "text": " Esto va a ser de lo último.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 75.82,
+      "end": 78.5,
+      "text": " Ya estoy poniendo el comentario, pero ¿qué le están incluyendo a usted?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 78.5,
+      "end": 80.5,
+      "text": " Seguramente le podemos dar un mejor servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 80.5,
+      "end": 82.22,
+      "text": " No, yo soy el Internet. Necesito.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 82.22,
+      "end": 87.42,
+      "text": " Yo pago mis propios servicios de streaming, trabajo en Amazon.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 87.42,
+      "end": 89.78,
+      "text": " No necesito el no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 89.78,
+      "end": 93.22,
+      "text": " Se lo dejaríamos desde 389 con Internet y Telefonía y ya ahí",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 93.3,
+      "end": 95.3,
+      "text": " veríamos lo de las plataformas que vienen con descuentos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 95.3,
+      "end": 99.14,
+      "text": " No, no lo necesito. Ya lo tengo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 99.14,
+      "end": 101.14,
+      "text": " Muy bien. ¿Y cuánto le están cobrando por lo que tiene?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 101.14,
+      "end": 103.54,
+      "text": " No importa. No lo necesito.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 103.54,
+      "end": 104.74,
+      "text": " No quiero ser grosera.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 104.74,
+      "end": 107.14,
+      "text": " Le pido, por favor, que me dejen de llamar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 107.14,
+      "end": 108.14,
+      "text": " Ya le contesté.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 108.14,
+      "end": 109.34,
+      "text": " No estoy interesada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 109.34,
+      "end": 112.14,
+      "text": " Es la tercera vez que le digo en esa misma llamada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 112.14,
+      "end": 114.06,
+      "text": " No me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 114.06,
+      "end": 115.06,
+      "text": " Muy bien. Perfecto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 115.06,
+      "end": 116.86,
+      "text": " Igual, gracias por tener mi llamada, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 116.86,
+      "end": 118.26,
+      "text": " Espero que tenga un excelente día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 118.26,
+      "end": 120.26,
+      "text": " Gracias, igualmente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 120.26,
+      "end": 121.26,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 120.6,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

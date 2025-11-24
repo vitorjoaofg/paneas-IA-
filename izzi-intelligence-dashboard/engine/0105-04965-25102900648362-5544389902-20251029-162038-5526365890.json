@@ -1,0 +1,87 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900648362-5544389902-20251029-162038-5526365890.WAV",
+  "file_name": "0105-04965-25102900648362-5544389902-20251029-162038-5526365890.WAV",
+  "base_id": "0105-04965-25102900648362-5544389902-20251029-162038-5526365890",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos. Espera un momento, por favor. Bueno, buenas tardes. Buenas tardes. Hola, buenas tardes. Mi nombre es Guadalupe Juárez. Estoy hablando a la compañía de Easy. ¿En qué le podemos servir? Comunicación para que salga bien el asesor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 13.02,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.02,
+      "end": 20.02,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.02,
+      "end": 24.02,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.02,
+      "end": 30.02,
+      "text": " Presiona uno para hablar con un asesor o dos. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 30.02,
+      "end": 37.23,
+      "text": " Bueno, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.23,
+      "end": 38.49,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.49,
+      "end": 44.49,
+      "text": " Hola, buenas tardes. Mi nombre es Guadalupe Juárez. Estoy hablando a la compañía de Easy. ¿En qué le podemos servir?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 44.49,
+      "end": 148.81,
+      "text": " Comunicación para que salga bien el asesor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 173.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

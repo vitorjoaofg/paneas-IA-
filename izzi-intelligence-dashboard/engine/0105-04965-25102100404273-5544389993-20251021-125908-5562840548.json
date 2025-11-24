@@ -1,0 +1,411 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100404273-5544389993-20251021-125908-5562840548.WAV",
+  "file_name": "0105-04965-25102100404273-5544389993-20251021-125908-5562840548.WAV",
+  "base_id": "0105-04965-25102100404273-5544389993-20251021-125908-5562840548",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Buenas tardes. Las dos acompañan Easy, me presento mucho gusto. Mi nombre es Paola. ¿Qué puedo ayudarle? Pues me hicieron una llamada que para ofertas de Easy, no sé. Ah, sí, mire. Nosotros somos de contrataciones Easy. El motivo de nuestra llamada es para darle información sobre las ofertas que tiene con nosotros para hacer contratación de Easy. A ver, dígame. ¿Cómo que le interesaría, señor? Pues mira, actualmente tengo Total Play, tengo este... ¿cómo se llama? Este... ...de televisión. Y en Internet vi una línea telefónica. Ah, creo que... Sí, mire, nosotros tenemos lo que es Internet, Telefonía y Televisión igual. Pero el de nosotros, el primer mes, con nosotros estaría pagando 350. ¿Y en el segundo? Después, a los 6 meses, durante 6 meses, estaría pagando 600. Y ya su precio fijo en el séptimo mes le quedaría en 690. Ah, si está algo elevado. Sí, ¿cuánto está actualmente usted? Ah, disculpe, con el que tengo, me están haciendo descuentos y tengo este... ...345 pesos mensuales. ¿345 pesos mensuales? Sí. Ah, ok, ok. Mire, con nosotros, igual tendría solamente, pero sería Telefonía y Internet. Que serían 349 el primer mes. Y ya después, este, el precio fijo le quedaría en 389. No, pues sí, sí, estando todavía abajo. Pues déjeme checarlo, señorita, entonces, porque si no. Ok. Así no. Sí, está bien, no se preocupe, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.83,
+      "end": 25.33,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.33,
+      "end": 27.33,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.33,
+      "end": 30.73,
+      "text": " Presiona 1 para hablar con un asesor o 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 31.07,
+      "end": 33.07,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.07,
+      "end": 41.28,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 41.28,
+      "end": 43.4,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.4,
+      "end": 45.4,
+      "text": " Las dos acompañan Easy, me presento mucho gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 45.4,
+      "end": 47.4,
+      "text": " Mi nombre es Paola. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.4,
+      "end": 51.6,
+      "text": " Pues me hicieron una llamada que para ofertas de Easy, no sé.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 51.6,
+      "end": 55.76,
+      "text": " Ah, sí, mire. Nosotros somos de contrataciones Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 55.76,
+      "end": 61.76,
+      "text": " El motivo de nuestra llamada es para darle información sobre las ofertas que tiene con nosotros para hacer contratación de Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.76,
+      "end": 64.75,
+      "text": " A ver, dígame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 64.75,
+      "end": 67.16,
+      "text": " ¿Cómo que le interesaría, señor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 67.5,
+      "end": 70.5,
+      "text": " Pues mira, actualmente tengo Total Play, tengo este...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 70.5,
+      "end": 72.5,
+      "text": " ¿cómo se llama?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 72.5,
+      "end": 74.5,
+      "text": " Este...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 74.5,
+      "end": 76.57,
+      "text": " ...de televisión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 76.57,
+      "end": 79.08,
+      "text": " Y en Internet vi una línea telefónica.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 79.08,
+      "end": 81.08,
+      "text": " Ah, creo que...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 81.08,
+      "end": 85.08,
+      "text": " Sí, mire, nosotros tenemos lo que es Internet, Telefonía y Televisión igual.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 85.08,
+      "end": 91.08,
+      "text": " Pero el de nosotros, el primer mes, con nosotros estaría pagando 350.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 91.08,
+      "end": 93.08,
+      "text": " ¿Y en el segundo?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 93.08,
+      "end": 97.08,
+      "text": " Después, a los 6 meses, durante 6 meses, estaría pagando 600.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 97.42,
+      "end": 101.42,
+      "text": " Y ya su precio fijo en el séptimo mes le quedaría en 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 101.42,
+      "end": 105.4,
+      "text": " Ah, si está algo elevado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 105.4,
+      "end": 107.4,
+      "text": " Sí, ¿cuánto está actualmente usted?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 107.4,
+      "end": 112.63,
+      "text": " Ah, disculpe, con el que tengo, me están haciendo descuentos y tengo este...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 112.63,
+      "end": 115.63,
+      "text": " ...345 pesos mensuales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 115.63,
+      "end": 117.76,
+      "text": " ¿345 pesos mensuales?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 117.76,
+      "end": 118.76,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 118.76,
+      "end": 119.76,
+      "text": " Ah, ok, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 119.76,
+      "end": 124.76,
+      "text": " Mire, con nosotros, igual tendría solamente, pero sería Telefonía y Internet.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 125.1,
+      "end": 132.06,
+      "text": " Que serían 349 el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 132.06,
+      "end": 141.06,
+      "text": " Y ya después, este, el precio fijo le quedaría en 389.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 141.06,
+      "end": 143.06,
+      "text": " No, pues sí, sí, estando todavía abajo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 143.06,
+      "end": 145.06,
+      "text": " Pues déjeme checarlo, señorita, entonces, porque si no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 145.06,
+      "end": 146.06,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 146.06,
+      "end": 147.06,
+      "text": " Así no.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 147.06,
+      "end": 149.06,
+      "text": " Sí, está bien, no se preocupe, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 151.02,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

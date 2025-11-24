@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700521718-3314541378-20251017-145314-3327113451.WAV",
+  "file_name": "0105-04965-25101700521718-3314541378-20251017-145314-3327113451.WAV",
+  "base_id": "0105-04965-25101700521718-3314541378-20251017-145314-3327113451",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. Hola, muy buen día, mi nombre es Driz, se lo ve de parte de Easy. ¿Tengo el gusto, con quién tengo el gusto? Pues no sé con quién, tú marcaste. Ah, ok, miren, nos estamos comunicando de parte de Easy para darle información a través de, a través de nuestros, ok, se les está haciendo excelentes promociones que le pueden ser de utilidad para ustedes, de interesantes. ¿Le gustaría escucharlo? No, claro que no, lo que quiero es que una persona de ustedes se prefiere de que no me vuelvan a marcar. Por favor, ¿me puedes pasar a tu supervisor? Ah, ok, sí, le vamos a poner aquí en el sistema. Necesito que me pase a tu supervisor. Ah, ok, permítame, déjeme ver si está disponible, ok, no me vaya a joderte.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 35.46,
+      "text": " para no. Espera un momento por favor. Hola, muy buen día, mi nombre es",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.46,
+      "end": 41.06,
+      "text": " Driz, se lo ve de parte de Easy. ¿Tengo el gusto, con quién tengo el gusto? Pues no sé",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.06,
+      "end": 46.06,
+      "text": " con quién, tú marcaste. Ah, ok, miren, nos estamos comunicando de parte de Easy",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.06,
+      "end": 52.38,
+      "text": " para darle información a través de, a través de nuestros, ok, se les está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.38,
+      "end": 57.5,
+      "text": " haciendo excelentes promociones que le pueden ser de utilidad para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.5,
+      "end": 61.82,
+      "text": " ustedes, de interesantes. ¿Le gustaría escucharlo? No, claro que no, lo que quiero",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.82,
+      "end": 65.7,
+      "text": " es que una persona de ustedes se prefiere de que no me vuelvan a marcar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.7,
+      "end": 70.89,
+      "text": " Por favor, ¿me puedes pasar a tu supervisor? Ah, ok, sí, le vamos a poner aquí en el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 70.89,
+      "end": 78.49,
+      "text": " sistema. Necesito que me pase a tu supervisor. Ah, ok, permítame, déjeme ver si está",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 78.49,
+      "end": 107.9,
+      "text": " disponible, ok, no me vaya a joderte.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 127.332,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100748011-3345339642-20251031-175634-04896.WAV",
+  "file_name": "0105-04965-25103100748011-3345339642-20251031-175634-04896.WAV",
+  "base_id": "0105-04965-25103100748011-3345339642-20251031-175634-04896",
+  "transcription": "Gracias por comunicarte a IZI, tenemos las mejores promociones para ti. ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium más SkyWorks desde 350 el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Le hablamos con su compañía IZI.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 4.81,
+      "text": " Gracias por comunicarte a IZI, tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.81,
+      "end": 10.45,
+      "text": " ¿Te gustaría tener Internet más televisión, más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.45,
+      "end": 14.21,
+      "text": " más SkyWorks desde 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.21,
+      "end": 16.29,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.29,
+      "end": 17.33,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.33,
+      "end": 19.49,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.49,
+      "end": 21.57,
+      "text": " Por favor, hable o pulse uno.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.57,
+      "end": 23.89,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 23.89,
+      "end": 30.11,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 30.11,
+      "end": 30.95,
+      "text": " Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 30.95,
+      "end": 32.35,
+      "text": " Le hablamos con su compañía IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 32.472,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

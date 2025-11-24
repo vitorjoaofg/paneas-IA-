@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400181902-3314541322-20251014-093957-3396908250.WAV",
+  "file_name": "0105-04965-25101400181902-3314541322-20251014-093957-3396908250.WAV",
+  "base_id": "0105-04965-25101400181902-3314541322-20251014-093957-3396908250",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 Mb de velocidad, tener el mejor entretenimiento con cualquier momento puedes marcar el número de extensión deseado, o bien puedes consultar nuestros horarios y ubicación presionando el Número 1, no lo pienses más y cánase a AI. Tereza, ¿estás esperando? ¿Puedes consultar también el estado de tu orden de servicio presionando el Número 3? Si deseas escuchar nuestro aviso de privacidad, presiona 5. Espera un momento, por favor. O presiona 0 si deseas ser atendido por nuestra operadora. Escucha nuevamente este menú presionando el Número 7. Recuerda que para nosotros, eres lo más importante.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.4,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 Mb de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.4,
+      "end": 11.0,
+      "text": " con cualquier momento puedes marcar el número de extensión deseado, o bien puedes consultar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " nuestros horarios y ubicación presionando el Número 1, no lo pienses más y cánase",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 17.0,
+      "text": " a AI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 17.0,
+      "end": 20.0,
+      "text": " Tereza, ¿estás esperando?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 25.0,
+      "text": " ¿Puedes consultar también el estado de tu orden de servicio presionando el Número",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.0,
+      "end": 26.61,
+      "text": " 3?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.61,
+      "end": 29.61,
+      "text": " Si deseas escuchar nuestro aviso de privacidad, presiona 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.61,
+      "end": 31.61,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 31.61,
+      "end": 36.25,
+      "text": " O presiona 0 si deseas ser atendido por nuestra operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 36.25,
+      "end": 40.41,
+      "text": " Escucha nuevamente este menú presionando el Número 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.41,
+      "end": 43.41,
+      "text": " Recuerda que para nosotros, eres lo más importante.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.648,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

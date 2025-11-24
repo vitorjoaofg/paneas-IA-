@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000104641-5544389908-20251030-084251-5592085620.WAV",
+  "file_name": "0105-04965-25103000104641-5544389908-20251030-084251-5592085620.WAV",
+  "base_id": "0105-04965-25103000104641-5544389908-20251030-084251-5592085620",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No, gracias, ahorita no me interesa. ¿Qué haría más? No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llave. Espera un momento, por favor. Sí, bueno. El primero no me interesa, me dijeron sobre internet y lo otro. Ahorita no me interesa, gracias, yo ya tengo internet. Buenos días, adiós. Ahorita ya tengo internet, ahorita no me interesa. Perfecto, gracias, que tenga buen día. Gracias, adiós.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 6.42,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.42,
+      "end": 14.22,
+      "text": " con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.22,
+      "end": 20.38,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.38,
+      "end": 26.46,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.46,
+      "end": 34.42,
+      "text": " un asesor o 2 para terminar la llamada. No, gracias, ahorita no me interesa. ¿Qué",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.42,
+      "end": 41.34,
+      "text": " haría más? No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.34,
+      "end": 45.14,
+      "text": " o 2 para terminar la llave. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.14,
+      "end": 55.9,
+      "text": " Sí, bueno. El primero no me interesa, me dijeron sobre",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 55.9,
+      "end": 67.7,
+      "text": " internet y lo otro. Ahorita no me interesa, gracias, yo ya tengo internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 67.7,
+      "end": 81.08,
+      "text": " Buenos días, adiós. Ahorita ya tengo internet, ahorita no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 81.08,
+      "end": 88.52,
+      "text": " Perfecto, gracias, que tenga buen día. Gracias, adiós.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 88.74,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

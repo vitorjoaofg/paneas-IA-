@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900555809-5553679736-20251009-151533-04896.WAV",
+  "file_name": "0105-04965-25100900555809-5553679736-20251009-151533-04896.WAV",
+  "base_id": "0105-04965-25100900555809-5553679736-20251009-151533-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría navegar en Internet con 100 megas de velocidad? ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes? No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, hola. Buen día. Me comunico de la compañía de Easy. Le saluda Paola Cabañas, con quien tengo el gusto. Con Graciela Cejano. Hola, Graciela. Dígame cómo la puedo ayudar. Pues me están diciendo que está una promoción de Easy de 300 ciferias. Ok. ¿Ya cuenta con contrato con nosotros? Sí. No me estoy pagando menos megas y pago 500 ciferias. Ajá. Sí, mire, le comento que esa promoción nada más aplica para clientes nuevos. Como usted es un cliente existente, pues no le aplicaría una disculpa de todos modos. Ok.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 8.6,
+      "text": " ¿Te gustaría navegar en Internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 8.6,
+      "end": 17.6,
+      "text": " ¿Tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.6,
+      "end": 23.6,
+      "text": " No lo pienses más y cándate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.6,
+      "end": 27.6,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.2,
+      "end": 36.98,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.98,
+      "end": 42.98,
+      "text": " Hola, hola. Buen día. Me comunico de la compañía de Easy. Le saluda Paola Cabañas, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 42.98,
+      "end": 45.14,
+      "text": " Con Graciela Cejano.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.14,
+      "end": 47.14,
+      "text": " Hola, Graciela. Dígame cómo la puedo ayudar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 47.14,
+      "end": 51.14,
+      "text": " Pues me están diciendo que está una promoción de Easy de 300 ciferias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 51.14,
+      "end": 56.34,
+      "text": " Ok. ¿Ya cuenta con contrato con nosotros?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 56.34,
+      "end": 63.5,
+      "text": " Sí. No me estoy pagando menos megas y pago 500 ciferias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.19,
+      "end": 68.19,
+      "text": " Ajá. Sí, mire, le comento que esa promoción nada más aplica para clientes nuevos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 68.19,
+      "end": 74.19,
+      "text": " Como usted es un cliente existente, pues no le aplicaría una disculpa de todos modos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.19,
+      "end": 76.35,
+      "text": " Ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.5,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

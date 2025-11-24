@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100588962-5544389959-20251021-151807-5526013751.WAV",
+  "file_name": "0105-04965-25102100588962-5544389959-20251021-151807-5526013751.WAV",
+  "base_id": "0105-04965-25102100588962-5544389959-20251021-151807-5526013751",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Pues si le pongo 2, se bloquea. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Tiene contactación con Easy? ¿La tiende a hablar con quien tenga el gusto? Ah, Easy. No, no me interesa y no sé dónde sacaron mi número. Ya está bastante molesta que está en cada rato, cada rato dándole. Por favor, cancele mi número en su lista, si es tan amable. Ahorita la pongo como nota, me enteré bien. A ver, si es que no se nos sacaron mi número, y así no se nos sacaron mi número, pero no me interesa. ¿Dónde Easy?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.14,
+      "end": 8.08,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.08,
+      "end": 15.9,
+      "text": " con 200 canales, Big Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.9,
+      "end": 21.96,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.96,
+      "end": 26.16,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 27.22,
+      "end": 30.14,
+      "text": " Pues si le pongo 2, se bloquea.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.14,
+      "end": 34.74,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.74,
+      "end": 40.3,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 40.3,
+      "end": 42.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.5,
+      "end": 200.63,
+      "text": " ¿Tiene contactación con Easy? ¿La tiende a hablar con quien tenga el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 200.63,
+      "end": 204.23,
+      "text": " Ah, Easy. No, no me interesa y no sé dónde sacaron mi número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 204.23,
+      "end": 208.43,
+      "text": " Ya está bastante molesta que está en cada rato, cada rato dándole.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 208.43,
+      "end": 211.94,
+      "text": " Por favor, cancele mi número en su lista, si es tan amable.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 212.1,
+      "end": 277.19,
+      "text": " Ahorita la pongo como nota, me enteré bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 277.19,
+      "end": 281.62,
+      "text": " A ver, si es que no se nos sacaron mi número, y así no se nos sacaron mi número,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 281.62,
+      "end": 283.81,
+      "text": " pero no me interesa. ¿Dónde Easy?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 283.752,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

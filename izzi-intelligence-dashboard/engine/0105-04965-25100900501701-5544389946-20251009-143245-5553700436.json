@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900501701-5544389946-20251009-143245-5553700436.WAV",
+  "file_name": "0105-04965-25100900501701-5544389946-20251009-143245-5553700436.WAV",
+  "base_id": "0105-04965-25100900501701-5544389946-20251009-143245-5553700436",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, buen día. Le habla Ivonne Monfils de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. Señorita, mire, desde que empezó Easy, cada revisión, estoy inscrito. Ahorita tenemos beneficios para clientes nuevos. Señorita, escúcheme. Ya le supliqué que me borren, por favor. No necesito nada. Tengo los paquetes más completos. Entonces, cada vez estoy durmiendo mi siesta y me hablan. Por favor, ya no quiero que me hablen. Borréme ahí. Una disculpa por la molestia. Que tenga un buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.05,
+      "end": 5.57,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.57,
+      "end": 12.33,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.33,
+      "end": 18.77,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.77,
+      "end": 25.36,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.36,
+      "end": 36.63,
+      "text": " un momento, por favor. Hola, buen día. Le habla Ivonne Monfils de parte de su servicio",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.63,
+      "end": 44.33,
+      "text": " de Easy para darle a conocer algunos beneficios con la compañía. Señorita, mire, desde que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.33,
+      "end": 51.61,
+      "text": " empezó Easy, cada revisión, estoy inscrito. Ahorita tenemos beneficios para clientes nuevos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.61,
+      "end": 57.45,
+      "text": " Señorita, escúcheme. Ya le supliqué que me borren, por favor. No necesito nada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.65,
+      "end": 63.65,
+      "text": " Tengo los paquetes más completos. Entonces, cada vez estoy durmiendo mi siesta y me hablan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.65,
+      "end": 71.35,
+      "text": " Por favor, ya no quiero que me hablen. Borréme ahí. Una disculpa por la molestia. Que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 76.176,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

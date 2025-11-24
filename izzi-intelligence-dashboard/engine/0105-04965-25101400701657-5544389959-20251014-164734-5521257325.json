@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400701657-5544389959-20251014-164734-5521257325.WAV",
+  "file_name": "0105-04965-25101400701657-5544389959-20251014-164734-5521257325.WAV",
+  "base_id": "0105-04965-25101400701657-5544389959-20251014-164734-5521257325",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cállate a Easy! ¿Te interesa? ¡Un asesor te está esperando! Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto? Hola, muy buenas tardes. Una preguntota. Yo estoy en Telmex, no me interesa Easy, pero me marcan y me marcan diario a ustedes que quieren que me cambie, que me cambie. Son muy bien con Telmex. ¿Cómo le puedo hacer para que ya no me mueren? Bueno, ya lo están marcando. Claro, yo puedo dejar el comentario para que borren el número de la... Por favor. Gracias. Bueno, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cállate a Easy! ¿Te interesa? ¡Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 24.36,
+      "text": " te está esperando! Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.41,
+      "end": 36.42,
+      "text": " Espera un momento, por favor. Bienvenido al área de contrataciones Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 36.42,
+      "end": 41.74,
+      "text": " Hola, muy buenas tardes. Una preguntota. Yo estoy en Telmex, no me interesa Easy,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.74,
+      "end": 45.7,
+      "text": " pero me marcan y me marcan diario a ustedes que quieren que me cambie, que me cambie.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.7,
+      "end": 48.94,
+      "text": " Son muy bien con Telmex. ¿Cómo le puedo hacer para que ya no me mueren? Bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.94,
+      "end": 53.32,
+      "text": " ya lo están marcando. Claro, yo puedo dejar el comentario para que borren el número de la...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.32,
+      "end": 55.68,
+      "text": " Por favor. Gracias. Bueno, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 57.06,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

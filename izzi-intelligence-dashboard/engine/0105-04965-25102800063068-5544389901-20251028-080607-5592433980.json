@@ -1,0 +1,420 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102800063068-5544389901-20251028-080607-5592433980.WAV",
+  "file_name": "0105-04965-25102800063068-5544389901-20251028-080607-5592433980.WAV",
+  "base_id": "0105-04965-25102800063068-5544389901-20251028-080607-5592433980",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Se le habla Iván Monfils de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía móvil. Buen día. Buenos días. ¿Usted tiene Internet con Easy o con otra compañía? Disculpe. Easy. Porque tenemos beneficios para clientes activos, ya que puede activar planes para el celular con la red de Telcel. No sé si ya le comentaron de estos paquetes por 94 pesos al mes. No, no me dijeron. Miria, ahorita puede activar un chip conservando su mismo número. Ya le incluye WhatsApp ilimitado, llamadas sin mensajes ilimitados y 10 gigas para navegar. La red es la de Telcel, AT&T y Altan. Y usted puede adquirir hasta 5 líneas para sus familiares. Se los mandamos a la dirección aquí de 21 de marzo. Aquí me estaré que ya cuentan con uno. En este caso no sé si le gustaría agregar alguno más. No. No. Bueno, y vuelen este. Sí, nada más tengo esos. Ah, ok. Bueno, igual puede agregar hasta tres chips más. A ver si más adelante le interesa. Y adicional, ahorita tenemos Netflix en 59 pesos por tres meses. No sé si le gustaría agregarlo ahorita, que está de promoción. Bueno, me habían dicho de una promoción de VIX y telefonía, eso por 350. No sé si sé, porque como ya le iba a cancelar, pero estaba viendo ese que yo también marcaron. Este es únicamente 350 el pago del primer mes para los clientes nuevos. Ya después quedan los 690. Ah, ok. Nada más entonces, ya en la semana marco. Sí, porque como ya le había marcado para cancelar, pensé que me había marcado, pero no, está marcado. Gracias. Oh, no, disculpas. Hasta luego. Sí, me acuerdo. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.64,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.64,
+      "end": 19.2,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.2,
+      "end": 21.2,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.2,
+      "end": 26.24,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.24,
+      "end": 29.67,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 29.83,
+      "end": 57.17,
+      "text": " Hola, buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.17,
+      "end": 63.61,
+      "text": " Se le habla Iván Monfils de parte de su servicio de Easy para darle a conocer los beneficios de la telefonía móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.61,
+      "end": 64.81,
+      "text": " Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 64.81,
+      "end": 66.01,
+      "text": " Buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.01,
+      "end": 69.33,
+      "text": " ¿Usted tiene Internet con Easy o con otra compañía? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 69.33,
+      "end": 70.61,
+      "text": " Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 70.61,
+      "end": 76.21,
+      "text": " Porque tenemos beneficios para clientes activos, ya que puede activar planes para el celular con la red de Telcel.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 76.21,
+      "end": 80.67,
+      "text": " No sé si ya le comentaron de estos paquetes por 94 pesos al mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 80.67,
+      "end": 82.27,
+      "text": " No, no me dijeron.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 82.31,
+      "end": 85.91,
+      "text": " Miria, ahorita puede activar un chip conservando su mismo número.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 85.91,
+      "end": 91.87,
+      "text": " Ya le incluye WhatsApp ilimitado, llamadas sin mensajes ilimitados y 10 gigas para navegar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 91.87,
+      "end": 94.67,
+      "text": " La red es la de Telcel, AT&T y Altan.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 94.67,
+      "end": 99.31,
+      "text": " Y usted puede adquirir hasta 5 líneas para sus familiares.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 99.31,
+      "end": 102.91,
+      "text": " Se los mandamos a la dirección aquí de 21 de marzo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 102.91,
+      "end": 105.11,
+      "text": " Aquí me estaré que ya cuentan con uno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 105.11,
+      "end": 108.71,
+      "text": " En este caso no sé si le gustaría agregar alguno más.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 108.71,
+      "end": 109.71,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 109.71,
+      "end": 111.33,
+      "text": " No.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 111.37,
+      "end": 112.97,
+      "text": " Bueno, y vuelen este.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 112.97,
+      "end": 114.53,
+      "text": " Sí, nada más tengo esos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 114.53,
+      "end": 117.73,
+      "text": " Ah, ok. Bueno, igual puede agregar hasta tres chips más.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 117.73,
+      "end": 119.93,
+      "text": " A ver si más adelante le interesa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 119.93,
+      "end": 125.53,
+      "text": " Y adicional, ahorita tenemos Netflix en 59 pesos por tres meses.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 125.53,
+      "end": 129.37,
+      "text": " No sé si le gustaría agregarlo ahorita, que está de promoción.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 129.37,
+      "end": 138.09,
+      "text": " Bueno, me habían dicho de una promoción de VIX y telefonía, eso por 350.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 138.13,
+      "end": 144.29,
+      "text": " No sé si sé, porque como ya le iba a cancelar, pero estaba viendo ese que yo también marcaron.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 144.29,
+      "end": 150.89,
+      "text": " Este es únicamente 350 el pago del primer mes para los clientes nuevos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 150.89,
+      "end": 153.29,
+      "text": " Ya después quedan los 690.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 153.29,
+      "end": 153.97,
+      "text": " Ah, ok.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 153.97,
+      "end": 156.09,
+      "text": " Nada más entonces, ya en la semana marco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 156.09,
+      "end": 160.77,
+      "text": " Sí, porque como ya le había marcado para cancelar, pensé que me había marcado,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 160.77,
+      "end": 161.89,
+      "text": " pero no, está marcado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 161.89,
+      "end": 162.49,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 162.49,
+      "end": 163.29,
+      "text": " Oh, no, disculpas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 163.29,
+      "end": 163.57,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 163.57,
+      "end": 164.29,
+      "text": " Sí, me acuerdo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 164.29,
+      "end": 165.09,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 169.884,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

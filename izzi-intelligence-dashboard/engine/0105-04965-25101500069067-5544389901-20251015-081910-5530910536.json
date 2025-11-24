@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500069067-5544389901-20251015-081910-5530910536.WAV",
+  "file_name": "0105-04965-25101500069067-5544389901-20251015-081910-5530910536.WAV",
+  "base_id": "0105-04965-25101500069067-5544389901-20251015-081910-5530910536",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bueno, bueno, hola, buenos días, me presento, mi nombre es Patricia Badillo, hablamos de compañía Easy. ¿Con quién tengo el gusto el día de hoy? Oiga, señorita, no me puede, dentro de una hora estoy desayunando. ¿En una hora que le marquemos? Por favor. Ay, que si no le marcamos en una hora es el entedía. Ok. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.24,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.24,
+      "end": 28.82,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 29.3,
+      "end": 45.7,
+      "text": " Bueno, bueno, hola, buenos días, me presento, mi nombre es Patricia Badillo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.7,
+      "end": 49.54,
+      "text": " hablamos de compañía Easy. ¿Con quién tengo el gusto el día de hoy?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.54,
+      "end": 57.84,
+      "text": " Oiga, señorita, no me puede, dentro de una hora estoy desayunando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.84,
+      "end": 60.75,
+      "text": " ¿En una hora que le marquemos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.75,
+      "end": 61.71,
+      "text": " Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 61.71,
+      "end": 65.3,
+      "text": " Ay, que si no le marcamos en una hora es el entedía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 65.3,
+      "end": 66.74,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.74,
+      "end": 68.1,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.056,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

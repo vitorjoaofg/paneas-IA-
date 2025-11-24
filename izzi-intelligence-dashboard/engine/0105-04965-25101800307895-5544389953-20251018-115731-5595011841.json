@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800307895-5544389953-20251018-115731-5595011841.WAV",
+  "file_name": "0105-04965-25101800307895-5544389953-20251018-115731-5595011841.WAV",
+  "base_id": "0105-04965-25101800307895-5544389953-20251018-115731-5595011841",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Incy? Es posible. ¿Te interesa? Un asesor te está esperando. ¿De qué compañía? Deja. Dejame. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Bueno, buen día. Habla Miriam González de parte de la compañía de Incy, mi llamada es para darle a conocer algunos beneficios que se le está proporcionando a usted en su cuenta. Se le está brindando... Ya cállate, güey.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports, desde 350 pesos al primer mes, con Incy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 16.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 18.0,
+      "text": " ¿De qué compañía?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.0,
+      "end": 25.08,
+      "text": " Deja.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.08,
+      "end": 26.08,
+      "text": " Dejame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.08,
+      "end": 34.08,
+      "text": " No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.08,
+      "end": 51.4,
+      "text": " Bueno, buen día. Habla Miriam González de parte de la compañía de Incy, mi llamada es para darle a conocer algunos beneficios que se le está proporcionando a usted en su cuenta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.4,
+      "end": 52.4,
+      "text": " Se le está brindando...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 52.4,
+      "end": 53.4,
+      "text": " Ya cállate, güey.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.648,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

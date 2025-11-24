@@ -1,0 +1,510 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100666889-5544389978-20251011-150857-5593856434.WAV",
+  "file_name": "0105-04965-25101100666889-5544389978-20251011-150857-5593856434.WAV",
+  "base_id": "0105-04965-25101100666889-5544389978-20251011-150857-5593856434",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Contrataciones Easy en que la puedo ayudar? Sí, buenas tardes. Sí, buenas tardes. Me pasaron contigo para ver lo de una contratación de Easy. Ah, ok. Pues ya cuenta con servicio Easy en casa o sería la primera vez que quiere contratar con nosotros. Es la primera vez, pero parece que no hay cobertura aquí. Ok, ¿podemos validar? ¿Conocer su código postal y nombre de colonel? 54... 963. 963, ok. ¿La colonelía anterior? La antigua. La antigua, ¿verdad? Ok, muy bien. Vamos a hacer un momento para poder validar si tenemos cobertura. ¿Conocen el nombre de la calle en la que se encuentra? ¿De la qué? ¿De la calle? Civilización Inca. Civilización Inca, ¿verdad? Ok, muy bien. Yo estoy validando, pero sí, de momento todavía no tenemos cobertura en esa zona. ¿Podríamos validarles solamente? Pero servicio de televisión. No sé si le llegue a interesar. No, no quería el internet. Ok. Si gusta, puedo dejar el comentario para que en cuanto nos habiliten las zonas, pues poderle regresar una llamada si sigue interesado. Porque sí, me parece que tenemos cobertura, pero todavía un poquito más arriba. Así por donde está la... Lo que es Avenida Teahualco. Un poquito más arriba. Teahualco. Ajá, la que está como abajo, que es como una tipo avenida. Avenida Teahualco. Está retirado. Un poco retirado, pero bueno. Sí. Sí, porque si ya aparecen como algunos puntos para hacer instalaciones. Pero sí, a un momento está bien esa zona, ¿no? Igual en cuanto nos habiliten, si usted le regresa una llamada. Sí, está bien. Claro, es que entonces viva la manera. ¿Qué pasa? Muy buen día. Hasta luego. Hasta luego, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 20.44,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 22.73,
+      "end": 25.23,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.23,
+      "end": 27.23,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 27.47,
+      "end": 32.73,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.73,
+      "end": 42.03,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 42.03,
+      "end": 44.06,
+      "text": " ¿Contrataciones Easy en que la puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.06,
+      "end": 46.83,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.83,
+      "end": 47.83,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.83,
+      "end": 51.83,
+      "text": " Me pasaron contigo para ver lo de una contratación de Easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.83,
+      "end": 57.96,
+      "text": " Ah, ok. Pues ya cuenta con servicio Easy en casa o sería la primera vez que quiere contratar con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 57.96,
+      "end": 61.38,
+      "text": " Es la primera vez, pero parece que no hay cobertura aquí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 61.62,
+      "end": 65.62,
+      "text": " Ok, ¿podemos validar? ¿Conocer su código postal y nombre de colonel?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 65.62,
+      "end": 67.87,
+      "text": " 54...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 67.87,
+      "end": 70.06,
+      "text": " 963.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 70.06,
+      "end": 72.06,
+      "text": " 963, ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 72.06,
+      "end": 74.06,
+      "text": " ¿La colonelía anterior?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 74.06,
+      "end": 76.16,
+      "text": " La antigua.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 76.16,
+      "end": 79.31,
+      "text": " La antigua, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 79.31,
+      "end": 81.31,
+      "text": " Ok, muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 81.31,
+      "end": 89.58,
+      "text": " Vamos a hacer un momento para poder validar si tenemos cobertura.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 89.58,
+      "end": 91.58,
+      "text": " ¿Conocen el nombre de la calle en la que se encuentra?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 91.58,
+      "end": 93.65,
+      "text": " ¿De la qué?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 93.65,
+      "end": 95.68,
+      "text": " ¿De la calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 95.68,
+      "end": 98.86,
+      "text": " Civilización Inca.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 99.1,
+      "end": 109.04,
+      "text": " Civilización Inca, ¿verdad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 109.04,
+      "end": 111.04,
+      "text": " Ok, muy bien.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 111.04,
+      "end": 113.04,
+      "text": " Yo estoy validando, pero sí, de momento todavía no tenemos cobertura en esa zona.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 113.04,
+      "end": 115.04,
+      "text": " ¿Podríamos validarles solamente?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 115.04,
+      "end": 117.04,
+      "text": " Pero servicio de televisión.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 117.04,
+      "end": 119.04,
+      "text": " No sé si le llegue a interesar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 119.04,
+      "end": 121.04,
+      "text": " No, no quería el internet.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 121.04,
+      "end": 123.14,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 123.14,
+      "end": 128.14,
+      "text": " Si gusta, puedo dejar el comentario para que en cuanto nos habiliten las zonas, pues poderle regresar una llamada si sigue interesado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 128.14,
+      "end": 132.14,
+      "text": " Porque sí, me parece que tenemos cobertura, pero todavía un poquito más arriba.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 132.14,
+      "end": 134.14,
+      "text": " Así por donde está la...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 134.79,
+      "end": 137.79,
+      "text": " Lo que es Avenida Teahualco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 137.79,
+      "end": 139.79,
+      "text": " Un poquito más arriba.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 139.79,
+      "end": 141.79,
+      "text": " Teahualco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 141.79,
+      "end": 146.39,
+      "text": " Ajá, la que está como abajo, que es como una tipo avenida.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 146.39,
+      "end": 148.39,
+      "text": " Avenida Teahualco.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 148.39,
+      "end": 150.46,
+      "text": " Está retirado.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 150.46,
+      "end": 152.46,
+      "text": " Un poco retirado, pero bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 152.46,
+      "end": 154.46,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 154.46,
+      "end": 157.46,
+      "text": " Sí, porque si ya aparecen como algunos puntos para hacer instalaciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 157.46,
+      "end": 159.46,
+      "text": " Pero sí, a un momento está bien esa zona, ¿no?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 159.46,
+      "end": 162.46,
+      "text": " Igual en cuanto nos habiliten, si usted le regresa una llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 162.46,
+      "end": 164.58,
+      "text": " Sí, está bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 164.82,
+      "end": 166.82,
+      "text": " Claro, es que entonces viva la manera.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 166.82,
+      "end": 168.82,
+      "text": " ¿Qué pasa? Muy buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 168.82,
+      "end": 170.82,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 170.82,
+      "end": 172.82,
+      "text": " Hasta luego, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 173.592,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

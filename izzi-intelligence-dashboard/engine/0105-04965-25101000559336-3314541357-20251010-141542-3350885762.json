@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000559336-3314541357-20251010-141542-3350885762.WAV",
+  "file_name": "0105-04965-25101000559336-3314541357-20251010-141542-3350885762.WAV",
+  "base_id": "0105-04965-25101000559336-3314541357-20251010-141542-3350885762",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¿Bueno? Sí, buenos días. ¿Hola qué tal? Buenos días. Se está comunicando con Trataciones Easy y le atiende Janeth Pulido, ¿con quién tengo el gusto? Con María Calderón. ¿Hola qué tal, señorita María? ¿Alcanzó escuchando la propuesta que se le hizo en el comutador para que pueda tener otro servicio? Sí, pero creo que para acá no hay cobertura. ¿Ah, recientemente le checaron, perdón? ¿O hace cuánto más me da? Me da hace como un mes. Ah, tiene poquito. ¿Le dijeron que en la colonia o en la calle no había? En la colonia. Uh, no, entonces yo pienso que no, todavía no. A finales del año yo pienso más o menos. Bueno, gracias. Pero de igual manera yo dejo el comentario, una disculpa. Sí, adiós, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.44,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.44,
+      "end": 12.2,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.2,
+      "end": 18.64,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.64,
+      "end": 26.76,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.76,
+      "end": 39.25,
+      "text": " por favor. ¿Bueno? Sí, buenos días. ¿Hola qué tal? Buenos días. Se está comunicando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 39.25,
+      "end": 43.17,
+      "text": " con Trataciones Easy y le atiende Janeth Pulido, ¿con quién tengo el gusto? Con María Calderón.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.17,
+      "end": 48.22,
+      "text": " ¿Hola qué tal, señorita María? ¿Alcanzó escuchando la propuesta que se le hizo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.22,
+      "end": 53.42,
+      "text": " en el comutador para que pueda tener otro servicio? Sí, pero creo que para acá no",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.42,
+      "end": 59.1,
+      "text": " hay cobertura. ¿Ah, recientemente le checaron, perdón? ¿O hace cuánto más me da?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.18,
+      "end": 64.83,
+      "text": " Me da hace como un mes. Ah, tiene poquito. ¿Le dijeron que en la colonia o en la calle",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 64.83,
+      "end": 71.17,
+      "text": " no había? En la colonia. Uh, no, entonces yo pienso que no, todavía no. A finales",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 71.17,
+      "end": 76.01,
+      "text": " del año yo pienso más o menos. Bueno, gracias. Pero de igual manera yo dejo el",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 76.01,
+      "end": 78.89,
+      "text": " comentario, una disculpa. Sí, adiós, gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.288,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

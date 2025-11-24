@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04950-25102800320936-5518365658-20251028-114347-04896.WAV",
+  "file_name": "0105-04950-25102800320936-5518365658-20251028-114347-04896.WAV",
+  "base_id": "0105-04950-25102800320936-5518365658-20251028-114347-04896",
+  "transcription": "En IZI estamos felices de recibir tu llamada. Sabemos que anteriormente contabas con nuestros servicios y por eso queremos invitarte a regresar con beneficios exclusivos por tiempo limitado. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí, 2 para no. Espera un momento, por favor. Hola, ¿qué tal? Buen día, bienvenido a IZI. ¿Con quién tengo lo gusto? Adnara Hakuri. Sí, buenas tardes. Se comunica al Departamento de Promociones IZI, ¿con quién tengo lo gusto? No sé, yo tengo dos líneas con IZI en ti, pero no sé cómo está la cosa. Ok, mire, ese sería directamente en el Departamento de Promociones de IZI móvil, ¿sale? Ahorita en un momento más le van a marcar, ¿sale? Vale, gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.6,
+      "text": " En IZI estamos felices de recibir tu llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.6,
+      "end": 9.56,
+      "text": " Sabemos que anteriormente contabas con nuestros servicios y por eso queremos invitarte a regresar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.56,
+      "end": 12.64,
+      "text": " con beneficios exclusivos por tiempo limitado.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 12.64,
+      "end": 13.76,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 13.76,
+      "end": 15.84,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 15.84,
+      "end": 19.84,
+      "text": " Por favor, hable o pulse 1 para sí, 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.84,
+      "end": 22.16,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 22.16,
+      "end": 32.35,
+      "text": " Hola, ¿qué tal?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.35,
+      "end": 34.15,
+      "text": " Buen día, bienvenido a IZI.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 34.15,
+      "end": 35.89,
+      "text": " ¿Con quién tengo lo gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 35.89,
+      "end": 37.41,
+      "text": " Adnara Hakuri.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 37.41,
+      "end": 42.76,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 43.0,
+      "end": 47.38,
+      "text": " Se comunica al Departamento de Promociones IZI, ¿con quién tengo lo gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 47.38,
+      "end": 56.22,
+      "text": " No sé, yo tengo dos líneas con IZI en ti, pero no sé cómo está la cosa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 56.22,
+      "end": 64.69,
+      "text": " Ok, mire, ese sería directamente en el Departamento de Promociones de IZI móvil, ¿sale?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 64.69,
+      "end": 67.29,
+      "text": " Ahorita en un momento más le van a marcar, ¿sale?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 67.29,
+      "end": 68.29,
+      "text": " Vale, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.46,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

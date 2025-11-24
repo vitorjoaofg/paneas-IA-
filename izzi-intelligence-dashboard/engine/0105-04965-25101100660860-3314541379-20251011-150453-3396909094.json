@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100660860-3314541379-20251011-150453-3396909094.WAV",
+  "file_name": "0105-04965-25101100660860-3314541379-20251011-150453-3396909094.WAV",
+  "base_id": "0105-04965-25101100660860-3314541379-20251011-150453-3396909094",
+  "transcription": "Hola, ¿que gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, buenas tardes. Un contrato, si es bien que le pueda ayudar. Buenas tardes, me entró la llamada a mí, Inge. Ok, usted ya cuenta con servicio Easy en Casa de Castoleat? Somos otro proveedor de Internet, Inge. Somos MSM. Ah, ok, entiendo. Bueno, entonces aquí veo el comentario, ¿está bien? Sí, sin problema. Le agradezco, al menos, por su tiempo. Que pase una muy buena tarde. Muchas gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿que gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 22.41,
+      "end": 24.41,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 24.41,
+      "end": 25.41,
+      "text": " Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.41,
+      "end": 54.19,
+      "text": " Un contrato, si es bien que le pueda ayudar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 54.19,
+      "end": 57.74,
+      "text": " Buenas tardes, me entró la llamada a mí, Inge.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 57.74,
+      "end": 62.15,
+      "text": " Ok, usted ya cuenta con servicio Easy en Casa de Castoleat?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 62.15,
+      "end": 66.15,
+      "text": " Somos otro proveedor de Internet, Inge. Somos MSM.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 66.15,
+      "end": 70.34,
+      "text": " Ah, ok, entiendo. Bueno, entonces aquí veo el comentario, ¿está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.34,
+      "end": 71.34,
+      "text": " Sí, sin problema.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 71.34,
+      "end": 75.34,
+      "text": " Le agradezco, al menos, por su tiempo. Que pase una muy buena tarde. Muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 140.256,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

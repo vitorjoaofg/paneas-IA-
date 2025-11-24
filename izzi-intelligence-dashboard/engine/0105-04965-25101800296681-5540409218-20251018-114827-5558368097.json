@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800296681-5540409218-20251018-114827-5558368097.WAV",
+  "file_name": "0105-04965-25101800296681-5540409218-20251018-114827-5558368097.WAV",
+  "base_id": "0105-04965-25101800296681-5540409218-20251018-114827-5558368097",
+  "transcription": "Hola, te gustaría convenerte a la protección de sus datos personales, por lo que si usted desea puede consultar nuestro aviso de privacidad en nuestra página de internet www.grupoméxico.com. No lo pienses más y cállate ahí, se interesa un sensor que está esperando. Si conoce el número de extensión mártelo ahora o espere unos instantes para ser transferido a la operadora. Espera un momento por favor. Gracias por llamar a Issy, ya tenemos ahora como la ayuda. Para cancelarlo 6. Para enviar este mensaje marque la tecla de número o cuelgue para reproducirlo 3. Para volver a grabarlo 4. Para agregar al mismo 5. Para cancelarlo 6.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.6,
+      "text": " Hola, te gustaría convenerte a la protección de sus datos personales, por lo que si usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.6,
+      "end": 14.0,
+      "text": " desea puede consultar nuestro aviso de privacidad en nuestra página de internet www.grupoméxico.com.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 20.0,
+      "text": " No lo pienses más y cállate ahí, se interesa un sensor que está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 26.0,
+      "text": " Si conoce el número de extensión mártelo ahora o espere unos instantes para ser transferido",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.0,
+      "end": 28.26,
+      "text": " a la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.26,
+      "end": 31.26,
+      "text": " Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.26,
+      "end": 41.02,
+      "text": " Gracias por llamar a Issy, ya tenemos ahora como la ayuda.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 80.6,
+      "end": 82.6,
+      "text": " Para cancelarlo 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 82.6,
+      "end": 93.11,
+      "text": " Para enviar este mensaje marque la tecla de número o cuelgue para reproducirlo 3.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 93.11,
+      "end": 95.11,
+      "text": " Para volver a grabarlo 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 95.11,
+      "end": 97.11,
+      "text": " Para agregar al mismo 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 97.11,
+      "end": 99.11,
+      "text": " Para cancelarlo 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 104.328,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

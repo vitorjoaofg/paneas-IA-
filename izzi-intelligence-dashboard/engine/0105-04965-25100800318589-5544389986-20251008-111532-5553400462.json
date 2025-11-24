@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800318589-5544389986-20251008-111532-5553400462.WAV",
+  "file_name": "0105-04965-25100800318589-5544389986-20251008-111532-5553400462.WAV",
+  "base_id": "0105-04965-25100800318589-5544389986-20251008-111532-5553400462",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysport, desde 350 pesos el primer mes, con ICI, es posible. ¿Te interesa? Un asesor te está esperando. Por favor. www.ahv.mx. Si desea hablar al Departamento de Seguridad, marque 2. Si desea hablar al Departamento de Arquitectura, marque 2. Espera un momento, por favor. Si conoces número de extensión, márquelo ahora. Espera un momento, por favor, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.92,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.92,
+      "end": 13.4,
+      "text": " más Skysport, desde 350 pesos el primer mes, con ICI, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.4,
+      "end": 14.36,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.36,
+      "end": 16.56,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.56,
+      "end": 17.24,
+      "text": " Por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 17.24,
+      "end": 20.24,
+      "text": " www.ahv.mx.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 20.24,
+      "end": 23.56,
+      "text": " Si desea hablar al Departamento de Seguridad, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 23.56,
+      "end": 25.96,
+      "text": " Si desea hablar al Departamento de Arquitectura, marque 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 25.96,
+      "end": 27.56,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 27.56,
+      "end": 40.12,
+      "text": " Si conoces número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.12,
+      "end": 48.5,
+      "text": " Espera un momento, por favor, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.408,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

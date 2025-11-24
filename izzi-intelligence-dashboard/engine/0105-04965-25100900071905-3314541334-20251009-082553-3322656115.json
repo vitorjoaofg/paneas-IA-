@@ -1,0 +1,465 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900071905-3314541334-20251009-082553-3322656115.WAV",
+  "file_name": "0105-04965-25100900071905-3314541334-20251009-082553-3322656115.WAV",
+  "base_id": "0105-04965-25100900071905-3314541334-20251009-082553-3322656115",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Screening más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal? Muy buenos días. Sí, buenos días. ¿Con quién tengo el gusto? Disculpe. Con Gabriela. Buenos días. ¿De dónde me hablas? Hablamos de parte de la compañía de Easy, señorita. De Easy Internet por cable y televisión. Ajá. Ya, lo que pasa es que mi duda es de si he ingresado en el sancionamiento. ¿A qué se refiere? Porque he estado hablando para contratar Easy, pero me dicen que no hay... Cobertura. Todavía no entraban las líneas. No sé si ya entraron. ¿Me puede indicar su dirección nuevamente, por favor? ¿Para colaborar aquí en el sistema? Sí, es en el sancionamiento de la cústida, el circuito cordillera número 19. Permítame un momento. Sí. Sí, continuo con ustedes. Es que muy simple. Espera, señorita. Mira, estoy checando aquí su línea, y aquí me parece que no. Que todavía no tenemos cobertura ahí donde se ubica actualmente. Y no sabes qué tanto se pueden tardar, porque la verdad sí me interesa cambiarme de compañía. Pero, pues, por eso se me hizo extraño que me hablaras. Porque la verdad sí... Sí me interesa cambiarme. Pero, pues, no sé ahora sí cuándo. Sí, aquí me parece que puede que sea entre unos, de dos a cuatro meses, dependiendo el área. Bueno, pues, entonces estaré al pendiente. Creo que sí. Quiero que escuche el llamado y que tenga un buen día. Hasta luego. Hasta luego, bye.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Big Screening",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.96,
+      "end": 11.6,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.6,
+      "end": 13.56,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.56,
+      "end": 14.56,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.56,
+      "end": 16.6,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.6,
+      "end": 24.17,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.17,
+      "end": 26.73,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 26.73,
+      "end": 28.85,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 28.85,
+      "end": 33.85,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 33.85,
+      "end": 40.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 40.82,
+      "end": 41.42,
+      "text": " ¿Qué tal?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 41.42,
+      "end": 47.89,
+      "text": " Muy buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 47.89,
+      "end": 48.69,
+      "text": " Sí, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 48.69,
+      "end": 49.69,
+      "text": " ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.69,
+      "end": 51.09,
+      "text": " Disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 51.09,
+      "end": 51.89,
+      "text": " Con Gabriela.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 51.89,
+      "end": 52.49,
+      "text": " Buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 52.49,
+      "end": 54.14,
+      "text": " ¿De dónde me hablas?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 54.14,
+      "end": 56.54,
+      "text": " Hablamos de parte de la compañía de Easy, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 56.54,
+      "end": 59.72,
+      "text": " De Easy Internet por cable y televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 59.72,
+      "end": 60.32,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 60.32,
+      "end": 65.32,
+      "text": " Ya, lo que pasa es que mi duda es de si he ingresado en el sancionamiento.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 65.32,
+      "end": 70.16,
+      "text": " ¿A qué se refiere?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 70.96,
+      "end": 75.16,
+      "text": " Porque he estado hablando para contratar Easy, pero me dicen que no hay...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 75.16,
+      "end": 76.16,
+      "text": " Cobertura.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 76.16,
+      "end": 77.96,
+      "text": " Todavía no entraban las líneas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 77.96,
+      "end": 80.42,
+      "text": " No sé si ya entraron.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 80.42,
+      "end": 82.82,
+      "text": " ¿Me puede indicar su dirección nuevamente, por favor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 82.82,
+      "end": 85.02,
+      "text": " ¿Para colaborar aquí en el sistema?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 85.02,
+      "end": 91.58,
+      "text": " Sí, es en el sancionamiento de la cústida, el circuito cordillera número 19.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 91.58,
+      "end": 93.18,
+      "text": " Permítame un momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 93.18,
+      "end": 192.39,
+      "text": " Sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 192.39,
+      "end": 193.59,
+      "text": " Sí, continuo con ustedes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 193.59,
+      "end": 194.39,
+      "text": " Es que muy simple.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 194.39,
+      "end": 195.99,
+      "text": " Espera, señorita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 195.99,
+      "end": 198.59,
+      "text": " Mira, estoy checando aquí su línea, y aquí me parece que no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 198.59,
+      "end": 204.47,
+      "text": " Que todavía no tenemos cobertura ahí donde se ubica actualmente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 204.47,
+      "end": 206.67,
+      "text": " Y no sabes qué tanto se pueden tardar,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 206.67,
+      "end": 209.67,
+      "text": " porque la verdad sí me interesa cambiarme de compañía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 209.67,
+      "end": 213.16,
+      "text": " Pero, pues, por eso se me hizo extraño que me hablaras.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 213.16,
+      "end": 216.26,
+      "text": " Porque la verdad sí...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 216.26,
+      "end": 217.86,
+      "text": " Sí me interesa cambiarme.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 217.86,
+      "end": 221.02,
+      "text": " Pero, pues, no sé ahora sí cuándo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 221.02,
+      "end": 226.82,
+      "text": " Sí, aquí me parece que puede que sea entre unos, de dos a cuatro meses,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 226.82,
+      "end": 233.98,
+      "text": " dependiendo el área.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 233.98,
+      "end": 236.98,
+      "text": " Bueno, pues, entonces estaré al pendiente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 236.98,
+      "end": 237.78,
+      "text": " Creo que sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 237.78,
+      "end": 240.78,
+      "text": " Quiero que escuche el llamado y que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 240.78,
+      "end": 241.78,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 241.78,
+      "end": 242.98,
+      "text": " Hasta luego, bye.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 245.016,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

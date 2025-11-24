@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102900245139-5544389917-20251029-104103-5558020199.WAV",
+  "file_name": "0105-04965-25102900245139-5544389917-20251029-104103-5558020199.WAV",
+  "base_id": "0105-04965-25102900245139-5544389917-20251029-104103-5558020199",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, muy buen día. Mi nombre es Graciela Huguet de parte de Easy. Nos estamos comunicando del área de contrataciones. ¿Le interesa alguno de nuestros servicios? Ninguno, nada más quiero pedirte de favor que evites este número ya, porque son oficinas de gobierno. Por favor. Ah, ok. Aquí le vamos a poner en el sistema. Si eres mi mamá. Disculpe. Disculpe usted en lo personal. ¿Usted cuenta con alguno de nuestros servicios? Estoy muy ocupado. Te agradezco mucho la atención. Hasta luego. Que tenga buen día. Hasta luego. ¿Sí? ¿Está suave? Uy, sí.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.16,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.16,
+      "end": 15.64,
+      "text": " Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.64,
+      "end": 23.1,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.1,
+      "end": 41.9,
+      "text": " Hola, muy buen día. Mi nombre es Graciela Huguet de parte de Easy. Nos estamos comunicando",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 41.94,
+      "end": 45.82,
+      "text": " del área de contrataciones. ¿Le interesa alguno de nuestros servicios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 45.82,
+      "end": 51.02,
+      "text": " Ninguno, nada más quiero pedirte de favor que evites este número ya,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.02,
+      "end": 53.74,
+      "text": " porque son oficinas de gobierno. Por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.74,
+      "end": 56.94,
+      "text": " Ah, ok. Aquí le vamos a poner en el sistema.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.94,
+      "end": 57.98,
+      "text": " Si eres mi mamá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.98,
+      "end": 62.7,
+      "text": " Disculpe. Disculpe usted en lo personal. ¿Usted cuenta con alguno de nuestros servicios?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 62.7,
+      "end": 65.3,
+      "text": " Estoy muy ocupado. Te agradezco mucho la atención. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.3,
+      "end": 79.09,
+      "text": " Que tenga buen día. Hasta luego. ¿Sí? ¿Está suave?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 79.09,
+      "end": 85.27,
+      "text": " Uy, sí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.416,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

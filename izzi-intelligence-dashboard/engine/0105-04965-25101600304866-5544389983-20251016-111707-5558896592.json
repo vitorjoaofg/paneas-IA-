@@ -1,0 +1,330 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600304866-5544389983-20251016-111707-5558896592.WAV",
+  "file_name": "0105-04965-25101600304866-5544389983-20251016-111707-5558896592.WAV",
+  "base_id": "0105-04965-25101600304866-5544389983-20251016-111707-5558896592",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buenas tardes. Buenas tardes. Hablamos de compañía, y si no presenta, mi nombre es Patricia Batillo. ¿Se encontrará con quien tengo el gusto de la edad? Con la señora Julia Hernández Morales. Mucho gusto, señorita. ¿Cómo se llama su calle para validar? ¿Qué servicio le puedo ofrecer? Es Avenida del Pedregal número 50B, Cofredía 2 de San Miguel. A ver, deme un momentito, se me descarga la información. Ok, señorita, ¿cómo se llama la calle? Avenida del Pedregal número 50B. Avenida del Pedregal. ¿Colonia, señorita? Cofredía 2 de San Miguel. ¿Cofredía? Cofradía. Cofradía. Ajá, ¿cofradía qué? 2 de San Miguel. ¿Y la ciudad, señorita? Permítame, pero es que si yo con mi nombre, tienen que tener todo, señorita. ¿Usted ya es cliente easy, señorita? Yo soy cliente easy. Ah, entonces sí, sí, es cliente easy. Entonces la voy a buscar con su número telefónico, más fácil. Sí, pensé que era por primera vez, señorita, y quería contratar.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.8,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.8,
+      "end": 25.25,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.25,
+      "end": 34.58,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.58,
+      "end": 35.58,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.04,
+      "end": 41.04,
+      "text": " Hablamos de compañía, y si no presenta, mi nombre es Patricia Batillo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 41.04,
+      "end": 44.04,
+      "text": " ¿Se encontrará con quien tengo el gusto de la edad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.04,
+      "end": 46.04,
+      "text": " Con la señora Julia Hernández Morales.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.04,
+      "end": 48.2,
+      "text": " Mucho gusto, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.2,
+      "end": 51.2,
+      "text": " ¿Cómo se llama su calle para validar? ¿Qué servicio le puedo ofrecer?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.2,
+      "end": 56.39,
+      "text": " Es Avenida del Pedregal número 50B, Cofredía 2 de San Miguel.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 56.39,
+      "end": 60.39,
+      "text": " A ver, deme un momentito, se me descarga la información.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.39,
+      "end": 70.05,
+      "text": " Ok, señorita, ¿cómo se llama la calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 70.35,
+      "end": 73.76,
+      "text": " Avenida del Pedregal número 50B.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 73.76,
+      "end": 77.8,
+      "text": " Avenida del Pedregal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 77.8,
+      "end": 79.8,
+      "text": " ¿Colonia, señorita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 79.8,
+      "end": 81.8,
+      "text": " Cofredía 2 de San Miguel.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 81.8,
+      "end": 84.02,
+      "text": " ¿Cofredía?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 84.02,
+      "end": 85.02,
+      "text": " Cofradía.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 85.02,
+      "end": 88.97,
+      "text": " Cofradía.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 88.97,
+      "end": 91.04,
+      "text": " Ajá, ¿cofradía qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 91.04,
+      "end": 93.58,
+      "text": " 2 de San Miguel.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 93.58,
+      "end": 98.77,
+      "text": " ¿Y la ciudad, señorita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 98.77,
+      "end": 101.87,
+      "text": " Permítame, pero es que si yo con mi nombre,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 102.17,
+      "end": 104.26,
+      "text": " tienen que tener todo, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 104.26,
+      "end": 106.26,
+      "text": " ¿Usted ya es cliente easy, señorita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 106.26,
+      "end": 107.26,
+      "text": " Yo soy cliente easy.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 107.26,
+      "end": 109.26,
+      "text": " Ah, entonces sí, sí, es cliente easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 109.26,
+      "end": 111.26,
+      "text": " Entonces la voy a buscar con su número telefónico,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 111.26,
+      "end": 113.26,
+      "text": " más fácil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 113.26,
+      "end": 115.26,
+      "text": " Sí, pensé que era por primera vez,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 115.26,
+      "end": 117.26,
+      "text": " señorita, y quería contratar.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 118.116,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

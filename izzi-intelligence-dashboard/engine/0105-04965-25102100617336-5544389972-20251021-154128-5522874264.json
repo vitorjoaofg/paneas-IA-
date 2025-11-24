@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100617336-5544389972-20251021-154128-5522874264.WAV",
+  "file_name": "0105-04965-25102100617336-5544389972-20251021-154128-5522874264.WAV",
+  "base_id": "0105-04965-25102100617336-5544389972-20251021-154128-5522874264",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, qué tal, muy buenas tardes. La habla su compañía Easy. Me presento mucho gusto, mi nombre es Paola, ¿en qué puedo ayudarle? ¿Se me escucha? Hola, ¿qué pasó? Dígame. Ok, el motivo de nuestra llamada, señorita, es para dar información sobre los ofertos que tienen para contrataciones Easy. Ah, no, muchas gracias. Ok, gracias, que tengas lindo día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.2,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.2,
+      "end": 15.68,
+      "text": " Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 15.68,
+      "end": 23.46,
+      "text": " esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.46,
+      "end": 75.18,
+      "text": " Hola, qué tal, muy buenas tardes. La habla su compañía Easy. Me presento mucho gusto,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 75.22,
+      "end": 85.63,
+      "text": " mi nombre es Paola, ¿en qué puedo ayudarle? ¿Se me escucha? Hola, ¿qué pasó? Dígame.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 85.63,
+      "end": 90.7,
+      "text": " Ok, el motivo de nuestra llamada, señorita, es para dar información sobre los ofertos que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 90.7,
+      "end": 96.22,
+      "text": " tienen para contrataciones Easy. Ah, no, muchas gracias. Ok, gracias, que tengas lindo día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.332,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

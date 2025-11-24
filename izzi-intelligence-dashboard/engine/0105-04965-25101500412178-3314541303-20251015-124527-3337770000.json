@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101500412178-3314541303-20251015-124527-3337770000.WAV",
+  "file_name": "0105-04965-25101500412178-3314541303-20251015-124527-3337770000.WAV",
+  "base_id": "0105-04965-25101500412178-3314541303-20251015-124527-3337770000",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Está usted llamando a... Si conoce el número de extensión, puede marcarlo en cualquier momento. Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador. Está usted llamando a... Si conoce el número de extensión, puede marcarlo en cualquier momento. Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador. Está usted llamando a... Si conoce el número de extensión, puede marcarlo en cualquier momento. Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador. Está usted llamando a...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 11.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 11.0,
+      "end": 16.0,
+      "text": " Con Easy es posible. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.29,
+      "end": 28.29,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 141.75,
+      "end": 145.61,
+      "text": " Está usted llamando a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 149.61,
+      "end": 152.77,
+      "text": " Si conoce el número de extensión, puede marcarlo en cualquier momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 152.77,
+      "end": 158.77,
+      "text": " Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 158.77,
+      "end": 161.89,
+      "text": " Está usted llamando a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 165.89,
+      "end": 168.95,
+      "text": " Si conoce el número de extensión, puede marcarlo en cualquier momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 168.95,
+      "end": 174.95,
+      "text": " Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 174.95,
+      "end": 178.17,
+      "text": " Está usted llamando a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 182.17,
+      "end": 185.3,
+      "text": " Si conoce el número de extensión, puede marcarlo en cualquier momento.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 185.3,
+      "end": 191.3,
+      "text": " Para escuchar nuestro aviso de privacidad, presiona este disco o marca 0 para ser atendido por un operador.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 191.3,
+      "end": 194.67,
+      "text": " Está usted llamando a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 194.4,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

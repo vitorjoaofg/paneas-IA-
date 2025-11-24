@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000386148-5544389919-20251010-115715-5593762063.WAV",
+  "file_name": "0105-04965-25101000386148-5544389919-20251010-115715-5593762063.WAV",
+  "base_id": "0105-04965-25101000386148-5544389919-20251010-115715-5593762063",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skyscroll, desde 350 pesos el primer mes, con Easy? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor... Si quiero hablar con ventas, dígite 1. Compras, dígite 2. Ingeniería, seguridad ocupacional, marketing y plataformas tecnológicas, dígite 5. Recursos humanos, dígite 6. Contabilidad, dígite 7. Servintrack, dígite 8. O marque 0 para hablar con la operadora. Transfiriendo a un encargado. Un momento, por favor. ¿Qué buenas tardes?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.0,
+      "text": " más Skyscroll, desde 350 pesos el primer mes, con Easy? Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 17.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 21.0,
+      "text": " Si quiero hablar con ventas, dígite 1.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 21.0,
+      "end": 24.26,
+      "text": " Compras, dígite 2.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.26,
+      "end": 30.38,
+      "text": " Ingeniería, seguridad ocupacional,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 30.38,
+      "end": 34.38,
+      "text": " marketing y plataformas tecnológicas, dígite 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.38,
+      "end": 37.38,
+      "text": " Recursos humanos, dígite 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 37.38,
+      "end": 40.38,
+      "text": " Contabilidad, dígite 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 40.38,
+      "end": 43.38,
+      "text": " Servintrack, dígite 8.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 43.38,
+      "end": 51.11,
+      "text": " O marque 0 para hablar con la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 51.11,
+      "end": 77.54,
+      "text": " Transfiriendo a un encargado. Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 77.54,
+      "end": 79.54,
+      "text": " ¿Qué buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 111.132,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400690786-5544389905-20251014-163913-5553892807.WAV",
+  "file_name": "0105-04965-25101400690786-5544389905-20251014-163913-5553892807.WAV",
+  "base_id": "0105-04965-25101400690786-5544389905-20251014-163913-5553892807",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. ¿Qué tal? Buenas tardes. Bienvenido en el área de contrataciones. Sí, sí, se tiene Nancy Martínez. ¿Con quién tengo el gusto? Buenas tardes. Con Consuelo Calderón. Señorita, le quiero pedir un favor. Por favor, no me estén llamando. Somos dos personas adultas que no nos interesa tanto lo que están ofreciendo. Nosotros no lo necesitamos y no me interesa. Entonces, ya quiero que no me estén molestando, que no me estén llamando. Por favor. Hasta luego. Claro que sí, ningún problema. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.76,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.76,
+      "end": 14.2,
+      "text": " más Sky Sports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.2,
+      "end": 18.56,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.56,
+      "end": 26.67,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.67,
+      "end": 31.83,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 31.83,
+      "end": 34.11,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.11,
+      "end": 43.21,
+      "text": " ¿Qué tal? Buenas tardes. Bienvenido en el área de contrataciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.21,
+      "end": 45.65,
+      "text": " Sí, sí, se tiene Nancy Martínez. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 45.65,
+      "end": 50.89,
+      "text": " Buenas tardes. Con Consuelo Calderón. Señorita, le quiero pedir un favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 50.89,
+      "end": 56.61,
+      "text": " Por favor, no me estén llamando. Somos dos personas adultas que no nos interesa",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 56.61,
+      "end": 64.74,
+      "text": " tanto lo que están ofreciendo. Nosotros no lo necesitamos y no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 65.22,
+      "end": 68.74,
+      "text": " Entonces, ya quiero que no me estén molestando, que no me estén llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 68.74,
+      "end": 71.03,
+      "text": " Por favor. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.03,
+      "end": 73.03,
+      "text": " Claro que sí, ningún problema. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 77.364,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300397066-5544389978-20251013-130527-5558368287.WAV",
+  "file_name": "0105-04965-25101300397066-5544389978-20251013-130527-5558368287.WAV",
+  "base_id": "0105-04965-25101300397066-5544389978-20251013-130527-5558368287",
+  "transcription": "Hola, ¿te gustaría navegar en la protección de sus datos personales? Por lo que si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de Internet, www.grupoméxico.com. Buenas tardes, se está hablando a Grupo México, por inglés Kyle Mime. Si conoce el número de extensión, márquelo ahora. O espere unos instantes para ser transferido a la operadora. Espera un momento, por favor. Grupo México, ¿buen día?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.04,
+      "end": 5.64,
+      "text": " Hola, ¿te gustaría navegar en la protección de sus datos personales?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.64,
+      "end": 14.64,
+      "text": " Por lo que si usted desea, puede consultar nuestro aviso de privacidad en nuestra página de Internet, www.grupoméxico.com.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.64,
+      "end": 21.04,
+      "text": " Buenas tardes, se está hablando a Grupo México, por inglés Kyle Mime.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 21.04,
+      "end": 24.64,
+      "text": " Si conoce el número de extensión, márquelo ahora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.64,
+      "end": 28.96,
+      "text": " O espere unos instantes para ser transferido a la operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.56,
+      "end": 44.18,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.18,
+      "end": 46.18,
+      "text": " Grupo México, ¿buen día?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 100.224,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

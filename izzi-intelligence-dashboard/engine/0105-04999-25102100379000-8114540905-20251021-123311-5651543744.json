@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25102100379000-8114540905-20251021-123311-5651543744.WAV",
+  "file_name": "0105-04999-25102100379000-8114540905-20251021-123311-5651543744.WAV",
+  "base_id": "0105-04999-25102100379000-8114540905-20251021-123311-5651543744",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para sí. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. ¿Le habló de su compañía Easy? Me presento mucho gusto. Mi nombre es Paola. ¿Qué puedo ayudarle? No, no, no. ¿Qué tal? ¿Cómo, perdón? ¿Cómo tal? ¿Es de su compañía Easy, señorita? ¿En qué puedo ayudarle? Quiero contarte Internet. ¿Internet? Sí. Ok, mire, le comento. Tiene lo que es...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 20.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 20.0,
+      "end": 38.85,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 38.85,
+      "end": 51.58,
+      "text": " Hola, ¿qué tal? Muy buenas tardes. ¿Le habló de su compañía Easy? Me presento mucho gusto. Mi nombre es Paola. ¿Qué puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 51.58,
+      "end": 65.02,
+      "text": " No, no, no. ¿Qué tal? ¿Cómo, perdón? ¿Cómo tal? ¿Es de su compañía Easy, señorita? ¿En qué puedo ayudarle?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 65.02,
+      "end": 78.2,
+      "text": " Quiero contarte Internet. ¿Internet? Sí. Ok, mire, le comento. Tiene lo que es...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.408,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

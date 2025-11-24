@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600300397-5544389983-20251016-111344-5588715106.WAV",
+  "file_name": "0105-04965-25101600300397-5544389983-20251016-111344-5588715106.WAV",
+  "base_id": "0105-04965-25101600300397-5544389983-20251016-111344-5588715106",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes. Buenas tardes. Yo no pedí esta llamada y me están llamando el diario. Entonces, ¿te puedo pedir, por favor, que borre mi número de la base de datos? Claro que sí, ahorita paso el reporte para que lo quiten de la base. Porque diario están hablando y sí me molesta demasiado. Claro que sí, ahorita pasa el reporte. Una disculpa, que tenga buen día. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 23.2,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.2,
+      "end": 30.78,
+      "text": " para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.78,
+      "end": 41.12,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.12,
+      "end": 56.75,
+      "text": " respuesta. Por favor, presione 1. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.75,
+      "end": 62.79,
+      "text": " Hola, ¿qué tal? Buenas tardes. Buenas tardes. Yo no pedí esta llamada y me están llamando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 62.79,
+      "end": 66.31,
+      "text": " el diario. Entonces, ¿te puedo pedir, por favor, que borre mi número de la base de",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.31,
+      "end": 70.43,
+      "text": " datos? Claro que sí, ahorita paso el reporte para que lo quiten de la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.43,
+      "end": 75.8,
+      "text": " base. Porque diario están hablando y sí me molesta demasiado. Claro que sí,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 75.8,
+      "end": 79.64,
+      "text": " ahorita pasa el reporte. Una disculpa, que tenga buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.684,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000272201-5544389912-20251010-103506-5553425422.WAV",
+  "file_name": "0105-04965-25101000272201-5544389912-20251010-103506-5553425422.WAV",
+  "base_id": "0105-04965-25101000272201-5544389912-20251010-103506-5553425422",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. Espera un momento, por favor. Bueno. Hola, señorita. Buenos días. Hablamos de parte de la compañía de Easy. Mi nombre es Miriam Goseguera. Es mi llamada para darles a conocer algunos beneficios que se les están proporcionando, ya sean clientes nuevos o activos.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 13.02,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Skysports, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.02,
+      "end": 20.02,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.46,
+      "end": 27.46,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 37.1,
+      "end": 38.1,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.1,
+      "end": 44.23,
+      "text": " Hola, señorita. Buenos días. Hablamos de parte de la compañía de Easy. Mi nombre es Miriam Goseguera.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.23,
+      "end": 51.36,
+      "text": " Es mi llamada para darles a conocer algunos beneficios que se les están proporcionando, ya sean clientes nuevos o activos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.192,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

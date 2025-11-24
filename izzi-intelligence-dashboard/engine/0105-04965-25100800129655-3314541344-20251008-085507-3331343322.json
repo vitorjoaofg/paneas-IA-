@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100800129655-3314541344-20251008-085507-3331343322.WAV",
+  "file_name": "0105-04965-25100800129655-3314541344-20251008-085507-3331343322.WAV",
+  "base_id": "0105-04965-25100800129655-3314541344-20251008-085507-3331343322",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Sí, bueno, bueno, depende de la campaña y depende de la situación. Por ejemplo, esta campaña es de clientes nuevos. Estos no son clientes de Easy todavía. Entonces, si te diste cuenta, esta entrocortada no tenía audio. Y la clasifique como inactivo para que la saquen de la base porque no, pues no contestan. Y es que en esta campaña en específico, la mayoría de los números son conmutadores o son extensiones o son números que no sirven para nada y pues de qué me sirve a mí que me están cayendo llamadas que no. Entonces, por eso las clasifico así para que la saquen de la base. Pero, por ejemplo, en las otras depende, este, porque tú te das cuenta, ¿no? Hay veces en las que...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.72,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 25.68,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.68,
+      "end": 46.12,
+      "text": " momento, por favor. Sí, bueno, bueno, depende de la campaña y depende de la situación. Por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 46.12,
+      "end": 52.98,
+      "text": " ejemplo, esta campaña es de clientes nuevos. Estos no son clientes de Easy todavía. Entonces,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 52.98,
+      "end": 57.86,
+      "text": " si te diste cuenta, esta entrocortada no tenía audio. Y la clasifique como inactivo para que",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 57.86,
+      "end": 63.98,
+      "text": " la saquen de la base porque no, pues no contestan. Y es que en esta campaña en específico,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 64.42,
+      "end": 70.18,
+      "text": " la mayoría de los números son conmutadores o son extensiones o son números que no sirven",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 70.18,
+      "end": 74.1,
+      "text": " para nada y pues de qué me sirve a mí que me están cayendo llamadas que no. Entonces,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 74.1,
+      "end": 78.54,
+      "text": " por eso las clasifico así para que la saquen de la base. Pero, por ejemplo,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 78.54,
+      "end": 83.5,
+      "text": " en las otras depende, este, porque tú te das cuenta, ¿no? Hay veces en las que...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.564,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

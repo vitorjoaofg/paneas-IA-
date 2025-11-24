@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200135355-5540409223-20251022-090458-5595053910.WAV",
+  "file_name": "0105-04965-25102200135355-5540409223-20251022-090458-5595053910.WAV",
+  "base_id": "0105-04965-25102200135355-5540409223-20251022-090458-5595053910",
+  "transcription": "¡Hola! ¿Te gustaría no negar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Lo siento, no encontré a nadie con ese nombre. Por favor dime el nombre de la persona que desea contactar o bien presiona 0 para ser atendido por el área comercial. Un momento, por favor. Creo que ha dicho Gómez. ¿Es correcto? Diga sí o no o bien presione 1 en caso afirmativo o 2 en caso negativo. Creo que ha dicho Gómez. ¿Es correcto? Diga sí o no o bien presione 1 en caso afirmativo o 2 en caso negativo. Creo que ha dicho Gómez. ¿Es correcto? Diga sí o no o bien presione 1 en caso afirmativo o 2 en caso negativo. No podemos conectar tu llamada en este momento. Vuelve a intentarlo más tarde.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría no negar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 17.84,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.84,
+      "end": 24.14,
+      "text": " Lo siento, no encontré a nadie con ese nombre. Por favor dime el nombre de la persona",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.14,
+      "end": 29.57,
+      "text": " que desea contactar o bien presiona 0 para ser atendido por el área comercial.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.57,
+      "end": 38.89,
+      "text": " Un momento, por favor. Creo que ha dicho Gómez. ¿Es correcto? Diga sí o no o bien presione 1 en",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.89,
+      "end": 47.42,
+      "text": " caso afirmativo o 2 en caso negativo. Creo que ha dicho Gómez. ¿Es correcto? Diga sí o no o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.42,
+      "end": 54.98,
+      "text": " bien presione 1 en caso afirmativo o 2 en caso negativo. Creo que ha dicho Gómez. ¿Es correcto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.11,
+      "end": 62.98,
+      "text": " Diga sí o no o bien presione 1 en caso afirmativo o 2 en caso negativo. No podemos conectar tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.98,
+      "end": 67.0,
+      "text": " llamada en este momento. Vuelve a intentarlo más tarde.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.86,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

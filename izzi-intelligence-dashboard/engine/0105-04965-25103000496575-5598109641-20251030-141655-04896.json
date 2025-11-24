@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000496575-5598109641-20251030-141655-04896.WAV",
+  "file_name": "0105-04965-25103000496575-5598109641-20251030-141655-04896.WAV",
+  "base_id": "0105-04965-25103000496575-5598109641-20251030-141655-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. Te gustaría tener Internet, más televisión, más el mejor entretenimiento, con Big Screening, más Skype Watch, desde 350 en Internet, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? No recibo tu... Espera un momento, por favor. Hola, ¿qué tal? ¿Muy buenas tardes? Sí, ¿qué tal? ¿Muy buenas tardes? Buenas tardes. ¿Con quién hablo? ¿Qué tal? Mire, mi nombre es Omar Pérez, está hablando de la área de promociones de Easy. ¿Sí logró escuchar la grabación anterior? Disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.0,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. Te gustaría tener Internet, más televisión, más el mejor entretenimiento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.0,
+      "end": 16.0,
+      "text": " con Big Screening, más Skype Watch, desde 350 en Internet, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.0,
+      "end": 19.0,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.0,
+      "end": 24.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.0,
+      "end": 28.0,
+      "text": " No recibo tu... Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.0,
+      "end": 36.34,
+      "text": " Hola, ¿qué tal? ¿Muy buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.34,
+      "end": 38.84,
+      "text": " Sí, ¿qué tal? ¿Muy buenas tardes?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.84,
+      "end": 40.84,
+      "text": " Buenas tardes. ¿Con quién hablo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.84,
+      "end": 46.84,
+      "text": " ¿Qué tal? Mire, mi nombre es Omar Pérez, está hablando de la área de promociones de Easy. ¿Sí logró escuchar la grabación anterior? Disculpe.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 47.16,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

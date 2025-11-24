@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600675820-6644547905-20251016-164329-3123163330.WAV",
+  "file_name": "0105-04965-25101600675820-6644547905-20251016-164329-3123163330.WAV",
+  "base_id": "0105-04965-25101600675820-6644547905-20251016-164329-3123163330",
+  "transcription": "Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido. Venta desde 350 pesos al primer mes con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido. Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4. Bienvenidos a Renault Colima. Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido. Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4. Bienvenidos a Renault Colima. Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido. Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.0,
+      "end": 13.5,
+      "text": " Venta desde 350 pesos al primer mes con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.5,
+      "end": 22.41,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.41,
+      "end": 25.41,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.41,
+      "end": 32.41,
+      "text": " Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.41,
+      "end": 42.18,
+      "text": " Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.18,
+      "end": 46.58,
+      "text": " Bienvenidos a Renault Colima.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 46.58,
+      "end": 53.58,
+      "text": " Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.58,
+      "end": 63.32,
+      "text": " Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.32,
+      "end": 66.57,
+      "text": " Bienvenidos a Renault Colima.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.57,
+      "end": 74.76,
+      "text": " Si conoce la extensión, márkela ahora, de lo contrario, escuche nuestro menú o permanezca en línea y en breve será atendido.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.76,
+      "end": 84.43,
+      "text": " Ventas, 1. Servicio, 2. Laminado y pintura, 3. Refacciones, 4.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.996,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

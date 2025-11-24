@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800124578-3314541300-20251018-093213-3316459919.WAV",
+  "file_name": "0105-04965-25101800124578-3314541300-20251018-093213-3316459919.WAV",
+  "base_id": "0105-04965-25101800124578-3314541300-20251018-093213-3316459919",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales? Big Premium llevará deportivos exclusivos por solo 350 pesos el primer mes. No lo miemes más y cámplame ahí. 3, 3, 1, 8, 9, 9, 3, 6, 5. Por favor, deja tu mensaje después del tono. Espera un momento, por favor. Ha alcanzado la duración máxima permisiva. Por favor, deja tu mensaje después del tono. Si necesita volver a grabar, mara el signo de número y espera instrucciones. Por favor, deja tu mensaje después del tono. Si necesita volver a grabar, marca el signo de número y espera instrucciones.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.0,
+      "end": 14.0,
+      "text": " Big Premium llevará deportivos exclusivos por solo 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 16.0,
+      "text": " No lo miemes más y cámplame ahí.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.0,
+      "end": 23.0,
+      "text": " 3, 3, 1, 8, 9, 9, 3, 6, 5.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.0,
+      "end": 26.0,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.0,
+      "end": 29.0,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.0,
+      "end": 32.0,
+      "text": " Ha alcanzado la duración máxima permisiva.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 32.0,
+      "end": 78.07,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 78.07,
+      "end": 83.07,
+      "text": " Si necesita volver a grabar, mara el signo de número y espera instrucciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 83.07,
+      "end": 94.46,
+      "text": " Por favor, deja tu mensaje después del tono.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 94.46,
+      "end": 99.46,
+      "text": " Si necesita volver a grabar, marca el signo de número y espera instrucciones.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 110.412,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

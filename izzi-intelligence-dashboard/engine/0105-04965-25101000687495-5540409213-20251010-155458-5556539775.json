@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000687495-5540409213-20251010-155458-5556539775.WAV",
+  "file_name": "0105-04965-25101000687495-5540409213-20251010-155458-5556539775.WAV",
+  "base_id": "0105-04965-25101000687495-5540409213-20251010-155458-5556539775",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Sky Sports desde 350 pesos el primer mes con ICI? Es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable. Para reparaciones, presiones 5. Para reparaciones por colisión, presiones 6. Si desea compartir comentarios o sugerencias, presiones 7. Un momento, por favor. Marca 0 para hablar con nuestra operadora. ¿Vas a dar buenas tardes? Hola, buenas tardes.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.6,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.6,
+      "end": 13.84,
+      "text": " más Sky Sports desde 350 pesos el primer mes con ICI?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 13.84,
+      "end": 14.84,
+      "text": " Es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.84,
+      "end": 15.84,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 15.84,
+      "end": 18.4,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.4,
+      "end": 19.4,
+      "text": " Por favor, hable.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 19.4,
+      "end": 21.56,
+      "text": " Para reparaciones, presiones 5.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.56,
+      "end": 24.75,
+      "text": " Para reparaciones por colisión, presiones 6.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 24.75,
+      "end": 27.47,
+      "text": " Si desea compartir comentarios o sugerencias, presiones 7.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 27.67,
+      "end": 28.67,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 28.67,
+      "end": 30.67,
+      "text": " Marca 0 para hablar con nuestra operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 30.67,
+      "end": 44.64,
+      "text": " ¿Vas a dar buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 44.64,
+      "end": 45.64,
+      "text": " Hola, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 54.648,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

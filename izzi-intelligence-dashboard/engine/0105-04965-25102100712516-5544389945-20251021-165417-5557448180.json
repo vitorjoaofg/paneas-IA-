@@ -1,0 +1,69 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100712516-5544389945-20251021-165417-5557448180.WAV",
+  "file_name": "0105-04965-25102100712516-5544389945-20251021-165417-5557448180.WAV",
+  "base_id": "0105-04965-25102100712516-5544389945-20251021-165417-5557448180",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno... Espera un momento, por favor. Hola, ¿qué tal? Gracias por comunicarse, hablar de contrataciones. Easy la tiende a hablar. ¿Con quién tengo el gusto? Bueno, bueno, bueno. Vamos tú de calidad. Cácerle más. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.62,
+      "end": 9.96,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.96,
+      "end": 18.16,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.16,
+      "end": 22.36,
+      "text": " te está esperando. Por favor, hable o pulse uno...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 22.36,
+      "end": 30.5,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 40.11,
+      "end": 49.39,
+      "text": " Hola, ¿qué tal? Gracias por comunicarse, hablar de contrataciones. Easy la tiende a hablar. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 49.39,
+      "end": 85.22,
+      "text": " Bueno, bueno, bueno. Vamos tú de calidad. Cácerle más. Buen día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 97.74,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

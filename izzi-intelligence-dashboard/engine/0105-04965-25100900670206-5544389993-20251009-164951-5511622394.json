@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900670206-5544389993-20251009-164951-5511622394.WAV",
+  "file_name": "0105-04965-25100900670206-5544389993-20251009-164951-5511622394.WAV",
+  "base_id": "0105-04965-25100900670206-5544389993-20251009-164951-5511622394",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor que está esperando. ¡Ahí está hablando! ¡Ahí está! ¡Hable, ya hable! ¡Hable, ya hable y no sé qué carajos! El rojo, el rojo... ¡Ah, es Abel, amadecí! Lo siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Ya me mandaron... Hola, ¿qué tal? ¿Buenas tardes?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.26,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.26,
+      "end": 18.66,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.66,
+      "end": 19.66,
+      "text": " que está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.66,
+      "end": 24.66,
+      "text": " ¡Ahí está hablando! ¡Ahí está! ¡Hable, ya hable! ¡Hable, ya hable y no sé qué carajos!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.66,
+      "end": 29.68,
+      "text": " El rojo, el rojo... ¡Ah, es Abel, amadecí!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 29.68,
+      "end": 35.68,
+      "text": " Lo siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 35.68,
+      "end": 42.64,
+      "text": " con un asesor o 2 para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 42.64,
+      "end": 49.6,
+      "text": " Ya me mandaron...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.6,
+      "end": 51.6,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 51.444,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

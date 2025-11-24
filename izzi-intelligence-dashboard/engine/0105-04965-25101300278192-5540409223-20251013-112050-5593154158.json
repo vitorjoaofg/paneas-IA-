@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300278192-5540409223-20251013-112050-5593154158.WAV",
+  "file_name": "0105-04965-25101300278192-5540409223-20251013-112050-5593154158.WAV",
+  "base_id": "0105-04965-25101300278192-5540409223-20251013-112050-5593154158",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por comunicarse al área de contrataciones de Igel. Soy Neva de Daniela, ¿con quién tengo el gusto? Con Andrés Gell. Oye, señorita, nada más, no, no, no, no quiero contatarme. Yo nada más quiero que vengas a estar marcándome. Este es un servicio de Dota Play, señorita, y es muy molesto que me estén marque y marque desde las 7 de la mañana, señorita. ¿Cómo puedo hacer para que vengas a estar marcando a este número? No sé cómo tuvieron mi número, señorita. Le pongo aquí en los comentarios. Le agradezco que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.2,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.16,
+      "text": " interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 27.44,
+      "text": " comunico con un asesor? Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.44,
+      "end": 43.76,
+      "text": " Espera un momento, por favor. Hola, ¿qué tal? Buenas tardes, gracias por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.76,
+      "end": 47.04,
+      "text": " comunicarse al área de contrataciones de Igel. Soy Neva de Daniela, ¿con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.04,
+      "end": 51.04,
+      "text": " Con Andrés Gell. Oye, señorita, nada más, no, no, no, no quiero contatarme. Yo nada más quiero",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 51.04,
+      "end": 53.96,
+      "text": " que vengas a estar marcándome. Este es un servicio de Dota Play, señorita, y es muy molesto",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 53.96,
+      "end": 58.12,
+      "text": " que me estén marque y marque desde las 7 de la mañana, señorita. ¿Cómo puedo hacer para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 58.12,
+      "end": 61.08,
+      "text": " que vengas a estar marcando a este número? No sé cómo tuvieron mi número, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 61.08,
+      "end": 65.0,
+      "text": " Le pongo aquí en los comentarios. Le agradezco que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 67.32,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

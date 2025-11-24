@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103100225218-5544389903-20251031-102708-5563802526.WAV",
+  "file_name": "0105-04965-25103100225218-5544389903-20251031-102708-5563802526.WAV",
+  "base_id": "0105-04965-25103100225218-5544389903-20251031-102708-5563802526",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos al primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulsa. Bueno. Espera un momento, por favor. Hola, ¿qué tal? Muy buenos días. Le hablamos de su compañía Easy. ¿Te puedo ayudarle? Hola, buenos días. Me marcaron. Así es, somos de contrataciones y el motivo de nuestra llamada es para darle información sobre si quiere contratar Easy con nosotros. ¿Quieres algún número para contarte? ¿Qué quieres ahorita? No tengo tiempo. Así es, es el 800-120-5000. 800... sale. Muchísimas gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Big Premium, más Skysport, desde 350 pesos al primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulsa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 25.14,
+      "end": 26.14,
+      "text": " Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.14,
+      "end": 28.14,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.14,
+      "end": 38.07,
+      "text": " Hola, ¿qué tal? Muy buenos días. Le hablamos de su compañía Easy. ¿Te puedo ayudarle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 38.07,
+      "end": 43.83,
+      "text": " Hola, buenos días. Me marcaron.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.83,
+      "end": 50.83,
+      "text": " Así es, somos de contrataciones y el motivo de nuestra llamada es para darle información sobre si quiere contratar Easy con nosotros.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.83,
+      "end": 58.69,
+      "text": " ¿Quieres algún número para contarte? ¿Qué quieres ahorita? No tengo tiempo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 58.69,
+      "end": 62.39,
+      "text": " Así es, es el 800-120-5000.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 62.39,
+      "end": 73.85,
+      "text": " 800... sale. Muchísimas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 73.85,
+      "end": 74.85,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 78.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

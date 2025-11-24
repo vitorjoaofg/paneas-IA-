@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900471015-5544389977-20251009-140835-5556655399.WAV",
+  "file_name": "0105-04965-25100900471015-5544389977-20251009-140835-5556655399.WAV",
+  "base_id": "0105-04965-25100900471015-5544389977-20251009-140835-5556655399",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con cien negas de velocidad, tener el mercurio de 10 minutos en los 5 canales, Bigg's Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor. Sí, buenas tardes. La Tienda Julio Vargas dice. Señor Vargas, una molestia. Me habla 30 veces al día para lo mismo, para lo mismo, para lo mismo. ¿Qué puedo hacer para que me dejen de hablar? Dígame. Ok, no se preocupen. ¿Alguna carta? Ok. Bueno, no se preocupen. Voy a pasar el reporte correspondiente de que no está interesada en la partida comercial y que no se comuniquen al número con terminación 5399. Ay, por favor, sí, porque lo suplico. Me agradezco mucho que tenga buen día. Hasta luego. Gracias. Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 14.0,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con cien negas de velocidad, tener el mercurio de 10 minutos en los 5 canales, Bigg's Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 14.0,
+      "end": 24.0,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 24.0,
+      "end": 46.7,
+      "text": " Siento. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor o dos para terminar la llamada. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 46.7,
+      "end": 49.7,
+      "text": " Sí, buenas tardes. La Tienda Julio Vargas dice.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 49.7,
+      "end": 62.7,
+      "text": " Señor Vargas, una molestia. Me habla 30 veces al día para lo mismo, para lo mismo, para lo mismo. ¿Qué puedo hacer para que me dejen de hablar? Dígame.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 62.7,
+      "end": 64.7,
+      "text": " Ok, no se preocupen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 64.7,
+      "end": 67.75,
+      "text": " ¿Alguna carta?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 67.75,
+      "end": 76.75,
+      "text": " Ok. Bueno, no se preocupen. Voy a pasar el reporte correspondiente de que no está interesada en la partida comercial y que no se comuniquen al número con terminación 5399.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 76.75,
+      "end": 79.75,
+      "text": " Ay, por favor, sí, porque lo suplico.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 79.75,
+      "end": 81.75,
+      "text": " Me agradezco mucho que tenga buen día. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 81.75,
+      "end": 82.88,
+      "text": " Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 82.88,
+      "end": 83.88,
+      "text": " Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.464,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

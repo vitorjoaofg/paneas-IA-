@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100498457-3338119541-20251011-131311-04896.WAV",
+  "file_name": "0105-04965-25101100498457-3338119541-20251011-131311-04896.WAV",
+  "base_id": "0105-04965-25101100498457-3338119541-20251011-131311-04896",
+  "transcription": "Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti. ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, ¿qué tal? ¿Buenas tardes? Mi nombre es José Manuel. ¿Con qué tengo el gusto? Oiga, es que yo marqué un teléfono, pero quiero hablar con otra persona. ¿Usted tiene? Ah, que hay una desculpa. Estoy marcando 3341-4141-363 y entra otra persona y yo quiero marcar ese número. ¿Y ahora me está contestando usted? Oh, déjenme cuelgo rápido para que pueda marcar el otro número. Gracias. Gracias, let's go back to London.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.8,
+      "text": " Gracias por comunicarte a Easy. Tenemos las mejores promociones para ti.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.8,
+      "end": 10.4,
+      "text": " ¿Te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.4,
+      "end": 14.2,
+      "text": " más Sky Sports desde 350 el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 14.2,
+      "end": 16.2,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.2,
+      "end": 19.6,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.6,
+      "end": 24.0,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.0,
+      "end": 29.2,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 30.88,
+      "end": 39.14,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.14,
+      "end": 43.94,
+      "text": " Hola, ¿qué tal? ¿Buenas tardes? Mi nombre es José Manuel. ¿Con qué tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.94,
+      "end": 48.94,
+      "text": " Oiga, es que yo marqué un teléfono, pero quiero hablar con otra persona. ¿Usted tiene?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 48.94,
+      "end": 50.94,
+      "text": " Ah, que hay una desculpa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 50.94,
+      "end": 58.54,
+      "text": " Estoy marcando 3341-4141-363 y entra otra persona y yo quiero marcar ese número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 58.54,
+      "end": 60.34,
+      "text": " ¿Y ahora me está contestando usted?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 60.34,
+      "end": 63.74,
+      "text": " Oh, déjenme cuelgo rápido para que pueda marcar el otro número. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 63.74,
+      "end": 65.54,
+      "text": " Gracias, let's go back to London.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 125.496,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

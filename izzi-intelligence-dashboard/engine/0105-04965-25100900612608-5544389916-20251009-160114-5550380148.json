@@ -1,0 +1,213 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900612608-5544389916-20251009-160114-5550380148.WAV",
+  "file_name": "0105-04965-25100900612608-5544389916-20251009-160114-5550380148.WAV",
+  "base_id": "0105-04965-25100900612608-5544389916-20251009-160114-5550380148",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para... Espera un momento, por favor. Buenas tardes. Buenas tardes, señorita. ¿Cómo puedo...? Es que llaman como 6 o 7 veces al día, señorita. Y es una oficina. Entonces, me gustaría saber cómo puedo hacerle para allá. No recibí llamadas. Si gusta, en este caso ahorita yo paso el reporte para que quiten el número de la base. Por favor, porque, o sea, marcan hasta 6 a 10 veces al día. Entonces, ya, no permiten... Sus llamadas no permiten que entren clientes a la oficina. Entonces, pues, sí me gustaría que ya, por favor, pararan. Claro que sí, yo estaría dejando ahorita el reporte. Bueno, muchas gracias. De nada, una disculpa. Hasta luego. Sí, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 11.2,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 13.2,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.2,
+      "end": 16.4,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.4,
+      "end": 20.0,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 22.4,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 28.34,
+      "end": 31.84,
+      "text": " Buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.84,
+      "end": 33.84,
+      "text": " Buenas tardes, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 33.84,
+      "end": 37.84,
+      "text": " ¿Cómo puedo...?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 37.84,
+      "end": 44.11,
+      "text": " Es que llaman como 6 o 7 veces al día, señorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 44.11,
+      "end": 46.11,
+      "text": " Y es una oficina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 46.11,
+      "end": 48.91,
+      "text": " Entonces, me gustaría saber cómo puedo hacerle para allá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 48.91,
+      "end": 51.46,
+      "text": " No recibí llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 51.46,
+      "end": 55.46,
+      "text": " Si gusta, en este caso ahorita yo paso el reporte para que quiten el número de la base.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 55.46,
+      "end": 60.66,
+      "text": " Por favor, porque, o sea, marcan hasta 6 a 10 veces al día.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.66,
+      "end": 63.06,
+      "text": " Entonces, ya, no permiten...",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 63.06,
+      "end": 65.86,
+      "text": " Sus llamadas no permiten que entren clientes a la oficina.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 65.86,
+      "end": 69.86,
+      "text": " Entonces, pues, sí me gustaría que ya, por favor, pararan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 69.86,
+      "end": 73.46,
+      "text": " Claro que sí, yo estaría dejando ahorita el reporte.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 73.46,
+      "end": 75.46,
+      "text": " Bueno, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 75.46,
+      "end": 77.46,
+      "text": " De nada, una disculpa. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 77.46,
+      "end": 79.46,
+      "text": " Sí, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 79.956,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

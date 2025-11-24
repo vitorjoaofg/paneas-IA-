@@ -685,6 +685,7 @@ LLM_PRESERVE_FIELDS = {
     "customer_anger_matches",
     "agent_name_detected",
     "agent_name_confidence",
+    "agent_name_source",
     "customer_name_detected",
     "customer_name_confidence",
     "llm_enrichment_source",
@@ -918,13 +919,18 @@ def compute_base_entry(
         "exec_id": exec_value,
         "island": island_value,
     }
-    agent_name, agent_confidence = detect_identity_from_segments(segments, overrides, "agent")
-    if agent_name:
-        entry["agent_name_detected"] = agent_name
-        entry["agent_name_confidence"] = round(agent_confidence, 3) if agent_confidence is not None else None
-    elif agent_reported:
+    # Prioridade: usar operador_izzi do CSV (dados oficiais e confiáveis)
+    if agent_reported:
         entry["agent_name_detected"] = agent_reported
         entry["agent_name_confidence"] = 1.0
+        entry["agent_name_source"] = "metadata"
+    else:
+        # Fallback: tentar detectar via LLM se CSV não tiver
+        agent_name, agent_confidence = detect_identity_from_segments(segments, overrides, "agent")
+        if agent_name:
+            entry["agent_name_detected"] = agent_name
+            entry["agent_name_confidence"] = round(agent_confidence, 3) if agent_confidence is not None else None
+            entry["agent_name_source"] = "llm_detected"
     customer_name, customer_confidence = detect_identity_from_segments(segments, overrides, "customer")
     if customer_name:
         entry["customer_name_detected"] = customer_name

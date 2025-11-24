@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400274396-5544389947-20251014-105303-5595603769.WAV",
+  "file_name": "0105-04965-25101400274396-5544389947-20251014-105303-5595603769.WAV",
+  "base_id": "0105-04965-25101400274396-5544389947-20251014-105303-5595603769",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, espera un momento, por favor. Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Guseo, nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? ¿Sí? Bueno, bueno, por motivos especiales vamos a finalizar la llamada. Sí, por favor, ya no estén molestando, es que tenemos otros de Internet y no me estén molestando. ¿Qué ratito me están hablando?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 23.24,
+      "text": " asesor te está esperando. Por favor, espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.24,
+      "end": 65.58,
+      "text": " Hola, ¿qué tal? Buenos días, mi nombre es Melanisa Guseo, nos comunicamos de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 65.58,
+      "end": 74.83,
+      "text": " la compañía Easy. ¿Con quién tengo el gusto? ¿Sí? Bueno, bueno, por motivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 74.83,
+      "end": 78.95,
+      "text": " especiales vamos a finalizar la llamada. Sí, por favor, ya no estén molestando, es",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 78.95,
+      "end": 82.55,
+      "text": " que tenemos otros de Internet y no me estén molestando. ¿Qué ratito me están",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 82.55,
+      "end": 84.95,
+      "text": " hablando?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.42,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

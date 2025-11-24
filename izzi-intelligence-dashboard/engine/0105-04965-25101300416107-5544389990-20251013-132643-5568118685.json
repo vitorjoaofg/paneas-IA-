@@ -1,0 +1,159 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300416107-5544389990-20251013-132643-5568118685.WAV",
+  "file_name": "0105-04965-25101300416107-5544389990-20251013-132643-5568118685.WAV",
+  "base_id": "0105-04965-25101300416107-5544389990-20251013-132643-5568118685",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminarlo. Espera un momento, por favor. ¿Qué le puedo ayudar? Buenos días, joven. Mire, constantemente estoy recibiendo llamadas de la compañía para ofrecerme sus servicios, pero realmente yo no estoy interesada. Entonces, el motivo de mi llamada es para que no se hagan un reporte de que no estoy interesada y ya me dejen de llamar, por favor. Sí, claro que sí. Entonces, agradezco el comentario para que actualicen la información. ¿Está bien? Gracias, joven. ¿A usted qué pasa un buen día? Muchas gracias. Gracias, igualmente, salud.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.16,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.16,
+      "end": 22.92,
+      "text": " interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.92,
+      "end": 28.24,
+      "text": " comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.24,
+      "end": 36.89,
+      "text": " terminarlo. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 36.89,
+      "end": 38.89,
+      "text": " ¿Qué le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.89,
+      "end": 46.58,
+      "text": " Buenos días, joven. Mire, constantemente estoy recibiendo llamadas de la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 46.58,
+      "end": 51.08,
+      "text": " compañía para ofrecerme sus servicios, pero realmente yo no estoy interesada.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 51.08,
+      "end": 57.26,
+      "text": " Entonces, el motivo de mi llamada es para que no se hagan un reporte de que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 57.26,
+      "end": 60.62,
+      "text": " no estoy interesada y ya me dejen de llamar, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 60.62,
+      "end": 63.78,
+      "text": " Sí, claro que sí. Entonces, agradezco el comentario para que actualicen la",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 64.7,
+      "end": 66.7,
+      "text": " información. ¿Está bien?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 66.7,
+      "end": 68.7,
+      "text": " Gracias, joven.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 68.7,
+      "end": 70.7,
+      "text": " ¿A usted qué pasa un buen día? Muchas gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 70.7,
+      "end": 72.7,
+      "text": " Gracias, igualmente, salud.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 71.928,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

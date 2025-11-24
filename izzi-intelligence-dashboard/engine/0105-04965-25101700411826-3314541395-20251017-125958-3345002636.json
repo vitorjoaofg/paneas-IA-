@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700411826-3314541395-20251017-125958-3345002636.WAV",
+  "file_name": "0105-04965-25101700411826-3314541395-20251017-125958-3345002636.WAV",
+  "base_id": "0105-04965-25101700411826-3314541395-20251017-125958-3345002636",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con IZI es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Hola, buen día. Le hablé a Ivonne O'Field de parte de su servicio de IZI para darle a conocer los beneficios con la telefonía móvil. Hola, buenas tardes, perdón, solamente quería hablar contigo porque quiero que me den de baja de su directorio. No sé, no estoy interesado y cada... yo creo que recibo más llamadas diarias. Ah, ok. En este caso aquí le voy a poner que no le interesa para que lo quiten de la base y ya no les marquen. Una disculpa. No se preocupe. Hasta luego. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.8,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.8,
+      "end": 11.2,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.2,
+      "end": 13.3,
+      "text": " Con IZI es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.55,
+      "end": 26.75,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 32.66,
+      "end": 36.26,
+      "text": " Hola, buen día. Le hablé a Ivonne O'Field de parte de su servicio de IZI",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 36.26,
+      "end": 39.46,
+      "text": " para darle a conocer los beneficios con la telefonía móvil.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 39.46,
+      "end": 43.46,
+      "text": " Hola, buenas tardes, perdón, solamente quería hablar contigo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 43.46,
+      "end": 47.46,
+      "text": " porque quiero que me den de baja de su directorio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 47.46,
+      "end": 51.46,
+      "text": " No sé, no estoy interesado y cada... yo creo que recibo más llamadas diarias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 52.02,
+      "end": 55.52,
+      "text": " Ah, ok. En este caso aquí le voy a poner que no le interesa",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 55.52,
+      "end": 58.52,
+      "text": " para que lo quiten de la base y ya no les marquen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 58.52,
+      "end": 59.52,
+      "text": " Una disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 59.52,
+      "end": 60.52,
+      "text": " No se preocupe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 60.52,
+      "end": 61.52,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 61.52,
+      "end": 62.52,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 63.972,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

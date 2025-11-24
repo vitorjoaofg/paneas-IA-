@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400076888-5544389967-20251014-081614-5588431891.WAV",
+  "file_name": "0105-04965-25101400076888-5544389967-20251014-081614-5588431891.WAV",
+  "base_id": "0105-04965-25101400076888-5544389967-20251014-081614-5588431891",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera un momento, por favor. Hola, ¿qué tal? Este es el área de contrataciones Easy, le tiende Leonardo García. ¿Con quién tengo el gusto? Hola, con Carlos Cabrera. Oye, ¿cómo le hago para que decime llamarme? No se preocupe, el reporte lo hago yo para que en el próximo corte su número no aparezca. Ok, por favor. Le agradezco el tiempo.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 28.23,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.23,
+      "end": 35.27,
+      "text": " respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... Espera",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.27,
+      "end": 45.46,
+      "text": " un momento, por favor. Hola, ¿qué tal? Este es el área de contrataciones Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 45.46,
+      "end": 49.94,
+      "text": " le tiende Leonardo García. ¿Con quién tengo el gusto? Hola, con Carlos Cabrera. Oye,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.94,
+      "end": 53.98,
+      "text": " ¿cómo le hago para que decime llamarme? No se preocupe, el reporte lo hago yo para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.98,
+      "end": 60.29,
+      "text": " que en el próximo corte su número no aparezca. Ok, por favor. Le agradezco el tiempo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 64.656,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

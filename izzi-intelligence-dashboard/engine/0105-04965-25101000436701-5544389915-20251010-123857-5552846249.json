@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000436701-5544389915-20251010-123857-5552846249.WAV",
+  "file_name": "0105-04965-25101000436701-5544389915-20251010-123857-5552846249.WAV",
+  "base_id": "0105-04965-25101000436701-5544389915-20251010-123857-5552846249",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad y con el mejor número de la extensión a la que deseas llamar? Dígitelo ahora, de lo contrario, presione 0 a 350 pesos el primer mes. No lo pienses más y cámbiate a Easy. ¿Te interesa? Un accesor te está esperando. Por favor, sucursale. Imagen, si conoces el número de la extensión a la que deseas llamar, Dígitelo ahora, de lo contrario, presione 0 para ser atendido por una operadora. ¡Espera un momento, por favor! ¿Pero la línea sigue ahí? Gracias por llamar a Banco Multibar. Sucursal. Imagen, si conoces el número de la extensión a la que deseas llamar, Dígitelo ahora, de lo contrario, presione 0 para ser atendido por una operadora. Banco Multibar, ¿buenas tardes? Bueno, ¿Banco Multibar?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad y con el mejor número de la extensión a la que deseas llamar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.0,
+      "end": 14.0,
+      "text": " Dígitelo ahora, de lo contrario, presione 0 a 350 pesos el primer mes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 14.0,
+      "end": 17.0,
+      "text": " No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 22.0,
+      "text": " ¿Te interesa? Un accesor te está esperando. Por favor, sucursale.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 22.0,
+      "end": 26.0,
+      "text": " Imagen, si conoces el número de la extensión a la que deseas llamar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 26.0,
+      "end": 31.0,
+      "text": " Dígitelo ahora, de lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.0,
+      "end": 34.63,
+      "text": " ¡Espera un momento, por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 34.63,
+      "end": 36.63,
+      "text": " ¿Pero la línea sigue ahí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 36.63,
+      "end": 38.63,
+      "text": " Gracias por llamar a Banco Multibar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 38.63,
+      "end": 39.63,
+      "text": " Sucursal.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 39.63,
+      "end": 43.63,
+      "text": " Imagen, si conoces el número de la extensión a la que deseas llamar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 43.63,
+      "end": 57.34,
+      "text": " Dígitelo ahora, de lo contrario, presione 0 para ser atendido por una operadora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 57.34,
+      "end": 63.96,
+      "text": " Banco Multibar, ¿buenas tardes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 63.96,
+      "end": 68.42,
+      "text": " Bueno, ¿Banco Multibar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.992,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

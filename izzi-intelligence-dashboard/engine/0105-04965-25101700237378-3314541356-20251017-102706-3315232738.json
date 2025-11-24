@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101700237378-3314541356-20251017-102706-3315232738.WAV",
+  "file_name": "0105-04965-25101700237378-3314541356-20251017-102706-3315232738.WAV",
+  "base_id": "0105-04965-25101700237378-3314541356-20251017-102706-3315232738",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Le habla Iwan Monfield de parte de su servicio de Easy para darle a conocer los beneficios con la telefonía. Por favor, no me estén molestando. A mí me cuesta mucho trabajo estarme levantando a contestarles. Y cada ratito están chingui chingui chingue, ya les dije que no quiero nada. Oh, que yo me disculpe.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.02,
+      "end": 5.54,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.54,
+      "end": 10.62,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.62,
+      "end": 17.22,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.22,
+      "end": 23.22,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.22,
+      "end": 35.67,
+      "text": " para no. Espera un momento, por favor. Le habla Iwan Monfield de parte de su",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.67,
+      "end": 40.35,
+      "text": " servicio de Easy para darle a conocer los beneficios con la telefonía. Por favor, no",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 40.35,
+      "end": 45.15,
+      "text": " me estén molestando. A mí me cuesta mucho trabajo estarme levantando a",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 45.15,
+      "end": 50.03,
+      "text": " contestarles. Y cada ratito están chingui chingui chingue, ya les dije que no",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.03,
+      "end": 54.74,
+      "text": " quiero nada. Oh, que yo me disculpe.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.372,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

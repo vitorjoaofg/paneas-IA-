@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300504862-5544389963-20251013-144636-5597193170.WAV",
+  "file_name": "0105-04965-25101300504862-5544389963-20251013-144636-5597193170.WAV",
+  "base_id": "0105-04965-25101300504862-5544389963-20251013-144636-5597193170",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por favor. Hola, buenas tardes. Buenas tardes, Joven. ¿Cómo se llama? Mi nombre es Ocelar, mucho gusto de Easy, compañía de Internet y Televisión, ¿por qué hable Easy? ¿Cómo perdón le dijo su nombre, Joven? Ocelara simplemente le llamaba para brindarle una oferta en la compañía de Easy. No sé si ustedes tengan Easy actualmente, disculpen. Sí, Joven, sí tenemos Easy. Ah, pues entiendo. Bueno, disculpen, entonces me estoy confundiendo. Joven, Joven, no, Joven, espéreme tantito, ¿sí? Bueno, bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.8,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 25.08,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.08,
+      "end": 30.96,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. Espera un momento, por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 30.96,
+      "end": 44.07,
+      "text": " favor. Hola, buenas tardes. Buenas tardes, Joven. ¿Cómo se llama? Mi nombre es Ocelar,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.07,
+      "end": 49.73,
+      "text": " mucho gusto de Easy, compañía de Internet y Televisión, ¿por qué hable Easy? ¿Cómo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.73,
+      "end": 54.89,
+      "text": " perdón le dijo su nombre, Joven? Ocelara simplemente le llamaba para brindarle una",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 54.89,
+      "end": 59.57,
+      "text": " oferta en la compañía de Easy. No sé si ustedes tengan Easy actualmente, disculpen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 60.05,
+      "end": 67.42,
+      "text": " Sí, Joven, sí tenemos Easy. Ah, pues entiendo. Bueno, disculpen, entonces me estoy confundiendo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 67.42,
+      "end": 79.37,
+      "text": " Joven, Joven, no, Joven, espéreme tantito, ¿sí? Bueno, bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 85.176,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

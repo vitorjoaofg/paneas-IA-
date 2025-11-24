@@ -1,0 +1,105 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000199066-5544389923-20251010-094047-5519400726.WAV",
+  "file_name": "0105-04965-25101000199066-5544389923-20251010-094047-5519400726.WAV",
+  "base_id": "0105-04965-25101000199066-5544389923-20251010-094047-5519400726",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento por favor. Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abraham García por parte de la compañía de Easy, contrataciones. Dígame, ¿qué le puedo ayudar? Hola, hola. Hola, hola. Probando, probando. 1, 2, 3. Probando, probando. ¿Me escucha? Hola, hola. Disculpe, si me está hablando, no lo escucho. ¿Me escucha bien? Muy bien. Por cuestiones de calidad me ha obligado a terminar la llamada. Buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.76,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.76,
+      "end": 24.64,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.64,
+      "end": 29.76,
+      "text": " Presiona 1 para hablar con un asesor o 2, espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.76,
+      "end": 42.44,
+      "text": " Hola, ¿qué tal? Buenos días. Hola, hola. ¿Qué tal? Mucho gusto. Abraham García por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 42.44,
+      "end": 49.62,
+      "text": " parte de la compañía de Easy, contrataciones. Dígame, ¿qué le puedo ayudar? Hola, hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 49.62,
+      "end": 56.61,
+      "text": " Hola, hola. Probando, probando. 1, 2, 3. Probando, probando. ¿Me escucha? Hola, hola.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.61,
+      "end": 63.14,
+      "text": " Disculpe, si me está hablando, no lo escucho. ¿Me escucha bien? Muy bien.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.14,
+      "end": 66.78,
+      "text": " Por cuestiones de calidad me ha obligado a terminar la llamada. Buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.832,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

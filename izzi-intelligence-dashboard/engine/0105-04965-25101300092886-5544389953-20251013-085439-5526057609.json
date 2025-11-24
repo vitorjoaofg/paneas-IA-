@@ -1,0 +1,645 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300092886-5544389953-20251013-085439-5526057609.WAV",
+  "file_name": "0105-04965-25101300092886-5544389953-20251013-085439-5526057609.WAV",
+  "base_id": "0105-04965-25101300092886-5544389953-20251013-085439-5526057609",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Sky Sports desde $350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor. Espera un momento, por favor. Sí, buenos días. La tiene Julio Vargas de Easy, con quien tengo el gusto. Buenos días, con Sergio. Buenos días, señor Sergio. ¿En qué lo puedo ayudar? ¿Cuál es la promoción que le agrada? Lo que pasa es que creo que en esta zona no tienen Easy, pero sí me interesa. Bueno, otras preguntas son como, ¿cómo se dice? Ajá. En la zona de Tlalpan. Tlalpan. A ver, permítanme, voy a verificar el sistema. ¿Cuál sería su domicilio? Es camino a la Jollita. Manzana 2, 2, 3, Colonia Tlalpan. Camino a la Jollita. Ajá. Manzana 2, 2, 3. Manzana 2, 2, 3. Esto es, ¿es la Colonia camino a la Jollita? La Colonia es, ¿cómo se llama? Pepetitla. Pepetitla. Ok. ¿Cuál es su calle? Es camino a la Jollita, ¿verdad? Ajá. Entre 12 de diciembre. Entre 12 de diciembre. Ajá. ¿Y la otra cuál sería? Este camino, antiguo camino a Tepuente. Camino, ¿al qué me dijo? A Tepuente. ¿Tepuente? Tepuente. Ajá. Tepuente. ¿Su código postal cuál sería? ¿Mi calle? Es 14-4-70. A ver, permítame tantito. Voy a ver si creen en este email. Viene la información. Camino a la Jollita. 14-4-70. ¿Es por la avenida viejo a Xicalco, más o menos? ¿Es por donde está la avenida viejo a Xicalco? Ajá. Un momento, por favor. Voy a ver si creen. No estoy verificando las coordenas. Sí, gracias por la espera caballero. Sí, mira, en este momento no me aparece que está bien la cobertura en lo que es el servicio. En este caso voy a pasar el reporte para verificar si más adelante ya puedo encontrar con él para que tengan este servicio. Muy bien, gracias. Agradezco que tenga buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde $350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 14.24,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.24,
+      "end": 16.44,
+      "text": " Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 16.44,
+      "end": 22.63,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 22.63,
+      "end": 25.23,
+      "text": " Siento, no entendí tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 25.23,
+      "end": 27.23,
+      "text": " ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 27.23,
+      "end": 30.23,
+      "text": " Presiona 1 para hablar con un asesor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 30.67,
+      "end": 37.82,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.82,
+      "end": 38.82,
+      "text": " Sí, buenos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 38.82,
+      "end": 42.75,
+      "text": " La tiene Julio Vargas de Easy, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 42.75,
+      "end": 44.88,
+      "text": " Buenos días, con Sergio.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 44.88,
+      "end": 45.88,
+      "text": " Buenos días, señor Sergio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 45.88,
+      "end": 46.88,
+      "text": " ¿En qué lo puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 46.88,
+      "end": 48.91,
+      "text": " ¿Cuál es la promoción que le agrada?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 48.91,
+      "end": 52.91,
+      "text": " Lo que pasa es que creo que en esta zona no tienen Easy, pero sí me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 17,
+      "start": 52.91,
+      "end": 55.91,
+      "text": " Bueno, otras preguntas son como, ¿cómo se dice?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 18,
+      "start": 55.91,
+      "end": 56.98,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 19,
+      "start": 56.98,
+      "end": 58.98,
+      "text": " En la zona de Tlalpan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 20,
+      "start": 58.98,
+      "end": 60.62,
+      "text": " Tlalpan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 21,
+      "start": 60.62,
+      "end": 62.62,
+      "text": " A ver, permítanme, voy a verificar el sistema.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 22,
+      "start": 62.62,
+      "end": 64.62,
+      "text": " ¿Cuál sería su domicilio?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 23,
+      "start": 64.62,
+      "end": 66.84,
+      "text": " Es camino a la Jollita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 24,
+      "start": 67.28,
+      "end": 70.28,
+      "text": " Manzana 2, 2, 3, Colonia Tlalpan.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 25,
+      "start": 70.28,
+      "end": 74.28,
+      "text": " Camino a la Jollita.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 26,
+      "start": 74.28,
+      "end": 75.28,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 27,
+      "start": 75.28,
+      "end": 77.28,
+      "text": " Manzana 2, 2, 3.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 28,
+      "start": 77.28,
+      "end": 81.5,
+      "text": " Manzana 2, 2, 3.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 29,
+      "start": 81.5,
+      "end": 85.5,
+      "text": " Esto es, ¿es la Colonia camino a la Jollita?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 30,
+      "start": 85.5,
+      "end": 88.5,
+      "text": " La Colonia es, ¿cómo se llama?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 31,
+      "start": 88.5,
+      "end": 90.5,
+      "text": " Pepetitla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 32,
+      "start": 90.5,
+      "end": 93.57,
+      "text": " Pepetitla.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 33,
+      "start": 93.57,
+      "end": 94.57,
+      "text": " Ok.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 34,
+      "start": 94.57,
+      "end": 96.57,
+      "text": " ¿Cuál es su calle?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 35,
+      "start": 97.01,
+      "end": 99.01,
+      "text": " Es camino a la Jollita, ¿verdad?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 36,
+      "start": 99.01,
+      "end": 100.01,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 37,
+      "start": 100.01,
+      "end": 102.2,
+      "text": " Entre 12 de diciembre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 38,
+      "start": 102.2,
+      "end": 104.2,
+      "text": " Entre 12 de diciembre.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 39,
+      "start": 104.2,
+      "end": 107.22,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 40,
+      "start": 107.22,
+      "end": 109.22,
+      "text": " ¿Y la otra cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 41,
+      "start": 109.22,
+      "end": 114.98,
+      "text": " Este camino, antiguo camino a Tepuente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 42,
+      "start": 114.98,
+      "end": 116.98,
+      "text": " Camino, ¿al qué me dijo?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 43,
+      "start": 116.98,
+      "end": 118.98,
+      "text": " A Tepuente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 44,
+      "start": 118.98,
+      "end": 120.98,
+      "text": " ¿Tepuente?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 45,
+      "start": 120.98,
+      "end": 123.05,
+      "text": " Tepuente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 46,
+      "start": 123.05,
+      "end": 125.18,
+      "text": " Ajá.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 47,
+      "start": 125.18,
+      "end": 126.18,
+      "text": " Tepuente.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 48,
+      "start": 126.18,
+      "end": 128.5,
+      "text": " ¿Su código postal cuál sería?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 49,
+      "start": 128.5,
+      "end": 129.5,
+      "text": " ¿Mi calle?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 50,
+      "start": 129.94,
+      "end": 132.94,
+      "text": " Es 14-4-70.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 51,
+      "start": 132.94,
+      "end": 135.93,
+      "text": " A ver, permítame tantito.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 52,
+      "start": 135.93,
+      "end": 137.93,
+      "text": " Voy a ver si creen en este email.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 53,
+      "start": 137.93,
+      "end": 154.68,
+      "text": " Viene la información.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 54,
+      "start": 154.68,
+      "end": 166.15,
+      "text": " Camino a la Jollita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 55,
+      "start": 166.15,
+      "end": 168.15,
+      "text": " 14-4-70.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 56,
+      "start": 168.15,
+      "end": 207.49,
+      "text": " ¿Es por la avenida viejo a Xicalco, más o menos?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 57,
+      "start": 207.49,
+      "end": 211.49,
+      "text": " ¿Es por donde está la avenida viejo a Xicalco?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 58,
+      "start": 211.49,
+      "end": 212.49,
+      "text": " Ajá.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 59,
+      "start": 212.49,
+      "end": 229.97,
+      "text": " Un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 60,
+      "start": 229.97,
+      "end": 230.97,
+      "text": " Voy a ver si creen.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 61,
+      "start": 230.97,
+      "end": 352.65,
+      "text": " No estoy verificando las coordenas.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 62,
+      "start": 352.65,
+      "end": 355.45,
+      "text": " Sí, gracias por la espera caballero.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 63,
+      "start": 355.89,
+      "end": 357.89,
+      "text": " Sí, mira, en este momento no me aparece",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 64,
+      "start": 357.89,
+      "end": 359.89,
+      "text": " que está bien la cobertura en lo que es el servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 65,
+      "start": 359.89,
+      "end": 361.89,
+      "text": " En este caso voy a pasar el reporte",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 66,
+      "start": 361.89,
+      "end": 363.89,
+      "text": " para verificar si más adelante",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 67,
+      "start": 363.89,
+      "end": 365.89,
+      "text": " ya puedo encontrar con él para que tengan este servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 68,
+      "start": 365.89,
+      "end": 367.89,
+      "text": " Muy bien, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 69,
+      "start": 367.89,
+      "end": 369.89,
+      "text": " Agradezco que tenga buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 372.06,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101400589662-3314541306-20251014-152028-3328860642.WAV",
+  "file_name": "0105-04965-25101400589662-3314541306-20251014-152028-3328860642.WAV",
+  "base_id": "0105-04965-25101400589662-3314541306-20251014-152028-3328860642",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Contrataciones, Easy, lo atiende Edgar Torres, con quien tengo el gusto. Hola, ¿qué tal? Buenas tardes, Edgar. Oye, una preguntota. Acabo de recibir la llamada, pero tengo entendido que aquí en mi colonia no hay Easy, no sé por qué hacen las llamadas. ¿Ya te ven Chicago Cobertura, recientemente? Sí, de hecho yo vendo también paquetes. Ah, OK. Entonces no sé ahí cómo se pueden detener las llamadas porque es como la tercera o cuarta llamada que me hacen. Ah, qué bueno. Antes ponemos que no estés interesada en el servicio, no te preocupes. Vale, gracias, hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 23.84,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.84,
+      "end": 27.79,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.48,
+      "end": 38.32,
+      "text": " Contrataciones, Easy, lo atiende Edgar Torres, con quien tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 38.32,
+      "end": 43.68,
+      "text": " Hola, ¿qué tal? Buenas tardes, Edgar. Oye, una preguntota. Acabo de recibir la llamada,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 43.68,
+      "end": 50.16,
+      "text": " pero tengo entendido que aquí en mi colonia no hay Easy, no sé por qué hacen las llamadas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 50.16,
+      "end": 52.88,
+      "text": " ¿Ya te ven Chicago Cobertura, recientemente?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 52.88,
+      "end": 55.79,
+      "text": " Sí, de hecho yo vendo también paquetes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 55.79,
+      "end": 57.86,
+      "text": " Ah, OK.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.86,
+      "end": 61.7,
+      "text": " Entonces no sé ahí cómo se pueden detener las llamadas porque es como la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 61.7,
+      "end": 64.86,
+      "text": " tercera o cuarta llamada que me hacen.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 65.02,
+      "end": 68.78,
+      "text": " Ah, qué bueno. Antes ponemos que no estés interesada en el servicio, no te preocupes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 68.78,
+      "end": 70.78,
+      "text": " Vale, gracias, hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 72.684,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

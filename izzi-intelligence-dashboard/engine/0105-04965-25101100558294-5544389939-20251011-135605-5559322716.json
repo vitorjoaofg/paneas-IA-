@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101100558294-5544389939-20251011-135605-5559322716.WAV",
+  "file_name": "0105-04965-25101100558294-5544389939-20251011-135605-5559322716.WAV",
+  "base_id": "0105-04965-25101100558294-5544389939-20251011-135605-5559322716",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento por favor. ¿Contratación con Easy? ¿En qué le puedo ayudar? Estudios están hablando para ofrecer el servicio. ¿Se te cuenta con Easy en casa con nosotros? Uno de mis hermanos tiene Easy. Bueno, lo que pasa es que ahorita al realizar la contratación por primera vez con nosotros tenemos una promoción que el servicio de internet, teléfono y televisión le quedaría por 500 centenas de pesos al mes. No, ahorita me hablaron y que por 300 pesos 500 canales y 100 megas de telefonía. Ah, sí, de hecho tenemos esa promoción. ¿Pero esa cuánto tiempo dura? ¿Cuánto tiempo se pagan 300 pesos? Bueno, bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 16.56,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.56,
+      "end": 23.16,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.16,
+      "end": 29.76,
+      "text": " para no. Espera un momento por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 29.76,
+      "end": 41.84,
+      "text": " ¿Contratación con Easy? ¿En qué le puedo ayudar? Estudios están hablando para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.84,
+      "end": 48.9,
+      "text": " ofrecer el servicio. ¿Se te cuenta con Easy en casa con nosotros? Uno de mis",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 48.9,
+      "end": 53.87,
+      "text": " hermanos tiene Easy. Bueno, lo que pasa es que ahorita al realizar la",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.87,
+      "end": 57.87,
+      "text": " contratación por primera vez con nosotros tenemos una promoción que el",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 57.87,
+      "end": 61.23,
+      "text": " servicio de internet, teléfono y televisión le quedaría por 500 centenas de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.23,
+      "end": 67.63,
+      "text": " pesos al mes. No, ahorita me hablaron y que por 300 pesos 500 canales y 100",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.63,
+      "end": 74.74,
+      "text": " megas de telefonía. Ah, sí, de hecho tenemos esa promoción. ¿Pero esa cuánto",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 74.74,
+      "end": 87.36,
+      "text": " tiempo dura? ¿Cuánto tiempo se pagan 300 pesos? Bueno, bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 92.016,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

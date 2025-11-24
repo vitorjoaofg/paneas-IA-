@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102100064230-5544389907-20251021-081403-5594405565.WAV",
+  "file_name": "0105-04965-25102100064230-5544389907-20251021-081403-5594405565.WAV",
+  "base_id": "0105-04965-25102100064230-5544389907-20251021-081403-5594405565",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse un 100. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento por favor. Hola, buen día. Le hablé con Monfield de parte de su servicio de Easy para darle a conocer algunos beneficios con la compañía. ¿Buen día? ¿Buen día. ¿Usted tiene Internet con Easy o con otra compañía de casualidad? Con otra compañía, pero disculpe quiénes dio mi número porque me están marcando 10 y 10 me marcan muy temprano. Ah, ok. Le hablamos de un call center de Easy. Este número se marca en automático y nosotros lo contestamos, pero es aquí de Easy para publicidad. Usted ... Me están marcando sino para reportarlo como privacidad porque nadie puede dar mi número. Gracias. Ah, bueno. Que tenga un buen día. ¿Te pueda su nombre, su nombre por favor? Mi nombre es Ivonne Monfield de Easy. Que tenga un buen día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 8.14,
+      "text": " Hola, ¿te gustaría tener Internet más televisión, más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 8.14,
+      "end": 16.38,
+      "text": " más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.38,
+      "end": 26.24,
+      "text": " te está esperando. Por favor, hable o pulse un 100. No entendí tu respuesta. ¿Te comunico",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 26.24,
+      "end": 32.68,
+      "text": " con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 32.68,
+      "end": 44.0,
+      "text": " por favor. Hola, buen día. Le hablé con Monfield de parte de su servicio de Easy para",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.0,
+      "end": 49.32,
+      "text": " darle a conocer algunos beneficios con la compañía. ¿Buen día? ¿Buen día. ¿Usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.32,
+      "end": 53.48,
+      "text": " tiene Internet con Easy o con otra compañía de casualidad? Con otra compañía, pero",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 53.48,
+      "end": 56.68,
+      "text": " disculpe quiénes dio mi número porque me están marcando 10 y 10 me marcan muy",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.68,
+      "end": 63.5,
+      "text": " temprano. Ah, ok. Le hablamos de un call center de Easy. Este número se marca",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.5,
+      "end": 68.54,
+      "text": " en automático y nosotros lo contestamos, pero es aquí de Easy para publicidad. Usted",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.54,
+      "end": 74.46,
+      "text": " ... Me están marcando sino para reportarlo como privacidad porque nadie puede dar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 74.46,
+      "end": 77.98,
+      "text": " mi número. Gracias. Ah, bueno. Que tenga un buen día. ¿Te pueda su nombre, su",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 77.98,
+      "end": 82.98,
+      "text": " nombre por favor? Mi nombre es Ivonne Monfield de Easy. Que tenga un buen día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 84.456,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

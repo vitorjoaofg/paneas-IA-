@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100900723800-3314541304-20251009-173354-3350229382.WAV",
+  "file_name": "0105-04965-25100900723800-3314541304-20251009-173354-3350229382.WAV",
+  "base_id": "0105-04965-25100900723800-3314541304-20251009-173354-3350229382",
+  "transcription": "¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. ¿Y si lo tiene Van y Daniela con quien tenga el gusto? Con Azuani. Hola, mucho gusto. ¿Me comunican con mayor edad? No, ya tenemos Easy, solamente para comentarle. Ok, tendría que comunicarme con algún mayor edad, disculpa. No, no hay nadie. Ok, me comunico después. ¿Agradezco que tengas buen día? Uh-huh.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.42,
+      "end": 7.2,
+      "text": " ¿Te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 7.2,
+      "end": 12.28,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.28,
+      "end": 18.88,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.88,
+      "end": 24.68,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.68,
+      "end": 36.08,
+      "text": " dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 37.98,
+      "end": 44.14,
+      "text": " ¿Y si lo tiene Van y Daniela con quien tenga el gusto? Con Azuani. Hola, mucho",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 44.14,
+      "end": 50.66,
+      "text": " gusto. ¿Me comunican con mayor edad? No, ya tenemos Easy, solamente para comentarle.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 50.66,
+      "end": 57.56,
+      "text": " Ok, tendría que comunicarme con algún mayor edad, disculpa. No, no hay nadie.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 57.56,
+      "end": 63.0,
+      "text": " Ok, me comunico después. ¿Agradezco que tengas buen día? Uh-huh.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.784,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

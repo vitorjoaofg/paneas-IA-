@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300466509-5544389921-20251013-141408-5590593297.WAV",
+  "file_name": "0105-04965-25101300466509-5544389921-20251013-141408-5590593297.WAV",
+  "base_id": "0105-04965-25101300466509-5544389921-20251013-141408-5590593297",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Sí, sí, en que le pueda ayudar. ¿Qué tal? Buenas tardes, bueno, ¿sí me escucha? Ah, ok. No, pues, lo que pasa es que han estado hablando y ya no quiero que me marquen porque ya pongo la opción que no y todos me están marcando a cada rato. No me interesa su servicio, por favor. Claro que sí. Ahorita lo reporto entonces para que le dejen de marcar. Muy bien. Sí, muy bien, muchas gracias. Ah, ¿sabes qué pasa?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 10.6,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.6,
+      "end": 17.2,
+      "text": " por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.2,
+      "end": 23.0,
+      "text": " interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 23.0,
+      "end": 34.52,
+      "text": " dos para no. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 34.52,
+      "end": 43.67,
+      "text": " Sí, sí, en que le pueda ayudar. ¿Qué tal? Buenas tardes, bueno, ¿sí me escucha?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 43.67,
+      "end": 47.67,
+      "text": " Ah, ok. No, pues, lo que pasa es que han estado hablando y ya no quiero que me",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.67,
+      "end": 53.67,
+      "text": " marquen porque ya pongo la opción que no y todos me están marcando a cada",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 53.67,
+      "end": 56.93,
+      "text": " rato. No me interesa su servicio, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 56.93,
+      "end": 61.09,
+      "text": " Claro que sí. Ahorita lo reporto entonces para que le dejen de marcar.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 61.09,
+      "end": 63.09,
+      "text": " Muy bien. Sí, muy bien, muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 63.09,
+      "end": 65.09,
+      "text": " Ah, ¿sabes qué pasa?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 68.328,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

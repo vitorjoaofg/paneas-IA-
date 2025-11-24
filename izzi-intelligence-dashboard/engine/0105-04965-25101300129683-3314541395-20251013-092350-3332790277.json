@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300129683-3314541395-20251013-092350-3332790277.WAV",
+  "file_name": "0105-04965-25101300129683-3314541395-20251013-092350-3332790277.WAV",
+  "base_id": "0105-04965-25101300129683-3314541395-20251013-092350-3332790277",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión? Más que mejor entretenimiento con ti, más Skype work, desde 350 pesos al primer mes, con ti, es posible. ¿Te interesa? Un asesor te está esperando, su llamada se está transcurriendo. Gracias, comunicaré según la representación de Banco Santander. Espera un momento, por favor.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 3.92,
+      "end": 11.28,
+      "text": " Más que mejor entretenimiento con ti, más Skype work, desde 350 pesos al primer mes,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.28,
+      "end": 13.48,
+      "text": " con ti, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.48,
+      "end": 14.48,
+      "text": " ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 14.48,
+      "end": 18.56,
+      "text": " Un asesor te está esperando, su llamada se está transcurriendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 18.56,
+      "end": 25.94,
+      "text": " Gracias, comunicaré según la representación de Banco Santander.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 25.94,
+      "end": 27.34,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 31.608,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102200652433-5544389940-20251022-155526-5517173718.WAV",
+  "file_name": "0105-04965-25102200652433-5544389940-20251022-155526-5517173718.WAV",
+  "base_id": "0105-04965-25102200652433-5544389940-20251022-155526-5517173718",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. Bienvenido, señor. Me presento, mi nombre es Brisa Carrillo de parte de promociones de la compañía Easy, con quien tengo el gusto, disculpa. A ver, señorita, nada más le quiero decir una cosa. Este teléfono es privado y me están llamando. La próxima vez hago la denuncia en la procuraduría. Nada más para eso. Para eso le estoy llamando. No quiero que me vuelvan a llamar nadie. Por favor, bloqueo. Ok, igual muchas gracias por tener la llamada. Que tenga lindo día.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.9,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.9,
+      "end": 11.3,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.3,
+      "end": 13.3,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.3,
+      "end": 16.5,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.5,
+      "end": 20.5,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 21.96,
+      "end": 24.26,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 24.26,
+      "end": 55.04,
+      "text": " Bienvenido, señor. Me presento, mi nombre es Brisa Carrillo de parte de promociones de la compañía Easy,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.04,
+      "end": 56.54,
+      "text": " con quien tengo el gusto, disculpa.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 56.54,
+      "end": 59.54,
+      "text": " A ver, señorita, nada más le quiero decir una cosa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 59.54,
+      "end": 63.76,
+      "text": " Este teléfono es privado y me están llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 63.76,
+      "end": 66.76,
+      "text": " La próxima vez hago la denuncia en la procuraduría.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 66.76,
+      "end": 69.76,
+      "text": " Nada más para eso. Para eso le estoy llamando.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 69.76,
+      "end": 72.26,
+      "text": " No quiero que me vuelvan a llamar nadie.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 72.26,
+      "end": 74.87,
+      "text": " Por favor, bloqueo.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 74.87,
+      "end": 78.37,
+      "text": " Ok, igual muchas gracias por tener la llamada. Que tenga lindo día.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 81.072,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

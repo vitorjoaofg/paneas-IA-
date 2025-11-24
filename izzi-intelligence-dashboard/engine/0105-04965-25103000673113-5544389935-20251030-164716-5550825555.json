@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000673113-5544389935-20251030-164716-5550825555.WAV",
+  "file_name": "0105-04965-25103000673113-5544389935-20251030-164716-5550825555.WAV",
+  "base_id": "0105-04965-25103000673113-5544389935-20251030-164716-5550825555",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable opus... Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor. Hola, ¿qué tal? Muy buenas tardes. Buenas tardes. ¿Qué tal? Buenas tardes. Miren, me presento. Mi nombre es Omar Pérez. Está hablando en el área de promociones de Easy. ¿Sí logró escuchar la grabación anterior? Disculpe, señora. Sí, sí, está bien. Pero, mire, ¿sabe qué? Mire, yo creo que no me interesa nada. ¿Sabe por qué? Porque, mire, yo vivo sola y yo ya tengo 90 años. Ah, ¿ok? Entonces, no necesitas ningún servicio. No, señor. Muchas gracias. No, al contrario, que tengan muy buenos días. Hasta luego. Sí, gracias. Hasta luego. 3-87-9-26-99-20.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 13.0,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con Vix Premium, más Sky Sports, desde 350 pesos el primer mes, con Easy, es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 13.0,
+      "end": 18.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable opus...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 18.0,
+      "end": 31.69,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 31.69,
+      "end": 38.26,
+      "text": " Hola, ¿qué tal? Muy buenas tardes.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 38.26,
+      "end": 40.42,
+      "text": " Buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.42,
+      "end": 47.42,
+      "text": " ¿Qué tal? Buenas tardes. Miren, me presento. Mi nombre es Omar Pérez. Está hablando en el área de promociones de Easy. ¿Sí logró escuchar la grabación anterior? Disculpe, señora.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 47.42,
+      "end": 58.42,
+      "text": " Sí, sí, está bien. Pero, mire, ¿sabe qué? Mire, yo creo que no me interesa nada. ¿Sabe por qué? Porque, mire, yo vivo sola y yo ya tengo 90 años.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 58.42,
+      "end": 61.81,
+      "text": " Ah, ¿ok? Entonces, no necesitas ningún servicio.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 61.81,
+      "end": 63.81,
+      "text": " No, señor. Muchas gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 63.81,
+      "end": 66.81,
+      "text": " No, al contrario, que tengan muy buenos días. Hasta luego.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 66.81,
+      "end": 67.81,
+      "text": " Sí, gracias. Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 67.81,
+      "end": 111.9,
+      "text": " 3-87-9-26-99-20.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 124.74,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

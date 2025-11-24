@@ -1,0 +1,150 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000764935-5544389909-20251010-165311-5589488631.WAV",
+  "file_name": "0105-04965-25101000764935-5544389909-20251010-165311-5589488631.WAV",
+  "base_id": "0105-04965-25101000764935-5544389909-20251010-165311-5589488631",
+  "transcription": "¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad? ¡Me la quiero! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no. No. Quiero. No entendí tu respuesta. ¿Te comunico con un asesor? Presiona uno para hablar con un asesor. Espera un momento, por favor. Sí, buenos días. Hola. Buenas tardes, perdón. Sí, buenas tardes. Hola. Eh... Es que... Quisiera pedirle que... Eh... Como que no digas más, ¿sí? Quisiera que... Perdón, no lo escuché, señor. Que no digas más, señor, porque me están llegando las ofertas de bici y no me interesa. Ah, ok, señor. Ahorita le comento a mi supervisor para que lo quita de la base de datos. Ok, gracias. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.6,
+      "text": " ¡Hola! ¿Te gustaría navegar en internet con 100 megas de velocidad?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 5.8,
+      "text": " ¡Me la quiero!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 5.8,
+      "end": 24.0,
+      "text": " ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí, o dos para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 27.28,
+      "end": 28.58,
+      "text": " No. Quiero.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.58,
+      "end": 32.38,
+      "text": " No entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.38,
+      "end": 37.38,
+      "text": " Presiona uno para hablar con un asesor. Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.38,
+      "end": 47.87,
+      "text": " Sí, buenos días.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 47.87,
+      "end": 48.37,
+      "text": " Hola.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 48.37,
+      "end": 49.87,
+      "text": " Buenas tardes, perdón. Sí, buenas tardes.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 49.87,
+      "end": 60.14,
+      "text": " Hola. Eh... Es que... Quisiera pedirle que... Eh... Como que no digas más, ¿sí?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 60.14,
+      "end": 62.8,
+      "text": " Quisiera que... Perdón, no lo escuché, señor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 62.8,
+      "end": 67.6,
+      "text": " Que no digas más, señor, porque me están llegando las ofertas de bici y no me interesa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 67.8,
+      "end": 71.2,
+      "text": " Ah, ok, señor. Ahorita le comento a mi supervisor para que lo quita de la base de datos.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 71.2,
+      "end": 72.2,
+      "text": " Ok, gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 72.2,
+      "end": 73.2,
+      "text": " Gracias.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 75.996,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

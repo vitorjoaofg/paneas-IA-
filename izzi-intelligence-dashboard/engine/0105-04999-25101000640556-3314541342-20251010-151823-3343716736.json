@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04999-25101000640556-3314541342-20251010-151823-3343716736.WAV",
+  "file_name": "0105-04999-25101000640556-3314541342-20251010-151823-3343716736.WAV",
+  "base_id": "0105-04999-25101000640556-3314541342-20251010-151823-3343716736",
+  "transcription": "Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Contra las sanciones. Sí, sí, la tienda de Edgar Torres. Bueno, era canal. Nada más me esperé un rato a usted para escuchar la puta grabación porque me están chingui chingues la puta verga diaria con ese número. ¿Dónde lo puedo reportar, güey? ¿Cómo? No te escucho. ¿Cómo dices? Bueno, ¿no me escuchas o qué? Bueno.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.82,
+      "end": 9.47,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con Vix Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.47,
+      "end": 17.65,
+      "text": " más Skysports desde 350 pesos al primer mes? Con Easy es posible. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 17.65,
+      "end": 28.08,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 28.08,
+      "end": 34.4,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 34.44,
+      "end": 48.14,
+      "text": " un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 48.14,
+      "end": 53.42,
+      "text": " presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 53.42,
+      "end": 56.94,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 56.94,
+      "end": 65.74,
+      "text": " Contra las sanciones. Sí, sí, la tienda de Edgar Torres.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 65.74,
+      "end": 73.22,
+      "text": " Bueno, era canal. Nada más me esperé un rato a usted para escuchar la puta grabación",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 73.22,
+      "end": 77.14,
+      "text": " porque me están chingui chingues la puta verga diaria con ese número. ¿Dónde lo",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 77.14,
+      "end": 96.97,
+      "text": " puedo reportar, güey? ¿Cómo? No te escucho. ¿Cómo dices? Bueno, ¿no me escuchas o qué? Bueno.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.648,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

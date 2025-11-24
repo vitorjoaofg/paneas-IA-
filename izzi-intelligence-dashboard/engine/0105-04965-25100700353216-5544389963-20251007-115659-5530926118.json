@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25100700353216-5544389963-20251007-115659-5530926118.WAV",
+  "file_name": "0105-04965-25100700353216-5544389963-20251007-115659-5530926118.WAV",
+  "base_id": "0105-04965-25100700353216-5544389963-20251007-115659-5530926118",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento, por favor. Hola, ¿qué tal? Buenos días. Mi nombre es Melanie Saucedo. Nos comunicamos de la compañía Easy. ¿Con quién tengo el gusto? Hola, señorita. Mira, solo le hablaba para pedirle de favor que nos dejen de estar llamando a nuestro domicilio. Nosotros en ningún momento proporcionamos nuestros datos para su compañía y la verdad es muy molesto que nos estén marcando. Y sería tan amable de darnos de baja este número. Le agradecería mucho que tengamos un bonito día. Hasta luego. Igualmente.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.8,
+      "text": " 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.8,
+      "end": 26.9,
+      "text": " te está esperando. Por favor, hable o pulse uno para sí o dos para no. Espera un momento,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.9,
+      "end": 33.22,
+      "text": " por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 33.54,
+      "end": 37.42,
+      "text": " Hola, ¿qué tal? Buenos días. Mi nombre es Melanie Saucedo. Nos comunicamos de la compañía",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 37.42,
+      "end": 39.42,
+      "text": " Easy. ¿Con quién tengo el gusto?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 39.42,
+      "end": 44.42,
+      "text": " Hola, señorita. Mira, solo le hablaba para pedirle de favor que nos dejen de estar llamando",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 44.42,
+      "end": 48.42,
+      "text": " a nuestro domicilio. Nosotros en ningún momento proporcionamos nuestros datos para",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.42,
+      "end": 53.42,
+      "text": " su compañía y la verdad es muy molesto que nos estén marcando. Y sería tan amable",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.42,
+      "end": 58.42,
+      "text": " de darnos de baja este número. Le agradecería mucho que tengamos un bonito día. Hasta",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 58.42,
+      "end": 59.42,
+      "text": " luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 59.42,
+      "end": 60.42,
+      "text": " Igualmente.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 61.596,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

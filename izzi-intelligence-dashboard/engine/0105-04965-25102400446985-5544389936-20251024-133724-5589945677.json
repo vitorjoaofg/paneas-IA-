@@ -1,0 +1,141 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102400446985-5544389936-20251024-133724-5589945677.WAV",
+  "file_name": "0105-04965-25102400446985-5544389936-20251024-133724-5589945677.WAV",
+  "base_id": "0105-04965-25102400446985-5544389936-20251024-133724-5589945677",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Geeks Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Oiga, tengo una pregunta. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para... ¡Espera un momento, por favor! ¡Espera! Los de Copensee. ¡Espera! Hola, ¿qué tal? Buenas tardes. Mi nombre es Karen Sánchez. Mucho gusto hablo por parte de Easy. El motivo de mi llamada es porque Easy está ofreciendo lo que es la reconexión del servicio. Les estamos ofreciendo. ¿Bueno? ¿Perdone? ¿Habla? ¿Por qué no les doy contestar? Bueno. ¡Bueno!",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.24,
+      "text": " entretenimiento con 200 canales, Geeks Premium y eventos deportivos exclusivos por solo 350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.24,
+      "end": 18.68,
+      "text": " pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.68,
+      "end": 24.08,
+      "text": " te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 25.67,
+      "end": 27.9,
+      "text": " Oiga, tengo una pregunta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 27.9,
+      "end": 34.26,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 34.26,
+      "end": 38.06,
+      "text": " un asesor o 2 para... ¡Espera un momento, por favor!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 38.06,
+      "end": 41.35,
+      "text": " ¡Espera! Los de Copensee.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 41.35,
+      "end": 48.08,
+      "text": " ¡Espera! Hola, ¿qué tal? Buenas tardes. Mi nombre es Karen Sánchez. Mucho gusto",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 48.08,
+      "end": 53.84,
+      "text": " hablo por parte de Easy. El motivo de mi llamada es porque Easy está ofreciendo lo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 53.84,
+      "end": 57.24,
+      "text": " que es la reconexión del servicio. Les estamos ofreciendo.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 57.4,
+      "end": 66.8,
+      "text": " ¿Bueno? ¿Perdone? ¿Habla?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 66.8,
+      "end": 113.44,
+      "text": " ¿Por qué no les doy contestar?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 113.44,
+      "end": 116.5,
+      "text": " Bueno. ¡Bueno!",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 122.724,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

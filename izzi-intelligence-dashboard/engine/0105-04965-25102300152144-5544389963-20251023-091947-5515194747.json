@@ -1,0 +1,168 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25102300152144-5544389963-20251023-091947-5515194747.WAV",
+  "file_name": "0105-04965-25102300152144-5544389963-20251023-091947-5515194747.WAV",
+  "base_id": "0105-04965-25102300152144-5544389963-20251023-091947-5515194747",
+  "transcription": "Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium, más Sky Sports desde 350 pesos el primer mes? Con Easy es posible. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí. Espera un momento, por favor. ¿Bueno, bueno? ¡Buenos días! Dime pues que Karen anuncia esta línea de ventas. No vamos a comprar nada, aquí vendemos. ¡Ah, qué perfecto, señorita! Aquí le voy a poner, ¿qué? No marcar, ¿ok? Ya lo habían quitado, ya lo habían quitado un tiempo detrás del regreso porque me llega, hace cuenta, ahorita entre 9 y 11, recibo seis llamadas de este número. Y pues es mi línea de ventas, me obstruye la venta. Ok, señorita, muchas gracias por atender mi llamada excelente y aquí le voy a poner, ¿ok? Hasta luego.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.84,
+      "text": " Hola, ¿te gustaría tener Internet, más televisión, más el mejor entretenimiento con VIX Premium,",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 6.84,
+      "end": 11.24,
+      "text": " más Sky Sports desde 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.24,
+      "end": 13.24,
+      "text": " Con Easy es posible.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 13.24,
+      "end": 16.44,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 16.44,
+      "end": 19.24,
+      "text": " Por favor, hable o pulse uno para sí.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 19.24,
+      "end": 21.64,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 21.64,
+      "end": 31.26,
+      "text": " ¿Bueno, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 31.26,
+      "end": 32.56,
+      "text": " ¡Buenos días!",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 32.56,
+      "end": 35.16,
+      "text": " Dime pues que Karen anuncia esta línea de ventas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 35.16,
+      "end": 37.56,
+      "text": " No vamos a comprar nada, aquí vendemos.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 37.96,
+      "end": 40.96,
+      "text": " ¡Ah, qué perfecto, señorita! Aquí le voy a poner, ¿qué?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 40.96,
+      "end": 41.96,
+      "text": " No marcar, ¿ok?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 41.96,
+      "end": 45.32,
+      "text": " Ya lo habían quitado, ya lo habían quitado un tiempo detrás del regreso porque me llega,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 13,
+      "start": 45.32,
+      "end": 49.32,
+      "text": " hace cuenta, ahorita entre 9 y 11, recibo seis llamadas de este número.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 14,
+      "start": 49.32,
+      "end": 52.82,
+      "text": " Y pues es mi línea de ventas, me obstruye la venta.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 15,
+      "start": 52.82,
+      "end": 58.18,
+      "text": " Ok, señorita, muchas gracias por atender mi llamada excelente y aquí le voy a poner, ¿ok?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 16,
+      "start": 58.18,
+      "end": 59.18,
+      "text": " Hasta luego.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 148.464,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101600114135-5544389961-20251016-084917-5589330611.WAV",
+  "file_name": "0105-04965-25101600114135-5544389961-20251016-084917-5589330611.WAV",
+  "base_id": "0105-04965-25101600114135-5544389961-20251016-084917-5589330611",
+  "transcription": "Hola, ¿te gustaría jugar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, big premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse uno para sí o dos para... Espera un momento, por favor. Sí, buenos días. Este es el Área de Contestaciones Easy. Le atiende Leonardo García, con quien tengo el gusto. No lo interesa. Gracias.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.14,
+      "end": 9.0,
+      "text": " Hola, ¿te gustaría jugar en internet con 100 megas de velocidad, tener el mejor entretenimiento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 9.0,
+      "end": 16.8,
+      "text": " con 200 canales, big premium y eventos deportivos exclusivos por solo 350 pesos el primer mes?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 16.8,
+      "end": 23.0,
+      "text": " No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 23.0,
+      "end": 28.52,
+      "text": " favor, hable o pulse uno para sí o dos para... Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 28.52,
+      "end": 40.34,
+      "text": " Sí, buenos días. Este es el Área de Contestaciones Easy. Le atiende Leonardo García, con quien",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 40.34,
+      "end": 41.34,
+      "text": " tengo el gusto.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.34,
+      "end": 42.34,
+      "text": " No lo interesa. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 46.692,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

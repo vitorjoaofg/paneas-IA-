@@ -1,0 +1,132 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101800278600-3314541350-20251018-113408-3328786498.WAV",
+  "file_name": "0105-04965-25101800278600-3314541350-20251018-113408-3328786498.WAV",
+  "base_id": "0105-04965-25101800278600-3314541350-20251018-113408-3328786498",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2, espera un momento por favor. Muy buenos días, estoy comunicando de parte de la compañía de Easy. ¿Nos atiende Claudia? ¿Alguna niña que le está interesado? Pues no han venido. ¿Mande? No han venido. ¿Tiene programada alguna instalación? Pues quedan de venir ayer. Yo ya voy de salida ahorita. Ok, permítame dos segundos. ¿Entonces la voy a dejar a usted a regentar la instalación entonces? Pues no sé, ahorita llevo prisa. Mejor si quiere enseguida amasarme. Sí, claro que sí. Igual lo voy a dejar como nota para que den seguimiento a caballero. Bonitos días.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 10.56,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 10.56,
+      "end": 17.76,
+      "text": " por sólo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 17.76,
+      "end": 26.33,
+      "text": " Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.37,
+      "end": 32.97,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 32.97,
+      "end": 46.73,
+      "text": " asesor o 2, espera un momento por favor. Muy buenos días, estoy comunicando de parte",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 46.73,
+      "end": 51.96,
+      "text": " de la compañía de Easy. ¿Nos atiende Claudia? ¿Alguna niña que le está interesado?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 51.96,
+      "end": 60.41,
+      "text": " Pues no han venido. ¿Mande? No han venido. ¿Tiene programada alguna instalación?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.81,
+      "end": 66.14,
+      "text": " Pues quedan de venir ayer. Yo ya voy de salida ahorita.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 66.14,
+      "end": 70.9,
+      "text": " Ok, permítame dos segundos. ¿Entonces la voy a dejar a usted a",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.9,
+      "end": 76.1,
+      "text": " regentar la instalación entonces? Pues no sé, ahorita llevo prisa.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 76.1,
+      "end": 80.11,
+      "text": " Mejor si quiere enseguida amasarme. Sí, claro que sí. Igual lo voy a dejar",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "start": 80.11,
+      "end": 83.39,
+      "text": " como nota para que den seguimiento a caballero. Bonitos días.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 86.22,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

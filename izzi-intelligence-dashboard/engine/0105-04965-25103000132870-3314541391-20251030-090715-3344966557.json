@@ -1,0 +1,78 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000132870-3314541391-20251030-090715-3344966557.WAV",
+  "file_name": "0105-04965-25103000132870-3314541391-20251030-090715-3344966557.WAV",
+  "base_id": "0105-04965-25103000132870-3314541391-20251030-090715-3344966557",
+  "transcription": "Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para hablar con un asesor. Espera un momento, por favor. Oye, ¿puedes dejar de estar marcando, por favor? O sea, yo sé que necesitan trabajo, pero sí, ya es muchísimo que en las mañanas no estén marcando. Ah, ok, así lo resisto. Ay, sí, como que si realmente lo hicieran, ¿no?",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Hola, ¿te gustaría navegar en internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 12.72,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo 350 pesos",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.72,
+      "end": 19.96,
+      "text": " el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 19.96,
+      "end": 26.72,
+      "text": " Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 26.72,
+      "end": 44.49,
+      "text": " asesor o 2 para hablar con un asesor. Espera un momento, por favor. Oye, ¿puedes dejar de",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 44.49,
+      "end": 51.29,
+      "text": " estar marcando, por favor? O sea, yo sé que necesitan trabajo, pero sí, ya es muchísimo que",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 51.29,
+      "end": 58.26,
+      "text": " en las mañanas no estén marcando. Ah, ok, así lo resisto. Ay, sí, como que si realmente lo hicieran, ¿no?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 60.48,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

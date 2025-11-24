@@ -1,0 +1,114 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25103000532076-3314541320-20251030-144728-3315231765.WAV",
+  "file_name": "0105-04965-25103000532076-3314541320-20251030-144728-3315231765.WAV",
+  "base_id": "0105-04965-25103000532076-3314541320-20251030-144728-3315231765",
+  "transcription": "¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por sólo 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. 1 para hablar con alguien. Espera un momento, por favor. Sí, buenas tardes. Oiga, le hablo de la línea esta de Mediacable. ¿Mande? Le hablo, bueno, me están hablando de la línea de Mediacable. No, de Easy. Nosotros somos de Easy, le hablamos para ofrecerle el servicio. ¿No escuchó el cómodo 2? Ah, no, no lo escuché. Es para el cual tener servicio, Internet, teléfono y servicios de la televisión. Ah, no, sí está bien ahorita. Gracias. Bueno, yo te dejo mis comentarios y voy a...",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.48,
+      "text": " ¡Hola! ¿Te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.48,
+      "end": 11.08,
+      "text": " entretenimiento con 200 canales, VIX Premium y eventos deportivos exclusivos por sólo",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 11.08,
+      "end": 18.2,
+      "text": " 350 pesos el primer mes? ¡No lo pienses más y cámbiate a Easy! ¿Te interesa? Un",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.2,
+      "end": 24.32,
+      "text": " asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.32,
+      "end": 28.96,
+      "text": " 1 para hablar con alguien. Espera un momento, por favor.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 28.96,
+      "end": 49.31,
+      "text": " Sí, buenas tardes. Oiga, le hablo de la línea esta de Mediacable. ¿Mande? Le hablo, bueno,",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 49.31,
+      "end": 54.65,
+      "text": " me están hablando de la línea de Mediacable. No, de Easy. Nosotros somos de Easy, le",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 54.65,
+      "end": 59.25,
+      "text": " hablamos para ofrecerle el servicio. ¿No escuchó el cómodo 2? Ah, no, no lo escuché.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 59.25,
+      "end": 63.95,
+      "text": " Es para el cual tener servicio, Internet, teléfono y servicios de la televisión.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.5,
+      "end": 67.5,
+      "text": " Ah, no, sí está bien ahorita. Gracias.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 68.53,
+      "end": 70.53,
+      "text": " Bueno, yo te dejo mis comentarios y voy a...",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 70.812,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

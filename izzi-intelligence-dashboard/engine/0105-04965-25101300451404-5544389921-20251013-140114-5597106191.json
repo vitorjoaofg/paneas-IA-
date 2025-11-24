@@ -1,0 +1,123 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101300451404-5544389921-20251013-140114-5597106191.WAV",
+  "file_name": "0105-04965-25101300451404-5544389921-20251013-140114-5597106191.WAV",
+  "base_id": "0105-04965-25101300451404-5544389921-20251013-140114-5597106191",
+  "transcription": "Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350 pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor? Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta. Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada. Espera un momento, por favor. Hola, buen día. Hola, muy buen día. Mi nombre es Patricia López de parte de Easy. ¿Con quién tengo el gusto? ¿Qué tal? Buenas tardes, tiene el gusto con el señor Iván. Señor Iván, muy buenos días. Nos estamos comunicando de parte de Easy. ¿Usted cuenta con nuestro servicio? No, por el momento no. Ah, ok, mire, porque nosotros nos estamos comunicando para darle nuestras promociones para que, para que si le hace interesante pueda tener nuestro servicio. ¿Le gustaría",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 5.52,
+      "text": " Hola, ¿te gustaría navegar en Internet con 100 megas de velocidad, tener el mejor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 5.52,
+      "end": 12.32,
+      "text": " entretenimiento con 200 canales, Bix Premium y eventos deportivos exclusivos por solo $350",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 12.32,
+      "end": 18.72,
+      "text": " pesos el primer mes? No lo pienses más y cámbiate a Easy. ¿Te interesa? Un asesor",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 18.72,
+      "end": 24.32,
+      "text": " te está esperando. Siento, no entendí tu respuesta. ¿Te comunico con un asesor?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 24.32,
+      "end": 35.62,
+      "text": " Presiona 1 para hablar con un asesor o 2 para terminar la llamada. No recibo tu respuesta.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 35.62,
+      "end": 41.66,
+      "text": " Por favor, presione 1 para conocer nuestras promociones o 2 para terminar la llamada.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 41.66,
+      "end": 55.5,
+      "text": " Espera un momento, por favor. Hola, buen día. Hola, muy buen día. Mi",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 55.5,
+      "end": 60.38,
+      "text": " nombre es Patricia López de parte de Easy. ¿Con quién tengo el gusto? ¿Qué tal? Buenas",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 60.38,
+      "end": 65.31,
+      "text": " tardes, tiene el gusto con el señor Iván. Señor Iván, muy buenos días. Nos estamos",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 65.31,
+      "end": 70.71,
+      "text": " comunicando de parte de Easy. ¿Usted cuenta con nuestro servicio? No, por el momento",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 70.71,
+      "end": 76.9,
+      "text": " no. Ah, ok, mire, porque nosotros nos estamos comunicando para darle nuestras promociones",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 11,
+      "start": 76.9,
+      "end": 84.83,
+      "text": " para que, para que si le hace interesante pueda tener nuestro servicio. ¿Le gustaría",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 99.396,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}

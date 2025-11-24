@@ -1,0 +1,96 @@
+{
+  "file_path": "/home/jota/tools/paneas-col/izzi_batch_20251120_01_9530/audio/0105-04965-25101000423868-5544389963-20251010-122909-5553700047.WAV",
+  "file_name": "0105-04965-25101000423868-5544389963-20251010-122909-5553700047.WAV",
+  "base_id": "0105-04965-25101000423868-5544389963-20251010-122909-5553700047",
+  "transcription": "¿Sí, bueno? Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium más Skysports desde 350 pesos el primer mes con Easy Es Posible? ¿Te interesa? Un asesor te está esperando. Por favor, hable o pulse 1 para sí o 2 para no. Espera un momento, por favor. ¿Le puedo ayudar? Sí, disculpe, quisiera saber cómo podríamos elevar los megas. Creo que tenemos como 25 megas y necesitamos más de 30 porque el Internet está muy mal.",
+  "language": "es",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.33,
+      "end": 2.73,
+      "text": " ¿Sí, bueno?",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 2.73,
+      "end": 9.92,
+      "text": " Hola, ¿te gustaría tener Internet más televisión más el mejor entretenimiento con VIX Premium",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 9.92,
+      "end": 16.22,
+      "text": " más Skysports desde 350 pesos el primer mes con Easy Es Posible?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 16.22,
+      "end": 19.42,
+      "text": " ¿Te interesa? Un asesor te está esperando.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 19.42,
+      "end": 24.43,
+      "text": " Por favor, hable o pulse 1 para sí o 2 para no.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 24.43,
+      "end": 31.83,
+      "text": " Espera un momento, por favor.",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 31.83,
+      "end": 33.62,
+      "text": " ¿Le puedo ayudar?",
+      "speaker": "Atendente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 33.82,
+      "end": 40.02,
+      "text": " Sí, disculpe, quisiera saber cómo podríamos elevar los megas.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 40.02,
+      "end": 47.22,
+      "text": " Creo que tenemos como 25 megas y necesitamos más de 30 porque el Internet está muy mal.",
+      "speaker": "Cliente",
+      "role": null,
+      "words": []
+    }
+  ],
+  "duration": 62.856,
+  "metadata": {
+    "model": "whisper/medium",
+    "compute_type": "int8_float16",
+    "gpu_id": 0
+  }
+}
